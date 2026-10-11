@@ -48,6 +48,11 @@ _GENERIC_HEADINGS = {
     "agenda", "evenementen", "evenementen agenda", "kalender", "programma",
     "meer info", "meer informatie", "contact", "nieuws", "activiteiten",
 }
+# Kopjes op agendapagina's die geen uitje zijn: vragen, opsommingen, knoppen en oproepen.
+_NAVIGATION_TITLE = re.compile(
+    r"(?:[?:]$|^(?:…|\.\.\.)|^(?:meld je aan|schrijf je in|bekijk|lees meer|delen|deel dit|andere steun|nieuwsbrief)\b)",
+    re.I,
+)
 _BLOCK_TAGS = {"h1", "h2", "h3", "h4", "p", "li", "time", "a"}
 _HEADING_TAGS = {"h1", "h2", "h3", "h4"}
 
@@ -152,6 +157,8 @@ def _valid_title(value: str) -> bool:
     if title.casefold() in _GENERIC_HEADINGS:
         return False
     if DATE_RE.fullmatch(title):
+        return False
+    if _NAVIGATION_TITLE.search(title):
         return False
     return True
 

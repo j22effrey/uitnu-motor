@@ -190,7 +190,8 @@ def probe_source(
             feed = fetcher(tribe_url, timeout=timeout)
             if 200 <= feed.status < 300:
                 payload = json.loads(feed.text)
-                if isinstance(payload, dict) and isinstance(payload.get("events"), list):
+                # Een lege lijst bewijst niets: dan levert de bron (nu) geen uitjes.
+                if isinstance(payload, dict) and isinstance(payload.get("events"), list) and payload["events"]:
                     extractors.insert(0, "wordpress_tribe")
                     details["wordpress_endpoint"] = tribe_url
         except Exception:

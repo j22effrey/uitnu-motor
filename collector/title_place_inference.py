@@ -76,3 +76,25 @@ def infer_title_place(event: RawEvent, *, geocode_fn=None, timeout: float = 8) -
             }
             return replace(event, city=label_head.strip(), lat=result.lat, lon=result.lon, raw=raw)
     return event
+
+
+def locate_city(event: RawEvent, *, geocode_fn=None, timeout: float = 8) -> RawEvent:
+    """Coördinaten van de plaats opzoeken als alleen de plaatsnaam bekend is.
+
+    Zo kan de fabriek controleren of het uitje binnen het werkgebied ligt.
+    Alleen een exacte PDOK-woonplaats telt.
+    """
+    if not event.city or (event.lat is not None and event.lon is not None):
+        return event
+    if geocode_fn is None:
+        from collector.pdok_geocode import geocode as geocode_fn
+    want = _norm(event.city)
+    for result in geocode_fn(event.city, rows=6, timeout=timeout):
+        if (result.type or "").casefold() not in ALLOWED_TYPES:
+            continue
+        if _norm((result.label or "").split(",", 1)[0]) != want:
+            continue
+        raw = dict(event.raw or {})
+        raw["city_geocode"] = {"pdok_label": result.label, "pdok_type": result.type}
+        return replace(event, lat=result.lat, lon=result.lon, raw=raw)
+    return event

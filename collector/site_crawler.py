@@ -61,9 +61,11 @@ class CrawlSource:
     max_depth: int = 3
     min_delay_seconds: float = 0.35
     extractor_hint: str | None = None
+    agenda_url: str | None = None
 
     @classmethod
     def from_dict(cls, value: dict) -> "CrawlSource":
+        config = value.get("extractorConfig") if isinstance(value.get("extractorConfig"), dict) else {}
         return cls(
             id=str(value["id"]),
             name=str(value.get("name") or value["id"]),
@@ -74,6 +76,7 @@ class CrawlSource:
             max_depth=max(0, min(int(value.get("maxDepth", 3)), 8)),
             min_delay_seconds=max(0.0, min(float(value.get("minDelaySeconds", 0.35)), 10.0)),
             extractor_hint=(str(value.get("extractorHint") or value.get("extractor_hint") or "").strip() or None),
+            agenda_url=str(config.get("agendaUrl") or "").strip() or None,
         )
 
 
@@ -109,6 +112,17 @@ class CrawlResult:
             "blocked_by_robots": list(self.blocked_by_robots),
             "errors": list(self.errors),
         }
+
+
+# Paden waar een Nederlandse agendapagina meestal staat (gelijk aan de probe).
+_AGENDA_PATH_HINTS = ("agenda", "evenementen", "activiteiten", "programma", "voorstellingen", "kalender", "events")
+
+
+def _is_agenda_page(page_url: str, agenda_url: str | None) -> bool:
+    if agenda_url and _clean_url(agenda_url) == page_url:
+        return True
+    path = urlparse(page_url).path.casefold()
+    return any(hint in path for hint in _AGENDA_PATH_HINTS)
 
 
 def _clean_url(url: str) -> str:
@@ -457,6 +471,8 @@ def crawl_source(
 
     push(root, 0)
     if source.extractor_hint == "html_agenda_dutch":
+        if source.agenda_url:
+            push(source.agenda_url, 0, "agenda evenementen programma")
         push(root_origin + "/agenda/", 0, "agenda evenementen")
     for url in discovered_pages[:2000]:
         push(url, 1)
@@ -500,7 +516,7 @@ def crawl_source(
             if raw is not None:
                 _append_event(result, event_keys, raw)
 
-        if source.extractor_hint == "html_agenda_dutch" and "agenda" in urlparse(page_url).path.casefold():
+        if source.extractor_hint == "html_agenda_dutch" and _is_agenda_page(page_url, source.agenda_url):
             for item in parse_agenda(fetched.text, page_url):
                 _append_event(result, event_keys, _agenda_to_raw(source, item, page_url))
 

@@ -12,7 +12,7 @@ import argparse
 import json
 
 from collector.active_source_runner import SourceRunResult, load_active_sources, run_all
-from collector.title_place_inference import infer_title_place
+from collector.title_place_inference import infer_title_place, locate_city
 from pipeline.dedupe import dedupe
 from pipeline.publishability import decide
 
@@ -41,9 +41,14 @@ def enrich_results(
         events = []
         for event in result.events:
             try:
-                events.append(infer_fn(event, geocode_fn=cached_geocode, timeout=timeout))
+                event = infer_fn(event, geocode_fn=cached_geocode, timeout=timeout)
             except Exception:
-                events.append(event)
+                pass
+            try:
+                event = locate_city(event, geocode_fn=cached_geocode, timeout=timeout)
+            except Exception:
+                pass
+            events.append(event)
         enriched[source_id] = SourceRunResult(
             source_id=result.source_id,
             extractor=result.extractor,

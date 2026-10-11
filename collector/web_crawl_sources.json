@@ -142,7 +142,11 @@
       "extractorHint": "jsonld_event",
       "extractorConfig": {},
       "activatedFromCandidate": "akerk.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "defaultPlace": {
+        "venue": "Akerk",
+        "city": "Groningen"
+      }
     },
     {
       "id": "oranjewoudfestival-nl-web",
@@ -190,14 +194,18 @@
         "endpointUrl": "https://www.gevangenismuseum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "gevangenismuseum.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "defaultPlace": {
+        "venue": "Gevangenismuseum",
+        "city": "Veenhuizen"
+      }
     },
     {
       "id": "hendrickdekeyser-nl-web",
       "name": "Villa Rams Woerthe",
       "rootUrl": "https://www.hendrickdekeyser.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -206,7 +214,8 @@
         "agendaUrl": "https://www.hendrickdekeyser.nl/agenda/"
       },
       "activatedFromCandidate": "hendrickdekeyser.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "extractorEvidence": "disabled:landelijke-organisatie-uitjes-door-heel-nederland-zonder-plaats-op-agenda:2026-10-11"
     },
     {
       "id": "amdgbeilen-nl-web",
@@ -254,7 +263,11 @@
         "endpointUrl": "https://boerderijkamps.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "boerderijkamps.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "defaultPlace": {
+        "venue": "Boerderij Kamps",
+        "city": "Rolde"
+      }
     },
     {
       "id": "debrinkpub-nl-web",
@@ -268,7 +281,11 @@
       "extractorHint": "jsonld_event",
       "extractorConfig": {},
       "activatedFromCandidate": "debrinkpub.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "defaultPlace": {
+        "venue": "De Brink Pub",
+        "city": "Ruinen"
+      }
     },
     {
       "id": "demelkfabriek-eu-web",
@@ -284,14 +301,18 @@
         "endpointUrl": "http://www.demelkfabriek.eu/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "demelkfabriek.eu",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "defaultPlace": {
+        "venue": "De Melkfabriek",
+        "city": "Bunne"
+      }
     },
     {
       "id": "institutfrancais-nl-web",
       "name": "Institut français in Groningen",
       "rootUrl": "https://institutfrancais.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -300,7 +321,8 @@
         "agendaUrl": "https://institutfrancais.nl/programma/"
       },
       "activatedFromCandidate": "institutfrancais.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "extractorEvidence": "disabled:landelijke-organisatie-programmapagina-toont-nieuws-geen-uitjes:2026-10-11"
     },
     {
       "id": "kunstkerkhogeland-nl-web",
@@ -316,7 +338,11 @@
         "agendaUrl": "https://www.kunstkerkhogeland.nl/agenda/"
       },
       "activatedFromCandidate": "kunstkerkhogeland.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "defaultPlace": {
+        "venue": "KunstKerk Hogeland",
+        "city": "Warffum"
+      }
     },
     {
       "id": "neushoorn-nl-web",
@@ -332,7 +358,11 @@
         "agendaUrl": "https://www.neushoorn.nl/programma/"
       },
       "activatedFromCandidate": "neushoorn.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "defaultPlace": {
+        "venue": "Neushoorn",
+        "city": "Leeuwarden"
+      }
     }
   ]
 }
