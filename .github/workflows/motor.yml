@@ -1,0 +1,92 @@
+name: UITNU motor
+
+# Elke nacht drie rondes: nieuwe websites testen, goede bronnen aanzetten, agenda's ophalen,
+# keuren en publiceren. Daarna bouwt Cloudflare de site opnieuw. Gratis: dit is een openbare repo.
+on:
+  schedule:
+    - cron: '23 0,2,4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: uitnu-motor
+  cancel-in-progress: false
+
+jobs:
+  motor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Nieuwe plekken en festivals zoeken (maandag, of bij handmatig starten)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule != ''
+        continue-on-error: true
+        timeout-minutes: 10
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%u)" = "1" ]; then
+            python -m collector.discover_venues --queue data/source_candidates.json
+          else
+            echo "Vandaag niet: nieuwe plekken zoeken gebeurt op maandag."
+          fi
+
+      - name: 120 websites testen en goede bronnen aanzetten
+        continue-on-error: true
+        timeout-minutes: 30
+        run: |
+          python -m collector.source_probe --queue data/source_candidates.json --limit 120 --workers 12 --deep-pages 3 > /dev/null
+          python -m collector.auto_activate
+
+      - name: Agenda's ophalen bij alle actieve bronnen
+        continue-on-error: true
+        timeout-minutes: 35
+        run: |
+          python -m pipeline.stage_active_sources --sources collector/web_crawl_sources.json --workers 8 --timeout 12 --output /tmp/staging.json > /dev/null
+          python -m pipeline.build_auto_events --curated data/events.json --staged /tmp/staging.json --output data/auto_events.json
+
+      - name: Tests
+        run: |
+          python -m pip install --quiet pytest
+          python -m pytest tests/v2 -q -p no:cacheprovider
+
+      - name: Fabriek (de keuring beslist)
+        id: fabriek
+        continue-on-error: true
+        run: python -m pipeline.v2.build --data data --out data/v2
+
+      - name: Opslaan
+        id: opslaan
+        run: |
+          if [ "${{ steps.fabriek.outcome }}" != "success" ]; then
+            echo "Keuring afgekeurd: de vorige agenda blijft staan, de voortgang met bronnen wordt wel bewaard."
+            git checkout -- data/auto_events.json data/v2 2>/dev/null || true
+            rm -f data/v2/events.rejected.json
+          fi
+          git add data collector/web_crawl_sources.json
+          if git diff --cached --quiet; then echo "veranderd=nee" >> "$GITHUB_OUTPUT"; echo "Geen wijzigingen."; exit 0; fi
+          git diff --cached --quiet -- data/v2/events.json && echo "agenda=nee" >> "$GITHUB_OUTPUT" || echo "agenda=ja" >> "$GITHUB_OUTPUT"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "motor: $(python -c 'import json;print(len(json.load(open("data/v2/events.json"))))') uitjes, $(python -c 'import json;print(sum(1 for s in json.load(open("collector/web_crawl_sources.json"))["sources"] if s.get("enabled")))') actieve bronnen"
+          git pull -q --rebase origin main
+          git push -q
+          echo "veranderd=ja" >> "$GITHUB_OUTPUT"
+
+      - name: Site opnieuw laten bouwen
+        if: steps.opslaan.outputs.agenda == 'ja'
+        env:
+          HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "Geen deploy hook ingesteld; de site wordt bij de volgende push bijgewerkt."; exit 0; fi
+          curl -fsS -X POST "$HOOK" > /dev/null && echo "Cloudflare bouwt de site opnieuw."
+
+      - name: Melden als de keuring afkeurde
+        if: steps.fabriek.outcome != 'success'
+        run: |
+          echo "De keuring keurde de nieuwe agenda af. Zie de stap 'Fabriek' voor de reden."
+          exit 1

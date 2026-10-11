@@ -1,0 +1,148 @@
+{
+  "version": 2,
+  "updated": "2026-10-11",
+  "policy": {
+    "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
+    "rules": [
+      "robots.txt respecteren",
+      "alleen minimale feitelijke eventdata overnemen",
+      "geen lange beschrijvingen of afbeeldingen kopieren",
+      "externe domeinen alleen als kandidaat registreren en niet automatisch doorcrawlen",
+      "per actieve bron de reeds bewezen extractor gebruiken"
+    ]
+  },
+  "sources": [
+    {
+      "id": "reis-events-web",
+      "name": "Reis Events",
+      "rootUrl": "https://www.reis-events.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "wordpress_tribe",
+      "extractorEvidence": "wordpress_event_sources:proven-public-feed",
+      "extractorConfig": {},
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5
+    },
+    {
+      "id": "wildro-web",
+      "name": "Organisatieburo Wildro",
+      "rootUrl": "https://wildro.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "wordpress_tribe",
+      "extractorEvidence": "wordpress_event_sources:proven-public-feed",
+      "extractorConfig": {},
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5
+    },
+    {
+      "id": "vitalis-markten-web",
+      "name": "Organisatieburo Vitalis",
+      "rootUrl": "https://vitalismarkten.nl/agenda/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_agenda_dutch",
+      "extractorEvidence": "official-agenda:explicit-title-date-year-time:2026-10-03",
+      "extractorConfig": {},
+      "maxPages": 5,
+      "maxDepth": 1,
+      "minDelaySeconds": 0.5
+    },
+    {
+      "id": "martiniplaza-web",
+      "name": "Martiniplaza",
+      "rootUrl": "https://www.martiniplaza.nl/nl/agenda",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "jsonld_event",
+      "extractorEvidence": "official-agenda:public-events:2026-10-03",
+      "extractorConfig": {},
+      "maxPages": 60,
+      "maxDepth": 2,
+      "minDelaySeconds": 0.35
+    },
+    {
+      "id": "inside-groningen-web",
+      "name": "Inside Groningen",
+      "rootUrl": "https://insidegroningen.com/",
+      "role": "discovery",
+      "enabled": false,
+      "extractorHint": "wordpress_tribe",
+      "extractorEvidence": "wordpress_event_sources:proven-public-feed-needs-primary-confirmation",
+      "extractorConfig": {},
+      "maxPages": 30,
+      "maxDepth": 2,
+      "minDelaySeconds": 0.5,
+      "disabledReason": "Verzamelsite; UITNU haalt evenementen alleen bij de bron (besluit oktober 2026)."
+    },
+    {
+      "id": "spot-groningen-web",
+      "name": "SPOT Groningen",
+      "rootUrl": "https://www.spotgroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "jsonld_event",
+      "extractorEvidence": "source_probe:jsonld_event:2026-10-03",
+      "extractorConfig": {},
+      "maxPages": 50,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5
+    },
+    {
+      "id": "oktober-kindermaand-web",
+      "name": "Oktober Kindermaand",
+      "rootUrl": "https://www.kindermaand.nl/",
+      "role": "organizer",
+      "enabled": false,
+      "extractorHint": "jsonld_event",
+      "extractorEvidence": "disabled:jsonld-dates-do-not-reliably-represent-activity-date:2026-10-03",
+      "extractorConfig": {},
+      "maxPages": 100,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5
+    },
+    {
+      "id": "groningen-municipal-calendar-web",
+      "name": "Gemeente Groningen evenementenkalender",
+      "rootUrl": "https://gemeente.groningen.nl/evenementenkalender",
+      "role": "discovery",
+      "enabled": false,
+      "extractorHint": "jsonld_event",
+      "extractorEvidence": "disabled:http-403-in-live-run:2026-10-03",
+      "extractorConfig": {},
+      "maxPages": 20,
+      "maxDepth": 2,
+      "minDelaySeconds": 0.75
+    },
+    {
+      "id": "hogeland-municipal-calendar-web",
+      "name": "Het Hogeland evenementenkalender",
+      "rootUrl": "https://hethogeland.nl/vergunningen-en-toestemming/evenementen/evenementenkalender",
+      "role": "discovery",
+      "enabled": false,
+      "extractorHint": "jsonld_event",
+      "extractorEvidence": "disabled:no-event-extractor-results-in-live-run:2026-10-03",
+      "extractorConfig": {},
+      "maxPages": 20,
+      "maxDepth": 2,
+      "minDelaySeconds": 0.75
+    },
+    {
+      "id": "akerk-nl-web",
+      "name": "Akerk",
+      "rootUrl": "https://akerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "akerk.nl",
+      "policyReviewedAt": "2026-10-11"
+    }
+  ]
+}

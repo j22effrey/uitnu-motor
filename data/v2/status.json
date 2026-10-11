@@ -1,0 +1,127 @@
+{
+ "version": 2,
+ "refreshedAt": "2026-10-11T20:19:35+00:00",
+ "today": "2026-10-11",
+ "total": 50,
+ "inputRecords": 76,
+ "outsideArea": 4,
+ "area": {
+  "center": [
+   53.2194,
+   6.5665
+  ],
+  "radiusKm": 60
+ },
+ "byKind": {
+  "markt": 26,
+  "festival": 9,
+  "feest": 5,
+  "sport": 3,
+  "kunst": 2,
+  "overig": 1,
+  "theater": 1,
+  "natuur": 1,
+  "muziek": 1,
+  "eten": 1
+ },
+ "byCity": {
+  "Groningen": 24,
+  "Zuidbroek": 4,
+  "Haren": 4,
+  "Bourtange": 4,
+  "Assen": 3,
+  "Delfzijl": 2,
+  "Appingedam": 2,
+  "Winsum": 1,
+  "Leek": 1,
+  "Dwingeloo": 1,
+  "Oosterwolde": 1,
+  "Warffum": 1,
+  "Ruinen": 1,
+  "Hoogeveen": 1
+ },
+ "bySourceHost": {
+  "wildro.nl": 11,
+  "bourtange.nl": 4,
+  "ervaarharen.nl": 3,
+  "martiniplaza.nl": 3,
+  "reis-events.nl": 2,
+  "bierbattle.nl": 2,
+  "vitalismarkten.nl": 2,
+  "eemsdelta.nl": 2,
+  "spotgroningen.nl": 2,
+  "gscf.nl": 2,
+  "forum.nl": 1,
+  "groningermuseum.nl": 1,
+  "kindermaand.nl": 1,
+  "baistemaart.nl": 1,
+  "4mijl.nl": 1,
+  "oldtimerleek.nl": 1,
+  "sasa-appingedam.nl": 1,
+  "kon-wilhelmina.nl": 1,
+  "em2groningen.nl": 1,
+  "deroegeboys.nl": 1,
+  "zoek.officielebekendmakingen.nl": 1,
+  "boeremapark.nl": 1,
+  "zeldzaammooi.com": 1,
+  "natuurwerkdag.nl": 1,
+  "jongeharten.nl": 1,
+  "dorpshuiswarffum.nl": 1,
+  "wintergoud.nl": 1,
+  "winterwelvaart.nl": 1,
+  "zweedsekerstmarkt.nl": 1,
+  "esns.nl": 1,
+  "wfnn.nl": 1
+ },
+ "kinds": {
+  "muziek": "Muziek",
+  "festival": "Festival",
+  "theater": "Theater en comedy",
+  "film": "Film",
+  "markt": "Markt en beurs",
+  "feest": "Feest en kermis",
+  "sport": "Sport",
+  "natuur": "Natuur en buiten",
+  "kunst": "Kunst en erfgoed",
+  "lezing": "Lezing en workshop",
+  "eten": "Eten en drinken",
+  "overig": "Overig"
+ },
+ "tags": {
+  "gratis": "Gratis",
+  "kinderen": "Voor kinderen",
+  "buiten": "Buiten",
+  "meerdaags": "Meerdaags",
+  "festival": "Festival"
+ },
+ "changes": {
+  "new": 0,
+  "changed": 0,
+  "removed": 0
+ },
+ "gate": {
+  "passed": true,
+  "checks": [
+   {
+    "name": "aantal_tegenover_vorige_run",
+    "passed": true,
+    "detail": "50 nu, 50 vorige keer (minimaal 85%)"
+   },
+   {
+    "name": "geen_bron_ineens_leeg",
+    "passed": true,
+    "detail": "alle grote bronnen leveren nog"
+   },
+   {
+    "name": "overig_maximaal_10_procent",
+    "passed": true,
+    "detail": "1 van 50 (2%)"
+   },
+   {
+    "name": "velden_compleet",
+    "passed": true,
+    "detail": "datum, plaats en bron-URL overal aanwezig"
+   }
+  ]
+ }
+}

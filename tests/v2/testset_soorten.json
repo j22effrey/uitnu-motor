@@ -1,0 +1,382 @@
+[
+ {
+  "title": "Stadswandeling met gids",
+  "kind": "natuur",
+  "tags": [
+   "buiten"
+  ]
+ },
+ {
+  "title": "Wildplukwandeling op Landgoed Ennemaborg",
+  "price": "Gratis",
+  "kind": "natuur",
+  "tags": [
+   "gratis"
+  ]
+ },
+ {
+  "title": "Sterrenwandeling met gids; Dokkum",
+  "kind": "natuur"
+ },
+ {
+  "title": "Herfstwandeling in de Lettelberterpetten",
+  "kind": "natuur"
+ },
+ {
+  "title": "Oktober Kindermaand: Huifkartocht en kwelderexcursie",
+  "kind": "natuur",
+  "tags": [
+   "kinderen"
+  ]
+ },
+ {
+  "title": "Speurwandeling Appingedam",
+  "kind": "natuur",
+  "tags": [
+   "kinderen"
+  ]
+ },
+ {
+  "title": "Natuurwerkdag Westerkwartier",
+  "kind": "natuur"
+ },
+ {
+  "title": "Vollemaanwandeling Lauwersmeer",
+  "kind": "natuur"
+ },
+ {
+  "title": "Paddenstoelenwandeling Meerwijk",
+  "kind": "natuur"
+ },
+ {
+  "title": "Fietstocht langs de wierden",
+  "kind": "natuur"
+ },
+ {
+  "title": "4 Mijl van Groningen",
+  "kind": "sport"
+ },
+ {
+  "title": "Bierrun Groningen",
+  "kind": "sport"
+ },
+ {
+  "title": "ACLO Vitalis Run",
+  "kind": "sport"
+ },
+ {
+  "title": "Waterwolfmarathon",
+  "kind": "sport"
+ },
+ {
+  "title": "Royal Hunze Regatta",
+  "kind": "sport"
+ },
+ {
+  "title": "Natuurloop 10 km Haren",
+  "kind": "sport"
+ },
+ {
+  "title": "Kermisloop Winschoten",
+  "kind": "sport"
+ },
+ {
+  "title": "Voetbaltoernooi jeugd",
+  "kind": "sport",
+  "tags": [
+   "kinderen"
+  ]
+ },
+ {
+  "title": "Wedstrijd voor speurhonden Winsum",
+  "kind": "sport",
+  "not_tags": [
+   "kinderen"
+  ]
+ },
+ {
+  "title": "Stratenloop Delfzijl",
+  "kind": "sport"
+ },
+ {
+  "title": "Groninger Marktendag",
+  "kind": "markt"
+ },
+ {
+  "title": "Braderie Duitse dag Centrum Coevorden",
+  "kind": "markt"
+ },
+ {
+  "title": "Herfstfair Pieterburen",
+  "kind": "markt"
+ },
+ {
+  "title": "Oldtimer & Classic Beurs Leek",
+  "kind": "markt"
+ },
+ {
+  "title": "Vlooienmarkt en braderie Eurohal Zuidbroek",
+  "kind": "markt"
+ },
+ {
+  "title": "Kerstmarkt Bourtange",
+  "kind": "markt"
+ },
+ {
+  "title": "Suikermarkt",
+  "kind": "markt"
+ },
+ {
+  "title": "Winsumer Baistemaart",
+  "kind": "markt"
+ },
+ {
+  "title": "Rommelmarkt in het dorpshuis",
+  "kind": "markt"
+ },
+ {
+  "title": "Streekproductenmarkt",
+  "kind": "markt"
+ },
+ {
+  "title": "Concert op 12 maart in de kerk",
+  "kind": "muziek"
+ },
+ {
+  "title": "Kermis Delfzijl",
+  "kind": "feest"
+ },
+ {
+  "title": "Sinterklaasintocht Appingedam",
+  "kind": "feest",
+  "tags": [
+   "kinderen"
+  ]
+ },
+ {
+  "title": "Halloweentocht Haren",
+  "kind": "feest"
+ },
+ {
+  "title": "Spooktocht Vinkhuizen",
+  "kind": "feest"
+ },
+ {
+  "title": "Dorpsfeest Wagenborgen",
+  "kind": "feest"
+ },
+ {
+  "title": "Koningsdag Winschoten",
+  "kind": "feest"
+ },
+ {
+  "title": "Lampionoptocht",
+  "kind": "feest"
+ },
+ {
+  "title": "Muzikale optocht Forum",
+  "kind": "feest"
+ },
+ {
+  "title": "Kerstconcert Martinikerk",
+  "kind": "muziek"
+ },
+ {
+  "title": "Orgelconcert in de Der Aa-kerk",
+  "kind": "muziek"
+ },
+ {
+  "title": "20 jaar cantatediensten",
+  "kind": "muziek"
+ },
+ {
+  "title": "Optreden Gospelband Westerhaven",
+  "kind": "muziek"
+ },
+ {
+  "title": "Clubnacht met dj Roosje",
+  "kind": "muziek"
+ },
+ {
+  "title": "Techno Festival in Simplon",
+  "kind": "muziek",
+  "tags": [
+   "festival"
+  ]
+ },
+ {
+  "title": "Korenfestival Veendam",
+  "kind": "muziek",
+  "tags": [
+   "festival"
+  ]
+ },
+ {
+  "title": "Live: de coverband van het dorp",
+  "kind": "muziek"
+ },
+ {
+  "title": "Shantykoor Delfzijl",
+  "kind": "muziek"
+ },
+ {
+  "title": "Dijkpop",
+  "description": "Gratis popfestival in Delfzijl met meerdere podia",
+  "kind": "festival",
+  "not_tags": [
+   "festival"
+  ]
+ },
+ {
+  "title": "Noorderzon Performing Arts Festival",
+  "multiday": true,
+  "kind": "festival",
+  "tags": [
+   "meerdaags"
+  ]
+ },
+ {
+  "title": "Eurosonic Noorderslag",
+  "description": "Showcasefestival in de binnenstad",
+  "multiday": true,
+  "kind": "festival"
+ },
+ {
+  "title": "Lichtjesfestival Haren",
+  "kind": "festival"
+ },
+ {
+  "title": "Bevrijdingsfestival Groningen",
+  "kind": "festival"
+ },
+ {
+  "title": "iAfrica Film Festival",
+  "kind": "film",
+  "tags": [
+   "festival"
+  ]
+ },
+ {
+  "title": "Filmavond: klassieker op het doek",
+  "kind": "film"
+ },
+ {
+  "title": "Documentaire en nagesprek",
+  "kind": "film"
+ },
+ {
+  "title": "Cabaretvoorstelling in De Klinker",
+  "kind": "theater"
+ },
+ {
+  "title": "Familievoorstelling in het dorpshuis",
+  "kind": "theater",
+  "tags": [
+   "kinderen"
+  ]
+ },
+ {
+  "title": "Circus Renz Haren",
+  "kind": "theater"
+ },
+ {
+  "title": "Musical door de toneelvereniging",
+  "kind": "theater"
+ },
+ {
+  "title": "Stand-up comedy night",
+  "kind": "theater"
+ },
+ {
+  "title": "Tentoonstelling: Groninger landschappen",
+  "kind": "kunst"
+ },
+ {
+  "title": "Expositie in Galerie Wierda",
+  "kind": "kunst"
+ },
+ {
+  "title": "Open Monumentendag Loppersum",
+  "kind": "kunst"
+ },
+ {
+  "title": "Rondleiding Martinitoren",
+  "kind": "kunst"
+ },
+ {
+  "title": "Museumnacht",
+  "kind": "kunst"
+ },
+ {
+  "title": "Lezing over de geschiedenis van de wierden",
+  "kind": "lezing"
+ },
+ {
+  "title": "Workshop linoleumsnijden",
+  "kind": "lezing"
+ },
+ {
+  "title": "Lezing over vogels van het Lauwersmeer",
+  "kind": "lezing"
+ },
+ {
+  "title": "Kookworkshop met streekproducten",
+  "kind": "lezing"
+ },
+ {
+  "title": "Culinair Haren",
+  "multiday": true,
+  "kind": "eten",
+  "tags": [
+   "meerdaags"
+  ]
+ },
+ {
+  "title": "Foodfestival Delfzijl",
+  "kind": "eten",
+  "tags": [
+   "festival"
+  ]
+ },
+ {
+  "title": "Wijnproeverij",
+  "kind": "eten"
+ },
+ {
+  "title": "Open dagen Roodehaan",
+  "kind": "overig"
+ },
+ {
+  "title": "Cyber truck Groningen",
+  "kind": "overig"
+ },
+ {
+  "title": "Groninger Studenten Cabaret Festival",
+  "kind": "theater",
+  "tags": [
+   "festival"
+  ]
+ },
+ {
+  "title": "Whisky Festival Noord Nederland",
+  "kind": "eten",
+  "tags": [
+   "festival"
+  ]
+ },
+ {
+  "title": "Taptoe Groningen",
+  "kind": "muziek"
+ },
+ {
+  "title": "Autosalon van het Noorden",
+  "kind": "markt"
+ },
+ {
+  "title": "Mega Indoor Springkussen Festival",
+  "kind": "festival",
+  "tags": [
+   "kinderen"
+  ]
+ }
+]

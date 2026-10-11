@@ -1,0 +1,222 @@
+"""Zet de bestaande eigen-bronbestanden om naar de v2-vorm.
+
+Invoer: data/events.json, data/confirmed_events.json, data/auto_events.json en
+data/official_gap_events.json. Dat zijn evenementen van organisatoren, locaties en
+de overheid. De VisitGroningen-kopie (public_groningen_events.json) wordt hier
+bewust NIET gelezen.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import re
+import unicodedata
+from datetime import date
+from pathlib import Path
+
+FIRST_PARTY_FILES = (
+    "events.json",
+    "confirmed_events.json",
+    "auto_events.json",
+    "official_gap_events.json",
+)
+
+# Alleen deze statussen mogen publiek. Een aanvraag of kalendermelding is nog geen evenement.
+PUBLISHABLE = {
+    "organizer_confirmed": "bevestigd door de organisator",
+    "structured_confirmed": "bevestigd door de organisator",
+    "permit_granted": "vergund door de gemeente",
+}
+
+SOURCE_TYPES = {
+    "organizer": "organisator",
+    "event_official": "organisator",
+    "municipality": "gemeente",
+    "official": "overheid",
+}
+
+TIME = re.compile(r"(\d{1,2})[:.](\d{2})")
+
+
+def slugify(text: str) -> str:
+    text = unicodedata.normalize("NFKD", text or "")
+    text = "".join(ch for ch in text if not unicodedata.combining(ch)).lower()
+    text = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    return text[:80].strip("-") or "evenement"
+
+
+def parse_time_range(value: str | None) -> tuple[str | None, str | None]:
+    """'17:00 – 00:00' -> ('17:00', '00:00'); onbekend -> (None, None)."""
+    found = TIME.findall(value or "")
+    times = [f"{int(h):02d}:{m}" for h, m in found if int(h) < 24 and int(m) < 60]
+    if not times:
+        return None, None
+    return times[0], (times[1] if len(times) > 1 else None)
+
+
+def _host(url: str | None) -> str | None:
+    m = re.match(r"https?://(?:www\.)?([^/]+)", url or "")
+    return m.group(1).lower() if m else None
+
+
+def load_first_party(data_dir: Path) -> list[dict]:
+    rows: list[dict] = []
+    for name in FIRST_PARTY_FILES:
+        path = data_dir / name
+        if not path.exists():
+            continue
+        for row in json.loads(path.read_text(encoding="utf-8")):
+            row = dict(row)
+            row["_file"] = name
+            rows.append(row)
+    return rows
+
+
+def to_v2(raw: dict, today: date) -> dict | None:
+    """Een v2-evenement, of None als het (nog) niet publiek mag of al voorbij is."""
+    status = raw.get("verificationStatus")
+    if status not in PUBLISHABLE:
+        return None
+    if raw.get("publicAudience") is False:
+        return None
+    start = raw.get("startDate")
+    if not start:
+        return None
+    end = raw.get("endDate") or start
+    if end < start:
+        end = start
+    if end < today.isoformat():
+        return None
+    city = (raw.get("city") or "").strip()
+    url = raw.get("eventUrl") or raw.get("organizerUrl") or raw.get("sourceUrl")
+    if not city or not url:
+        return None
+
+    start_time, end_time = parse_time_range(raw.get("time"))
+    occurrence = {"date": start, "endDate": end if end != start else None,
+                  "startTime": start_time, "endTime": end_time}
+
+    sources = []
+    seen = set()
+    for kind, link in (
+        (SOURCE_TYPES.get(raw.get("sourceType") or "", "organisator"), raw.get("sourceUrl")),
+        ("organisator", raw.get("eventUrl")),
+        ("organisator", raw.get("organizerUrl")),
+        ("vergunning", raw.get("discoveryUrl") if "officielebekendmakingen" in (raw.get("discoveryUrl") or "") else None),
+    ):
+        if link and link not in seen:
+            seen.add(link)
+            sources.append({"type": kind, "url": link, "host": _host(link),
+                            "seenAt": raw.get("lastSourceAudit")})
+
+    title = re.sub(r"\s+", " ", raw.get("title") or "").strip()
+    return {
+        "id": raw.get("id") or slugify(f"{title}-{city}-{start}"),
+        "slug": slugify(f"{title}-{city}-{start}"),
+        "title": title,
+        "occurrences": [occurrence],
+        "venue": {
+            "name": (raw.get("location") or "").strip() or None,
+            "city": city,
+            "lat": raw.get("lat"),
+            "lon": raw.get("lon"),
+        },
+        "price": (raw.get("price") or "").strip() or None,
+        "url": url,
+        "status": PUBLISHABLE[status],
+        "sources": sources,
+        # Alleen gebruikt om in te delen; de tekst zelf wordt niet gepubliceerd.
+        "description": raw.get("description") or "",
+        "legacyCategory": raw.get("category"),
+    }
+
+
+def merge_key(event: dict) -> tuple[str, str, str]:
+    title = slugify(event["title"])
+    return (title, event["occurrences"][0]["date"], slugify(event["venue"]["city"]))
+
+
+def _merge_exact(events: list[dict]) -> list[dict]:
+    """Hetzelfde evenement uit meerdere bestanden wordt één record met alle bronnen."""
+    merged: dict[tuple[str, str, str], dict] = {}
+    for event in events:
+        key = merge_key(event)
+        if key not in merged:
+            merged[key] = event
+            continue
+        keep = merged[key]
+        known = {s["url"] for s in keep["sources"]}
+        keep["sources"] += [s for s in event["sources"] if s["url"] not in known]
+        for field in ("price",):
+            if not keep.get(field) and event.get(field):
+                keep[field] = event[field]
+        occ, other = keep["occurrences"][0], event["occurrences"][0]
+        for field in ("startTime", "endTime", "endDate"):
+            if not occ.get(field) and other.get(field):
+                occ[field] = other[field]
+    return list(merged.values())
+
+
+def content_hash(event: dict) -> str:
+    """Vingerafdruk om nieuw/gewijzigd/verdwenen te bepalen."""
+    stable = {k: event.get(k) for k in ("title", "occurrences", "venue", "price", "url", "kind", "tags")}
+    raw = json.dumps(stable, sort_keys=True, ensure_ascii=False)
+    return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:12]
+
+
+_STOPWORDS = {"de", "het", "een", "en", "van", "in", "op", "te", "bij", "aan", "voor", "met", "the", "of", "and"}
+
+
+def _title_words(title: str, city: str) -> set[str]:
+    city_words = set(slugify(city or "").split("-"))
+    return {w for w in slugify(title).split("-")
+            if len(w) > 2 and not w.isdigit() and w not in _STOPWORDS and w not in city_words}
+
+
+def _venue_key(event: dict) -> str | None:
+    name = slugify(event["venue"].get("name") or "")
+    city = slugify(event["venue"].get("city") or "")
+    if not name or name == city or name.startswith("diverse") or name.startswith("centrum"):
+        return None
+    return name
+
+
+def _same_slot(a: dict, b: dict) -> bool:
+    oa, ob = a["occurrences"][0], b["occurrences"][0]
+    if oa["date"] != ob["date"] or (oa.get("endDate") or oa["date"]) != (ob.get("endDate") or ob["date"]):
+        return False
+    return not (oa.get("startTime") and ob.get("startTime") and oa["startTime"] != ob["startTime"])
+
+
+def merge_same_venue(events: list[dict]) -> list[dict]:
+    """Twee namen voor hetzelfde uitje: zelfde plek, zelfde dagen en tijd, en een gedeeld woord in de titel."""
+    result: list[dict] = []
+    for event in events:
+        key = _venue_key(event)
+        twin = None
+        if key:
+            words = _title_words(event["title"], event["venue"].get("city"))
+            for other in result:
+                if (_venue_key(other) == key and _same_slot(other, event)
+                        and words & _title_words(other["title"], other["venue"].get("city"))):
+                    twin = other
+                    break
+        if twin is None:
+            result.append(event)
+            continue
+        known = {s["url"] for s in twin["sources"]}
+        twin["sources"] += [s for s in event["sources"] if s["url"] not in known]
+        occ, extra = twin["occurrences"][0], event["occurrences"][0]
+        for field in ("startTime", "endTime"):
+            if not occ.get(field) and extra.get(field):
+                occ[field] = extra[field]
+        for field in ("url", "price"):
+            if not twin.get(field) and event.get(field):
+                twin[field] = event[field]
+        twin["tags"] = sorted(set(twin.get("tags") or []) | set(event.get("tags") or []))
+    return result
+
+
+def merge_duplicates(events: list[dict]) -> list[dict]:
+    """Hetzelfde evenement uit meerdere bestanden wordt één record met alle bronnen."""
+    return merge_same_venue(_merge_exact(events))
