@@ -143,6 +143,196 @@
       "extractorConfig": {},
       "activatedFromCandidate": "akerk.nl",
       "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "oranjewoudfestival-nl-web",
+      "name": "Oranjewoud Festival",
+      "rootUrl": "https://www.oranjewoudfestival.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.oranjewoudfestival.nl/programma/"
+      },
+      "activatedFromCandidate": "oranjewoudfestival.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "itfryskegea-nl-web",
+      "name": "Delleboersterheide",
+      "rootUrl": "https://www.itfryskegea.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.itfryskegea.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "itfryskegea.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "gevangenismuseum-nl-web",
+      "name": "Gevangenismuseum",
+      "rootUrl": "https://www.gevangenismuseum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.gevangenismuseum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "gevangenismuseum.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "hendrickdekeyser-nl-web",
+      "name": "Villa Rams Woerthe",
+      "rootUrl": "https://www.hendrickdekeyser.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.hendrickdekeyser.nl/agenda/"
+      },
+      "activatedFromCandidate": "hendrickdekeyser.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "amdgbeilen-nl-web",
+      "name": "De Notenkraker Chr. Muziekvereniging AMDG Beilen",
+      "rootUrl": "https://www.amdgbeilen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.amdgbeilen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "amdgbeilen.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "ateliersmajeur-nl-web",
+      "name": "Ateliers Majeur De Rinkelbom",
+      "rootUrl": "https://ateliersmajeur.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://ateliersmajeur.nl/agenda/"
+      },
+      "activatedFromCandidate": "ateliersmajeur.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "boerderijkamps-nl-web",
+      "name": "Boerderij Kamps",
+      "rootUrl": "https://boerderijkamps.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://boerderijkamps.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "boerderijkamps.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "debrinkpub-nl-web",
+      "name": "De Brink Pub",
+      "rootUrl": "https://www.debrinkpub.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "debrinkpub.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "demelkfabriek-eu-web",
+      "name": "De Melkfabriek",
+      "rootUrl": "http://www.demelkfabriek.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "http://www.demelkfabriek.eu/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "demelkfabriek.eu",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "institutfrancais-nl-web",
+      "name": "Institut français in Groningen",
+      "rootUrl": "https://institutfrancais.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://institutfrancais.nl/programma/"
+      },
+      "activatedFromCandidate": "institutfrancais.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "kunstkerkhogeland-nl-web",
+      "name": "KunstKerk Hogeland",
+      "rootUrl": "https://www.kunstkerkhogeland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kunstkerkhogeland.nl/agenda/"
+      },
+      "activatedFromCandidate": "kunstkerkhogeland.nl",
+      "policyReviewedAt": "2026-10-11"
+    },
+    {
+      "id": "neushoorn-nl-web",
+      "name": "Neushoorn",
+      "rootUrl": "https://www.neushoorn.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.neushoorn.nl/programma/"
+      },
+      "activatedFromCandidate": "neushoorn.nl",
+      "policyReviewedAt": "2026-10-11"
     }
   ]
 }
