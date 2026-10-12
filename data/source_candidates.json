@@ -2,10 +2,10 @@
   "version": 1,
   "candidates": [
     {
-      "id": "openluchttheatersellingen.nl",
-      "host": "openluchttheatersellingen.nl",
-      "url": "https://www.openluchttheatersellingen.nl/",
-      "score": 30,
+      "id": "damshus.nl",
+      "host": "damshus.nl",
+      "url": "https://www.damshus.nl/thus/openluchtmuseum/",
+      "score": 25,
       "firstSeenAt": "2026-10-11T13:25:14Z",
       "lastSeenAt": "2026-10-12T06:10:50Z",
       "seenCount": 2,
@@ -14,60 +14,56 @@
       "robotsStatus": "allowed",
       "probeStatus": "supported",
       "extractor": "jsonld_event",
-      "lastError": "candidate page: TimeoutError: The read operation timed out",
+      "lastError": null,
       "evidence": [
         {
           "kind": "osm",
-          "sourceId": "osm:way/103165959",
-          "fromUrl": "https://www.openstreetmap.org/way/103165959",
-          "anchorText": "Openluchttheater Sellingen (theatre)",
-          "score": 30,
+          "sourceId": "osm:node/2926614008",
+          "fromUrl": "https://www.openstreetmap.org/node/2926614008",
+          "anchorText": "Openluchtmuseum It Damshûs (museum, Nij Beets)",
+          "score": 25,
           "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 52.9472175,
-          "lon": 7.1337508
+          "lat": 53.0696891,
+          "lon": 5.9958428
         }
       ],
-      "priorityScore": 73,
+      "priorityScore": 68,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 48.5,
+      "distanceKm": 41.5,
       "extractorsFound": [
         "jsonld_event"
       ],
       "probeDetails": {
         "robots": "loaded",
         "shallow_site_probe": {
-          "events": 1,
+          "events": 3,
           "pages": [
-            "https://openluchttheatersellingen.nl/voorstelling/categorie/muziek/",
-            "https://openluchttheatersellingen.nl/voorstelling/categorie/theater/",
-            "https://openluchttheatersellingen.nl/voorstelling/little-cash/"
+            "https://www.damshus.nl/evenementen/expositie-schilderijen-simon-lasche/",
+            "https://www.damshus.nl/evenementen/expositie-schilderkunst-oa-cats-859/",
+            "https://www.damshus.nl/evenementen/grunfestival-2025/"
           ],
           "blocked": 0,
-          "errors": [
-            "https://openluchttheatersellingen.nl/wp-content/uploads/2026/08/OLT-2026.png: ValueError: response too large: https://openluchttheatersellingen.nl/wp-content/uploads/2026/08/OLT-2026.png",
-            "https://openluchttheatersellingen.nl/wp-content/uploads/2026/04/IMG_1955.png: ValueError: response too large: https://openluchttheatersellingen.nl/wp-content/uploads/2026/04/IMG_1955.png",
-            "https://openluchttheatersellingen.nl/wp-content/uploads/2026/03/Bert-en-Andre-zijkant.jpg: ValueError: response too large: https://openluchttheatersellingen.nl/wp-content/uploads/2026/03/Bert-en-Andre-zijkant.jpg"
-          ]
+          "errors": []
         },
-        "jsonld_event_count_in_site_sample": 1
+        "jsonld_event_count_in_site_sample": 3
       },
       "policyReview": {
         "status": "allowed",
         "reviewedAt": "2026-10-12",
         "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
       },
-      "activatedSourceId": "openluchttheatersellingen-nl-web",
+      "activatedSourceId": "damshus-nl-web",
       "activatedRole": "venue",
-      "activatedName": "Openluchttheater Sellingen",
-      "activatedAt": "2026-10-12T06:25:15Z"
+      "activatedName": "Openluchtmuseum It Damshûs",
+      "activatedAt": "2026-10-12T09:27:32Z"
     },
     {
-      "id": "readewjirmen.frl",
-      "host": "readewjirmen.frl",
-      "url": "https://readewjirmen.frl/",
-      "score": 30,
+      "id": "defensie.nl",
+      "host": "defensie.nl",
+      "url": "https://www.defensie.nl/organisatie/luchtmacht/vliegbases-en-luchtmachtonderdelen/leeuwarden/omgeving",
+      "score": 25,
       "firstSeenAt": "2026-10-11T13:25:14Z",
       "lastSeenAt": "2026-10-12T06:10:50Z",
       "seenCount": 2,
@@ -75,52 +71,117 @@
       "policyStatus": "allowed",
       "robotsStatus": "allowed",
       "probeStatus": "supported",
-      "extractor": "ics",
-      "lastError": null,
+      "extractor": "html_agenda_dutch",
+      "lastError": "candidate page: HTTPError: HTTP Error 404: The requested content does not exist.",
       "evidence": [
         {
           "kind": "osm",
-          "sourceId": "osm:node/13612565154",
-          "fromUrl": "https://www.openstreetmap.org/node/13612565154",
-          "anchorText": "'t Swellenêst (arts_centre, Haskerdijken)",
-          "score": 30,
+          "sourceId": "osm:node/3066387660",
+          "fromUrl": "https://www.openstreetmap.org/node/3066387660",
+          "anchorText": "Traditiekamer Vliegbasis Leeuwarden (museum, Leeuwarden)",
+          "score": 25,
           "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.034209,
-          "lon": 5.848489
+          "lat": 53.2212144,
+          "lon": 5.7668529
         }
       ],
-      "priorityScore": 73,
+      "priorityScore": 68,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 52.1,
+      "distanceKm": 53.2,
       "extractorsFound": [
-        "ics"
+        "html_agenda_dutch"
       ],
       "probeDetails": {
         "robots": "loaded",
-        "ics_urls": [
-          "https://readewjirmen.frl/evenementen/?ical=1"
-        ]
+        "html_agenda": {
+          "url": "https://www.defensie.nl/activiteiten/",
+          "event_count": 4,
+          "sample_titles": [
+            "Defensie Stage Netwerkdag biedt diepgang en verbinding",
+            "Defensiejournaal 8 oktober 2026",
+            "Defensiejournaal 1 oktober 2026",
+            "Landmacht"
+          ]
+        }
       },
       "policyReview": {
         "status": "allowed",
         "reviewedAt": "2026-10-12",
         "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
       },
-      "activatedSourceId": "readewjirmen-frl-web",
+      "activatedSourceId": "defensie-nl-web",
       "activatedRole": "venue",
-      "activatedName": "'t Swellenêst",
-      "activatedAt": "2026-10-12T06:25:15Z"
+      "activatedName": "Traditiekamer Vliegbasis Leeuwarden",
+      "activatedAt": "2026-10-12T09:27:32Z"
     },
     {
-      "id": "bvo-emden.de",
-      "host": "bvo-emden.de",
-      "url": "https://www.bvo-emden.de/",
-      "score": 10,
+      "id": "denieuwekolk.nl",
+      "host": "denieuwekolk.nl",
+      "url": "https://denieuwekolk.nl/bios",
+      "score": 25,
       "firstSeenAt": "2026-10-11T13:25:14Z",
       "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 6,
+      "seenCount": 2,
+      "activationStatus": "active",
+      "policyStatus": "allowed",
+      "robotsStatus": "allowed",
+      "probeStatus": "supported",
+      "extractor": "jsonld_event",
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/1725626986",
+          "fromUrl": "https://www.openstreetmap.org/node/1725626986",
+          "anchorText": "De Nieuwe Kolk (cinema, Assen)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 52.994304,
+          "lon": 6.5586416
+        }
+      ],
+      "priorityScore": 68,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 25.0,
+      "extractorsFound": [
+        "jsonld_event"
+      ],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 3,
+          "pages": [
+            "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-nieuwjaarsconcert",
+            "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-kerstconcert",
+            "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nieuwjaarsconcert"
+          ],
+          "blocked": 0,
+          "errors": []
+        },
+        "jsonld_event_count_in_site_sample": 3
+      },
+      "policyReview": {
+        "status": "allowed",
+        "reviewedAt": "2026-10-12",
+        "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
+      },
+      "activatedSourceId": "denieuwekolk-nl-web",
+      "activatedRole": "venue",
+      "activatedName": "De Nieuwe Kolk",
+      "activatedAt": "2026-10-12T09:27:32Z"
+    },
+    {
+      "id": "despitkeet.nl",
+      "host": "despitkeet.nl",
+      "url": "https://www.despitkeet.nl/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
       "activationStatus": "active",
       "policyStatus": "allowed",
       "robotsStatus": "allowed",
@@ -130,140 +191,42 @@
       "evidence": [
         {
           "kind": "osm",
-          "sourceId": "osm:node/4803435908",
-          "fromUrl": "https://www.openstreetmap.org/node/4803435908",
-          "anchorText": "Bezirksfischereiverband für Ostfriesland e.V. (club)",
-          "score": 10,
+          "sourceId": "osm:way/942673710",
+          "fromUrl": "https://www.openstreetmap.org/way/942673710",
+          "anchorText": "Openluchtmuseum De Spitkeet (museum)",
+          "score": 25,
           "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.6050718,
-          "lon": 7.1937337
-        },
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/4803439303",
-          "fromUrl": "https://www.openstreetmap.org/node/4803439303",
-          "anchorText": "Bezirksfischereiverband für Ostfriesland e.V. (club)",
-          "score": 10,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.3628653,
-          "lon": 7.2284485
-        },
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/4803446383",
-          "fromUrl": "https://www.openstreetmap.org/node/4803446383",
-          "anchorText": "Bezirksfischereiverband für Ostfriesland e.V. (club, Emden)",
-          "score": 10,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.4642459,
-          "lon": 7.2847769
+          "lat": 53.1787687,
+          "lon": 6.1176914
         }
       ],
-      "priorityScore": 69,
+      "priorityScore": 68,
       "benchmarkGapCount": 0,
-      "evidenceSourceCount": 3,
+      "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 46.8,
+      "distanceKm": 30.2,
       "extractorsFound": [
         "wordpress_tribe",
+        "jsonld_event",
         "ics"
       ],
       "probeDetails": {
         "robots": "loaded",
+        "jsonld_event_count_on_candidate_page": 2,
         "ics_urls": [
-          "https://www.bvo-emden.de/veranstaltungen/?ical=1"
+          "https://despitkeet.nl/activiteitenkalender/?ical=1"
         ],
-        "wordpress_endpoint": "https://www.bvo-emden.de/wp-json/tribe/events/v1/events?page=1&per_page=1"
+        "wordpress_endpoint": "https://www.despitkeet.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "policyReview": {
         "status": "allowed",
         "reviewedAt": "2026-10-12",
         "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
       },
-      "activatedSourceId": "bvo-emden-de-web",
+      "activatedSourceId": "despitkeet-nl-web",
       "activatedRole": "venue",
-      "activatedName": "Bezirksfischereiverband für Ostfriesland e.V.",
-      "activatedAt": "2026-10-12T06:25:15Z"
-    },
-    {
-      "id": "pgbeilen.nl",
-      "host": "pgbeilen.nl",
-      "url": "https://www.pgbeilen.nl/locaties/kerkgebouwen/pauluskerk/",
-      "score": 10,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 6,
-      "activationStatus": "active",
-      "policyStatus": "allowed",
-      "robotsStatus": "allowed",
-      "probeStatus": "supported",
-      "extractor": "jsonld_event",
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/2848180147",
-          "fromUrl": "https://www.openstreetmap.org/node/2848180147",
-          "anchorText": "Pauluskerk (place_of_worship, Beilen)",
-          "score": 10,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 52.863668,
-          "lon": 6.5165828
-        },
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/271736048",
-          "fromUrl": "https://www.openstreetmap.org/way/271736048",
-          "anchorText": "Kerkelijk Centrum De Antenne (place_of_worship)",
-          "score": 10,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 52.8946603,
-          "lon": 6.4988497
-        },
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/280681104",
-          "fromUrl": "https://www.openstreetmap.org/way/280681104",
-          "anchorText": "PKN Gereformeerde Kerk Drijber (place_of_worship)",
-          "score": 10,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 52.781761,
-          "lon": 6.5482752
-        }
-      ],
-      "priorityScore": 69,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 3,
-      "areaStatus": "binnen",
-      "distanceKm": 36.4,
-      "extractorsFound": [
-        "jsonld_event"
-      ],
-      "probeDetails": {
-        "robots": "loaded",
-        "shallow_site_probe": {
-          "events": 3,
-          "pages": [
-            "https://www.pgbeilen.nl/agenda/concert-joke-buis/",
-            "https://www.pgbeilen.nl/agenda/jow-jeugd-op-weg-event-12-16-jaar/",
-            "https://www.pgbeilen.nl/agenda/kerstconcert-de-malletband/"
-          ],
-          "blocked": 0,
-          "errors": [
-            "https://www.pgbeilen.nl/wp-content/uploads/2014/11/festival-9-lessons.jpg: HTTPError: HTTP Error 404: Not Found"
-          ]
-        },
-        "jsonld_event_count_in_site_sample": 3
-      },
-      "policyReview": {
-        "status": "allowed",
-        "reviewedAt": "2026-10-12",
-        "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
-      },
-      "activatedSourceId": "pgbeilen-nl-web",
-      "activatedRole": "venue",
-      "activatedName": "Pauluskerk",
-      "activatedAt": "2026-10-12T06:25:15Z"
+      "activatedName": "Openluchtmuseum De Spitkeet",
+      "activatedAt": "2026-10-12T09:27:32Z"
     },
     {
       "id": "drentslandschap.nl",
@@ -492,6 +455,68 @@
       },
       "areaStatus": "binnen",
       "distanceKm": 50.0
+    },
+    {
+      "id": "noorderlicht.com",
+      "host": "noorderlicht.com",
+      "url": "http://www.noorderlicht.com/",
+      "score": 35,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 6,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/918944220",
+          "fromUrl": "https://www.openstreetmap.org/node/918944220",
+          "anchorText": "Noorderlicht (arts_centre, Groningen)",
+          "score": 30,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.2164504,
+          "lon": 6.5632163
+        },
+        {
+          "kind": "wikidata",
+          "sourceId": "wikidata:Q4288362",
+          "fromUrl": "http://www.wikidata.org/entity/Q4288362",
+          "anchorText": "Noorderlicht (festival)",
+          "score": 35,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.218888888,
+          "lon": 6.5675
+        }
+      ],
+      "priorityScore": 55,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 2,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://noorderlicht.com/zien-en-doen/noorderlicht-fotofestival-2021/theaterkerk-nes",
+            "https://noorderlicht.com/zien-en-doen/nucleus/satelliet-programma/sign",
+            "https://noorderlicht.com/zien-en-doen/nucleus/satelliet-programma/kunstruimten-noorderstation-noordwest"
+          ],
+          "blocked": 0,
+          "errors": [
+            "https://noorderlicht.com/media/1/events/20484-2-wawi-navarroza-the-weightlifter-orans-auit-at-gaua-self-portrait-with-blue-ribbon-framed.jpg?v=1726658954: ValueError: response too large: https://noorderlicht.com/media/1/events/20484-2-wawi-navarroza-the-weightlifter-orans-auit-at-gaua-self-portrait-with-blue-ribbon-framed.jpg?v=1726658954",
+            "https://noorderlicht.com/media/1/events/20389-before-it_s-gone-1.jpg?v=1726658955: ValueError: response too large: https://noorderlicht.com/media/1/events/20389-before-it_s-gone-1.jpg?v=1726658955",
+            "https://noorderlicht.com/media/1/events/20246-winter_2023_daniel-klein.jpg?v=1726658958: ValueError: response too large: https://noorderlicht.com/media/1/events/20246-winter_2023_daniel-klein.jpg?v=1726658958",
+            "https://noorderlicht.com/media/1/events/18772-screenshot-2022-05-09-at-14-01-48.png?v=1726658976: ValueError: response too large: https://noorderlicht.com/media/1/events/18772-screenshot-2022-05-09-at-14-01-48.png?v=1726658976",
+            "https://noorderlicht.com/media/1/events/968-thomas_kuijpers_screens.jpg?v=1726658982: ValueError: response too large: https://noorderlicht.com/media/1/events/968-thomas_kuijpers_screens.jpg?v=1726658982"
+          ]
+        }
+      },
+      "areaStatus": "binnen",
+      "distanceKm": 0.1
     },
     {
       "id": "bzof.nl",
@@ -1157,13 +1182,13 @@
       "distanceKm": 14.5
     },
     {
-      "id": "noorderlicht.com",
-      "host": "noorderlicht.com",
-      "url": "http://www.noorderlicht.com/",
+      "id": "freeze-festival.nl",
+      "host": "freeze-festival.nl",
+      "url": "https://www.freeze-festival.nl/",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 5,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 7,
       "activationStatus": "candidate",
       "policyStatus": "review",
       "robotsStatus": "allowed",
@@ -1172,51 +1197,85 @@
       "lastError": null,
       "evidence": [
         {
-          "kind": "osm",
-          "sourceId": "osm:node/918944220",
-          "fromUrl": "https://www.openstreetmap.org/node/918944220",
-          "anchorText": "Noorderlicht (arts_centre, Groningen)",
-          "score": 30,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2164504,
-          "lon": 6.5632163
-        },
-        {
           "kind": "wikidata",
-          "sourceId": "wikidata:Q4288362",
-          "fromUrl": "http://www.wikidata.org/entity/Q4288362",
-          "anchorText": "Noorderlicht (festival)",
+          "sourceId": "wikidata:Q61740352",
+          "fromUrl": "http://www.wikidata.org/entity/Q61740352",
+          "anchorText": "Freeze (festival)",
           "score": 35,
           "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.218888888,
-          "lon": 6.5675
+          "lat": 53.2,
+          "lon": 5.783333333
         }
       ],
       "priorityScore": 53,
       "benchmarkGapCount": 0,
-      "evidenceSourceCount": 2,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 51.8,
       "extractorsFound": [],
       "probeDetails": {
         "robots": "loaded",
         "shallow_site_probe": {
           "events": 0,
           "pages": [
-            "https://noorderlicht.com/zien-en-doen/noorderlicht-fotofestival-2021/theaterkerk-nes",
-            "https://noorderlicht.com/zien-en-doen/nucleus/satelliet-programma/sign",
-            "https://noorderlicht.com/zien-en-doen/nucleus/satelliet-programma/kunstruimten-noorderstation-noordwest"
+            "https://www.freeze-festival.nl/"
+          ],
+          "blocked": 0,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "intothegrave.nl",
+      "host": "intothegrave.nl",
+      "url": "http://intothegrave.nl/",
+      "score": 35,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 7,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "wikidata",
+          "sourceId": "wikidata:Q33093678",
+          "fromUrl": "http://www.wikidata.org/entity/Q33093678",
+          "anchorText": "Into the Grave (festival)",
+          "score": 35,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.202916666,
+          "lon": 5.790555555
+        }
+      ],
+      "priorityScore": 53,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 51.7,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://intothegrave.nl/informatie/food-programma/",
+            "https://intothegrave.nl/oprichter-paul-van-berlo-over-15-jaar-into-the-grave-het-is-gewoon-een-vet-festival-op-een-vette-plek/",
+            "https://intothegrave.nl/informatie/huisregels/"
           ],
           "blocked": 0,
           "errors": [
-            "https://noorderlicht.com/media/1/events/20484-2-wawi-navarroza-the-weightlifter-orans-auit-at-gaua-self-portrait-with-blue-ribbon-framed.jpg?v=1726658954: ValueError: response too large: https://noorderlicht.com/media/1/events/20484-2-wawi-navarroza-the-weightlifter-orans-auit-at-gaua-self-portrait-with-blue-ribbon-framed.jpg?v=1726658954",
-            "https://noorderlicht.com/media/1/events/20389-before-it_s-gone-1.jpg?v=1726658955: ValueError: response too large: https://noorderlicht.com/media/1/events/20389-before-it_s-gone-1.jpg?v=1726658955",
-            "https://noorderlicht.com/media/1/events/20246-winter_2023_daniel-klein.jpg?v=1726658958: ValueError: response too large: https://noorderlicht.com/media/1/events/20246-winter_2023_daniel-klein.jpg?v=1726658958",
-            "https://noorderlicht.com/media/1/events/18772-screenshot-2022-05-09-at-14-01-48.png?v=1726658976: ValueError: response too large: https://noorderlicht.com/media/1/events/18772-screenshot-2022-05-09-at-14-01-48.png?v=1726658976",
-            "https://noorderlicht.com/media/1/events/968-thomas_kuijpers_screens.jpg?v=1726658982: ValueError: response too large: https://noorderlicht.com/media/1/events/968-thomas_kuijpers_screens.jpg?v=1726658982"
+            "https://intothegrave.nl/wp-content/uploads/2025/06/ITG_header_event_2400x1256pix_2026.png: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2025/06/ITG_header_event_2400x1256pix_2026.png",
+            "https://intothegrave.nl/wp-content/uploads/2024/10/ITG_header_event_2400x1256pix_2025.png: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2024/10/ITG_header_event_2400x1256pix_2025.png",
+            "https://intothegrave.nl/wp-content/uploads/2026/09/M-AND-A-2-vivid-light2026.jpg: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2026/09/M-AND-A-2-vivid-light2026.jpg",
+            "https://intothegrave.nl/wp-content/uploads/2026/06/Metal-Church-Photo.jpg: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2026/06/Metal-Church-Photo.jpg",
+            "https://intothegrave.nl/wp-content/uploads/2026/06/InfoArtikel_website-1.png: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2026/06/InfoArtikel_website-1.png"
           ]
         }
-      },
-      "areaStatus": "binnen",
-      "distanceKm": 0.1
+      }
     },
     {
       "id": "forum.nl",
@@ -1603,102 +1662,6 @@
       "distanceKm": 39.0
     },
     {
-      "id": "freeze-festival.nl",
-      "host": "freeze-festival.nl",
-      "url": "https://www.freeze-festival.nl/",
-      "score": 35,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 5,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "allowed",
-      "probeStatus": "no_supported_extractor",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "wikidata",
-          "sourceId": "wikidata:Q61740352",
-          "fromUrl": "http://www.wikidata.org/entity/Q61740352",
-          "anchorText": "Freeze (festival)",
-          "score": 35,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2,
-          "lon": 5.783333333
-        }
-      ],
-      "priorityScore": 49,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 51.8,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "loaded",
-        "shallow_site_probe": {
-          "events": 0,
-          "pages": [
-            "https://www.freeze-festival.nl/"
-          ],
-          "blocked": 0,
-          "errors": []
-        }
-      }
-    },
-    {
-      "id": "intothegrave.nl",
-      "host": "intothegrave.nl",
-      "url": "http://intothegrave.nl/",
-      "score": 35,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 5,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "allowed",
-      "probeStatus": "no_supported_extractor",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "wikidata",
-          "sourceId": "wikidata:Q33093678",
-          "fromUrl": "http://www.wikidata.org/entity/Q33093678",
-          "anchorText": "Into the Grave (festival)",
-          "score": 35,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.202916666,
-          "lon": 5.790555555
-        }
-      ],
-      "priorityScore": 49,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 51.7,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "loaded",
-        "shallow_site_probe": {
-          "events": 0,
-          "pages": [
-            "https://intothegrave.nl/informatie/food-programma/",
-            "https://intothegrave.nl/oprichter-paul-van-berlo-over-15-jaar-into-the-grave-het-is-gewoon-een-vet-festival-op-een-vette-plek/",
-            "https://intothegrave.nl/informatie/huisregels/"
-          ],
-          "blocked": 0,
-          "errors": [
-            "https://intothegrave.nl/wp-content/uploads/2025/06/ITG_header_event_2400x1256pix_2026.png: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2025/06/ITG_header_event_2400x1256pix_2026.png",
-            "https://intothegrave.nl/wp-content/uploads/2024/10/ITG_header_event_2400x1256pix_2025.png: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2024/10/ITG_header_event_2400x1256pix_2025.png",
-            "https://intothegrave.nl/wp-content/uploads/2026/09/M-AND-A-2-vivid-light2026.jpg: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2026/09/M-AND-A-2-vivid-light2026.jpg",
-            "https://intothegrave.nl/wp-content/uploads/2026/06/Metal-Church-Photo.jpg: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2026/06/Metal-Church-Photo.jpg",
-            "https://intothegrave.nl/wp-content/uploads/2026/06/InfoArtikel_website-1.png: ValueError: response too large: https://intothegrave.nl/wp-content/uploads/2026/06/InfoArtikel_website-1.png"
-          ]
-        }
-      }
-    },
-    {
       "id": "ambachtentuin.nl",
       "host": "ambachtentuin.nl",
       "url": "https://ambachtentuin.nl/",
@@ -1963,6 +1926,98 @@
       },
       "areaStatus": "binnen",
       "distanceKm": 53.2
+    },
+    {
+      "id": "intothegreatwideopen.nl",
+      "host": "intothegreatwideopen.nl",
+      "url": "https://intothegreatwideopen.nl/",
+      "score": 35,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "wikidata",
+          "sourceId": "wikidata:Q2223418",
+          "fromUrl": "http://www.wikidata.org/entity/Q2223418",
+          "anchorText": "Into the Great Wide Open (festival)",
+          "score": 35,
+          "seenAt": "2026-10-11T13:25:14Z"
+        }
+      ],
+      "priorityScore": 47,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "onbekend",
+      "distanceKm": null,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://intothegreatwideopen.nl/en/programma/workshop-van-festivalbanner-naar-bekertas",
+            "https://intothegreatwideopen.nl/en/programma/theatergroep-krabben",
+            "https://intothegreatwideopen.nl/programma/workshop-van-festivalbanner-naar-bekertas"
+          ],
+          "blocked": 0,
+          "errors": []
+        }
+      }
+    },
+    {
+      "id": "psy-fi.nl",
+      "host": "psy-fi.nl",
+      "url": "https://www.psy-fi.nl/",
+      "score": 35,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "wikidata",
+          "sourceId": "wikidata:Q56305320",
+          "fromUrl": "http://www.wikidata.org/entity/Q56305320",
+          "anchorText": "Psy-Fi (festival)",
+          "score": 35,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.2,
+          "lon": 5.783333333
+        }
+      ],
+      "priorityScore": 47,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 52.2,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://psy-fi.nl/festival/",
+            "https://psy-fi.nl/line-up/2-2/",
+            "https://psy-fi.nl/product/psy-fi-t-shirt-style-1/"
+          ],
+          "blocked": 0,
+          "errors": [
+            "http://psy-fi.nl/wp-content/uploads/2025/06/3-Psy-Fi-map-artwork-RGB-Small-%EF%BF%BD-Isabelle-Horl-%EF%BF%BD-FB-POST.jpg: ValueError: response too large: http://psy-fi.nl/wp-content/uploads/2025/06/3-Psy-Fi-map-artwork-RGB-Small-%EF%BF%BD-Isabelle-Horl-%EF%BF%BD-FB-POST.jpg"
+          ]
+        }
+      }
     },
     {
       "id": "bmf.nl",
@@ -2322,98 +2377,6 @@
       },
       "areaStatus": "binnen",
       "distanceKm": 48.1
-    },
-    {
-      "id": "intothegreatwideopen.nl",
-      "host": "intothegreatwideopen.nl",
-      "url": "https://intothegreatwideopen.nl/",
-      "score": 35,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "allowed",
-      "probeStatus": "no_supported_extractor",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "wikidata",
-          "sourceId": "wikidata:Q2223418",
-          "fromUrl": "http://www.wikidata.org/entity/Q2223418",
-          "anchorText": "Into the Great Wide Open (festival)",
-          "score": 35,
-          "seenAt": "2026-10-11T13:25:14Z"
-        }
-      ],
-      "priorityScore": 45,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "onbekend",
-      "distanceKm": null,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "loaded",
-        "shallow_site_probe": {
-          "events": 0,
-          "pages": [
-            "https://intothegreatwideopen.nl/en/programma/workshop-van-festivalbanner-naar-bekertas",
-            "https://intothegreatwideopen.nl/en/programma/theatergroep-krabben",
-            "https://intothegreatwideopen.nl/programma/workshop-van-festivalbanner-naar-bekertas"
-          ],
-          "blocked": 0,
-          "errors": []
-        }
-      }
-    },
-    {
-      "id": "psy-fi.nl",
-      "host": "psy-fi.nl",
-      "url": "https://www.psy-fi.nl/",
-      "score": 35,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "allowed",
-      "probeStatus": "no_supported_extractor",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "wikidata",
-          "sourceId": "wikidata:Q56305320",
-          "fromUrl": "http://www.wikidata.org/entity/Q56305320",
-          "anchorText": "Psy-Fi (festival)",
-          "score": 35,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2,
-          "lon": 5.783333333
-        }
-      ],
-      "priorityScore": 45,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 52.2,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "loaded",
-        "shallow_site_probe": {
-          "events": 0,
-          "pages": [
-            "https://psy-fi.nl/festival/",
-            "https://psy-fi.nl/line-up/2-2/",
-            "https://psy-fi.nl/product/psy-fi-t-shirt-style-1/"
-          ],
-          "blocked": 0,
-          "errors": [
-            "http://psy-fi.nl/wp-content/uploads/2025/06/3-Psy-Fi-map-artwork-RGB-Small-%EF%BF%BD-Isabelle-Horl-%EF%BF%BD-FB-POST.jpg: ValueError: response too large: http://psy-fi.nl/wp-content/uploads/2025/06/3-Psy-Fi-map-artwork-RGB-Small-%EF%BF%BD-Isabelle-Horl-%EF%BF%BD-FB-POST.jpg"
-          ]
-        }
-      }
     },
     {
       "id": "leer.reformiert.de",
@@ -3929,52 +3892,6 @@
       "distanceKm": 15.9
     },
     {
-      "id": "deworkshopgroningen.nl",
-      "host": "deworkshopgroningen.nl",
-      "url": "https://deworkshopgroningen.nl/",
-      "score": 30,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "allowed",
-      "probeStatus": "no_supported_extractor",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/1792096470",
-          "fromUrl": "https://www.openstreetmap.org/node/1792096470",
-          "anchorText": "De Workshop Groningen (events_venue)",
-          "score": 30,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2247922,
-          "lon": 6.5363521
-        }
-      ],
-      "priorityScore": 38,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "loaded",
-        "shallow_site_probe": {
-          "events": 0,
-          "pages": [
-            "https://deworkshopgroningen.nl/event-locatie-groningen/",
-            "https://deworkshopgroningen.nl/theaterworkshop/",
-            "https://deworkshopgroningen.nl/kookworkshop-voor-mannen/"
-          ],
-          "blocked": 0,
-          "errors": []
-        }
-      },
-      "areaStatus": "binnen",
-      "distanceKm": 2.1
-    },
-    {
       "id": "emden.de",
       "host": "emden.de",
       "url": "https://www.emden.de/de/kultur/neues_theater/main.htm",
@@ -5179,58 +5096,6 @@
       }
     },
     {
-      "id": "tryater.nl",
-      "host": "tryater.nl",
-      "url": "https://tryater.nl/",
-      "score": 30,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "allowed",
-      "probeStatus": "no_supported_extractor",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/302421036",
-          "fromUrl": "https://www.openstreetmap.org/way/302421036",
-          "anchorText": "Tryater (theatre)",
-          "score": 30,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2046524,
-          "lon": 5.8062987
-        }
-      ],
-      "priorityScore": 38,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 50.6,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "loaded",
-        "shallow_site_probe": {
-          "events": 0,
-          "pages": [
-            "https://tryater.nl/onderzoek-naar-de-interactieve-inzet-van-social-media-rond-kunstactiviteiten/",
-            "https://tryater.nl/jeugdtheaterfestival-het-avontuur-2023-26-27-okt-de-eik-was-hier-6/",
-            "https://tryater.nl/educatie/primair-onderwijs/theater-hoe-werkt-t-10/"
-          ],
-          "blocked": 0,
-          "errors": [
-            "https://tryater.nl/wp-content/uploads/2022/03/LucasKemper_Tryater_Jongerentheaterdag_LR-120.jpg: ValueError: response too large: https://tryater.nl/wp-content/uploads/2022/03/LucasKemper_Tryater_Jongerentheaterdag_LR-120.jpg",
-            "https://tryater.nl/wp-content/uploads/2021/11/2020_03_28-In-de-LC_repetitie-10001-Nacht.png: ValueError: response too large: https://tryater.nl/wp-content/uploads/2021/11/2020_03_28-In-de-LC_repetitie-10001-Nacht.png",
-            "https://tryater.nl/wp-content/uploads/2021/11/2020_03_28-In-de-LC_repetitie-10001-Nacht-1.png: ValueError: response too large: https://tryater.nl/wp-content/uploads/2021/11/2020_03_28-In-de-LC_repetitie-10001-Nacht-1.png",
-            "https://tryater.nl/wp-content/uploads/2021/11/LucasKemper_Tryater_Avond_LR-69.jpg: ValueError: response too large: https://tryater.nl/wp-content/uploads/2021/11/LucasKemper_Tryater_Avond_LR-69.jpg",
-            "https://tryater.nl/wp-content/uploads/2021/11/LucasKemper_Tryater_KeuzeCriticuslogo-1.png: ValueError: response too large: https://tryater.nl/wp-content/uploads/2021/11/LucasKemper_Tryater_KeuzeCriticuslogo-1.png"
-          ]
-        }
-      }
-    },
-    {
       "id": "tsjerke.nl",
       "host": "tsjerke.nl",
       "url": "https://www.tsjerke.nl/",
@@ -5967,72 +5832,6 @@
       }
     },
     {
-      "id": "nak-nl.org",
-      "host": "nak-nl.org",
-      "url": "https://www.nak-nl.org/leeuwarden/heerenveen",
-      "score": 10,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 6,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "allowed",
-      "probeStatus": "no_supported_extractor",
-      "extractor": null,
-      "lastError": "candidate page: HTTPError: HTTP Error 404: Not Found",
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/268656075",
-          "fromUrl": "https://www.openstreetmap.org/way/268656075",
-          "anchorText": "Nieuw-Apostolische Kerk (place_of_worship)",
-          "score": 10,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 52.94588,
-          "lon": 5.9366803
-        },
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/280191507",
-          "fromUrl": "https://www.openstreetmap.org/way/280191507",
-          "anchorText": "Nieuw-Apostolische Kerk (place_of_worship)",
-          "score": 10,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.1904422,
-          "lon": 6.7757789
-        },
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/302420826",
-          "fromUrl": "https://www.openstreetmap.org/way/302420826",
-          "anchorText": "Nieuw-Apostolische Kerk (place_of_worship)",
-          "score": 10,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.1997963,
-          "lon": 5.8037656
-        }
-      ],
-      "priorityScore": 34,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 3,
-      "areaStatus": "binnen",
-      "distanceKm": 14.3,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "loaded",
-        "shallow_site_probe": {
-          "events": 0,
-          "pages": [
-            "https://www.nak-nl.org/kerkgebiednl/kalender",
-            "https://www.nak-nl.org/strategischetoekomstagenda",
-            "https://www.nak-nl.org/kerkgebiednl/actueel"
-          ],
-          "blocked": 0,
-          "errors": []
-        }
-      }
-    },
-    {
       "id": "bierumerschool.nl",
       "host": "bierumerschool.nl",
       "url": "https://www.bierumerschool.nl/index.html",
@@ -6042,8 +5841,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6062,7 +5861,19 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 26.8
+      "distanceKm": 26.8,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [],
+          "blocked": 0,
+          "errors": [
+            "https://www.bierumerschool.nl/: HTTPError: HTTP Error 301: Moved Permanently"
+          ]
+        }
+      }
     },
     {
       "id": "bios-heerenveen.com",
@@ -6074,8 +5885,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6094,103 +5905,19 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 51.7
-    },
-    {
-      "id": "blikentrommelmuseum.nl",
-      "host": "blikentrommelmuseum.nl",
-      "url": "https://blikentrommelmuseum.nl/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/3979416254",
-          "fromUrl": "https://www.openstreetmap.org/node/3979416254",
-          "anchorText": "Blik Trommel en Oudheden Museum (museum, Niezijl)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2670382,
-          "lon": 6.3420766
+      "distanceKm": 51.7,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://www.bios-heerenveen.com/"
+          ],
+          "blocked": 0,
+          "errors": []
         }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 15.8
-    },
-    {
-      "id": "bommelentompoesmuseum.nl",
-      "host": "bommelentompoesmuseum.nl",
-      "url": "https://www.bommelentompoesmuseum.nl/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/272242038",
-          "fromUrl": "https://www.openstreetmap.org/way/272242038",
-          "anchorText": "Bommel en Tom Poes museum (museum)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 52.9931529,
-          "lon": 6.5672336
-        }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 25.2
-    },
-    {
-      "id": "buddelschiff-ditzum.de",
-      "host": "buddelschiff-ditzum.de",
-      "url": "https://www.buddelschiff-ditzum.de/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/4852674539",
-          "fromUrl": "https://www.openstreetmap.org/node/4852674539",
-          "anchorText": "Buddelschiff-Museum (museum)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.3153511,
-          "lon": 7.2762436
-        }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 48.4
+      }
     },
     {
       "id": "bunkermuseum.de",
@@ -6202,8 +5929,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6222,7 +5949,27 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 45.4
+      "distanceKm": 45.4,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "http://bunkermuseum.de/category/forschung/allgemeine-berichte-zu-verschiedenen-themen/",
+            "http://bunkermuseum.de/category/forschung/angriffe-auf-emden-und-umgebung/",
+            "http://bunkermuseum.de/category/forschung/archivbestand-unserer-seite/"
+          ],
+          "blocked": 0,
+          "errors": [
+            "http://bunkermuseum.de/wp-content/uploads/2017/02/ziegelstein.jpg.jpg: ValueError: response too large: http://bunkermuseum.de/wp-content/uploads/2017/02/ziegelstein.jpg.jpg",
+            "http://bunkermuseum.de/wp-content/uploads/2022/04/3.-Sch%C3%BCler-BBS-II-Emden.jpeg: ValueError: response too large: http://bunkermuseum.de/wp-content/uploads/2022/04/3.-Sch%C3%BCler-BBS-II-Emden.jpeg",
+            "http://bunkermuseum.de/wp-content/uploads/2022/04/2.-Banner-Frieden-f%C3%BCr-ALLE.jpeg: ValueError: response too large: http://bunkermuseum.de/wp-content/uploads/2022/04/2.-Banner-Frieden-f%C3%BCr-ALLE.jpeg",
+            "http://bunkermuseum.de/wp-content/uploads/2022/07/86C3104.jpg: ValueError: response too large: http://bunkermuseum.de/wp-content/uploads/2022/07/86C3104.jpg",
+            "http://bunkermuseum.de/wp-content/uploads/2024/08/VW_Emden_black_4c_rechts.jpg: ValueError: response too large: http://bunkermuseum.de/wp-content/uploads/2024/08/VW_Emden_black_4c_rechts.jpg"
+          ]
+        }
+      }
     },
     {
       "id": "bunkermuseum.wordpress.com",
@@ -6234,8 +5981,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6254,39 +6001,21 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 39.9
-    },
-    {
-      "id": "cinemaroden.nl",
-      "host": "cinemaroden.nl",
-      "url": "https://cinemaroden.nl/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/2524773535",
-          "fromUrl": "https://www.openstreetmap.org/node/2524773535",
-          "anchorText": "Cinema de Winsinghhof (cinema, Roden)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.1354511,
-          "lon": 6.4335741
+      "distanceKm": 39.9,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://bunkermuseum.wordpress.com/wp-content/uploads/2013/06/posterexpositie-hettreintje-web.jpg",
+            "https://bunkermuseum.wordpress.com/2026/05/10/expositie-2026/",
+            "https://bunkermuseum.wordpress.com/2025/04/27/nieuwe-expositie-2025/"
+          ],
+          "blocked": 0,
+          "errors": []
         }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 12.9
+      }
     },
     {
       "id": "cinestar.de",
@@ -6298,8 +6027,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6318,7 +6047,21 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 45.1
+      "distanceKm": 45.1,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://www.cinestar.de/",
+            "https://www.cinestar.de/overlay/facebook",
+            "https://www.cinestar.de/?redirect=/deutsche-filme-so-nah-geht-kino"
+          ],
+          "blocked": 0,
+          "errors": []
+        }
+      }
     },
     {
       "id": "cubymuseumgrolloo.nl",
@@ -6330,8 +6073,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6350,39 +6093,24 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 32.3
-    },
-    {
-      "id": "damshus.nl",
-      "host": "damshus.nl",
-      "url": "https://www.damshus.nl/thus/openluchtmuseum/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/2926614008",
-          "fromUrl": "https://www.openstreetmap.org/node/2926614008",
-          "anchorText": "Openluchtmuseum It Damshûs (museum, Nij Beets)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.0696891,
-          "lon": 5.9958428
+      "distanceKm": 32.3,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://cubymuseumgrolloo.nl/expositie-cuby-foto-s-en-boekpresentatie-eelco-gelling-bij-concerto-amsterdam/",
+            "https://cubymuseumgrolloo.nl/product/cd-legacy-leeft-nav-de-expositie-2023-2024-in-het-cuby-museum-grolloo/",
+            "https://cubymuseumgrolloo.nl/nu-te-zien-de-nieuwe-expositie-harry-muskee-the-singer-and-the-songs/"
+          ],
+          "blocked": 0,
+          "errors": [
+            "https://cubymuseumgrolloo.nl/museum/wp-content/uploads/2011/04/sponsor_hofsteenge.jpg: HTTPError: HTTP Error 404: Not Found",
+            "https://cubymuseumgrolloo.nl/museum/wp-content/uploads/2023/06/image-1.png: ValueError: response too large: https://cubymuseumgrolloo.nl/museum/wp-content/uploads/2023/06/image-1.png"
+          ]
         }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 41.5
+      }
     },
     {
       "id": "datottohuus.de",
@@ -6394,8 +6122,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6414,103 +6142,21 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 45.5
-    },
-    {
-      "id": "defensie.nl",
-      "host": "defensie.nl",
-      "url": "https://www.defensie.nl/organisatie/luchtmacht/vliegbases-en-luchtmachtonderdelen/leeuwarden/omgeving",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/3066387660",
-          "fromUrl": "https://www.openstreetmap.org/node/3066387660",
-          "anchorText": "Traditiekamer Vliegbasis Leeuwarden (museum, Leeuwarden)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2212144,
-          "lon": 5.7668529
+      "distanceKm": 45.5,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://datottohuus.de/stornierung/",
+            "https://datottohuus.de/stornierung-erfolgreich/",
+            "https://datottohuus.de/stornierung-abgelehnt/"
+          ],
+          "blocked": 0,
+          "errors": []
         }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 53.2
-    },
-    {
-      "id": "dekemastate.nl",
-      "host": "dekemastate.nl",
-      "url": "https://www.dekemastate.nl/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/66928936",
-          "fromUrl": "https://www.openstreetmap.org/way/66928936",
-          "anchorText": "Dekemastate (museum, Jelsum)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2333159,
-          "lon": 5.7835867
-        }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 52.1
-    },
-    {
-      "id": "dekluiseext.nl",
-      "host": "dekluiseext.nl",
-      "url": "https://dekluiseext.nl/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/2772493246",
-          "fromUrl": "https://www.openstreetmap.org/node/2772493246",
-          "anchorText": "Dorpsmuseum De Kluis (museum, Eext)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.0181357,
-          "lon": 6.7368709
-        }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 25.1
+      }
     },
     {
       "id": "dekruidhof.nl",
@@ -6522,8 +6168,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6542,103 +6188,21 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 28.7
-    },
-    {
-      "id": "denieuwekolk.nl",
-      "host": "denieuwekolk.nl",
-      "url": "https://denieuwekolk.nl/bios",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/1725626986",
-          "fromUrl": "https://www.openstreetmap.org/node/1725626986",
-          "anchorText": "De Nieuwe Kolk (cinema, Assen)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 52.994304,
-          "lon": 6.5586416
+      "distanceKm": 28.7,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://www.dekruidhof.nl/bezoekersinfo/kinderactiviteiten/",
+            "https://www.dekruidhof.nl/agenda/voorjaarsmarkt/",
+            "https://www.dekruidhof.nl/agenda/natuurmarkt/"
+          ],
+          "blocked": 0,
+          "errors": []
         }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 25.0
-    },
-    {
-      "id": "despitkeet.nl",
-      "host": "despitkeet.nl",
-      "url": "https://www.despitkeet.nl/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:way/942673710",
-          "fromUrl": "https://www.openstreetmap.org/way/942673710",
-          "anchorText": "Openluchtmuseum De Spitkeet (museum)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.1787687,
-          "lon": 6.1176914
-        }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 30.2
-    },
-    {
-      "id": "desukerei.nl",
-      "host": "desukerei.nl",
-      "url": "https://desukerei.nl/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/2800451466",
-          "fromUrl": "https://www.openstreetmap.org/node/2800451466",
-          "anchorText": "Openluchtmuseum De Sûkerei (museum, Damwâld)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2927753,
-          "lon": 6.0117867
-        }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 37.8
+      }
     },
     {
       "id": "deutrecht.frl",
@@ -6650,8 +6214,8 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
       "lastError": null,
       "evidence": [
@@ -6670,39 +6234,21 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 51.1
-    },
-    {
-      "id": "dewachter.nl",
-      "host": "dewachter.nl",
-      "url": "https://www.dewachter.nl/",
-      "score": 25,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 2,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "osm",
-          "sourceId": "osm:node/2842139658",
-          "fromUrl": "https://www.openstreetmap.org/node/2842139658",
-          "anchorText": "Museum \"De Wachter\" (museum, Zuidlaren)",
-          "score": 25,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.0994818,
-          "lon": 6.6960404
+      "distanceKm": 51.1,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://deutrecht.frl/2021/02/12/hallo-wereld/",
+            "https://deutrecht.frl/interacties/maartje-korstanje/miltfjoerboskjes-on-tour-janne-van-gilst/",
+            "https://deutrecht.frl/interacties/maartje-korstanje/broeder-dieleman/"
+          ],
+          "blocked": 0,
+          "errors": []
         }
-      ],
-      "priorityScore": 33,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 15.9
+      }
     },
     {
       "id": "dmdebuitenplaats.nl",
@@ -6714,10 +6260,10 @@
       "seenCount": 2,
       "activationStatus": "candidate",
       "policyStatus": "review",
-      "robotsStatus": "unchecked",
-      "probeStatus": "pending",
+      "robotsStatus": "allowed",
+      "probeStatus": "no_supported_extractor",
       "extractor": null,
-      "lastError": null,
+      "lastError": "candidate page: ValueError: response too large: https://dmdebuitenplaats.nl/",
       "evidence": [
         {
           "kind": "osm",
@@ -6734,7 +6280,23 @@
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
-      "distanceKm": 9.5
+      "distanceKm": 9.5,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 0,
+          "pages": [
+            "https://dmdebuitenplaats.nl/activiteiten/jaarmarkt-eelde",
+            "https://dmdebuitenplaats.nl/activiteiten/koepeltjesfestival",
+            "https://dmdebuitenplaats.nl/activiteiten/kerstmarkt-eelde"
+          ],
+          "blocked": 0,
+          "errors": [
+            "https://dmdebuitenplaats.nl/media/1/De-Buitenplaats/Workshops-en-evenementen/OpenDag-Buitenplaats-c-Bob-de-Vries.jpg?v=1786617559%2C0.6305%2C0.5289: ValueError: response too large: https://dmdebuitenplaats.nl/media/1/De-Buitenplaats/Workshops-en-evenementen/OpenDag-Buitenplaats-c-Bob-de-Vries.jpg?v=1786617559%2C0.6305%2C0.5289"
+          ]
+        }
+      }
     },
     {
       "id": "domiestoen.nl",
@@ -46280,8 +45842,8 @@
       "url": "https://www.oerol.nl/en/",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 6,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 8,
       "activationStatus": "candidate",
       "policyStatus": "blocked",
       "robotsStatus": "allowed",
@@ -46300,7 +45862,7 @@
           "lon": 5.2495586
         }
       ],
-      "priorityScore": -149,
+      "priorityScore": -145,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "extractorsFound": [],
@@ -46328,8 +45890,8 @@
       "url": "http://www.cinesneek.nl/filmwinter",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 5,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 7,
       "activationStatus": "candidate",
       "policyStatus": "blocked",
       "robotsStatus": "unchecked",
@@ -46348,7 +45910,7 @@
           "lon": 5.66033
         }
       ],
-      "priorityScore": -151,
+      "priorityScore": -147,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "buiten",
@@ -46361,8 +45923,8 @@
       "url": "http://www.agrarischedagenfraneker.nl/",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
       "activationStatus": "candidate",
       "policyStatus": "blocked",
       "robotsStatus": "unchecked",
@@ -46381,7 +45943,7 @@
           "lon": 5.54
         }
       ],
-      "priorityScore": -155,
+      "priorityScore": -153,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "buiten",
@@ -46394,8 +45956,8 @@
       "url": "http://beachrockers.nl/",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
       "activationStatus": "candidate",
       "policyStatus": "blocked",
       "robotsStatus": "unchecked",
@@ -46414,7 +45976,7 @@
           "lon": 5.7425
         }
       ],
-      "priorityScore": -155,
+      "priorityScore": -153,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "buiten",
@@ -46427,8 +45989,8 @@
       "url": "http://www.glemmerbeach.nl/",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
       "activationStatus": "candidate",
       "policyStatus": "blocked",
       "robotsStatus": "unchecked",
@@ -46447,7 +46009,7 @@
           "lon": 5.7093
         }
       ],
-      "priorityScore": -155,
+      "priorityScore": -153,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "buiten",
@@ -46460,8 +46022,8 @@
       "url": "https://www.greidhoekfestival.nl/",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
       "activationStatus": "candidate",
       "policyStatus": "blocked",
       "robotsStatus": "unchecked",
@@ -46480,7 +46042,7 @@
           "lon": 5.5878
         }
       ],
-      "priorityScore": -155,
+      "priorityScore": -153,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "buiten",
@@ -46493,8 +46055,8 @@
       "url": "https://skotsenskeeffestival.nl/",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
       "activationStatus": "candidate",
       "policyStatus": "blocked",
       "robotsStatus": "unchecked",
@@ -46513,7 +46075,7 @@
           "lon": 5.6447
         }
       ],
-      "priorityScore": -155,
+      "priorityScore": -153,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "buiten",
@@ -46526,8 +46088,8 @@
       "url": "https://www.slachtepop.nl/",
       "score": 35,
       "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
       "activationStatus": "candidate",
       "policyStatus": "blocked",
       "robotsStatus": "unchecked",
@@ -46546,7 +46108,7 @@
           "lon": 5.5878
         }
       ],
-      "priorityScore": -155,
+      "priorityScore": -153,
       "benchmarkGapCount": 0,
       "evidenceSourceCount": 1,
       "areaStatus": "buiten",
@@ -46892,6 +46454,42 @@
       "distanceKm": 54.9
     },
     {
+      "id": "welcometothevillage.nl",
+      "host": "welcometothevillage.nl",
+      "url": "http://www.welcometothevillage.nl/",
+      "score": 35,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 7,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "wikidata",
+          "sourceId": "wikidata:Q66581862",
+          "fromUrl": "http://www.wikidata.org/entity/Q66581862",
+          "anchorText": "Welcome to The Village (festival)",
+          "score": 35,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.2,
+          "lon": 5.783333333
+        }
+      ],
+      "priorityScore": -177,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 45.8,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
       "id": "reliwiki.nl",
       "host": "reliwiki.nl",
       "url": "https://reliwiki.nl/index.php/Morra,_Tsjerkestrjitte_12_-_Johanneskerk",
@@ -47076,42 +46674,6 @@
       }
     },
     {
-      "id": "welcometothevillage.nl",
-      "host": "welcometothevillage.nl",
-      "url": "http://www.welcometothevillage.nl/",
-      "score": 35,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 5,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "blocked",
-      "probeStatus": "blocked",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "wikidata",
-          "sourceId": "wikidata:Q66581862",
-          "fromUrl": "http://www.wikidata.org/entity/Q66581862",
-          "anchorText": "Welcome to The Village (festival)",
-          "score": 35,
-          "seenAt": "2026-10-11T13:25:14Z",
-          "lat": 53.2,
-          "lon": 5.783333333
-        }
-      ],
-      "priorityScore": -181,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "binnen",
-      "distanceKm": 45.8,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "unavailable"
-      }
-    },
-    {
       "id": "robbentochtameland.nl",
       "host": "robbentochtameland.nl",
       "url": "https://robbentochtameland.nl/",
@@ -47143,6 +46705,74 @@
       "areaStatus": "buiten",
       "distanceKm": 62.3,
       "policyNote": "buiten het werkgebied (62.3 km van Groningen)"
+    },
+    {
+      "id": "promisedlandfestival.com",
+      "host": "promisedlandfestival.com",
+      "url": "http://promisedlandfestival.com/",
+      "score": 35,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "wikidata",
+          "sourceId": "wikidata:Q54865080",
+          "fromUrl": "http://www.wikidata.org/entity/Q54865080",
+          "anchorText": "Promised Land Festival (festival)",
+          "score": 35,
+          "seenAt": "2026-10-11T13:25:14Z"
+        }
+      ],
+      "priorityScore": -183,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "onbekend",
+      "distanceKm": null,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "rocknrollfraneker",
+      "host": "rocknrollfraneker",
+      "url": "http://www.rocknrollfraneker/",
+      "score": 35,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T09:09:46Z",
+      "seenCount": 4,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "wikidata",
+          "sourceId": "wikidata:Q54800949",
+          "fromUrl": "http://www.wikidata.org/entity/Q54800949",
+          "anchorText": "Rock 'n Roll Festival Franeker (festival)",
+          "score": 35,
+          "seenAt": "2026-10-11T13:25:14Z"
+        }
+      ],
+      "priorityScore": -183,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "onbekend",
+      "distanceKm": null,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
     },
     {
       "id": "o-o-k.nl",
@@ -47189,74 +46819,6 @@
       },
       "areaStatus": "binnen",
       "distanceKm": 3.1
-    },
-    {
-      "id": "promisedlandfestival.com",
-      "host": "promisedlandfestival.com",
-      "url": "http://promisedlandfestival.com/",
-      "score": 35,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "blocked",
-      "probeStatus": "blocked",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "wikidata",
-          "sourceId": "wikidata:Q54865080",
-          "fromUrl": "http://www.wikidata.org/entity/Q54865080",
-          "anchorText": "Promised Land Festival (festival)",
-          "score": 35,
-          "seenAt": "2026-10-11T13:25:14Z"
-        }
-      ],
-      "priorityScore": -185,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "onbekend",
-      "distanceKm": null,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "unavailable"
-      }
-    },
-    {
-      "id": "rocknrollfraneker",
-      "host": "rocknrollfraneker",
-      "url": "http://www.rocknrollfraneker/",
-      "score": 35,
-      "firstSeenAt": "2026-10-11T13:25:14Z",
-      "lastSeenAt": "2026-10-12T06:10:50Z",
-      "seenCount": 3,
-      "activationStatus": "candidate",
-      "policyStatus": "review",
-      "robotsStatus": "blocked",
-      "probeStatus": "blocked",
-      "extractor": null,
-      "lastError": null,
-      "evidence": [
-        {
-          "kind": "wikidata",
-          "sourceId": "wikidata:Q54800949",
-          "fromUrl": "http://www.wikidata.org/entity/Q54800949",
-          "anchorText": "Rock 'n Roll Festival Franeker (festival)",
-          "score": 35,
-          "seenAt": "2026-10-11T13:25:14Z"
-        }
-      ],
-      "priorityScore": -185,
-      "benchmarkGapCount": 0,
-      "evidenceSourceCount": 1,
-      "areaStatus": "onbekend",
-      "distanceKm": null,
-      "extractorsFound": [],
-      "probeDetails": {
-        "robots": "unavailable"
-      }
     },
     {
       "id": "emden.reformiert.de",
@@ -47805,6 +47367,42 @@
       },
       "areaStatus": "binnen",
       "distanceKm": 29.7
+    },
+    {
+      "id": "deworkshopgroningen.nl",
+      "host": "deworkshopgroningen.nl",
+      "url": "https://deworkshopgroningen.nl/",
+      "score": 30,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/1792096470",
+          "fromUrl": "https://www.openstreetmap.org/node/1792096470",
+          "anchorText": "De Workshop Groningen (events_venue)",
+          "score": 30,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.2247922,
+          "lon": 6.5363521
+        }
+      ],
+      "priorityScore": -192,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      },
+      "areaStatus": "binnen",
+      "distanceKm": 2.1
     },
     {
       "id": "dnk.nl",
@@ -48815,6 +48413,42 @@
       }
     },
     {
+      "id": "tryater.nl",
+      "host": "tryater.nl",
+      "url": "https://tryater.nl/",
+      "score": 30,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/302421036",
+          "fromUrl": "https://www.openstreetmap.org/way/302421036",
+          "anchorText": "Tryater (theatre)",
+          "score": 30,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.2046524,
+          "lon": 5.8062987
+        }
+      ],
+      "priorityScore": -192,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 50.6,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
       "id": "viadukt.nl",
       "host": "viadukt.nl",
       "url": "https://www.viadukt.nl/",
@@ -49025,6 +48659,62 @@
       }
     },
     {
+      "id": "nak-nl.org",
+      "host": "nak-nl.org",
+      "url": "https://www.nak-nl.org/leeuwarden/heerenveen",
+      "score": 10,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 6,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/268656075",
+          "fromUrl": "https://www.openstreetmap.org/way/268656075",
+          "anchorText": "Nieuw-Apostolische Kerk (place_of_worship)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 52.94588,
+          "lon": 5.9366803
+        },
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/280191507",
+          "fromUrl": "https://www.openstreetmap.org/way/280191507",
+          "anchorText": "Nieuw-Apostolische Kerk (place_of_worship)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.1904422,
+          "lon": 6.7757789
+        },
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/302420826",
+          "fromUrl": "https://www.openstreetmap.org/way/302420826",
+          "anchorText": "Nieuw-Apostolische Kerk (place_of_worship)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.1997963,
+          "lon": 5.8037656
+        }
+      ],
+      "priorityScore": -196,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 3,
+      "areaStatus": "binnen",
+      "distanceKm": 14.3,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
       "id": "aerdenplaats.nl",
       "host": "aerdenplaats.nl",
       "url": "https://www.aerdenplaats.nl/",
@@ -49091,6 +48781,294 @@
       "evidenceSourceCount": 1,
       "areaStatus": "binnen",
       "distanceKm": 33.8,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "blikentrommelmuseum.nl",
+      "host": "blikentrommelmuseum.nl",
+      "url": "https://blikentrommelmuseum.nl/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/3979416254",
+          "fromUrl": "https://www.openstreetmap.org/node/3979416254",
+          "anchorText": "Blik Trommel en Oudheden Museum (museum, Niezijl)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.2670382,
+          "lon": 6.3420766
+        }
+      ],
+      "priorityScore": -197,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 15.8,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "bommelentompoesmuseum.nl",
+      "host": "bommelentompoesmuseum.nl",
+      "url": "https://www.bommelentompoesmuseum.nl/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/272242038",
+          "fromUrl": "https://www.openstreetmap.org/way/272242038",
+          "anchorText": "Bommel en Tom Poes museum (museum)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 52.9931529,
+          "lon": 6.5672336
+        }
+      ],
+      "priorityScore": -197,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 25.2,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "buddelschiff-ditzum.de",
+      "host": "buddelschiff-ditzum.de",
+      "url": "https://www.buddelschiff-ditzum.de/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/4852674539",
+          "fromUrl": "https://www.openstreetmap.org/node/4852674539",
+          "anchorText": "Buddelschiff-Museum (museum)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.3153511,
+          "lon": 7.2762436
+        }
+      ],
+      "priorityScore": -197,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 48.4,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "cinemaroden.nl",
+      "host": "cinemaroden.nl",
+      "url": "https://cinemaroden.nl/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/2524773535",
+          "fromUrl": "https://www.openstreetmap.org/node/2524773535",
+          "anchorText": "Cinema de Winsinghhof (cinema, Roden)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.1354511,
+          "lon": 6.4335741
+        }
+      ],
+      "priorityScore": -197,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 12.9,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "dekemastate.nl",
+      "host": "dekemastate.nl",
+      "url": "https://www.dekemastate.nl/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/66928936",
+          "fromUrl": "https://www.openstreetmap.org/way/66928936",
+          "anchorText": "Dekemastate (museum, Jelsum)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.2333159,
+          "lon": 5.7835867
+        }
+      ],
+      "priorityScore": -197,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 52.1,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "dekluiseext.nl",
+      "host": "dekluiseext.nl",
+      "url": "https://dekluiseext.nl/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/2772493246",
+          "fromUrl": "https://www.openstreetmap.org/node/2772493246",
+          "anchorText": "Dorpsmuseum De Kluis (museum, Eext)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.0181357,
+          "lon": 6.7368709
+        }
+      ],
+      "priorityScore": -197,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 25.1,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "desukerei.nl",
+      "host": "desukerei.nl",
+      "url": "https://desukerei.nl/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/2800451466",
+          "fromUrl": "https://www.openstreetmap.org/node/2800451466",
+          "anchorText": "Openluchtmuseum De Sûkerei (museum, Damwâld)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.2927753,
+          "lon": 6.0117867
+        }
+      ],
+      "priorityScore": -197,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 37.8,
+      "extractorsFound": [],
+      "probeDetails": {
+        "robots": "unavailable"
+      }
+    },
+    {
+      "id": "dewachter.nl",
+      "host": "dewachter.nl",
+      "url": "https://www.dewachter.nl/",
+      "score": 25,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "candidate",
+      "policyStatus": "review",
+      "robotsStatus": "blocked",
+      "probeStatus": "blocked",
+      "extractor": null,
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/2842139658",
+          "fromUrl": "https://www.openstreetmap.org/node/2842139658",
+          "anchorText": "Museum \"De Wachter\" (museum, Zuidlaren)",
+          "score": 25,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.0994818,
+          "lon": 6.6960404
+        }
+      ],
+      "priorityScore": -197,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 15.9,
       "extractorsFound": [],
       "probeDetails": {
         "robots": "unavailable"
@@ -49293,6 +49271,118 @@
       "activatedAt": "2026-10-11T20:27:13Z",
       "areaStatus": "binnen",
       "distanceKm": 40.3
+    },
+    {
+      "id": "openluchttheatersellingen.nl",
+      "host": "openluchttheatersellingen.nl",
+      "url": "https://www.openluchttheatersellingen.nl/",
+      "score": 30,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "active",
+      "policyStatus": "allowed",
+      "robotsStatus": "allowed",
+      "probeStatus": "supported",
+      "extractor": "jsonld_event",
+      "lastError": "candidate page: TimeoutError: The read operation timed out",
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/103165959",
+          "fromUrl": "https://www.openstreetmap.org/way/103165959",
+          "anchorText": "Openluchttheater Sellingen (theatre)",
+          "score": 30,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 52.9472175,
+          "lon": 7.1337508
+        }
+      ],
+      "priorityScore": -427,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 48.5,
+      "extractorsFound": [
+        "jsonld_event"
+      ],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 1,
+          "pages": [
+            "https://openluchttheatersellingen.nl/voorstelling/categorie/muziek/",
+            "https://openluchttheatersellingen.nl/voorstelling/categorie/theater/",
+            "https://openluchttheatersellingen.nl/voorstelling/little-cash/"
+          ],
+          "blocked": 0,
+          "errors": [
+            "https://openluchttheatersellingen.nl/wp-content/uploads/2026/08/OLT-2026.png: ValueError: response too large: https://openluchttheatersellingen.nl/wp-content/uploads/2026/08/OLT-2026.png",
+            "https://openluchttheatersellingen.nl/wp-content/uploads/2026/04/IMG_1955.png: ValueError: response too large: https://openluchttheatersellingen.nl/wp-content/uploads/2026/04/IMG_1955.png",
+            "https://openluchttheatersellingen.nl/wp-content/uploads/2026/03/Bert-en-Andre-zijkant.jpg: ValueError: response too large: https://openluchttheatersellingen.nl/wp-content/uploads/2026/03/Bert-en-Andre-zijkant.jpg"
+          ]
+        },
+        "jsonld_event_count_in_site_sample": 1
+      },
+      "policyReview": {
+        "status": "allowed",
+        "reviewedAt": "2026-10-12",
+        "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
+      },
+      "activatedSourceId": "openluchttheatersellingen-nl-web",
+      "activatedRole": "venue",
+      "activatedName": "Openluchttheater Sellingen",
+      "activatedAt": "2026-10-12T06:25:15Z"
+    },
+    {
+      "id": "readewjirmen.frl",
+      "host": "readewjirmen.frl",
+      "url": "https://readewjirmen.frl/",
+      "score": 30,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 2,
+      "activationStatus": "active",
+      "policyStatus": "allowed",
+      "robotsStatus": "allowed",
+      "probeStatus": "supported",
+      "extractor": "ics",
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/13612565154",
+          "fromUrl": "https://www.openstreetmap.org/node/13612565154",
+          "anchorText": "'t Swellenêst (arts_centre, Haskerdijken)",
+          "score": 30,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.034209,
+          "lon": 5.848489
+        }
+      ],
+      "priorityScore": -427,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 1,
+      "areaStatus": "binnen",
+      "distanceKm": 52.1,
+      "extractorsFound": [
+        "ics"
+      ],
+      "probeDetails": {
+        "robots": "loaded",
+        "ics_urls": [
+          "https://readewjirmen.frl/evenementen/?ical=1"
+        ]
+      },
+      "policyReview": {
+        "status": "allowed",
+        "reviewedAt": "2026-10-12",
+        "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
+      },
+      "activatedSourceId": "readewjirmen-frl-web",
+      "activatedRole": "venue",
+      "activatedName": "'t Swellenêst",
+      "activatedAt": "2026-10-12T06:25:15Z"
     },
     {
       "id": "gevangenismuseum.nl",
@@ -49846,6 +49936,158 @@
       "activatedAt": "2026-10-11T20:27:13Z",
       "areaStatus": "binnen",
       "distanceKm": 51.7
+    },
+    {
+      "id": "bvo-emden.de",
+      "host": "bvo-emden.de",
+      "url": "https://www.bvo-emden.de/",
+      "score": 10,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 6,
+      "activationStatus": "active",
+      "policyStatus": "allowed",
+      "robotsStatus": "allowed",
+      "probeStatus": "supported",
+      "extractor": "wordpress_tribe",
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/4803435908",
+          "fromUrl": "https://www.openstreetmap.org/node/4803435908",
+          "anchorText": "Bezirksfischereiverband für Ostfriesland e.V. (club)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.6050718,
+          "lon": 7.1937337
+        },
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/4803439303",
+          "fromUrl": "https://www.openstreetmap.org/node/4803439303",
+          "anchorText": "Bezirksfischereiverband für Ostfriesland e.V. (club)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.3628653,
+          "lon": 7.2284485
+        },
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/4803446383",
+          "fromUrl": "https://www.openstreetmap.org/node/4803446383",
+          "anchorText": "Bezirksfischereiverband für Ostfriesland e.V. (club, Emden)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 53.4642459,
+          "lon": 7.2847769
+        }
+      ],
+      "priorityScore": -431,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 3,
+      "areaStatus": "binnen",
+      "distanceKm": 46.8,
+      "extractorsFound": [
+        "wordpress_tribe",
+        "ics"
+      ],
+      "probeDetails": {
+        "robots": "loaded",
+        "ics_urls": [
+          "https://www.bvo-emden.de/veranstaltungen/?ical=1"
+        ],
+        "wordpress_endpoint": "https://www.bvo-emden.de/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "policyReview": {
+        "status": "allowed",
+        "reviewedAt": "2026-10-12",
+        "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
+      },
+      "activatedSourceId": "bvo-emden-de-web",
+      "activatedRole": "venue",
+      "activatedName": "Bezirksfischereiverband für Ostfriesland e.V.",
+      "activatedAt": "2026-10-12T06:25:15Z"
+    },
+    {
+      "id": "pgbeilen.nl",
+      "host": "pgbeilen.nl",
+      "url": "https://www.pgbeilen.nl/locaties/kerkgebouwen/pauluskerk/",
+      "score": 10,
+      "firstSeenAt": "2026-10-11T13:25:14Z",
+      "lastSeenAt": "2026-10-12T06:10:50Z",
+      "seenCount": 6,
+      "activationStatus": "active",
+      "policyStatus": "allowed",
+      "robotsStatus": "allowed",
+      "probeStatus": "supported",
+      "extractor": "jsonld_event",
+      "lastError": null,
+      "evidence": [
+        {
+          "kind": "osm",
+          "sourceId": "osm:node/2848180147",
+          "fromUrl": "https://www.openstreetmap.org/node/2848180147",
+          "anchorText": "Pauluskerk (place_of_worship, Beilen)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 52.863668,
+          "lon": 6.5165828
+        },
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/271736048",
+          "fromUrl": "https://www.openstreetmap.org/way/271736048",
+          "anchorText": "Kerkelijk Centrum De Antenne (place_of_worship)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 52.8946603,
+          "lon": 6.4988497
+        },
+        {
+          "kind": "osm",
+          "sourceId": "osm:way/280681104",
+          "fromUrl": "https://www.openstreetmap.org/way/280681104",
+          "anchorText": "PKN Gereformeerde Kerk Drijber (place_of_worship)",
+          "score": 10,
+          "seenAt": "2026-10-11T13:25:14Z",
+          "lat": 52.781761,
+          "lon": 6.5482752
+        }
+      ],
+      "priorityScore": -431,
+      "benchmarkGapCount": 0,
+      "evidenceSourceCount": 3,
+      "areaStatus": "binnen",
+      "distanceKm": 36.4,
+      "extractorsFound": [
+        "jsonld_event"
+      ],
+      "probeDetails": {
+        "robots": "loaded",
+        "shallow_site_probe": {
+          "events": 3,
+          "pages": [
+            "https://www.pgbeilen.nl/agenda/concert-joke-buis/",
+            "https://www.pgbeilen.nl/agenda/jow-jeugd-op-weg-event-12-16-jaar/",
+            "https://www.pgbeilen.nl/agenda/kerstconcert-de-malletband/"
+          ],
+          "blocked": 0,
+          "errors": [
+            "https://www.pgbeilen.nl/wp-content/uploads/2014/11/festival-9-lessons.jpg: HTTPError: HTTP Error 404: Not Found"
+          ]
+        },
+        "jsonld_event_count_in_site_sample": 3
+      },
+      "policyReview": {
+        "status": "allowed",
+        "reviewedAt": "2026-10-12",
+        "note": "Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's."
+      },
+      "activatedSourceId": "pgbeilen-nl-web",
+      "activatedRole": "venue",
+      "activatedName": "Pauluskerk",
+      "activatedAt": "2026-10-12T06:25:15Z"
     }
   ]
 }

@@ -129,20 +129,30 @@
     "seenAt": "2026-10-04"
    }
   ],
-  "kind": "overig",
-  "kindLabel": "Overig",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [
    "gratis",
    "kinderen",
    "meerdaags"
   ],
   "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, locatie of hint",
-   "confidence": 0.2
+   "method": "trefwoord",
+   "reason": "trefwoord 'kindermaand'",
+   "confidence": 0.8
   },
-  "hash": "01cf877ccbca",
-  "image": null
+  "hash": "1fbfdf9a5a81",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Plattegrond_van_de_stad_Groningen_in_1575.jpg/1280px-Plattegrond_van_de_stad_Groningen_in_1575.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Braun & Hogenberg · Public domain · Wikimedia Commons",
+   "author": "Braun & Hogenberg",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plattegrond_van_de_stad_Groningen_in_1575.jpg"
+  }
  },
  {
   "id": "baistemaart-winsum-2026",
@@ -247,6 +257,55 @@
   }
  },
  {
+  "id": "evt_5f4de8929c3f8b",
+  "slug": "boeventocht-bij-de-spitkeet-harkema-2026-10-13",
+  "title": "Boeventocht bij de Spitkeet",
+  "occurrences": [
+   {
+    "date": "2026-10-13",
+    "endDate": "2026-10-16",
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Openluchtmuseum De Spitkeet",
+   "city": "Harkema",
+   "lat": 53.18564539,
+   "lon": 6.13004639
+  },
+  "price": "€8,50",
+  "url": "https://despitkeet.nl/activiteit/herfstvakantie-activiteiten/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://despitkeet.nl/activiteit/herfstvakantie-activiteiten/",
+    "host": "despitkeet.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [
+   "meerdaags"
+  ],
+  "classification": {
+   "method": "organisator",
+   "reason": "trefwoord 'museum' op de pagina van de organisator",
+   "confidence": 0.65
+  },
+  "hash": "a30d289622a1",
+  "image": {
+   "url": "https://despitkeet.nl/wp-content/uploads/2026/08/Facebookpost-Boeventocht-1-300x300.webp",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Boeventocht bij de Spitkeet",
+   "credit": "Foto: Openluchtmuseum De Spitkeet",
+   "sourceUrl": "https://despitkeet.nl/activiteit/herfstvakantie-activiteiten/"
+  }
+ },
+ {
   "id": "confirmed-mega-indoor-springkussen-2026",
   "slug": "mega-indoor-springkussen-festival-groningen-2026-10-13",
   "title": "Mega Indoor Springkussen Festival",
@@ -275,8 +334,8 @@
     "seenAt": "2026-10-03"
    }
   ],
-  "kind": "festival",
-  "kindLabel": "Festival",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [
    "gratis",
    "kinderen",
@@ -284,10 +343,10 @@
   ],
   "classification": {
    "method": "trefwoord",
-   "reason": "festival, meerdaags of met meerdere podia",
-   "confidence": 0.85
+   "reason": "trefwoord 'springkussen'",
+   "confidence": 0.8
   },
-  "hash": "af15430c19dd",
+  "hash": "08b7c0ee2e59",
   "image": {
    "url": "https://static.martiniplaza.nl/cache/mega-indoor-springkussen-festival.10760/mega-indoor-springkussen-festival-s1920x1080.jpg",
    "type": "organisator",
@@ -329,14 +388,15 @@
   "kind": "natuur",
   "kindLabel": "Natuur en buiten",
   "tags": [
-   "buiten"
+   "buiten",
+   "kinderen"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "correctie",
+   "reason": "Op ontdekkingstocht door het Ketliker Skar: excursie van It Fryske Gea in een natuurgebied, voor kinderen vanaf 6 jaar.",
+   "confidence": 1.0
   },
-  "hash": "82d91363fb40",
+  "hash": "693c04a2f4fd",
   "image": {
    "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/09/HeaderKetlikerSkar-scaled.jpg",
    "type": "organisator",
@@ -381,9 +441,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "fc2f7ad2818b",
   "image": {
@@ -478,14 +538,15 @@
   "kindLabel": "Natuur en buiten",
   "tags": [
    "buiten",
-   "gratis"
+   "gratis",
+   "kinderen"
   ],
   "classification": {
    "method": "trefwoord",
    "reason": "trefwoord 'excursie'",
    "confidence": 0.8
   },
-  "hash": "b306145fbbfc",
+  "hash": "598c798ba75b",
   "image": {
    "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/07/kruisspin9.jpg",
    "type": "organisator",
@@ -493,6 +554,100 @@
    "alt": "Foto bij Spinnenexcursie (8+)",
    "credit": "Foto: Delleboersterheide",
    "sourceUrl": "https://www.itfryskegea.nl/activiteiten/spinnenexcursie-8-2/"
+  }
+ },
+ {
+  "id": "evt_5ef234feec4e91",
+  "slug": "agenda-it-tafels-leeuwarden-2026-10-15",
+  "title": "Agenda IT-tafels",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Traditiekamer Vliegbasis Leeuwarden",
+   "city": "Leeuwarden",
+   "lat": 53.2212144,
+   "lon": 5.7668529
+  },
+  "price": "Zie organisator",
+  "url": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt",
+    "host": "defensie.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website defensie.nl",
+   "confidence": 0.6
+  },
+  "hash": "6ee10d215b25",
+  "image": {
+   "url": "https://www.defensie.nl/assets/legerenbootz_G90US.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Agenda IT-tafels",
+   "credit": "Foto: Traditiekamer Vliegbasis Leeuwarden",
+   "sourceUrl": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt"
+  }
+ },
+ {
+  "id": "evt_d6e8ea684625cd",
+  "slug": "datum-en-tijd-leeuwarden-2026-10-15",
+  "title": "Datum en tijd",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "17:00"
+   }
+  ],
+  "venue": {
+   "name": "Traditiekamer Vliegbasis Leeuwarden",
+   "city": "Leeuwarden",
+   "lat": 53.2212144,
+   "lon": 5.7668529
+  },
+  "price": "Zie organisator",
+  "url": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt",
+    "host": "defensie.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website defensie.nl",
+   "confidence": 0.6
+  },
+  "hash": "ec9b2ffd919d",
+  "image": {
+   "url": "https://www.defensie.nl/assets/legerenbootz_G90US.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Datum en tijd",
+   "credit": "Foto: Traditiekamer Vliegbasis Leeuwarden",
+   "sourceUrl": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt"
   }
  },
  {
@@ -530,9 +685,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "7e11db436ba2",
   "image": {
@@ -573,17 +728,17 @@
     "seenAt": "2026-10-12"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [
    "kinderen"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website gevangenismuseum.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'kinderactiviteit'",
+   "confidence": 0.8
   },
-  "hash": "e7147c45ed47",
+  "hash": "8a980db7a03c",
   "image": {
    "url": "https://gevangenismuseum.nl/wp-content/uploads/2026/09/Never-say-cheese-Gevangenismuseum-politie-en-boef-LR-31.jpg",
    "type": "organisator",
@@ -625,14 +780,15 @@
   "kind": "natuur",
   "kindLabel": "Natuur en buiten",
   "tags": [
-   "buiten"
+   "buiten",
+   "kinderen"
   ],
   "classification": {
    "method": "trefwoord",
    "reason": "trefwoord 'natuur'",
    "confidence": 0.8
   },
-  "hash": "1ca9dddf9118",
+  "hash": "c8a5e8c88142",
   "image": {
    "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/uilenballen-pluizen-1-2.jpg",
    "type": "organisator",
@@ -640,6 +796,100 @@
    "alt": "Foto bij Uilenballen pluizen voor jonge natuuronderzoekers (6+)",
    "credit": "Foto: Delleboersterheide",
    "sourceUrl": "https://www.itfryskegea.nl/activiteiten/uilenballen-pluizen-voor-jonge-natuuronderzoekers-6-4/"
+  }
+ },
+ {
+  "id": "evt_2809f0c6f7010d",
+  "slug": "the-cosmic-carnival-a-tribute-to-fleetwood-mac-50-years-of-rumours-assen-2026-10",
+  "title": "The Cosmic Carnival, a Tribute to Fleetwood Mac - 50 Years of Rumours",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": "18:00",
+    "endTime": "20:15"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 19.75",
+  "url": "https://denieuwekolk.nl/theater/agenda/the-cosmic-carnival-a-tribute-to-fleetwood-mac",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/the-cosmic-carnival-a-tribute-to-fleetwood-mac",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "32508c4f07eb",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019b6927-600f-7ea0-8b1b-7544b6cc06a2/promofoto-the-cosmic-carnival-50-years-of-rumours-credits-william-rutten?crop=3840%2C2304%2C0%2C128&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij The Cosmic Carnival, a Tribute to Fleetwood Mac - 50 Years of Rumours",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/the-cosmic-carnival-a-tribute-to-fleetwood-mac"
+  }
+ },
+ {
+  "id": "evt_8b97a34cef77d3",
+  "slug": "dianne-liesker-de-hitbingo-band-assen-2026-10-15",
+  "title": "Dianne Liesker - De Hitbingo Band",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": "18:30",
+    "endTime": "20:20"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 29.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/dianne-liesker",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/dianne-liesker",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'band'",
+   "confidence": 0.8
+  },
+  "hash": "b105ac940507",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019d96be-b2ce-7779-8a81-a2bae9718dc6/de-hitbingo-band-floris-liesker-4?crop=3553%2C2132%2C2%2C140&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Dianne Liesker - De Hitbingo Band",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/dianne-liesker"
   }
  },
  {
@@ -723,14 +973,15 @@
   "kind": "natuur",
   "kindLabel": "Natuur en buiten",
   "tags": [
-   "buiten"
+   "buiten",
+   "kinderen"
   ],
   "classification": {
    "method": "trefwoord",
    "reason": "trefwoord 'natuur'",
    "confidence": 0.8
   },
-  "hash": "f540fe12b2fd",
+  "hash": "fe1001d83dd5",
   "image": {
    "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/uilenballen-pluizen-1-1.jpg",
    "type": "organisator",
@@ -738,6 +989,53 @@
    "alt": "Foto bij Uilenballen pluizen voor jonge natuuronderzoekers in Katlijk (6+)",
    "credit": "Foto: Delleboersterheide",
    "sourceUrl": "https://www.itfryskegea.nl/activiteiten/uilenballen-pluizen-voor-jonge-natuuronderzoekers-in-katlijk-6-3/"
+  }
+ },
+ {
+  "id": "evt_2c108121b1c0a0",
+  "slug": "grollo-a-tribute-to-cuby-blizzards-premiere-assen-2026-10-16",
+  "title": "GROLLO - A Tribute To Cuby + Blizzards (première)",
+  "occurrences": [
+   {
+    "date": "2026-10-16",
+    "endDate": null,
+    "startTime": "18:00",
+    "endTime": "20:10"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 34.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/grollo",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/grollo",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "66bc806820f2",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019df774-1b6c-7a5e-b8be-856fee2468ce/promobeeld-grollo-liggend-hr-fotocredits-maaike-ronhaar?crop=1800%2C1080%2C60%2C0&scale=1200&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij GROLLO - A Tribute To Cuby + Blizzards (première)",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/grollo"
   }
  },
  {
@@ -832,7 +1130,17 @@
    "confidence": 0.8
   },
   "hash": "2ab850f0fd74",
-  "image": null
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Forum_in_Groningen.jpg/1280px-Forum_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Ferdi Tuinman · CC BY 4.0 · Wikimedia Commons",
+   "author": "Ferdi Tuinman",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forum_in_Groningen.jpg"
+  }
  },
  {
   "id": "evt_a234a282702d36",
@@ -870,9 +1178,9 @@
    "gratis"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'zwerftocht'",
+   "confidence": 0.8
   },
   "hash": "69c5deb3d7d4",
   "image": {
@@ -928,7 +1236,17 @@
    "confidence": 0.8
   },
   "hash": "5005a1fe8208",
-  "image": null
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Aletta_Jacobs_in_Groningen.jpg/1280px-Aletta_Jacobs_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Ferdi Tuinman · CC BY 4.0 · Wikimedia Commons",
+   "author": "Ferdi Tuinman",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aletta_Jacobs_in_Groningen.jpg"
+  }
  },
  {
   "id": "evt_292961ed108eac",
@@ -965,9 +1283,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "39d9798fa291",
   "image": {
@@ -1011,14 +1329,15 @@
   "kind": "natuur",
   "kindLabel": "Natuur en buiten",
   "tags": [
-   "buiten"
+   "buiten",
+   "kinderen"
   ],
   "classification": {
    "method": "trefwoord",
    "reason": "trefwoord 'wandel'",
    "confidence": 0.8
   },
-  "hash": "6af4c60e6b90",
+  "hash": "e1d81afa5767",
   "image": {
    "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/06/IFG-Noarderleechg-sept2019-21-scaled.jpg",
    "type": "organisator",
@@ -1076,6 +1395,100 @@
   }
  },
  {
+  "id": "evt_9ce789d9190842",
+  "slug": "inleiding-thijs-van-de-meeberg-baby-reindeer-assen-2026-10-17",
+  "title": "Inleiding Thijs van de Meeberg - Baby Reindeer",
+  "occurrences": [
+   {
+    "date": "2026-10-17",
+    "endDate": null,
+    "startTime": "17:30",
+    "endTime": "18:00"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 5.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/inleiding-thijs-van-de-meeberg",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/inleiding-thijs-van-de-meeberg",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "59ddc93e1a3b",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019bdc12-810a-7438-8fdd-8fdd0bd1539d/inleiding-675x1000-02?crop=2592%2C1555%2C0%2C1142&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Inleiding Thijs van de Meeberg - Baby Reindeer",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/inleiding-thijs-van-de-meeberg"
+  }
+ },
+ {
+  "id": "evt_cf43b3e295e341",
+  "slug": "a-tribute-to-john-denver-rocky-mountain-high-assen-2026-10-17",
+  "title": "A Tribute to John Denver - Rocky Mountain High",
+  "occurrences": [
+   {
+    "date": "2026-10-17",
+    "endDate": null,
+    "startTime": "18:00",
+    "endTime": "20:00"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 17.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/a-tribute-to-john-denver",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/a-tribute-to-john-denver",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'rock'",
+   "confidence": 0.8
+  },
+  "hash": "4c30607bf330",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e0719-17b6-7b4e-aace-bdd1f16e9f47/a-tribute-to-john-denver-rocky-mountain-high-laura-knipsael-2?crop=2370%2C1422%2C1%2C1322&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij A Tribute to John Denver - Rocky Mountain High",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/a-tribute-to-john-denver"
+  }
+ },
+ {
   "id": "evt_29c407b512611c",
   "slug": "verhalenavond-kinderactiviteit-veenhuizen-2026-10-17",
   "title": "Verhalenavond | Kinderactiviteit",
@@ -1104,17 +1517,17 @@
     "seenAt": "2026-10-12"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [
    "kinderen"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website gevangenismuseum.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'kinderactiviteit'",
+   "confidence": 0.8
   },
-  "hash": "a75a5e3bb483",
+  "hash": "836e2912e73b",
   "image": {
    "url": "https://gevangenismuseum.nl/wp-content/uploads/2024/08/Never-say-cheese-voorleesavond-LR-41.jpg",
    "type": "organisator",
@@ -1169,15 +1582,15 @@
   },
   "hash": "75fa0a8fa1ba",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hoofdentree_MartiniPlaza_december_2010.jpg/1280px-Hoofdentree_MartiniPlaza_december_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Donar_-_Landstede_Basketbal_%282016%29.jpg/1280px-Donar_-_Landstede_Basketbal_%282016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plek",
    "alt": "Martiniplaza",
-   "credit": "Foto: Pepijnkoning · CC BY 3.0 · Wikimedia Commons",
-   "author": "Pepijnkoning",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoofdentree_MartiniPlaza_december_2010.jpg"
+   "credit": "Foto: Groninger3 · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Groninger3",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donar_-_Landstede_Basketbal_(2016).jpg"
   }
  },
  {
@@ -1263,15 +1676,13 @@
   ],
   "kind": "theater",
   "kindLabel": "Theater en comedy",
-  "tags": [
-   "festival"
-  ],
+  "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "één avond van een theaterfestival",
+   "reason": "theater- of cabaretfestival: voorstellingen, geen festivalterrein",
    "confidence": 0.8
   },
-  "hash": "5f6c38aae6d0",
+  "hash": "8b22c07ac6d4",
   "image": {
    "url": "https://www.spotgroningen.nl/wp-content/uploads/2026/04/Amsterdams-Studenten-Cabaret-Festival-Finalistentournee-onbekend-2-300-dpi-RGB-1280x853.jpg",
    "type": "organisator",
@@ -1279,6 +1690,104 @@
    "alt": "Foto bij Amsterdams Studenten Cabaret Festival — Finalistentournee",
    "credit": "Foto: SPOT Groningen",
    "sourceUrl": "https://www.spotgroningen.nl/programma/amsterdams-studenten-cabaret-festival/"
+  }
+ },
+ {
+  "id": "evt_b9eed4b8c68bef",
+  "slug": "eendenkorf-vlechten-harkema-2026-10-22",
+  "title": "Eendenkorf vlechten",
+  "occurrences": [
+   {
+    "date": "2026-10-22",
+    "endDate": "2026-11-19",
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Openluchtmuseum De Spitkeet",
+   "city": "Harkema",
+   "lat": 53.18564539,
+   "lon": 6.13004639
+  },
+  "price": "€60",
+  "url": "https://despitkeet.nl/activiteit/eendenkorf-vlechten-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://despitkeet.nl/activiteit/eendenkorf-vlechten-2/",
+    "host": "despitkeet.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "lezing",
+  "kindLabel": "Lezing en workshop",
+  "tags": [
+   "meerdaags"
+  ],
+  "classification": {
+   "method": "organisator",
+   "reason": "trefwoord 'workshop' op de pagina van de organisator",
+   "confidence": 0.65
+  },
+  "hash": "fd4dd35ac0ac",
+  "image": {
+   "url": "https://despitkeet.nl/wp-content/uploads/2026/06/najaar-eendenkorf-vlechten-2026-300x251.webp",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Eendenkorf vlechten",
+   "credit": "Foto: Openluchtmuseum De Spitkeet",
+   "sourceUrl": "https://despitkeet.nl/activiteit/eendenkorf-vlechten-2/"
+  }
+ },
+ {
+  "id": "evt_cc8c370c8cabbe",
+  "slug": "workshop-sokken-breien-harkema-2026-10-22",
+  "title": "Workshop Sokken Breien",
+  "occurrences": [
+   {
+    "date": "2026-10-22",
+    "endDate": "2026-11-12",
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Openluchtmuseum De Spitkeet",
+   "city": "Harkema",
+   "lat": 53.18564539,
+   "lon": 6.13004639
+  },
+  "price": "€35",
+  "url": "https://despitkeet.nl/activiteit/workshop-sokken-breien/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://despitkeet.nl/activiteit/workshop-sokken-breien/",
+    "host": "despitkeet.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "lezing",
+  "kindLabel": "Lezing en workshop",
+  "tags": [
+   "meerdaags"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'workshop'",
+   "confidence": 0.8
+  },
+  "hash": "8e2c4678ca25",
+  "image": {
+   "url": "https://despitkeet.nl/wp-content/uploads/2026/09/Foto-Verwijderen-Achtergrond-A4-212x300.webp",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Workshop Sokken Breien",
+   "credit": "Foto: Openluchtmuseum De Spitkeet",
+   "sourceUrl": "https://despitkeet.nl/activiteit/workshop-sokken-breien/"
   }
  },
  {
@@ -1310,15 +1819,15 @@
     "seenAt": "2026-10-12"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
+  "kind": "lezing",
+  "kindLabel": "Lezing en workshop",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website gevangenismuseum.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'college'",
+   "confidence": 0.8
   },
-  "hash": "271ab8c1d41d",
+  "hash": "6588ecc69f17",
   "image": {
    "url": "https://gevangenismuseum.nl/wp-content/uploads/2026/01/Never-say-cheese-opening-on-t-schuld-LR-32.jpg",
    "type": "organisator",
@@ -1412,9 +1921,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "c8c7bf1d0f78",
   "image": {
@@ -1473,6 +1982,53 @@
    "alt": "Foto bij Herfstwandeling in de polder vlakbij Leeuwarden",
    "credit": "Foto: Delleboersterheide",
    "sourceUrl": "https://www.itfryskegea.nl/activiteiten/herfstwandeling-in-de-polder-vlakbij-leeuwarden-2/"
+  }
+ },
+ {
+  "id": "evt_dd703fffb84d32",
+  "slug": "the-show-popkoor-prestige-groningen-drachten-assen-2026-10-24",
+  "title": "The Show - Popkoor Prestige Groningen & Drachten",
+  "occurrences": [
+   {
+    "date": "2026-10-24",
+    "endDate": null,
+    "startTime": "18:00",
+    "endTime": "20:25"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 29.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/the-show",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/the-show",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "cf3bc10c3994",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/01a08a07-e662-7ae5-ae50-8b497d11069a/download?crop=1920%2C1152%2C0%2C24&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij The Show - Popkoor Prestige Groningen & Drachten",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/the-show"
   }
  },
  {
@@ -1710,15 +2266,15 @@
   },
   "hash": "a90d99ecf798",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
   }
  },
  {
@@ -1811,7 +2367,17 @@
    "confidence": 0.8
   },
   "hash": "37f5789a0b57",
-  "image": null
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Graffiti_Langestraat_Groningen_%288087124757%29.jpg/1280px-Graffiti_Langestraat_Groningen_%288087124757%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: FaceMePLS from The Hague, The Netherlands · CC BY 2.0 · Wikimedia Commons",
+   "author": "FaceMePLS from The Hague, The Netherlands",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Graffiti_Langestraat_Groningen_(8087124757).jpg"
+  }
  },
  {
   "id": "evt_a19b3622d623ee",
@@ -1864,8 +2430,8 @@
  },
  {
   "id": "evt_507082aa37d1ba",
-  "slug": "25-oktober-2026-14-30-uur-de-groningse-koperband-jongens-driest-rolde-2026-10-25",
-  "title": "25 oktober 2026 – 14.30 uur – De Groningse koperband ‘Jongens Driest’",
+  "slug": "de-groningse-koperband-jongens-driest-rolde-2026-10-25",
+  "title": "De Groningse koperband ‘Jongens Driest’",
   "occurrences": [
    {
     "date": "2026-10-25",
@@ -1901,12 +2467,12 @@
    "reason": "trefwoord 'band'",
    "confidence": 0.8
   },
-  "hash": "585d70b2e604",
+  "hash": "6b043bb15367",
   "image": {
    "url": "https://boerderijkamps.nl/wp-content/uploads/2026/07/Driest-BW-2-.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij 25 oktober 2026 – 14.30 uur – De Groningse koperband ‘Jongens Driest’",
+   "alt": "Foto bij De Groningse koperband ‘Jongens Driest’",
    "credit": "Foto: Boerderij Kamps",
    "sourceUrl": "https://boerderijkamps.nl/evenement/25-oktober-2026-14-30-uur-de-nederlandse-koperband-jongens-driest/"
   }
@@ -2150,9 +2716,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "b9ad5bf8db19",
   "image": {
@@ -2200,9 +2766,9 @@
    "gratis"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'zwerftocht'",
+   "confidence": 0.8
   },
   "hash": "f5f5c2f11ed3",
   "image": {
@@ -2212,6 +2778,53 @@
    "alt": "Foto bij Zwerftocht door beekdal de Tsjongerdellen",
    "credit": "Foto: Delleboersterheide",
    "sourceUrl": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-beekdal-de-tsjongerdellen-2/"
+  }
+ },
+ {
+  "id": "evt_cf6ab2ee15808c",
+  "slug": "afsluiting-wisselexpositie-harkema-2026-10-31",
+  "title": "Afsluiting wisselexpositie",
+  "occurrences": [
+   {
+    "date": "2026-10-31",
+    "endDate": null,
+    "startTime": "11:00",
+    "endTime": "17:00"
+   }
+  ],
+  "venue": {
+   "name": "Openluchtmuseum De Spitkeet",
+   "city": "Harkema",
+   "lat": 53.18564539,
+   "lon": 6.13004639
+  },
+  "price": "Zie organisator",
+  "url": "https://despitkeet.nl/activiteit/afsluiting-wisselexpositie/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://despitkeet.nl/activiteit/afsluiting-wisselexpositie/",
+    "host": "despitkeet.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'expositie'",
+   "confidence": 0.8
+  },
+  "hash": "c65a818a115c",
+  "image": {
+   "url": "https://despitkeet.nl/wp-content/uploads/2026/04/Ontwerp-zonder-titel2-300x203.webp",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Afsluiting wisselexpositie",
+   "credit": "Foto: Openluchtmuseum De Spitkeet",
+   "sourceUrl": "https://despitkeet.nl/activiteit/afsluiting-wisselexpositie/"
   }
  },
  {
@@ -2243,17 +2856,17 @@
     "seenAt": "2026-10-03"
    }
   ],
-  "kind": "festival",
-  "kindLabel": "Festival",
+  "kind": "feest",
+  "kindLabel": "Feest en kermis",
   "tags": [
    "meerdaags"
   ],
   "classification": {
-   "method": "bronhint",
-   "reason": "oude categorie 'festival'",
-   "confidence": 0.5
+   "method": "correctie",
+   "reason": "Fantasydagen in de vesting met kramen, vuurshows en steltlopers; geen festival met podia en vooral artiesten.",
+   "confidence": 1.0
   },
-  "hash": "171d8eef1a9f",
+  "hash": "ded3badd2bb1",
   "image": {
    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
@@ -2267,53 +2880,53 @@
   }
  },
  {
-  "id": "evt_5d5967fc394dd8",
-  "slug": "eredienst-wg-beilen-beilen-2026-11-01",
-  "title": "Eredienst WG Beilen",
+  "id": "evt_90460ba0712e3e",
+  "slug": "tiktok-tammo-tammo-zingt-folk-reprise-assen-2026-10-31",
+  "title": "TikTok Tammo - Tammo Zingt Folk (reprise)",
   "occurrences": [
    {
-    "date": "2026-11-01",
+    "date": "2026-10-31",
     "endDate": null,
-    "startTime": "11:00",
-    "endTime": "12:00"
+    "startTime": "14:00",
+    "endTime": "14:00"
    }
   ],
   "venue": {
-   "name": "Pauluskerk",
-   "city": "Beilen",
-   "lat": 52.86153832,
-   "lon": 6.49796064
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
   },
-  "price": "EUR 0",
-  "url": "https://www.pgbeilen.nl/agenda/eredienst-wg-beilen-37/",
+  "price": "EUR 25.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/tiktok-tammo",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://www.pgbeilen.nl/agenda/eredienst-wg-beilen-37/",
-    "host": "pgbeilen.nl",
+    "url": "https://denieuwekolk.nl/theater/agenda/tiktok-tammo",
+    "host": "denieuwekolk.nl",
     "seenAt": "2026-10-12"
    }
   ],
-  "kind": "overig",
-  "kindLabel": "Overig",
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
   "tags": [],
   "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, locatie of hint",
-   "confidence": 0.2
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
   },
-  "hash": "ce4e794cafbb",
+  "hash": "77ab7a76c157",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Beilen_Rotonde.JPG/1280px-Beilen_Rotonde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/DNK_Assen_2021.jpg/1280px-DNK_Assen_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Beilen",
-   "credit": "Foto: Gerardus · Public domain · Wikimedia Commons",
-   "author": "Gerardus",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beilen_Rotonde.JPG"
+   "match": "plek",
+   "alt": "De Nieuwe Kolk",
+   "credit": "Foto: Richard Broekhuijzen · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Richard Broekhuijzen",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:DNK_Assen_2021.jpg"
   }
  },
  {
@@ -2356,7 +2969,64 @@
    "confidence": 0.8
   },
   "hash": "060b4303d66c",
-  "image": null
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Grafitti_Boterdiep_Groningen_%288087126308%29.jpg/1280px-Grafitti_Boterdiep_Groningen_%288087126308%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: FaceMePLS from The Hague, The Netherlands · CC BY 2.0 · Wikimedia Commons",
+   "author": "FaceMePLS from The Hague, The Netherlands",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grafitti_Boterdiep_Groningen_(8087126308).jpg"
+  }
+ },
+ {
+  "id": "evt_02fb113c1c1e81",
+  "slug": "maas-theater-en-dans-155-controle-12-assen-2026-11-03",
+  "title": "Maas theater en dans | 155 - CONTROLE (12+)",
+  "occurrences": [
+   {
+    "date": "2026-11-03",
+    "endDate": null,
+    "startTime": "18:00",
+    "endTime": "19:00"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 17.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/maas-theater-en-dans-155",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/maas-theater-en-dans-155",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'theater'",
+   "confidence": 0.8
+  },
+  "hash": "6fd7744eb039",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dfc09-fd4c-7bd9-a692-cc72538975d0/155-maas-theater-en-dans-controle-neeltje-de-vries-campagnebeeld?crop=2372%2C1423%2C0%2C1209&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Maas theater en dans | 155 - CONTROLE (12+)",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/maas-theater-en-dans-155"
+  }
  },
  {
   "id": "evt_c9a4cc4a4d648c",
@@ -2397,15 +3067,109 @@
   },
   "hash": "a6a36dbbb9b9",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+  }
+ },
+ {
+  "id": "evt_59c5d8b4be58c1",
+  "slug": "plien-bianca-harrekidee-reprise-assen-2026-11-05",
+  "title": "Plien & Bianca - Harrekidee! (reprise)",
+  "occurrences": [
+   {
+    "date": "2026-11-05",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 18.75",
+  "url": "https://denieuwekolk.nl/theater/agenda/plien-bianca",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/plien-bianca",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "ee2782e50320",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e0736-e2ea-7ea8-b6d7-fcc9d91a3f3b/plien-bianca-harrekidee-katinka-krijgsman-campagnebeeld-3?crop=3553%2C2132%2C2%2C81&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Plien & Bianca - Harrekidee! (reprise)",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/plien-bianca"
+  }
+ },
+ {
+  "id": "evt_970d9bf3a95d0a",
+  "slug": "izaline-calister-rum-and-coca-cola-assen-2026-11-05",
+  "title": "Izaline Calister - Rum and Coca-Cola",
+  "occurrences": [
+   {
+    "date": "2026-11-05",
+    "endDate": null,
+    "startTime": "19:30",
+    "endTime": "20:45"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 25.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/izaline-calister",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/izaline-calister",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "dbd0398cb3e0",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dbf7a-00ed-7714-bf96-bb3e09de1c2a/izaline-calister-rum-and-coca-cola-hessel-stuut-1?crop=3553%2C2132%2C2%2C204&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Izaline Calister - Rum and Coca-Cola",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/izaline-calister"
   }
  },
  {
@@ -2450,7 +3214,17 @@
    "confidence": 0.8
   },
   "hash": "d35c3b2d428c",
-  "image": null
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Groningen_Hoge_der_A_Gracht.jpg/1280px-Groningen_Hoge_der_A_Gracht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Roger Veringmeier · CC BY 4.0 · Wikimedia Commons",
+   "author": "Roger Veringmeier",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groningen_Hoge_der_A_Gracht.jpg"
+  }
  },
  {
   "id": "lichtjesfestival-haren-2026",
@@ -2583,9 +3357,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "b00ed121f0fb",
   "image": {
@@ -2633,9 +3407,9 @@
    "gratis"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "correctie",
+   "reason": "Fotograferen in een herfstig landschap bij Katlijk: fotowandeling van It Fryske Gea in de natuur.",
+   "confidence": 1.0
   },
   "hash": "d62f025242a1",
   "image": {
@@ -2680,9 +3454,9 @@
   "kindLabel": "Festival",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "titel noemt het een festival",
-   "confidence": 0.7
+   "method": "correctie",
+   "reason": "Roots- en americanafestival in De Oosterpoort: meerdere zalen als podia en veel verschillende artiesten.",
+   "confidence": 1.0
   },
   "hash": "9be540a868e4",
   "image": {
@@ -2692,6 +3466,53 @@
    "alt": "Foto bij TakeRoot Festival",
    "credit": "Foto: SPOT Groningen",
    "sourceUrl": "https://www.spotgroningen.nl/events/takeroot/"
+  }
+ },
+ {
+  "id": "evt_02e6dc957c71d4",
+  "slug": "noord-nederlands-orkest-sjostakovitsj-2-brahms-3-assen-2026-11-07",
+  "title": "Noord Nederlands Orkest - Sjostakovitsj 2 & Brahms 3",
+  "occurrences": [
+   {
+    "date": "2026-11-07",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 29.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'orkest'",
+   "confidence": 0.8
+  },
+  "hash": "be36a9fcac83",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e074b-6537-77bb-a5c4-55d3eaf3f2be/2645-sjostakovitsj-2-brahms-3?crop=2160%2C1296%2C1%2C192&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Noord Nederlands Orkest - Sjostakovitsj 2 & Brahms 3",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest"
   }
  },
  {
@@ -2774,9 +3595,9 @@
   "kindLabel": "Muziek",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website neushoorn.nl",
-   "confidence": 0.7
+   "method": "correctie",
+   "reason": "Eek-A-Mouse: reggaezanger uit Jamaica, concert in poppodium Neushoorn.",
+   "confidence": 1.0
   },
   "hash": "9fa5c9bab13f",
   "image": {
@@ -2827,15 +3648,156 @@
   },
   "hash": "cd07f445de66",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Petruskerk_Zuidbroek.jpg/1280px-Petruskerk_Zuidbroek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Fietspad_Poeltje_-_panoramio.jpg/1280px-Fietspad_Poeltje_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidbroek",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petruskerk_Zuidbroek.jpg"
+   "credit": "Foto: Marco Roepers · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Marco Roepers",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fietspad_Poeltje_-_panoramio.jpg"
+  }
+ },
+ {
+  "id": "evt_8d44bdd971678c",
+  "slug": "bee-gees-by-maincourse-fame-family-tragedy-assen-2026-11-08",
+  "title": "Bee Gees by MainCourse - Fame, Family & Tragedy!",
+  "occurrences": [
+   {
+    "date": "2026-11-08",
+    "endDate": null,
+    "startTime": "18:30",
+    "endTime": "20:40"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 21.25",
+  "url": "https://denieuwekolk.nl/theater/agenda/bee-gees-by-maincourse",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/bee-gees-by-maincourse",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "2ff1368d30ba",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e0767-226c-7d13-83dc-b5d095e075c1/bee-gees-by-maincourse-fame-family-tragedy-nico-kroon-1?crop=2843%2C1706%2C0%2C1002&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Bee Gees by MainCourse - Fame, Family & Tragedy!",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/bee-gees-by-maincourse"
+  }
+ },
+ {
+  "id": "evt_9506efecc6db37",
+  "slug": "dolf-jansen-schaamteloos-oudejaars-2026-assen-2026-11-11",
+  "title": "Dolf Jansen - Schaamteloos - Oudejaars 2026",
+  "occurrences": [
+   {
+    "date": "2026-11-11",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": "20:30"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 14.25",
+  "url": "https://denieuwekolk.nl/theater/agenda/dolf-jansen",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/dolf-jansen",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "84a6b588dce7",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e076e-aee6-75e7-a64c-367b273b98c3/dolf-jansen-oudejaars-2026-schaamteloos-mark-engelen-2?crop=3553%2C2132%2C0%2C598&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Dolf Jansen - Schaamteloos - Oudejaars 2026",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/dolf-jansen"
+  }
+ },
+ {
+  "id": "evt_0aa9e58dba07ba",
+  "slug": "wishful-singing-metropolis-fritz-langs-filmklassieker-met-live-soundtrack-assen",
+  "title": "Wishful Singing - Metropolis, Fritz Langs filmklassieker met live soundtrack",
+  "occurrences": [
+   {
+    "date": "2026-11-12",
+    "endDate": null,
+    "startTime": "18:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 29.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/wishful-singing",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/wishful-singing",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "film",
+  "kindLabel": "Film",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'film'",
+   "confidence": 0.8
+  },
+  "hash": "ad438023c69a",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dfc4f-6199-7d53-9bad-c537fce6efdb/20260112-wishful-singing-metropolis-liggend-credit-henry-faber?crop=3838%2C2303%2C0%2C223&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Wishful Singing - Metropolis, Fritz Langs filmklassieker met live soundtrack",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/wishful-singing"
   }
  },
  {
@@ -2867,18 +3829,28 @@
     "seenAt": "2026-10-03"
    }
   ],
-  "kind": "festival",
-  "kindLabel": "Festival",
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
   "tags": [
    "meerdaags"
   ],
   "classification": {
-   "method": "trefwoord",
-   "reason": "festival, meerdaags of met meerdere podia",
-   "confidence": 0.85
+   "method": "correctie",
+   "reason": "Theaterfestival voor jongeren met voorstellingen in theaterzalen door de stad; geen festivalterrein met podia.",
+   "confidence": 1.0
   },
-  "hash": "80e93bc5be1a",
-  "image": null
+  "hash": "e1d8f8b9ed5f",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Plattegrond_van_de_stad_Groningen_in_1575.jpg/1280px-Plattegrond_van_de_stad_Groningen_in_1575.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Braun & Hogenberg · Public domain · Wikimedia Commons",
+   "author": "Braun & Hogenberg",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plattegrond_van_de_stad_Groningen_in_1575.jpg"
+  }
  },
  {
   "id": "evt_9e45710df268cb",
@@ -3014,9 +3986,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "1813f38f6815",
   "image": {
@@ -3030,8 +4002,8 @@
  },
  {
   "id": "evt_fe189623e9ab66",
-  "slug": "zondag-15-november-2026-14-30-uur-florence-foster-jenkins-ontroerende-en-hilaris",
-  "title": "Zondag 15 november 2026 – 14.30 uur – Florence Foster Jenkins – ontroerende en hilarische voorstelling",
+  "slug": "florence-foster-jenkins-ontroerende-en-hilarische-voorstelling-rolde-2026-11-15",
+  "title": "Florence Foster Jenkins – ontroerende en hilarische voorstelling",
   "occurrences": [
    {
     "date": "2026-11-15",
@@ -3067,12 +4039,12 @@
    "reason": "trefwoord 'voorstelling'",
    "confidence": 0.8
   },
-  "hash": "88806588299e",
+  "hash": "d1e3a93f942d",
   "image": {
    "url": "https://boerderijkamps.nl/wp-content/uploads/2026/07/Florence-1.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Zondag 15 november 2026 – 14.30 uur – Florence Foster Jenkins – ontroerende en hilarische voorstelling",
+   "alt": "Foto bij Florence Foster Jenkins – ontroerende en hilarische voorstelling",
    "credit": "Foto: Boerderij Kamps",
    "sourceUrl": "https://boerderijkamps.nl/evenement/zondag-15-november-2026-14-30-uur-florence-foster-jenkins/"
   }
@@ -3112,17 +4084,17 @@
     "seenAt": "2026-10-03"
    }
   ],
-  "kind": "festival",
-  "kindLabel": "Festival",
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
   "tags": [
    "meerdaags"
   ],
   "classification": {
    "method": "trefwoord",
-   "reason": "festival, meerdaags of met meerdere podia",
-   "confidence": 0.85
+   "reason": "theater- of cabaretfestival: voorstellingen, geen festivalterrein",
+   "confidence": 0.8
   },
-  "hash": "856fc85a4a60",
+  "hash": "e0c16429586f",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Stadsschouwburg%2C_Groningen_1276.jpg/1280px-Stadsschouwburg%2C_Groningen_1276.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -3164,15 +4136,15 @@
     "seenAt": "2026-10-12"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
+  "kind": "lezing",
+  "kindLabel": "Lezing en workshop",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website gevangenismuseum.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'college'",
+   "confidence": 0.8
   },
-  "hash": "4233510ffce8",
+  "hash": "014a63f279b8",
   "image": {
    "url": "https://gevangenismuseum.nl/wp-content/uploads/2026/02/Sprekers-College-Veenhuizen-website-fotos-2.png",
    "type": "organisator",
@@ -3180,6 +4152,53 @@
    "alt": "Foto bij College Veenhuizen: Sheila Sitalsing",
    "credit": "Foto: Gevangenismuseum",
    "sourceUrl": "https://gevangenismuseum.nl/evenement/college-veenhuizen-8/"
+  }
+ },
+ {
+  "id": "evt_536b394554d118",
+  "slug": "tis-hier-geen-hotel-3-hanneke-drenth-en-dianne-liesker-assen-2026-11-20",
+  "title": "Tis Hier Geen Hotel 3 - Hanneke Drenth en Dianne Liesker",
+  "occurrences": [
+   {
+    "date": "2026-11-20",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": "20:30"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 14.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/tis-hier-geen-hotel-3",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/tis-hier-geen-hotel-3",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "45083d84a7bf",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e07cb-b5af-7300-af69-279b77f1fc0f/hanneke-drenth-en-dianne-liesker-tis-hier-geen-hotel-3-floris-liesker-campagnebeeld-7?crop=2072%2C1243%2C741%2C0&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Tis Hier Geen Hotel 3 - Hanneke Drenth en Dianne Liesker",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/tis-hier-geen-hotel-3"
   }
  },
  {
@@ -3312,15 +4331,15 @@
     "seenAt": "2026-10-12"
    }
   ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
+  "kind": "festival",
+  "kindLabel": "Festival",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website neushoorn.nl",
-   "confidence": 0.7
+   "method": "correctie",
+   "reason": "Driedaags festival in de binnenstad van Leeuwarden: theater, literatuur, concerten en beeldende kunst op meerdere podia (onder meer Neushoorn en De Harmonie), met veel verschillende makers.",
+   "confidence": 1.0
   },
-  "hash": "1427c1ed24ce",
+  "hash": "42ad0919b3c0",
   "image": {
    "url": "https://cdn.prod.website-files.com/68406d1cc758e72eef6296d8/6a2a88ce6d8eb6f373f0b482_ETN_detail-15d7.avif",
    "type": "organisator",
@@ -3369,15 +4388,64 @@
   },
   "hash": "67cacd8db135",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Petruskerk_Zuidbroek.jpg/1280px-Petruskerk_Zuidbroek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Zuidbroek%2C_het_Winschoterdiep_foto2_2012-09-01_14.08.jpg/1280px-Zuidbroek%2C_het_Winschoterdiep_foto2_2012-09-01_14.08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidbroek",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petruskerk_Zuidbroek.jpg"
+   "credit": "Foto: Michielverbeek · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Michielverbeek",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zuidbroek,_het_Winschoterdiep_foto2_2012-09-01_14.08.jpg"
+  }
+ },
+ {
+  "id": "evt_4c504358dd05f5",
+  "slug": "sinterklaas-de-magische-wensveer-strooigoed-theater-3-assen-2026-11-22",
+  "title": "Sinterklaas & de Magische Wensveer - Strooigoed Theater (3+)",
+  "occurrences": [
+   {
+    "date": "2026-11-22",
+    "endDate": null,
+    "startTime": "12:30",
+    "endTime": "13:30"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 11.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/sinterklaas-de-magische-wensveer",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/sinterklaas-de-magische-wensveer",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "feest",
+  "kindLabel": "Feest en kermis",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'sinterklaas'",
+   "confidence": 0.8
+  },
+  "hash": "7e5016d6a724",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e07d0-d25c-7b24-b9df-893070c3de95/page1-img6?crop=3838%2C2303%2C0%2C128&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Sinterklaas & de Magische Wensveer - Strooigoed Theater (3+)",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/sinterklaas-de-magische-wensveer"
   }
  },
  {
@@ -3409,19 +4477,76 @@
     "seenAt": "2026-10-03"
    }
   ],
-  "kind": "festival",
-  "kindLabel": "Festival",
+  "kind": "feest",
+  "kindLabel": "Feest en kermis",
   "tags": [
    "gratis",
    "meerdaags"
   ],
   "classification": {
-   "method": "bronhint",
-   "reason": "oude categorie 'festival'",
-   "confidence": 0.5
+   "method": "correctie",
+   "reason": "Winterprogramma van de gemeente met ijsbaan, reuzenrad en wintercafé; geen festival met podia en artiesten.",
+   "confidence": 1.0
   },
-  "hash": "4f4e6d9c6780",
-  "image": null
+  "hash": "1f09d54adbc5",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Aletta_Jacobs_in_Groningen.jpg/1280px-Aletta_Jacobs_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Ferdi Tuinman · CC BY 4.0 · Wikimedia Commons",
+   "author": "Ferdi Tuinman",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aletta_Jacobs_in_Groningen.jpg"
+  }
+ },
+ {
+  "id": "evt_d394377d3eae9e",
+  "slug": "juliet-ik-beloof-je-eeuwige-twijfel-assen-2026-11-27",
+  "title": "Juliet - Ik beloof je eeuwige twijfel",
+  "occurrences": [
+   {
+    "date": "2026-11-27",
+    "endDate": null,
+    "startTime": "19:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 21.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/juliet",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/juliet",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "3d526a70e49c",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dbfc0-e875-7ae6-8be1-5780e98f4adc/juliet-ik-beloof-je-eeuwige-twijfel-amin-ghiri-4?crop=3332%2C1999%2C159%2C0&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Juliet - Ik beloof je eeuwige twijfel",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/juliet"
+  }
  },
  {
   "id": "evt_7d7dea88eec108",
@@ -3462,15 +4587,15 @@
   },
   "hash": "edb3f3f5265e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -3508,9 +4633,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'zwerftocht'",
+   "confidence": 0.8
   },
   "hash": "17788eb3cc72",
   "image": {
@@ -3604,9 +4729,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "9e27946b3cdf",
   "image": {
@@ -3616,6 +4741,100 @@
    "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
    "credit": "Foto: Delleboersterheide",
    "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-52/"
+  }
+ },
+ {
+  "id": "evt_4a68083aed9dbb",
+  "slug": "concert-politie-orkest-noord-nederland-muziek-is-meer-dan-verbinding-assen-2026",
+  "title": "Concert Politie Orkest Noord Nederland - Muziek is meer dan verbinding",
+  "occurrences": [
+   {
+    "date": "2026-11-29",
+    "endDate": null,
+    "startTime": "13:00",
+    "endTime": "15:25"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 7.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/concert-politie-orkest-noord-nederland",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/concert-politie-orkest-noord-nederland",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "729c194aeaf5",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dd313-3944-7456-86bd-9d10d7badcc4/trompet-commissarispet-vlag?crop=2048%2C1229%2C0%2C153&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Concert Politie Orkest Noord Nederland - Muziek is meer dan verbinding",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/concert-politie-orkest-noord-nederland"
+  }
+ },
+ {
+  "id": "evt_688fe15eeb5ccb",
+  "slug": "the-elvis-concert-usa-special-70th-anniversary-concert-assen-2026-12-02",
+  "title": "The Elvis Concert (USA) - Special 70th Anniversary Concert",
+  "occurrences": [
+   {
+    "date": "2026-12-02",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": "21:30"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 36.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/the-elvis-concert-usa",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/the-elvis-concert-usa",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "bad204810886",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dddbb-f302-7de9-8445-d3d46739d7a1/the-elvis-concert-november-2026-foto-1?crop=3838%2C2303%2C0%2C257&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij The Elvis Concert (USA) - Special 70th Anniversary Concert",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/the-elvis-concert-usa"
   }
  },
  {
@@ -3653,9 +4872,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "5ae4781515e0",
   "image": {
@@ -3709,15 +4928,15 @@
   },
   "hash": "25a282c9ee31",
   "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2013-04_vesting_bourtange_01.JPG/1280px-2013-04_vesting_bourtange_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plek",
    "alt": "Vesting Bourtange",
-   "credit": "Foto: onbekende maker · Copyrighted free use · Wikimedia Commons",
-   "author": "onbekende maker",
-   "license": "Copyrighted free use",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg"
+   "credit": "Foto: Ziko van Dijk · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Ziko van Dijk",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-04_vesting_bourtange_01.JPG"
   }
  },
  {
@@ -3799,17 +5018,18 @@
     "seenAt": "2026-10-12"
    }
   ],
-  "kind": "festival",
-  "kindLabel": "Festival",
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
   "tags": [
    "meerdaags"
   ],
   "classification": {
-   "method": "trefwoord",
-   "reason": "festival, meerdaags of met meerdere podia",
-   "confidence": 0.85
+   "method": "correctie",
+   "reason": "Lichtfestivals zijn routes langs lichtkunst; geen podia met artiesten.",
+   "confidence": 0.9,
+   "nakijken": true
   },
-  "hash": "4f2f8d386bc4",
+  "hash": "f39312033030",
   "image": {
    "url": "https://regionieuwshoogeveen.nl/wp-content/uploads/2024/12/Henk-sieders.jpg",
    "type": "organisator",
@@ -3848,19 +5068,78 @@
     "seenAt": "2026-10-03"
    }
   ],
-  "kind": "festival",
-  "kindLabel": "Festival",
+  "kind": "markt",
+  "kindLabel": "Markt en beurs",
   "tags": [
    "gratis",
    "meerdaags"
   ],
   "classification": {
-   "method": "bronhint",
-   "reason": "oude categorie 'festival'",
-   "confidence": 0.5
+   "method": "correctie",
+   "reason": "Historische schepen in de grachten met een kerstmarkt; muziek en kunstroute eromheen. Vooral markt, geen festival.",
+   "confidence": 1.0
   },
-  "hash": "88641850ffc9",
-  "image": null
+  "hash": "f692923efc4b",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Forum_in_Groningen.jpg/1280px-Forum_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Ferdi Tuinman · CC BY 4.0 · Wikimedia Commons",
+   "author": "Ferdi Tuinman",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forum_in_Groningen.jpg"
+  }
+ },
+ {
+  "id": "evt_505e103a9acb47",
+  "slug": "winterfair-en-streekmarkt-2026-harkema-2026-12-11",
+  "title": "Winterfair en Streekmarkt 2026",
+  "occurrences": [
+   {
+    "date": "2026-12-11",
+    "endDate": "2026-12-13",
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Openluchtmuseum De Spitkeet",
+   "city": "Harkema",
+   "lat": 53.18564539,
+   "lon": 6.13004639
+  },
+  "price": "Zie organisator",
+  "url": "https://despitkeet.nl/activiteit/winterfair-en-streekmarkt-2026/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://despitkeet.nl/activiteit/winterfair-en-streekmarkt-2026/",
+    "host": "despitkeet.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "markt",
+  "kindLabel": "Markt en beurs",
+  "tags": [
+   "meerdaags"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'markt'",
+   "confidence": 0.8
+  },
+  "hash": "14c969d524c6",
+  "image": {
+   "url": "https://despitkeet.nl/wp-content/uploads/2026/06/Kopie-van-Kerstfair-banner--300x90.webp",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Winterfair en Streekmarkt 2026",
+   "credit": "Foto: Openluchtmuseum De Spitkeet",
+   "sourceUrl": "https://despitkeet.nl/activiteit/winterfair-en-streekmarkt-2026/"
+  }
  },
  {
   "id": "evt_b9f33e0440d8e9",
@@ -3951,7 +5230,17 @@
    "confidence": 0.8
   },
   "hash": "af67b4aec779",
-  "image": null
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Graffiti_Langestraat_Groningen_%288087124757%29.jpg/1280px-Graffiti_Langestraat_Groningen_%288087124757%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: FaceMePLS from The Hague, The Netherlands · CC BY 2.0 · Wikimedia Commons",
+   "author": "FaceMePLS from The Hague, The Netherlands",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Graffiti_Langestraat_Groningen_(8087124757).jpg"
+  }
  },
  {
   "id": "confirmed-kerstmarkt-bourtange-2026-2",
@@ -3995,15 +5284,15 @@
   },
   "hash": "9a6dabcdf46a",
   "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/2013-04_vesting_bourtange_02.JPG/1280px-2013-04_vesting_bourtange_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plek",
    "alt": "Vesting Bourtange",
-   "credit": "Foto: onbekende maker · Copyrighted free use · Wikimedia Commons",
-   "author": "onbekende maker",
-   "license": "Copyrighted free use",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg"
+   "credit": "Foto: Ziko van Dijk · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Ziko van Dijk",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-04_vesting_bourtange_02.JPG"
   }
  },
  {
@@ -4041,9 +5330,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "10c195b289de",
   "image": {
@@ -4057,8 +5346,8 @@
  },
  {
   "id": "evt_115a0870fe04f7",
-  "slug": "12-december-2026-16-00-uur-niki-jacobs-met-haar-nieuwe-theaterprogramma-ja-rolde",
-  "title": "12 december 2026 – 16.00 uur – Niki Jacobs met haar nieuwe theaterprogramma: Ja!",
+  "slug": "niki-jacobs-met-haar-nieuwe-theaterprogramma-ja-rolde-2026-12-12",
+  "title": "Niki Jacobs met haar nieuwe theaterprogramma: Ja!",
   "occurrences": [
    {
     "date": "2026-12-12",
@@ -4094,14 +5383,61 @@
    "reason": "trefwoord 'theater'",
    "confidence": 0.8
   },
-  "hash": "297ca7cb2b2a",
+  "hash": "93af6c2b2e49",
   "image": {
    "url": "https://boerderijkamps.nl/wp-content/uploads/2026/08/Niki-Jacobs-JA-c-Anne-van-Zantwijk_grade_liggend-1-scaled.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij 12 december 2026 – 16.00 uur – Niki Jacobs met haar nieuwe theaterprogramma: Ja!",
+   "alt": "Foto bij Niki Jacobs met haar nieuwe theaterprogramma: Ja!",
    "credit": "Foto: Boerderij Kamps",
    "sourceUrl": "https://boerderijkamps.nl/evenement/zaterdag-12-december-2026-19-30-uur-niki-jacobs-met-haar-nieuwe-theaterprogramma-ja/"
+  }
+ },
+ {
+  "id": "evt_8b0c0fe10909c1",
+  "slug": "muziekkamer-assen-nikola-meeuwsen-magier-op-het-podium-assen-2026-12-13",
+  "title": "Muziekkamer Assen | Nikola Meeuwsen - Magiër op het podium!",
+  "occurrences": [
+   {
+    "date": "2026-12-13",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 28.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nikola-meeuwsen",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nikola-meeuwsen",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'muziek'",
+   "confidence": 0.8
+  },
+  "hash": "007918088e8e",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e2abf-077a-781d-8e93-98dea6edd09f/2026-12-13-nikola-meeuwse-foto-mellemeivogel?crop=3838%2C2303%2C2%2C257&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Muziekkamer Assen | Nikola Meeuwsen - Magiër op het podium!",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nikola-meeuwsen"
   }
  },
  {
@@ -4152,6 +5488,53 @@
   }
  },
  {
+  "id": "evt_fbd5d1f19956bc",
+  "slug": "noord-nederlands-orkest-kerstconcert-bach-s-weihnachtsoratorium-assen-2026-12-18",
+  "title": "Noord Nederlands Orkest - Kerstconcert: Bach's Weihnachtsoratorium",
+  "occurrences": [
+   {
+    "date": "2026-12-18",
+    "endDate": null,
+    "startTime": "18:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 29.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-kerstconcert",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-kerstconcert",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "d71239926872",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e07e2-f50a-754c-b79d-ff12d73ca996/2651-kerstconcert-weihnachtsoratorium-c-marijn-boere?crop=3838%2C2303%2C2%2C0&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Noord Nederlands Orkest - Kerstconcert: Bach's Weihnachtsoratorium",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-kerstconcert"
+  }
+ },
+ {
   "id": "evt_fb5755cb6aee3a",
   "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-12-19",
   "title": "Vaartocht door Nationaal Park De Alde Feanen",
@@ -4186,9 +5569,9 @@
    "buiten"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website itfryskegea.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'vaartocht'",
+   "confidence": 0.8
   },
   "hash": "f5a7a3b616f0",
   "image": {
@@ -4242,15 +5625,15 @@
   },
   "hash": "b6d624ed8f0b",
   "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2013-04_vesting_bourtange_03.JPG/1280px-2013-04_vesting_bourtange_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plek",
    "alt": "Vesting Bourtange",
-   "credit": "Foto: onbekende maker · Copyrighted free use · Wikimedia Commons",
-   "author": "onbekende maker",
-   "license": "Copyrighted free use",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg"
+   "credit": "Foto: Ziko van Dijk · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Ziko van Dijk",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-04_vesting_bourtange_03.JPG"
   }
  },
  {
@@ -4304,6 +5687,147 @@
   }
  },
  {
+  "id": "evt_69a4c30702e1c8",
+  "slug": "snertkuier-2026-harkema-2026-12-26",
+  "title": "Snertkuier 2026",
+  "occurrences": [
+   {
+    "date": "2026-12-26",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "17:00"
+   }
+  ],
+  "venue": {
+   "name": "Openluchtmuseum De Spitkeet",
+   "city": "Harkema",
+   "lat": 53.18564539,
+   "lon": 6.13004639
+  },
+  "price": "Zie organisator",
+  "url": "https://despitkeet.nl/activiteit/snertkuier-2026/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://despitkeet.nl/activiteit/snertkuier-2026/",
+    "host": "despitkeet.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "trefwoord 'museum' op de pagina van de organisator",
+   "confidence": 0.65
+  },
+  "hash": "f9beb3c35849",
+  "image": {
+   "url": "https://despitkeet.nl/wp-content/uploads/2026/06/Instagram-snertkuier2026-Instagram-bericht-45-240x300.webp",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Snertkuier 2026",
+   "credit": "Foto: Openluchtmuseum De Spitkeet",
+   "sourceUrl": "https://despitkeet.nl/activiteit/snertkuier-2026/"
+  }
+ },
+ {
+  "id": "evt_7d770fee36adc3",
+  "slug": "het-zwanenmeer-ballet-van-de-staatsopera-van-stara-zagora-assen-2026-12-26",
+  "title": "Het Zwanenmeer - Ballet van de Staatsopera van Stara Zagora",
+  "occurrences": [
+   {
+    "date": "2026-12-26",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 27.25",
+  "url": "https://denieuwekolk.nl/theater/agenda/het-zwanenmeer",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/het-zwanenmeer",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'ballet'",
+   "confidence": 0.8
+  },
+  "hash": "7edca5d2b2e5",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e07ef-919e-7d72-9d3e-053426bd3a56/staatsopera-van-stara-zagora-bulgarije-het-zwanenmeer-onbekend-campagnebeeld-3?crop=3552%2C2131%2C0%2C42&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Het Zwanenmeer - Ballet van de Staatsopera van Stara Zagora",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/het-zwanenmeer"
+  }
+ },
+ {
+  "id": "evt_454b644a4813f6",
+  "slug": "noord-nederlands-orkest-nieuwjaarsconcert-met-lucie-leguay-dirigent-annemarie-kr",
+  "title": "Noord Nederlands Orkest - Nieuwjaarsconcert met Lucie Leguay (dirigent), Annemarie Kremer (sopraan)",
+  "occurrences": [
+   {
+    "date": "2027-01-09",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 35.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-nieuwjaarsconcert",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-nieuwjaarsconcert",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "3e4838ae8c5d",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e1b95-c22b-7f2d-a91c-7c93763e9b04/2701-nieuwjaarsconcert-c-mariska-de-groot?crop=2198%2C1319%2C2%2C145&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Noord Nederlands Orkest - Nieuwjaarsconcert met Lucie Leguay (dirigent), Annemarie Kremer (sopraan)",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-nieuwjaarsconcert"
+  }
+ },
+ {
   "id": "confirmed-esns-2027",
   "slug": "esns-2027-eurosonic-noorderslag-groningen-2027-01-13",
   "title": "ESNS 2027 — Eurosonic Noorderslag",
@@ -4339,11 +5863,68 @@
   ],
   "classification": {
    "method": "correctie",
-   "reason": "handmatige correctie in overrides.json",
+   "reason": "Showcasefestival met honderden artiesten op tientallen podia in de binnenstad.",
    "confidence": 1.0
   },
   "hash": "46bb6772ed99",
-  "image": null
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Grafitti_Boterdiep_Groningen_%288087126308%29.jpg/1280px-Grafitti_Boterdiep_Groningen_%288087126308%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: FaceMePLS from The Hague, The Netherlands · CC BY 2.0 · Wikimedia Commons",
+   "author": "FaceMePLS from The Hague, The Netherlands",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grafitti_Boterdiep_Groningen_(8087126308).jpg"
+  }
+ },
+ {
+  "id": "evt_bd82c4bd5fc7ac",
+  "slug": "muziekkamer-assen-nieuwjaarsconcert-grachtenfestival-in-assen-assen-2027-01-17",
+  "title": "Muziekkamer Assen | Nieuwjaarsconcert - Grachtenfestival in Assen",
+  "occurrences": [
+   {
+    "date": "2027-01-17",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 28.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nieuwjaarsconcert",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nieuwjaarsconcert",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "1ae897778cd4",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e2ac3-d708-7ece-b484-b110d078eea5/2027-01-17-muziekkamer-assen-nieuwjaarsconcert-winnaars-onbekend?crop=3072%2C1843%2C0%2C598&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Muziekkamer Assen | Nieuwjaarsconcert - Grachtenfestival in Assen",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nieuwjaarsconcert"
+  }
  },
  {
   "id": "evt_a7cac498029375",
@@ -4396,6 +5977,100 @@
   }
  },
  {
+  "id": "evt_65459f62cacb01",
+  "slug": "boeing-boeing-pretpakhuis-loiza-lamers-rian-gerritsen-e-a-assen-2027-01-22",
+  "title": "Boeing Boeing - Pretpakhuis | Loiza Lamers , Rian Gerritsen e.a.",
+  "occurrences": [
+   {
+    "date": "2027-01-22",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 18.75",
+  "url": "https://denieuwekolk.nl/theater/agenda/boeing-boeing",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/boeing-boeing",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "80e5d9612775",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e15da-fd7e-7bf3-997a-8c9628b52124/boeing-boeing-staand-a4-robin-kamphuis-pretpakhuis?crop=2478%2C1487%2C0%2C824&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Boeing Boeing - Pretpakhuis | Loiza Lamers , Rian Gerritsen e.a.",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/boeing-boeing"
+  }
+ },
+ {
+  "id": "evt_b763dd9c301f85",
+  "slug": "girls-on-fire-3-de-ultieme-ladiesnight-vol-humor-herkenning-en-muziek-assen-2027",
+  "title": "Girls on Fire 3 - De ultieme ladiesnight vol humor, herkenning en muziek!",
+  "occurrences": [
+   {
+    "date": "2027-01-27",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 18.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/girls-on-fire-3",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/girls-on-fire-3",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'muziek'",
+   "confidence": 0.8
+  },
+  "hash": "c10404fb3d4e",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e15c8-ea76-7805-800f-121d9ba9860c/promobeeld-girls-on-fire-3-liggend-credits-willem-van-walderveen?crop=3507%2C2104%2C0%2C187&scale=1200&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Girls on Fire 3 - De ultieme ladiesnight vol humor, herkenning en muziek!",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/girls-on-fire-3"
+  }
+ },
+ {
   "id": "evt_c3376352cbe433",
   "slug": "wende-leeuwarden-2027-01-29",
   "title": "Wende",
@@ -4428,9 +6103,9 @@
   "kindLabel": "Muziek",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website neushoorn.nl",
-   "confidence": 0.7
+   "method": "correctie",
+   "reason": "Wende: zangeres (Wende Snijders), concert in poppodium Neushoorn.",
+   "confidence": 1.0
   },
   "hash": "549bd2f4982a",
   "image": {
@@ -4443,9 +6118,199 @@
   }
  },
  {
+  "id": "evt_a35af3250a4388_ba41dab8a70b",
+  "slug": "nijntje-op-de-fiets-klein-amsterdam-producties-2-t-m-5-jaar-assen-2027-01-31",
+  "title": "nijntje op de fiets - Klein Amsterdam Producties (2 t/m 5 jaar)",
+  "occurrences": [
+   {
+    "date": "2027-01-31",
+    "endDate": null,
+    "startTime": "13:30",
+    "endTime": "14:00"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 12.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/nijntje-op-de-fiets",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/nijntje-op-de-fiets",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "aed279afcf7d",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dfdea-d0f4-73bc-b027-c061ae2b1fee/vanaf2-festivals-prentenboekjesfestival-nijntje-op-de-fiets-dick-bruna?crop=3553%2C2132%2C0%2C758&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij nijntje op de fiets - Klein Amsterdam Producties (2 t/m 5 jaar)",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/nijntje-op-de-fiets"
+  }
+ },
+ {
+  "id": "evt_d140414843a1bf",
+  "slug": "anansi-de-spin-en-de-gulzige-tijger-vanaf2-producties-3-t-m-7-jaar-assen-2027-01",
+  "title": "Anansi de Spin en de Gulzige Tijger - Vanaf2 Producties (3 t/m 7 jaar)",
+  "occurrences": [
+   {
+    "date": "2027-01-31",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "14:45"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 15.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/anansi-de-spin-en-de-gulzige-tijger",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/anansi-de-spin-en-de-gulzige-tijger",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "e1ca8566c04e",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dfed0-cc97-729e-b029-ebd8c32171d0/anansi-de-spin-en-de-gulzige-tijger-02-c-iven-cudogham?crop=2687%2C1612%2C1%2C203&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Anansi de Spin en de Gulzige Tijger - Vanaf2 Producties (3 t/m 7 jaar)",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/anansi-de-spin-en-de-gulzige-tijger"
+  }
+ },
+ {
+  "id": "evt_27a6138f3fff86",
+  "slug": "leonard-cohen-tribute-band-tonight-will-be-fine-assen-2027-02-05",
+  "title": "Leonard Cohen Tribute Band - Tonight will be fine",
+  "occurrences": [
+   {
+    "date": "2027-02-05",
+    "endDate": null,
+    "startTime": "19:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 29.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/leonard-cohen-tribute-band",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/leonard-cohen-tribute-band",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'band'",
+   "confidence": 0.8
+  },
+  "hash": "d0a35dd125e0",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dd4ba-aa7d-7152-b6ad-7bd1d2ca9e10/leonard-cohen-tribute-band-tonight-will-be-fine-kees-beekmans-3?crop=3553%2C2132%2C0%2C207&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Leonard Cohen Tribute Band - Tonight will be fine",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/leonard-cohen-tribute-band"
+  }
+ },
+ {
+  "id": "evt_7a47667a7bcd8c",
+  "slug": "back-to-black-the-music-of-amy-winehouse-assen-2027-02-06",
+  "title": "Back To Black - The Music of Amy Winehouse",
+  "occurrences": [
+   {
+    "date": "2027-02-06",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 17.25",
+  "url": "https://denieuwekolk.nl/theater/agenda/back-to-black",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/back-to-black",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "fb3cf5b13070",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e1209-f32c-72ff-91d0-cec94408b79d/amy-winehouse-webbanner-2000x900-px?crop=1498%2C899%2C343%2C1&scale=1498&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Back To Black - The Music of Amy Winehouse",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/back-to-black"
+  }
+ },
+ {
   "id": "evt_3bbabc1e544a1f",
-  "slug": "7-februari-2027-om-14-30-uur-amsterdams-berlijns-trio-jolly-mangos-rolde-2027-02",
-  "title": "7 februari 2027 om 14.30 uur – Amsterdams-Berlijns trio Jolly Mangos",
+  "slug": "amsterdams-berlijns-trio-jolly-mangos-rolde-2027-02-07",
+  "title": "Amsterdams-Berlijns trio Jolly Mangos",
   "occurrences": [
    {
     "date": "2027-02-07",
@@ -4471,24 +6336,73 @@
     "seenAt": "2026-10-12"
    }
   ],
-  "kind": "theater",
-  "kindLabel": "Theater en comedy",
+  "kind": "muziek",
+  "kindLabel": "Muziek",
   "tags": [
    "gratis"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website boerderijkamps.nl",
-   "confidence": 0.7
+   "method": "trefwoord",
+   "reason": "trefwoord 'trio'",
+   "confidence": 0.8
   },
-  "hash": "9804e2cfb59e",
+  "hash": "291f5a5a674f",
   "image": {
    "url": "https://boerderijkamps.nl/wp-content/uploads/2024/05/4-Jolly-Mangos-1.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij 7 februari 2027 om 14.30 uur – Amsterdams-Berlijns trio Jolly Mangos",
+   "alt": "Foto bij Amsterdams-Berlijns trio Jolly Mangos",
    "credit": "Foto: Boerderij Kamps",
    "sourceUrl": "https://boerderijkamps.nl/evenement/7-februari-2027-om-14-30-uur-amsterdams-berlijns-trio-jolly-mangos/"
+  }
+ },
+ {
+  "id": "evt_9e3943ec831d77",
+  "slug": "het-houten-huis-nordland-visual-theatre-tryater-en-club-guy-roni-grondtonen-9-as",
+  "title": "Het Houten Huis & Nordland Visual Theatre, Tryater en Club Guy & Roni - Grondtonen (9+)",
+  "occurrences": [
+   {
+    "date": "2027-02-07",
+    "endDate": null,
+    "startTime": "15:00",
+    "endTime": "16:15"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 17.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/het-houten-huis-nordland-visual-theatre-tryater-en-club-guy-roni",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/het-houten-huis-nordland-visual-theatre-tryater-en-club-guy-roni",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "f2bcbdedd6a1",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019dfdf3-30a2-7f1c-baee-910aa65acc69/het-houten-huis-e-a-grondtonen-anne-harbers?crop=2513%2C1508%2C0%2C1167&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Het Houten Huis & Nordland Visual Theatre, Tryater en Club Guy & Roni - Grondtonen (9+)",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/het-houten-huis-nordland-visual-theatre-tryater-en-club-guy-roni"
   }
  },
  {
@@ -4575,7 +6489,7 @@
   "classification": {
    "method": "locatie",
    "reason": "website neushoorn.nl",
-   "confidence": 0.7
+   "confidence": 0.6
   },
   "hash": "c844f37ac9f8",
   "image": {
@@ -4585,6 +6499,53 @@
    "alt": "Foto bij Raptiel: Betty’s 50ste verjaardag",
    "credit": "Foto: Neushoorn",
    "sourceUrl": "https://www.neushoorn.nl/events/bettys-verjaardag"
+  }
+ },
+ {
+  "id": "evt_53e17b166e3679",
+  "slug": "a-tribute-to-george-michael-freedom-forever-assen-2027-03-12",
+  "title": "A tribute to George Michael - Freedom Forever",
+  "occurrences": [
+   {
+    "date": "2027-03-12",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 17.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/a-tribute-tot-george-michael",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/a-tribute-tot-george-michael",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "5914e0adfe2c",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e0e33-1695-7de1-89bb-8bb8b34940c9/ivann-vermeer-freedom-forever-a-tribute-to-george-michael-gwenny-eeckels-3?crop=3553%2C2132%2C0%2C317&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij A tribute to George Michael - Freedom Forever",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/a-tribute-tot-george-michael"
   }
  },
  {
@@ -4619,7 +6580,6 @@
   "kind": "eten",
   "kindLabel": "Eten en drinken",
   "tags": [
-   "festival",
    "meerdaags"
   ],
   "classification": {
@@ -4627,8 +6587,347 @@
    "reason": "festival met één discipline: eten",
    "confidence": 0.85
   },
-  "hash": "731b13907b7d",
-  "image": null
+  "hash": "2c3046b05f67",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Groningen_Hoge_der_A_Gracht.jpg/1280px-Groningen_Hoge_der_A_Gracht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Roger Veringmeier · CC BY 4.0 · Wikimedia Commons",
+   "author": "Roger Veringmeier",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groningen_Hoge_der_A_Gracht.jpg"
+  }
+ },
+ {
+  "id": "evt_b373f6e6bf7fd9",
+  "slug": "ivgi-greben-what-we-leave-behind-assen-2027-03-23",
+  "title": "Ivgi&Greben - What we leave behind",
+  "occurrences": [
+   {
+    "date": "2027-03-23",
+    "endDate": null,
+    "startTime": "19:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 22.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/ivgi-greben",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/ivgi-greben",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "ef12b51becbf",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e029f-6a03-7bbd-9d25-69d78ac6dc81/ivgi-greben-what-we-leave-behind-paul-sixta?crop=3553%2C2132%2C2%2C67&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Ivgi&Greben - What we leave behind",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/ivgi-greben"
+  }
+ },
+ {
+  "id": "evt_3d1843950f275c",
+  "slug": "janke-dekker-de-mooie-dingen-assen-2027-04-11",
+  "title": "Janke Dekker - De Mooie Dingen",
+  "occurrences": [
+   {
+    "date": "2027-04-11",
+    "endDate": null,
+    "startTime": "13:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 28.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/janke-dekker",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/janke-dekker",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "b6a09860dcf7",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e02eb-2a98-74b6-aed5-1747dcc1d9b5/janke-dekker-de-mooie-dingen-janita-sassen-6?crop=2072%2C1243%2C814%2C0&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Janke Dekker - De Mooie Dingen",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/janke-dekker"
+  }
+ },
+ {
+  "id": "evt_ee9419832a01ce",
+  "slug": "leo-en-marius-blokhuis-father-son-assen-2027-04-15",
+  "title": "Leo en Marius Blokhuis - Father & Son",
+  "occurrences": [
+   {
+    "date": "2027-04-15",
+    "endDate": null,
+    "startTime": "18:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 24.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/leo-en-marius-blokhuis",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/leo-en-marius-blokhuis",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "7a235ea64d68",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e02f1-8418-7512-b84e-074dd28db892/leo-en-marius-blokhuis-father-son-charlotte-blokhuis?crop=3553%2C2132%2C2%2C0&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Leo en Marius Blokhuis - Father & Son",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/leo-en-marius-blokhuis"
+  }
+ },
+ {
+  "id": "evt_8ab0ff0a8c8061",
+  "slug": "rob-en-emiel-thinking-like-sherlock-assen-2027-04-17",
+  "title": "Rob en Emiel - Thinking Like Sherlock",
+  "occurrences": [
+   {
+    "date": "2027-04-17",
+    "endDate": null,
+    "startTime": "17:00",
+    "endTime": "18:40"
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 26.00",
+  "url": "https://denieuwekolk.nl/theater/agenda/rob-en-emiel",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/rob-en-emiel",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "dcfe8d58ad4d",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e02fa-57c2-77a4-ac03-77eed230ea04/rob-en-emiel-thinking-like-sherlock-laura-marijn-2?crop=3553%2C2132%2C2%2C55&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Rob en Emiel - Thinking Like Sherlock",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/rob-en-emiel"
+  }
+ },
+ {
+  "id": "evt_f09933cec65a10",
+  "slug": "ricky-risolles-3-niet-zo-indiscreet-geen-zelfspot-geen-toegang-assen-2027-04-25",
+  "title": "Ricky Risolles 3 – Niet zo Indiscreet… - Geen zelfspot, geen toegang!",
+  "occurrences": [
+   {
+    "date": "2027-04-25",
+    "endDate": null,
+    "startTime": "13:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 28.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/ricky-risolles-3-niet-zo-indiscreet",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/ricky-risolles-3-niet-zo-indiscreet",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "d0ff74e6dafc",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e03f0-6147-7e50-981a-c2e21fc4787e/ricky-risolles-vierkantwyu-xu-xu-photography?crop=2362%2C1417%2C0%2C0&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Ricky Risolles 3 – Niet zo Indiscreet… - Geen zelfspot, geen toegang!",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/ricky-risolles-3-niet-zo-indiscreet"
+  }
+ },
+ {
+  "id": "evt_cbd60f38a96dda",
+  "slug": "opvoeden-hoe-dan-marieke-van-ginneken-en-ilse-van-den-heuvel-assen-2027-04-29",
+  "title": "Opvoeden, hoe dan…!? - Marieke van Ginneken en Ilse van den Heuvel",
+  "occurrences": [
+   {
+    "date": "2027-04-29",
+    "endDate": null,
+    "startTime": "18:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "EUR 28.50",
+  "url": "https://denieuwekolk.nl/theater/agenda/opvoeden-hoe-dan",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/opvoeden-hoe-dan",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "399be452b872",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019e0738-802b-7c12-b4dc-1cda7555d06c/opvoeden-hoe-dan-anne-van-zantwijk-3?crop=2370%2C1422%2C0%2C248&scale=1920&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Opvoeden, hoe dan…!? - Marieke van Ginneken en Ilse van den Heuvel",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/opvoeden-hoe-dan"
+  }
+ },
+ {
+  "id": "evt_53ecd85c761477_79027513f836",
+  "slug": "miss-montreal-20-jaar-onmeunig-druk-assen-2027-10-09",
+  "title": "MISS MONTREAL - 20 JAAR ONMEUNIG DRUK",
+  "occurrences": [
+   {
+    "date": "2027-10-09",
+    "endDate": null,
+    "startTime": "17:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Nieuwe Kolk",
+   "city": "Assen",
+   "lat": 52.994304,
+   "lon": 6.5586416
+  },
+  "price": "Zie organisator",
+  "url": "https://denieuwekolk.nl/theater/agenda/miss-montreal",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://denieuwekolk.nl/theater/agenda/miss-montreal",
+    "host": "denieuwekolk.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
+  },
+  "hash": "5978c4b41158",
+  "image": {
+   "url": "https://media.denieuwekolk.nl/019ed608-ddf1-732f-84d3-1e684d707b4c/16x9-missmontreal-theatertour-2027-no-dates?crop=1798%2C1079%2C60%2C0&scale=1798&optimizer=image",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij MISS MONTREAL - 20 JAAR ONMEUNIG DRUK",
+   "credit": "Foto: De Nieuwe Kolk",
+   "sourceUrl": "https://denieuwekolk.nl/theater/agenda/miss-montreal"
+  }
  },
  {
   "id": "evt_0959be9193011c",

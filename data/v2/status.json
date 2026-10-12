@@ -1,10 +1,11 @@
 {
  "version": 2,
- "refreshedAt": "2026-10-12T06:39:44+00:00",
+ "refreshedAt": "2026-10-12T09:43:22+00:00",
  "today": "2026-10-12",
- "total": 96,
- "inputRecords": 154,
+ "total": 142,
+ "inputRecords": 202,
  "outsideArea": 19,
+ "geenUitje": 1,
  "area": {
   "center": [
    53.2194,
@@ -14,31 +15,32 @@
  },
  "byKind": {
   "natuur": 33,
-  "markt": 25,
-  "festival": 9,
-  "kunst": 7,
-  "muziek": 7,
-  "feest": 5,
-  "theater": 4,
-  "overig": 2,
+  "theater": 31,
+  "markt": 27,
+  "muziek": 18,
+  "kunst": 9,
+  "feest": 8,
+  "lezing": 5,
+  "kinderen": 4,
+  "festival": 3,
+  "film": 2,
   "sport": 1,
-  "lezing": 1,
-  "film": 1,
   "eten": 1
  },
  "byCity": {
+  "Assen": 42,
   "Groningen": 23,
   "Earnewald": 13,
+  "Leeuwarden": 7,
   "Veenhuizen": 7,
+  "Harkema": 6,
   "Earnewâld": 6,
   "Katlijk": 5,
-  "Leeuwarden": 5,
   "Hallum": 4,
   "Rolde": 4,
   "Bourtange": 4,
   "Zuidbroek": 3,
   "Haren": 3,
-  "Assen": 3,
   "Peperga": 2,
   "Delfzijl": 2,
   "Appingedam": 2,
@@ -46,7 +48,6 @@
   "Dwingeloo": 1,
   "Oosterwolde": 1,
   "Gytsjerk": 1,
-  "Beilen": 1,
   "Mûnein": 1,
   "Rotstergaast": 1,
   "Warffum": 1,
@@ -54,13 +55,16 @@
   "Hoogeveen": 1
  },
  "bySourceHost": {
+  "denieuwekolk.nl": 39,
   "itfryskegea.nl": 33,
   "wildro.nl": 10,
   "gevangenismuseum.nl": 7,
+  "despitkeet.nl": 6,
   "neushoorn.nl": 5,
   "boerderijkamps.nl": 4,
   "bourtange.nl": 4,
   "martiniplaza.nl": 3,
+  "defensie.nl": 2,
   "reis-events.nl": 2,
   "bierbattle.nl": 2,
   "vitalismarkten.nl": 2,
@@ -78,7 +82,6 @@
   "deroegeboys.nl": 1,
   "zoek.officielebekendmakingen.nl": 1,
   "boeremapark.nl": 1,
-  "pgbeilen.nl": 1,
   "zeldzaammooi.com": 1,
   "natuurwerkdag.nl": 1,
   "jongeharten.nl": 1,
@@ -90,10 +93,11 @@
   "wfnn.nl": 1
  },
  "photos": {
-  "organisator": 61,
-  "wikimedia": 23,
-  "illustratie": 12
+  "organisator": 107,
+  "wikimedia": 35,
+  "zonder": 0
  },
+ "twijfel": 4,
  "kinds": {
   "muziek": "Muziek",
   "festival": "Festival",
@@ -101,6 +105,7 @@
   "film": "Film",
   "markt": "Markt en beurs",
   "feest": "Feest en kermis",
+  "kinderen": "Kinderen en familie",
   "sport": "Sport",
   "natuur": "Natuur en buiten",
   "kunst": "Kunst en erfgoed",
@@ -112,13 +117,12 @@
   "gratis": "Gratis",
   "kinderen": "Voor kinderen",
   "buiten": "Buiten",
-  "meerdaags": "Meerdaags",
-  "festival": "Festival"
+  "meerdaags": "Meerdaags"
  },
  "changes": {
-  "new": 50,
-  "changed": 0,
-  "removed": 4
+  "new": 47,
+  "changed": 24,
+  "removed": 1
  },
  "gate": {
   "passed": true,
@@ -126,7 +130,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "96 nu, 46 vorige keer (minimaal 85%)"
+    "detail": "142 nu, 96 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -136,7 +140,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "2 van 96 (2%)"
+    "detail": "0 van 142 (0%)"
    },
    {
     "name": "velden_compleet",

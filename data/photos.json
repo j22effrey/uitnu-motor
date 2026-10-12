@@ -1,108 +1,604 @@
 {
  "commons": {
   "plaats:appingedam": {
-   "author": "Bert Kaufmann from Roermond, Netherlands",
    "checkedAt": "2026-10-12",
-   "file": "File:The hanging kitchens of Appingedam De hangende keukens van Appingedam (6172038068).jpg",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_(6172038068).jpg",
+   "photos": [
+    {
+     "author": "Bert Kaufmann from Roermond, Netherlands",
+     "file": "File:The hanging kitchens of Appingedam De hangende keukens van Appingedam (6172038068).jpg",
+     "license": "CC BY-SA 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_(6172038068).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_%286172038068%29.jpg/1280px-The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_%286172038068%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Achter vanuit het noorden - Appingedam - 20024059 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Achter_vanuit_het_noorden_-_Appingedam_-_20024059_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Achter_vanuit_het_noorden_-_Appingedam_-_20024059_-_RCE.jpg/1280px-Achter_vanuit_het_noorden_-_Appingedam_-_20024059_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Achtergevels v.brug Oude Kerkstraat - Appingedam - 20024058 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Achtergevels_v.brug_Oude_Kerkstraat_-_Appingedam_-_20024058_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Achtergevels_v.brug_Oude_Kerkstraat_-_Appingedam_-_20024058_-_RCE.jpg/1280px-Achtergevels_v.brug_Oude_Kerkstraat_-_Appingedam_-_20024058_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Achtergevels vanuit Gouden Pand - Appingedam - 20024057 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Achtergevels_vanuit_Gouden_Pand_-_Appingedam_-_20024057_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Achtergevels_vanuit_Gouden_Pand_-_Appingedam_-_20024057_-_RCE.jpg/1280px-Achtergevels_vanuit_Gouden_Pand_-_Appingedam_-_20024057_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Achtergevels vanuit Kattendiep - Appingedam - 20024130 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Achtergevels_vanuit_Kattendiep_-_Appingedam_-_20024130_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Achtergevels_vanuit_Kattendiep_-_Appingedam_-_20024130_-_RCE.jpg/1280px-Achtergevels_vanuit_Kattendiep_-_Appingedam_-_20024130_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Achterzijde vanuit Kattendiep - Appingedam - 20024090 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Achterzijde_vanuit_Kattendiep_-_Appingedam_-_20024090_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Achterzijde_vanuit_Kattendiep_-_Appingedam_-_20024090_-_RCE.jpg/1280px-Achterzijde_vanuit_Kattendiep_-_Appingedam_-_20024090_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_%286172038068%29.jpg/1280px-The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_%286172038068%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q995"
   },
   "plaats:assen": {
-   "author": "Niels Elgaard Larsen",
    "checkedAt": "2026-10-12",
-   "file": "File:AssenMarkt.JPG",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG",
+   "photos": [
+    {
+     "author": "Niels Elgaard Larsen",
+     "file": "File:AssenMarkt.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "jhut1995",
+     "file": "File:3D Photo - panoramio (1).jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "jhut1995",
+     "file": "File:3D Photo - panoramio (2).jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "jhut1995",
+     "file": "File:3D Photo - panoramio (3).jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "jhut1995",
+     "file": "File:3D Photo - panoramio (4).jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "jhut1995",
+     "file": "File:3D Photo - panoramio (5).jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q798"
   },
   "plaats:beilen": {
-   "author": "Gerardus",
    "checkedAt": "2026-10-12",
-   "file": "File:Beilen Rotonde.JPG",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Beilen_Rotonde.JPG",
+   "photos": [
+    {
+     "author": "Gerardus",
+     "file": "File:Beilen Rotonde.JPG",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Beilen_Rotonde.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Beilen_Rotonde.JPG/1280px-Beilen_Rotonde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gouwenaar",
+     "file": "File:20210531 fietsbrug Beilen.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:20210531_fietsbrug_Beilen.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/20210531_fietsbrug_Beilen.jpg/1280px-20210531_fietsbrug_Beilen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "StevenL",
+     "file": "File:A28 - panoramio - StevenL (9).jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:A28_-_panoramio_-_StevenL_(9).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/A28_-_panoramio_-_StevenL_%289%29.jpg/1280px-A28_-_panoramio_-_StevenL_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "JakobHosp",
+     "file": "File:Beilen landweg zandweg.jpg",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Beilen_landweg_zandweg.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Beilen_landweg_zandweg.jpg/1280px-Beilen_landweg_zandweg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Spoorjan",
+     "file": "File:DVM 260.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:DVM_260.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/DVM_260.JPG/1280px-DVM_260.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "JakobHosp",
+     "file": "File:Hooghalen Holtesch Land van Ons 1.jpg",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Hooghalen_Holtesch_Land_van_Ons_1.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hooghalen_Holtesch_Land_van_Ons_1.jpg/1280px-Hooghalen_Holtesch_Land_van_Ons_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Beilen_Rotonde.JPG/1280px-Beilen_Rotonde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q2034045"
   },
   "plaats:delfzijl": {
-   "author": "Gouwenaar",
    "checkedAt": "2026-10-12",
-   "file": "File:Zicht op Delfzijl1.jpg",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg",
+   "photos": [
+    {
+     "author": "Gouwenaar",
+     "file": "File:Zicht op Delfzijl1.jpg",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "C messier",
+     "file": "File:Delfzijl 1427.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Kramer, A. (Fotograaf)",
+     "file": "File:Aanzicht gedenksteen gesloopte brug, verplaatst naar dijk bij de Dorpsterzijl - Delfzijl - 20371193 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gouwenaar",
+     "file": "File:Arwerd.jpg",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Broes willus",
+     "file": "File:Biessumerwaard in Delfzijl Noord.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Broes willus",
+     "file": "File:Biessummerbos.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q322986"
   },
   "plaats:dwingeloo": {
-   "author": "Berteun Damman (That's I)",
    "checkedAt": "2026-10-12",
-   "file": "File:Dwingeloo St. Nicolaaskerk 20051113.jpg",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Dwingeloo_St._Nicolaaskerk_20051113.jpg",
+   "photos": [
+    {
+     "author": "Berteun Damman (That's I)",
+     "file": "File:Dwingeloo St. Nicolaaskerk 20051113.jpg",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Dwingeloo_St._Nicolaaskerk_20051113.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Dwingeloo_St._Nicolaaskerk_20051113.jpg/1280px-Dwingeloo_St._Nicolaaskerk_20051113.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Pimvantend",
+     "file": "File:32davidsplassen.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:32davidsplassen.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/32davidsplassen.jpg/1280px-32davidsplassen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Pimvantend",
+     "file": "File:ANWB paddenstoel met het nummer 25178.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:ANWB_paddenstoel_met_het_nummer_25178.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/ANWB_paddenstoel_met_het_nummer_25178.jpg/1280px-ANWB_paddenstoel_met_het_nummer_25178.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Unknown author Unknown author",
+     "file": "File:Batinger Schut - Dwingeloo - 20065572 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Batinger_Schut_-_Dwingeloo_-_20065572_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Batinger_Schut_-_Dwingeloo_-_20065572_-_RCE.jpg/1280px-Batinger_Schut_-_Dwingeloo_-_20065572_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Unknown author Unknown author",
+     "file": "File:Batinger Schut - Dwingeloo - 20065573 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Batinger_Schut_-_Dwingeloo_-_20065573_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Batinger_Schut_-_Dwingeloo_-_20065573_-_RCE.jpg/1280px-Batinger_Schut_-_Dwingeloo_-_20065573_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gelke Broersma",
+     "file": "File:Omgeving Dwingeloo - panoramio.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Omgeving_Dwingeloo_-_panoramio.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Omgeving_Dwingeloo_-_panoramio.jpg/1280px-Omgeving_Dwingeloo_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Dwingeloo_St._Nicolaaskerk_20051113.jpg/1280px-Dwingeloo_St._Nicolaaskerk_20051113.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q1268530"
   },
-  "plaats:oosterwolde": {
-   "author": "Vincent van Zeijst",
+  "plaats:groningen": {
    "checkedAt": "2026-10-12",
-   "file": "File:Netherlands, Oosterwolde, Quadoelenweg (1) en Opsterlandse Compagnonsvaart.jpg",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Quadoelenweg_(1)_en_Opsterlandse_Compagnonsvaart.jpg",
+   "photos": [
+    {
+     "author": "Braun & Hogenberg",
+     "file": "File:Plattegrond van de stad Groningen in 1575.jpg",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Plattegrond_van_de_stad_Groningen_in_1575.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Plattegrond_van_de_stad_Groningen_in_1575.jpg/1280px-Plattegrond_van_de_stad_Groningen_in_1575.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Ferdi Tuinman",
+     "file": "File:Aletta Jacobs in Groningen.jpg",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Aletta_Jacobs_in_Groningen.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Aletta_Jacobs_in_Groningen.jpg/1280px-Aletta_Jacobs_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Ferdi Tuinman",
+     "file": "File:Forum in Groningen.jpg",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Forum_in_Groningen.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Forum_in_Groningen.jpg/1280px-Forum_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "FaceMePLS from The Hague, The Netherlands",
+     "file": "File:Graffiti Langestraat Groningen (8087124757).jpg",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Graffiti_Langestraat_Groningen_(8087124757).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Graffiti_Langestraat_Groningen_%288087124757%29.jpg/1280px-Graffiti_Langestraat_Groningen_%288087124757%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "FaceMePLS from The Hague, The Netherlands",
+     "file": "File:Grafitti Boterdiep Groningen (8087126308).jpg",
+     "license": "CC BY 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Grafitti_Boterdiep_Groningen_(8087126308).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Grafitti_Boterdiep_Groningen_%288087126308%29.jpg/1280px-Grafitti_Boterdiep_Groningen_%288087126308%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Roger Veringmeier",
+     "file": "File:Groningen Hoge der A Gracht.jpg",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen_Hoge_der_A_Gracht.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Groningen_Hoge_der_A_Gracht.jpg/1280px-Groningen_Hoge_der_A_Gracht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Plattegrond_van_de_stad_Groningen_in_1575.jpg/1280px-Plattegrond_van_de_stad_Groningen_in_1575.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "wikidata": "Q749"
+  },
+  "plaats:oosterwolde": {
+   "checkedAt": "2026-10-12",
+   "photos": [
+    {
+     "author": "Vincent van Zeijst",
+     "file": "File:Netherlands, Oosterwolde, Quadoelenweg (1) en Opsterlandse Compagnonsvaart.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Quadoelenweg_(1)_en_Opsterlandse_Compagnonsvaart.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Sander van der Wel from Netherlands",
+     "file": "File:Meertje (3805218900).jpg",
+     "license": "CC BY-SA 2.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Meertje_(3805218900).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Meertje_%283805218900%29.jpg/1280px-Meertje_%283805218900%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Vincent van Zeijst",
+     "file": "File:Netherlands, Oosterwolde, Brinkstraat (1) en Opsterlandse Compagnonsvaart.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Brinkstraat_(1)_en_Opsterlandse_Compagnonsvaart.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Netherlands%2C_Oosterwolde%2C_Brinkstraat_%281%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Brinkstraat_%281%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Vincent van Zeijst",
+     "file": "File:Netherlands, Oosterwolde, Brinkstraat (2) en Opsterlandse Compagnonsvaart.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Brinkstraat_(2)_en_Opsterlandse_Compagnonsvaart.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Netherlands%2C_Oosterwolde%2C_Brinkstraat_%282%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Brinkstraat_%282%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Vincent van Zeijst",
+     "file": "File:Netherlands, Oosterwolde, Hoofdbrug over de Opsterlandse Compagnonsvaart.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Netherlands%2C_Oosterwolde%2C_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Vincent van Zeijst",
+     "file": "File:Netherlands, Oosterwolde, Molenweg en Opsterlandse Compagnonsvaart.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Netherlands%2C_Oosterwolde%2C_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q2678235"
   },
   "plaats:ruinen": {
-   "author": "Gouwenaar",
    "checkedAt": "2026-10-12",
-   "file": "File:Kerk op brink van Ruinen.jpg",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Kerk_op_brink_van_Ruinen.jpg",
+   "photos": [
+    {
+     "author": "Gouwenaar",
+     "file": "File:Kerk op brink van Ruinen.jpg",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Kerk_op_brink_van_Ruinen.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Kerk_op_brink_van_Ruinen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+     "author": "Michielverbeek",
+     "file": "File:Tussen Oosteinde en Ruinen, sloot in veenlandschap foto9 2016-04-09 10.09.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Tussen_Oosteinde_en_Ruinen,_sloot_in_veenlandschap_foto9_2016-04-09_10.09.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Tussen_Oosteinde_en_Ruinen%2C_sloot_in_veenlandschap_foto9_2016-04-09_10.09.jpg/1280px-Tussen_Oosteinde_en_Ruinen%2C_sloot_in_veenlandschap_foto9_2016-04-09_10.09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gouwenaar",
+     "file": "File:20210512 Groote Esch Ruinen.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:20210512_Groote_Esch_Ruinen.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/20210512_Groote_Esch_Ruinen.jpg/1280px-20210512_Groote_Esch_Ruinen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gouwenaar",
+     "file": "File:20210512 zicht op Ruinen2 vanuit het noorden.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:20210512_zicht_op_Ruinen2_vanuit_het_noorden.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/20210512_zicht_op_Ruinen2_vanuit_het_noorden.jpg/1280px-20210512_zicht_op_Ruinen2_vanuit_het_noorden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gouwenaar",
+     "file": "File:20210512 zicht op Ruinen3 vanuit het noorden.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:20210512_zicht_op_Ruinen3_vanuit_het_noorden.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/20210512_zicht_op_Ruinen3_vanuit_het_noorden.jpg/1280px-20210512_zicht_op_Ruinen3_vanuit_het_noorden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Ronaldhuizer",
+     "file": "File:Bospad Ruinen.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Bospad_Ruinen.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Bospad_Ruinen.jpg/1280px-Bospad_Ruinen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Kerk_op_brink_van_Ruinen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "wikidata": "Q1007156"
   },
   "plaats:warffum": {
-   "author": "Gouwenaar",
    "checkedAt": "2026-10-12",
-   "file": "File:Zicht op Warffum vanaf het Warfummerbos.jpg",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg",
+   "photos": [
+    {
+     "author": "Gouwenaar",
+     "file": "File:Zicht op Warffum vanaf het Warfummerbos.jpg",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg/1280px-Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Groninger Archieven",
+     "file": "File:Asingaborg of Warffumborg bij Warffum.jpg",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Asingaborg_of_Warffumborg_bij_Warffum.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Asingaborg_of_Warffumborg_bij_Warffum.jpg/1280px-Asingaborg_of_Warffumborg_bij_Warffum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gouwenaar",
+     "file": "File:Beeld paard Folkert S. Reitsma Stationsweg Warffum.jpg",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Beeld_paard_Folkert_S._Reitsma_Stationsweg_Warffum.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Beeld_paard_Folkert_S._Reitsma_Stationsweg_Warffum.jpg/1280px-Beeld_paard_Folkert_S._Reitsma_Stationsweg_Warffum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Amateur-schilder Lambertus Beckeringh (1716-1769)",
+     "file": "File:Lambertus jr Beckeringh - Warffum.jpg",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Lambertus_jr_Beckeringh_-_Warffum.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Lambertus_jr_Beckeringh_-_Warffum.jpg/1280px-Lambertus_jr_Beckeringh_-_Warffum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Paul van Galen",
+     "file": "File:Overzicht - Warffum - 20249516 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Overzicht_-_Warffum_-_20249516_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Overzicht_-_Warffum_-_20249516_-_RCE.jpg/1280px-Overzicht_-_Warffum_-_20249516_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Unknown author Unknown author",
+     "file": "File:Warffumborg, sepia A.Rademaker, Gemeente Archief Groningen - Warffum - 20249578 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Warffumborg,_sepia_A.Rademaker,_Gemeente_Archief_Groningen_-_Warffum_-_20249578_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Warffumborg%2C_sepia_A.Rademaker%2C_Gemeente_Archief_Groningen_-_Warffum_-_20249578_-_RCE.jpg/1280px-Warffumborg%2C_sepia_A.Rademaker%2C_Gemeente_Archief_Groningen_-_Warffum_-_20249578_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg/1280px-Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q1942428"
   },
   "plaats:winsum": {
-   "author": "Husky",
    "checkedAt": "2026-10-12",
-   "file": "File:Winsum (gr.)-hoofdstraat.jpg",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Winsum_(gr.)-hoofdstraat.jpg",
+   "photos": [
+    {
+     "author": "Husky",
+     "file": "File:Winsum (gr.)-hoofdstraat.jpg",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Winsum_(gr.)-hoofdstraat.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Winsum_%28gr.%29-hoofdstraat.jpg/1280px-Winsum_%28gr.%29-hoofdstraat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Andre Hosper",
+     "file": "File:7556.Winsum.OudeDiepje.Potmaar.Bedum.OnderDenDam.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:7556.Winsum.OudeDiepje.Potmaar.Bedum.OnderDenDam.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/7556.Winsum.OudeDiepje.Potmaar.Bedum.OnderDenDam.jpg/1280px-7556.Winsum.OudeDiepje.Potmaar.Bedum.OnderDenDam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Andre Hosper",
+     "file": "File:7560.Winsum.OudeDiepje.Potmaar.Bedum.OnderDenDam.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:7560.Winsum.OudeDiepje.Potmaar.Bedum.OnderDenDam.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/7560.Winsum.OudeDiepje.Potmaar.Bedum.OnderDenDam.jpg/1280px-7560.Winsum.OudeDiepje.Potmaar.Bedum.OnderDenDam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Hardscarf",
+     "file": "File:Alinghuizen vanaf Garnwerd.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Alinghuizen_vanaf_Garnwerd.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Alinghuizen_vanaf_Garnwerd.jpg/1280px-Alinghuizen_vanaf_Garnwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Hardscarf",
+     "file": "File:Alinghuizen vanaf Winsum.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Alinghuizen_vanaf_Winsum.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Alinghuizen_vanaf_Winsum.jpg/1280px-Alinghuizen_vanaf_Winsum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Onderwijsgek",
+     "file": "File:Alinghuizen.JPG",
+     "license": "CC BY-SA 2.5 nl",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/nl/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Alinghuizen.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Alinghuizen.JPG/1280px-Alinghuizen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Winsum_%28gr.%29-hoofdstraat.jpg/1280px-Winsum_%28gr.%29-hoofdstraat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q1025079"
   },
   "plaats:zuidbroek": {
-   "author": "Gouwenaar",
    "checkedAt": "2026-10-12",
-   "file": "File:Petruskerk Zuidbroek.jpg",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Petruskerk_Zuidbroek.jpg",
+   "photos": [
+    {
+     "author": "Gouwenaar",
+     "file": "File:Petruskerk Zuidbroek.jpg",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Petruskerk_Zuidbroek.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Petruskerk_Zuidbroek.jpg/1280px-Petruskerk_Zuidbroek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Marco Roepers",
+     "file": "File:Fietspad Poeltje - panoramio.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Fietspad_Poeltje_-_panoramio.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Fietspad_Poeltje_-_panoramio.jpg/1280px-Fietspad_Poeltje_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Michielverbeek",
+     "file": "File:Zuidbroek, het Winschoterdiep foto2 2012-09-01 14.08.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Zuidbroek,_het_Winschoterdiep_foto2_2012-09-01_14.08.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Zuidbroek%2C_het_Winschoterdiep_foto2_2012-09-01_14.08.jpg/1280px-Zuidbroek%2C_het_Winschoterdiep_foto2_2012-09-01_14.08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Petruskerk_Zuidbroek.jpg/1280px-Petruskerk_Zuidbroek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q3025870"
   },
   "plek:a kwartier|groningen": {
    "checkedAt": "2026-10-12",
    "url": null
+  },
+  "plek:de nieuwe kolk|assen": {
+   "checkedAt": "2026-10-12",
+   "photos": [
+    {
+     "author": "Richard Broekhuijzen",
+     "file": "File:DNK Assen 2021.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:DNK_Assen_2021.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/DNK_Assen_2021.jpg/1280px-DNK_Assen_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/DNK_Assen_2021.jpg/1280px-DNK_Assen_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "wikidata": "Q16070377"
   },
   "plek:de suiker|groningen": {
    "checkedAt": "2026-10-12",
@@ -112,13 +608,62 @@
    "checkedAt": "2026-10-12",
    "url": null
   },
-  "plek:groninger museum|groningen": {
-   "author": "nl:Gebruiker:Ra-smit , colour adapted by User:Lyzzy",
+  "plek:feesttent molenbergplein|delfzijl": {
    "checkedAt": "2026-10-12",
-   "file": "File:Groninger Museum 2.jpg",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Groninger_Museum_2.jpg",
+   "url": null
+  },
+  "plek:groninger museum|groningen": {
+   "checkedAt": "2026-10-12",
+   "photos": [
+    {
+     "author": "nl:Gebruiker:Ra-smit , colour adapted by User:Lyzzy",
+     "file": "File:Groninger Museum 2.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groninger_Museum_2.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Groninger_Museum_2.jpg/1280px-Groninger_Museum_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Michielverbeek",
+     "file": "File:Groningen, Groninger Museum vanaf de westkant IMG 4247 2023-04-02 18.01.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen,_Groninger_Museum_vanaf_de_westkant_IMG_4247_2023-04-02_18.01.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Groningen%2C_Groninger_Museum_vanaf_de_westkant_IMG_4247_2023-04-02_18.01.jpg/1280px-Groningen%2C_Groninger_Museum_vanaf_de_westkant_IMG_4247_2023-04-02_18.01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Michielverbeek",
+     "file": "File:Groningen, Groninger Museum vanaf de westkant IMG 4271 2023-04-02 19.24.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen,_Groninger_Museum_vanaf_de_westkant_IMG_4271_2023-04-02_19.24.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Groningen%2C_Groninger_Museum_vanaf_de_westkant_IMG_4271_2023-04-02_19.24.jpg/1280px-Groningen%2C_Groninger_Museum_vanaf_de_westkant_IMG_4271_2023-04-02_19.24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Michielverbeek",
+     "file": "File:Groningen, Groninger Museum vanaf de westkant IMG 4310 2023-04-02 20.26.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen,_Groninger_Museum_vanaf_de_westkant_IMG_4310_2023-04-02_20.26.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Groningen%2C_Groninger_Museum_vanaf_de_westkant_IMG_4310_2023-04-02_20.26.jpg/1280px-Groningen%2C_Groninger_Museum_vanaf_de_westkant_IMG_4310_2023-04-02_20.26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Michielverbeek",
+     "file": "File:Groningen, Groninger Museum vanaf de westkant IMG 4317 2023-04-02 20.33.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen,_Groninger_Museum_vanaf_de_westkant_IMG_4317_2023-04-02_20.33.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Groningen%2C_Groninger_Museum_vanaf_de_westkant_IMG_4317_2023-04-02_20.33.jpg/1280px-Groningen%2C_Groninger_Museum_vanaf_de_westkant_IMG_4317_2023-04-02_20.33.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gouwenaar",
+     "file": "File:20151203 Groninger Museum1.jpg",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:20151203_Groninger_Museum1.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/20151203_Groninger_Museum1.jpg/1280px-20151203_Groninger_Museum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Groninger_Museum_2.jpg/1280px-Groninger_Museum_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q1542668"
   },
@@ -127,12 +672,57 @@
    "url": null
   },
   "plek:martiniplaza|groningen": {
-   "author": "Pepijnkoning",
    "checkedAt": "2026-10-12",
-   "file": "File:Hoofdentree MartiniPlaza december 2010.jpg",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Hoofdentree_MartiniPlaza_december_2010.jpg",
+   "photos": [
+    {
+     "author": "Pepijnkoning",
+     "file": "File:Hoofdentree MartiniPlaza december 2010.jpg",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Hoofdentree_MartiniPlaza_december_2010.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hoofdentree_MartiniPlaza_december_2010.jpg/1280px-Hoofdentree_MartiniPlaza_december_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Groninger3",
+     "file": "File:Donar - Landstede Basketbal (2016).jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Donar_-_Landstede_Basketbal_(2016).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Donar_-_Landstede_Basketbal_%282016%29.jpg/1280px-Donar_-_Landstede_Basketbal_%282016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Grunn050",
+     "file": "File:Donar vs ZZ Leiden Bekerfinale 2018.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Donar_vs_ZZ_Leiden_Bekerfinale_2018.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Donar_vs_ZZ_Leiden_Bekerfinale_2018.jpg/1280px-Donar_vs_ZZ_Leiden_Bekerfinale_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Rob Croes for Anefo",
+     "file": "File:Europees Jeugdkampioenschap Schaken (elfde Niemeyer schaaktoernooi) te Groningen, Bestanddeelnr 926-1169.jpg",
+     "license": "CC0",
+     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Europees_Jeugdkampioenschap_Schaken_(elfde_Niemeyer_schaaktoernooi)_te_Groningen,_Bestanddeelnr_926-1169.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Europees_Jeugdkampioenschap_Schaken_%28elfde_Niemeyer_schaaktoernooi%29_te_Groningen%2C_Bestanddeelnr_926-1169.jpg/1280px-Europees_Jeugdkampioenschap_Schaken_%28elfde_Niemeyer_schaaktoernooi%29_te_Groningen%2C_Bestanddeelnr_926-1169.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "ZanderZ",
+     "file": "File:GasTerra Flames 2010-04-10.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:GasTerra_Flames_2010-04-10.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/GasTerra_Flames_2010-04-10.jpg/1280px-GasTerra_Flames_2010-04-10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "ZanderZ",
+     "file": "File:GasTerra Flames 2010-10-09.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:GasTerra_Flames_2010-10-09.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/GasTerra_Flames_2010-10-09.jpg/1280px-GasTerra_Flames_2010-10-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hoofdentree_MartiniPlaza_december_2010.jpg/1280px-Hoofdentree_MartiniPlaza_december_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q2790073"
   },
@@ -149,12 +739,57 @@
    "url": null
   },
   "plek:stadsschouwburg groningen|groningen": {
-   "author": "C messier",
    "checkedAt": "2026-10-12",
-   "file": "File:Stadsschouwburg, Groningen 1276.jpg",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Stadsschouwburg,_Groningen_1276.jpg",
+   "photos": [
+    {
+     "author": "C messier",
+     "file": "File:Stadsschouwburg, Groningen 1276.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Stadsschouwburg,_Groningen_1276.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Stadsschouwburg%2C_Groningen_1276.jpg/1280px-Stadsschouwburg%2C_Groningen_1276.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
+     "file": "File:20100604 Turfsingel 86 (Stadsschouwburg) Groningen NL.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:20100604_Turfsingel_86_(Stadsschouwburg)_Groningen_NL.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/20100604_Turfsingel_86_%28Stadsschouwburg%29_Groningen_NL.jpg/1280px-20100604_Turfsingel_86_%28Stadsschouwburg%29_Groningen_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Gouwenaar",
+     "file": "File:20220509 uitzicht7 vanaf dakterras Forumgebouw Groningen.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:20220509_uitzicht7_vanaf_dakterras_Forumgebouw_Groningen.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/20220509_uitzicht7_vanaf_dakterras_Forumgebouw_Groningen.jpg/1280px-20220509_uitzicht7_vanaf_dakterras_Forumgebouw_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Achtergevel - Groningen - 20093326 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Achtergevel_-_Groningen_-_20093326_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Achtergevel_-_Groningen_-_20093326_-_RCE.jpg/1280px-Achtergevel_-_Groningen_-_20093326_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Gedeelte rechter zij- en achtergevel - Groningen - 20093325 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Gedeelte_rechter_zij-_en_achtergevel_-_Groningen_-_20093325_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Gedeelte_rechter_zij-_en_achtergevel_-_Groningen_-_20093325_-_RCE.jpg/1280px-Gedeelte_rechter_zij-_en_achtergevel_-_Groningen_-_20093325_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Interieur grote zaal, overzicht - Groningen - 20093327 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Interieur_grote_zaal,_overzicht_-_Groningen_-_20093327_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Interieur_grote_zaal%2C_overzicht_-_Groningen_-_20093327_-_RCE.jpg/1280px-Interieur_grote_zaal%2C_overzicht_-_Groningen_-_20093327_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Stadsschouwburg%2C_Groningen_1276.jpg/1280px-Stadsschouwburg%2C_Groningen_1276.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q4356153"
   },
@@ -163,12 +798,57 @@
    "url": null
   },
   "plek:vesting bourtange|bourtange": {
-   "author": null,
    "checkedAt": "2026-10-12",
-   "file": "File:Fortbourtange.jpg",
-   "license": "Copyrighted free use",
-   "licenseUrl": null,
-   "pageUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg",
+   "photos": [
+    {
+     "author": null,
+     "file": "File:Fortbourtange.jpg",
+     "license": "Copyrighted free use",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    },
+    {
+     "author": "Ziko van Dijk",
+     "file": "File:2013-04 vesting bourtange 01.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:2013-04_vesting_bourtange_01.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2013-04_vesting_bourtange_01.JPG/1280px-2013-04_vesting_bourtange_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Ziko van Dijk",
+     "file": "File:2013-04 vesting bourtange 02.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:2013-04_vesting_bourtange_02.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/2013-04_vesting_bourtange_02.JPG/1280px-2013-04_vesting_bourtange_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Ziko van Dijk",
+     "file": "File:2013-04 vesting bourtange 03.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:2013-04_vesting_bourtange_03.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/2013-04_vesting_bourtange_03.JPG/1280px-2013-04_vesting_bourtange_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Ziko van Dijk",
+     "file": "File:2013-04 vesting bourtange 05.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:2013-04_vesting_bourtange_05.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/2013-04_vesting_bourtange_05.JPG/1280px-2013-04_vesting_bourtange_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Ziko van Dijk",
+     "file": "File:2013-04 vesting bourtange 06.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:2013-04_vesting_bourtange_06.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2013-04_vesting_bourtange_06.JPG/1280px-2013-04_vesting_bourtange_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "wikidata": "Q5470838"
   },
@@ -186,7 +866,19 @@
    "checkedAt": "2026-10-12",
    "image": null
   },
+  "defensie.nl": {
+   "checkedAt": "2026-10-12",
+   "image": "https://www.defensie.nl/assets/20220630jav0055_PMsmj.jpg"
+  },
+  "denieuwekolk.nl": {
+   "checkedAt": "2026-10-12",
+   "image": "https://media.denieuwekolk.nl/019995c0-53b5-77a8-9170-dca08e913036/dnk-assen-marcel-j-de-jong.jpg?optimizer=image&scale=1200"
+  },
   "deroegeboys.nl": {
+   "checkedAt": "2026-10-12",
+   "image": null
+  },
+  "despitkeet.nl": {
    "checkedAt": "2026-10-12",
    "image": null
   },
@@ -282,6 +974,450 @@
   "https://boeremapark.nl/agenda/": {
    "checkedAt": "2026-10-12",
    "image": "https://boeremapark.nl/wp-content/uploads/2026/04/image-4.png",
+   "via": "og:image"
+  },
+  "https://denieuwekolk.nl/theater/agenda/a-tribute-to-john-denver": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://media.denieuwekolk.nl/019e0719-17b6-7b4e-aace-bdd1f16e9f47/a-tribute-to-john-denver-rocky-mountain-high-laura-knipsael-2?crop=2370%2C1422%2C1%2C1322&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/a-tribute-tot-george-michael": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://media.denieuwekolk.nl/019e0e33-1695-7de1-89bb-8bb8b34940c9/ivann-vermeer-freedom-forever-a-tribute-to-george-michael-gwenny-eeckels-3?crop=3553%2C2132%2C0%2C317&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/anansi-de-spin-en-de-gulzige-tijger": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019dfed0-cc97-729e-b029-ebd8c32171d0/anansi-de-spin-en-de-gulzige-tijger-02-c-iven-cudogham?crop=2687%2C1612%2C1%2C203&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/back-to-black": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "film",
+    "woord": "bioscoop"
+   },
+   "image": "https://media.denieuwekolk.nl/019e1209-f32c-72ff-91d0-cec94408b79d/amy-winehouse-webbanner-2000x900-px?crop=1498%2C899%2C343%2C1&scale=1498&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/bee-gees-by-maincourse": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://media.denieuwekolk.nl/019e0767-226c-7d13-83dc-b5d095e075c1/bee-gees-by-maincourse-fame-family-tragedy-nico-kroon-1?crop=2843%2C1706%2C0%2C1002&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/boeing-boeing": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e15da-fd7e-7bf3-997a-8c9628b52124/boeing-boeing-staand-a4-robin-kamphuis-pretpakhuis?crop=2478%2C1487%2C0%2C824&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/concert-politie-orkest-noord-nederland": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://media.denieuwekolk.nl/019dd313-3944-7456-86bd-9d10d7badcc4/trompet-commissarispet-vlag?crop=2048%2C1229%2C0%2C153&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/dianne-liesker": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "voorstelling"
+   },
+   "image": "https://media.denieuwekolk.nl/019d96be-b2ce-7779-8a81-a2bae9718dc6/de-hitbingo-band-floris-liesker-4?crop=3553%2C2132%2C2%2C140&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/dolf-jansen": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e076e-aee6-75e7-a64c-367b273b98c3/dolf-jansen-oudejaars-2026-schaamteloos-mark-engelen-2?crop=3553%2C2132%2C0%2C598&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/girls-on-fire-3": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e15c8-ea76-7805-800f-121d9ba9860c/promobeeld-girls-on-fire-3-liggend-credits-willem-van-walderveen?crop=3507%2C2104%2C0%2C187&scale=1200&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "og:image"
+  },
+  "https://denieuwekolk.nl/theater/agenda/grollo": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019df774-1b6c-7a5e-b8be-856fee2468ce/promobeeld-grollo-liggend-hr-fotocredits-maaike-ronhaar?crop=1800%2C1080%2C60%2C0&scale=1200&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "og:image"
+  },
+  "https://denieuwekolk.nl/theater/agenda/het-houten-huis-nordland-visual-theatre-tryater-en-club-guy-roni": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019dfdf3-30a2-7f1c-baee-910aa65acc69/het-houten-huis-e-a-grondtonen-anne-harbers?crop=2513%2C1508%2C0%2C1167&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/het-zwanenmeer": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e07ef-919e-7d72-9d3e-053426bd3a56/staatsopera-van-stara-zagora-bulgarije-het-zwanenmeer-onbekend-campagnebeeld-3?crop=3552%2C2131%2C0%2C42&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/inleiding-thijs-van-de-meeberg": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "film",
+    "woord": "bioscoop"
+   },
+   "image": "https://media.denieuwekolk.nl/019bdc12-810a-7438-8fdd-8fdd0bd1539d/inleiding-675x1000-02?crop=2592%2C1555%2C0%2C1142&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/ivgi-greben": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e029f-6a03-7bbd-9d25-69d78ac6dc81/ivgi-greben-what-we-leave-behind-paul-sixta?crop=3553%2C2132%2C2%2C67&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/izaline-calister": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019dbf7a-00ed-7714-bf96-bb3e09de1c2a/izaline-calister-rum-and-coca-cola-hessel-stuut-1?crop=3553%2C2132%2C2%2C204&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/janke-dekker": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e02eb-2a98-74b6-aed5-1747dcc1d9b5/janke-dekker-de-mooie-dingen-janita-sassen-6?crop=2072%2C1243%2C814%2C0&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/juliet": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019dbfc0-e875-7ae6-8be1-5780e98f4adc/juliet-ik-beloof-je-eeuwige-twijfel-amin-ghiri-4?crop=3332%2C1999%2C159%2C0&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/leo-en-marius-blokhuis": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://media.denieuwekolk.nl/019e02f1-8418-7512-b84e-074dd28db892/leo-en-marius-blokhuis-father-son-charlotte-blokhuis?crop=3553%2C2132%2C2%2C0&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/leonard-cohen-tribute-band": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019dd4ba-aa7d-7152-b6ad-7bd1d2ca9e10/leonard-cohen-tribute-band-tonight-will-be-fine-kees-beekmans-3?crop=3553%2C2132%2C0%2C207&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/maas-theater-en-dans-155": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019dfc09-fd4c-7bd9-a692-cc72538975d0/155-maas-theater-en-dans-controle-neeltje-de-vries-campagnebeeld?crop=2372%2C1423%2C0%2C1209&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/miss-montreal": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019ed608-ddf1-732f-84d3-1e684d707b4c/16x9-missmontreal-theatertour-2027-no-dates?crop=1798%2C1079%2C60%2C0&scale=1798&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nieuwjaarsconcert": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://media.denieuwekolk.nl/019e2ac3-d708-7ece-b484-b110d078eea5/2027-01-17-muziekkamer-assen-nieuwjaarsconcert-winnaars-onbekend?crop=3072%2C1843%2C0%2C598&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/muziekkamer-assen-nikola-meeuwsen": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e2abf-077a-781d-8e93-98dea6edd09f/2026-12-13-nikola-meeuwse-foto-mellemeivogel?crop=3838%2C2303%2C2%2C257&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/nijntje-op-de-fiets": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "kinderen",
+    "woord": "speeltuin"
+   },
+   "image": "https://media.denieuwekolk.nl/019dfdea-d0f4-73bc-b027-c061ae2b1fee/vanaf2-festivals-prentenboekjesfestival-nijntje-op-de-fiets-dick-bruna?crop=3553%2C2132%2C0%2C758&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://media.denieuwekolk.nl/019e074b-6537-77bb-a5c4-55d3eaf3f2be/2645-sjostakovitsj-2-brahms-3?crop=2160%2C1296%2C1%2C192&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-kerstconcert": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://media.denieuwekolk.nl/019e07e2-f50a-754c-b79d-ff12d73ca996/2651-kerstconcert-weihnachtsoratorium-c-marijn-boere?crop=3838%2C2303%2C2%2C0&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/noord-nederlands-orkest-nieuwjaarsconcert": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "feest",
+    "woord": "feest"
+   },
+   "image": "https://media.denieuwekolk.nl/019e1b95-c22b-7f2d-a91c-7c93763e9b04/2701-nieuwjaarsconcert-c-mariska-de-groot?crop=2198%2C1319%2C2%2C145&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/opvoeden-hoe-dan": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e0738-802b-7c12-b4dc-1cda7555d06c/opvoeden-hoe-dan-anne-van-zantwijk-3?crop=2370%2C1422%2C0%2C248&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/plien-bianca": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e0736-e2ea-7ea8-b6d7-fcc9d91a3f3b/plien-bianca-harrekidee-katinka-krijgsman-campagnebeeld-3?crop=3553%2C2132%2C2%2C81&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/ricky-risolles-3-niet-zo-indiscreet": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e03f0-6147-7e50-981a-c2e21fc4787e/ricky-risolles-vierkantwyu-xu-xu-photography?crop=2362%2C1417%2C0%2C0&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/rob-en-emiel": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e02fa-57c2-77a4-ac03-77eed230ea04/rob-en-emiel-thinking-like-sherlock-laura-marijn-2?crop=3553%2C2132%2C2%2C55&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/sinterklaas-de-magische-wensveer": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "feest",
+    "woord": "sinterklaas"
+   },
+   "image": "https://media.denieuwekolk.nl/019e07d0-d25c-7b24-b9df-893070c3de95/page1-img6?crop=3838%2C2303%2C0%2C128&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/the-cosmic-carnival-a-tribute-to-fleetwood-mac": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019b6927-600f-7ea0-8b1b-7544b6cc06a2/promofoto-the-cosmic-carnival-50-years-of-rumours-credits-william-rutten?crop=3840%2C2304%2C0%2C128&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/the-elvis-concert-usa": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019dddbb-f302-7de9-8445-d3d46739d7a1/the-elvis-concert-november-2026-foto-1?crop=3838%2C2303%2C0%2C257&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/the-show": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "film",
+    "woord": "bioscoop"
+   },
+   "image": "https://media.denieuwekolk.nl/01a08a07-e662-7ae5-ae50-8b497d11069a/download?crop=1920%2C1152%2C0%2C24&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/tiktok-tammo": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": null,
+   "type": "TheaterEvent",
+   "via": null
+  },
+  "https://denieuwekolk.nl/theater/agenda/tis-hier-geen-hotel-3": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://media.denieuwekolk.nl/019e07cb-b5af-7300-af69-279b77f1fc0f/hanneke-drenth-en-dianne-liesker-tis-hier-geen-hotel-3-floris-liesker-campagnebeeld-7?crop=2072%2C1243%2C741%2C0&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/theater/agenda/wishful-singing": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://media.denieuwekolk.nl/019dfc4f-6199-7d53-9bad-c537fce6efdb/20260112-wishful-singing-metropolis-liggend-credit-henry-faber?crop=3838%2C2303%2C0%2C223&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://despitkeet.nl/activiteit/afsluiting-wisselexpositie/": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "kunst",
+    "woord": "tentoonstelling"
+   },
+   "image": "https://despitkeet.nl/wp-content/uploads/2026/04/Ontwerp-zonder-titel2-300x203.webp",
+   "via": "og:image"
+  },
+  "https://despitkeet.nl/activiteit/eendenkorf-vlechten-2/": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://despitkeet.nl/wp-content/uploads/2026/06/najaar-eendenkorf-vlechten-2026-300x251.webp",
+   "via": "og:image"
+  },
+  "https://despitkeet.nl/activiteit/herfstvakantie-activiteiten/": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "kunst",
+    "woord": "museum"
+   },
+   "image": "https://despitkeet.nl/wp-content/uploads/2026/08/Facebookpost-Boeventocht-1-300x300.webp",
+   "via": "og:image"
+  },
+  "https://despitkeet.nl/activiteit/snertkuier-2026/": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "kunst",
+    "woord": "museum"
+   },
+   "image": "https://despitkeet.nl/wp-content/uploads/2026/06/Instagram-snertkuier2026-Instagram-bericht-45-240x300.webp",
+   "via": "og:image"
+  },
+  "https://despitkeet.nl/activiteit/winterfair-en-streekmarkt-2026/": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "markt",
+    "woord": "markt"
+   },
+   "image": "https://despitkeet.nl/wp-content/uploads/2026/06/Kopie-van-Kerstfair-banner--300x90.webp",
+   "via": "og:image"
+  },
+  "https://despitkeet.nl/activiteit/workshop-sokken-breien/": {
+   "checkedAt": "2026-10-12",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://despitkeet.nl/wp-content/uploads/2026/09/Foto-Verwijderen-Achtergrond-A4-212x300.webp",
    "via": "og:image"
   },
   "https://dorpshuiswarffum.nl/winterfair/": {
@@ -407,6 +1543,11 @@
   "https://winterwelvaart.nl/": {
    "checkedAt": "2026-10-12",
    "image": "https://winterwelvaart.nl/media/1/algemeen/_1200x630_crop_center-center_82_none_ns/Foto_NielsKnelis-Winterwelvaart-2022-PW17Emma.jpg?v=1791456456",
+   "via": "og:image"
+  },
+  "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt": {
+   "checkedAt": "2026-10-12",
+   "image": "https://www.defensie.nl/assets/legerenbootz_G90US.jpg",
    "via": "og:image"
   },
   "https://www.deroegeboys.nl/spooktocht-2026/": {
