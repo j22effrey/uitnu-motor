@@ -14,6 +14,8 @@ from collections import Counter
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+from collector.discover_venues import is_excluded
+
 from .classify import FESTIVAL, classify, normalize, not_an_outing
 from .convert import content_hash, load_first_party, merge_duplicates, to_v2
 from .gate import run_gate
@@ -74,6 +76,9 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
           venue_kinds: dict[str, str] | None = None) -> tuple[list[dict], dict]:
     raw = load_first_party(data_dir)
     converted = [e for e in (to_v2(r, today) for r in raw) if e]
+    # Vaste regel 1: nooit uitjes van een website op de uitsluitlijst (ook niet van een oude bron).
+    excluded = [e for e in converted if any(is_excluded(u or "") for u in [e.get("url")] + [s.get("url") for s in e.get("sources") or []])]
+    converted = [e for e in converted if e not in excluded]
     outside = [e for e in converted if not in_area(e)]
     skipped = [e for e in converted if in_area(e) and not_an_outing(e)]
     events = merge_duplicates([e for e in converted if in_area(e) and not not_an_outing(e)])
@@ -133,6 +138,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "inputRecords": len(raw),
         "outsideArea": len(outside),
         "geenUitje": len(skipped),
+        "uitgeslotenBron": len(excluded),
         "area": {"center": AREA_CENTER, "radiusKm": AREA_RADIUS_KM},
         "byKind": dict(Counter(e["kind"] for e in events).most_common()),
         "byCity": dict(Counter(e["venue"]["city"] for e in events).most_common()),

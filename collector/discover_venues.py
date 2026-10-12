@@ -84,6 +84,8 @@ EXCLUDED_HOSTS = {
     # wiki's, universiteiten en boekingssites zijn geen agenda van een plek of organisator
     "reliwiki.nl", "wikidata.org", "wikimedia.org", "rug.nl", "hanze.nl",
     "tripadvisor.nl", "tripadvisor.com", "booking.com",
+    # landelijke overheid: hun 'activiteiten' gaan over het hele land, niet over deze plek
+    "defensie.nl", "rijksoverheid.nl", "overheid.nl", "government.nl",
 }
 GRONINGEN_PROVINCE = "Q752"
 TIPS_PATH = "collector/tips.json"

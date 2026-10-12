@@ -184,6 +184,12 @@ def _shallow_structured_probe(
     }
 
 
+def _upcoming(events: list, today: date | None) -> list:
+    """Alleen uitjes die nog komen: een nieuwspagina (titels met de datum van gisteren) is geen agenda."""
+    day = (today or date.today()).isoformat()
+    return [e for e in events if str(getattr(e, "start_date", "") or "") >= day]
+
+
 def _strict_agenda_probe(
     origin: str,
     robots: RobotFileParser,
@@ -192,25 +198,26 @@ def _strict_agenda_probe(
     timeout: float,
     home_html: str | None = None,
     home_url: str | None = None,
+    today: date | None = None,
 ) -> dict | None:
     """Try the agenda pages the site itself links to, the home page, and the usual Dutch
-    agenda paths; require at least two strict events."""
+    agenda paths; require at least two strict upcoming events."""
     tried: set[str] = set()
     if home_html and home_url:
-        events = parse_agenda(home_html, home_url)
+        events = _upcoming(parse_agenda(home_html, home_url), today)
         if len(events) >= 2:
             return {"url": home_url, "event_count": len(events), "sample_titles": [x.title for x in events[:5]]}
         tried.add(canonical_url(home_url) or home_url)
         for url in agenda_links(home_html, home_url):
             tried.add(url)
-            found = _agenda_page(url, robots, fetcher=fetcher, timeout=timeout)
+            found = _agenda_page(url, robots, fetcher=fetcher, timeout=timeout, today=today)
             if found:
                 return found
     for path in AGENDA_PATHS:
         url = urljoin(origin, path)
         if url in tried:
             continue
-        found = _agenda_page(url, robots, fetcher=fetcher, timeout=timeout)
+        found = _agenda_page(url, robots, fetcher=fetcher, timeout=timeout, today=today)
         if found:
             return found
     return None
@@ -220,7 +227,8 @@ AGENDA_PATHS = ("agenda/", "evenementen/", "activiteiten/", "programma/", "voors
                 "dorpsagenda/", "activiteitenkalender/")
 
 
-def _agenda_page(agenda_url: str, robots: RobotFileParser, *, fetcher: Callable[..., Fetched], timeout: float) -> dict | None:
+def _agenda_page(agenda_url: str, robots: RobotFileParser, *, fetcher: Callable[..., Fetched], timeout: float,
+                 today: date | None = None) -> dict | None:
     if not robots.can_fetch(USER_AGENT, agenda_url):
         return None
     try:
@@ -231,7 +239,7 @@ def _agenda_page(agenda_url: str, robots: RobotFileParser, *, fetcher: Callable[
         return None
     if "html" not in page.content_type and "<html" not in page.text[:500].casefold():
         return None
-    events = parse_agenda(page.text, agenda_url)
+    events = _upcoming(parse_agenda(page.text, agenda_url), today)
     if len(events) < 2:
         return None
     return {
@@ -247,6 +255,7 @@ def probe_source(
     fetcher: Callable[..., Fetched] = default_fetch,
     timeout: float = 12,
     deep_pages: int = 0,
+    today: date | None = None,
 ) -> ProbeResult:
     target = canonical_url(url)
     if not target:
@@ -301,7 +310,7 @@ def probe_source(
 
     if not extractors:
         agenda = _strict_agenda_probe(origin, robots, fetcher=fetcher, timeout=timeout,
-                                      home_html=home_html, home_url=home_url)
+                                      home_html=home_html, home_url=home_url, today=today)
         if agenda:
             extractors.append("html_agenda_dutch")
             details["html_agenda"] = agenda

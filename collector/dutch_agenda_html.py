@@ -71,6 +71,8 @@ _GENERIC_HEADINGS = {
     "eerdere activiteiten", "nieuwsbrief", "over ons", "sponsors", "partners", "volg ons", "route",
     "openingstijden", "tickets", "kaartverkoop", "praktische informatie", "zoeken", "categorieën",
     "categorie", "tags", "delen", "menu", "navigatie", "adres", "locatie", "prijzen", "info",
+    "datum", "tijd", "tijden", "datum en tijd", "datum & tijd", "wanneer", "waar", "toegang", "entree",
+    "prijs", "organisatie", "contactgegevens", "aanmelden", "inschrijven", "praktisch", "programma en tijden",
 }
 # Kopjes op agendapagina's die geen uitje zijn: vragen, opsommingen, knoppen en oproepen.
 _NAVIGATION_TITLE = re.compile(

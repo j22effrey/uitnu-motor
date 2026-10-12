@@ -134,7 +134,7 @@ def test_agenda_via_de_link_op_de_voorpagina():
             return Fetched(url, 404, "text/plain", "")
         return Fetched(url, 200 if url in pages else 404, "text/html", pages.get(url, ""))
 
-    result = probe.probe_source("https://dorp.example/", fetcher=fetcher)
+    result = probe.probe_source("https://dorp.example/", fetcher=fetcher, today=TODAY)
     assert result.probe_status == "supported" and result.suggested_extractor == "html_agenda_dutch"
     assert result.details["html_agenda"]["url"] == "https://dorp.example/wat-is-er-te-doen"
     assert probe.agenda_links(home, "https://dorp.example/") == ["https://dorp.example/wat-is-er-te-doen"]
@@ -263,3 +263,46 @@ def test_groepskopje_is_geen_uitje_en_geen_titel():
     html = """<section><h2>Concerten</h2><h3>Wende</h3><p>vrijdag 29 januari 2027</p></section>
       <section><h2>Theater</h2><h3>Jochem Myjer</h3><p>12-02-2027</p></section>"""
     assert _events(html) == [("Wende", "2027-01-29", None), ("Jochem Myjer", "2027-02-12", None)]
+
+
+def test_nieuwspagina_is_geen_agenda_en_landelijke_overheid_geen_bron(tmp_path):
+    news = """<html><article><h3>Defensiejournaal 8 oktober 2026</h3><p>8 oktober 2026</p></article>
+      <article><h3>Stagedag biedt diepgang</h3><p>1 oktober 2026</p></article>
+      <article><h3>Datum en tijd</h3><p>15-10-2026, 10:00 - 17:00</p></article></html>"""
+
+    def fetcher(url, timeout=15):
+        if url.endswith("/robots.txt"):
+            return Fetched(url, 404, "text/plain", "")
+        return Fetched(url, 200, "text/html", news if url.endswith("/activiteiten/") else "<html></html>")
+
+    # Alleen datums in het verleden, en 'Datum en tijd' is een label: geen agenda.
+    assert probe.probe_source("https://nieuws.example/", fetcher=fetcher, today=TODAY).probe_status == "no_supported_extractor"
+    assert "Datum en tijd" not in [e[0] for e in _events(news)]
+
+    from collector.auto_activate import deep_page, eligible
+    assert dv.is_excluded("https://www.defensie.nl/activiteiten/")
+    deep = {"activationStatus": "candidate", "probeStatus": "supported", "robotsStatus": "allowed", "policyStatus": "review",
+            "url": "https://www.groot.example/organisatie/vliegbases/leeuwarden/omgeving"}
+    assert deep_page(deep["url"]) and not eligible(deep)
+    assert eligible(dict(deep, url="https://www.dorpshuis.example/"))
+
+    from collector.active_source_runner import load_active_sources
+    registry = tmp_path / "sources.json"
+    registry.write_text(json.dumps({"sources": [
+        {"id": "a", "rootUrl": "https://www.defensie.nl/", "enabled": True},
+        {"id": "b", "rootUrl": "https://www.dorpshuis.example/", "enabled": True}]}))
+    assert [s["id"] for s in load_active_sources(registry)] == ["b"]
+
+
+def test_fabriek_publiceert_nooit_uitjes_van_een_uitgesloten_website(tmp_path):
+    from pipeline.v2.build import build
+    data, out = tmp_path / "data", tmp_path / "out"
+    data.mkdir()
+    (data / "events.json").write_text(json.dumps([
+        {"id": "x", "title": "Agenda IT-tafels", "startDate": "2026-10-15", "city": "Leeuwarden",
+         "verificationStatus": "organizer_confirmed", "eventUrl": "https://www.defensie.nl/nieuws/x", "sourceUrl": "https://www.defensie.nl/nieuws/x"},
+        {"id": "y", "title": "Kerstmarkt", "startDate": "2026-12-12", "city": "Haren",
+         "verificationStatus": "organizer_confirmed", "eventUrl": "https://markt.example/", "sourceUrl": "https://markt.example/"},
+    ]))
+    events, status = build(data, out, TODAY, {}, photo_cache={})
+    assert [e["title"] for e in events] == ["Kerstmarkt"] and status["uitgeslotenBron"] == 1

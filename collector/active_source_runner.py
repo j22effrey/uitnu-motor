@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Callable, Iterable
 
 from collector import ics_events, wordpress_events
+from collector.discover_venues import is_excluded
 from collector.site_crawler import CrawlResult, CrawlSource, crawl_source
 from pipeline.event_model import RawEvent
 
@@ -44,7 +45,9 @@ def load_active_sources(path: str | Path) -> list[dict]:
     values = payload.get("sources", []) if isinstance(payload, dict) else []
     if not isinstance(values, list):
         raise ValueError("active source registry must contain a sources list")
-    return [x for x in values if isinstance(x, dict) and x.get("enabled", True)]
+    # Vaste regel 1: een website op de uitsluitlijst nooit ophalen, ook niet als hij ooit is aangezet.
+    return [x for x in values if isinstance(x, dict) and x.get("enabled", True)
+            and not is_excluded(str(x.get("rootUrl") or ""))]
 
 
 def _apply_trust(event: RawEvent, role: str) -> RawEvent:

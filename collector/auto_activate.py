@@ -13,6 +13,7 @@ import json
 import re
 from datetime import date
 from pathlib import Path
+from urllib.parse import urlparse
 
 from collector.discover_venues import is_excluded
 from collector.source_activation import activation_reasons, promote_candidate
@@ -34,13 +35,20 @@ def role_for(candidate: dict) -> str:
     return "organizer" if "wikidata" in kinds and "osm" not in kinds else "venue"
 
 
+def deep_page(url: str) -> bool:
+    """Een pagina diep in een grote website (zoals een landelijke organisatie met een pagina per
+    locatie). De agenda van zo'n site gaat over het hele land, niet over deze plek: niet automatisch."""
+    return len([part for part in urlparse(url or "").path.split("/") if part]) >= 3
+
+
 def eligible(candidate: dict) -> bool:
     return (candidate.get("activationStatus") in (None, "candidate")
             and candidate.get("probeStatus") == "supported"
             and candidate.get("robotsStatus") == "allowed"
             and candidate.get("policyStatus") != "blocked"
             and candidate.get("areaStatus") != "buiten"
-            and not is_excluded(candidate.get("url") or ""))
+            and not is_excluded(candidate.get("url") or "")
+            and not deep_page(candidate.get("url") or ""))
 
 
 def auto_activate(queue_path: str, sources_path: str, today: str | None = None) -> list[dict]:
