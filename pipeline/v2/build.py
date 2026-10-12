@@ -14,16 +14,17 @@ from collections import Counter
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from .classify import classify
+from .classify import FESTIVAL, classify, normalize, not_an_outing
 from .convert import content_hash, load_first_party, merge_duplicates, to_v2
 from .gate import run_gate
 from .kinds import KINDS, TAGS
-from .photos import attach_photos, host_of
+from .photos import attach_photos, host_of, list_pages, page_facts_for
 
 HERE = Path(__file__).parent
 
-# Werkgebied: Groningen en de rand van Drenthe en Friesland. Bezoekers kiezen hun eigen straal.
-AREA_CENTER = (53.2194, 6.5665)  # Groningen-centrum
+# Werkgebied van de proef: 60 km rond Groningen-centrum (ook de rand van Drenthe en Friesland).
+# Voor een ander of groter gebied alleen deze twee waarden aanpassen. Bezoekers kiezen hun eigen straal.
+AREA_CENTER = (53.2194, 6.5665)
 AREA_RADIUS_KM = 60
 
 
@@ -74,18 +75,28 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     raw = load_first_party(data_dir)
     converted = [e for e in (to_v2(r, today) for r in raw) if e]
     outside = [e for e in converted if not in_area(e)]
-    events = merge_duplicates([e for e in converted if in_area(e)])
+    skipped = [e for e in converted if in_area(e) and not_an_outing(e)]
+    events = merge_duplicates([e for e in converted if in_area(e) and not not_an_outing(e)])
+
+    if photo_cache is None:
+        photo_cache = _read_json(data_dir / "photos.json", {})
+    lists = list_pages(events)
 
     before = len(events)
     for event in events:
+        facts = page_facts_for(event, photo_cache, lists)
+        if facts.get("type"):
+            event["schemaType"] = facts["type"]
+        if facts.get("hints"):
+            event["pageHints"] = facts["hints"]
         verdict = classify(event, overrides, venue_kinds)
         event["kind"] = verdict["kind"]
         event["kindLabel"] = KINDS[verdict["kind"]]
         event["tags"] = verdict["tags"]
-        event["classification"] = {k: verdict[k] for k in ("method", "reason", "confidence")}
+        event["classification"] = {k: verdict[k] for k in ("method", "reason", "confidence", "nakijken") if k in verdict}
         event.pop("description", None)
-        event.pop("legacyCategory", None)
-        event.pop("legacyDiscipline", None)
+        for helper in ("legacyCategory", "legacyDiscipline", "schemaType", "pageHints"):
+            event.pop(helper, None)
         event["hash"] = content_hash(event)
     if len(events) != before:
         raise RuntimeError("indelen mag nooit evenementen weglaten")
@@ -99,10 +110,9 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
 
     events.sort(key=lambda e: (e["occurrences"][0]["date"], e["occurrences"][0].get("startTime") or "", e["title"]))
 
-    # Foto's: organisator, anders Wikimedia Commons, anders de eigen illustratie van de site.
-    if photo_cache is None:
-        photo_cache = _read_json(data_dir / "photos.json", {})
+    # Foto's: organisator, anders Wikimedia Commons; zonder foto toont de site een tekstkaart.
     photo_counts = attach_photos(events, photo_cache, names)
+    doubts = doubtful(events)
 
     previous = _read_json(out_dir / "events.json", None)
     gate = run_gate(events, previous, today.isoformat())
@@ -122,17 +132,43 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "total": len(events),
         "inputRecords": len(raw),
         "outsideArea": len(outside),
+        "geenUitje": len(skipped),
         "area": {"center": AREA_CENTER, "radiusKm": AREA_RADIUS_KM},
         "byKind": dict(Counter(e["kind"] for e in events).most_common()),
         "byCity": dict(Counter(e["venue"]["city"] for e in events).most_common()),
         "bySourceHost": dict(hosts.most_common()),
         "photos": photo_counts,
+        "twijfel": len(doubts),
         "kinds": KINDS,
         "tags": TAGS,
         "changes": {k: len(v) for k, v in changes.items()},
         "gate": gate,
     }
+    status["_twijfel"] = doubts
     return events, status
+
+
+DOUBT_METHODS = {"geen", "bronhint", "locatie"}
+
+
+def doubtful(events: list[dict]) -> list[dict]:
+    """Uitjes waarvan de soort nagekeken moet worden (vaste regel 3: twijfelgevallen eerst uitzoeken)."""
+    out = []
+    for event in events:
+        how = event.get("classification") or {}
+        why = []
+        if how.get("method") in DOUBT_METHODS:
+            why.append("soort niet uit de titel en niet van de organisator zelf")
+            if FESTIVAL.search(normalize(event.get("title") or "")):
+                why.append("noemt zich festival, maar zonder bewijs van meerdere podia en artiesten")
+        if how.get("nakijken"):
+            why.append("ingedeeld met een vuistregel op naam; nog nakijken of het klopt")
+        if event.get("kind") == "festival" and how.get("method") != "correctie":
+            why.append("festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten")
+        if why:
+            out.append({"id": event["id"], "title": event["title"], "kind": event["kind"],
+                        "reason": how.get("reason"), "url": event.get("url"), "waarom": why})
+    return out
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -151,6 +187,8 @@ def main(argv: list[str] | None = None) -> int:
     events, status = build(Path(args.data), out_dir, today, overrides, names=source_names(Path(args.sources)),
                            venue_kinds=source_kinds(Path(args.sources)))
 
+    doubts = status.pop("_twijfel", [])
+    _write_json(out_dir / "twijfel.json", doubts)
     if status["gate"]["passed"] or args.force:
         _write_json(out_dir / "events.json", events)
         _write_json(out_dir / "status.json", status)
