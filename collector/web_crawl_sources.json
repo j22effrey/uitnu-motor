@@ -534,6 +534,788 @@
       "activatedFromCandidate": "despitkeet.nl",
       "kindHint": "kunst",
       "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "noorderlicht-com-web",
+      "name": "Noorderlicht",
+      "rootUrl": "http://www.noorderlicht.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://noorderlicht.com/"
+      },
+      "activatedFromCandidate": "noorderlicht.com",
+      "defaultPlace": {
+        "venue": "Noorderlicht",
+        "city": "Groningen",
+        "lat": 53.2164504,
+        "lon": 6.5632163
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "forum-nl-web",
+      "name": "Bibliotheek Haren",
+      "rootUrl": "https://forum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://forum.nl/"
+      },
+      "activatedFromCandidate": "forum.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "wildlands-nl-web",
+      "name": "Tweestryd",
+      "rootUrl": "https://www.wildlands.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.wildlands.nl/dagprogramma"
+      },
+      "activatedFromCandidate": "wildlands.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "klassiekeacademie-nl-web",
+      "name": "Klassieke Academie",
+      "rootUrl": "https://klassiekeacademie.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://klassiekeacademie.nl/agenda"
+      },
+      "activatedFromCandidate": "klassiekeacademie.nl",
+      "defaultPlace": {
+        "venue": "Klassieke Academie",
+        "city": "Groningen",
+        "lat": 53.2312836,
+        "lon": 6.5837497
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "kunstcentrumdeploeg-nl-web",
+      "name": "Kunstcentrum De Ploeg",
+      "rootUrl": "https://www.kunstcentrumdeploeg.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kunstcentrumdeploeg.nl/"
+      },
+      "activatedFromCandidate": "kunstcentrumdeploeg.nl",
+      "defaultPlace": {
+        "venue": "Kunstcentrum De Ploeg",
+        "city": "Wehe-den Hoorn",
+        "lat": 53.3580521,
+        "lon": 6.427778
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "reduzum-com-web",
+      "name": "Gertrudiskerk",
+      "rootUrl": "https://reduzum.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://reduzum.com/agenda/"
+      },
+      "activatedFromCandidate": "reduzum.com",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "delantearne-nl-web",
+      "name": "De Lantearne",
+      "rootUrl": "https://delantearne.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://delantearne.nl/"
+      },
+      "activatedFromCandidate": "delantearne.nl",
+      "defaultPlace": {
+        "venue": "De Lantearne",
+        "city": "Surhuisterveen",
+        "lat": 53.1801716,
+        "lon": 6.1685022
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "demeenthe-nl-web",
+      "name": "De Meenthe",
+      "rootUrl": "https://www.demeenthe.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "demeenthe.nl",
+      "defaultPlace": {
+        "venue": "De Meenthe",
+        "city": "Steenwijk",
+        "lat": 52.7902133,
+        "lon": 6.1152504
+      },
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "harmonie-nl-web",
+      "name": "Stadsschouwburg de Harmonie",
+      "rootUrl": "https://www.harmonie.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://harmonie.nl/laat-je-inspireren/van-leeuwarden-naar-de-tijd-van-de-t-rex"
+      },
+      "activatedFromCandidate": "harmonie.nl",
+      "defaultPlace": {
+        "venue": "Stadsschouwburg de Harmonie",
+        "city": "Leeuwarden",
+        "lat": 53.2001284,
+        "lon": 5.7900791
+      },
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "huizemaas-nl-web",
+      "name": "MAAS",
+      "rootUrl": "https://huizemaas.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://huizemaas.nl/"
+      },
+      "activatedFromCandidate": "huizemaas.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "kerkfeerwerd-nl-web",
+      "name": "kerkfeerwerd.nl",
+      "rootUrl": "https://www.kerkfeerwerd.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkfeerwerd.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkfeerwerd.nl",
+      "defaultPlace": {
+        "venue": "naamloze plek",
+        "city": "Feerwerd",
+        "lat": 53.3064892,
+        "lon": 6.465294
+      },
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "kerkkleinwetsinge-nl-web",
+      "name": "kerk Klein Wetsinge",
+      "rootUrl": "https://www.kerkkleinwetsinge.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkkleinwetsinge.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkkleinwetsinge.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "kerkleegkerk-nl-web",
+      "name": "kerk Leegkerk",
+      "rootUrl": "https://www.kerkleegkerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkleegkerk.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkleegkerk.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "kunsthalle-emden-de-web",
+      "name": "Kunsthalle Emden",
+      "rootUrl": "https://kunsthalle-emden.de/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://kunsthalle-emden.de/"
+      },
+      "activatedFromCandidate": "kunsthalle-emden.de",
+      "defaultPlace": {
+        "venue": "Kunsthalle Emden",
+        "city": "Emden",
+        "lat": 53.3698637,
+        "lon": 7.2033002
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "podium34-nl-web",
+      "name": "Podium 34",
+      "rootUrl": "https://podium34.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://podium34.nl/"
+      },
+      "activatedFromCandidate": "podium34.nl",
+      "defaultPlace": {
+        "venue": "Podium 34",
+        "city": "Borger",
+        "lat": 52.9244547,
+        "lon": 6.7907727
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "podiumzuidhaege-nl-web",
+      "name": "Podium Zuidhaege",
+      "rootUrl": "https://podiumzuidhaege.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://podiumzuidhaege.nl/"
+      },
+      "activatedFromCandidate": "podiumzuidhaege.nl",
+      "defaultPlace": {
+        "venue": "Podium Zuidhaege",
+        "city": "Assen",
+        "lat": 52.9915944,
+        "lon": 6.5653609
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "theatergeertteis-nl-web",
+      "name": "Theater Geert Teis",
+      "rootUrl": "https://www.theatergeertteis.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.theatergeertteis.nl/"
+      },
+      "activatedFromCandidate": "theatergeertteis.nl",
+      "defaultPlace": {
+        "venue": "Theater Geert Teis",
+        "city": "Stadskanaal",
+        "lat": 52.9900226,
+        "lon": 6.9531889
+      },
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "vanberesteyn-nl-web",
+      "name": "Theater vanBeresteyn",
+      "rootUrl": "https://www.vanberesteyn.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.vanberesteyn.nl/"
+      },
+      "activatedFromCandidate": "vanberesteyn.nl",
+      "defaultPlace": {
+        "venue": "Theater vanBeresteyn",
+        "city": "Veendam",
+        "lat": 53.1076013,
+        "lon": 6.8760208
+      },
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "elsloo-fr-nl-web",
+      "name": "Elsloo",
+      "rootUrl": "http://www.elsloo-fr.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "http://www.elsloo-fr.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "elsloo-fr.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "pknanloozuidlaren-nl-web",
+      "name": "De Meent",
+      "rootUrl": "https://www.pknanloozuidlaren.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pknanloozuidlaren.nl/cursusprogramma"
+      },
+      "activatedFromCandidate": "pknanloozuidlaren.nl",
+      "defaultPlace": {
+        "venue": "Laarkerk",
+        "city": "Zuidlaren",
+        "lat": 53.0907657,
+        "lon": 6.6701905
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "ferwertonline-nl-web",
+      "name": "Ferwerd",
+      "rootUrl": "http://www.ferwertonline.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "http://www.ferwertonline.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "ferwertonline.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "groningen-nl-web",
+      "name": "Groningen",
+      "rootUrl": "https://groningen.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.groningen.nl/"
+      },
+      "activatedFromCandidate": "groningen.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "oldeberkoop-nl-web",
+      "name": "Oldeberkoop",
+      "rootUrl": "http://www.oldeberkoop.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "http://www.oldeberkoop.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "oldeberkoop.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "uithuizermeeden-nl-web",
+      "name": "Uithuizermeeden",
+      "rootUrl": "http://www.uithuizermeeden.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.uithuizermeeden.nl/"
+      },
+      "activatedFromCandidate": "uithuizermeeden.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "cgk-gn-nl-web",
+      "name": "Maranathakerk",
+      "rootUrl": "https://www.cgk-gn.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://cgk-gn.nl/kerkdiensten/diensten-agenda"
+      },
+      "activatedFromCandidate": "cgk-gn.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "appelscha-nl-web",
+      "name": "Appelscha",
+      "rootUrl": "http://www.appelscha.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "http://www.appelscha.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "appelscha.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "bakkeveen-nl-web",
+      "name": "Bakkeveen",
+      "rootUrl": "http://www.bakkeveen.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.bakkeveen.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "bakkeveen.nl",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "domiestoen-nl-web",
+      "name": "Domies Toen",
+      "rootUrl": "https://domiestoen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://domiestoen.nl/agenda/"
+      },
+      "activatedFromCandidate": "domiestoen.nl",
+      "defaultPlace": {
+        "venue": "Domies Toen",
+        "city": "Pieterburen",
+        "lat": 53.4000125,
+        "lon": 6.4509589
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "fraeylemaborg-nl-web",
+      "name": "Fraeylemaborg",
+      "rootUrl": "https://fraeylemaborg.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://fraeylemaborg.nl/"
+      },
+      "activatedFromCandidate": "fraeylemaborg.nl",
+      "defaultPlace": {
+        "venue": "Fraeylemaborg",
+        "city": "Slochteren",
+        "lat": 53.2154609,
+        "lon": 6.8095705
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "friesmuseum-nl-web",
+      "name": "Fries Museum",
+      "rootUrl": "https://www.friesmuseum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.friesmuseum.nl/"
+      },
+      "activatedFromCandidate": "friesmuseum.nl",
+      "defaultPlace": {
+        "venue": "Fries Museum",
+        "city": "Leeuwarden",
+        "lat": 53.1994527,
+        "lon": 5.7943483
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "helmantel-nl-web",
+      "name": "De Weem",
+      "rootUrl": "https://www.helmantel.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.helmantel.nl/"
+      },
+      "activatedFromCandidate": "helmantel.nl",
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "hethoogeland-com-web",
+      "name": "Openluchtmuseum Het Hoogeland",
+      "rootUrl": "https://www.hethoogeland.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.hethoogeland.com/agenda/licht-en-donker/"
+      },
+      "activatedFromCandidate": "hethoogeland.com",
+      "defaultPlace": {
+        "venue": "Openluchtmuseum Het Hoogeland",
+        "city": "Warffum",
+        "lat": 53.3921498,
+        "lon": 6.5622111
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "karstenhoeve-nl-web",
+      "name": "Museumboerderij De Karstenhoeve",
+      "rootUrl": "https://www.karstenhoeve.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.karstenhoeve.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "karstenhoeve.nl",
+      "defaultPlace": {
+        "venue": "Museumboerderij De Karstenhoeve",
+        "city": "Ruinerwold",
+        "lat": 52.7269616,
+        "lon": 6.2485669
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "kiekhuus-nl-web",
+      "name": "Museum 't Kiekhuus",
+      "rootUrl": "https://kiekhuus.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.kiekhuus.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "kiekhuus.nl",
+      "defaultPlace": {
+        "venue": "Museum 't Kiekhuus",
+        "city": "Wolvega",
+        "lat": 52.8743781,
+        "lon": 5.9913879
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "kloosterterapel-nl-web",
+      "name": "Museum Klooster Ter Apel",
+      "rootUrl": "https://www.kloosterterapel.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://kloosterterapel.nl/activiteiten/"
+      },
+      "activatedFromCandidate": "kloosterterapel.nl",
+      "defaultPlace": {
+        "venue": "Museum Klooster Ter Apel",
+        "city": "Ter Apel",
+        "lat": 52.8761859,
+        "lon": 7.0751008
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "luxor-nl-web",
+      "name": "Luxor",
+      "rootUrl": "https://www.luxor.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.luxor.nl/specials-events/luxor-max"
+      },
+      "activatedFromCandidate": "luxor.nl",
+      "defaultPlace": {
+        "venue": "Luxor",
+        "city": "Steenwijk",
+        "lat": 52.7880126,
+        "lon": 6.1176104
+      },
+      "kindHint": "film",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "marssum-info-web",
+      "name": "Marssum",
+      "rootUrl": "https://marssum.info/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://marssum.info/agenda/"
+      },
+      "activatedFromCandidate": "marssum.info",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "maze-nl-web",
+      "name": "Maze Groningen",
+      "rootUrl": "https://maze.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://maze.nl/evenementen/"
+      },
+      "activatedFromCandidate": "maze.nl",
+      "defaultPlace": {
+        "venue": "Maze Groningen",
+        "city": "Groningen",
+        "lat": 53.2144369,
+        "lon": 6.5632372
+      },
+      "kindHint": "film",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "museen-de-web",
+      "name": "Kirchenmuseum Marienhafe",
+      "rootUrl": "https://museen.de/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://museen.de/kirchenmuseum-marienhafe.html"
+      },
+      "activatedFromCandidate": "museen.de",
+      "defaultPlace": {
+        "venue": "Kirchenmuseum Marienhafe",
+        "city": "Marienhafe",
+        "lat": 53.5226148,
+        "lon": 7.2720992
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
     }
   ]
 }

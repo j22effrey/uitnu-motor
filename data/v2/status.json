@@ -1,11 +1,12 @@
 {
  "version": 2,
- "refreshedAt": "2026-10-12T09:43:22+00:00",
+ "refreshedAt": "2026-10-12T12:15:39+00:00",
  "today": "2026-10-12",
- "total": 142,
- "inputRecords": 202,
+ "total": 141,
+ "inputRecords": 203,
  "outsideArea": 19,
  "geenUitje": 1,
+ "uitgeslotenBron": 2,
  "area": {
   "center": [
    53.2194,
@@ -18,8 +19,8 @@
   "theater": 31,
   "markt": 27,
   "muziek": 18,
-  "kunst": 9,
-  "feest": 8,
+  "feest": 9,
+  "kunst": 7,
   "lezing": 5,
   "kinderen": 4,
   "festival": 3,
@@ -31,11 +32,11 @@
   "Assen": 42,
   "Groningen": 23,
   "Earnewald": 13,
-  "Leeuwarden": 7,
   "Veenhuizen": 7,
   "Harkema": 6,
   "Earnewâld": 6,
   "Katlijk": 5,
+  "Leeuwarden": 5,
   "Hallum": 4,
   "Rolde": 4,
   "Bourtange": 4,
@@ -49,6 +50,7 @@
   "Oosterwolde": 1,
   "Gytsjerk": 1,
   "Mûnein": 1,
+  "Froombosch": 1,
   "Rotstergaast": 1,
   "Warffum": 1,
   "Ruinen": 1,
@@ -64,7 +66,6 @@
   "boerderijkamps.nl": 4,
   "bourtange.nl": 4,
   "martiniplaza.nl": 3,
-  "defensie.nl": 2,
   "reis-events.nl": 2,
   "bierbattle.nl": 2,
   "vitalismarkten.nl": 2,
@@ -84,6 +85,7 @@
   "boeremapark.nl": 1,
   "zeldzaammooi.com": 1,
   "natuurwerkdag.nl": 1,
+  "froombosch.com": 1,
   "jongeharten.nl": 1,
   "dorpshuiswarffum.nl": 1,
   "wintergoud.nl": 1,
@@ -93,11 +95,11 @@
   "wfnn.nl": 1
  },
  "photos": {
-  "organisator": 107,
+  "organisator": 105,
   "wikimedia": 35,
-  "zonder": 0
+  "zonder": 1
  },
- "twijfel": 4,
+ "twijfel": 2,
  "kinds": {
   "muziek": "Muziek",
   "festival": "Festival",
@@ -120,9 +122,9 @@
   "meerdaags": "Meerdaags"
  },
  "changes": {
-  "new": 47,
-  "changed": 24,
-  "removed": 1
+  "new": 1,
+  "changed": 0,
+  "removed": 2
  },
  "gate": {
   "passed": true,
@@ -130,7 +132,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "142 nu, 96 vorige keer (minimaal 85%)"
+    "detail": "141 nu, 142 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -140,7 +142,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "0 van 142 (0%)"
+    "detail": "0 van 141 (0%)"
    },
    {
     "name": "velden_compleet",

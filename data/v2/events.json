@@ -44,7 +44,7 @@
    "type": "organisator",
    "match": "uitje",
    "alt": "Foto bij Expo Marilyn",
-   "credit": "Foto: forum.nl",
+   "credit": "Foto: Bibliotheek Haren",
    "sourceUrl": "https://forum.nl/nl/agenda/marilyn-expositie?date=19-10-2026"
   }
  },
@@ -554,100 +554,6 @@
    "alt": "Foto bij Spinnenexcursie (8+)",
    "credit": "Foto: Delleboersterheide",
    "sourceUrl": "https://www.itfryskegea.nl/activiteiten/spinnenexcursie-8-2/"
-  }
- },
- {
-  "id": "evt_5ef234feec4e91",
-  "slug": "agenda-it-tafels-leeuwarden-2026-10-15",
-  "title": "Agenda IT-tafels",
-  "occurrences": [
-   {
-    "date": "2026-10-15",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Traditiekamer Vliegbasis Leeuwarden",
-   "city": "Leeuwarden",
-   "lat": 53.2212144,
-   "lon": 5.7668529
-  },
-  "price": "Zie organisator",
-  "url": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt",
-    "host": "defensie.nl",
-    "seenAt": "2026-10-12"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website defensie.nl",
-   "confidence": 0.6
-  },
-  "hash": "6ee10d215b25",
-  "image": {
-   "url": "https://www.defensie.nl/assets/legerenbootz_G90US.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Agenda IT-tafels",
-   "credit": "Foto: Traditiekamer Vliegbasis Leeuwarden",
-   "sourceUrl": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt"
-  }
- },
- {
-  "id": "evt_d6e8ea684625cd",
-  "slug": "datum-en-tijd-leeuwarden-2026-10-15",
-  "title": "Datum en tijd",
-  "occurrences": [
-   {
-    "date": "2026-10-15",
-    "endDate": null,
-    "startTime": "10:00",
-    "endTime": "17:00"
-   }
-  ],
-  "venue": {
-   "name": "Traditiekamer Vliegbasis Leeuwarden",
-   "city": "Leeuwarden",
-   "lat": 53.2212144,
-   "lon": 5.7668529
-  },
-  "price": "Zie organisator",
-  "url": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt",
-    "host": "defensie.nl",
-    "seenAt": "2026-10-12"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website defensie.nl",
-   "confidence": 0.6
-  },
-  "hash": "ec9b2ffd919d",
-  "image": {
-   "url": "https://www.defensie.nl/assets/legerenbootz_G90US.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Datum en tijd",
-   "credit": "Foto: Traditiekamer Vliegbasis Leeuwarden",
-   "sourceUrl": "https://www.defensie.nl/nieuws/20261012-onderzeeboot-walrus-wordt-gesloopt"
   }
  },
  {
@@ -3799,6 +3705,46 @@
    "credit": "Foto: De Nieuwe Kolk",
    "sourceUrl": "https://denieuwekolk.nl/theater/agenda/wishful-singing"
   }
+ },
+ {
+  "id": "spookbosch-froombosch-2026",
+  "slug": "spookbosch-froombosch-2026-11-13",
+  "title": "Spookbosch",
+  "occurrences": [
+   {
+    "date": "2026-11-13",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": null,
+   "city": "Froombosch",
+   "lat": 53.19641,
+   "lon": 6.77228
+  },
+  "price": "€ 7,50 per persoon, aanmelden vóór 6 november",
+  "url": "https://www.froombosch.com/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.froombosch.com/",
+    "host": "froombosch.com",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "feest",
+  "kindLabel": "Feest en kermis",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'spooktocht'",
+   "confidence": 0.8
+  },
+  "hash": "9fcaaf171d21",
+  "image": null
  },
  {
   "id": "confirmed-jonge-harten-2026",

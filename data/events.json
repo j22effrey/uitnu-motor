@@ -792,8 +792,8 @@
     "time": "vanaf 19:00",
     "location": null,
     "city": "Froombosch",
-    "lat": null,
-    "lon": null,
+    "lat": 53.19641,
+    "lon": 6.77228,
     "price": "€ 7,50 per persoon, aanmelden vóór 6 november",
     "sourceType": "event_official",
     "verificationStatus": "organizer_confirmed",
@@ -803,6 +803,7 @@
     "eventUrl": "https://www.froombosch.com/",
     "experienceGroup": "outing",
     "publicAudience": true,
-    "lastSourceAudit": "2026-10-12"
+    "lastSourceAudit": "2026-10-12",
+    "placeFromGeocoder": "Froombosch, Midden-Groningen, Groningen"
   }
 ]
