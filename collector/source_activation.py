@@ -15,6 +15,7 @@ import re
 from urllib.parse import urljoin, urlparse, urlunparse
 
 from collector.source_candidates import canonical_url, host_key, utc_now
+from pipeline.v2.kinds import OSM_KIND_HINTS
 
 VALID_ROLES = {"organizer", "venue", "tourism", "discovery"}
 VALID_EXTRACTORS = {"wordpress_tribe", "jsonld_event", "ics", "html_agenda_dutch"}
@@ -99,6 +100,21 @@ def default_place_for(candidate: dict, *, role: str) -> dict | None:
     if lat is not None and lon is not None:
         place.update(lat=float(lat), lon=float(lon))
     return place
+
+
+def kind_hint_for(candidate: dict) -> str | None:
+    """Soort uitje dat bij deze plek past, uit het soort plek in OpenStreetMap ('theatre' -> theater).
+
+    Alleen als alle vermeldingen op hetzelfde uitkomen; de fabriek gebruikt het pas als de titel niets zegt.
+    """
+    kinds = set()
+    for evidence in candidate.get("evidence") or []:
+        if not isinstance(evidence, dict) or evidence.get("kind") != "osm":
+            continue
+        match = _OSM_ANCHOR.match(str(evidence.get("anchorText") or ""))
+        if match:
+            kinds.add(OSM_KIND_HINTS.get(match.group("kind").strip()))
+    return kinds.pop() if len(kinds) == 1 and None not in kinds else None
 
 
 def activation_reasons(candidate: dict, *, role: str) -> list[str]:
@@ -193,6 +209,7 @@ def promote_candidate(
         "extractorConfig": extractor_config(candidate),
         "activatedFromCandidate": wanted,
         **({"defaultPlace": place} if (place := default_place_for(candidate, role=role)) else {}),
+        **({"kindHint": hint} if (hint := kind_hint_for(candidate)) else {}),
         "policyReviewedAt": candidate.get("policyReview", {}).get("reviewedAt"),
     }
     sources.append(source)

@@ -52,6 +52,14 @@ def _write_json(path: Path, value) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+def source_kinds(path: Path) -> dict[str, str]:
+    """Website -> soort uitje dat daar meestal is (veld kindHint in de bronnenlijst)."""
+    payload = _read_json(path, {})
+    sources = payload.get("sources", []) if isinstance(payload, dict) else []
+    return {host_of(s.get("rootUrl")): s["kindHint"] for s in sources
+            if isinstance(s, dict) and s.get("kindHint") and host_of(s.get("rootUrl"))}
+
+
 def source_names(path: Path) -> dict[str, str]:
     """Website -> naam van de bron, voor de fotovermelding ('Foto: Neushoorn')."""
     payload = _read_json(path, {})
@@ -61,7 +69,8 @@ def source_names(path: Path) -> dict[str, str]:
 
 
 def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] | None = None,
-          photo_cache: dict | None = None, names: dict[str, str] | None = None) -> tuple[list[dict], dict]:
+          photo_cache: dict | None = None, names: dict[str, str] | None = None,
+          venue_kinds: dict[str, str] | None = None) -> tuple[list[dict], dict]:
     raw = load_first_party(data_dir)
     converted = [e for e in (to_v2(r, today) for r in raw) if e]
     outside = [e for e in converted if not in_area(e)]
@@ -69,13 +78,14 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
 
     before = len(events)
     for event in events:
-        verdict = classify(event, overrides)
+        verdict = classify(event, overrides, venue_kinds)
         event["kind"] = verdict["kind"]
         event["kindLabel"] = KINDS[verdict["kind"]]
         event["tags"] = verdict["tags"]
         event["classification"] = {k: verdict[k] for k in ("method", "reason", "confidence")}
         event.pop("description", None)
         event.pop("legacyCategory", None)
+        event.pop("legacyDiscipline", None)
         event["hash"] = content_hash(event)
     if len(events) != before:
         raise RuntimeError("indelen mag nooit evenementen weglaten")
@@ -138,7 +148,8 @@ def main(argv: list[str] | None = None) -> int:
     today = date.fromisoformat(args.today) if args.today else date.today()
     out_dir = Path(args.out)
     overrides = _read_json(HERE / "overrides.json", {})
-    events, status = build(Path(args.data), out_dir, today, overrides, names=source_names(Path(args.sources)))
+    events, status = build(Path(args.data), out_dir, today, overrides, names=source_names(Path(args.sources)),
+                           venue_kinds=source_kinds(Path(args.sources)))
 
     if status["gate"]["passed"] or args.force:
         _write_json(out_dir / "events.json", events)

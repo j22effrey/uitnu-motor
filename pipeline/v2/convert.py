@@ -128,6 +128,7 @@ def to_v2(raw: dict, today: date) -> dict | None:
         # Alleen gebruikt om in te delen; de tekst zelf wordt niet gepubliceerd.
         "description": raw.get("description") or "",
         "legacyCategory": raw.get("category"),
+        "legacyDiscipline": raw.get("cultureDiscipline"),
     }
 
 
@@ -174,11 +175,16 @@ def _title_words(title: str, city: str) -> set[str]:
 
 
 def _venue_key(event: dict) -> str | None:
-    name = slugify(event["venue"].get("name") or "")
-    city = slugify(event["venue"].get("city") or "")
-    if not name or name == city or name.startswith("diverse") or name.startswith("centrum"):
+    """Zaal en plaats samen. Zonder zaalnaam is er geen zaal om op samen te voegen
+    (slugify('') geeft 'evenement', en dan zouden alle uitjes zonder zaal één plek lijken)."""
+    raw_name = (event["venue"].get("name") or "").strip()
+    if not raw_name:
         return None
-    return name
+    name = slugify(raw_name)
+    city = slugify(event["venue"].get("city") or "")
+    if name == city or name.startswith("diverse") or name.startswith("centrum"):
+        return None
+    return f"{name}|{city}"
 
 
 def _same_slot(a: dict, b: dict) -> bool:

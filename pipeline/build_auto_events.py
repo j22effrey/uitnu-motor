@@ -65,10 +65,29 @@ def _source_host(item: dict) -> str:
     return ""
 
 
+# Wat de organisator zelf opgeeft als schema.org-soort -> (categorie, discipline).
+# Alleen gebruikt als de titel zelf niets zegt.
+SCHEMA_TYPES: dict[str, tuple[str, str | None]] = {
+    "musicevent": ("muziek", None),
+    "festival": ("festival", None),
+    "foodevent": ("food", None),
+    "sportsevent": ("sport", None),
+    "exhibitionevent": ("expo", None),
+    "visualartsevent": ("expo", None),
+    "childrensevent": ("familie", None),
+    "theaterevent": ("cultuur", "theater"),
+    "comedyevent": ("cultuur", "cabaret"),
+    "danceevent": ("cultuur", "dans"),
+    "screeningevent": ("cultuur", "film"),
+    "literaryevent": ("cultuur", "literatuur"),
+}
+
+
 def _classify(item: dict) -> tuple[str, str, str | None]:
     host = _source_host(item)
     title = _norm(item.get("title"))
     source_category = _norm(item.get("category"))
+    schema = SCHEMA_TYPES.get(source_category.replace(" ", ""))
     hay = f"{title} {source_category}"
 
     if host.endswith("spotgroningen.nl"):
@@ -87,6 +106,8 @@ def _classify(item: dict) -> tuple[str, str, str | None]:
             discipline = "film"
         elif any(x in hay for x in ("literatuur", "boek", "lezing", "talk")):
             discipline = "literatuur"
+        elif schema and schema[1]:
+            discipline = schema[1]  # de organisator zegt zelf wat het is
         return "cultuur", "Podium & cultuur", discipline
 
     if host.endswith("kindermaand.nl"):
@@ -111,6 +132,8 @@ def _classify(item: dict) -> tuple[str, str, str | None]:
         key = "muziek"
     elif any(x in hay for x in ("feest", "party")):
         key = "feest"
+    elif schema:
+        return schema[0], CATEGORY_LABELS[schema[0]], schema[1]
     else:
         key = "overig"
     return key, CATEGORY_LABELS[key], None

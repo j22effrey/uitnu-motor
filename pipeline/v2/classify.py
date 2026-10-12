@@ -16,7 +16,7 @@ import re
 import unicodedata
 from typing import Iterable
 
-from .kinds import KINDS, LEGACY_HINTS
+from .kinds import DISCIPLINE_HINTS, KINDS, LEGACY_HINTS
 
 
 def normalize(text: str) -> str:
@@ -123,8 +123,12 @@ def _is_multiday(event: dict) -> bool:
     return False
 
 
-def classify(event: dict, overrides: dict[str, str] | None = None) -> dict:
-    """Geeft {kind, tags, method, reason, confidence} terug."""
+def classify(event: dict, overrides: dict[str, str] | None = None,
+             venue_rules: dict[str, str] | None = None) -> dict:
+    """Geeft {kind, tags, method, reason, confidence} terug.
+
+    venue_rules: extra 'website -> soort' uit de bronnenlijst (veld kindHint), naast VENUE_RULES.
+    """
     title = event.get("title") or ""
     text = normalize(" ".join([title, event.get("description") or ""]))
     tags: set[str] = set()
@@ -188,15 +192,19 @@ def classify(event: dict, overrides: dict[str, str] | None = None) -> dict:
             return result(kind, "trefwoord", f"trefwoord '{found[kind][0]}'", 0.8)
 
     # 3. Locatie of bron
+    rules = {**(venue_rules or {}), **VENUE_RULES}
     for url in (event.get("url"), *(s.get("url") for s in event.get("sources") or [])):
-        kind = VENUE_RULES.get(_host(url or ""))
-        if kind:
+        kind = rules.get(_host(url or ""))
+        if kind in KINDS:
             return result(kind, "locatie", f"website {_host(url or '')}", 0.7)
 
-    # 4. Oude categorie als hint
+    # 4. Oude categorie of discipline als hint
     hint = LEGACY_HINTS.get(event.get("legacyCategory") or "")
     if hint:
         return result(hint, "bronhint", f"oude categorie '{event.get('legacyCategory')}'", 0.5)
+    hint = DISCIPLINE_HINTS.get(event.get("legacyDiscipline") or "")
+    if hint:
+        return result(hint, "bronhint", f"discipline '{event.get('legacyDiscipline')}'", 0.5)
 
     # 5. Niets gevonden
     return result("overig", "geen", "geen trefwoord, locatie of hint", 0.2)

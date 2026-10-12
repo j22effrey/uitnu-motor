@@ -29,7 +29,36 @@ LEGACY_HINTS: dict[str, str] = {
     "markt": "markt",
     "expo": "kunst",
     "feest": "feest",
+    "kermis": "feest",
     "festival": "festival",
     "sport": "sport",
     "muziek": "muziek",
+}
+
+# Bij 'podium en cultuur' wist de eerste pipeline vaak de discipline al (soms van de organisator zelf).
+DISCIPLINE_HINTS: dict[str, str] = {
+    "muziek": "muziek",
+    "klassiek_opera": "muziek",
+    "theater": "theater",
+    "cabaret": "theater",
+    "dans": "theater",
+    "film": "film",
+    "kunst_expo": "kunst",
+    "literatuur": "lezing",
+}
+
+# Soort plek in OpenStreetMap -> soort uitje dat daar meestal is. Alleen als de titel niets zegt.
+OSM_KIND_HINTS: dict[str, str] = {
+    "theatre": "theater",
+    "music_venue": "muziek",
+    "nightclub": "muziek",
+    "cinema": "film",
+    "arts_centre": "kunst",
+    "museum": "kunst",
+    "gallery": "kunst",
+    "library": "lezing",
+    "nature_reserve": "natuur",
+    "zoo": "natuur",
+    "sports_centre": "sport",
+    "stadium": "sport",
 }

@@ -29,6 +29,7 @@ class StructuredEvent:
     price: str | None
     event_url: str | None
     source_url: str
+    event_type: str | None = None  # schema.org-soort, bijvoorbeeld 'MusicEvent' of 'TheaterEvent'
 
 class _LDParser(HTMLParser):
     def __init__(self):
@@ -55,6 +56,15 @@ def _walk(value: Any) -> Iterable[dict]:
         yield value
         for k in ('@graph','itemListElement','item'):
             if k in value: yield from _walk(value[k])
+
+
+def _event_type(o: dict) -> str | None:
+    """De meest specifieke schema.org-soort: 'MusicEvent' in plaats van 'Event'."""
+    types = o.get('@type')
+    types = types if isinstance(types, list) else [types]
+    specific = [str(t) for t in types if isinstance(t, str) and t != 'Event'
+                and (t.lower().endswith('event') or t == 'Festival')]
+    return specific[0] if specific else None
 
 
 def _is_event(o: dict) -> bool:
@@ -113,7 +123,8 @@ def parse_html(html: str, source_url: str) -> list[StructuredEvent]:
             result.append(StructuredEvent(
                 title=o.get('name'), start=o.get('startDate'), end=o.get('endDate'),
                 venue=venue, street=street, city=city, postal_code=pc,
-                latitude=lat, longitude=lon, price=_price(o), event_url=url, source_url=source_url
+                latitude=lat, longitude=lon, price=_price(o), event_url=url, source_url=source_url,
+                event_type=_event_type(o),
             ))
     return result
 
