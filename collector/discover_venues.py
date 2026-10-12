@@ -2,8 +2,11 @@
 
 Waar het zoekt:
 - OpenStreetMap (Overpass): podia, theaters, bioscopen, dorpshuizen, musea, kerken,
-  sportcentra, clubs en andere plekken met een website, binnen het werkgebied.
-- Wikidata: festivals in Groningen, Drenthe en Friesland met een officiële website.
+  sportcentra, clubs, cafés, verenigingen, gemeentehuizen en andere plekken met een website,
+  en dorpen en wijken met een eigen dorpswebsite, binnen het werkgebied.
+- Wikidata: festivals in Groningen, Drenthe en Friesland met een officiële website, en
+  dorpen, steden en gemeenten in het werkgebied met een officiële website.
+- Tips van de eigenaar (collector/tips.json): websites die de robot zelf niet vond.
 
 Wat het oplevert: websites in de bestaande bronwachtrij (data/source_candidates.json).
 Een kandidaat is nog geen bron. De bestaande probe (collector/source_probe.py) kijkt daarna
@@ -55,6 +58,19 @@ OSM_TYPES: dict[tuple[str, str], int] = {
     ("leisure", "stadium"): 15,
     ("leisure", "nature_reserve"): 10,
     ("leisure", "marina"): 10,
+    ("historic", "castle"): 15,          # borgen en kastelen met activiteiten
+    ("historic", "manor"): 15,
+    ("amenity", "townhall"): 15,         # gemeente: mag als bron (vaste regel 1)
+    ("office", "association"): 12,       # verenigingen en stichtingen, zoals dorpsbelangen
+    ("amenity", "pub"): 8,               # cafés met live muziek
+    ("amenity", "bar"): 8,
+    # Dorpen en wijken met een eigen website: daar staan vaak de dorpsactiviteiten.
+    ("place", "village"): 25,
+    ("place", "hamlet"): 20,
+    ("place", "town"): 20,
+    ("place", "suburb"): 15,
+    ("place", "neighbourhood"): 15,
+    ("place", "city"): 10,
 }
 
 # Nooit als bron: andere agenda's, verzamelsites, media en sociale netwerken.
@@ -68,8 +84,11 @@ EXCLUDED_HOSTS = {
     # wiki's, universiteiten en boekingssites zijn geen agenda van een plek of organisator
     "reliwiki.nl", "wikidata.org", "wikimedia.org", "rug.nl", "hanze.nl",
     "tripadvisor.nl", "tripadvisor.com", "booking.com",
+    # landelijke overheid: hun 'activiteiten' gaan over het hele land, niet over deze plek
+    "defensie.nl", "rijksoverheid.nl", "overheid.nl", "government.nl",
 }
 GRONINGEN_PROVINCE = "Q752"
+TIPS_PATH = "collector/tips.json"
 
 
 def overpass_query(radius_km: int = AREA_RADIUS_KM, center: tuple[float, float] = AREA_CENTER) -> str:
@@ -95,6 +114,24 @@ SELECT DISTINCT ?item ?itemLabel ?website ?region ?coord ?placeCoord WHERE {
 }
 LIMIT 2000
 """
+
+
+# Woonplaatsen en gemeenten in het werkgebied met een officiële website (dorpswebsites).
+WIKIDATA_PLACES_QUERY = """
+SELECT DISTINCT ?item ?itemLabel ?website ?coord ?type WHERE {{
+  SERVICE wikibase:around {{
+    ?item wdt:P625 ?coord .
+    bd:serviceParam wikibase:center "Point({lon} {lat})"^^geo:wktLiteral .
+    bd:serviceParam wikibase:radius "{radius}" .
+  }}
+  ?item wdt:P31 ?type .
+  VALUES ?type {{ wd:Q532 wd:Q3957 wd:Q5084 wd:Q486972 wd:Q1852859 wd:Q2039348 wd:Q15284 wd:Q1549591 wd:Q515 }}
+  ?item wdt:P856 ?website .
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "nl,en". }}
+}}
+LIMIT 3000
+"""
+MUNICIPALITY = "Q2039348"
 
 
 def normalize_website(value: str | None) -> str | None:
@@ -170,6 +207,54 @@ def discoveries_from_wikidata(payload: dict) -> list[dict]:
     return found
 
 
+def discoveries_from_wikidata_places(payload: dict) -> list[dict]:
+    found: list[dict] = []
+    for row in payload.get("results", {}).get("bindings", []):
+        url = normalize_website(row.get("website", {}).get("value"))
+        if not url or is_excluded(url):
+            continue
+        entity = row.get("item", {}).get("value", "")
+        qid = entity.rsplit("/", 1)[-1]
+        match = re.match(r"Point\(([-0-9.]+) ([-0-9.]+)\)", row.get("coord", {}).get("value", ""))
+        municipality = row.get("type", {}).get("value", "").endswith("/" + MUNICIPALITY)
+        found.append({
+            "url": url,
+            "score": 20 if municipality else 25,
+            "kind": "wikidata",
+            "source_id": f"wikidata:{qid}",
+            "from_url": entity,
+            "anchor_text": f"{row.get('itemLabel', {}).get('value', qid)} ({'gemeente' if municipality else 'dorp'})",
+            "lat": float(match.group(2)) if match else None,
+            "lon": float(match.group(1)) if match else None,
+        })
+    return found
+
+
+def discoveries_from_tips(path: str | Path) -> list[dict]:
+    """Websites die de eigenaar zelf aandraagt (bijvoorbeeld een dorpswebsite met een uitje dat
+    ontbrak). Ze krijgen voorrang bij het testen en gelden als 'in het werkgebied'."""
+    path = Path(path)
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    found = []
+    for tip in payload.get("tips", []) if isinstance(payload, dict) else []:
+        url = normalize_website((tip or {}).get("url"))
+        if not url or is_excluded(url):
+            continue
+        found.append({
+            "url": url,
+            "score": 60,
+            "kind": "tip",
+            "source_id": f"tip:{host_key(url)}",
+            "from_url": None,
+            "anchor_text": f"{tip.get('naam') or host_key(url)} (tip)",
+            "lat": tip.get("lat"),
+            "lon": tip.get("lon"),
+        })
+    return found
+
+
 def distance_km(lat: float, lon: float, center: tuple[float, float] = AREA_CENTER) -> float:
     from math import asin, cos, radians, sin, sqrt
     dlat, dlon = radians(lat - center[0]), radians(lon - center[1])
@@ -179,6 +264,8 @@ def distance_km(lat: float, lon: float, center: tuple[float, float] = AREA_CENTE
 
 def area_of(discovery: dict, radius_km: int = AREA_RADIUS_KM) -> tuple[str, float | None]:
     """'binnen', 'buiten' of 'onbekend', met de afstand tot Groningen als die bekend is."""
+    if discovery.get("kind") == "tip" and discovery.get("lat") is None:
+        return "binnen", None
     if discovery.get("lat") is not None and discovery.get("lon") is not None:
         km = round(distance_km(float(discovery["lat"]), float(discovery["lon"])), 1)
         return ("binnen" if km <= radius_km else "buiten"), km
@@ -233,6 +320,12 @@ def fetch_wikidata() -> dict:
     return _fetch_json(f"{WIKIDATA_URL}?{query}")
 
 
+def fetch_wikidata_places(radius_km: int) -> dict:
+    sparql = WIKIDATA_PLACES_QUERY.format(lat=AREA_CENTER[0], lon=AREA_CENTER[1], radius=radius_km)
+    query = urllib.parse.urlencode({"query": sparql, "format": "json"})
+    return _fetch_json(f"{WIKIDATA_URL}?{query}")
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="UITNU bronnenmachine")
     parser.add_argument("--queue", default="data/source_candidates.json")
@@ -241,21 +334,31 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--radius-km", type=int, default=AREA_RADIUS_KM)
     parser.add_argument("--osm-json", help="eerder opgeslagen Overpass-antwoord (voor testen)")
     parser.add_argument("--wikidata-json", help="eerder opgeslagen Wikidata-antwoord (voor testen)")
+    parser.add_argument("--places-json", help="eerder opgeslagen Wikidata-antwoord met woonplaatsen (voor testen)")
+    parser.add_argument("--tips", default=TIPS_PATH, help="websites die de eigenaar aandraagt")
+    parser.add_argument("--tips-only", action="store_true", help="alleen de tips toevoegen (geen internet nodig)")
     parser.add_argument("--dry-run", action="store_true", help="alleen tellen, wachtrij niet aanpassen")
     args = parser.parse_args(argv)
 
-    discoveries: list[dict] = []
+    discoveries: list[dict] = discoveries_from_tips(args.tips)
     problems: list[str] = []
-    try:
-        osm = json.loads(Path(args.osm_json).read_text(encoding="utf-8")) if args.osm_json else fetch_overpass(args.radius_km)
-        discoveries += discoveries_from_overpass(osm)
-    except Exception as error:  # een bron die faalt mag de andere niet tegenhouden
-        problems.append(f"OpenStreetMap: {error}")
-    try:
-        wiki = json.loads(Path(args.wikidata_json).read_text(encoding="utf-8")) if args.wikidata_json else fetch_wikidata()
-        discoveries += discoveries_from_wikidata(wiki)
-    except Exception as error:
-        problems.append(f"Wikidata: {error}")
+    if not args.tips_only:
+        try:
+            osm = json.loads(Path(args.osm_json).read_text(encoding="utf-8")) if args.osm_json else fetch_overpass(args.radius_km)
+            discoveries += discoveries_from_overpass(osm)
+        except Exception as error:  # een bron die faalt mag de andere niet tegenhouden
+            problems.append(f"OpenStreetMap: {error}")
+        try:
+            wiki = json.loads(Path(args.wikidata_json).read_text(encoding="utf-8")) if args.wikidata_json else fetch_wikidata()
+            discoveries += discoveries_from_wikidata(wiki)
+        except Exception as error:
+            problems.append(f"Wikidata (festivals): {error}")
+        try:
+            places = (json.loads(Path(args.places_json).read_text(encoding="utf-8")) if args.places_json
+                      else fetch_wikidata_places(args.radius_km))
+            discoveries += discoveries_from_wikidata_places(places)
+        except Exception as error:
+            problems.append(f"Wikidata (dorpen en gemeenten): {error}")
 
     new = filter_new_hosts(discoveries, load_source_hosts(args.known))
     hosts = {host_key(d["url"]) for d in new}

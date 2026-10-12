@@ -35,9 +35,13 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
 
 ## Hoe de motor werkt (kort)
 
-1. `collector/discover_venues.py`: zoekt nieuwe websites via OpenStreetMap en Wikidata
+1. `collector/discover_venues.py`: zoekt nieuwe websites via OpenStreetMap (podia, dorpshuizen,
+   musea, cafés, verenigingen, gemeentehuizen, en dorpen met een eigen website) en Wikidata
+   (festivals, dorpen en gemeenten), plus de tips in `collector/tips.json`
    (`data/source_candidates.json`).
-2. `collector/source_probe.py`: test of een website een leesbare agenda heeft.
+2. `collector/source_probe.py`: test of een website een leesbare agenda heeft (ook via de link
+   naar de agenda op de voorpagina). Volgorde: tips, websites die een oudere test afwees, nieuwe
+   websites, dan herkansingen na een wachttijd. Geen robots.txt betekent: welkom.
 3. `collector/auto_activate.py`: zet geschikte bronnen aan in `collector/web_crawl_sources.json`.
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
    en schrijven `data/auto_events.json`.
@@ -47,6 +51,14 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
    kiest per uitje de foto; uitjes in dezelfde plaats krijgen om de beurt een andere foto.
 6. `pipeline/v2/build.py`: voegt alles samen, laat gewone kerkdiensten weg, deelt in
    (`classify.py`), kiest foto's, keurt (`gate.py`) en publiceert.
+
+## Ontbreekt er een uitje?
+
+- Staat het op de eigen website van een organisator, dorp of gemeente? Zet die website in
+  `collector/tips.json` (met `naam`, `reden` en `datum`); de motor test hem de volgende ronde als eerste.
+- Staat het alleen op Facebook of een poster? Zet de feiten (naam, datum, tijd, plaats, prijs, link)
+  in `data/events.json` met een `sourceNote` waar het vandaan komt. Een plaatsnaam is genoeg: de
+  motor zet zelf de kaartpin (`collector/geocode_curated.py`). Facebook zelf lezen we nooit.
 
 ## Indeling (soorten)
 

@@ -70,6 +70,7 @@ def test_goede_bron_gaat_automatisch_aan(tmp_path):
 def test_robot_probeert_ook_programma_pagina(monkeypatch):
     class Event:
         title = "Voorstelling"
+        start_date = "2099-01-01"  # alleen komende uitjes tellen
     class Page:
         status, content_type, text = 200, "text/html", "<html></html>"
     asked = []
