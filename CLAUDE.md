@@ -56,8 +56,11 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
    plaats van Wikimedia Commons) en onthoudt ze in `data/photos.json`. Hij noteert ook wat de
    organisator zelf over de soort zegt (alleen de conclusie, geen tekst). `pipeline/v2/photos.py`
    kiest per uitje de foto; uitjes in dezelfde plaats krijgen om de beurt een andere foto.
-6. `pipeline/v2/build.py`: voegt alles samen, laat gewone kerkdiensten weg, deelt in
-   (`classify.py`), kiest foto's, keurt (`gate.py`) en publiceert.
+6. `pipeline/v2/build.py`: voegt alles samen, laat weg wat geen uitje is (gewone kerkdiensten,
+   zaalverhuur, vergaderingen, mededelingen zoals de afvalkalender, en vaste activiteiten die elke
+   week terugkomen zoals klaverjassen of gym; voorstellingen, concerten, films, markten,
+   tentoonstellingen en natuuruitjes blijven altijd staan), deelt in (`classify.py`), kiest foto's,
+   keurt (`gate.py`) en publiceert. Uitjes verder dan anderhalf jaar vooruit zijn een leesfout.
 
 ## Ontbreekt er een uitje?
 

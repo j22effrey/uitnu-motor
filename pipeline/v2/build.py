@@ -9,9 +9,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from collections import Counter
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from collector.discover_venues import is_excluded
@@ -77,6 +78,43 @@ def source_names(path: Path) -> dict[str, str]:
             if isinstance(s, dict) and s.get("name") and host_of(s.get("rootUrl"))}
 
 
+# Een uitje dat elke week (of vaker) terugkomt bij dezelfde organisator, zoals klaverjassen, gym,
+# soos of jeu de boules, is een vaste activiteit van een club of dorpshuis en geen uitje voor de
+# agenda. Voorstellingen, concerten, films, markten, tentoonstellingen en natuuruitjes blijven staan,
+# ook als ze vaak terugkomen.
+HORIZON_DAYS = 550          # uitjes verder vooruit: niet publiceren (zie build)
+ROUTINE_KEEP_KINDS = {"theater", "muziek", "film", "festival", "markt", "kunst", "natuur"}
+ROUTINE_MIN = 4             # minstens zo vaak in de agenda
+ROUTINE_MAX_GAP_DAYS = 14   # en gemiddeld (mediaan) hoogstens zoveel dagen ertussen
+
+
+def _routine_key(event: dict) -> tuple[str, str]:
+    # Tijden tellen niet mee: 'Jeu de boules van 14:00 tot 16:00 uur' is elke week hetzelfde.
+    title = re.sub(r"\b\d{1,2}[:.]\d{2}\b|\b(?:uur|van|tot|t/m|vanaf|om)\b", " ", normalize(event.get("title") or ""))
+    hosts = [s.get("host") for s in event.get("sources") or [] if s.get("host")]
+    return " ".join(title.split()), (hosts[0] if hosts else "")
+
+
+def routines(events: list[dict]) -> set[int]:
+    """Posities van uitjes die een vaste activiteit zijn (zie ROUTINE_*)."""
+    groups: dict[tuple[str, str], list[int]] = {}
+    for index, event in enumerate(events):
+        groups.setdefault(_routine_key(event), []).append(index)
+    drop: set[int] = set()
+    for (title, _), indexes in groups.items():
+        days = sorted({date.fromisoformat(events[i]["occurrences"][0]["date"]) for i in indexes})
+        if not title or len(days) < ROUTINE_MIN:
+            continue
+        gaps = sorted((b - a).days for a, b in zip(days, days[1:]))
+        median = gaps[len(gaps) // 2]
+        if median <= ROUTINE_MAX_GAP_DAYS:
+            drop |= {i for i in indexes if events[i].get("kind") not in ROUTINE_KEEP_KINDS}
+        elif median <= 35 and len(days) >= 5:
+            # Elke maand dezelfde bijeenkomst zonder herkenbare soort (een soos, een praatmiddag).
+            drop |= {i for i in indexes if events[i].get("kind") == "overig"}
+    return drop
+
+
 def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] | None = None,
           photo_cache: dict | None = None, names: dict[str, str] | None = None,
           venue_kinds: dict[str, str] | None = None) -> tuple[list[dict], dict]:
@@ -85,6 +123,10 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     # Vaste regel 1: nooit uitjes van een website op de uitsluitlijst (ook niet van een oude bron).
     excluded = [e for e in converted if any(is_excluded(u or "") for u in [e.get("url")] + [s.get("url") for s in e.get("sources") or []])]
     converted = [e for e in converted if e not in excluded]
+    # Verder dan anderhalf jaar vooruit is bijna altijd een leesfout (een verkeerd jaar).
+    horizon = (today + timedelta(days=HORIZON_DAYS)).isoformat()
+    too_far = [e for e in converted if (e.get("occurrences") or [{}])[0].get("date", "") > horizon]
+    converted = [e for e in converted if e not in too_far]
     outside = [e for e in converted if not in_area(e)]
     skipped = [e for e in converted if in_area(e) and not_an_outing(e)]
     events = merge_duplicates([e for e in converted if in_area(e) and not not_an_outing(e)])
@@ -111,6 +153,9 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         event["hash"] = content_hash(event)
     if len(events) != before:
         raise RuntimeError("indelen mag nooit evenementen weglaten")
+    # Vaste activiteiten (elke week klaverjassen, gym of soos) zijn geen uitjes voor de agenda.
+    routine = routines(events)
+    events = [e for i, e in enumerate(events) if i not in routine]
 
     # Unieke slugs, voor als twee titels toevallig hetzelfde worden afgekapt
     seen: Counter = Counter()
@@ -144,6 +189,8 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "inputRecords": len(raw),
         "outsideArea": len(outside),
         "geenUitje": len(skipped),
+        "vasteActiviteit": len(routine),
+        "teVerVooruit": len(too_far),
         "uitgeslotenBron": len(excluded),
         "area": {"center": AREA_CENTER, "radiusKm": AREA_RADIUS_KM},
         "byKind": dict(Counter(e["kind"] for e in events).most_common()),
