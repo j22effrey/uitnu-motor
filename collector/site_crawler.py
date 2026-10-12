@@ -410,13 +410,20 @@ def _append_event(result: CrawlResult, event_keys: set[tuple], raw: RawEvent) ->
     result.events.append(raw)
 
 
+TIME_UP = "tijd op"
+
+
 def crawl_source(
     source: CrawlSource,
     *,
     fetcher: Callable[..., Fetched] = default_fetch,
     timeout: float = 15,
     sleeper: Callable[[float], None] = time.sleep,
+    deadline: float | None = None,
 ) -> CrawlResult:
+    """Lees een website door, met respect voor robots.txt.
+
+    deadline (time.monotonic()): daarna geen nieuwe pagina's meer ophalen; wat al gevonden is telt."""
     if not source.enabled:
         return CrawlResult()
     root = _clean_url(source.root_url)
@@ -424,6 +431,16 @@ def crawl_source(
         raise ValueError("root_url must be an absolute http(s) URL")
 
     result = CrawlResult()
+
+    def time_up() -> bool:
+        if deadline is not None and time.monotonic() >= deadline:
+            if TIME_UP not in result.errors:
+                result.errors.append(TIME_UP)
+            return True
+        return False
+
+    if time_up():
+        return result
     robots, sitemap_urls = _load_robots(root, fetcher, timeout=timeout)
     if robots.disallow_all:
         result.errors.append("robots_unavailable_or_denied")
@@ -437,7 +454,7 @@ def crawl_source(
     discovered_pages: list[str] = []
     seen_sitemaps: set[str] = set()
     sitemap_queue = list(sitemap_urls[:5])
-    while sitemap_queue and len(seen_sitemaps) < 12:
+    while sitemap_queue and len(seen_sitemaps) < 12 and not time_up():
         sitemap_url = sitemap_queue.pop(0)
         if sitemap_url in seen_sitemaps or not same_site(root, sitemap_url):
             continue
@@ -481,7 +498,7 @@ def crawl_source(
     event_keys: set[tuple] = set()
     external: list[ExternalCandidate] = []
 
-    while frontier and len(result.pages_visited) < source.max_pages:
+    while frontier and len(result.pages_visited) < source.max_pages and not time_up():
         _, depth, _, url = heapq.heappop(frontier)
         if url in visited:
             continue

@@ -239,7 +239,17 @@ def _valid_live_window(record: dict, today: date) -> bool:
     return True
 
 
-def build_auto_events(curated: list[dict], staged: dict, *, today: date | None = None) -> list[dict]:
+def _host(url: object) -> str:
+    try:
+        return (urlparse(str(url or "")).hostname or "").casefold().removeprefix("www.")
+    except ValueError:
+        return ""
+
+
+def build_auto_events(curated: list[dict], staged: dict, *, today: date | None = None,
+                      previous: list[dict] | None = None) -> list[dict]:
+    """De automatische uitjes. previous = de vorige uitkomst: een bron die deze keer niet helemaal
+    lukte (storing of tijd op), houdt zijn nog komende uitjes van de vorige keer."""
     today = today or date.today()
     canonical = staged.get("canonical_publishable", []) if isinstance(staged, dict) else []
     out: list[dict] = []
@@ -250,6 +260,20 @@ def build_auto_events(curated: list[dict], staged: dict, *, today: date | None =
             continue
         record = canonical_to_public(item, audit_date=today)
         if not record or not _valid_live_window(record, today):
+            continue
+        if any(_same_event(record, existing) for existing in curated if isinstance(existing, dict)):
+            continue
+        if any(_same_event(record, existing) for existing in out):
+            continue
+        out.append(record)
+    runs = staged.get("source_runs") if isinstance(staged, dict) else None
+    unfinished = {_host(run.get("rootUrl")) for run in (runs or {}).values()
+                  if isinstance(run, dict) and run.get("complete") is False and run.get("rootUrl")}
+    unfinished.discard("")
+    for record in previous or []:
+        if not isinstance(record, dict) or _host(record.get("sourceUrl")) not in unfinished:
+            continue
+        if not _valid_live_window(record, today):
             continue
         if any(_same_event(record, existing) for existing in curated if isinstance(existing, dict)):
             continue
@@ -270,7 +294,11 @@ def main() -> None:
     curated = json.loads(Path(args.curated).read_text(encoding="utf-8"))
     staged = json.loads(Path(args.staged).read_text(encoding="utf-8"))
     today = date.fromisoformat(args.today) if args.today else date.today()
-    output = build_auto_events(curated, staged, today=today)
+    try:
+        previous = json.loads(Path(args.output).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        previous = []
+    output = build_auto_events(curated, staged, today=today, previous=previous if isinstance(previous, list) else [])
     Path(args.output).write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"generated": len(output), "output": args.output}, ensure_ascii=False))
 

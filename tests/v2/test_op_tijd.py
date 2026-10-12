@@ -1,0 +1,58 @@
+"""Agenda's ophalen binnen de tijd: na het budget afronden met wat er is, zonder uitjes kwijt te raken."""
+import time
+from datetime import date
+
+from collector.active_source_runner import run_all
+from collector.site_crawler import TIME_UP, CrawlResult, CrawlSource, Fetched, crawl_source
+from pipeline.build_auto_events import build_auto_events
+
+TODAY = date(2026, 10, 12)
+
+
+def test_crawler_haalt_na_de_deadline_geen_paginas_meer_op():
+    fetched = []
+
+    def fetcher(url, timeout=15):
+        fetched.append(url)
+        return Fetched(url, 404, "text/plain", "")
+
+    source = CrawlSource(id="x", name="X", root_url="https://podium.example/")
+    result = crawl_source(source, fetcher=fetcher, deadline=time.monotonic() - 1)
+    assert fetched == [] and result.errors == [TIME_UP]
+
+
+def test_bronnen_krijgen_de_deadline_mee_en_melden_tijd_op():
+    seen = {}
+
+    def site_runner(source, timeout=15, deadline=None):
+        seen[source.id] = deadline
+        return CrawlResult(errors=[TIME_UP] if source.id == "traag" else [])
+
+    sources = [{"id": "snel", "rootUrl": "https://snel.example/", "extractorHint": "jsonld_event"},
+               {"id": "traag", "rootUrl": "https://traag.example/", "extractorHint": "jsonld_event"}]
+    results = run_all(sources, site_runner=site_runner, budget_seconds=600)
+    assert all(deadline is not None for deadline in seen.values())
+    assert results["traag"].diagnostics.get("tijdOp") and not results["snel"].diagnostics.get("tijdOp")
+    # Zonder budget: geen deadline (zoals vroeger).
+    run_all(sources[:1], site_runner=lambda source, timeout=15: CrawlResult())
+
+
+def _record(title, url, day="2026-10-20"):
+    return {"id": title, "title": title, "startDate": day, "time": "20:00", "city": "Assen", "sourceUrl": url}
+
+
+def test_bron_die_niet_af_kwam_houdt_zijn_uitjes_van_de_vorige_keer():
+    staged = {"canonical_publishable": [], "source_runs": {
+        "traag": {"rootUrl": "https://www.traag.example/agenda/", "complete": False},
+        "klaar": {"rootUrl": "https://klaar.example/", "complete": True},
+    }}
+    previous = [
+        _record("Concert in de kerk", "https://traag.example/agenda/concert"),      # bron niet af: blijft
+        _record("Oud uitje", "https://traag.example/agenda/oud", day="2026-10-01"),  # voorbij: weg
+        _record("Lezing", "https://klaar.example/lezing"),                          # bron af: de nieuwe lijst telt
+    ]
+    out = build_auto_events([], staged, today=TODAY, previous=previous)
+    assert [r["title"] for r in out] == ["Concert in de kerk"]
+    # Staat hetzelfde uitje al in de handmatige agenda, dan niet dubbel.
+    assert build_auto_events([_record("Concert in de kerk", "https://x.example/")], staged, today=TODAY,
+                             previous=previous) == []

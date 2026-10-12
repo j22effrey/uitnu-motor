@@ -1,11 +1,12 @@
 {
-  "uitleg": "Websites die de motor zelf niet vond. Ze komen elke ronde in de wachtrij en worden als eerste getest. Alleen eigen websites van organisatoren, dorpen, podia, musea en gemeenten (vaste regel 1); nooit Facebook of uitagenda's.",
+  "uitleg": "Websites die de motor zelf niet vond. Ze komen elke ronde in de wachtrij en worden als eerste getest. Met 'plaats' weet de motor waar de uitjes zijn. Alleen eigen websites van organisatoren, dorpen, podia, musea en gemeenten (vaste regel 1); nooit Facebook of uitagenda's.",
   "tips": [
     {
-      "url": "https://www.froombosch.com/",
-      "naam": "Froombosch",
-      "reden": "Dorpswebsite; Spookbosch (vrijdag 13 november 2026) ontbrak in de agenda.",
-      "datum": "2026-10-12"
+      "url": "https://www.froombosch.com/wp/",
+      "naam": "Dorpsbelangen Froombosch",
+      "reden": "Dorpswebsite met agenda (losse regels, zoals 'Spooktocht: 13 november'); Spookbosch ontbrak.",
+      "datum": "2026-10-12",
+      "plaats": "Froombosch"
     }
   ]
 }

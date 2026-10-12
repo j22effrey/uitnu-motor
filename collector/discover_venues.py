@@ -7,6 +7,8 @@ Waar het zoekt:
 - Wikidata: festivals in Groningen, Drenthe en Friesland met een officiële website, en
   dorpen, steden en gemeenten in het werkgebied met een officiële website.
 - Tips van de eigenaar (collector/tips.json): websites die de robot zelf niet vond.
+- Dorpswebsites (data/dorpssites.json): per plaats gezocht en gecontroleerd door
+  collector/village_sites.py.
 
 Wat het oplevert: websites in de bestaande bronwachtrij (data/source_candidates.json).
 Een kandidaat is nog geen bron. De bestaande probe (collector/source_probe.py) kijkt daarna
@@ -89,6 +91,7 @@ EXCLUDED_HOSTS = {
 }
 GRONINGEN_PROVINCE = "Q752"
 TIPS_PATH = "collector/tips.json"
+VILLAGE_SITES_PATH = "data/dorpssites.json"
 
 
 def overpass_query(radius_km: int = AREA_RADIUS_KM, center: tuple[float, float] = AREA_CENTER) -> str:
@@ -168,7 +171,8 @@ def discoveries_from_overpass(payload: dict) -> list[dict]:
         lat = element.get("lat", (element.get("center") or {}).get("lat"))
         lon = element.get("lon", (element.get("center") or {}).get("lon"))
         name = tags.get("name") or "naamloze plek"
-        place = tags.get("addr:city") or tags.get("addr:place") or ""
+        # Een dorp of wijk is zelf de plaats ('Froombosch (village, Froombosch)').
+        place = tags.get("addr:city") or tags.get("addr:place") or (name if tags.get("place") and tags.get("name") else "")
         kind = element.get("type", "node")
         found.append({
             "url": url,
@@ -242,16 +246,44 @@ def discoveries_from_tips(path: str | Path) -> list[dict]:
         url = normalize_website((tip or {}).get("url"))
         if not url or is_excluded(url):
             continue
+        place = str(tip.get("plaats") or "").strip()
         found.append({
             "url": url,
             "score": 60,
             "kind": "tip",
             "source_id": f"tip:{host_key(url)}",
             "from_url": None,
-            "anchor_text": f"{tip.get('naam') or host_key(url)} (tip)",
+            "anchor_text": f"{tip.get('naam') or host_key(url)} (tip{', ' + place if place else ''})",
             "lat": tip.get("lat"),
             "lon": tip.get("lon"),
         })
+    return found
+
+
+def discoveries_from_village_sites(path: str | Path) -> list[dict]:
+    """Dorpswebsites die collector/village_sites.py per plaats heeft gevonden en goedgekeurd.
+    Alleen het oordeel 'dorpssite'; twijfelgevallen niet (die eerst nakijken)."""
+    path = Path(path)
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    found = []
+    for qid, place in (payload.get("plaatsen") or {}).items() if isinstance(payload, dict) else []:
+        for site in (place or {}).get("sites") or []:
+            url = normalize_website((site or {}).get("url"))
+            if site.get("oordeel") != "dorpssite" or not url or is_excluded(url):
+                continue
+            name = re.sub(r"[()]", "", str(site.get("naam") or host_key(url))).strip()
+            found.append({
+                "url": url,
+                "score": 45,
+                "kind": "dorpssite",
+                "source_id": f"dorpssite:{qid}",
+                "from_url": f"https://www.wikidata.org/wiki/{qid}",
+                "anchor_text": f"{name} (dorpssite, {place.get('naam')})",
+                "lat": place.get("lat"),
+                "lon": place.get("lon"),
+            })
     return found
 
 
@@ -336,11 +368,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--wikidata-json", help="eerder opgeslagen Wikidata-antwoord (voor testen)")
     parser.add_argument("--places-json", help="eerder opgeslagen Wikidata-antwoord met woonplaatsen (voor testen)")
     parser.add_argument("--tips", default=TIPS_PATH, help="websites die de eigenaar aandraagt")
-    parser.add_argument("--tips-only", action="store_true", help="alleen de tips toevoegen (geen internet nodig)")
+    parser.add_argument("--village-sites", default=VILLAGE_SITES_PATH,
+                        help="dorpswebsites gevonden door collector/village_sites.py")
+    parser.add_argument("--tips-only", action="store_true",
+                        help="alleen de tips en gevonden dorpswebsites toevoegen (geen internet nodig)")
     parser.add_argument("--dry-run", action="store_true", help="alleen tellen, wachtrij niet aanpassen")
     args = parser.parse_args(argv)
 
-    discoveries: list[dict] = discoveries_from_tips(args.tips)
+    discoveries: list[dict] = discoveries_from_tips(args.tips) + discoveries_from_village_sites(args.village_sites)
     problems: list[str] = []
     if not args.tips_only:
         try:

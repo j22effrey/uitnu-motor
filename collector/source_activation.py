@@ -77,26 +77,30 @@ _OSM_ANCHOR = re.compile(r"^(?P<name>.+?)\s*\((?P<kind>[^,()]+)(?:,\s*(?P<city>[
 
 
 def default_place_for(candidate: dict, *, role: str) -> dict | None:
-    """De vaste plek van een podium uit OpenStreetMap: naam, plaats en (als bekend) coördinaten.
+    """De vaste plek van een bron, voor uitjes waarvan de agenda zelf geen plaats noemt.
 
-    Alleen voor role 'venue' en alleen als alle OSM-vermeldingen naar dezelfde plaats wijzen.
+    - Een podium uit OpenStreetMap: de naam van het podium en de plaats.
+    - Een dorpswebsite of tip ('Dorpsbelangen Froombosch (tip, Froombosch)'): alleen de plaats,
+      want de uitjes zijn op verschillende plekken in het dorp.
+    Alleen voor role 'venue' en alleen als alle vermeldingen naar dezelfde plaats wijzen.
     Een organisatie met plekken in meerdere plaatsen krijgt geen vaste plek.
     """
     if role != "venue":
         return None
     places = []
     for evidence in candidate.get("evidence") or []:
-        if not isinstance(evidence, dict) or evidence.get("kind") != "osm":
+        if not isinstance(evidence, dict) or evidence.get("kind") not in ("osm", "tip", "dorpssite"):
             continue
         match = _OSM_ANCHOR.match(str(evidence.get("anchorText") or ""))
         if match and match.group("city"):
-            places.append((match.group("name").strip(), match.group("city").strip(),
-                           evidence.get("lat"), evidence.get("lon")))
+            venue = match.group("name").strip() if evidence.get("kind") == "osm" else None
+            places.append((venue, match.group("city").strip(), evidence.get("lat"), evidence.get("lon")))
     cities = {city.casefold() for _, city, _, _ in places}
     if len(cities) != 1:
         return None
-    name, city, lat, lon = places[0]
-    place = {"venue": name, "city": city}
+    venues = {venue for venue, _, _, _ in places if venue}
+    name, city, lat, lon = next((p for p in places if p[0]), places[0])
+    place = {"venue": name, "city": city} if len(venues) == 1 else {"city": city}
     if lat is not None and lon is not None:
         place.update(lat=float(lat), lon=float(lon))
     return place

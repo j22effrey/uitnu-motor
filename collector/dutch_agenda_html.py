@@ -86,6 +86,9 @@ _VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link"
               "source", "track", "wbr"}
 
 
+_LINE_BREAK = "\u2028"  # een <br> in de tekst: daar begint een nieuwe regel
+
+
 @dataclass(frozen=True)
 class HtmlBlock:
     tag: str
@@ -93,6 +96,7 @@ class HtmlBlock:
     href: str | None = None
     ancestors: tuple[int, ...] = ()   # ids van de omliggende elementen, van buiten naar binnen
     element: int = -1                  # id van het element zelf
+    lines: tuple[str, ...] = ()        # de regels van het blok (gescheiden door <br>)
 
 
 @dataclass(frozen=True)
@@ -120,7 +124,9 @@ class _BlocksParser(HTMLParser):
         tag = tag.lower()
         if tag in _VOID_TAGS:
             if tag == "br":
-                self.handle_data(" ")
+                for element in self.stack:
+                    if element["capture"]:
+                        element["parts"].append(_LINE_BREAK)
             return
         attrs_dict = {str(k).lower(): v for k, v in attrs}
         href = self.stack[-1]["href"] if self.stack else None
@@ -162,13 +168,14 @@ class _BlocksParser(HTMLParser):
             element = self.stack.pop()
             if not element["capture"]:
                 continue
-            text = unescape(" ".join(element["parts"]))
+            raw = unescape(" ".join(element["parts"]))
             if element["datetime"]:
-                text = f"{text} {element['datetime']}"
-            text = " ".join(text.split()).strip()
+                raw = f"{raw} {element['datetime']}"
+            lines = tuple(line for line in (" ".join(part.split()) for part in raw.split(_LINE_BREAK)) if line)
+            text = " ".join(raw.replace(_LINE_BREAK, " ").split()).strip()
             if text:
                 self.blocks.append(HtmlBlock(element["tag"], text, element["href"],
-                                             tuple(e["id"] for e in self.stack), element["id"]))
+                                             tuple(e["id"] for e in self.stack), element["id"], lines))
 
     def close(self):
         super().close()
@@ -299,9 +306,113 @@ def _cards(blocks: list[HtmlBlock], headings: list[int]) -> dict[int, int]:
     return cards
 
 
+_WHEN = (rf"(?:(?P<wd>{WEEKDAY_PATTERN})\.?,?\s+)?(?P<d1>\d{{1,2}})"
+         rf"(?:\s*(?:-|–|t/m|tot en met)\s*(?P<d2>\d{{1,2}}))?\s+(?P<mon>{MONTH_PATTERN})\.?"
+         rf"(?:\s+(?P<year>20\d{{2}}))?")
+_SEP = r"\s*(?::|–|—|\s-)\s+"
+_TITLE_FIRST = re.compile(rf"^(?P<title>[^:–—]{{3,80}}?){_SEP}{_WHEN}(?P<rest>.*)$", re.I)
+_DATE_FIRST = re.compile(rf"^{_WHEN}(?:,?\s+(?P<time>[0-2]?\d[:.][0-5]\d)(?:\s*uur)?)?{_SEP}(?P<title>.{{3,80}})$", re.I)
+_BARE_TIME = re.compile(r"^[\s,]*(?:om\s+|vanaf\s+|aanvang\s+)?([01]?\d|2[0-3])[:.]([0-5]\d)\b")
+# Regels die een datum noemen maar geen uitje zijn.
+_LABEL_TITLE = re.compile(r"^(?:datum|laatst|geplaatst|gepubliceerd|bijgewerkt|openingstijden|deadline|"
+                          r"sluitingsdatum|aanmelden|inschrijven|uiterlijk|vanaf|tot|t/m|gesloten|geopend)\b", re.I)
+
+
+def _parse_line(line: str, href: str | None) -> dict | None:
+    match = _TITLE_FIRST.match(line) or _DATE_FIRST.match(line)
+    if not match:
+        return None
+    title = " ".join(match.group("title").split()).strip(" -–—:")
+    if not _valid_title(title) or _LABEL_TITLE.match(title):
+        return None
+    groups = match.groupdict()
+    rest = groups.get("rest") or ""
+    if groups.get("time"):
+        hh, mm = re.split(r"[:.]", groups["time"])
+        time_text = f"{int(hh):02d}:{mm}"
+    else:
+        time_text = parse_time_range(rest)
+        bare = _BARE_TIME.match(rest) if not time_text else None
+        if bare:
+            time_text = f"{int(bare.group(1)):02d}:{bare.group(2)}"
+    return {
+        "title": title, "day": int(groups["d1"]), "month": MONTHS[groups["mon"].casefold().rstrip(".")],
+        "weekday": WEEKDAYS.get((groups.get("wd") or "").casefold()),
+        "year": int(groups["year"]) if groups.get("year") else None,
+        "time": time_text, "href": href,
+    }
+
+
+def _line_items(blocks: list[HtmlBlock]) -> list[dict]:
+    """Regels met een uitje, uit de binnenste blokken (een omliggend blok bevat dezelfde regels nog eens)."""
+    found = []
+    for block in blocks:
+        if block.tag in _HEADING_TAGS or not block.lines:
+            continue
+        items = [item for item in (_parse_line(line, block.href) for line in block.lines) if item]
+        if items:
+            found.append((block, items))
+    outer = {element for block, _ in found for element in block.ancestors}
+    return [item for block, items in found if block.element not in outer for item in items]
+
+
+def _assign_years(items: list[dict], base: int) -> list[date | None]:
+    """Jaren voor een lijst in tijdsvolgorde: zonder jaar volgt een datum de vorige op, en na
+    december begint een nieuw jaar."""
+    out, year, previous = [], base, None
+    for item in items:
+        if item["year"]:
+            year = item["year"]
+        elif previous and (item["month"], item["day"]) < previous:
+            year += 1
+        out.append(_safe_date(year, item["month"], item["day"]))
+        previous = (item["month"], item["day"])
+    return out
+
+
+def parse_line_agenda(html_or_blocks, page_url: str, *, today: date | None = None) -> list[AgendaEvent]:
+    """Agenda's als losse regels, zoals op veel dorpswebsites: 'Spooktocht: 13 november' of
+    '13 november - Spooktocht'. Alleen bij minstens drie zulke regels op de pagina. Staat er geen
+    jaar bij, dan volgt het jaar uit de volgorde van de lijst en uit de weekdagen die er staan."""
+    blocks = extract_blocks(html_or_blocks, page_url) if isinstance(html_or_blocks, str) else html_or_blocks
+    items = _line_items(blocks)
+    if len(items) < 3:
+        return []
+    today = today or date.today()
+
+    def score(base: int) -> float:
+        dates = _assign_years(items, base)
+        good = sum(1 for item, d in zip(items, dates) if d and item["weekday"] is not None and d.weekday() == item["weekday"])
+        bad = sum(1 for item, d in zip(items, dates) if d and item["weekday"] is not None and d.weekday() != item["weekday"])
+        upcoming = any(d and d >= today for d in dates)
+        return 2 * good - 3 * bad + (1 if upcoming else 0) + (0.5 if base == today.year else 0)
+
+    base = max((today.year - 1, today.year, today.year + 1), key=score)
+    out, seen = [], set()
+    for item, day in zip(items, _assign_years(items, base)):
+        if day is None or (item["weekday"] is not None and day.weekday() != item["weekday"]):
+            continue  # weekdag klopt niet: liever geen uitje dan een verkeerde datum
+        key = (item["title"].casefold(), day.isoformat())
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(AgendaEvent(title=item["title"], start_date=day.isoformat(), time_text=item["time"],
+                               event_url=item["href"] or page_url))
+    return out
+
+
 def parse_agenda(html: str, page_url: str, *, context_blocks: int = 16, today: date | None = None) -> list[AgendaEvent]:
-    """Extract only heading-scoped events with their own full date."""
+    """Uitjes met een kopje en een eigen datum, plus agenda's als losse regels."""
     blocks = extract_blocks(html, page_url)
+    events = _parse_heading_agenda(blocks, page_url, context_blocks=context_blocks, today=today)
+    known = {(e.title.casefold(), e.start_date) for e in events}
+    events += [e for e in parse_line_agenda(blocks, page_url, today=today) if (e.title.casefold(), e.start_date) not in known]
+    return events
+
+
+def _parse_heading_agenda(blocks: list[HtmlBlock], page_url: str, *, context_blocks: int = 16,
+                          today: date | None = None) -> list[AgendaEvent]:
+    """Extract only heading-scoped events with their own full date."""
     headings = [i for i, b in enumerate(blocks) if b.tag in _HEADING_TAGS and _valid_title(b.text)]
     subtitles = _subtitles(blocks, headings, today)
     cards = _cards(blocks, [i for i in headings if i not in subtitles])

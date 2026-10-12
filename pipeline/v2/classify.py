@@ -113,7 +113,9 @@ OUTDOOR = re.compile(r"\bbuiten|openlucht|strand")
 # Geen uitje: gewone kerkdiensten en gebedsbijeenkomsten (wel: concerten en open dagen in kerken).
 NOT_AN_OUTING = re.compile(r"\b(eredienst|kerkdienst|zondagsdienst|ochtenddienst|middagdienst|avonddienst"
                            r"|gebedsdienst|gebedsuur|gebedskring|bijbelstudie|bijbelkring|eucharistieviering"
-                           r"|woord- en communieviering|rouwdienst|uitvaartdienst)\b")
+                           r"|woord- en communieviering|rouwdienst|uitvaartdienst"
+                           # vergaderingen en bijeenkomsten voor leden of vrijwilligers: niet voor publiek
+                           r"|ledenvergadering|jaarvergadering|bestuursvergadering|alv|vrijwilligers\w*|besloten)\b")
 
 # Websites die vrijwel alleen een soort aanbieden. Alleen gebruikt als trefwoorden niets opleveren.
 VENUE_RULES: dict[str, str] = {
