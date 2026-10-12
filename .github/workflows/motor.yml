@@ -38,7 +38,7 @@ jobs:
       - name: Dorpswebsites zoeken (per plaats; elke plaats eens per drie maanden)
         continue-on-error: true
         timeout-minutes: 15
-        run: python -m collector.village_sites --store data/dorpssites.json --budget-minutes 12 --summary
+        run: python -m collector.village_sites --store data/dorpssites.json --budget-minutes 10 --summary
 
       - name: Websites testen (eerst tips en nieuwe websites) en goede bronnen aanzetten
         continue-on-error: true

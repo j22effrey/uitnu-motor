@@ -388,6 +388,16 @@ def parse_line_agenda(html_or_blocks, page_url: str, *, today: date | None = Non
     if len(items) < 3:
         return []
     today = today or date.today()
+    if not any(item["year"] for item in items):
+        # Een pagina over een vorig jaar ('activiteiten-2024'): die data zijn voorbij.
+        url_years = [int(y) for y in re.findall(r"(?<!\d)(20\d{2})(?!\d)", page_url or "")]
+        if url_years and max(url_years) < today.year:
+            return []
+        # Geen jaar en geen weekdag bij de data: alleen als de pagina dit of volgend jaar noemt.
+        if all(item["weekday"] is None for item in items):
+            page_years = set(re.findall(r"(?<!\d)(20\d{2})(?!\d)", " ".join(b.text for b in blocks)))
+            if not {str(today.year), str(today.year + 1)} & page_years:
+                return []
 
     def score(base: int) -> float:
         dates = _assign_years(items, base)

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from collections import Counter
 from datetime import date, datetime, timezone
@@ -77,6 +78,39 @@ def source_names(path: Path) -> dict[str, str]:
             if isinstance(s, dict) and s.get("name") and host_of(s.get("rootUrl"))}
 
 
+# Een uitje dat elke week (of vaker) terugkomt bij dezelfde organisator, zoals klaverjassen, gym,
+# soos of jeu de boules, is een vaste activiteit van een club of dorpshuis en geen uitje voor de
+# agenda. Voorstellingen, concerten, films, markten, tentoonstellingen en natuuruitjes blijven staan,
+# ook als ze vaak terugkomen.
+ROUTINE_KEEP_KINDS = {"theater", "muziek", "film", "festival", "markt", "kunst", "natuur"}
+ROUTINE_MIN = 4             # minstens zo vaak in de agenda
+ROUTINE_MAX_GAP_DAYS = 14   # en gemiddeld (mediaan) hoogstens zoveel dagen ertussen
+
+
+def _routine_key(event: dict) -> tuple[str, str]:
+    # Tijden tellen niet mee: 'Jeu de boules van 14:00 tot 16:00 uur' is elke week hetzelfde.
+    title = re.sub(r"\b\d{1,2}[:.]\d{2}\b|\b(?:uur|van|tot|t/m|vanaf|om)\b", " ", normalize(event.get("title") or ""))
+    hosts = [s.get("host") for s in event.get("sources") or [] if s.get("host")]
+    return " ".join(title.split()), (hosts[0] if hosts else "")
+
+
+def routines(events: list[dict]) -> set[int]:
+    """Posities van uitjes die een vaste activiteit zijn (zie ROUTINE_*)."""
+    groups: dict[tuple[str, str], list[int]] = {}
+    for index, event in enumerate(events):
+        groups.setdefault(_routine_key(event), []).append(index)
+    drop: set[int] = set()
+    for (title, _), indexes in groups.items():
+        days = sorted({date.fromisoformat(events[i]["occurrences"][0]["date"]) for i in indexes})
+        if not title or len(days) < ROUTINE_MIN:
+            continue
+        gaps = sorted((b - a).days for a, b in zip(days, days[1:]))
+        if gaps[len(gaps) // 2] > ROUTINE_MAX_GAP_DAYS:
+            continue
+        drop |= {i for i in indexes if events[i].get("kind") not in ROUTINE_KEEP_KINDS}
+    return drop
+
+
 def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] | None = None,
           photo_cache: dict | None = None, names: dict[str, str] | None = None,
           venue_kinds: dict[str, str] | None = None) -> tuple[list[dict], dict]:
@@ -111,6 +145,9 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         event["hash"] = content_hash(event)
     if len(events) != before:
         raise RuntimeError("indelen mag nooit evenementen weglaten")
+    # Vaste activiteiten (elke week klaverjassen, gym of soos) zijn geen uitjes voor de agenda.
+    routine = routines(events)
+    events = [e for i, e in enumerate(events) if i not in routine]
 
     # Unieke slugs, voor als twee titels toevallig hetzelfde worden afgekapt
     seen: Counter = Counter()
@@ -144,6 +181,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "inputRecords": len(raw),
         "outsideArea": len(outside),
         "geenUitje": len(skipped),
+        "vasteActiviteit": len(routine),
         "uitgeslotenBron": len(excluded),
         "area": {"center": AREA_CENTER, "radiusKm": AREA_RADIUS_KM},
         "byKind": dict(Counter(e["kind"] for e in events).most_common()),
