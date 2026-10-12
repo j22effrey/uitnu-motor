@@ -235,7 +235,11 @@
       },
       "activatedFromCandidate": "amdgbeilen.nl",
       "policyReviewedAt": "2026-10-11",
-      "kindHint": "muziek"
+      "kindHint": "muziek",
+      "defaultPlace": {
+        "venue": "De Notenkraker Chr. Muziekvereniging AMDG Beilen",
+        "city": "Beilen"
+      }
     },
     {
       "id": "ateliersmajeur-nl-web",
@@ -252,7 +256,11 @@
       },
       "activatedFromCandidate": "ateliersmajeur.nl",
       "policyReviewedAt": "2026-10-11",
-      "kindHint": "kunst"
+      "kindHint": "kunst",
+      "defaultPlace": {
+        "venue": "Ateliers Majeur De Rinkelbom",
+        "city": "Heerenveen"
+      }
     },
     {
       "id": "boerderijkamps-nl-web",
@@ -650,7 +658,12 @@
         "agendaUrl": "https://reduzum.com/agenda/"
       },
       "activatedFromCandidate": "reduzum.com",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Reduzum",
+        "lat": 53.1175,
+        "lon": 5.7842
+      }
     },
     {
       "id": "delantearne-nl-web",
@@ -918,7 +931,12 @@
         "endpointUrl": "http://www.elsloo-fr.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "elsloo-fr.nl",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Elsloo",
+        "lat": 52.943333,
+        "lon": 6.2375
+      }
     },
     {
       "id": "pknanloozuidlaren-nl-web",
@@ -956,7 +974,12 @@
         "endpointUrl": "http://www.ferwertonline.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "ferwertonline.nl",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Ferwerd",
+        "lat": 53.3378,
+        "lon": 5.8247
+      }
     },
     {
       "id": "groningen-nl-web",
@@ -972,7 +995,12 @@
         "agendaUrl": "https://www.groningen.nl/"
       },
       "activatedFromCandidate": "groningen.nl",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Groningen",
+        "lat": 53.218888888,
+        "lon": 6.5675
+      }
     },
     {
       "id": "oldeberkoop-nl-web",
@@ -988,7 +1016,12 @@
         "endpointUrl": "http://www.oldeberkoop.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "oldeberkoop.nl",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Oldeberkoop",
+        "lat": 52.9381,
+        "lon": 6.1339
+      }
     },
     {
       "id": "uithuizermeeden-nl-web",
@@ -1004,7 +1037,12 @@
         "agendaUrl": "https://www.uithuizermeeden.nl/"
       },
       "activatedFromCandidate": "uithuizermeeden.nl",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Uithuizermeeden",
+        "lat": 53.4144,
+        "lon": 6.7264
+      }
     },
     {
       "id": "cgk-gn-nl-web",
@@ -1036,7 +1074,12 @@
         "endpointUrl": "http://www.appelscha.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "appelscha.nl",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Appelscha",
+        "lat": 52.9547,
+        "lon": 6.35
+      }
     },
     {
       "id": "bakkeveen-nl-web",
@@ -1052,7 +1095,12 @@
         "feedUrl": "https://www.bakkeveen.nl/events/?ical=1"
       },
       "activatedFromCandidate": "bakkeveen.nl",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Bakkeveen",
+        "lat": 53.0817,
+        "lon": 6.2572
+      }
     },
     {
       "id": "domiestoen-nl-web",
@@ -1269,7 +1317,12 @@
         "agendaUrl": "https://marssum.info/agenda/"
       },
       "activatedFromCandidate": "marssum.info",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Marssum",
+        "lat": 53.2119,
+        "lon": 5.728
+      }
     },
     {
       "id": "maze-nl-web",
@@ -1315,6 +1368,1993 @@
         "lon": 7.2720992
       },
       "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "froombosch-com-web",
+      "name": "Froombosch",
+      "rootUrl": "https://www.froombosch.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.froombosch.com/wp/"
+      },
+      "activatedFromCandidate": "froombosch.com",
+      "defaultPlace": {
+        "city": "Froombosch",
+        "lat": 53.1931,
+        "lon": 6.7794
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelangschiermonnikoog-nl-web",
+      "name": "Dorpsbelang Schiermonnikoog",
+      "rootUrl": "https://www.dorpsbelangschiermonnikoog.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dorpsbelangschiermonnikoog.nl/"
+      },
+      "activatedFromCandidate": "dorpsbelangschiermonnikoog.nl",
+      "defaultPlace": {
+        "city": "Schiermonnikoog",
+        "lat": 53.49,
+        "lon": 6.225
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "grou-nl-web",
+      "name": "Hellingshaven",
+      "rootUrl": "https://grou.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://grou.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "grou.nl",
+      "defaultPlace": {
+        "city": "Grou",
+        "lat": 53.1,
+        "lon": 5.83
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "raerd-com-web",
+      "name": "Doarpshûs De Trijesprong",
+      "rootUrl": "https://www.raerd.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.raerd.com/events/?ical=1"
+      },
+      "activatedFromCandidate": "raerd.com",
+      "defaultPlace": {
+        "venue": "Doarpshûs De Trijesprong",
+        "city": "Raerd",
+        "lat": 53.097757,
+        "lon": 5.7590052
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "thesinge-com-web",
+      "name": "Gereformeerde Kerk",
+      "rootUrl": "https://thesinge.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.thesinge.com/agenda"
+      },
+      "activatedFromCandidate": "thesinge.com",
+      "defaultPlace": {
+        "city": "Thesinge",
+        "lat": 53.2683,
+        "lon": 6.6503
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "ravenswoud-nl-web",
+      "name": "Ravenswoud",
+      "rootUrl": "https://ravenswoud.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://ravenswoud.nl/wp/"
+      },
+      "activatedFromCandidate": "ravenswoud.nl",
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Ravenswoud",
+        "lat": 52.9644,
+        "lon": 6.3803
+      }
+    },
+    {
+      "id": "sebaldeburen-net-web",
+      "name": "'t Spectrum",
+      "rootUrl": "https://sebaldeburen.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "sebaldeburen.net",
+      "defaultPlace": {
+        "venue": "'t Spectrum",
+        "city": "Sebaldeburen",
+        "lat": 53.2195964,
+        "lon": 6.3101377
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "wijnjewoude-net-web",
+      "name": "Wijnjewoude",
+      "rootUrl": "https://wijnjewoude.net/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://wijnjewoude.net/agenda/"
+      },
+      "activatedFromCandidate": "wijnjewoude.net",
+      "policyReviewedAt": "2026-10-12",
+      "defaultPlace": {
+        "city": "Wijnjewoude",
+        "lat": 53.0561,
+        "lon": 6.2061
+      }
+    },
+    {
+      "id": "adorp-com-web",
+      "name": "Adorp informeert",
+      "rootUrl": "https://adorp.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://adorp.com/"
+      },
+      "activatedFromCandidate": "adorp.com",
+      "defaultPlace": {
+        "city": "Adorp",
+        "lat": 53.2747,
+        "lon": 6.5344
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "ansen-eu-web",
+      "name": "Ansen",
+      "rootUrl": "https://ansen.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://ansen.eu/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "ansen.eu",
+      "defaultPlace": {
+        "city": "Ansen",
+        "lat": 52.7811,
+        "lon": 6.3333
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "appelscha-frl-web",
+      "name": "Appelscha",
+      "rootUrl": "https://appelscha.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://appelscha.frl/"
+      },
+      "activatedFromCandidate": "appelscha.frl",
+      "defaultPlace": {
+        "city": "Appelscha",
+        "lat": 52.9547,
+        "lon": 6.35
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "beetsterzwaag-frl-web",
+      "name": "Beetsterzwaag & Olterterp",
+      "rootUrl": "https://beetsterzwaag.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://beetsterzwaag.frl/"
+      },
+      "activatedFromCandidate": "beetsterzwaag.frl",
+      "defaultPlace": {
+        "city": "Beetsterzwaag",
+        "lat": 53.0611,
+        "lon": 6.0775
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "bitgum-nl-web",
+      "name": "Bitgum",
+      "rootUrl": "https://bitgum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://bitgum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "bitgum.nl",
+      "defaultPlace": {
+        "city": "Bitgum",
+        "lat": 53.2367,
+        "lon": 5.6875
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "boarnburgum-nl-web",
+      "name": "Boornbergum en Kortehemmen",
+      "rootUrl": "https://www.boarnburgum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.boarnburgum.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "boarnburgum.nl",
+      "defaultPlace": {
+        "city": "Boornbergum",
+        "lat": 53.0839,
+        "lon": 6.0456
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "boijl-com-web",
+      "name": "Boijl",
+      "rootUrl": "https://boijl.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://boijl.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "boijl.com",
+      "defaultPlace": {
+        "city": "Boijl",
+        "lat": 52.9097,
+        "lon": 6.1994
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "buinerveen-info-web",
+      "name": "Buinerveen / Nieuw Buinen-West",
+      "rootUrl": "https://www.buinerveen.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.buinerveen.info/"
+      },
+      "activatedFromCandidate": "buinerveen.info",
+      "defaultPlace": {
+        "city": "Buinerveen",
+        "lat": 52.9347,
+        "lon": 6.8806
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "burdaard-com-web",
+      "name": "Dorpsbelang Burdaard",
+      "rootUrl": "https://www.burdaard.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.burdaard.com/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "burdaard.com",
+      "defaultPlace": {
+        "city": "Birdaard",
+        "lat": 53.2936,
+        "lon": 5.8786
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dekiel-info-web",
+      "name": "De Kiel",
+      "rootUrl": "https://www.dekiel.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dekiel.info/agenda/"
+      },
+      "activatedFromCandidate": "dekiel.info",
+      "defaultPlace": {
+        "city": "De Kiel",
+        "lat": 52.8622,
+        "lon": 6.7461
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "den-horn-nl-web",
+      "name": "Den Horn, Het leukste dorp in heel het Westerkwartier!",
+      "rootUrl": "https://den-horn.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://den-horn.nl/"
+      },
+      "activatedFromCandidate": "den-horn.nl",
+      "defaultPlace": {
+        "city": "Den Horn",
+        "lat": 53.2275,
+        "lon": 6.44667
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpnieuwbalinge-nl-web",
+      "name": "Nieuw-Balinge",
+      "rootUrl": "https://dorpnieuwbalinge.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://dorpnieuwbalinge.nl/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "dorpnieuwbalinge.nl",
+      "defaultPlace": {
+        "city": "Nieuw-Balinge",
+        "lat": 52.7653,
+        "lon": 6.6069
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelangenaduard-nl-web",
+      "name": "Dorpsbelangen Aduard",
+      "rootUrl": "https://dorpsbelangenaduard.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://dorpsbelangenaduard.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "dorpsbelangenaduard.nl",
+      "defaultPlace": {
+        "city": "Aduard",
+        "lat": 53.25472,
+        "lon": 6.46
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelangenharkstede-nl-web",
+      "name": "Dorpsbelangen Harkstede",
+      "rootUrl": "https://dorpsbelangenharkstede.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://dorpsbelangenharkstede.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "dorpsbelangenharkstede.nl",
+      "defaultPlace": {
+        "city": "Harkstede",
+        "lat": 53.21667,
+        "lon": 6.7
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelangenhellum-nl-web",
+      "name": "Vereniging Dorpsbelangen Hellum",
+      "rootUrl": "https://www.dorpsbelangenhellum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.dorpsbelangenhellum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "dorpsbelangenhellum.nl",
+      "defaultPlace": {
+        "city": "Hellum",
+        "lat": 53.2383,
+        "lon": 6.8383
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelangenlageland-nl-web",
+      "name": "Dorpsbelangen Lageland",
+      "rootUrl": "https://dorpsbelangenlageland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://dorpsbelangenlageland.nl/evenement/?ical=1"
+      },
+      "activatedFromCandidate": "dorpsbelangenlageland.nl",
+      "defaultPlace": {
+        "city": "Lageland",
+        "lat": 53.23528,
+        "lon": 6.71194
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelangenmidwolda-nl-web",
+      "name": "Vereniging Dorpsbelangen Midwolda",
+      "rootUrl": "https://dorpsbelangenmidwolda.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://dorpsbelangenmidwolda.nl/evenementen/?ical=1"
+      },
+      "activatedFromCandidate": "dorpsbelangenmidwolda.nl",
+      "defaultPlace": {
+        "city": "Midwolda",
+        "lat": 53.1928,
+        "lon": 7.0161
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelangenroderwolde-nl-web",
+      "name": "dorpsbelangenroderwolde",
+      "rootUrl": "https://www.dorpsbelangenroderwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dorpsbelangenroderwolde.nl/dorpsagenda/"
+      },
+      "activatedFromCandidate": "dorpsbelangenroderwolde.nl",
+      "defaultPlace": {
+        "city": "Roderwolde",
+        "lat": 53.1683,
+        "lon": 6.4697
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelangenschildwolde-nl-web",
+      "name": "Dorpsbelangen Schildwolde",
+      "rootUrl": "https://dorpsbelangenschildwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://dorpsbelangenschildwolde.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "dorpsbelangenschildwolde.nl",
+      "defaultPlace": {
+        "city": "Schildwolde",
+        "lat": 53.2328,
+        "lon": 6.8156
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsbelanglauwersoog-nl-web",
+      "name": "Dorpsbelang Lauwersoog",
+      "rootUrl": "https://dorpsbelanglauwersoog.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://dorpsbelanglauwersoog.nl/?post_type=tribe_events&ical=1"
+      },
+      "activatedFromCandidate": "dorpsbelanglauwersoog.nl",
+      "defaultPlace": {
+        "city": "Lauwersoog",
+        "lat": 53.4039,
+        "lon": 6.2189
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpshuisboijl-nl-web",
+      "name": "Dorpshuis de Tille in Boijl, het gezelligste plekje",
+      "rootUrl": "https://dorpshuisboijl.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://dorpshuisboijl.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "dorpshuisboijl.nl",
+      "defaultPlace": {
+        "city": "Boijl",
+        "lat": 52.9097,
+        "lon": 6.1994
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpshuishellum-nl-web",
+      "name": "TONEGIDO -",
+      "rootUrl": "https://dorpshuishellum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://dorpshuishellum.nl/agenda/"
+      },
+      "activatedFromCandidate": "dorpshuishellum.nl",
+      "defaultPlace": {
+        "city": "Hellum",
+        "lat": 53.2383,
+        "lon": 6.8383
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpshuispeize-nl-web",
+      "name": "Dorpshuis Peize",
+      "rootUrl": "https://dorpshuispeize.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://dorpshuispeize.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "dorpshuispeize.nl",
+      "defaultPlace": {
+        "city": "Peize",
+        "lat": 53.1478,
+        "lon": 6.4961
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpshuisusquert-nl-web",
+      "name": "Dorpshuis Usquert",
+      "rootUrl": "https://dorpshuisusquert.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://dorpshuisusquert.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "dorpshuisusquert.nl",
+      "defaultPlace": {
+        "city": "Usquert",
+        "lat": 53.4028,
+        "lon": 6.6128
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "dorpsverenigingsellingen-nl-web",
+      "name": "Dorpsvereniging Sellingen",
+      "rootUrl": "https://www.dorpsverenigingsellingen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.dorpsverenigingsellingen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "dorpsverenigingsellingen.nl",
+      "defaultPlace": {
+        "city": "Sellingen",
+        "lat": 52.9464,
+        "lon": 7.1514
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "eenum-net-web",
+      "name": "EENUM.NET",
+      "rootUrl": "https://www.eenum.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.eenum.net/category/jaaragenda/"
+      },
+      "activatedFromCandidate": "eenum.net",
+      "defaultPlace": {
+        "city": "Eenum",
+        "lat": 53.3333,
+        "lon": 6.76667
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "eeserveen-info-web",
+      "name": "Eeserveen",
+      "rootUrl": "https://www.eeserveen.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.eeserveen.info/"
+      },
+      "activatedFromCandidate": "eeserveen.info",
+      "defaultPlace": {
+        "city": "Eeserveen",
+        "lat": 52.8672,
+        "lon": 6.7639
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "elim-drenthe-nl-web",
+      "name": "Dorp Elim",
+      "rootUrl": "https://www.elim-drenthe.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.elim-drenthe.nl/"
+      },
+      "activatedFromCandidate": "elim-drenthe.nl",
+      "defaultPlace": {
+        "city": "Elim",
+        "lat": 52.6822,
+        "lon": 6.5794
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "erm-nu-web",
+      "name": "ERM.NU",
+      "rootUrl": "https://www.erm.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "erm.nu",
+      "defaultPlace": {
+        "city": "Erm",
+        "lat": 52.7544,
+        "lon": 6.8169
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "gasselternijveen-online-nl-web",
+      "name": "Dorpsportaal Gasselternijveen",
+      "rootUrl": "https://gasselternijveen-online.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://gasselternijveen-online.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "gasselternijveen-online.nl",
+      "defaultPlace": {
+        "city": "Gasselternijveen",
+        "lat": 52.9867,
+        "lon": 6.8472
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "gieterveen-com-web",
+      "name": "Gieterveen.com",
+      "rootUrl": "https://gieterveen.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://gieterveen.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "gieterveen.com",
+      "defaultPlace": {
+        "city": "Gieterveen",
+        "lat": 53.0272,
+        "lon": 6.8378
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "hallumonline-nl-web",
+      "name": "Hallum Online",
+      "rootUrl": "https://www.hallumonline.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.hallumonline.nl/actueel/agenda"
+      },
+      "activatedFromCandidate": "hallumonline.nl",
+      "defaultPlace": {
+        "city": "Hallum",
+        "lat": 53.3064,
+        "lon": 5.7856
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "harkstede-info-web",
+      "name": "Harkstede.info",
+      "rootUrl": "https://harkstede.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://harkstede.info/events/?ical=1"
+      },
+      "activatedFromCandidate": "harkstede.info",
+      "defaultPlace": {
+        "city": "Harkstede",
+        "lat": 53.21667,
+        "lon": 6.7
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "haule-nl-web",
+      "name": "Laatste nieuws uit Haule",
+      "rootUrl": "https://haule.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://haule.nl/category/agenda/"
+      },
+      "activatedFromCandidate": "haule.nl",
+      "defaultPlace": {
+        "city": "Haule",
+        "lat": 53.0369,
+        "lon": 6.3042
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "hijken-com-web",
+      "name": "Hijken",
+      "rootUrl": "https://www.hijken.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.hijken.com/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "hijken.com",
+      "defaultPlace": {
+        "city": "Hijken",
+        "lat": 52.8972,
+        "lon": 6.4972
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "holwert-frl-web",
+      "name": "Holwert",
+      "rootUrl": "https://www.holwert.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "holwert.frl",
+      "defaultPlace": {
+        "city": "Holwert",
+        "lat": 53.3683,
+        "lon": 5.9006
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "holwierde-com-web",
+      "name": "Holwierde",
+      "rootUrl": "https://holwierde.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://holwierde.com/"
+      },
+      "activatedFromCandidate": "holwierde.com",
+      "defaultPlace": {
+        "city": "Holwierde",
+        "lat": 53.35806,
+        "lon": 6.87139
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "hoogersmilde-eu-web",
+      "name": "Dorpsbelangen Hoogersmilde",
+      "rootUrl": "https://www.hoogersmilde.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.hoogersmilde.eu/"
+      },
+      "activatedFromCandidate": "hoogersmilde.eu",
+      "defaultPlace": {
+        "city": "Hoogersmilde",
+        "lat": 52.9063,
+        "lon": 6.39391
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "hooghalen-nu-web",
+      "name": "Hooghalen.nu, dé actuele dorpssite van het dorp Hooghalen!",
+      "rootUrl": "https://hooghalen.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://hooghalen.nu/events/"
+      },
+      "activatedFromCandidate": "hooghalen.nu",
+      "defaultPlace": {
+        "city": "Hooghalen",
+        "lat": 52.9211,
+        "lon": 6.5367
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "injipsingboertange-nl-web",
+      "name": "InJipsingboertange -",
+      "rootUrl": "https://www.injipsingboertange.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.injipsingboertange.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "injipsingboertange.nl",
+      "defaultPlace": {
+        "city": "Jipsingboertange",
+        "lat": 52.9644,
+        "lon": 7.1006
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "jirnsum-com-web",
+      "name": "Jirnsum.com",
+      "rootUrl": "https://jirnsum.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://jirnsum.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "jirnsum.com",
+      "defaultPlace": {
+        "city": "Jirnsum",
+        "lat": 53.0781,
+        "lon": 5.7914
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "koekangerveld-com-web",
+      "name": "Koekangerveld",
+      "rootUrl": "https://koekangerveld.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://koekangerveld.com/"
+      },
+      "activatedFromCandidate": "koekangerveld.com",
+      "defaultPlace": {
+        "city": "Koekangerveld",
+        "lat": 52.7158,
+        "lon": 6.3328
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "kropswolde-com-web",
+      "name": "HomeInformation iconCookie iconCookie icon",
+      "rootUrl": "https://kropswolde.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://kropswolde.com/"
+      },
+      "activatedFromCandidate": "kropswolde.com",
+      "defaultPlace": {
+        "city": "Kropswolde",
+        "lat": 53.1458,
+        "lon": 6.7231
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "lauwerzijl-info-web",
+      "name": "Fruitdorp Lauwerzijl",
+      "rootUrl": "https://www.lauwerzijl.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.lauwerzijl.info/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "lauwerzijl.info",
+      "defaultPlace": {
+        "city": "Lauwerzijl",
+        "lat": 53.31056,
+        "lon": 6.29639
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "marrumonline-nl-web",
+      "name": "Marrum Online",
+      "rootUrl": "https://marrumonline.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://marrumonline.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "marrumonline.nl",
+      "defaultPlace": {
+        "city": "Marrum",
+        "lat": 53.3222,
+        "lon": 5.8014
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "midwolde-info-web",
+      "name": "Midwolde...",
+      "rootUrl": "https://www.midwolde.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.midwolde.info/kalenders"
+      },
+      "activatedFromCandidate": "midwolde.info",
+      "defaultPlace": {
+        "city": "Midwolde",
+        "lat": 53.1803,
+        "lon": 6.3922
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "niehove-eu-web",
+      "name": "NIEHOVE",
+      "rootUrl": "https://niehove.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://niehove.eu/"
+      },
+      "activatedFromCandidate": "niehove.eu",
+      "defaultPlace": {
+        "city": "Niehove",
+        "lat": 53.29056,
+        "lon": 6.36639
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "nieuw-weerdinge-com-web",
+      "name": "Nieuw-Weerdinge",
+      "rootUrl": "https://nieuw-weerdinge.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://nieuw-weerdinge.com/"
+      },
+      "activatedFromCandidate": "nieuw-weerdinge.com",
+      "defaultPlace": {
+        "city": "Nieuw-Weerdinge",
+        "lat": 52.8564,
+        "lon": 6.9881
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "nieuwroden-nu-web",
+      "name": "Nieuw-Roden",
+      "rootUrl": "https://nieuwroden.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://nieuwroden.nu/activiteiten/"
+      },
+      "activatedFromCandidate": "nieuwroden.nu",
+      "defaultPlace": {
+        "city": "Nieuw-Roden",
+        "lat": 53.1322,
+        "lon": 6.3997
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "nijbeets-info-web",
+      "name": "Nij Beets Doarpsite",
+      "rootUrl": "https://www.nijbeets.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.nijbeets.info/agenda/"
+      },
+      "activatedFromCandidate": "nijbeets.info",
+      "defaultPlace": {
+        "city": "Nij Beets",
+        "lat": 53.0697,
+        "lon": 6.0028
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "noordlaren-eu-web",
+      "name": "Dorpsbelangen Noordlaren",
+      "rootUrl": "https://noordlaren.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "noordlaren.eu",
+      "defaultPlace": {
+        "city": "Noordlaren",
+        "lat": 53.1208,
+        "lon": 6.6669
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "noordscheschut-com-web",
+      "name": "Noordscheschut",
+      "rootUrl": "https://noordscheschut.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://noordscheschut.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "noordscheschut.com",
+      "defaultPlace": {
+        "city": "Noordscheschut",
+        "lat": 52.7236,
+        "lon": 6.535
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "oldeberkoop-frl-web",
+      "name": "Oldeberkoop",
+      "rootUrl": "https://oldeberkoop.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://oldeberkoop.frl/"
+      },
+      "activatedFromCandidate": "oldeberkoop.frl",
+      "defaultPlace": {
+        "city": "Oldeberkoop",
+        "lat": 52.9381,
+        "lon": 6.1339
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "oldemarkt-info-web",
+      "name": "Plaatselijk Belang Oldemarkt",
+      "rootUrl": "https://oldemarkt.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://oldemarkt.info/"
+      },
+      "activatedFromCandidate": "oldemarkt.info",
+      "defaultPlace": {
+        "city": "Oldemarkt",
+        "lat": 52.82,
+        "lon": 5.9736
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "oldenzijl-nl-web",
+      "name": "Oldenzijl",
+      "rootUrl": "https://www.oldenzijl.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.oldenzijl.nl/wordpress/"
+      },
+      "activatedFromCandidate": "oldenzijl.nl",
+      "defaultPlace": {
+        "city": "Oldenzijl",
+        "lat": 53.39417,
+        "lon": 6.71639
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "ommelanderwijk-com-web",
+      "name": "Ommelanderwijk",
+      "rootUrl": "https://www.ommelanderwijk.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.ommelanderwijk.com/"
+      },
+      "activatedFromCandidate": "ommelanderwijk.com",
+      "defaultPlace": {
+        "city": "Ommelanderwijk",
+        "lat": 53.0908,
+        "lon": 6.9017
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "onderdendam-com-web",
+      "name": "Onderdendam",
+      "rootUrl": "https://www.onderdendam.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.onderdendam.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "onderdendam.com",
+      "defaultPlace": {
+        "city": "Onderdendam",
+        "lat": 53.3358,
+        "lon": 6.5878
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "onszuidbroek-nl-web",
+      "name": "De online ontmoetingsplek voor alle bewoners van Zuidbroek",
+      "rootUrl": "https://onszuidbroek.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://onszuidbroek.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "onszuidbroek.nl",
+      "defaultPlace": {
+        "city": "Zuidbroek",
+        "lat": 53.1625,
+        "lon": 6.8606
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "oosternieland-nl-web",
+      "name": "Oosternieland",
+      "rootUrl": "https://oosternieland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://oosternieland.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "oosternieland.nl",
+      "defaultPlace": {
+        "city": "Oosternieland",
+        "lat": 53.4,
+        "lon": 6.755
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "oosterwolde-nl-web",
+      "name": "Winkelhart Oosterwolde Gewoon Dichtbij",
+      "rootUrl": "https://oosterwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://oosterwolde.nl/"
+      },
+      "activatedFromCandidate": "oosterwolde.nl",
+      "defaultPlace": {
+        "city": "Oosterwolde",
+        "lat": 52.9903,
+        "lon": 6.2914
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "opendeonline-nl-web",
+      "name": "De plek voor alle informatie rondom Opende",
+      "rootUrl": "https://www.opendeonline.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.opendeonline.nl/agenda"
+      },
+      "activatedFromCandidate": "opendeonline.nl",
+      "defaultPlace": {
+        "city": "Opende",
+        "lat": 53.1725,
+        "lon": 6.19806
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "pboosterhesselen-nl-web",
+      "name": "PB Oosterhesselen",
+      "rootUrl": "https://www.pboosterhesselen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.pboosterhesselen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "pboosterhesselen.nl",
+      "defaultPlace": {
+        "city": "Oosterhesselen",
+        "lat": 52.7572,
+        "lon": 6.7194
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "pboranjewoud-nl-web",
+      "name": "Plaatselijk Belang Oranjewoud",
+      "rootUrl": "https://pboranjewoud.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://pboranjewoud.nl/evenementenkalender/?ical=1"
+      },
+      "activatedFromCandidate": "pboranjewoud.nl",
+      "defaultPlace": {
+        "city": "Oranjewoud",
+        "lat": 52.9458,
+        "lon": 5.9511
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "pieterzijl-net-web",
+      "name": "Pieterzijl.net",
+      "rootUrl": "https://pieterzijl.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://pieterzijl.net/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "pieterzijl.net",
+      "defaultPlace": {
+        "city": "Pieterzijl",
+        "lat": 53.28056,
+        "lon": 6.26861
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "roden-nl-web",
+      "name": "Roden",
+      "rootUrl": "https://roden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "roden.nl",
+      "defaultPlace": {
+        "city": "Roden",
+        "lat": 53.1383,
+        "lon": 6.4325
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "roodeschool-net-web",
+      "name": "Roodeschool",
+      "rootUrl": "https://www.roodeschool.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.roodeschool.net/events/?ical=1"
+      },
+      "activatedFromCandidate": "roodeschool.net",
+      "defaultPlace": {
+        "city": "Roodeschool",
+        "lat": 53.4206,
+        "lon": 6.7636
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "roswinkel-com-web",
+      "name": "- Roswinkel",
+      "rootUrl": "https://www.roswinkel.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.roswinkel.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "roswinkel.com",
+      "defaultPlace": {
+        "city": "Roswinkel",
+        "lat": 52.8372,
+        "lon": 7.0386
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "ruinerwold-info-web",
+      "name": "Altijd boven op het nieuws van Ruinerwold",
+      "rootUrl": "https://www.ruinerwold.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.ruinerwold.info/"
+      },
+      "activatedFromCandidate": "ruinerwold.info",
+      "defaultPlace": {
+        "city": "Ruinerwold",
+        "lat": 52.7228,
+        "lon": 6.2506
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "schoonloo-com-web",
+      "name": "Schoonloo",
+      "rootUrl": "https://schoonloo.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://schoonloo.com/"
+      },
+      "activatedFromCandidate": "schoonloo.com",
+      "defaultPlace": {
+        "city": "Schoonloo",
+        "lat": 52.9044,
+        "lon": 6.7003
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "stedum-com-web",
+      "name": "Dorpsplein Stedum",
+      "rootUrl": "https://stedum.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://stedum.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "stedum.com",
+      "defaultPlace": {
+        "city": "Stedum",
+        "lat": 53.3225,
+        "lon": 6.6958
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "steendam-info-web",
+      "name": "Website van Dorpsvereniging, Coöperatie en Stichting Dorpshuis Steendam",
+      "rootUrl": "https://steendam.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://steendam.info/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "steendam.info",
+      "defaultPlace": {
+        "city": "Steendam",
+        "lat": 53.2764,
+        "lon": 6.8411
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "stiens-frl-web",
+      "name": "Stiens",
+      "rootUrl": "https://stiens.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://stiens.frl/"
+      },
+      "activatedFromCandidate": "stiens.frl",
+      "defaultPlace": {
+        "city": "Stiens",
+        "lat": 53.2608,
+        "lon": 5.7575
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "sumar-nl-web",
+      "name": "Sumar",
+      "rootUrl": "https://www.sumar.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.sumar.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "sumar.nl",
+      "defaultPlace": {
+        "city": "Suameer",
+        "lat": 53.1767,
+        "lon": 5.9983
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "tenpost-info-web",
+      "name": "Dorpsbelangen Ten Post en Omstreken",
+      "rootUrl": "https://www.tenpost.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.tenpost.info/activiteiten/"
+      },
+      "activatedFromCandidate": "tenpost.info",
+      "defaultPlace": {
+        "city": "Ten Post",
+        "lat": 53.2972,
+        "lon": 6.7281
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "terherne-nl-web",
+      "name": "Dorpsinformatie Terherne",
+      "rootUrl": "https://terherne.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://terherne.nl/"
+      },
+      "activatedFromCandidate": "terherne.nl",
+      "defaultPlace": {
+        "city": "Terhorne",
+        "lat": 53.0403,
+        "lon": 5.7808
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "ternaard-nu-web",
+      "name": "Ternaard",
+      "rootUrl": "https://ternaard.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://ternaard.nu/"
+      },
+      "activatedFromCandidate": "ternaard.nu",
+      "defaultPlace": {
+        "city": "Ternaard",
+        "lat": 53.3806,
+        "lon": 5.9639
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "terphegebeintum-nl-web",
+      "name": "Terp Hegebeintum",
+      "rootUrl": "https://www.terphegebeintum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.terphegebeintum.nl/"
+      },
+      "activatedFromCandidate": "terphegebeintum.nl",
+      "defaultPlace": {
+        "city": "Hogebeintum",
+        "lat": 53.3367,
+        "lon": 5.8494
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "terwispel-info-web",
+      "name": "Terwispel",
+      "rootUrl": "https://www.terwispel.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.terwispel.info/agenda/"
+      },
+      "activatedFromCandidate": "terwispel.info",
+      "defaultPlace": {
+        "city": "Terwispel",
+        "lat": 53.0189,
+        "lon": 6.0475
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "tjuchem-net-web",
+      "name": "TjuchemUitvouwenUitvouwenUitvouwenUitvouwenUitvouwenZoekenToggle menuScroll naar",
+      "rootUrl": "https://tjuchem.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://tjuchem.net/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "tjuchem.net",
+      "defaultPlace": {
+        "city": "Tjuchem",
+        "lat": 53.28028,
+        "lon": 6.87778
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "ureterp-frl-web",
+      "name": "Plaatselijk Belang Ureterp",
+      "rootUrl": "https://www.ureterp.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.ureterp.frl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "ureterp.frl",
+      "defaultPlace": {
+        "city": "Ureterp",
+        "lat": 53.095,
+        "lon": 6.1689
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "valthermond-nu-web",
+      "name": "Dorpsbudget voor Valthermond Zandbergen tweede Valthermond",
+      "rootUrl": "https://valthermond.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://valthermond.nu/events/?ical=1"
+      },
+      "activatedFromCandidate": "valthermond.nu",
+      "defaultPlace": {
+        "city": "Valthermond",
+        "lat": 52.875,
+        "lon": 6.9469
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "vledderveengroningen-nl-web",
+      "name": "Vledderveen Groningen",
+      "rootUrl": "https://vledderveengroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://vledderveengroningen.nl/"
+      },
+      "activatedFromCandidate": "vledderveengroningen.nl",
+      "defaultPlace": {
+        "city": "Vledderveen",
+        "lat": 52.9861,
+        "lon": 7.00778
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "waskemeer-com-web",
+      "name": "Waskemeer",
+      "rootUrl": "https://waskemeer.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://waskemeer.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "waskemeer.com",
+      "defaultPlace": {
+        "city": "Waskemeer",
+        "lat": 53.05,
+        "lon": 6.28333
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "wergea-com-web",
+      "name": "Wergea",
+      "rootUrl": "https://wergea.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://wergea.com/"
+      },
+      "activatedFromCandidate": "wergea.com",
+      "defaultPlace": {
+        "city": "Wergea",
+        "lat": 53.15179,
+        "lon": 5.84382
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "wezup-info-web",
+      "name": "Wezup in beeld",
+      "rootUrl": "https://www.wezup.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.wezup.info/agenda/"
+      },
+      "activatedFromCandidate": "wezup.info",
+      "defaultPlace": {
+        "city": "Wezup",
+        "lat": 52.8119,
+        "lon": 6.7192
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "winneweer-com-web",
+      "name": "Winneweer",
+      "rootUrl": "https://winneweer.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://winneweer.com/events/?ical=1"
+      },
+      "activatedFromCandidate": "winneweer.com",
+      "defaultPlace": {
+        "city": "Winneweer",
+        "lat": 53.3097,
+        "lon": 6.7472
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "woltersum-net-web",
+      "name": "Woltersum",
+      "rootUrl": "https://woltersum.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://woltersum.net/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "woltersum.net",
+      "defaultPlace": {
+        "city": "Woltersum",
+        "lat": 53.2706,
+        "lon": 6.7317
+      },
       "policyReviewedAt": "2026-10-12"
     }
   ]
