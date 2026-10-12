@@ -72,6 +72,35 @@ def extractor_config(candidate: dict) -> dict:
     return {}
 
 
+_OSM_ANCHOR = re.compile(r"^(?P<name>.+?)\s*\((?P<kind>[^,()]+)(?:,\s*(?P<city>[^()]+))?\)\s*$")
+
+
+def default_place_for(candidate: dict, *, role: str) -> dict | None:
+    """De vaste plek van een podium uit OpenStreetMap: naam, plaats en (als bekend) coördinaten.
+
+    Alleen voor role 'venue' en alleen als alle OSM-vermeldingen naar dezelfde plaats wijzen.
+    Een organisatie met plekken in meerdere plaatsen krijgt geen vaste plek.
+    """
+    if role != "venue":
+        return None
+    places = []
+    for evidence in candidate.get("evidence") or []:
+        if not isinstance(evidence, dict) or evidence.get("kind") != "osm":
+            continue
+        match = _OSM_ANCHOR.match(str(evidence.get("anchorText") or ""))
+        if match and match.group("city"):
+            places.append((match.group("name").strip(), match.group("city").strip(),
+                           evidence.get("lat"), evidence.get("lon")))
+    cities = {city.casefold() for _, city, _, _ in places}
+    if len(cities) != 1:
+        return None
+    name, city, lat, lon = places[0]
+    place = {"venue": name, "city": city}
+    if lat is not None and lon is not None:
+        place.update(lat=float(lat), lon=float(lon))
+    return place
+
+
 def activation_reasons(candidate: dict, *, role: str) -> list[str]:
     reasons: list[str] = []
     if role not in VALID_ROLES:
@@ -163,6 +192,7 @@ def promote_candidate(
         "extractorHint": candidate.get("extractor"),
         "extractorConfig": extractor_config(candidate),
         "activatedFromCandidate": wanted,
+        **({"defaultPlace": place} if (place := default_place_for(candidate, role=role)) else {}),
         "policyReviewedAt": candidate.get("policyReview", {}).get("reviewedAt"),
     }
     sources.append(source)

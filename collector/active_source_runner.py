@@ -62,7 +62,44 @@ def _apply_trust(event: RawEvent, role: str) -> RawEvent:
     )
 
 
-def run_source(
+def default_place(source: dict) -> dict | None:
+    """De vaste plek van een podium, voor uitjes waarvan de agenda geen plaats noemt."""
+    place = source.get("defaultPlace")
+    if not isinstance(place, dict) or not str(place.get("city") or "").strip():
+        return None
+    return place
+
+
+def apply_default_place(event: RawEvent, place: dict | None) -> RawEvent:
+    """Vul alleen een plek in als het uitje zelf helemaal geen plaats heeft."""
+    if not place:
+        return event
+    if event.city or event.address or (event.lat is not None and event.lon is not None):
+        return event
+    venue = str(place.get("venue") or "").strip() or None
+    if event.venue and venue and event.venue.casefold() != venue.casefold():
+        return event  # de agenda noemt een andere zaal: niet gokken
+    raw = dict(event.raw or {})
+    raw["place_from_source"] = True
+    return replace(
+        event,
+        venue=event.venue or venue,
+        city=str(place["city"]).strip(),
+        lat=place.get("lat"),
+        lon=place.get("lon"),
+        raw=raw,
+    )
+
+
+def run_source(source: dict, **kwargs) -> SourceRunResult:
+    result = _run_source(source, **kwargs)
+    place = default_place(source)
+    if place:
+        result.events = [apply_default_place(x, place) for x in result.events]
+    return result
+
+
+def _run_source(
     source: dict,
     *,
     site_runner: Callable[..., CrawlResult] = crawl_source,

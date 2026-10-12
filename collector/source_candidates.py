@@ -207,10 +207,15 @@ def merge_candidates(existing: Iterable[dict], discoveries: Iterable[dict], *, o
             "score": score,
             "seenAt": now,
         }
-        existing_keys = {_evidence_key(x) for x in item.get("evidence", []) if isinstance(x, dict)}
-        if _evidence_key(evidence) not in existing_keys:
+        if discovery.get("lat") is not None and discovery.get("lon") is not None:
+            evidence["lat"], evidence["lon"] = discovery["lat"], discovery["lon"]
+        same = next((x for x in item.get("evidence", [])
+                     if isinstance(x, dict) and _evidence_key(x) == _evidence_key(evidence)), None)
+        if same is None:
             item.setdefault("evidence", []).append(evidence)
             item["evidence"] = item["evidence"][-20:]
+        elif "lat" in evidence:
+            same["lat"], same["lon"] = evidence["lat"], evidence["lon"]
 
     for item in by_host.values():
         _refresh_priority(item)
