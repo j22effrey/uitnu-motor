@@ -162,7 +162,8 @@
         "agendaUrl": "https://www.oranjewoudfestival.nl/programma/"
       },
       "activatedFromCandidate": "oranjewoudfestival.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "kindHint": "muziek"
     },
     {
       "id": "itfryskegea-nl-web",
@@ -178,7 +179,8 @@
         "endpointUrl": "https://www.itfryskegea.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "itfryskegea.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "kindHint": "natuur"
     },
     {
       "id": "gevangenismuseum-nl-web",
@@ -198,7 +200,8 @@
       "defaultPlace": {
         "venue": "Gevangenismuseum",
         "city": "Veenhuizen"
-      }
+      },
+      "kindHint": "kunst"
     },
     {
       "id": "hendrickdekeyser-nl-web",
@@ -231,7 +234,8 @@
         "endpointUrl": "https://www.amdgbeilen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
       },
       "activatedFromCandidate": "amdgbeilen.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "kindHint": "muziek"
     },
     {
       "id": "ateliersmajeur-nl-web",
@@ -247,7 +251,8 @@
         "agendaUrl": "https://ateliersmajeur.nl/agenda/"
       },
       "activatedFromCandidate": "ateliersmajeur.nl",
-      "policyReviewedAt": "2026-10-11"
+      "policyReviewedAt": "2026-10-11",
+      "kindHint": "kunst"
     },
     {
       "id": "boerderijkamps-nl-web",
@@ -267,7 +272,8 @@
       "defaultPlace": {
         "venue": "Boerderij Kamps",
         "city": "Rolde"
-      }
+      },
+      "kindHint": "theater"
     },
     {
       "id": "debrinkpub-nl-web",
@@ -305,7 +311,8 @@
       "defaultPlace": {
         "venue": "De Melkfabriek",
         "city": "Bunne"
-      }
+      },
+      "kindHint": "theater"
     },
     {
       "id": "institutfrancais-nl-web",
@@ -342,7 +349,8 @@
       "defaultPlace": {
         "venue": "KunstKerk Hogeland",
         "city": "Warffum"
-      }
+      },
+      "kindHint": "muziek"
     },
     {
       "id": "neushoorn-nl-web",
@@ -362,7 +370,8 @@
       "defaultPlace": {
         "venue": "Neushoorn",
         "city": "Leeuwarden"
-      }
+      },
+      "kindHint": "muziek"
     }
   ]
 }

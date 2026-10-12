@@ -323,7 +323,7 @@ def _structured_to_raw(source: CrawlSource, item: StructuredEvent, page_url: str
         city=item.city,
         lat=item.latitude,
         lon=item.longitude,
-        category=None,
+        category=item.event_type,
         price_text=item.price,
         verification_status="organizer_confirmed" if trusted_first_party else "unknown",
         raw={

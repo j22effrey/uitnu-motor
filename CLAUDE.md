@@ -35,4 +35,7 @@ UITNU is een uitagenda voor Groningen en omgeving: alles binnen 60 km van Gronin
 3. `collector/auto_activate.py`: zet geschikte bronnen aan in `collector/web_crawl_sources.json`.
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
    en schrijven `data/auto_events.json`.
-5. `pipeline/v2/build.py`: voegt alles samen, deelt in, keurt (`gate.py`) en publiceert.
+5. `collector/event_photos.py`: zoekt foto's (organisator, anders Wikimedia Commons) en onthoudt
+   ze in `data/photos.json`. `pipeline/v2/photos.py` kiest per uitje de foto; zonder foto toont
+   de site de eigen illustratie bij de soort.
+6. `pipeline/v2/build.py`: voegt alles samen, deelt in, kiest foto's, keurt (`gate.py`) en publiceert.

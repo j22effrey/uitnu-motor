@@ -18,6 +18,7 @@ from .classify import classify
 from .convert import content_hash, load_first_party, merge_duplicates, to_v2
 from .gate import run_gate
 from .kinds import KINDS, TAGS
+from .photos import attach_photos, host_of
 
 HERE = Path(__file__).parent
 
@@ -51,7 +52,25 @@ def _write_json(path: Path, value) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] | None = None) -> tuple[list[dict], dict]:
+def source_kinds(path: Path) -> dict[str, str]:
+    """Website -> soort uitje dat daar meestal is (veld kindHint in de bronnenlijst)."""
+    payload = _read_json(path, {})
+    sources = payload.get("sources", []) if isinstance(payload, dict) else []
+    return {host_of(s.get("rootUrl")): s["kindHint"] for s in sources
+            if isinstance(s, dict) and s.get("kindHint") and host_of(s.get("rootUrl"))}
+
+
+def source_names(path: Path) -> dict[str, str]:
+    """Website -> naam van de bron, voor de fotovermelding ('Foto: Neushoorn')."""
+    payload = _read_json(path, {})
+    sources = payload.get("sources", []) if isinstance(payload, dict) else []
+    return {host_of(s.get("rootUrl")): s["name"] for s in sources
+            if isinstance(s, dict) and s.get("name") and host_of(s.get("rootUrl"))}
+
+
+def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] | None = None,
+          photo_cache: dict | None = None, names: dict[str, str] | None = None,
+          venue_kinds: dict[str, str] | None = None) -> tuple[list[dict], dict]:
     raw = load_first_party(data_dir)
     converted = [e for e in (to_v2(r, today) for r in raw) if e]
     outside = [e for e in converted if not in_area(e)]
@@ -59,13 +78,14 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
 
     before = len(events)
     for event in events:
-        verdict = classify(event, overrides)
+        verdict = classify(event, overrides, venue_kinds)
         event["kind"] = verdict["kind"]
         event["kindLabel"] = KINDS[verdict["kind"]]
         event["tags"] = verdict["tags"]
         event["classification"] = {k: verdict[k] for k in ("method", "reason", "confidence")}
         event.pop("description", None)
         event.pop("legacyCategory", None)
+        event.pop("legacyDiscipline", None)
         event["hash"] = content_hash(event)
     if len(events) != before:
         raise RuntimeError("indelen mag nooit evenementen weglaten")
@@ -78,6 +98,11 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
             event["slug"] = f"{event['slug']}-{seen[event['slug']]}"
 
     events.sort(key=lambda e: (e["occurrences"][0]["date"], e["occurrences"][0].get("startTime") or "", e["title"]))
+
+    # Foto's: organisator, anders Wikimedia Commons, anders de eigen illustratie van de site.
+    if photo_cache is None:
+        photo_cache = _read_json(data_dir / "photos.json", {})
+    photo_counts = attach_photos(events, photo_cache, names)
 
     previous = _read_json(out_dir / "events.json", None)
     gate = run_gate(events, previous, today.isoformat())
@@ -101,6 +126,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "byKind": dict(Counter(e["kind"] for e in events).most_common()),
         "byCity": dict(Counter(e["venue"]["city"] for e in events).most_common()),
         "bySourceHost": dict(hosts.most_common()),
+        "photos": photo_counts,
         "kinds": KINDS,
         "tags": TAGS,
         "changes": {k: len(v) for k, v in changes.items()},
@@ -115,12 +141,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--out", default="data/v2", help="map voor events.json en status.json")
     parser.add_argument("--today", help="datum JJJJ-MM-DD (standaard: vandaag)")
     parser.add_argument("--force", action="store_true", help="publiceer ook als de keuring afkeurt")
+    parser.add_argument("--sources", default="collector/web_crawl_sources.json",
+                        help="bronnenlijst, voor de naam bij een foto van de organisator")
     args = parser.parse_args(argv)
 
     today = date.fromisoformat(args.today) if args.today else date.today()
     out_dir = Path(args.out)
     overrides = _read_json(HERE / "overrides.json", {})
-    events, status = build(Path(args.data), out_dir, today, overrides)
+    events, status = build(Path(args.data), out_dir, today, overrides, names=source_names(Path(args.sources)),
+                           venue_kinds=source_kinds(Path(args.sources)))
 
     if status["gate"]["passed"] or args.force:
         _write_json(out_dir / "events.json", events)
