@@ -79,14 +79,15 @@ def page_facts_for(event: dict, cache: dict, lists: set[str]) -> dict:
 
 
 def _organizer_photo(event: dict, cache: dict, lists: set[str], names: dict[str, str]) -> dict | None:
+    from collector.event_photos import usable_image  # hier pas: de fotozoeker gebruikt zelf de fabriek
     pages = cache.get("pages") or {}
     homepages = cache.get("homepages") or {}
     for page in event_pages(event):
         if page in lists:
             continue
         image = (pages.get(page) or {}).get("image")
-        if not image:
-            continue
+        if not image or not usable_image(image, page):
+            continue  # ook een eerder bewaard plaatje dat geen foto is (logo, door AI gemaakt)
         host = host_of(page)
         if host not in homepages:
             continue  # voorpagina nog niet bekeken: we weten nog niet of dit de standaardfoto is

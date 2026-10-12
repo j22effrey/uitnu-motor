@@ -362,3 +362,17 @@ def test_oude_cache_met_een_foto_per_plaats_wordt_aangevuld(tmp_path):
     calls.clear()
     ep.run(tmp_path, cache_path, today=TODAY, fetch=lambda *a, **k: None, fetch_json=fetch_json, sleeper=lambda s: None)
     assert calls == []
+
+
+def test_door_ai_gemaakt_plaatje_is_geen_foto_ook_niet_uit_de_bewaarde_lijst():
+    from collector.event_photos import usable_image
+    from pipeline.v2.photos import choose_photo
+    page = "https://www.ervaarharen.nl/event/lichtjesparade/"
+    ai = "https://www.ervaarharen.nl/wp-content/uploads/2026/09/ChatGPT-Image-9-sep-2026-14_56_52-1024x768.png"
+    assert usable_image(ai, page) is None
+    cache = {"pages": {page: {"image": ai}}, "homepages": {"ervaarharen.nl": {"image": None}}}
+    event = {"title": "Lichtjesparade Haren", "url": page,
+             "sources": [{"type": "organisator", "url": page, "host": "ervaarharen.nl"}],
+             "venue": {"city": "Haren"}}
+    photo = choose_photo(event, cache, lists=set(), names={})
+    assert photo is None or photo.get("type") != "organisator"
