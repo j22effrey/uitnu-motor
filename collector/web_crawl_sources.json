@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -372,6 +372,86 @@
         "city": "Leeuwarden"
       },
       "kindHint": "muziek"
+    },
+    {
+      "id": "openluchttheatersellingen-nl-web",
+      "name": "Openluchttheater Sellingen",
+      "rootUrl": "https://www.openluchttheatersellingen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "openluchttheatersellingen.nl",
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "readewjirmen-frl-web",
+      "name": "'t Swellenêst",
+      "rootUrl": "https://readewjirmen.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://readewjirmen.frl/evenementen/?ical=1"
+      },
+      "activatedFromCandidate": "readewjirmen.frl",
+      "defaultPlace": {
+        "venue": "'t Swellenêst",
+        "city": "Haskerdijken",
+        "lat": 53.034209,
+        "lon": 5.848489
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "bvo-emden-de-web",
+      "name": "Bezirksfischereiverband für Ostfriesland e.V.",
+      "rootUrl": "https://www.bvo-emden.de/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.bvo-emden.de/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "bvo-emden.de",
+      "defaultPlace": {
+        "venue": "Bezirksfischereiverband für Ostfriesland e.V.",
+        "city": "Emden",
+        "lat": 53.4642459,
+        "lon": 7.2847769
+      },
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "pgbeilen-nl-web",
+      "name": "Pauluskerk",
+      "rootUrl": "https://www.pgbeilen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "pgbeilen.nl",
+      "defaultPlace": {
+        "venue": "Pauluskerk",
+        "city": "Beilen",
+        "lat": 52.863668,
+        "lon": 6.5165828
+      },
+      "policyReviewedAt": "2026-10-12"
     }
   ]
 }

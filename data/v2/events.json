@@ -38,7 +38,15 @@
    "reason": "trefwoord 'expositie'",
    "confidence": 0.8
   },
-  "hash": "5d1f0f93680a"
+  "hash": "5d1f0f93680a",
+  "image": {
+   "url": "https://static.forum.nl/cache/marilyn.26383/marilyn-s1920x1080.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Expo Marilyn",
+   "credit": "Foto: forum.nl",
+   "sourceUrl": "https://forum.nl/nl/agenda/marilyn-expositie?date=19-10-2026"
+  }
  },
  {
   "id": "convent-of-pleasure-2026",
@@ -79,7 +87,18 @@
    "reason": "trefwoord 'tentoonstelling'",
    "confidence": 0.8
   },
-  "hash": "d26ad1e0ada1"
+  "hash": "d26ad1e0ada1",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Groninger_Museum_2.jpg/1280px-Groninger_Museum_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Groninger Museum",
+   "credit": "Foto: nl:Gebruiker:Ra-smit , colour adapted by User:Lyzzy · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "nl:Gebruiker:Ra-smit , colour adapted by User:Lyzzy",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groninger_Museum_2.jpg"
+  }
  },
  {
   "id": "official-gap-oktober-kindermaand-groningen-2026",
@@ -122,7 +141,8 @@
    "reason": "geen trefwoord, locatie of hint",
    "confidence": 0.2
   },
-  "hash": "01cf877ccbca"
+  "hash": "01cf877ccbca",
+  "image": null
  },
  {
   "id": "baistemaart-winsum-2026",
@@ -163,167 +183,18 @@
    "reason": "trefwoord 'maart'",
    "confidence": 0.8
   },
-  "hash": "2540f115c35b"
- },
- {
-  "id": "evt_ba28061e4118f1",
-  "slug": "braderie-en-vlooienmarkt-eurohal-zuidbroek-zuidbroek-2026-10-11",
-  "title": "Braderie en vlooienmarkt Eurohal Zuidbroek",
-  "occurrences": [
-   {
-    "date": "2026-10-11",
-    "endDate": null,
-    "startTime": "10:00",
-    "endTime": "16:00"
-   }
-  ],
-  "venue": {
-   "name": "Zuidbroek",
-   "city": "Zuidbroek",
-   "lat": 53.1702717,
-   "lon": 6.86237057
-  },
-  "price": "Zie organisator",
-  "url": "https://wildro.nl/event/braderie-zuidbroek/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://wildro.nl/event/braderie-zuidbroek/",
-    "host": "wildro.nl",
-    "seenAt": "2026-10-11"
-   }
-  ],
-  "kind": "markt",
-  "kindLabel": "Markt en beurs",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'markt'",
-   "confidence": 0.8
-  },
-  "hash": "ba6241e4c626"
- },
- {
-  "id": "menzis-4-mijl-2026",
-  "slug": "menzis-4-mijl-van-groningen-groningen-2026-10-11",
-  "title": "Menzis 4 Mijl van Groningen",
-  "occurrences": [
-   {
-    "date": "2026-10-11",
-    "endDate": null,
-    "startTime": "10:00",
-    "endTime": "16:00"
-   }
-  ],
-  "venue": {
-   "name": "Vismarkt / Grote Markt + route vanaf Haren",
-   "city": "Groningen",
-   "lat": 53.2168,
-   "lon": 6.5625
-  },
-  "price": "Vanaf € 24,25 / deelname uitverkocht",
-  "url": "https://4mijl.nl/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://4mijl.nl/",
-    "host": "4mijl.nl",
-    "seenAt": "2026-09-30"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord '4 mijl'",
-   "confidence": 0.8
-  },
-  "hash": "6e33edf857b7"
- },
- {
-  "id": "official-gap-oldtimer-classic-beurs-leek-2026-10-11",
-  "slug": "oldtimer-classic-beurs-leek-leek-2026-10-11",
-  "title": "Oldtimer & Classic Beurs Leek",
-  "occurrences": [
-   {
-    "date": "2026-10-11",
-    "endDate": null,
-    "startTime": "10:00",
-    "endTime": "18:00"
-   }
-  ],
-  "venue": {
-   "name": "Sportcentrum Leek, De Schelp 35",
-   "city": "Leek",
-   "lat": 53.1562682,
-   "lon": 6.3672166
-  },
-  "price": "€10 · kinderen t/m 11 jaar gratis",
-  "url": "https://oldtimerleek.nl/informatie/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://oldtimerleek.nl/informatie/",
-    "host": "oldtimerleek.nl",
-    "seenAt": "2026-10-10"
-   }
-  ],
-  "kind": "markt",
-  "kindLabel": "Markt en beurs",
-  "tags": [
-   "gratis"
-  ],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'beurs'",
-   "confidence": 0.8
-  },
-  "hash": "7e77fa8fcc38"
- },
- {
-  "id": "4-mijl-horeca-plein-haren-2026",
-  "slug": "4-mijl-horeca-plein-haren-2026-10-11",
-  "title": "4 Mijl Horeca Plein",
-  "occurrences": [
-   {
-    "date": "2026-10-11",
-    "endDate": null,
-    "startTime": "12:00",
-    "endTime": "19:00"
-   }
-  ],
-  "venue": {
-   "name": "Dorpskerk Haren",
-   "city": "Haren",
-   "lat": 53.1728,
-   "lon": 6.609
-  },
-  "price": "Gratis / consumpties betaald",
-  "url": "https://www.ervaarharen.nl/event/4-mijl-horeca-plein/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.ervaarharen.nl/event/4-mijl-horeca-plein/",
-    "host": "ervaarharen.nl",
-    "seenAt": "2026-09-30"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [
-   "gratis"
-  ],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord '4 mijl'",
-   "confidence": 0.8
-  },
-  "hash": "32d80177eab6"
+  "hash": "2540f115c35b",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Winsum_%28gr.%29-hoofdstraat.jpg/1280px-Winsum_%28gr.%29-hoofdstraat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Winsum",
+   "credit": "Foto: Husky · CC BY 4.0 · Wikimedia Commons",
+   "author": "Husky",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winsum_(gr.)-hoofdstraat.jpg"
+  }
  },
  {
   "id": "evt_67d6788e84827a",
@@ -351,7 +222,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/braderie-jaarmarkt-centrum-dwingeloo-2/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -362,7 +233,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "47fe07bd70b6"
+  "hash": "47fe07bd70b6",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Dwingeloo_St._Nicolaaskerk_20051113.jpg/1280px-Dwingeloo_St._Nicolaaskerk_20051113.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Dwingeloo",
+   "credit": "Foto: Berteun Damman (That's I) · Public domain · Wikimedia Commons",
+   "author": "Berteun Damman (That's I)",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwingeloo_St._Nicolaaskerk_20051113.jpg"
+  }
  },
  {
   "id": "confirmed-mega-indoor-springkussen-2026",
@@ -405,7 +287,113 @@
    "reason": "festival, meerdaags of met meerdere podia",
    "confidence": 0.85
   },
-  "hash": "af15430c19dd"
+  "hash": "af15430c19dd",
+  "image": {
+   "url": "https://static.martiniplaza.nl/cache/mega-indoor-springkussen-festival.10760/mega-indoor-springkussen-festival-s1920x1080.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Mega Indoor Springkussen Festival",
+   "credit": "Foto: Martiniplaza",
+   "sourceUrl": "https://www.martiniplaza.nl/nl/agenda/misf-herstvakantie-2026"
+  }
+ },
+ {
+  "id": "evt_f59ec440f3bb50",
+  "slug": "op-ontdekkingstocht-door-het-ketliker-skar-6-katlijk-2026-10-13",
+  "title": "Op ontdekkingstocht door het Ketliker Skar (6+)",
+  "occurrences": [
+   {
+    "date": "2026-10-13",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Ketliker Skar Beekpronkje",
+   "city": "Katlijk",
+   "lat": 52.941339,
+   "lon": 6.033672
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/op-ontdekkingstocht-door-het-ketliker-skar-6/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/op-ontdekkingstocht-door-het-ketliker-skar-6/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "82d91363fb40",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/09/HeaderKetlikerSkar-scaled.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Op ontdekkingstocht door het Ketliker Skar (6+)",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/op-ontdekkingstocht-door-het-ketliker-skar-6/"
+  }
+ },
+ {
+  "id": "evt_2bbe709cf6f341",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-10-13",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-10-13",
+    "endDate": null,
+    "startTime": "13:30",
+    "endTime": "15:30"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€8,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-47/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-47/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "fc2f7ad2818b",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/blaustirns-ifg.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-47/"
+  }
  },
  {
   "id": "evt_26b9600d20da86",
@@ -433,7 +421,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/braderie-herfstmarkt-centrum-oosterwolde/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -444,7 +432,313 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "c7721b39bb22"
+  "hash": "c7721b39bb22",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Oosterwolde",
+   "credit": "Foto: Vincent van Zeijst · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Vincent van Zeijst",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Quadoelenweg_(1)_en_Opsterlandse_Compagnonsvaart.jpg"
+  }
+ },
+ {
+  "id": "evt_a2a1bc11d69950",
+  "slug": "spinnenexcursie-8-earnewald-2026-10-14",
+  "title": "Spinnenexcursie (8+)",
+  "occurrences": [
+   {
+    "date": "2026-10-14",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – parkeerplaats It Wikelslân",
+   "city": "Earnewâld",
+   "lat": 53.134919,
+   "lon": 5.938052
+  },
+  "price": "Gratis – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/spinnenexcursie-8-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/spinnenexcursie-8-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten",
+   "gratis"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'excursie'",
+   "confidence": 0.8
+  },
+  "hash": "b306145fbbfc",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/07/kruisspin9.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Spinnenexcursie (8+)",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/spinnenexcursie-8-2/"
+  }
+ },
+ {
+  "id": "evt_f114d77483c5b9",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-10-15",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€8,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-48/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-48/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "7e11db436ba2",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/blaustirns-ifg.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-48/"
+  }
+ },
+ {
+  "id": "evt_111fcf0f1018a7",
+  "slug": "kindercollege-veenhuizen-kinderactiviteit-veenhuizen-2026-10-15",
+  "title": "Kindercollege Veenhuizen | Kinderactiviteit",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": "13:00",
+    "endTime": "14:30"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Gevangenismuseum",
+   "city": "Veenhuizen",
+   "lat": 53.02561969,
+   "lon": 6.4081463
+  },
+  "price": "Zie organisator",
+  "url": "https://gevangenismuseum.nl/evenement/kindercollege-veenhuizen/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://gevangenismuseum.nl/evenement/kindercollege-veenhuizen/",
+    "host": "gevangenismuseum.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website gevangenismuseum.nl",
+   "confidence": 0.7
+  },
+  "hash": "e7147c45ed47",
+  "image": {
+   "url": "https://gevangenismuseum.nl/wp-content/uploads/2026/09/Never-say-cheese-Gevangenismuseum-politie-en-boef-LR-31.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Kindercollege Veenhuizen | Kinderactiviteit",
+   "credit": "Foto: Gevangenismuseum",
+   "sourceUrl": "https://gevangenismuseum.nl/evenement/kindercollege-veenhuizen/"
+  }
+ },
+ {
+  "id": "evt_3547f8de29a9a3",
+  "slug": "uilenballen-pluizen-voor-jonge-natuuronderzoekers-6-earnewald-2026-10-15",
+  "title": "Uilenballen pluizen voor jonge natuuronderzoekers (6+)",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – informatiepunt",
+   "city": "Earnewâld",
+   "lat": 53.1297152,
+   "lon": 5.9379801
+  },
+  "price": "€2,00 – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/uilenballen-pluizen-voor-jonge-natuuronderzoekers-6-4/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/uilenballen-pluizen-voor-jonge-natuuronderzoekers-6-4/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'natuur'",
+   "confidence": 0.8
+  },
+  "hash": "1ca9dddf9118",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/uilenballen-pluizen-1-2.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Uilenballen pluizen voor jonge natuuronderzoekers (6+)",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/uilenballen-pluizen-voor-jonge-natuuronderzoekers-6-4/"
+  }
+ },
+ {
+  "id": "evt_3637a755cdde40",
+  "slug": "boswachtersspreekuur-in-nationaal-park-de-alde-feanen-earnewald-2026-10-16",
+  "title": "Boswachtersspreekuur in Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-10-16",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – informatiepunt",
+   "city": "Earnewâld",
+   "lat": 53.1297152,
+   "lon": 5.9379801
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/boswachtersspreekuur-in-nationaal-park-de-alde-feanen-3/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/boswachtersspreekuur-in-nationaal-park-de-alde-feanen-3/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'boswachter'",
+   "confidence": 0.8
+  },
+  "hash": "4c01a67c950a",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2026/06/ule-scaled-e1781766812256.png",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Boswachtersspreekuur in Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/boswachtersspreekuur-in-nationaal-park-de-alde-feanen-3/"
+  }
+ },
+ {
+  "id": "evt_b3551237c4eedc",
+  "slug": "uilenballen-pluizen-voor-jonge-natuuronderzoekers-in-katlijk-6-katlijk-2026-10-1",
+  "title": "Uilenballen pluizen voor jonge natuuronderzoekers in Katlijk (6+)",
+  "occurrences": [
+   {
+    "date": "2026-10-16",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Ketliker Skar Beekpronkje",
+   "city": "Katlijk",
+   "lat": 52.941339,
+   "lon": 6.033672
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/uilenballen-pluizen-voor-jonge-natuuronderzoekers-in-katlijk-6-3/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/uilenballen-pluizen-voor-jonge-natuuronderzoekers-in-katlijk-6-3/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'natuur'",
+   "confidence": 0.8
+  },
+  "hash": "f540fe12b2fd",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/uilenballen-pluizen-1-1.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Uilenballen pluizen voor jonge natuuronderzoekers in Katlijk (6+)",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/uilenballen-pluizen-voor-jonge-natuuronderzoekers-in-katlijk-6-3/"
+  }
  },
  {
   "id": "official-gap-reis-event-groningen-2026",
@@ -485,7 +779,18 @@
    "reason": "trefwoord 'reis event'",
    "confidence": 0.8
   },
-  "hash": "0813075ff0f5"
+  "hash": "0813075ff0f5",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hoofdentree_MartiniPlaza_december_2010.jpg/1280px-Hoofdentree_MartiniPlaza_december_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Martiniplaza",
+   "credit": "Foto: Pepijnkoning · CC BY 3.0 · Wikimedia Commons",
+   "author": "Pepijnkoning",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoofdentree_MartiniPlaza_december_2010.jpg"
+  }
  },
  {
   "id": "evt_43009439bc6c1f",
@@ -513,7 +818,7 @@
     "type": "organisator",
     "url": "https://www.reis-events.nl/event/verre-reizen-cruise-event-2026-groningen/",
     "host": "reis-events.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -526,7 +831,58 @@
    "reason": "trefwoord 'reizen & cruise event'",
    "confidence": 0.8
   },
-  "hash": "2ab850f0fd74"
+  "hash": "2ab850f0fd74",
+  "image": null
+ },
+ {
+  "id": "evt_a234a282702d36",
+  "slug": "zwerftocht-door-de-lendevallei-in-zuidelijk-friesland-peperga-2026-10-17",
+  "title": "Zwerftocht door de Lendevallei in zuidelijk Friesland",
+  "occurrences": [
+   {
+    "date": "2026-10-17",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Lendevallei – Domeinenweg",
+   "city": "Peperga",
+   "lat": 52.862753,
+   "lon": 6.028614
+  },
+  "price": "Gratis – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-de-lendevallei-in-zuidelijk-friesland-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-de-lendevallei-in-zuidelijk-friesland-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten",
+   "gratis"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "69c5deb3d7d4",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/01/lendevallei.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Zwerftocht door de Lendevallei in zuidelijk Friesland",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-de-lendevallei-in-zuidelijk-friesland-2/"
+  }
  },
  {
   "id": "bierrun-groningen-2026",
@@ -571,7 +927,202 @@
    "reason": "trefwoord 'run'",
    "confidence": 0.8
   },
-  "hash": "5005a1fe8208"
+  "hash": "5005a1fe8208",
+  "image": null
+ },
+ {
+  "id": "evt_292961ed108eac",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-10-17",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-10-17",
+    "endDate": null,
+    "startTime": "13:30",
+    "endTime": "15:30"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€8,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-46/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-46/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "39d9798fa291",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/blaustirns-ifg.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-46/"
+  }
+ },
+ {
+  "id": "evt_6a9739ca296c07",
+  "slug": "uitwaaien-op-het-wad-steppen-en-wandelen-8-hallum-2026-10-17",
+  "title": "Uitwaaien op het wad! Steppen en wandelen (8+)",
+  "occurrences": [
+   {
+    "date": "2026-10-17",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Kweldercentrum Noarderleech",
+   "city": "Hallum",
+   "lat": 53.3226806,
+   "lon": 5.7394557
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/uitwaaien-op-het-wad-steppen-en-wandelen-8-5/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/uitwaaien-op-het-wad-steppen-en-wandelen-8-5/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'wandel'",
+   "confidence": 0.8
+  },
+  "hash": "6af4c60e6b90",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/06/IFG-Noarderleechg-sept2019-21-scaled.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Uitwaaien op het wad! Steppen en wandelen (8+)",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/uitwaaien-op-het-wad-steppen-en-wandelen-8-5/"
+  }
+ },
+ {
+  "id": "evt_b102df6d5ee4da",
+  "slug": "museumavond-veenhuizen-2026-10-17",
+  "title": "Museumavond",
+  "occurrences": [
+   {
+    "date": "2026-10-17",
+    "endDate": null,
+    "startTime": "16:00",
+    "endTime": "21:30"
+   }
+  ],
+  "venue": {
+   "name": "Gevangenismuseum",
+   "city": "Veenhuizen",
+   "lat": 53.02561969,
+   "lon": 6.4081463
+  },
+  "price": "Zie organisator",
+  "url": "https://gevangenismuseum.nl/evenement/museumavond/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://gevangenismuseum.nl/evenement/museumavond/",
+    "host": "gevangenismuseum.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'museum'",
+   "confidence": 0.8
+  },
+  "hash": "8fdab0ac0a57",
+  "image": {
+   "url": "https://gevangenismuseum.nl/wp-content/uploads/2026/09/Museumavond-e1790164290293.png",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Museumavond",
+   "credit": "Foto: Gevangenismuseum",
+   "sourceUrl": "https://gevangenismuseum.nl/evenement/museumavond/"
+  }
+ },
+ {
+  "id": "evt_29c407b512611c",
+  "slug": "verhalenavond-kinderactiviteit-veenhuizen-2026-10-17",
+  "title": "Verhalenavond | Kinderactiviteit",
+  "occurrences": [
+   {
+    "date": "2026-10-17",
+    "endDate": null,
+    "startTime": "18:00",
+    "endTime": "20:15"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Gevangenismuseum",
+   "city": "Veenhuizen",
+   "lat": 53.02561969,
+   "lon": 6.4081463
+  },
+  "price": "Zie organisator",
+  "url": "https://gevangenismuseum.nl/evenement/spannende-verhalenavond/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://gevangenismuseum.nl/evenement/spannende-verhalenavond/",
+    "host": "gevangenismuseum.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website gevangenismuseum.nl",
+   "confidence": 0.7
+  },
+  "hash": "a75a5e3bb483",
+  "image": {
+   "url": "https://gevangenismuseum.nl/wp-content/uploads/2024/08/Never-say-cheese-voorleesavond-LR-41.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Verhalenavond | Kinderactiviteit",
+   "credit": "Foto: Gevangenismuseum",
+   "sourceUrl": "https://gevangenismuseum.nl/evenement/spannende-verhalenavond/"
+  }
  },
  {
   "id": "confirmed-stadjersmarkt-groningen-2026-10-18",
@@ -616,7 +1167,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "75fa0a8fa1ba"
+  "hash": "75fa0a8fa1ba",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hoofdentree_MartiniPlaza_december_2010.jpg/1280px-Hoofdentree_MartiniPlaza_december_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Martiniplaza",
+   "credit": "Foto: Pepijnkoning · CC BY 3.0 · Wikimedia Commons",
+   "author": "Pepijnkoning",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoofdentree_MartiniPlaza_december_2010.jpg"
+  }
  },
  {
   "id": "najaarsmarkt-delfzijl-2026",
@@ -657,7 +1219,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "30ea9c0dd078"
+  "hash": "30ea9c0dd078",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Delfzijl",
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
+  }
  },
  {
   "id": "asfc-finalistentournee-2026",
@@ -698,7 +1271,62 @@
    "reason": "één avond van een theaterfestival",
    "confidence": 0.8
   },
-  "hash": "5f6c38aae6d0"
+  "hash": "5f6c38aae6d0",
+  "image": {
+   "url": "https://www.spotgroningen.nl/wp-content/uploads/2026/04/Amsterdams-Studenten-Cabaret-Festival-Finalistentournee-onbekend-2-300-dpi-RGB-1280x853.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Amsterdams Studenten Cabaret Festival — Finalistentournee",
+   "credit": "Foto: SPOT Groningen",
+   "sourceUrl": "https://www.spotgroningen.nl/programma/amsterdams-studenten-cabaret-festival/"
+  }
+ },
+ {
+  "id": "evt_be646f32ae9088",
+  "slug": "college-veenhuizen-suzanna-jansen-veenhuizen-2026-10-22",
+  "title": "College Veenhuizen: Suzanna Jansen",
+  "occurrences": [
+   {
+    "date": "2026-10-22",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Gevangenismuseum",
+   "city": "Veenhuizen",
+   "lat": 53.02561969,
+   "lon": 6.4081463
+  },
+  "price": "Zie organisator",
+  "url": "https://gevangenismuseum.nl/evenement/college-veenhuizen-7/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://gevangenismuseum.nl/evenement/college-veenhuizen-7/",
+    "host": "gevangenismuseum.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website gevangenismuseum.nl",
+   "confidence": 0.7
+  },
+  "hash": "271ab8c1d41d",
+  "image": {
+   "url": "https://gevangenismuseum.nl/wp-content/uploads/2026/01/Never-say-cheese-opening-on-t-schuld-LR-32.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij College Veenhuizen: Suzanna Jansen",
+   "credit": "Foto: Gevangenismuseum",
+   "sourceUrl": "https://gevangenismuseum.nl/evenement/college-veenhuizen-7/"
+  }
  },
  {
   "id": "official-gap-spooktocht-appingedam-2026",
@@ -739,7 +1367,309 @@
    "reason": "trefwoord 'spooktocht'",
    "confidence": 0.8
   },
-  "hash": "1d361f43c08a"
+  "hash": "1d361f43c08a",
+  "image": {
+   "url": "https://www.sasa-appingedam.nl/media/nx3jfwp1/4-mei-herdenking-appingedam-2023-083.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Spooktocht Appingedam",
+   "credit": "Foto: sasa-appingedam.nl",
+   "sourceUrl": "https://www.sasa-appingedam.nl/agenda/"
+  }
+ },
+ {
+  "id": "evt_bfe8404d051d5d",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-10-24",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-10-24",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€8,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-49/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-49/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "c8c7bf1d0f78",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2026/06/Blaustirns-in-Alde-Feanen.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-49/"
+  }
+ },
+ {
+  "id": "evt_aba020759780ae",
+  "slug": "herfstwandeling-in-de-polder-vlakbij-leeuwarden-gytsjerk-2026-10-24",
+  "title": "Herfstwandeling in de polder vlakbij Leeuwarden",
+  "occurrences": [
+   {
+    "date": "2026-10-24",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Grutte Wielen – Picknickplaats Westerdijk",
+   "city": "Gytsjerk",
+   "lat": 53.227803,
+   "lon": 5.902643
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/herfstwandeling-in-de-polder-vlakbij-leeuwarden-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/herfstwandeling-in-de-polder-vlakbij-leeuwarden-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'wandel'",
+   "confidence": 0.8
+  },
+  "hash": "fd0691bb6953",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/05/Grutte_Wielen_Ryptsjerksterpolder2.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Herfstwandeling in de polder vlakbij Leeuwarden",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/herfstwandeling-in-de-polder-vlakbij-leeuwarden-2/"
+  }
+ },
+ {
+  "id": "evt_a5502dca1bdc01",
+  "slug": "beleef-de-nacht-van-de-nacht-te-voet-door-het-wikelslan-earnewald-2026-10-24",
+  "title": "Beleef de ‘Nacht van de Nacht’ te voet door het Wikelslân",
+  "occurrences": [
+   {
+    "date": "2026-10-24",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": "20:30"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – parkeerplaats It Wikelslân",
+   "city": "Earnewâld",
+   "lat": 53.134919,
+   "lon": 5.938052
+  },
+  "price": "€2,00 – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/beleef-de-nacht-van-de-nacht-te-voet-door-het-wikelslan/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/beleef-de-nacht-van-de-nacht-te-voet-door-het-wikelslan/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'nacht van de nacht'",
+   "confidence": 0.8
+  },
+  "hash": "458be0d7036a",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/Landschap-met-sterrenhemel_met_naamsvermelding_Johan_van_der_Wielen-1-scaled-2.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Beleef de ‘Nacht van de Nacht’ te voet door het Wikelslân",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/beleef-de-nacht-van-de-nacht-te-voet-door-het-wikelslan/"
+  }
+ },
+ {
+  "id": "evt_4252949b3d1f35",
+  "slug": "nachtelijke-wandeling-in-natuurgebied-ketliker-skar-katlijk-2026-10-24",
+  "title": "Nachtelijke wandeling in natuurgebied Ketliker Skar",
+  "occurrences": [
+   {
+    "date": "2026-10-24",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": "21:00"
+   }
+  ],
+  "venue": {
+   "name": "Ketliker Skar Beekpronkje",
+   "city": "Katlijk",
+   "lat": 52.941339,
+   "lon": 6.033672
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/nachtelijke-wandeling-in-natuurgebied-ketliker-skar-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/nachtelijke-wandeling-in-natuurgebied-ketliker-skar-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'wandel'",
+   "confidence": 0.8
+  },
+  "hash": "aa4080306126",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/09/nacht-van-de-nacht.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Nachtelijke wandeling in natuurgebied Ketliker Skar",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/nachtelijke-wandeling-in-natuurgebied-ketliker-skar-2/"
+  }
+ },
+ {
+  "id": "evt_874535a2e232a8",
+  "slug": "vaartocht-nationaal-park-de-alde-feanen-nacht-van-de-nacht-12-earnewald-2026-10",
+  "title": "Vaartocht Nationaal Park De Alde Feanen- Nacht van de nacht (12+)",
+  "occurrences": [
+   {
+    "date": "2026-10-24",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": "21:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€13,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-nationaal-park-de-alde-feanen-nacht-van-de-nacht-12/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-nationaal-park-de-alde-feanen-nacht-van-de-nacht-12/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'nacht van de nacht'",
+   "confidence": 0.8
+  },
+  "hash": "fb4a6d67060e",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/20160818_BSNF_06_DSC1506-1.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht Nationaal Park De Alde Feanen- Nacht van de nacht (12+)",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-nationaal-park-de-alde-feanen-nacht-van-de-nacht-12/"
+  }
+ },
+ {
+  "id": "evt_8dbb71c0d60d3b",
+  "slug": "wandeling-over-it-noarderleech-door-het-donker-hallum-2026-10-24",
+  "title": "Wandeling over It Noarderleech door het donker",
+  "occurrences": [
+   {
+    "date": "2026-10-24",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": "21:00"
+   }
+  ],
+  "venue": {
+   "name": "Kweldercentrum Noarderleech",
+   "city": "Hallum",
+   "lat": 53.3226806,
+   "lon": 5.7394557
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/wandeling-over-it-noarderleech-door-het-donker-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/wandeling-over-it-noarderleech-door-het-donker-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'wandel'",
+   "confidence": 0.8
+  },
+  "hash": "52fb7e23a872",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/07/57Fdig20.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Wandeling over It Noarderleech door het donker",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/wandeling-over-it-noarderleech-door-het-donker-2/"
+  }
  },
  {
   "id": "official-gap-oktoberfest-delfzijl-2026",
@@ -778,7 +1708,18 @@
    "reason": "trefwoord 'feest'",
    "confidence": 0.8
   },
-  "hash": "a90d99ecf798"
+  "hash": "a90d99ecf798",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Delfzijl",
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
+  }
  },
  {
   "id": "evt_e2fa02e9f3ad30",
@@ -806,7 +1747,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/braderie-zuidbroek-2/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -817,7 +1758,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "2bac8b9fb7c3"
+  "hash": "2bac8b9fb7c3",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Petruskerk_Zuidbroek.jpg/1280px-Petruskerk_Zuidbroek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Zuidbroek",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petruskerk_Zuidbroek.jpg"
+  }
  },
  {
   "id": "suikermarkt-2026",
@@ -858,7 +1810,106 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "37f5789a0b57"
+  "hash": "37f5789a0b57",
+  "image": null
+ },
+ {
+  "id": "evt_a19b3622d623ee",
+  "slug": "paddenstoelen-in-nationaal-park-de-alde-feanen-earnewald-2026-10-25",
+  "title": "Paddenstoelen in Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-10-25",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – parkeerplaats It Wikelslân",
+   "city": "Earnewâld",
+   "lat": 53.134919,
+   "lon": 5.938052
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/paddenstoelen-in-nationaal-park-de-alde-feanen-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/paddenstoelen-in-nationaal-park-de-alde-feanen-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'paddenstoel'",
+   "confidence": 0.8
+  },
+  "hash": "916f95d22b9a",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/paddenstoel-001-1-scaled.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Paddenstoelen in Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/paddenstoelen-in-nationaal-park-de-alde-feanen-2/"
+  }
+ },
+ {
+  "id": "evt_507082aa37d1ba",
+  "slug": "25-oktober-2026-14-30-uur-de-groningse-koperband-jongens-driest-rolde-2026-10-25",
+  "title": "25 oktober 2026 – 14.30 uur – De Groningse koperband ‘Jongens Driest’",
+  "occurrences": [
+   {
+    "date": "2026-10-25",
+    "endDate": null,
+    "startTime": "14:30",
+    "endTime": "17:00"
+   }
+  ],
+  "venue": {
+   "name": "Boerderij Kamps",
+   "city": "Rolde",
+   "lat": 52.9868047,
+   "lon": 6.64567882
+  },
+  "price": "Gratis",
+  "url": "https://boerderijkamps.nl/evenement/25-oktober-2026-14-30-uur-de-nederlandse-koperband-jongens-driest/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://boerderijkamps.nl/evenement/25-oktober-2026-14-30-uur-de-nederlandse-koperband-jongens-driest/",
+    "host": "boerderijkamps.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [
+   "gratis"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'band'",
+   "confidence": 0.8
+  },
+  "hash": "585d70b2e604",
+  "image": {
+   "url": "https://boerderijkamps.nl/wp-content/uploads/2026/07/Driest-BW-2-.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij 25 oktober 2026 – 14.30 uur – De Groningse koperband ‘Jongens Driest’",
+   "credit": "Foto: Boerderij Kamps",
+   "sourceUrl": "https://boerderijkamps.nl/evenement/25-oktober-2026-14-30-uur-de-nederlandse-koperband-jongens-driest/"
+  }
  },
  {
   "id": "najaarsmarkt-appingedam-2026",
@@ -899,7 +1950,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "305e55b385d9"
+  "hash": "305e55b385d9",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_%286172038068%29.jpg/1280px-The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_%286172038068%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Appingedam",
+   "credit": "Foto: Bert Kaufmann from Roermond, Netherlands · CC BY-SA 2.0 · Wikimedia Commons",
+   "author": "Bert Kaufmann from Roermond, Netherlands",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_hanging_kitchens_of_Appingedam_De_hangende_keukens_van_Appingedam_(6172038068).jpg"
+  }
  },
  {
   "id": "spooktocht-vinkhuizen-2026",
@@ -946,7 +2008,15 @@
    "reason": "trefwoord 'spooktocht'",
    "confidence": 0.8
   },
-  "hash": "3a499ed41c5d"
+  "hash": "3a499ed41c5d",
+  "image": {
+   "url": "https://www.deroegeboys.nl/wp-content/uploads/Doodsbrengers-van-de-diepte-1-vk.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Spooktocht Vinkhuizen",
+   "credit": "Foto: deroegeboys.nl",
+   "sourceUrl": "https://www.deroegeboys.nl/spooktocht-2026/"
+  }
  },
  {
   "id": "halloweentocht-haren-2026",
@@ -985,7 +2055,15 @@
    "reason": "trefwoord 'halloween'",
    "confidence": 0.8
   },
-  "hash": "25847fec4739"
+  "hash": "25847fec4739",
+  "image": {
+   "url": "https://boeremapark.nl/wp-content/uploads/2026/04/image-4.png",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Halloweentocht Haren",
+   "credit": "Foto: boeremapark.nl",
+   "sourceUrl": "https://boeremapark.nl/agenda/"
+  }
  },
  {
   "id": "evt_e0ebd7ca8b926e",
@@ -1013,7 +2091,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/braderie-winkelcentrum-nobellaan-assen/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -1024,7 +2102,117 @@
    "reason": "trefwoord 'braderie'",
    "confidence": 0.8
   },
-  "hash": "92830b6e2bbf"
+  "hash": "92830b6e2bbf",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Assen",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+  }
+ },
+ {
+  "id": "evt_afb1cc4a91ee9f",
+  "slug": "xl-vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-10-31",
+  "title": "XL-vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-10-31",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "13:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€20,00 – €25,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/xl-vaartocht-door-nationaal-park-de-alde-feanen-3/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/xl-vaartocht-door-nationaal-park-de-alde-feanen-3/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "b9ad5bf8db19",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/06/Foto-website.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij XL-vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/xl-vaartocht-door-nationaal-park-de-alde-feanen-3/"
+  }
+ },
+ {
+  "id": "evt_eb53bfe875620c",
+  "slug": "zwerftocht-door-beekdal-de-tsjongerdellen-katlijk-2026-10-31",
+  "title": "Zwerftocht door beekdal de Tsjongerdellen",
+  "occurrences": [
+   {
+    "date": "2026-10-31",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Tsjongerdellen",
+   "city": "Katlijk",
+   "lat": 52.926331,
+   "lon": 6.049359
+  },
+  "price": "Gratis – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-beekdal-de-tsjongerdellen-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-beekdal-de-tsjongerdellen-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten",
+   "gratis"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "f5f5c2f11ed3",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/05/Tsjongerdellen.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Zwerftocht door beekdal de Tsjongerdellen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-beekdal-de-tsjongerdellen-2/"
+  }
  },
  {
   "id": "confirmed-samhain-bourtange-2026",
@@ -1065,7 +2253,68 @@
    "reason": "oude categorie 'festival'",
    "confidence": 0.5
   },
-  "hash": "171d8eef1a9f"
+  "hash": "171d8eef1a9f",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Vesting Bourtange",
+   "credit": "Foto: onbekende maker · Copyrighted free use · Wikimedia Commons",
+   "author": "onbekende maker",
+   "license": "Copyrighted free use",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg"
+  }
+ },
+ {
+  "id": "evt_5d5967fc394dd8",
+  "slug": "eredienst-wg-beilen-beilen-2026-11-01",
+  "title": "Eredienst WG Beilen",
+  "occurrences": [
+   {
+    "date": "2026-11-01",
+    "endDate": null,
+    "startTime": "11:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Pauluskerk",
+   "city": "Beilen",
+   "lat": 52.86153832,
+   "lon": 6.49796064
+  },
+  "price": "EUR 0",
+  "url": "https://www.pgbeilen.nl/agenda/eredienst-wg-beilen-37/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.pgbeilen.nl/agenda/eredienst-wg-beilen-37/",
+    "host": "pgbeilen.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "overig",
+  "kindLabel": "Overig",
+  "tags": [],
+  "classification": {
+   "method": "geen",
+   "reason": "geen trefwoord, locatie of hint",
+   "confidence": 0.2
+  },
+  "hash": "ce4e794cafbb",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Beilen_Rotonde.JPG/1280px-Beilen_Rotonde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Beilen",
+   "credit": "Foto: Gerardus · Public domain · Wikimedia Commons",
+   "author": "Gerardus",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beilen_Rotonde.JPG"
+  }
  },
  {
   "id": "zeldzaam-mooi-markt-2026",
@@ -1106,7 +2355,8 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "060b4303d66c"
+  "hash": "060b4303d66c",
+  "image": null
  },
  {
   "id": "evt_c9a4cc4a4d648c",
@@ -1134,7 +2384,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/braderie-najaarsmarkt-centrum-assen/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -1145,7 +2395,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "a6a36dbbb9b9"
+  "hash": "a6a36dbbb9b9",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Assen",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+  }
  },
  {
   "id": "official-gap-natuurwerkdag-groningen-2026",
@@ -1188,7 +2449,8 @@
    "reason": "trefwoord 'natuur'",
    "confidence": 0.8
   },
-  "hash": "d35c3b2d428c"
+  "hash": "d35c3b2d428c",
+  "image": null
  },
  {
   "id": "lichtjesfestival-haren-2026",
@@ -1227,7 +2489,163 @@
    "reason": "trefwoord 'lichtjes'",
    "confidence": 0.8
   },
-  "hash": "86848ac7e2e8"
+  "hash": "86848ac7e2e8",
+  "image": {
+   "url": "https://www.ervaarharen.nl/wp-content/uploads/2026/09/ChatGPT-Image-9-sep-2026-14_56_52-1024x768.png",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Lichtjesparade Haren",
+   "credit": "Foto: ervaarharen.nl",
+   "sourceUrl": "https://www.ervaarharen.nl/event/lichtjesparade/"
+  }
+ },
+ {
+  "id": "evt_d7e004e35f3204",
+  "slug": "help-mee-in-de-bouwepet-tijdens-de-natuurwerkdag-munein-2026-11-07",
+  "title": "Help mee in de Bouwepet tijdens de Natuurwerkdag",
+  "occurrences": [
+   {
+    "date": "2026-11-07",
+    "endDate": null,
+    "startTime": "09:00",
+    "endTime": "14:00"
+   }
+  ],
+  "venue": {
+   "name": "Bouwepet – Geologisch monument",
+   "city": "Mûnein",
+   "lat": 53.244537,
+   "lon": 5.924731
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/help-mee-in-de-bouwepet-tijdens-de-natuurwerkdag/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/help-mee-in-de-bouwepet-tijdens-de-natuurwerkdag/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'natuur'",
+   "confidence": 0.8
+  },
+  "hash": "6abcecc4a878",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2026/09/DJI_20250319113905_0095_D-scaled.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Help mee in de Bouwepet tijdens de Natuurwerkdag",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/help-mee-in-de-bouwepet-tijdens-de-natuurwerkdag/"
+  }
+ },
+ {
+  "id": "evt_41e1b5aaabb536",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-11-07",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-11-07",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€8,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-50/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-50/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "b00ed121f0fb",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2026/06/Blaustirns-in-Alde-Feanen.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-50/"
+  }
+ },
+ {
+  "id": "evt_8d0655e707439c",
+  "slug": "fotograferen-in-een-herfstig-landschap-vlakbij-katlijk-12-katlijk-2026-11-07",
+  "title": "Fotograferen in een herfstig landschap vlakbij Katlijk (12+)",
+  "occurrences": [
+   {
+    "date": "2026-11-07",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Ketliker Skar Beekpronkje",
+   "city": "Katlijk",
+   "lat": 52.941339,
+   "lon": 6.033672
+  },
+  "price": "Gratis – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/fotograferen-in-een-herfstig-landschap-vlakbij-katlijk-12-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/fotograferen-in-een-herfstig-landschap-vlakbij-katlijk-12-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten",
+   "gratis"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "d62f025242a1",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/herfstfoto-1920x1213-1-1.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Fotograferen in een herfstig landschap vlakbij Katlijk (12+)",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/fotograferen-in-een-herfstig-landschap-vlakbij-katlijk-12-2/"
+  }
  },
  {
   "id": "confirmed-takeroot-2026",
@@ -1266,7 +2684,15 @@
    "reason": "titel noemt het een festival",
    "confidence": 0.7
   },
-  "hash": "9be540a868e4"
+  "hash": "9be540a868e4",
+  "image": {
+   "url": "https://www.spotgroningen.nl/wp-content/uploads/2019/05/1024-x-512-TakeRoot-2025-B.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij TakeRoot Festival",
+   "credit": "Foto: SPOT Groningen",
+   "sourceUrl": "https://www.spotgroningen.nl/events/takeroot/"
+  }
  },
  {
   "id": "official-gap-taptoe-groningen-2026",
@@ -1305,7 +2731,62 @@
    "reason": "trefwoord 'taptoe'",
    "confidence": 0.8
   },
-  "hash": "78f9111aa55c"
+  "hash": "78f9111aa55c",
+  "image": {
+   "url": "https://static.martiniplaza.nl/cache/taptoe-groningen-2026.13770/taptoe-groningen-2026-s1920x1080.png",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Taptoe Groningen 2026",
+   "credit": "Foto: Martiniplaza",
+   "sourceUrl": "https://www.martiniplaza.nl/nl/agenda/taptoe-groningen-2026"
+  }
+ },
+ {
+  "id": "evt_c009c68decbc68",
+  "slug": "eek-a-mouse-leeuwarden-2026-11-08",
+  "title": "Eek-A-Mouse",
+  "occurrences": [
+   {
+    "date": "2026-11-08",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Neushoorn",
+   "city": "Leeuwarden",
+   "lat": 53.2006597,
+   "lon": 5.80308902
+  },
+  "price": "Zie organisator",
+  "url": "https://www.neushoorn.nl/events/eek-a-mouse",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.neushoorn.nl/events/eek-a-mouse",
+    "host": "neushoorn.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website neushoorn.nl",
+   "confidence": 0.7
+  },
+  "hash": "9fa5c9bab13f",
+  "image": {
+   "url": "https://cdn.prod.website-files.com/68406d1cc758e72eef6296d8/690c780e1b046f0291f85188_eek-a-mouse_detail-80cc.avif",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Eek-A-Mouse",
+   "credit": "Foto: Neushoorn",
+   "sourceUrl": "https://www.neushoorn.nl/events/eek-a-mouse"
+  }
  },
  {
   "id": "evt_45e3d5fd783ef0",
@@ -1333,7 +2814,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/braderie-zuidbroek-4/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -1344,7 +2825,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "cd07f445de66"
+  "hash": "cd07f445de66",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Petruskerk_Zuidbroek.jpg/1280px-Petruskerk_Zuidbroek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Zuidbroek",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petruskerk_Zuidbroek.jpg"
+  }
  },
  {
   "id": "confirmed-jonge-harten-2026",
@@ -1385,7 +2877,205 @@
    "reason": "festival, meerdaags of met meerdere podia",
    "confidence": 0.85
   },
-  "hash": "80e93bc5be1a"
+  "hash": "80e93bc5be1a",
+  "image": null
+ },
+ {
+  "id": "evt_9e45710df268cb",
+  "slug": "herfstwandeling-in-moerasgebied-easterskar-rotstergaast-2026-11-14",
+  "title": "Herfstwandeling in moerasgebied Easterskar",
+  "occurrences": [
+   {
+    "date": "2026-11-14",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Easterskar – Bisschopsweg",
+   "city": "Rotstergaast",
+   "lat": 52.9196298,
+   "lon": 5.9014229
+  },
+  "price": "Gratis – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/herfstwandeling-in-moerasgebied-easterskar-3/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/herfstwandeling-in-moerasgebied-easterskar-3/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten",
+   "gratis"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'wandel'",
+   "confidence": 0.8
+  },
+  "hash": "250f5b9be9bc",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/05/Easterskar1.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Herfstwandeling in moerasgebied Easterskar",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/herfstwandeling-in-moerasgebied-easterskar-3/"
+  }
+ },
+ {
+  "id": "evt_106d900212d4ad",
+  "slug": "lezing-woii-en-excursie-noarderleech-hallum-2026-11-14",
+  "title": "Lezing WOII en excursie Noarderleech",
+  "occurrences": [
+   {
+    "date": "2026-11-14",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "13:00"
+   }
+  ],
+  "venue": {
+   "name": "Kweldercentrum Noarderleech",
+   "city": "Hallum",
+   "lat": 53.3226806,
+   "lon": 5.7394557
+  },
+  "price": "Gratis – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/lezing-woii-en-excursie-noarderleech/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/lezing-woii-en-excursie-noarderleech/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "lezing",
+  "kindLabel": "Lezing en workshop",
+  "tags": [
+   "gratis"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'lezing'",
+   "confidence": 0.8
+  },
+  "hash": "beb14aab1dbf",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/07/vliegenier_george_wilhelm.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Lezing WOII en excursie Noarderleech",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/lezing-woii-en-excursie-noarderleech/"
+  }
+ },
+ {
+  "id": "evt_9ea3752ca04db1",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-11-14",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-11-14",
+    "endDate": null,
+    "startTime": "13:30",
+    "endTime": "15:30"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€8,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-51/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-51/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "1813f38f6815",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2026/06/Blaustirns-in-Alde-Feanen.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-51/"
+  }
+ },
+ {
+  "id": "evt_fe189623e9ab66",
+  "slug": "zondag-15-november-2026-14-30-uur-florence-foster-jenkins-ontroerende-en-hilaris",
+  "title": "Zondag 15 november 2026 – 14.30 uur – Florence Foster Jenkins – ontroerende en hilarische voorstelling",
+  "occurrences": [
+   {
+    "date": "2026-11-15",
+    "endDate": null,
+    "startTime": "14:30",
+    "endTime": "17:00"
+   }
+  ],
+  "venue": {
+   "name": "Boerderij Kamps",
+   "city": "Rolde",
+   "lat": 52.9868047,
+   "lon": 6.64567882
+  },
+  "price": "Gratis",
+  "url": "https://boerderijkamps.nl/evenement/zondag-15-november-2026-14-30-uur-florence-foster-jenkins/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://boerderijkamps.nl/evenement/zondag-15-november-2026-14-30-uur-florence-foster-jenkins/",
+    "host": "boerderijkamps.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [
+   "gratis"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'voorstelling'",
+   "confidence": 0.8
+  },
+  "hash": "88806588299e",
+  "image": {
+   "url": "https://boerderijkamps.nl/wp-content/uploads/2026/07/Florence-1.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Zondag 15 november 2026 – 14.30 uur – Florence Foster Jenkins – ontroerende en hilarische voorstelling",
+   "credit": "Foto: Boerderij Kamps",
+   "sourceUrl": "https://boerderijkamps.nl/evenement/zondag-15-november-2026-14-30-uur-florence-foster-jenkins/"
+  }
  },
  {
   "id": "confirmed-gscf-2026",
@@ -1432,7 +3122,65 @@
    "reason": "festival, meerdaags of met meerdere podia",
    "confidence": 0.85
   },
-  "hash": "856fc85a4a60"
+  "hash": "856fc85a4a60",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Stadsschouwburg%2C_Groningen_1276.jpg/1280px-Stadsschouwburg%2C_Groningen_1276.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Stadsschouwburg Groningen",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stadsschouwburg,_Groningen_1276.jpg"
+  }
+ },
+ {
+  "id": "evt_ec7d3219b3b609",
+  "slug": "college-veenhuizen-sheila-sitalsing-veenhuizen-2026-11-19",
+  "title": "College Veenhuizen: Sheila Sitalsing",
+  "occurrences": [
+   {
+    "date": "2026-11-19",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Gevangenismuseum",
+   "city": "Veenhuizen",
+   "lat": 53.02561969,
+   "lon": 6.4081463
+  },
+  "price": "Zie organisator",
+  "url": "https://gevangenismuseum.nl/evenement/college-veenhuizen-8/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://gevangenismuseum.nl/evenement/college-veenhuizen-8/",
+    "host": "gevangenismuseum.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website gevangenismuseum.nl",
+   "confidence": 0.7
+  },
+  "hash": "4233510ffce8",
+  "image": {
+   "url": "https://gevangenismuseum.nl/wp-content/uploads/2026/02/Sprekers-College-Veenhuizen-website-fotos-2.png",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij College Veenhuizen: Sheila Sitalsing",
+   "credit": "Foto: Gevangenismuseum",
+   "sourceUrl": "https://gevangenismuseum.nl/evenement/college-veenhuizen-8/"
+  }
  },
  {
   "id": "confirmed-winterfair-warffum-2026",
@@ -1473,7 +3221,114 @@
    "reason": "trefwoord 'fair'",
    "confidence": 0.8
   },
-  "hash": "81f31bcb20e6"
+  "hash": "81f31bcb20e6",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg/1280px-Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Warffum",
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Warffum_vanaf_het_Warfummerbos.jpg"
+  }
+ },
+ {
+  "id": "evt_40fc0eb92b0a92",
+  "slug": "bij-volle-maan-varen-door-de-natuur-vlakbij-earnewald-12-earnewald-2026-11-21",
+  "title": "Bij volle maan varen door de natuur vlakbij Earnewâld (12+)",
+  "occurrences": [
+   {
+    "date": "2026-11-21",
+    "endDate": null,
+    "startTime": "19:00",
+    "endTime": "21:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€13,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/bij-volle-maan-varen-door-de-natuur-vlakbij-earnewald-12-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/bij-volle-maan-varen-door-de-natuur-vlakbij-earnewald-12-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'natuur'",
+   "confidence": 0.8
+  },
+  "hash": "b1f566b3b4a6",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/06/Nacht-hemel-met-maan.webp",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Bij volle maan varen door de natuur vlakbij Earnewâld (12+)",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/bij-volle-maan-varen-door-de-natuur-vlakbij-earnewald-12-2/"
+  }
+ },
+ {
+  "id": "evt_4d38820e8f069c",
+  "slug": "explore-the-north-leeuwarden-2026-11-22",
+  "title": "Explore The North",
+  "occurrences": [
+   {
+    "date": "2026-11-22",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Neushoorn",
+   "city": "Leeuwarden",
+   "lat": 53.2006597,
+   "lon": 5.80308902
+  },
+  "price": "Zie organisator",
+  "url": "https://www.neushoorn.nl/events/explore-the-north",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.neushoorn.nl/events/explore-the-north",
+    "host": "neushoorn.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website neushoorn.nl",
+   "confidence": 0.7
+  },
+  "hash": "1427c1ed24ce",
+  "image": {
+   "url": "https://cdn.prod.website-files.com/68406d1cc758e72eef6296d8/6a2a88ce6d8eb6f373f0b482_ETN_detail-15d7.avif",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Explore The North",
+   "credit": "Foto: Neushoorn",
+   "sourceUrl": "https://www.neushoorn.nl/events/explore-the-north"
+  }
  },
  {
   "id": "evt_c07c255bf93588",
@@ -1501,7 +3356,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/braderie-zuidbroek-3/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -1512,7 +3367,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "67cacd8db135"
+  "hash": "67cacd8db135",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Petruskerk_Zuidbroek.jpg/1280px-Petruskerk_Zuidbroek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Zuidbroek",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petruskerk_Zuidbroek.jpg"
+  }
  },
  {
   "id": "confirmed-wintergoud-2026",
@@ -1554,7 +3420,8 @@
    "reason": "oude categorie 'festival'",
    "confidence": 0.5
   },
-  "hash": "4f4e6d9c6780"
+  "hash": "4f4e6d9c6780",
+  "image": null
  },
  {
   "id": "evt_7d7dea88eec108",
@@ -1582,7 +3449,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/braderie-winkelcentrum-nobellaan-assen-4-2-5/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -1593,7 +3460,212 @@
    "reason": "trefwoord 'braderie'",
    "confidence": 0.8
   },
-  "hash": "edb3f3f5265e"
+  "hash": "edb3f3f5265e",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Assen",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+  }
+ },
+ {
+  "id": "evt_72e6e0d85bacd3",
+  "slug": "zwerftocht-door-de-lendevallei-in-zuidelijk-friesland-peperga-2026-11-28",
+  "title": "Zwerftocht door de Lendevallei in zuidelijk Friesland",
+  "occurrences": [
+   {
+    "date": "2026-11-28",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Lendevallei – Domeinenweg",
+   "city": "Peperga",
+   "lat": 52.862753,
+   "lon": 6.028614
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-de-lendevallei-in-zuidelijk-friesland-3/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-de-lendevallei-in-zuidelijk-friesland-3/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "17788eb3cc72",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/01/lendevallei.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Zwerftocht door de Lendevallei in zuidelijk Friesland",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/zwerftocht-door-de-lendevallei-in-zuidelijk-friesland-3/"
+  }
+ },
+ {
+  "id": "evt_245656f541d3f7",
+  "slug": "winterfair-2026-veenhuizen-2026-11-28",
+  "title": "Winterfair 2026",
+  "occurrences": [
+   {
+    "date": "2026-11-28",
+    "endDate": null,
+    "startTime": "12:00",
+    "endTime": "20:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Gevangenismuseum",
+   "city": "Veenhuizen",
+   "lat": 53.02561969,
+   "lon": 6.4081463
+  },
+  "price": "Zie organisator",
+  "url": "https://gevangenismuseum.nl/evenement/winterfair-2026/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://gevangenismuseum.nl/evenement/winterfair-2026/",
+    "host": "gevangenismuseum.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "markt",
+  "kindLabel": "Markt en beurs",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'fair'",
+   "confidence": 0.8
+  },
+  "hash": "939ca6a069e3",
+  "image": {
+   "url": "https://gevangenismuseum.nl/wp-content/uploads/2025/09/Winterbeeld-voorkant-museum-onbewerkt-scaled-e1761662137893.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Winterfair 2026",
+   "credit": "Foto: Gevangenismuseum",
+   "sourceUrl": "https://gevangenismuseum.nl/evenement/winterfair-2026/"
+  }
+ },
+ {
+  "id": "evt_f57df1fa4aa309",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-11-28",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-11-28",
+    "endDate": null,
+    "startTime": "13:30",
+    "endTime": "15:30"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€8,00 – €18,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-52/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-52/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "9e27946b3cdf",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2026/06/Blaustirns-in-Alde-Feanen.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-52/"
+  }
+ },
+ {
+  "id": "evt_46d2ade70a95a7",
+  "slug": "xl-vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-12-05",
+  "title": "XL-vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-12-05",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "13:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "€20,00 – €25,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/xl-vaartocht-door-nationaal-park-de-alde-feanen-4/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/xl-vaartocht-door-nationaal-park-de-alde-feanen-4/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "5ae4781515e0",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2025/06/Foto-website.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij XL-vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/xl-vaartocht-door-nationaal-park-de-alde-feanen-4/"
+  }
  },
  {
   "id": "confirmed-kerstmarkt-bourtange-2026-1",
@@ -1635,7 +3707,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "25a282c9ee31"
+  "hash": "25a282c9ee31",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Vesting Bourtange",
+   "credit": "Foto: onbekende maker · Copyrighted free use · Wikimedia Commons",
+   "author": "onbekende maker",
+   "license": "Copyrighted free use",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg"
+  }
  },
  {
   "id": "evt_c3b7eac1b71770",
@@ -1663,7 +3746,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/kerstmarkt-ruinen/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "markt",
@@ -1674,7 +3757,18 @@
    "reason": "trefwoord 'fair'",
    "confidence": 0.8
   },
-  "hash": "d66d360030f6"
+  "hash": "d66d360030f6",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Kerk_op_brink_van_Ruinen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Ruinen",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerk_op_brink_van_Ruinen.jpg"
+  }
  },
  {
   "id": "evt_ed9f38e18949e0",
@@ -1702,7 +3796,7 @@
     "type": "organisator",
     "url": "https://wildro.nl/event/stadslichtfestival-hoogeveen-2026/",
     "host": "wildro.nl",
-    "seenAt": "2026-10-11"
+    "seenAt": "2026-10-12"
    }
   ],
   "kind": "festival",
@@ -1715,7 +3809,15 @@
    "reason": "festival, meerdaags of met meerdere podia",
    "confidence": 0.85
   },
-  "hash": "4f2f8d386bc4"
+  "hash": "4f2f8d386bc4",
+  "image": {
+   "url": "https://regionieuwshoogeveen.nl/wp-content/uploads/2024/12/Henk-sieders.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Stadslichtfestival Hoogeveen",
+   "credit": "Foto: Organisatieburo Wildro",
+   "sourceUrl": "https://wildro.nl/event/stadslichtfestival-hoogeveen-2026/"
+  }
  },
  {
   "id": "confirmed-winterwelvaart-groningen-2026",
@@ -1757,7 +3859,57 @@
    "reason": "oude categorie 'festival'",
    "confidence": 0.5
   },
-  "hash": "88641850ffc9"
+  "hash": "88641850ffc9",
+  "image": null
+ },
+ {
+  "id": "evt_b9f33e0440d8e9",
+  "slug": "winterwandeling-langs-de-paardendobbe-hallum-2026-12-12",
+  "title": "Winterwandeling langs de Paardendobbe",
+  "occurrences": [
+   {
+    "date": "2026-12-12",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Kweldercentrum Noarderleech",
+   "city": "Hallum",
+   "lat": 53.3226806,
+   "lon": 5.7394557
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/winterwandeling-langs-de-paardendobbe/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/winterwandeling-langs-de-paardendobbe/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'wandel'",
+   "confidence": 0.8
+  },
+  "hash": "90abb460d668",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/06/Monument_Ids_Willemsma3_zeedijk.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Winterwandeling langs de Paardendobbe",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/winterwandeling-langs-de-paardendobbe/"
+  }
  },
  {
   "id": "confirmed-zweedse-kerstmarkt-2026",
@@ -1798,7 +3950,8 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "af67b4aec779"
+  "hash": "af67b4aec779",
+  "image": null
  },
  {
   "id": "confirmed-kerstmarkt-bourtange-2026-2",
@@ -1840,7 +3993,212 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "9a6dabcdf46a"
+  "hash": "9a6dabcdf46a",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Vesting Bourtange",
+   "credit": "Foto: onbekende maker · Copyrighted free use · Wikimedia Commons",
+   "author": "onbekende maker",
+   "license": "Copyrighted free use",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg"
+  }
+ },
+ {
+  "id": "evt_97fb5d196e1dda",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-12-12",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-12-12",
+    "endDate": null,
+    "startTime": "13:30",
+    "endTime": "15:30"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-53/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-53/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "10c195b289de",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2026/06/Blaustirns-in-Alde-Feanen.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-53/"
+  }
+ },
+ {
+  "id": "evt_115a0870fe04f7",
+  "slug": "12-december-2026-16-00-uur-niki-jacobs-met-haar-nieuwe-theaterprogramma-ja-rolde",
+  "title": "12 december 2026 – 16.00 uur – Niki Jacobs met haar nieuwe theaterprogramma: Ja!",
+  "occurrences": [
+   {
+    "date": "2026-12-12",
+    "endDate": null,
+    "startTime": "16:00",
+    "endTime": "18:00"
+   }
+  ],
+  "venue": {
+   "name": "Boerderij Kamps",
+   "city": "Rolde",
+   "lat": 52.9868047,
+   "lon": 6.64567882
+  },
+  "price": "Gratis",
+  "url": "https://boerderijkamps.nl/evenement/zaterdag-12-december-2026-19-30-uur-niki-jacobs-met-haar-nieuwe-theaterprogramma-ja/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://boerderijkamps.nl/evenement/zaterdag-12-december-2026-19-30-uur-niki-jacobs-met-haar-nieuwe-theaterprogramma-ja/",
+    "host": "boerderijkamps.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [
+   "gratis"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'theater'",
+   "confidence": 0.8
+  },
+  "hash": "297ca7cb2b2a",
+  "image": {
+   "url": "https://boerderijkamps.nl/wp-content/uploads/2026/08/Niki-Jacobs-JA-c-Anne-van-Zantwijk_grade_liggend-1-scaled.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij 12 december 2026 – 16.00 uur – Niki Jacobs met haar nieuwe theaterprogramma: Ja!",
+   "credit": "Foto: Boerderij Kamps",
+   "sourceUrl": "https://boerderijkamps.nl/evenement/zaterdag-12-december-2026-19-30-uur-niki-jacobs-met-haar-nieuwe-theaterprogramma-ja/"
+  }
+ },
+ {
+  "id": "evt_d8d181b7aeb4a8",
+  "slug": "college-veenhuizen-vertoning-documentaire-vonnis-panelgesprek-veenhuizen-2026-12",
+  "title": "College Veenhuizen: vertoning documentaire “Vonnis” + panelgesprek",
+  "occurrences": [
+   {
+    "date": "2026-12-17",
+    "endDate": null,
+    "startTime": "14:00",
+    "endTime": "16:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Gevangenismuseum",
+   "city": "Veenhuizen",
+   "lat": 53.02561969,
+   "lon": 6.4081463
+  },
+  "price": "Zie organisator",
+  "url": "https://gevangenismuseum.nl/evenement/college-veenhuizen-documentaire-vonnis/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://gevangenismuseum.nl/evenement/college-veenhuizen-documentaire-vonnis/",
+    "host": "gevangenismuseum.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "film",
+  "kindLabel": "Film",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'documentaire'",
+   "confidence": 0.8
+  },
+  "hash": "9fe0457a8473",
+  "image": {
+   "url": "https://gevangenismuseum.nl/wp-content/uploads/2026/01/Never-say-cheese-opening-on-t-schuld-LR-32.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij College Veenhuizen: vertoning documentaire “Vonnis” + panelgesprek",
+   "credit": "Foto: Gevangenismuseum",
+   "sourceUrl": "https://gevangenismuseum.nl/evenement/college-veenhuizen-documentaire-vonnis/"
+  }
+ },
+ {
+  "id": "evt_fb5755cb6aee3a",
+  "slug": "vaartocht-door-nationaal-park-de-alde-feanen-earnewald-2026-12-19",
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2026-12-19",
+    "endDate": null,
+    "startTime": "10:00",
+    "endTime": "12:00"
+   }
+  ],
+  "venue": {
+   "name": "Nationaal Park De Alde Feanen – opstapplaats Blaustirns",
+   "city": "Earnewald",
+   "lat": 53.127922,
+   "lon": 5.935862
+  },
+  "price": "Zie organisator",
+  "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-54/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-54/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website itfryskegea.nl",
+   "confidence": 0.7
+  },
+  "hash": "f5a7a3b616f0",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2026/06/Blaustirns-in-Alde-Feanen.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-54/"
+  }
  },
  {
   "id": "confirmed-kerstmarkt-bourtange-2026-3",
@@ -1882,7 +4240,18 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "b6d624ed8f0b"
+  "hash": "b6d624ed8f0b",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Vesting Bourtange",
+   "credit": "Foto: onbekende maker · Copyrighted free use · Wikimedia Commons",
+   "author": "onbekende maker",
+   "license": "Copyrighted free use",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg"
+  }
  },
  {
   "id": "kerstmarkt-haren-2026",
@@ -1924,7 +4293,15 @@
    "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "1b0837d3449e"
+  "hash": "1b0837d3449e",
+  "image": {
+   "url": "https://www.ervaarharen.nl/wp-content/uploads/2017/11/Screenshot_20240111_142834_Instagram.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Kerstmarkt Haren",
+   "credit": "Foto: ervaarharen.nl",
+   "sourceUrl": "https://www.ervaarharen.nl/event/kerstmarkt-haren/"
+  }
  },
  {
   "id": "confirmed-esns-2027",
@@ -1965,7 +4342,154 @@
    "reason": "handmatige correctie in overrides.json",
    "confidence": 1.0
   },
-  "hash": "46bb6772ed99"
+  "hash": "46bb6772ed99",
+  "image": null
+ },
+ {
+  "id": "evt_a7cac498029375",
+  "slug": "wintervogelexcursie-door-nationaal-park-de-alde-feanen-earnewald-2027-01-18",
+  "title": "Wintervogelexcursie door Nationaal Park De Alde Feanen",
+  "occurrences": [
+   {
+    "date": "2027-01-18",
+    "endDate": null,
+    "startTime": "10:30",
+    "endTime": "12:30"
+   }
+  ],
+  "venue": {
+   "name": "Jan Durkspolder",
+   "city": "Earnewâld",
+   "lat": 53.128524,
+   "lon": 5.945934
+  },
+  "price": "Gratis – €6,00",
+  "url": "https://www.itfryskegea.nl/activiteiten/wintervogelexcursie-door-nationaal-park-de-alde-feanen-2/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.itfryskegea.nl/activiteiten/wintervogelexcursie-door-nationaal-park-de-alde-feanen-2/",
+    "host": "itfryskegea.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten",
+   "gratis"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'excursie'",
+   "confidence": 0.8
+  },
+  "hash": "d7158f28bcdd",
+  "image": {
+   "url": "https://www.itfryskegea.nl/wp-content/uploads/2024/05/kolgans35.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Wintervogelexcursie door Nationaal Park De Alde Feanen",
+   "credit": "Foto: Delleboersterheide",
+   "sourceUrl": "https://www.itfryskegea.nl/activiteiten/wintervogelexcursie-door-nationaal-park-de-alde-feanen-2/"
+  }
+ },
+ {
+  "id": "evt_c3376352cbe433",
+  "slug": "wende-leeuwarden-2027-01-29",
+  "title": "Wende",
+  "occurrences": [
+   {
+    "date": "2027-01-29",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Neushoorn",
+   "city": "Leeuwarden",
+   "lat": 53.2006597,
+   "lon": 5.80308902
+  },
+  "price": "Zie organisator",
+  "url": "https://www.neushoorn.nl/events/wende-2",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.neushoorn.nl/events/wende-2",
+    "host": "neushoorn.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website neushoorn.nl",
+   "confidence": 0.7
+  },
+  "hash": "549bd2f4982a",
+  "image": {
+   "url": "https://cdn.prod.website-files.com/68406d1cc758e72eef6296d8/6aabe094e32a84efaf92b3ce_Wende_detail-a1a0.avif",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Wende",
+   "credit": "Foto: Neushoorn",
+   "sourceUrl": "https://www.neushoorn.nl/events/wende-2"
+  }
+ },
+ {
+  "id": "evt_3bbabc1e544a1f",
+  "slug": "7-februari-2027-om-14-30-uur-amsterdams-berlijns-trio-jolly-mangos-rolde-2027-02",
+  "title": "7 februari 2027 om 14.30 uur – Amsterdams-Berlijns trio Jolly Mangos",
+  "occurrences": [
+   {
+    "date": "2027-02-07",
+    "endDate": null,
+    "startTime": "14:30",
+    "endTime": "17:00"
+   }
+  ],
+  "venue": {
+   "name": "Boerderij Kamps",
+   "city": "Rolde",
+   "lat": 52.9868047,
+   "lon": 6.64567882
+  },
+  "price": "Gratis",
+  "url": "https://boerderijkamps.nl/evenement/7-februari-2027-om-14-30-uur-amsterdams-berlijns-trio-jolly-mangos/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://boerderijkamps.nl/evenement/7-februari-2027-om-14-30-uur-amsterdams-berlijns-trio-jolly-mangos/",
+    "host": "boerderijkamps.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [
+   "gratis"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website boerderijkamps.nl",
+   "confidence": 0.7
+  },
+  "hash": "9804e2cfb59e",
+  "image": {
+   "url": "https://boerderijkamps.nl/wp-content/uploads/2024/05/4-Jolly-Mangos-1.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij 7 februari 2027 om 14.30 uur – Amsterdams-Berlijns trio Jolly Mangos",
+   "credit": "Foto: Boerderij Kamps",
+   "sourceUrl": "https://boerderijkamps.nl/evenement/7-februari-2027-om-14-30-uur-amsterdams-berlijns-trio-jolly-mangos/"
+  }
  },
  {
   "id": "confirmed-autosalon-noorden-2027",
@@ -2006,7 +4530,62 @@
    "reason": "trefwoord 'salon'",
    "confidence": 0.8
   },
-  "hash": "b470b3ccb616"
+  "hash": "b470b3ccb616",
+  "image": {
+   "url": "https://static.martiniplaza.nl/cache/autosalon-van-het-noorden-2027.10656/autosalon-van-het-noorden-2027-s1920x1080.jpg",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Autosalon van het Noorden 2027",
+   "credit": "Foto: Martiniplaza",
+   "sourceUrl": "https://www.martiniplaza.nl/nl/agenda/autosalon-van-het-noorden-2027"
+  }
+ },
+ {
+  "id": "evt_035e28002d1733",
+  "slug": "raptiel-betty-s-50ste-verjaardag-leeuwarden-2027-02-27",
+  "title": "Raptiel: Betty’s 50ste verjaardag",
+  "occurrences": [
+   {
+    "date": "2027-02-27",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Neushoorn",
+   "city": "Leeuwarden",
+   "lat": 53.2006597,
+   "lon": 5.80308902
+  },
+  "price": "Zie organisator",
+  "url": "https://www.neushoorn.nl/events/bettys-verjaardag",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.neushoorn.nl/events/bettys-verjaardag",
+    "host": "neushoorn.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website neushoorn.nl",
+   "confidence": 0.7
+  },
+  "hash": "c844f37ac9f8",
+  "image": {
+   "url": "https://cdn.prod.website-files.com/68406d1cc758e72eef6296d8/699dbfbc8fb6064fa4f71442_raptiel_detail-c94f.avif",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij Raptiel: Betty’s 50ste verjaardag",
+   "credit": "Foto: Neushoorn",
+   "sourceUrl": "https://www.neushoorn.nl/events/bettys-verjaardag"
+  }
  },
  {
   "id": "official-gap-whisky-festival-noord-nederland-2027",
@@ -2048,6 +4627,54 @@
    "reason": "festival met één discipline: eten",
    "confidence": 0.85
   },
-  "hash": "731b13907b7d"
+  "hash": "731b13907b7d",
+  "image": null
+ },
+ {
+  "id": "evt_0959be9193011c",
+  "slug": "the-elvis-concert-2027-leeuwarden-2027-11-19",
+  "title": "The Elvis Concert 2027",
+  "occurrences": [
+   {
+    "date": "2027-11-19",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Neushoorn",
+   "city": "Leeuwarden",
+   "lat": 53.2006597,
+   "lon": 5.80308902
+  },
+  "price": "Zie organisator",
+  "url": "https://www.neushoorn.nl/events/the-elvis-concert",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.neushoorn.nl/events/the-elvis-concert",
+    "host": "neushoorn.nl",
+    "seenAt": "2026-10-12"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "1e76d535cdc7",
+  "image": {
+   "url": "https://cdn.prod.website-files.com/68406d1cc758e72eef6296d8/6a708eb4b609227acb75044b_Elvis_detail-f019.avif",
+   "type": "organisator",
+   "match": "uitje",
+   "alt": "Foto bij The Elvis Concert 2027",
+   "credit": "Foto: Neushoorn",
+   "sourceUrl": "https://www.neushoorn.nl/events/the-elvis-concert"
+  }
  }
 ]

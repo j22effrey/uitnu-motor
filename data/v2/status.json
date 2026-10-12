@@ -1,10 +1,10 @@
 {
  "version": 2,
- "refreshedAt": "2026-10-11T20:19:35+00:00",
- "today": "2026-10-11",
- "total": 50,
- "inputRecords": 76,
- "outsideArea": 4,
+ "refreshedAt": "2026-10-12T06:39:44+00:00",
+ "today": "2026-10-12",
+ "total": 96,
+ "inputRecords": 154,
+ "outsideArea": 19,
  "area": {
   "center": [
    53.2194,
@@ -13,56 +13,72 @@
   "radiusKm": 60
  },
  "byKind": {
-  "markt": 26,
+  "natuur": 33,
+  "markt": 25,
   "festival": 9,
+  "kunst": 7,
+  "muziek": 7,
   "feest": 5,
-  "sport": 3,
-  "kunst": 2,
-  "overig": 1,
-  "theater": 1,
-  "natuur": 1,
-  "muziek": 1,
+  "theater": 4,
+  "overig": 2,
+  "sport": 1,
+  "lezing": 1,
+  "film": 1,
   "eten": 1
  },
  "byCity": {
-  "Groningen": 24,
-  "Zuidbroek": 4,
-  "Haren": 4,
+  "Groningen": 23,
+  "Earnewald": 13,
+  "Veenhuizen": 7,
+  "Earnewâld": 6,
+  "Katlijk": 5,
+  "Leeuwarden": 5,
+  "Hallum": 4,
+  "Rolde": 4,
   "Bourtange": 4,
+  "Zuidbroek": 3,
+  "Haren": 3,
   "Assen": 3,
+  "Peperga": 2,
   "Delfzijl": 2,
   "Appingedam": 2,
   "Winsum": 1,
-  "Leek": 1,
   "Dwingeloo": 1,
   "Oosterwolde": 1,
+  "Gytsjerk": 1,
+  "Beilen": 1,
+  "Mûnein": 1,
+  "Rotstergaast": 1,
   "Warffum": 1,
   "Ruinen": 1,
   "Hoogeveen": 1
  },
  "bySourceHost": {
-  "wildro.nl": 11,
+  "itfryskegea.nl": 33,
+  "wildro.nl": 10,
+  "gevangenismuseum.nl": 7,
+  "neushoorn.nl": 5,
+  "boerderijkamps.nl": 4,
   "bourtange.nl": 4,
-  "ervaarharen.nl": 3,
   "martiniplaza.nl": 3,
   "reis-events.nl": 2,
   "bierbattle.nl": 2,
   "vitalismarkten.nl": 2,
   "eemsdelta.nl": 2,
   "spotgroningen.nl": 2,
+  "ervaarharen.nl": 2,
   "gscf.nl": 2,
   "forum.nl": 1,
   "groningermuseum.nl": 1,
   "kindermaand.nl": 1,
   "baistemaart.nl": 1,
-  "4mijl.nl": 1,
-  "oldtimerleek.nl": 1,
   "sasa-appingedam.nl": 1,
   "kon-wilhelmina.nl": 1,
   "em2groningen.nl": 1,
   "deroegeboys.nl": 1,
   "zoek.officielebekendmakingen.nl": 1,
   "boeremapark.nl": 1,
+  "pgbeilen.nl": 1,
   "zeldzaammooi.com": 1,
   "natuurwerkdag.nl": 1,
   "jongeharten.nl": 1,
@@ -72,6 +88,11 @@
   "zweedsekerstmarkt.nl": 1,
   "esns.nl": 1,
   "wfnn.nl": 1
+ },
+ "photos": {
+  "organisator": 61,
+  "wikimedia": 23,
+  "illustratie": 12
  },
  "kinds": {
   "muziek": "Muziek",
@@ -95,9 +116,9 @@
   "festival": "Festival"
  },
  "changes": {
-  "new": 0,
+  "new": 50,
   "changed": 0,
-  "removed": 0
+  "removed": 4
  },
  "gate": {
   "passed": true,
@@ -105,7 +126,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "50 nu, 50 vorige keer (minimaal 85%)"
+    "detail": "96 nu, 46 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -115,7 +136,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "1 van 50 (2%)"
+    "detail": "2 van 96 (2%)"
    },
    {
     "name": "velden_compleet",
