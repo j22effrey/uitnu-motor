@@ -452,6 +452,88 @@
         "lon": 6.5165828
       },
       "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "damshus-nl-web",
+      "name": "Openluchtmuseum It Damshûs",
+      "rootUrl": "https://www.damshus.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "damshus.nl",
+      "defaultPlace": {
+        "venue": "Openluchtmuseum It Damshûs",
+        "city": "Nij Beets",
+        "lat": 53.0696891,
+        "lon": 5.9958428
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "defensie-nl-web",
+      "name": "Traditiekamer Vliegbasis Leeuwarden",
+      "rootUrl": "https://www.defensie.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.defensie.nl/activiteiten/"
+      },
+      "activatedFromCandidate": "defensie.nl",
+      "defaultPlace": {
+        "venue": "Traditiekamer Vliegbasis Leeuwarden",
+        "city": "Leeuwarden",
+        "lat": 53.2212144,
+        "lon": 5.7668529
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "denieuwekolk-nl-web",
+      "name": "De Nieuwe Kolk",
+      "rootUrl": "https://denieuwekolk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "denieuwekolk.nl",
+      "defaultPlace": {
+        "venue": "De Nieuwe Kolk",
+        "city": "Assen",
+        "lat": 52.994304,
+        "lon": 6.5586416
+      },
+      "kindHint": "film",
+      "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "despitkeet-nl-web",
+      "name": "Openluchtmuseum De Spitkeet",
+      "rootUrl": "https://www.despitkeet.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.despitkeet.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "despitkeet.nl",
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-12"
     }
   ]
 }
