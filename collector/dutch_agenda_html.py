@@ -407,6 +407,11 @@ def parse_line_agenda(html_or_blocks, page_url: str, *, today: date | None = Non
         return 2 * good - 3 * bad + (1 if upcoming else 0) + (0.5 if base == today.year else 0)
 
     base = max((today.year - 1, today.year, today.year + 1), key=score)
+    dates = [d for d in _assign_years(items, base) if d]
+    if not any(item["year"] for item in items) and dates and (max(dates) - min(dates)).days > 400:
+        # Zonder jaartallen een lijst over meer dan een jaar: dat is een archief of een lijst van
+        # nieuw naar oud, en dan klopt het jaar niet. Liever niets dan verkeerde data.
+        return []
     out, seen = [], set()
     for item, day in zip(items, _assign_years(items, base)):
         if day is None or (item["weekday"] is not None and day.weekday() != item["weekday"]):

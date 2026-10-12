@@ -31,9 +31,11 @@ def test_zaalverhuur_afval_en_kopjes_zijn_geen_uitje():
     for title in ("Bezet", "Verhuur grote zaal", "Afval grijze container restafval", "Digitaal spreekuur",
                   "Repetitie Harmonie", "Verenigingenoverleg", "Startdatum", "Grote zaal (bezet)",
                   "Eerste kerstdag", "Kerstvakantie regio noord", "Bijeenkomst vrouwenvereniging", "Oudpapier",
-                  "2e Adventsdienst in de Andreaskerk"):
+                  "2e Adventsdienst in de Andreaskerk", "Proefrepetitie kerstkoor", "Nieuws uit Terherne",
+                  "Koopzondag 6 december", "Hemelvaartsdag", "Optie Andrea", "Banketstavenactie"):
         assert not_an_outing({"title": title}), title
-    for title in ("Herfstvakantie: knutselen voor kinderen", "Concert in de grote zaal", "Kerstconcert"):
+    for title in ("Herfstvakantie: knutselen voor kinderen", "Concert in de grote zaal", "Kerstconcert",
+                  "Koningsdag", "Nieuwjaarsduik", "Verkeersregels opfrissen"):
         assert not_an_outing({"title": title}) is None, title
 
 
@@ -43,7 +45,9 @@ def test_dorpsactiviteiten_krijgen_een_soort():
                 "Samen koffiedrinken": "eten", "Doarpslunch in MFC": "eten", "Frietavond": "eten",
                 "Brei- en haakcafé": "lezing", "Literatuurclub": "lezing", "Volkszang": "muziek",
                 "Jamsessie": "muziek", "Speel je mee ochtend": "kinderen", "Zwerfvuil inzamelen": "natuur",
-                "Krystmerk": "markt", "Koffieconcert met strijkkwartet": "muziek"}
+                "Krystmerk": "markt", "Koffieconcert met strijkkwartet": "muziek", "Dobbe spokentocht": "feest",
+                "Ladies night": "feest", "Dorpsetentje": "eten", "Verhalenavond": "lezing", "Paasvuur": "feest",
+                "Presentatie schetsplan dorpstuin": "lezing", "Fiets daagse": "natuur"}
     assert {title: classify({"title": title})["kind"] for title in expected} == expected
 
 
@@ -57,3 +61,24 @@ def test_agenda_van_een_vorig_jaar_of_zonder_jaar_levert_niets_op():
     events = parse_line_agenda("<h2>Agenda 2026</h2>" + lines, "https://dorp.example/agenda/", today=TODAY)
     assert [(e.title, e.start_date) for e in events] == [
         ("Spooktocht", "2026-11-13"), ("Kerstmarkt", "2026-12-12"), ("Nieuwjaarsduik", "2027-01-01")]
+
+
+def test_lijst_zonder_jaartallen_over_meer_dan_een_jaar_is_een_archief():
+    # Elke maand 'Even bieproaten', van nieuw naar oud: zonder jaartallen klopt het jaar dan niet.
+    months = ["december", "november", "oktober", "september", "augustus", "juli", "juni", "mei", "april",
+              "maart", "februari", "januari", "december", "november"]
+    lines = "<br>".join(f"Even bieproaten: 26 {m}" for m in months)
+    assert parse_line_agenda(f"<h2>Agenda 2026</h2><p>{lines}</p>", "https://dorp.example/agenda/", today=TODAY) == []
+
+
+def test_uitjes_verder_dan_anderhalf_jaar_vooruit_zijn_een_leesfout(tmp_path):
+    import json
+    from pipeline.v2.build import build
+    data, out = tmp_path / "data", tmp_path / "out"
+    data.mkdir()
+    rows = [{"id": i, "title": t, "startDate": d, "city": "Eenrum", "verificationStatus": "organizer_confirmed",
+             "eventUrl": f"https://dorp.example/{i}", "sourceUrl": f"https://dorp.example/{i}"}
+            for i, t, d in (("a", "Kerstmarkt", "2026-12-12"), ("b", "Dorpsfeest", "2033-08-28"))]
+    (data / "events.json").write_text(json.dumps(rows))
+    events, status = build(data, out, TODAY, {}, photo_cache={})
+    assert [e["title"] for e in events] == ["Kerstmarkt"] and status["teVerVooruit"] == 1

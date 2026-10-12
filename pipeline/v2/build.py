@@ -12,7 +12,7 @@ import json
 import re
 import sys
 from collections import Counter
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from collector.discover_venues import is_excluded
@@ -82,6 +82,7 @@ def source_names(path: Path) -> dict[str, str]:
 # soos of jeu de boules, is een vaste activiteit van een club of dorpshuis en geen uitje voor de
 # agenda. Voorstellingen, concerten, films, markten, tentoonstellingen en natuuruitjes blijven staan,
 # ook als ze vaak terugkomen.
+HORIZON_DAYS = 550          # uitjes verder vooruit: niet publiceren (zie build)
 ROUTINE_KEEP_KINDS = {"theater", "muziek", "film", "festival", "markt", "kunst", "natuur"}
 ROUTINE_MIN = 4             # minstens zo vaak in de agenda
 ROUTINE_MAX_GAP_DAYS = 14   # en gemiddeld (mediaan) hoogstens zoveel dagen ertussen
@@ -105,9 +106,12 @@ def routines(events: list[dict]) -> set[int]:
         if not title or len(days) < ROUTINE_MIN:
             continue
         gaps = sorted((b - a).days for a, b in zip(days, days[1:]))
-        if gaps[len(gaps) // 2] > ROUTINE_MAX_GAP_DAYS:
-            continue
-        drop |= {i for i in indexes if events[i].get("kind") not in ROUTINE_KEEP_KINDS}
+        median = gaps[len(gaps) // 2]
+        if median <= ROUTINE_MAX_GAP_DAYS:
+            drop |= {i for i in indexes if events[i].get("kind") not in ROUTINE_KEEP_KINDS}
+        elif median <= 35 and len(days) >= 5:
+            # Elke maand dezelfde bijeenkomst zonder herkenbare soort (een soos, een praatmiddag).
+            drop |= {i for i in indexes if events[i].get("kind") == "overig"}
     return drop
 
 
@@ -119,6 +123,10 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     # Vaste regel 1: nooit uitjes van een website op de uitsluitlijst (ook niet van een oude bron).
     excluded = [e for e in converted if any(is_excluded(u or "") for u in [e.get("url")] + [s.get("url") for s in e.get("sources") or []])]
     converted = [e for e in converted if e not in excluded]
+    # Verder dan anderhalf jaar vooruit is bijna altijd een leesfout (een verkeerd jaar).
+    horizon = (today + timedelta(days=HORIZON_DAYS)).isoformat()
+    too_far = [e for e in converted if (e.get("occurrences") or [{}])[0].get("date", "") > horizon]
+    converted = [e for e in converted if e not in too_far]
     outside = [e for e in converted if not in_area(e)]
     skipped = [e for e in converted if in_area(e) and not_an_outing(e)]
     events = merge_duplicates([e for e in converted if in_area(e) and not not_an_outing(e)])
@@ -182,6 +190,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "outsideArea": len(outside),
         "geenUitje": len(skipped),
         "vasteActiviteit": len(routine),
+        "teVerVooruit": len(too_far),
         "uitgeslotenBron": len(excluded),
         "area": {"center": AREA_CENTER, "radiusKm": AREA_RADIUS_KM},
         "byKind": dict(Counter(e["kind"] for e in events).most_common()),
