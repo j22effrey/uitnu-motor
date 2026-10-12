@@ -113,7 +113,12 @@ def _run_source(
     ics_fetch: Callable[..., list[RawEvent]] = ics_events.fetch,
     timeout: float = 15,
     deadline: float | None = None,
+    source_seconds: float | None = None,
 ) -> SourceRunResult:
+    if source_seconds:
+        # Elke bron krijgt hoogstens zoveel tijd: één trage website mag de rest niet ophouden.
+        own = time.monotonic() + source_seconds
+        deadline = own if deadline is None else min(deadline, own)
     source_id = str(source.get("id") or "")
     if not source_id:
         raise ValueError("source id is required")
@@ -228,16 +233,20 @@ def run_all(
     wordpress_fetch: Callable[..., tuple[list[RawEvent], dict]] = wordpress_events.fetch,
     ics_fetch: Callable[..., list[RawEvent]] = ics_events.fetch,
     budget_seconds: float | None = None,
+    source_seconds: float | None = None,
 ) -> dict[str, SourceRunResult]:
     """Alle actieve bronnen ophalen, een paar tegelijk.
 
     Met een tijdsbudget halen de bronnen na die tijd geen nieuwe pagina's meer op; wat ze al
-    gevonden hebben telt mee. Een bron die dan nog niet klaar is, staat erin met 'tijd op'."""
+    gevonden hebben telt mee. Een bron die dan nog niet klaar is, staat erin met 'tijd op'.
+    source_seconds: hoogstens zoveel tijd per bron (een trage website houdt de rest niet op)."""
     values = [x for x in sources if isinstance(x, dict) and x.get("enabled", True)]
     if not values:
         return {}
     deadline = time.monotonic() + budget_seconds if budget_seconds else None
     extra = {"deadline": deadline} if deadline is not None else {}
+    if source_seconds:
+        extra["source_seconds"] = source_seconds
     out: dict[str, SourceRunResult] = {}
     # Elke bron is een andere website: meer tegelijk is geen extra belasting voor één site.
     max_workers = max(1, min(int(workers or 1), 16, len(values)))

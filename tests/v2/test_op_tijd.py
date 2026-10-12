@@ -35,6 +35,11 @@ def test_bronnen_krijgen_de_deadline_mee_en_melden_tijd_op():
     assert results["traag"].diagnostics.get("tijdOp") and not results["snel"].diagnostics.get("tijdOp")
     # Zonder budget: geen deadline (zoals vroeger).
     run_all(sources[:1], site_runner=lambda source, timeout=15: CrawlResult())
+    # Elke bron hoogstens zoveel tijd, ook binnen een ruim budget.
+    seen.clear()
+    start = time.monotonic()
+    run_all(sources, site_runner=site_runner, budget_seconds=3600, source_seconds=60)
+    assert all(start < deadline <= time.monotonic() + 60 for deadline in seen.values())
 
 
 def _record(title, url, day="2026-10-20"):

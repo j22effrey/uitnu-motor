@@ -62,7 +62,8 @@ def test_nieuwe_bron_krijgt_soort_mee(tmp_path):
     sources.write_text(json.dumps({"sources": []}))
     source = promote_candidate(queue_path=queue, sources_path=sources, host="melk.example", name="De Melkfabriek", role="venue")["source"]
     assert source["kindHint"] == "theater"
-    assert source_kinds(sources) == {"melk.example": "theater"}
+    # Ook per zaal (voor uitjes met kaartjes op een andere website).
+    assert source_kinds(sources) == {"melk.example": "theater", "plek:de melkfabriek|bunne": "theater"}
 
 
 def test_avond_van_gisteren_komt_nu_door_de_keuring(tmp_path):
@@ -165,3 +166,22 @@ def test_datum_voor_de_titel_gaat_eraf():
     assert clean_title("Zondag 15 november 2026 – 14.30 uur – Florence Foster Jenkins") == "Florence Foster Jenkins"
     assert clean_title("1 mei Optocht") == "1 mei Optocht"  # geen scheidingsteken: de datum hoort bij de naam
     assert clean_title("  Wende  ") == "Wende"
+
+
+def test_soort_van_de_zaal_ook_met_kaartjes_op_een_andere_website():
+    from pipeline.v2.classify import classify, venue_key
+    rules = {"theatergeertteis.nl": "theater", venue_key("Theater vanBeresteyn", "Veendam"): "theater"}
+    ticket = {"title": "Stef Bos", "url": "https://tickets.theatergeertteis.nl/voorstelling/1"}
+    assert classify(ticket, {}, rules)["kind"] == "theater"
+    elsewhere = {"title": "Numidia", "url": "https://vanberesteyn.podiumnederland.nl/mtTicket/1",
+                 "venue": {"name": "Theater vanBeresteyn", "city": "Veendam"}}
+    assert classify(elsewhere, {}, rules)["kind"] == "theater"
+
+
+def test_knoppen_en_mededelingen_zijn_geen_uitje():
+    from pipeline.v2.classify import not_an_outing
+    assert not_an_outing({"title": "Start"}) and not_an_outing({"title": "Selecteer tijdstip"})
+    assert not_an_outing({"title": "Herfstvakantie: huisartsenpraktijk gesloten"})
+    assert not_an_outing({"title": "Kerkdiensten"})
+    assert not_an_outing({"title": "Startdag van het nieuwe seizoen"}) is None
+    assert not_an_outing({"title": "Open dag huisartsenpraktijk"}) is None

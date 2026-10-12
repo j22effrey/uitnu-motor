@@ -132,7 +132,10 @@ class _BlocksParser(HTMLParser):
         href = self.stack[-1]["href"] if self.stack else None
         if tag == "a":
             value = attrs_dict.get("href")
-            href = urljoin(self.page_url, str(value)) if value else None
+            url = urljoin(self.page_url, str(value)) if value else ""
+            # Alleen echte webpagina's: geen mailto:, tel: of javascript: als link van een uitje.
+            if url.startswith(("http://", "https://")):
+                href = url
         self._next_id += 1
         self.stack.append({
             "tag": tag,
@@ -247,6 +250,10 @@ def _date_only(value: str) -> bool:
     return len(re.sub(r"[^a-zA-Z]", "", rest)) < 3
 
 
+# Een kop met een losse aanduiding erachter ('Gespreksgroep Volzin Start'): die hoort niet bij de naam.
+_TRAILING_LABEL = re.compile(r"\s+(?:start|datum|aanvang|wanneer|tijd|locatie|meer info|lees meer)\s*:?\s*$", re.I)
+
+
 def _valid_title(value: str) -> bool:
     title = " ".join((value or "").split()).strip()
     if not 3 <= len(title) <= 140:
@@ -314,8 +321,10 @@ _TITLE_FIRST = re.compile(rf"^(?P<title>[^:–—]{{3,80}}?){_SEP}{_WHEN}(?P<res
 _DATE_FIRST = re.compile(rf"^{_WHEN}(?:,?\s+(?P<time>[0-2]?\d[:.][0-5]\d)(?:\s*uur)?)?{_SEP}(?P<title>.{{3,80}})$", re.I)
 _BARE_TIME = re.compile(r"^[\s,]*(?:om\s+|vanaf\s+|aanvang\s+)?([01]?\d|2[0-3])[:.]([0-5]\d)\b")
 # Regels die een datum noemen maar geen uitje zijn.
-_LABEL_TITLE = re.compile(r"^(?:datum|laatst|geplaatst|gepubliceerd|bijgewerkt|openingstijden|deadline|"
-                          r"sluitingsdatum|aanmelden|inschrijven|uiterlijk|vanaf|tot|t/m|gesloten|geopend)\b", re.I)
+_LABEL_TITLE = re.compile(r"^(?:datum|data|laatst|geplaatst|gepubliceerd|bijgewerkt|openingstijden|deadline|"
+                          r"sluitingsdatum|aanmelden|inschrijven|opgave|uiterlijk|vanaf|tot|t/m|gesloten|geopend|"
+                          r"start|begin|aanvang|einde?|wanneer|tijd|tijden|locatie|waar|kosten|prijs|entree|"
+                          r"toegang|info|informatie|contact|volgende|eerstvolgende)\b", re.I)
 
 
 def _parse_line(line: str, href: str | None) -> dict | None:
@@ -510,7 +519,7 @@ def _parse_heading_agenda(blocks: list[HtmlBlock], page_url: str, *, context_blo
             continue
         seen.add(key)
         out.append(AgendaEvent(
-            title=block.text.strip(),
+            title=_TRAILING_LABEL.sub("", block.text).strip(),
             start_date=event_date.isoformat(),
             time_text=time_text,
             event_url=event_url,

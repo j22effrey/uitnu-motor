@@ -308,3 +308,14 @@ def test_fabriek_publiceert_nooit_uitjes_van_een_uitgesloten_website(tmp_path):
     ]))
     events, status = build(data, out, TODAY, {}, photo_cache={})
     assert [e["title"] for e in events] == ["Kerstmarkt"] and status["uitgeslotenBron"] == 1
+
+
+def test_mailadres_is_geen_link_van_een_uitje_en_start_is_geen_titel():
+    html = """<div><h3>101 Dalmatiërs</h3><p>zaterdag 14 november 2026, 15:00</p>
+      <p><a href="mailto:kaartverkoop@theater.example">Kaartverkoop</a></p></div>
+      <div><h3>Gespreksgroep</h3><p>Start: 10 november 2026</p></div>
+      <div><h3>Leerhuis</h3><p>Start: 17 november 2026</p></div>
+      <div><h3>Meditatie</h3><p>Start: 24 november 2026</p></div>"""
+    events = parse_agenda(html, "https://theater.example/agenda/", today=TODAY)
+    assert not any((e.event_url or "").startswith("mailto:") for e in events)
+    assert "Start" not in {e.title for e in events}

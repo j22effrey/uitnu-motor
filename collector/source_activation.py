@@ -89,10 +89,17 @@ def default_place_for(candidate: dict, *, role: str) -> dict | None:
         return None
     places = []
     for evidence in candidate.get("evidence") or []:
-        if not isinstance(evidence, dict) or evidence.get("kind") not in ("osm", "tip", "dorpssite"):
+        if not isinstance(evidence, dict) or evidence.get("kind") not in ("osm", "tip", "dorpssite", "wikidata"):
             continue
         match = _OSM_ANCHOR.match(str(evidence.get("anchorText") or ""))
-        if match and match.group("city"):
+        if not match:
+            continue
+        if evidence.get("kind") == "wikidata":
+            # 'Bakkeveen (dorp)': de officiële website van een dorp; het dorp is zelf de plaats.
+            if match.group("kind").strip() == "dorp" and not match.group("city"):
+                places.append((None, match.group("name").strip(), evidence.get("lat"), evidence.get("lon")))
+            continue
+        if match.group("city"):
             venue = match.group("name").strip() if evidence.get("kind") == "osm" else None
             places.append((venue, match.group("city").strip(), evidence.get("lat"), evidence.get("lon")))
     cities = {city.casefold() for _, city, _, _ in places}

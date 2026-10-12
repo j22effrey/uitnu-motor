@@ -93,8 +93,15 @@ def test_oordeel_over_een_voorpagina():
     assert vs.judge_page(EENRUM, town_hall, text, NEARBY)[0] == "nee"
     # Geen gemeente, postcode of dorpen in de buurt op de pagina, wel dorpswoorden:
     bare = "Welkom bij het dorpshuis van Eenrum. Zaalhuur, agenda en nieuws van het dorpshuis voor iedereen. " * 2
-    assert vs.judge_page(EENRUM, "Dorpshuis", bare, NEARBY)[0] == "dorpssite"             # unieke plaatsnaam
-    assert vs.judge_page({**EENRUM, "dubbeleNaam": True}, "Dorpshuis", bare, NEARBY)[0] == "twijfel"
+    assert vs.judge_page(EENRUM, "Dorpshuis Eenrum", bare, NEARBY)[0] == "dorpssite"      # unieke plaatsnaam
+    assert vs.judge_page({**EENRUM, "dubbeleNaam": True}, "Dorpshuis Eenrum", bare, NEARBY)[0] == "twijfel"
+    # Unieke plaatsnaam, maar niet in de titel of het adres: misschien iemand met die achternaam.
+    sculptor = "Beeldhouwster Aly Eenrum uit Biddinghuizen. Ze geeft workshops voor dorpsgenoten en anderen. " * 2
+    assert vs.judge_page(EENRUM, "Werken met steen", sculptor, NEARBY)[0] != "dorpssite"
+    # Een politieke partij, een uitagenda of vakantiesite is geen dorpssite.
+    assert vs.judge_page(EENRUM, "Liberaal Eenrum | Lokale partij", text, NEARBY) == ("nee", "website van een politieke partij")
+    assert vs.judge_page(EENRUM, "Wat te doen in Eenrum vandaag?", text, NEARBY)[0] == "twijfel"
+    assert vs.judge_page(EENRUM, "Huur een huisje in Eenrum", text, NEARBY)[0] == "twijfel"
     # Een postcode van elders telt tegen: dan is het (waarschijnlijk) een dorp met dezelfde naam.
     elsewhere = bare + " Adres: Dorpsstraat 3, 7921 AB Eenrum."
     assert vs.judge_page(EENRUM, "Dorpshuis", elsewhere, NEARBY) == (
@@ -106,6 +113,11 @@ def test_oordeel_over_een_voorpagina():
     # Een websitenaam als dorpsbelangeneenrum.nl telt als dorpswoord.
     plain_page = "Eenrum. Nieuws, agenda en foto's. Kijk ook bij de vereniging. Contact via het formulier. " * 2
     assert vs.judge_page(EENRUM, "Home", plain_page, NEARBY, host="dorpsbelangeneenrum.nl")[0] == "dorpssite"
+    # Postcode: dezelfde eerste drie cijfers is 'uit de buurt'; alleen de eerste twee zegt niets
+    # (9163 Nes op Ameland is niet 9142 Nes bij Dokkum).
+    nes = {**EENRUM, "naam": "Nes", "namen": ["Nes"], "gemeenten": [], "postcodes": ["9142"]}
+    assert vs.region_score(nes, "Dorpsbelang Nes, 9163 AB Nes", []) == (0, [])
+    assert vs.region_score(nes, "Dorpsbelang Nes, 9143 AB Nes", [])[0] == 2
     # Jaartallen zijn geen postcode.
     assert vs.region_score({**EENRUM, "gemeenten": []}, "Uitslag 2026 NK in Eenrum", []) == (0, [])
 
@@ -135,7 +147,7 @@ def test_dorpswebsite_zoeken_met_robots_en_doorverwijzingen():
     log = []
     exists = {"eenrum.nl", "dorpsbelangeneenrum.nl", "eenrum.com"}
     sites = vs.check_place(EENRUM, NEARBY, resolver=lambda host: host in exists, fetcher=_site_fetcher(pages, log))
-    verdicts = {s["adres"]: (s["oordeel"], s["reden"]) for s in sites}
+    verdicts = {s.get("adres", s["url"]): (s["oordeel"], s["reden"]) for s in sites}
     assert verdicts["https://eenrum.nl/"] == ("nee", "verwijst door naar domeinenbank.nl")
     assert verdicts["https://dorpsbelangeneenrum.nl/"][0] == "dorpssite"
     assert verdicts["https://eenrum.com/"] == ("nee", "robots.txt staat de robot niet toe")

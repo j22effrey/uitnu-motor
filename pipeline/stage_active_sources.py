@@ -108,6 +108,9 @@ def stage_results(results: dict[str, SourceRunResult]) -> dict:
     }
 
 
+SOURCE_SECONDS = 240  # hoogstens vier minuten per bron (met een tijdsbudget)
+
+
 def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seconds: float | None = None) -> dict:
     """Alle bronnen ophalen en keuren. Met een tijdsbudget: ophalen krijgt het grootste deel, het
     opzoeken van plaatsen de rest; wat niet af is, telt niet als 'weg' (zie build_auto_events)."""
@@ -115,7 +118,8 @@ def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seco
     sources = load_active_sources(sources_path)
     roots = {str(s.get("id") or ""): str(s.get("rootUrl") or "") for s in sources}
     results = run_all(sources, workers=workers, timeout=timeout,
-                      budget_seconds=budget_seconds * 0.75 if budget_seconds else None)
+                      budget_seconds=budget_seconds * 0.75 if budget_seconds else None,
+                      source_seconds=SOURCE_SECONDS if budget_seconds else None)
     deadline = started + budget_seconds if budget_seconds else None
     results = enrich_results(results, timeout=min(timeout, 8), deadline=deadline)
     staged = stage_results(results)

@@ -40,31 +40,34 @@ def _compile(patterns: Iterable[str]) -> list[re.Pattern[str]]:
 # Trefwoorden per soort. Nederlandse samenstellingen ("stadswandeling") zijn de reden
 # dat sommige patronen bewust zonder woordgrens aan het begin werken.
 PATTERNS: dict[str, list[re.Pattern[str]]] = {
-    "film": _compile([r"\bfilm", r"bioscoop", r"cinema", r"filmhuis", r"documentaire"]),
+    "film": _compile([r"\bfilm", r"bioscoop", r"cinema", r"filmhuis", r"documentaire", r"cinekid"]),
     "sport": _compile([
         r"hardloop", r"(?<!ver)(?<!door)(?<!aan)(?<!uit)loop\b", r"run\b", r"\btrail", r"toertocht", r"\d+\s?(km|kilometer|mijl)\b", r"\bmijl\b", r"marathon",
         r"triatlon", r"wedstrijd", r"toernooi", r"regatta", r"roeiwedstrijd", r"schaats",
         r"wielren", r"mountainbike", r"\bmtb\b", r"voetbal", r"korfbal", r"handbal", r"hockey",
-        r"zwemtocht", r"sportdag", r"\brace\b", r"obstacle",
+        r"zwemtocht", r"sportdag", r"\brace\b", r"obstacle", r"gymnastiek", r"biljart", r"\bsjoel", r"koersbal",
     ]),
     "natuur": _compile([
         r"wandel", r"excursie", r"natuur", r"vogel", r"sterren", r"paddenstoel", r"wildpluk",
         r"kwelder", r"wadlo", r"boswachter", r"fietstocht", r"struin", r"nacht van de nacht",
         r"huifkar", r"landgoed", r"vaartocht", r"zwerftocht", r"rondvaart", r"nationaal park",
+        r"kuier", r"pelgrim",
     ]),
     "eten": _compile([
         r"culinair", r"food", r"proeverij", r"\bproeven\b", r"\bwijn", r"\bbier(?!run)", r"smaak",
         r"high tea", r"brunch", r"\bdiner\b", r"barbecue", r"\bbbq\b", r"kookworkshop",
-        r"whisk(e)?y", r"cocktail", r"\bgin\b",
+        r"whisk(e)?y", r"cocktail", r"\bgin\b", r"(samen|gezamenlijk) eten", r"aan de kook", r"stamppot",
+        r"maaltijd", r"\bkoffie(?!concert)", r"\blunch", r"vrijmibo", r"borrel",
     ]),
     "markt": _compile([
         r"markt", r"(?<=\w)maart\b", r"braderie", r"beurs", r"fair\b", r"salon\b",
-        r"reis ?event", r"reizen\b.*\bevent", r"rommel", r"vlooien", r"snuffel",
+        r"reis ?event", r"reizen\b.*\bevent", r"rommel", r"vlooien", r"snuffel", r"krystmerk", r"\bmerke\b",
     ]),
     "feest": _compile([
         r"kermis", r"feest", r"koningsdag", r"koningsnacht", r"sinterklaas", r"intocht",
         r"carnaval", r"optocht", r"lampion", r"halloween", r"spooktocht", r"lichtjes",
-        r"vuurwerk", r"oud en nieuw",
+        r"vuurwerk", r"oud en nieuw", r"line ?dance", r"volksdans", r"\bquiz", r"gezellige avond", r"gesellige jun",
+        r"oktoberfest", r"oktofest", r"nieuwjaarsduik",
     ]),
     "theater": _compile([
         r"theater", r"voorstelling", r"toneel", r"cabaret", r"comedy", r"stand-?up",
@@ -77,14 +80,18 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"clubnacht", r"\bparty\b", r"\bjazz", r"\bpop\b", r"\brock", r"\bblues", r"\bmetal\b",
         r"hip-?hop", r"techno", r"\bhouse\b", r"recital", r"\borgel", r"cantate", r"muziek",
         r"singer-?songwriter", r"\brave\b", r"taptoe", r"\btrio\b", r"kwartet", r"kwintet", r"\bensemble\b",
+        r"worship", r"\bmusic\b",
     ]),
     "kunst": _compile([
         r"tentoonstelling", r"expositie", r"\bexpo\b", r"museum", r"galerie", r"\bkunst",
-        r"atelier", r"monument", r"erfgoed", r"open kerk", r"kerkpad", r"rondleiding",
+        r"atelier", r"monument", r"erfgoed", r"open kerk", r"kerkpad", r"rondleiding", r"beelden van",
+        r"beeldhouw", r"historisch",
     ]),
     "lezing": _compile([
         r"lezing", r"workshop", r"cursus", r"masterclass", r"\bdebat\b",
-        r"symposium", r"voorlees", r"\bcollege\b",
+        r"symposium", r"voorlees", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
+        r"repair ?caf", r"bloemschik", r"verkeersregels", r"creatief caf", r"handwerk", r"informatie ?avond",
+        r"info ?avond",
     ]),
     # Uitjes die vooral om kinderen draaien. Een voorstelling of concert voor kinderen blijft
     # theater of muziek, met het label 'Voor kinderen'.
@@ -111,11 +118,20 @@ CHILDREN = re.compile(r"kinder|kids|familie|jeugd|peuter|kleuter|sinterklaas|spe
 THEATER_FESTIVAL = re.compile(r"cabaret|theater|comedy|toneel")
 OUTDOOR = re.compile(r"\bbuiten|openlucht|strand")
 # Geen uitje: gewone kerkdiensten en gebedsbijeenkomsten (wel: concerten en open dagen in kerken).
-NOT_AN_OUTING = re.compile(r"\b(eredienst|kerkdienst|zondagsdienst|ochtenddienst|middagdienst|avonddienst"
+NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst|ochtenddienst|middagdienst|avonddienst"
                            r"|gebedsdienst|gebedsuur|gebedskring|bijbelstudie|bijbelkring|eucharistieviering"
-                           r"|woord- en communieviering|rouwdienst|uitvaartdienst"
+                           r"|woord- en communieviering|rouwdienst|uitvaartdienst|kerst(?:nacht)?dienst|tsjerketsjinst"
+                           r"|gemeenteavond|gearkomste|redactievergadering"
+                           # mededelingen voor het dorp, geen uitje
+                           r"|oud papier|collecte\w*|kopij|wintertijd|zomertijd"
                            # vergaderingen en bijeenkomsten voor leden of vrijwilligers: niet voor publiek
-                           r"|ledenvergadering|jaarvergadering|bestuursvergadering|alv|vrijwilligers\w*|besloten)\b")
+                           r"|ledenvergadering|jaarvergadering|bestuursvergadering|alv|vrijwilligers\w*|besloten"
+                           # mededelingen: iets is dicht (de huisartsenpraktijk, de bibliotheek)
+                           r"|(?:\w*praktijk|apotheek|bibliotheek|balie|kantoor|winkel|dorpshuis|kerk) (?:is )?gesloten)\b")
+# Knoppen en kopjes van een website die als naam van een uitje zijn meegekomen.
+NOT_A_TITLE = re.compile(r"^(?:start|begin|aanvang|selecteer (?:een )?(?:tijdstip|datum|dag)|kies (?:een )?(?:tijdstip|datum|dag)"
+                         r"|bestel (?:je )?tickets?|koop (?:je )?tickets?|tickets?|meer info(?:rmatie)?|lees meer|bekijk"
+                         r"|reserveren|aanmelden|inschrijven)$")
 
 # Websites die vrijwel alleen een soort aanbieden. Alleen gebruikt als trefwoorden niets opleveren.
 VENUE_RULES: dict[str, str] = {
@@ -136,6 +152,21 @@ def _matches(text: str) -> dict[str, list[str]]:
 def _host(url: str) -> str:
     m = re.match(r"https?://(?:www\.)?([^/]+)", url or "")
     return m.group(1).lower() if m else ""
+
+
+def _rule_for(rules: dict[str, str], host: str) -> str | None:
+    """De soort bij een website, ook voor een onderdeel ervan (tickets.theater.nl -> theater.nl)."""
+    parts = host.split(".")
+    for start in range(0, max(1, len(parts) - 1)):
+        kind = rules.get(".".join(parts[start:]))
+        if kind:
+            return kind
+    return None
+
+
+def venue_key(name: str | None, city: str | None) -> str:
+    """Sleutel voor 'deze zaal in deze plaats' (de vaste plek van een bron)."""
+    return f"plek:{normalize(name or '')}|{normalize(city or '')}"
 
 
 def _is_multiday(event: dict) -> bool:
@@ -254,9 +285,13 @@ def classify(event: dict, overrides: dict | None = None,
     # 4. Locatie of bron
     rules = {**(venue_rules or {}), **VENUE_RULES}
     for url in (event.get("url"), *(s.get("url") for s in event.get("sources") or [])):
-        kind = rules.get(_host(url or ""))
+        kind = _rule_for(rules, _host(url or ""))
         if kind in KINDS:
             return result(kind, "locatie", f"website {_host(url or '')}", 0.6)
+    venue = event.get("venue") if isinstance(event.get("venue"), dict) else {}
+    kind = rules.get(venue_key(venue.get("name"), venue.get("city")))
+    if venue.get("name") and kind in KINDS:
+        return result(kind, "locatie", f"zaal {venue['name']}", 0.6)
 
     # 5. Oude categorie of discipline als hint (geen 'festival' zonder bewijs)
     hint = LEGACY_HINTS.get(event.get("legacyCategory") or "")
@@ -288,5 +323,8 @@ def page_hints(text: str) -> dict:
 
 def not_an_outing(event: dict) -> str | None:
     """De reden waarom dit geen uitje is (een gewone kerkdienst), of None."""
-    hit = NOT_AN_OUTING.search(normalize(event.get("title") or ""))
+    title = normalize(event.get("title") or "")
+    if NOT_A_TITLE.match(title.strip(" .:!")):
+        return f"geen naam van een uitje: '{event.get('title')}'"
+    hit = NOT_AN_OUTING.search(title)
     return f"geen uitje: '{hit.group(0)}'" if hit else None

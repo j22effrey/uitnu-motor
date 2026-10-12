@@ -99,7 +99,18 @@ VILLAGE_WORDS = re.compile(
     r"| buurtvereniging | dorpskrant | dorpsblad | dorpsagenda | dorpsfeest | ons dorp | us doarp "
     r"| doarpsbelang | doarpshus | doarpshuis | it doarp | mienskip | feestvereniging | oranjevereniging "
     r"| oranjecomite | ijsvereniging | dorpsplein | dorpsbewoners | dorpsgenoten | dorpsgemeenschap "
-    r"| dorpsleven ")
+    r"| dorpsleven | (?:buurt en )?belangen ?vereniging | plaatselijke belangen | pleatslik belang "
+    r"| dorps ?app | dorpsportaal | dorpssite | dorpswebsite | doarpsite | website van het dorp "
+    r"| buertferiening | doarpskrante ")
+WEAK_VILLAGE_WORDS = {"dorpsgenoten", "dorpsbewoners", "dorpsleven", "dorpsgemeenschap", "dorpsplein", "dorp"}
+# Titels van sites die over een plaats gaan, maar niet van het dorp zelf zijn: een uitagenda,
+# nieuwssite, toeristische of vakantiesite, of een bedrijf. Die eerst nakijken (vaste regel 1).
+NOT_VILLAGE_TITLE = re.compile(
+    r" (?:wat te doen|uitagenda|uit agenda|uittips|dagje uit|tourist|toerist\w*|vvv|stadskrant|krant|nieuwsblad"
+    r"|huur een|vakantie\w*|huisje\w*|camping|hotel|b b|bed and breakfast|webshop|beleef|bezoek|ontdek"
+    r"|bouwregisseurs|autobedrijf|automotive|family|blog|inloggen) ")
+POLITICAL_TITLE = re.compile(r" (?:partij|politiek\w*|fractie|liberaal|cda|pvda|vvd|d66|groenlinks|christenunie"
+                             r"|gemeentebelangen|lokaal belang) ")
 # Een websitenaam als dorpsbelangeneenrum.nl of mfcengelbert.nl zegt zelf al dat het om het dorp gaat.
 VILLAGE_HOST = re.compile(r"dorpsbelang|doarpsbelang|plaatselijkbelang|plaatselijk-belang|dorpsvereniging|dorpshuis"
                           r"|^(?:www\.)?(?:mfc|pb)")
@@ -298,9 +309,9 @@ def region_score(place: dict, text: str, nearby: list[str]) -> tuple[int, list[s
     if codes and on_page:
         if codes & on_page:
             score, why = score + 3, why + ["eigen postcode"]
-        elif {c // 100 for c in codes} & {c // 100 for c in on_page}:
+        elif {c // 10 for c in codes} & {c // 10 for c in on_page}:
             score, why = score + 2, why + ["postcode uit de buurt"]
-        else:
+        elif not {c // 100 for c in codes} & {c // 100 for c in on_page}:
             score, why = score - 2, why + ["postcode van elders"]
     neighbours = [n for n in nearby if n in flat]
     if neighbours:
@@ -333,6 +344,8 @@ def judge_page(place: dict, title: str, text: str, nearby: list[str], *, officia
     if " gemeente " in heading and not VILLAGE_WORDS.search(heading) and (not place.get("gemeenten") or any(
             f" gemeente {plain(g).strip()} " in heading for g in place["gemeenten"])):
         return "nee", "website van de gemeente (die zoekt de motor al apart)"
+    if POLITICAL_TITLE.search(heading):
+        return "nee", "website van een politieke partij"
     score, why = region_score(place, f"{title} {text}", nearby)
     village = sorted({m.strip() for m in VILLAGE_WORDS.findall(flat)})
     business = sorted({m.strip() for m in BUSINESS_WORDS.findall(flat)})
@@ -344,7 +357,18 @@ def judge_page(place: dict, title: str, text: str, nearby: list[str], *, officia
         if score < 0:
             return "twijfel", "officiële website volgens Wikidata, maar " + ", ".join(why)
         return "dorpssite", "officiële website volgens Wikidata"
-    if score < 2 and village and score >= 0 and place.get("dubbeleNaam") is False:
+    unnamed = heading
+    for name in names:  # 'Kleine Huisjes' is een dorp, geen vakantiehuisje
+        unnamed = unnamed.replace(name, " ")
+    other = NOT_VILLAGE_TITLE.search(unnamed)
+    if village and other:
+        return "twijfel", f"lijkt een {other.group(0).strip()}-site, niet van het dorp zelf: eerst nakijken"
+    # Een unieke plaatsnaam, maar niets over de streek op de pagina: dan moet de plaatsnaam in de titel
+    # staan of een sterk dorpswoord op de pagina (dorpsbelangen, dorpshuis, ...). Alleen 'dorpsgenoten'
+    # kan ook op de site van iemand met die achternaam staan.
+    strong = any(word not in WEAK_VILLAGE_WORDS for word in village)
+    titled = any(name in heading for name in names)
+    if score < 2 and village and (strong or titled) and score >= 0 and place.get("dubbeleNaam") is False:
         return "dorpssite", f"dorpswoorden ({', '.join(village[:3])}); de plaatsnaam komt in het land maar één keer voor"
     if score < 2:
         reason = ", ".join(why) if why else "niets op de pagina wijst naar deze streek"
@@ -357,11 +381,13 @@ def judge_page(place: dict, title: str, text: str, nearby: list[str], *, officia
 
 
 def site_name(title: str, place_name: str) -> str:
-    """Een korte naam uit de paginatitel: 'Home - Dorpsbelangen Eenrum' -> 'Dorpsbelangen Eenrum'."""
-    parts = [p.strip() for p in re.split(r"\s+[|\-–—:·»]\s+|\s*\|\s*", title or "") if p.strip()]
+    """Een korte naam uit de paginatitel: 'Home - Dorpsbelangen Eenrum' -> 'Dorpsbelangen Eenrum'.
+    Liever een stuk met de plaatsnaam en zonder websiteadres ('thesinge.com: website van ...')."""
+    parts = [p.strip() for p in re.split(r"\s*[|·»]\s*|\s+[-–—]\s+|:\s+", title or "") if p.strip()]
     parts = [p for p in parts if plain(p).strip() not in {"home", "welkom", "homepage", "startpagina", "index"}]
     own = [p for p in parts if plain(place_name) in plain(p)]
-    name = (own or parts or [place_name])[0]
+    nice = [p for p in own if not re.search(r"\.(?:nl|com|net|org|info|eu|nu|frl)\b", p, re.I)]
+    name = (nice or own or parts or [place_name])[0]
     return name[:80]
 
 
@@ -434,7 +460,9 @@ def check_site(url: str, place: dict, nearby: list[str], *, fetcher: Callable[..
                 if (stop := moved(target)) is not None:
                     return stop
                 continue
-            return {**result, "oordeel": "fout" if exc.code >= 500 else "nee", "reden": f"foutmelding {exc.code}"}
+            # 429 (te veel verzoeken) en 5xx zijn tijdelijk: later opnieuw proberen.
+            temporary = exc.code >= 500 or exc.code == 429
+            return {**result, "oordeel": "fout" if temporary else "nee", "reden": f"foutmelding {exc.code}"}
         except Exception as exc:
             return {**result, "oordeel": "fout", "reden": f"niet bereikbaar ({type(exc).__name__})"}
         html = page.text or ""
@@ -507,6 +535,8 @@ def check_place(place: dict, nearby: list[str], *, resolver: Callable[[str], boo
 
     Een 'officiële website' die bij meerdere plaatsen staat (meestal die van de gemeente) is niet
     de eigen website van het dorp en wordt overgeslagen."""
+    if place.get("soort") == "stad":
+        return []  # een grote stad: de website van de gemeente zoekt de motor al apart
     tries: list[tuple[str, bool]] = [(url, True) for url in place.get("websites") or [] if host_key(url) not in shared]
     for domain in domain_guesses(place):
         host = existing_host(domain, resolver)
@@ -525,8 +555,18 @@ def check_place(place: dict, nearby: list[str], *, resolver: Callable[[str], boo
         seen.add(final)
         if official:
             site["bron"] = "wikidata"
-        sites.append(site)
+        sites.append(_slim(site))
     return sites
+
+
+def _slim(site: dict) -> dict:
+    """Klein houden: bij 'nee' of 'fout' alleen het adres en de reden bewaren."""
+    if site.get("adres") == site.get("url"):
+        site.pop("adres", None)
+    if site.get("oordeel") in ("nee", "fout"):
+        site.pop("titel", None)
+        site.pop("naam", None)
+    return site
 
 
 def place_due(entry: dict | None, today: date) -> bool:
