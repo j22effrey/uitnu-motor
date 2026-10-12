@@ -50,6 +50,9 @@ def test_wachtrij_wordt_bijgewerkt(tmp_path):
     osm, wiki, queue, known = (tmp_path / n for n in ("osm.json", "wiki.json", "queue.json", "known.json"))
     osm.write_text(json.dumps(OSM)); wiki.write_text(json.dumps(WIKI))
     known.write_text(json.dumps({"sources": [{"rootUrl": "https://www.deklinker.nl/"}]}))
-    assert main(["--queue", str(queue), "--known", str(known), "--osm-json", str(osm), "--wikidata-json", str(wiki)]) == 0
+    places = tmp_path / "places.json"
+    places.write_text(json.dumps({"results": {"bindings": []}}))
+    assert main(["--queue", str(queue), "--known", str(known), "--osm-json", str(osm), "--wikidata-json", str(wiki),
+                 "--places-json", str(places), "--tips", str(tmp_path / "geen-tips.json")]) == 0
     hosts = {c["host"] for c in json.loads(queue.read_text())["candidates"]}
     assert hosts == {"dorpshuis.example", "testfestival.example"}
