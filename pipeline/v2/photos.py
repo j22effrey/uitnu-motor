@@ -4,7 +4,7 @@
    staat in de agenda; de foto zelf wordt niet gekopieerd.
 2. Anders een foto van Wikimedia Commons, met maker en licentie: eerst van de plek
    (het gebouw), dan van de plaats (het dorp of de stad).
-3. Anders geen foto: de site toont dan de eigen illustratie bij de soort uitje.
+3. Anders geen foto: de site toont dan een kaart met alleen tekst. Geen illustraties.
 
 Deze module haalt zelf niets op. De zoeker (collector/event_photos.py) vult de cache
 data/photos.json; de fabriek leest die hier uit. Zo blijft de fabriek snel en voorspelbaar.
@@ -13,12 +13,8 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from collections import Counter
+import zlib
 from urllib.parse import urlparse
-
-# Een foto van een dorp zegt iets ("dit is in Bourtange"). Bij een plaats met veel uitjes zou
-# overal dezelfde foto staan; dan is de illustratie per soort duidelijker en afwisselender.
-PLACE_PHOTO_MAX_EVENTS = 4
 
 # Een pagina waar drie of meer verschillende uitjes naar verwijzen is een agendalijst,
 # geen pagina van één uitje. De foto daarop hoort niet bij elk uitje afzonderlijk.
@@ -72,6 +68,16 @@ def list_pages(events: list[dict]) -> set[str]:
     return {page for page, names in titles.items() if len(names) >= LIST_PAGE_MIN_TITLES}
 
 
+def page_facts_for(event: dict, cache: dict, lists: set[str]) -> dict:
+    """Wat de organisator op de pagina van dit uitje over de soort zegt (uit de cache van de fotozoeker)."""
+    pages = cache.get("pages") or {}
+    for page in event_pages(event):
+        entry = pages.get(page) or {}
+        if page not in lists and (entry.get("type") or entry.get("hints")):
+            return {k: entry[k] for k in ("type", "hints") if entry.get(k)}
+    return {}
+
+
 def _organizer_photo(event: dict, cache: dict, lists: set[str], names: dict[str, str]) -> dict | None:
     pages = cache.get("pages") or {}
     homepages = cache.get("homepages") or {}
@@ -98,6 +104,19 @@ def _organizer_photo(event: dict, cache: dict, lists: set[str], names: dict[str,
     return None
 
 
+def _pick(record: dict | None, event: dict, slot: int | None = None) -> dict | None:
+    """Per gebouw of plaats bewaart de zoeker meerdere foto's; dit uitje krijgt er één van.
+    Met 'slot' om de beurt (zie attach_photos), anders vast gekozen op de naam van het uitje."""
+    if not record:
+        return None
+    options = [r for r in record.get("photos") or [] if isinstance(r, dict) and r.get("url")]
+    if not options:
+        return record if record.get("url") else None
+    if slot is None:
+        slot = zlib.crc32(str(event.get("slug") or event.get("id") or event.get("title")).encode())
+    return options[slot % len(options)]
+
+
 def _commons_photo(record: dict | None, *, match: str, alt: str) -> dict | None:
     if not record or not record.get("url"):
         return None
@@ -116,32 +135,50 @@ def _commons_photo(record: dict | None, *, match: str, alt: str) -> dict | None:
     }
 
 
-def choose_photo(event: dict, cache: dict, *, lists: set[str], names: dict[str, str],
-                 events_per_place: Counter) -> dict | None:
-    photo = _organizer_photo(event, cache, lists, names)
-    if photo:
-        return photo
+def _commons_source(event: dict, cache: dict) -> tuple[str, dict, str, str] | None:
+    """Het gebouw, anders de plaats, waarvan Wikimedia Commons foto's heeft."""
     commons = cache.get("commons") or {}
-    venue = venue_name(event)
-    key = venue_key(event)
-    if key:
-        photo = _commons_photo(commons.get(key), match="plek", alt=venue or "")
-        if photo:
-            return photo
     city = (event.get("venue") or {}).get("city")
-    key = place_key(event)
-    if key and events_per_place[norm(city)] <= PLACE_PHOTO_MAX_EVENTS:
-        return _commons_photo(commons.get(key), match="plaats", alt=city or "")
+    for key, match, alt in ((venue_key(event), "plek", venue_name(event)), (place_key(event), "plaats", city)):
+        record = commons.get(key) if key else None
+        if _pick(record, event):
+            return key, record, match, alt or ""
     return None
 
 
+def choose_photo(event: dict, cache: dict, *, lists: set[str], names: dict[str, str],
+                 slot: int | None = None) -> dict | None:
+    photo = _organizer_photo(event, cache, lists, names)
+    if photo:
+        return photo
+    source = _commons_source(event, cache)
+    if not source:
+        return None
+    _, record, match, alt = source
+    return _commons_photo(_pick(record, event, slot), match=match, alt=alt)
+
+
+def _when(event: dict) -> tuple:
+    dates = sorted(o.get("date") or "" for o in event.get("occurrences") or [])
+    return (dates[0] if dates else "", norm(event.get("title")), str(event.get("id") or ""))
+
+
 def attach_photos(events: list[dict], cache: dict, names: dict[str, str] | None = None) -> dict[str, int]:
-    """Zet bij elk uitje 'image' (of None) en tel hoe vaak welke soort foto is gekozen."""
+    """Zet bij elk uitje 'image' (of None) en tel hoe vaak welke soort foto is gekozen.
+
+    Uitjes met foto's van hetzelfde gebouw of dezelfde plaats krijgen op datum om de beurt een
+    andere foto, zodat uitjes die in de agenda onder elkaar staan niet dezelfde foto hebben."""
+    names = names or {}
     lists = list_pages(events)
-    per_place = Counter(norm((e.get("venue") or {}).get("city")) for e in events)
-    counts = {"organisator": 0, "wikimedia": 0, "illustratie": 0}
+    groups: dict[str, list[dict]] = {}
     for event in events:
-        photo = choose_photo(event, cache, lists=lists, names=names or {}, events_per_place=per_place)
+        source = None if _organizer_photo(event, cache, lists, names) else _commons_source(event, cache)
+        if source:
+            groups.setdefault(source[0], []).append(event)
+    slots = {id(e): i for group in groups.values() for i, e in enumerate(sorted(group, key=_when))}
+    counts = {"organisator": 0, "wikimedia": 0, "zonder": 0}
+    for event in events:
+        photo = choose_photo(event, cache, lists=lists, names=names, slot=slots.get(id(event)))
         event["image"] = photo
-        counts[photo["type"] if photo else "illustratie"] += 1
+        counts[photo["type"] if photo else "zonder"] += 1
     return counts

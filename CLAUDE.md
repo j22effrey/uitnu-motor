@@ -1,6 +1,8 @@
 # UITNU motor
 
-UITNU is een uitagenda voor Groningen en omgeving: alles binnen 60 km van Groningen-centrum.
+UITNU is de werknaam van een uitagenda; de definitieve naam komt later. De proef draait in één
+regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_KM` in
+`pipeline/v2/build.py`). Daarna wordt het landelijk, dus bouw niets dat alleen voor Groningen werkt.
 
 ## Communicatie
 
@@ -10,7 +12,8 @@ UITNU is een uitagenda voor Groningen en omgeving: alles binnen 60 km van Gronin
 
 - `j22effrey/uitnu-motor` (openbaar, deze repo): de motor. Leidend voor `collector/`, `pipeline/`
   en `tests/v2/`. Draait elke nacht via `.github/workflows/motor.yml` en publiceert
-  `data/v2/events.json` (met `data/v2/status.json` als verslag).
+  `data/v2/events.json` (met `data/v2/status.json` als verslag en `data/v2/twijfel.json` als lijst
+  met uitjes waarvan de soort nog nagekeken moet worden).
 - `j22effrey/uitnu` (privé), branch `v2`: de site in `site/` (Astro). Cloudflare Pages bouwt die
   automatisch en haalt de agenda uit deze motor.
 
@@ -21,9 +24,12 @@ UITNU is een uitagenda voor Groningen en omgeving: alles binnen 60 km van Gronin
    datum, tijd, plek, link), nooit teksten kopiëren. De lijst met uitgesloten sites staat in
    `EXCLUDED_HOSTS` in `collector/discover_venues.py`.
 2. **robots.txt respecteren.** Foto's: die van de organisator rechtstreeks tonen met naam, anders
-   Wikimedia Commons met maker en licentie, anders de eigen illustratie.
-3. **Festival** betekent alleen: meerdere podia op een eigen, afgezet terrein. Twijfelgevallen eerst
-   uitzoeken, en de reden vastleggen in `pipeline/v2/overrides.json`.
+   Wikimedia Commons met maker en licentie (eerst het gebouw, dan de plaats). Geen illustraties:
+   zonder foto toont de site een kaart met alleen tekst.
+3. **Festival** betekent alleen: een groot terrein (of meerdere zalen of locaties), meerdere podia en
+   vooral verschillende artiesten. 'Festival' in de naam is geen bewijs: een springkussenfestival is
+   'kinderen', een whiskyfestival 'eten'. Twijfelgevallen eerst uitzoeken, en de reden vastleggen in
+   `pipeline/v2/overrides.json` (festivalregister onder `namen`, altijd met `reden`).
 4. **Werkwijze.** Altijd eerst testen (`python -m pytest tests/v2`), dan een pull request met uitleg
    in gewone taal.
 
@@ -35,7 +41,17 @@ UITNU is een uitagenda voor Groningen en omgeving: alles binnen 60 km van Gronin
 3. `collector/auto_activate.py`: zet geschikte bronnen aan in `collector/web_crawl_sources.json`.
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
    en schrijven `data/auto_events.json`.
-5. `collector/event_photos.py`: zoekt foto's (organisator, anders Wikimedia Commons) en onthoudt
-   ze in `data/photos.json`. `pipeline/v2/photos.py` kiest per uitje de foto; zonder foto toont
-   de site de eigen illustratie bij de soort.
-6. `pipeline/v2/build.py`: voegt alles samen, deelt in, kiest foto's, keurt (`gate.py`) en publiceert.
+5. `collector/event_photos.py`: zoekt foto's (organisator, anders meerdere foto's per gebouw of
+   plaats van Wikimedia Commons) en onthoudt ze in `data/photos.json`. Hij noteert ook wat de
+   organisator zelf over de soort zegt (alleen de conclusie, geen tekst). `pipeline/v2/photos.py`
+   kiest per uitje de foto; uitjes in dezelfde plaats krijgen om de beurt een andere foto.
+6. `pipeline/v2/build.py`: voegt alles samen, laat gewone kerkdiensten weg, deelt in
+   (`classify.py`), kiest foto's, keurt (`gate.py`) en publiceert.
+
+## Indeling (soorten)
+
+Muziek, Festival, Theater en comedy, Film, Markt en beurs, Feest en kermis, Kinderen en familie,
+Sport, Natuur en buiten, Kunst en erfgoed, Lezing en workshop, Eten en drinken, Overig
+(`pipeline/v2/kinds.py`). Volgorde van beslissen: correctie of festivalregister, trefwoorden, wat de
+organisator zelf op de pagina zet (schema.org), de soort van het podium, oude hints, anders 'overig'.
+Elke uitkomst heeft een reden. De testset staat in `tests/v2/testset_soorten.json`.

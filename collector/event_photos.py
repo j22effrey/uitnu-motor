@@ -1,11 +1,15 @@
 """Fotozoeker: zoekt elke nacht foto's bij de uitjes en onthoudt ze in data/photos.json.
 
+Hij leest ook wat de organisator over de soort uitje zegt (schema.org-soort en trefwoorden),
+zodat de fabriek het uitje goed kan indelen. Daarvan wordt alleen de conclusie bewaard.
+
 Per uitje, volgens vaste regel 2:
 1. De pagina van de organisator over het uitje lezen (eerst robots.txt) en alleen het adres
    van de foto noteren: uit schema.org (Event.image), anders og:image of twitter:image.
    Ook de voorpagina van die website, om de standaardfoto van de hele site te herkennen.
-2. Voor uitjes zonder eigen foto: in Wikidata het gebouw of de plaats opzoeken, en de foto
-   daarvan op Wikimedia Commons ophalen met maker en licentie.
+2. Voor uitjes zonder eigen foto: in Wikidata het gebouw of de plaats opzoeken, en foto's
+   daarvan op Wikimedia Commons ophalen met maker en licentie: de hoofdfoto en een paar uit
+   de Commons-categorie. Zo krijgen uitjes in dezelfde plaats niet allemaal dezelfde foto.
 
 Elke pagina en elke plaats wordt één keer opgezocht en daarna onthouden. Niets gevonden?
 Dan probeert hij het na een paar weken opnieuw. Welke foto bij welk uitje komt, beslist
@@ -30,10 +34,11 @@ from typing import Callable
 from urllib.parse import urlencode, urljoin, urlparse
 from urllib.request import Request, urlopen
 
-from collector.jsonld_events import _is_event, _walk
+from collector.jsonld_events import _event_type, _is_event, _walk
 from collector.site_crawler import USER_AGENT, Fetched, _load_robots, default_fetch
 from pipeline.v2 import photos
-from pipeline.v2.build import in_area
+from pipeline.v2.build import AREA_CENTER, AREA_RADIUS_KM, in_area
+from pipeline.v2.classify import page_hints
 from pipeline.v2.convert import load_first_party, to_v2
 
 # Wikimedia vraagt om een herkenbare User-Agent met contactadres.
@@ -47,7 +52,8 @@ RECHECK_COMMONS_EMPTY_DAYS = 60  # plek of plaats zonder foto op Commons
 FORGET_PAGE_DAYS = 30            # pagina's van uitjes die niet meer in de agenda staan
 MIN_OG_WIDTH = 300               # kleinere og:image is vrijwel altijd een logo
 COMMONS_WIDTH = 1280
-GRONINGEN = (53.2194, 6.5665)
+PHOTOS_PER_PLACE = 6             # zoveel foto's per gebouw of plaats; elk uitje krijgt er vast één
+MIN_PHOTO_WIDTH = 1600           # extra foto's uit een categorie: groot genoeg voor een kaartje
 VENUE_MAX_KM = 2.0               # het gebouw in Wikidata moet echt op die plek staan
 PLACE_MAX_KM = 15.0              # de plaats in Wikidata moet bij het uitje liggen
 MAX_COMMONS_ERRORS = 5           # Wikimedia onbereikbaar: stoppen, volgende nacht verder
@@ -59,6 +65,9 @@ PLACE_WORDS = ("plaats", "dorp", "stad", "gemeente", "vesting", "buurtschap", "g
                "village", "town", "city", "municipality", "hamlet")
 # Wikidata-soorten voor woonplaatsen (dorp, stad, gemeente, ...).
 PLACE_TYPES = {"Q486972", "Q532", "Q3957", "Q515", "Q1549591", "Q2039348", "Q1852859", "Q5084", "Q15284"}
+# Bestanden in een Commons-categorie die geen foto van de plek zijn.
+NOT_A_PHOTO = re.compile(r"\bkaart|\bmaps?\b|wapen|coat of arms|\blogo|\bvlag\b|\bflag\b|locatie|location|"
+                         r"plattegrond|grafsteen|gravestone|tekening|drawing|postcard|ansichtkaart|\bscan\b")
 
 
 # ---------------------------------------------------------------- foto op de pagina zelf
@@ -116,8 +125,9 @@ def usable_image(value: str | None, page_url: str) -> str | None:
     return url
 
 
-def extract_page_image(html: str, page_url: str, title: str | None = None) -> tuple[str | None, str | None]:
-    """(foto-adres, waar gevonden) uit een pagina: schema.org eerst, dan og:image en twitter:image."""
+def _read(html: str, title: str | None) -> tuple[_PageParser, list[dict], bool]:
+    """Pagina lezen: meta-tags en de schema.org-uitjes. Staan er meerdere uitjes op, dan alleen
+    het uitje met precies deze titel (de derde waarde zegt of dat lukte)."""
     parser = _PageParser()
     try:
         parser.feed(html)
@@ -130,11 +140,40 @@ def extract_page_image(html: str, page_url: str, title: str | None = None) -> tu
         except Exception:
             continue
     if len(events) > 1:
-        # Meerdere uitjes op één pagina: alleen de foto van het uitje met precies deze titel.
         want = photos.norm(title)
         events = [o for o in events if want and photos.norm(str(o.get("name") or "")) == want]
-        if not events:
-            return None, None
+        return parser, events, bool(events)
+    return parser, events, True
+
+
+def page_facts(html: str, title: str | None = None) -> dict:
+    """Wat de organisator over de soort uitje zegt: de schema.org-soort en trefwoorden uit de
+    omschrijving. Alleen de conclusie wordt bewaard, nooit de tekst zelf (vaste regel 1)."""
+    parser, events, ok = _read(html, title)
+    if not ok:
+        return {}
+    facts: dict = {}
+    texts = []
+    if events:
+        kind = _event_type(events[0])
+        if kind:
+            facts["type"] = kind
+        texts.append(_plain(events[0].get("description"), 4000))
+        keywords = events[0].get("keywords")
+        texts.append(", ".join(map(str, keywords)) if isinstance(keywords, list) else _plain(keywords, 1000))
+    for key in ("og:description", "description", "keywords"):
+        texts.append(parser.meta.get(key, ""))
+    hints = page_hints(" ".join(t for t in texts if t))
+    if hints:
+        facts["hints"] = hints
+    return facts
+
+
+def extract_page_image(html: str, page_url: str, title: str | None = None) -> tuple[str | None, str | None]:
+    """(foto-adres, waar gevonden) uit een pagina: schema.org eerst, dan og:image en twitter:image."""
+    parser, events, ok = _read(html, title)
+    if not ok:
+        return None, None  # meerdere uitjes op één pagina, en geen met deze titel
     for event in events:
         url = usable_image(_image_value(event.get("image")), page_url)
         if url:
@@ -238,6 +277,7 @@ def wikidata_candidates(name: str, fetch_json: Callable[..., dict]) -> list[dict
             "lat": float(coords[0]["latitude"]),
             "lon": float(coords[0]["longitude"]),
             "file": images[0],
+            "category": next((c for c in _claims(entity, "P373") if isinstance(c, str)), None),
         })
     return out
 
@@ -274,9 +314,31 @@ def find_venue(venue: str, near: tuple[float, float], fetch_json: Callable[..., 
     return best[1] if best else None
 
 
-def _plain(value) -> str:
+def _plain(value, limit: int = 160) -> str:
     text = re.sub(r"<[^>]+>", " ", str(value or ""))
-    return " ".join(unescape(text).split())[:160]
+    return " ".join(unescape(text).split())[:limit]
+
+
+def _record(title: str, info: dict | None) -> dict | None:
+    """Adres, maker en licentie uit het antwoord van Commons (geen tekeningen: svg)."""
+    if not info or info.get("mime") == "image/svg+xml":
+        return None
+    meta = info.get("extmetadata") or {}
+
+    def field(name: str) -> str:
+        return _plain((meta.get(name) or {}).get("value"))
+
+    url = info.get("thumburl") or info.get("url")
+    if not url:
+        return None
+    return {
+        "file": title,
+        "url": url,
+        "pageUrl": info.get("descriptionurl"),
+        "author": field("Artist") or field("Credit") or None,
+        "license": field("LicenseShortName") or None,
+        "licenseUrl": field("LicenseUrl") or None,
+    }
 
 
 def commons_info(filename: str, fetch_json: Callable[..., dict]) -> dict | None:
@@ -285,26 +347,47 @@ def commons_info(filename: str, fetch_json: Callable[..., dict]) -> dict | None:
                                     "iiprop": "url|extmetadata|mime", "iiurlwidth": COMMONS_WIDTH,
                                     "titles": f"File:{filename}"})
     for page in ((data.get("query") or {}).get("pages") or {}).values():
-        info = (page.get("imageinfo") or [None])[0]
-        if not info or info.get("mime") == "image/svg+xml":
-            return None
-        meta = info.get("extmetadata") or {}
-
-        def field(name: str) -> str:
-            return _plain((meta.get(name) or {}).get("value"))
-
-        url = info.get("thumburl") or info.get("url")
-        if not url:
-            return None
-        return {
-            "file": f"File:{filename}",
-            "url": url,
-            "pageUrl": info.get("descriptionurl"),
-            "author": field("Artist") or field("Credit") or None,
-            "license": field("LicenseShortName") or None,
-            "licenseUrl": field("LicenseUrl") or None,
-        }
+        return _record(f"File:{filename}", (page.get("imageinfo") or [None])[0])
     return None
+
+
+def category_photos(category: str, fetch_json: Callable[..., dict], *, limit: int,
+                    skip: set[str] = frozenset()) -> list[dict]:
+    """Meer foto's uit de Commons-categorie van het gebouw of de plaats: liggende foto's die groot
+    genoeg zijn en een maker hebben, zonder kaarten, wapens of logo's. Door de Commons-gemeenschap
+    gekeurde foto's ('quality', 'featured') eerst."""
+    if limit <= 0:
+        return []
+    data = fetch_json(COMMONS_API, {"action": "query", "format": "json", "generator": "categorymembers",
+                                    "gcmtitle": f"Category:{category}", "gcmtype": "file", "gcmlimit": 40,
+                                    "prop": "imageinfo", "iiprop": "url|extmetadata|mime|size",
+                                    "iiurlwidth": COMMONS_WIDTH})
+    found = []
+    for page in ((data.get("query") or {}).get("pages") or {}).values():
+        title = str(page.get("title") or "")
+        info = (page.get("imageinfo") or [None])[0] or {}
+        width, height = info.get("width") or 0, info.get("height") or 0
+        if (not title or title in skip or info.get("mime") != "image/jpeg" or NOT_A_PHOTO.search(title.casefold())
+                or width < MIN_PHOTO_WIDTH or not height or not 1.2 <= width / height <= 2.2):
+            continue
+        record = _record(title, info)
+        if not record or not record["author"]:
+            continue
+        assessed = str(((info.get("extmetadata") or {}).get("Assessments") or {}).get("value") or "")
+        rank = 2 if re.search(r"featured|potd|poty", assessed) else 1 if "quality" in assessed else 0
+        found.append((-rank, title, record))
+    found.sort(key=lambda row: row[:2])
+    return [record for _, _, record in found[:limit]]
+
+
+def commons_photos(item: dict, fetch_json: Callable[..., dict], limit: int = PHOTOS_PER_PLACE) -> list[dict]:
+    """De foto's van een gebouw of plaats: de hoofdfoto uit Wikidata, aangevuld uit de Commons-categorie."""
+    main = commons_info(item["file"], fetch_json)
+    out = [main] if main else []
+    if item.get("category"):
+        out += category_photos(item["category"], fetch_json, limit=limit - len(out),
+                               skip={main["file"]} if main else set())
+    return out
 
 
 # ---------------------------------------------------------------- de nachtelijke ronde
@@ -339,6 +422,12 @@ def _due(entry: dict | None, today: date, recheck_days: int, field: str) -> bool
     return not entry.get(field) and _age_days(entry, today) >= recheck_days
 
 
+def _commons_due(entry: dict | None, today: date) -> bool:
+    if entry and entry.get("url"):
+        return "photos" not in entry  # uit de tijd van één foto per plaats: één keer aanvullen
+    return _due(entry, today, RECHECK_COMMONS_EMPTY_DAYS, "url")
+
+
 def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = None,
         fetch: Callable[..., Fetched] = default_fetch, fetch_json: Callable[..., dict] = fetch_json,
         sleeper=time.sleep, clock=time.monotonic, max_pages: int = 150, max_lookups: int = 60,
@@ -371,7 +460,8 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
                 stats["tijdelijk onbereikbaar"] += 1
                 continue
             image, via = extract_page_image(fetched.text, fetched.url, event.get("title")) if fetched else (None, None)
-            cache["pages"][page] = {"image": image, "via": via, "checkedAt": stamp,
+            facts = page_facts(fetched.text, event.get("title")) if fetched else {}
+            cache["pages"][page] = {"image": image, "via": via, "checkedAt": stamp, **facts,
                                     **({"note": problem} if problem else {})}
             stats["foto's van organisatoren gevonden"] += bool(image)
             if stats["pagina's bekeken"] % 25 == 0:
@@ -395,13 +485,13 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
 
     save_cache(cache_path, cache)
 
-    # 3. Geen eigen foto? Dan het gebouw of de plaats op Wikimedia Commons.
-    per_place = Counter(photos.norm(e["venue"].get("city")) for e in events)
+    # 3. Geen eigen foto? Dan foto's van het gebouw of de plaats op Wikimedia Commons.
     errors = 0
     for event in events:
         if errors >= MAX_COMMONS_ERRORS or stats["opzoekingen op Wikimedia"] >= max_lookups or out_of_time():
             break  # Wikimedia onbereikbaar, of genoeg voor vannacht: morgen verder
-        if photos.choose_photo(event, cache, lists=lists, names={}, events_per_place=per_place):
+        chosen = photos.choose_photo(event, cache, lists=lists, names={})
+        if chosen and chosen["type"] == "organisator":
             continue
         venue, city = photos.venue_name(event), event["venue"].get("city")
         lat, lon = event["venue"].get("lat"), event["venue"].get("lon")
@@ -409,26 +499,29 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
         todo = []
         if venue and near:
             todo.append((photos.venue_key(event), lambda: find_venue(venue, near, fetch_json)))
-        if city and per_place[photos.norm(city)] <= photos.PLACE_PHOTO_MAX_EVENTS:
+        if city:
             todo.append((photos.place_key(event),
-                         lambda: find_place(city, near or GRONINGEN, fetch_json,
-                                            max_km=PLACE_MAX_KM if near else 75)))
+                         lambda: find_place(city, near or AREA_CENTER, fetch_json,
+                                            max_km=PLACE_MAX_KM if near else AREA_RADIUS_KM + 15)))
         for key, lookup in todo:
-            if not _due(cache["commons"].get(key), today, RECHECK_COMMONS_EMPTY_DAYS, "url"):
-                if cache["commons"][key].get("url"):
-                    break  # deze heeft al een foto; de plaats is dan niet meer nodig
+            old = cache["commons"].get(key)
+            if not _commons_due(old, today):
+                if old.get("url"):
+                    break  # deze heeft al foto's; de plaats is dan niet meer nodig
                 continue
             try:
                 item = lookup()
-                record = commons_info(item["file"], fetch_json) if item else None
+                found = commons_photos(item, fetch_json) if item else []
             except Exception:
                 errors += 1
                 break
             stats["opzoekingen op Wikimedia"] += 1
-            cache["commons"][key] = {**(record or {"url": None}), "checkedAt": stamp,
-                                     **({"wikidata": item["id"]} if item else {})}
-            if record:
-                stats["foto's van Wikimedia gevonden"] += 1
+            if not found and old and old.get("url"):
+                found = [{k: old[k] for k in ("file", "url", "pageUrl", "author", "license", "licenseUrl") if k in old}]
+            entry = {"url": found[0]["url"], "photos": found} if found else {"url": None}
+            cache["commons"][key] = {**entry, "checkedAt": stamp, **({"wikidata": item["id"]} if item else {})}
+            if found:
+                stats["foto's van Wikimedia gevonden"] += len(found)
                 break
 
     # 4. Pagina's van uitjes die al een maand niet meer in de agenda staan, vergeten.

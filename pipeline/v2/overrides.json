@@ -1,3 +1,74 @@
 {
- "confirmed-esns-2027": "festival"
+ "uitleg": "Vaste correcties op de indeling, altijd met een reden (vaste regel 3). 'namen' werkt op de titel (kleine letters, zonder accenten, als zoekpatroon) en geldt ook voor volgende jaren. 'uitjes' werkt op het id van één uitje. Een festival is alleen een festival met een groot terrein of meerdere zalen, meerdere podia en vooral verschillende artiesten. Met 'nakijken': true is het een vuistregel; zulke uitjes komen op de twijfellijst (data/v2/twijfel.json) tot iemand ze bevestigt.",
+ "namen": [
+  {
+   "naam": "eurosonic|noorderslag|\\besns\\b",
+   "soort": "festival",
+   "reden": "Showcasefestival met honderden artiesten op tientallen podia in de binnenstad."
+  },
+  {
+   "naam": "noorderzon",
+   "soort": "festival",
+   "reden": "Festival in en rond het Noorderplantsoen met tenten en podia en veel verschillende artiesten."
+  },
+  {
+   "naam": "bevrijdingsfestival",
+   "soort": "festival",
+   "reden": "Bevrijdingsfestivals hebben een afgezet terrein met meerdere podia en veel artiesten."
+  },
+  {
+   "naam": "take ?root",
+   "soort": "festival",
+   "reden": "Roots- en americanafestival in De Oosterpoort: meerdere zalen als podia en veel verschillende artiesten."
+  },
+  {
+   "naam": "explore the north",
+   "soort": "festival",
+   "reden": "Driedaags festival in de binnenstad van Leeuwarden: theater, literatuur, concerten en beeldende kunst op meerdere podia (onder meer Neushoorn en De Harmonie), met veel verschillende makers."
+  },
+  {
+   "naam": "jonge harten",
+   "soort": "theater",
+   "reden": "Theaterfestival voor jongeren met voorstellingen in theaterzalen door de stad; geen festivalterrein met podia."
+  },
+  {
+   "naam": "magisch samhain",
+   "soort": "feest",
+   "reden": "Fantasydagen in de vesting met kramen, vuurshows en steltlopers; geen festival met podia en vooral artiesten."
+  },
+  {
+   "naam": "winterwelvaart",
+   "soort": "markt",
+   "reden": "Historische schepen in de grachten met een kerstmarkt; muziek en kunstroute eromheen. Vooral markt, geen festival."
+  },
+  {
+   "naam": "wintergoud",
+   "soort": "feest",
+   "reden": "Winterprogramma van de gemeente met ijsbaan, reuzenrad en wintercafé; geen festival met podia en artiesten."
+  },
+  {
+   "naam": "lichtfestival",
+   "soort": "kunst",
+   "reden": "Lichtfestivals zijn routes langs lichtkunst; geen podia met artiesten.",
+   "nakijken": true
+  }
+ ],
+ "uitjes": {
+  "evt_f59ec440f3bb50": {
+   "soort": "natuur",
+   "reden": "Op ontdekkingstocht door het Ketliker Skar: excursie van It Fryske Gea in een natuurgebied, voor kinderen vanaf 6 jaar."
+  },
+  "evt_8d0655e707439c": {
+   "soort": "natuur",
+   "reden": "Fotograferen in een herfstig landschap bij Katlijk: fotowandeling van It Fryske Gea in de natuur."
+  },
+  "evt_c009c68decbc68": {
+   "soort": "muziek",
+   "reden": "Eek-A-Mouse: reggaezanger uit Jamaica, concert in poppodium Neushoorn."
+  },
+  "evt_c3376352cbe433": {
+   "soort": "muziek",
+   "reden": "Wende: zangeres (Wende Snijders), concert in poppodium Neushoorn."
+  }
+ }
 }

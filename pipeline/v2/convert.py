@@ -72,6 +72,21 @@ def load_first_party(data_dir: Path) -> list[dict]:
     return rows
 
 
+_DAYS = r"(?:maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag)"
+_MONTHS = r"(?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)"
+# '7 februari 2027 om 14.30 uur – Trio X' of 'Zondag 15 november 2026 – 14.30 uur – Y': de datum
+# staat al in de agenda, dus die gaat van de titel af.
+DATE_PREFIX = re.compile(
+    rf"^\s*(?:{_DAYS}\s+)?\d{{1,2}}\s+{_MONTHS}(?:\s+\d{{4}})?"
+    rf"(?:\s*(?:[-–—]|om)\s*\d{{1,2}}[.:]\d{{2}}(?:\s*uur)?)?\s*[-–—:]\s+", re.IGNORECASE)
+
+
+def clean_title(value: str | None) -> str:
+    title = re.sub(r"\s+", " ", value or "").strip()
+    rest = DATE_PREFIX.sub("", title, count=1)
+    return rest if len(rest) >= 3 else title
+
+
 def to_v2(raw: dict, today: date) -> dict | None:
     """Een v2-evenement, of None als het (nog) niet publiek mag of al voorbij is."""
     status = raw.get("verificationStatus")
@@ -109,7 +124,7 @@ def to_v2(raw: dict, today: date) -> dict | None:
             sources.append({"type": kind, "url": link, "host": _host(link),
                             "seenAt": raw.get("lastSourceAudit")})
 
-    title = re.sub(r"\s+", " ", raw.get("title") or "").strip()
+    title = clean_title(raw.get("title"))
     return {
         "id": raw.get("id") or slugify(f"{title}-{city}-{start}"),
         "slug": slugify(f"{title}-{city}-{start}"),

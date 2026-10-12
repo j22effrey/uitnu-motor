@@ -200,14 +200,14 @@
  {
   "title": "Techno Festival in Simplon",
   "kind": "muziek",
-  "tags": [
+  "not_tags": [
    "festival"
   ]
  },
  {
   "title": "Korenfestival Veendam",
   "kind": "muziek",
-  "tags": [
+  "not_tags": [
    "festival"
   ]
  },
@@ -243,7 +243,7 @@
  },
  {
   "title": "Lichtjesfestival Haren",
-  "kind": "festival"
+  "kind": "feest"
  },
  {
   "title": "Bevrijdingsfestival Groningen",
@@ -252,7 +252,7 @@
  {
   "title": "iAfrica Film Festival",
   "kind": "film",
-  "tags": [
+  "not_tags": [
    "festival"
   ]
  },
@@ -334,7 +334,7 @@
  {
   "title": "Foodfestival Delfzijl",
   "kind": "eten",
-  "tags": [
+  "not_tags": [
    "festival"
   ]
  },
@@ -353,14 +353,14 @@
  {
   "title": "Groninger Studenten Cabaret Festival",
   "kind": "theater",
-  "tags": [
+  "not_tags": [
    "festival"
   ]
  },
  {
   "title": "Whisky Festival Noord Nederland",
   "kind": "eten",
-  "tags": [
+  "not_tags": [
    "festival"
   ]
  },
@@ -373,10 +373,97 @@
   "kind": "markt"
  },
  {
-  "title": "Mega Indoor Springkussen Festival",
-  "kind": "festival",
+  "title": "Stadslichtfestival Hoogeveen",
+  "kind": "kunst"
+ },
+ {
+  "title": "Jonge Harten Festival",
+  "multiday": true,
+  "kind": "theater"
+ },
+ {
+  "title": "TakeRoot Festival",
+  "kind": "festival"
+ },
+ {
+  "title": "Zomerfestival in het park",
+  "description": "Twee dagen muziek op drie podia met een line-up vol bands",
+  "multiday": true,
+  "kind": "festival"
+ },
+ {
+  "title": "Dorpsfestival Ten Boer",
+  "multiday": true,
+  "kind": "overig",
+  "not_tags": [
+   "festival"
+  ]
+ },
+ {
+  "title": "Oktober Kindermaand Groningen",
+  "kind": "kinderen"
+ },
+ {
+  "title": "Open dag kinderboerderij De Wiemel",
+  "kind": "kinderen"
+ },
+ {
+  "title": "Kinderfeest in het buurthuis",
+  "kind": "kinderen"
+ },
+ {
+  "title": "Kindervoorstelling: Kikker is verliefd",
+  "kind": "theater",
   "tags": [
    "kinderen"
+  ]
+ },
+ {
+  "title": "Magisch Samhain Bourtange",
+  "multiday": true,
+  "kind": "feest"
+ },
+ {
+  "title": "WinterWelVaart Groningen",
+  "multiday": true,
+  "kind": "markt"
+ },
+ {
+  "title": "College Veenhuizen: Suzanna Jansen",
+  "kind": "lezing"
+ },
+ {
+  "title": "Amsterdams-Berlijns trio Jolly Mangos",
+  "kind": "muziek"
+ },
+ {
+  "title": "Vaartocht door Nationaal Park De Alde Feanen",
+  "kind": "natuur",
+  "tags": [
+   "buiten"
+  ]
+ },
+ {
+  "title": "Zwerftocht door de Lendevallei in zuidelijk Friesland",
+  "kind": "natuur"
+ },
+ {
+  "title": "Uilenballen pluizen voor jonge natuuronderzoekers (6+)",
+  "kind": "natuur",
+  "tags": [
+   "kinderen",
+   "buiten"
+  ]
+ },
+ {
+  "title": "Explore The North",
+  "kind": "festival"
+ },
+ {
+  "title": "Mega Indoor Springkussen Festival",
+  "kind": "kinderen",
+  "not_tags": [
+   "festival"
   ]
  }
 ]

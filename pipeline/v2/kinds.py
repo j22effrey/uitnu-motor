@@ -1,4 +1,4 @@
-"""De vaste indeling van UITNU v2: elf soorten plus 'overig', en de labels."""
+"""De vaste indeling van UITNU v2: twaalf soorten plus 'overig', en de labels."""
 
 KINDS: dict[str, str] = {
     "muziek": "Muziek",
@@ -7,6 +7,7 @@ KINDS: dict[str, str] = {
     "film": "Film",
     "markt": "Markt en beurs",
     "feest": "Feest en kermis",
+    "kinderen": "Kinderen en familie",
     "sport": "Sport",
     "natuur": "Natuur en buiten",
     "kunst": "Kunst en erfgoed",
@@ -20,7 +21,6 @@ TAGS: dict[str, str] = {
     "kinderen": "Voor kinderen",
     "buiten": "Buiten",
     "meerdaags": "Meerdaags",
-    "festival": "Festival",
 }
 
 # Oude categorie uit de eerste pipeline -> soort. Alleen gebruikt als niets anders past.
@@ -30,6 +30,7 @@ LEGACY_HINTS: dict[str, str] = {
     "expo": "kunst",
     "feest": "feest",
     "kermis": "feest",
+    "familie": "kinderen",
     "festival": "festival",
     "sport": "sport",
     "muziek": "muziek",
@@ -45,6 +46,24 @@ DISCIPLINE_HINTS: dict[str, str] = {
     "film": "film",
     "kunst_expo": "kunst",
     "literatuur": "lezing",
+}
+
+# Wat de organisator zelf opgeeft (schema.org) -> soort. 'Festival' staat er bewust niet in:
+# een festival moet echt meerdere podia en artiesten hebben (zie classify.py).
+SCHEMA_KIND_HINTS: dict[str, str] = {
+    "MusicEvent": "muziek",
+    "TheaterEvent": "theater",
+    "ComedyEvent": "theater",
+    "DanceEvent": "theater",
+    "ScreeningEvent": "film",
+    "ExhibitionEvent": "kunst",
+    "VisualArtsEvent": "kunst",
+    "LiteraryEvent": "lezing",
+    "EducationEvent": "lezing",
+    "FoodEvent": "eten",
+    "SportsEvent": "sport",
+    "ChildrensEvent": "kinderen",
+    "SaleEvent": "markt",
 }
 
 # Soort plek in OpenStreetMap -> soort uitje dat daar meestal is. Alleen als de titel niets zegt.

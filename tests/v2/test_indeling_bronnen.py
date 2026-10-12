@@ -99,3 +99,69 @@ def test_uitjes_zonder_zaal_in_verschillende_plaatsen_blijven_apart():
                 "sources": [{"url": f"https://{city}.example/"}], "tags": [], "url": f"https://{city}.example/"}
     merged = merge_duplicates([event("Kerstmarkt Haren", "Haren"), event("Kerstmarkt Assen", "Assen")])
     assert len(merged) == 2
+
+
+def test_pagina_van_de_organisator_geeft_soort_zonder_tekst_te_bewaren():
+    from collector.event_photos import page_facts
+    html = """<html><head><meta name="description" content="Het grootste springkussenfestijn voor kids in het Noorden">
+    <script type="application/ld+json">{"@type": "ChildrensEvent", "name": "Mega Indoor Springkussen Festival",
+      "description": "Springen op meer dan veertig springkussens"}</script></head></html>"""
+    facts = page_facts(html, "Mega Indoor Springkussen Festival")
+    assert facts == {"type": "ChildrensEvent", "hints": {"soort": "kinderen", "woord": "springkussen"}}
+    assert "veertig" not in json.dumps(facts)  # alleen de conclusie, geen tekst
+    festival = page_facts('<html><meta property="og:description" content="Festival met drie podia en een line-up vol bands"></html>')
+    assert festival["hints"]["podia"] in {"podia", "line-up"}
+
+
+def test_fabriek_gebruikt_de_pagina_en_maakt_een_twijfellijst(tmp_path):
+    data, out = tmp_path / "data", tmp_path / "out"
+    data.mkdir()
+    rows = [
+        {"id": "a", "title": "Mega Indoor Springkussen Festival", "startDate": "2026-11-01", "city": "Groningen",
+         "verificationStatus": "organizer_confirmed", "eventUrl": "https://spring.example/a", "sourceUrl": "https://spring.example/a"},
+        {"id": "b", "title": "Wende", "startDate": "2026-11-02", "city": "Groningen",
+         "verificationStatus": "organizer_confirmed", "eventUrl": "https://podium.example/b", "sourceUrl": "https://podium.example/b"},
+        {"id": "c", "title": "Dorpsfestival Ten Boer", "startDate": "2026-11-03", "city": "Ten Boer",
+         "verificationStatus": "organizer_confirmed", "eventUrl": "https://dorp.example/c", "sourceUrl": "https://dorp.example/c"},
+    ]
+    (data / "events.json").write_text(json.dumps(rows))
+    cache = {"pages": {"https://podium.example/b": {"type": "TheaterEvent"}}}
+    events, status = build(data, out, date(2026, 10, 12), {}, photo_cache=cache)
+    by_id = {e["id"]: e for e in events}
+    assert by_id["a"]["kind"] == "kinderen"
+    assert by_id["b"]["kind"] == "theater" and by_id["b"]["classification"]["method"] == "organisator"
+    assert "schemaType" not in by_id["b"] and "pageHints" not in by_id["b"]
+    doubts = {d["id"]: d for d in status["_twijfel"]}
+    assert set(doubts) == {"c"} and status["twijfel"] == 1
+    assert any("festival" in why for why in doubts["c"]["waarom"])
+
+
+def test_vuistregel_blijft_op_de_twijfellijst(tmp_path):
+    data, out = tmp_path / "data", tmp_path / "out"
+    data.mkdir()
+    (data / "events.json").write_text(json.dumps([{"id": "l", "title": "Stadslichtfestival Hoogeveen", "startDate": "2026-12-11",
+        "city": "Hoogeveen", "verificationStatus": "organizer_confirmed", "eventUrl": "https://l.example/", "sourceUrl": "https://l.example/"}]))
+    overrides = {"namen": [{"naam": "lichtfestival", "soort": "kunst", "reden": "lichtkunst", "nakijken": True}]}
+    events, status = build(data, out, date(2026, 10, 12), overrides, photo_cache={})
+    assert events[0]["kind"] == "kunst" and events[0]["classification"]["nakijken"] is True
+    assert status["twijfel"] == 1
+
+
+def test_kerkdienst_is_geen_uitje_een_kerkconcert_wel(tmp_path):
+    data, out = tmp_path / "data", tmp_path / "out"
+    data.mkdir()
+    rows = [{"id": i, "title": t, "startDate": "2026-11-01", "city": "Beilen", "verificationStatus": "organizer_confirmed",
+             "eventUrl": f"https://kerk.example/{i}", "sourceUrl": f"https://kerk.example/{i}"}
+            for i, t in (("a", "Eredienst WG Beilen"), ("b", "Orgelconcert in de Pauluskerk"), ("c", "Kerkdienst met ds. Jansen"))]
+    (data / "events.json").write_text(json.dumps(rows))
+    events, status = build(data, out, date(2026, 10, 12), {}, photo_cache={})
+    assert [e["title"] for e in events] == ["Orgelconcert in de Pauluskerk"]
+    assert status["geenUitje"] == 2
+
+
+def test_datum_voor_de_titel_gaat_eraf():
+    from pipeline.v2.convert import clean_title
+    assert clean_title("7 februari 2027 om 14.30 uur – Amsterdams-Berlijns trio Jolly Mangos") == "Amsterdams-Berlijns trio Jolly Mangos"
+    assert clean_title("Zondag 15 november 2026 – 14.30 uur – Florence Foster Jenkins") == "Florence Foster Jenkins"
+    assert clean_title("1 mei Optocht") == "1 mei Optocht"  # geen scheidingsteken: de datum hoort bij de naam
+    assert clean_title("  Wende  ") == "Wende"
