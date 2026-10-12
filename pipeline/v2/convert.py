@@ -81,10 +81,18 @@ DATE_PREFIX = re.compile(
     rf"(?:\s*(?:[-–—]|om)\s*\d{{1,2}}[.:]\d{{2}}(?:\s*uur)?)?\s*[-–—:]\s+", re.IGNORECASE)
 
 
+# Een losse aanduiding achter de naam ('Durf moedig te zijn Start'): die hoort niet bij de naam.
+TRAILING_LABEL = re.compile(r"\s+(?:start|datum|aanvang)\s*:?\s*$", re.IGNORECASE)
+# Een postcode voor de plaatsnaam ('9341 BL Veenhuizen'): alleen de plaats telt.
+POSTCODE_PREFIX = re.compile(r"^\d{4}\s?[A-Za-z]{2}\s+")
+
+
 def clean_title(value: str | None) -> str:
     title = re.sub(r"\s+", " ", value or "").strip()
     rest = DATE_PREFIX.sub("", title, count=1)
-    return rest if len(rest) >= 3 else title
+    rest = rest if len(rest) >= 3 else title
+    bare = TRAILING_LABEL.sub("", rest)
+    return bare if len(bare.split()) >= 2 else rest
 
 
 def to_v2(raw: dict, today: date) -> dict | None:
@@ -102,7 +110,7 @@ def to_v2(raw: dict, today: date) -> dict | None:
         end = start
     if end < today.isoformat():
         return None
-    city = (raw.get("city") or "").strip()
+    city = POSTCODE_PREFIX.sub("", (raw.get("city") or "").strip())
     url = raw.get("eventUrl") or raw.get("organizerUrl") or raw.get("sourceUrl")
     if not city or not url:
         return None
