@@ -6,16 +6,17 @@ Calendar, ICS, or the strict Dutch HTML agenda extractor.
 """
 from __future__ import annotations
 
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeout, as_completed
 from dataclasses import asdict, dataclass, replace
 import argparse
 import json
 from pathlib import Path
+import time
 from typing import Callable, Iterable
 
 from collector import ics_events, wordpress_events
 from collector.discover_venues import is_excluded
-from collector.site_crawler import CrawlResult, CrawlSource, crawl_source
+from collector.site_crawler import TIME_UP, CrawlResult, CrawlSource, crawl_source
 from pipeline.event_model import RawEvent
 
 SUPPORTED = {"jsonld_event", "wordpress_tribe", "ics", "html_agenda_dutch"}
@@ -82,6 +83,8 @@ def apply_default_place(event: RawEvent, place: dict | None) -> RawEvent:
     venue = str(place.get("venue") or "").strip() or None
     if event.venue and venue and event.venue.casefold() != venue.casefold():
         return event  # de agenda noemt een andere zaal: niet gokken
+    # Zonder vaste zaal (een dorpswebsite) is alleen de plaats bekend: die klopt ook als de agenda
+    # een zaal in het dorp noemt.
     raw = dict(event.raw or {})
     raw["place_from_source"] = True
     return replace(
@@ -109,7 +112,13 @@ def _run_source(
     wordpress_fetch: Callable[..., tuple[list[RawEvent], dict]] = wordpress_events.fetch,
     ics_fetch: Callable[..., list[RawEvent]] = ics_events.fetch,
     timeout: float = 15,
+    deadline: float | None = None,
+    source_seconds: float | None = None,
 ) -> SourceRunResult:
+    if source_seconds:
+        # Elke bron krijgt hoogstens zoveel tijd: één trage website mag de rest niet ophouden.
+        own = time.monotonic() + source_seconds
+        deadline = own if deadline is None else min(deadline, own)
     source_id = str(source.get("id") or "")
     if not source_id:
         raise ValueError("source id is required")
@@ -124,7 +133,8 @@ def _run_source(
     if extractor in {"jsonld_event", "html_agenda_dutch"}:
         crawl_config = dict(source)
         crawl_config["extractorHint"] = extractor
-        crawl = site_runner(CrawlSource.from_dict(crawl_config), timeout=timeout)
+        extra = {"deadline": deadline} if deadline is not None else {}
+        crawl = site_runner(CrawlSource.from_dict(crawl_config), timeout=timeout, **extra)
         return SourceRunResult(
             source_id=source_id,
             extractor=extractor,
@@ -134,6 +144,7 @@ def _run_source(
                 "blocked_by_robots": len(crawl.blocked_by_robots),
                 "external_candidates": len(crawl.external_candidates),
                 "errors": crawl.errors[:10],
+                **({"tijdOp": True} if TIME_UP in crawl.errors else {}),
             },
         )
 
@@ -147,6 +158,9 @@ def _run_source(
         last_payload: dict = {}
         partial_error = None
         for page in range(1, max_pages + 1):
+            if page > 1 and deadline is not None and time.monotonic() >= deadline:
+                partial_error = TIME_UP
+                break
             kwargs = {"source_name": name, "per_page": 100, "timeout": timeout}
             if page > 1:
                 kwargs["page"] = page
@@ -193,6 +207,7 @@ def _run_source(
                 "max_feed_pages": max_pages,
                 "partial_error": partial_error,
                 "next_rest_url": last_payload.get("next_rest_url"),
+                **({"tijdOp": True} if partial_error == TIME_UP else {}),
             },
         )
 
@@ -217,25 +232,41 @@ def run_all(
     site_runner: Callable[..., CrawlResult] = crawl_source,
     wordpress_fetch: Callable[..., tuple[list[RawEvent], dict]] = wordpress_events.fetch,
     ics_fetch: Callable[..., list[RawEvent]] = ics_events.fetch,
+    budget_seconds: float | None = None,
+    source_seconds: float | None = None,
 ) -> dict[str, SourceRunResult]:
+    """Alle actieve bronnen ophalen, een paar tegelijk.
+
+    Met een tijdsbudget halen de bronnen na die tijd geen nieuwe pagina's meer op; wat ze al
+    gevonden hebben telt mee. Een bron die dan nog niet klaar is, staat erin met 'tijd op'.
+    source_seconds: hoogstens zoveel tijd per bron (een trage website houdt de rest niet op)."""
     values = [x for x in sources if isinstance(x, dict) and x.get("enabled", True)]
     if not values:
         return {}
+    deadline = time.monotonic() + budget_seconds if budget_seconds else None
+    extra = {"deadline": deadline} if deadline is not None else {}
+    if source_seconds:
+        extra["source_seconds"] = source_seconds
     out: dict[str, SourceRunResult] = {}
-    max_workers = max(1, min(int(workers or 1), 8, len(values)))
-    with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        futures = {
-            pool.submit(
-                run_source,
-                source,
-                site_runner=site_runner,
-                wordpress_fetch=wordpress_fetch,
-                ics_fetch=ics_fetch,
-                timeout=timeout,
-            ): source
-            for source in values
-        }
-        for future in as_completed(futures):
+    # Elke bron is een andere website: meer tegelijk is geen extra belasting voor één site.
+    max_workers = max(1, min(int(workers or 1), 16, len(values)))
+    pool = ThreadPoolExecutor(max_workers=max_workers)
+    futures = {
+        pool.submit(
+            run_source,
+            source,
+            site_runner=site_runner,
+            wordpress_fetch=wordpress_fetch,
+            ics_fetch=ics_fetch,
+            timeout=timeout,
+            **extra,
+        ): source
+        for source in values
+    }
+    # Na het budget nog even wachten op pagina's die al onderweg waren, dan niet langer.
+    wait = budget_seconds + 3 * timeout + 30 if budget_seconds else None
+    try:
+        for future in as_completed(futures, timeout=wait):
             source = futures[future]
             sid = str(source.get("id") or "unknown")
             try:
@@ -248,6 +279,15 @@ def run_all(
                     diagnostics={},
                     error=f"{type(exc).__name__}: {exc}",
                 )
+    except FuturesTimeout:
+        pass
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
+    for source in values:
+        sid = str(source.get("id") or "unknown")
+        if sid not in out:
+            out[sid] = SourceRunResult(source_id=sid, extractor=str(source.get("extractorHint") or "jsonld_event"),
+                                       events=[], diagnostics={"tijdOp": True}, error=TIME_UP)
     return out
 
 

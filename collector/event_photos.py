@@ -58,9 +58,11 @@ VENUE_MAX_KM = 2.0               # het gebouw in Wikidata moet echt op die plek 
 PLACE_MAX_KM = 15.0              # de plaats in Wikidata moet bij het uitje liggen
 MAX_COMMONS_ERRORS = 5           # Wikimedia onbereikbaar: stoppen, volgende nacht verder
 
-# Namen van bestanden die geen foto van een uitje zijn.
+# Namen van bestanden die geen foto van een uitje zijn. Ook door AI gemaakte plaatjes
+# ('ChatGPT-Image-...'): dat zijn illustraties, geen foto's (vaste regel 2).
 SKIP_FILE_HINTS = ("logo", "icon", "favicon", "placeholder", "avatar", "sprite", "spacer",
-                   "blank", "default", "fallback")
+                   "blank", "default", "fallback", "chatgpt", "dall-e", "dalle", "midjourney",
+                   "stable-diffusion", "firefly", "ai-generated", "ai_generated")
 PLACE_WORDS = ("plaats", "dorp", "stad", "gemeente", "vesting", "buurtschap", "gehucht",
                "village", "town", "city", "municipality", "hamlet")
 # Wikidata-soorten voor woonplaatsen (dorp, stad, gemeente, ...).

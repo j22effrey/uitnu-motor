@@ -37,14 +37,21 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
 
 1. `collector/discover_venues.py`: zoekt nieuwe websites via OpenStreetMap (podia, dorpshuizen,
    musea, cafés, verenigingen, gemeentehuizen, en dorpen met een eigen website) en Wikidata
-   (festivals, dorpen en gemeenten), plus de tips in `collector/tips.json`
-   (`data/source_candidates.json`).
+   (festivals, dorpen en gemeenten), plus de tips in `collector/tips.json` en de gevonden
+   dorpswebsites (`data/source_candidates.json`).
+   `collector/village_sites.py` loopt elke plaats in het werkgebied na (eens per drie maanden): het
+   probeert veelgebruikte websitenamen (eenrum.nl, dorpsbelangeneenrum.nl, ...), kijkt (met respect
+   voor robots.txt) of de site echt bij die plaats hoort, en bewaart het oordeel in
+   `data/dorpssites.json` ('dorpssite', 'twijfel' of 'nee', altijd met een reden). Alleen
+   'dorpssite' gaat vanzelf de wachtrij in; twijfelgevallen eerst nakijken (dan als tip toevoegen).
 2. `collector/source_probe.py`: test of een website een leesbare agenda heeft (ook via de link
-   naar de agenda op de voorpagina). Volgorde: tips, websites die een oudere test afwees, nieuwe
-   websites, dan herkansingen na een wachttijd. Geen robots.txt betekent: welkom.
+   naar de agenda op de voorpagina). Volgorde: tips, nieuwe dorpswebsites, websites die een oudere
+   test afwees, nieuwe websites, dan herkansingen na een wachttijd. Geen robots.txt betekent: welkom.
 3. `collector/auto_activate.py`: zet geschikte bronnen aan in `collector/web_crawl_sources.json`.
+   Een dorpswebsite krijgt de plaats van het dorp mee, voor uitjes zonder eigen plaats.
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
-   en schrijven `data/auto_events.json`.
+   en schrijven `data/auto_events.json`. Na 25 minuten rondt de motor af met wat er is; een bron
+   die niet af kwam (of storing had), houdt zijn uitjes van de vorige keer.
 5. `collector/event_photos.py`: zoekt foto's (organisator, anders meerdere foto's per gebouw of
    plaats van Wikimedia Commons) en onthoudt ze in `data/photos.json`. Hij noteert ook wat de
    organisator zelf over de soort zegt (alleen de conclusie, geen tekst). `pipeline/v2/photos.py`

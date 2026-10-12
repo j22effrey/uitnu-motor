@@ -38,6 +38,25 @@ def _iso_ical(v: str) -> str:
     return v
 
 
+_COUNTRIES = {"netherlands", "the netherlands", "nederland", "nl", "holland", "germany", "deutschland", "duitsland"}
+
+
+def city_from_location(loc: str) -> str | None:
+    """De plaats uit een adres als 'Dorpshuis, Weverswal 6, 9243 JL Bakkeveen, Netherlands'.
+
+    Geen land, postcode, straat met nummer of beschrijving ('naast Plaza De Kolk'): dan liever
+    geen plaats, zodat de vaste plaats van de bron (het dorp) gebruikt wordt."""
+    parts = [p.strip() for p in (loc or "").split(",") if p.strip()]
+    for part in reversed(parts[1:]):
+        part = re.sub(r"^\d{4}\s?[A-Za-z]{2}\s+", "", part).strip()  # '9243 JL Bakkeveen' -> 'Bakkeveen'
+        if not part or part.casefold() in _COUNTRIES or re.search(r"\d", part):
+            continue
+        if part[0].islower() or len(part.split()) > 4:
+            continue
+        return part
+    return None
+
+
 def parse_ics(text: str, source_url: str, source_name: str = "iCalendar feed") -> list[RawEvent]:
     blocks: list[dict[str,str]] = []
     current = None
@@ -54,8 +73,7 @@ def parse_ics(text: str, source_url: str, source_name: str = "iCalendar feed") -
     for e in blocks:
         if not (e.get("SUMMARY") and e.get("DTSTART")): continue
         loc=e.get("LOCATION") or ""
-        city=None
-        if "," in loc: city=loc.split(",")[-1].strip()
+        city=city_from_location(loc)
         out.append(RawEvent(
             source_name=source_name, source_type="calendar_feed",
             source_url=e.get("URL") or source_url, source_id=e.get("UID"),

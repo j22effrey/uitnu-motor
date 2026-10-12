@@ -10,6 +10,7 @@ from __future__ import annotations
 from dataclasses import asdict
 import argparse
 import json
+import time
 
 from collector.active_source_runner import SourceRunResult, load_active_sources, run_all
 from collector.title_place_inference import infer_title_place, locate_city
@@ -23,8 +24,11 @@ def enrich_results(
     infer_fn=infer_title_place,
     geocode_fn=None,
     timeout: float = 8,
+    deadline: float | None = None,
 ) -> dict[str, SourceRunResult]:
-    """Conservatively fill missing places and cache repeated geocode queries."""
+    """Conservatively fill missing places and cache repeated geocode queries.
+
+    Na de deadline (time.monotonic()) wordt er niets meer opgezocht: de uitjes blijven zoals ze zijn."""
     if geocode_fn is None:
         from collector.pdok_geocode import geocode as geocode_fn
 
@@ -40,6 +44,9 @@ def enrich_results(
     for source_id, result in results.items():
         events = []
         for event in result.events:
+            if deadline is not None and time.monotonic() >= deadline:
+                events.append(event)
+                continue
             try:
                 event = infer_fn(event, geocode_fn=cached_geocode, timeout=timeout)
             except Exception:
@@ -101,20 +108,34 @@ def stage_results(results: dict[str, SourceRunResult]) -> dict:
     }
 
 
-def run(*, sources_path: str, workers: int = 4, timeout: float = 15) -> dict:
+SOURCE_SECONDS = 240  # hoogstens vier minuten per bron (met een tijdsbudget)
+
+
+def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seconds: float | None = None) -> dict:
+    """Alle bronnen ophalen en keuren. Met een tijdsbudget: ophalen krijgt het grootste deel, het
+    opzoeken van plaatsen de rest; wat niet af is, telt niet als 'weg' (zie build_auto_events)."""
+    started = time.monotonic()
     sources = load_active_sources(sources_path)
-    results = run_all(sources, workers=workers, timeout=timeout)
-    results = enrich_results(results, timeout=min(timeout, 8))
+    roots = {str(s.get("id") or ""): str(s.get("rootUrl") or "") for s in sources}
+    results = run_all(sources, workers=workers, timeout=timeout,
+                      budget_seconds=budget_seconds * 0.75 if budget_seconds else None,
+                      source_seconds=SOURCE_SECONDS if budget_seconds else None)
+    deadline = started + budget_seconds if budget_seconds else None
+    results = enrich_results(results, timeout=min(timeout, 8), deadline=deadline)
     staged = stage_results(results)
     staged["source_runs"] = {
         key: {
             "extractor": value.extractor,
+            "rootUrl": roots.get(key, ""),
             "event_count": len(value.events),
             "diagnostics": value.diagnostics,
             "error": value.error,
+            # Niet helemaal gelukt (storing of tijd op): de vorige uitjes van deze bron blijven staan.
+            "complete": not value.error and not (value.diagnostics or {}).get("tijdOp"),
         }
         for key, value in results.items()
     }
+    staged["seconds"] = round(time.monotonic() - started, 1)
     return staged
 
 
@@ -124,10 +145,13 @@ if __name__ == "__main__":
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--timeout", type=float, default=15)
     parser.add_argument("--output")
+    parser.add_argument("--budget-minutes", type=float, default=None,
+                        help="na zoveel minuten afronden met wat er is (de rest houdt de uitjes van de vorige keer)")
     parser.add_argument("--pretty", action="store_true")
     args = parser.parse_args()
 
-    payload = run(sources_path=args.sources, workers=args.workers, timeout=args.timeout)
+    payload = run(sources_path=args.sources, workers=args.workers, timeout=args.timeout,
+                  budget_seconds=args.budget_minutes * 60 if args.budget_minutes else None)
     text = json.dumps(payload, ensure_ascii=False, indent=2 if args.pretty else None)
     if args.output:
         with open(args.output, "w", encoding="utf-8") as handle:

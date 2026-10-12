@@ -16,7 +16,7 @@ from pathlib import Path
 
 from collector.discover_venues import is_excluded
 
-from .classify import FESTIVAL, classify, normalize, not_an_outing
+from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
 from .convert import content_hash, load_first_party, merge_duplicates, to_v2
 from .gate import run_gate
 from .kinds import KINDS, TAGS
@@ -56,11 +56,17 @@ def _write_json(path: Path, value) -> None:
 
 
 def source_kinds(path: Path) -> dict[str, str]:
-    """Website -> soort uitje dat daar meestal is (veld kindHint in de bronnenlijst)."""
+    """Website -> soort uitje dat daar meestal is (veld kindHint in de bronnenlijst). Ook per zaal:
+    uitjes van een theater met kaartjes op een andere website horen er toch bij."""
     payload = _read_json(path, {})
     sources = payload.get("sources", []) if isinstance(payload, dict) else []
-    return {host_of(s.get("rootUrl")): s["kindHint"] for s in sources
-            if isinstance(s, dict) and s.get("kindHint") and host_of(s.get("rootUrl"))}
+    kinds = {host_of(s.get("rootUrl")): s["kindHint"] for s in sources
+             if isinstance(s, dict) and s.get("kindHint") and host_of(s.get("rootUrl"))}
+    for s in sources:
+        place = s.get("defaultPlace") if isinstance(s, dict) else None
+        if s.get("kindHint") and isinstance(place, dict) and place.get("venue") and place.get("venue") != "naamloze plek":
+            kinds[venue_key(place["venue"], place.get("city"))] = s["kindHint"]
+    return kinds
 
 
 def source_names(path: Path) -> dict[str, str]:

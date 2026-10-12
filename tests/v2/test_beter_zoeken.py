@@ -92,9 +92,9 @@ def _cand(host, status=None, **extra):
 def test_elke_ronde_vooral_nieuwe_websites(tmp_path):
     queue = tmp_path / "q.json"
     queue.write_text(json.dumps({"candidates": [
-        _cand("al-getest.example", "no_supported_extractor", probedAt="2026-10-11", probeVersion=2),
+        _cand("al-getest.example", "no_supported_extractor", probedAt="2026-10-11", probeVersion=probe.PROBE_VERSION),
         _cand("oude-test.example", "no_supported_extractor"),            # oudere versie van de test
-        _cand("lang-geleden.example", "no_supported_extractor", probedAt="2026-09-01", probeVersion=2),
+        _cand("lang-geleden.example", "no_supported_extractor", probedAt="2026-09-01", probeVersion=probe.PROBE_VERSION),
         _cand("nieuw.example"),
         _cand("tip.example", evidence=[{"kind": "tip"}]),
         _cand("ver.example", areaStatus="buiten"),
@@ -179,7 +179,7 @@ def test_dorpen_gemeenten_verenigingen_en_cafes_uit_openstreetmap():
         {"type": "node", "id": 8, "tags": {"amenity": "townhall", "name": "Gemeentehuis", "website": "https://www.midden-groningen.nl"}},
     ]})
     assert [(f["url"], f["anchor_text"]) for f in found] == [
-        ("https://www.froombosch.com/", "Froombosch (village)"),
+        ("https://www.froombosch.com/", "Froombosch (village, Froombosch)"),   # het dorp is zelf de plaats
         ("https://www.midden-groningen.nl/", "Gemeentehuis (townhall)")]
 
 
@@ -202,7 +202,8 @@ def test_tip_van_de_eigenaar_komt_elke_ronde_in_de_wachtrij(tmp_path):
     tips.write_text(json.dumps({"tips": [{"url": "www.froombosch.com", "naam": "Froombosch", "reden": "Spookbosch ontbrak"},
                                          {"url": "https://www.facebook.com/groups/froombosch"}]}))
     known.write_text(json.dumps({"sources": []}))
-    assert dv.main(["--queue", str(queue), "--known", str(known), "--tips", str(tips), "--tips-only"]) == 0
+    assert dv.main(["--queue", str(queue), "--known", str(known), "--tips", str(tips),
+                    "--village-sites", str(tmp_path / "geen.json"), "--tips-only"]) == 0
     [item] = json.loads(queue.read_text())["candidates"]
     assert item["host"] == "froombosch.com" and item["areaStatus"] == "binnen"   # Facebook nooit
     assert item["evidence"][0]["kind"] == "tip" and item["evidence"][0]["anchorText"] == "Froombosch (tip)"
@@ -241,7 +242,8 @@ def test_kaartpin_bij_handmatig_uitje_met_alleen_een_plaatsnaam(tmp_path):
 def test_spookbosch_staat_in_de_handmatige_agenda():
     rows = json.loads(open("data/events.json", encoding="utf-8").read())
     [row] = [r for r in rows if r["id"] == "spookbosch-froombosch-2026"]
-    assert (row["startDate"], row["city"], row["eventUrl"]) == ("2026-11-13", "Froombosch", "https://www.froombosch.com/")
+    assert (row["startDate"], row["city"]) == ("2026-11-13", "Froombosch")
+    assert row["eventUrl"] == "https://www.froombosch.com/wp/evenementen/"
 
 
 def test_kaartje_met_ondertitel_en_pagina_over_een_uitje():
@@ -306,3 +308,14 @@ def test_fabriek_publiceert_nooit_uitjes_van_een_uitgesloten_website(tmp_path):
     ]))
     events, status = build(data, out, TODAY, {}, photo_cache={})
     assert [e["title"] for e in events] == ["Kerstmarkt"] and status["uitgeslotenBron"] == 1
+
+
+def test_mailadres_is_geen_link_van_een_uitje_en_start_is_geen_titel():
+    html = """<div><h3>101 Dalmatiërs</h3><p>zaterdag 14 november 2026, 15:00</p>
+      <p><a href="mailto:kaartverkoop@theater.example">Kaartverkoop</a></p></div>
+      <div><h3>Gespreksgroep</h3><p>Start: 10 november 2026</p></div>
+      <div><h3>Leerhuis</h3><p>Start: 17 november 2026</p></div>
+      <div><h3>Meditatie</h3><p>Start: 24 november 2026</p></div>"""
+    events = parse_agenda(html, "https://theater.example/agenda/", today=TODAY)
+    assert not any((e.event_url or "").startswith("mailto:") for e in events)
+    assert "Start" not in {e.title for e in events}

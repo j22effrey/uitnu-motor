@@ -40,7 +40,7 @@ class ProbeResult:
 
 # Versie van de test. Wordt de test beter, dan komen websites die eerder 'niet leesbaar' waren
 # (of door een storing of een ontbrekende robots.txt 'geblokkeerd') vanzelf opnieuw aan de beurt.
-PROBE_VERSION = 2
+PROBE_VERSION = 3
 # Na zoveel dagen een website opnieuw testen (agenda's veranderen, sites worden vernieuwd).
 RETRY_DAYS = {"no_supported_extractor": 21, "error": 3, "blocked": 30}
 
@@ -82,6 +82,27 @@ class _AgendaLinkParser(HTMLParser):
             return
         if (self.WORDS.search(parsed.path) or self.WORDS.search(text)) and url not in self.links:
             self.links.append(url)
+
+
+_SOFT_REDIRECT = re.compile(
+    r"""(?:window\.location(?:\.href)?|document\.location(?:\.href)?|location\.replace\()\s*=?\s*["']([^"']+)["']"""
+    r"""|<meta[^>]+http-equiv=["']?refresh["']?[^>]*content=["'][^"']*?url\s*=\s*([^"'>\s]+)""", re.I)
+
+
+def soft_redirect(html: str, page_url: str) -> str | None:
+    """Een kleine voorpagina die met een script of meta-tag doorstuurt (bijv. naar /wp/)."""
+    if not html or len(html) > 4000:
+        return None
+    match = _SOFT_REDIRECT.search(html)
+    if not match:
+        return None
+    target = canonical_url(urljoin(page_url, (match.group(1) or match.group(2) or "").strip()))
+    if not target or not same_site(page_url, target):
+        return None
+    # Zelfde website via http: dan via https, zoals de pagina zelf.
+    if target.startswith("http://") and page_url.startswith("https://"):
+        target = "https://" + target[len("http://"):]
+    return target if target.rstrip("/") != canonical_url(page_url).rstrip("/") else None
 
 
 def agenda_links(html: str, base_url: str, limit: int = 4) -> list[str]:
@@ -279,6 +300,10 @@ def probe_source(
 
     try:
         page = fetcher(target, timeout=timeout)
+        redirect = soft_redirect(page.text, page.url or target) if 200 <= page.status < 300 else None
+        if redirect and robots.can_fetch(USER_AGENT, redirect):
+            details["redirect"] = redirect
+            page = fetcher(redirect, timeout=timeout)
         if 200 <= page.status < 300 and ("html" in page.content_type or "<html" in page.text[:500].casefold()):
             home_html, home_url = page.text, (canonical_url(page.url) or target)
             structured = parse_html(page.text, target)
@@ -417,14 +442,15 @@ def probe_queue(
 
     day = date.fromisoformat(today) if today else date.today()
     due = [(index, item) for index, item in enumerate(candidates) if probe_due(item, day)]
-    # Volgorde: tips van de eigenaar; websites die een oudere test onterecht afwees (vaak de
-    # belangrijkste plekken); nog nooit geteste websites; dan herkansingen na de wachttijd.
-    # Binnen elke groep in de volgorde van de wachtrij (beste kandidaten eerst).
+    # Volgorde: tips van de eigenaar; nieuw gevonden dorpswebsites; websites die een oudere test
+    # onterecht afwees (vaak de belangrijkste plekken); nog nooit geteste websites; dan herkansingen
+    # na de wachttijd. Binnen elke groep in de volgorde van de wachtrij (beste kandidaten eerst).
     def rank(entry: tuple[int, dict]) -> tuple[int, int]:
         index, item = entry
-        tip = any(isinstance(e, dict) and e.get("kind") == "tip" for e in item.get("evidence") or [])
+        kinds = {e.get("kind") for e in item.get("evidence") or [] if isinstance(e, dict)}
         fresh = item.get("probeStatus") in (None, "", "pending")
-        group = 0 if tip else 1 if _retest_with_new_version(item) else 2 if fresh else 3
+        group = (0 if "tip" in kinds else 1 if "dorpssite" in kinds and fresh
+                 else 2 if _retest_with_new_version(item) else 3 if fresh else 4)
         return (group, index)
     selected = sorted(due, key=rank)[:max(0, limit)]
 

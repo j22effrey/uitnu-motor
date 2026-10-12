@@ -17,7 +17,7 @@ concurrency:
 jobs:
   motor:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -35,6 +35,11 @@ jobs:
             echo "Vandaag niet: nieuwe plekken zoeken gebeurt op maandag."
           fi
 
+      - name: Dorpswebsites zoeken (per plaats; elke plaats eens per drie maanden)
+        continue-on-error: true
+        timeout-minutes: 15
+        run: python -m collector.village_sites --store data/dorpssites.json --budget-minutes 12 --summary
+
       - name: Websites testen (eerst tips en nieuwe websites) en goede bronnen aanzetten
         continue-on-error: true
         timeout-minutes: 40
@@ -43,11 +48,11 @@ jobs:
           python -m collector.source_probe --queue data/source_candidates.json --limit 300 --workers 12 --deep-pages 3 --budget-minutes 30 --summary
           python -m collector.auto_activate
 
-      - name: Agenda's ophalen bij alle actieve bronnen
+      - name: Agenda's ophalen bij alle actieve bronnen (na 25 minuten afronden met wat er is)
         continue-on-error: true
-        timeout-minutes: 35
+        timeout-minutes: 40
         run: |
-          python -m pipeline.stage_active_sources --sources collector/web_crawl_sources.json --workers 8 --timeout 12 --output /tmp/staging.json > /dev/null
+          python -m pipeline.stage_active_sources --sources collector/web_crawl_sources.json --workers 16 --timeout 12 --budget-minutes 25 --output /tmp/staging.json > /dev/null
           python -m pipeline.build_auto_events --curated data/events.json --staged /tmp/staging.json --output data/auto_events.json
 
       - name: Kaartpin zetten bij handmatige uitjes met alleen een plaatsnaam

@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from collector.discover_venues import is_excluded
-from collector.source_activation import activation_reasons, promote_candidate
+from collector.source_activation import _atomic_write, activation_reasons, default_place_for, promote_candidate
 
 NOTE = ("Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, "
         "met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's.")
@@ -70,6 +70,27 @@ def auto_activate(queue_path: str, sources_path: str, today: str | None = None) 
     return activated
 
 
+def fill_places(queue_path: str, sources_path: str) -> list[str]:
+    """Actieve bronnen zonder vaste plaats die toch bij één dorp horen (een dorpswebsite, een tip of de
+    officiële website van een dorp) krijgen die plaats alsnog, voor uitjes zonder eigen plaats."""
+    queue = json.loads(Path(queue_path).read_text(encoding="utf-8"))
+    by_host = {c.get("host"): c for c in queue.get("candidates", []) if isinstance(c, dict)}
+    registry = json.loads(Path(sources_path).read_text(encoding="utf-8"))
+    changed = []
+    for source in registry.get("sources", []):
+        if not isinstance(source, dict) or source.get("defaultPlace") or not source.get("enabled", True):
+            continue
+        host = urlparse(source.get("rootUrl") or "").hostname or ""
+        candidate = by_host.get(host.removeprefix("www."))
+        place = default_place_for(candidate, role="venue") if candidate else None
+        if place:
+            source["defaultPlace"] = place
+            changed.append(f"{source.get('name')}: {place['city']}")
+    if changed:
+        _atomic_write(sources_path, registry)
+    return changed
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="UITNU: geschikte bronnen automatisch aanzetten")
     parser.add_argument("--queue", default="data/source_candidates.json")
@@ -79,6 +100,9 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Nieuwe bronnen aangezet: {len(activated)}")
     for item in activated:
         print(f"  - {item['name']} ({item['host']})")
+    placed = fill_places(args.queue, args.sources)
+    if placed:
+        print(f"Vaste plaats toegevoegd bij {len(placed)} bronnen: " + "; ".join(placed))
     return 0
 
 
