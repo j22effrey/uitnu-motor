@@ -89,10 +89,12 @@ def test_clubs_bestuur_en_vaste_ontmoetingen_zijn_geen_uitje():
                   "Inloopmiddag", "De Huiskamer", "Bestuur Bastogne DB", "1dagsbestuur Vrouwen van deze Tijd",
                   "Blomme-aksje VV Suameer", "Frijwilligersjûn VV Suameer", "NL-doet.", "Kerstavond-dienst",
                   "2DE PAASDAG", "Kerst 2026", "Koop nu jullie kaartjes en beleef de magie!", "Evenement type",
-                  "21:00 'd Aole School Hoofdstraat 21"):
+                  "21:00 'd Aole School Hoofdstraat 21",
+                  # sinds 13 oktober: een reisje van de ouderensoos is voor de eigen leden
+                  "Ouderensoosreis naar Giethoorn met boottocht"):
         assert not_an_outing({"title": title}), title
     for title in ("Dansavond 50 plus", "Dorpsbelangen nieuwjaarsreceptie", "Inloopmiddag met lezing over de Waddenzee",
-                  "Kerstconcert 2026", "Ouderensoosreis naar Giethoorn met boottocht"):
+                  "Kerstconcert 2026"):
         assert not_an_outing({"title": title}) is None, title
 
 
