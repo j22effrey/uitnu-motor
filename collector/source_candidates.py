@@ -9,6 +9,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 import json
 import os
+import re
 from pathlib import Path
 from typing import Iterable
 from urllib.parse import urlparse, urlunparse
@@ -19,11 +20,17 @@ def utc_now() -> str:
 
 
 def canonical_url(value: str) -> str:
+    """Het webadres in een vaste vorm, of '' als het geen geldig webadres is (bijvoorbeeld tekst die
+    door kapotte HTML in een link terechtkwam: 'https://site.nl:00 uur. Nadere info volgt')."""
     p = urlparse(str(value or "").strip())
-    if p.scheme not in {"http", "https"} or not p.hostname:
+    if p.scheme not in {"http", "https"} or not p.hostname or re.search(r"[\s<>\"'`]", p.netloc):
+        return ""
+    try:
+        port_number = p.port
+    except ValueError:
         return ""
     host = p.hostname.casefold()
-    port = f":{p.port}" if p.port and not ((p.scheme == "https" and p.port == 443) or (p.scheme == "http" and p.port == 80)) else ""
+    port = f":{port_number}" if port_number and not ((p.scheme == "https" and port_number == 443) or (p.scheme == "http" and port_number == 80)) else ""
     netloc = host + port
     path = p.path or "/"
     return urlunparse((p.scheme.casefold(), netloc, path, "", p.query, ""))
