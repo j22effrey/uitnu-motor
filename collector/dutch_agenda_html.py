@@ -241,7 +241,7 @@ def parse_time_range(text: str) -> str | None:
 
 _HEADING_TAGS_RANK = {"h1": 1, "h2": 2, "h3": 3, "h4": 4}
 _DATE_WORDS = re.compile(
-    rf"\b(?:{WEEKDAY_PATTERN}|{MONTH_PATTERN}|vandaag|morgen|uur)\b\.?|[\d:./-]+", re.I)
+    rf"\b(?:{WEEKDAY_PATTERN}|{MONTH_PATTERN}|vandaag|morgen|uur|tot|t/m|van|om|vanaf|hele dag)\b\.?|[\d:./–-]+", re.I)
 
 
 def _date_only(value: str) -> bool:
@@ -320,6 +320,8 @@ _SEP = r"\s*(?::|–|—|\s-)\s+"
 _TITLE_FIRST = re.compile(rf"^(?P<title>[^:–—]{{3,80}}?){_SEP}{_WHEN}(?P<rest>.*)$", re.I)
 _DATE_FIRST = re.compile(rf"^{_WHEN}(?:,?\s+(?P<time>[0-2]?\d[:.][0-5]\d)(?:\s*uur)?)?{_SEP}(?P<title>.{{3,80}})$", re.I)
 _BARE_TIME = re.compile(r"^[\s,]*(?:om\s+|vanaf\s+|aanvang\s+)?([01]?\d|2[0-3])[:.]([0-5]\d)\b")
+# Na '20:00 – ' staat soms eerst de eindtijd: '22:15 Culturele Commissie, Muziek'.
+_END_TIME = re.compile(r"^([01]?\d|2[0-3])[:.][0-5]\d(?:\s*uur)?\s*[-–—:]?\s*")
 # Regels die een datum noemen maar geen uitje zijn.
 _LABEL_TITLE = re.compile(r"^(?:datum|data|laatst|geplaatst|gepubliceerd|bijgewerkt|openingstijden|deadline|"
                           r"sluitingsdatum|aanmelden|inschrijven|opgave|uiterlijk|vanaf|tot|t/m|gesloten|geopend|"
@@ -332,6 +334,11 @@ def _parse_line(line: str, href: str | None) -> dict | None:
     if not match:
         return None
     title = " ".join(match.group("title").split()).strip(" -–—:")
+    after_range = bool(match.groupdict().get("time")) and bool(_END_TIME.match(title))
+    if after_range:
+        # De rest na een tijdvak is vaak een rubriek ('Culturele Commissie, Muziek'), niet de naam:
+        # _line_items zoekt dan de naam in hetzelfde kaartje.
+        title = _END_TIME.sub("", title, count=1)
     if not _valid_title(title) or _LABEL_TITLE.match(title):
         return None
     groups = match.groupdict()
@@ -348,7 +355,7 @@ def _parse_line(line: str, href: str | None) -> dict | None:
         "title": title, "day": int(groups["d1"]), "month": MONTHS[groups["mon"].casefold().rstrip(".")],
         "weekday": WEEKDAYS.get((groups.get("wd") or "").casefold()),
         "year": int(groups["year"]) if groups.get("year") else None,
-        "time": time_text, "href": href,
+        "time": time_text, "href": href, "weak": after_range,
     }
 
 
@@ -362,7 +369,25 @@ def _line_items(blocks: list[HtmlBlock]) -> list[dict]:
         if items:
             found.append((block, items))
     outer = {element for block, _ in found for element in block.ancestors}
-    return [item for block, items in found if block.element not in outer for item in items]
+    items = [(block, item) for block, items in found if block.element not in outer for item in items]
+    for block, item in items:
+        if item.pop("weak", False):
+            item["title"] = _card_title(blocks, block) or item["title"]
+    return [item for _, item in items]
+
+
+def _card_title(blocks: list[HtmlBlock], block: HtmlBlock) -> str | None:
+    """De naam in een kaartje dat in zijn geheel een link is: het vette blok of de kop met
+    dezelfde link, buiten het blok met de datum (zoals bij Events Manager)."""
+    if not block.href:
+        return None
+    for other in blocks:
+        if other.href != block.href or other.tag not in ("strong", *_HEADING_TAGS):
+            continue
+        text = " ".join(other.text.split())
+        if text and text not in block.text and _valid_title(text):
+            return text
+    return None
 
 
 def _assign_years(items: list[dict], base: int) -> list[date | None]:

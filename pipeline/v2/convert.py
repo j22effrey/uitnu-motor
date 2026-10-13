@@ -83,6 +83,9 @@ DATE_PREFIX = re.compile(
 
 # Een losse aanduiding achter de naam ('Durf moedig te zijn Start'): die hoort niet bij de naam.
 TRAILING_LABEL = re.compile(r"\s+(?:start|datum|aanvang)\s*:?\s*$", re.IGNORECASE)
+# Een tijd voor de naam ('16:00 Kerstmarkt'): de tijd staat al bij het uitje.
+LEADING_TIME = re.compile(r"^\d{1,2}[:.]\d{2}(?:\s*(?:-|–|—|tot|t/m)\s*\d{1,2}[:.]\d{2})?(?:\s*uur)?\s*[-–—:]?\s+"
+                          r"(?=[^\d\s])(?!(?:tot|t/m|[-–—])\s*\d)", re.IGNORECASE)
 # Een postcode voor de plaatsnaam ('9341 BL Veenhuizen'): alleen de plaats telt.
 POSTCODE_PREFIX = re.compile(r"^\d{4}\s?[A-Za-z]{2}\s+")
 
@@ -91,6 +94,8 @@ def clean_title(value: str | None) -> str:
     title = re.sub(r"\s+", " ", value or "").strip()
     rest = DATE_PREFIX.sub("", title, count=1)
     rest = rest if len(rest) >= 3 else title
+    untimed = LEADING_TIME.sub("", rest, count=1)
+    rest = untimed if len(untimed) >= 3 else rest
     bare = TRAILING_LABEL.sub("", rest)
     return bare if len(bare.split()) >= 2 else rest
 
