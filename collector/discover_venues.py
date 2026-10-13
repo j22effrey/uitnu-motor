@@ -370,7 +370,8 @@ def _fetch_json(url: str, data: bytes | None = None, timeout: int = 150) -> dict
 
 def fetch_overpass() -> dict:
     body = urllib.parse.urlencode({"data": overpass_query()}).encode("utf-8")
-    return _fetch_json(OVERPASS_URL, data=body)
+    # Drie provincies vragen is zwaarder dan een cirkel van 60 km: ruim de tijd nemen.
+    return _fetch_json(OVERPASS_URL, data=body, timeout=300)
 
 
 def wikidata_query() -> str:
