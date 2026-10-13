@@ -171,7 +171,7 @@ from collector import discover_venues as dv
 
 
 def test_dorpen_gemeenten_verenigingen_en_cafes_uit_openstreetmap():
-    query = dv.overpass_query(60)
+    query = dv.overpass_query()
     for tag in ('"place"="village"', '"place"="hamlet"', '"amenity"="townhall"', '"office"="association"', '"amenity"="pub"'):
         assert tag in query
     found = dv.discoveries_from_overpass({"elements": [

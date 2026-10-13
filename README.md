@@ -1,12 +1,12 @@
 # UITNU motor
 
-De motor achter [UITNU](https://uitnu.pages.dev): de uitagenda voor Groningen en omgeving.
+De motor achter [UITNU](https://uitnu.pages.dev): de uitagenda voor Noord-Nederland (Groningen, Friesland en Drenthe).
 
 Elke nacht draait deze repo vanzelf:
 
 1. **Bronnen zoeken.** Elke maandag zoekt hij nieuwe plekken en festivals met een eigen website, via OpenStreetMap (ODbL) en Wikidata (CC0).
-2. **Bronnen testen.** Per ronde test hij 120 websites op een agenda die een robot kan lezen: schema.org, iCal, WordPress-agenda's of een gewone agendapagina.
-3. **Bronnen aanzetten.** Bronnen die aan alle eisen voldoen, gaan automatisch aan: robots.txt staat het toe, ze liggen binnen 60 km van Groningen, en het is geen verzamelsite of social media.
+2. **Bronnen testen.** Per ronde test hij tot 500 websites op een agenda die een robot kan lezen: schema.org, iCal, WordPress-agenda's of een gewone agendapagina.
+3. **Bronnen aanzetten.** Bronnen die aan alle eisen voldoen, gaan automatisch aan: robots.txt staat het toe, ze liggen in het werkgebied (Groningen, Friesland en Drenthe, plus een rand van 10 km over de grens), en het is geen verzamelsite of social media.
 4. **Agenda's ophalen** bij alle actieve bronnen.
 5. **Keuren.** Komt er te weinig binnen, valt een bron ineens weg of klopt er iets niet, dan blijft de vorige agenda staan.
 6. **Publiceren.** De agenda komt in `data/v2/events.json`, en de site laat zich opnieuw bouwen.

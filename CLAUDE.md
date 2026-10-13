@@ -1,8 +1,10 @@
 # UITNU motor
 
-UITNU is de werknaam van een uitagenda; de definitieve naam komt later. De proef draait in één
-regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_KM` in
-`pipeline/v2/build.py`). Daarna wordt het landelijk, dus bouw niets dat alleen voor Groningen werkt.
+UITNU is de werknaam van een uitagenda; de definitieve naam komt later. Het werkgebied is
+Noord-Nederland: de provincies Groningen, Fryslân en Drenthe, plus een rand van 10 km over de grens
+(`AREA_PROVINCES` en `MARGIN_KM` in `pipeline/area.py`; de grenzen staan in `pipeline/provincies.json`,
+van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bouw niets dat alleen voor
+één regio werkt. Eerder was het 60 km rond Groningen-centrum.
 
 ## Communicatie
 
@@ -55,8 +57,9 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
 3. `collector/auto_activate.py`: zet geschikte bronnen aan in `collector/web_crawl_sources.json`.
    Een dorpswebsite krijgt de plaats van het dorp mee, voor uitjes zonder eigen plaats.
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
-   en schrijven `data/auto_events.json`. Na 25 minuten rondt de motor af met wat er is; een bron
-   die niet af kwam (of storing had), houdt zijn uitjes van de vorige keer.
+   en schrijven `data/auto_events.json`. Na 35 minuten rondt de motor af met wat er is; een bron
+   die niet af kwam, storing had of niet te lezen was (website even plat), houdt zijn uitjes van de
+   vorige keer.
 5. `collector/event_photos.py`: zoekt foto's (organisator, anders meerdere foto's per gebouw of
    plaats van Wikimedia Commons) en onthoudt ze in `data/photos.json`. Hij noteert ook wat de
    organisator zelf over de soort zegt (alleen de conclusie, geen tekst). `pipeline/v2/photos.py`

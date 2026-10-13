@@ -2,6 +2,8 @@ name: UITNU motor
 
 # Elke nacht drie rondes: nieuwe websites testen, goede bronnen aanzetten, agenda's ophalen,
 # keuren en publiceren. Daarna bouwt Cloudflare de site opnieuw. Gratis: dit is een openbare repo.
+# Werkgebied: Noord-Nederland (pipeline/area.py). Een ronde duurt hooguit ongeveer twee uur; de rondes
+# wachten op elkaar (concurrency hieronder).
 on:
   schedule:
     - cron: '23 0,2,4 * * *'
@@ -17,7 +19,7 @@ concurrency:
 jobs:
   motor:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -27,7 +29,7 @@ jobs:
       - name: Nieuwe plekken en festivals zoeken (maandag, of bij handmatig starten)
         if: github.event_name == 'workflow_dispatch' || github.event.schedule != ''
         continue-on-error: true
-        timeout-minutes: 10
+        timeout-minutes: 20
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%u)" = "1" ]; then
             python -m collector.discover_venues --queue data/source_candidates.json
@@ -37,22 +39,22 @@ jobs:
 
       - name: Dorpswebsites zoeken (per plaats; elke plaats eens per drie maanden)
         continue-on-error: true
-        timeout-minutes: 15
-        run: python -m collector.village_sites --store data/dorpssites.json --budget-minutes 10 --summary
+        timeout-minutes: 20
+        run: python -m collector.village_sites --store data/dorpssites.json --budget-minutes 15 --summary
 
       - name: Websites testen (eerst tips en nieuwe websites) en goede bronnen aanzetten
         continue-on-error: true
-        timeout-minutes: 40
+        timeout-minutes: 50
         run: |
           python -m collector.discover_venues --queue data/source_candidates.json --tips-only
-          python -m collector.source_probe --queue data/source_candidates.json --limit 300 --workers 12 --deep-pages 3 --budget-minutes 30 --summary
+          python -m collector.source_probe --queue data/source_candidates.json --limit 500 --workers 16 --deep-pages 3 --budget-minutes 40 --summary
           python -m collector.auto_activate
 
-      - name: Agenda's ophalen bij alle actieve bronnen (na 25 minuten afronden met wat er is)
+      - name: Agenda's ophalen bij alle actieve bronnen (na 35 minuten afronden met wat er is)
         continue-on-error: true
-        timeout-minutes: 40
+        timeout-minutes: 50
         run: |
-          python -m pipeline.stage_active_sources --sources collector/web_crawl_sources.json --workers 16 --timeout 12 --budget-minutes 25 --output /tmp/staging.json > /dev/null
+          python -m pipeline.stage_active_sources --sources collector/web_crawl_sources.json --workers 24 --timeout 12 --budget-minutes 35 --output /tmp/staging.json > /dev/null
           python -m pipeline.build_auto_events --curated data/events.json --staged /tmp/staging.json --output data/auto_events.json
 
       - name: Kaartpin zetten bij handmatige uitjes met alleen een plaatsnaam
