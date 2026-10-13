@@ -8,8 +8,11 @@ public data only after this stage is proven stable.
 from __future__ import annotations
 
 from dataclasses import asdict
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 import argparse
 import json
+import sys
 import time
 
 from collector.active_source_runner import SourceRunResult, load_active_sources, run_all
@@ -121,18 +124,65 @@ def read_ok(value) -> bool:
     return diagnostics.get("pages_visited") != 0
 
 
-def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seconds: float | None = None) -> dict:
+def read_fetch_log(path: str | Path | None) -> dict:
+    """Per bron: wanneer de agenda voor het laatst helemaal gelezen is (data/opgehaald.json)."""
+    try:
+        value = json.loads(Path(path).read_text(encoding="utf-8")) if path else {}
+    except (OSError, ValueError):
+        return {}
+    return value if isinstance(value, dict) else {}
+
+
+def recently_read(sources: list[dict], fetch_log: dict, fresh_hours: float | None, now: datetime) -> set[str]:
+    """Bronnen die korter dan fresh_hours geleden helemaal gelezen zijn. Die slaat de motor deze ronde
+    over, zodat een kleine website niet elke ronde bezoek krijgt; hun uitjes van de vorige keer
+    blijven staan. Nieuwe bronnen en bronnen die de vorige keer niet af kwamen, zijn altijd aan de beurt."""
+    if not fresh_hours:
+        return set()
+    out = set()
+    for source in sources:
+        sid = str(source.get("id") or "")
+        try:
+            last = datetime.fromisoformat(str(fetch_log.get(sid)))
+        except ValueError:
+            continue
+        if last.tzinfo is None:
+            last = last.replace(tzinfo=timezone.utc)
+        if now - last < timedelta(hours=fresh_hours):
+            out.add(sid)
+    return out
+
+
+def update_fetch_log(fetch_log: dict, staged: dict, now: datetime, active: set[str]) -> dict:
+    """Bronnen die nu helemaal gelezen zijn krijgen de tijd van nu; bronnen die niet meer actief zijn
+    gaan eruit."""
+    log = {sid: when for sid, when in fetch_log.items() if sid in active}
+    for sid, info in (staged.get("source_runs") or {}).items():
+        if isinstance(info, dict) and info.get("complete"):
+            log[sid] = now.isoformat(timespec="minutes")
+    return dict(sorted(log.items()))
+
+
+def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seconds: float | None = None,
+        fetch_log: dict | None = None, fresh_hours: float | None = None, now: datetime | None = None) -> dict:
     """Alle bronnen ophalen en keuren. Met een tijdsbudget: ophalen krijgt het grootste deel, het
-    opzoeken van plaatsen de rest; wat niet af is, telt niet als 'weg' (zie build_auto_events)."""
+    opzoeken van plaatsen de rest; wat niet af is, telt niet als 'weg' (zie build_auto_events).
+    Met fresh_hours worden bronnen die onlangs nog gelezen zijn overgeslagen (zie recently_read)."""
     started = time.monotonic()
+    now = now or datetime.now(timezone.utc)
     sources = load_active_sources(sources_path)
     roots = {str(s.get("id") or ""): str(s.get("rootUrl") or "") for s in sources}
-    results = run_all(sources, workers=workers, timeout=timeout,
+    fresh = recently_read(sources, fetch_log or {}, fresh_hours, now)
+    results = run_all([s for s in sources if str(s.get("id") or "") not in fresh], workers=workers, timeout=timeout,
                       budget_seconds=budget_seconds * 0.75 if budget_seconds else None,
                       source_seconds=SOURCE_SECONDS if budget_seconds else None)
     deadline = started + budget_seconds if budget_seconds else None
     results = enrich_results(results, timeout=min(timeout, 8), deadline=deadline)
     staged = stage_results(results)
+    # Welke bron vond welk uitje (de link kan naar een kaartjeswebsite wijzen): zo houdt een bron die
+    # niet af kwam of werd overgeslagen precies zijn eigen uitjes (build_auto_events).
+    staged["origins"] = {event.source_url: roots.get(key, "")
+                         for key, value in results.items() for event in value.events if event.source_url}
     staged["source_runs"] = {
         key: {
             "extractor": value.extractor,
@@ -145,6 +195,11 @@ def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seco
         }
         for key, value in results.items()
     }
+    for key in sorted(fresh):
+        # Onlangs nog gelezen: deze ronde niet opnieuw. Telt als 'niet af', dus de uitjes blijven staan.
+        staged["source_runs"][key] = {"extractor": None, "rootUrl": roots.get(key, ""), "event_count": 0,
+                                      "diagnostics": {"onlangsGelezen": True}, "error": None, "complete": False}
+    staged["fetch_log"] = update_fetch_log(fetch_log or {}, staged, now, set(roots))
     staged["seconds"] = round(time.monotonic() - started, 1)
     return staged
 
@@ -157,11 +212,22 @@ if __name__ == "__main__":
     parser.add_argument("--output")
     parser.add_argument("--budget-minutes", type=float, default=None,
                         help="na zoveel minuten afronden met wat er is (de rest houdt de uitjes van de vorige keer)")
+    parser.add_argument("--fetch-log", help="per bron wanneer die voor het laatst helemaal gelezen is (wordt bijgewerkt)")
+    parser.add_argument("--fresh-hours", type=float, default=None,
+                        help="een bron die korter dan zoveel uur geleden gelezen is, deze ronde overslaan")
     parser.add_argument("--pretty", action="store_true")
     args = parser.parse_args()
 
     payload = run(sources_path=args.sources, workers=args.workers, timeout=args.timeout,
-                  budget_seconds=args.budget_minutes * 60 if args.budget_minutes else None)
+                  budget_seconds=args.budget_minutes * 60 if args.budget_minutes else None,
+                  fetch_log=read_fetch_log(args.fetch_log), fresh_hours=args.fresh_hours)
+    if args.fetch_log:
+        Path(args.fetch_log).write_text(json.dumps(payload["fetch_log"], ensure_ascii=False, indent=2) + "\n",
+                                        encoding="utf-8")
+    runs = list(payload["source_runs"].values())
+    skipped = sum(1 for r in runs if (r.get("diagnostics") or {}).get("onlangsGelezen"))
+    print(f"Bronnen: {len(runs) - skipped} opgehaald, waarvan {sum(1 for r in runs if r.get('complete'))} "
+          f"helemaal gelezen; {skipped} overgeslagen (onlangs nog gelezen).", file=sys.stderr)
     text = json.dumps(payload, ensure_ascii=False, indent=2 if args.pretty else None)
     if args.output:
         with open(args.output, "w", encoding="utf-8") as handle:

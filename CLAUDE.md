@@ -13,7 +13,8 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
 ## Repo's
 
 - `j22effrey/uitnu-motor` (openbaar, deze repo): de motor. Leidend voor `collector/`, `pipeline/`
-  en `tests/v2/`. Draait elke nacht via `.github/workflows/motor.yml` en publiceert
+  en `tests/v2/`. Draait elke drie uur via `.github/workflows/motor.yml` (GitHub slaat geplande rondes
+  soms over of begint later; dan komt de volgende gewoon) en publiceert
   `data/v2/events.json` (met `data/v2/status.json` als verslag en `data/v2/twijfel.json` als lijst
   met uitjes waarvan de soort nog nagekeken moet worden).
 - `j22effrey/uitnu` (privé), branch `v2`: de site in `site/` (Astro). Cloudflare Pages bouwt die
@@ -43,7 +44,8 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
 1. `collector/discover_venues.py`: zoekt nieuwe websites via OpenStreetMap (podia, dorpshuizen,
    musea, cafés, verenigingen, gemeentehuizen, en dorpen met een eigen website) en Wikidata
    (festivals, dorpen en gemeenten), plus de tips in `collector/tips.json` en de gevonden
-   dorpswebsites (`data/source_candidates.json`).
+   dorpswebsites (`data/source_candidates.json`). OpenStreetMap en Wikidata vraagt hij eens per week
+   (meteen bij een nieuw werkgebied, en altijd als de motor met de hand start; `data/zoekronde.json`).
    `collector/village_sites.py` loopt elke plaats in het werkgebied na (eens per drie maanden): het
    probeert veelgebruikte websitenamen (eenrum.nl, dorpsbelangeneenrum.nl, ...), kijkt (met respect
    voor robots.txt) of de site echt bij die plaats hoort, en bewaart het oordeel in
@@ -59,7 +61,9 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
    en schrijven `data/auto_events.json`. Na 35 minuten rondt de motor af met wat er is; een bron
    die niet af kwam, storing had of niet te lezen was (website even plat), houdt zijn uitjes van de
-   vorige keer.
+   vorige keer. Elke agenda wordt hooguit om de zes uur opgehaald (`data/opgehaald.json`), zodat
+   kleine websites niet elke ronde bezoek krijgen; daartussen blijven de uitjes van de vorige keer
+   staan. Met de hand gestart haalt de motor alles op.
 5. `collector/event_photos.py`: zoekt foto's (organisator, anders meerdere foto's per gebouw of
    plaats van Wikimedia Commons) en onthoudt ze in `data/photos.json`. Hij noteert ook wat de
    organisator zelf over de soort zegt (alleen de conclusie, geen tekst). `pipeline/v2/photos.py`

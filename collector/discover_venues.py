@@ -28,6 +28,7 @@ import json
 import re
 import urllib.parse
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 from collector.source_candidates import filter_new_hosts, host_key, load_source_hosts, update_queue
@@ -95,6 +96,9 @@ EXCLUDED_HOSTS = {
 }
 TIPS_PATH = "collector/tips.json"
 VILLAGE_SITES_PATH = "data/dorpssites.json"
+# Naast de wachtrij: wanneer elke zoekbron voor het laatst lukte, en voor welk werkgebied.
+SEARCH_LOG_NAME = "zoekronde.json"
+SEARCHES = ("OpenStreetMap", "Wikidata (festivals)", "Wikidata (dorpen en gemeenten)")
 
 
 def overpass_query(provinces: tuple[str, ...] = area.AREA_PROVINCES) -> str:
@@ -390,6 +394,40 @@ def fetch_wikidata_places() -> dict:
     return _fetch_json(f"{WIKIDATA_URL}?{query}")
 
 
+def searches_due(log: dict, every_days: int | None, today: date) -> list[str]:
+    """Welke zoekbronnen aan de beurt zijn. Zonder every_days: allemaal. Anders alleen een bron die
+    every_days of meer dagen geleden voor het laatst lukte (of nog nooit), en allemaal als het
+    werkgebied sindsdien is veranderd."""
+    if not every_days or log.get("werkgebied") != list(area.AREA_PROVINCES):
+        return list(SEARCHES)
+    due = []
+    for name in SEARCHES:
+        try:
+            age = (today - date.fromisoformat(str((log.get("gelukt") or {}).get(name)))).days
+        except ValueError:
+            age = None
+        if age is None or age >= every_days:
+            due.append(name)
+    return due
+
+
+def _read_log(path: Path) -> dict:
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return value if isinstance(value, dict) else {}
+
+
+def save_search_log(path: Path, log: dict, done: list[str], today: date) -> dict:
+    """Onthoud welke zoekbronnen vandaag lukten. Een nieuw werkgebied begint met een schone lei."""
+    if log.get("werkgebied") != list(area.AREA_PROVINCES):
+        log = {"werkgebied": list(area.AREA_PROVINCES), "gelukt": {}}
+    log.setdefault("gelukt", {}).update({name: today.isoformat() for name in done})
+    path.write_text(json.dumps(log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return log
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="UITNU bronnenmachine")
     parser.add_argument("--queue", default="data/source_candidates.json")
@@ -404,25 +442,39 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--tips-only", action="store_true",
                         help="alleen de tips en gevonden dorpswebsites toevoegen (geen internet nodig)")
     parser.add_argument("--dry-run", action="store_true", help="alleen tellen, wachtrij niet aanpassen")
+    parser.add_argument("--every-days", type=int, default=None,
+                        help="een zoekbron alleen opnieuw vragen als die zoveel dagen geleden voor het laatst lukte")
+    parser.add_argument("--search-log", help=f"waar dat wordt onthouden (standaard {SEARCH_LOG_NAME} naast de wachtrij)")
     args = parser.parse_args(argv)
 
     discoveries: list[dict] = discoveries_from_tips(args.tips) + discoveries_from_village_sites(args.village_sites)
     problems: list[str] = []
-    if not args.tips_only:
+    log_path = Path(args.search_log) if args.search_log else Path(args.queue).with_name(SEARCH_LOG_NAME)
+    log = _read_log(log_path)
+    due = [] if args.tips_only else searches_due(log, args.every_days, date.today())
+    if not args.tips_only and not due:
+        print(f"Nieuwe plekken zoeken: niet nodig, de vorige keer is minder dan {args.every_days} dagen geleden.")
+    done: list[str] = []
+    if "OpenStreetMap" in due:
         try:
             osm = json.loads(Path(args.osm_json).read_text(encoding="utf-8")) if args.osm_json else fetch_overpass()
             discoveries += discoveries_from_overpass(osm)
+            done.append("OpenStreetMap")
         except Exception as error:  # een bron die faalt mag de andere niet tegenhouden
             problems.append(f"OpenStreetMap: {error}")
+    if "Wikidata (festivals)" in due:
         try:
             wiki = json.loads(Path(args.wikidata_json).read_text(encoding="utf-8")) if args.wikidata_json else fetch_wikidata()
             discoveries += discoveries_from_wikidata(wiki)
+            done.append("Wikidata (festivals)")
         except Exception as error:
             problems.append(f"Wikidata (festivals): {error}")
+    if "Wikidata (dorpen en gemeenten)" in due:
         try:
             places = (json.loads(Path(args.places_json).read_text(encoding="utf-8")) if args.places_json
                       else fetch_wikidata_places())
             discoveries += discoveries_from_wikidata_places(places)
+            done.append("Wikidata (dorpen en gemeenten)")
         except Exception as error:
             problems.append(f"Wikidata (dorpen en gemeenten): {error}")
 
@@ -437,6 +489,8 @@ def main(argv: list[str] | None = None) -> int:
     if not args.dry_run and Path(args.queue).exists():
         counts = annotate_area(args.queue, discoveries)
         print(f"Werkgebied: {counts['binnen']} binnen, {counts['buiten']} buiten (worden niet getest), {counts['onbekend']} onbekend.")
+    if done and not args.dry_run:
+        save_search_log(log_path, log, done, date.today())
     return 1 if problems and not discoveries else 0
 
 

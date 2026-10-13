@@ -1,12 +1,16 @@
 name: UITNU motor
 
-# Elke nacht drie rondes: nieuwe websites testen, goede bronnen aanzetten, agenda's ophalen,
-# keuren en publiceren. Daarna bouwt Cloudflare de site opnieuw. Gratis: dit is een openbare repo.
+# Elke drie uur een ronde: nieuwe websites testen, goede bronnen aanzetten, agenda's ophalen,
+# keuren en publiceren. Daarna bouwt Cloudflare de site opnieuw (gratis tot 500 keer per maand;
+# dit zijn er hooguit 8 per dag). GitHub Actions is gratis: dit is een openbare repo. GitHub slaat
+# geplande rondes soms over of begint later; dan komt de volgende gewoon.
+# Om kleine websites te sparen: elke agenda hooguit om de zes uur ophalen, nieuwe plekken zoeken
+# eens per week. Met de hand gestart doet de motor alles.
 # Werkgebied: Noord-Nederland (pipeline/area.py). Een ronde duurt hooguit ongeveer twee uur; de rondes
 # wachten op elkaar (concurrency hieronder).
 on:
   schedule:
-    - cron: '23 0,2,4 * * *'
+    - cron: '23 */3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -26,15 +30,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Nieuwe plekken en festivals zoeken (maandag, of bij handmatig starten)
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule != ''
+      - name: Nieuwe plekken en festivals zoeken (eens per week, of bij handmatig starten)
         continue-on-error: true
         timeout-minutes: 20
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%u)" = "1" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             python -m collector.discover_venues --queue data/source_candidates.json
           else
-            echo "Vandaag niet: nieuwe plekken zoeken gebeurt op maandag."
+            python -m collector.discover_venues --queue data/source_candidates.json --every-days 7
           fi
 
       - name: Dorpswebsites zoeken (per plaats; elke plaats eens per drie maanden)
@@ -50,11 +53,13 @@ jobs:
           python -m collector.source_probe --queue data/source_candidates.json --limit 500 --workers 16 --deep-pages 3 --budget-minutes 40 --summary
           python -m collector.auto_activate
 
-      - name: Agenda's ophalen bij alle actieve bronnen (na 35 minuten afronden met wat er is)
+      - name: Agenda's ophalen (elke bron hooguit om de zes uur; na 35 minuten afronden met wat er is)
         continue-on-error: true
         timeout-minutes: 50
         run: |
-          python -m pipeline.stage_active_sources --sources collector/web_crawl_sources.json --workers 24 --timeout 12 --budget-minutes 35 --output /tmp/staging.json > /dev/null
+          VERS=5
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then VERS=0; fi
+          python -m pipeline.stage_active_sources --sources collector/web_crawl_sources.json --workers 24 --timeout 12 --budget-minutes 35 --fetch-log data/opgehaald.json --fresh-hours $VERS --output /tmp/staging.json > /dev/null
           python -m pipeline.build_auto_events --curated data/events.json --staged /tmp/staging.json --output data/auto_events.json
 
       - name: Kaartpin zetten bij handmatige uitjes met alleen een plaatsnaam
@@ -84,6 +89,8 @@ jobs:
             echo "Keuring afgekeurd: de vorige agenda blijft staan, de voortgang met bronnen wordt wel bewaard."
             git checkout -- data/auto_events.json data/v2 2>/dev/null || true
             rm -f data/v2/events.rejected.json
+            # Volgende ronde alles opnieuw ophalen (de afgekeurde lezing telt niet).
+            git checkout -- data/opgehaald.json 2>/dev/null || rm -f data/opgehaald.json
           fi
           git add data collector/web_crawl_sources.json
           if git diff --cached --quiet; then echo "veranderd=nee" >> "$GITHUB_OUTPUT"; echo "Geen wijzigingen."; exit 0; fi
