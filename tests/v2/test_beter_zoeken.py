@@ -76,6 +76,7 @@ def test_platte_pagina_blijft_streng():
 # ---------------------------------------------------------------- de test van websites
 
 import json
+import re
 
 import collector.source_probe as probe
 from collector.site_crawler import Fetched
@@ -172,8 +173,9 @@ from collector import discover_venues as dv
 
 def test_dorpen_gemeenten_verenigingen_en_cafes_uit_openstreetmap():
     query = dv.overpass_query()
-    for tag in ('"place"="village"', '"place"="hamlet"', '"amenity"="townhall"', '"office"="association"', '"amenity"="pub"'):
-        assert tag in query
+    for key, value in (("place", "village"), ("place", "hamlet"), ("amenity", "townhall"),
+                       ("office", "association"), ("amenity", "pub")):
+        assert re.search(rf'nwr\.sites\["{key}"~"\^\([^)]*\b{value}\b', query), (key, value)
     found = dv.discoveries_from_overpass({"elements": [
         {"type": "node", "id": 7, "lat": 53.19, "lon": 6.77, "tags": {"place": "village", "name": "Froombosch", "website": "www.froombosch.com"}},
         {"type": "node", "id": 8, "tags": {"amenity": "townhall", "name": "Gemeentehuis", "website": "https://www.midden-groningen.nl"}},
@@ -188,13 +190,18 @@ def test_dorpen_en_gemeenten_uit_wikidata():
         {"item": {"value": "http://www.wikidata.org/entity/Q1"}, "itemLabel": {"value": "Froombosch"},
          "website": {"value": "https://www.froombosch.com"}, "coord": {"value": "Point(6.77 53.19)"},
          "type": {"value": "http://www.wikidata.org/entity/Q532"}},
-        {"item": {"value": "http://www.wikidata.org/entity/Q2"}, "itemLabel": {"value": "Midden-Groningen"},
-         "website": {"value": "https://www.midden-groningen.nl"}, "type": {"value": "http://www.wikidata.org/entity/Q2039348"}},
+        {"item": {"value": "http://www.wikidata.org/entity/Q2"}, "nl": {"value": "Midden-Groningen"},
+         "website": {"value": "https://www.midden-groningen.nl"}, "coord": {"value": "Point(6.79 53.17)"},
+         "type": {"value": "http://www.wikidata.org/entity/Q2039348"}},
+        # De vraag gaat over het hele land: een plaats buiten het werkgebied valt weg.
+        {"item": {"value": "http://www.wikidata.org/entity/Q3"}, "nl": {"value": "Maastricht"},
+         "website": {"value": "https://www.gemeentemaastricht.nl"}, "coord": {"value": "Point(5.69 50.85)"},
+         "type": {"value": "http://www.wikidata.org/entity/Q2039348"}},
     ]}}
     found = dv.discoveries_from_wikidata_places(payload)
     assert [f["anchor_text"] for f in found] == ["Froombosch (dorp)", "Midden-Groningen (gemeente)"]
     assert found[0]["lat"] == 53.19 and found[0]["lon"] == 6.77
-    assert "wikibase:around" in dv.WIKIDATA_PLACES_QUERY and "P856" in dv.WIKIDATA_PLACES_QUERY
+    assert "wd:Q55" in dv.WIKIDATA_PLACES_QUERY and "P856" in dv.WIKIDATA_PLACES_QUERY
 
 
 def test_tip_van_de_eigenaar_komt_elke_ronde_in_de_wachtrij(tmp_path):

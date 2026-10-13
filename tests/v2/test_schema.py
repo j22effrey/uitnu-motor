@@ -105,32 +105,33 @@ def _log(**dates):
 def test_zoeken_eens_per_week_per_bron():
     week_ago = (TODAY - timedelta(days=7)).isoformat()
     yesterday = (TODAY - timedelta(days=1)).isoformat()
-    all_recent = _log(**{name: yesterday for name in dv.SEARCHES})
+    all_recent = _log(**{name: yesterday for name in dv.search_names()})
     assert dv.searches_due(all_recent, 7, TODAY) == []
     # Zonder wachttijd (met de hand gestart): alles.
-    assert dv.searches_due(all_recent, None, TODAY) == list(dv.SEARCHES)
-    # Een week geleden, of nog nooit gelukt (OpenStreetMap was plat): weer aan de beurt.
-    log = _log(**{"Wikidata (festivals)": week_ago, "Wikidata (dorpen en gemeenten)": yesterday})
-    assert dv.searches_due(log, 7, TODAY) == ["OpenStreetMap", "Wikidata (festivals)"]
+    assert dv.searches_due(all_recent, None, TODAY) == list(dv.search_names())
+    # Een week geleden, of nog nooit gelukt (OpenStreetMap was plat voor Drenthe): weer aan de beurt.
+    log = _log(**{"OpenStreetMap (Groningen)": yesterday, "OpenStreetMap (Fryslân)": yesterday,
+                  "Wikidata (festivals)": week_ago, "Wikidata (dorpen en gemeenten)": yesterday})
+    assert dv.searches_due(log, 7, TODAY) == ["OpenStreetMap (Drenthe)", "Wikidata (festivals)"]
 
 
 def test_nieuw_werkgebied_zoekt_meteen_alles():
-    log = {"werkgebied": ["Groningen"], "gelukt": {name: TODAY.isoformat() for name in dv.SEARCHES}}
-    assert dv.searches_due(log, 7, TODAY) == list(dv.SEARCHES)
-    assert dv.searches_due({}, 7, TODAY) == list(dv.SEARCHES)
+    log = {"werkgebied": ["Groningen"], "gelukt": {name: TODAY.isoformat() for name in dv.search_names()}}
+    assert dv.searches_due(log, 7, TODAY) == list(dv.search_names())
+    assert dv.searches_due({}, 7, TODAY) == list(dv.search_names())
 
 
 def test_zoeklog_begint_schoon_bij_een_nieuw_werkgebied(tmp_path):
     path = tmp_path / "zoekronde.json"
-    old = {"werkgebied": ["Groningen"], "gelukt": {name: "2026-10-01" for name in dv.SEARCHES}}
-    saved = dv.save_search_log(path, old, ["OpenStreetMap"], TODAY)
+    old = {"werkgebied": ["Groningen"], "gelukt": {name: "2026-10-01" for name in dv.search_names()}}
+    saved = dv.save_search_log(path, old, ["OpenStreetMap (Drenthe)"], TODAY)
     # De andere bronnen hebben voor dit werkgebied nog niet gezocht: die blijven aan de beurt.
-    assert saved == {"werkgebied": list(area.AREA_PROVINCES), "gelukt": {"OpenStreetMap": "2026-10-13"}}
+    assert saved == {"werkgebied": list(area.AREA_PROVINCES), "gelukt": {"OpenStreetMap (Drenthe)": "2026-10-13"}}
     assert json.loads(path.read_text()) == saved
 
 
 def test_motor_vraagt_niets_als_de_vorige_zoekronde_vers_is(tmp_path, monkeypatch):
-    def no_network():
+    def no_network(*args):
         raise AssertionError("niet zoeken: de vorige keer is te kort geleden")
 
     for name in ("fetch_overpass", "fetch_wikidata", "fetch_wikidata_places"):
@@ -139,17 +140,19 @@ def test_motor_vraagt_niets_als_de_vorige_zoekronde_vers_is(tmp_path, monkeypatc
     queue.write_text(json.dumps({"version": 1, "candidates": []}))
     known.write_text(json.dumps({"sources": []}))
     (tmp_path / "zoekronde.json").write_text(json.dumps(_log(**{name: date.today().isoformat()
-                                                              for name in dv.SEARCHES})))
+                                                              for name in dv.search_names()})))
     assert dv.main(["--queue", str(queue), "--known", str(known), "--every-days", "7",
                     "--tips", str(tmp_path / "geen-tips.json"),
                     "--village-sites", str(tmp_path / "geen-dorpssites.json")]) == 0
 
 
 def test_motor_onthoudt_welke_zoekbronnen_lukten(tmp_path, monkeypatch):
-    def broken():
-        raise OSError("Overpass is even plat")
+    def overpass(provinces):
+        if provinces == ("Drenthe",):
+            raise OSError("Overpass is even plat")
+        return {"elements": []}
 
-    monkeypatch.setattr(dv, "fetch_overpass", broken)
+    monkeypatch.setattr(dv, "fetch_overpass", overpass)
     monkeypatch.setattr(dv, "fetch_wikidata", lambda: {"results": {"bindings": []}})
     monkeypatch.setattr(dv, "fetch_wikidata_places", lambda: {"results": {"bindings": []}})
     queue, known = tmp_path / "queue.json", tmp_path / "known.json"
@@ -158,6 +161,7 @@ def test_motor_onthoudt_welke_zoekbronnen_lukten(tmp_path, monkeypatch):
     dv.main(["--queue", str(queue), "--known", str(known), "--every-days", "7",
              "--tips", str(tmp_path / "geen-tips.json"), "--village-sites", str(tmp_path / "geen-dorpssites.json")])
     log = json.loads((tmp_path / "zoekronde.json").read_text())
-    assert set(log["gelukt"]) == {"Wikidata (festivals)", "Wikidata (dorpen en gemeenten)"}
-    # De volgende ronde probeert alleen OpenStreetMap opnieuw.
-    assert dv.searches_due(log, 7, date.today()) == ["OpenStreetMap"]
+    assert set(log["gelukt"]) == {"OpenStreetMap (Groningen)", "OpenStreetMap (Fryslân)",
+                                  "Wikidata (festivals)", "Wikidata (dorpen en gemeenten)"}
+    # De volgende ronde probeert alleen Drenthe opnieuw.
+    assert dv.searches_due(log, 7, date.today()) == ["OpenStreetMap (Drenthe)"]

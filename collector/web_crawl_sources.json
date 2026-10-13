@@ -1564,7 +1564,7 @@
       "name": "Ansen",
       "rootUrl": "https://ansen.eu/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -1578,7 +1578,9 @@
         "lat": 52.7811,
         "lon": 6.3333
       },
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "disabledReason": "De 'agenda' is een boekingskalender van zalen en buurten, geen uitjes.",
+      "disabledAt": "2026-10-13"
     },
     {
       "id": "appelscha-frl-web",
@@ -2942,7 +2944,7 @@
       "name": "Altijd boven op het nieuws van Ruinerwold",
       "rootUrl": "https://www.ruinerwold.info/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -2956,7 +2958,9 @@
         "lat": 52.7228,
         "lon": 6.2506
       },
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "disabledReason": "Nieuwssite, geen agenda van een organisator.",
+      "disabledAt": "2026-10-13"
     },
     {
       "id": "schoonloo-com-web",
@@ -3446,7 +3450,7 @@
       "name": "Zeijen.nu",
       "rootUrl": "https://www.zeijen.nu/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -3460,7 +3464,9 @@
         "lat": 53.0478,
         "lon": 6.5464
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Nieuwssite (berichten en advertenties), geen agenda van een organisator.",
+      "disabledAt": "2026-10-13"
     },
     {
       "id": "dorpsbelangentenboer-com-web",
@@ -3923,7 +3929,7 @@
       "name": "Visserijdagen Harlingen",
       "rootUrl": "https://visserijdagenharlingen.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -3937,7 +3943,9 @@
         "lat": 53.1746,
         "lon": 5.4214
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Levert nu alleen kopjes van de website op ('Fotogalerij', 'Sponsoren gezocht'); weer aanzetten als het programma van 2027 online staat.",
+      "disabledAt": "2026-10-13"
     },
     {
       "id": "achlum-info-web",
