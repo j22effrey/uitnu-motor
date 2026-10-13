@@ -46,6 +46,8 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    (festivals, dorpen en gemeenten), plus de tips in `collector/tips.json` en de gevonden
    dorpswebsites (`data/source_candidates.json`). OpenStreetMap en Wikidata vraagt hij eens per week
    (meteen bij een nieuw werkgebied, en altijd als de motor met de hand start; `data/zoekronde.json`).
+   OpenStreetMap per provincie, met reserveservers; Wikidata met gewone SPARQL en QLever als reserve.
+   Lukt een zoekvraag niet (de servers zijn vaak druk), dan probeert de volgende ronde het opnieuw.
    `collector/village_sites.py` loopt elke plaats in het werkgebied na (eens per drie maanden): het
    probeert veelgebruikte websitenamen (eenrum.nl, dorpsbelangeneenrum.nl, ...), kijkt (met respect
    voor robots.txt) of de site echt bij die plaats hoort, en bewaart het oordeel in
@@ -55,7 +57,11 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    naar de agenda op de voorpagina; een agenda mag een lijst, kaartjes of een tabel met kopjes als
    'Datum | Tijd | Activiteit' zijn). Volgorde: tips, nieuwe dorpswebsites, websites die een oudere
    test afwees, nieuwe websites van gemeenten en festivals (Wikidata), andere nieuwe websites, dan
-   herkansingen na een wachttijd. Geen robots.txt betekent: welkom.
+   herkansingen na een wachttijd. Geen robots.txt betekent: welkom. Een kapot certificaat: dan via
+   http. Een storing: de volgende dag opnieuw. Verhuisd naar een andere website: status 'moved' met
+   het nieuwe adres erbij (`probeDetails.movedTo`); niet vanzelf volgen (het kan een verkocht domein
+   zijn), maar nakijken en een goed nieuw adres als tip toevoegen. Weigert een website de motor
+   (403), dan respecteren we dat.
 3. `collector/auto_activate.py`: zet geschikte bronnen aan in `collector/web_crawl_sources.json`.
    Een dorpswebsite krijgt de plaats van het dorp mee, voor uitjes zonder eigen plaats.
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op

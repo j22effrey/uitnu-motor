@@ -26,6 +26,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import time
 import urllib.parse
 import urllib.request
 from datetime import date
@@ -35,8 +36,18 @@ from collector.source_candidates import filter_new_hosts, host_key, load_source_
 from pipeline import area
 
 USER_AGENT = "UITNU-bronnenmachine/1.0 (+https://uitnu.pages.dev/over/)"
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+# OpenStreetMap: de hoofdserver, en twee andere openbare servers als die het te druk heeft.
+OVERPASS_URLS = (
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.private.coffee/api/interpreter",
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+)
+OVERPASS_URL = OVERPASS_URLS[0]
 WIKIDATA_URL = "https://query.wikidata.org/sparql"
+# Wikidata zelf, en anders een snelle kopie (QLever, Universiteit van Freiburg; net als village_sites).
+SPARQL_ENDPOINTS = (WIKIDATA_URL, "https://qlever.dev/api/wikidata")
+# Zoeken mag samen hooguit zoveel minuten duren (de stap in de motor stopt na 20).
+SEARCH_BUDGET_SECONDS = 15 * 60
 
 # Het werkgebied staat in pipeline/area.py (een lijstje provincies). Sommige zoekdiensten kennen alleen
 # een cirkel: dan zoeken we in een cirkel om het hele gebied en houden we alleen wat erin ligt.
@@ -98,51 +109,65 @@ TIPS_PATH = "collector/tips.json"
 VILLAGE_SITES_PATH = "data/dorpssites.json"
 # Naast de wachtrij: wanneer elke zoekbron voor het laatst lukte, en voor welk werkgebied.
 SEARCH_LOG_NAME = "zoekronde.json"
-SEARCHES = ("OpenStreetMap", "Wikidata (festivals)", "Wikidata (dorpen en gemeenten)")
+WIKIDATA_SEARCHES = ("Wikidata (festivals)", "Wikidata (dorpen en gemeenten)")
+
+
+def search_names(provinces: tuple[str, ...] = area.AREA_PROVINCES) -> list[str]:
+    """De zoekbronnen: OpenStreetMap per provincie (een kleinere vraag lukt vaker), en Wikidata."""
+    return [f"OpenStreetMap ({province})" for province in provinces] + list(WIKIDATA_SEARCHES)
 
 
 def overpass_query(provinces: tuple[str, ...] = area.AREA_PROVINCES) -> str:
     """Overpass QL: alle plekken van de soorten hierboven met een website-tag, in de provincies van
-    het werkgebied (OpenStreetMap kent ze aan hun ISO-code, zoals NL-GR)."""
+    het werkgebied (OpenStreetMap kent ze aan hun ISO-code, zoals NL-GR). Eén regel per sleutel
+    (amenity, tourism, ...) met alle waarden erin: dat is lichter voor de server."""
     codes = "|".join(area.iso_codes(tuple(provinces)))
-    inside = "(area.werkgebied)"
-    lines = []
-    for (key, value), _ in OSM_TYPES.items():
-        for site_key in ("website", "contact:website"):
-            lines.append(f'  nwr["{key}"="{value}"]["{site_key}"]{inside};')
-    lines.append(f'  nwr["club"]["website"]{inside};')
-    return ("[out:json][timeout:240];\n"
-            f'area["ISO3166-2"~"^({codes})$"]->.werkgebied;\n(\n' + "\n".join(lines) + "\n);\nout center tags;")
+    values: dict[str, list[str]] = {}
+    for key, value in OSM_TYPES:
+        values.setdefault(key, []).append(value)
+    # Eerst alles met een website in het gebied (snel via de index), daarna pas op soort filteren.
+    lines = [f'  nwr.sites["{key}"~"^({"|".join(names)})$"];' for key, names in values.items()]
+    lines.append('  nwr.sites["club"];')
+    return ("[out:json][timeout:180];\n"
+            f'area["ISO3166-2"~"^({codes})$"]->.werkgebied;\n'
+            '(nwr["website"](area.werkgebied); nwr["contact:website"](area.werkgebied);)->.sites;\n'
+            "(\n" + "\n".join(lines) + "\n);\nout center tags;")
 
 
+# Gewone SPARQL (geen extra's van Wikidata zelf), zodat ook het reserve-adres werkt. Namen: Nederlands,
+# anders Fries, anders Engels (zie wikidata_label).
 WIKIDATA_QUERY = """
-SELECT DISTINCT ?item ?itemLabel ?website ?region ?coord ?placeCoord WHERE {
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?item ?nl ?fy ?en ?website ?region ?coord ?placeCoord WHERE {
   VALUES ?region { %s }   # de provincies van het werkgebied
   ?item wdt:P31/wdt:P279* wd:Q132241 .          # een festival (of een soort festival)
   ?item wdt:P131* ?region .
   ?item wdt:P856 ?website .
   OPTIONAL { ?item wdt:P625 ?coord . }
   OPTIONAL { ?item wdt:P276 ?place . ?place wdt:P625 ?placeCoord . }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,fy,nds,en,de,mul". }
+  OPTIONAL { ?item rdfs:label ?nl . FILTER(LANG(?nl) = "nl") }
+  OPTIONAL { ?item rdfs:label ?fy . FILTER(LANG(?fy) = "fy") }
+  OPTIONAL { ?item rdfs:label ?en . FILTER(LANG(?en) = "en") }
 }
 LIMIT 2000
 """
 
 
-# Woonplaatsen en gemeenten in het werkgebied met een officiële website (dorpswebsites).
+# Woonplaatsen en gemeenten van het land met een officiële website; het werkgebied wordt daarna
+# uitgeknipt (pipeline/area.py). Een cirkel om het hele gebied was te zwaar voor Wikidata.
 WIKIDATA_PLACES_QUERY = """
-SELECT DISTINCT ?item ?itemLabel ?website ?coord ?type WHERE {{
-  SERVICE wikibase:around {{
-    ?item wdt:P625 ?coord .
-    bd:serviceParam wikibase:center "Point({lon} {lat})"^^geo:wktLiteral .
-    bd:serviceParam wikibase:radius "{radius}" .
-  }}
-  ?item wdt:P31 ?type .
-  VALUES ?type {{ wd:Q532 wd:Q3957 wd:Q5084 wd:Q486972 wd:Q1852859 wd:Q2039348 wd:Q15284 wd:Q1549591 wd:Q515 }}
-  ?item wdt:P856 ?website .
-  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "nl,fy,nds,en,de,mul". }}
-}}
-LIMIT 3000
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?item ?nl ?fy ?en ?website ?coord ?type WHERE {
+  ?item wdt:P17 wd:Q55 ; wdt:P31 ?type ; wdt:P856 ?website ; wdt:P625 ?coord .
+  VALUES ?type { wd:Q532 wd:Q3957 wd:Q5084 wd:Q486972 wd:Q1852859 wd:Q2039348 wd:Q15284 wd:Q1549591 wd:Q515 }
+  OPTIONAL { ?item rdfs:label ?nl . FILTER(LANG(?nl) = "nl") }
+  OPTIONAL { ?item rdfs:label ?fy . FILTER(LANG(?fy) = "fy") }
+  OPTIONAL { ?item rdfs:label ?en . FILTER(LANG(?en) = "en") }
+}
 """
 MUNICIPALITY = "Q2039348"
 
@@ -198,10 +223,13 @@ def discoveries_from_overpass(payload: dict) -> list[dict]:
 
 
 def wikidata_label(row: dict) -> str | None:
-    """De naam uit Wikidata. Zonder naam in een van de gevraagde talen geeft Wikidata de code terug
-    ('Q1977146'): dat is geen naam, en zeker geen plaatsnaam."""
-    label = str(row.get("itemLabel", {}).get("value") or "").strip()
-    return None if not label or re.fullmatch(r"Q\d+", label) else label
+    """De naam uit Wikidata: Nederlands, anders Fries, anders Engels. Zonder naam gaf Wikidata soms de
+    code terug ('Q1977146'): dat is geen naam, en zeker geen plaatsnaam."""
+    for key in ("nl", "fy", "en", "itemLabel"):
+        label = str((row.get(key) or {}).get("value") or "").strip()
+        if label and not re.fullmatch(r"Q\d+", label):
+            return label
+    return None
 
 
 def discoveries_from_wikidata(payload: dict) -> list[dict]:
@@ -213,7 +241,7 @@ def discoveries_from_wikidata(payload: dict) -> list[dict]:
         entity = row.get("item", {}).get("value", "")
         qid = entity.rsplit("/", 1)[-1]
         point = (row.get("coord") or row.get("placeCoord") or {}).get("value", "")
-        match = re.match(r"Point\(([-0-9.]+) ([-0-9.]+)\)", point)
+        match = re.match(r"Point\(([-0-9.]+) ([-0-9.]+)\)", point, re.I)
         found.append({
             "url": url,
             "score": 35,
@@ -236,7 +264,9 @@ def discoveries_from_wikidata_places(payload: dict) -> list[dict]:
             continue
         entity = row.get("item", {}).get("value", "")
         qid = entity.rsplit("/", 1)[-1]
-        match = re.match(r"Point\(([-0-9.]+) ([-0-9.]+)\)", row.get("coord", {}).get("value", ""))
+        match = re.match(r"Point\(([-0-9.]+) ([-0-9.]+)\)", row.get("coord", {}).get("value", ""), re.I)
+        if not match or not area.in_area(float(match.group(2)), float(match.group(1))):
+            continue  # de vraag gaat over het hele land: alleen het werkgebied houden
         municipality = row.get("type", {}).get("value", "").endswith("/" + MUNICIPALITY)
         found.append({
             "url": url,
@@ -246,8 +276,8 @@ def discoveries_from_wikidata_places(payload: dict) -> list[dict]:
             "from_url": entity,
             "anchor_text": (f"{wikidata_label(row)} ({'gemeente' if municipality else 'dorp'})"
                             if wikidata_label(row) else None),
-            "lat": float(match.group(2)) if match else None,
-            "lon": float(match.group(1)) if match else None,
+            "lat": float(match.group(2)),
+            "lon": float(match.group(1)),
         })
     return found
 
@@ -380,10 +410,35 @@ def _fetch_json(url: str, data: bytes | None = None, timeout: int = 150) -> dict
         return json.loads(response.read().decode("utf-8"))
 
 
-def fetch_overpass() -> dict:
-    body = urllib.parse.urlencode({"data": overpass_query()}).encode("utf-8")
-    # Drie provincies vragen is zwaarder dan een cirkel van 60 km: ruim de tijd nemen.
-    return _fetch_json(OVERPASS_URL, data=body, timeout=300)
+def _first_that_works(urls: tuple[str, ...], body: bytes, timeout: int) -> dict:
+    """Vraag het de eerste server; lukt dat niet (druk, storing), dan de volgende."""
+    problems = []
+    for url in urls:
+        try:
+            return _fetch_json(url, data=body, timeout=timeout)
+        except Exception as error:
+            problems.append(f"{urllib.parse.urlparse(url).hostname}: {error}")
+    raise RuntimeError("; ".join(problems))
+
+
+def _overpass_answer(payload: dict) -> dict:
+    """Een server die te druk is, geeft soms een leeg antwoord met een opmerking ('runtime error:
+    Query timed out'). Dat is geen uitkomst (anders denkt de motor dat er niets te vinden was)."""
+    remark = str(payload.get("remark") or "")
+    if re.search(r"error|timed out|timeout|out of memory", remark, re.I):
+        raise RuntimeError(f"Overpass: {remark[:120]}")
+    return payload
+
+
+def fetch_overpass(provinces: tuple[str, ...] = area.AREA_PROVINCES) -> dict:
+    body = urllib.parse.urlencode({"data": overpass_query(provinces)}).encode("utf-8")
+    problems = []
+    for url in OVERPASS_URLS:
+        try:
+            return _overpass_answer(_fetch_json(url, data=body, timeout=200))
+        except Exception as error:
+            problems.append(f"{urllib.parse.urlparse(url).hostname}: {error}")
+    raise RuntimeError("; ".join(problems))
 
 
 def wikidata_query() -> str:
@@ -391,15 +446,13 @@ def wikidata_query() -> str:
 
 
 def fetch_wikidata() -> dict:
-    query = urllib.parse.urlencode({"query": wikidata_query(), "format": "json"})
-    return _fetch_json(f"{WIKIDATA_URL}?{query}")
+    body = urllib.parse.urlencode({"query": wikidata_query(), "format": "json"}).encode("utf-8")
+    return _first_that_works(SPARQL_ENDPOINTS, body, timeout=150)
 
 
 def fetch_wikidata_places() -> dict:
-    # Een cirkel om het hele werkgebied; wat erbuiten valt, wordt daarna 'buiten' (annotate_area).
-    sparql = WIKIDATA_PLACES_QUERY.format(lat=AREA_CENTER[0], lon=AREA_CENTER[1], radius=AREA_RADIUS_KM)
-    query = urllib.parse.urlencode({"query": sparql, "format": "json"})
-    return _fetch_json(f"{WIKIDATA_URL}?{query}")
+    body = urllib.parse.urlencode({"query": WIKIDATA_PLACES_QUERY, "format": "json"}).encode("utf-8")
+    return _first_that_works(SPARQL_ENDPOINTS, body, timeout=150)
 
 
 def searches_due(log: dict, every_days: int | None, today: date) -> list[str]:
@@ -407,9 +460,9 @@ def searches_due(log: dict, every_days: int | None, today: date) -> list[str]:
     every_days of meer dagen geleden voor het laatst lukte (of nog nooit), en allemaal als het
     werkgebied sindsdien is veranderd."""
     if not every_days or log.get("werkgebied") != list(area.AREA_PROVINCES):
-        return list(SEARCHES)
+        return search_names()
     due = []
-    for name in SEARCHES:
+    for name in search_names():
         try:
             age = (today - date.fromisoformat(str((log.get("gelukt") or {}).get(name)))).days
         except ValueError:
@@ -463,13 +516,27 @@ def main(argv: list[str] | None = None) -> int:
     if not args.tips_only and not due:
         print(f"Nieuwe plekken zoeken: niet nodig, de vorige keer is minder dan {args.every_days} dagen geleden.")
     done: list[str] = []
-    if "OpenStreetMap" in due:
+    started = time.monotonic()
+    osm_due = [name for name in due if name.startswith("OpenStreetMap")]
+    if args.osm_json and osm_due:
         try:
-            osm = json.loads(Path(args.osm_json).read_text(encoding="utf-8")) if args.osm_json else fetch_overpass()
-            discoveries += discoveries_from_overpass(osm)
-            done.append("OpenStreetMap")
-        except Exception as error:  # een bron die faalt mag de andere niet tegenhouden
+            discoveries += discoveries_from_overpass(json.loads(Path(args.osm_json).read_text(encoding="utf-8")))
+            done += osm_due
+        except Exception as error:
             problems.append(f"OpenStreetMap: {error}")
+    elif osm_due:
+        for province in area.AREA_PROVINCES:
+            name = f"OpenStreetMap ({province})"
+            if name not in osm_due:
+                continue
+            if time.monotonic() - started > SEARCH_BUDGET_SECONDS:
+                problems.append(f"{name}: geen tijd meer, de volgende ronde verder")
+                continue
+            try:  # een bron die faalt mag de andere niet tegenhouden
+                discoveries += discoveries_from_overpass(fetch_overpass((province,)))
+                done.append(name)
+            except Exception as error:
+                problems.append(f"{name}: {error}")
     if "Wikidata (festivals)" in due:
         try:
             wiki = json.loads(Path(args.wikidata_json).read_text(encoding="utf-8")) if args.wikidata_json else fetch_wikidata()

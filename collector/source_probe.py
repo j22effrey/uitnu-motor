@@ -14,6 +14,7 @@ import json
 import os
 from pathlib import Path
 import re
+import ssl
 from typing import Callable
 from urllib.error import HTTPError
 from urllib.parse import urljoin, urlparse
@@ -22,7 +23,7 @@ from urllib.robotparser import RobotFileParser
 from collector.dutch_agenda_html import parse_agenda
 from collector.jsonld_events import parse_html
 from collector.site_crawler import CrawlSource, Fetched, USER_AGENT, crawl_source, default_fetch, same_site
-from collector.source_candidates import candidate_priority, canonical_url
+from collector.source_candidates import candidate_priority, canonical_url, host_key
 from collector.wordpress_events import build_url as wordpress_events_url
 
 
@@ -42,7 +43,8 @@ class ProbeResult:
 # (of door een storing of een ontbrekende robots.txt 'geblokkeerd') vanzelf opnieuw aan de beurt.
 PROBE_VERSION = 3
 # Na zoveel dagen een website opnieuw testen (agenda's veranderen, sites worden vernieuwd).
-RETRY_DAYS = {"no_supported_extractor": 21, "error": 3, "blocked": 30}
+# Een storing ('error') de volgende dag; een verhuisde website pas na een maand (eerst nakijken).
+RETRY_DAYS = {"no_supported_extractor": 21, "error": 1, "blocked": 30, "moved": 30}
 
 
 class _AgendaLinkParser(HTMLParser):
@@ -135,40 +137,62 @@ class _CalendarLinkParser(HTMLParser):
                 self.ics_urls.append(url)
 
 
-def _robots_for(url: str, fetcher: Callable[..., Fetched], timeout: float) -> tuple[RobotFileParser, str]:
+def _tls_problem(exc: BaseException) -> bool:
+    """https lukt niet door het certificaat of de versleuteling (verlopen, verkeerde naam, ontbrekend
+    tussencertificaat). Bij kleine websites werkt http dan vaak wel."""
+    reason = getattr(exc, "reason", None)
+    return isinstance(exc, (ssl.SSLError, ssl.CertificateError)) or isinstance(reason, (ssl.SSLError, ssl.CertificateError))
+
+
+def robots_status(url: str, fetcher: Callable[..., Fetched], timeout: float) -> tuple[RobotFileParser, str, str | None]:
     """robots.txt lezen, net als de crawler (collector/site_crawler.py):
     - 'loaded': er is een robots.txt en die geldt;
     - 'absent': geen robots.txt (404/410): dan mag alles (zo is de afspraak, RFC 9309);
-    - 'invalid': een webpagina in plaats van robots.txt, of doorgestuurd naar een andere site: niets;
+    - 'invalid': een webpagina in plaats van robots.txt: niets;
+    - 'moved': doorgestuurd naar een andere website (verhuisd); het derde deel is het nieuwe adres;
+    - 'tls': https lukt niet door het certificaat (dan misschien via http);
     - 'unavailable': niet bereikbaar (storing): nu niets, later opnieuw proberen."""
     p = urlparse(url)
     robots_url = f"{p.scheme}://{p.netloc}/robots.txt"
     rp = RobotFileParser()
     rp.set_url(robots_url)
+    status, moved_to = "unavailable", None
     try:
         fetched = fetcher(robots_url, timeout=timeout)
         if fetched.url and not same_site(url, fetched.url):
             rp.parse(["User-agent: *", "Disallow: /"])
-            return rp, "invalid"
+            return rp, "invalid", None
         if 200 <= fetched.status < 300:
             if "html" in (fetched.content_type or "").lower():
                 rp.parse(["User-agent: *", "Disallow: /"])
-                return rp, "invalid"
+                return rp, "invalid", None
             rp.parse(fetched.text.splitlines())
-            return rp, "loaded"
+            return rp, "loaded", None
         if fetched.status in (404, 410):
             rp.parse([])
-            return rp, "absent"
+            return rp, "absent", None
     except HTTPError as exc:
         if exc.code in (404, 410):
             rp.parse([])  # urllib meldt een ontbrekende robots.txt als fout
-            return rp, "absent"
-    except Exception:
-        pass
+            return rp, "absent", None
+        location = exc.headers.get("Location") if exc.code in (301, 302, 303, 307, 308) and exc.headers else None
+        target = canonical_url(urljoin(robots_url, location)) if location else ""
+        if target and not same_site(url, target):
+            status, moved_to = "moved", f"{urlparse(target).scheme}://{urlparse(target).netloc}/"
+    except Exception as exc:
+        if _tls_problem(exc):
+            status = "tls"
     # Safety invariant: an unavailable robots policy is not permission to crawl.
     # Keep the candidate for a later retry, but perform no site requests now.
     rp.parse(["User-agent: *", "Disallow: /"])
-    return rp, "unavailable"
+    return rp, status, moved_to
+
+
+def _robots_for(url: str, fetcher: Callable[..., Fetched], timeout: float) -> tuple[RobotFileParser, str]:
+    """Zoals robots_status, met 'loaded', 'absent', 'invalid' of 'unavailable' (verhuisd of een
+    certificaatprobleem telt hier als niet bereikbaar)."""
+    rp, status, _ = robots_status(url, fetcher, timeout)
+    return rp, ("unavailable" if status in ("moved", "tls") else status)
 
 
 def _shallow_structured_probe(
@@ -283,17 +307,31 @@ def probe_source(
         raise ValueError("url must be an absolute http(s) URL")
     parsed = urlparse(target)
     host = parsed.hostname or ""
+    robots, robots_loaded, moved_to = robots_status(target, fetcher, timeout)
+    via_http = False
+    if robots_loaded == "tls" and parsed.scheme == "https":
+        # Kapot certificaat: veel kleine websites werken wel via http (net als bij de dorpswebsites).
+        plain = "http://" + target[len("https://"):]
+        robots, robots_loaded, moved_to = robots_status(plain, fetcher, timeout)
+        if robots_loaded in ("loaded", "absent"):
+            target, parsed, via_http = plain, urlparse(plain), True
     origin = f"{parsed.scheme}://{parsed.netloc}/"
-    robots, robots_loaded = _robots_for(target, fetcher, timeout)
-    if robots_loaded == "unavailable":
+    if robots_loaded == "moved" and moved_to:
+        # Verhuisd naar een andere website: niet zomaar volgen (het kan ook een verkocht domein zijn);
+        # het nieuwe adres staat erbij, om na te kijken en dan als tip toe te voegen.
+        return ProbeResult(target, host, "moved", "moved", [], None, {"robots": "moved", "movedTo": moved_to},
+                           f"verhuisd naar {host_key(moved_to)}")
+    if robots_loaded in ("unavailable", "tls", "moved"):
         # Storing, geen verbod: binnenkort opnieuw proberen.
         return ProbeResult(target, host, "unavailable", "error", [], None, {"robots": robots_loaded},
-                           "robots.txt niet bereikbaar")
+                           "robots.txt niet bereikbaar" + (" (certificaat)" if robots_loaded == "tls" else ""))
     if not robots.can_fetch(USER_AGENT, target):
         return ProbeResult(target, host, "blocked", "blocked", [], None, {"robots": robots_loaded})
 
     extractors: list[str] = []
     details: dict = {"robots": robots_loaded}
+    if via_http:
+        details["viaHttp"] = True
     errors: list[str] = []
     home_html: str | None = None
     home_url = target
@@ -373,6 +411,8 @@ def probe_source(
 
 
 def _apply_probe(item: dict, result: ProbeResult, today: str | None = None) -> None:
+    if (result.details or {}).get("viaHttp") and result.url:
+        item["url"] = result.url  # alleen via http te lezen (kapot certificaat): zo wordt hij ook aangezet
     item["robotsStatus"] = result.robots_status
     item["probeStatus"] = result.probe_status
     item["extractor"] = result.suggested_extractor
@@ -528,5 +568,11 @@ if __name__ == "__main__":
         statuses = Counter(str(c.get("probeStatus")) for c in report["candidates"] if isinstance(c, dict))
         print(f"Getest: {report['probed']} van {report['selected']} gekozen websites "
               f"(wachtrij: {report['queue_size']}). Stand: {dict(statuses.most_common())}")
+        today = date.today().isoformat()
+        moved = [f"{c.get('host')} -> {host_key((c.get('probeDetails') or {}).get('movedTo') or '')}"
+                 for c in report["candidates"] if isinstance(c, dict) and c.get("probeStatus") == "moved"
+                 and c.get("probedAt") == today]
+        if moved:
+            print(f"Verhuisd (nakijken; een goed nieuw adres als tip toevoegen): {', '.join(moved)}")
     else:
         print(json.dumps(report, ensure_ascii=False, indent=2 if args.pretty else None))
