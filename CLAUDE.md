@@ -64,6 +64,10 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    (403), dan respecteren we dat.
 3. `collector/auto_activate.py`: zet geschikte bronnen aan in `collector/web_crawl_sources.json`.
    Een dorpswebsite krijgt de plaats van het dorp mee, voor uitjes zonder eigen plaats.
+   Laadt een grote zaal zijn programma met JavaScript, maar staat het als gegevens (JSON) op de eigen
+   website, dan kan de bron met de hand worden ingesteld met `extractorHint: "json_api"`
+   (`collector/json_api_events.py`; voorbeeld: Atlas Theater). Zet het genre van de organisator om
+   naar schema.org (`genres`): dat gaat bij het indelen voor de rubriek in de link.
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
    en schrijven `data/auto_events.json`. Na 35 minuten rondt de motor af met wat er is; een bron
    die niet af kwam, storing had of niet te lezen was (website even plat), houdt zijn uitjes van de

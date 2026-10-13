@@ -25543,7 +25543,7 @@
       "firstSeenAt": "2026-10-11T13:25:14Z",
       "lastSeenAt": "2026-10-12T06:10:50Z",
       "seenCount": 2,
-      "activationStatus": "candidate",
+      "activationStatus": "active",
       "policyStatus": "review",
       "robotsStatus": "allowed",
       "probeStatus": "no_supported_extractor",
@@ -25581,7 +25581,10 @@
       "areaStatus": "binnen",
       "distanceKm": 66.3,
       "probedAt": "2026-10-13",
-      "probeVersion": 3
+      "probeVersion": 3,
+      "activatedSourceId": "atlastheater-nl-api",
+      "activatedName": "Atlas Theater",
+      "activatedAt": "2026-10-13"
     },
     {
       "id": "buitensocieteitpaterswolde.nl",
