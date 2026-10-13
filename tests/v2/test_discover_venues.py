@@ -32,10 +32,11 @@ def test_overpass_query_zoekt_in_het_werkgebied():
     query = overpass_query()
     assert 'area["ISO3166-2"~"^(NL-GR|NL-FR|NL-DR)$"]->.werkgebied;' in query and "(area.werkgebied)" in query
     assert "NL-OV" in overpass_query(("Overijssel",))   # een ander werkgebied: alleen het lijstje anders
-    assert '"amenity"~"^(theatre|arts_centre|' in query and '"contact:website"' in query
-    # Eén regel per sleutel en soort website (lichter voor de server), plus clubs.
-    assert query.count("nwr[") == 2 * len({key for key, _ in __import__("collector.discover_venues",
-                                                                       fromlist=["OSM_TYPES"]).OSM_TYPES}) + 1
+    assert '"amenity"~"^(theatre|arts_centre|' in query
+    # Eerst alles met een website in het gebied, dan één regel per sleutel (lichter), plus clubs.
+    assert 'nwr["website"](area.werkgebied)' in query and 'nwr["contact:website"](area.werkgebied)' in query
+    from collector.discover_venues import OSM_TYPES
+    assert query.count("nwr.sites[") == len({key for key, _ in OSM_TYPES}) + 1
 
 
 def test_plekken_uit_openstreetmap():

@@ -175,7 +175,7 @@ def test_dorpen_gemeenten_verenigingen_en_cafes_uit_openstreetmap():
     query = dv.overpass_query()
     for key, value in (("place", "village"), ("place", "hamlet"), ("amenity", "townhall"),
                        ("office", "association"), ("amenity", "pub")):
-        assert re.search(rf'nwr\["{key}"~"\^\([^)]*\b{value}\b', query), (key, value)
+        assert re.search(rf'nwr\.sites\["{key}"~"\^\([^)]*\b{value}\b', query), (key, value)
     found = dv.discoveries_from_overpass({"elements": [
         {"type": "node", "id": 7, "lat": 53.19, "lon": 6.77, "tags": {"place": "village", "name": "Froombosch", "website": "www.froombosch.com"}},
         {"type": "node", "id": 8, "tags": {"amenity": "townhall", "name": "Gemeentehuis", "website": "https://www.midden-groningen.nl"}},
