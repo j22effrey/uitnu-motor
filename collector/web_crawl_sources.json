@@ -5975,6 +5975,1577 @@
       },
       "policyReviewedAt": "2026-10-13",
       "note": "Het programma staat als gegevens op de eigen website (robots.txt staat het toe); de pagina zelf laadt het met JavaScript, dus de gewone test vond het niet."
+    },
+    {
+      "id": "a-theater-nl-web",
+      "name": "A-Theater",
+      "rootUrl": "https://a-theater.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://a-theater.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "a-theater.nl",
+      "defaultPlace": {
+        "city": "Groningen",
+        "lat": 53.2194,
+        "lon": 6.5665
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dezandvoorten-nl-web",
+      "name": "Dorpshuis De Zandvoorten",
+      "rootUrl": "https://dezandvoorten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dezandvoorten.nl/evenementen/"
+      },
+      "activatedFromCandidate": "dezandvoorten.nl",
+      "defaultPlace": {
+        "city": "Eext",
+        "lat": 53.0357,
+        "lon": 6.7844
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "it-geahus-nl-web",
+      "name": "It Geahûs",
+      "rootUrl": "https://www.it-geahus.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.it-geahus.nl/evenement/?ical=1"
+      },
+      "activatedFromCandidate": "it-geahus.nl",
+      "defaultPlace": {
+        "city": "Garyp",
+        "lat": 53.1678,
+        "lon": 5.9721
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "schouwburgogterop-nl-web",
+      "name": "Schouwburg Ogterop",
+      "rootUrl": "https://www.schouwburgogterop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.schouwburgogterop.nl/"
+      },
+      "activatedFromCandidate": "schouwburgogterop.nl",
+      "defaultPlace": {
+        "city": "Meppel",
+        "lat": 52.6957,
+        "lon": 6.1944
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "simplon-nl-web",
+      "name": "Simplon",
+      "rootUrl": "https://simplon.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://simplon.nl/events/"
+      },
+      "activatedFromCandidate": "simplon.nl",
+      "defaultPlace": {
+        "city": "Groningen",
+        "lat": 53.2246,
+        "lon": 6.5735
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "theaterroden-nl-web",
+      "name": "Theater De Winsinghhof",
+      "rootUrl": "https://theaterroden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://theaterroden.nl/"
+      },
+      "activatedFromCandidate": "theaterroden.nl",
+      "defaultPlace": {
+        "city": "Roden",
+        "lat": 53.1386,
+        "lon": 6.4269
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "hemelum-nl-web",
+      "name": "Hemelum",
+      "rootUrl": "https://hemelum.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://hemelum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "hemelum.nl",
+      "policyReviewedAt": "2026-10-13",
+      "defaultPlace": {
+        "city": "Hemelum",
+        "lat": 52.8811,
+        "lon": 5.4564
+      }
+    },
+    {
+      "id": "gramsbergen-nl-web",
+      "name": "Gramsbergen",
+      "rootUrl": "https://www.gramsbergen.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.gramsbergen.nl/"
+      },
+      "activatedFromCandidate": "gramsbergen.nl",
+      "policyReviewedAt": "2026-10-13",
+      "defaultPlace": {
+        "city": "Gramsbergen",
+        "lat": 52.6103,
+        "lon": 6.6728
+      }
+    },
+    {
+      "id": "brucht-com-web",
+      "name": "Plaatselijk Belang Brucht",
+      "rootUrl": "https://brucht.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://brucht.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "brucht.com",
+      "defaultPlace": {
+        "city": "Brucht",
+        "lat": 52.5506,
+        "lon": 6.6092
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "buren-ameland-nl-web",
+      "name": "Buren Ameland",
+      "rootUrl": "https://www.buren-ameland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "buren-ameland.nl",
+      "defaultPlace": {
+        "city": "Buren",
+        "lat": 53.4472,
+        "lon": 5.7989
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dalerpeel-info-web",
+      "name": "Welkom in het Drentse Dalerpeel",
+      "rootUrl": "https://dalerpeel.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://dalerpeel.info/"
+      },
+      "activatedFromCandidate": "dalerpeel.info",
+      "defaultPlace": {
+        "city": "Dalerpeel",
+        "lat": 52.6786,
+        "lon": 6.6589
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpsbelangenschoonebeek-nl-web",
+      "name": "Dorpsbelangen Schoonebeek",
+      "rootUrl": "https://www.dorpsbelangenschoonebeek.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dorpsbelangenschoonebeek.nl/"
+      },
+      "activatedFromCandidate": "dorpsbelangenschoonebeek.nl",
+      "defaultPlace": {
+        "city": "Schoonebeek",
+        "lat": 52.6617,
+        "lon": 6.8831
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpshuisdewijk-nl-web",
+      "name": "Dorpshuis de Wijk",
+      "rootUrl": "https://dorpshuisdewijk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://dorpshuisdewijk.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "dorpshuisdewijk.nl",
+      "defaultPlace": {
+        "city": "de Wijk",
+        "lat": 52.6733,
+        "lon": 6.2911
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpshuislutten-nl-web",
+      "name": "Dorpshuis Lutten",
+      "rootUrl": "https://dorpshuislutten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://dorpshuislutten.nl/index.php/agenda.html"
+      },
+      "activatedFromCandidate": "dorpshuislutten.nl",
+      "defaultPlace": {
+        "city": "Lutten",
+        "lat": 52.6111,
+        "lon": 6.5733
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpzurich-nl-web",
+      "name": "Zurich",
+      "rootUrl": "https://www.dorpzurich.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dorpzurich.nl/agenda/"
+      },
+      "activatedFromCandidate": "dorpzurich.nl",
+      "defaultPlace": {
+        "city": "Zurich",
+        "lat": 53.1119,
+        "lon": 5.3939
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "luttenleeft-nl-web",
+      "name": "Lutten Leeft",
+      "rootUrl": "https://www.luttenleeft.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.luttenleeft.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "luttenleeft.nl",
+      "defaultPlace": {
+        "city": "Lutten",
+        "lat": 52.6111,
+        "lon": 6.5733
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "nieuwschoonebeek-com-web",
+      "name": "Nieuw Schoonebeek",
+      "rootUrl": "https://www.nieuwschoonebeek.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.nieuwschoonebeek.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "nieuwschoonebeek.com",
+      "defaultPlace": {
+        "city": "Nieuw-Schoonebeek",
+        "lat": 52.6456,
+        "lon": 6.9889
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "witharen-nl-web",
+      "name": "Witharen.nl",
+      "rootUrl": "https://witharen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://witharen.nl/"
+      },
+      "activatedFromCandidate": "witharen.nl",
+      "defaultPlace": {
+        "city": "Witharen",
+        "lat": 52.5608,
+        "lon": 6.3958
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "defryskemarren-nl-web",
+      "name": "Gemeente De Fryske Marren Binnenhaven Lemmer",
+      "rootUrl": "https://www.defryskemarren.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.defryskemarren.nl/direct-regelen/vergunningen-toestemming/evenementenkalender/"
+      },
+      "activatedFromCandidate": "defryskemarren.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "groatekerk-nl-web",
+      "name": "Groate Kerk",
+      "rootUrl": "https://groatekerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://groatekerk.nl/"
+      },
+      "activatedFromCandidate": "groatekerk.nl",
+      "defaultPlace": {
+        "venue": "Groate Kerk",
+        "city": "St.-Jacobiparochie",
+        "lat": 53.2729117,
+        "lon": 5.6033826
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "ioannistheatertsjerkewier-nl-web",
+      "name": "Ioannis Theatertsjerke Wier",
+      "rootUrl": "https://www.ioannistheatertsjerkewier.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.ioannistheatertsjerkewier.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "ioannistheatertsjerkewier.nl",
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "vvvameland-nl-web",
+      "name": "Paardenreddingboot",
+      "rootUrl": "https://www.vvvameland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.vvvameland.nl/activiteiten-en-evenementen"
+      },
+      "activatedFromCandidate": "vvvameland.nl",
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "terschelling-nl-web",
+      "name": "Gemeentehuis Terschelling",
+      "rootUrl": "https://www.terschelling.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.terschelling.nl/agenda"
+      },
+      "activatedFromCandidate": "terschelling.nl",
+      "defaultPlace": {
+        "venue": "Gemeentehuis Terschelling",
+        "city": "West-Terschelling",
+        "lat": 53.3641101,
+        "lon": 5.2169875
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "afsluitdijkwaddencenter-nl-web",
+      "name": "Afsluitdijk Wadden Center",
+      "rootUrl": "https://afsluitdijkwaddencenter.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "afsluitdijkwaddencenter.nl",
+      "defaultPlace": {
+        "venue": "Afsluitdijk Wadden Center",
+        "city": "Kornwerderzand",
+        "lat": 53.073462,
+        "lon": 5.3400739
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "friesscheepvaartmuseum-nl-web",
+      "name": "Fries Scheepvaart Museum",
+      "rootUrl": "https://friesscheepvaartmuseum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://friesscheepvaartmuseum.nl/actueel"
+      },
+      "activatedFromCandidate": "friesscheepvaartmuseum.nl",
+      "defaultPlace": {
+        "venue": "Fries Scheepvaart Museum",
+        "city": "Sneek",
+        "lat": 53.0323511,
+        "lon": 5.6632657
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "hannemahuis-nl-web",
+      "name": "Gemeentemuseum Het Hannemahuis",
+      "rootUrl": "https://www.hannemahuis.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://hannemahuis.nl/"
+      },
+      "activatedFromCandidate": "hannemahuis.nl",
+      "defaultPlace": {
+        "venue": "Gemeentemuseum Het Hannemahuis",
+        "city": "Harlingen",
+        "lat": 53.1745805,
+        "lon": 5.4192419
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "houtstad-ijlst-nl-web",
+      "name": "Museum en Werkplaats Houtstad IJlst",
+      "rootUrl": "https://www.houtstad-ijlst.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.houtstad-ijlst.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "houtstad-ijlst.nl",
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "museum-nl-web",
+      "name": "Maritiem Centrum Abraham Fock",
+      "rootUrl": "https://www.museum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "museum.nl",
+      "defaultPlace": {
+        "venue": "Maritiem Centrum Abraham Fock",
+        "city": "Hollum",
+        "lat": 53.442972,
+        "lon": 5.6365808
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "museumlemmer-nl-web",
+      "name": "Oudheidskamer Lemster Fiifgea",
+      "rootUrl": "https://museumlemmer.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://museumlemmer.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "museumlemmer.nl",
+      "defaultPlace": {
+        "venue": "Oudheidskamer Lemster Fiifgea",
+        "city": "Lemmer",
+        "lat": 52.8445225,
+        "lon": 5.7117879
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "synagoge-coevorden-nl-web",
+      "name": "synagoge-coevorden.nl",
+      "rootUrl": "https://www.synagoge-coevorden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.synagoge-coevorden.nl/"
+      },
+      "activatedFromCandidate": "synagoge-coevorden.nl",
+      "defaultPlace": {
+        "venue": "naamloze plek",
+        "city": "Coevorden",
+        "lat": 52.6597311,
+        "lon": 6.7388481
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "tsiispakhus-nl-web",
+      "name": "It Tsiispakhús",
+      "rootUrl": "https://tsiispakhus.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://tsiispakhus.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "tsiispakhus.nl",
+      "defaultPlace": {
+        "venue": "It Tsiispakhús",
+        "city": "Wommels",
+        "lat": 53.1081295,
+        "lon": 5.5861754
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "aolegemientehoes-nl-web",
+      "name": "'t Aole Gemientehoes",
+      "rootUrl": "https://www.aolegemientehoes.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.aolegemientehoes.nl/agenda"
+      },
+      "activatedFromCandidate": "aolegemientehoes.nl",
+      "defaultPlace": {
+        "venue": "'t Aole Gemientehoes",
+        "city": "Schoonebeek",
+        "lat": 52.663026,
+        "lon": 6.8846046
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "avdesprinter-nl-web",
+      "name": "AV de Sprinter",
+      "rootUrl": "https://www.avdesprinter.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.avdesprinter.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "avdesprinter.nl",
+      "defaultPlace": {
+        "venue": "AV de Sprinter",
+        "city": "Meppel",
+        "lat": 52.6893881,
+        "lon": 6.2032893
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpshuisdealke-nl-web",
+      "name": "De Alke",
+      "rootUrl": "https://dorpshuisdealke.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "dorpshuisdealke.nl",
+      "defaultPlace": {
+        "venue": "De Alke",
+        "city": "Alteveer",
+        "lat": 52.6726134,
+        "lon": 6.4896413
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpshuisdesingel-nl-web",
+      "name": "De Singel",
+      "rootUrl": "https://dorpshuisdesingel.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "dorpshuisdesingel.nl",
+      "defaultPlace": {
+        "venue": "De Singel",
+        "city": "Achlum",
+        "lat": 53.1473037,
+        "lon": 5.4843369
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "itjoo-nl-web",
+      "name": "MFC It Joo",
+      "rootUrl": "https://www.itjoo.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.itjoo.nl/"
+      },
+      "activatedFromCandidate": "itjoo.nl",
+      "defaultPlace": {
+        "venue": "MFC It Joo",
+        "city": "Oudega",
+        "lat": 52.9912761,
+        "lon": 5.553285
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "klameare-workum-nl-web",
+      "name": "Kultuerhús Klameare",
+      "rootUrl": "https://klameare-workum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://klameare-workum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "klameare-workum.nl",
+      "defaultPlace": {
+        "venue": "Kultuerhús Klameare",
+        "city": "Workum",
+        "lat": 52.9793258,
+        "lon": 5.4439207
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "mfasexbierumpietersbierum-nl-web",
+      "name": "It Waed",
+      "rootUrl": "https://mfasexbierumpietersbierum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://mfasexbierumpietersbierum.nl/"
+      },
+      "activatedFromCandidate": "mfasexbierumpietersbierum.nl",
+      "defaultPlace": {
+        "venue": "It Waed",
+        "city": "Sexbierum",
+        "lat": 53.2183038,
+        "lon": 5.4866829
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "pgmdebaander-nl-web",
+      "name": "PGM de Baander",
+      "rootUrl": "https://pgmdebaander.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://pgmdebaander.nl/agenda/"
+      },
+      "activatedFromCandidate": "pgmdebaander.nl",
+      "defaultPlace": {
+        "venue": "PGM de Baander",
+        "city": "Meppel",
+        "lat": 52.7011756,
+        "lon": 6.2394136
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "scerica-nl-web",
+      "name": "S.C. Erica",
+      "rootUrl": "https://scerica.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://scerica.nl/"
+      },
+      "activatedFromCandidate": "scerica.nl",
+      "defaultPlace": {
+        "venue": "S.C. Erica",
+        "city": "Erica",
+        "lat": 52.7152334,
+        "lon": 6.9203457
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "vvwacker-nl-web",
+      "name": "VV Wacker",
+      "rootUrl": "https://vvwacker.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://vvwacker.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "vvwacker.nl",
+      "defaultPlace": {
+        "venue": "VV Wacker",
+        "city": "de Wijk",
+        "lat": 52.6734477,
+        "lon": 6.2797922
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "bvsport-nl-web",
+      "name": "It Gryn",
+      "rootUrl": "https://www.bvsport.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.bvsport.nl/events/"
+      },
+      "activatedFromCandidate": "bvsport.nl",
+      "defaultPlace": {
+        "venue": "It Gryn",
+        "city": "Stiens",
+        "lat": 53.2616416,
+        "lon": 5.7709349
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "clubdepadel050-nl-web",
+      "name": "Club de Padel 050",
+      "rootUrl": "https://www.clubdepadel050.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "clubdepadel050.nl",
+      "defaultPlace": {
+        "venue": "Club de Padel 050",
+        "city": "Groningen",
+        "lat": 53.2136374,
+        "lon": 6.5065943
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "debontewever-nl-web",
+      "name": "De Bonte Wever",
+      "rootUrl": "https://www.debontewever.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.debontewever.nl/nl"
+      },
+      "activatedFromCandidate": "debontewever.nl",
+      "defaultPlace": {
+        "venue": "De Bonte Wever",
+        "city": "Assen",
+        "lat": 52.9840952,
+        "lon": 6.5428525
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "meerstad-eu-web",
+      "name": "Mountainbike Skillspark",
+      "rootUrl": "https://www.meerstad.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.meerstad.eu/nieuws-en-events/"
+      },
+      "activatedFromCandidate": "meerstad.eu",
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "plazasportzassen-nl-web",
+      "name": "Plaza Sportz Assen",
+      "rootUrl": "https://www.plazasportzassen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.plazasportzassen.nl/agenda"
+      },
+      "activatedFromCandidate": "plazasportzassen.nl",
+      "defaultPlace": {
+        "venue": "Plaza Sportz Assen",
+        "city": "Assen",
+        "lat": 53.0107709,
+        "lon": 6.5881119
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "real80-nl-web",
+      "name": "Model Racing Club Real 80",
+      "rootUrl": "https://www.real80.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "real80.nl",
+      "defaultPlace": {
+        "venue": "Model Racing Club Real 80",
+        "city": "Groningen",
+        "lat": 53.2003884,
+        "lon": 6.6159297
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "sfdeinum-nl-web",
+      "name": "Sportcomplex De Fjouwer",
+      "rootUrl": "https://www.sfdeinum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.sfdeinum.nl/"
+      },
+      "activatedFromCandidate": "sfdeinum.nl",
+      "defaultPlace": {
+        "venue": "Sportcomplex De Fjouwer",
+        "city": "Deinum",
+        "lat": 53.1910833,
+        "lon": 5.7300169
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "sportcentrumdehullen-nl-web",
+      "name": "Sportcentrum de Hullen",
+      "rootUrl": "https://www.sportcentrumdehullen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.sportcentrumdehullen.nl/zwembad/activiteiten/"
+      },
+      "activatedFromCandidate": "sportcentrumdehullen.nl",
+      "defaultPlace": {
+        "venue": "Sportcentrum de Hullen",
+        "city": "Roden",
+        "lat": 53.1316214,
+        "lon": 6.4231404
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "stb-stadskanaal-nl-web",
+      "name": "Stadskanaalster Tennisbond",
+      "rootUrl": "https://www.stb-stadskanaal.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.stb-stadskanaal.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "stb-stadskanaal.nl",
+      "defaultPlace": {
+        "venue": "Stadskanaalster Tennisbond",
+        "city": "Stadskanaal",
+        "lat": 52.991382,
+        "lon": 6.9720579
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "tcnijlan-nl-web",
+      "name": "Tennisclub 't Nijlân",
+      "rootUrl": "https://www.tcnijlan.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://tcnijlan.nl/jaarkalender/"
+      },
+      "activatedFromCandidate": "tcnijlan.nl",
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "teamsport-ekarting-nl-web",
+      "name": "TeamSport Groningen",
+      "rootUrl": "https://www.teamsport-ekarting.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.teamsport-ekarting.nl/members-only-events"
+      },
+      "activatedFromCandidate": "teamsport-ekarting.nl",
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "tvdemarsch-nl-web",
+      "name": "TV De Marsch",
+      "rootUrl": "https://www.tvdemarsch.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.tvdemarsch.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "tvdemarsch.nl",
+      "defaultPlace": {
+        "venue": "TV De Marsch",
+        "city": "Paterswolde",
+        "lat": 53.1486289,
+        "lon": 6.5561218
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "wsvdrachtenveenhoop-nl-web",
+      "name": "Watersportvereniging Drachten-Veenhoop",
+      "rootUrl": "https://www.wsvdrachtenveenhoop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.wsvdrachtenveenhoop.nl/"
+      },
+      "activatedFromCandidate": "wsvdrachtenveenhoop.nl",
+      "defaultPlace": {
+        "venue": "Watersportvereniging Drachten-Veenhoop",
+        "city": "De Wilgen",
+        "lat": 53.1014701,
+        "lon": 6.0435696
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "zwembadeneemsmond-nl-web",
+      "name": "zwembad De Dinge",
+      "rootUrl": "https://zwembadeneemsmond.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "zwembadeneemsmond.nl",
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "mltc-nl-web",
+      "name": "MLTC",
+      "rootUrl": "https://www.mltc.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.mltc.nl/evenementen/?ical=1"
+      },
+      "activatedFromCandidate": "mltc.nl",
+      "defaultPlace": {
+        "venue": "MLTC",
+        "city": "Meppel",
+        "lat": 52.684261,
+        "lon": 6.1738092
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "ntcnijeveen-nl-web",
+      "name": "Nijeveense tennis en padelclub NTC",
+      "rootUrl": "https://www.ntcnijeveen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.ntcnijeveen.nl/"
+      },
+      "activatedFromCandidate": "ntcnijeveen.nl",
+      "defaultPlace": {
+        "venue": "Nijeveense tennis en padelclub NTC",
+        "city": "Nijeveen",
+        "lat": 52.7359892,
+        "lon": 6.1543997
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "sjirkdewal-nl-web",
+      "name": "VvV Sjirk de Wal",
+      "rootUrl": "https://www.sjirkdewal.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.sjirkdewal.nl/"
+      },
+      "activatedFromCandidate": "sjirkdewal.nl",
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "arkedrachten-nl-web",
+      "name": "De Arke",
+      "rootUrl": "https://www.arkedrachten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.arkedrachten.nl/"
+      },
+      "activatedFromCandidate": "arkedrachten.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "assenzoekt-nl-web",
+      "name": "Assen Zoekt",
+      "rootUrl": "https://assenzoekt.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://assenzoekt.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "assenzoekt.nl",
+      "defaultPlace": {
+        "venue": "Assen Zoekt",
+        "city": "Assen",
+        "lat": 52.9877675,
+        "lon": 6.5822823
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "baptisten-winschoten-nl-web",
+      "name": "Baptisten Gemeente 't Venster Winschoten",
+      "rootUrl": "https://www.baptisten-winschoten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.baptisten-winschoten.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "baptisten-winschoten.nl",
+      "defaultPlace": {
+        "venue": "Baptisten Gemeente 't Venster Winschoten",
+        "city": "Winschoten",
+        "lat": 53.1497717,
+        "lon": 7.0287032
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "baptistengemeente-info-web",
+      "name": "De Cirkel",
+      "rootUrl": "https://www.baptistengemeente.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.baptistengemeente.info/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "baptistengemeente.info",
+      "defaultPlace": {
+        "venue": "De Cirkel",
+        "city": "Groningen",
+        "lat": 53.2279423,
+        "lon": 6.5640322
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "blitsaerd-nl-web",
+      "name": "Blitsaerd Haven",
+      "rootUrl": "https://www.blitsaerd.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.blitsaerd.nl/agenda/"
+      },
+      "activatedFromCandidate": "blitsaerd.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "brugeskerk-nl-web",
+      "name": "Brugeskerk",
+      "rootUrl": "https://www.brugeskerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.brugeskerk.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "brugeskerk.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "burmania-nl-web",
+      "name": "Chr. Scoutinggroep Burmania",
+      "rootUrl": "https://burmania.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://burmania.nl/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "burmania.nl",
+      "defaultPlace": {
+        "venue": "Chr. Scoutinggroep Burmania",
+        "city": "Leeuwarden",
+        "lat": 53.2144334,
+        "lon": 5.8258669
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "cgkleeuwarden-nl-web",
+      "name": "Bethelkerk",
+      "rootUrl": "https://cgkleeuwarden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://cgkleeuwarden.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "cgkleeuwarden.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "clcleeuwarden-nl-web",
+      "name": "City Life Church Leeuwarden",
+      "rootUrl": "https://clcleeuwarden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://clcleeuwarden.nl/agenda/"
+      },
+      "activatedFromCandidate": "clcleeuwarden.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "cvvoranjenassau-nl-web",
+      "name": "CVV Oranje Nassau",
+      "rootUrl": "https://www.cvvoranjenassau.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.cvvoranjenassau.nl/"
+      },
+      "activatedFromCandidate": "cvvoranjenassau.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "defontein-info-web",
+      "name": "De Fontein",
+      "rootUrl": "https://defontein.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://defontein.info/kalender/"
+      },
+      "activatedFromCandidate": "defontein.info",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "derank-groningen-nl-web",
+      "name": "Evangelische gemeente De Rank",
+      "rootUrl": "https://www.derank-groningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.derank-groningen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "derank-groningen.nl",
+      "defaultPlace": {
+        "venue": "Evangelische gemeente De Rank",
+        "city": "Groningen",
+        "lat": 53.2061522,
+        "lon": 6.5576376
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "derank-nl-web",
+      "name": "De Rank",
+      "rootUrl": "https://derank.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://derank.nl/"
+      },
+      "activatedFromCandidate": "derank.nl",
+      "defaultPlace": {
+        "venue": "De Rank",
+        "city": "Zuidhorn",
+        "lat": 53.2533017,
+        "lon": 6.3976651
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "deschutse-net-web",
+      "name": "Baptistengemeente de Schutse",
+      "rootUrl": "https://deschutse.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "deschutse.net",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "destadskerk-nl-web",
+      "name": "De Stadskerk",
+      "rootUrl": "https://www.destadskerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.destadskerk.nl/events"
+      },
+      "activatedFromCandidate": "destadskerk.nl",
+      "defaultPlace": {
+        "venue": "De Stadskerk",
+        "city": "Groningen",
+        "lat": 53.2314022,
+        "lon": 6.5316086
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dewittehaas-nl-web",
+      "name": "Zeevonk",
+      "rootUrl": "https://dewittehaas.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://dewittehaas.nl/"
+      },
+      "activatedFromCandidate": "dewittehaas.nl",
+      "defaultPlace": {
+        "venue": "Zeevonk",
+        "city": "Schiermonnikoog",
+        "lat": 53.4913251,
+        "lon": 6.1464076
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "doopsgezindendrachtenureterp-nl-web",
+      "name": "Doopsgezinde Kerk",
+      "rootUrl": "https://www.doopsgezindendrachtenureterp.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://doopsgezindendrachtenureterp.nl/"
+      },
+      "activatedFromCandidate": "doopsgezindendrachtenureterp.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "doopsgezindengroningen-nl-web",
+      "name": "Doopsgezinde Kerk Groningen",
+      "rootUrl": "https://doopsgezindengroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://doopsgezindengroningen.nl/"
+      },
+      "activatedFromCandidate": "doopsgezindengroningen.nl",
+      "defaultPlace": {
+        "venue": "Doopsgezinde Kerk Groningen",
+        "city": "Groningen",
+        "lat": 53.2198968,
+        "lon": 6.5643539
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "doopsgezindenleeuwarden-nl-web",
+      "name": "Doopsgezinde Kerk",
+      "rootUrl": "https://www.doopsgezindenleeuwarden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://doopsgezindenleeuwarden.nl/"
+      },
+      "activatedFromCandidate": "doopsgezindenleeuwarden.nl",
+      "policyReviewedAt": "2026-10-13"
     }
   ]
 }
