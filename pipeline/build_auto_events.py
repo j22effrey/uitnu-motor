@@ -249,9 +249,11 @@ def _host(url: object) -> str:
 def build_auto_events(curated: list[dict], staged: dict, *, today: date | None = None,
                       previous: list[dict] | None = None) -> list[dict]:
     """De automatische uitjes. previous = de vorige uitkomst: een bron die deze keer niet helemaal
-    lukte (storing of tijd op), houdt zijn nog komende uitjes van de vorige keer."""
+    lukte (storing of tijd op) of werd overgeslagen (onlangs nog gelezen), houdt zijn nog komende
+    uitjes van de vorige keer."""
     today = today or date.today()
     canonical = staged.get("canonical_publishable", []) if isinstance(staged, dict) else []
+    origins = (staged.get("origins") if isinstance(staged, dict) else None) or {}
     out: list[dict] = []
     for item in canonical:
         if not isinstance(item, dict):
@@ -261,6 +263,9 @@ def build_auto_events(curated: list[dict], staged: dict, *, today: date | None =
         record = canonical_to_public(item, audit_date=today)
         if not record or not _valid_live_window(record, today):
             continue
+        root = next((origins[url] for url in item.get("source_urls") or [] if origins.get(url)), None)
+        if root:
+            record["sourceRoot"] = root  # de bron die het uitje vond (niet gepubliceerd)
         if any(_same_event(record, existing) for existing in curated if isinstance(existing, dict)):
             continue
         if any(_same_event(record, existing) for existing in out):
@@ -271,7 +276,7 @@ def build_auto_events(curated: list[dict], staged: dict, *, today: date | None =
                   if isinstance(run, dict) and run.get("complete") is False and run.get("rootUrl")}
     unfinished.discard("")
     for record in previous or []:
-        if not isinstance(record, dict) or _host(record.get("sourceUrl")) not in unfinished:
+        if not isinstance(record, dict) or _host(record.get("sourceRoot") or record.get("sourceUrl")) not in unfinished:
             continue
         if not _valid_live_window(record, today):
             continue

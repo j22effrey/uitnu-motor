@@ -1,4 +1,4 @@
-"""Fotozoeker: zoekt elke nacht foto's bij de uitjes en onthoudt ze in data/photos.json.
+"""Fotozoeker: zoekt elke ronde foto's bij de uitjes en onthoudt ze in data/photos.json.
 
 Hij leest ook wat de organisator over de soort uitje zegt (schema.org-soort en trefwoorden),
 zodat de fabriek het uitje goed kan indelen. Daarvan wordt alleen de conclusie bewaard.
@@ -56,7 +56,7 @@ PHOTOS_PER_PLACE = 6             # zoveel foto's per gebouw of plaats; elk uitje
 MIN_PHOTO_WIDTH = 1600           # extra foto's uit een categorie: groot genoeg voor een kaartje
 VENUE_MAX_KM = 2.0               # het gebouw in Wikidata moet echt op die plek staan
 PLACE_MAX_KM = 15.0              # de plaats in Wikidata moet bij het uitje liggen
-MAX_COMMONS_ERRORS = 5           # Wikimedia onbereikbaar: stoppen, volgende nacht verder
+MAX_COMMONS_ERRORS = 5           # Wikimedia onbereikbaar: stoppen, volgende ronde verder
 
 # Namen van bestanden die geen foto van een uitje zijn. Ook door AI gemaakte plaatjes
 # ('ChatGPT-Image-...'): dat zijn illustraties, geen foto's (vaste regel 2).
@@ -392,7 +392,7 @@ def commons_photos(item: dict, fetch_json: Callable[..., dict], limit: int = PHO
     return out
 
 
-# ---------------------------------------------------------------- de nachtelijke ronde
+# ---------------------------------------------------------------- een ronde
 
 def load_cache(path: str | Path) -> dict:
     path = Path(path)
@@ -434,8 +434,8 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
         fetch: Callable[..., Fetched] = default_fetch, fetch_json: Callable[..., dict] = fetch_json,
         sleeper=time.sleep, clock=time.monotonic, max_pages: int = 150, max_lookups: int = 60,
         timeout: float = 12, budget_seconds: float = 8 * 60) -> Counter:
-    """Eén nachtelijke ronde. Stopt op tijd (budget) en bewaart tussendoor, zodat een
-    afgebroken ronde nooit werk kwijtraakt; de volgende nacht gaat hij verder."""
+    """Eén ronde. Stopt op tijd (budget) en bewaart tussendoor, zodat een
+    afgebroken ronde nooit werk kwijtraakt; de volgende ronde gaat hij verder."""
     today = today or date.today()
     deadline = clock() + budget_seconds
 
@@ -491,7 +491,7 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
     errors = 0
     for event in events:
         if errors >= MAX_COMMONS_ERRORS or stats["opzoekingen op Wikimedia"] >= max_lookups or out_of_time():
-            break  # Wikimedia onbereikbaar, of genoeg voor vannacht: morgen verder
+            break  # Wikimedia onbereikbaar, of genoeg voor deze ronde: de volgende verder
         chosen = photos.choose_photo(event, cache, lists=lists, names={})
         if chosen and chosen["type"] == "organisator":
             continue
