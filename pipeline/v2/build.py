@@ -194,8 +194,11 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     # Bewust uitgezet: uit in de bronnenlijst, of een website op de uitsluitlijst.
     previous_hosts = {s.get("host") for e in previous or [] for s in e.get("sources") or [] if s.get("host")}
     gone = (retired or set()) | {h for h in previous_hosts if is_excluded(f"https://{h}/")}
+    # Wat elke website aanleverde vóór de filters: een bron die levert, is niet kapot.
+    delivered = Counter(h for e in converted + excluded + too_far
+                        for h in {s.get("host") for s in e.get("sources") or [] if s.get("host")})
     gate = run_gate(events, [e for e in previous if in_area(e)] if previous else previous, today.isoformat(),
-                    retired_hosts=gone)
+                    retired_hosts=gone, delivered=delivered)
 
     prev_by_id = {e["id"]: e for e in previous or []}
     new_ids = {e["id"] for e in events}

@@ -27,10 +27,12 @@ def _still_running(event: dict, today: str) -> bool:
 
 
 def run_gate(new_events: list[dict], previous_events: list[dict] | None, today: str | None = None,
-             retired_hosts: set[str] | None = None) -> dict:
+             retired_hosts: set[str] | None = None, delivered: Counter | None = None) -> dict:
     """Vergelijk met de vorige run. Evenementen die inmiddels voorbij zijn tellen niet mee:
     die verdwijnen vanzelf en zijn geen teken dat een bron kapot is. Een bron die bewust is
-    uitgezet (retired_hosts: uit in de bronnenlijst, of een uitgesloten website) mag leeg raken."""
+    uitgezet (retired_hosts: uit in de bronnenlijst, of een uitgesloten website) mag leeg raken.
+    delivered: per website hoeveel uitjes er binnenkwamen vóór de filters. Een bron die wel levert,
+    maar waarvan alles wegvalt door een (nieuwe) regel, is niet kapot."""
     if previous_events and today:
         previous_events = [e for e in previous_events if _still_running(e, today)]
     checks: list[dict] = []
@@ -46,7 +48,7 @@ def run_gate(new_events: list[dict], previous_events: list[dict] | None, today: 
                        "detail": "geen of kleine vorige run; niet vergeleken"})
 
     if previous_events:
-        before, now = _hosts(previous_events), _hosts(new_events)
+        before, now = _hosts(previous_events), (delivered if delivered is not None else _hosts(new_events))
         dropped = [h for h, n in before.items() if n >= SOURCE_DROP_MIN and now.get(h, 0) == 0
                    and h not in (retired_hosts or set())]
         checks.append({"name": "geen_bron_ineens_leeg", "passed": not dropped,
