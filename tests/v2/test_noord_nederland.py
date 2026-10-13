@@ -53,3 +53,14 @@ def test_echte_uitjes_blijven_staan():
     for title in ("Over de streep", "Vrouwen van Kuinre organiseren een kerstmarkt", "Kerstconcert in de Mariakerk",
                   "Dienstenmarkt", "Programma-avond met lezing", "Ouderenmiddag met muziek"):
         assert not not_an_outing(_event(title)), title
+
+
+def test_seks_en_naaktfeesten_nooit_in_de_agenda():
+    from collector.discover_venues import is_excluded
+    assert is_excluded("https://maze.nl/evenementen/")
+    for title in ("Men Only Naked Maze Groningen", "Naakt Dag Mix Maze Hilversum", "T-GIRL PARTY", "Erotische avond",
+                  "Swingers party", "Sexy Saturday", "Seks en relaties: XXX party", "Darkroom night"):
+        assert not_an_outing(_event(title)), title
+    # Een dorp, een slak en een naaktloper in de natuur zijn gewoon goed.
+    for title in ("Dorpsfeest Sexbierum", "Lezing over naaktslakken", "Sexbierum bloeit"):
+        assert not not_an_outing(_event(title)), title

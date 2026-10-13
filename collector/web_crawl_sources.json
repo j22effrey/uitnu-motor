@@ -1329,7 +1329,7 @@
       "name": "Maze Groningen",
       "rootUrl": "https://maze.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -1345,7 +1345,9 @@
         "lon": 6.5632372
       },
       "kindHint": "film",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "disabledReason": "Seks- en naaktfeesten; geen uitje voor het grote publiek (ook op de uitsluitlijst).",
+      "disabledAt": "2026-10-13"
     },
     {
       "id": "museen-de-web",
