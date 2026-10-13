@@ -64,3 +64,20 @@ def test_seks_en_naaktfeesten_nooit_in_de_agenda():
     # Een dorp, een slak en een naaktloper in de natuur zijn gewoon goed.
     for title in ("Dorpsfeest Sexbierum", "Lezing over naaktslakken", "Sexbierum bloeit"):
         assert not not_an_outing(_event(title)), title
+
+
+def test_bron_die_levert_maar_door_een_regel_leeg_raakt_is_niet_kapot():
+    from collections import Counter
+    from pipeline.v2.gate import run_gate
+
+    def ev(i, host):
+        return {"id": str(i), "kind": "muziek", "url": f"https://{host}/{i}", "venue": {"city": "Leek"},
+                "occurrences": [{"date": "2026-10-20"}], "sources": [{"host": host, "url": f"https://{host}/{i}"}]}
+
+    previous = [ev(i, "kopjes.example") for i in range(11)] + [ev(100 + i, "podium.example") for i in range(100)]
+    new = [ev(100 + i, "podium.example") for i in range(100)]
+    # Zonder te weten wat de bron aanleverde: 'ineens leeg' (zo hoort het bij een leesfout).
+    assert not run_gate(new, previous, "2026-10-13")["passed"]
+    # De bron leverde wel 11 uitjes, maar een nieuwe regel haalde ze weg (kopjes): niet kapot.
+    delivered = Counter({"kopjes.example": 11, "podium.example": 100})
+    assert run_gate(new, previous, "2026-10-13", delivered=delivered)["passed"]
