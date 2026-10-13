@@ -194,6 +194,11 @@ def canonical_to_public(item: dict, *, audit_date: date) -> dict | None:
     }
     if discipline:
         record["cultureDiscipline"] = discipline
+    # Wat de organisator zelf zegt dat het is (schema.org, of een genre dat de bron daarnaar omzet):
+    # helpt bij het indelen en wordt niet gepubliceerd.
+    schema_type = str(item.get("category") or "")
+    if schema_type.replace(" ", "").casefold() in SCHEMA_TYPES and schema_type.endswith("Event"):
+        record["schemaType"] = schema_type
     return record
 
 

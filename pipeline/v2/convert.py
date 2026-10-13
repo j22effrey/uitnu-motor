@@ -160,6 +160,7 @@ def to_v2(raw: dict, today: date) -> dict | None:
         "description": raw.get("description") or "",
         "legacyCategory": raw.get("category"),
         "legacyDiscipline": raw.get("cultureDiscipline"),
+        "schemaType": raw.get("schemaType"),
     }
 
 

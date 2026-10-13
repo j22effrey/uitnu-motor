@@ -14,12 +14,12 @@ from pathlib import Path
 import time
 from typing import Callable, Iterable
 
-from collector import ics_events, wordpress_events
+from collector import ics_events, json_api_events, wordpress_events
 from collector.discover_venues import is_excluded
 from collector.site_crawler import TIME_UP, CrawlResult, CrawlSource, crawl_source
 from pipeline.event_model import RawEvent
 
-SUPPORTED = {"jsonld_event", "wordpress_tribe", "ics", "html_agenda_dutch"}
+SUPPORTED = {"jsonld_event", "wordpress_tribe", "ics", "html_agenda_dutch", "json_api"}
 
 
 @dataclass
@@ -111,6 +111,7 @@ def _run_source(
     site_runner: Callable[..., CrawlResult] = crawl_source,
     wordpress_fetch: Callable[..., tuple[list[RawEvent], dict]] = wordpress_events.fetch,
     ics_fetch: Callable[..., list[RawEvent]] = ics_events.fetch,
+    json_fetch: Callable[..., list[RawEvent]] = json_api_events.fetch,
     timeout: float = 15,
     deadline: float | None = None,
     source_seconds: float | None = None,
@@ -211,6 +212,16 @@ def _run_source(
             },
         )
 
+    if extractor == "json_api":
+        # De agenda als gegevens op de eigen website (zie collector/json_api_events.py).
+        events = json_fetch(config, source_name=name, root_url=root, timeout=timeout)
+        return SourceRunResult(
+            source_id=source_id,
+            extractor=extractor,
+            events=[_apply_trust(x, role) for x in events],
+            diagnostics={"feed_url": config.get("endpointUrl"), "feed_event_count": len(events)},
+        )
+
     feed_url = str(config.get("feedUrl") or "")
     if not feed_url:
         raise ValueError(f"ICS source {source_id} has no extractorConfig.feedUrl")
@@ -232,6 +243,7 @@ def run_all(
     site_runner: Callable[..., CrawlResult] = crawl_source,
     wordpress_fetch: Callable[..., tuple[list[RawEvent], dict]] = wordpress_events.fetch,
     ics_fetch: Callable[..., list[RawEvent]] = ics_events.fetch,
+    json_fetch: Callable[..., list[RawEvent]] = json_api_events.fetch,
     budget_seconds: float | None = None,
     source_seconds: float | None = None,
 ) -> dict[str, SourceRunResult]:
@@ -258,6 +270,7 @@ def run_all(
             site_runner=site_runner,
             wordpress_fetch=wordpress_fetch,
             ics_fetch=ics_fetch,
+            json_fetch=json_fetch,
             timeout=timeout,
             **extra,
         ): source

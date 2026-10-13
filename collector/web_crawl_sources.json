@@ -5923,6 +5923,56 @@
       },
       "kindHint": "sport",
       "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "atlastheater-nl-api",
+      "name": "Atlas Theater",
+      "rootUrl": "https://www.atlastheater.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "json_api",
+      "extractorConfig": {
+        "endpointUrl": "https://www.atlastheater.nl/Umbraco/Api/PerformanceApi/GetPerformances?amountOfPerformances=500",
+        "items": "",
+        "title": [
+          "Performance.Artist",
+          "Performance.Title"
+        ],
+        "start": "Performance.StartTime",
+        "url": "Url",
+        "id": "Performance.PerformanceID",
+        "genre": "Performance.Genre",
+        "genres": {
+          "Muziek": "MusicEvent",
+          "Grote kerk klassiek": "MusicEvent",
+          "Klassiek": "MusicEvent",
+          "Cabaret": "ComedyEvent",
+          "Toneel": "TheaterEvent",
+          "Musical": "TheaterEvent",
+          "Opera": "TheaterEvent",
+          "Show en Entertainment": "TheaterEvent",
+          "Gastvoorstelling": "TheaterEvent",
+          "Dans": "DanceEvent",
+          "Jeugd en familie": "ChildrensEvent",
+          "Theatercollege": "LiteraryEvent"
+        },
+        "room": "Performance.Room",
+        "rooms": {
+          "De Grote Kerk": {
+            "venue": "Grote Kerk",
+            "city": "Emmen"
+          }
+        },
+        "skipTitle": "\\bserie \\d|abonnement"
+      },
+      "defaultPlace": {
+        "city": "Emmen",
+        "venue": "Atlas Theater",
+        "lat": 52.7858,
+        "lon": 6.8975
+      },
+      "policyReviewedAt": "2026-10-13",
+      "note": "Het programma staat als gegevens op de eigen website (robots.txt staat het toe); de pagina zelf laadt het met JavaScript, dus de gewone test vond het niet."
     }
   ]
 }
