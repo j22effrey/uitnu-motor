@@ -51,7 +51,7 @@ def test_kopjes_van_een_website_zijn_geen_uitje():
 def test_echte_uitjes_blijven_staan():
     # Een voorstelling die met 'Over de' begint, een club die iets organiseert, een dienst-achtig woord in een naam.
     for title in ("Over de streep", "Vrouwen van Kuinre organiseren een kerstmarkt", "Kerstconcert in de Mariakerk",
-                  "Dienstenmarkt", "Programma-avond met lezing", "Ouderenmiddag met muziek"):
+                  "Dienstenmarkt", "Programma-avond met lezing", "Dansavond 50 plus"):
         assert not not_an_outing(_event(title)), title
 
 
@@ -81,3 +81,24 @@ def test_bron_die_levert_maar_door_een_regel_leeg_raakt_is_niet_kapot():
     # De bron leverde wel 11 uitjes, maar een nieuwe regel haalde ze weg (kopjes): niet kapot.
     delivered = Counter({"kopjes.example": 11, "podium.example": 100})
     assert run_gate(new, previous, "2026-10-13", delivered=delivered)["passed"]
+
+
+def test_alleen_uitjes_voor_het_grote_publiek():
+    """Geen vaste les of oefenavond van een club, geen competitie van amateurteams, niets alleen voor
+    leden of de ouderen van het dorp (vraag van de eigenaar, 13 oktober)."""
+    for title in ("Koor", "Shantykoor De Brûskoppen", "Fanfare Swettewyn", "Wandelgroep Wommels", "Wandel je fit!",
+                  "Klaverjassen", "🃏 Klaverjaskompetitie (48e editie) in Yn 'e Mande", "Koffieochtend",
+                  "Koffie inloop MFC it Stedshûs", "Samen eten", "Ying Yoga", "Stoelgym", "Kickboksen", "Muziekles",
+                  "Peutermeespeelochtend Emmens", "Jeugdsoos Dwingeloo", "VitalityClub", "Leesclub Moderne literatuur",
+                  "Inloop februari", "Bingo", "Thuiswedstrijd JVV 2", "KNLTB najaarscompetitie Senioren",
+                  "Covos DS1 – VC Sneek DS2", "Westerlee 1 - VVS 1", "Oktoberfest (Alleen leden)", "Ledengearkomst vv SDS",
+                  "Buurtvereniging Om'e Toer Wijnproeverij", "Kerstmiddag voor ouderen", "Kerstlunch 50+",
+                  "Ouderenmiddag met muziek", "50 plus club Sinterklaas"):
+        assert not_an_outing(_event(title)), title
+    # Openbaar: een concert van het koor, een toernooi, een kerstbingo, een tributeshow met jaartal,
+    # een cursus, een festival voor senioren, een dansavond voor 50-plussers, Club Guy & Roni (dans).
+    for title in ("Kerstconcert van het koor", "Klaverjastoernooi", "Kerstbingo", "Bridgedrive", "Repair café",
+                  "Daddy Cool Turns 50 – Boney M 1976- 2026", "Reanimatiecursus", "Seniorenfestival",
+                  "Senioren darttoernooi", "Dansavond 50 plus", "Club Guy & Roni – The Current", "Pop-up boekenclub",
+                  "Open dag fanfare Swettewyn", "Intocht Sinterklaas"):
+        assert not not_an_outing(_event(title)), title

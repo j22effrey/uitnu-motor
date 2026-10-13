@@ -33,7 +33,13 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    vooral verschillende artiesten. 'Festival' in de naam is geen bewijs: een springkussenfestival is
    'kinderen', een whiskyfestival 'eten'. Twijfelgevallen eerst uitzoeken, en de reden vastleggen in
    `pipeline/v2/overrides.json` (festivalregister onder `namen`, altijd met `reden`).
-4. **Werkwijze.** Altijd eerst testen (`python -m pytest tests/v2`), dan een pull request met uitleg
+4. **Alleen uitjes voor het grote publiek** (afspraak met de eigenaar, 13 oktober 2026). Geen vaste
+   les, training of oefenavond van een club of groep (koor, fanfare, wandelgroep, yoga, klaverjassen,
+   koffieochtend), geen competitiewedstrijden van amateurteams ('Covos DS1 – VC Sneek DS2'), niets
+   alleen voor leden, dorpsbewoners of de ouderen van het dorp, en nooit seks- of naaktfeesten. Staat
+   er iets openbaars bij (concert, toernooi, open dag, voorstelling), dan blijft het staan
+   (`CLUB_SESSION`, `TEAM_MATCH`, `MEMBERS_ONLY`, `SENIORS_ONLY` en `ADULT_ONLY` in `classify.py`).
+5. **Werkwijze.** Altijd eerst testen (`python -m pytest tests/v2`), dan een pull request met uitleg
    in gewone taal. Claude voegt die pull request daarna zelf samen (afspraak met de eigenaar van
    13 oktober 2026), maar alleen als de tests slagen en, bij een verandering aan het ophalen of
    indelen, een proef met de echte websites door de keuring komt. Daarna meldt Claude in gewone taal

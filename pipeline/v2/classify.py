@@ -43,7 +43,8 @@ def _compile(patterns: Iterable[str]) -> list[re.Pattern[str]]:
 # Trefwoorden per soort. Nederlandse samenstellingen ("stadswandeling") zijn de reden
 # dat sommige patronen bewust zonder woordgrens aan het begin werken.
 PATTERNS: dict[str, list[re.Pattern[str]]] = {
-    "film": _compile([r"\bfilm", r"bioscoop", r"cinema", r"filmhuis", r"documentaire", r"cinekid"]),
+    "film": _compile([r"\bfilm", r"bioscoop", r"cinema", r"filmhuis", r"documentaire", r"cinekid",
+                      r"\((?:19|20)\d\d\)\s*$"]),   # 'L'Histoire de Souleymane (2024)': een film met jaartal
     "sport": _compile([
         r"hardloop", r"(?<!ver)(?<!door)(?<!aan)(?<!uit)loop\b", r"run\b", r"\btrail", r"toertocht", r"\d+\s?(km|kilometer|mijl)\b", r"\bmijl\b", r"marathon",
         r"triatlon", r"wedstrijd", r"toernooi", r"regatta", r"roeiwedstrijd", r"schaats",
@@ -84,11 +85,11 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"carnaval", r"optocht", r"lampion", r"halloween", r"spooktocht", r"lichtjes",
         r"vuurwerk", r"oud en nieuw", r"line ?dance", r"volksdans", r"\bquiz", r"gezellige avond", r"gesellige jun",
         r"oktoberfest", r"oktofest", r"nieuwjaarsduik", r"bingo", r"spellen", r"spelletjes",
-        r"klaverjas", r"\bkaarten\b", r"kaartclub", r"rummi", r"\bbridge\b", r"quiz", r"sint[ -]maarten", r"\bdisco",
+        r"klaverjas", r"^kaarten\b", r"kaarten ?(?:avond|middag)", r"kaartclub", r"rummi", r"\bbridge\b", r"quiz", r"sint[ -]maarten", r"\bdisco",
         r"dans(middag|avond|feest|club)", r"trick or treat", r"spokentocht", r"ladies ?night", r"happy hour",
         r"hollandse avond", r"hitster", r"pijltjes gooien", r"kerstmiddag", r"\bsint\b", r"klozum", r"carnaval",
         r"nieuwjaars ?(receptie|visite|bijeenkomst)", r"spookhuis", r"\bgala\b", r"paasvuur", r"vreugdevuur",
-        r"jubileum", r"neut\W?e?n schait\W?e?n", r"noten schieten", r"puzzel", r"bordspel",
+        r"jubileum(?!\w*concert)", r"neut\W?e?n schait\W?e?n", r"noten schieten", r"puzzel", r"bordspel",
         r"paasmiddag", r"bridgedrive", r"\bforro\b",
     ]),
     "theater": _compile([
@@ -111,7 +112,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
     "kunst": _compile([
         r"tentoonstelling", r"expositie", r"\bexpo\b", r"museum", r"galerie", r"\bkunst",
         r"atelier", r"monument", r"erfgoed", r"open kerk", r"kerkpad", r"rondleiding", r"beelden van",
-        r"beeldhouw", r"historisch", r"archeolog", r"cultuur", r"geschiedenis", r"herdenking",
+        r"beeldhouw", r"historisch", r"archeolog", r"cultuur", r"geschiedenis", r"herdenking", r"schilderij",
     ]),
     "lezing": _compile([
         r"lezing", r"workshop", r"cursus", r"masterclass", r"\bdebat\b",
@@ -173,6 +174,8 @@ NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst
                            r"|kerkenraad|weeksluiting|dienst$|(?:interne|externe) ronde|^knvb|start fase \d"
                            r"|bijeenkomst (?:van het )?bestuur|\w*vaccinat\w*|\d+ (?:jaar|jier) (?:getrouwd|troud)"
                            r"|ald ?papier|\w*(?:container|kontainer)\w*|vrijwil\w*gers\w*"
+                           # een mededeling of lege aankondiging: 'gesloten voor publiek', 'nadere info volgt'
+                           r"|gesloten|nadere info\w* volgt"
                            # vergaderingen en bijeenkomsten voor leden of vrijwilligers: niet voor publiek
                            r"|ledenvergadering|jaarvergadering|bestuursvergadering|alv|vrijwilligers\w*|frijwilligers\w*|besloten"
                            # mededelingen: iets is dicht (de huisartsenpraktijk, de bibliotheek)
@@ -196,7 +199,7 @@ NOT_A_TITLE = re.compile(r"^(?:start|begin|aanvang|selecteer (?:een )?(?:tijdsti
 # het kopje, er staat niets achter (anders blijft het staan: 'Programma-avond met lezing').
 PAGE_HEADING = re.compile(r"^(?:fotogalerij|sfeerimpressie|kom in contact|contact|mede mogelijk gemaakt door|sponsoren gezocht"
                           r"|over ons|over (?:de|het) (?:stichting|vereniging|organisatie|festival)\b.*|pagina'?s|ontdek"
-                          r"|wat is er (?:allemaal )?te beleven|het programma|programma|thank you|bedankt|blok \d+|sign-?up"
+                          r"|wat is er (?:allemaal )?te beleven|het programma|programma|over deze film|thank you|bedankt|blok \d+|sign-?up"
                           r"|uitslag\b.*|rabo clubsupport\b.*|details?"
                           r"|\d{1,2} (?:jan|feb|maa|mrt|apr|mei|jun|jul|aug|sep|okt|oct|nov|dec)[a-z]*(?: 20\d\d)?)\W*$")
 # Een titel die alleen een club of vaste ontmoeting noemt (de 50-plusclub, dorpsbelangen, de inloop):
@@ -211,6 +214,42 @@ CLUB_ONLY = re.compile(r"^\w*\d0 ?-?(?:plus|\+)(?: ?(?:club|soos|societeit|midda
 ADULT_ONLY = re.compile(r"\bnaakt\b|\bnaked\b|\bmen only\b|\bt-?girl|\berot|\bsex\b|\bsexy\b|\bseks\b|swinger"
                         r"|\bfetish|\bbdsm\b|\bporn|\bxxx\b|\badults? only\b|\b18\+ ?(?:party|feest)|darkroom"
                         r"|gay ?sauna|\bsauna ?party|\bcruising\b|strip ?club|striptease|peepshow|\bkinky\b|\bfkk\b|\bnudis")
+# Niet voor het grote publiek (vraag van de eigenaar, 13 oktober): de vaste les of oefenavond van een
+# club of groep ('Koor', 'Fanfare Swettewyn', 'Wandelgroep Wommels', 'Yoga', 'Koffieochtend'), een
+# competitiewedstrijd van amateurteams ('Covos DS1 – VC Sneek DS2'), en wat alleen voor leden of
+# dorpsbewoners is. Staat er iets openbaars bij ('Concert', 'Toernooi', 'Open dag'), dan blijft het staan.
+CLUB_SESSION = re.compile(
+    r"^(?:(?:ying|yin|hatha|stoel|zwangerschaps|senioren) ?)?yoga|^pilates|^zumba|^fitness|^bootcamp|^spinning"
+    r"|^aquarobics|^(?:senioren|ouderen|stoel) ?(?:gym|fit|yoga)|^stoelfit|^gym\b|^badminton|^tafeltennis|^volleybal"
+    r"|^basketbal|^kickboks\w*|^boksen|^judo|^karate|^taekwondo|^picklebal\w*|^pickleball|^koersbal|^jeu de boules"
+    r"|^petanque|^biljart(?:en)?\b|^biljart- en kaartsoos|^sjoelen|^dammen|^schaken|^bridge\b|^bridgeclub"
+    r"|^klaverjas(?:sen|kompetitie|competitie|avond)?\b|^kaarten\b|^kaartclub|^rummikub|^spelletjes ?(?:middag|avond)"
+    r"|^spellen ?(?:middag|avond)|^koffie ?(?:ochtend|inloop|uurtje|drinken|middag)|^(?:vrijdag ?)?(?:middag|avond) ?caf[eé]"
+    r"|^samen eten\b|^eetclub|^breiclub|^haakclub|^handwerk(?:club|en)\b|^naaiclub|^creaclub|^crea ?(?:avond|middag|ochtend)"
+    r"|^(?:muziek|gitaar|piano|zang|dans|teken|schilder)les\b|^(?:kinder|jeugd|gemengd |mannen|vrouwen|shanty|sjong)?ko(?:o|a)r\b"
+    r"|^fanfare\b|^brass ?band\b|^muziekvereniging|^harmonie\b|^wandel ?(?:club|groep)|^wandel je fit|^kuier ?(?:klub|groep)"
+    r"|^(?:hard)?loop ?groep|^fiets ?(?:club|groep)|^(?:jeugd|tiener|ouderen|senioren)? ?soos\b|^peuter ?(?:mee)?speel\w*"
+    r"|^speel je mee \w+|^stut en steun|^repetitie|^oefen(?:avond|ochtend)|^training\b|^jeugdtraining"
+    r"|^(?:een |dorps)?bakkie\b|^kookclub|^bingo(?:avond|middag)?$|^(?:thuis|uit)wedstrijd\b"
+    r"|^(?:ochtend ?)?koffie ?leut|^(?:de )?\w+club\b|^leesclub|^(?:christelijke )?vrouwengroep|^\w*dansclub|^soos\w*|^inloop\b|^\w+inloop$"
+    r"|^startgroep \d|^(?:knltb|knvb|nevobo|knbb|kndb|nhv)\b|^verenigingsavond|^\d0 ?\+? ?(?:gym\w*|fit\w*|yoga)"
+    r"|^.*\btraining (?:[ojm]\d|jo\d|mo\d|jeugd|selectie)")
+PUBLIC_EVENT = re.compile(r"concert|uitvoering|optreden|voorstelling|toerno(?:o|a)i|toenooi|drive\b|kampioen|open (?:dag|les|avond|huis|podium)"
+                          r"|demonstratie|clinic|workshop|festival|jubileum|markt|expositie|tentoonstelling|\bshow\b|gala"
+                          r"|feest|viering|proefles|kennismak|presentatie|lezing|actie|benefiet|\bquiz")
+# Teamnummers zijn kort ('1', 'DS1', 'JO13-2'); een jaartal ('Boney M 1976') is geen team.
+TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'/&-]+ (?:[dhj]s ?|jo\d+-|mo\d+-)?\d{1,2} [-–] [\w .'/&-]+ (?:[dhj]s ?|jo\d+-|mo\d+-)?\d{1,2}\b")
+MEMBERS_ONLY = re.compile(r"(?:alleen|enkel|uitsluitend) (?:voor )?(?:leden|bewoners|inwoners|dorpsbewoners|buurtbewoners|donateurs)"
+                          r"|ledengearkomst|^buurtvereniging\b"
+                          r"|voor (?:onze )?(?:leden|dorpsbewoners|buurtbewoners|bewoners van)\b|voor inwoners van|bewoners(?:avond|middag|bijeenkomst)"
+                          r"|leden(?:middag|ochtend|dag|uitje|reis)|leden en donateurs")
+# Voor de ouderen van het dorp ('Kerstmiddag voor ouderen', 'Kerstlunch 50+'): niet voor het grote publiek.
+# Een festival, beurs, toernooi of concert voor senioren blijft staan.
+# Een leeftijdsgroep alleen ('Dansavond 50 plus') is geen reden: die is open voor iedereen van die leeftijd.
+SENIORS_ONLY = re.compile(r"^ouderen\b|ouderen ?(?:middag|ochtend|lunch|diner|kerst|soos|reis|uitje)|(?:voor|met) (?:de )?ouderen"
+                          r"|(?:lunch|diner|middag|ochtend|kerst\w*) [56][05] ?(?:\+|plus)|[56][05] ?(?:\+|plus) ?(?:club|soos|middag|ochtend|lunch)"
+                          r"|senioren ?(?:middag|ochtend|soos|reis|kerst|lunch)")
+SENIORS_PUBLIC = re.compile(r"festival|beurs|toerno(?:o|a)i|concert|markt|voorstelling")
 # Alleen de winkels open ('Koopzondag'): geen uitje. Met iets erbij ('Koopzondag en straatheater') wel.
 SHOPS_ONLY = re.compile(r"\bkoop(?:zondag|avond)\b")
 # De pagina van een zaal met de naam van die zaal als titel: dat is de zaal, geen uitje.
@@ -446,6 +485,15 @@ def not_an_outing(event: dict) -> str | None:
     title = normalize(event.get("title") or "")
     if ADULT_ONLY.search(title):
         return f"alleen voor volwassenen: '{event.get('title')}'"
+    if MEMBERS_ONLY.search(title):
+        return f"alleen voor leden of dorpsbewoners: '{event.get('title')}'"
+    if TEAM_MATCH.match(title):
+        return f"competitiewedstrijd van een club: '{event.get('title')}'"
+    session = CLUB_SESSION.match(re.sub(r"^\W+", "", title))   # ook met een plaatje ervoor ('🃏 Klaverjassen')
+    if session and not PUBLIC_EVENT.search(title):
+        return f"vaste les of clubactiviteit: '{event.get('title')}'"
+    if SENIORS_ONLY.search(title) and not SENIORS_PUBLIC.search(title):
+        return f"voor de ouderen van het dorp: '{event.get('title')}'"
     if NOT_A_TITLE.match(title.strip(" .:!")) or PAGE_HEADING.match(title):
         return f"geen naam van een uitje: '{event.get('title')}'"
     if CLUB_ONLY.match(title.strip(" .:!")) and not _matches(title):
