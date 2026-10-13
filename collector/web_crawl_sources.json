@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -3356,6 +3356,424 @@
         "lon": 6.7317
       },
       "policyReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "stinze-stiens-nl-web",
+      "name": "Stiens",
+      "rootUrl": "https://www.stinze-stiens.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.stinze-stiens.nl/"
+      },
+      "activatedFromCandidate": "stinze-stiens.nl",
+      "policyReviewedAt": "2026-10-13",
+      "defaultPlace": {
+        "city": "Stiens",
+        "lat": 53.2608,
+        "lon": 5.7575
+      }
+    },
+    {
+      "id": "onstwedde-info-web",
+      "name": "Onstwedde",
+      "rootUrl": "https://onstwedde.info/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://onstwedde.info/agenda"
+      },
+      "activatedFromCandidate": "onstwedde.info",
+      "policyReviewedAt": "2026-10-13",
+      "defaultPlace": {
+        "city": "Onstwedde",
+        "lat": 53.0353,
+        "lon": 7.0411
+      }
+    },
+    {
+      "id": "tytsjerk-nl-web",
+      "name": "Tietjerk",
+      "rootUrl": "https://tytsjerk.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://tytsjerk.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "tytsjerk.nl",
+      "policyReviewedAt": "2026-10-13",
+      "defaultPlace": {
+        "city": "Tietjerk",
+        "lat": 53.2133,
+        "lon": 5.9114
+      }
+    },
+    {
+      "id": "woudbloem-com-web",
+      "name": "Woudbloem Online",
+      "rootUrl": "https://woudbloem.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://woudbloem.com/jaarprogramma/"
+      },
+      "activatedFromCandidate": "woudbloem.com",
+      "defaultPlace": {
+        "city": "Woudbloem",
+        "lat": 53.2178,
+        "lon": 6.7383
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "zeijen-nu-web",
+      "name": "Zeijen.nu",
+      "rootUrl": "https://www.zeijen.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.zeijen.nu/"
+      },
+      "activatedFromCandidate": "zeijen.nu",
+      "defaultPlace": {
+        "city": "Zeijen",
+        "lat": 53.0478,
+        "lon": 6.5464
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpsbelangentenboer-com-web",
+      "name": "Ten Boer",
+      "rootUrl": "https://www.dorpsbelangentenboer.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dorpsbelangentenboer.com/event-details/lutje-kerstmarkt"
+      },
+      "activatedFromCandidate": "dorpsbelangentenboer.com",
+      "defaultPlace": {
+        "city": "Ten Boer",
+        "lat": 53.28333,
+        "lon": 6.68333
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpshuissiegerswoude-nl-web",
+      "name": "Uthof Siegerswoude",
+      "rootUrl": "https://dorpshuissiegerswoude.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "dorpshuissiegerswoude.nl",
+      "defaultPlace": {
+        "city": "Siegerswoude",
+        "lat": 53.0944,
+        "lon": 6.2411
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpshuistenboer-com-web",
+      "name": "Ten Boer",
+      "rootUrl": "https://www.dorpshuistenboer.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dorpshuistenboer.com/"
+      },
+      "activatedFromCandidate": "dorpshuistenboer.com",
+      "defaultPlace": {
+        "city": "Ten Boer",
+        "lat": 53.28333,
+        "lon": 6.68333
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "drachten-net-web",
+      "name": "Drachten.net",
+      "rootUrl": "http://drachten.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "http://drachten.net/"
+      },
+      "activatedFromCandidate": "drachten.net",
+      "defaultPlace": {
+        "city": "Drachten",
+        "lat": 53.1,
+        "lon": 6.1
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "westerlee-nl-web",
+      "name": "Welkom bij Digitaal Dorpsplein Westerlee, hét digitale platform van Westerlee",
+      "rootUrl": "https://www.westerlee.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.westerlee.nl/agenda/"
+      },
+      "activatedFromCandidate": "westerlee.nl",
+      "defaultPlace": {
+        "city": "Westerlee",
+        "lat": 53.145,
+        "lon": 6.9869
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "annen-info-nl-web",
+      "name": "Annen-Info.nl",
+      "rootUrl": "https://www.annen-info.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.annen-info.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "annen-info.nl",
+      "defaultPlace": {
+        "city": "Annen",
+        "lat": 53.0586,
+        "lon": 6.7183
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "fochteloo-nl-web",
+      "name": "Fochteloo.nl",
+      "rootUrl": "https://www.fochteloo.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.fochteloo.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "fochteloo.nl",
+      "defaultPlace": {
+        "city": "Fochteloo",
+        "lat": 52.9925,
+        "lon": 6.3347
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "levendigmusselkanaal-nl-web",
+      "name": "LevendigMusselkanaal",
+      "rootUrl": "https://levendigmusselkanaal.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://levendigmusselkanaal.nl/"
+      },
+      "activatedFromCandidate": "levendigmusselkanaal.nl",
+      "defaultPlace": {
+        "city": "Musselkanaal",
+        "lat": 52.9292,
+        "lon": 7.0153
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "paesens-moddergat-nl-web",
+      "name": "Paesens-Moddergat",
+      "rootUrl": "https://www.paesens-moddergat.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.paesens-moddergat.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "paesens-moddergat.nl",
+      "defaultPlace": {
+        "city": "Paesens-Moddergat",
+        "lat": 53.4019,
+        "lon": 6.0825
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "sleen-nu-web",
+      "name": "SleenWeb",
+      "rootUrl": "https://www.sleen.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.sleen.nu/home/agenda"
+      },
+      "activatedFromCandidate": "sleen.nu",
+      "defaultPlace": {
+        "city": "Sleen",
+        "lat": 52.7733,
+        "lon": 6.8019
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "spijk-net-web",
+      "name": "Digitaal Portaal van Spijk gn -",
+      "rootUrl": "https://www.spijk.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.spijk.net/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "spijk.net",
+      "defaultPlace": {
+        "city": "Spijk",
+        "lat": 53.39167,
+        "lon": 6.83695
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "historischcentrumleeuwarden-nl-web",
+      "name": "Pier Pander Museum",
+      "rootUrl": "https://historischcentrumleeuwarden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://historischcentrumleeuwarden.nl/actueel/activiteiten"
+      },
+      "activatedFromCandidate": "historischcentrumleeuwarden.nl",
+      "defaultPlace": {
+        "city": "Leeuwarden",
+        "lat": 53.2051977,
+        "lon": 5.7934442
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "itmaskelyn-nl-web",
+      "name": "It Maskelyn",
+      "rootUrl": "https://itmaskelyn.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://itmaskelyn.nl/"
+      },
+      "activatedFromCandidate": "itmaskelyn.nl",
+      "defaultPlace": {
+        "venue": "It Maskelyn",
+        "city": "Hurdegaryp",
+        "lat": 53.2139415,
+        "lon": 5.9433814
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "tryater-nl-web",
+      "name": "Tryater",
+      "rootUrl": "https://tryater.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://tryater.nl/programma/fnin/"
+      },
+      "activatedFromCandidate": "tryater.nl",
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "bierumerschool-nl-web",
+      "name": "De Bierumer School",
+      "rootUrl": "https://www.bierumerschool.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.bierumerschool.nl/index.html"
+      },
+      "activatedFromCandidate": "bierumerschool.nl",
+      "defaultPlace": {
+        "venue": "De Bierumer School",
+        "city": "Bierum",
+        "lat": 53.3818429,
+        "lon": 6.864086
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-13"
     }
   ]
 }
