@@ -206,6 +206,11 @@ CLUB_ONLY = re.compile(r"^\w*\d0 ?-?(?:plus|\+)(?: ?(?:club|soos|societeit|midda
                        r"|^(?:vereniging )?(?:dorps|doarps)belang(?:en)?(?: \w+)?$|^plaatselijk belang(?: \w+)?$"
                        r"|^inloop ?(?:ochtend|middag|avond|uur)?$|^(?:de )?(?:huiskamer|doarpskeamer|dorpskamer)$"
                        r"|^vrouwen van [\w-]+$|^(?:stichting )?ouderen [\w -]+$|^vriendenkring [\w -]+$|^buurtvereniging [\w -]+$")
+# Seks- en naaktfeesten en andere uitjes alleen voor volwassenen: nooit in een agenda voor iedereen,
+# van welke bron ook. (Let op: 'Sexbierum' is een dorp, dus 'sex' alleen als los woord.)
+ADULT_ONLY = re.compile(r"\bnaakt\b|\bnaked\b|\bmen only\b|\bt-?girl|\berot|\bsex\b|\bsexy\b|\bseks\b|swinger"
+                        r"|\bfetish|\bbdsm\b|\bporn|\bxxx\b|\badults? only\b|\b18\+ ?(?:party|feest)|darkroom"
+                        r"|gay ?sauna|\bsauna ?party|\bcruising\b|strip ?club|striptease|peepshow|\bkinky\b|\bfkk\b|\bnudis")
 # Alleen de winkels open ('Koopzondag'): geen uitje. Met iets erbij ('Koopzondag en straatheater') wel.
 SHOPS_ONLY = re.compile(r"\bkoop(?:zondag|avond)\b")
 # De pagina van een zaal met de naam van die zaal als titel: dat is de zaal, geen uitje.
@@ -439,6 +444,8 @@ def page_hints(text: str) -> dict:
 def not_an_outing(event: dict) -> str | None:
     """De reden waarom dit geen uitje is (een gewone kerkdienst), of None."""
     title = normalize(event.get("title") or "")
+    if ADULT_ONLY.search(title):
+        return f"alleen voor volwassenen: '{event.get('title')}'"
     if NOT_A_TITLE.match(title.strip(" .:!")) or PAGE_HEADING.match(title):
         return f"geen naam van een uitje: '{event.get('title')}'"
     if CLUB_ONLY.match(title.strip(" .:!")) and not _matches(title):
