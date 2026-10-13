@@ -82,3 +82,48 @@ def test_uitjes_verder_dan_anderhalf_jaar_vooruit_zijn_een_leesfout(tmp_path):
     (data / "events.json").write_text(json.dumps(rows))
     events, status = build(data, out, TODAY, {}, photo_cache={})
     assert [e["title"] for e in events] == ["Kerstmarkt"] and status["teVerVooruit"] == 1
+
+
+def test_clubs_bestuur_en_vaste_ontmoetingen_zijn_geen_uitje():
+    for title in ("50 plus club", "50-Plus", "Jirnsum60Plus Gezellige middag", "Dorpsbelangen", "Doarpsbelang Bitgum",
+                  "Inloopmiddag", "De Huiskamer", "Bestuur Bastogne DB", "1dagsbestuur Vrouwen van deze Tijd",
+                  "Blomme-aksje VV Suameer", "Frijwilligersjûn VV Suameer", "NL-doet.", "Kerstavond-dienst",
+                  "2DE PAASDAG", "Kerst 2026", "Koop nu jullie kaartjes en beleef de magie!", "Evenement type",
+                  "21:00 'd Aole School Hoofdstraat 21"):
+        assert not_an_outing({"title": title}), title
+    for title in ("Dansavond 50 plus", "Dorpsbelangen nieuwjaarsreceptie", "Inloopmiddag met lezing over de Waddenzee",
+                  "Kerstconcert 2026", "Ouderensoosreis naar Giethoorn met boottocht"):
+        assert not_an_outing({"title": title}) is None, title
+
+
+def test_de_pagina_van_een_zaal_is_geen_uitje():
+    assert not_an_outing({"title": "De Hoeksteen", "url": "https://dorp.example/locations/de-hoeksteen/"})
+    # Een uitje met een eigen naam dat naar de zaal linkt, blijft staan.
+    assert not_an_outing({"title": "Kerst Pubquiz", "url": "https://dorp.example/locations/t-dorpshuus-nijroon/"}) is None
+
+
+def test_meer_dorpsactiviteiten_krijgen_een_soort():
+    expected = {"17 oktober Hartveilig dag": "lezing", "Buurtbakje": "eten", "Dorpstafel": "eten",
+                "Jongeren: Boobytrapbos": "kinderen", "DOE-middag - Herfststuk maken": "lezing",
+                "Doarpskeamer + Kledingreparatie": "lezing", "GGG Koken": "eten", "Vrouwencafé": "lezing",
+                "Ite & sa": "eten", "November Winds, de Bazuin Stynsgea": "muziek", "BOOMSNOEIDAG": "natuur",
+                "Fiets 4-daagse 2027": "natuur", "Avondvierdaagse": "natuur", "Kledingruil": "markt"}
+    assert {title: classify({"title": title})["kind"] for title in expected} == expected
+
+
+def test_de_rubriek_in_de_link_telt_als_soort_van_de_organisator():
+    verdict = classify({"title": "Pareltjes uit de werkgemeenschap",
+                        "url": "https://kerk.example/cursusprogramma/2118-pareltjes-uit-de-werkgemeenschap"})
+    assert verdict["kind"] == "lezing" and verdict["method"] == "organisator"
+    assert classify({"title": "Wij zijn de tijden", "url": "https://kerk.example/cursusprogramma"})["kind"] == "lezing"
+    # Het laatste stuk van de link is de naam van het uitje zelf, geen rubriek.
+    assert classify({"title": "Eka", "url": "https://dorp.example/event/eka-9/"})["kind"] == "overig"
+
+
+def test_losse_aanduiding_achter_de_naam_en_postcode_voor_de_plaats():
+    from pipeline.v2.convert import clean_title, to_v2
+    assert clean_title("Durf moedig te zijn Start") == "Durf moedig te zijn"
+    assert clean_title("Valse Start") == "Valse Start"
+    row = {"title": "Kerstmarkt", "startDate": "2026-12-12", "city": "9341 BL Veenhuizen",
+           "verificationStatus": "organizer_confirmed", "eventUrl": "https://dorp.example/kerstmarkt"}
+    assert to_v2(row, TODAY)["venue"]["city"] == "Veenhuizen"

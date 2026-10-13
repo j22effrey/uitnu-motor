@@ -57,8 +57,9 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
    organisator zelf over de soort zegt (alleen de conclusie, geen tekst). `pipeline/v2/photos.py`
    kiest per uitje de foto; uitjes in dezelfde plaats krijgen om de beurt een andere foto.
 6. `pipeline/v2/build.py`: voegt alles samen, laat weg wat geen uitje is (gewone kerkdiensten,
-   zaalverhuur, vergaderingen, mededelingen zoals de afvalkalender, en vaste activiteiten die elke
-   week terugkomen zoals klaverjassen of gym; voorstellingen, concerten, films, markten,
+   zaalverhuur, vergaderingen en bestuur, mededelingen zoals de afvalkalender, een titel die alleen
+   een club of vaste ontmoeting noemt zoals '50 plus club' of 'Inloopmiddag', en vaste activiteiten
+   die elke week terugkomen zoals klaverjassen of gym; voorstellingen, concerten, films, markten,
    tentoonstellingen en natuuruitjes blijven altijd staan), deelt in (`classify.py`), kiest foto's,
    keurt (`gate.py`) en publiceert. Uitjes verder dan anderhalf jaar vooruit zijn een leesfout.
 
@@ -75,5 +76,6 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
 Muziek, Festival, Theater en comedy, Film, Markt en beurs, Feest en kermis, Kinderen en familie,
 Sport, Natuur en buiten, Kunst en erfgoed, Lezing en workshop, Eten en drinken, Overig
 (`pipeline/v2/kinds.py`). Volgorde van beslissen: correctie of festivalregister, trefwoorden, wat de
-organisator zelf op de pagina zet (schema.org), de soort van het podium, oude hints, anders 'overig'.
+organisator zelf op de pagina zet (schema.org) of de rubriek in de link (`/cursusprogramma/...`), de
+soort van het podium, oude hints, anders 'overig'.
 Elke uitkomst heeft een reden. De testset staat in `tests/v2/testset_soorten.json`.
