@@ -48,8 +48,10 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
    `data/dorpssites.json` ('dorpssite', 'twijfel' of 'nee', altijd met een reden). Alleen
    'dorpssite' gaat vanzelf de wachtrij in; twijfelgevallen eerst nakijken (dan als tip toevoegen).
 2. `collector/source_probe.py`: test of een website een leesbare agenda heeft (ook via de link
-   naar de agenda op de voorpagina). Volgorde: tips, nieuwe dorpswebsites, websites die een oudere
-   test afwees, nieuwe websites, dan herkansingen na een wachttijd. Geen robots.txt betekent: welkom.
+   naar de agenda op de voorpagina; een agenda mag een lijst, kaartjes of een tabel met kopjes als
+   'Datum | Tijd | Activiteit' zijn). Volgorde: tips, nieuwe dorpswebsites, websites die een oudere
+   test afwees, nieuwe websites van gemeenten en festivals (Wikidata), andere nieuwe websites, dan
+   herkansingen na een wachttijd. Geen robots.txt betekent: welkom.
 3. `collector/auto_activate.py`: zet geschikte bronnen aan in `collector/web_crawl_sources.json`.
    Een dorpswebsite krijgt de plaats van het dorp mee, voor uitjes zonder eigen plaats.
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
@@ -69,7 +71,9 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
 ## Ontbreekt er een uitje?
 
 - Staat het op de eigen website van een organisator, dorp of gemeente? Zet die website in
-  `collector/tips.json` (met `naam`, `reden` en `datum`); de motor test hem de volgende ronde als eerste.
+  `collector/tips.json` (met `naam`, `reden`, `datum` en `plaats`); de motor test hem de volgende ronde
+  als eerste. Staat het programma op een losse pagina (zoals de Zuidlaardermarkt bij de gemeente
+  Tynaarlo), zet dan die pagina als tip.
 - Staat het alleen op Facebook of een poster? Zet de feiten (naam, datum, tijd, plaats, prijs, link)
   in `data/events.json` met een `sourceNote` waar het vandaan komt. Een plaatsnaam is genoeg: de
   motor zet zelf de kaartpin (`collector/geocode_curated.py`). Facebook zelf lezen we nooit.

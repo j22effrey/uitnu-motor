@@ -412,7 +412,12 @@ def parse_line_agenda(html_or_blocks, page_url: str, *, today: date | None = Non
     items = _line_items(blocks)
     if len(items) < 3:
         return []
-    today = today or date.today()
+    return _dated_events(items, " ".join(b.text for b in blocks), page_url, today or date.today())
+
+
+def _dated_events(items: list[dict], page_text: str, page_url: str, today: date) -> list[AgendaEvent]:
+    """Uitjes met een datum uit regels of tabelrijen ('13 november'). Staat er geen jaar bij, dan volgt
+    het jaar uit de volgorde van de lijst en uit de weekdagen; liever niets dan een verkeerde datum."""
     if not any(item["year"] for item in items):
         # Een pagina over een vorig jaar ('activiteiten-2024'): die data zijn voorbij.
         url_years = [int(y) for y in re.findall(r"(?<!\d)(20\d{2})(?!\d)", page_url or "")]
@@ -420,7 +425,7 @@ def parse_line_agenda(html_or_blocks, page_url: str, *, today: date | None = Non
             return []
         # Geen jaar en geen weekdag bij de data: alleen als de pagina dit of volgend jaar noemt.
         if all(item["weekday"] is None for item in items):
-            page_years = set(re.findall(r"(?<!\d)(20\d{2})(?!\d)", " ".join(b.text for b in blocks)))
+            page_years = set(re.findall(r"(?<!\d)(20\d{2})(?!\d)", page_text))
             if not {str(today.year), str(today.year + 1)} & page_years:
                 return []
 
@@ -450,12 +455,108 @@ def parse_line_agenda(html_or_blocks, page_url: str, *, today: date | None = Non
     return out
 
 
+class _TableParser(HTMLParser):
+    """Tabellen als rijen met de tekst per cel, plus de eerste link in elke rij."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.tables: list[list[dict]] = []
+        self._stack: list[list[dict]] = []   # tabellen in tabellen
+        self._row: dict | None = None
+        self._cell: list[str] | None = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "table":
+            self._stack.append([])
+        elif not self._stack:
+            return
+        elif tag == "tr":
+            self._row = {"cells": [], "link": None}
+        elif tag in ("td", "th"):
+            self._cell = []
+        elif tag == "br" and self._cell is not None:
+            self._cell.append(" ")
+        elif tag == "a" and self._row is not None and not self._row["link"]:
+            href = dict(attrs).get("href") or ""
+            if href.startswith(("http", "/")):
+                self._row["link"] = href
+
+    def handle_endtag(self, tag):
+        if not self._stack:
+            return
+        if tag in ("td", "th") and self._cell is not None and self._row is not None:
+            self._row["cells"].append(" ".join("".join(self._cell).split()))
+            self._cell = None
+        elif tag == "tr" and self._row is not None:
+            if any(self._row["cells"]):
+                self._stack[-1].append(self._row)
+            self._row = None
+        elif tag == "table":
+            self.tables.append(self._stack.pop())
+
+    def handle_data(self, data):
+        if self._cell is not None:
+            self._cell.append(data)
+
+
+# Kopjes van een agenda als tabel: welke kolom is de datum, de tijd en de naam.
+_TABLE_COLUMNS = {
+    "date": re.compile(r"^(?:datum|data|wanneer|dag)$", re.I),
+    "time": re.compile(r"^(?:tijd|tijden|aanvang|hoe laat)$", re.I),
+    "title": re.compile(r"^(?:activiteit(?:en)?|wat|evenement|programma(?:onderdeel)?|onderdeel|omschrijving|titel)$", re.I),
+}
+_TABLE_DATE = re.compile(rf"^{_WHEN}\b", re.I)
+
+
+def parse_table_agenda(html: str, page_url: str, *, today: date | None = None) -> list[AgendaEvent]:
+    """Een agenda als tabel met kopjes ('Datum | Tijd | Activiteit | Waar'), zoals het programma van
+    de Zuidlaardermarkt op de website van de gemeente. Alleen tabellen met een kolom voor de datum
+    en een voor de naam; de rest van de pagina telt alleen mee om het jaar te bepalen."""
+    parser = _TableParser()
+    parser.feed(html or "")
+    items: list[dict] = []
+    for rows in parser.tables:
+        if len(rows) < 2:
+            continue
+        columns: dict[str, int] = {}
+        for index, name in enumerate(rows[0]["cells"]):
+            for key, pattern in _TABLE_COLUMNS.items():
+                if key not in columns and pattern.match(name.strip(" :")):
+                    columns[key] = index
+        if "date" not in columns or "title" not in columns:
+            continue
+        for row in rows[1:]:
+            cells = row["cells"]
+            if len(cells) <= max(columns.values()):
+                continue
+            match = _TABLE_DATE.match(cells[columns["date"]])
+            title = cells[columns["title"]].strip(" -–—:")
+            if not match or not _valid_title(title) or _LABEL_TITLE.match(title):
+                continue
+            time_cell = cells[columns["time"]] if "time" in columns else ""
+            bare = _BARE_TIME.match(time_cell)
+            items.append({
+                "title": title, "day": int(match.group("d1")),
+                "month": MONTHS[match.group("mon").casefold().rstrip(".")],
+                "weekday": WEEKDAYS.get((match.group("wd") or "").casefold()),
+                "year": int(match.group("year")) if match.group("year") else None,
+                "time": parse_time_range(time_cell) or (f"{int(bare.group(1)):02d}:{bare.group(2)}" if bare else None),
+                "href": urljoin(page_url, row["link"]) if row["link"] else None,
+            })
+    if not items:
+        return []
+    page_text = unescape(re.sub(r"<[^>]+>", " ", html or ""))
+    return _dated_events(items, page_text, page_url, today or date.today())
+
+
 def parse_agenda(html: str, page_url: str, *, context_blocks: int = 16, today: date | None = None) -> list[AgendaEvent]:
     """Uitjes met een kopje en een eigen datum, plus agenda's als losse regels."""
     blocks = extract_blocks(html, page_url)
     events = _parse_heading_agenda(blocks, page_url, context_blocks=context_blocks, today=today)
     known = {(e.title.casefold(), e.start_date) for e in events}
     events += [e for e in parse_line_agenda(blocks, page_url, today=today) if (e.title.casefold(), e.start_date) not in known]
+    known = {(e.title.casefold(), e.start_date) for e in events}
+    events += [e for e in parse_table_agenda(html, page_url, today=today) if (e.title.casefold(), e.start_date) not in known]
     return events
 
 
