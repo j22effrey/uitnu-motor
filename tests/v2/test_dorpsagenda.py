@@ -167,6 +167,8 @@ def test_tijd_voor_de_naam_en_kopjes_van_een_agenda():
         assert not_an_outing({"title": title}), title
     assert not_an_outing({"title": "De Hoeksteen", "venue": {"name": "De Hoeksteen"}})
     assert not_an_outing({"title": "Kerstmarkt", "venue": {"name": "De Hoeksteen"}}) is None
+    # Een tournee met alleen de plaats als zaal blijft staan.
+    assert not_an_outing({"title": "Drachten", "venue": {"name": "Drachten", "city": "Drachten"}}) is None
 
 
 def test_nog_meer_dorpsactiviteiten_krijgen_een_soort():
@@ -178,5 +180,7 @@ def test_nog_meer_dorpsactiviteiten_krijgen_een_soort():
                 "Geschiedenis van het boerendorp": "kunst", "Winterbuffet": "eten", "Heel Spijk Bakt": "eten",
                 "Spieksters aan toavel": "eten", "Kerststukje maken": "lezing", "Pompoenen uithollen": "kinderen",
                 "90-jarig jubileum CSVO": "feest", "Neut’n Schait’n": "feest",
-                "Inloopdag schade-energie-subsidies-informatie": "lezing"}
+                "Inloopdag schade-energie-subsidies-informatie": "lezing", "Adri de Boer zingt Stef Bos": "muziek",
+                "Bordspelavond voor jong en oud": "feest", "Modelbouwdag": "markt",
+                "Tjep kookt met de dames van Onder de Pannen": "eten"}
     assert {title: classify({"title": title})["kind"] for title in expected} == expected

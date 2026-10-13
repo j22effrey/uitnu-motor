@@ -61,3 +61,16 @@ def test_bron_die_niet_af_kwam_houdt_zijn_uitjes_van_de_vorige_keer():
     # Staat hetzelfde uitje al in de handmatige agenda, dan niet dubbel.
     assert build_auto_events([_record("Concert in de kerk", "https://x.example/")], staged, today=TODAY,
                              previous=previous) == []
+
+
+def test_website_die_niet_te_lezen_was_houdt_zijn_uitjes():
+    from types import SimpleNamespace
+    from pipeline.stage_active_sources import read_ok
+    run = lambda error=None, **diagnostics: SimpleNamespace(error=error, diagnostics=diagnostics)
+    # robots.txt of de website even onbereikbaar: geen enkele pagina gelezen, dus geen lege agenda.
+    assert not read_ok(run(pages_visited=0, errors=["robots_unavailable_or_denied"]))
+    assert not read_ok(run(error="timeout"))
+    assert not read_ok(run(pages_visited=3, tijdOp=True))
+    # Wel gelezen, ook als er (nu) geen uitjes op staan; en bronnen zonder paginatelling (een feed).
+    assert read_ok(run(pages_visited=2, errors=[]))
+    assert read_ok(run())

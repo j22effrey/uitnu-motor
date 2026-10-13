@@ -68,11 +68,11 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"maaltijd", r"\bkoffie(?!concert)", r"\blunch", r"vrijmibo", r"borrel", r"frietavond", r"visje eten",
         r"eetcaf", r"kookclub", r"lunch", r"\beten\b", r"jenever", r"etentje", r"diner\b", r"eetclub", r"snert", r"pannenkoek",
         r"italiaanse avond", r"bakkie", r"bakje", r"\bkoken\b", r"\bite\b", r"(?:dorps|buurt|aanschuif|samen) ?tafel\b",
-        r"buffet", r"\bbakt\b", r"bakwedstrijd", r"aan (?:tafel|toavel)\b",
+        r"buffet", r"\bbakt\b", r"bakwedstrijd", r"aan (?:tafel|toavel)\b", r"\bkookt\b",
     ]),
     "markt": _compile([
         r"markt", r"(?<=\w)maart\b", r"braderie", r"beurs", r"fair\b", r"salon\b",
-        r"reis ?event", r"reizen\b.*\bevent", r"rommel", r"vlooien", r"snuffel", r"krystmerk", r"\bmerke\b", r"\w+ruil\b", r"ruilbeurs",
+        r"reis ?event", r"reizen\b.*\bevent", r"rommel", r"vlooien", r"snuffel", r"krystmerk", r"\bmerke\b", r"\w+ruil\b", r"ruilbeurs", r"modelbouw",
     ]),
     "feest": _compile([
         r"kermis", r"feest", r"koningsdag", r"koningsnacht", r"sinterklaas", r"intocht",
@@ -83,7 +83,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"dans(middag|avond|feest|club)", r"trick or treat", r"spokentocht", r"ladies ?night", r"happy hour",
         r"hollandse avond", r"hitster", r"pijltjes gooien", r"kerstmiddag", r"\bsint\b", r"klozum", r"carnaval",
         r"nieuwjaars ?(receptie|visite|bijeenkomst)", r"spookhuis", r"\bgala\b", r"paasvuur", r"vreugdevuur",
-        r"jubileum", r"neut\W?e?n schait\W?e?n", r"noten schieten", r"puzzel",
+        r"jubileum", r"neut\W?e?n schait\W?e?n", r"noten schieten", r"puzzel", r"bordspel",
     ]),
     "theater": _compile([
         r"theater", r"voorstelling", r"toneel", r"cabaret", r"comedy", r"stand-?up",
@@ -100,6 +100,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"\bwinds\b", r"\bbazuin\b", r"brass ?band", r"blaasorkest", r"\w+koor\b", r"tribute",
         r"huiskamer(?:podium|concert)", r"accordeon", r"blokfluit", r"cellist", r"\bcello", r"fagot",
         r"saxofo", r"klarinet", r"violist", r"\bviool", r"gitarist", r"harpist", r"trompet", r"fluitist", r"pianist",
+        r"\bzingt\b",
     ]),
     "kunst": _compile([
         r"tentoonstelling", r"expositie", r"\bexpo\b", r"museum", r"galerie", r"\bkunst",
@@ -413,7 +414,8 @@ def not_an_outing(event: dict) -> str | None:
     if venue_page and normalize(venue_page.group(1).replace("-", " ")) == title:
         return f"de pagina van een zaal, geen uitje: '{event.get('title')}'"
     venue = event.get("venue") if isinstance(event.get("venue"), dict) else {}
-    if venue.get("name") and normalize(venue["name"]) == title:
+    # (Is de 'zaal' alleen de plaats, zoals bij een tournee, dan blijft het uitje staan.)
+    if venue.get("name") and normalize(venue["name"]) == title and title != normalize(venue.get("city") or ""):
         return f"de naam van de zaal, geen uitje: '{event.get('title')}'"
     hit = NOT_AN_OUTING.search(title)
     return f"geen uitje: '{hit.group(0)}'" if hit else None
