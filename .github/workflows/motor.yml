@@ -6,12 +6,19 @@ name: UITNU motor
 # geplande rondes soms over of begint later; dan komt de volgende gewoon.
 # Om kleine websites te sparen: elke agenda hooguit om de zes uur ophalen, nieuwe plekken zoeken
 # eens per week. Met de hand gestart doet de motor alles.
+# Met de hand gestart met 'alleen publiceren': geen zoeken of ophalen, alleen de fabriek met de nieuwste
+# regels en de site opnieuw bouwen (bijvoorbeeld om iets snel van de site te halen).
 # Werkgebied: Noord-Nederland (pipeline/area.py). Een ronde duurt hooguit ongeveer twee uur; de rondes
 # wachten op elkaar (concurrency hieronder).
 on:
   schedule:
     - cron: '23 */3 * * *'
   workflow_dispatch:
+    inputs:
+      alleen_publiceren:
+        description: "Alleen opnieuw publiceren met de nieuwste regels (niet zoeken of ophalen; duurt een paar minuten)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,6 +38,7 @@ jobs:
           python-version: '3.12'
 
       - name: Nieuwe plekken en festivals zoeken (eens per week, of bij handmatig starten)
+        if: ${{ !inputs.alleen_publiceren }}
         continue-on-error: true
         timeout-minutes: 20
         run: |
@@ -41,11 +49,13 @@ jobs:
           fi
 
       - name: Dorpswebsites zoeken (per plaats; elke plaats eens per drie maanden)
+        if: ${{ !inputs.alleen_publiceren }}
         continue-on-error: true
         timeout-minutes: 20
         run: python -m collector.village_sites --store data/dorpssites.json --budget-minutes 15 --summary
 
       - name: Websites testen (eerst tips en nieuwe websites) en goede bronnen aanzetten
+        if: ${{ !inputs.alleen_publiceren }}
         continue-on-error: true
         timeout-minutes: 50
         run: |
@@ -54,6 +64,7 @@ jobs:
           python -m collector.auto_activate
 
       - name: Agenda's ophalen (elke bron hooguit om de zes uur; na 35 minuten afronden met wat er is)
+        if: ${{ !inputs.alleen_publiceren }}
         continue-on-error: true
         timeout-minutes: 50
         run: |
@@ -63,11 +74,13 @@ jobs:
           python -m pipeline.build_auto_events --curated data/events.json --staged /tmp/staging.json --output data/auto_events.json
 
       - name: Kaartpin zetten bij handmatige uitjes met alleen een plaatsnaam
+        if: ${{ !inputs.alleen_publiceren }}
         continue-on-error: true
         timeout-minutes: 5
         run: python -m collector.geocode_curated --file data/events.json
 
       - name: Foto's zoeken (organisator, anders Wikimedia Commons)
+        if: ${{ !inputs.alleen_publiceren }}
         continue-on-error: true
         timeout-minutes: 12
         run: python -m collector.event_photos --data data --cache data/photos.json
