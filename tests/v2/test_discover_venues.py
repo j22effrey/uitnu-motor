@@ -29,8 +29,9 @@ def test_verzamelsites_en_sociale_media_overgeslagen():
 
 
 def test_overpass_query_zoekt_in_het_werkgebied():
-    query = overpass_query(60)
-    assert "around:60000,53.2194,6.5665" in query
+    query = overpass_query()
+    assert 'area["ISO3166-2"~"^(NL-GR|NL-FR|NL-DR)$"]->.werkgebied;' in query and "(area.werkgebied)" in query
+    assert "NL-OV" in overpass_query(("Overijssel",))   # een ander werkgebied: alleen het lijstje anders
     assert '"amenity"="theatre"' in query and '"contact:website"' in query
 
 

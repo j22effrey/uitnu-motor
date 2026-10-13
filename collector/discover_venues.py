@@ -31,13 +31,16 @@ import urllib.request
 from pathlib import Path
 
 from collector.source_candidates import filter_new_hosts, host_key, load_source_hosts, update_queue
+from pipeline import area
 
 USER_AGENT = "UITNU-bronnenmachine/1.0 (+https://uitnu.pages.dev/over/)"
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 WIKIDATA_URL = "https://query.wikidata.org/sparql"
 
-AREA_CENTER = (53.2194, 6.5665)  # Groningen-centrum, gelijk aan de fabriek
-AREA_RADIUS_KM = 60
+# Het werkgebied staat in pipeline/area.py (een lijstje provincies). Sommige zoekdiensten kennen alleen
+# een cirkel: dan zoeken we in een cirkel om het hele gebied en houden we alleen wat erin ligt.
+AREA_CENTER = area.center()
+AREA_RADIUS_KM = round(area.radius_km())
 
 # Soort plek -> startscore. Plekken die vaak een eigen agenda hebben scoren hoger.
 OSM_TYPES: dict[tuple[str, str], int] = {
@@ -90,25 +93,27 @@ EXCLUDED_HOSTS = {
     # landelijke overheid: hun 'activiteiten' gaan over het hele land, niet over deze plek
     "defensie.nl", "rijksoverheid.nl", "overheid.nl", "government.nl",
 }
-GRONINGEN_PROVINCE = "Q752"
 TIPS_PATH = "collector/tips.json"
 VILLAGE_SITES_PATH = "data/dorpssites.json"
 
 
-def overpass_query(radius_km: int = AREA_RADIUS_KM, center: tuple[float, float] = AREA_CENTER) -> str:
-    """Overpass QL: alle plekken van de soorten hierboven met een website-tag."""
-    around = f"(around:{radius_km * 1000},{center[0]},{center[1]})"
+def overpass_query(provinces: tuple[str, ...] = area.AREA_PROVINCES) -> str:
+    """Overpass QL: alle plekken van de soorten hierboven met een website-tag, in de provincies van
+    het werkgebied (OpenStreetMap kent ze aan hun ISO-code, zoals NL-GR)."""
+    codes = "|".join(area.iso_codes(tuple(provinces)))
+    inside = "(area.werkgebied)"
     lines = []
     for (key, value), _ in OSM_TYPES.items():
         for site_key in ("website", "contact:website"):
-            lines.append(f'  nwr["{key}"="{value}"]["{site_key}"]{around};')
-    lines.append(f'  nwr["club"]["website"]{around};')
-    return "[out:json][timeout:120];\n(\n" + "\n".join(lines) + "\n);\nout center tags;"
+            lines.append(f'  nwr["{key}"="{value}"]["{site_key}"]{inside};')
+    lines.append(f'  nwr["club"]["website"]{inside};')
+    return ("[out:json][timeout:240];\n"
+            f'area["ISO3166-2"~"^({codes})$"]->.werkgebied;\n(\n' + "\n".join(lines) + "\n);\nout center tags;")
 
 
 WIKIDATA_QUERY = """
 SELECT DISTINCT ?item ?itemLabel ?website ?region ?coord ?placeCoord WHERE {
-  VALUES ?region { wd:Q752 wd:Q772 wd:Q770 }   # provincies Groningen, Drenthe, Friesland
+  VALUES ?region { %s }   # de provincies van het werkgebied
   ?item wdt:P31/wdt:P279* wd:Q132241 .          # een festival (of een soort festival)
   ?item wdt:P131* ?region .
   ?item wdt:P856 ?website .
@@ -295,30 +300,45 @@ def distance_km(lat: float, lon: float, center: tuple[float, float] = AREA_CENTE
     return 2 * 6371 * asin(sqrt(a))
 
 
-def area_of(discovery: dict, radius_km: int = AREA_RADIUS_KM) -> tuple[str, float | None]:
-    """'binnen', 'buiten' of 'onbekend', met de afstand tot Groningen als die bekend is."""
+def area_of(discovery: dict) -> tuple[str, float | None]:
+    """'binnen', 'buiten' of 'onbekend' (werkgebied: pipeline/area.py), met de afstand tot het midden
+    van het werkgebied als die bekend is."""
     if discovery.get("kind") == "tip" and discovery.get("lat") is None:
         return "binnen", None
     if discovery.get("lat") is not None and discovery.get("lon") is not None:
-        km = round(distance_km(float(discovery["lat"]), float(discovery["lon"])), 1)
-        return ("binnen" if km <= radius_km else "buiten"), km
-    if discovery.get("region") == GRONINGEN_PROVINCE:
+        lat, lon = float(discovery["lat"]), float(discovery["lon"])
+        km = round(distance_km(lat, lon), 1)
+        return ("binnen" if area.in_area(lat, lon) else "buiten"), km
+    if discovery.get("region") in area.wikidata_ids():
         return "binnen", None
     return "onbekend", None
 
 
-def annotate_area(queue_path: str, discoveries: list[dict], radius_km: int = AREA_RADIUS_KM) -> dict:
-    """Schrijf bij elke kandidaat of hij in het werkgebied ligt. Buiten het gebied wordt niet getest."""
+AREA_NOTE = "buiten het werkgebied"
+
+
+def annotate_area(queue_path: str, discoveries: list[dict]) -> dict:
+    """Schrijf bij elke kandidaat of hij in het werkgebied ligt. Buiten het gebied wordt niet getest.
+    Kijkt ook naar wat er al in de wachtrij staat (met de plekken van eerder): na een groter werkgebied
+    komen websites die eerst buiten lagen vanzelf weer aan de beurt."""
     best: dict[str, tuple[str, float | None]] = {}
     rank = {"binnen": 0, "onbekend": 1, "buiten": 2}
-    for discovery in discoveries:
+    path = Path(queue_path)
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    known: list[dict] = []
+    for item in payload.get("candidates", []):
+        url = item.get("url") or f"https://{item.get('host')}/"
+        evidence = [e for e in item.get("evidence") or [] if isinstance(e, dict)]
+        points = [e for e in evidence if e.get("lat") is not None and e.get("lon") is not None]
+        known += [{"url": url, "lat": e["lat"], "lon": e["lon"]} for e in points]
+        if not points and any(e.get("kind") == "tip" for e in evidence):
+            known.append({"url": url, "kind": "tip"})
+    for discovery in [*discoveries, *known]:
         host = host_key(discovery["url"])
-        status, km = area_of(discovery, radius_km)
+        status, km = area_of(discovery)
         if host not in best or rank[status] < rank[best[host][0]] or (
                 status == best[host][0] and km is not None and (best[host][1] is None or km < best[host][1])):
             best[host] = (status, km)
-    path = Path(queue_path)
-    payload = json.loads(path.read_text(encoding="utf-8"))
     counts = {"binnen": 0, "onbekend": 0, "buiten": 0}
     for item in payload.get("candidates", []):
         host = item.get("host") or host_key(item.get("url") or "")
@@ -329,7 +349,12 @@ def annotate_area(queue_path: str, discoveries: list[dict], radius_km: int = ARE
         counts[status] += 1
         if status == "buiten" and item.get("activationStatus") in (None, "candidate"):
             item["policyStatus"] = "blocked"
-            item["policyNote"] = f"buiten het werkgebied ({km} km van Groningen)"
+            item["policyNote"] = f"{AREA_NOTE} ({area.AREA_LABEL})"
+        elif status != "buiten" and item.get("policyStatus") == "blocked" \
+                and str(item.get("policyNote") or "").startswith(AREA_NOTE):
+            # Eerst buiten het werkgebied, nu erbinnen: weer gewoon in de wachtrij.
+            item["policyStatus"] = "review"
+            item.pop("policyNote", None)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return counts
 
@@ -343,18 +368,24 @@ def _fetch_json(url: str, data: bytes | None = None, timeout: int = 150) -> dict
         return json.loads(response.read().decode("utf-8"))
 
 
-def fetch_overpass(radius_km: int) -> dict:
-    body = urllib.parse.urlencode({"data": overpass_query(radius_km)}).encode("utf-8")
-    return _fetch_json(OVERPASS_URL, data=body)
+def fetch_overpass() -> dict:
+    body = urllib.parse.urlencode({"data": overpass_query()}).encode("utf-8")
+    # Drie provincies vragen is zwaarder dan een cirkel van 60 km: ruim de tijd nemen.
+    return _fetch_json(OVERPASS_URL, data=body, timeout=300)
+
+
+def wikidata_query() -> str:
+    return WIKIDATA_QUERY % " ".join(f"wd:{qid}" for qid in area.wikidata_ids())
 
 
 def fetch_wikidata() -> dict:
-    query = urllib.parse.urlencode({"query": WIKIDATA_QUERY, "format": "json"})
+    query = urllib.parse.urlencode({"query": wikidata_query(), "format": "json"})
     return _fetch_json(f"{WIKIDATA_URL}?{query}")
 
 
-def fetch_wikidata_places(radius_km: int) -> dict:
-    sparql = WIKIDATA_PLACES_QUERY.format(lat=AREA_CENTER[0], lon=AREA_CENTER[1], radius=radius_km)
+def fetch_wikidata_places() -> dict:
+    # Een cirkel om het hele werkgebied; wat erbuiten valt, wordt daarna 'buiten' (annotate_area).
+    sparql = WIKIDATA_PLACES_QUERY.format(lat=AREA_CENTER[0], lon=AREA_CENTER[1], radius=AREA_RADIUS_KM)
     query = urllib.parse.urlencode({"query": sparql, "format": "json"})
     return _fetch_json(f"{WIKIDATA_URL}?{query}")
 
@@ -364,7 +395,6 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--queue", default="data/source_candidates.json")
     parser.add_argument("--known", default="collector/web_crawl_sources.json",
                         help="bronnen die al actief zijn en niet opnieuw in de wachtrij hoeven")
-    parser.add_argument("--radius-km", type=int, default=AREA_RADIUS_KM)
     parser.add_argument("--osm-json", help="eerder opgeslagen Overpass-antwoord (voor testen)")
     parser.add_argument("--wikidata-json", help="eerder opgeslagen Wikidata-antwoord (voor testen)")
     parser.add_argument("--places-json", help="eerder opgeslagen Wikidata-antwoord met woonplaatsen (voor testen)")
@@ -380,7 +410,7 @@ def main(argv: list[str] | None = None) -> int:
     problems: list[str] = []
     if not args.tips_only:
         try:
-            osm = json.loads(Path(args.osm_json).read_text(encoding="utf-8")) if args.osm_json else fetch_overpass(args.radius_km)
+            osm = json.loads(Path(args.osm_json).read_text(encoding="utf-8")) if args.osm_json else fetch_overpass()
             discoveries += discoveries_from_overpass(osm)
         except Exception as error:  # een bron die faalt mag de andere niet tegenhouden
             problems.append(f"OpenStreetMap: {error}")
@@ -391,7 +421,7 @@ def main(argv: list[str] | None = None) -> int:
             problems.append(f"Wikidata (festivals): {error}")
         try:
             places = (json.loads(Path(args.places_json).read_text(encoding="utf-8")) if args.places_json
-                      else fetch_wikidata_places(args.radius_km))
+                      else fetch_wikidata_places())
             discoveries += discoveries_from_wikidata_places(places)
         except Exception as error:
             problems.append(f"Wikidata (dorpen en gemeenten): {error}")
@@ -404,8 +434,8 @@ def main(argv: list[str] | None = None) -> int:
     if not args.dry_run and new:
         queue = update_queue(args.queue, new)
         print(f"Wachtrij bijgewerkt: {len(queue)} kandidaten in {args.queue}.")
-    if not args.dry_run and discoveries and Path(args.queue).exists():
-        counts = annotate_area(args.queue, discoveries, args.radius_km)
+    if not args.dry_run and Path(args.queue).exists():
+        counts = annotate_area(args.queue, discoveries)
         print(f"Werkgebied: {counts['binnen']} binnen, {counts['buiten']} buiten (worden niet getest), {counts['onbekend']} onbekend.")
     return 1 if problems and not discoveries else 0
 

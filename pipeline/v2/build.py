@@ -17,6 +17,8 @@ from pathlib import Path
 
 from collector.discover_venues import is_excluded
 
+from pipeline import area
+
 from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
 from .convert import content_hash, load_first_party, merge_duplicates, to_v2
 from .gate import run_gate
@@ -25,24 +27,16 @@ from .photos import attach_photos, host_of, list_pages, page_facts_for
 
 HERE = Path(__file__).parent
 
-# Werkgebied van de proef: 60 km rond Groningen-centrum (ook de rand van Drenthe en Friesland).
-# Voor een ander of groter gebied alleen deze twee waarden aanpassen. Bezoekers kiezen hun eigen straal.
-AREA_CENTER = (53.2194, 6.5665)
-AREA_RADIUS_KM = 60
-
-
-def distance_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    from math import asin, cos, radians, sin, sqrt
-    dlat, dlon = radians(lat2 - lat1), radians(lon2 - lon1)
-    a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
-    return 2 * 6371 * asin(sqrt(a))
+# Werkgebied: Noord-Nederland (Groningen, Fryslân en Drenthe, plus een smalle rand over de grens).
+# Instellen in pipeline/area.py (AREA_PROVINCES); landelijk is daar een langer lijstje provincies.
+# Bezoekers kiezen op de site hun eigen straal.
+AREA_CENTER = area.center()
+AREA_RADIUS_KM = round(area.radius_km())   # cirkel om het hele gebied (voor zoekdiensten)
+distance_km = area.distance_km
 
 
 def in_area(event: dict) -> bool:
-    lat, lon = event["venue"].get("lat"), event["venue"].get("lon")
-    if lat is None or lon is None:
-        return True
-    return distance_km(AREA_CENTER[0], AREA_CENTER[1], float(lat), float(lon)) <= AREA_RADIUS_KM
+    return area.in_area(event["venue"].get("lat"), event["venue"].get("lon"))
 
 
 def _read_json(path: Path, default):
@@ -171,7 +165,9 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     doubts = doubtful(events)
 
     previous = _read_json(out_dir / "events.json", None)
-    gate = run_gate(events, previous, today.isoformat())
+    # Uitjes buiten het werkgebied tellen niet mee in de vergelijking (na een kleiner werkgebied is
+    # zo'n bron niet 'ineens leeg').
+    gate = run_gate(events, [e for e in previous if in_area(e)] if previous else previous, today.isoformat())
 
     prev_by_id = {e["id"]: e for e in previous or []}
     new_ids = {e["id"] for e in events}
@@ -192,7 +188,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "vasteActiviteit": len(routine),
         "teVerVooruit": len(too_far),
         "uitgeslotenBron": len(excluded),
-        "area": {"center": AREA_CENTER, "radiusKm": AREA_RADIUS_KM},
+        "area": area.describe(),
         "byKind": dict(Counter(e["kind"] for e in events).most_common()),
         "byCity": dict(Counter(e["venue"]["city"] for e in events).most_common()),
         "bySourceHost": dict(hosts.most_common()),

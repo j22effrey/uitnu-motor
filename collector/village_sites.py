@@ -15,8 +15,8 @@ vaak met een agenda. Die staat zelden in OpenStreetMap of Wikidata. Daarom kijkt
    agenda is die de robot kan lezen.
 
 Resultaat: data/dorpssites.json, per plaats wanneer er gekeken is en wat er gevonden is. Elke plaats
-komt na RECHECK_DAYS opnieuw aan de beurt. Werkt voor elk werkgebied (AREA_CENTER en AREA_RADIUS_KM),
-dus ook als UITNU landelijk wordt.
+komt na RECHECK_DAYS opnieuw aan de beurt. Werkt voor elk werkgebied (pipeline/area.py: een lijstje
+provincies), dus ook als UITNU landelijk wordt.
 
 Draaien:  python -m collector.village_sites --store data/dorpssites.json --budget-minutes 10 --summary
 """
@@ -44,6 +44,7 @@ from collector.discover_venues import (AREA_CENTER, AREA_RADIUS_KM, WIKIDATA_URL
 from collector.site_crawler import USER_AGENT, Fetched, default_fetch
 from collector.source_candidates import canonical_url, host_key
 from collector.source_probe import _robots_for, soft_redirect
+from pipeline import area
 
 STORE_PATH = "data/dorpssites.json"
 RECHECK_DAYS = 90        # na zoveel dagen een plaats opnieuw nalopen
@@ -200,8 +201,9 @@ def shared_names(payload: dict, km: float = 15) -> list[str]:
 
 
 def places_from_wikidata(payload: dict, *, center: tuple[float, float] = AREA_CENTER,
-                         radius_km: float | None = AREA_RADIUS_KM) -> list[dict]:
-    """Eén regel per plaats in het werkgebied, met alle namen, websites en postcodes bij elkaar."""
+                         radius_km: float | None = None) -> list[dict]:
+    """Eén regel per plaats in het werkgebied (pipeline/area.py, of een cirkel als radius_km is
+    gegeven), met alle namen, websites en postcodes bij elkaar."""
     places: dict[str, dict] = {}
     for row in payload.get("results", {}).get("bindings", []):
         qid = row.get("item", {}).get("value", "").rsplit("/", 1)[-1]
@@ -210,7 +212,8 @@ def places_from_wikidata(payload: dict, *, center: tuple[float, float] = AREA_CE
         if not qid or not label or re.fullmatch(r"Q\d+", label) or not match:
             continue
         lat, lon = float(match.group(2)), float(match.group(1))
-        if qid not in places and radius_km is not None and distance_km(lat, lon, center) > radius_km:
+        if qid not in places and (distance_km(lat, lon, center) > radius_km if radius_km is not None
+                                  else not area.in_area(lat, lon)):
             continue
         place = places.setdefault(qid, {
             "qid": qid, "naam": label, "namen": [label], "soort": "gehucht",
@@ -660,7 +663,8 @@ def summary(store: dict) -> dict:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="UITNU: per plaats de eigen dorpswebsite zoeken")
     parser.add_argument("--store", default=STORE_PATH)
-    parser.add_argument("--radius-km", type=int, default=AREA_RADIUS_KM)
+    parser.add_argument("--radius-km", type=int, default=None,
+                        help="alleen een cirkel om het midden (standaard: het werkgebied uit pipeline/area.py)")
     parser.add_argument("--places-json", help="eerder opgeslagen Wikidata-antwoord met plaatsen (voor testen)")
     parser.add_argument("--budget-minutes", type=float, default=None, help="stop na zoveel minuten")
     parser.add_argument("--limit", type=int, default=None, help="hoogstens zoveel plaatsen per keer")

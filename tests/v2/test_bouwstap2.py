@@ -25,7 +25,8 @@ def test_andere_tijd_of_andere_titel_blijft_apart():
 
 def test_werkgebied_bepalen():
     assert area_of({"lat": 53.32, "lon": 6.86})[0] == "binnen"
-    assert area_of({"lat": 53.37, "lon": 5.22})[0] == "buiten"  # Terschelling
+    assert area_of({"lat": 53.37, "lon": 5.22})[0] == "binnen"  # Terschelling: Friesland hoort erbij
+    assert area_of({"lat": 52.5168, "lon": 6.0830})[0] == "buiten"  # Zwolle
     assert area_of({"region": "Q752"}) == ("binnen", None)
     assert area_of({})[0] == "onbekend"
 
@@ -45,12 +46,25 @@ def test_buiten_het_gebied_wordt_niet_getest(tmp_path):
     queue.write_text(json.dumps({"candidates": [
         {"host": "oerol.example", "url": "https://oerol.example/", "activationStatus": "candidate", "policyStatus": "review"},
         {"host": "dorpshuis.example", "url": "https://dorpshuis.example/", "activationStatus": "candidate", "policyStatus": "review"}]}))
-    counts = annotate_area(str(queue), [{"url": "https://oerol.example/", "lat": 53.37, "lon": 5.22},
+    counts = annotate_area(str(queue), [{"url": "https://oerol.example/", "lat": 52.5168, "lon": 6.0830},  # Zwolle
                                         {"url": "https://dorpshuis.example/", "lat": 53.3, "lon": 6.8}])
     items = {c["host"]: c for c in json.loads(queue.read_text())["candidates"]}
     assert counts == {"binnen": 1, "onbekend": 0, "buiten": 1}
     assert items["oerol.example"]["policyStatus"] == "blocked"
     assert items["dorpshuis.example"]["policyStatus"] == "review"
+
+
+def test_na_een_groter_werkgebied_komt_een_website_weer_aan_de_beurt(tmp_path):
+    # Eerst (bij 60 km rond Groningen) buiten het gebied; Terschelling hoort nu bij het werkgebied.
+    queue = tmp_path / "q.json"
+    queue.write_text(json.dumps({"candidates": [
+        {"host": "oerol.example", "url": "https://oerol.example/", "activationStatus": "candidate",
+         "policyStatus": "blocked", "policyNote": "buiten het werkgebied (130 km van Groningen)", "areaStatus": "buiten",
+         "evidence": [{"kind": "osm", "lat": 53.37, "lon": 5.22}]}]}))
+    counts = annotate_area(str(queue), [])   # ook zonder nieuwe vondsten: de plek staat al in de wachtrij
+    [item] = json.loads(queue.read_text())["candidates"]
+    assert counts["binnen"] == 1 and item["areaStatus"] == "binnen"
+    assert item["policyStatus"] == "review" and "policyNote" not in item
 
 
 def test_goede_bron_gaat_automatisch_aan(tmp_path):
