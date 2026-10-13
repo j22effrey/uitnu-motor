@@ -31,7 +31,10 @@ regio: alles binnen 60 km van Groningen-centrum (`AREA_CENTER` en `AREA_RADIUS_K
    'kinderen', een whiskyfestival 'eten'. Twijfelgevallen eerst uitzoeken, en de reden vastleggen in
    `pipeline/v2/overrides.json` (festivalregister onder `namen`, altijd met `reden`).
 4. **Werkwijze.** Altijd eerst testen (`python -m pytest tests/v2`), dan een pull request met uitleg
-   in gewone taal.
+   in gewone taal. Claude voegt die pull request daarna zelf samen (afspraak met de eigenaar van
+   13 oktober 2026), maar alleen als de tests slagen en, bij een verandering aan het ophalen of
+   indelen, een proef met de echte websites door de keuring komt. Daarna meldt Claude in gewone taal
+   wat er is veranderd.
 
 ## Hoe de motor werkt (kort)
 
