@@ -64,6 +64,15 @@ def source_kinds(path: Path) -> dict[str, str]:
     return kinds
 
 
+def retired_hosts(path: Path) -> set[str]:
+    """Websites die bewust uit staan in de bronnenlijst (enabled: false): hun uitjes mogen verdwijnen
+    zonder dat de keuring denkt dat er iets kapot is."""
+    payload = _read_json(path, {})
+    sources = payload.get("sources", []) if isinstance(payload, dict) else []
+    return {host_of(s.get("rootUrl")) for s in sources
+            if isinstance(s, dict) and s.get("enabled") is False and host_of(s.get("rootUrl"))}
+
+
 def source_names(path: Path) -> dict[str, str]:
     """Website -> naam van de bron, voor de fotovermelding ('Foto: Neushoorn')."""
     payload = _read_json(path, {})
@@ -126,7 +135,7 @@ def convert_all(raw: list[dict], today: date) -> tuple[list[dict], list[str]]:
 
 def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] | None = None,
           photo_cache: dict | None = None, names: dict[str, str] | None = None,
-          venue_kinds: dict[str, str] | None = None) -> tuple[list[dict], dict]:
+          venue_kinds: dict[str, str] | None = None, retired: set[str] | None = None) -> tuple[list[dict], dict]:
     raw = load_first_party(data_dir)
     converted, broken = convert_all(raw, today)
     # Vaste regel 1: nooit uitjes van een website op de uitsluitlijst (ook niet van een oude bron).
@@ -182,7 +191,11 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     previous = _read_json(out_dir / "events.json", None)
     # Uitjes buiten het werkgebied tellen niet mee in de vergelijking (na een kleiner werkgebied is
     # zo'n bron niet 'ineens leeg').
-    gate = run_gate(events, [e for e in previous if in_area(e)] if previous else previous, today.isoformat())
+    # Bewust uitgezet: uit in de bronnenlijst, of een website op de uitsluitlijst.
+    previous_hosts = {s.get("host") for e in previous or [] for s in e.get("sources") or [] if s.get("host")}
+    gone = (retired or set()) | {h for h in previous_hosts if is_excluded(f"https://{h}/")}
+    gate = run_gate(events, [e for e in previous if in_area(e)] if previous else previous, today.isoformat(),
+                    retired_hosts=gone)
 
     prev_by_id = {e["id"]: e for e in previous or []}
     new_ids = {e["id"] for e in events}
@@ -256,7 +269,7 @@ def main(argv: list[str] | None = None) -> int:
     out_dir = Path(args.out)
     overrides = _read_json(HERE / "overrides.json", {})
     events, status = build(Path(args.data), out_dir, today, overrides, names=source_names(Path(args.sources)),
-                           venue_kinds=source_kinds(Path(args.sources)))
+                           venue_kinds=source_kinds(Path(args.sources)), retired=retired_hosts(Path(args.sources)))
 
     doubts = status.pop("_twijfel", [])
     _write_json(out_dir / "twijfel.json", doubts)

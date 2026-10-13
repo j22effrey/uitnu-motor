@@ -95,6 +95,7 @@ EXCLUDED_HOSTS = {
     "visitgroningen.nl", "kultuuragenda.nl", "wattedoenin.nl", "insidegroningen.com",
     "uitagenda.nl", "uitinnederland.nl", "uitzinnig.nl", "eventbrite.nl", "eventbrite.com",
     "dvhn.nl", "rtvnoord.nl", "oogtv.nl", "groningerinternetcourant.nl",
+    "zeijen.nu", "ruinerwold.info", "liwwadders.nl",   # dorpsnieuws: berichten, geen agenda van een organisator
     "facebook.com", "m.facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com",
     "youtube.com", "tiktok.com", "linktr.ee", "wikipedia.org", "nl.wikipedia.org",
     "google.com", "google.nl", "sites.google.com",

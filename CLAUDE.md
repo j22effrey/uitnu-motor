@@ -80,6 +80,9 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    die elke week terugkomen zoals klaverjassen of gym; voorstellingen, concerten, films, markten,
    tentoonstellingen en natuuruitjes blijven altijd staan), deelt in (`classify.py`), kiest foto's,
    keurt (`gate.py`) en publiceert. Uitjes verder dan anderhalf jaar vooruit zijn een leesfout.
+   Eén kapot uitje laat de fabriek niet vastlopen (het staat in `status.json` onder `onleesbaar`).
+   Een bron bewust uitzetten: `"enabled": false` met `disabledReason` in de bronnenlijst (een
+   nieuwssite ook op de uitsluitlijst); de keuring weet dan dat die uitjes mogen verdwijnen.
 
 ## Ontbreekt er een uitje?
 
