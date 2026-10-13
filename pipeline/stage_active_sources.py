@@ -111,6 +111,16 @@ def stage_results(results: dict[str, SourceRunResult]) -> dict:
 SOURCE_SECONDS = 240  # hoogstens vier minuten per bron (met een tijdsbudget)
 
 
+def read_ok(value) -> bool:
+    """Is de agenda van deze bron echt gelezen? Niet bij een storing, als de tijd op was, of als er
+    geen enkele pagina gelezen kon worden (robots.txt of de website was even onbereikbaar). Dan is
+    'geen uitjes' geen lege agenda, en blijven de uitjes van de vorige keer staan."""
+    diagnostics = value.diagnostics or {}
+    if value.error or diagnostics.get("tijdOp"):
+        return False
+    return diagnostics.get("pages_visited") != 0
+
+
 def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seconds: float | None = None) -> dict:
     """Alle bronnen ophalen en keuren. Met een tijdsbudget: ophalen krijgt het grootste deel, het
     opzoeken van plaatsen de rest; wat niet af is, telt niet als 'weg' (zie build_auto_events)."""
@@ -130,8 +140,8 @@ def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seco
             "event_count": len(value.events),
             "diagnostics": value.diagnostics,
             "error": value.error,
-            # Niet helemaal gelukt (storing of tijd op): de vorige uitjes van deze bron blijven staan.
-            "complete": not value.error and not (value.diagnostics or {}).get("tijdOp"),
+            # Niet helemaal gelukt (storing, tijd op, niets te lezen): de vorige uitjes blijven staan.
+            "complete": read_ok(value),
         }
         for key, value in results.items()
     }

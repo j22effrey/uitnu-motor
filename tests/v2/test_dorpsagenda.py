@@ -127,3 +127,60 @@ def test_losse_aanduiding_achter_de_naam_en_postcode_voor_de_plaats():
     row = {"title": "Kerstmarkt", "startDate": "2026-12-12", "city": "9341 BL Veenhuizen",
            "verificationStatus": "organizer_confirmed", "eventUrl": "https://dorp.example/kerstmarkt"}
     assert to_v2(row, TODAY)["venue"]["city"] == "Veenhuizen"
+
+
+def test_kaartje_van_events_manager_geeft_de_echte_naam():
+    # Een kaartje dat helemaal een link is: datum, tijdvak en rubrieken bovenaan, de naam vet eronder.
+    card = ('<a href="https://mfc.example/evenement/{slug}/" class="em-event em-item">'
+            '<div class="em-item-top-info"><div class="date"><span>{day}</span> <span>oktober</span> <span>2026</span></div>'
+            '<div class="time">{time}</div><div class="em-item-categories">Culturele Commissie, Muziek</div></div>'
+            '<div class="em-item-bottom-info"><strong class="em-item-title">{title}</strong>'
+            '<span>Meer info</span></div></a>')
+    html = "<div>" + "".join(card.format(slug=s, day=d, time=t, title=n) for s, d, t, n in (
+        ("adri", 23, "20:00 &#8211; 22:15", "Adri de Boer zingt Stef Bos"),
+        ("thee", 24, "14:00 &#8211; 16:00", "Japanse theeproeverij"),
+        ("bord", 30, "19:30 &#8211; 22:00", "Bordspelavond voor jong en oud"))) + "</div>"
+    events = parse_line_agenda(html, "https://mfc.example/", today=TODAY)
+    assert [(e.title, e.start_date, e.time_text) for e in events] == [
+        ("Adri de Boer zingt Stef Bos", "2026-10-23", "20:00"),
+        ("Japanse theeproeverij", "2026-10-24", "14:00"),
+        ("Bordspelavond voor jong en oud", "2026-10-30", "19:30")]
+
+
+def test_een_tijdvak_is_geen_naam():
+    from collector.dutch_agenda_html import parse_agenda
+    html = ('<article><h3>Kaboutertocht</h3><p>18 oktober 2026</p><p>10:30 tot 16:00</p>'
+            '<a href="https://borg.example/agenda/kaboutertocht/">Meer info</a></article>'
+            '<article><h3>14:30 TOT 15:30</h3><p>16 oktober 2026</p></article>')
+    titles = [e.title for e in parse_agenda(html, "https://borg.example/agenda/", today=TODAY)]
+    assert "Kaboutertocht" in titles and not any("TOT" in t for t in titles)
+
+
+def test_tijd_voor_de_naam_en_kopjes_van_een_agenda():
+    from pipeline.v2.convert import clean_title
+    assert clean_title("16:00 Kerstmarkt") == "Kerstmarkt"
+    assert clean_title("20:00 - 22:00 Concert") == "Concert"
+    assert clean_title("14:30 TOT 15:30") == "14:30 TOT 15:30"   # alleen een tijdvak: zie hieronder
+    for title in ("14:30 TOT 15:30", "Culturele Commissie, Muziek", "Algemeen", "Activiteiten, Algemeen",
+                  "Aankomende evenementen", "Informatie", "Tijd en", "Dorpsagenda", "Evenementgegevens",
+                  "Breng je evenement onder de aandacht!", "'d Aole School Hoofdstraat 21", "Gebiedsregisseur"):
+        assert not_an_outing({"title": title}), title
+    assert not_an_outing({"title": "De Hoeksteen", "venue": {"name": "De Hoeksteen"}})
+    assert not_an_outing({"title": "Kerstmarkt", "venue": {"name": "De Hoeksteen"}}) is None
+    # Een tournee met alleen de plaats als zaal blijft staan.
+    assert not_an_outing({"title": "Drachten", "venue": {"name": "Drachten", "city": "Drachten"}}) is None
+
+
+def test_nog_meer_dorpsactiviteiten_krijgen_een_soort():
+    expected = {"Westerlee 1 - SV Mussel 1": "sport", "Fitness": "sport", "Kampioensweekend trial": "sport",
+                "Cellist Alistair Sung": "muziek", "Accordeoniste Erica Roozendaal": "muziek",
+                "Lessons and Carols - kamerkoor Northern Voices": "muziek", "Elvis Tribute": "muziek",
+                "Huiskamerpodium Sleen en omgeving": "muziek", "De leafde begrave – TC Teater": "theater",
+                "De Lytse Komeedzje": "theater", "Cultuurmiddag in Studio to B": "kunst",
+                "Geschiedenis van het boerendorp": "kunst", "Winterbuffet": "eten", "Heel Spijk Bakt": "eten",
+                "Spieksters aan toavel": "eten", "Kerststukje maken": "lezing", "Pompoenen uithollen": "kinderen",
+                "90-jarig jubileum CSVO": "feest", "Neut’n Schait’n": "feest",
+                "Inloopdag schade-energie-subsidies-informatie": "lezing", "Adri de Boer zingt Stef Bos": "muziek",
+                "Bordspelavond voor jong en oud": "feest", "Modelbouwdag": "markt",
+                "Tjep kookt met de dames van Onder de Pannen": "eten"}
+    assert {title: classify({"title": title})["kind"] for title in expected} == expected
