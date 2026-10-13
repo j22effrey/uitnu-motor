@@ -109,11 +109,26 @@ def routines(events: list[dict]) -> set[int]:
     return drop
 
 
+def convert_all(raw: list[dict], today: date) -> tuple[list[dict], list[str]]:
+    """Alle uitjes omzetten. Eén kapot uitje (rare gegevens van een nieuwe bron) mag de hele ronde niet
+    laten vastlopen: dat uitje valt weg en komt in het verslag."""
+    converted, broken = [], []
+    for record in raw:
+        try:
+            event = to_v2(record, today)
+        except Exception as error:
+            broken.append(f"{str(record.get('title'))[:60]} ({record.get('sourceUrl')}): {type(error).__name__}")
+            continue
+        if event:
+            converted.append(event)
+    return converted, broken
+
+
 def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] | None = None,
           photo_cache: dict | None = None, names: dict[str, str] | None = None,
           venue_kinds: dict[str, str] | None = None) -> tuple[list[dict], dict]:
     raw = load_first_party(data_dir)
-    converted = [e for e in (to_v2(r, today) for r in raw) if e]
+    converted, broken = convert_all(raw, today)
     # Vaste regel 1: nooit uitjes van een website op de uitsluitlijst (ook niet van een oude bron).
     excluded = [e for e in converted if any(is_excluded(u or "") for u in [e.get("url")] + [s.get("url") for s in e.get("sources") or []])]
     converted = [e for e in converted if e not in excluded]
@@ -188,6 +203,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "vasteActiviteit": len(routine),
         "teVerVooruit": len(too_far),
         "uitgeslotenBron": len(excluded),
+        "onleesbaar": broken[:20],
         "area": area.describe(),
         "byKind": dict(Counter(e["kind"] for e in events).most_common()),
         "byCity": dict(Counter(e["venue"]["city"] for e in events).most_common()),

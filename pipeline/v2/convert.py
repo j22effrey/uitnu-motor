@@ -14,6 +14,8 @@ import unicodedata
 from datetime import date
 from pathlib import Path
 
+from collector.source_candidates import canonical_url
+
 FIRST_PARTY_FILES = (
     "events.json",
     "confirmed_events.json",
@@ -116,7 +118,8 @@ def to_v2(raw: dict, today: date) -> dict | None:
     if end < today.isoformat():
         return None
     city = POSTCODE_PREFIX.sub("", (raw.get("city") or "").strip())
-    url = raw.get("eventUrl") or raw.get("organizerUrl") or raw.get("sourceUrl")
+    # Alleen echte webadressen (kapotte HTML kan tekst in een link zetten).
+    url = next((u for u in (raw.get("eventUrl"), raw.get("organizerUrl"), raw.get("sourceUrl")) if canonical_url(u)), None)
     if not city or not url:
         return None
 
@@ -132,7 +135,7 @@ def to_v2(raw: dict, today: date) -> dict | None:
         ("organisator", raw.get("organizerUrl")),
         ("vergunning", raw.get("discoveryUrl") if "officielebekendmakingen" in (raw.get("discoveryUrl") or "") else None),
     ):
-        if link and link not in seen:
+        if link and canonical_url(link) and link not in seen:
             seen.add(link)
             sources.append({"type": kind, "url": link, "host": _host(link),
                             "seenAt": raw.get("lastSourceAudit")})

@@ -123,7 +123,7 @@ SELECT DISTINCT ?item ?itemLabel ?website ?region ?coord ?placeCoord WHERE {
   ?item wdt:P856 ?website .
   OPTIONAL { ?item wdt:P625 ?coord . }
   OPTIONAL { ?item wdt:P276 ?place . ?place wdt:P625 ?placeCoord . }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl,fy,nds,en,de,mul". }
 }
 LIMIT 2000
 """
@@ -140,7 +140,7 @@ SELECT DISTINCT ?item ?itemLabel ?website ?coord ?type WHERE {{
   ?item wdt:P31 ?type .
   VALUES ?type {{ wd:Q532 wd:Q3957 wd:Q5084 wd:Q486972 wd:Q1852859 wd:Q2039348 wd:Q15284 wd:Q1549591 wd:Q515 }}
   ?item wdt:P856 ?website .
-  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "nl,en". }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "nl,fy,nds,en,de,mul". }}
 }}
 LIMIT 3000
 """
@@ -197,6 +197,13 @@ def discoveries_from_overpass(payload: dict) -> list[dict]:
     return found
 
 
+def wikidata_label(row: dict) -> str | None:
+    """De naam uit Wikidata. Zonder naam in een van de gevraagde talen geeft Wikidata de code terug
+    ('Q1977146'): dat is geen naam, en zeker geen plaatsnaam."""
+    label = str(row.get("itemLabel", {}).get("value") or "").strip()
+    return None if not label or re.fullmatch(r"Q\d+", label) else label
+
+
 def discoveries_from_wikidata(payload: dict) -> list[dict]:
     found: list[dict] = []
     for row in payload.get("results", {}).get("bindings", []):
@@ -213,7 +220,7 @@ def discoveries_from_wikidata(payload: dict) -> list[dict]:
             "kind": "wikidata",
             "source_id": f"wikidata:{qid}",
             "from_url": entity,
-            "anchor_text": f"{row.get('itemLabel', {}).get('value', qid)} (festival)",
+            "anchor_text": f"{wikidata_label(row)} (festival)" if wikidata_label(row) else None,
             "lat": float(match.group(2)) if match else None,
             "lon": float(match.group(1)) if match else None,
             "region": row.get("region", {}).get("value", "").rsplit("/", 1)[-1],
@@ -237,7 +244,8 @@ def discoveries_from_wikidata_places(payload: dict) -> list[dict]:
             "kind": "wikidata",
             "source_id": f"wikidata:{qid}",
             "from_url": entity,
-            "anchor_text": f"{row.get('itemLabel', {}).get('value', qid)} ({'gemeente' if municipality else 'dorp'})",
+            "anchor_text": (f"{wikidata_label(row)} ({'gemeente' if municipality else 'dorp'})"
+                            if wikidata_label(row) else None),
             "lat": float(match.group(2)) if match else None,
             "lon": float(match.group(1)) if match else None,
         })
