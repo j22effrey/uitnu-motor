@@ -184,3 +184,25 @@ def test_nog_meer_dorpsactiviteiten_krijgen_een_soort():
                 "Bordspelavond voor jong en oud": "feest", "Modelbouwdag": "markt",
                 "Tjep kookt met de dames van Onder de Pannen": "eten"}
     assert {title: classify({"title": title})["kind"] for title in expected} == expected
+
+
+def test_agenda_als_tabel_met_kopjes():
+    from collector.dutch_agenda_html import parse_agenda
+    html = ("<h2>Programma Zuidlaardermarkt 2026</h2><table><thead><tr><th>Datum</th><th>Tijd</th><th>Activiteit</th>"
+            "<th>Waar</th></tr></thead><tbody>"
+            "<tr><td>16 oktober</td><td>19.00 uur</td><td>Opening kermis</td><td>Kop van de Brink</td></tr>"
+            "<tr><td>17 oktober&nbsp;</td><td>10.00 uur</td><td>Zuidlaardermarktloop</td><td>Centrum</td></tr>"
+            "<tr><td>20 oktober</td><td>06.00 - 17.00 uur</td><td>Zuidlaardermarkt</td><td>Centrum</td></tr>"
+            "</tbody></table>"
+            # Een tabel zonder kolom voor de datum (openingstijden) is geen agenda.
+            "<table><tr><th>Dag</th><th>Open</th></tr><tr><td>Vrijdag</td><td>18.00 - 01.00 uur</td></tr></table>")
+    events = parse_agenda(html, "https://gemeente.example/zuidlaardermarkt/programma", today=TODAY)
+    assert [(e.title, e.start_date, e.time_text) for e in events] == [
+        ("Opening kermis", "2026-10-16", "19:00"), ("Zuidlaardermarktloop", "2026-10-17", "10:00"),
+        ("Zuidlaardermarkt", "2026-10-20", "06:00 – 17:00")]
+    assert classify({"title": "Zuidlaardermarkt"})["kind"] == "markt"
+
+
+def test_koopzondag_met_iets_erbij_is_wel_een_uitje():
+    assert not_an_outing({"title": "Koopzondag"}) and not_an_outing({"title": "Koopavond 6 december"})
+    assert not_an_outing({"title": "Koopzondag en straatheater"}) is None

@@ -157,7 +157,7 @@ NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst
                            r"|verantwoord alcohol schenken|\w*vergadering|\w*repetitie|\bnieuws\b|voorzitter"
                            r"|\bverkeer\b|wegafsluiting|wegwerkzaamheden|wintertied|dagelijks bestuur|\w*dagsbestuur|^bestuur"
                            r"|bestuursoverleg|\w*dienst in de \w*kerk|dankdienst|dankdag voor gewas|\w*actie\b"
-                           r"|black friday|koopzondag|koopavond|schoen(tje)? (zetten|ophalen)|kerst[\w-]*dienst|jantje beton"
+                           r"|black friday|schoen(tje)? (zetten|ophalen)|kerst[\w-]*dienst|jantje beton"
                            r"|uitnodiging volgt|aanvragen|\boptie\b|donateur\w*|noodsteunpunt|\w*aksje|nl[ -]?doet"
                            r"|vrouwen van deze tijd|(?:ouderen|senioren|bejaarden) ?soos|gebiedsregisseur|wijkagent|dorpscoach"
                            # vergaderingen en bijeenkomsten voor leden of vrijwilligers: niet voor publiek
@@ -185,6 +185,8 @@ NOT_A_TITLE = re.compile(r"^(?:start|begin|aanvang|selecteer (?:een )?(?:tijdsti
 CLUB_ONLY = re.compile(r"^\w*\d0 ?-?(?:plus|\+)(?: ?(?:club|soos|societeit|middag|ochtend|gezellige middag|bijeenkomst))?$"
                        r"|^(?:vereniging )?(?:dorps|doarps)belang(?:en)?(?: \w+)?$|^plaatselijk belang(?: \w+)?$"
                        r"|^inloop ?(?:ochtend|middag|avond|uur)?$|^(?:de )?(?:huiskamer|doarpskeamer|dorpskamer)$")
+# Alleen de winkels open ('Koopzondag'): geen uitje. Met iets erbij ('Koopzondag en straatheater') wel.
+SHOPS_ONLY = re.compile(r"\bkoop(?:zondag|avond)\b")
 # De pagina van een zaal met de naam van die zaal als titel: dat is de zaal, geen uitje.
 # (Een uitje mét eigen naam dat naar de zaal linkt, blijft gewoon staan.)
 VENUE_PAGE = re.compile(r"/(?:locations?|locaties?|venues?)/([^/]+)/?$")
@@ -410,6 +412,8 @@ def not_an_outing(event: dict) -> str | None:
         return f"geen naam van een uitje: '{event.get('title')}'"
     if CLUB_ONLY.match(title.strip(" .:!")) and not _matches(title):
         return f"club of vaste ontmoeting: '{event.get('title')}'"
+    if SHOPS_ONLY.search(title) and not _matches(title):
+        return f"alleen de winkels open: '{event.get('title')}'"
     venue_page = VENUE_PAGE.search(urlparse(event.get("url") or "").path)
     if venue_page and normalize(venue_page.group(1).replace("-", " ")) == title:
         return f"de pagina van een zaal, geen uitje: '{event.get('title')}'"

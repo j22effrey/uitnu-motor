@@ -198,6 +198,8 @@ def test_gevonden_dorpssites_gaan_naar_de_wachtrij_met_de_plaats(tmp_path):
     # Testen: eerst tips, dan nieuwe dorpssites, dan de rest.
     queue.write_text(json.dumps({"candidates": [
         {"host": "nieuw.example", "url": "https://nieuw.example/", "probeStatus": "pending"},
+        {"host": "gemeente.example", "url": "https://gemeente.example/", "probeStatus": "pending",
+         "evidence": [{"kind": "wikidata"}]},
         {**item, "probeStatus": "pending"},
         {"host": "tip.example", "url": "https://tip.example/", "probeStatus": "pending", "evidence": [{"kind": "tip"}]},
     ]}))
@@ -210,7 +212,8 @@ def test_gevonden_dorpssites_gaan_naar_de_wachtrij_met_de_plaats(tmp_path):
     original = probe.probe_source
     probe.probe_source = fake_probe
     try:
-        probe.probe_queue(queue, limit=3, workers=1, today="2026-10-12")
+        probe.probe_queue(queue, limit=4, workers=1, today="2026-10-12")
     finally:
         probe.probe_source = original
-    assert tested == ["tip.example", "dorpsbelangeneenrum.nl", "nieuw.example"]
+    # Gemeenten en festivals (Wikidata) voor de andere nieuwe websites: daar staan de grote evenementen.
+    assert tested == ["tip.example", "dorpsbelangeneenrum.nl", "gemeente.example", "nieuw.example"]

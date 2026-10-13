@@ -443,14 +443,16 @@ def probe_queue(
     day = date.fromisoformat(today) if today else date.today()
     due = [(index, item) for index, item in enumerate(candidates) if probe_due(item, day)]
     # Volgorde: tips van de eigenaar; nieuw gevonden dorpswebsites; websites die een oudere test
-    # onterecht afwees (vaak de belangrijkste plekken); nog nooit geteste websites; dan herkansingen
-    # na de wachttijd. Binnen elke groep in de volgorde van de wachtrij (beste kandidaten eerst).
+    # onterecht afwees (vaak de belangrijkste plekken); nieuwe websites van gemeenten en festivals
+    # (uit Wikidata: daar staan de grote evenementen); andere nog nooit geteste websites; dan
+    # herkansingen na de wachttijd. Binnen elke groep in de volgorde van de wachtrij.
     def rank(entry: tuple[int, dict]) -> tuple[int, int]:
         index, item = entry
         kinds = {e.get("kind") for e in item.get("evidence") or [] if isinstance(e, dict)}
         fresh = item.get("probeStatus") in (None, "", "pending")
         group = (0 if "tip" in kinds else 1 if "dorpssite" in kinds and fresh
-                 else 2 if _retest_with_new_version(item) else 3 if fresh else 4)
+                 else 2 if _retest_with_new_version(item) else 3 if "wikidata" in kinds and fresh
+                 else 4 if fresh else 5)
         return (group, index)
     selected = sorted(due, key=rank)[:max(0, limit)]
 
