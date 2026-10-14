@@ -1,6 +1,6 @@
 {
  "version": 1,
- "bijgewerkt": "2026-10-13",
+ "bijgewerkt": "2026-10-14",
  "dubbeleNamen": [
   "aalst",
   "aalsum",
@@ -39280,7 +39280,57 @@
    "lon": 4.88306,
    "gekekenOp": "2026-10-13",
    "sites": []
+  },
+  "Q141154628": {
+   "naam": "Stroovledder",
+   "soort": "gehucht",
+   "gemeente": "Westerveld",
+   "lat": 52.80179,
+   "lon": 6.34384,
+   "gekekenOp": "2026-10-14",
+   "sites": []
+  },
+  "Q141129888": {
+   "naam": "Lage Linthorst",
+   "soort": "gehucht",
+   "gemeente": "De Wolden",
+   "lat": 52.69309,
+   "lon": 6.32648,
+   "gekekenOp": "2026-10-14",
+   "sites": []
+  },
+  "Q141154968": {
+   "naam": "Ten Have",
+   "soort": "gehucht",
+   "gemeente": "Westerveld",
+   "lat": 52.85034,
+   "lon": 6.26358,
+   "gekekenOp": "2026-10-14",
+   "sites": [
+    {
+     "url": "https://tenhave.nl/",
+     "oordeel": "nee",
+     "reden": "domeinnaam te koop, geparkeerd of nog leeg"
+    },
+    {
+     "url": "https://tenhave.com/",
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
+    },
+    {
+     "url": "https://justin.tenhave.net/",
+     "adres": "https://tenhave.net/",
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
+    },
+    {
+     "url": "http://www.tenhave.org/",
+     "adres": "https://tenhave.org/",
+     "oordeel": "nee",
+     "reden": "de plaatsnaam staat niet op de pagina"
+    }
+   ]
   }
  },
- "klaarOp": "2026-10-13"
+ "klaarOp": "2026-10-14"
 }

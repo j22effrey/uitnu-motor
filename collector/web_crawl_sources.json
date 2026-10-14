@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -9045,6 +9045,549 @@
       },
       "activatedFromCandidate": "pkn-openoed.nl",
       "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpshuislekkum-nl-web",
+      "name": "De Weeme",
+      "rootUrl": "https://dorpshuislekkum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://dorpshuislekkum.nl/index.php/agenda"
+      },
+      "activatedFromCandidate": "dorpshuislekkum.nl",
+      "defaultPlace": {
+        "city": "Lekkum",
+        "lat": 53.2247,
+        "lon": 5.8192
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "dorpshuiszeerijp-nl-web",
+      "name": "Dorpshuis Zeerijp",
+      "rootUrl": "https://dorpshuiszeerijp.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://dorpshuiszeerijp.nl/"
+      },
+      "activatedFromCandidate": "dorpshuiszeerijp.nl",
+      "defaultPlace": {
+        "city": "Zeerijp",
+        "lat": 53.34806,
+        "lon": 6.76167
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "foxhol-com-web",
+      "name": "Foxhol",
+      "rootUrl": "https://foxhol.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://foxhol.com/events/?ical=1"
+      },
+      "activatedFromCandidate": "foxhol.com",
+      "defaultPlace": {
+        "city": "Foxhol",
+        "lat": 53.1669,
+        "lon": 6.7203
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "goutum-info-web",
+      "name": "Nieuws uit Goutum",
+      "rootUrl": "https://www.goutum.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.goutum.info/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "goutum.info",
+      "defaultPlace": {
+        "city": "Goutum",
+        "lat": 53.1786,
+        "lon": 5.8064
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "nijeberkoop-nl-web",
+      "name": "Nijeberkoop",
+      "rootUrl": "https://www.nijeberkoop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.nijeberkoop.nl/"
+      },
+      "activatedFromCandidate": "nijeberkoop.nl",
+      "defaultPlace": {
+        "city": "Nijeberkoop",
+        "lat": 52.9592,
+        "lon": 6.1906
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "plaatselijkbelangappelscha-nl-web",
+      "name": "Nieuws",
+      "rootUrl": "https://plaatselijkbelangappelscha.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://plaatselijkbelangappelscha.nl/index.php/agenda"
+      },
+      "activatedFromCandidate": "plaatselijkbelangappelscha.nl",
+      "defaultPlace": {
+        "city": "Appelscha",
+        "lat": 52.9547,
+        "lon": 6.35
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "terapelbruist-nl-web",
+      "name": "Ter Apel Bruist -",
+      "rootUrl": "https://www.terapelbruist.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.terapelbruist.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "terapelbruist.nl",
+      "defaultPlace": {
+        "city": "Ter Apel",
+        "lat": 52.8756,
+        "lon": 7.0597
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "visvliet-com-web",
+      "name": "Uit het hart van Visvliet",
+      "rootUrl": "https://visvliet.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://visvliet.com/"
+      },
+      "activatedFromCandidate": "visvliet.com",
+      "defaultPlace": {
+        "city": "Visvliet",
+        "lat": 53.26556,
+        "lon": 6.25194
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "warten-nl-web",
+      "name": "Warten brug tussen natuur en stad. Doe ook een dagje \"even Warten!\"",
+      "rootUrl": "https://warten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://warten.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "warten.nl",
+      "defaultPlace": {
+        "city": "Wartena",
+        "lat": 53.15,
+        "lon": 5.8972
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "westergeest-frl-web",
+      "name": "Westergeast.frl",
+      "rootUrl": "https://westergeest.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://westergeest.frl/evenementen/?ical=1"
+      },
+      "activatedFromCandidate": "westergeest.frl",
+      "defaultPlace": {
+        "city": "Westergeest",
+        "lat": 53.29111,
+        "lon": 6.08556
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "dorpnederland-nl-web",
+      "name": "dorpnederland.nl",
+      "rootUrl": "https://dorpnederland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://platformvoorplaatselijkebelangen.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "dorpnederland.nl",
+      "defaultPlace": {
+        "city": "Nederland",
+        "lat": 52.7558,
+        "lon": 5.9628
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "viadukt-nl-web",
+      "name": "Het Viadukt",
+      "rootUrl": "http://www.viadukt.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "http://www.viadukt.nl/"
+      },
+      "activatedFromCandidate": "viadukt.nl",
+      "defaultPlace": {
+        "venue": "Het Viadukt",
+        "city": "Groningen",
+        "lat": 53.2194344,
+        "lon": 6.600105
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "em2groningen-nl-web",
+      "name": "EM2",
+      "rootUrl": "https://em2groningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "em2groningen.nl",
+      "defaultPlace": {
+        "venue": "EM2",
+        "city": "Groningen",
+        "lat": 53.2104732,
+        "lon": 6.5391945
+      },
+      "kindHint": "muziek",
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "wsv-stnic-nl-web",
+      "name": "WSV St. Nicolaasga",
+      "rootUrl": "https://www.wsv-stnic.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.wsv-stnic.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "wsv-stnic.nl",
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "2gemeenten-nl-web",
+      "name": "2 Gemeenten",
+      "rootUrl": "https://2gemeenten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://2gemeenten.nl/agenda/"
+      },
+      "activatedFromCandidate": "2gemeenten.nl",
+      "defaultPlace": {
+        "venue": "2 Gemeenten",
+        "city": "Jirnsum",
+        "lat": 53.0831165,
+        "lon": 5.7939442
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "bulthuiseenrum-nl-web",
+      "name": "Café Zaal Bulthuis Eenrum",
+      "rootUrl": "https://bulthuiseenrum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://bulthuiseenrum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "bulthuiseenrum.nl",
+      "defaultPlace": {
+        "venue": "Café Zaal Bulthuis Eenrum",
+        "city": "Eenrum",
+        "lat": 53.364636,
+        "lon": 6.4593592
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "cafedelijst-nl-web",
+      "name": "Cafe De Lijst",
+      "rootUrl": "https://www.cafedelijst.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.cafedelijst.nl/agenda.php"
+      },
+      "activatedFromCandidate": "cafedelijst.nl",
+      "defaultPlace": {
+        "venue": "Cafe De Lijst",
+        "city": "Hoogeveen",
+        "lat": 52.7276485,
+        "lon": 6.4772426
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "cafedetoeter-nl-web",
+      "name": "De Toeter",
+      "rootUrl": "https://www.cafedetoeter.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "cafedetoeter.nl",
+      "defaultPlace": {
+        "venue": "De Toeter",
+        "city": "Groningen",
+        "lat": 53.2224462,
+        "lon": 6.5655066
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "chaplinspub-nl-web",
+      "name": "Chaplin's Pub",
+      "rootUrl": "https://www.chaplinspub.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "chaplinspub.nl",
+      "defaultPlace": {
+        "venue": "Chaplin's Pub",
+        "city": "Groningen",
+        "lat": 53.2146341,
+        "lon": 6.5659773
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "de-brass-nl-web",
+      "name": "Grand Café De Brass",
+      "rootUrl": "https://www.de-brass.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.de-brass.nl/activiteiten/"
+      },
+      "activatedFromCandidate": "de-brass.nl",
+      "defaultPlace": {
+        "venue": "Grand Café De Brass",
+        "city": "Leeuwarden",
+        "lat": 53.2012303,
+        "lon": 5.793051
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "dorothysdrag-com-web",
+      "name": "Dorothy's Drag Bar",
+      "rootUrl": "https://www.dorothysdrag.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "dorothysdrag.com",
+      "defaultPlace": {
+        "venue": "Dorothy's Drag Bar",
+        "city": "Groningen",
+        "lat": 53.2164328,
+        "lon": 6.5590539
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "engelstede-nl-web",
+      "name": "Engelstede",
+      "rootUrl": "https://engelstede.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://engelstede.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "engelstede.nl",
+      "defaultPlace": {
+        "venue": "Engelstede",
+        "city": "Groningen",
+        "lat": 53.2077636,
+        "lon": 6.6502825
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "hetpakhuisgroningen-nl-web",
+      "name": "'t Pakhuis",
+      "rootUrl": "https://hetpakhuisgroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://hetpakhuisgroningen.nl/agenda/"
+      },
+      "activatedFromCandidate": "hetpakhuisgroningen.nl",
+      "defaultPlace": {
+        "venue": "'t Pakhuis",
+        "city": "Groningen",
+        "lat": 53.2179544,
+        "lon": 6.571159
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "maallust-nl-web",
+      "name": "Café - Bierbrouwerij Maallust",
+      "rootUrl": "https://www.maallust.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.maallust.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "maallust.nl",
+      "defaultPlace": {
+        "venue": "Café - Bierbrouwerij Maallust",
+        "city": "Veenhuizen",
+        "lat": 53.0331989,
+        "lon": 6.3874719
+      },
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "singelier-nl-web",
+      "name": "Singelier",
+      "rootUrl": "https://www.singelier.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.singelier.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "singelier.nl",
+      "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "vijfpoort-nl-web",
+      "name": "Vijfpoort",
+      "rootUrl": "https://vijfpoort.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://vijfpoort.nl/wp/events/?ical=1"
+      },
+      "activatedFromCandidate": "vijfpoort.nl",
+      "defaultPlace": {
+        "venue": "Vijfpoort",
+        "city": "Formerum",
+        "lat": 53.3895699,
+        "lon": 5.3075721
+      },
+      "policyReviewedAt": "2026-10-14"
     }
   ]
 }
