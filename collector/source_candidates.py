@@ -21,9 +21,10 @@ def utc_now() -> str:
 
 def canonical_url(value: str) -> str:
     """Het webadres in een vaste vorm, of '' als het geen geldig webadres is (bijvoorbeeld tekst die
-    door kapotte HTML in een link terechtkwam: 'https://site.nl:00 uur. Nadere info volgt')."""
+    door kapotte HTML in een link terechtkwam: 'https://site.nl:00 uur. Nadere info volgt', of een
+    e-mailadres als link: 'http://luistertafel@societeitdeharmonie.nl')."""
     p = urlparse(str(value or "").strip())
-    if p.scheme not in {"http", "https"} or not p.hostname or re.search(r"[\s<>\"'`]", p.netloc):
+    if p.scheme not in {"http", "https"} or not p.hostname or re.search(r"[\s<>\"'`@]", p.netloc):
         return ""
     try:
         port_number = p.port

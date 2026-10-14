@@ -5979,6 +5979,7 @@
     {
       "id": "a-theater-nl-web",
       "name": "A-Theater",
+      "kindHint": "theater",
       "rootUrl": "https://a-theater.nl/",
       "role": "venue",
       "enabled": true,
@@ -6042,6 +6043,7 @@
     {
       "id": "schouwburgogterop-nl-web",
       "name": "Schouwburg Ogterop",
+      "kindHint": "theater",
       "rootUrl": "https://www.schouwburgogterop.nl/",
       "role": "venue",
       "enabled": true,
@@ -6084,6 +6086,7 @@
     {
       "id": "theaterroden-nl-web",
       "name": "Theater De Winsinghhof",
+      "kindHint": "theater",
       "rootUrl": "https://theaterroden.nl/",
       "role": "venue",
       "enabled": true,
