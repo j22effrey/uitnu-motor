@@ -7546,6 +7546,1502 @@
       },
       "activatedFromCandidate": "doopsgezindenleeuwarden.nl",
       "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "doopsgezindroden-nl-web",
+      "name": "Doopsgezinde Gemeente Roden",
+      "rootUrl": "https://www.doopsgezindroden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://doopsgezindroden.nl/"
+      },
+      "activatedFromCandidate": "doopsgezindroden.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "doopsgezindsurhuisterveen-nl-web",
+      "name": "Doopsgezinde Gemeente Surhuisterveen",
+      "rootUrl": "https://doopsgezindsurhuisterveen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://doopsgezindsurhuisterveen.nl/"
+      },
+      "activatedFromCandidate": "doopsgezindsurhuisterveen.nl",
+      "defaultPlace": {
+        "venue": "Doopsgezinde Gemeente Surhuisterveen",
+        "city": "Surhuisterveen",
+        "lat": 53.179842,
+        "lon": 6.1599069
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dorpstuinhurdegaryp-nl-web",
+      "name": "Dorpstuin",
+      "rootUrl": "https://www.dorpstuinhurdegaryp.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "dorpstuinhurdegaryp.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "gkv-uithuizermeeden-nl-web",
+      "name": "De Wijngaard",
+      "rootUrl": "https://gkv.uithuizermeeden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://gkv.uithuizermeeden.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "gkv.uithuizermeeden.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "groningen-christengemeenschap-nl-web",
+      "name": "De Christengemeenschap Groningen",
+      "rootUrl": "https://groningen.christengemeenschap.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://groningen.christengemeenschap.nl/agenda/activiteiten/"
+      },
+      "activatedFromCandidate": "groningen.christengemeenschap.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "grotekerkemmen-nl-web",
+      "name": "Grote Kerk",
+      "rootUrl": "https://www.grotekerkemmen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://grotekerkemmen.nl/agenda/"
+      },
+      "activatedFromCandidate": "grotekerkemmen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "grotekerkleeuwarden-nl-web",
+      "name": "Grote of Jacobijnerkerk",
+      "rootUrl": "https://grotekerkleeuwarden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://grotekerkleeuwarden.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "grotekerkleeuwarden.nl",
+      "defaultPlace": {
+        "venue": "Grote of Jacobijnerkerk",
+        "city": "Leeuwarden",
+        "lat": 53.204168,
+        "lon": 5.7974413
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "hempensteerns-nl-web",
+      "name": "Martinuskerk",
+      "rootUrl": "https://hempensteerns.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://hempensteerns.nl/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "hempensteerns.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "hildegardparochie-nl-web",
+      "name": "Emmaüskerk",
+      "rootUrl": "https://www.hildegardparochie.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.hildegardparochie.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "hildegardparochie.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "hooge-eschkerk-nl-web",
+      "name": "Hooge Eschkerk",
+      "rootUrl": "https://www.hooge-eschkerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://hooge-eschkerk.nl/"
+      },
+      "activatedFromCandidate": "hooge-eschkerk.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "hortusharen-nl-web",
+      "name": "Hortus Haren",
+      "rootUrl": "https://www.hortusharen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.hortusharen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "hortusharen.nl",
+      "defaultPlace": {
+        "venue": "Hortus Haren",
+        "city": "Haren Gn",
+        "lat": 53.1800071,
+        "lon": 6.6036346
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "hzvv-nl-web",
+      "name": "Hoogeveense Zaterdag Voetbal Vereniging",
+      "rootUrl": "https://www.hzvv.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://hzvv.nl/"
+      },
+      "activatedFromCandidate": "hzvv.nl",
+      "defaultPlace": {
+        "venue": "Hoogeveense Zaterdag Voetbal Vereniging",
+        "city": "Hoogeveen",
+        "lat": 52.7214122,
+        "lon": 6.4970878
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "immanuelkerk-groningen-nl-web",
+      "name": "Immanuelkerk",
+      "rootUrl": "https://www.immanuelkerk-groningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.immanuelkerk-groningen.nl/"
+      },
+      "activatedFromCandidate": "immanuelkerk-groningen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kandelaarkerk-nl-web",
+      "name": "Kandelaarkerk",
+      "rootUrl": "https://www.kandelaarkerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.kandelaarkerk.nl/?ical"
+      },
+      "activatedFromCandidate": "kandelaarkerk.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerk-pieterburen-nl-web",
+      "name": "Petruskerk",
+      "rootUrl": "https://www.kerk-pieterburen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerk-pieterburen.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerk-pieterburen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkbaflo-nl-web",
+      "name": "Laurentiuskerk",
+      "rootUrl": "https://www.kerkbaflo.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkbaflo.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkbaflo.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkfransum-nl-web",
+      "name": "kerkfransum.nl",
+      "rootUrl": "https://www.kerkfransum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkfransum.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkfransum.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkhornhuizen-nl-web",
+      "name": "Kerk van Hornhuizen",
+      "rootUrl": "https://www.kerkhornhuizen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkhornhuizen.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkhornhuizen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkhuizumoost-nl-web",
+      "name": "Oase",
+      "rootUrl": "https://www.kerkhuizumoost.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://kerkhuizumoost.nl/index.php/events/?ical=1"
+      },
+      "activatedFromCandidate": "kerkhuizumoost.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkkolham-nl-web",
+      "name": "Hervormde Kerk",
+      "rootUrl": "https://www.kerkkolham.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkkolham.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkkolham.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkmiddelstum-nl-web",
+      "name": "St-Hippolytuskerk",
+      "rootUrl": "https://www.kerkmiddelstum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkmiddelstum.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkmiddelstum.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkmidwolda-nl-web",
+      "name": "Dorpskerk",
+      "rootUrl": "https://www.kerkmidwolda.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkmidwolda.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkmidwolda.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkmidwolde-nl-web",
+      "name": "Kerk Midwolde",
+      "rootUrl": "https://www.kerkmidwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkmidwolde.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkmidwolde.nl",
+      "defaultPlace": {
+        "venue": "Kerk Midwolde",
+        "city": "Midwolde",
+        "lat": 53.1803163,
+        "lon": 6.3925666
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkoldehove-nl-web",
+      "name": "Ludgeruskerk",
+      "rootUrl": "https://www.kerkoldehove.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkoldehove.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkoldehove.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkoostum-nl-web",
+      "name": "Kerkje van Oostum",
+      "rootUrl": "https://kerkoostum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkoostum.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkoostum.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkoverschild-nl-web",
+      "name": "Dorpskerk",
+      "rootUrl": "https://www.kerkoverschild.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkoverschild.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkoverschild.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerksaaxumhuizen-nl-web",
+      "name": "Kerk van Saaxumhuizen",
+      "rootUrl": "https://www.kerksaaxumhuizen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerksaaxumhuizen.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerksaaxumhuizen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkstitswerd-nl-web",
+      "name": "Sint-Georgiuskerk",
+      "rootUrl": "https://www.kerkstitswerd.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkstitswerd.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkstitswerd.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkthesinge-nl-web",
+      "name": "Kloosterkerk",
+      "rootUrl": "https://www.kerkthesinge.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkthesinge.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkthesinge.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerktinallinge-nl-web",
+      "name": "Onze Lieve Vrouwe Kerk",
+      "rootUrl": "https://www.kerktinallinge.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerktinallinge.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerktinallinge.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkuithuizen-nl-web",
+      "name": "Jacobikerk",
+      "rootUrl": "https://www.kerkuithuizen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkuithuizen.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkuithuizen.nl",
+      "defaultPlace": {
+        "venue": "Jacobikerk",
+        "city": "Uithuizen",
+        "lat": 53.407372,
+        "lon": 6.6736695
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kerkwoltersum-nl-web",
+      "name": "Kerk Woltersum",
+      "rootUrl": "https://www.kerkwoltersum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerkwoltersum.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerkwoltersum.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kvmidfryslan-nl-web",
+      "name": "K.V. Mid-Fryslân",
+      "rootUrl": "https://www.kvmidfryslan.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kvmidfryslan.nl/"
+      },
+      "activatedFromCandidate": "kvmidfryslan.nl",
+      "defaultPlace": {
+        "venue": "K.V. Mid-Fryslân",
+        "city": "Grou",
+        "lat": 53.0851582,
+        "lon": 5.8274282
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "landvaneen-nl-web",
+      "name": "Land van Een",
+      "rootUrl": "https://www.landvaneen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.landvaneen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "landvaneen.nl",
+      "defaultPlace": {
+        "venue": "Land van Een",
+        "city": "Surhuizum",
+        "lat": 53.2109518,
+        "lon": 6.1979954
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "leeuwarden-remonstranten-nl-web",
+      "name": "Waalse kerk",
+      "rootUrl": "https://leeuwarden.remonstranten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "leeuwarden.remonstranten.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "lichtpuntassen-nl-web",
+      "name": "Het Lichtpunt",
+      "rootUrl": "https://lichtpuntassen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://lichtpuntassen.nl/"
+      },
+      "activatedFromCandidate": "lichtpuntassen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "lrvwetterwille-nl-web",
+      "name": "LRV Wetterwille",
+      "rootUrl": "https://www.lrvwetterwille.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.lrvwetterwille.nl/"
+      },
+      "activatedFromCandidate": "lrvwetterwille.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "margarethakerknorg-nl-web",
+      "name": "Sint-Margarethakerk",
+      "rootUrl": "https://www.margarethakerknorg.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.margarethakerknorg.nl/agenda/"
+      },
+      "activatedFromCandidate": "margarethakerknorg.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "mcpbfriesland-eu-web",
+      "name": "MC PB Friesland",
+      "rootUrl": "https://www.mcpbfriesland.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "mcpbfriesland.eu",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "mesacosa-nl-web",
+      "name": "Mesacosa",
+      "rootUrl": "https://www.mesacosa.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.mesacosa.nl/agenda"
+      },
+      "activatedFromCandidate": "mesacosa.nl",
+      "defaultPlace": {
+        "venue": "Mesacosa",
+        "city": "Groningen",
+        "lat": 53.2183742,
+        "lon": 6.5635922
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "moluksekerkappingedam-nl-web",
+      "name": "Molukse Kerk",
+      "rootUrl": "https://www.moluksekerkappingedam.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.moluksekerkappingedam.nl/activiteiten"
+      },
+      "activatedFromCandidate": "moluksekerkappingedam.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "ngk-hoogezand-sappemeer-nl-web",
+      "name": "De Ark",
+      "rootUrl": "https://ngk-hoogezand-sappemeer.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://ngk-hoogezand-sappemeer.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "ngk-hoogezand-sappemeer.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "ngk-smilde-nl-web",
+      "name": "De Rank",
+      "rootUrl": "http://www.ngk-smilde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "http://www.ngk-smilde.nl/"
+      },
+      "activatedFromCandidate": "ngk-smilde.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "ngkharkstede-nl-web",
+      "name": "De Bron",
+      "rootUrl": "https://ngkharkstede.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://ngkharkstede.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "ngkharkstede.nl",
+      "defaultPlace": {
+        "venue": "De Bron",
+        "city": "Harkstede",
+        "lat": 53.2146078,
+        "lon": 6.7019185
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "ngkmarum-nl-web",
+      "name": "Immanuëlkerk",
+      "rootUrl": "https://ngkmarum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "ngkmarum.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "nieuwekerkgroningen-nl-web",
+      "name": "Nieuwe Kerk",
+      "rootUrl": "https://nieuwekerkgroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://nieuwekerkgroningen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "nieuwekerkgroningen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "ontmoetingskerkharen-nl-web",
+      "name": "Ontmoetingskerk",
+      "rootUrl": "https://www.ontmoetingskerkharen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.ontmoetingskerkharen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "ontmoetingskerkharen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "parkkerk-nl-web",
+      "name": "De Parkkerk",
+      "rootUrl": "https://parkkerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://parkkerk.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "parkkerk.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "pglo-nl-web",
+      "name": "Nienoordkapel",
+      "rootUrl": "https://www.pglo.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://pglo.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "pglo.nl",
+      "defaultPlace": {
+        "venue": "Nienoordkapel",
+        "city": "Leek",
+        "lat": 53.1618407,
+        "lon": 6.3917903
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "pgterapel-nl-web",
+      "name": "De Regenboog",
+      "rootUrl": "https://pgterapel.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://pgterapel.nl/agenda/"
+      },
+      "activatedFromCandidate": "pgterapel.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "pguithuizermeeden-nl-web",
+      "name": "Het Anker",
+      "rootUrl": "https://www.pguithuizermeeden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pguithuizermeeden.nl/"
+      },
+      "activatedFromCandidate": "pguithuizermeeden.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "pkn-oosterwolde-nl-web",
+      "name": "Protestantse Gemeente - Het Anker",
+      "rootUrl": "https://pkn-oosterwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://pkn-oosterwolde.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "pkn-oosterwolde.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "roderluchtvaartclub-nl-web",
+      "name": "Roder luchtvaartclub",
+      "rootUrl": "https://roderluchtvaartclub.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://roderluchtvaartclub.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "roderluchtvaartclub.nl",
+      "defaultPlace": {
+        "venue": "Roder luchtvaartclub",
+        "city": "Een",
+        "lat": 53.1050039,
+        "lon": 6.3719714
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "scouting-van-maasdijk-nl-web",
+      "name": "Scouting van Maasdijk",
+      "rootUrl": "https://www.scouting-van-maasdijk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.scouting-van-maasdijk.nl/activiteiten/"
+      },
+      "activatedFromCandidate": "scouting-van-maasdijk.nl",
+      "defaultPlace": {
+        "venue": "Scouting van Maasdijk",
+        "city": "Oranjewoud",
+        "lat": 52.9424741,
+        "lon": 5.9532174
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "sv-rwf-nl-web",
+      "name": "S.V. RWF",
+      "rootUrl": "https://sv-rwf.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://sv-rwf.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "sv-rwf.nl",
+      "defaultPlace": {
+        "venue": "S.V. RWF",
+        "city": "Frieschepalen",
+        "lat": 53.1045107,
+        "lon": 6.2043353
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "synagogegroningen-nl-web",
+      "name": "Synagoge",
+      "rootUrl": "https://www.synagogegroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.synagogegroningen.nl/"
+      },
+      "activatedFromCandidate": "synagogegroningen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "tcbaflo-net-web",
+      "name": "TC Baflo",
+      "rootUrl": "https://tcbaflo.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://tcbaflo.net/kalender/"
+      },
+      "activatedFromCandidate": "tcbaflo.net",
+      "defaultPlace": {
+        "venue": "TC Baflo",
+        "city": "Rasquert",
+        "lat": 53.36609,
+        "lon": 6.5144684
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "tennisclubsellingen-nl-web",
+      "name": "T.C. Sellingen",
+      "rootUrl": "https://tennisclubsellingen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://tennisclubsellingen.nl/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "tennisclubsellingen.nl",
+      "defaultPlace": {
+        "venue": "T.C. Sellingen",
+        "city": "Sellingen",
+        "lat": 52.9465075,
+        "lon": 7.1378462
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "vegburgum-nl-web",
+      "name": "Vrije Evangelische Gemeente Burgum",
+      "rootUrl": "https://www.vegburgum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.vegburgum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "vegburgum.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "vipassana-groningen-nl-web",
+      "name": "Vipassana-meditatiecentrum Groningen",
+      "rootUrl": "https://www.vipassana-groningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.vipassana-groningen.nl/wp/events/?ical=1"
+      },
+      "activatedFromCandidate": "vipassana-groningen.nl",
+      "defaultPlace": {
+        "venue": "Vipassana-meditatiecentrum Groningen",
+        "city": "Groningen",
+        "lat": 53.2058312,
+        "lon": 6.5606654
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "vvgieten-nl-web",
+      "name": "VV Gieten",
+      "rootUrl": "https://www.vvgieten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.vvgieten.nl/"
+      },
+      "activatedFromCandidate": "vvgieten.nl",
+      "defaultPlace": {
+        "venue": "VV Gieten",
+        "city": "Gieten",
+        "lat": 53.0024388,
+        "lon": 6.75759
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "vvmeeden-com-web",
+      "name": "VV Meeden",
+      "rootUrl": "https://www.vvmeeden.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.vvmeeden.com/"
+      },
+      "activatedFromCandidate": "vvmeeden.com",
+      "defaultPlace": {
+        "venue": "VV Meeden",
+        "city": "Meeden",
+        "lat": 53.1366518,
+        "lon": 6.9279007
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "vwdtp-nl-web",
+      "name": "vwdtp.nl",
+      "rootUrl": "https://vwdtp.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "vwdtp.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "wez-wis-nl-web",
+      "name": "K.V. Wêz-Wis Raerd de Lege Geaën",
+      "rootUrl": "https://wez-wis.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://wez-wis.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "wez-wis.nl",
+      "defaultPlace": {
+        "venue": "K.V. Wêz-Wis Raerd de Lege Geaën",
+        "city": "Raerd",
+        "lat": 53.1021149,
+        "lon": 5.7565079
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "wwswergea-nl-web",
+      "name": "Wergeaster Wettersport Feriening",
+      "rootUrl": "https://www.wwswergea.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.wwswergea.nl/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "wwswergea.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "zenleven-nl-web",
+      "name": "Zen Center Noorder Poort",
+      "rootUrl": "https://zenleven.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://zenleven.nl/agenda/"
+      },
+      "activatedFromCandidate": "zenleven.nl",
+      "defaultPlace": {
+        "venue": "Zen Center Noorder Poort",
+        "city": "Wapserveen",
+        "lat": 52.8300127,
+        "lon": 6.2251247
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "cleopatra-groningen-nl-web",
+      "name": "Cleopatra",
+      "rootUrl": "https://cleopatra-groningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.cleopatra-groningen.nl/vereniging/evenementen"
+      },
+      "activatedFromCandidate": "cleopatra-groningen.nl",
+      "defaultPlace": {
+        "venue": "Cleopatra",
+        "city": "Groningen",
+        "lat": 53.2157698,
+        "lon": 6.5675343
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "natuurverenigingzuidwolde-nl-web",
+      "name": "Natuurvereniging Zuidwolde",
+      "rootUrl": "https://natuurverenigingzuidwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://natuurverenigingzuidwolde.nl/agenda/"
+      },
+      "activatedFromCandidate": "natuurverenigingzuidwolde.nl",
+      "defaultPlace": {
+        "venue": "Natuurvereniging Zuidwolde",
+        "city": "Zuidwolde",
+        "lat": 52.6571115,
+        "lon": 6.4239135
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "svscopus-nl-web",
+      "name": "Studievereniging Scopus",
+      "rootUrl": "https://www.svscopus.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.svscopus.nl/evenementen"
+      },
+      "activatedFromCandidate": "svscopus.nl",
+      "defaultPlace": {
+        "venue": "Studievereniging Scopus",
+        "city": "Groningen",
+        "lat": 53.2411887,
+        "lon": 6.5316682
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "vvvterschelling-nl-web",
+      "name": "Natuurschuur Lies",
+      "rootUrl": "https://www.vvvterschelling.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.vvvterschelling.nl/evenementen/"
+      },
+      "activatedFromCandidate": "vvvterschelling.nl",
+      "defaultPlace": {
+        "venue": "Natuurschuur Lies",
+        "city": "Lies",
+        "lat": 53.3965521,
+        "lon": 5.3262963
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "greetsiel-de-web",
+      "name": "Campener Leuchtturm",
+      "rootUrl": "https://www.greetsiel.de/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "greetsiel.de",
+      "defaultPlace": {
+        "venue": "Campener Leuchtturm",
+        "city": "Krummhörn",
+        "lat": 53.4057184,
+        "lon": 7.0155746
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "jalb-de-web",
+      "name": "JaL-Bibliothek",
+      "rootUrl": "https://www.jalb.de/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.jalb.de/Kulturkalender-31205-469-0-85.html"
+      },
+      "activatedFromCandidate": "jalb.de",
+      "defaultPlace": {
+        "venue": "JaL-Bibliothek",
+        "city": "Emden",
+        "lat": 53.3654072,
+        "lon": 7.2023554
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "kleinekerk-steenwijk-nl-web",
+      "name": "Kleine of Onze-Lieve-Vrouwekerk",
+      "rootUrl": "https://www.kleinekerk-steenwijk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.kleinekerk-steenwijk.nl/?post_type=tribe_events&ical=1"
+      },
+      "activatedFromCandidate": "kleinekerk-steenwijk.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "landesmuseum-emden-de-web",
+      "name": "Pelzerhäuser",
+      "rootUrl": "https://www.landesmuseum-emden.de/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "landesmuseum-emden.de",
+      "defaultPlace": {
+        "venue": "Pelzerhäuser",
+        "city": "Emden",
+        "lat": 53.364848,
+        "lon": 7.2045029
+      },
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "sfv-heede-de-web",
+      "name": "Angelsportverein Heede (Ems) e. V.",
+      "rootUrl": "https://sfv-heede.de/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://sfv-heede.de/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "sfv-heede.de",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "dehavenharlingen-nl-web",
+      "name": "De Haven",
+      "rootUrl": "https://dehavenharlingen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://dehavenharlingen.nl/events/dankdag-6/"
+      },
+      "activatedFromCandidate": "dehavenharlingen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "egharlingen-nl-web",
+      "name": "Trefpunt",
+      "rootUrl": "https://www.egharlingen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "egharlingen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "heiligejacobusparochie-nl-web",
+      "name": "Sint-Michaëlskerk",
+      "rootUrl": "https://heiligejacobusparochie.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://heiligejacobusparochie.nl/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "heiligejacobusparochie.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "hollepoarte-nl-web",
+      "name": "Marina Makkum",
+      "rootUrl": "https://www.hollepoarte.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.hollepoarte.nl/recreatieprogramma"
+      },
+      "activatedFromCandidate": "hollepoarte.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "laurentiuskerkkimswerd-nl-web",
+      "name": "Sint-Laurentiuskerk",
+      "rootUrl": "https://www.laurentiuskerkkimswerd.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.laurentiuskerkkimswerd.nl/concerten/"
+      },
+      "activatedFromCandidate": "laurentiuskerkkimswerd.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "lemmerbinnen-nl-web",
+      "name": "Lemmer Binnen",
+      "rootUrl": "https://lemmerbinnen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://lemmerbinnen.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "lemmerbinnen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "ngkzuidwoldedr-nl-web",
+      "name": "Het Anker",
+      "rootUrl": "https://ngkzuidwoldedr.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://ngkzuidwoldedr.nl/"
+      },
+      "activatedFromCandidate": "ngkzuidwoldedr.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "pg-harlingen-nl-web",
+      "name": "Grote Kerk",
+      "rootUrl": "https://www.pg-harlingen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.pg-harlingen.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "pg-harlingen.nl",
+      "policyReviewedAt": "2026-10-13"
+    },
+    {
+      "id": "pkn-openoed-nl-web",
+      "name": "Op 'e Noed",
+      "rootUrl": "https://pkn-openoed.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://pkn-openoed.nl/"
+      },
+      "activatedFromCandidate": "pkn-openoed.nl",
+      "policyReviewedAt": "2026-10-13"
     }
   ]
 }
