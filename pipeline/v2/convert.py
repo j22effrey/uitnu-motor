@@ -144,8 +144,9 @@ def to_v2(raw: dict, today: date) -> dict | None:
     city = POSTCODE_PREFIX.sub("", (raw.get("city") or "").strip())
     # Alleen echte webadressen (kapotte HTML kan tekst of een e-mailadres in een link zetten), zonder
     # onzichtbare spaties eromheen: de site leest elke link na.
-    links = {key: _web_link(raw.get(key)) for key in ("eventUrl", "organizerUrl", "sourceUrl", "discoveryUrl")}
-    url = links["eventUrl"] or links["organizerUrl"] or links["sourceUrl"]
+    # Is de link van het uitje een e-mailadres, dan is de agenda waar het op staat de link.
+    links = {key: _web_link(raw.get(key)) for key in ("eventUrl", "organizerUrl", "sourceUrl", "discoveryUrl", "sourceRoot")}
+    url = links["eventUrl"] or links["organizerUrl"] or links["sourceUrl"] or links["sourceRoot"]
     if not city or not url:
         return None
 
@@ -156,7 +157,7 @@ def to_v2(raw: dict, today: date) -> dict | None:
     sources = []
     seen = set()
     for kind, link in (
-        (SOURCE_TYPES.get(raw.get("sourceType") or "", "organisator"), links["sourceUrl"]),
+        (SOURCE_TYPES.get(raw.get("sourceType") or "", "organisator"), links["sourceUrl"] or links["sourceRoot"]),
         ("organisator", links["eventUrl"]),
         ("organisator", links["organizerUrl"]),
         ("vergunning", links["discoveryUrl"] if "officielebekendmakingen" in (links["discoveryUrl"] or "") else None),

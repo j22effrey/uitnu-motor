@@ -107,7 +107,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"\bwinds\b", r"\bbazuin\b", r"brass ?band", r"blaasorkest", r"\w+koor\b", r"tribute",
         r"huiskamer(?:podium|concert)", r"accordeon", r"blokfluit", r"cellist", r"\bcello", r"fagot",
         r"saxofo", r"klarinet", r"violist", r"\bviool", r"gitarist", r"harpist", r"trompet", r"fluitist", r"pianist",
-        r"\bzingt\b", r"cantorij",
+        r"\bzingt\b", r"cantorij", r"evensong",
     ]),
     "kunst": _compile([
         r"tentoonstelling", r"expositie", r"\bexpo\b", r"museum", r"galerie", r"\bkunst",
@@ -191,15 +191,25 @@ NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst
                            r"|overleden dierbare|zangseizoen"
                            # een kerkdienst onder een andere naam ('Samenzangdienst', 'Grunneger Dainst', 'Dienst in het MFC');
                            # (een act als 'Plafonddienst' op Explore the North blijft staan)
-                           r"|(?:samenzang|zang|thema|jeugd|gezins|kinder|tiener|jongeren|cantate|doop|belijdenis|bevestigings"
+                           r"|(?:samenzang|zang|thema|jeugd|gezins|kinder|tiener|jongeren|doop|belijdenis|bevestigings"
                            r"|herdenkings|gedachtenis|oogst|bid|vesper|vroeg|oecumenische|openlucht|tent|muziek|lied|zegen|gospel"
-                           r"|kerk|sing-?in|startzondag|start)dienst|\w*dainst|\w*tsjinst|^dienst)\b")
+                           r"|kerk|sing-?in|startzondag|start|oude?jaars?|nieuwjaars|avondmaals?|heilig avondmaal)dienst"
+                           r"|\w*dainst|\w*tsjinst|^dienst"
+                           # een dienst onder de naam van de voorganger ('Ds. R. Sietsma', 'Br. K. Braam'), een dag van
+                           # het kerkelijk jaar ('29e Zondag door het jaar', '2e advent', 'Dankdag') en gebeden
+                           r"|^(?:ds|br|zr|prop|kand)\.? (?:[a-z]\.){1,3} ?[a-z]+|^(?:ds|pastor|pastoor|kapelaan)\.? [a-z]+"
+                           r"|\d+e zondag (?:door het jaar|van de advent|na pinksteren|na trinitatis|van pasen|van de veertigdagentijd)"
+                           r"|^(?:\d+e|eerste|tweede|derde|vierde) advent$|^dank ?dag\b|^biddag\b|^kerstavond$|^oudejaarsavond$"
+                           r"|^allerzielen\b|^allerheiligen\b|\bf?vesper\b|\bfesper\b|taize ?gebed|\w+gebed\b|\bnoen$"
+                           r"|(?:verdiepings|gespreks|bijbel|gebeds|studie)kring|kindernevendienst|zondagsschool|catechisatie"
+                           # een sportclub: de kantinedienst, de pagina van een team ('S.C. Erica 1', 'VV Gieten 2 programma')
+                           r"|kantine ?dienst\w*|^(?:s\.?c\.?|v\.?v\.?|s\.?v\.?|c\.?v\.?v\.?|f\.?c\.?|h\.?c\.?|v\.?c\.?) [\w .'-]+ \d{1,2}(?: programma)?$)\b")
 # Knoppen en kopjes van een website die als naam van een uitje zijn meegekomen.
 NOT_A_TITLE = re.compile(r"^(?:start|begin|aanvang|selecteer (?:een )?(?:tijdstip|datum|dag)|kies (?:een )?(?:tijdstip|datum|dag)"
                          r"|(?:bestel|koop) (?:nu )?(?:je |jullie |uw )?(?:tickets?|kaartjes?|kaarten)(?: .*)?|tickets?|meer info(?:rmatie)?|lees meer|bekijk"
                          r"|reserveren|aanmelden|inschrijven|start ?datum|eind ?datum|datum|plaats|locatie"
                          r"|(?:grote|kleine) zaal|zaal \d+|overige speeldata|volgende data|komende|praktische info"
-                         r"|laatste nieuws|zet (?:het )?alvast in (?:uw|je) agenda|a ?genda|admin|aankomende (?:activiteiten|evenementen|gebeurtenissen)"
+                         r"|laatste nieuws|zet (?:het )?alvast in (?:uw|je) agenda|a ?genda|admin|aankomende (?:activiteiten|evenementen|gebeurtenissen|diensten)"
                          r"|even(?:emen)?t ?type(?: \w+)?|a ?ctiviteiten(?: \w+)?"
                          r"|informatie|tijd en(?: locatie)?|dorpsagenda|evenementgegevens|breng je evenement onder de aandacht"
                          # rubrieken van een agenda (Events Manager) en een tijdvak zonder naam
@@ -223,7 +233,7 @@ PAGE_HEADING = re.compile(r"^(?:fotogalerij|sfeerimpressie|kom in contact|contac
                           r"|cadeaubon\w*|toegankelijkheid|bereikbaarheid|route(?:beschrijving)?|parkeren|openingstijden"
                           r"|veelgestelde vragen|faq|inloggen|login|mijn account|winkelwagen|prikbord|vandaag in de stad"
                           r"|(?:see )?(?:our )?gallery|galerij|over deze (?:film|voorstelling|show|tentoonstelling|expositie|activiteit)"
-                          r"|volgeboekt|uitverkocht|\d+ (?:t/m|-) \d+ van \d+ resultaten"
+                          r"|volgeboekt|uitverkocht|\d+ (?:t/m|-) \d+ van \d+ resultaten|evenementbeschrijving"
                           # een maand als kopje ('October 2026', 'Januari')
                           r"|(?:januari|februari|maart|april|juni|juli|augustus|september|oktober|november|december"
                           r"|january|february|march|june|july|august|october)(?: 20\d\d)?)\W*$")
@@ -258,7 +268,9 @@ CLUB_SESSION = re.compile(
     r"|^(?:een |dorps)?bakkie\b|^kookclub|^bingo(?:avond|middag)?$|^(?:thuis|uit)wedstrijd\b"
     r"|^(?:ochtend ?)?koffie ?leut|^(?:de )?\w+club\b|^leesclub|^(?:christelijke )?vrouwengroep|^\w*dansclub|^soos\w*|^inloop\b|^\w+inloop$"
     r"|^startgroep \d|^(?:knltb|knvb|nevobo|knbb|kndb|nhv)\b|^verenigingsavond|^\d0 ?\+? ?(?:gym\w*|fit\w*|yoga)"
-    r"|^.*\btraining (?:[ojm]\d|jo\d|mo\d|jeugd|selectie)")
+    r"|^.*\btraining (?:[ojm]\d|jo\d|mo\d|jeugd|selectie)"
+    # meditatie, een retraite of qigong: een vaste les of cursus, net als yoga
+    r"|^.*\bmedit(?:atie|eren)\w*|^.*retr(?:aite|eat)|^.*\bqi ?gong\b|^.*\btai ?chi\b|^.*\bdeep relaxation\b")
 # (Een kampioenschap van de club, zoals 'Klaverjassen (kampioenschap v. teams)', is voor de leden.)
 PUBLIC_EVENT = re.compile(r"concert|uitvoering|optreden|voorstelling|toerno(?:o|a)i|toenooi|drive\b|open (?:dag|les|avond|huis|podium)"
                           r"|demonstratie|clinic|workshop|festival|jubileum|markt|expositie|tentoonstelling|\bshow\b|gala"
@@ -271,7 +283,8 @@ TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'/&-]+ (?:[a-z]{1,2} ?|jo\d+-|mo\d+
 CLUB_GAME = re.compile(r"\w*biljart\w*|\bblijart\w*|\w*klaverjas\w*|^bridge(?:n|club)?\b(?! over\b)|\bbridge ?(?:club|avond|middag|les)\b"
                        r"|\bbridgen\b|\bsjoel\w*|^dammen\b|\bdam ?(?:club|avond|middag)\b|^schaken\b|\bschaak ?(?:club|avond|middag|les)\b"
                        r"|\bkoersbal\b|\bjeu de boules\b|\bdart(?:en|s)?\b|pijltjes gooien")
-CLUB_GAME_PUBLIC = re.compile(PUBLIC_EVENT.pattern + r"|\bprijs\w+")
+CLUB_GAME_PUBLIC = re.compile(PUBLIC_EVENT.pattern + r"|\bprijs\w+|\bopen\b|\b(?:nk|wk|ek)\b|grand prix|masters|\bcup\b"
+                              r"|international|nederlands kampioenschap")
 # Alleen voor de leden van een club, ook al heet het toernooi: de competitie, het clubkampioenschap,
 # het slottoernooi van het seizoen, een bekerwedstrijd.
 CLUB_INTERNAL = re.compile(r"\w*competitie\b|clubkampioenschap\w*|\bslot ?to(?:er|e)?n(?:oo|oa)i\b"
@@ -281,7 +294,7 @@ CLUB_INTERNAL = re.compile(r"\w*competitie\b|clubkampioenschap\w*|\bslot ?to(?:e
 # dorpshuis, een borrel, een dorpsmaaltijd, de dorpskamer, een handwerk- of taalcafé, de soos. Staat er iets
 # bij dat wel een uitje is ('Koffieconcert', 'Borrel met live muziek', 'Dorpskamer: lezing'), dan blijft het staan.
 VILLAGE_ROUTINE = re.compile(
-    r"\bkoffie ?(?:ochtend|inloop|uurtje|drinken|middag|moment|tafel|leut)|\bop de koffie\b|\bbakkie\b|buurtbakje"
+    r"\bkoffie ?(?:ochtend|inloop|uurtje|drinken|middag|moment|tafel|leut)|\bop de koffie\b|\bbakkie\b|\bbakje\b|buurtbakje"
     r"|\w*borrel\w*|\bvrij ?mi ?bo\b|\bsoep ?(?:uur|maaltijd|middag|ochtend)|\bstamppot ?(?:ochtend|middag|avond|eten)"
     r"|\bfriet ?avond|\bsnack ?(?:avond|bar)\b|\w*maaltijd\b|\bsamen (?:eten|koken|lunchen|tafelen)\b|running dinner"
     r"|\b(?:dorps|doarps|buurt|buur)(?:maaltijd|diner|etentje|eten|lunch|tafel|miel|iten)\b|\bopen tafel\b|\bstamtafel\b"
@@ -289,6 +302,7 @@ VILLAGE_ROUTINE = re.compile(
     r"|dorpskamer|doarpskeamer|dorpshuiskamer|buurtkamer|\bhuiskamer\b|\w*handwerk\w*|\bbrei ?cafe|\bhaak ?cafe|\bcreatief cafe|\bcrea ?(?:cafe|doe)"
     r"|\b(?:vrouwen|mannen|internet|computer|digi|taal|mienskip) ?cafe\b|digi-? ?taalhuis|\btaalhuis\b|\w*soos\b"
     r"|\bhobby ?(?:club|lub|middag|avond)\b|\bontmoetings?(?:middag|ochtend|avond)\b|\bbewegen en ontmoeten\b"
+    r"|\bcafe ?avond in (?:het )?(?:buurthuis|dorpshuis)|\bverrassingsmiddag\b"
     r"|positieve gezondheid")
 ROUTINE_PUBLIC = re.compile(PUBLIC_EVENT.pattern + r"|cabaret|theater|toneel|muziek|muzikale|\blive\b|\bband\b|\bdj\b|\bfilm"
                             r"|disco|dansavond|optocht|podium|jazz|blues")
@@ -306,7 +320,7 @@ SERVICE_OR_MEETING = re.compile(
     r"|\benergie ?(?:delen|loket|coach\w*|cafe)\b|subsidie\w*|\bondernemers ?(?:avond|cafe|ontbijt)\b|\bnetwerk ?(?:borrel|bijeenkomst)\b"
     r"|\bnieuwjaars ?(?:receptie|bijeenkomst|visite|byienkomst)\b|basisschool\w*|\bopen lessen\b|\bouderavond\b|\w*reunie\w*"
     r"|vrienden ?dag|\bgroep \d(?: ?[-/] ?\d)?\b")
-SERVICE_PUBLIC = re.compile(r"concert|voorstelling|optreden|uitvoering|festival|expositie|tentoonstelling|markt|\bshow\b|musical"
+SERVICE_PUBLIC = re.compile(r"concert|voorstelling|optreden|uitvoering|festival|expositie|tentoonstelling|markt|beurs|\bshow\b|musical"
                             r"|theater|toneel|cabaret|optocht")
 MEMBERS_ONLY = re.compile(r"(?:alleen|enkel|uitsluitend) (?:voor )?(?:leden|bewoners|inwoners|dorpsbewoners|buurtbewoners|donateurs)"
                           r"|ledengearkomst|^buurtvereniging\b"
@@ -317,10 +331,15 @@ MEMBERS_ONLY = re.compile(r"(?:alleen|enkel|uitsluitend) (?:voor )?(?:leden|bewo
 # Een leeftijdsgroep alleen ('Dansavond 50 plus') is geen reden: die is open voor iedereen van die leeftijd.
 SENIORS_ONLY = re.compile(r"^ouderen\b|ouderen ?(?:middag|ochtend|lunch|diner|kerst|soos|reis|uitje)|(?:voor|met) (?:de )?ouderen"
                           r"|(?:lunch|diner|middag|ochtend|kerst\w*) [56][05] ?(?:\+|plus)|[56][05] ?(?:\+|plus) ?(?:club|soos|middag|ochtend|lunch)"
-                          r"|senioren ?(?:middag|ochtend|soos|reis|kerst|lunch)|^\w+ ouderen$")
+                          r"|senioren ?(?:middag|ochtend|soos|reis|kerst|lunch)|^\w+ ouderen$"
+                          r"|\b[5-7][05] ?(?:\+|plus) ?(?:actief|club|soos|groep|vereniging|middag|ochtend|lunch)")
 SENIORS_PUBLIC = re.compile(r"festival|beurs|toerno(?:o|a)i|concert|markt|voorstelling")
 # Alleen de winkels open ('Koopzondag'): geen uitje. Met iets erbij ('Koopzondag en straatheater') wel.
 SHOPS_ONLY = re.compile(r"\bkoop(?:zondag|avond)\b")
+# De rubriek in de link zegt het ook: een kerkdienst ('/dienst/arend-kroes/', '?categorie=Kerkdienst') of
+# de activiteiten voor de ouderen van het dorp ('/activiteiten-en-verenigingen/welzijn-ouderen').
+SERVICE_PATH = re.compile(r"/(?:dienst|diensten|kerkdiensten?|vieringen|preekrooster)(?:/|$)|kerkdienst", re.IGNORECASE)
+SENIORS_PATH = re.compile(r"/[\w-]*(?:ouderen|senioren|55-?plus|50-?plus)[\w-]*(?:/|$)", re.IGNORECASE)
 # De pagina van een zaal met de naam van die zaal als titel: dat is de zaal, geen uitje.
 # (Een uitje mét eigen naam dat naar de zaal linkt, blijft gewoon staan.)
 VENUE_PAGE = re.compile(r"/(?:locations?|locaties?|venues?)/([^/]+)/?$")
@@ -578,7 +597,12 @@ def not_an_outing(event: dict) -> str | None:
         return f"club of vaste ontmoeting: '{event.get('title')}'"
     if SHOPS_ONLY.search(title) and not _matches(title):
         return f"alleen de winkels open: '{event.get('title')}'"
-    venue_page = VENUE_PAGE.search(urlparse(event.get("url") or "").path)
+    link = urlparse(event.get("url") or "")
+    if SERVICE_PATH.search(f"{link.path}?{link.query}") and not PUBLIC_EVENT.search(title):
+        return f"kerkdienst (rubriek in de link): '{event.get('title')}'"
+    if SENIORS_PATH.search(link.path) and not SENIORS_PUBLIC.search(title):
+        return f"voor de ouderen van het dorp (rubriek in de link): '{event.get('title')}'"
+    venue_page = VENUE_PAGE.search(link.path)
     if venue_page and normalize(venue_page.group(1).replace("-", " ")) == title:
         return f"de pagina van een zaal, geen uitje: '{event.get('title')}'"
     venue = event.get("venue") if isinstance(event.get("venue"), dict) else {}

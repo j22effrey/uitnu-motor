@@ -28,7 +28,7 @@ def test_vaste_ontmoetingen_in_het_dorp_zijn_niet_noemenswaardig():
                   "Doarpsmiel: samen koken, samen eten", "Duits Dorpsdiner", "Running Dinner: Nostalgisch Hellum",
                   "Dorpskamer: Koffie, stoelgymnastiek", "Doarpskeamer + Kledingreparatie", "Gezamenlijk eten in de Huiskamer",
                   "Handwerkcafé Stekje los", "Taalcafé", "Internetcafé", "Vrouwencafé", "Creatief café", "Hobbylub",
-                  "Lekker Ite", "Bewegen en ontmoeten", "Snackavond"):
+                  "Lekker Ite", "Bewegen en ontmoeten", "Snackavond", "Bakje Begine"):
         assert not_an_outing(_event(title)), title
 
 
@@ -55,11 +55,30 @@ def test_clubspel_competitie_en_mededelingen_zijn_geen_uitje():
         assert not_an_outing(_event(title)), title
 
 
+def test_kerkdienst_onder_een_andere_naam_en_gebeden():
+    for title in ("Ds. R. Sietsma", "Br. K. Braam", "Dienst met ds. Kuiper", "29e Zondag door het jaar", "2e advent",
+                  "Dankdag", "Oudejaarsdienst", "Kerstavond", "Allerzielen 2026", "Taizegebed", "Avondgebed",
+                  "Fryske Fesper", "Verdiepingskring over: Vrijheid", "Gedachtenisdienst", "Avondmaalsdienst"):
+        assert not_an_outing(_event(title)), title
+    # De rubriek in de link: een dienst onder de naam van de voorganger.
+    assert not_an_outing({"title": "Arend Kroes", "url": "https://www.derank-groningen.nl/dienst/arend-kroes/"})
+    assert not not_an_outing({"title": "Kerstconcert", "url": "https://kerk.example/vieringen/kerstconcert"})
+
+
+def test_meditatie_ouderenclub_en_sportclub_zijn_geen_uitje():
+    for title in ("Zondagochtend meditatie", "Weekend Vipassana meditatie", "Kerstretraite", "Deep Relaxation",
+                  "55+ Actief Lutten - Prijzenbingo", "Café avond in Buurthuis", "Kantinediensten", "S.C. Erica 1",
+                  "SC Erica 3 programma", "Aankomende diensten"):
+        assert not_an_outing(_event(title)), title
+    assert not_an_outing({"title": "Bingo in Buurthuis Vinkenbuurt.",
+                          "url": "https://witharen.nl/activiteiten-en-verenigingen/welzijn-ouderen"})
+
+
 def test_het_menu_van_een_website_is_geen_uitje():
     for title in ("Privacybeleid", "Filteren", "Je hebt het einde bereikt!", "Contact informatie", "Diensten menus",
                   "Educatie", "Specials", "1 t/m 12 van 76 resultaten", "October 2026", "January 2027", "Volgeboekt",
                   "Over deze voorstelling", "see our gallery", "Prikbord", "Aankomende gebeurtenissen", "A ctiviteiten",
-                  "Event Type Activiteiten", "Uitslagen avond - Dorpsquiz", "Vandaag in de stad"):
+                  "Event Type Activiteiten", "Uitslagen avond - Dorpsquiz", "Vandaag in de stad", "Evenementbeschrijving"):
         assert not_an_outing(_event(title)), title
 
 
@@ -76,7 +95,10 @@ def test_echte_uitjes_blijven_staan():
                   # namen die op een regel lijken maar het niet zijn
                   "Bridge over Troubled Water – The Simon & Garfunkel Story", "Deadline", "Slotdag Zomerfestival",
                   "Jazzborrel met Trio X", "Inloopdag atelier Geert", "Wandeling langs de dammen",
-                  "Concert X voorverkoop gestart"):
+                  "Concert X voorverkoop gestart", "Dutch Open Darts 2027", "Beurs Bouwplan, Thuis in Wonen",
+                  "Cantatedienst met Musikalische Exequien van Heinrich Schütz", "Choral Evensong", "Br. Bas en de Fanfare",
+                  "Pater Moeskroen in concert", "Workshop meditatie", "Boekpresentatie: De moed van vergeving",
+                  "+ Def Americans - Johnny Cash Tribute"):
         assert not not_an_outing(_event(title)), title
 
 
@@ -101,6 +123,11 @@ def test_een_emailadres_is_geen_link():
     # De link naar de agenda blijft, zonder de onzichtbare spatie; het e-mailadres valt weg.
     assert event["url"] == "https://societeitdeharmonie.nl/agenda"
     assert [s["url"] for s in event["sources"]] == ["https://societeitdeharmonie.nl/agenda"]
+    # Is ook de bron een e-mailadres, dan wordt de agenda waar het uitje op stond de link.
+    raw.update(sourceUrl="http://landschapstafel@societeitdeharmonie.nl", sourceRoot="https://www.societeitdeharmonie.nl/")
+    event = to_v2(raw, TODAY)
+    assert event["url"] == "https://www.societeitdeharmonie.nl/"
+    assert [s["host"] for s in event["sources"]] == ["societeitdeharmonie.nl"]
 
 
 def test_vaste_activiteit_met_datum_in_de_naam():
