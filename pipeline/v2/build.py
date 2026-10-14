@@ -14,6 +14,7 @@ import sys
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 from collector.discover_venues import is_excluded
 
@@ -91,9 +92,14 @@ ROUTINE_MIN = 4             # minstens zo vaak in de agenda
 ROUTINE_MAX_GAP_DAYS = 14   # en gemiddeld (mediaan) hoogstens zoveel dagen ertussen
 
 
+_MONTH = r"(?:jan|feb|maa|mrt|apr|mei|jun|jul|aug|sep|okt|oct|nov|dec)[a-z]*"
+
+
 def _routine_key(event: dict) -> tuple[str, str]:
-    # Tijden tellen niet mee: 'Jeu de boules van 14:00 tot 16:00 uur' is elke week hetzelfde.
-    title = re.sub(r"\b\d{1,2}[:.]\d{2}\b|\b(?:uur|van|tot|t/m|vanaf|om)\b", " ", normalize(event.get("title") or ""))
+    # Tijden en datums tellen niet mee: 'Jeu de boules van 14:00 tot 16:00 uur' en 'Dorpskamer 20 oktober'
+    # zijn elke week hetzelfde.
+    title = re.sub(rf"\b\d{{1,2}}[:.]\d{{2}}\b|\b\d{{1,2}} {_MONTH}\b|\b(?:uur|van|tot|t/m|vanaf|om)\b", " ",
+                   normalize(event.get("title") or ""))
     hosts = [s.get("host") for s in event.get("sources") or [] if s.get("host")]
     return " ".join(title.split()), (hosts[0] if hosts else "")
 
@@ -115,6 +121,26 @@ def routines(events: list[dict]) -> set[int]:
         elif median <= 35 and len(days) >= 5:
             # Elke maand dezelfde bijeenkomst zonder herkenbare soort (een soos, een praatmiddag).
             drop |= {i for i in indexes if events[i].get("kind") == "overig"}
+    return drop
+
+
+# De Duitse of Engelse versie van een Nederlandse agenda ('/de/agenda/'): hetzelfde uitje nog een keer.
+LANGUAGE_PATH = re.compile(r"^/(?:de|en|fr|da|pl)(?:[-_][a-z]{2})?/", re.IGNORECASE)
+
+
+def translations(events: list[dict]) -> set[int]:
+    """Posities van vertaalde uitjes waarvan dezelfde website op hetzelfde moment ook de Nederlandse
+    versie heeft ('Ausflug mit Robbenspotting' naast 'Zeehondenkijktocht')."""
+    slots: dict[tuple, list[int]] = {}
+    for index, event in enumerate(events):
+        first = event["occurrences"][0]
+        hosts = [s.get("host") for s in event.get("sources") or [] if s.get("host")]
+        slots.setdefault((hosts[0] if hosts else "", first.get("date"), first.get("startTime")), []).append(index)
+    drop: set[int] = set()
+    for indexes in slots.values():
+        foreign = {i for i in indexes if LANGUAGE_PATH.match(urlparse(events[i].get("url") or "").path)}
+        if foreign and len(foreign) < len(indexes):
+            drop |= foreign
     return drop
 
 
@@ -174,6 +200,8 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     # Vaste activiteiten (elke week klaverjassen, gym of soos) zijn geen uitjes voor de agenda.
     routine = routines(events)
     events = [e for i, e in enumerate(events) if i not in routine]
+    translated = translations(events)
+    events = [e for i, e in enumerate(events) if i not in translated]
 
     # Unieke slugs, voor als twee titels toevallig hetzelfde worden afgekapt
     seen: Counter = Counter()
@@ -217,6 +245,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "outsideArea": len(outside),
         "geenUitje": len(skipped),
         "vasteActiviteit": len(routine),
+        "vertaling": len(translated),
         "teVerVooruit": len(too_far),
         "uitgeslotenBron": len(excluded),
         "onleesbaar": broken[:20],

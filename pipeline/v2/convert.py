@@ -51,9 +51,16 @@ def parse_time_range(value: str | None) -> tuple[str | None, str | None]:
     """'17:00 – 00:00' -> ('17:00', '00:00'); onbekend -> (None, None)."""
     found = TIME.findall(value or "")
     times = [f"{int(h):02d}:{m}" for h, m in found if int(h) < 24 and int(m) < 60]
-    if not times:
+    # Om 00:00 beginnen is bijna altijd 'tijd onbekend' (anders staat er 's nachts al 'Nu bezig').
+    if not times or times[0] == "00:00":
         return None, None
     return times[0], (times[1] if len(times) > 1 else None)
+
+
+def _web_link(value) -> str | None:
+    """Een link zoals de organisator hem gaf, of None als het geen echt webadres is."""
+    link = str(value or "").strip()
+    return link if canonical_url(link) else None
 
 
 def _host(url: str | None) -> str | None:
@@ -90,10 +97,27 @@ LEADING_TIME = re.compile(r"^\d{1,2}[:.]\d{2}(?:\s*(?:-|–|—|tot|t/m)\s*\d{1,
                           r"(?=[^\d\s])(?!(?:tot|t/m|[-–—])\s*\d)", re.IGNORECASE)
 # Een postcode voor de plaatsnaam ('9341 BL Veenhuizen'): alleen de plaats telt.
 POSTCODE_PREFIX = re.compile(r"^\d{4}\s?[A-Za-z]{2}\s+")
+# Tekst voor schermlezers achter de naam ('Vaiana (opent bij de bron)'): hoort niet bij de naam.
+LINK_NOTE = re.compile(r"\s*\((?:opent (?:bij de bron|in (?:een )?nieuw (?:venster|tabblad))|opens in (?:a )?new (?:window|tab)"
+                       r"|externe link|external link)\)\s*", re.IGNORECASE)
+
+
+def _undouble(title: str) -> str:
+    """Een naam die er twee keer staat ('Taalcafé Taalcafé', of afgekapt: 'Kinderboekenweek: Spot aan! -
+    met Mark in de bieb! Kinderboekenweek: Spot aan! - m'): één keer is genoeg."""
+    for index, char in enumerate(title):
+        if char != " ":
+            continue
+        first, second = title[:index].casefold(), title[index + 1:].casefold()
+        twice = len(first) >= 7 and first == second
+        cut_off = len(second) >= 12 and len(first) > len(second) and first.startswith(second)
+        if twice or cut_off:
+            return title[:index]
+    return title
 
 
 def clean_title(value: str | None) -> str:
-    title = re.sub(r"\s+", " ", value or "").strip()
+    title = _undouble(LINK_NOTE.sub(" ", re.sub(r"\s+", " ", value or "")).strip())
     rest = DATE_PREFIX.sub("", title, count=1)
     rest = rest if len(rest) >= 3 else title
     untimed = LEADING_TIME.sub("", rest, count=1)
@@ -118,8 +142,10 @@ def to_v2(raw: dict, today: date) -> dict | None:
     if end < today.isoformat():
         return None
     city = POSTCODE_PREFIX.sub("", (raw.get("city") or "").strip())
-    # Alleen echte webadressen (kapotte HTML kan tekst in een link zetten).
-    url = next((u for u in (raw.get("eventUrl"), raw.get("organizerUrl"), raw.get("sourceUrl")) if canonical_url(u)), None)
+    # Alleen echte webadressen (kapotte HTML kan tekst of een e-mailadres in een link zetten), zonder
+    # onzichtbare spaties eromheen: de site leest elke link na.
+    links = {key: _web_link(raw.get(key)) for key in ("eventUrl", "organizerUrl", "sourceUrl", "discoveryUrl")}
+    url = links["eventUrl"] or links["organizerUrl"] or links["sourceUrl"]
     if not city or not url:
         return None
 
@@ -130,12 +156,12 @@ def to_v2(raw: dict, today: date) -> dict | None:
     sources = []
     seen = set()
     for kind, link in (
-        (SOURCE_TYPES.get(raw.get("sourceType") or "", "organisator"), raw.get("sourceUrl")),
-        ("organisator", raw.get("eventUrl")),
-        ("organisator", raw.get("organizerUrl")),
-        ("vergunning", raw.get("discoveryUrl") if "officielebekendmakingen" in (raw.get("discoveryUrl") or "") else None),
+        (SOURCE_TYPES.get(raw.get("sourceType") or "", "organisator"), links["sourceUrl"]),
+        ("organisator", links["eventUrl"]),
+        ("organisator", links["organizerUrl"]),
+        ("vergunning", links["discoveryUrl"] if "officielebekendmakingen" in (links["discoveryUrl"] or "") else None),
     ):
-        if link and canonical_url(link) and link not in seen:
+        if link and link not in seen:
             seen.add(link)
             sources.append({"type": kind, "url": link, "host": _host(link),
                             "seenAt": raw.get("lastSourceAudit")})

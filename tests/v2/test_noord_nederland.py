@@ -96,9 +96,9 @@ def test_alleen_uitjes_voor_het_grote_publiek():
                   "Ouderenmiddag met muziek", "50 plus club Sinterklaas"):
         assert not_an_outing(_event(title)), title
     # Openbaar: een concert van het koor, een toernooi, een kerstbingo, een tributeshow met jaartal,
-    # een cursus, een festival voor senioren, een dansavond voor 50-plussers, Club Guy & Roni (dans).
-    for title in ("Kerstconcert van het koor", "Klaverjastoernooi", "Kerstbingo", "Bridgedrive", "Repair café",
-                  "Daddy Cool Turns 50 – Boney M 1976- 2026", "Reanimatiecursus", "Seniorenfestival",
+    # een workshop, een festival voor senioren, een dansavond voor 50-plussers, Club Guy & Roni (dans).
+    for title in ("Kerstconcert van het koor", "Klaverjastoernooi", "Kerstbingo", "Bridgedrive", "Prijsklaverjassen",
+                  "Daddy Cool Turns 50 – Boney M 1976- 2026", "Workshop bonbons maken", "Seniorenfestival",
                   "Senioren darttoernooi", "Dansavond 50 plus", "Club Guy & Roni – The Current", "Pop-up boekenclub",
                   "Open dag fanfare Swettewyn", "Intocht Sinterklaas"):
         assert not not_an_outing(_event(title)), title

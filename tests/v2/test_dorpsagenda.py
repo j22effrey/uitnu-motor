@@ -35,7 +35,7 @@ def test_zaalverhuur_afval_en_kopjes_zijn_geen_uitje():
                   "Koopzondag 6 december", "Hemelvaartsdag", "Optie Andrea", "Banketstavenactie"):
         assert not_an_outing({"title": title}), title
     for title in ("Herfstvakantie: knutselen voor kinderen", "Concert in de grote zaal", "Kerstconcert",
-                  "Koningsdag", "Nieuwjaarsduik", "Verkeersregels opfrissen"):
+                  "Koningsdag", "Nieuwjaarsduik"):
         assert not_an_outing({"title": title}) is None, title
 
 
@@ -93,7 +93,7 @@ def test_clubs_bestuur_en_vaste_ontmoetingen_zijn_geen_uitje():
                   # sinds 13 oktober: een reisje van de ouderensoos is voor de eigen leden
                   "Ouderensoosreis naar Giethoorn met boottocht"):
         assert not_an_outing({"title": title}), title
-    for title in ("Dansavond 50 plus", "Dorpsbelangen nieuwjaarsreceptie", "Inloopmiddag met lezing over de Waddenzee",
+    for title in ("Dansavond 50 plus", "Dorpsbelangen nieuwjaarsconcert", "Inloopmiddag met lezing over de Waddenzee",
                   "Kerstconcert 2026"):
         assert not_an_outing({"title": title}) is None, title
 

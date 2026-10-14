@@ -39,6 +39,14 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    alleen voor leden, dorpsbewoners of de ouderen van het dorp, en nooit seks- of naaktfeesten. Staat
    er iets openbaars bij (concert, toernooi, open dag, voorstelling), dan blijft het staan
    (`CLUB_SESSION`, `TEAM_MATCH`, `MEMBERS_ONLY`, `SENIORS_ONLY` en `ADULT_ONLY` in `classify.py`).
+   Ook **alleen noemenswaardige uitjes** (afspraak van 14 oktober 2026, voorbeeld Westerlee): niet wat
+   een dorpshuis voor de eigen mensen doet (koffie, soep of friet, borrel, dorpsmaaltijd, dorpskamer,
+   handwerk- of taalcafé), geen hulp of cursus (repair café, mantelzorgcafé, cursus computer of
+   reanimatie), geen inspraak of informatieavond (dorpsvisie, woningbouw), geen clubspel of competitie
+   (biljarten, darten, clubkampioenschap, slottoernooi), geen mededelingen (afgelast, inleverdatum,
+   milieubus, verkiezingen) en geen menu van een website ('Privacybeleid', 'Filteren'). Een toernooi,
+   drive, workshop, lezing of optreden blijft staan (`CLUB_GAME`, `CLUB_INTERNAL`, `VILLAGE_ROUTINE`,
+   `SERVICE_OR_MEETING`, `PAGE_HEADING` en `NOT_AN_OUTING`).
 5. **Werkwijze.** Altijd eerst testen (`python -m pytest tests/v2`), dan een pull request met uitleg
    in gewone taal. Claude voegt die pull request daarna zelf samen (afspraak met de eigenaar van
    13 oktober 2026), maar alleen als de tests slagen en, bij een verandering aan het ophalen of
@@ -90,6 +98,9 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    die elke week terugkomen zoals klaverjassen of gym; voorstellingen, concerten, films, markten,
    tentoonstellingen en natuuruitjes blijven altijd staan), deelt in (`classify.py`), kiest foto's,
    keurt (`gate.py`) en publiceert. Uitjes verder dan anderhalf jaar vooruit zijn een leesfout.
+   De Duitse of Engelse versie van een uitje naast de Nederlandse ('/de/agenda/') valt weg, net als
+   tekst voor schermlezers in de naam ('(opent bij de bron)'), een dubbele naam en een begintijd van
+   00:00 (dat is 'tijd onbekend'). Een link die eigenlijk een e-mailadres is, telt niet als link.
    Eén kapot uitje laat de fabriek niet vastlopen (het staat in `status.json` onder `onleesbaar`).
    Een bron bewust uitzetten: `"enabled": false` met `disabledReason` in de bronnenlijst (een
    nieuwssite ook op de uitsluitlijst); de keuring weet dan dat die uitjes mogen verdwijnen.
