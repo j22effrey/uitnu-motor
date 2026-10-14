@@ -9590,6 +9590,20 @@
         "lon": 5.3075721
       },
       "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "martinikerk-nl-web",
+      "name": "Martinikerk",
+      "rootUrl": "https://www.martinikerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "martinikerk.nl",
+      "policyReviewedAt": "2026-10-14"
     }
   ]
 }
