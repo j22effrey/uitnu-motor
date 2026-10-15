@@ -183,5 +183,10 @@ def test_ronde_van_15_oktober():
         assert not_an_outing(_event(title)), title
     for title in ("Benefietmaaltijd – Doperse Dis", "Meditatief klankschalenconcert", "Sound Bath | Klank Ligconcert",
                   "Workshop koperslaan voor beginners", "Inloopdag atelier Geert", "TT Assen", "Dutch Racing Series",
-                  "(Verkoop) expositie Gerrit Offringa", "Woorden op Woensdag", "Kerstconcert"):
+                  "(Verkoop) expositie Gerrit Offringa", "Woorden op Woensdag", "Kerstconcert",
+                  # gevonden bij het nakijken door een frisse hulpagent
+                  "Sinterklaasviering Ondernemersvereniging Diever", "Concert Muziekvereniging Excelsior",
+                  "Kerstmarkt Ondernemersvereniging Zuidlaren", "Mikstoernooi/Famyljedei VV Suameer", "Expositie is geopend",
+                  "Open les 1", "Winterstop toernooi", "Open klaverjasavond: kaartavond voor iedereen",
+                  "Deuren open 20:00 - Racoon live", "Opening nieuwbouw bibliotheek", "Schrijfavond met auteur Arnon Grunberg"):
         assert not not_an_outing(_event(title)), title
