@@ -467,6 +467,58 @@
   }
  },
  {
+  "id": "evt_9dea4fd9c2865d",
+  "slug": "044-mime-company-maakt-voor-het-eerst-een-kindervoorstelling-tussen-de-regels-pr",
+  "title": "044 Mime Company maakt voor het eerst een kindervoorstelling: Tussen de Regels prikkelt de verbeelding",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Podium Zuidhaege",
+   "city": "Assen",
+   "lat": 52.9915944,
+   "lon": 6.5653609
+  },
+  "price": "Zie organisator",
+  "url": "https://podiumzuidhaege.nl/nieuws-categorie/overig/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://podiumzuidhaege.nl/nieuws-categorie/overig/",
+    "host": "podiumzuidhaege.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "theater",
+  "kindLabel": "Theater en comedy",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'voorstelling'",
+   "confidence": 0.8
+  },
+  "hash": "7e233d1aacff",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Assen",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+  }
+ },
+ {
   "id": "evt_660d9037b2d120",
   "slug": "bekendmakingen-schoonloo-2026-10-15",
   "title": "Bekendmakingen",
@@ -769,108 +821,6 @@
   }
  },
  {
-  "id": "evt_0941a829f9d4be",
-  "slug": "flow-8-leeuwarden-2026-10-15",
-  "title": "Flow (8+)",
-  "occurrences": [
-   {
-    "date": "2026-10-15",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Slieker Film",
-   "city": "Leeuwarden",
-   "lat": 53.1996715,
-   "lon": 5.7945135
-  },
-  "price": "Zie organisator",
-  "url": "https://sliekerfilm.nl/film/flow/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://sliekerfilm.nl/film/flow/",
-    "host": "sliekerfilm.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "film",
-  "kindLabel": "Film",
-  "tags": [
-   "kinderen"
-  ],
-  "classification": {
-   "method": "organisator",
-   "reason": "de organisator zet het in de rubriek 'film'",
-   "confidence": 0.7
-  },
-  "hash": "7a7a7a895f65",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Fries_Museum_Wilhelminaplein_Leeuwarden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Slieker Film",
-   "credit": "Foto: Vidi Condor · CC BY 4.0 · Wikimedia Commons",
-   "author": "Vidi Condor",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fries_Museum_Wilhelminaplein_Leeuwarden.jpg"
-  }
- },
- {
-  "id": "evt_cd827c6a8c5e44",
-  "slug": "franz-leeuwarden-2026-10-15",
-  "title": "Franz",
-  "occurrences": [
-   {
-    "date": "2026-10-15",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Slieker Film",
-   "city": "Leeuwarden",
-   "lat": 53.1996715,
-   "lon": 5.7945135
-  },
-  "price": "Zie organisator",
-  "url": "https://sliekerfilm.nl/film/franz/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://sliekerfilm.nl/film/franz/",
-    "host": "sliekerfilm.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "film",
-  "kindLabel": "Film",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "de organisator zet het in de rubriek 'film'",
-   "confidence": 0.7
-  },
-  "hash": "b020225f848d",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Fries_Museum_Wilhelminaplein_Leeuwarden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Slieker Film",
-   "credit": "Foto: Vidi Condor · CC BY 4.0 · Wikimedia Commons",
-   "author": "Vidi Condor",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fries_Museum_Wilhelminaplein_Leeuwarden.jpg"
-  }
- },
- {
   "id": "evt_f940f3faca6e19",
   "slug": "gaat-op-vakantie-2-franeker-2026-10-15",
   "title": "GAAT OP VAKANTIE (2+)",
@@ -1020,56 +970,6 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190827_Nicolaaskerk1_Onstwedde.jpg"
-  }
- },
- {
-  "id": "evt_d6288a5585922b",
-  "slug": "hamnet-leeuwarden-2026-10-15",
-  "title": "Hamnet",
-  "occurrences": [
-   {
-    "date": "2026-10-15",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Slieker Film",
-   "city": "Leeuwarden",
-   "lat": 53.1996715,
-   "lon": 5.7945135
-  },
-  "price": "Zie organisator",
-  "url": "https://sliekerfilm.nl/film/hamnet/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://sliekerfilm.nl/film/hamnet/",
-    "host": "sliekerfilm.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "film",
-  "kindLabel": "Film",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "de organisator zet het in de rubriek 'film'",
-   "confidence": 0.7
-  },
-  "hash": "2886c437872b",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Fries_Museum_Wilhelminaplein_Leeuwarden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Slieker Film",
-   "credit": "Foto: Vidi Condor · CC BY 4.0 · Wikimedia Commons",
-   "author": "Vidi Condor",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fries_Museum_Wilhelminaplein_Leeuwarden.jpg"
   }
  },
  {
@@ -1528,7 +1428,7 @@
   }
  },
  {
-  "id": "evt_8fc27a884122f9",
+  "id": "evt_fbf81a28a651a6",
   "slug": "puppet-international-informatie-bestel-meppel-2026-10-15",
   "title": "Puppet International Informatie Bestel",
   "occurrences": [
@@ -1546,12 +1446,12 @@
    "lon": 6.1944
   },
   "price": "Zie organisator",
-  "url": "https://www.schouwburgogterop.nl/programma/nieuwjaarsconcert-noord-nederlands-orkest-nno/04-01-2026-14-30",
+  "url": "https://www.schouwburgogterop.nl/programma/theatertour-matthijn-buwalda/21-02-2025-20-00",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://www.schouwburgogterop.nl/programma/nieuwjaarsconcert-noord-nederlands-orkest-nno/04-01-2026-14-30",
+    "url": "https://www.schouwburgogterop.nl/programma/theatertour-matthijn-buwalda/21-02-2025-20-00",
     "host": "schouwburgogterop.nl",
     "seenAt": "2026-10-15"
    }
@@ -1564,7 +1464,7 @@
    "reason": "trefwoord 'informatie'",
    "confidence": 0.8
   },
-  "hash": "079628fd47ef",
+  "hash": "d803f5f6505d",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Meppel%2C_de_Meppeler_toren_in_straatzicht_foto1_2011-05-21_11.58.JPG/1280px-Meppel%2C_de_Meppeler_toren_in_straatzicht_foto1_2011-05-21_11.58.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -1576,6 +1476,46 @@
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meppel,_de_Meppeler_toren_in_straatzicht_foto1_2011-05-21_11.58.JPG"
   }
+ },
+ {
+  "id": "evt_393c34666ccc72",
+  "slug": "recente-berichten-de-kiel-2026-10-15",
+  "title": "Recente berichten",
+  "occurrences": [
+   {
+    "date": "2026-10-15",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Kiel",
+   "city": "De Kiel",
+   "lat": 52.8622,
+   "lon": 6.7461
+  },
+  "price": "Zie organisator",
+  "url": "https://www.dekiel.info/algemeen/agenda/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.dekiel.info/algemeen/agenda/",
+    "host": "dekiel.info",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "overig",
+  "kindLabel": "Overig",
+  "tags": [],
+  "classification": {
+   "method": "geen",
+   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+   "confidence": 0.2
+  },
+  "hash": "9cbeb91a6f74",
+  "image": null
  },
  {
   "id": "evt_f6502e6e9a2f0d",
@@ -1928,56 +1868,6 @@
   }
  },
  {
-  "id": "evt_1f058649e8432b",
-  "slug": "the-cycle-of-love-leeuwarden-2026-10-15",
-  "title": "The Cycle of Love",
-  "occurrences": [
-   {
-    "date": "2026-10-15",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Slieker Film",
-   "city": "Leeuwarden",
-   "lat": 53.1996715,
-   "lon": 5.7945135
-  },
-  "price": "Zie organisator",
-  "url": "https://sliekerfilm.nl/film/the-cycle-of-love/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://sliekerfilm.nl/film/the-cycle-of-love/",
-    "host": "sliekerfilm.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "film",
-  "kindLabel": "Film",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "de organisator zet het in de rubriek 'film'",
-   "confidence": 0.7
-  },
-  "hash": "c524438e0704",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Fries_Museum_Wilhelminaplein_Leeuwarden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Slieker Film",
-   "credit": "Foto: Vidi Condor · CC BY 4.0 · Wikimedia Commons",
-   "author": "Vidi Condor",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fries_Museum_Wilhelminaplein_Leeuwarden.jpg"
-  }
- },
- {
   "id": "evt_40f61b00586bc7",
   "slug": "tijdstip-veendam-2026-10-15",
   "title": "Tijdstip",
@@ -2075,56 +1965,6 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoogeveen,_het_Huis_met_de_Duivengaten_RM_22252_IMG_3920_2018-05-27_14.28.jpg"
-  }
- },
- {
-  "id": "evt_3da8770003d018",
-  "slug": "yellow-letters-leeuwarden-2026-10-15",
-  "title": "Yellow Letters",
-  "occurrences": [
-   {
-    "date": "2026-10-15",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Slieker Film",
-   "city": "Leeuwarden",
-   "lat": 53.1996715,
-   "lon": 5.7945135
-  },
-  "price": "Zie organisator",
-  "url": "https://sliekerfilm.nl/film/yellow-letters/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://sliekerfilm.nl/film/yellow-letters/",
-    "host": "sliekerfilm.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "film",
-  "kindLabel": "Film",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "de organisator zet het in de rubriek 'film'",
-   "confidence": 0.7
-  },
-  "hash": "fc382693d59b",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Fries_Museum_Wilhelminaplein_Leeuwarden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Slieker Film",
-   "credit": "Foto: Vidi Condor · CC BY 4.0 · Wikimedia Commons",
-   "author": "Vidi Condor",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fries_Museum_Wilhelminaplein_Leeuwarden.jpg"
   }
  },
  {
@@ -3482,56 +3322,6 @@
   }
  },
  {
-  "id": "evt_4f777504a910ad",
-  "slug": "deel-activiteit-musselkanaal-2026-10-16",
-  "title": "Deel activiteit",
-  "occurrences": [
-   {
-    "date": "2026-10-16",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Musselkanaal",
-   "city": "Musselkanaal",
-   "lat": 52.9292,
-   "lon": 7.0153
-  },
-  "price": "Zie organisator",
-  "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-10-16/bouw-mee-aan-onze-foto-expositie",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-10-16/bouw-mee-aan-onze-foto-expositie",
-    "host": "levendigmusselkanaal.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'expositie' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "eac0f359b3c0",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
-   "author": "H.P.Burger",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
-  }
- },
- {
   "id": "evt_d93cfe88edfe40",
   "slug": "digger-leeuwarden-2026-10-16",
   "title": "Digger",
@@ -3620,15 +3410,15 @@
   },
   "hash": "8cbdb810dd9c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Evert Mouw",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
+   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
+   "author": "H.P.Burger",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
   }
  },
  {
@@ -3978,7 +3768,7 @@
   },
   "hash": "460b76e3a6ee",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
@@ -3986,7 +3776,7 @@
    "author": "Evert Mouw",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
   }
  },
  {
@@ -6731,56 +6521,6 @@
   }
  },
  {
-  "id": "evt_513b7c48b1fbb6",
-  "slug": "hoofs-support-competition-borger-2026-10-17",
-  "title": "HOOFS + Support Competition",
-  "occurrences": [
-   {
-    "date": "2026-10-17",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Podium 34",
-   "city": "Borger",
-   "lat": 52.9244547,
-   "lon": 6.7907727
-  },
-  "price": "Zie organisator",
-  "url": "https://podium34.nl/events/hoofs-support-competition/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://podium34.nl/events/hoofs-support-competition/",
-    "host": "podium34.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website podium34.nl",
-   "confidence": 0.6
-  },
-  "hash": "03e3b0998335",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dorpskerk_van_Borger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Borger",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorpskerk_van_Borger.jpg"
-  }
- },
- {
   "id": "evt_d255a65f288e23",
   "slug": "jubileum-darttoernooi-ijsbrechtum-2026-10-17",
   "title": "Jubileum Darttoernooi",
@@ -6919,15 +6659,15 @@
   },
   "hash": "68bffe934c02",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -10538,6 +10278,56 @@
   }
  },
  {
+  "id": "evt_e9697a54432938",
+  "slug": "hoofs-support-competition-support-acts-subtitel-borger-2026-10-17",
+  "title": "HOOFS + Support Competition Support / Acts / Subtitel",
+  "occurrences": [
+   {
+    "date": "2026-10-17",
+    "endDate": null,
+    "startTime": "20:30",
+    "endTime": "23:30"
+   }
+  ],
+  "venue": {
+   "name": "Podium 34",
+   "city": "Borger",
+   "lat": 52.9244547,
+   "lon": 6.7907727
+  },
+  "price": "Zie organisator",
+  "url": "https://podium34.nl/mec-category/concert/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://podium34.nl/mec-category/concert/",
+    "host": "podium34.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website podium34.nl",
+   "confidence": 0.6
+  },
+  "hash": "cb012b9ec96c",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Dorpskerk_van_Borger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Borger",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorpskerk_van_Borger.jpg"
+  }
+ },
+ {
   "id": "evt_0d8b5db8f18068",
   "slug": "fixy-clubnight-w-alec-falconer-dj-firetower-and-sem-s-groningen-2026-10-17",
   "title": "FIXY Clubnight w/ Alec Falconer, DJ FIRETOWER and Sem S",
@@ -11314,12 +11104,12 @@
    "lon": 6.5428525
   },
   "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/nl/events",
+  "url": "https://www.debontewever.nl/nl/events/jason-staal-live-in-bistro-dapper",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events",
+    "url": "https://www.debontewever.nl/nl/events/jason-staal-live-in-bistro-dapper",
     "host": "debontewever.nl",
     "seenAt": "2026-10-15"
    }
@@ -11332,7 +11122,7 @@
    "reason": "trefwoord 'live'",
    "confidence": 0.8
   },
-  "hash": "cbebe5219afc",
+  "hash": "54014235afa0",
   "image": {
    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
@@ -11686,7 +11476,7 @@
   },
   "hash": "b32789086ab0",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -11694,7 +11484,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -13902,6 +13692,46 @@
   }
  },
  {
+  "id": "evt_9868408a1757a4",
+  "slug": "agenda-de-veldhoek-koekangerveld-2026-10-19",
+  "title": "Agenda De Veldhoek",
+  "occurrences": [
+   {
+    "date": "2026-10-19",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Koekangerveld",
+   "city": "Koekangerveld",
+   "lat": 52.7158,
+   "lon": 6.3328
+  },
+  "price": "Zie organisator",
+  "url": "https://koekangerveld.com/clubs-organisaties/dorpshuis-de-veldhoek/agenda-de-veldhoek?week=2026-10-12",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://koekangerveld.com/clubs-organisaties/dorpshuis-de-veldhoek/agenda-de-veldhoek?week=2026-10-12",
+    "host": "koekangerveld.com",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "overig",
+  "kindLabel": "Overig",
+  "tags": [],
+  "classification": {
+   "method": "geen",
+   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+   "confidence": 0.2
+  },
+  "hash": "fde635aff063",
+  "image": null
+ },
+ {
   "id": "evt_493404ba4f9646",
   "slug": "deel-activiteit-musselkanaal-2026-10-19",
   "title": "Deel activiteit",
@@ -13940,15 +13770,15 @@
   },
   "hash": "b8192c090b34",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/20151209_Spoordok_Musselkanaal.jpg/1280px-20151209_Spoordok_Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Musselkanaal.jpg/1280px-Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
    "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20151209_Spoordok_Musselkanaal.jpg"
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal.jpg"
   }
  },
  {
@@ -14790,15 +14620,15 @@
   },
   "hash": "e3bdae1621d2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Musselkanaal.jpg/1280px-Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal.jpg"
+   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Evert Mouw",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
   }
  },
  {
@@ -14940,15 +14770,15 @@
   },
   "hash": "2a94874c0d5a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Musselkanaal_IJzeren-Klap.JPG/1280px-Musselkanaal_IJzeren-Klap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
+   "credit": "Foto: H.P.Burger · CC BY-SA 3.0 · Wikimedia Commons",
    "author": "H.P.Burger",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_IJzeren-Klap.JPG"
   }
  },
  {
@@ -15140,7 +14970,7 @@
   },
   "hash": "609e59581e4c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -15148,7 +14978,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
   }
  },
  {
@@ -15244,15 +15074,15 @@
   },
   "hash": "7bd45028c644",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Evert Mouw",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
+   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
+   "author": "H.P.Burger",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
   }
  },
  {
@@ -15798,15 +15628,15 @@
   },
   "hash": "0a4d733ab2a6",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Musselkanaal_IJzeren-Klap.JPG/1280px-Musselkanaal_IJzeren-Klap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/20151209_Spoordok_Musselkanaal.jpg/1280px-20151209_Spoordok_Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "H.P.Burger",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_IJzeren-Klap.JPG"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20151209_Spoordok_Musselkanaal.jpg"
   }
  },
  {
@@ -16340,15 +16170,15 @@
   },
   "hash": "b3daafdad2cf",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Musselkanaal.jpg/1280px-Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal.jpg"
+   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Evert Mouw",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
   }
  },
  {
@@ -16642,7 +16472,7 @@
   },
   "hash": "5f3e4a55f6a3",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -16650,7 +16480,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
   }
  },
  {
@@ -17490,7 +17320,7 @@
   },
   "hash": "f83143382bac",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
@@ -17498,7 +17328,7 @@
    "author": "Evert Mouw",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
   }
  },
  {
@@ -18187,15 +18017,15 @@
   },
   "hash": "083c60b9facf",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Musselkanaal_IJzeren-Klap.JPG/1280px-Musselkanaal_IJzeren-Klap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/20151209_Spoordok_Musselkanaal.jpg/1280px-20151209_Spoordok_Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "H.P.Burger",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_IJzeren-Klap.JPG"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20151209_Spoordok_Musselkanaal.jpg"
   }
  },
  {
@@ -18237,15 +18067,15 @@
   },
   "hash": "e129991498c4",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Musselkanaal_IJzeren-Klap.JPG/1280px-Musselkanaal_IJzeren-Klap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
+   "credit": "Foto: H.P.Burger · CC BY-SA 3.0 · Wikimedia Commons",
    "author": "H.P.Burger",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_IJzeren-Klap.JPG"
   }
  },
  {
@@ -19191,15 +19021,15 @@
   },
   "hash": "c882085d04a5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/20151209_Spoordok_Musselkanaal.jpg/1280px-20151209_Spoordok_Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Musselkanaal.jpg/1280px-Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
    "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20151209_Spoordok_Musselkanaal.jpg"
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal.jpg"
   }
  },
  {
@@ -19390,15 +19220,15 @@
   },
   "hash": "fbaf0b59f166",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Evert Mouw",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
+   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
+   "author": "H.P.Burger",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
   }
  },
  {
@@ -19940,15 +19770,15 @@
   },
   "hash": "584c1eb82ba8",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Musselkanaal.jpg/1280px-Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal.jpg"
+   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Evert Mouw",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
   }
  },
  {
@@ -20491,7 +20321,7 @@
   },
   "hash": "fdf8105ecaf8",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
@@ -20499,7 +20329,7 @@
    "author": "Evert Mouw",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
   }
  },
  {
@@ -20743,7 +20573,7 @@
   },
   "hash": "52f5f823bd5a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -20751,7 +20581,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
   }
  },
  {
@@ -21745,56 +21575,6 @@
   }
  },
  {
-  "id": "evt_24ff1bcdbe9ea9",
-  "slug": "de-bonte-wever-live-assen-2026-10-24",
-  "title": "De Bonte Wever Live",
-  "occurrences": [
-   {
-    "date": "2026-10-24",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "EUR 39.50",
-  "url": "https://www.debontewever.nl/nl/events/de-bonte-wever-live",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events/de-bonte-wever-live",
-    "host": "debontewever.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'live'",
-   "confidence": 0.8
-  },
-  "hash": "53c4754ef120",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
-  }
- },
- {
   "id": "evt_7836b05dbcf113",
   "slug": "dorpsquiz-yde-2026-10-24",
   "title": "Dorpsquiz",
@@ -22087,7 +21867,7 @@
   },
   "hash": "d8d90f7f36f9",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -22095,7 +21875,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -22137,15 +21917,15 @@
   },
   "hash": "3a918eb5389b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -22452,56 +22232,6 @@
    "license": "Public domain",
    "licenseUrl": null,
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_botterkopers_door_Carla_Wiersma_Oldemarkt.jpg"
-  }
- },
- {
-  "id": "evt_549cb229ce775f",
-  "slug": "oktoberfest-crescendo-schoonloo-2026-10-24",
-  "title": "Oktoberfest Crescendo",
-  "occurrences": [
-   {
-    "date": "2026-10-24",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Schoonloo",
-   "city": "Schoonloo",
-   "lat": 52.9044,
-   "lon": 6.7003
-  },
-  "price": "Zie organisator",
-  "url": "https://schoonloo.com/agenda",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://schoonloo.com/agenda",
-    "host": "schoonloo.com",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'oktoberfest'",
-   "confidence": 0.8
-  },
-  "hash": "260f0c17c332",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/20190820_Iberenplas.jpg/1280px-20190820_Iberenplas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Schoonloo",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190820_Iberenplas.jpg"
   }
  },
  {
@@ -24523,6 +24253,56 @@
   }
  },
  {
+  "id": "evt_24ff1bcdbe9ea9",
+  "slug": "de-bonte-wever-live-assen-2026-10-24",
+  "title": "De Bonte Wever Live",
+  "occurrences": [
+   {
+    "date": "2026-10-24",
+    "endDate": null,
+    "startTime": "20:00",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Plaza",
+   "city": "Assen",
+   "lat": null,
+   "lon": null
+  },
+  "price": "EUR 39.50",
+  "url": "https://www.debontewever.nl/nl/events/de-bonte-wever-live",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.debontewever.nl/nl/events/de-bonte-wever-live",
+    "host": "debontewever.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'live'",
+   "confidence": 0.8
+  },
+  "hash": "bdc675990295",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Assen",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+  }
+ },
+ {
   "id": "evt_e9d70aea7942c2",
   "slug": "ella-her-man-makkum-2026-10-24",
   "title": "Ella & Her Man",
@@ -25355,7 +25135,7 @@
   },
   "hash": "9f699d183b97",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -25363,7 +25143,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
   }
  },
  {
@@ -25467,6 +25247,56 @@
   }
  },
  {
+  "id": "evt_1632937a1c8252",
+  "slug": "concert-vriendenkring-schoonloo-2026-10-25",
+  "title": "Concert Vriendenkring",
+  "occurrences": [
+   {
+    "date": "2026-10-25",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Schoonloo",
+   "city": "Schoonloo",
+   "lat": 52.9044,
+   "lon": 6.7003
+  },
+  "price": "Zie organisator",
+  "url": "https://schoonloo.com/het-dorp/boerhoorn/concert-vriendenkring",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://schoonloo.com/het-dorp/boerhoorn/concert-vriendenkring",
+    "host": "schoonloo.com",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "d4d45cf6003a",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/20190820_Iberenplas.jpg/1280px-20190820_Iberenplas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Schoonloo",
+   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190820_Iberenplas.jpg"
+  }
+ },
+ {
   "id": "evt_606ba7b7c6d881",
   "slug": "ernst-bobbie-en-de-rest-3-13-30-uur-stadskanaal-2026-10-25",
   "title": "Ernst, Bobbie en de Rest (3+) | 13:30 uur",
@@ -25516,56 +25346,6 @@
    "license": "Public domain",
    "licenseUrl": null,
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theater_Geert_Teis_Stadskanaal.jpg"
-  }
- },
- {
-  "id": "evt_53e0fa2e012368",
-  "slug": "fortuna-sittard-fc-groningen-ten-boer-2026-10-25",
-  "title": "Fortuna Sittard-Fc Groningen",
-  "occurrences": [
-   {
-    "date": "2026-10-25",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Ten Boer",
-   "city": "Ten Boer",
-   "lat": 53.28333,
-   "lon": 6.68333
-  },
-  "price": "Zie organisator",
-  "url": "https://www.dorpshuistenboer.com",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.dorpshuistenboer.com",
-    "host": "dorpshuistenboer.com",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'fc'",
-   "confidence": 0.8
-  },
-  "hash": "0b5b3e9e6863",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Thesinge_kerk_Kerkstraat_7.JPG/1280px-Thesinge_kerk_Kerkstraat_7.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Ten Boer",
-   "credit": "Foto: Willemjans · CC BY-SA 3.0 nl · Wikimedia Commons",
-   "author": "Willemjans",
-   "license": "CC BY-SA 3.0 nl",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thesinge_kerk_Kerkstraat_7.JPG"
   }
  },
  {
@@ -26111,7 +25891,7 @@
   },
   "hash": "485a2652dba2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -26119,7 +25899,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
   }
  },
  {
@@ -27426,6 +27206,46 @@
   }
  },
  {
+  "id": "evt_25a19926eea543",
+  "slug": "agenda-de-veldhoek-koekangerveld-2026-10-26",
+  "title": "Agenda De Veldhoek",
+  "occurrences": [
+   {
+    "date": "2026-10-26",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Koekangerveld",
+   "city": "Koekangerveld",
+   "lat": 52.7158,
+   "lon": 6.3328
+  },
+  "price": "Zie organisator",
+  "url": "https://koekangerveld.com/clubs-organisaties/dorpshuis-de-veldhoek/agenda-de-veldhoek?week=2026-10-19",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://koekangerveld.com/clubs-organisaties/dorpshuis-de-veldhoek/agenda-de-veldhoek?week=2026-10-19",
+    "host": "koekangerveld.com",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "overig",
+  "kindLabel": "Overig",
+  "tags": [],
+  "classification": {
+   "method": "geen",
+   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+   "confidence": 0.2
+  },
+  "hash": "d424be83eaf4",
+  "image": null
+ },
+ {
   "id": "evt_ec5a55a6011b90",
   "slug": "beeldhouwen-maandag-groningen-2026-10-26",
   "title": "Beeldhouwen Maandag",
@@ -27514,15 +27334,15 @@
   },
   "hash": "d7b0f6c9e74b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/20151209_Spoordok_Musselkanaal.jpg/1280px-20151209_Spoordok_Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Musselkanaal.jpg/1280px-Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
    "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20151209_Spoordok_Musselkanaal.jpg"
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal.jpg"
   }
  },
  {
@@ -27718,15 +27538,15 @@
   },
   "hash": "a26ec7c01da5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Musselkanaal_IJzeren-Klap.JPG/1280px-Musselkanaal_IJzeren-Klap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/20151209_Spoordok_Musselkanaal.jpg/1280px-20151209_Spoordok_Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "H.P.Burger",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_IJzeren-Klap.JPG"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20151209_Spoordok_Musselkanaal.jpg"
   }
  },
  {
@@ -28270,15 +28090,15 @@
   },
   "hash": "aef4b03980ff",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Musselkanaal_IJzeren-Klap.JPG/1280px-Musselkanaal_IJzeren-Klap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
+   "credit": "Foto: H.P.Burger · CC BY-SA 3.0 · Wikimedia Commons",
    "author": "H.P.Burger",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_IJzeren-Klap.JPG"
   }
  },
  {
@@ -28974,15 +28794,15 @@
   },
   "hash": "bd00e61b57db",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Evert Mouw",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
+   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
+   "author": "H.P.Burger",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
   }
  },
  {
@@ -29174,7 +28994,7 @@
   },
   "hash": "9e4c78a0e2d1",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -29182,7 +29002,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
   }
  },
  {
@@ -30076,7 +29896,7 @@
   },
   "hash": "0587551cf31e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
@@ -30084,7 +29904,7 @@
    "author": "Evert Mouw",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
   }
  },
  {
@@ -30176,15 +29996,15 @@
   },
   "hash": "24cfb8fced19",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "jhut1995",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
   }
  },
  {
@@ -30294,59 +30114,6 @@
   }
  },
  {
-  "id": "evt_005adab7daa574",
-  "slug": "het-gouden-buitenhof-verjaardagsweekend-assen-2026-10-30",
-  "title": "Het Gouden Buitenhof Verjaardagsweekend",
-  "occurrences": [
-   {
-    "date": "2026-10-30",
-    "endDate": "2026-11-01",
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": null,
-   "lon": null
-  },
-  "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/nl/events/het-gouden-buitenhof-verjaardagsweekend",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events/het-gouden-buitenhof-verjaardagsweekend",
-    "host": "debontewever.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
-  "tags": [
-   "buiten",
-   "meerdaags"
-  ],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'feest' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "fe781077b3b3",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
-  }
- },
- {
   "id": "evt_ed5445933855b4",
   "slug": "junkyardrace-assen-2026-10-30",
   "title": "Junkyardrace",
@@ -30385,7 +30152,7 @@
   },
   "hash": "306e26bf0442",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -30393,7 +30160,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -32014,15 +31781,15 @@
   },
   "hash": "698659fd0144",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -32923,7 +32690,7 @@
   },
   "hash": "e7f5c433db2d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -32931,7 +32698,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
   }
  },
  {
@@ -33579,7 +33346,7 @@
   },
   "hash": "92830b6e2bbf",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -33587,7 +33354,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
   }
  },
  {
@@ -34336,6 +34103,58 @@
    "license": "Copyrighted free use",
    "licenseUrl": null,
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortbourtange.jpg"
+  }
+ },
+ {
+  "id": "evt_ec8187e8b987b2",
+  "slug": "sportclub-olympia-heeft-open-dag-in-de-goorns-gieten-gasselternijveen-2026-10-31",
+  "title": "Sportclub Olympia heeft Open Dag in de Goorns Gieten",
+  "occurrences": [
+   {
+    "date": "2026-10-31",
+    "endDate": null,
+    "startTime": "11:00",
+    "endTime": "15:00"
+   }
+  ],
+  "venue": {
+   "name": "Gasselternijveen",
+   "city": "Gasselternijveen",
+   "lat": 52.9867,
+   "lon": 6.8472
+  },
+  "price": "Gratis",
+  "url": "https://gasselternijveen-online.nl/event/open-dag-in-de-goorns-gieten/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://gasselternijveen-online.nl/event/open-dag-in-de-goorns-gieten/",
+    "host": "gasselternijveen-online.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "overig",
+  "kindLabel": "Overig",
+  "tags": [
+   "gratis"
+  ],
+  "classification": {
+   "method": "geen",
+   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+   "confidence": 0.2
+  },
+  "hash": "e47e32c8823a",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/20170313_de_Hunze_bij_Gasselternijveen.jpg/1280px-20170313_de_Hunze_bij_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Gasselternijveen",
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20170313_de_Hunze_bij_Gasselternijveen.jpg"
   }
  },
  {
@@ -35631,58 +35450,6 @@
   }
  },
  {
-  "id": "evt_57a7958e8bfe18",
-  "slug": "het-gouden-buitenhof-verjaardagsweekend-assen-2026-11-01",
-  "title": "Het Gouden Buitenhof Verjaardagsweekend",
-  "occurrences": [
-   {
-    "date": "2026-11-01",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/nl/events/het-gouden-buitenhof-verjaardagsweekend",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events/het-gouden-buitenhof-verjaardagsweekend",
-    "host": "debontewever.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
-  "tags": [
-   "buiten"
-  ],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'feest' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "ae47ad138e45",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
-  }
- },
- {
   "id": "evt_680b5b7fe3ce98",
   "slug": "huiskamerpodium-sleen-en-omgeving-sleen-2026-11-01",
   "title": "Huiskamerpodium Sleen en omgeving",
@@ -35771,7 +35538,7 @@
   },
   "hash": "86bf88fe035f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -35779,7 +35546,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
   }
  },
  {
@@ -36023,15 +35790,15 @@
   },
   "hash": "b350e3f21038",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "jhut1995",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
   }
  },
  {
@@ -36123,7 +35890,7 @@
   },
   "hash": "1800667ac72c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -36131,7 +35898,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -37561,15 +37328,15 @@
   },
   "hash": "33df21285509",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Musselkanaal.jpg/1280px-Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal.jpg"
+   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Evert Mouw",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
   }
  },
  {
@@ -38093,15 +37860,15 @@
   },
   "hash": "8c2d98c9d3cc",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/20151209_Spoordok_Musselkanaal.jpg/1280px-20151209_Spoordok_Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Musselkanaal.jpg/1280px-Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
    "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20151209_Spoordok_Musselkanaal.jpg"
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal.jpg"
   }
  },
  {
@@ -38692,15 +38459,15 @@
   },
   "hash": "a6a36dbbb9b9",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -38954,6 +38721,56 @@
   }
  },
  {
+  "id": "evt_86f94944051e95",
+  "slug": "deel-activiteit-musselkanaal-2026-11-05",
+  "title": "Deel activiteit",
+  "occurrences": [
+   {
+    "date": "2026-11-05",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Musselkanaal",
+   "city": "Musselkanaal",
+   "lat": 52.9292,
+   "lon": 7.0153
+  },
+  "price": "Zie organisator",
+  "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-11-05/bouw-mee-aan-onze-foto-expositie",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-11-05/bouw-mee-aan-onze-foto-expositie",
+    "host": "levendigmusselkanaal.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "trefwoord 'expositie' op de pagina van de organisator",
+   "confidence": 0.65
+  },
+  "hash": "e11990573d22",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/20151209_Spoordok_Musselkanaal.jpg/1280px-20151209_Spoordok_Musselkanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Musselkanaal",
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20151209_Spoordok_Musselkanaal.jpg"
+  }
+ },
+ {
   "id": "evt_1eadc4ef058f20",
   "slug": "high-tea-s-in-november-joure-2026-11-05",
   "title": "High tea’s in november",
@@ -39038,9 +38855,9 @@
   "kindLabel": "Muziek",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website simplon.nl",
-   "confidence": 0.6
+   "method": "organisator",
+   "reason": "trefwoord 'band' op de pagina van de organisator",
+   "confidence": 0.65
   },
   "hash": "07bc244e268f",
   "image": {
@@ -39482,9 +39299,9 @@
   "kindLabel": "Theater en comedy",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website theaterroden.nl",
-   "confidence": 0.6
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
   },
   "hash": "e11a150509c1",
   "image": {
@@ -39588,7 +39405,7 @@
   },
   "hash": "00c7c4b9e111",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -39596,7 +39413,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
   }
  },
  {
@@ -39634,9 +39451,9 @@
    "meerdaags"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website kunstencentrumk38.nl",
-   "confidence": 0.6
+   "method": "organisator",
+   "reason": "trefwoord 'expositie' op de pagina van de organisator",
+   "confidence": 0.65
   },
   "hash": "d0942fe7c0fa",
   "image": {
@@ -39649,6 +39466,56 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roden,_straatzicht_Kanaalstraat-Julianaplein_foto3_2015-05-10_17.03.jpg"
+  }
+ },
+ {
+  "id": "evt_f9565514eeca84",
+  "slug": "deel-activiteit-musselkanaal-2026-11-06",
+  "title": "Deel activiteit",
+  "occurrences": [
+   {
+    "date": "2026-11-06",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Musselkanaal",
+   "city": "Musselkanaal",
+   "lat": 52.9292,
+   "lon": 7.0153
+  },
+  "price": "Zie organisator",
+  "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-11-06/bouw-mee-aan-onze-foto-expositie",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-11-06/bouw-mee-aan-onze-foto-expositie",
+    "host": "levendigmusselkanaal.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
+  "tags": [],
+  "classification": {
+   "method": "organisator",
+   "reason": "trefwoord 'expositie' op de pagina van de organisator",
+   "confidence": 0.65
+  },
+  "hash": "c6bda20412e7",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Musselkanaal_IJzeren-Klap.JPG/1280px-Musselkanaal_IJzeren-Klap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Musselkanaal",
+   "credit": "Foto: H.P.Burger · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "H.P.Burger",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_IJzeren-Klap.JPG"
   }
  },
  {
@@ -39984,15 +39851,15 @@
     "seenAt": "2026-10-15"
    }
   ],
-  "kind": "overig",
-  "kindLabel": "Overig",
+  "kind": "lezing",
+  "kindLabel": "Lezing en workshop",
   "tags": [],
   "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
+   "method": "organisator",
+   "reason": "trefwoord 'informatie' op de pagina van de organisator",
+   "confidence": 0.65
   },
-  "hash": "3f5344d998fa",
+  "hash": "f60a6eb915a1",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Ysbrechtum%2C_kerk_RM39852_foto8_2011-04-26_10.05.jpg/1280px-Ysbrechtum%2C_kerk_RM39852_foto8_2011-04-26_10.05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -40306,6 +40173,56 @@
   }
  },
  {
+  "id": "evt_3e9df58a94a12d",
+  "slug": "greppeltocht-ferwerd-2026-11-06",
+  "title": "Greppeltocht",
+  "occurrences": [
+   {
+    "date": "2026-11-06",
+    "endDate": null,
+    "startTime": "19:30",
+    "endTime": "23:59"
+   }
+  ],
+  "venue": {
+   "name": "’t Hoekje",
+   "city": "Ferwerd",
+   "lat": 53.3378,
+   "lon": 5.8247
+  },
+  "price": "Zie organisator",
+  "url": "https://ferwertonline.nl/evenement/greppeltocht/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://ferwertonline.nl/evenement/greppeltocht/",
+    "host": "ferwertonline.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "overig",
+  "kindLabel": "Overig",
+  "tags": [],
+  "classification": {
+   "method": "geen",
+   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+   "confidence": 0.2
+  },
+  "hash": "026652988725",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2023_Ferwert%2C_Burmaniafeart_by_It_Kleaster.jpg/1280px-2023_Ferwert%2C_Burmaniafeart_by_It_Kleaster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Ferwerd",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ferwert,_Burmaniafeart_by_It_Kleaster.jpg"
+  }
+ },
+ {
   "id": "evt_5aff3aca7519ac",
   "slug": "lezing-mathijs-deen-franeker-2026-11-06",
   "title": "Lezing Mathijs Deen",
@@ -40540,9 +40457,9 @@
   "kindLabel": "Theater en comedy",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website a-theater.nl",
-   "confidence": 0.6
+   "method": "organisator",
+   "reason": "trefwoord 'theater' op de pagina van de organisator",
+   "confidence": 0.65
   },
   "hash": "4aabc7de2da4",
   "image": {
@@ -40740,9 +40657,9 @@
   "kindLabel": "Theater en comedy",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website schouwburgogterop.nl",
-   "confidence": 0.6
+   "method": "organisator",
+   "reason": "de organisator noemt het een TheaterEvent",
+   "confidence": 0.75
   },
   "hash": "d968ed64cca7",
   "image": {
@@ -41088,7 +41005,7 @@
   },
   "hash": "643849b690a3",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -41096,7 +41013,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
   }
  },
  {
@@ -41388,7 +41305,7 @@
   },
   "hash": "a1f9d1dcb7d2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -41396,7 +41313,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
   }
  },
  {
@@ -43660,7 +43577,7 @@
   },
   "hash": "d12944918b81",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -43668,7 +43585,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -44112,15 +44029,15 @@
   },
   "hash": "02dccef2ac79",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -44162,15 +44079,15 @@
   },
   "hash": "984e657e5709",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "jhut1995",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
   }
  },
  {
@@ -45271,15 +45188,15 @@
   },
   "hash": "2a55035b188c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/20170313_de_Hunze_bij_Gasselternijveen.jpg/1280px-20170313_de_Hunze_bij_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Molen_de_Juffer_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Gasselternijveen",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20170313_de_Hunze_bij_Gasselternijveen.jpg"
+   "credit": "Foto: Gouwenaar at Dutch Wikipedia · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar at Dutch Wikipedia",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molen_de_Juffer_Gasselternijveen.jpg"
   }
  },
  {
@@ -46112,6 +46029,108 @@
   }
  },
  {
+  "id": "evt_d301004d452951",
+  "slug": "dutch-open-dance-2026-assen-2026-11-12",
+  "title": "Dutch Open Dance 2026",
+  "occurrences": [
+   {
+    "date": "2026-11-12",
+    "endDate": "2026-11-15",
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Plaza",
+   "city": "Assen",
+   "lat": null,
+   "lon": null
+  },
+  "price": "Zie organisator",
+  "url": "https://www.debontewever.nl/nl/events/dutch-open-dance",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.debontewever.nl/nl/events/dutch-open-dance",
+    "host": "debontewever.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "sport",
+  "kindLabel": "Sport",
+  "tags": [
+   "meerdaags"
+  ],
+  "classification": {
+   "method": "locatie",
+   "reason": "website debontewever.nl",
+   "confidence": 0.6
+  },
+  "hash": "0bc01bdbe043",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Assen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+  }
+ },
+ {
+  "id": "evt_7e34789bb5c31a",
+  "slug": "meeting-pontjebestuurders-40-man-de-wilgen-2026-11-12",
+  "title": "Meeting Pontjebestuurders 40 man",
+  "occurrences": [
+   {
+    "date": "2026-11-12",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Watersportvereniging Drachten-Veenhoop",
+   "city": "De Wilgen",
+   "lat": 53.1014701,
+   "lon": 6.0435696
+  },
+  "price": "Zie organisator",
+  "url": "https://www.wsvdrachtenveenhoop.nl/event/1894",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.wsvdrachtenveenhoop.nl/event/1894",
+    "host": "wsvdrachtenveenhoop.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "sport",
+  "kindLabel": "Sport",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website wsvdrachtenveenhoop.nl",
+   "confidence": 0.6
+  },
+  "hash": "ca5f3d05eff5",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2023_De_Wylgen%2C_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_%281%29.jpg/1280px-2023_De_Wylgen%2C_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "De Wilgen",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_(1).jpg"
+  }
+ },
+ {
   "id": "evt_08a11142f66e42",
   "slug": "silbersee-roden-2026-11-12",
   "title": "Silbersee",
@@ -46297,7 +46316,7 @@
   },
   "hash": "5e3bc1cdda3d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -46305,7 +46324,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
   }
  },
  {
@@ -46799,7 +46818,7 @@
   },
   "hash": "6e4ee2907be3",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -46807,7 +46826,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
   }
  },
  {
@@ -47199,15 +47218,15 @@
   },
   "hash": "e8d600248870",
   "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Molen_de_Juffer_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/20140224Talud_voormalige_spoorbaan_Assen-Stadskanaal.jpg/1280px-20140224Talud_voormalige_spoorbaan_Assen-Stadskanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Gasselternijveen",
-   "credit": "Foto: Gouwenaar at Dutch Wikipedia · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar at Dutch Wikipedia",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molen_de_Juffer_Gasselternijveen.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20140224Talud_voormalige_spoorbaan_Assen-Stadskanaal.jpg"
   }
  },
  {
@@ -47731,15 +47750,15 @@
   },
   "hash": "64f1ed0fb3db",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2023_De_Wylgen%2C_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_%281%29.jpg/1280px-2023_De_Wylgen%2C_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Drachtster_Heawei_98%2C_De_Wilgen.JPG/1280px-Drachtster_Heawei_98%2C_De_Wilgen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "De Wilgen",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
+   "credit": "Foto: Baykedevries · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Baykedevries",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drachtster_Heawei_98,_De_Wilgen.JPG"
   }
  },
  {
@@ -48035,48 +48054,6 @@
   }
  },
  {
-  "id": "evt_8a999503a38b7a",
-  "slug": "in-tocht-sinterklaas-koekangerveld-2026-11-14",
-  "title": "In tocht Sinterklaas",
-  "occurrences": [
-   {
-    "date": "2026-11-14",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Koekangerveld",
-   "city": "Koekangerveld",
-   "lat": 52.7158,
-   "lon": 6.3328
-  },
-  "price": "Zie organisator",
-  "url": "https://koekangerveld.com",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://koekangerveld.com",
-    "host": "koekangerveld.com",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
-  "tags": [
-   "kinderen"
-  ],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'sinterklaas'",
-   "confidence": 0.8
-  },
-  "hash": "ca48a4dae6e2",
-  "image": null
- },
- {
   "id": "evt_476c6d479bd17f",
   "slug": "intocht-sinterklaas-uithuizermeeden-2026-11-14",
   "title": "Intocht Sinterklaas",
@@ -48127,6 +48104,48 @@
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meedstermaar_(2).jpg"
   }
+ },
+ {
+  "id": "evt_a638bc61da902b",
+  "slug": "intocht-sinterklaas-koekangerveld-2026-11-14",
+  "title": "Intocht Sinterklaas",
+  "occurrences": [
+   {
+    "date": "2026-11-14",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Koekangerveld",
+   "city": "Koekangerveld",
+   "lat": 52.7158,
+   "lon": 6.3328
+  },
+  "price": "Zie organisator",
+  "url": "https://koekangerveld.com",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://koekangerveld.com",
+    "host": "koekangerveld.com",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "feest",
+  "kindLabel": "Feest en kermis",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'sinterklaas'",
+   "confidence": 0.8
+  },
+  "hash": "74f5c04d3b08",
+  "image": null
  },
  {
   "id": "evt_f71980e0819d95",
@@ -48421,15 +48440,15 @@
   },
   "hash": "1d9f7368f652",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "jhut1995",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
   }
  },
  {
@@ -49698,6 +49717,58 @@
   }
  },
  {
+  "id": "evt_1819ef1b7b4f8e",
+  "slug": "intocht-sinterklaas-ferwerd-2026-11-14",
+  "title": "Intocht Sinterklaas",
+  "occurrences": [
+   {
+    "date": "2026-11-14",
+    "endDate": null,
+    "startTime": "15:30",
+    "endTime": "19:00"
+   }
+  ],
+  "venue": {
+   "name": "Vrijhof",
+   "city": "Ferwerd",
+   "lat": 53.3378,
+   "lon": 5.8247
+  },
+  "price": "Zie organisator",
+  "url": "https://ferwertonline.nl/evenement/intocht-sinterklaas/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://ferwertonline.nl/evenement/intocht-sinterklaas/",
+    "host": "ferwertonline.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "feest",
+  "kindLabel": "Feest en kermis",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'sinterklaas'",
+   "confidence": 0.8
+  },
+  "hash": "ff9435aa688d",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Vrijhof_Ferwerd.jpg/1280px-Vrijhof_Ferwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Vrijhof",
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vrijhof_Ferwerd.jpg"
+  }
+ },
+ {
   "id": "evt_4245b9abffb17f",
   "slug": "de-prikkelarme-ontmoeting-met-sinterklaas-oosterwolde-2026-11-14",
   "title": "De prikkelarme ontmoeting met Sinterklaas",
@@ -50378,13 +50449,13 @@
    "lon": 6.5428525
   },
   "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/en/business/conferences-and-events/dutch-open-dance",
+  "url": "https://dansinternationaal.nl/",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://www.debontewever.nl/en/business/conferences-and-events/dutch-open-dance",
-    "host": "debontewever.nl",
+    "url": "https://dansinternationaal.nl/",
+    "host": "dansinternationaal.nl",
     "seenAt": "2026-10-15"
    }
   ],
@@ -50393,10 +50464,10 @@
   "tags": [],
   "classification": {
    "method": "locatie",
-   "reason": "website debontewever.nl",
+   "reason": "zaal De Bonte Wever",
    "confidence": 0.6
   },
-  "hash": "e9393faf61ad",
+  "hash": "9d322ac5b9d6",
   "image": {
    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
@@ -50448,7 +50519,7 @@
   },
   "hash": "084357cba9ca",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -50456,7 +50527,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -50660,6 +50731,58 @@
   }
  },
  {
+  "id": "evt_baf19a665c8d21",
+  "slug": "kom-en-beleef-de-magie-van-sinterklaas-steenwijk-2026-11-15",
+  "title": "Kom en beleef de magie van Sinterklaas!",
+  "occurrences": [
+   {
+    "date": "2026-11-15",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Luxor",
+   "city": "Steenwijk",
+   "lat": 52.7880126,
+   "lon": 6.1176104
+  },
+  "price": "Zie organisator",
+  "url": "https://www.luxor.nl/specials-events/peuter-kleuter",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.luxor.nl/specials-events/peuter-kleuter",
+    "host": "luxor.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "feest",
+  "kindLabel": "Feest en kermis",
+  "tags": [
+   "kinderen"
+  ],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'sinterklaas'",
+   "confidence": 0.8
+  },
+  "hash": "fb72c8aaba06",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Steenwijk_centrum_van_boven.jpg/1280px-Steenwijk_centrum_van_boven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Steenwijk",
+   "credit": "Foto: Erjon at Dutch Wikipedia ( Original text: Erjon ) · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Erjon at Dutch Wikipedia ( Original text: Erjon )",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steenwijk_centrum_van_boven.jpg"
+  }
+ },
+ {
   "id": "evt_c590d4119a6fd0",
   "slug": "kunstwandeling-diever-2026-11-15",
   "title": "Kunstwandeling",
@@ -50759,6 +50882,56 @@
    "license": "CC BY 2.0",
    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ruiten_Aa_-_Wessinghuizen.jpg"
+  }
+ },
+ {
+  "id": "evt_32048b83c9cf72",
+  "slug": "plaza-12-assen-2026-11-15",
+  "title": "Plaza 12",
+  "occurrences": [
+   {
+    "date": "2026-11-15",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Bonte Wever",
+   "city": "Assen",
+   "lat": 52.9840952,
+   "lon": 6.5428525
+  },
+  "price": "Zie organisator",
+  "url": "https://www.debontewever.nl/nl/events/dutch-open-dance",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.debontewever.nl/nl/events/dutch-open-dance",
+    "host": "debontewever.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "sport",
+  "kindLabel": "Sport",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website debontewever.nl",
+   "confidence": 0.6
+  },
+  "hash": "a9d45ef23e49",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "De Bonte Wever",
+   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
+   "author": "Ronn",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
   }
  },
  {
@@ -51849,15 +52022,15 @@
   },
   "hash": "5b4ca857439d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Drachtster_Heawei_98%2C_De_Wilgen.JPG/1280px-Drachtster_Heawei_98%2C_De_Wilgen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg/1280px-2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "De Wilgen",
-   "credit": "Foto: Baykedevries · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Baykedevries",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drachtster_Heawei_98,_De_Wilgen.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg"
   }
  },
  {
@@ -53003,7 +53176,7 @@
   },
   "hash": "93c9aea9eddc",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/20140224Talud_voormalige_spoorbaan_Assen-Stadskanaal.jpg/1280px-20140224Talud_voormalige_spoorbaan_Assen-Stadskanaal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/20160411_voormalige_burgemeestersvilla1_Gasselternijveen.jpg/1280px-20160411_voormalige_burgemeestersvilla1_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Gasselternijveen",
@@ -53011,7 +53184,7 @@
    "author": "Gouwenaar",
    "license": "CC0",
    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20140224Talud_voormalige_spoorbaan_Assen-Stadskanaal.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20160411_voormalige_burgemeestersvilla1_Gasselternijveen.jpg"
   }
  },
  {
@@ -54593,7 +54766,7 @@
   },
   "hash": "596408e0bc2c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2023_Ferwert%2C_Burmaniafeart_by_It_Kleaster.jpg/1280px-2023_Ferwert%2C_Burmaniafeart_by_It_Kleaster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/2023_Ferwert%2C_Haadstrjitte_-_Havenstrjitte.jpg/1280px-2023_Ferwert%2C_Haadstrjitte_-_Havenstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ferwerd",
@@ -54601,7 +54774,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ferwert,_Burmaniafeart_by_It_Kleaster.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ferwert,_Haadstrjitte_-_Havenstrjitte.jpg"
   }
  },
  {
@@ -54942,15 +55115,15 @@
   },
   "hash": "928606abb0be",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
   }
  },
  {
@@ -54992,7 +55165,7 @@
   },
   "hash": "022ee616cca1",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -55000,7 +55173,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -55606,6 +55779,56 @@
   }
  },
  {
+  "id": "evt_6f27b0cb3ae8a9",
+  "slug": "ellemieke-meijers-u-heeft-ergens-last-van-leeuwarden-2026-11-21",
+  "title": "Ellemieke Meijers – U heeft ergens last van",
+  "occurrences": [
+   {
+    "date": "2026-11-21",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Leeuwarden",
+   "city": "Leeuwarden",
+   "lat": 53.2012,
+   "lon": 5.7999
+  },
+  "price": "Zie organisator",
+  "url": "https://explorethenorth.nl/event/ellemieke-meijers-u-heeft-ergens-last-van/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://explorethenorth.nl/event/ellemieke-meijers-u-heeft-ergens-last-van/",
+    "host": "explorethenorth.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "festival",
+  "kindLabel": "Festival",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website explorethenorth.nl",
+   "confidence": 0.6
+  },
+  "hash": "d1229de55377",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Waag%2C_Leeuwarden_1614.jpg/1280px-Waag%2C_Leeuwarden_1614.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Leeuwarden",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waag,_Leeuwarden_1614.jpg"
+  }
+ },
+ {
   "id": "evt_b9337ae227e412",
   "slug": "ellemieke-meijers-willemijn-van-de-walle-maria-magdalena-de-cort-en-lj-de-brouwe",
   "title": "Ellemieke Meijers, Willemijn van de Walle, Maria Magdalena de Cort en lj de brouwer – De Verwonderkamer",
@@ -55846,7 +56069,7 @@
   },
   "hash": "c284849986d4",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -55854,7 +56077,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
   }
  },
  {
@@ -58211,7 +58434,7 @@
   },
   "hash": "5ef64d9b05ce",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/20160411_voormalige_burgemeestersvilla1_Gasselternijveen.jpg/1280px-20160411_voormalige_burgemeestersvilla1_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/20160411_voormalige_burgemeestersvilla2_Gasselternijveen.jpg/1280px-20160411_voormalige_burgemeestersvilla2_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Gasselternijveen",
@@ -58219,7 +58442,7 @@
    "author": "Gouwenaar",
    "license": "CC0",
    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20160411_voormalige_burgemeestersvilla1_Gasselternijveen.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20160411_voormalige_burgemeestersvilla2_Gasselternijveen.jpg"
   }
  },
  {
@@ -59909,9 +60132,9 @@
   }
  },
  {
-  "id": "evt_1a419a62070382",
-  "slug": "fixy-clubnight-w-ineffekt-and-more-groningen-2026-11-21",
-  "title": "FIXY Clubnight w/ Ineffekt and more",
+  "id": "evt_f69b9a636f716b",
+  "slug": "fixy-clubnight-w-ineffekt-2cp-and-more-groningen-2026-11-21",
+  "title": "FIXY Clubnight w/ Ineffekt, 2cp and more",
   "occurrences": [
    {
     "date": "2026-11-21",
@@ -59947,7 +60170,7 @@
    "reason": "de organisator noemt het een MusicEvent",
    "confidence": 0.75
   },
-  "hash": "7895d4e74d04",
+  "hash": "a12a7dc1e045",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Forum_in_Groningen.jpg/1280px-Forum_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -59979,12 +60202,12 @@
    "lon": 5.7999
   },
   "price": "Zie organisator",
-  "url": "https://explorethenorth.nl/event/aminata-soumare-hannan-van-rooij-als-een-zoutpilaar/",
+  "url": "https://explorethenorth.nl/fy/event/aminata-soumare-hannan-van-rooij-als-een-zoutpilaar/",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://explorethenorth.nl/event/aminata-soumare-hannan-van-rooij-als-een-zoutpilaar/",
+    "url": "https://explorethenorth.nl/fy/event/aminata-soumare-hannan-van-rooij-als-een-zoutpilaar/",
     "host": "explorethenorth.nl",
     "seenAt": "2026-10-15"
    }
@@ -59997,7 +60220,7 @@
    "reason": "website explorethenorth.nl",
    "confidence": 0.6
   },
-  "hash": "99916d4393bf",
+  "hash": "2c63771cc36d",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Waag%2C_Leeuwarden_1614.jpg/1280px-Waag%2C_Leeuwarden_1614.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -60179,12 +60402,12 @@
    "lon": 5.7999
   },
   "price": "Zie organisator",
-  "url": "https://explorethenorth.nl/event/de-rustruimte/",
+  "url": "https://explorethenorth.nl/fy/event/de-rustruimte/",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://explorethenorth.nl/event/de-rustruimte/",
+    "url": "https://explorethenorth.nl/fy/event/de-rustruimte/",
     "host": "explorethenorth.nl",
     "seenAt": "2026-10-15"
    }
@@ -60197,7 +60420,7 @@
    "reason": "website explorethenorth.nl",
    "confidence": 0.6
   },
-  "hash": "9a12a2cc91b6",
+  "hash": "7f656b988404",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Waag%2C_Leeuwarden_1614.jpg/1280px-Waag%2C_Leeuwarden_1614.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -60279,12 +60502,12 @@
    "lon": 5.7999
   },
   "price": "Zie organisator",
-  "url": "https://explorethenorth.nl/event/een-audio-ervaring-over-de-laatste-ronde-van-de-winkel-op-wielen/",
+  "url": "https://explorethenorth.nl/fy/event/in-audio-underfining-oer-de-leste-ronde-fan-e-winkel-op-tsjillen/",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://explorethenorth.nl/event/een-audio-ervaring-over-de-laatste-ronde-van-de-winkel-op-wielen/",
+    "url": "https://explorethenorth.nl/fy/event/in-audio-underfining-oer-de-leste-ronde-fan-e-winkel-op-tsjillen/",
     "host": "explorethenorth.nl",
     "seenAt": "2026-10-15"
    }
@@ -60297,7 +60520,7 @@
    "reason": "website explorethenorth.nl",
    "confidence": 0.6
   },
-  "hash": "1a68c71315f9",
+  "hash": "8d4f84dcfbf1",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Waag%2C_Leeuwarden_1614.jpg/1280px-Waag%2C_Leeuwarden_1614.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -61110,6 +61333,56 @@
   }
  },
  {
+  "id": "evt_99295f763f17e9",
+  "slug": "vincent-swierstra-de-magier-leeuwarden-2026-11-22",
+  "title": "Vincent Swierstra – De Magiër",
+  "occurrences": [
+   {
+    "date": "2026-11-22",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Leeuwarden",
+   "city": "Leeuwarden",
+   "lat": 53.2012,
+   "lon": 5.7999
+  },
+  "price": "Zie organisator",
+  "url": "https://explorethenorth.nl/fy/event/vincent-swierstra-de-magier/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://explorethenorth.nl/fy/event/vincent-swierstra-de-magier/",
+    "host": "explorethenorth.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "festival",
+  "kindLabel": "Festival",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website explorethenorth.nl",
+   "confidence": 0.6
+  },
+  "hash": "172869e572e6",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Waag%2C_Leeuwarden_1614.jpg/1280px-Waag%2C_Leeuwarden_1614.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Leeuwarden",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waag,_Leeuwarden_1614.jpg"
+  }
+ },
+ {
   "id": "evt_04cd63c7d00045",
   "slug": "sinterklaasfeest-roswinkel-2026-11-22",
   "title": "Sinterklaasfeest",
@@ -61542,7 +61815,7 @@
   },
   "hash": "67169b3698f1",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -61550,7 +61823,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
   }
  },
  {
@@ -62710,7 +62983,7 @@
   },
   "hash": "b5779cbe3b32",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/20160411_voormalige_burgemeestersvilla2_Gasselternijveen.jpg/1280px-20160411_voormalige_burgemeestersvilla2_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/20160411_voormalige_burgemeestersvilla3_Gasselternijveen.jpg/1280px-20160411_voormalige_burgemeestersvilla3_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Gasselternijveen",
@@ -62718,7 +62991,7 @@
    "author": "Gouwenaar",
    "license": "CC0",
    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20160411_voormalige_burgemeestersvilla2_Gasselternijveen.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20160411_voormalige_burgemeestersvilla3_Gasselternijveen.jpg"
   }
  },
  {
@@ -63109,6 +63382,56 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waag,_Leeuwarden_1614.jpg"
+  }
+ },
+ {
+  "id": "evt_ca2ac6f4a727ee",
+  "slug": "deuren-open-20-00-aanvang-20-30-assen-2026-11-27",
+  "title": "Deuren open 20:00, aanvang 20:30",
+  "occurrences": [
+   {
+    "date": "2026-11-27",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Bonte Wever",
+   "city": "Assen",
+   "lat": 52.9840952,
+   "lon": 6.5428525
+  },
+  "price": "Zie organisator",
+  "url": "https://www.debontewever.nl/nl/events/schlagerparade",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.debontewever.nl/nl/events/schlagerparade",
+    "host": "debontewever.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "sport",
+  "kindLabel": "Sport",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website debontewever.nl",
+   "confidence": 0.6
+  },
+  "hash": "f9d47c5067a7",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "De Bonte Wever",
+   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
+   "author": "Ronn",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
   }
  },
  {
@@ -63893,15 +64216,15 @@
   },
   "hash": "6bb53267d31d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/2023_Ferwert%2C_Haadstrjitte_-_Havenstrjitte.jpg/1280px-2023_Ferwert%2C_Haadstrjitte_-_Havenstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland%2C_Ferwerd.jpeg/1280px-Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland%2C_Ferwerd.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ferwerd",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ferwert,_Haadstrjitte_-_Havenstrjitte.jpg"
+   "credit": "Foto: Andries Schoemaker / Gerrit Schoemaker / Cornelis Pronk / Abraham de Haen · Public domain · Wikimedia Commons",
+   "author": "Andries Schoemaker / Gerrit Schoemaker / Cornelis Pronk / Abraham de Haen",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland,_Ferwerd.jpeg"
   }
  },
  {
@@ -64849,15 +65172,15 @@
   },
   "hash": "edb3f3f5265e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "jhut1995",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
   }
  },
  {
@@ -65103,58 +65426,6 @@
    "alt": "Foto bij Vaartocht door Nationaal Park De Alde Feanen",
    "credit": "Foto: Delleboersterheide",
    "sourceUrl": "https://www.itfryskegea.nl/activiteiten/vaartocht-door-nationaal-park-de-alde-feanen-52/"
-  }
- },
- {
-  "id": "evt_cee500f41f2e7d",
-  "slug": "fixy-clubnight-groningen-2026-11-28",
-  "title": "FIXY Clubnight",
-  "occurrences": [
-   {
-    "date": "2026-11-28",
-    "endDate": "2026-11-29",
-    "startTime": "14:00",
-    "endTime": "04:00"
-   }
-  ],
-  "venue": {
-   "name": "FIXY",
-   "city": "Groningen",
-   "lat": 53.22222947,
-   "lon": 6.56334263
-  },
-  "price": "Zie organisator",
-  "url": "https://shop.weeztix.com/e7f8690b-737a-11f0-a9cb-7e126431635e/tickets?event=a2afa393-b778-41f8-b75a-19318af19b8b",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://shop.weeztix.com/e7f8690b-737a-11f0-a9cb-7e126431635e/tickets?event=a2afa393-b778-41f8-b75a-19318af19b8b",
-    "host": "shop.weeztix.com",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [
-   "meerdaags"
-  ],
-  "classification": {
-   "method": "organisator",
-   "reason": "de organisator noemt het een MusicEvent",
-   "confidence": 0.75
-  },
-  "hash": "7e8825c6cd5d",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Aletta_Jacobs_in_Groningen.jpg/1280px-Aletta_Jacobs_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Groningen",
-   "credit": "Foto: Ferdi Tuinman · CC BY 4.0 · Wikimedia Commons",
-   "author": "Ferdi Tuinman",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aletta_Jacobs_in_Groningen.jpg"
   }
  },
  {
@@ -65938,6 +66209,58 @@
   "image": null
  },
  {
+  "id": "evt_e9a8a616674127",
+  "slug": "fixy-clubnight-w-onid-deets-b2b-dilla-and-brybry-groningen-2026-11-28",
+  "title": "FIXY Clubnight w/ Onid, Deets B2B Dilla and brybry",
+  "occurrences": [
+   {
+    "date": "2026-11-28",
+    "endDate": "2026-11-29",
+    "startTime": "22:00",
+    "endTime": "04:00"
+   }
+  ],
+  "venue": {
+   "name": "FIXY",
+   "city": "Groningen",
+   "lat": 53.22222947,
+   "lon": 6.56334263
+  },
+  "price": "Zie organisator",
+  "url": "https://shop.weeztix.com/e7f8690b-737a-11f0-a9cb-7e126431635e/tickets?event=a2afa393-b778-41f8-b75a-19318af19b8b",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://shop.weeztix.com/e7f8690b-737a-11f0-a9cb-7e126431635e/tickets?event=a2afa393-b778-41f8-b75a-19318af19b8b",
+    "host": "shop.weeztix.com",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [
+   "meerdaags"
+  ],
+  "classification": {
+   "method": "organisator",
+   "reason": "de organisator noemt het een MusicEvent",
+   "confidence": 0.75
+  },
+  "hash": "1a2ae251ae6e",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Aletta_Jacobs_in_Groningen.jpg/1280px-Aletta_Jacobs_in_Groningen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plaats",
+   "alt": "Groningen",
+   "credit": "Foto: Ferdi Tuinman · CC BY 4.0 · Wikimedia Commons",
+   "author": "Ferdi Tuinman",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aletta_Jacobs_in_Groningen.jpg"
+  }
+ },
+ {
   "id": "evt_f5c279b5a6f4e0",
   "slug": "40-jaar-dienstverband-contact-anja-mulder-sloeproeiers-de-wilgen-2026-11-29",
   "title": "40 jaar dienstverband - Contact Anja Mulder (Sloeproeiers)",
@@ -65976,7 +66299,7 @@
   },
   "hash": "74212cb596ad",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg/1280px-2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/2023_De_Wylgen%2C_Drachtster_Heawei_11.jpg/1280px-2023_De_Wylgen%2C_Drachtster_Heawei_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "De Wilgen",
@@ -65984,7 +66307,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_Drachtster_Heawei_11.jpg"
   }
  },
  {
@@ -67131,7 +67454,7 @@
   },
   "hash": "3714c298854b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/2023_De_Wylgen%2C_Drachtster_Heawei_11.jpg/1280px-2023_De_Wylgen%2C_Drachtster_Heawei_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/2023_De_Wylgen%2C_Drachtster_Heawei_32.jpg/1280px-2023_De_Wylgen%2C_Drachtster_Heawei_32.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "De Wilgen",
@@ -67139,7 +67462,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_Drachtster_Heawei_11.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_Drachtster_Heawei_32.jpg"
   }
  },
  {
@@ -67686,7 +68009,7 @@
   },
   "hash": "0b7019a0729f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -67694,7 +68017,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -67930,7 +68253,7 @@
   },
   "hash": "7c26c3453e44",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -67938,7 +68261,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -69044,6 +69367,56 @@
   }
  },
  {
+  "id": "evt_b59b30c1be1006",
+  "slug": "plaza-3-assen-2026-12-06",
+  "title": "Plaza 3",
+  "occurrences": [
+   {
+    "date": "2026-12-06",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Bonte Wever",
+   "city": "Assen",
+   "lat": 52.9840952,
+   "lon": 6.5428525
+  },
+  "price": "Zie organisator",
+  "url": "https://www.debontewever.nl/nl/events/wk-line-dance",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://www.debontewever.nl/nl/events/wk-line-dance",
+    "host": "debontewever.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "sport",
+  "kindLabel": "Sport",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "website debontewever.nl",
+   "confidence": 0.6
+  },
+  "hash": "c5e8b8013935",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "De Bonte Wever",
+   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
+   "author": "Ronn",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
+  }
+ },
+ {
   "id": "evt_e3229e4b6a0036",
   "slug": "renate-v-d-veen-de-wilgen-2026-12-06",
   "title": "Renate v/d Veen",
@@ -69082,7 +69455,7 @@
   },
   "hash": "9085c3693c19",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/2023_De_Wylgen%2C_Drachtster_Heawei_32.jpg/1280px-2023_De_Wylgen%2C_Drachtster_Heawei_32.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/2023_De_Wylgen%2C_Drachtster_Heiwei_65_en_63.jpg/1280px-2023_De_Wylgen%2C_Drachtster_Heiwei_65_en_63.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "De Wilgen",
@@ -69090,57 +69463,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_Drachtster_Heawei_32.jpg"
-  }
- },
- {
-  "id": "evt_c6f3bae95efd88",
-  "slug": "wk-line-dance-assen-2026-12-06",
-  "title": "WK Line Dance",
-  "occurrences": [
-   {
-    "date": "2026-12-06",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/nl/events/wk-line-dance",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events/wk-line-dance",
-    "host": "debontewever.nl",
-    "seenAt": "2026-10-15"
-   }
-  ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'line dance'",
-   "confidence": 0.8
-  },
-  "hash": "1419a9912d54",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_Drachtster_Heiwei_65_en_63.jpg"
   }
  },
  {
@@ -70433,11 +70756,17 @@
     "url": "https://www.debontewever.nl/nl/events/4-daagse-muziekreis-met-dana-winner",
     "host": "debontewever.nl",
     "seenAt": "2026-10-15"
+   },
+   {
+    "type": "organisator",
+    "url": "https://www.debontewever.nl/en/business/conferences-and-events/4-day-music-trip-with-dana-winner",
+    "host": "debontewever.nl",
+    "seenAt": "2026-10-15"
    }
   ],
+  "tags": [],
   "kind": "muziek",
   "kindLabel": "Muziek",
-  "tags": [],
   "classification": {
    "method": "trefwoord",
    "reason": "trefwoord 'muziek'",
@@ -70937,15 +71266,15 @@
   },
   "hash": "81f0abf0427e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
   }
  },
  {
@@ -71191,7 +71520,7 @@
   },
   "hash": "e357e3d69840",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/20160411_voormalige_burgemeestersvilla3_Gasselternijveen.jpg/1280px-20160411_voormalige_burgemeestersvilla3_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/20170313_de_Hunze_bij_Gasselternijveen.jpg/1280px-20170313_de_Hunze_bij_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Gasselternijveen",
@@ -71199,7 +71528,7 @@
    "author": "Gouwenaar",
    "license": "CC0",
    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20160411_voormalige_burgemeestersvilla3_Gasselternijveen.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20170313_de_Hunze_bij_Gasselternijveen.jpg"
   }
  },
  {
@@ -73411,7 +73740,7 @@
   },
   "hash": "8e17a15e8b7a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -73419,7 +73748,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
   }
  },
  {
@@ -73511,7 +73840,7 @@
   },
   "hash": "efa5f54f5c26",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -73519,7 +73848,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
   }
  },
  {
@@ -74864,7 +75193,7 @@
   },
   "hash": "45bc2f91814f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/2023_De_Wylgen%2C_Drachtster_Heiwei_65_en_63.jpg/1280px-2023_De_Wylgen%2C_Drachtster_Heiwei_65_en_63.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2023_De_Wylgen%2C_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_%281%29.jpg/1280px-2023_De_Wylgen%2C_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "De Wilgen",
@@ -74872,7 +75201,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_Drachtster_Heiwei_65_en_63.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_(1).jpg"
   }
  },
  {
@@ -74964,15 +75293,15 @@
   },
   "hash": "75a00b28f12e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Steenwijk_centrum_van_boven.jpg/1280px-Steenwijk_centrum_van_boven.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/..and...action%21_%28Explore%29_%2849828878808%29.jpg/1280px-..and...action%21_%28Explore%29_%2849828878808%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Steenwijk",
-   "credit": "Foto: Erjon at Dutch Wikipedia ( Original text: Erjon ) · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Erjon at Dutch Wikipedia ( Original text: Erjon )",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steenwijk_centrum_van_boven.jpg"
+   "credit": "Foto: [●] wim goedhart · CC BY 2.0 · Wikimedia Commons",
+   "author": "[●] wim goedhart",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:..and...action!_(Explore)_(49828878808).jpg"
   }
  },
  {
@@ -75164,15 +75493,15 @@
   },
   "hash": "121fa8eba05e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/..and...action%21_%28Explore%29_%2849828878808%29.jpg/1280px-..and...action%21_%28Explore%29_%2849828878808%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/20170604_13_Steenwijk_-_Markt.jpg/1280px-20170604_13_Steenwijk_-_Markt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Steenwijk",
-   "credit": "Foto: [●] wim goedhart · CC BY 2.0 · Wikimedia Commons",
-   "author": "[●] wim goedhart",
+   "credit": "Foto: Sjaak Kempe · CC BY 2.0 · Wikimedia Commons",
+   "author": "Sjaak Kempe",
    "license": "CC BY 2.0",
    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:..and...action!_(Explore)_(49828878808).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20170604_13_Steenwijk_-_Markt.jpg"
   }
  },
  {
@@ -76001,15 +76330,15 @@
   },
   "hash": "e6a2fc0035a1",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "jhut1995",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
   }
  },
  {
@@ -76051,15 +76380,15 @@
   },
   "hash": "7ae121c0c3c4",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Musselkanaal_IJzeren-Klap.JPG/1280px-Musselkanaal_IJzeren-Klap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY-SA 3.0 · Wikimedia Commons",
+   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
    "author": "H.P.Burger",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_IJzeren-Klap.JPG"
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
   }
  },
  {
@@ -76080,13 +76409,13 @@
    "lat": 52.9840952,
    "lon": 6.5428525
   },
-  "price": "EUR 29.50",
-  "url": "https://www.debontewever.nl/nl/events/pink-floyd-project",
+  "price": "Zie organisator",
+  "url": "https://www.debontewever.nl/en/business/conferences-and-events/pink-floyd-project",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events/pink-floyd-project",
+    "url": "https://www.debontewever.nl/en/business/conferences-and-events/pink-floyd-project",
     "host": "debontewever.nl",
     "seenAt": "2026-10-15"
    }
@@ -76099,7 +76428,7 @@
    "reason": "website debontewever.nl",
    "confidence": 0.6
   },
-  "hash": "4db37f0e735d",
+  "hash": "b6b682f5cedc",
   "image": {
    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
@@ -76805,7 +77134,7 @@
   },
   "hash": "24132dc44f72",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -76813,7 +77142,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -77055,15 +77384,15 @@
   },
   "hash": "f2f9098503f9",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Ten_Boer%2C_ophaalbrug_bij_de_Wolddijk-Stadsweg_IMG_9043_2019-04-07_11.54.jpg/1280px-Ten_Boer%2C_ophaalbrug_bij_de_Wolddijk-Stadsweg_IMG_9043_2019-04-07_11.54.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Thesinge_kerk_Kerkstraat_7.JPG/1280px-Thesinge_kerk_Kerkstraat_7.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ten Boer",
-   "credit": "Foto: Michielverbeek · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Michielverbeek",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ten_Boer,_ophaalbrug_bij_de_Wolddijk-Stadsweg_IMG_9043_2019-04-07_11.54.jpg"
+   "credit": "Foto: Willemjans · CC BY-SA 3.0 nl · Wikimedia Commons",
+   "author": "Willemjans",
+   "license": "CC BY-SA 3.0 nl",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thesinge_kerk_Kerkstraat_7.JPG"
   }
  },
  {
@@ -78278,6 +78607,56 @@
   }
  },
  {
+  "id": "evt_6a3c648f1f3933",
+  "slug": "celtic-sparks-assen-2026-12-20",
+  "title": "Celtic Sparks",
+  "occurrences": [
+   {
+    "date": "2026-12-20",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Bonte Wever",
+   "city": "Assen",
+   "lat": 52.9840952,
+   "lon": 6.5428525
+  },
+  "price": "EUR 26.00",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/103904?p_id=490295",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://debontewever.avayo.nl/bestel/tickets/103904?p_id=490295",
+    "host": "debontewever.avayo.nl",
+    "seenAt": "2026-10-15"
+   }
+  ],
+  "kind": "sport",
+  "kindLabel": "Sport",
+  "tags": [],
+  "classification": {
+   "method": "locatie",
+   "reason": "zaal De Bonte Wever",
+   "confidence": 0.6
+  },
+  "hash": "626a377cbd70",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "De Bonte Wever",
+   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
+   "author": "Ronn",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
+  }
+ },
+ {
   "id": "evt_8fa83944b4bf4e",
   "slug": "kerst-klaverjas-toernooi-de-wilgen-2026-12-20",
   "title": "Kerst Klaverjas toernooi",
@@ -78316,15 +78695,15 @@
   },
   "hash": "bbe0bd4e4e38",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/2023_De_Wylgen%2C_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_%281%29.jpg/1280px-2023_De_Wylgen%2C_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Drachtster_Heawei_98%2C_De_Wilgen.JPG/1280px-Drachtster_Heawei_98%2C_De_Wilgen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "De Wilgen",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
+   "credit": "Foto: Baykedevries · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Baykedevries",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen,_br%C3%AAge_tusken_de_Hoptunen_en_de_Broekfinne_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drachtster_Heawei_98,_De_Wilgen.JPG"
   }
  },
  {
@@ -78546,12 +78925,12 @@
    "lon": 6.5428525
   },
   "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/en/business/conferences-and-events",
+  "url": "https://www.debontewever.nl/en/business/conferences-and-events/delightful-country-living-winter-wonderfair",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://www.debontewever.nl/en/business/conferences-and-events",
+    "url": "https://www.debontewever.nl/en/business/conferences-and-events/delightful-country-living-winter-wonderfair",
     "host": "debontewever.nl",
     "seenAt": "2026-10-15"
    },
@@ -78570,7 +78949,7 @@
    "reason": "trefwoord 'fair'",
    "confidence": 0.8
   },
-  "hash": "b6a7ec92468a",
+  "hash": "d23c4f4dc363",
   "image": {
    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
@@ -82231,15 +82610,15 @@
   },
   "hash": "c1ee2612c149",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Drachtster_Heawei_98%2C_De_Wilgen.JPG/1280px-Drachtster_Heawei_98%2C_De_Wilgen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg/1280px-2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "De Wilgen",
-   "credit": "Foto: Baykedevries · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Baykedevries",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drachtster_Heawei_98,_De_Wilgen.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Wylgen_Griene_s%C3%B4ne_tusken_de_Hoptunen_en_de_Broekfinne.jpg"
   }
  },
  {
@@ -82887,15 +83266,15 @@
   },
   "hash": "1cecb63607c1",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland%2C_Ferwerd.jpeg/1280px-Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland%2C_Ferwerd.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Ferwerd%2C_Huisjes_bij_de_Kerk..JPG/1280px-Ferwerd%2C_Huisjes_bij_de_Kerk..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ferwerd",
-   "credit": "Foto: Andries Schoemaker / Gerrit Schoemaker / Cornelis Pronk / Abraham de Haen · Public domain · Wikimedia Commons",
-   "author": "Andries Schoemaker / Gerrit Schoemaker / Cornelis Pronk / Abraham de Haen",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland,_Ferwerd.jpeg"
+   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Baykedevries",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferwerd,_Huisjes_bij_de_Kerk..JPG"
   }
  },
  {
@@ -83149,15 +83528,15 @@
   },
   "hash": "4b3d50f5d070",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Ferwerd%2C_Huisjes_bij_de_Kerk..JPG/1280px-Ferwerd%2C_Huisjes_bij_de_Kerk..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Ferwertkerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ferwerd",
-   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Baykedevries",
+   "credit": "Foto: Fnorp at Dutch Wikipedia · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Fnorp at Dutch Wikipedia",
    "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferwerd,_Huisjes_bij_de_Kerk..JPG"
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferwertkerk.jpg"
   }
  },
  {
@@ -87781,7 +88160,7 @@
   },
   "hash": "485798d84727",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -87789,7 +88168,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
@@ -89218,15 +89597,15 @@
   },
   "hash": "c0b260e5bf0c",
   "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Ferwertkerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/20200603_Paarden_bij_Ferwert.jpg/1280px-20200603_Paarden_bij_Ferwert.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ferwerd",
-   "credit": "Foto: Fnorp at Dutch Wikipedia · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Fnorp at Dutch Wikipedia",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferwertkerk.jpg"
+   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20200603_Paarden_bij_Ferwert.jpg"
   }
  },
  {
@@ -89318,15 +89697,15 @@
   },
   "hash": "c01ef422c32a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Musselkanaal_Jachthaven02.JPG/1280px-Musselkanaal_Jachthaven02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
-   "credit": "Foto: H.P.Burger · CC BY 3.0 · Wikimedia Commons",
-   "author": "H.P.Burger",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Musselkanaal_Jachthaven02.JPG"
+   "credit": "Foto: Evert Mouw · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Evert Mouw",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
   }
  },
  {
@@ -89618,15 +89997,15 @@
   },
   "hash": "90706341cd55",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Niels Elgaard Larsen",
+   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
   }
  },
  {
@@ -89922,7 +90301,7 @@
   },
   "hash": "7dc72733662f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -89930,7 +90309,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
   }
  },
  {
@@ -92729,15 +93108,15 @@
   },
   "hash": "af84b9560afa",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/20200603_Paarden_bij_Ferwert.jpg/1280px-20200603_Paarden_bij_Ferwert.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2023_Ferwert%2C_Burmaniafeart_by_It_Kleaster.jpg/1280px-2023_Ferwert%2C_Burmaniafeart_by_It_Kleaster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ferwerd",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20200603_Paarden_bij_Ferwert.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ferwert,_Burmaniafeart_by_It_Kleaster.jpg"
   }
  },
  {
@@ -97156,7 +97535,7 @@
   },
   "hash": "da36106c05d1",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2023_Ferwert%2C_Burmaniafeart_by_It_Kleaster.jpg/1280px-2023_Ferwert%2C_Burmaniafeart_by_It_Kleaster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/2023_Ferwert%2C_Haadstrjitte_-_Havenstrjitte.jpg/1280px-2023_Ferwert%2C_Haadstrjitte_-_Havenstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ferwerd",
@@ -97164,7 +97543,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ferwert,_Burmaniafeart_by_It_Kleaster.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ferwert,_Haadstrjitte_-_Havenstrjitte.jpg"
   }
  },
  {
@@ -97458,15 +97837,15 @@
   },
   "hash": "6b8ccace0af9",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/20170313_de_Hunze_bij_Gasselternijveen.jpg/1280px-20170313_de_Hunze_bij_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Molen_de_Juffer_Gasselternijveen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Gasselternijveen",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20170313_de_Hunze_bij_Gasselternijveen.jpg"
+   "credit": "Foto: Gouwenaar at Dutch Wikipedia · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar at Dutch Wikipedia",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molen_de_Juffer_Gasselternijveen.jpg"
   }
  },
  {
@@ -98372,7 +98751,7 @@
   },
   "hash": "8f74682d1e9e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -98380,7 +98759,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
   }
  },
  {
@@ -102157,15 +102536,15 @@
   },
   "hash": "d1b5cd80c307",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/2023_Ferwert%2C_Haadstrjitte_-_Havenstrjitte.jpg/1280px-2023_Ferwert%2C_Haadstrjitte_-_Havenstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland%2C_Ferwerd.jpeg/1280px-Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland%2C_Ferwerd.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ferwerd",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ferwert,_Haadstrjitte_-_Havenstrjitte.jpg"
+   "credit": "Foto: Andries Schoemaker / Gerrit Schoemaker / Cornelis Pronk / Abraham de Haen · Public domain · Wikimedia Commons",
+   "author": "Andries Schoemaker / Gerrit Schoemaker / Cornelis Pronk / Abraham de Haen",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlas_Schoemaker-FRIESLAND-DEEL1-1274RR-Friesland,_Ferwerd.jpeg"
   }
  },
  {
@@ -103694,12 +104073,12 @@
    "lon": 7.0153
   },
   "price": "Zie organisator",
-  "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-10-15/bouw-mee-aan-onze-foto-expositie",
+  "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-10-16/bouw-mee-aan-onze-foto-expositie",
   "status": "bevestigd door de organisator",
   "sources": [
    {
     "type": "organisator",
-    "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-10-15/bouw-mee-aan-onze-foto-expositie",
+    "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-10-16/bouw-mee-aan-onze-foto-expositie",
     "host": "levendigmusselkanaal.nl",
     "seenAt": "2026-10-15"
    }
@@ -103712,9 +104091,9 @@
    "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
    "confidence": 0.2
   },
-  "hash": "49daa29bb7fa",
+  "hash": "b9247716225c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Valthermond_spoor_02.jpg/1280px-Valthermond_spoor_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Valthermond_spoor_27.jpg/1280px-Valthermond_spoor_27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Musselkanaal",
@@ -103722,7 +104101,7 @@
    "author": "Evert Mouw",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_02.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valthermond_spoor_27.jpg"
   }
  },
  {
@@ -111231,15 +111610,15 @@
   },
   "hash": "6e20340adc47",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/3D_Photo_-_panoramio_%283%29.jpg/1280px-3D_Photo_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/AssenMarkt.JPG/1280px-AssenMarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
-   "credit": "Foto: jhut1995 · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "jhut1995",
+   "credit": "Foto: Niels Elgaard Larsen · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Niels Elgaard Larsen",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(3).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:AssenMarkt.JPG"
   }
  },
  {
@@ -111281,7 +111660,7 @@
   },
   "hash": "c5c733eafff0",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/3D_Photo_-_panoramio_%284%29.jpg/1280px-3D_Photo_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/3D_Photo_-_panoramio_%281%29.jpg/1280px-3D_Photo_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -111289,7 +111668,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(4).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(1).jpg"
   }
  },
  {
@@ -111581,7 +111960,7 @@
   },
   "hash": "44139186c269",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/3D_Photo_-_panoramio_%285%29.jpg/1280px-3D_Photo_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/3D_Photo_-_panoramio_%282%29.jpg/1280px-3D_Photo_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Assen",
@@ -111589,7 +111968,7 @@
    "author": "jhut1995",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(5).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Photo_-_panoramio_(2).jpg"
   }
  },
  {
