@@ -1126,6 +1126,10 @@
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Dalerpeel_20_01_13_574000.jpeg/1280px-Dalerpeel_20_01_13_574000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q2199088"
   },
+  "plaats:damwald": {
+   "checkedAt": "2026-10-15",
+   "url": null
+  },
   "plaats:de kiel": {
    "checkedAt": "2026-10-13",
    "url": null
@@ -3672,6 +3676,37 @@
    ],
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Jirnsum%2C_kerk_foto1_2011-04-24_10.55.JPG/1280px-Jirnsum%2C_kerk_foto1_2011-04-24_10.55.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q2177737"
+  },
+  "plaats:joure": {
+   "checkedAt": "2026-10-15",
+   "photos": [
+    {
+     "author": "Baykedevries",
+     "file": "File:'t Zand 4.JPG",
+     "license": "CC BY-SA 3.0 nl",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:%27t_Zand_4.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%27t_Zand_4.JPG/1280px-%27t_Zand_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Unknown author Unknown author",
+     "file": "File:De beslissingswedstrijd tussen de heren Pereboom en Goedijk (gewonnen door Pereboom), tijdens, SFA022002620.jpg",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:De_beslissingswedstrijd_tussen_de_heren_Pereboom_en_Goedijk_(gewonnen_door_Pereboom),_tijdens,_SFA022002620.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/De_beslissingswedstrijd_tussen_de_heren_Pereboom_en_Goedijk_%28gewonnen_door_Pereboom%29%2C_tijdens%2C_SFA022002620.jpg/1280px-De_beslissingswedstrijd_tussen_de_heren_Pereboom_en_Goedijk_%28gewonnen_door_Pereboom%29%2C_tijdens%2C_SFA022002620.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Blacknight",
+     "file": "File:Joure-centre.jpg",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Joure-centre.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Joure-centre.jpg/1280px-Joure-centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%27t_Zand_4.JPG/1280px-%27t_Zand_4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "wikidata": "Q2317245"
   },
   "plaats:katlijk": {
    "checkedAt": "2026-10-14",
@@ -10269,6 +10304,10 @@
    "checkedAt": "2026-10-13",
    "url": null
   },
+  "plek:de rank|zuidlaren": {
+   "checkedAt": "2026-10-15",
+   "url": null
+  },
   "plek:de seize 3|grou": {
    "checkedAt": "2026-10-14",
    "url": null
@@ -11846,6 +11885,10 @@
    "checkedAt": "2026-10-12",
    "url": null
   },
+  "plek:openluchtmuseum de sukerei|damwald": {
+   "checkedAt": "2026-10-15",
+   "url": null
+  },
   "plek:openluchtmuseum het hoogeland|warffum": {
    "checkedAt": "2026-10-14",
    "photos": [
@@ -12235,6 +12278,10 @@
    "checkedAt": "2026-10-13",
    "url": null
   },
+  "plek:t hert|joure": {
+   "checkedAt": "2026-10-15",
+   "url": null
+  },
   "plek:t hoekje|ferwerd": {
    "checkedAt": "2026-10-15",
    "url": null
@@ -12299,6 +12346,10 @@
    "url": null
   },
   "plek:trefpunt achter de kleine kerk|stedum": {
+   "checkedAt": "2026-10-15",
+   "url": null
+  },
+  "plek:trefpunt|harlingen": {
    "checkedAt": "2026-10-15",
    "url": null
   },
@@ -12661,6 +12712,20 @@
    "image": null,
    "via": null
   },
+  "http://www.plaatselijkbelangappelscha.nl": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "http://www.schouwburgogterop.nl": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "eten",
+    "woord": "culinair"
+   },
+   "image": null,
+   "via": null
+  },
   "http://www.sloten.nl/": {
    "checkedAt": "2026-10-13",
    "image": null,
@@ -12719,6 +12784,24 @@
     "woord": "theater"
    },
    "image": "https://a-theater.nl/wp-content/uploads/2026/07/Robine_Eventim_Designs_Tour2026_Fanticket_web-groot.png",
+   "via": "schema.org"
+  },
+  "https://a-theater.nl/show/victor-patrascan-stand-up-comedy-in-broken-english-i-20-00-21-30/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "theater",
+    "woord": "comedy"
+   },
+   "image": "https://a-theater.nl/wp-content/uploads/2026/03/Victor-25_26-season-scaled.jpg",
+   "via": "schema.org"
+  },
+  "https://a-theater.nl/show/victor-patrascan-stand-up-comedy-in-broken-english/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "theater",
+    "woord": "comedy"
+   },
+   "image": "https://a-theater.nl/wp-content/uploads/2026/03/Victor-25_26-season-scaled.jpg",
    "via": "schema.org"
   },
   "https://achlum.info/evenement/ophaaldag-grof-tuinaval/": {
@@ -12970,6 +13053,15 @@
    "image": "https://appelscha.nl/tstevent/boswachterspreekuur-2/#primaryimage",
    "via": "schema.org"
   },
+  "https://appelscha.nl/tstevent/burnin-burritos/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "muziek",
+    "woord": "band"
+   },
+   "image": "https://appelscha.nl/tstevent/burnin-burritos/#primaryimage",
+   "via": "schema.org"
+  },
   "https://appelscha.nl/tstevent/college-veenhuizen-met-suzanna-jansen/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -13197,6 +13289,15 @@
    "image": "https://appelscha.nl/tstevent/puzzelrit/#primaryimage",
    "via": "schema.org"
   },
+  "https://appelscha.nl/tstevent/roofvogel-fietstocht-in-het-drents-friese-wold/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "natuur",
+    "woord": "vogel"
+   },
+   "image": "https://appelscha.nl/tstevent/roofvogel-fietstocht-in-het-drents-friese-wold/#primaryimage",
+   "via": "schema.org"
+  },
   "https://appelscha.nl/tstevent/schrijfster-judith-fanto-in-bibliotheek-oosterwolde/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -13301,6 +13402,15 @@
    "image": "https://appelscha.nl/tstevent/workshop-natuurjournalen-drents-friese-wold-2-3/2026-10-14/#primaryimage",
    "via": "schema.org"
   },
+  "https://appelscha.nl/tstevent/workshop-natuurjournalen-drents-friese-wold-2-3/2026-11-07/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://appelscha.nl/tstevent/workshop-natuurjournalen-drents-friese-wold-2-3/2026-11-07/#primaryimage",
+   "via": "schema.org"
+  },
   "https://ateliersmajeur.nl/agenda": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -13392,6 +13502,11 @@
    "image": null,
    "via": null
   },
+  "https://bitgum.nl/evenement/bezet-41/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://bitgum.nl/evenement/bingo-8/": {
    "checkedAt": "2026-10-15",
    "image": null,
@@ -13442,8 +13557,18 @@
    "image": null,
    "via": null
   },
+  "https://bitgum.nl/evenement/harmonie-nij-talint-17/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://bitgum.nl/evenement/harmonie-nij-talint-18/": {
    "checkedAt": "2026-10-14",
+   "image": null,
+   "via": null
+  },
+  "https://bitgum.nl/evenement/jubileumfeest-old-boys-met-meerdere-artiesten/": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
@@ -13464,6 +13589,15 @@
   },
   "https://bitgum.nl/evenement/koersbal-21/": {
    "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://bitgum.nl/evenement/putsjemoarn-nationale-natuurwerkdag/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "natuur",
+    "woord": "natuur"
+   },
    "image": null,
    "via": null
   },
@@ -13687,6 +13821,15 @@
    "image": "https://boijl.com/event/samen-eten-voor-jong-en-oud-3-2026-02-06/2026-11-06/#primaryimage",
    "via": "schema.org"
   },
+  "https://bulthuiseenrum.nl/evenement/%f0%9d%97%97%f0%9d%97%9c%f0%9d%97%96%f0%9d%97%9b%f0%9d%97%a7%f0%9d%97%98%f0%9d%97%a5-%f0%9d%97%95%f0%9d%97%9c%f0%9d%97%9d-%f0%9d%97%95%f0%9d%97%a8%f0%9d%97%9f%f0%9d%97%a7%f0%9d%97%9b%f0%9d%97%a8/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "muziek",
+    "woord": "muziek"
+   },
+   "image": "https://bulthuiseenrum.nl/evenement/%f0%9d%97%97%f0%9d%97%9c%f0%9d%97%96%f0%9d%97%9b%f0%9d%97%a7%f0%9d%97%98%f0%9d%97%a5-%f0%9d%97%95%f0%9d%97%9c%f0%9d%97%9d-%f0%9d%97%95%f0%9d%97%a8%f0%9d%97%9f%f0%9d%97%a7%f0%9d%97%9b%f0%9d%97%a8/#primaryimage",
+   "via": "schema.org"
+  },
   "https://bulthuiseenrum.nl/evenement/lezing-wierdenonderzoek-in-beschermde-dorpsgezichten/": {
    "checkedAt": "2026-10-15",
    "hints": {
@@ -13862,6 +14005,16 @@
    "checkedAt": "2026-10-13",
    "image": null,
    "via": null
+  },
+  "https://cafethert.nl/agenda/archief/#coldpray-2026": {
+   "checkedAt": "2026-10-15",
+   "image": "https://cafethert.nl/images/bar-stage.jpg",
+   "via": "og:image"
+  },
+  "https://cafethert.nl/agenda/archief/#fries-hard-2026": {
+   "checkedAt": "2026-10-15",
+   "image": "https://cafethert.nl/images/bar-stage.jpg",
+   "via": "og:image"
   },
   "https://coevorden.groei.nl/agenda/meer-informatie/evenement/coevorden-lezing-arend-spijker": {
    "checkedAt": "2026-10-15",
@@ -14433,6 +14586,26 @@
    "image": "https://despitkeet.nl/wp-content/uploads/2026/09/Foto-Verwijderen-Achtergrond-A4-212x300.webp",
    "via": "og:image"
   },
+  "https://desukerei.nl/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://desukerei.nl/dollersdei": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://desukerei.nl/herfstvakantie-2": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://desukerei.nl/opening": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://dewittehaas.nl/activiteiten-schiermonnikoog/151026-natuurwandeling-ochtendlicht/": {
    "checkedAt": "2026-10-13",
    "hints": {
@@ -14765,6 +14938,11 @@
    "image": null,
    "via": null
   },
+  "https://dorpshuisusquert.nl/event/pubquiz/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://dorpshuisusquert.nl/event/samen-koken-samen-eten/": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -14802,6 +14980,11 @@
   },
   "https://dorpshuiswarffum.nl/winterfair/": {
    "checkedAt": "2026-10-12",
+   "image": null,
+   "via": null
+  },
+  "https://dorpshuiszeerijp.nl/": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
@@ -14931,6 +15114,21 @@
   },
   "https://easterein.nl/agenda/grize-kontainer-restafval-21/": {
    "checkedAt": "2026-10-14",
+   "image": null,
+   "via": null
+  },
+  "https://easterein.nl/agenda/lampion-knutselen-2/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://easterein.nl/agenda/lampion-knutselen/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://easterein.nl/agenda/leovardia-1-sds-1/": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
@@ -15321,6 +15519,15 @@
    "type": "MusicEvent",
    "via": "schema.org"
   },
+  "https://engelstede.nl/event/go-nutz-herman-brood-tribute/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "muziek",
+    "woord": "band"
+   },
+   "image": "https://engelstede.nl/event/go-nutz-herman-brood-tribute/#primaryimage",
+   "via": "schema.org"
+  },
   "https://engelstede.nl/event/rvh-project/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -15497,6 +15704,11 @@
    "image": "https://static.forum.nl/cache/omgevingsvisie-groningen-2050.22396/omgevingsvisie-groningen-2050-s1920x1080.jpg",
    "via": "og:image"
   },
+  "https://forum.nl/nl/letsgro": {
+   "checkedAt": "2026-10-15",
+   "image": "https://static.forum.nl/cache/lets-gro.28275/lets-gro-s1920x1080.jpg",
+   "via": "og:image"
+  },
   "https://fraeylemaborg.nl/agenda/3437/": {
    "checkedAt": "2026-10-15",
    "image": "https://fraeylemaborg.nl/wp-content/uploads/2025/02/Fraeylemaborg_feb25_039-Ronald-Zijlstra-2.webp",
@@ -15594,6 +15806,15 @@
    "checkedAt": "2026-10-15",
    "image": "https://gasselternijveen-online.nl/wp-content/uploads/2026/04/e0c49962-aa0b-4e1d-a1ca-1c8bd36e500d-Copy-1.jpeg",
    "via": "schema.org"
+  },
+  "https://gasselternijveen-online.nl/event/klaverjassen-societeit-de-vriendschap-3/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "feest",
+    "woord": "klaverjas"
+   },
+   "image": null,
+   "via": null
   },
   "https://gasselternijveen-online.nl/event/kleintje-toogdag/": {
    "checkedAt": "2026-10-14",
@@ -15727,6 +15948,15 @@
    "image": "https://grootegast.nl/wp-content/uploads/2026/09/uitgelicht-GG-Xtreme-2026.jpg",
    "via": "schema.org"
   },
+  "https://grootegast.nl/agenda/jaarlijkse-leden-vergadering-dorpsbelangen-grootegast/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "kinderen",
+    "woord": "speeltuin"
+   },
+   "image": "https://grootegast.nl/wp-content/uploads/2025/09/ALV-2026-Dorpsbelang-Grootegast.jpg",
+   "via": "schema.org"
+  },
   "https://grotekerkemmen.nl/agenda/": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -15753,6 +15983,15 @@
     "woord": "cantate"
    },
    "image": "https://grotekerkleeuwarden.nl/wp-content/uploads/2024/12/IMG_7587ad.jpeg",
+   "via": "schema.org"
+  },
+  "https://grotekerkleeuwarden.nl/event/choral-evensong-6/2026-11-08/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "feest",
+    "woord": "feest"
+   },
+   "image": "https://grotekerkleeuwarden.nl/wp-content/uploads/2025/01/thumbnail_Evensong-101124-d.jpg",
    "via": "schema.org"
   },
   "https://grotekerkleeuwarden.nl/event/il-parnasso-in-festa-concert/": {
@@ -15931,6 +16170,15 @@
    "checkedAt": "2026-10-14",
    "image": "https://heeg.frl/evenement/inloop-bridgemiddag/#primaryimage",
    "via": "schema.org"
+  },
+  "https://heeg.frl/evenement/neil-diamond-tribute/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "muziek",
+    "woord": "tribute"
+   },
+   "image": null,
+   "via": null
   },
   "https://heeg.frl/evenement/oudpapier-4/": {
    "checkedAt": "2026-10-13",
@@ -16163,6 +16411,11 @@
    "image": "https://itmaskelyn.nl/wp-content/uploads/2026/08/IMG-20260714-WA0039.jpg",
    "via": "og:image"
   },
+  "https://itmaskelyn.nl/evenement/modelbouwbeurs-2/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://itmaskelyn.nl/wp-content/uploads/2026/08/flyer-modelbouw-2026.jpg",
+   "via": "og:image"
+  },
   "https://itmaskelyn.nl/evenement/theeproeverij/": {
    "checkedAt": "2026-10-14",
    "image": "https://itmaskelyn.nl/wp-content/uploads/2026/08/Thee-proeverij-24-10-2026-A3.jpg",
@@ -16231,6 +16484,11 @@
    "via": null
   },
   "https://kerkhuizumoost.nl/index.php/event/kerkdienst-277/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://kerkhuizumoost.nl/index.php/event/kerkdienst-279/": {
    "checkedAt": "2026-10-15",
    "image": null,
    "via": null
@@ -16485,6 +16743,15 @@
    "checkedAt": "2026-10-15",
    "image": "https://kunstkerkhogeland.nl/wp-content/uploads/2026/10/D9A4605.Kunstker-Groningen-HR-Eveline-van-Egdom-scaled.jpg",
    "via": "og:image"
+  },
+  "https://landvaneen.nl/activiteiten/cursus-in-wonderen-4/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "lezing",
+    "woord": "cursus"
+   },
+   "image": "https://landvaneen.nl/wp-content/uploads/2024/12/image.jpeg",
+   "via": "schema.org"
   },
   "https://landvaneen.nl/activiteiten/dansen-op-het-land-van-een/": {
    "checkedAt": "2026-10-14",
@@ -16760,6 +17027,15 @@
    "image": "https://maallust.nl/wp-content/uploads/2026/01/Titel.png",
    "via": "schema.org"
   },
+  "https://maallust.nl/event/wilde-avond/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "eten",
+    "woord": "eten"
+   },
+   "image": "https://maallust.nl/wp-content/uploads/2026/01/Wilde-avond.png",
+   "via": "schema.org"
+  },
   "https://makkum.nl/agenda/ella/": {
    "checkedAt": "2026-10-14",
    "image": "https://makkum.nl/wp-content/uploads/2026/09/foto_jaapreedijk-EllaEnHerman-1536x1024-1.jpg",
@@ -17024,6 +17300,11 @@
    "image": "https://minnertsga.frl/wp-content/uploads/2026/10/IMG-20261009-WA0000.jpg",
    "via": "og:image"
   },
+  "https://minnertsga.frl/evenement/jubileumconcert-different-sound/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://minnertsga.frl/evenement/keallepoat-kafee-4/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -17121,6 +17402,15 @@
    "image": null,
    "via": null
   },
+  "https://natuurverenigingzuidwolde.nl/events/natuurwerkdag-buningshof/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "natuur",
+    "woord": "natuur"
+   },
+   "image": null,
+   "via": null
+  },
   "https://natuurverenigingzuidwolde.nl/locations/buningshof/": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -17133,6 +17423,11 @@
   },
   "https://ngk-hoogezand-sappemeer.nl/activiteit/ds-a-m-pathuis-59/": {
    "checkedAt": "2026-10-14",
+   "image": null,
+   "via": null
+  },
+  "https://ngk-hoogezand-sappemeer.nl/activiteit/ds-a-m-pathuis-60/": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
@@ -18019,6 +18314,11 @@
    "image": "https://onstwedde.info/fileadmin/_processed_/5/1/csm_beleefdeherfst_f5352fc648.png",
    "via": "og:image"
   },
+  "https://onstwedde.info/agenda/artikel/inzameling-oud-papier-onstwedde-2-1-1-1-1-1-1-1-1-1-1": {
+   "checkedAt": "2026-10-15",
+   "image": "https://onstwedde.info/fileadmin/user_upload/AA_ILLUSTRATIE_FOTO/Oud_papier_Onstwedde/026.jpg",
+   "via": "og:image"
+  },
   "https://onstwedde.info/agenda/artikel/jeugdsoos-de-boerderij-open-1": {
    "checkedAt": "2026-10-14",
    "image": "https://onstwedde.info/fileadmin/_processed_/4/e/csm_Neon_Jeugdsoosfeest_in_de_Boerderij_cbc9fdb9b5.png",
@@ -18027,6 +18327,11 @@
   "https://onstwedde.info/agenda/artikel/jeugdsoos-de-boerderij-open-1-1": {
    "checkedAt": "2026-10-14",
    "image": "https://onstwedde.info/fileadmin/_processed_/4/e/csm_Neon_Jeugdsoosfeest_in_de_Boerderij_cbc9fdb9b5.png",
+   "via": "og:image"
+  },
+  "https://onstwedde.info/agenda/artikel/jeugdsoos-de-boerderij-open-1-2": {
+   "checkedAt": "2026-10-15",
+   "image": "https://onstwedde.info/fileadmin/user_upload/jeugdsoos-de-boerderij-onstwedde.png",
    "via": "og:image"
   },
   "https://onstwedde.info/agenda/artikel/johannes-de-heer-zangavond-in-dekkelkaamp-1": {
@@ -18054,6 +18359,11 @@
    "image": "https://onstwedde.info/fileadmin/user_upload/AA_ILLUSTRATIE_FOTO/Kerken/kerken.jpg",
    "via": "og:image"
   },
+  "https://onstwedde.info/agenda/artikel/kerkdiensten-23-2": {
+   "checkedAt": "2026-10-15",
+   "image": "https://onstwedde.info/fileadmin/user_upload/AA_ILLUSTRATIE_FOTO/Kerken/kerken.jpg",
+   "via": "og:image"
+  },
   "https://onstwedde.info/agenda/artikel/klaverjassen-onstwedder-boys-26": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -18068,6 +18378,11 @@
    "checkedAt": "2026-10-13",
    "image": "https://onstwedde.info/fileadmin/user_upload/Paddenstoelenexpeditie_1200x628.png",
    "via": "og:image"
+  },
+  "https://onstwedde.info/agenda/artikel/onstwedder-boys-elim": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
   },
   "https://onstwedde.info/agenda/artikel/open-atelier-kunstschilder-geert-schreuder-1-1-1-1-1-1-1-1-1": {
    "checkedAt": "2026-10-15",
@@ -18301,6 +18616,11 @@
    "image": null,
    "via": null
   },
+  "https://oosternieland.nl/agenda/koffieochtend-20/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://oosternieland.nl/agenda/lezing-over-groninger-bakboek-door-sanne-meijer/": {
    "checkedAt": "2026-10-15",
    "hints": {
@@ -18464,6 +18784,15 @@
    "image": "https://overentinghe.nl/wp-content/uploads/2026/08/4.-Whisper-klein.jpg",
    "via": "schema.org"
   },
+  "https://overentinghe.nl/evenementen/ginas-band-of-blues/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "muziek",
+    "woord": "band"
+   },
+   "image": "https://overentinghe.nl/wp-content/uploads/2026/09/poster-Gina.jpg",
+   "via": "schema.org"
+  },
   "https://overentinghe.nl/evenementen/jeugdsoos-halloween-party/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -18471,6 +18800,15 @@
     "woord": "jeugdsoos"
    },
    "image": "https://overentinghe.nl/wp-content/uploads/2026/10/poster-halloween.png",
+   "via": "schema.org"
+  },
+  "https://overentinghe.nl/evenementen/klankschaalbeleving-2/2026-11-08/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "lezing",
+    "woord": "klankschaal"
+   },
+   "image": "https://overentinghe.nl/wp-content/uploads/2024/07/klankschalen-31-klein.png",
    "via": "schema.org"
   },
   "https://overentinghe.nl/evenementen/koffie-inloop-2-2/2026-10-19/": {
@@ -18716,6 +19054,11 @@
    "image": "https://pieterzijl.net/wp-content/uploads/2026/08/Herfststukje.png",
    "via": "schema.org"
   },
+  "https://plaatselijkbelangappelscha.nl/index.php/agenda/15-bestuursvergadering-plaatselijk-belang-appelscha-10": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://plaatselijkbelangappelscha.nl/index.php/agenda/17-bestuursvergadering-plaatselijk-belang-appelscha-met-contactpersonen": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -18724,6 +19067,11 @@
   "https://podium34.nl/events/hoofs-support-competition/": {
    "checkedAt": "2026-10-13",
    "image": "https://podium34.nl/wp-content/uploads/2026/07/003_HOOFS-2026-scaled.jpg",
+   "via": "og:image"
+  },
+  "https://podium34.nl/events/moonloops-nomads-radio/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://podium34.nl/wp-content/uploads/2026/07/ML_PERSFOTO_2026_1.jpg",
    "via": "og:image"
   },
   "https://podium34.nl/events/the-charlies-pre-releaseparty/": {
@@ -18752,6 +19100,15 @@
     "woord": "informatie"
    },
    "image": "https://podiumzuidhaege.nl/wp-content/uploads/2026/10/Keuning-Jeugd-Orkest-juni-2026.jpg",
+   "via": "og:image"
+  },
+  "https://podiumzuidhaege.nl/a/artis-ensemble/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://podiumzuidhaege.nl/wp-content/uploads/2026/04/IMG-20250506-WA0045-1024x683-1.jpg",
    "via": "og:image"
   },
   "https://podiumzuidhaege.nl/a/jeugdcircus-bombari-bombari-productions/": {
@@ -19378,6 +19735,11 @@
    "type": "TheaterEvent",
    "via": "schema.org"
   },
+  "https://theaterroden.nl/dirk-scheele-dikkie-dik": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://theaterroden.nl/firma-frictie-2": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -19483,6 +19845,15 @@
    "image": null,
    "via": null
   },
+  "https://thialf.nl/evenementen/kalender?news_id=1228896": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "sport",
+    "woord": "toernooi"
+   },
+   "image": null,
+   "via": null
+  },
   "https://tjuchem.net/event/algemene-ledenvergadering-2/": {
    "checkedAt": "2026-10-15",
    "image": "https://tjuchem.net/event/algemene-ledenvergadering-2/#primaryimage",
@@ -19539,6 +19910,11 @@
    "image": "https://tsjom.nl/evenement/kerkdienst-dankstond/#primaryimage",
    "via": "schema.org"
   },
+  "https://tsjom.nl/evenement/kerkdienst-viering-heilig-avondmaal-2/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://tsjom.nl/evenement/kerkdienst-viering-heilig-avondmaal-2/#primaryimage",
+   "via": "schema.org"
+  },
   "https://tsjom.nl/evenement/kerkenraad-10/": {
    "checkedAt": "2026-10-13",
    "image": null,
@@ -19567,6 +19943,11 @@
    "checkedAt": "2026-10-15",
    "image": "https://tsjom.nl/evenement/oars-as-oars-dienst/#primaryimage",
    "via": "schema.org"
+  },
+  "https://tsjom.nl/evenement/oud-papier-6/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
   },
   "https://tsjom.nl/evenement/weeksluiting-2/": {
    "checkedAt": "2026-10-15",
@@ -19741,6 +20122,15 @@
    "image": null,
    "via": null
   },
+  "https://tytsjerk.nl/event/weggooien-welnee-geef-je-spullen-een-tweede-kans-bij-repair-cafe-tytsjerk-2/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "lezing",
+    "woord": "repair caf"
+   },
+   "image": "https://tytsjerk.nl/wp-content/uploads/2026/08/repaircafe.jpg",
+   "via": "schema.org"
+  },
   "https://vaartdeband.nl/mobile/": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -19816,6 +20206,11 @@
    "image": null,
    "via": null
   },
+  "https://wehe-denhoorn.nl/event/kleding-en-snuisterijen-verkoop-marnehoes-13-tot-17-uur/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://wehe-denhoorn.nl/event/nieuw-speeltoestel/": {
    "checkedAt": "2026-10-13",
    "image": null,
@@ -19827,6 +20222,11 @@
     "soort": "kunst",
     "woord": "kunst"
    },
+   "image": null,
+   "via": null
+  },
+  "https://wehe-denhoorn.nl/event/oud-papier-lopen-hoogholtje-papier-voor-9-30-uur-aan-de-weg/": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
@@ -20111,6 +20511,15 @@
    "image": "https://wommels.nl/wp-content/uploads/2026/10/825351523_1087912993999620_6998810454080704386_n.jpg",
    "via": "og:image"
   },
+  "https://wommels.nl/activiteit/koor-sjong-in-de-jacobikerk/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "muziek",
+    "woord": "koor"
+   },
+   "image": "https://wommels.nl/wp-content/uploads/2026/10/848650277_1884489169190310_7852895217054462067_n.jpg",
+   "via": "og:image"
+  },
   "https://wommels.nl/activiteit/lezing-opgraving-stapert-tsiispakhus/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -20239,6 +20648,11 @@
    "image": null,
    "via": null
   },
+  "https://www.aolegemientehoes.nl/greppeltocht-info": {
+   "checkedAt": "2026-10-15",
+   "image": "https://primary.jwwb.nl/public/y/g/t/temp-ezjmxsvxbphgnmvabqxm/greppeltocht-schoonebeek-high-g7v77o.jpg",
+   "via": "og:image"
+  },
   "https://www.apexboulders.nl/events/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -20316,6 +20730,16 @@
   "https://www.atlastheater.nl/voorstellingen/the-story-of-george-michael-charly-luske-23-okt/": {
    "checkedAt": "2026-10-15",
    "image": "https://agenda.ticketunie.com/img/thumbnail.ashx?trsid=408&id=262249&imagegroup=1&resize=true&crop=true&x=300&y=300",
+   "via": "og:image"
+  },
+  "https://www.atlastheater.nl/voorstellingen/theatershow-kado-07-nov-1/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://agenda.ticketunie.com/img/thumbnail.ashx?trsid=408&id=258424&imagegroup=1&resize=true&crop=true&x=300&y=300",
+   "via": "og:image"
+  },
+  "https://www.atlastheater.nl/voorstellingen/theatershow-kado-07-nov/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://agenda.ticketunie.com/img/thumbnail.ashx?trsid=408&id=258424&imagegroup=1&resize=true&crop=true&x=300&y=300",
    "via": "og:image"
   },
   "https://www.atlastheater.nl/voorstellingen/tribute-to-cuby-plus-blizzards-staconcert-grollo-24-okt/": {
@@ -20515,6 +20939,15 @@
    "image": null,
    "via": null
   },
+  "https://www.baptisten-winschoten.nl/item/dienst-279/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "eten",
+    "woord": "koffie"
+   },
+   "image": null,
+   "via": null
+  },
   "https://www.baptistengemeente.info/activiteit/kerkdienst-2/2026-10-18/": {
    "checkedAt": "2026-10-13",
    "hints": {
@@ -20605,6 +21038,11 @@
    "image": null,
    "via": null
   },
+  "https://www.buinerveen.info/event/spokentocht-buinerveen-durf-jij-het-aan/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://www.buinerveen.info/event/vrouwen-van-nu-eendagsbestuur/": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -20641,6 +21079,20 @@
     "soort": "eten",
     "woord": "wijn"
    },
+   "image": null,
+   "via": null
+  },
+  "https://www.cafedelijst.nl/klaverjassen.php": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "eten",
+    "woord": "wijn"
+   },
+   "image": null,
+   "via": null
+  },
+  "https://www.cgkzuidlaren.nl/ontmoeten/samenkomsten": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
@@ -20857,6 +21309,11 @@
    "type": "TheaterEvent",
    "via": "schema.org"
   },
+  "https://www.derank-groningen.nl/dienst/arend-kroes/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://www.derank-groningen.nl/dienst/gert-arends-michazondag/": {
    "checkedAt": "2026-10-13",
    "image": null,
@@ -20884,6 +21341,15 @@
   },
   "https://www.dezandvoorten.nl/events/categories/papier/": {
    "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://www.doarpshuswergea.nl/?tribe_events=wergea-sutelaksje-fryske-boek-op-sneon-7-novimber": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
    "image": null,
    "via": null
   },
@@ -21028,6 +21494,11 @@
    "image": "https://static.wixstatic.com/media/6414ce_fcfe5c7e35024dcaa9fcdd2f91c25263~mv2.jpg/v1/fill/w_1000,h_798,al_c,q_85,usm_0.66_1.00_0.01/6414ce_fcfe5c7e35024dcaa9fcdd2f91c25263~mv2.jpg",
    "via": "og:image"
   },
+  "https://www.dorpsverenigingsellingen.nl/evenement/sint-maarten-lampionoptocht-2026/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://www.drijber.net/activiteit/let-op-oranje-container-2/": {
    "checkedAt": "2026-10-15",
    "image": null,
@@ -21047,6 +21518,21 @@
    "checkedAt": "2026-10-14",
    "image": null,
    "via": null
+  },
+  "https://www.egharlingen.nl/events/agenda-bidstond/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.egharlingen.nl/wp-content/uploads/2022/01/Bidstond-Harlingen.jpeg",
+   "via": "schema.org"
+  },
+  "https://www.egharlingen.nl/events/bijbelstudie/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.egharlingen.nl/wp-content/uploads/2025/02/Kuizen.jpg",
+   "via": "schema.org"
+  },
+  "https://www.egharlingen.nl/events/tienerdienst/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.egharlingen.nl/wp-content/uploads/2022/01/young-people-gd4c2757a9_1920.jpg",
+   "via": "schema.org"
   },
   "https://www.eisinga-planetarium.nl": {
    "checkedAt": "2026-10-13",
@@ -21330,6 +21816,15 @@
    "image": "https://www.houtstad-ijlst.nl/event/kom-fierder/#primaryimage",
    "via": "schema.org"
   },
+  "https://www.houtstad-ijlst.nl/event/nooitgedagt-dat-het-weer-zover-zou-komen/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://www.houtstad-ijlst.nl/event/nooitgedagt-dat-het-weer-zover-zou-komen/#primaryimage",
+   "via": "schema.org"
+  },
   "https://www.houtstad-ijlst.nl/event/oktober-kindermaand/2026-10-14/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -21531,6 +22026,15 @@
    "image": null,
    "via": null
   },
+  "https://www.ioannistheatertsjerkewier.nl/event/grytzz-en-grize-mei-sanman-en-sikke/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": null,
+   "via": null
+  },
   "https://www.ioannistheatertsjerkewier.nl/event/orgeldagen-waadhoeke-mini-concert-yn-de-tsjerke-fan-wier-kommende-snein/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -21655,6 +22159,15 @@
   "https://www.itfryskegea.nl/activiteiten/nachtelijke-wandeling-in-natuurgebied-ketliker-skar-2/": {
    "checkedAt": "2026-10-12",
    "image": "https://www.itfryskegea.nl/wp-content/uploads/2024/09/nacht-van-de-nacht.jpg",
+   "via": "schema.org"
+  },
+  "https://www.itfryskegea.nl/activiteiten/ontdek-de-makkumersudwaard-tijdens-een-herfstwandeling-4/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "natuur",
+    "woord": "wandel"
+   },
+   "image": "https://www.itfryskegea.nl/wp-content/uploads/2024/05/Makkumer_Sudwaard.jpg",
    "via": "schema.org"
   },
   "https://www.itfryskegea.nl/activiteiten/ontdek-het-eeuwenoude-rysterbosk-met-een-gids/": {
@@ -21795,6 +22308,15 @@
    "image": "https://www.itfryskegea.nl/wp-content/uploads/2025/01/lendevallei.jpg",
    "via": "schema.org"
   },
+  "https://www.jalb.de/Gemeinsam_entdecken___gemeinsam_staunen%2C_Emder_Museumstag-42063-0-0-85.html": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "kunst",
+    "woord": "museum"
+   },
+   "image": null,
+   "via": null
+  },
   "https://www.jongeharten.nl/programma/": {
    "checkedAt": "2026-10-12",
    "image": null,
@@ -21863,6 +22385,11 @@
    "image": null,
    "via": null
   },
+  "https://www.kuinre.nl/event/vrijwilligersavond-de-botter/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://www.kuinre.nl/event/vrouwen-van-kuinre-11/": {
    "checkedAt": "2026-10-13",
    "image": null,
@@ -21899,6 +22426,11 @@
   "https://www.kvmidfryslan.nl/het-is-tijd-voor-de-grote-pubquiz/": {
    "checkedAt": "2026-10-14",
    "image": "https://www.kvmidfryslan.nl/wp-content/uploads/2026/10/De-Grote-Pubquiz-420x630.jpeg",
+   "via": "og:image"
+  },
+  "https://www.kvmidfryslan.nl/programma-mid-fryslan-dei/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.kvmidfryslan.nl/wp-content/themes/ids/assets/img/kv-mid-fryslan.png",
    "via": "og:image"
   },
   "https://www.lauwerzijl.info/kalender/klaverjassen-3/": {
@@ -22034,6 +22566,11 @@
    "image": null,
    "via": null
   },
+  "https://www.mesacosa.nl/mijn-mesacosa/41358-mijn-mesacosa/groepen/bestuur/galassia-forza": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://www.mesacosa.nl/mijn-mesacosa/41358-mijn-mesacosa/groepen/commissies/introductiecommissie": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -22083,6 +22620,16 @@
    "image": "https://www.museumjoure.nl/agenda/high-teas-in-november/#primaryimage",
    "via": "schema.org"
   },
+  "https://www.museumjoure.nl/agenda/spreekuur-het-verhaal-van-jouw-klok/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.museumjoure.nl/agenda/spreekuur-het-verhaal-van-jouw-klok/#primaryimage",
+   "via": "schema.org"
+  },
+  "https://www.museumjoure.nl/agenda/workshop-linosnede-en-linodruk-3/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.museumjoure.nl/agenda/workshop-linosnede-en-linodruk-3/#primaryimage",
+   "via": "schema.org"
+  },
   "https://www.museumjoure.nl/agenda/workshop-omgaan-met-klokken-voor-beginners-2/": {
    "checkedAt": "2026-10-15",
    "image": "https://www.museumjoure.nl/agenda/workshop-omgaan-met-klokken-voor-beginners-2/#primaryimage",
@@ -22124,6 +22671,11 @@
   "https://www.neushoorn.nl/events/explore-the-north": {
    "checkedAt": "2026-10-12",
    "image": "https://cdn.prod.website-files.com/68406d1cc758e72eef6296d8/6a2a88ce6d8eb6f373f0b482_ETN_detail-15d7.avif",
+   "via": "og:image"
+  },
+  "https://www.neushoorn.nl/events/superclassics-xl": {
+   "checkedAt": "2026-10-15",
+   "image": "https://cdn.prod.website-files.com/68406d1cc758e72eef6296d8/6a6b3415caf563bd783c781f_superclassics_detail-3273-beb8-30e2.jpeg",
    "via": "og:image"
   },
   "https://www.neushoorn.nl/events/the-elvis-concert": {
@@ -22249,6 +22801,11 @@
    "image": null,
    "via": null
   },
+  "https://www.ontmoetingskerkharen.nl/agenda/kerkdienst-zondag-8-november-2026/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://www.opendeonline.nl/agenda/50-plus-28-10": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -22277,12 +22834,26 @@
    "image": null,
    "via": null
   },
+  "https://www.opendeonline.nl/agenda/spokentocht-opende": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "feest",
+    "woord": "spokentocht"
+   },
+   "image": "https://www.opendeonline.nl/assets/cache_image/uploads/afbeeldingen/Poster spokentocht opende+snijlijn--2026_1200x630_a33.png",
+   "via": "og:image"
+  },
   "https://www.paesens-moddergat.nl/event/christelijke-vrouwengroep-9/": {
    "checkedAt": "2026-10-13",
    "hints": {
     "soort": "lezing",
     "woord": "lezing"
    },
+   "image": null,
+   "via": null
+  },
+  "https://www.pg-harlingen.nl/actueel/kerkdienst-grote-kerk-10/": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
@@ -22305,6 +22876,11 @@
    "checkedAt": "2026-10-12",
    "image": null,
    "via": null
+  },
+  "https://www.pgbeilen.nl/agenda/naar-kerkasiel-kampen/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.pgbeilen.nl/wp-content/uploads/2026/09/Kerkasiel.png",
+   "via": "schema.org"
   },
   "https://www.pknanloozuidlaren.nl/cursusprogramma/2118-pareltjes-uit-de-werkgemeenschap": {
    "checkedAt": "2026-10-12",
@@ -22347,6 +22923,20 @@
   },
   "https://www.roswinkel.com/event/ledenvergadering-plaatselijk-belang-2/": {
    "checkedAt": "2026-10-12",
+   "image": null,
+   "via": null
+  },
+  "https://www.roswinkel.com/event/natuurwerkdag-2/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://www.rsz.nl/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "sport",
+    "woord": "race"
+   },
    "image": null,
    "via": null
   },
@@ -22509,6 +23099,11 @@
    "image": null,
    "via": null
   },
+  "https://www.scharnegoutum.nl/agenda/familiefeest-8/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://www.scharnegoutum.nl/agenda/fanfare-swettewyn/2026-10-19/": {
    "checkedAt": "2026-10-13",
    "hints": {
@@ -22590,6 +23185,11 @@
     "soort": "feest",
     "woord": "quiz"
    },
+   "image": null,
+   "via": null
+  },
+  "https://www.scharnegoutum.nl/agenda/putsje-kafe-2/2026-11-07/": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
@@ -22799,6 +23399,11 @@
    "image": null,
    "via": null
   },
+  "https://www.societeitdeharmonie.nl/agenda/uurtje-cultuurtje-is-atonale-muziek-kattengejammer-door-paul-herruer/": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
   "https://www.societeitdeharmonie.nl/agenda/uurtje-cultuurtje-leven-elders-door-paul-wesselius/": {
    "checkedAt": "2026-10-13",
    "image": null,
@@ -22978,6 +23583,15 @@
    "image": null,
    "via": null
   },
+  "https://www.terphegebeintum.nl/activiteiten/lezing-redbad-door-diana-spiekhout/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "lezing",
+    "woord": "lezing"
+   },
+   "image": null,
+   "via": null
+  },
   "https://www.terphegebeintum.nl/activiteiten/pan-spreekuur-met-margot-daleman/": {
    "checkedAt": "2026-10-12",
    "image": null,
@@ -22992,6 +23606,11 @@
    "checkedAt": "2026-10-14",
    "image": null,
    "via": null
+  },
+  "https://www.terpoarte.nl/event/allerzielenboksum-blessum-deinum-2/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.terpoarte.nl/wp-content/uploads/2025/10/Header_800x500_rouwverwerking-150x150.jpg",
+   "via": "og:image"
   },
   "https://www.terpoarte.nl/event/leerhuisland-van-belofte-3/": {
    "checkedAt": "2026-10-14",
@@ -23081,6 +23700,11 @@
    "via": null
   },
   "https://www.theaterdekoornbeurs.nl/voorstelling/10047589/grip/10362778": {
+   "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://www.theaterdekoornbeurs.nl/voorstelling/10047590/daddy-cool/10364116": {
    "checkedAt": "2026-10-15",
    "image": null,
    "via": null
@@ -23209,6 +23833,11 @@
    "image": null,
    "via": null
   },
+  "https://www.tvschatzenburg.nl/activiteitenkalender/herfstactiviteit-jeugd-2/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.tvschatzenburg.nl/wp-content/uploads/2022/06/unnamed.jpg",
+   "via": "og:image"
+  },
   "https://www.tvschatzenburg.nl/activiteitenkalender/knltb-najaarscompetitie-junioren-einde/": {
    "checkedAt": "2026-10-14",
    "image": "https://www.tvschatzenburg.nl/wp-content/uploads/2022/06/unnamed.jpg",
@@ -23316,6 +23945,11 @@
    "image": "https://www.vanberesteyn.nl/wp-content/uploads/2026/04/AOf-20260409_van-Beresteyn-8520-scaled.jpg",
    "via": "og:image"
   },
+  "https://www.vanberesteyn.nl/programma/cafe-klassiek-10/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.vanberesteyn.nl/wp-content/uploads/2024/05/Cafe-Klassiek.jpg",
+   "via": "og:image"
+  },
   "https://www.vanberesteyn.nl/programma/ernst-bobbie-en-de-rest/": {
    "checkedAt": "2026-10-15",
    "image": "https://www.vanberesteyn.nl/wp-content/uploads/2026/04/Ernst-en-Bobbie-hebben-geen-idee-onbekend-1_RGB-72-dpi-scaled.jpg",
@@ -23334,6 +23968,16 @@
   "https://www.vanberesteyn.nl/programma/griezelen-in-vanberesteyn-12-2/": {
    "checkedAt": "2026-10-14",
    "image": "https://www.vanberesteyn.nl/wp-content/uploads/2026/04/Griezelen-in-vanBeresteyn-Kraai-scaled.jpg",
+   "via": "og:image"
+  },
+  "https://www.vanberesteyn.nl/programma/hokjesdenker/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.vanberesteyn.nl/wp-content/uploads/2026/04/Hokjesdenker-We-zien-het-wel-even-Casper-Koster-1_RGB-72-dpi.jpg",
+   "via": "og:image"
+  },
+  "https://www.vanberesteyn.nl/programma/niek-guy/": {
+   "checkedAt": "2026-10-15",
+   "image": "https://www.vanberesteyn.nl/wp-content/uploads/2026/04/Niek-Guy-LEGATUM-Timo-Bakker-8_RGB-72-dpi.jpg",
    "via": "og:image"
   },
   "https://www.vanberesteyn.nl/programma/onderons-middag/": {
@@ -23494,6 +24138,15 @@
    "image": "https://optimise2.assets-servd.host/vvv-terschelling/production/Insta_MagdaSpierings-3-scaled.jpg?w=1200&auto=compress%2Cformat&fit=crop&crop=focalpoint&fp-x=0.5312&fp-y=0.6521&dm=1760950702&s=ca9a61c5027cfed7b2f6a24084bb2393",
    "via": "og:image"
   },
+  "https://www.vvvterschelling.nl/evenementen/berenloop/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "sport",
+    "woord": "loop"
+   },
+   "image": "https://optimise2.assets-servd.host/vvv-terschelling/production/hoofdfotos/Berenloop11.jpg?w=1200&auto=compress%2Cformat&fit=crop&crop=focalpoint&fp-x=0.5035&fp-y=0.4376&dm=1732710307&s=d4c92f08fc8b96e488dd447615518a92",
+   "via": "og:image"
+  },
   "https://www.vvvterschelling.nl/evenementen/de-heksenmarkt/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -23501,6 +24154,15 @@
     "woord": "markt"
    },
    "image": "https://optimise2.assets-servd.host/vvv-terschelling/production/hoofdfotos/Heksenmarkt-0594.jpg?w=1200&auto=compress%2Cformat&fit=crop&crop=focalpoint&fp-x=0.3591&fp-y=0.3129&dm=1666728294&s=509df9dad7a66aa4b6907ece685c584e",
+   "via": "og:image"
+  },
+  "https://www.vvvterschelling.nl/evenementen/europees-kampioenschap-strandzeilen/": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "sport",
+    "woord": "kampioen"
+   },
+   "image": "https://optimise2.assets-servd.host/vvv-terschelling/production/hoofdfotos/Strandzeilen-Walter-Carels-01.jpg?w=1200&auto=compress%2Cformat&fit=crop&dm=1665571564&s=eddf574dd8640da6059863d340b3e172",
    "via": "og:image"
   },
   "https://www.vvvterschelling.nl/evenementen/jeugdloop-berenloop/": {
@@ -23694,6 +24356,15 @@
    "image": "https://www.wsvdrachtenveenhoop.nl",
    "via": "og:image"
   },
+  "https://www.wsvdrachtenveenhoop.nl/event/1877": {
+   "checkedAt": "2026-10-15",
+   "hints": {
+    "soort": "sport",
+    "woord": "hattem hoekstra drachtster skutsje - 07 nov 2026 - - wsv drachten-veenhoop hattem hoekstra drachtster skutsje - 07 nov 2026"
+   },
+   "image": "https://www.wsvdrachtenveenhoop.nl",
+   "via": "og:image"
+  },
   "https://www.wsvdrachtenveenhoop.nl/event/1879": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -23755,6 +24426,11 @@
   },
   "https://ydedepunt.com/agenda/?event_id1=15768": {
    "checkedAt": "2026-10-14",
+   "image": null,
+   "via": null
+  },
+  "https://ydedepunt.com/agenda/?event_id1=15770": {
+   "checkedAt": "2026-10-15",
    "image": null,
    "via": null
   },
