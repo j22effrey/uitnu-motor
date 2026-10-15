@@ -96,7 +96,7 @@ def test_echte_uitjes_blijven_staan():
                   "Bridge over Troubled Water – The Simon & Garfunkel Story", "Deadline", "Slotdag Zomerfestival",
                   "Jazzborrel met Trio X", "Inloopdag atelier Geert", "Wandeling langs de dammen",
                   "Concert X voorverkoop gestart", "Dutch Open Darts 2027", "Beurs Bouwplan, Thuis in Wonen",
-                  "Cantatedienst met Musikalische Exequien van Heinrich Schütz", "Choral Evensong", "Br. Bas en de Fanfare",
+                  "Br. Bas en de Fanfare",
                   "Pater Moeskroen in concert", "Workshop meditatie", "Boekpresentatie: De moed van vergeving",
                   "+ Def Americans - Johnny Cash Tribute"):
         assert not not_an_outing(_event(title)), title
@@ -166,3 +166,22 @@ def test_duitse_versie_naast_de_nederlandse_valt_weg():
               ev("Wattwanderung", "/de/agenda/wad")]
     events[2]["occurrences"][0]["startTime"] = "10:00"   # alleen in het Duits: dan blijft hij staan
     assert translations(events) == {0}
+
+
+def test_ronde_van_15_oktober():
+    """Tweede zoektocht in de live agenda: liturgie, retraites, leden, cursussen, rommel en circuitdagen."""
+    for title in ("Cantatedienst", "Choral Evensong", "Kokoro-sesshin", "Zen weekend", "Avond over Suttas",
+                  "Lichtcirkel-sessies", "Mantra zingen", "5Ritmes Dans", "Klankschaalbeleving",
+                  "Deel activiteit", "Terugkerende activiteit", "Eigenschappen", "Tijdstip", "Plaza 12", "All Dates",
+                  "Vaarbewijs 1 les 3", "Inauguratie diner", "Blousenfeest", "Winterstop 19", "Kiezelweek 8",
+                  "Feestavond vrienden van SC Erica", "Kaartavond", "Halloweenparty VV Suameer",
+                  "Âlderein activiteit: BINGO", "Jiergearkomste Pleatslik NUT", "Vergaderingen Dorpsbelangen",
+                  "Inloopkwartier Dorpsbelang", "Peutergym", "Power Yoga Gevorderd", "Inloopmoment Warten – sociaal werker",
+                  "Inloopavond nieuwbouw", "OPEN CALL: Noorderlicht Biënnale", "LeukeSpulletjes is geopend",
+                  "Bekendmaking geboorte nieuwe inwoner", "PureDriving", "Rensportschool Zandvoort",
+                  "Amnesty International schrijfochtend"):
+        assert not_an_outing(_event(title)), title
+    for title in ("Benefietmaaltijd – Doperse Dis", "Meditatief klankschalenconcert", "Sound Bath | Klank Ligconcert",
+                  "Workshop koperslaan voor beginners", "Inloopdag atelier Geert", "TT Assen", "Dutch Racing Series",
+                  "(Verkoop) expositie Gerrit Offringa", "Woorden op Woensdag", "Kerstconcert"):
+        assert not not_an_outing(_event(title)), title

@@ -50,8 +50,10 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
 5. **Werkwijze.** Altijd eerst testen (`python -m pytest tests/v2`), dan een pull request met uitleg
    in gewone taal. Claude voegt die pull request daarna zelf samen (afspraak met de eigenaar van
    13 oktober 2026), maar alleen als de tests slagen en, bij een verandering aan het ophalen of
-   indelen, een proef met de echte websites door de keuring komt. Daarna meldt Claude in gewone taal
-   wat er is veranderd.
+   indelen, een proef met de echte websites door de keuring komt. Vóór het samenvoegen kijkt een
+   aparte hulpagent zonder voorkennis van het werk de wijziging na (een frisse blik vindt wat de maker
+   mist, zoals echte uitjes die een nieuwe regel ten onrechte weghaalt); wat die vindt wordt eerst
+   opgelost. Daarna meldt Claude in gewone taal wat er is veranderd.
 
 ## Hoe de motor werkt (kort)
 
