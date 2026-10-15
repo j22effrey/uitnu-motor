@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -9604,6 +9604,73 @@
       "extractorConfig": {},
       "activatedFromCandidate": "martinikerk.nl",
       "policyReviewedAt": "2026-10-14"
+    },
+    {
+      "id": "desukerei-nl-web",
+      "name": "Openluchtmuseum De Sûkerei",
+      "rootUrl": "https://desukerei.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://desukerei.nl/"
+      },
+      "activatedFromCandidate": "desukerei.nl",
+      "defaultPlace": {
+        "venue": "Openluchtmuseum De Sûkerei",
+        "city": "Damwâld",
+        "lat": 53.2927753,
+        "lon": 6.0117867
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-15"
+    },
+    {
+      "id": "cgkzuidlaren-nl-web",
+      "name": "De Rank",
+      "rootUrl": "https://www.cgkzuidlaren.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.cgkzuidlaren.nl/"
+      },
+      "activatedFromCandidate": "cgkzuidlaren.nl",
+      "defaultPlace": {
+        "venue": "De Rank",
+        "city": "Zuidlaren",
+        "lat": 53.0932883,
+        "lon": 6.6798151
+      },
+      "policyReviewedAt": "2026-10-15"
+    },
+    {
+      "id": "cafethert-nl-web",
+      "name": "'t Hert",
+      "rootUrl": "https://www.cafethert.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://cafethert.nl/agenda/"
+      },
+      "activatedFromCandidate": "cafethert.nl",
+      "defaultPlace": {
+        "venue": "'t Hert",
+        "city": "Joure",
+        "lat": 52.9681401,
+        "lon": 5.7941503
+      },
+      "policyReviewedAt": "2026-10-15"
     }
   ]
 }
