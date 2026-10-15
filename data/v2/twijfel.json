@@ -10,6 +10,16 @@
   ]
  },
  {
+  "id": "evt_660d9037b2d120",
+  "title": "Bekendmakingen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://zoek.officielebekendmakingen.nl/gmb-2026-480408.html",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_f00d9f3c635baa",
   "title": "Duorsum Mantgum",
   "kind": "overig",
@@ -35,6 +45,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.eisinga-planetarium.nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_552e0ae8b22634",
+  "title": "OPEN CALL: NOORDERLICHT BIËNNALE PLAY! 2027",
+  "kind": "kunst",
+  "reason": "website noorderlicht.com",
+  "url": "https://noorderlicht.com/updates/open-call-noorderlicht-biënnale-play-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -294,7 +314,7 @@
   "title": "Ernst, Bobbie en de rest",
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/ernst-bobbie-en-de-rest/",
+  "url": "https://www.vanberesteyn.nl/programma/ernst-en-bobbie/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -993,16 +1013,6 @@
   ]
  },
  {
-  "id": "evt_819d34b17fbcfe",
-  "title": "Doe mee met de sportinstuif",
-  "kind": "sport",
-  "reason": "oude categorie 'sport'",
-  "url": "https://levendigmusselkanaal.nl/agenda/151828/2026-10-29/doe-mee-met-de-sportinstuif",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_241ea04b39edcd",
   "title": "Inauguratie",
   "kind": "overig",
@@ -1303,16 +1313,6 @@
   ]
  },
  {
-  "id": "evt_490ae495826443",
-  "title": "Kom fierder!",
-  "kind": "kunst",
-  "reason": "website tsiispakhus.nl",
-  "url": "https://tsiispakhus.nl/evenemint/kom-fierder/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_d9c58c2a681ce6",
   "title": "Fortbildung „ARTtacke\"",
   "kind": "kunst",
@@ -1359,16 +1359,6 @@
   "kind": "kunst",
   "reason": "website podium34.nl",
   "url": "https://podium34.nl/events/the-charlies-pre-releaseparty/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_bc88e22ec2f498",
-  "title": "Doe mee met de sportinstuif",
-  "kind": "sport",
-  "reason": "oude categorie 'sport'",
-  "url": "https://levendigmusselkanaal.nl/agenda/151828/2026-11-05/doe-mee-met-de-sportinstuif",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1439,6 +1429,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.dezandvoorten.nl/events/oud-papier-halen-3/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a8f599daf8d16e",
+  "title": "Fryske Boekewike",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://makkum.nl/agenda/vrijdag-6-november-2026-fryske-boekewike/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1804,16 +1804,6 @@
   ]
  },
  {
-  "id": "evt_d301004d452951",
-  "title": "Dutch Open Dance 2026",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/dutch-open-dance",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_08a11142f66e42",
   "title": "Silbersee",
   "kind": "theater",
@@ -2042,8 +2032,18 @@
   "id": "evt_8c1a7cec6bac79",
   "title": "Dutch Open Dance 2026",
   "kind": "sport",
-  "reason": "zaal De Bonte Wever",
-  "url": "https://dansinternationaal.nl/",
+  "reason": "website debontewever.nl",
+  "url": "https://www.debontewever.nl/en/business/conferences-and-events/dutch-open-dance",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_e61ab19bf06382",
+  "title": "Egelhuisjes timmeren bij Gasterij Smeerling",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://onstwedde.info/agenda/artikel/oerrr-egelhuisjes-timmeren-bij-gasterij-smeerling-15-november-1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2054,16 +2054,6 @@
   "kind": "kunst",
   "reason": "website kunstcentrumdeploeg.nl",
   "url": "https://www.kunstcentrumdeploeg.nl/activiteit/2025/han-jansen-schilderen-met-de-stroming-2/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_32048b83c9cf72",
-  "title": "Plaza 12",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/dutch-open-dance",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2232,6 +2222,16 @@
   ]
  },
  {
+  "id": "evt_968905f0aca768",
+  "title": "Deuren open 19:30, aanvang 20:00",
+  "kind": "sport",
+  "reason": "website debontewever.nl",
+  "url": "https://www.debontewever.nl/nl/events/legends-of-rock-roadhouse",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_6beffaa10bf83c",
   "title": "Famke Helsema",
   "kind": "festival",
@@ -2374,6 +2374,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://wommels.nl/activiteit/pier-21-wat-spilet-20261120-2000/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_027a0513005f57",
+  "title": "Solo-motorreis van Harrie Oppewal",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://makkum.nl/agenda/solo-motorreis-van-harrie-oppewal/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3088,16 +3098,6 @@
   ]
  },
  {
-  "id": "evt_d9e42be78e8a49",
-  "title": "Deuren open 20:00, aanvang 20:30",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/edwin-evers-band",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_b9bc7b83a48f58",
   "title": "Pretpakhuis Jon van Eerd",
   "kind": "theater",
@@ -3295,16 +3295,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.vipassana-groningen.nl/wp/event/avond-over-suttas/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b59b30c1be1006",
-  "title": "Plaza 3",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/wk-line-dance",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3681,21 +3671,21 @@
   ]
  },
  {
-  "id": "evt_817485ba7a6552",
-  "title": "Licht en Donker",
-  "kind": "kunst",
-  "reason": "website hethoogeland.com",
-  "url": "https://www.hethoogeland.com/agenda/licht-en-donker/",
+  "id": "evt_24cb91febab22e",
+  "title": "“The Full Circle” club tour – An Evening of Classics & Highlights",
+  "kind": "sport",
+  "reason": "zaal De Bonte Wever",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/108529?p_id=525010",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_e8c4afade54fd5",
-  "title": "“The Full Circle” clubtour – An Evening of Classics & Highlights",
-  "kind": "sport",
-  "reason": "zaal De Bonte Wever",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108529?p_id=525010",
+  "id": "evt_817485ba7a6552",
+  "title": "Licht en Donker",
+  "kind": "kunst",
+  "reason": "website hethoogeland.com",
+  "url": "https://www.hethoogeland.com/agenda/licht-en-donker/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3756,16 +3746,6 @@
   "kind": "kunst",
   "reason": "website houtstad-ijlst.nl",
   "url": "https://www.houtstad-ijlst.nl/event/amnesty-international-schrijfochtend/2026-12-19/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_6a3c648f1f3933",
-  "title": "Celtic Sparks",
-  "kind": "sport",
-  "reason": "zaal De Bonte Wever",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/103904?p_id=490295",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4161,16 +4141,6 @@
   ]
  },
  {
-  "id": "evt_0d05f19ef1f47b",
-  "title": "Deuren open 20:00, aanvang 20:00",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/pump-up-the-90s",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_0a6b620a27bc98",
   "title": "Jan Henk de Groot en Reinout Douma",
   "kind": "theater",
@@ -4321,6 +4291,16 @@
   ]
  },
  {
+  "id": "evt_bdc740f1064001",
+  "title": "Terugkerende activiteit",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://levendigmusselkanaal.nl/agenda/150627/2026-11-04/breng-je-evenement-onder-de-aandacht",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_79b391bbf710c3",
   "title": "Kim Schuddeboom",
   "kind": "theater",
@@ -4346,6 +4326,16 @@
   "kind": "kunst",
   "reason": "website kunstencentrumk38.nl",
   "url": "https://kunstencentrumk38.nl/agenda-item/bk-k38/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b957c7faeab5ff",
+  "title": "Plaza 5",
+  "kind": "sport",
+  "reason": "website debontewever.nl",
+  "url": "https://www.debontewever.nl/nl/events/bier-en-whisky-festival",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4536,16 +4526,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://steendam.info/activiteit/steendammer-uurtje-36/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_6d089dab280ef0",
-  "title": "De Bonte Wever 25",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4766,16 +4746,6 @@
   "kind": "theater",
   "reason": "website theaterroden.nl",
   "url": "https://theaterroden.nl/andre-manuel",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_2f60da02e22114",
-  "title": "Deuren open 19:45, aanvang 20:15",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/stones-beatles",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5099,6 +5069,16 @@
   "kind": "sport",
   "reason": "website ntcnijeveen.nl",
   "url": "https://www.ntcnijeveen.nl/fotos/2023/padel/padel-14-april",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_93de9606fff535",
+  "title": "Terugkerende activiteit",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://levendigmusselkanaal.nl/agenda/153587/2026-10-15/bouw-mee-aan-onze-foto-expositie",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
