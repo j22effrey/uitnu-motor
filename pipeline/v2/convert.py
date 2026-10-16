@@ -57,10 +57,18 @@ def parse_time_range(value: str | None) -> tuple[str | None, str | None]:
     return times[0], (times[1] if len(times) > 1 else None)
 
 
+# Kaartverkoopsites: geen bron en geen link voor het uitje (vaste regel 1: de organisator is de bron;
+# Stager verbiedt bovendien alle bots). Dan wordt de agenda van de organisator de link.
+TICKET_HOSTS = re.compile(r"(?:^|\.)(?:stager\.co|ticketmaster\.\w+|eventix\.io|shop\.eventix\.io|ticketmatic\.com"
+                          r"|eventbrite\.\w+|tickettailor\.com|ticketkantoor\.nl|mijnetickets\.nl|shop\.weeztix\.com)$", re.I)
+
+
 def _web_link(value) -> str | None:
-    """Een link zoals de organisator hem gaf, of None als het geen echt webadres is."""
+    """Een link zoals de organisator hem gaf, of None als het geen echt webadres is (of een kaartverkoopsite)."""
     link = str(value or "").strip()
-    return link if canonical_url(link) else None
+    if not canonical_url(link) or TICKET_HOSTS.search(_host(link) or ""):
+        return None
+    return link
 
 
 def _host(url: str | None) -> str | None:

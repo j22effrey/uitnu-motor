@@ -21,7 +21,8 @@ from collector.discover_venues import is_excluded
 from pipeline import area
 
 from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
-from .convert import content_hash, load_first_party, merge_duplicates, to_v2
+from .dekking import coverage, load_register
+from .convert import TICKET_HOSTS, content_hash, load_first_party, merge_duplicates, to_v2
 from .gate import run_gate
 from .kinds import KINDS, TAGS
 from .photos import attach_photos, host_of, list_pages, page_facts_for
@@ -221,7 +222,8 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     # zo'n bron niet 'ineens leeg').
     # Bewust uitgezet: uit in de bronnenlijst, of een website op de uitsluitlijst.
     previous_hosts = {s.get("host") for e in previous or [] for s in e.get("sources") or [] if s.get("host")}
-    gone = (retired or set()) | {h for h in previous_hosts if is_excluded(f"https://{h}/")}
+    # Kaartverkoopsites tellen niet meer als bron (convert.TICKET_HOSTS): ook die mogen verdwijnen.
+    gone = (retired or set()) | {h for h in previous_hosts if is_excluded(f"https://{h}/") or TICKET_HOSTS.search(h)}
     # Wat elke website aanleverde vóór de filters: een bron die levert, is niet kapot.
     delivered = Counter(h for e in converted + excluded + too_far
                         for h in {s.get("host") for s in e.get("sources") or [] if s.get("host")})
@@ -259,9 +261,19 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "tags": TAGS,
         "changes": {k: len(v) for k, v in changes.items()},
         "gate": gate,
+        # Staat alles erin wat er zeker hoort? (collector/dekking.json)
+        "dekking": _coverage(events, today),
     }
     status["_twijfel"] = doubts
     return events, status
+
+
+def _coverage(events: list[dict], today: date) -> dict:
+    """De dekkingscontrole mag de fabriek nooit laten vastlopen: een fout komt in het verslag."""
+    try:
+        return coverage(events, load_register(HERE.parent.parent / "collector" / "dekking.json"), today)
+    except Exception as exc:  # noqa: BLE001 - een kapotte lijst is geen reden om niet te publiceren
+        return {"gecontroleerd": 0, "fout": f"{type(exc).__name__}: {exc}"}
 
 
 DOUBT_METHODS = {"geen", "bronhint", "locatie"}
@@ -304,6 +316,12 @@ def main(argv: list[str] | None = None) -> int:
                            venue_kinds=source_kinds(Path(args.sources)), retired=retired_hosts(Path(args.sources)))
 
     doubts = status.pop("_twijfel", [])
+    gaps = status.get("dekking") or {}
+    if gaps.get("gecontroleerd"):
+        print(f"Dekking: {gaps['goed']} van {gaps['gecontroleerd']} plekken goed, {len(gaps['ontbreekt'])} ontbreken, "
+              f"{len(gaps['teWeinig'])} met te weinig uitjes.")
+        for row in (gaps["teWeinig"] + gaps["ontbreekt"])[:15]:
+            print(f"  DEKKING {row['plaats']}: {row['naam']} heeft {row['gevonden']} (verwacht {row['verwacht']}, {row['periode']})")
     _write_json(out_dir / "twijfel.json", doubts)
     if status["gate"]["passed"] or args.force:
         _write_json(out_dir / "events.json", events)

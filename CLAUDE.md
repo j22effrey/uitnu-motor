@@ -82,8 +82,17 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    Een dorpswebsite krijgt de plaats van het dorp mee, voor uitjes zonder eigen plaats.
    Laadt een grote zaal zijn programma met JavaScript, maar staat het als gegevens (JSON) op de eigen
    website, dan kan de bron met de hand worden ingesteld met `extractorHint: "json_api"`
-   (`collector/json_api_events.py`; voorbeeld: Atlas Theater). Zet het genre van de organisator om
-   naar schema.org (`genres`): dat gaat bij het indelen voor de rubriek in de link.
+   (`collector/json_api_events.py`; voorbeelden: Atlas Theater, Huize Maas, Tumult, Akerk). Die kan ook
+   bladeren (`pageParam`), dag en tijd in losse velden lezen (`startDate`, `startTime`) en een uitje
+   overslaan op een veld (`skipField`/`skipValue`). Staat het programma als kaartjes met een vaste
+   opbouw in de HTML (vaak op een andere pagina dan de voorpagina, of in het stukje HTML dat de pagina
+   zelf ophaalt), gebruik dan `extractorHint: "html_cards"` (`collector/html_cards.py`; voorbeelden:
+   SPOT, Vera, Simplon, Forum): per gegeven een zoekpatroon, zonder nieuwe code per website. Datums in
+   bijna elke vorm leest `collector/when.py` ('do 15.10', 'Thursday 15 October', een getal). Zet het
+   genre van de organisator om naar schema.org (`genres`) en een zaal naar een plek met kaartpin
+   (`rooms`). Kaartverkoopsites (Stager en dergelijke) nooit: hun robots.txt verbiedt alle bots.
+   Een robots.txt die een gewone 'pagina niet gevonden' is (status 200), telt als geen robots.txt;
+   een serverfout (5xx) of een blokkade niet: dan halen we niets op (zoals het Grand Theatre).
 4. `pipeline/stage_active_sources.py` + `pipeline/build_auto_events.py`: halen de agenda's op
    en schrijven `data/auto_events.json`. Na 35 minuten rondt de motor af met wat er is; een bron
    die niet af kwam, storing had of niet te lezen was (website even plat), houdt zijn uitjes van de
@@ -106,6 +115,22 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    Eén kapot uitje laat de fabriek niet vastlopen (het staat in `status.json` onder `onleesbaar`).
    Een bron bewust uitzetten: `"enabled": false` met `disabledReason` in de bronnenlijst (een
    nieuwssite ook op de uitsluitlijst); de keuring weet dan dat die uitjes mogen verdwijnen.
+
+## Dekking: staat alles erin?
+
+We vertellen iedereen waar wat te doen is; mensen hoeven ons niet te vertellen wat ontbreekt. Daarom
+staat in `collector/dekking.json` per plaats wat er zeker in hoort (podia, clubs, festivals,
+festivalterreinen, musea, kerken met concerten, grote sport), met het aantal uitjes dat je de komende
+90 dagen minstens mag verwachten. Elke ronde meldt de motor in `status.json` onder `dekking` (en in het
+verslag van de ronde) wat ontbreekt of te weinig oplevert (`pipeline/v2/dekking.py`). Lessen uit
+Groningen (oktober 2026, eerst 9 van de 72 plekken goed):
+- Een test die '0 uitjes' vindt, betekent bij een grote zaal bijna altijd: het programma staat ergens
+  anders. Zoek het op (lijstpagina, gegevens op de eigen website, `admin-ajax.php`, `/api/`), en stel de
+  bron met de hand in met `json_api` of `html_cards`. Geef niet op en laat het niet stil liggen.
+- Een nieuwe stad of regio begint met een volledige lijst in `dekking.json` (zoek ook festivals en de
+  jaarplanning grote evenementen van de gemeente), daarna de bronnen; niet andersom.
+- Festivals en grote jaarlijkse evenementen zonder leesbare agenda: als losse uitjes in
+  `data/events.json`, met de bron (de organisator of de jaarplanning van de gemeente) in `sourceNote`.
 
 ## Ontbreekt er een uitje?
 

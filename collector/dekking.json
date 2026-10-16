@@ -1,0 +1,762 @@
+{
+  "uitleg": "Dekkingslijst: per plaats wat er zeker in de agenda hoort (podia, clubs, festivals, musea, kerken met concerten, grote sport). Elke ronde telt de motor per plek hoeveel uitjes er de komende 90 dagen zijn (verwacht90), of bij iets jaarlijks of de volgende editie erin staat. Wat ontbreekt of te weinig oplevert staat in data/v2/status.json onder 'dekking'. De verwachting ligt ruim onder de schatting: het is een alarm, geen doel.",
+  "plaatsen": {
+    "Groningen": [
+      {
+        "naam": "Vera",
+        "type": "podium",
+        "plaats": "Groningen",
+        "website": "https://www.vera-groningen.nl/",
+        "hosts": [
+          "vera-groningen.nl"
+        ],
+        "verwacht90": 30,
+        "opmerking": "Grootste clubpodium van de stad (Oosterstraat). Belangrijk gat in de motor."
+      },
+      {
+        "naam": "Simplon",
+        "type": "podium",
+        "plaats": "Groningen",
+        "website": "https://simplon.nl/",
+        "hosts": [
+          "simplon.nl"
+        ],
+        "verwacht90": 25
+      },
+      {
+        "naam": "SPOT Groningen (De Oosterpoort + Stadsschouwburg)",
+        "type": "podium",
+        "plaats": "Groningen",
+        "website": "https://www.spotgroningen.nl/",
+        "hosts": [
+          "spotgroningen.nl"
+        ],
+        "verwacht90": 100,
+        "opmerking": "Programmeert ook de Lutherse Kerk (concerten), Summer Stage in het Stadspark (6 shows jun-jul 2026) en Rhythm & Blues Night. stadsschouwburggroningen.nl bestaat"
+      },
+      {
+        "naam": "Huize Maas",
+        "type": "podium",
+        "plaats": "Groningen",
+        "website": "https://huizemaas.nl/",
+        "hosts": [
+          "huizemaas.nl"
+        ],
+        "verwacht90": 10
+      },
+      {
+        "naam": "Kroeg van Klaas",
+        "type": "muziekcafé",
+        "plaats": "Groningen",
+        "website": "https://www.kroegvanklaas.nl/",
+        "hosts": [
+          "kroegvanklaas.nl"
+        ],
+        "verwacht90": 5,
+        "opmerking": "Bruin café in de Oosterpoortwijk met live muziek."
+      },
+      {
+        "naam": "De Engelstede",
+        "type": "podium",
+        "plaats": "Groningen",
+        "website": "https://engelstede.nl/",
+        "hosts": [
+          "engelstede.nl"
+        ],
+        "verwacht90": 8
+      },
+      {
+        "naam": "EM2 (Suikerterrein)",
+        "type": "podium",
+        "plaats": "Groningen",
+        "website": "https://em2groningen.nl/",
+        "hosts": [
+          "em2groningen.nl"
+        ],
+        "verwacht90": 5,
+        "opmerking": "Zaal op het Suikerterrein (Suikerlaan 6), 1000 personen."
+      },
+      {
+        "naam": "Café bistro Kult",
+        "type": "muziekcafé",
+        "plaats": "Groningen",
+        "website": "https://www.cafekult.nl/",
+        "hosts": [
+          "cafekult.nl"
+        ],
+        "verwacht90": 1,
+        "opmerking": "Steentilstraat; live muziek en DJ's, 18+. Agendapagina niet bevestigd."
+      },
+      {
+        "naam": "Buckshot Café",
+        "type": "muziekcafé",
+        "plaats": "Groningen",
+        "website": "https://www.buckshotcafe.nl/",
+        "hosts": [
+          "buckshotcafe.nl"
+        ],
+        "verwacht90": 1,
+        "opmerking": "Gedempte Zuiderdiep 58; noemt zich 'hét muziekcafé van Groningen'."
+      },
+      {
+        "naam": "Het Viadukt",
+        "type": "muziekcafé",
+        "plaats": "Groningen",
+        "website": "http://www.viadukt.nl/",
+        "hosts": [
+          "viadukt.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Café De Toeter",
+        "type": "muziekcafé",
+        "plaats": "Groningen",
+        "website": "https://www.cafedetoeter.nl/",
+        "hosts": [
+          "cafedetoeter.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Chaplin's Pub",
+        "type": "muziekcafé",
+        "plaats": "Groningen",
+        "website": "https://www.chaplinspub.nl/",
+        "hosts": [
+          "chaplinspub.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "'t Pakhuis",
+        "type": "muziekcafé",
+        "plaats": "Groningen",
+        "website": "https://hetpakhuisgroningen.nl/",
+        "hosts": [
+          "hetpakhuisgroningen.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Dorothy's Drag Bar",
+        "type": "overig",
+        "plaats": "Groningen",
+        "website": "https://www.dorothysdrag.com/",
+        "hosts": [
+          "dorothysdrag.com"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Lust",
+        "type": "overig",
+        "plaats": "Groningen",
+        "website": "https://www.lustgroningen.nl/",
+        "hosts": [
+          "lustgroningen.nl"
+        ],
+        "verwacht90": 1,
+        "opmerking": "Vegan restaurant met evenementenagenda (Wix)."
+      },
+      {
+        "naam": "Grand Theatre",
+        "type": "theater",
+        "plaats": "Groningen",
+        "website": "https://www.grandtheatregroningen.nl/",
+        "hosts": [
+          "grandtheatregroningen.nl"
+        ],
+        "verwacht90": 15,
+        "opmerking": "robots.txt geeft een serverfout (HTTP 500): de motor mag dan niet ophalen. Theater laten weten; opnieuw testen."
+      },
+      {
+        "naam": "Tumult (voorheen VRIJDAG / Prinsentheater)",
+        "type": "theater",
+        "plaats": "Groningen",
+        "website": "https://tumultgroningen.nl/",
+        "hosts": [
+          "tumultgroningen.nl",
+          "bijvrijdag.nl"
+        ],
+        "verwacht90": 15,
+        "opmerking": "VRIJDAG heet nu Tumult; nieuw gebouw Sint Jansstraat 3 open sinds 25-26 sept 2026 (2 zalen). bijvrijdag.nl stuurt door. Het oude 'Prinsentheater'-domein verwijs"
+      },
+      {
+        "naam": "A-Theater",
+        "type": "theater",
+        "plaats": "Groningen",
+        "website": "https://a-theater.nl/",
+        "hosts": [
+          "a-theater.nl"
+        ],
+        "verwacht90": 15,
+        "opmerking": "Heeft The Events Calendar API: https://a-theater.nl/wp-json/tribe/events/v1/"
+      },
+      {
+        "naam": "Usva (cultuurcentrum RUG)",
+        "type": "theater",
+        "plaats": "Groningen",
+        "website": "https://www.usva.nl/",
+        "hosts": [
+          "usva.nl"
+        ],
+        "verwacht90": 8
+      },
+      {
+        "naam": "Sociëteit De Harmonie",
+        "type": "overig",
+        "plaats": "Groningen",
+        "website": "https://www.societeitdeharmonie.nl/",
+        "hosts": [
+          "societeitdeharmonie.nl"
+        ],
+        "verwacht90": 1,
+        "opmerking": "Ledensociëteit: per activiteit nagaan of niet-leden welkom zijn (MEMBERS_ONLY)."
+      },
+      {
+        "naam": "Paradigm",
+        "type": "club",
+        "plaats": "Groningen",
+        "website": "https://paradigm050.com/",
+        "hosts": [
+          "paradigm050.com"
+        ],
+        "verwacht90": 5,
+        "opmerking": "Club in het Zeefgebouw (Suikerterrein, Main room + LLAB). Organiseert ook Convoi Exceptionnel (apr), Planet Paradigm (mei), Sugar Town (jun), Saturday Afternoon"
+      },
+      {
+        "naam": "FIXY",
+        "type": "club",
+        "plaats": "Groningen",
+        "website": "https://fixy.club/",
+        "hosts": [
+          "fixy.club"
+        ],
+        "verwacht90": 10,
+        "opmerking": "Zit in het oude pand van club OOST (Oosterstraat). OOST bestaat niet meer."
+      },
+      {
+        "naam": "Wolter Wolthers",
+        "type": "club",
+        "plaats": "Groningen",
+        "website": "https://wolterwolthers.nl/",
+        "hosts": [
+          "wolterwolthers.nl"
+        ],
+        "verwacht90": 5,
+        "opmerking": "Poelestraat."
+      },
+      {
+        "naam": "ESNS (Eurosonic Noorderslag)",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://esns.nl/",
+        "hosts": [
+          "esns.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Binnenstad, Grote Markt, Oosterpoort, Suikerfabriek. Staat al als losse uitjes in confirmed_events."
+      },
+      {
+        "naam": "Noorderzon Performing Arts Festival",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.noorderzon.nl/",
+        "hosts": [
+          "noorderzon.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Noorderplantsoen en zalen in de stad."
+      },
+      {
+        "naam": "Jonge Harten Theaterfestival",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.jongeharten.nl/",
+        "hosts": [
+          "jongeharten.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Al in confirmed_events."
+      },
+      {
+        "naam": "Grasnapolsky",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.grasnapolsky.nl/",
+        "hosts": [
+          "grasnapolsky.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "2026 op het Suikerterrein (Zeefgebouw e.o.). grasnapolsky.com werkt niet; .nl is de echte."
+      },
+      {
+        "naam": "Hullabaloo Festival",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.hullabaloofestival.nl/",
+        "hosts": [
+          "hullabaloofestival.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Evenemententerrein Stadspark + extra plek bij de vijver."
+      },
+      {
+        "naam": "Free Your Mind Festival",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://freeyourmindfestival.nl/",
+        "hosts": [
+          "freeyourmindfestival.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Organisatie: Stadsfestival B.V."
+      },
+      {
+        "naam": "Kingsland Festival Groningen",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.kingslandfestival.nl/",
+        "hosts": [
+          "kingslandfestival.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Site toont nog pre-registratie 2025; datum komt laat online."
+      },
+      {
+        "naam": "Bevrijdingsfestival Groningen",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://bevrijdingsfestivalgroningen.nl/",
+        "hosts": [
+          "bevrijdingsfestivalgroningen.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Stichting Vier 5 Mei."
+      },
+      {
+        "naam": "Rapalje Zomerfolk Festival",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://zomerfolk.nl/",
+        "hosts": [
+          "zomerfolk.nl"
+        ],
+        "jaarlijks": true
+      },
+      {
+        "naam": "Noorderlicht (fotografie)",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://noorderlicht.com/",
+        "hosts": [
+          "noorderlicht.com"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Fotogalerie/festival, o.a. in de Akerk."
+      },
+      {
+        "naam": "Winterwelvaart",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://winterwelvaart.nl/",
+        "hosts": [
+          "winterwelvaart.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Organisatie: Museum aan de A; gekoppeld aan Wintergoud."
+      },
+      {
+        "naam": "Wintergoud",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://wintergoud.nl/",
+        "hosts": [
+          "wintergoud.nl"
+        ],
+        "jaarlijks": true
+      },
+      {
+        "naam": "Winterstad Groningen",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.winterstadgroningen.nl/",
+        "hosts": [
+          "winterstadgroningen.nl"
+        ],
+        "jaarlijks": true
+      },
+      {
+        "naam": "Groningens Ontzet & Zomerkermis",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://groningensontzet.nl/",
+        "hosts": [
+          "groningensontzet.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Kermis door KVVV (kvvv.nl geeft 403)."
+      },
+      {
+        "naam": "Pride Groningen",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.pridegroningen.nl/",
+        "hosts": [
+          "pridegroningen.nl"
+        ],
+        "jaarlijks": true
+      },
+      {
+        "naam": "Sunnemeerten Parade",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.sunnemeerten.nl/",
+        "hosts": [
+          "sunnemeerten.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Lichtparade."
+      },
+      {
+        "naam": "KEI-week",
+        "type": "festival-organisator",
+        "plaats": "Groningen",
+        "website": "https://www.keiweek.nl/",
+        "hosts": [
+          "keiweek.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Introductieweek voor studenten; deels publiek (concerten op Grote Markt/Suikerterrein). Kritisch filteren (alleen voor deelnemers)."
+      },
+      {
+        "naam": "Forum Groningen (filmtheater, bieb, activiteiten)",
+        "type": "bioscoop",
+        "plaats": "Groningen",
+        "website": "https://forum.nl/",
+        "hosts": [
+          "forum.nl"
+        ],
+        "verwacht90": 60,
+        "opmerking": "Ook de Biblioheek Groningen. Filmagenda: https://forum.nl/nl/film/filmagenda"
+      },
+      {
+        "naam": "Groninger Museum",
+        "type": "museum",
+        "plaats": "Groningen",
+        "website": "https://www.groningermuseum.nl/",
+        "hosts": [
+          "groningermuseum.nl"
+        ],
+        "verwacht90": 5,
+        "opmerking": "Staat al in events.json maar niet als crawlbron."
+      },
+      {
+        "naam": "Museum aan de A (voorheen Noordelijk Scheepvaartmuseum)",
+        "type": "museum",
+        "plaats": "Groningen",
+        "website": "https://museumaandea.nl/",
+        "hosts": [
+          "museumaandea.nl"
+        ],
+        "verwacht90": 3,
+        "opmerking": "Opvolger van het Noordelijk Scheepvaartmuseum (nu over stad en provincie)."
+      },
+      {
+        "naam": "Universiteitsmuseum Groningen",
+        "type": "museum",
+        "plaats": "Groningen",
+        "website": "https://www.universiteitsmuseumgroningen.nl/",
+        "hosts": [
+          "universiteitsmuseumgroningen.nl"
+        ],
+        "verwacht90": 2
+      },
+      {
+        "naam": "GRID Grafisch Museum Groningen",
+        "type": "museum",
+        "plaats": "Groningen",
+        "website": "https://www.gridgroningen.nl/",
+        "hosts": [
+          "gridgroningen.nl"
+        ],
+        "verwacht90": 2
+      },
+      {
+        "naam": "Hortus Botanicus Haren",
+        "type": "museum",
+        "plaats": "Haren",
+        "website": "https://www.hortusharen.nl/",
+        "hosts": [
+          "hortusharen.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Martinikerk",
+        "type": "kerk",
+        "plaats": "Groningen",
+        "website": "https://martinikerk.nl/",
+        "hosts": [
+          "martinikerk.nl"
+        ],
+        "verwacht90": 3
+      },
+      {
+        "naam": "Akerk (Der Aa-kerk)",
+        "type": "kerk",
+        "plaats": "Groningen",
+        "website": "https://akerk.nl/",
+        "hosts": [
+          "akerk.nl"
+        ],
+        "verwacht90": 3,
+        "opmerking": "aakerk.nl en akerk.nl zijn dezelfde."
+      },
+      {
+        "naam": "Nieuwe Kerk",
+        "type": "kerk",
+        "plaats": "Groningen",
+        "website": "https://nieuwekerkgroningen.nl/",
+        "hosts": [
+          "nieuwekerkgroningen.nl"
+        ],
+        "verwacht90": 3,
+        "opmerking": "The Events Calendar API: /wp-json/tribe/events/v1/; diensten eruit filteren."
+      },
+      {
+        "naam": "Lutherse Kerk (Haddingestraat 23)",
+        "type": "kerk",
+        "plaats": "Groningen",
+        "website": "https://www.elgg.nl/",
+        "hosts": [
+          "elgg.nl"
+        ],
+        "verwacht90": 3,
+        "opmerking": "Concerten worden door SPOT geprogrammeerd (staan in SPOT-agenda); elgg.nl is de kerkgemeente zelf."
+      },
+      {
+        "naam": "Stichting Oude Groninger Kerken",
+        "type": "kerk",
+        "plaats": "Groningen",
+        "website": "https://oudegroningerkerken.nl/",
+        "hosts": [
+          "oudegroningerkerken.nl"
+        ],
+        "verwacht90": 10,
+        "opmerking": "Beheert o.a. dorpskerken rond Ten Boer (Thesinge, Garmerwolde, Woltersum, Wittewierum, Ten Post). groningerkerken.nl is een alias."
+      },
+      {
+        "naam": "Synagoge Groningen",
+        "type": "kerk",
+        "plaats": "Groningen",
+        "website": "https://www.synagogegroningen.nl/",
+        "hosts": [
+          "synagogegroningen.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Dorpskerk Haren (PG Haren-Onnen)",
+        "type": "kerk",
+        "plaats": "Haren",
+        "website": "https://www.dorpskerkharen.nl/",
+        "hosts": [
+          "dorpskerkharen.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Bloemenjaarmarkt (Zie Ommezijde)",
+        "type": "markt",
+        "plaats": "Groningen",
+        "website": "https://zieommezijde.nl/",
+        "hosts": [
+          "zieommezijde.nl"
+        ],
+        "jaarlijks": true
+      },
+      {
+        "naam": "Groninger Marktendag (Groningen City Club)",
+        "type": "markt",
+        "plaats": "Groningen",
+        "website": "https://www.groningencityclub.nl/",
+        "hosts": [
+          "groningencityclub.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "In de jaarplanning als 'GCC'."
+      },
+      {
+        "naam": "Donar (basketbal)",
+        "type": "sport",
+        "plaats": "Groningen",
+        "website": "https://www.donar.nl/",
+        "hosts": [
+          "donar.nl"
+        ],
+        "verwacht90": 5,
+        "opmerking": "Profclub, publiek; geen amateurcompetitie."
+      },
+      {
+        "naam": "FC Groningen (Euroborg)",
+        "type": "sport",
+        "plaats": "Groningen",
+        "website": "https://www.fcgroningen.nl/",
+        "hosts": [
+          "fcgroningen.nl"
+        ],
+        "verwacht90": 4,
+        "opmerking": "Eredivisie; euroborg.nl verwijst naar fcgroningen.nl."
+      },
+      {
+        "naam": "Menzis 4 Mijl van Groningen (+ 4Mijl4You)",
+        "type": "sport",
+        "plaats": "Groningen",
+        "website": "https://4mijl.nl/",
+        "hosts": [
+          "4mijl.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Golazo Noord Nederland."
+      },
+      {
+        "naam": "Halve Marathon Groningen",
+        "type": "sport",
+        "plaats": "Groningen",
+        "website": "https://halvemarathongroningen.nl/",
+        "hosts": [
+          "halvemarathongroningen.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Golazo Noord Nederland."
+      },
+      {
+        "naam": "Nacht van Groningen",
+        "type": "sport",
+        "plaats": "Groningen",
+        "website": "https://nachtvangroningen.nl/",
+        "hosts": [
+          "nachtvangroningen.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Golazo; ook Urban Trail (22 mrt), Plantsoenloop (7 nov), Hardlopen Stadspark (13 dec) - eigen sites niet gevonden."
+      },
+      {
+        "naam": "Groningse 4daagse",
+        "type": "sport",
+        "plaats": "Groningen",
+        "website": "https://www.groningse4daagse.nl/",
+        "hosts": [
+          "groningse4daagse.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Site met botcontrole (429)."
+      },
+      {
+        "naam": "Biblionet Groningen (bibliotheken Haren, Ten Boer e.a.)",
+        "type": "overig",
+        "plaats": "Groningen",
+        "website": "https://www.groningsebibliotheken.nl/",
+        "hosts": [
+          "groningsebibliotheken.nl"
+        ],
+        "verwacht90": 1,
+        "opmerking": "Motor gebruikt nu forum.nl voor 'Bibliotheek Haren' - nagaan of Haren eigenlijk onder Biblionet valt."
+      },
+      {
+        "naam": "Klassieke Academie",
+        "type": "overig",
+        "plaats": "Groningen",
+        "website": "https://klassiekeacademie.nl/",
+        "hosts": [
+          "klassiekeacademie.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "MartiniPlaza",
+        "type": "evenementenhal",
+        "plaats": "Groningen",
+        "website": "https://www.martiniplaza.nl/",
+        "hosts": [
+          "martiniplaza.nl"
+        ],
+        "verwacht90": 15
+      },
+      {
+        "naam": "DOT Groningen",
+        "type": "overig",
+        "plaats": "Groningen",
+        "website": "https://dotgroningen.nl/",
+        "hosts": [
+          "dotgroningen.nl"
+        ],
+        "verwacht90": 1,
+        "opmerking": "Restaurant/bar met dome; agenda niet bevestigd."
+      },
+      {
+        "naam": "Dorpshuis Ten Boer",
+        "type": "overig",
+        "plaats": "Ten Boer",
+        "website": "https://www.dorpshuistenboer.com/",
+        "hosts": [
+          "dorpshuistenboer.com"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Dorpshuis Hoogkerk",
+        "type": "overig",
+        "plaats": "Hoogkerk",
+        "website": "https://dorpshuishoogkerk.nl/",
+        "hosts": [
+          "dorpshuishoogkerk.nl"
+        ],
+        "verwacht90": 1,
+        "opmerking": "Nog geen bron in de motor."
+      },
+      {
+        "naam": "Oranjevereniging Haren (Koningsdag Haren)",
+        "type": "festival-organisator",
+        "plaats": "Haren",
+        "website": "https://www.oranjeverenigingharen.nl/",
+        "hosts": [
+          "oranjeverenigingharen.nl"
+        ],
+        "jaarlijks": true
+      },
+      {
+        "naam": "Ontmoetingskerk Haren",
+        "type": "kerk",
+        "plaats": "Haren",
+        "website": "https://www.ontmoetingskerkharen.nl/",
+        "hosts": [
+          "ontmoetingskerkharen.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "MFC De Wijert & Helpman",
+        "type": "overig",
+        "plaats": "Groningen",
+        "website": "https://www.mfcgroningen.nl/",
+        "hosts": [
+          "mfcgroningen.nl"
+        ],
+        "verwacht90": 1
+      },
+      {
+        "naam": "Meerstad (kermis, skillspark)",
+        "type": "overig",
+        "plaats": "Meerstad",
+        "website": "https://www.meerstad.eu/",
+        "hosts": [
+          "meerstad.eu"
+        ],
+        "verwacht90": 1
+      }
+    ]
+  }
+}
