@@ -27,6 +27,17 @@ def test_elke_week_dezelfde_clubavond_is_geen_uitje():
     assert routines(monthly) == set()
 
 
+def test_reeks_avonden_in_een_paar_weekenden_is_geen_clubavond():
+    # Night of the DinoLights (Tenaxx): zes avonden in drie weekenden in december, geen vaste weekactiviteit.
+    weekends = [date(2026, 12, d) for d in (12, 13, 19, 20, 27, 28)]
+    events = [_event("Night of the DinoLights", day, "kinderen", "dinoparklandgoedtenaxx.nl") for day in weekends]
+    events += [_event("Advent im Rathaus", date(2026, 12, d), "overig", "museum.example") for d in (3, 4, 5, 6)]
+    assert routines(events) == set()
+    # Elke week een koffieochtend, een maand lang: wel een vaste activiteit.
+    coffee = [_event("Koffie-ochtend", date(2026, 10, 13) + timedelta(weeks=i), "eten") for i in range(4)]
+    assert routines(coffee) == {0, 1, 2, 3}
+
+
 def test_zaalverhuur_afval_en_kopjes_zijn_geen_uitje():
     for title in ("Bezet", "Verhuur grote zaal", "Afval grijze container restafval", "Digitaal spreekuur",
                   "Repetitie Harmonie", "Verenigingenoverleg", "Startdatum", "Grote zaal (bezet)",

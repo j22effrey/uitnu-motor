@@ -91,6 +91,8 @@ HORIZON_DAYS = 550          # uitjes verder vooruit: niet publiceren (zie build)
 ROUTINE_KEEP_KINDS = {"theater", "muziek", "film", "festival", "markt", "kunst", "natuur"}
 ROUTINE_MIN = 4             # minstens zo vaak in de agenda
 ROUTINE_MAX_GAP_DAYS = 14   # en gemiddeld (mediaan) hoogstens zoveel dagen ertussen
+ROUTINE_MIN_SPAN_DAYS = 21  # en verspreid over minstens drie weken: een reeks avonden in een paar weekenden
+                            # (Night of the DinoLights, een adventsmarkt) is een uitje, geen clubavond
 
 
 _MONTH = r"(?:jan|feb|maa|mrt|apr|mei|jun|jul|aug|sep|okt|oct|nov|dec)[a-z]*"
@@ -113,7 +115,7 @@ def routines(events: list[dict]) -> set[int]:
     drop: set[int] = set()
     for (title, _), indexes in groups.items():
         days = sorted({date.fromisoformat(events[i]["occurrences"][0]["date"]) for i in indexes})
-        if not title or len(days) < ROUTINE_MIN:
+        if not title or len(days) < ROUTINE_MIN or (days[-1] - days[0]).days < ROUTINE_MIN_SPAN_DAYS:
             continue
         gaps = sorted((b - a).days for a, b in zip(days, days[1:]))
         median = gaps[len(gaps) // 2]

@@ -134,7 +134,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"\bkids?(club|dag|feest|middag)?\b", r"knutsel", r"schmink", r"\bpeuter", r"\bkleuter",
         r"speeltuin", r"ballonnen", r"klimpark", r"indoor ?speel", r"speel ?(je mee ?)?(ochtend|middag)",
         r"paasei", r"knustel", r"\bkamp\b", r"^jongeren\b", r"pompoen",
-        r"jeugd ?soos", r"tiener ?soos", r"(?:foar|voor) de jeugd",
+        r"jeugd ?soos", r"tiener ?soos", r"(?:foar|voor) de jeugd", r"sprookjes(?:tocht|wandeling|route|speurtocht)",
     ]),
 }
 
