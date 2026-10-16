@@ -31,12 +31,19 @@ def test_reeks_avonden_in_een_paar_weekenden_is_geen_clubavond():
     # Night of the DinoLights (Tenaxx): zes avonden in drie weekenden in december, geen vaste weekactiviteit.
     weekends = [date(2026, 12, d) for d in (12, 13, 19, 20, 27, 28)]
     events = [_event("Night of the DinoLights", day, "kinderen", "dinoparklandgoedtenaxx.nl") for day in weekends]
+    # Dag na dag: een adventsmarkt, een workshopweek in de herfstvakantie.
     events += [_event("Advent im Rathaus", date(2026, 12, d), "overig", "museum.example") for d in (3, 4, 5, 6)]
-    assert routines(events) == set()
+    events += [_event("Werkplaats", date(2026, 10, d), "lezing", "forum.example") for d in range(24, 29)]
+    assert routines(events, TODAY) == set()
     # Elke week een koffieochtend, een maand lang: wel een vaste activiteit.
     coffee = [_event("Koffie-ochtend", date(2026, 10, 13) + timedelta(weeks=i), "eten") for i in range(4)]
-    assert routines(coffee) == {0, 1, 2, 3}
-
+    assert routines(coffee, TODAY) == {0, 1, 2, 3}
+    # Een vaste inloop die nu al elk weekend loopt, op een site die twee weken vooruit kijkt: vast.
+    walk_in = [_event("Walk-in Smartlab", date(2026, 10, d), "overig", "forum.example") for d in (17, 18, 24, 25, 31)]
+    assert routines(walk_in, TODAY) == set(range(5))
+    # Twee keer per week (di en do), twee weken vooruit: ook vast.
+    twice = [_event("Gym", date(2026, 10, d), "sport") for d in (13, 15, 20, 22, 27)]
+    assert routines(twice, TODAY) == set(range(5))
 
 def test_zaalverhuur_afval_en_kopjes_zijn_geen_uitje():
     for title in ("Bezet", "Verhuur grote zaal", "Afval grijze container restafval", "Digitaal spreekuur",

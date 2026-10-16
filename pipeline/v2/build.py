@@ -91,8 +91,10 @@ HORIZON_DAYS = 550          # uitjes verder vooruit: niet publiceren (zie build)
 ROUTINE_KEEP_KINDS = {"theater", "muziek", "film", "festival", "markt", "kunst", "natuur"}
 ROUTINE_MIN = 4             # minstens zo vaak in de agenda
 ROUTINE_MAX_GAP_DAYS = 14   # en gemiddeld (mediaan) hoogstens zoveel dagen ertussen
-ROUTINE_MIN_SPAN_DAYS = 21  # en verspreid over minstens drie weken: een reeks avonden in een paar weekenden
-                            # (Night of the DinoLights, een adventsmarkt) is een uitje, geen clubavond
+ROUTINE_MIN_SPAN_DAYS = 21  # korter dan drie weken is een reeks, geen clubavond: als hij pas later begint
+ROUTINE_LATER_DAYS = 14     # (Night of the DinoLights in december) of dag na dag is (een herfstvakantieweek).
+                            # Een vaste inloop die nu al loopt (elk weekend) blijft een vaste activiteit,
+                            # ook als de website maar twee weken vooruit kijkt.
 
 
 _MONTH = r"(?:jan|feb|maa|mrt|apr|mei|jun|jul|aug|sep|okt|oct|nov|dec)[a-z]*"
@@ -107,7 +109,7 @@ def _routine_key(event: dict) -> tuple[str, str]:
     return " ".join(title.split()), (hosts[0] if hosts else "")
 
 
-def routines(events: list[dict]) -> set[int]:
+def routines(events: list[dict], today: date | None = None) -> set[int]:
     """Posities van uitjes die een vaste activiteit zijn (zie ROUTINE_*)."""
     groups: dict[tuple[str, str], list[int]] = {}
     for index, event in enumerate(events):
@@ -115,9 +117,12 @@ def routines(events: list[dict]) -> set[int]:
     drop: set[int] = set()
     for (title, _), indexes in groups.items():
         days = sorted({date.fromisoformat(events[i]["occurrences"][0]["date"]) for i in indexes})
-        if not title or len(days) < ROUTINE_MIN or (days[-1] - days[0]).days < ROUTINE_MIN_SPAN_DAYS:
+        if not title or len(days) < ROUTINE_MIN:
             continue
         gaps = sorted((b - a).days for a, b in zip(days, days[1:]))
+        if (days[-1] - days[0]).days < ROUTINE_MIN_SPAN_DAYS and (
+                gaps[-1] == 1 or (today and (days[0] - today).days > ROUTINE_LATER_DAYS)):
+            continue
         median = gaps[len(gaps) // 2]
         if median <= ROUTINE_MAX_GAP_DAYS:
             drop |= {i for i in indexes if events[i].get("kind") not in ROUTINE_KEEP_KINDS}
@@ -201,7 +206,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     if len(events) != before:
         raise RuntimeError("indelen mag nooit evenementen weglaten")
     # Vaste activiteiten (elke week klaverjassen, gym of soos) zijn geen uitjes voor de agenda.
-    routine = routines(events)
+    routine = routines(events, today)
     events = [e for i, e in enumerate(events) if i not in routine]
     translated = translations(events)
     events = [e for i, e in enumerate(events) if i not in translated]
