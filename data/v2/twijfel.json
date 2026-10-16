@@ -1,5 +1,15 @@
 [
  {
+  "id": "evt_87ff65bac2c7ad",
+  "title": "HERINNERING",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.uithuizermeeden.nl/nieuws/herrinenring/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_6544d07f25260c",
   "title": "Heerenveen",
   "kind": "theater",
@@ -25,6 +35,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://dorpshuislekkum.nl/index.php/agenda/maandkalender/2026/9/-",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_972ddc7edad348",
+  "title": "Zaalsportschoenen aan en gaan!",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://appelscha.frl/welkom-bij-de-appelschase-bc",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -185,16 +205,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.vvvterschelling.nl/evenementen/ringsteken-in-midsland/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_fa0be57eaea8fa",
-  "title": "Samenkomst",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.cgkzuidlaren.nl/ontmoeten/samenkomsten",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -543,6 +553,16 @@
   ]
  },
  {
+  "id": "evt_50ea6572af8b8d",
+  "title": "Open middag Onstwedder Gaarv'n",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://onstwedde.info/agenda/artikel/open-middag-onstwedder-gaarvn-voor-cursussen-oude-ambachten-op-24-oktober-1",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_ad7e597352cda9",
   "title": "Popavond in De Klink",
   "kind": "overig",
@@ -708,16 +728,6 @@
   "kind": "kunst",
   "reason": "website natuurmuseumfryslan.nl",
   "url": "https://natuurmuseumfryslan.nl/programma-categorie/activiteiten/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_973ee90dc835f3",
-  "title": "Samenkomst",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.cgkzuidlaren.nl/ontmoeten/samenkomsten",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6019,16 +6029,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.gridgroningen.nl/agenda",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_46cfaeff9dd588",
-  "title": "Tech Event NoordNL",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
