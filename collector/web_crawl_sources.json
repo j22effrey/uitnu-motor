@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -9966,6 +9966,99 @@
       "policyReviewedAt": "2026-10-16",
       "note": "Cultuurcentrum van de universiteit; de lijst toont de eerstvolgende tien. Cursussen vallen weg in de indeling.",
       "disabledReason": "De lijst linkt naar de kaartverkoop (Stager) en koppelt soms de verkeerde link aan een uitje; eerst een html_cards-instelling met de eigen pagina's van Usva. Voorstellingen in het Usva Theater komen nu via SPOT."
+    },
+    {
+      "id": "gridgroningen-nl-web",
+      "name": "GRID Grafisch Museum Groningen",
+      "rootUrl": "https://www.gridgroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.gridgroningen.nl/agenda"
+      },
+      "activatedFromCandidate": "gridgroningen.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "groningse4daagse-nl-web",
+      "name": "Groningse 4daagse",
+      "rootUrl": "https://www.groningse4daagse.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "groningse4daagse.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "jongeharten-nl-web",
+      "name": "Jonge Harten Theaterfestival",
+      "rootUrl": "https://www.jongeharten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.jongeharten.nl/programma/"
+      },
+      "activatedFromCandidate": "jongeharten.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "nachtvangroningen-nl-web",
+      "name": "Nacht van Groningen",
+      "rootUrl": "https://nachtvangroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://nachtvangroningen.nl/"
+      },
+      "activatedFromCandidate": "nachtvangroningen.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "pridegroningen-nl-web",
+      "name": "Pride Groningen",
+      "rootUrl": "https://www.pridegroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pridegroningen.nl/"
+      },
+      "activatedFromCandidate": "pridegroningen.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-16"
     }
   ]
 }
