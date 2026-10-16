@@ -12,7 +12,9 @@ Per bron ingesteld in extractorConfig, zonder nieuwe code per website:
     genres       de soort volgens de organisator -> schema.org ('muziek' -> 'MusicEvent'); bij een lijst
                  van kenmerken telt het eerste kenmerk dat in de lijst staat
     rooms        een zaal -> een andere plek ({"venue": ..., "city": ...}) of alleen een zaalnaam
-    skipTitle    titels die geen uitje zijn
+    skipTitle    titels die geen uitje zijn; skipUrl: links die geen uitje zijn ('/abonnement-')
+    skipExtra    een toevoeging achter de titel die niets zegt ('support')
+    roomFallback de plek als de zaal niet in rooms staat ('elders': alleen de stad, geen zaal)
     skipTags     kenmerken die geen uitje zijn ('Spreekuur', 'Basisvaardigheden')
 
 Datums in de vormen van collector/when.py ('do 15.10', 'Thursday 15 October', '16-10-2026 / 10:00').
@@ -66,13 +68,19 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
     skip = re.compile(config["skipTitle"], re.I) if config.get("skipTitle") else None
     skip_tags = re.compile(config["skipTags"], re.I) if config.get("skipTags") else None
     drop = re.compile(config["dropFromTitle"], re.I | re.S) if config.get("dropFromTitle") else None
+    skip_url = re.compile(config["skipUrl"], re.I) if config.get("skipUrl") else None
+    skip_extra = re.compile(config["skipExtra"], re.I) if config.get("skipExtra") else None
+    fallback = config.get("roomFallback") if isinstance(config.get("roomFallback"), dict) else None
     genres = config.get("genres") if isinstance(config.get("genres"), dict) else {}
     rooms = config.get("rooms") if isinstance(config.get("rooms"), dict) else {}
     out: list[RawEvent] = []
     for card in split_cards(html, config.get("card") or r"<article\b"):
         raw_title = _field(card, fields.get("title"))
         title = _clean(drop.sub(" ", raw_title) if drop else raw_title)
-        extra = _clean(_field(card, fields.get("extra")))
+        raw_extra = _field(card, fields.get("extra"))
+        extra = _clean(drop.sub(" ", raw_extra) if drop else raw_extra)
+        if skip_extra and skip_extra.search(extra):
+            extra = ""
         if extra and extra.casefold() not in title.casefold():
             title = f"{title} – {extra}" if title else extra
         if not title or (skip and skip.search(title)):
@@ -93,9 +101,13 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
             end_time = parse_when(start[:10], end, today=today)
             end = end_time if end_time and "T" in end_time else ""
         link = _clean(_field(card, fields.get("url")))
+        if skip_url and link and skip_url.search(link):
+            continue
         genre = _clean(_field(card, fields.get("genre"))) or tags
         room = _clean(_field(card, fields.get("room")))
         place = _map(rooms, room)
+        if place is None and fields.get("room") and fallback:
+            place = fallback  # een zaal die we niet kennen ('elders'): niet de vaste zaal invullen
         place = {"venue": place} if isinstance(place, str) else (place if isinstance(place, dict) else {})
         out.append(RawEvent(
             source_name=source_name,
@@ -133,9 +145,11 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
             raise PermissionError(f"robots.txt staat {url} niet toe")
         page = page_fetch(url, timeout=timeout)
         events = parse_cards(page.text, config, source_name=source_name, page_url=page.url or url, today=today)
-        # Een lege pagina, of dezelfde als de vorige (de site negeert het paginanummer): klaar.
-        key = "|".join(f"{e.title}{e.start_at}" for e in events)
-        if not events or key in seen_pages:
+        # Een pagina zonder kaartjes, of dezelfde als de vorige (de site negeert het paginanummer): klaar.
+        # (Een pagina waarvan alle kaartjes wegvallen, zoals alleen spreekuren, telt niet als einde.)
+        cards = split_cards(page.text, config.get("card") or r"<article\b")
+        key = "|".join(cards)
+        if not cards or key in seen_pages:
             break
         seen_pages.add(key)
         out.extend(events)

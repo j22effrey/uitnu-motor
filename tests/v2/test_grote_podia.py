@@ -160,3 +160,96 @@ def test_grote_podia_staan_in_de_bronnenlijst():
         assert sources[sid]["extractorConfig"]["endpointUrl"].startswith(sources[sid]["rootUrl"].rstrip("/"))
     # Stager (de kaartverkoop) verbiedt alle bots: nooit als bron.
     assert not any("stager.co" in json.dumps(s) for s in sources.values())
+
+
+def test_nakijkronde_spot_elders_abonnement_en_cursus():
+    html = SPOT + """
+<article class="program__item" data-genres="muziek" data-location="elders">
+  <a href="/programma/toto/"><h3>TOTO</h3><time datetime="2027-07-03T19:00:00+02:00"></time></a></article>
+<article class="program__item" data-genres="muziek" data-location="oosterpoort">
+  <a href="/programma/abonnement-takeroot-presents/"><h3>TakeRoot presents Pas</h3><time datetime="2027-07-31T20:00:00+02:00"></time></a></article>
+<article class="program__item" data-genres="klassiek" data-location="oosterpoort">
+  <a href="/programma/cursus-2/"><h3>Cursus Klassieke Muziek 2</h3><time datetime="2027-01-31T20:00:00+02:00"></time></a></article>
+"""
+    cfg = {**SPOT_CFG, "skipTitle": "abonnement|\\bpas$|^cursus\\b", "skipUrl": "/abonnement", "roomFallback": {"city": "Groningen"}}
+    events = html_cards.parse_cards(html, cfg, source_name="SPOT", page_url="https://www.spotgroningen.nl/programma/", today=TODAY)
+    assert [e.title for e in events] == ["Grandmaster Flash", "Kluizelaar (2 - 7) – Simone de Jong Company", "TOTO"]
+    toto = events[-1]
+    # Een zaal die we niet kennen: alleen de stad, en dus niet de vaste zaal (De Oosterpoort) erbij.
+    assert (toto.venue, toto.city) == (None, "Groningen")
+
+
+def test_nakijkronde_vera_landcode_en_support_achter_de_titel():
+    html = VERA.replace('<h4 class="extra">The Monroes</h4>', '<h4 class="extra">support<sup class="origin">NL</sup></h4>')
+    cfg = {**VERA_CFG, "skipExtra": "^support\\b"}
+    events = html_cards.parse_cards(html, cfg, source_name="Vera", page_url="https://www.vera-groningen.nl/", today=TODAY)
+    assert events[0].title == "Bettie Serveert"
+    html = VERA.replace('<h4 class="extra">The Monroes</h4>', '<h4 class="extra">Stresssysteem<sup class="origin">GRN</sup></h4>')
+    assert html_cards.parse_cards(html, VERA_CFG, source_name="Vera", page_url="https://x/", today=TODAY)[0].title == "Bettie Serveert – Stresssysteem"
+
+
+def test_nakijkronde_wordpress_geeft_400_na_de_laatste_pagina():
+    from urllib.error import HTTPError
+
+    def json_fetch(url, timeout=15):
+        page = int(url.rsplit("page=", 1)[1])
+        if page > 1:
+            raise HTTPError(url, 400, "rest_post_invalid_page_number", None, None)
+        return json.dumps({"data": [{"title": "A", "formatted_date": "za 17 okt 2026", "url": "/a"}]})
+
+    def robots(url, timeout=15):
+        return Fetched(url=url, status=404, content_type="text/plain", text="")
+
+    cfg = {"endpointUrl": "https://x.nl/api", "pageParam": "page", "items": "data", "title": "title", "startDate": "formatted_date", "url": "url"}
+    events = json_api_events.fetch(cfg, source_name="X", root_url="https://x.nl/", robots_fetch=robots, json_fetch=json_fetch)
+    assert [e.title for e in events] == ["A"]
+
+
+def test_nakijkronde_pagina_met_alleen_weggefilterde_kaartjes_is_geen_einde():
+    rows = {1: '<div class="ticket-row" data-title="Spreekuur" data-tag="spreekuur"></div>',
+            2: '<div class="ticket-row" data-title="Lezing" data-date="20-10-2026"></div>'}
+
+    def fetch(url, timeout=15):
+        if url.endswith("robots.txt"):
+            return Fetched(url=url, status=404, content_type="text/plain", text="")
+        return Fetched(url=url, status=200, content_type="text/html", text=rows.get(int(url.rsplit("p=", 1)[1]), ""))
+
+    cfg = {"endpointUrl": "https://f.nl/agenda", "pageParam": "p", "card": '<div class="ticket-row', "skipTags": "spreekuur",
+           "fields": {"title": 'data-title="([^"]+)"', "date": 'data-date="([^"]+)"', "tags": 'data-tag="([^"]+)"'}}
+    events = html_cards.fetch(cfg, source_name="F", root_url="https://f.nl/", page_fetch=fetch, today=TODAY)
+    assert [e.title for e in events] == ["Lezing"]
+
+
+def test_nakijkronde_datums_zonder_jaar_tijdzone_en_aanvang():
+    assert parse_when("12 okt", today=TODAY) == "2026-10-12"            # net voorbij: niet volgend jaar
+    assert parse_when("15 januari", today=TODAY) == "2027-01-15"
+    assert parse_when("2026-10-16T21:30:00Z", today=TODAY) == "2026-10-16T23:30"   # omgerekend naar Nederlandse tijd
+    assert parse_when("vr 23 okt 2026", "Deur open 19:30, aanvang 20:15", today=TODAY) == "2026-10-23T20:15"
+
+
+def test_nakijkronde_robots_inlogpagina_met_404_in_de_gegevens_blijft_een_verbod():
+    def login(url, timeout=15):
+        return Fetched(url=url, status=200, content_type="text/html",
+                       text='<html><h1>Sign in</h1>' + 'x' * 9000 + '"notFound":"404: This page could not be found."</html>')
+
+    assert not _load_robots("https://x.nl/", login, timeout=5)[0].can_fetch("UITNU", "https://x.nl/agenda")
+
+
+def test_nakijkronde_kaartverkoop_is_geen_bron_of_link():
+    from pipeline.v2.convert import _web_link
+
+    assert _web_link("https://usva.stager.co/web/tickets/123") is None
+    assert _web_link("https://shop.weeztix.com/abc/tickets") is None
+    assert _web_link("https://www.usva.nl/programma/") == "https://www.usva.nl/programma/"
+
+
+def test_nakijkronde_podium_zegt_voorstelling_wint_van_los_trefwoord():
+    from pipeline.v2.classify import classify
+
+    base = {"id": "x", "occurrences": [{"date": "2026-10-17"}], "sources": []}
+    for title, schema, kind in [("Claudia de Breij – Oudejaarsconference", "ComedyEvent", "theater"),
+                                ("NITE – Oersoep", "TheaterEvent", "theater"), ("Amber Run", "MusicEvent", "muziek"),
+                                ("Brand New Musical – Kapsalon de musical", "TheaterEvent", "theater"),
+                                ("Kerstmarkt", "MusicEvent", "markt"), ("Whisky Festival Groningen", "MusicEvent", "eten")]:
+        assert classify({**base, "title": title, "schemaType": schema})["kind"] == kind, title
+    assert classify({**base, "title": "Breicafé"})["kind"] == "lezing"

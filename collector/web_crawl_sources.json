@@ -96,7 +96,7 @@
           "room": "data-location=\"([^\"]*)\"",
           "extra": "<h3[^>]*>(?:(?!</h3>).)*?<span[^>]*>(.*?)</span>"
         },
-        "skipTitle": "^abonnement",
+        "skipTitle": "abonnement|\\bpas$|^cursus\\b|^esns\\b|takeroot",
         "rooms": {
           "oosterpoort": {
             "venue": "De Oosterpoort",
@@ -145,6 +145,10 @@
           "comedy": "ComedyEvent",
           "film": "ScreeningEvent",
           "lezing": "EducationEvent"
+        },
+        "skipUrl": "/abonnement",
+        "roomFallback": {
+          "city": "Groningen"
         }
       },
       "defaultPlace": {
@@ -654,7 +658,7 @@
           "tags": "((?:<span class=\"tag[^\"]*\">[^<]*</span>\\s*)+)",
           "room": "<div class=\"location item\">\\s*<p>(.*?)</p>"
         },
-        "skipTags": "spreekuur|basisvaardigheden|cursus",
+        "skipTags": "spreekuur|basisvaardigheden|cursus|expositie",
         "genres": {
           "Kinderfilm": "ScreeningEvent",
           "Film": "ScreeningEvent",
@@ -834,15 +838,13 @@
       "enabled": true,
       "extractorHint": "json_api",
       "extractorConfig": {
-        "endpointUrl": "https://huizemaas.nl/wp-json/wp/v2/agenda?per_page=100&_fields=id,link,title,meta,agenda-categorie",
+        "endpointUrl": "https://huizemaas.nl/wp-json/wp/v2/agenda?per_page=100&agenda-categorie_exclude=122&_fields=id,link,title,meta,agenda-categorie",
         "items": "",
         "title": "title.rendered",
         "startDate": "meta.datum-agenda",
         "startTime": "meta.start-tijd",
         "url": "link",
-        "id": "id",
-        "skipField": "agenda-categorie",
-        "skipValue": "\\b122\\b"
+        "id": "id"
       },
       "defaultPlace": {
         "venue": "Huize Maas",
@@ -9836,7 +9838,7 @@
       "enabled": true,
       "extractorHint": "html_cards",
       "extractorConfig": {
-        "endpointUrl": "https://www.vera-groningen.nl/wp/wp-admin/admin-ajax.php?action=renderProgramme&category=all&page=1&perpage=200&search=",
+        "endpointUrl": "https://www.vera-groningen.nl/wp/wp-admin/admin-ajax.php?action=renderProgramme&category=all&page=1&perpage=200&search=&lang=nl",
         "card": "<div class=\"[^\"]*event-wrapper",
         "fields": {
           "title": "<h3 class=\"artist[^\"]*\">(.*?)</h3>",
@@ -9854,7 +9856,8 @@
           "downstage": "MusicEvent",
           "zienema": "ScreeningEvent",
           "dansen": "MusicEvent"
-        }
+        },
+        "skipExtra": "^support\\b"
       },
       "defaultPlace": {
         "venue": "Vera",
@@ -9946,7 +9949,7 @@
       "name": "Usva",
       "rootUrl": "https://www.usva.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "extractorHint": "html_agenda_dutch",
       "extractorConfig": {
         "agendaUrl": "https://www.usva.nl/programma/"
@@ -9961,7 +9964,8 @@
         "lon": 6.5621
       },
       "policyReviewedAt": "2026-10-16",
-      "note": "Cultuurcentrum van de universiteit; de lijst toont de eerstvolgende tien. Cursussen vallen weg in de indeling."
+      "note": "Cultuurcentrum van de universiteit; de lijst toont de eerstvolgende tien. Cursussen vallen weg in de indeling.",
+      "disabledReason": "De lijst linkt naar de kaartverkoop (Stager) en koppelt soms de verkeerde link aan een uitje; eerst een html_cards-instelling met de eigen pagina's van Usva. Voorstellingen in het Usva Theater komen nu via SPOT."
     }
   ]
 }

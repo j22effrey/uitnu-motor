@@ -73,10 +73,10 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"eetcaf", r"kookclub", r"lunch", r"\beten\b", r"jenever", r"etentje", r"diner\b", r"eetclub", r"snert", r"pannenkoek",
         r"italiaanse avond", r"bakkie", r"bakje", r"\bkoken\b", r"\bite\b", r"(?:dorps|buurt|aanschuif|samen) ?tafel\b",
         r"buffet", r"\bbakt\b", r"bakwedstrijd", r"aan (?:tafel|toavel)\b", r"\bkookt\b",
-        r"soep", r"(?:vrijdag ?)?(?:middag|avond) ?caf",
+        r"\bsoep", r"(?:vrijdag ?)?(?:middag|avond) ?caf",
     ]),
     "markt": _compile([
-        r"markt", r"(?<=\w)maart\b", r"braderie", r"beurs", r"fair\b", r"salon\b",
+        r"markt", r"(?<=\w)maart\b", r"braderie", r"beurs", r"fair\b", r"\bsalon\b|(?:woon|bruids|beauty|wellness|auto|boten|reis|vakantie)salon\b",
         r"reis ?event", r"reizen\b.*\bevent", r"rommel", r"vlooien", r"snuffel", r"krystmerk", r"\bmerke\b", r"\w+ruil\b", r"ruilbeurs", r"modelbouw",
         r"bazaa?r\b", r"kerstbo[oa]mverkoop",
     ]),
@@ -118,7 +118,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"lezing", r"workshop", r"cursus", r"masterclass", r"\bdebat\b",
         r"symposium", r"voorlees", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
         r"repair ?caf", r"bloemschik", r"verkeersregels", r"creatief caf", r"handwerk", r"informatie ?avond",
-        r"\bbrei", r"\bhaak", r"\bcrea\b", r"digitaal ?huis", r"literatuur", r"leesclub", r"boekenclub", r"verhalen", r"doe-? ?middag", r"thema ?avond", r"webinar",
+        r"\bbrei(?:en|werk|cafe|club|middag|avond|ochtend|les)\b", r"\bhaak", r"\bcrea\b", r"digitaal ?huis", r"literatuur", r"leesclub", r"boekenclub", r"verhalen", r"doe-? ?middag", r"thema ?avond", r"webinar",
         r"presentatie", r"werksessie", r"dorpsvisie", r"omgevingsvisie",
         r"info ?avond", r"reparatie", r"hartveilig", r"reanimatie", r"\baed\b", r"\behbo\b", r"kerststuk",
         r"\binformatie\b", r"aan het woord", r"voorlichting", r"klankschaal", r"retraite", r"retreat",
@@ -451,6 +451,10 @@ def parse_overrides(raw: dict | None) -> tuple[dict[str, tuple[str, str]], list[
     return ids, names
 
 
+# Een podium dat zelf zegt dat het een voorstelling, concert of film is, wint van deze losse trefwoorden.
+PERFORMANCE_KINDS = {"muziek", "theater", "film"}
+WEAK_KEYWORD_KINDS = {"eten", "natuur", "sport", "lezing"}
+
 def classify(event: dict, overrides: dict | None = None,
              venue_rules: dict[str, str] | None = None) -> dict:
     """Geeft {kind, tags, method, reason, confidence} terug.
@@ -523,7 +527,15 @@ def classify(event: dict, overrides: dict | None = None,
             return result("muziek", "trefwoord", "festival met één discipline: muziek", 0.8)
         # Geen bewijs: dan is het geen festival, en kijken we gewoon wat het wel is.
 
-    # 2b. Wandelingen en excursies zijn natuur, behalve bij een echte wedstrijd
+    # 2b. Een podium zegt zelf dat het een voorstelling, concert of film is: dat gaat voor een los trefwoord
+    # over eten, natuur, sport of lezing in de titel ('Claudia de Breij', 'Oersoep', 'Amber Run').
+    schema_kind = SCHEMA_KIND_HINTS.get(str(event.get("schemaType") or ""))
+    first = next((k for k in PRIORITY if k in found), None)
+    if schema_kind in PERFORMANCE_KINDS and first in WEAK_KEYWORD_KINDS:
+        return result(schema_kind, "organisator",
+                      f"de organisator noemt het een {event['schemaType']} (gaat voor trefwoord '{found[first][0]}')", 0.75)
+
+    # 2c. Wandelingen en excursies zijn natuur, behalve bij een echte wedstrijd
     if "natuur" in found and race:
         return result("sport", "trefwoord", f"wedstrijd ({found['sport'][0]}) in de natuur", 0.85)
     for kind in PRIORITY:
@@ -531,7 +543,6 @@ def classify(event: dict, overrides: dict | None = None,
             return result(kind, "trefwoord", f"trefwoord '{found[kind][0]}'", 0.8)
 
     # 3. Wat de organisator zelf op de pagina van het uitje zet
-    schema_kind = SCHEMA_KIND_HINTS.get(str(event.get("schemaType") or ""))
     if schema_kind:
         return result(schema_kind, "organisator", f"de organisator noemt het een {event['schemaType']}", 0.75)
     section = url_section(event.get("url"))

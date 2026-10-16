@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import re
 from datetime import date, datetime, timezone
+from zoneinfo import ZoneInfo
 
 MONTHS = {
     "januari": 1, "jan": 1, "january": 1,
@@ -40,11 +41,14 @@ WEEKDAYS = {
 _MONTH = "|".join(sorted(MONTHS, key=len, reverse=True))
 _WEEKDAY = "|".join(sorted(WEEKDAYS, key=len, reverse=True))
 
+# Met tijdzone ('2026-10-16T23:30:00Z' of '+02:00'): omrekenen naar Nederlandse tijd.
+ZONED_RE = re.compile(r"\b20\d{2}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:?\d{2})")
+AMSTERDAM = ZoneInfo("Europe/Amsterdam")
 ISO_RE = re.compile(r"\b(20\d{2})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2}))?")
 NUMERIC_RE = re.compile(r"(?<![\d])(\d{1,2})[-/.](\d{1,2})[-/.](20\d{2})(?!\d)")
 WORD_RE = re.compile(rf"(?:\b({_WEEKDAY})\.?,?\s+)?(\d{{1,2}})\s+({_MONTH})\.?(?:\s+(20\d{{2}}))?\b", re.I)
 SHORT_RE = re.compile(rf"\b({_WEEKDAY})\.?\s+(\d{{1,2}})\.(\d{{1,2}})(?![\d.])", re.I)
-START_RE = re.compile(r"\bstart\w*\s*:?\s*(\d{1,2})[:.](\d{2})", re.I)
+START_RE = re.compile(r"\b(?:start\w*|aanvang|begin\w*)\s*:?\s*(?:om\s*)?(\d{1,2})[:.](\d{2})", re.I)
 TIME_RE = re.compile(r"(?<![\d.:])(\d{1,2})[:.](\d{2})(?![\d])")
 
 
@@ -61,8 +65,10 @@ def _by_weekday(month: int, day: int, weekday: int | None, today: date) -> date 
     if weekday is not None:
         match = [d for d in options if d.weekday() == weekday and d >= date(today.year, 1, 1)]
         return match[0] if match else None
-    upcoming = [d for d in options if d >= today]
-    return upcoming[0] if upcoming else None
+    # Zonder weekdag: de dichtstbijzijnde datum, waarbij tot twee maanden terug nog 'dit jaar' is
+    # (een tentoonstelling 't/m 12 okt' op 16 oktober is net voorbij, niet volgend jaar).
+    recent = [d for d in options if (today - d).days <= 60]
+    return min(recent, key=lambda d: abs((d - today).days)) if recent else None
 
 
 def parse_time(text) -> str | None:
@@ -83,6 +89,14 @@ def parse_day(value, today: date) -> tuple[date | None, str | None]:
     text = " ".join(str(value or "").split())
     if not text:
         return None, None
+    zoned = ZONED_RE.search(text)
+    if zoned:
+        try:
+            moment = datetime.fromisoformat(zoned.group(0).replace("Z", "+00:00")).astimezone(AMSTERDAM)
+            clock = moment.strftime("%H:%M")
+            return moment.date(), None if clock == "00:00" else clock
+        except ValueError:
+            pass
     m = ISO_RE.search(text)
     if m:
         day = _date(int(m.group(1)), int(m.group(2)), int(m.group(3)))

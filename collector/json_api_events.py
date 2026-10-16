@@ -26,6 +26,7 @@ from datetime import date
 from html import unescape
 from typing import Callable
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
+from urllib.error import HTTPError
 from urllib.request import Request, build_opener
 
 from collector.site_crawler import USER_AGENT, _SameSiteRedirectHandler, _load_robots, default_fetch
@@ -137,7 +138,13 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
     out: list[RawEvent] = []
     previous = None
     for page in range(1, int(config.get("maxPages") or 10) + 1):
-        payload = json.loads(json_fetch(with_param(endpoint, param, page), timeout=timeout))
+        try:
+            payload = json.loads(json_fetch(with_param(endpoint, param, page), timeout=timeout))
+        except HTTPError as exc:
+            # WordPress geeft na de laatste pagina een foutcode (400): dan zijn we klaar.
+            if page > 1 and exc.code in (400, 404):
+                break
+            raise
         items = value_at(payload, config.get("items") or "")
         # Klaar bij een lege lijst, of als de site na de laatste pagina die nog een keer geeft.
         if not isinstance(items, list) or not items or items == previous:

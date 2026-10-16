@@ -275,7 +275,8 @@ def default_fetch(url: str, *, timeout: float = 15) -> Fetched:
 
 
 SOFT_404 = re.compile(r"\b404\b[^<]{0,80}(?:not be found|not found|niet gevonden)|page not found|pagina niet gevonden", re.I)
-ANTI_BOT = re.compile(r"captcha|cloudflare|access denied|forbidden|toegang geweigerd|just a moment|verify you are human", re.I)
+ANTI_BOT = re.compile(r"captcha|cloudflare|access denied|forbidden|toegang geweigerd|just a moment|verify you are human"
+                      r"|\blog ?in\b|inloggen|sign in|wachtwoord|password", re.I)
 
 
 def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: float) -> tuple[RobotFileParser, list[str]]:
