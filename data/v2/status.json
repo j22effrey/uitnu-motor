@@ -1,11 +1,11 @@
 {
  "version": 2,
- "refreshedAt": "2026-10-16T17:26:46+00:00",
+ "refreshedAt": "2026-10-16T21:56:43+00:00",
  "today": "2026-10-16",
- "total": 3427,
- "inputRecords": 8628,
+ "total": 3415,
+ "inputRecords": 8615,
  "outsideArea": 1,
- "geenUitje": 3388,
+ "geenUitje": 3390,
  "vasteActiviteit": 1079,
  "vertaling": 9,
  "teVerVooruit": 261,
@@ -27,21 +27,21 @@
  },
  "byKind": {
   "theater": 872,
-  "muziek": 698,
-  "overig": 322,
+  "muziek": 687,
+  "overig": 326,
   "film": 276,
-  "feest": 249,
-  "kunst": 222,
-  "lezing": 174,
+  "feest": 245,
+  "kunst": 220,
+  "lezing": 173,
   "markt": 172,
-  "natuur": 145,
-  "sport": 119,
+  "natuur": 146,
+  "sport": 120,
   "kinderen": 70,
   "festival": 63,
   "eten": 45
  },
  "byCity": {
-  "Groningen": 1125,
+  "Groningen": 1111,
   "Gorredijk": 242,
   "Leeuwarden": 186,
   "Emmen": 174,
@@ -50,7 +50,7 @@
   "Appelscha": 111,
   "Roden": 84,
   "Lies": 51,
-  "Emden": 44,
+  "Emden": 45,
   "Veendam": 41,
   "Onstwedde": 28,
   "Steenwijk": 26,
@@ -62,9 +62,9 @@
   "Wommels": 20,
   "Zuidwolde": 20,
   "Schiermonnikoog": 20,
+  "Zuidlaren": 19,
   "Heerenveen": 18,
   "Wier": 18,
-  "Zuidlaren": 17,
   "Stadskanaal": 16,
   "Workum": 16,
   "Reduzum": 15,
@@ -79,10 +79,10 @@
   "Bolsward": 12,
   "Steendam": 12,
   "Gasselternijveen": 12,
-  "Musselkanaal": 11,
   "Krummhörn": 11,
   "Earnewald": 11,
   "Schildwolde": 11,
+  "Musselkanaal": 10,
   "Wedde": 10,
   "Oosterwolde": 10,
   "Joure": 10,
@@ -259,7 +259,7 @@
   "forum.nl": 319,
   "skans.nl": 244,
   "atlastheater.nl": 185,
-  "appelscha.nl": 131,
+  "appelscha.nl": 130,
   "theaterdekoornbeurs.nl": 104,
   "explorethenorth.nl": 68,
   "theaterroden.nl": 67,
@@ -270,8 +270,8 @@
   "denieuwekolk.nl": 39,
   "vanberesteyn.nl": 36,
   "societeitdeharmonie.nl": 34,
-  "kunsthalle-emden.de": 31,
   "debontewever.nl": 30,
+  "kunsthalle-emden.de": 29,
   "onstwedde.info": 28,
   "jongeharten.podiumnederland.nl": 26,
   "demeenthe.nl": 25,
@@ -281,7 +281,6 @@
   "natuurverenigingzuidwolde.nl": 23,
   "historischcentrumleeuwarden.nl": 22,
   "houtstad-ijlst.nl": 21,
-  "em2groningen.nl": 20,
   "ioannistheatertsjerkewier.nl": 18,
   "jongeharten.nl": 18,
   "wommels.nl": 17,
@@ -292,6 +291,7 @@
   "kunstencentrumk38.nl": 15,
   "uithuizermeeden.nl": 14,
   "sneek.nl": 14,
+  "landesmuseum-emden.dehttps:": 14,
   "berlikum.com": 14,
   "reduzum.com": 14,
   "marrumonline.nl": 14,
@@ -306,12 +306,11 @@
   "gasselternijveen-online.nl": 12,
   "wildro.nl": 12,
   "tytsjerk.nl": 12,
-  "levendigmusselkanaal.nl": 11,
   "greetsiel.dehttps:": 11,
-  "landesmuseum-emden.dehttps:": 11,
   "delantearne.nl": 11,
   "lauwerzijl.info": 11,
   "ontdekdebieb.op-shop.nl": 10,
+  "levendigmusselkanaal.nl": 10,
   "dinoparklandgoedtenaxx.nl": 10,
   "doopsgezindengroningen.nl": 10,
   "noordlaren.eu": 10,
@@ -347,6 +346,7 @@
   "buurthuus-noordwolde.nl": 6,
   "buurtcentrumtuinpad.nl": 6,
   "ontdekwec.nl": 6,
+  "gevangenismuseum.nl": 6,
   "fraeylemaborg.nl": 6,
   "heeg.frl": 6,
   "demoeting.nl": 6,
@@ -368,7 +368,6 @@
   "kerkmidwolde.nl": 5,
   "kerkuithuizen.nl": 5,
   "landvaneen.nl": 5,
-  "gevangenismuseum.nl": 5,
   "groatekerk.nl": 5,
   "despitkeet.nl": 5,
   "nijeskalm.nl": 5,
@@ -389,6 +388,7 @@
   "sumar.nl": 5,
   "friesmuseum.nl": 5,
   "simmerdeis.nl": 5,
+  "em2groningen.nl": 4,
   "museumnieuwlande.nl": 4,
   "stedum.com": 4,
   "svscopus.nl": 4,
@@ -445,6 +445,7 @@
   "bierbattle.nl": 2,
   "karstenhoeve.nl": 2,
   "oosternieland.nl": 2,
+  "cgkzuidlaren.nl": 2,
   "vitalismarkten.nl": 2,
   "domiestoen.nl": 2,
   "tsjom.nl": 2,
@@ -472,6 +473,7 @@
   "pieterzijl.net": 2,
   "de-brass.nl": 2,
   "bierumerschool.nl": 2,
+  "nachtvangroningen.nl": 2,
   "ravenswoud.nl": 2,
   "pridegroningen.nl": 2,
   "opendrachten.nl": 2,
@@ -567,11 +569,11 @@
   "hfc15.nl": 1
  },
  "photos": {
-  "organisator": 385,
-  "wikimedia": 2968,
+  "organisator": 400,
+  "wikimedia": 2941,
   "zonder": 74
  },
- "twijfel": 634,
+ "twijfel": 632,
  "kinds": {
   "muziek": "Muziek",
   "festival": "Festival",
@@ -594,9 +596,9 @@
   "meerdaags": "Meerdaags"
  },
  "changes": {
-  "new": 48,
-  "changed": 47,
-  "removed": 52
+  "new": 8,
+  "changed": 21,
+  "removed": 20
  },
  "gate": {
   "passed": true,
@@ -604,7 +606,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "3427 nu, 3431 vorige keer (minimaal 85%)"
+    "detail": "3415 nu, 3427 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -614,7 +616,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "322 van 3427 (9%)"
+    "detail": "326 van 3415 (10%)"
    },
    {
     "name": "velden_compleet",
@@ -626,7 +628,7 @@
  "dekking": {
   "gecontroleerd": 439,
   "goed": 74,
-  "ontbreektTotaal": 359,
+  "ontbreektTotaal": 358,
   "ontbreekt": [
    {
     "naam": "'t Pakhuis",
@@ -891,14 +893,6 @@
     "gevonden": 0,
     "verwacht": 3,
     "periode": "90 dagen"
-   },
-   {
-    "naam": "Nacht van Groningen",
-    "plaats": "Groningen",
-    "website": "https://nachtvangroningen.nl/",
-    "gevonden": 0,
-    "verwacht": 1,
-    "periode": "volgende editie"
    },
    {
     "naam": "Noorderzon Performing Arts Festival",
@@ -2488,6 +2482,14 @@
     "website": "https://huizemaas.nl/",
     "gevonden": 8,
     "verwacht": 10,
+    "periode": "90 dagen"
+   },
+   {
+    "naam": "EM2 (Suikerterrein)",
+    "plaats": "Groningen",
+    "website": "https://em2groningen.nl/",
+    "gevonden": 4,
+    "verwacht": 5,
     "periode": "90 dagen"
    },
    {
