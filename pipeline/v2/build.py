@@ -21,6 +21,7 @@ from collector.discover_venues import is_excluded
 from pipeline import area
 
 from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
+from .dekking import coverage, load_register
 from .convert import content_hash, load_first_party, merge_duplicates, to_v2
 from .gate import run_gate
 from .kinds import KINDS, TAGS
@@ -259,6 +260,8 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "tags": TAGS,
         "changes": {k: len(v) for k, v in changes.items()},
         "gate": gate,
+        # Staat alles erin wat er zeker hoort? (collector/dekking.json)
+        "dekking": coverage(events, load_register(HERE.parent.parent / "collector" / "dekking.json"), today),
     }
     status["_twijfel"] = doubts
     return events, status
@@ -304,6 +307,12 @@ def main(argv: list[str] | None = None) -> int:
                            venue_kinds=source_kinds(Path(args.sources)), retired=retired_hosts(Path(args.sources)))
 
     doubts = status.pop("_twijfel", [])
+    gaps = status.get("dekking") or {}
+    if gaps.get("gecontroleerd"):
+        print(f"Dekking: {gaps['goed']} van {gaps['gecontroleerd']} plekken goed, {len(gaps['ontbreekt'])} ontbreken, "
+              f"{len(gaps['teWeinig'])} met te weinig uitjes.")
+        for row in (gaps["teWeinig"] + gaps["ontbreekt"])[:15]:
+            print(f"  DEKKING {row['plaats']}: {row['naam']} heeft {row['gevonden']} (verwacht {row['verwacht']}, {row['periode']})")
     _write_json(out_dir / "twijfel.json", doubts)
     if status["gate"]["passed"] or args.force:
         _write_json(out_dir / "events.json", events)
