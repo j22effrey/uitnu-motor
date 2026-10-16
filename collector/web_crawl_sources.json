@@ -80,15 +80,81 @@
     },
     {
       "id": "spot-groningen-web",
-      "name": "SPOT Groningen",
+      "name": "SPOT Groningen (De Oosterpoort en Stadsschouwburg)",
       "rootUrl": "https://www.spotgroningen.nl/",
       "role": "venue",
       "enabled": true,
-      "extractorHint": "jsonld_event",
-      "extractorEvidence": "source_probe:jsonld_event:2026-10-03",
-      "extractorConfig": {},
-      "maxPages": 50,
-      "maxDepth": 3,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.spotgroningen.nl/programma/",
+        "card": "<article class=\"program__item",
+        "fields": {
+          "title": "<h3[^>]*>((?:(?!<span|</h3>).)*)",
+          "start": "<time[^>]*datetime=\"([^\"]+)\"",
+          "url": "<a[^>]*href=\"([^\"]+)\"",
+          "genre": "data-genres=\"([^\"]*)\"",
+          "room": "data-location=\"([^\"]*)\"",
+          "extra": "<h3[^>]*>(?:(?!</h3>).)*?<span[^>]*>(.*?)</span>"
+        },
+        "skipTitle": "^abonnement",
+        "rooms": {
+          "oosterpoort": {
+            "venue": "De Oosterpoort",
+            "city": "Groningen",
+            "lat": 53.2142,
+            "lon": 6.5756
+          },
+          "stadsschouwburg": {
+            "venue": "Stadsschouwburg",
+            "city": "Groningen",
+            "lat": 53.2208,
+            "lon": 6.5718
+          },
+          "machinefabriek": {
+            "venue": "Machinefabriek",
+            "city": "Groningen"
+          },
+          "usva": {
+            "venue": "Usva Theater",
+            "city": "Groningen",
+            "lat": 53.2154,
+            "lon": 6.5621
+          },
+          "lutherse-kerk": {
+            "venue": "Lutherse Kerk",
+            "city": "Groningen",
+            "lat": 53.2159,
+            "lon": 6.5657
+          },
+          "a-theater": {
+            "venue": "A-Theater",
+            "city": "Groningen"
+          }
+        },
+        "genres": {
+          "muziek": "MusicEvent",
+          "klassiek": "MusicEvent",
+          "cabaret": "ComedyEvent",
+          "theater": "TheaterEvent",
+          "dans": "DanceEvent",
+          "familie": "ChildrensEvent",
+          "entertainment": "TheaterEvent",
+          "musical": "TheaterEvent",
+          "opera": "MusicEvent",
+          "jeugd": "ChildrensEvent",
+          "comedy": "ComedyEvent",
+          "film": "ScreeningEvent",
+          "lezing": "EducationEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "De Oosterpoort",
+        "city": "Groningen",
+        "lat": 53.2142,
+        "lon": 6.5756
+      },
+      "note": "De lijstpagina /programma/ heeft alle voorstellingen als kaartjes (tijd in <time>, zaal in data-location). De JSON-LD op die pagina is kapot (sjabloontekst) en /wp-json/ is verboden: dus de kaartjes.",
+      "policyReviewedAt": "2026-10-16",
       "minDelaySeconds": 0.5
     },
     {
@@ -568,19 +634,48 @@
     },
     {
       "id": "forum-nl-web",
-      "name": "Bibliotheek Haren",
+      "name": "Forum Groningen",
       "rootUrl": "https://forum.nl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://forum.nl/"
+        "endpointUrl": "https://forum.nl/nl/agenda?locatie=forum-groningen",
+        "pageParam": "p",
+        "maxPages": 30,
+        "card": "<div class=\"ticket-row",
+        "fields": {
+          "title": "data-title=\"([^\"]+)\"",
+          "id": "data-program-id=\"([^\"]+)\"",
+          "url": "<a [^>]*href=\"([^\"]+)\"[^>]*class=\"link-event\"",
+          "date": "\\?date=(\\d{2}-\\d{2}-20\\d{2})",
+          "time": "<div class=\"time item\">\\s*<p>(.*?)</p>",
+          "end": "<div class=\"time item\">\\s*<p>[^<]*<span[^>]*>-</span>\\s*([0-9:.]+)",
+          "tags": "((?:<span class=\"tag[^\"]*\">[^<]*</span>\\s*)+)",
+          "room": "<div class=\"location item\">\\s*<p>(.*?)</p>"
+        },
+        "skipTags": "spreekuur|basisvaardigheden|cursus",
+        "genres": {
+          "Kinderfilm": "ScreeningEvent",
+          "Film": "ScreeningEvent",
+          "Talk": "EducationEvent",
+          "Workshop": "EducationEvent",
+          "Kids": "ChildrensEvent",
+          "Expositie": "ExhibitionEvent",
+          "Muziek": "MusicEvent",
+          "Concert": "MusicEvent"
+        }
       },
-      "activatedFromCandidate": "forum.nl",
-      "policyReviewedAt": "2026-10-12"
+      "defaultPlace": {
+        "venue": "Forum Groningen",
+        "city": "Groningen",
+        "lat": 53.2187,
+        "lon": 6.5701
+      },
+      "note": "/nl/agenda?locatie=forum-groningen&p=N, 50 per pagina. Alleen het eigen gebouw: de bibliotheekfilialen zijn vooral spreekuren en cursussen. Spreekuur, basisvaardigheden en cursus vallen weg.",
+      "policyReviewedAt": "2026-10-16",
+      "minDelaySeconds": 0.5,
+      "activatedFromCandidate": "forum.nl"
     },
     {
       "id": "wildlands-nl-web",
@@ -733,19 +828,32 @@
     },
     {
       "id": "huizemaas-nl-web",
-      "name": "MAAS",
+      "name": "Huize Maas",
       "rootUrl": "https://huizemaas.nl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "json_api",
       "extractorConfig": {
-        "agendaUrl": "https://huizemaas.nl/"
+        "endpointUrl": "https://huizemaas.nl/wp-json/wp/v2/agenda?per_page=100&_fields=id,link,title,meta,agenda-categorie",
+        "items": "",
+        "title": "title.rendered",
+        "startDate": "meta.datum-agenda",
+        "startTime": "meta.start-tijd",
+        "url": "link",
+        "id": "id",
+        "skipField": "agenda-categorie",
+        "skipValue": "\\b122\\b"
       },
-      "activatedFromCandidate": "huizemaas.nl",
-      "policyReviewedAt": "2026-10-12"
+      "defaultPlace": {
+        "venue": "Huize Maas",
+        "city": "Groningen",
+        "lat": 53.2168,
+        "lon": 6.5645
+      },
+      "note": "WordPress-gegevens /wp-json/wp/v2/agenda (robots.txt staat het toe); datum als getal, categorie 122 = archief.",
+      "policyReviewedAt": "2026-10-16",
+      "minDelaySeconds": 0.5,
+      "activatedFromCandidate": "huizemaas.nl"
     },
     {
       "id": "kerkfeerwerd-nl-web",
@@ -6076,20 +6184,32 @@
       "rootUrl": "https://simplon.nl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://simplon.nl/events/"
+        "endpointUrl": "https://simplon.nl/programma/",
+        "card": "<div class=\"block block--event",
+        "fields": {
+          "title": "<h2 class=\"block__title\">(.*?)</h2>",
+          "date": "<p class=\"block__date\">(.*?)</p>",
+          "url": "<a href=\"([^\"]+)\"",
+          "genre": "data-filter='([^']*)'"
+        },
+        "genres": {
+          "1concert": "MusicEvent",
+          "2dance": "MusicEvent",
+          "3up": "MusicEvent"
+        }
       },
-      "activatedFromCandidate": "simplon.nl",
       "defaultPlace": {
+        "venue": "Simplon",
         "city": "Groningen",
-        "lat": 53.2246,
-        "lon": 6.5735
+        "lat": 53.2247,
+        "lon": 6.5643
       },
-      "policyReviewedAt": "2026-10-13"
+      "note": "/programma/ heeft alle komende concerten op datum ('do 15.10'); /events/ staat op publicatiedatum.",
+      "policyReviewedAt": "2026-10-16",
+      "minDelaySeconds": 0.5,
+      "activatedFromCandidate": "simplon.nl"
     },
     {
       "id": "theaterroden-nl-web",
@@ -9707,6 +9827,141 @@
         "lon": 5.7941503
       },
       "policyReviewedAt": "2026-10-15"
+    },
+    {
+      "id": "vera-groningen-web",
+      "name": "Vera",
+      "rootUrl": "https://www.vera-groningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.vera-groningen.nl/wp/wp-admin/admin-ajax.php?action=renderProgramme&category=all&page=1&perpage=200&search=",
+        "card": "<div class=\"[^\"]*event-wrapper",
+        "fields": {
+          "title": "<h3 class=\"artist[^\"]*\">(.*?)</h3>",
+          "extra": "<h4 class=\"extra[^\"]*\">(.*?)</h4>",
+          "date": "<div class=\"date\">(?:\\s*<h4[^>]*>.*?</h4>)?(.*?)</div>",
+          "time": "<div class=\"schedule\">(.*?)</div>",
+          "url": "class=\"event-link[^\"]*\"\\s*href=\"([^\"]+)\"",
+          "genre": "event-link vert-aligneable-container\\s*([a-z-]*)\\s*\"",
+          "room": "<div class=\"schedule\">\\s*([^|<]+)"
+        },
+        "dropFromTitle": "<sup.*?</sup>",
+        "skipTitle": "^kelderbar",
+        "genres": {
+          "concert": "MusicEvent",
+          "downstage": "MusicEvent",
+          "zienema": "ScreeningEvent",
+          "dansen": "MusicEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Vera",
+        "city": "Groningen",
+        "lat": 53.217,
+        "lon": 6.5701
+      },
+      "note": "Het programma komt van admin-ajax.php (robots.txt staat dat uitdrukkelijk toe); datums in het Engels zonder jaar, het jaar volgt uit de weekdag. Kaartverkoop via Stager nooit gebruiken: robots.txt daar verbiedt alle bots.",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "tumult-groningen-api",
+      "name": "Tumult (voorheen Vrijdag)",
+      "rootUrl": "https://tumultgroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "json_api",
+      "extractorConfig": {
+        "endpointUrl": "https://tumultgroningen.nl/api/v1/activities",
+        "pageParam": "page",
+        "maxPages": 5,
+        "items": "data",
+        "title": "title",
+        "startDate": "formatted_date",
+        "startTime": "formatted_start_time",
+        "url": "url"
+      },
+      "defaultPlace": {
+        "venue": "Tumult",
+        "city": "Groningen",
+        "lat": 53.2196,
+        "lon": 6.5706
+      },
+      "note": "De agenda staat als gegevens op /api/v1/activities (robots.txt staat het toe). /api/v1/courses zijn cursussen: niet gebruiken.",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "akerk-nl-api",
+      "name": "Akerk (Der Aa-kerk)",
+      "rootUrl": "https://akerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "json_api",
+      "extractorConfig": {
+        "endpointUrl": "https://akerk.nl/events.json",
+        "pageParam": "page",
+        "maxPages": 6,
+        "items": "data",
+        "title": "title",
+        "startDate": "beginDate.date",
+        "startTime": "time",
+        "url": "url",
+        "id": "id",
+        "genre": "eventTypes.0"
+      },
+      "defaultPlace": {
+        "venue": "Der Aa-kerk",
+        "city": "Groningen",
+        "lat": 53.2168,
+        "lon": 6.5624
+      },
+      "note": "De agenda staat als gegevens op /events.json?page=N (robots.txt staat het toe).",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "groningermuseum-web",
+      "name": "Groninger Museum",
+      "rootUrl": "https://www.groningermuseum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.groningermuseum.nl/programma"
+      },
+      "maxPages": 3,
+      "maxDepth": 1,
+      "minDelaySeconds": 0.5,
+      "defaultPlace": {
+        "venue": "Groninger Museum",
+        "city": "Groningen",
+        "lat": 53.2122,
+        "lon": 6.5658
+      },
+      "policyReviewedAt": "2026-10-16",
+      "note": "robots.txt geeft een gewone 'pagina niet gevonden' (status 200): dat telt als geen robots.txt."
+    },
+    {
+      "id": "usva-nl-web",
+      "name": "Usva",
+      "rootUrl": "https://www.usva.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.usva.nl/programma/"
+      },
+      "maxPages": 3,
+      "maxDepth": 1,
+      "minDelaySeconds": 0.5,
+      "defaultPlace": {
+        "venue": "Usva",
+        "city": "Groningen",
+        "lat": 53.2154,
+        "lon": 6.5621
+      },
+      "policyReviewedAt": "2026-10-16",
+      "note": "Cultuurcentrum van de universiteit; de lijst toont de eerstvolgende tien. Cursussen vallen weg in de indeling."
     }
   ]
 }

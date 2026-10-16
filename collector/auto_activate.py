@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from collector.discover_venues import is_excluded
-from collector.source_activation import _atomic_write, activation_reasons, default_place_for, promote_candidate
+from collector.source_activation import _atomic_write, _source_hosts, activation_reasons, default_place_for, promote_candidate
 
 NOTE = ("Automatisch goedgekeurd: eigen website van een plek of organisator binnen het werkgebied, "
         "met een agenda die de robot kan lezen. Alleen feiten, geen teksten of foto's.")
@@ -60,9 +60,13 @@ def auto_activate(queue_path: str, sources_path: str, today: str | None = None) 
         candidate["policyReview"] = {"status": "allowed", "reviewedAt": today or date.today().isoformat(), "note": NOTE}
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     activated = []
+    # Een website die al een (met de hand ingestelde) bron heeft, krijgt er geen tweede bij.
+    active = _source_hosts(json.loads(Path(sources_path).read_text(encoding="utf-8")))
     for candidate in chosen:
         role = role_for(candidate)
         if activation_reasons(candidate, role=role):
+            continue
+        if str(candidate.get("host") or "").casefold().removeprefix("www.") in active:
             continue
         promote_candidate(queue_path=queue_path, sources_path=sources_path,
                           host=candidate["host"], name=name_for(candidate), role=role)

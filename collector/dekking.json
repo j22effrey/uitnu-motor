@@ -167,7 +167,8 @@
         "hosts": [
           "grandtheatregroningen.nl"
         ],
-        "verwacht90": 15
+        "verwacht90": 15,
+        "opmerking": "robots.txt geeft een serverfout (HTTP 500): de motor mag dan niet ophalen. Theater laten weten; opnieuw testen."
       },
       {
         "naam": "Tumult (voorheen VRIJDAG / Prinsentheater)",
@@ -180,18 +181,6 @@
         ],
         "verwacht90": 15,
         "opmerking": "VRIJDAG heet nu Tumult; nieuw gebouw Sint Jansstraat 3 open sinds 25-26 sept 2026 (2 zalen). bijvrijdag.nl stuurt door. Het oude 'Prinsentheater'-domein verwijs"
-      },
-      {
-        "naam": "NITE (voorheen NNT) / Theater De Machinefabriek",
-        "type": "theater",
-        "plaats": "Groningen",
-        "website": "https://nite.nl/",
-        "hosts": [
-          "nite.nl",
-          "nnt.nl"
-        ],
-        "verwacht90": 8,
-        "opmerking": "nnt.nl stuurt door naar nite.nl. De Machinefabriek (Ebbingekwartier) is hun eigen zaal; machinefabriekgroningen.nl werkt niet, machinefabriek.nl is een ander be"
       },
       {
         "naam": "A-Theater",

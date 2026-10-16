@@ -274,6 +274,10 @@ def default_fetch(url: str, *, timeout: float = 15) -> Fetched:
         )
 
 
+SOFT_404 = re.compile(r"\b404\b[^<]{0,80}(?:not be found|not found|niet gevonden)|page not found|pagina niet gevonden", re.I)
+ANTI_BOT = re.compile(r"captcha|cloudflare|access denied|forbidden|toegang geweigerd|just a moment|verify you are human", re.I)
+
+
 def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: float) -> tuple[RobotFileParser, list[str]]:
     p = urlparse(root_url)
     robots_url = f"{p.scheme}://{p.netloc}/robots.txt"
@@ -285,8 +289,12 @@ def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: flo
             rp.disallow_all = True
             return rp, []
         if 200 <= fetched.status < 300:
-            # A login/anti-bot HTML response is not a valid robots policy.
+            # A login/anti-bot HTML response is not a valid robots policy. A plain 'page not found'
+            # page served with status 200 (a 'soft 404') means there is no robots.txt: that permits crawling.
             if "html" in fetched.content_type.lower():
+                if SOFT_404.search(fetched.text) and not ANTI_BOT.search(fetched.text[:5_000]):
+                    rp.parse([])
+                    return rp, []
                 rp.disallow_all = True
                 return rp, []
             rp.parse(fetched.text.splitlines())

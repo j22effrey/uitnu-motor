@@ -11,6 +11,10 @@ extractorConfig, met de plek van elk gegeven ('Performance.StartTime'):
     genre        de soort volgens de organisator; genres zet die om naar schema.org ('MusicEvent')
     room         de zaal; rooms zet een zaal om naar een andere plek ({"venue": ..., "city": ...})
     skipTitle    titels die geen uitje zijn (een abonnement of serie)
+    startDate    in plaats van 'start': de dag in een eigen veld, ook als getal (seconden sinds 1970) of
+                 als Nederlandse tekst ('za 17 okt 2026'); startTime: de tijd in een eigen veld ('20:30')
+    skipField, skipValue  een uitje overslaan als dat veld bij deze tekst past (bijv. de categorie 'Archief')
+    pageParam, maxPages   bladeren: ?page=1, ?page=2, ... tot een lege lijst (hooguit maxPages)
 
 Alleen feiten: naam, datum en tijd, zaal, soort en link. Geen teksten.
 """
@@ -18,11 +22,14 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import date
+from html import unescape
 from typing import Callable
-from urllib.parse import urljoin
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 from urllib.request import Request, build_opener
 
 from collector.site_crawler import USER_AGENT, _SameSiteRedirectHandler, _load_robots, default_fetch
+from collector.when import parse_when
 from pipeline.event_model import RawEvent
 
 
@@ -42,11 +49,32 @@ def _text(value) -> str:
     return " ".join(str(value or "").split())
 
 
-def parse_items(payload, config: dict, *, source_name: str, root_url: str) -> list[RawEvent]:
+def _clean(value) -> str:
+    """Tekst zonder HTML-tekens en -codes ('Rock &#8211; Live' -> 'Rock – Live')."""
+    return _text(re.sub(r"<[^>]+>", " ", unescape(str(value or ""))))
+
+
+ISO_START = re.compile(r"^20\d{2}-\d{2}-\d{2}")
+
+
+def _moment(item, config: dict, key: str, today: date | None) -> str:
+    """Begin of eind: een ISO-veld, of dag en tijd apart (in allerlei vormen, zie collector/when.py)."""
+    if config.get(key):
+        value = _text(value_at(item, config.get(key)))
+        return value if not value or ISO_START.match(value) else (parse_when(value, today=today) or "")
+    if config.get(f"{key}Date"):
+        day = value_at(item, config.get(f"{key}Date"))
+        clock = value_at(item, config.get(f"{key}Time")) if config.get(f"{key}Time") else None
+        return parse_when(day, clock, today=today) or ""
+    return ""
+
+
+def parse_items(payload, config: dict, *, source_name: str, root_url: str, today: date | None = None) -> list[RawEvent]:
     items = value_at(payload, config.get("items") or "")
     if not isinstance(items, list):
         return []
     skip = re.compile(config["skipTitle"], re.I) if config.get("skipTitle") else None
+    skip_value = re.compile(config["skipValue"], re.I) if config.get("skipField") and config.get("skipValue") else None
     genres = config.get("genres") if isinstance(config.get("genres"), dict) else {}
     rooms = config.get("rooms") if isinstance(config.get("rooms"), dict) else {}
     paths = config.get("title") if isinstance(config.get("title"), list) else [config.get("title")]
@@ -54,12 +82,14 @@ def parse_items(payload, config: dict, *, source_name: str, root_url: str) -> li
     for item in items:
         parts: list[str] = []
         for path in paths:
-            text = _text(value_at(item, path))
+            text = _clean(value_at(item, path))
             if text and text.casefold() not in {p.casefold() for p in parts}:
                 parts.append(text)
         title = " – ".join(parts)
-        start = _text(value_at(item, config.get("start")))
+        start = _moment(item, config, "start", today)
         if not title or not start or (skip and skip.search(title)):
+            continue
+        if skip_value and skip_value.search(json.dumps(value_at(item, config["skipField"]), ensure_ascii=False)):
             continue
         link = _text(value_at(item, config.get("url"))) if config.get("url") else ""
         genre = _text(value_at(item, config.get("genre"))) if config.get("genre") else ""
@@ -73,9 +103,11 @@ def parse_items(payload, config: dict, *, source_name: str, root_url: str) -> li
             source_id=_text(value_at(item, config.get("id"))) or None,
             title=title,
             start_at=start,
-            end_at=_text(value_at(item, config.get("end"))) or None,
+            end_at=_moment(item, config, "end", today) or None,
             venue=place.get("venue"),
             city=place.get("city"),
+            lat=place.get("lat"),
+            lon=place.get("lon"),
             category=genres.get(genre) or genre or None,
             verification_status="organizer_confirmed",
             raw={"source_feed": config.get("endpointUrl"), "genre": genre or None, "room": room or None},
@@ -97,5 +129,26 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
     robots, _ = _load_robots(root_url, robots_fetch, timeout=timeout)
     if not robots.can_fetch(USER_AGENT, endpoint):
         raise PermissionError(f"robots.txt staat {endpoint} niet toe")
-    return parse_items(json.loads(json_fetch(endpoint, timeout=timeout)), config,
-                       source_name=source_name, root_url=root_url)
+    param = config.get("pageParam")
+    if not param:
+        return parse_items(json.loads(json_fetch(endpoint, timeout=timeout)), config,
+                           source_name=source_name, root_url=root_url)
+    # Bladeren tot een lege lijst.
+    out: list[RawEvent] = []
+    previous = None
+    for page in range(1, int(config.get("maxPages") or 10) + 1):
+        payload = json.loads(json_fetch(with_param(endpoint, param, page), timeout=timeout))
+        items = value_at(payload, config.get("items") or "")
+        # Klaar bij een lege lijst, of als de site na de laatste pagina die nog een keer geeft.
+        if not isinstance(items, list) or not items or items == previous:
+            break
+        previous = items
+        out.extend(parse_items(payload, config, source_name=source_name, root_url=root_url))
+    return out
+
+
+def with_param(url: str, name: str, value) -> str:
+    """Het adres met ?name=value (een bestaande waarde wordt vervangen)."""
+    parts = urlparse(url)
+    query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True) if k != name] + [(name, str(value))]
+    return urlunparse(parts._replace(query=urlencode(query)))

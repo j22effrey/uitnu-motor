@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 from datetime import date, timedelta
 from pathlib import Path
+from urllib.parse import urlparse
 
 WINDOW_DAYS = 90
 
@@ -31,7 +32,10 @@ def coverage(events: list[dict], register: dict, today: date) -> dict:
     now = today.isoformat()
     by_host: dict[str, list[dict]] = {}
     for event in events:
-        for host in {_host(s.get("host")) for s in event.get("sources") or [] if s.get("host")}:
+        # Een bron of de link van het uitje: een met de hand toegevoegd uitje telt zo ook mee.
+        hosts = {_host(s.get("host")) for s in event.get("sources") or [] if s.get("host")}
+        hosts |= {_host(urlparse(u).netloc) for u in [event.get("url")] + [s.get("url") for s in event.get("sources") or []] if u}
+        for host in hosts:
             by_host.setdefault(host, []).append(event)
 
     def upcoming(event: dict, *, window: bool) -> bool:
