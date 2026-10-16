@@ -10084,6 +10084,84 @@
         "city": "Groningen"
       },
       "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "skans-nl-web",
+      "name": "De Skâns",
+      "rootUrl": "https://skans.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://skans.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "skans.nl",
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "theaterkerknes-nl-web",
+      "name": "Theaterkerk Nes",
+      "rootUrl": "https://theaterkerknes.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://theaterkerknes.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "theaterkerknes.nl",
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "museumstadappingedam-nl-web",
+      "name": "Museum Stad Appingedam",
+      "rootUrl": "https://museumstadappingedam.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "museumstadappingedam.nl",
+      "defaultPlace": {
+        "venue": "Museum Stad Appingedam",
+        "city": "Appingedam",
+        "lat": 53.3205299,
+        "lon": 6.8576569
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "oermuseum-nl-web",
+      "name": "Oermuseum",
+      "rootUrl": "https://oermuseum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://oermuseum.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "oermuseum.nl",
+      "defaultPlace": {
+        "venue": "Oermuseum",
+        "city": "Diever",
+        "lat": 52.8549218,
+        "lon": 6.3169286
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-16"
     }
   ]
 }

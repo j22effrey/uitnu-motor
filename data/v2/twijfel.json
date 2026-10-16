@@ -341,21 +341,21 @@
   ]
  },
  {
-  "id": "evt_27ae3c626bee55",
-  "title": "Docs: The Match",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/docs-the-match?date=21-10-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_5059ad62b42b6d",
   "title": "Gezellige Middag",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://berlikum.com/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_5bf60648c6a8f5",
+  "title": "Poëziekring",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://doopsgezindengroningen.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -386,6 +386,16 @@
   "kind": "sport",
   "reason": "oude categorie 'sport'",
   "url": "https://levendigmusselkanaal.nl/agenda/151828/2026-10-22/doe-mee-met-de-sportinstuif",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_352d0e41b80cf4",
+  "title": "Frank Kazenbroot over Leonard Cohen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://doopsgezindengroningen.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1854,6 +1864,16 @@
   ]
  },
  {
+  "id": "evt_d301004d452951",
+  "title": "Dutch Open Dance 2026",
+  "kind": "sport",
+  "reason": "website debontewever.nl",
+  "url": "https://www.debontewever.nl/nl/events/dutch-open-dance",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_5f20eb2c3f7745",
   "title": "Najaarsbijeenkomst Plaatselijk Belang Appelscha",
   "kind": "overig",
@@ -1987,6 +2007,16 @@
   ]
  },
  {
+  "id": "evt_1df566e200d0c5",
+  "title": "Dark Sky Waddentour",
+  "kind": "theater",
+  "reason": "website theaterkerknes.nl",
+  "url": "https://theaterkerknes.nl/evenement/dark-sky-waddentour-13nov/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_87e47352adc84b",
   "title": "De Grote Podcastlas goes Africa!",
   "kind": "overig",
@@ -2082,8 +2112,8 @@
   "id": "evt_8c1a7cec6bac79",
   "title": "Dutch Open Dance 2026",
   "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/dutch-open-dance",
+  "reason": "zaal De Bonte Wever",
+  "url": "https://dansinternationaal.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2184,6 +2214,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://forum.nl/nl/agenda/pub-heroes-dungeon-master-crash-course?date=17-11-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_9ee20a2dc12a55",
+  "title": "Poëziekring",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://doopsgezindengroningen.nl/agenda_cat/activiteiten/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3095,16 +3135,6 @@
   ]
  },
  {
-  "id": "evt_a9785e2533003c",
-  "title": "Doors open 20:00, starts at 20:30",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/en/business/conferences-and-events/edwin-evers-band",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_b9bc7b83a48f58",
   "title": "Pretpakhuis Jon van Eerd",
   "kind": "theater",
@@ -3191,6 +3221,16 @@
   "kind": "kunst",
   "reason": "website kunsthalle-emden.de",
   "url": "https://kunsthalle-emden.de/kunst-aktiv/veranstaltungsdetails/ffentliche-f-hrung-2026-11-29-11-30-133870",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a281b133d60538",
+  "title": "Fryske foarstelling: Pier21 – ‘Wat spilet’",
+  "kind": "theater",
+  "reason": "website theaterkerknes.nl",
+  "url": "https://theaterkerknes.nl/evenement/fryske-foarstelling-pier21-wat-spilet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3523,7 +3563,7 @@
   "title": "The Dutch Tenors",
   "kind": "sport",
   "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/en/business/conferences-and-events/the-dutch-tenors",
+  "url": "https://www.debontewever.nl/nl/events/the-dutch-tenors",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3609,6 +3649,16 @@
   ]
  },
  {
+  "id": "evt_2375b1fa5b74f8",
+  "title": "Poëziekring",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://doopsgezindengroningen.nl/agenda_cat/activiteiten/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_e2862cf89cb7a6",
   "title": "Ronald Snijders",
   "kind": "theater",
@@ -3689,21 +3739,21 @@
   ]
  },
  {
-  "id": "evt_24cb91febab22e",
-  "title": "“The Full Circle” club tour – An Evening of Classics & Highlights",
-  "kind": "sport",
-  "reason": "zaal De Bonte Wever",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108529?p_id=525010",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_817485ba7a6552",
   "title": "Licht en Donker",
   "kind": "kunst",
   "reason": "website hethoogeland.com",
   "url": "https://www.hethoogeland.com/agenda/licht-en-donker/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_e8c4afade54fd5",
+  "title": "“The Full Circle” clubtour – An Evening of Classics & Highlights",
+  "kind": "sport",
+  "reason": "zaal De Bonte Wever",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/108529?p_id=525010",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4170,6 +4220,16 @@
   ]
  },
  {
+  "id": "evt_7a8ca5e7d2a588",
+  "title": "Pump Up The 90's",
+  "kind": "sport",
+  "reason": "website debontewever.nl",
+  "url": "https://www.debontewever.nl/nl/events/pump-up-the-90s",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_26788d0d7aa01a",
   "title": "Playbackshow",
   "kind": "kunst",
@@ -4475,16 +4535,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://steendam.info/activiteit/steendammer-uurtje-36/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_6d089dab280ef0",
-  "title": "De Bonte Wever 25",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5013,16 +5063,6 @@
   ]
  },
  {
-  "id": "evt_f6d953eb06c419",
-  "title": "Koningsontbijt 2027",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.terapelbruist.nl/event/koningsontbijt-2027/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_13f22fd888f3f8",
   "title": "Los Abuelos",
   "kind": "theater",
@@ -5078,6 +5118,26 @@
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
   "url": "https://www.vanberesteyn.nl/programma/meneer-monster/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c8af7e1d9c5f61",
+  "title": "The Dire Straits Experience",
+  "kind": "sport",
+  "reason": "website debontewever.nl",
+  "url": "https://www.debontewever.nl/nl/events/the-dire-straits-experience",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_e2f4fd1f8f525f",
+  "title": "HAND UPON THE LEVER – 2027 WORLD TOUR",
+  "kind": "sport",
+  "reason": "zaal De Bonte Wever",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/105860?p_id=500492",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5260,6 +5320,16 @@
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
   "url": "https://www.vanberesteyn.nl/programma/simsala-saartje-3/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_46cfaeff9dd588",
+  "title": "Tech Event NoordNL",
+  "kind": "sport",
+  "reason": "website debontewever.nl",
+  "url": "https://www.debontewever.nl/nl/events",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5543,6 +5613,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.uithuizermeeden.nl/agenda/eemsmondweek-2027/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a6fd85b869cef7",
+  "title": "Elke zondag t/m donderdag voor 12,50!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://hetpakhuisgroningen.nl/agenda/elke-zondag-t-m-donderdag/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
