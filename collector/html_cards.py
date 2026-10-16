@@ -74,6 +74,7 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
     genres = config.get("genres") if isinstance(config.get("genres"), dict) else {}
     rooms = config.get("rooms") if isinstance(config.get("rooms"), dict) else {}
     out: list[RawEvent] = []
+    seen: set[tuple] = set()
     for card in split_cards(html, config.get("card") or r"<article\b"):
         raw_title = _field(card, fields.get("title"))
         title = _clean(drop.sub(" ", raw_title) if drop else raw_title)
@@ -109,6 +110,10 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
         if place is None and fields.get("room") and fallback:
             place = fallback  # een zaal die we niet kennen ('elders'): niet de vaste zaal invullen
         place = {"venue": place} if isinstance(place, str) else (place if isinstance(place, dict) else {})
+        key = (title, start, link)
+        if key in seen:
+            continue  # hetzelfde kaartje staat vaker op de pagina (uitgelicht en in de lijst)
+        seen.add(key)
         out.append(RawEvent(
             source_name=source_name,
             source_type="structured_web",

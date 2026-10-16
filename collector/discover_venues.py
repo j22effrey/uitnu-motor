@@ -338,6 +338,46 @@ def discoveries_from_village_sites(path: str | Path) -> list[dict]:
     return found
 
 
+PLACE_SITES_PATH = "data/plekwebsites.json"
+
+
+def discoveries_from_place_sites(path: str | Path) -> list[dict]:
+    """Websites die collector/plek_websites.py zelf vond voor plekken zonder website in OpenStreetMap
+    (zoals Dinopark Tenaxx). Alleen het oordeel 'gevonden'; twijfelgevallen eerst nakijken."""
+    path = Path(path)
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    found = []
+    for osm_id, place in (payload.get("plekken") or {}).items() if isinstance(payload, dict) else []:
+        url = normalize_website((place or {}).get("url"))
+        if (place or {}).get("oordeel") != "gevonden" or not url or is_excluded(url):
+            continue
+        kind = {v: k for k, v in PLACE_KINDS.items()}.get(place.get("soort"), "attraction")
+        town = f", {place['plaats']}" if place.get("plaats") else ""
+        found.append({
+            "url": url,
+            "score": OSM_TYPES.get(PLACE_KINDS_OSM.get(kind, ("tourism", "attraction")), 15),
+            "kind": "osm",
+            "source_id": f"osm:{osm_id}",
+            "from_url": f"https://www.openstreetmap.org/{osm_id}",
+            "anchor_text": f"{place.get('naam')} ({kind}{town})",
+            "lat": place.get("lat"),
+            "lon": place.get("lon"),
+        })
+    return found
+
+
+# Soort in plekwebsites.json -> soort in OpenStreetMap (voor de naam in de wachtrij en de dekkingscontrole).
+PLACE_KINDS = {"theme_park": "pretpark", "zoo": "dierentuin", "museum": "museum", "theatre": "theater",
+               "cinema": "bioscoop", "arts_centre": "cultuurcentrum", "music_venue": "podium",
+               "events_venue": "evenementenlocatie", "nightclub": "club"}
+PLACE_KINDS_OSM = {"theme_park": ("tourism", "theme_park"), "zoo": ("tourism", "zoo"), "museum": ("tourism", "museum"),
+                   "theatre": ("amenity", "theatre"), "cinema": ("amenity", "cinema"), "arts_centre": ("amenity", "arts_centre"),
+                   "music_venue": ("amenity", "music_venue"), "events_venue": ("amenity", "events_venue"),
+                   "nightclub": ("amenity", "nightclub")}
+
+
 def distance_km(lat: float, lon: float, center: tuple[float, float] = AREA_CENTER) -> float:
     from math import asin, cos, radians, sin, sqrt
     dlat, dlon = radians(lat - center[0]), radians(lon - center[1])
@@ -503,6 +543,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--tips", default=TIPS_PATH, help="websites die de eigenaar aandraagt")
     parser.add_argument("--village-sites", default=VILLAGE_SITES_PATH,
                         help="dorpswebsites gevonden door collector/village_sites.py")
+    parser.add_argument("--place-sites", default=PLACE_SITES_PATH,
+                        help="websites voor plekken zonder website in OpenStreetMap (collector/plek_websites.py)")
     parser.add_argument("--tips-only", action="store_true",
                         help="alleen de tips en gevonden dorpswebsites toevoegen (geen internet nodig)")
     parser.add_argument("--dry-run", action="store_true", help="alleen tellen, wachtrij niet aanpassen")
@@ -511,7 +553,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--search-log", help=f"waar dat wordt onthouden (standaard {SEARCH_LOG_NAME} naast de wachtrij)")
     args = parser.parse_args(argv)
 
-    discoveries: list[dict] = discoveries_from_tips(args.tips) + discoveries_from_village_sites(args.village_sites)
+    discoveries: list[dict] = (discoveries_from_tips(args.tips) + discoveries_from_village_sites(args.village_sites)
+                               + discoveries_from_place_sites(args.place_sites))
     problems: list[str] = []
     log_path = Path(args.search_log) if args.search_log else Path(args.queue).with_name(SEARCH_LOG_NAME)
     log = _read_log(log_path)
