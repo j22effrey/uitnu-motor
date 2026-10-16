@@ -46,7 +46,10 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    (biljarten, darten, clubkampioenschap, slottoernooi), geen mededelingen (afgelast, inleverdatum,
    milieubus, verkiezingen) en geen menu van een website ('Privacybeleid', 'Filteren'). Een toernooi,
    drive, workshop, lezing of optreden blijft staan (`CLUB_GAME`, `CLUB_INTERNAL`, `VILLAGE_ROUTINE`,
-   `SERVICE_OR_MEETING`, `PAGE_HEADING` en `NOT_AN_OUTING`).
+   `SERVICE_OR_MEETING`, `PAGE_HEADING` en `NOT_AN_OUTING`). Afspraak van 16 oktober 2026 (voorbeeld 'Visje
+   eten' in Dörpshoes Nijland): samen eten, koken, bingo of een high tea in het dorp of in een dorpshuis,
+   buurthuis of MFC is ook niet noemenswaardig (`VILLAGE_HALL`); een show, live muziek, een muziekbingo in
+   een café, een wijn- of bierproeverij of een kookworkshop blijft staan.
 5. **Werkwijze.** Altijd eerst testen (`python -m pytest tests/v2`), dan een pull request met uitleg
    in gewone taal. Claude voegt die pull request daarna zelf samen (afspraak met de eigenaar van
    13 oktober 2026), maar alleen als de tests slagen en, bij een verandering aan het ophalen of
@@ -69,6 +72,11 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    voor robots.txt) of de site echt bij die plaats hoort, en bewaart het oordeel in
    `data/dorpssites.json` ('dorpssite', 'twijfel' of 'nee', altijd met een reden). Alleen
    'dorpssite' gaat vanzelf de wachtrij in; twijfelgevallen eerst nakijken (dan als tip toevoegen).
+   `collector/plek_websites.py` doet hetzelfde voor belangrijke plekken die in OpenStreetMap géén website
+   hebben (pretparken, dierentuinen, musea, theaters, bioscopen, podia, clubs): Wikidata, of websitenamen
+   uit de naam ('Landgoed Tenaxx Dinopark' -> dinoparklandgoedtenaxx.nl), gecontroleerd op naam en streek
+   (`data/plekwebsites.json`; alleen 'gevonden' gaat vanzelf de wachtrij in). Les van Dinopark Tenaxx
+   (oktober 2026): een plek zonder website in OpenStreetMap was voor de motor onzichtbaar.
 2. `collector/source_probe.py`: test of een website een leesbare agenda heeft (ook via de link
    naar de agenda op de voorpagina; een agenda mag een lijst, kaartjes of een tabel met kopjes als
    'Datum | Tijd | Activiteit' zijn). Volgorde: tips, nieuwe dorpswebsites, websites die een oudere
@@ -121,8 +129,11 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
 We vertellen iedereen waar wat te doen is; mensen hoeven ons niet te vertellen wat ontbreekt. Daarom
 staat in `collector/dekking.json` per plaats wat er zeker in hoort (podia, clubs, festivals,
 festivalterreinen, musea, kerken met concerten, grote sport), met het aantal uitjes dat je de komende
-90 dagen minstens mag verwachten. Elke ronde meldt de motor in `status.json` onder `dekking` (en in het
-verslag van de ronde) wat ontbreekt of te weinig oplevert (`pipeline/v2/dekking.py`). Lessen uit
+90 dagen minstens mag verwachten. Daarnaast komt elke belangrijke plek die de motor zelf kent (podium,
+theater, bioscoop, club, museum, pretpark, dierentuin, evenementenlocatie en festival uit
+`data/source_candidates.json`) vanzelf op de lijst, voor elke plaats in het werkgebied. Elke ronde meldt de
+motor in `status.json` onder `dekking` (en in het verslag van de ronde) wat ontbreekt of te weinig oplevert,
+met per plek waarom (de test vond geen agenda, storing, verhuisd, geweigerd) (`pipeline/v2/dekking.py`). Lessen uit
 Groningen (oktober 2026, eerst 9 van de 72 plekken goed):
 - Een test die '0 uitjes' vindt, betekent bij een grote zaal bijna altijd: het programma staat ergens
   anders. Zoek het op (lijstpagina, gegevens op de eigen website, `admin-ajax.php`, `/api/`), en stel de

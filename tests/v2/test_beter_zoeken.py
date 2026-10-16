@@ -209,7 +209,7 @@ def test_tip_van_de_eigenaar_komt_elke_ronde_in_de_wachtrij(tmp_path):
     tips.write_text(json.dumps({"tips": [{"url": "www.froombosch.com", "naam": "Froombosch", "reden": "Spookbosch ontbrak"},
                                          {"url": "https://www.facebook.com/groups/froombosch"}]}))
     known.write_text(json.dumps({"sources": []}))
-    assert dv.main(["--queue", str(queue), "--known", str(known), "--tips", str(tips),
+    assert dv.main(["--queue", str(queue), "--place-sites", str(tmp_path / "geen.json"), "--known", str(known), "--tips", str(tips),
                     "--village-sites", str(tmp_path / "geen.json"), "--tips-only"]) == 0
     [item] = json.loads(queue.read_text())["candidates"]
     assert item["host"] == "froombosch.com" and item["areaStatus"] == "binnen"   # Facebook nooit

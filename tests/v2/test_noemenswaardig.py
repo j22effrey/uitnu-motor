@@ -87,7 +87,7 @@ def test_echte_uitjes_blijven_staan():
                   "Borrel met live muziek", "Theaterdiner", "Huiskamerconcert", "Huiskamerpodium Sleen en omgeving",
                   "Oliebollen Klaverjas Toernooi", "Klaverjastoernooi", "Bridgedrive", "Prijsklaverjassen", "Darttoernooi",
                   "Kerstmarkt basisschool De Kwinkslag", "Verlichte voertuigenoptocht (kinderen tot en met groep 8)",
-                  "Workshop: mindfulness en positieve gezondheid", "Workshop vilten", "Pubquiz", "Kerstbingo",
+                  "Workshop: mindfulness en positieve gezondheid", "Workshop vilten", "Pubquiz", "Muziekbingo met live band",
                   "Intocht Sinterklaas", "Nieuwjaarsduik", "Nieuwjaarsconcert", "Lunchconcert", "Plafonddienst – Plafonddienst",
                   "Dienstenmarkt", "Reünieconcert", "Afsluiting wisselexpositie", "Seniorenfestival",
                   "Daddy Cool Turns 50 – Boney M 1976- 2026", "Muziekweekend: Gouwe Ouwe door Haagse Roots",
@@ -190,3 +190,24 @@ def test_ronde_van_15_oktober():
                   "Open les 1", "Winterstop toernooi", "Open klaverjasavond: kaartavond voor iedereen",
                   "Deuren open 20:00 - Racoon live", "Opening nieuwbouw bibliotheek", "Schrijfavond met auteur Arnon Grunberg"):
         assert not not_an_outing(_event(title)), title
+
+
+def test_samen_eten_en_bingo_in_het_dorp_is_niet_noemenswaardig():
+    """Afspraak van 16 oktober 2026 (voorbeeld 'Visje eten' in Dörpshoes Nijland)."""
+    def at(title, venue=None):
+        return {"title": title, "url": "https://dorp.example/agenda/x", "venue": {"name": venue, "city": "Nijland"},
+                "sources": [{"type": "organisator", "url": "https://dorp.example/agenda/x", "host": "dorp.example"}]}
+
+    for title in ("Visje eten", "Mosselen eten", "Kerstbingo", "Bingo avond", "Najaarsbingo van de Oranjevereniging",
+                  "Kinderbingo", "Turks koken", "Koken met de Wegwijzer", "Keallepoat kafee", "Spieksters aan toavel",
+                  "Heel Spijk Bakt", "Eetcafé Vlamboyant", "Koningsontbijt 2027"):
+        assert not_an_outing(at(title)), title
+    for title, venue in (("High Tea met bingo", "MFC Schildwolde"), ("LA NOTTE ITALIANA – EEN ITALIAANSE AVOND", "Dorpshuis De Vrijwilliger"),
+                         ("Proeverij", "MFA Dorpshuis Yders Hoes")):
+        assert not_an_outing(at(title, venue)), title
+    # Wat wel een uitje is, blijft staan: een show, muziek, proeverij van wijn of bier, een kookworkshop.
+    for title, venue in (("Maartje en Kine – DE BINGO SHOW", "De Oosterpoort"), ("Kerstballen Muziekbingo", "Huize Maas"),
+                         ("Bingo met na afloop live muziek", "Sparta Kantine"), ("Bierproeverij", "Dorpshuis Over Entinghe"),
+                         ("Kookworkshop Italiaans", None), ("Dorps – Theaterdiner", "Dorpshuis Niehove"),
+                         ("Wijnproeverij", "MFC It Joo"), ("Whiskey Festival Groningen", "Der Aa-kerk")):
+        assert not not_an_outing(at(title, venue)), title

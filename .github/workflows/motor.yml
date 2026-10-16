@@ -54,6 +54,12 @@ jobs:
         timeout-minutes: 20
         run: python -m collector.village_sites --store data/dorpssites.json --budget-minutes 15 --summary
 
+      - name: Websites zoeken voor plekken zonder website in OpenStreetMap (eens per week zoeken, elke plek eens per drie maanden)
+        if: ${{ !inputs.alleen_publiceren }}
+        continue-on-error: true
+        timeout-minutes: 15
+        run: python -m collector.plek_websites --store data/plekwebsites.json --budget-minutes 8 --summary
+
       - name: Websites testen (eerst tips en nieuwe websites) en goede bronnen aanzetten
         if: ${{ !inputs.alleen_publiceren }}
         continue-on-error: true

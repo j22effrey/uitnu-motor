@@ -8,11 +8,15 @@ komt in status.json onder 'dekking'. Zo valt een gat op zonder dat iemand het ho
 from __future__ import annotations
 
 import json
+import re
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 
+from collector.discover_venues import is_excluded
+
 WINDOW_DAYS = 90
+MAX_ROWS = 150
 
 
 def load_register(path: Path) -> dict:
@@ -20,6 +24,56 @@ def load_register(path: Path) -> dict:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return {}
+
+
+# Plekken die de motor zelf vond (OpenStreetMap en Wikidata, in data/source_candidates.json) en die er zeker
+# in horen: podia, theaters, bioscopen, musea, pretparken, dierentuinen, evenementenlocaties en festivals.
+# Zo geldt de controle voor elke plaats in het werkgebied, niet alleen voor de plaatsen met een eigen lijst.
+AUTO_TYPES = {
+    "theatre": ("theater", 90), "music_venue": ("podium", 90), "concert_hall": ("podium", 90), "arts_centre": ("cultuurcentrum", 90),
+    "cinema": ("bioscoop", 90), "nightclub": ("club", 90), "events_venue": ("evenementenlocatie", 90),
+    "museum": ("museum", None), "theme_park": ("pretpark", None), "zoo": ("dierentuin", None), "festival": ("festival", None),
+}
+WHY = {
+    "no_supported_extractor": "de test vond geen leesbare agenda: uitzoeken waar het programma staat",
+    "error": "de website gaf een storing bij de test",
+    "blocked": "robots.txt of de website weigert de motor",
+    "moved": "de website is verhuisd: nieuw adres nakijken",
+    "pending": "nog niet getest",
+}
+ANCHOR = re.compile(r"^(.*) \(([a-z_]+)(?:, ([^)]+))?\)$")
+
+
+def auto_register(candidates: dict | list, manual_hosts: set[str] = frozenset(), skip_hosts: set[str] = frozenset()) -> dict:
+    """De lijst van plekken die de motor kent, per plaats (zonder de plekken die al met de hand op de lijst staan)."""
+    rows = candidates.get("candidates", []) if isinstance(candidates, dict) else candidates or []
+    places: dict[str, list[dict]] = {}
+    for item in rows:
+        if not isinstance(item, dict) or item.get("areaStatus") == "buiten":
+            continue
+        host = _host(item.get("host"))
+        # Al met de hand op de lijst, bewust uitgezet, of een uitgesloten website (vaste regel 1): niet meetellen.
+        if not host or host in manual_hosts or host in skip_hosts or is_excluded(item.get("url") or f"https://{host}/"):
+            continue
+        for evidence in item.get("evidence") or []:
+            m = ANCHOR.match(str(evidence.get("anchorText") or ""))
+            if not m or m.group(2) not in AUTO_TYPES:
+                continue
+            label, window = AUTO_TYPES[m.group(2)]
+            entry = {"naam": m.group(1), "type": label, "website": item.get("url"), "hosts": [host], "auto": True,
+                     "status": item.get("activationStatus"), "test": item.get("probeStatus")}
+            entry.update({"verwacht90": 1} if window else {"jaarlijks": True})
+            places.setdefault(m.group(3) or "plaats onbekend", []).append(entry)
+            break
+    return {"plaatsen": places}
+
+
+def merge_registers(*registers: dict) -> dict:
+    out: dict[str, list[dict]] = {}
+    for register in registers:
+        for city, places in (register.get("plaatsen") or {}).items():
+            out.setdefault(city, []).extend(places)
+    return {"plaatsen": out}
 
 
 def _host(value: str | None) -> str:
@@ -56,10 +110,26 @@ def coverage(events: list[dict], register: dict, today: date) -> dict:
             want = 1 if yearly else int(place.get("verwacht90") or 1)
             row = {"naam": place.get("naam"), "plaats": city, "website": place.get("website"),
                    "gevonden": count, "verwacht": want, "periode": "volgende editie" if yearly else f"{WINDOW_DAYS} dagen"}
+            if place.get("auto"):
+                row["type"] = place.get("type")
+                if count == 0 and place.get("status") != "active":
+                    row["waarom"] = WHY.get(str(place.get("test")), "nog geen bron")
             if count == 0:
                 missing.append(row)
             elif count < want:
                 short.append(row)
             else:
                 ok += 1
-    return {"gecontroleerd": checked, "goed": ok, "ontbreekt": missing, "teWeinig": short}
+    by_type: dict[str, dict] = {}
+    for key, rows in (("ontbreekt", missing), ("teWeinig", short)):
+        for row in rows:
+            if row.get("type"):
+                counts = by_type.setdefault(row["type"], {"ontbreekt": 0, "teWeinig": 0})
+                counts[key] += 1
+    # Eerst de plekken met een eigen lijst (de grote podia), dan de rest; zo blijft het verslag leesbaar.
+    missing.sort(key=lambda r: (bool(r.get("type")), r["plaats"], r["naam"] or ""))
+    # De lijst met plekken van de motor zelf kan lang worden: in het verslag hooguit MAX_ROWS regels (de tellers
+    # per soort zijn compleet).
+    shown = [r for r in missing if not r.get("type")] + [r for r in missing if r.get("type")][:MAX_ROWS]
+    return {"gecontroleerd": checked, "goed": ok, "ontbreektTotaal": len(missing), "ontbreekt": shown,
+            "teWeinig": short, "perSoort": by_type}

@@ -57,7 +57,7 @@ def test_wachtrij_wordt_bijgewerkt(tmp_path):
     known.write_text(json.dumps({"sources": [{"rootUrl": "https://www.deklinker.nl/"}]}))
     places = tmp_path / "places.json"
     places.write_text(json.dumps({"results": {"bindings": []}}))
-    assert main(["--queue", str(queue), "--known", str(known), "--osm-json", str(osm), "--wikidata-json", str(wiki),
+    assert main(["--queue", str(queue), "--place-sites", str(tmp_path / "geen.json"), "--known", str(known), "--osm-json", str(osm), "--wikidata-json", str(wiki),
                  "--places-json", str(places), "--tips", str(tmp_path / "geen-tips.json"),
                  "--village-sites", str(tmp_path / "geen-dorpssites.json")]) == 0
     hosts = {c["host"] for c in json.loads(queue.read_text())["candidates"]}

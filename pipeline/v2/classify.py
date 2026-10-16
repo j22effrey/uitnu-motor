@@ -317,7 +317,21 @@ VILLAGE_ROUTINE = re.compile(
     r"|\b(?:vrouwen|mannen|internet|computer|digi|taal|mienskip) ?cafe\b|digi-? ?taalhuis|\btaalhuis\b|\w*soos\b"
     r"|\bhobby ?(?:club|lub|middag|avond)\b|\bontmoetings?(?:middag|ochtend|avond)\b|\bbewegen en ontmoeten\b"
     r"|\bcafe ?avond in (?:het )?(?:buurthuis|dorpshuis)|\bverrassingsmiddag\b"
-    r"|positieve gezondheid")
+    r"|positieve gezondheid"
+    # Samen eten of koken in het dorp ('Visje eten', 'Mosselen eten', 'Turks koken', 'Koken met de Wegwijzer',
+    # 'Keallepoat kafee', 'Spieksters aan toavel', 'Heel Spijk bakt'); een kookworkshop blijft staan.
+    r"|^[\w'-]+ eten$|^eetcaf|\bkook(?:t|en) met\b|^(?:[\w-]+ )?koken\b(?!.*(?:workshop|masterclass|demonstratie|wedstrijd|kinder|kids))"
+    r"|(?<!filosofysk )\bkafee\b|^heel \w+ bakt\b|\b(?:aan|oan) (?:tafel|toavel)\b(?!.*\bsint)|koningsontbijt"
+    # Bingo in het dorp ('Bingo avond', 'Kinderbingo', 'Najaarsbingo van de Oranjevereniging'); een muziek- of dragbingo
+    # in een club of café blijft staan.
+    r"|^(?!.*\b(?:show|drag|loco|rave|party|fout|silent|quiz|disco|kroeg)\b).*\b\w*bingo\w*\b")
+# In een dorpshuis, buurthuis of MFC is samen eten, bingo of een high tea iets voor de eigen mensen.
+VILLAGE_HALL = re.compile(r"dorpshuis|dorpshus|dorpshoes|doarpshus|dorpshuus|buurthuis|buurthuus|buurtcentrum|wijkcentrum"
+                          r"|\bmf[ac]\b|multifunctione|kantine|ontmoetingscentrum")
+VILLAGE_HALL_ACTIVITY = re.compile(r"\beten\b|maaltijd|\bdiner\b|\bkoken\b|\bkookt\b|\bbingo\b|high ?tea|\bkoffie\b|\bsoep\b"
+                                   r"|\bsnert\b|pannenkoek|\blunch|brunch|italiaanse avond|\bproeverij\b")
+# Wat in een dorpshuis wel een uitje is: een proeverij van wijn, bier of whisky, iets voor kinderen of met de Sint.
+VILLAGE_HALL_PUBLIC = re.compile(r"wijn|bier|whisk|\bgin\b|kinder|kids|\bsint\b|sinterklaas|piet|moord|mystery|race")
 ROUTINE_PUBLIC = re.compile(PUBLIC_EVENT.pattern + r"|cabaret|theater|toneel|muziek|muzikale|\blive\b|\bband\b|\bdj\b|\bfilm"
                             r"|disco|dansavond|optocht|podium|jazz|blues")
 # Hulp, zorg, cursussen, inspraak en school: nuttig, maar geen uitje. Repair café, mantelzorgcafé,
@@ -625,6 +639,10 @@ def not_an_outing(event: dict) -> str | None:
         return f"voor de ouderen van het dorp: '{event.get('title')}'"
     if VILLAGE_ROUTINE.search(title) and not ROUTINE_PUBLIC.search(title):
         return f"niet noemenswaardig (vaste ontmoeting in het dorp): '{event.get('title')}'"
+    hall = event.get("venue") if isinstance(event.get("venue"), dict) else {}
+    if (VILLAGE_HALL.search(normalize(hall.get("name") or "")) and VILLAGE_HALL_ACTIVITY.search(title)
+            and not ROUTINE_PUBLIC.search(title) and not VILLAGE_HALL_PUBLIC.search(title)):
+        return f"niet noemenswaardig (samen eten of bingo in het dorpshuis): '{event.get('title')}'"
     if SERVICE_OR_MEETING.search(title) and not SERVICE_PUBLIC.search(title):
         return f"niet noemenswaardig (hulp, cursus of bijeenkomst): '{event.get('title')}'"
     if NOT_A_TITLE.match(title.strip(" .:!")) or PAGE_HEADING.match(title):

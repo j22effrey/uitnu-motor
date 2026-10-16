@@ -95,9 +95,9 @@ def test_alleen_uitjes_voor_het_grote_publiek():
                   "Buurtvereniging Om'e Toer Wijnproeverij", "Kerstmiddag voor ouderen", "Kerstlunch 50+",
                   "Ouderenmiddag met muziek", "50 plus club Sinterklaas"):
         assert not_an_outing(_event(title)), title
-    # Openbaar: een concert van het koor, een toernooi, een kerstbingo, een tributeshow met jaartal,
+    # Openbaar: een concert van het koor, een toernooi, een tributeshow met jaartal,
     # een workshop, een festival voor senioren, een dansavond voor 50-plussers, Club Guy & Roni (dans).
-    for title in ("Kerstconcert van het koor", "Klaverjastoernooi", "Kerstbingo", "Bridgedrive", "Prijsklaverjassen",
+    for title in ("Kerstconcert van het koor", "Klaverjastoernooi", "Bridgedrive", "Prijsklaverjassen",
                   "Daddy Cool Turns 50 – Boney M 1976- 2026", "Workshop bonbons maken", "Seniorenfestival",
                   "Senioren darttoernooi", "Dansavond 50 plus", "Club Guy & Roni – The Current", "Pop-up boekenclub",
                   "Open dag fanfare Swettewyn", "Intocht Sinterklaas"):
