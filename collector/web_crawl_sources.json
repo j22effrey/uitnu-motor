@@ -9975,7 +9975,7 @@
       "enabled": true,
       "extractorHint": "html_cards",
       "extractorConfig": {
-        "endpointUrl": "https://www.dinoparklandgoedtenaxx.nl/",
+        "endpointUrl": "https://www.dinoparklandgoedtenaxx.nl/evenementen",
         "card": "<div role=\"listitem\"",
         "fields": {
           "title": "card-title[^\"]*\">([^<]+)<",

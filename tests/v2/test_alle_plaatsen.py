@@ -64,4 +64,20 @@ def test_dekking_voor_elke_plaats_uit_de_wachtrij():
     result = coverage(events, merge_registers({"plaatsen": {}}, found), date(2026, 10, 16))
     assert result["goed"] == 1 and [r["naam"] for r in result["ontbreekt"]] == ["Theater X"]
     assert result["ontbreekt"][0]["waarom"].startswith("de test vond geen leesbare agenda")
-    assert result["ontbreektPerSoort"] == {"theater": {"ontbreekt": 1}}
+    assert result["perSoort"] == {"theater": {"ontbreekt": 1, "teWeinig": 0}} and result["ontbreektTotaal"] == 1
+
+
+def test_een_plaatsnaam_is_nooit_de_website_van_een_plek():
+    plek_websites.PLACE_NAMES.update({"assen", "groningen", "hoogeland"})
+    assert plek_websites.domain_guesses("Theater Assen", town="Assen") == []        # nooit assen.com (stadsmarketing)
+    assert "groningen.nl" not in plek_websites.domain_guesses("Pathé Groningen", town="Groningen")
+    place = {"naam": "Tenaxx", "plaats": "Wedde"}
+    assert plek_websites.judge(place, "Wedde", "Welkom in Wedde, Groningen. Tenaxx " * 10)[0] == "nee"
+
+
+def test_uitgesloten_en_uitgezette_websites_tellen_niet_mee_in_de_dekking():
+    candidates = {"candidates": [
+        {"host": "maze.nl", "url": "https://maze.nl/groningen", "evidence": [{"anchorText": "Maze (cinema, Groningen)"}]},
+        {"host": "oud.nl", "url": "https://oud.nl/", "evidence": [{"anchorText": "Oud Theater (theatre, Sneek)"}]},
+    ]}
+    assert auto_register(candidates, skip_hosts={"oud.nl"}) == {"plaatsen": {}}

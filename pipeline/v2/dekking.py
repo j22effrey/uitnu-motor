@@ -13,7 +13,10 @@ from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 
+from collector.discover_venues import is_excluded
+
 WINDOW_DAYS = 90
+MAX_ROWS = 150
 
 
 def load_register(path: Path) -> dict:
@@ -41,7 +44,7 @@ WHY = {
 ANCHOR = re.compile(r"^(.*) \(([a-z_]+)(?:, ([^)]+))?\)$")
 
 
-def auto_register(candidates: dict | list, manual_hosts: set[str] = frozenset()) -> dict:
+def auto_register(candidates: dict | list, manual_hosts: set[str] = frozenset(), skip_hosts: set[str] = frozenset()) -> dict:
     """De lijst van plekken die de motor kent, per plaats (zonder de plekken die al met de hand op de lijst staan)."""
     rows = candidates.get("candidates", []) if isinstance(candidates, dict) else candidates or []
     places: dict[str, list[dict]] = {}
@@ -49,7 +52,8 @@ def auto_register(candidates: dict | list, manual_hosts: set[str] = frozenset())
         if not isinstance(item, dict) or item.get("areaStatus") == "buiten":
             continue
         host = _host(item.get("host"))
-        if not host or host in manual_hosts:
+        # Al met de hand op de lijst, bewust uitgezet, of een uitgesloten website (vaste regel 1): niet meetellen.
+        if not host or host in manual_hosts or host in skip_hosts or is_excluded(item.get("url") or f"https://{host}/"):
             continue
         for evidence in item.get("evidence") or []:
             m = ANCHOR.match(str(evidence.get("anchorText") or ""))
@@ -117,9 +121,15 @@ def coverage(events: list[dict], register: dict, today: date) -> dict:
             else:
                 ok += 1
     by_type: dict[str, dict] = {}
-    for row in missing + short:
-        if row.get("type"):
-            by_type.setdefault(row["type"], {"ontbreekt": 0})["ontbreekt"] += 1
+    for key, rows in (("ontbreekt", missing), ("teWeinig", short)):
+        for row in rows:
+            if row.get("type"):
+                counts = by_type.setdefault(row["type"], {"ontbreekt": 0, "teWeinig": 0})
+                counts[key] += 1
     # Eerst de plekken met een eigen lijst (de grote podia), dan de rest; zo blijft het verslag leesbaar.
     missing.sort(key=lambda r: (bool(r.get("type")), r["plaats"], r["naam"] or ""))
-    return {"gecontroleerd": checked, "goed": ok, "ontbreekt": missing, "teWeinig": short, "ontbreektPerSoort": by_type}
+    # De lijst met plekken van de motor zelf kan lang worden: in het verslag hooguit MAX_ROWS regels (de tellers
+    # per soort zijn compleet).
+    shown = [r for r in missing if not r.get("type")] + [r for r in missing if r.get("type")][:MAX_ROWS]
+    return {"gecontroleerd": checked, "goed": ok, "ontbreektTotaal": len(missing), "ontbreekt": shown,
+            "teWeinig": short, "perSoort": by_type}

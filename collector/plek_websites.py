@@ -120,14 +120,34 @@ def words_of(name: str) -> list[str]:
     return [w for w in plain(re.sub(r"\([^)]*\)", " ", name.replace("&", " "))).split() if w not in STOP]
 
 
-def own_words(name: str) -> list[str]:
-    """De woorden die zeggen wélke plek het is ('tenaxx' in 'Landgoed Tenaxx Dinopark')."""
-    return [w for w in words_of(name) if w not in GENERIC and len(w) >= 3 and not w.isdigit()]
+# Plaatsnamen (uit data/dorpssites.json, aangevuld bij het draaien) zeggen niet wélke plek het is: 'Theater Assen'
+# mag nooit assen.com worden (de stadsmarketing, een uitagenda).
+PLACE_NAMES: set[str] = set()
 
 
-def domain_guesses(name: str, limit: int = 16) -> list[str]:
+def load_place_names(path: str | Path = "data/dorpssites.json") -> set[str]:
+    try:
+        payload = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return set()
+    names = set()
+    for place in (payload.get("plaatsen") or {}).values():
+        for value in (place.get("naam"), place.get("gemeente")):
+            names.update(plain(value or "").split())
+    return {n for n in names if len(n) >= 3}
+
+
+def own_words(name: str, town: str = "") -> list[str]:
+    """De woorden die zeggen wélke plek het is ('tenaxx' in 'Landgoed Tenaxx Dinopark'); geen plaatsnamen."""
+    places = PLACE_NAMES | set(plain(town).split())
+    for province in area.AREA_PROVINCES:
+        places |= set(plain(province).split()) | set(PROVINCE_NAMES.get(plain(province).strip(), ()))
+    return [w for w in words_of(name) if w not in GENERIC and w not in places and len(w) >= 3 and not w.isdigit()]
+
+
+def domain_guesses(name: str, limit: int = 16, town: str = "") -> list[str]:
     words = words_of(name)[:4]
-    own = own_words(name)
+    own = own_words(name, town)
     if not own:
         return []  # alleen algemene woorden ('Museum'): niet te raden
     stems: list[str] = []
@@ -161,13 +181,15 @@ def judge(place: dict, title: str, text: str) -> tuple[str, str]:
         return "nee", "(bijna) lege pagina"
     if (PARKED_STRONG.search(flat) and words < 600) or (PARKED_WEAK.search(flat) and words < 120):
         return "nee", "domeinnaam te koop, geparkeerd of nog leeg"
-    own = own_words(place["naam"])
+    own = own_words(place["naam"], place.get("plaats") or "")
     heading = plain(title)
     if not own or not all(f" {w} " in flat for w in own):
         return "nee", "de naam van de plek staat niet op de pagina"
+    town = plain(place.get("plaats") or "").strip()
+    if town and heading.strip() in {town, f"welkom in {town}", f"gemeente {town}"}:
+        return "nee", "de website van de plaats zelf, niet van deze plek"
     if not any(f" {w} " in heading for w in own):
         return "twijfel", "de naam staat op de pagina, maar niet in de titel"
-    town = plain(place.get("plaats") or "").strip()
     region = [town] if town else []
     for province in area.AREA_PROVINCES:
         key = plain(province).strip()
@@ -178,22 +200,28 @@ def judge(place: dict, title: str, text: str) -> tuple[str, str]:
 
 
 def check_place(place: dict, *, official: str | None = None, resolver: Callable[[str], bool] = system_resolver,
-                fetcher: Callable[..., Fetched] = default_fetch, timeout: float = 12) -> dict:
+                fetcher: Callable[..., Fetched] = default_fetch, timeout: float = 12, deadline: float | None = None) -> dict:
     """Zoek en controleer de website van één plek. Respecteert robots.txt (via village_sites.check_site)."""
     tries = [official] if official else []
-    for domain in domain_guesses(place["naam"]):
+    for domain in domain_guesses(place["naam"], town=place.get("plaats") or ""):
+        if deadline and time.monotonic() > deadline:
+            break
         host = existing_host(domain, resolver)
         if host:
             tries.append(f"https://{host}/")
     seen: set[str] = set()
     best = {"oordeel": "nee", "reden": "geen bestaande websitenaam gevonden"}
+    temporary = False
     for url in tries:
         if not url or is_excluded(url) or host_key(url) in seen:
             continue
         seen.add(host_key(url))
         site = check_site(url, {"naam": place["naam"], "namen": [place["naam"]]}, [], fetcher=fetcher, timeout=timeout,
                           official=True)  # 'official': doorverwijzen naar een andere naam mag; het oordeel doet judge()
-        if site.get("oordeel") in ("fout",) or not site.get("titel") and site.get("oordeel") == "nee":
+        if site.get("oordeel") == "fout":
+            temporary = True
+            continue
+        if not site.get("titel") and site.get("oordeel") == "nee":
             continue
         try:
             page = fetcher(site["url"], timeout=timeout)
@@ -202,12 +230,17 @@ def check_place(place: dict, *, official: str | None = None, resolver: Callable[
             continue
         verdict, reason = judge(place, title, text)
         if url == official and verdict != "nee":
-            verdict, reason = "gevonden", "officiële website volgens Wikidata"
+            # Een pagina op een andere website (gemeente, stichting) is niet de eigen website: eerst nakijken.
+            own_site = urllib.parse.urlparse(official).path.strip("/") == ""
+            verdict, reason = (("gevonden", "officiële website volgens Wikidata") if own_site
+                               else ("twijfel", "officiële website volgens Wikidata is een pagina op een andere website"))
         result = {"url": site["url"], "oordeel": verdict, "reden": reason, "titel": title[:120]}
         if verdict == "gevonden":
             return result
         if verdict == "twijfel":
             best = result
+    if best["oordeel"] == "nee" and temporary:
+        return {"oordeel": "fout", "reden": "een website was tijdelijk niet bereikbaar"}
     return best
 
 
@@ -222,39 +255,45 @@ def save_store(path: str | Path, store: dict) -> None:
     Path(path).write_text(json.dumps(store, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+RETRY_DAYS = 7          # een tijdelijke fout eerder opnieuw proberen
+SEARCH_DAYS = 7         # OpenStreetMap hooguit eens per week vragen
+
+
 def due(entry: dict | None, today: date) -> bool:
     if not entry or not entry.get("bekeken"):
         return True
     try:
-        return (today - date.fromisoformat(entry["bekeken"])).days >= RECHECK_DAYS
+        age = (today - date.fromisoformat(entry["bekeken"])).days
     except ValueError:
         return True
+    return age >= (RETRY_DAYS if entry.get("oordeel") == "fout" else RECHECK_DAYS)
 
 
 def run(places: list[dict], store: dict, *, today: date, budget_seconds: float, workers: int = 8,
         resolver: Callable[[str], bool] = system_resolver, fetcher: Callable[..., Fetched] = default_fetch,
         websites: dict[str, str] | None = None) -> int:
     todo = [p for p in places if due(store["plekken"].get(p["id"]), today)]
-    started = time.monotonic()
+    deadline = time.monotonic() + budget_seconds
     done = 0
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {}
-        for place in todo:
-            futures[pool.submit(check_place, place, official=(websites or {}).get(place.get("wikidata")),
-                                resolver=resolver, fetcher=fetcher)] = place
-        for future in as_completed(futures):
+    pool = ThreadPoolExecutor(max_workers=workers)
+    futures = {pool.submit(check_place, place, official=(websites or {}).get(place.get("wikidata")),
+                           resolver=resolver, fetcher=fetcher, deadline=deadline): place for place in todo}
+    try:
+        for future in as_completed(futures, timeout=max(1, budget_seconds + 60)):
             place = futures[future]
             try:
                 result = future.result()
             except Exception as exc:  # noqa: BLE001 - één plek mag de rest niet tegenhouden
                 result = {"oordeel": "fout", "reden": f"{type(exc).__name__}"}
-            store["plekken"][place["id"]] = {**{k: place[k] for k in ("naam", "soort", "plaats", "lat", "lon")},
+            store["plekken"][place["id"]] = {**{k: place.get(k) for k in ("naam", "soort", "plaats", "lat", "lon", "wikidata")},
                                              **result, "bekeken": today.isoformat()}
             done += 1
-            if time.monotonic() - started > budget_seconds:
-                for other in futures:
-                    other.cancel()
+            if time.monotonic() > deadline:
                 break
+    except Exception:  # noqa: BLE001 - tijd op: wat af is, blijft bewaard
+        pass
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
     return done
 
 
@@ -275,17 +314,30 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     store = load_store(args.store)
     store.setdefault("plekken", {})
-    try:
-        payload = json.loads(Path(args.osm_json).read_text(encoding="utf-8")) if args.osm_json else fetch_overpass()
-    except Exception as error:  # de servers zijn vaak druk: de volgende ronde opnieuw
-        print(f"Plekken zonder website: OpenStreetMap lukte niet ({error}); volgende keer opnieuw.")
-        return 0
-    places = places_from_overpass(payload)
+    PLACE_NAMES.update(load_place_names())
+    today = date.today()
+    searched = store.get("gezocht")
+    recent = bool(searched) and (today - date.fromisoformat(searched)).days < SEARCH_DAYS
+    if recent and not args.osm_json:
+        # OpenStreetMap is deze week al gevraagd: alleen plekken die opnieuw aan de beurt zijn (een storing).
+        places = [{"id": key, **value} for key, value in store["plekken"].items() if due(value, today)]
+        if not places:
+            if args.summary:
+                print(f"Plekken zonder website: niets te doen (stand: {summary(store)}).")
+            return 0
+    else:
+        try:
+            payload = json.loads(Path(args.osm_json).read_text(encoding="utf-8")) if args.osm_json else fetch_overpass()
+        except Exception as error:  # de servers zijn vaak druk: de volgende ronde opnieuw
+            print(f"Plekken zonder website: OpenStreetMap lukte niet ({error}); volgende keer opnieuw.")
+            return 0
+        places = places_from_overpass(payload)
+        store["gezocht"] = today.isoformat()
     try:
         websites = wikidata_websites(sorted({p["wikidata"] for p in places if p.get("wikidata")}))
     except Exception:
         websites = {}
-    done = run(places, store, today=date.today(), budget_seconds=args.budget_minutes * 60, websites=websites,
+    done = run(places, store, today=today, budget_seconds=args.budget_minutes * 60, websites=websites,
                resolver=DohResolver() if args.doh else system_resolver)
     save_store(args.store, store)
     if args.summary:

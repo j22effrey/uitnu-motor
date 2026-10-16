@@ -200,7 +200,7 @@ def test_samen_eten_en_bingo_in_het_dorp_is_niet_noemenswaardig():
 
     for title in ("Visje eten", "Mosselen eten", "Kerstbingo", "Bingo avond", "Najaarsbingo van de Oranjevereniging",
                   "Kinderbingo", "Turks koken", "Koken met de Wegwijzer", "Keallepoat kafee", "Spieksters aan toavel",
-                  "Heel Spijk Bakt", "Kleintje Koffie (0+)", "Eetcafé Vlamboyant"):
+                  "Heel Spijk Bakt", "Eetcafé Vlamboyant", "Koningsontbijt 2027"):
         assert not_an_outing(at(title)), title
     for title, venue in (("High Tea met bingo", "MFC Schildwolde"), ("LA NOTTE ITALIANA – EEN ITALIAANSE AVOND", "Dorpshuis De Vrijwilliger"),
                          ("Proeverij", "MFA Dorpshuis Yders Hoes")):

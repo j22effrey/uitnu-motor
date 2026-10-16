@@ -188,7 +188,7 @@ def test_gevonden_dorpssites_gaan_naar_de_wachtrij_met_de_plaats(tmp_path):
         {"url": "https://eenrum.info/", "oordeel": "twijfel", "naam": "Eenrum info"},
     ]}}}))
     known.write_text(json.dumps({"sources": []}))
-    assert dv.main(["--queue", str(queue), "--known", str(known), "--tips", str(tips), "--village-sites", str(store),
+    assert dv.main(["--queue", str(queue), "--place-sites", str(tmp_path / "geen.json"), "--known", str(known), "--tips", str(tips), "--village-sites", str(store),
                     "--tips-only"]) == 0
     [item] = json.loads(queue.read_text())["candidates"]                     # twijfel niet
     assert item["host"] == "dorpsbelangeneenrum.nl" and item["areaStatus"] == "binnen"

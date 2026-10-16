@@ -275,7 +275,10 @@ def _coverage(events: list[dict], today: date) -> dict:
         manual = load_register(root / "collector" / "dekking.json")
         hosts = {h.lower().removeprefix("www.") for places in (manual.get("plaatsen") or {}).values() for p in places
                  for h in p.get("hosts") or []}
-        found = auto_register(load_register(root / "data" / "source_candidates.json"), hosts)
+        sources = load_register(root / "collector" / "web_crawl_sources.json").get("sources") or []
+        off = {urlparse(x.get("rootUrl") or "").netloc.lower().removeprefix("www.") for x in sources
+               if isinstance(x, dict) and x.get("enabled") is False}
+        found = auto_register(load_register(root / "data" / "source_candidates.json"), hosts, off)
         return coverage(events, merge_registers(manual, found), today)
     except Exception as exc:  # noqa: BLE001 - een kapotte lijst is geen reden om niet te publiceren
         return {"gecontroleerd": 0, "fout": f"{type(exc).__name__}: {exc}"}
@@ -323,7 +326,7 @@ def main(argv: list[str] | None = None) -> int:
     doubts = status.pop("_twijfel", [])
     gaps = status.get("dekking") or {}
     if gaps.get("gecontroleerd"):
-        print(f"Dekking: {gaps['goed']} van {gaps['gecontroleerd']} plekken goed, {len(gaps['ontbreekt'])} ontbreken, "
+        print(f"Dekking: {gaps['goed']} van {gaps['gecontroleerd']} plekken goed, {gaps.get('ontbreektTotaal', 0)} ontbreken, "
               f"{len(gaps['teWeinig'])} met te weinig uitjes.")
         for row in (gaps["teWeinig"] + gaps["ontbreekt"])[:15]:
             print(f"  DEKKING {row['plaats']}: {row['naam']} heeft {row['gevonden']} (verwacht {row['verwacht']}, {row['periode']})")
