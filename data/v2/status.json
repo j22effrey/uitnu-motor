@@ -1,12 +1,12 @@
 {
  "version": 2,
- "refreshedAt": "2026-10-17T21:25:07+00:00",
+ "refreshedAt": "2026-10-17T23:44:26+00:00",
  "today": "2026-10-17",
- "total": 3352,
- "inputRecords": 8498,
+ "total": 3364,
+ "inputRecords": 8503,
  "outsideArea": 2,
- "geenUitje": 3359,
- "vasteActiviteit": 1070,
+ "geenUitje": 3360,
+ "vasteActiviteit": 1062,
  "vertaling": 10,
  "teVerVooruit": 261,
  "uitgeslotenBron": 6,
@@ -26,22 +26,22 @@
   "radiusKm": 110
  },
  "byKind": {
-  "theater": 867,
-  "muziek": 691,
-  "overig": 307,
-  "feest": 255,
-  "film": 229,
-  "kunst": 217,
+  "theater": 868,
+  "muziek": 699,
+  "overig": 306,
+  "feest": 257,
+  "film": 230,
+  "kunst": 219,
   "lezing": 175,
   "markt": 171,
   "natuur": 146,
-  "sport": 115,
+  "sport": 116,
   "kinderen": 71,
-  "festival": 62,
-  "eten": 46
+  "festival": 59,
+  "eten": 47
  },
  "byCity": {
-  "Groningen": 1091,
+  "Groningen": 1100,
   "Gorredijk": 242,
   "Emmen": 174,
   "Leeuwarden": 168,
@@ -55,15 +55,15 @@
   "Onstwedde": 27,
   "Steenwijk": 25,
   "Dwingeloo": 24,
+  "Sneek": 23,
   "Scharnegoutum": 22,
-  "Sneek": 21,
   "Stiens": 21,
   "IJlst": 20,
   "Zuidwolde": 20,
   "Schiermonnikoog": 20,
   "Wommels": 19,
   "Wier": 18,
-  "Jirnsum": 17,
+  "Jirnsum": 18,
   "Heerenveen": 17,
   "Stadskanaal": 16,
   "Workum": 16,
@@ -277,19 +277,19 @@
   "overentinghe.nl": 24,
   "demeenthe.nl": 24,
   "natuurverenigingzuidwolde.nl": 23,
+  "tumultgroningen.nl": 23,
   "scharnegoutum.nl": 22,
   "historischcentrumleeuwarden.nl": 21,
   "houtstad-ijlst.nl": 20,
   "em2groningen.nl": 19,
   "ioannistheatertsjerkewier.nl": 18,
   "jongeharten.nl": 18,
+  "sneek.nl": 16,
   "wommels.nl": 16,
-  "tumultgroningen.nl": 16,
   "engelstede.nl": 15,
   "a-theater.nl": 15,
   "kunstencentrumk38.nl": 15,
   "debontewever.avayo.nl": 14,
-  "sneek.nl": 14,
   "berlikum.com": 14,
   "reduzum.com": 14,
   "marrumonline.nl": 14,
@@ -327,6 +327,7 @@
   "pknanloozuidlaren.nl": 8,
   "tickets.theatergeertteis.nl": 8,
   "huizemaas.nl": 8,
+  "2gemeenten.nl": 8,
   "ifks.frl": 8,
   "itjoo.nl": 7,
   "tynaarlo.nl": 7,
@@ -336,7 +337,6 @@
   "wijnjewoude.net": 7,
   "grotekerkleeuwarden.nl": 7,
   "aolegemientehoes.nl": 7,
-  "2gemeenten.nl": 7,
   "den-horn.nl": 7,
   "niehove.eu": 7,
   "museumjoure.nl": 7,
@@ -471,6 +471,7 @@
   "bierumerschool.nl": 2,
   "nachtvangroningen.nl": 2,
   "ravenswoud.nl": 2,
+  "pridegroningen.nl": 2,
   "opendrachten.nl": 2,
   "pgmdebaander.nl": 2,
   "hetpakhuisgroningen.nl": 2,
@@ -562,11 +563,11 @@
   "hfc15.nl": 1
  },
  "photos": {
-  "organisator": 405,
-  "wikimedia": 2876,
+  "organisator": 409,
+  "wikimedia": 2884,
   "zonder": 71
  },
- "twijfel": 605,
+ "twijfel": 601,
  "kinds": {
   "muziek": "Muziek",
   "festival": "Festival",
@@ -589,9 +590,9 @@
   "meerdaags": "Meerdaags"
  },
  "changes": {
-  "new": 34,
+  "new": 12,
   "changed": 72,
-  "removed": 51
+  "removed": 0
  },
  "gate": {
   "passed": true,
@@ -599,7 +600,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "3352 nu, 3369 vorige keer (minimaal 85%)"
+    "detail": "3364 nu, 3352 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -609,7 +610,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "307 van 3352 (9%)"
+    "detail": "306 van 3364 (9%)"
    },
    {
     "name": "velden_compleet",
@@ -620,8 +621,8 @@
  },
  "dekking": {
   "gecontroleerd": 439,
-  "goed": 73,
-  "ontbreektTotaal": 360,
+  "goed": 74,
+  "ontbreektTotaal": 359,
   "ontbreekt": [
    {
     "naam": "'t Pakhuis",
@@ -915,14 +916,6 @@
     "naam": "Oranjevereniging Haren (Koningsdag Haren)",
     "plaats": "Groningen",
     "website": "https://www.oranjeverenigingharen.nl/",
-    "gevonden": 0,
-    "verwacht": 1,
-    "periode": "volgende editie"
-   },
-   {
-    "naam": "Pride Groningen",
-    "plaats": "Groningen",
-    "website": "https://www.pridegroningen.nl/",
     "gevonden": 0,
     "verwacht": 1,
     "periode": "volgende editie"
