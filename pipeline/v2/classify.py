@@ -231,7 +231,7 @@ NOT_A_TITLE = re.compile(r"^(?:start|begin|aanvang|selecteer (?:een )?(?:tijdsti
 # Kopjes en knoppen van een website (de galerij, sponsors, contact, een losse datum): de hele titel is
 # het kopje, er staat niets achter (anders blijft het staan: 'Programma-avond met lezing').
 PAGE_HEADING = re.compile(r"^(?:fotogalerij|sfeerimpressie|kom in contact|contact|mede mogelijk gemaakt door|sponsoren gezocht"
-                          r"|over ons|over (?:de|het) (?:stichting|vereniging|organisatie|festival)\b.*|pagina'?s|ontdek"
+                          r"|over ons|over (?:de|het) (?:stichting|vereniging|organisatie|festival)\b.*|over (?:dit|het|deze) (?:evenement|activiteit)|\w*club seizoen\b.*|pagina'?s|ontdek"
                           r"|wat is er (?:allemaal )?te beleven|het programma|programma|over deze film|thank you|bedankt|blok \d+|sign-?up"
                           r"|uitslag\w*\b.*|rabo clubsupport\b.*|details?"
                           r"|\d{1,2} (?:jan|feb|maa|mrt|apr|mei|jun|jul|aug|sep|okt|oct|nov|dec)[a-z]*(?: 20\d\d)?"
