@@ -90,3 +90,12 @@ def test_bluesclub_is_een_optreden_geen_clubavond():
     assert not_an_outing({"title": "Bluesclub Kielzog"}) is None
     assert not_an_outing({"title": "Jazzclub: Shuteen Erdenebaatar Quartet"}) is None
     assert not_an_outing({"title": "Biljartclub"})
+
+
+def test_html_tekens_in_de_naam_en_een_kopje_als_naam():
+    from pipeline.v2.classify import not_an_outing
+    from pipeline.v2.convert import clean_title
+    assert clean_title("Film avond &#8211; 29 oktober") == "Film avond – 29 oktober"
+    assert clean_title("Bok &amp; Najaars Bierentocht") == "Bok & Najaars Bierentocht"
+    assert not_an_outing({"title": "Over dit evenement"})
+    assert not_an_outing({"title": "Over de rivier, een voorstelling"}) is None

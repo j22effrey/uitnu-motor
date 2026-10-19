@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+from html import unescape
 import re
 import unicodedata
 from datetime import date
@@ -125,7 +126,9 @@ def _undouble(title: str) -> str:
 
 
 def clean_title(value: str | None) -> str:
-    title = _undouble(LINK_NOTE.sub(" ", re.sub(r"\s+", " ", value or "")).strip())
+    # '&amp;' en '&#8211;' uit de HTML van de bron: tekens zoals de organisator ze bedoelt (twee keer, voor '&amp;amp;').
+    text = unescape(unescape(value or ""))
+    title = _undouble(LINK_NOTE.sub(" ", re.sub(r"\s+", " ", text)).strip())
     rest = DATE_PREFIX.sub("", title, count=1)
     rest = rest if len(rest) >= 3 else title
     untimed = LEADING_TIME.sub("", rest, count=1)
