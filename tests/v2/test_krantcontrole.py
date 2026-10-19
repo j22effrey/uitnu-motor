@@ -97,5 +97,8 @@ def test_html_tekens_in_de_naam_en_een_kopje_als_naam():
     from pipeline.v2.convert import clean_title
     assert clean_title("Film avond &#8211; 29 oktober") == "Film avond – 29 oktober"
     assert clean_title("Bok &amp; Najaars Bierentocht") == "Bok & Najaars Bierentocht"
+    assert clean_title("Kunst&centrum open dag") == "Kunst&centrum open dag"
     assert not_an_outing({"title": "Over dit evenement"})
+    assert not_an_outing({"title": "Filmclub seizoen 2026 | 2027"})
+    assert not_an_outing({"title": "Filmclub: Perfect Days"}) is None
     assert not_an_outing({"title": "Over de rivier, een voorstelling"}) is None

@@ -231,7 +231,7 @@ NOT_A_TITLE = re.compile(r"^(?:start|begin|aanvang|selecteer (?:een )?(?:tijdsti
 # Kopjes en knoppen van een website (de galerij, sponsors, contact, een losse datum): de hele titel is
 # het kopje, er staat niets achter (anders blijft het staan: 'Programma-avond met lezing').
 PAGE_HEADING = re.compile(r"^(?:fotogalerij|sfeerimpressie|kom in contact|contact|mede mogelijk gemaakt door|sponsoren gezocht"
-                          r"|over ons|over (?:de|het) (?:stichting|vereniging|organisatie|festival)\b.*|over (?:dit|het|deze) (?:evenement|activiteit)|pagina'?s|ontdek"
+                          r"|over ons|over (?:de|het) (?:stichting|vereniging|organisatie|festival)\b.*|over (?:dit|het|deze) (?:evenement|activiteit)|\w*club seizoen\b.*|pagina'?s|ontdek"
                           r"|wat is er (?:allemaal )?te beleven|het programma|programma|over deze film|thank you|bedankt|blok \d+|sign-?up"
                           r"|uitslag\w*\b.*|rabo clubsupport\b.*|details?"
                           r"|\d{1,2} (?:jan|feb|maa|mrt|apr|mei|jun|jul|aug|sep|okt|oct|nov|dec)[a-z]*(?: 20\d\d)?"
@@ -278,7 +278,7 @@ CLUB_SESSION = re.compile(
     r"|^(?:hard)?loop ?groep|^fiets ?(?:club|groep)|^(?:jeugd|tiener|ouderen|senioren)? ?soos\b|^peuter ?(?:mee)?speel\w*"
     r"|^speel je mee \w+|^stut en steun|^repetitie|^oefen(?:avond|ochtend)|^training\b|^jeugdtraining"
     r"|^(?:een |dorps)?bakkie\b|^kookclub|^bingo(?:avond|middag)?$|^(?:thuis|uit)wedstrijd\b"
-    r"|^(?:ochtend ?)?koffie ?leut|^(?:de )?(?!(?:blues|jazz|folk|comedy|pop|muziek|swing)club)\w+club\b|^leesclub|^(?:christelijke )?vrouwengroep|^\w*dansclub|^soos\w*|^inloop\b|^\w+inloop$"
+    r"|^(?:ochtend ?)?koffie ?leut|^(?:de )?(?!(?:blues|jazz|folk|comedy|film|pop|muziek|swing)club)\w+club\b|^leesclub|^(?:christelijke )?vrouwengroep|^\w*dansclub|^soos\w*|^inloop\b|^\w+inloop$"
     r"|^startgroep \d|^(?:knltb|knvb|nevobo|knbb|kndb|nhv)\b|^verenigingsavond|^\d0 ?\+? ?(?:gym\w*|fit\w*|yoga)"
     r"|^.*\btraining (?:[ojm]\d|jo\d|mo\d|jeugd|selectie)"
     # meditatie, een retraite of qigong: een vaste les of cursus, net als yoga

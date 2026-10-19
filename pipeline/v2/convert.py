@@ -127,7 +127,8 @@ def _undouble(title: str) -> str:
 
 def clean_title(value: str | None) -> str:
     # '&amp;' en '&#8211;' uit de HTML van de bron: tekens zoals de organisator ze bedoelt (twee keer, voor '&amp;amp;').
-    text = unescape(unescape(value or ""))
+    entity = re.compile(r"&#?\w+;")  # alleen met puntkomma: 'Kunst&centrum' blijft heel
+    text = entity.sub(lambda m: unescape(m.group()), entity.sub(lambda m: unescape(m.group()), value or ""))
     title = _undouble(LINK_NOTE.sub(" ", re.sub(r"\s+", " ", text)).strip())
     rest = DATE_PREFIX.sub("", title, count=1)
     rest = rest if len(rest) >= 3 else title
