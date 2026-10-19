@@ -291,7 +291,6 @@ def merge_same_venue(events: list[dict]) -> list[dict]:
             continue
         known = {s["url"] for s in twin["sources"]}
         twin["sources"] += [s for s in event["sources"] if s["url"] not in known]
-        _keep_screening(twin, event)
         occ, extra = twin["occurrences"][0], event["occurrences"][0]
         for field in ("startTime", "endTime"):
             if not occ.get(field) and extra.get(field):

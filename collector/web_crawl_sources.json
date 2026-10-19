@@ -10920,8 +10920,8 @@
       "defaultPlace": {
         "venue": "Kinepolis Emmen (Filmhuis Emmen)",
         "city": "Emmen",
-        "lat": 52.7843,
-        "lon": 6.8925
+        "lat": 52.7882,
+        "lon": 6.8878
       },
       "kindHint": "film",
       "note": "Filmhuis Emmen draait op maandag (20:00) en dinsdag (19:15) in Kinepolis Emmen, Westeind 70. Het programma staat als lijst op /programma/ (WordPress, robots.txt staat het toe): titel, dag en aanvang per film. Kinepolis zelf weigert de motor (robots.txt 403); dit is het eigen programma van het filmhuis.",
@@ -10981,7 +10981,8 @@
         "genres": {
           "onsale": "ScreeningEvent",
           "soldout": "ScreeningEvent",
-          "few": "ScreeningEvent"
+          "few": "ScreeningEvent",
+          "": "ScreeningEvent"
         }
       },
       "defaultPlace": {
@@ -11018,8 +11019,8 @@
       "defaultPlace": {
         "venue": "Theater De Winsinghhof",
         "city": "Roden",
-        "lat": 53.1386,
-        "lon": 6.4269
+        "lat": 53.1355,
+        "lon": 6.4337
       },
       "note": "De filmclub van Theater De Winsinghhof (vroeger cinemaroden.nl) staat op /filmclub als kaartjes met <time datetime>. De films staan ook in de bron theaterroden-nl-web, maar worden daar als 'theater' ingedeeld (La Vita Va Cosi, 19 okt). Speelt een film twee keer op een dag, dan telt alleen de eerste tijd. /kinderfilm heeft dezelfde opbouw (nu leeg). Geen kindHint (die geldt per website en zou het theater als 'film' indelen); de rubriek 'Filmclub' wordt ScreeningEvent.",
       "policyReviewedAt": "2026-10-19"
@@ -11050,8 +11051,8 @@
       "defaultPlace": {
         "venue": "Theater De Koornbeurs",
         "city": "Franeker",
-        "lat": 53.1875,
-        "lon": 5.54
+        "lat": 53.1876,
+        "lon": 5.5432
       },
       "note": "De filmpagina van De Koornbeurs (Theater & Film, Franeker) toont alleen de rubriek 'Film' als kaartjes (dag, tijd, titel, rubriek). Die films kwamen tot nu toe alleen via de bron van franeker.nl binnen en werden als 'theater' ingedeeld (Pressure, 20 okt). Ook live-uitzendingen van ballet en opera (The Royal Ballet) staan in de rubriek Film. Kaartverkoop via podiumnederland.nl niet ophalen. Geen kindHint: die geldt per website en per zaal, en de theatervoorstellingen in De Koornbeurs (via franeker.nl) zouden dan 'film' worden; de rubriek 'Film' wordt ScreeningEvent.",
       "policyReviewedAt": "2026-10-19"
@@ -11083,10 +11084,10 @@
       "defaultPlace": {
         "venue": "Theater & Congrescentrum De Molenberg",
         "city": "Delfzijl",
-        "lat": 53.3297,
-        "lon": 6.9187
+        "lat": 53.3231,
+        "lon": 6.8869
       },
-      "note": "De films (Filmliga Eemsmond) van De Molenberg in Delfzijl staan tussen de voorstellingen op /voorstellingen/ (WordPress, robots.txt staat het toe), met data-genres='film'. Alleen de dag, geen begintijd. Alles wat niet 'film' is valt in deze bron weg; het theaterprogramma van De Molenberg staat nog helemaal niet in de motor (apart nakijken). De dag achter de titel ('Wen er maar aan (17-11)') valt weg. Plek en kaartpin nog nakijken (Molenberg, Delfzijl). Geen kindHint (geldt per website/zaal; botst als het theaterprogramma later ook een bron wordt); data-genres 'film' wordt ScreeningEvent.",
+      "note": "De films (Filmliga Eemsmond) van De Molenberg in Delfzijl staan tussen de voorstellingen op /voorstellingen/ (WordPress, robots.txt staat het toe), met data-genres='film'. Alleen de dag, geen begintijd. Alles wat niet 'film' is valt in deze bron weg; het theaterprogramma van De Molenberg staat nog helemaal niet in de motor (apart nakijken). De dag achter de titel ('Wen er maar aan (17-11)') valt weg. Plek en kaartpin nog nakijken (Molenberg, Delfzijl). Geen kindHint (geldt per website/zaal; botst als het theaterprogramma later ook een bron wordt); data-genres 'film' wordt ScreeningEvent. De Molenberg speelt nu op een tijdelijke locatie: Sikkel 3, Delfzijl (contactpagina, 19 oktober 2026).",
       "policyReviewedAt": "2026-10-19"
     }
   ]

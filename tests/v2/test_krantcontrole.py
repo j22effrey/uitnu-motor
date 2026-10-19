@@ -161,3 +161,9 @@ def test_film_blijft_film_bij_samenvoegen():
             "occurrences": [{"date": "2026-11-03", "startTime": "20:00"}]}
     [merged] = merge_duplicates([theater, film])
     assert merged["schemaType"] == "ScreeningEvent"
+
+
+def test_stripshow_is_geen_uitje_voor_iedereen():
+    from pipeline.v2.classify import not_an_outing
+    assert not_an_outing({"title": "Thunder From Down Under – De ultieme Ladies Night Out!! (18+)"})
+    assert not_an_outing({"title": "Ladies Night"}) is None
