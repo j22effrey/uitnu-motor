@@ -95,6 +95,8 @@ EXCLUDED_HOSTS = {
     "visitgroningen.nl", "kultuuragenda.nl", "wattedoenin.nl", "insidegroningen.com",
     "uitagenda.nl", "uitinnederland.nl", "uitzinnig.nl", "eventbrite.nl", "eventbrite.com",
     "dvhn.nl", "rtvnoord.nl", "oogtv.nl", "groningerinternetcourant.nl",
+    "uitservice.nl", "lc.nl", "frieschdagblad.nl",   # krantenagenda's (Mediahuis Noord): verzamelagenda, nooit een bron
+    "oudegroningerkerken.nl",   # nagemaakte site, niet de Stichting Oude Groninger Kerken (die zit op kerkalspodium.nl)
     "zeijen.nu", "ruinerwold.info", "liwwadders.nl",   # dorpsnieuws: berichten, geen agenda van een organisator
     # seks- en naaktfeesten (in OpenStreetMap als 'bioscoop'): geen uitje voor het grote publiek
     "maze.nl",

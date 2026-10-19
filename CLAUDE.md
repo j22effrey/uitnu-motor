@@ -140,6 +140,13 @@ Groningen (oktober 2026, eerst 9 van de 72 plekken goed):
   bron met de hand in met `json_api` of `html_cards`. Geef niet op en laat het niet stil liggen.
 - Een nieuwe stad of regio begint met een volledige lijst in `dekking.json` (zoek ook festivals en de
   jaarplanning grote evenementen van de gemeente), daarna de bronnen; niet andersom.
+- Lessen uit de krantencontrole (Eemsbode, oktober 2026; van 50 uitjes stonden er maar 6 bij ons): een
+  krantenagenda (Uitservice, DvhN, LC) is een goede controlelijst, maar nooit een bron. Zoek per gemist uitje
+  de organisator. Wat we leerden: bewaar ophaalfouten (`data/ophaalfouten.json`; Vera gaf in de motor 0 terwijl
+  het elders werkte); geen 'discovery' in onze naam (de RUG-firewall weigerde ons daarop); een wachtkamer met
+  een cookie (De Klinker) is geen blokkade; meer dan 100 kopregels mag; een lege 'User-agent:' in robots.txt
+  telt niet; grote natuurorganisaties (Groninger Landschap, Staatsbosbeheer) en de Oude Groninger Kerken
+  (kerkalspodium.nl) hebben hun eigen agenda als gegevens of kaartjes.
 - Festivals en grote jaarlijkse evenementen zonder leesbare agenda: als losse uitjes in
   `data/events.json`, met de bron (de organisator of de jaarplanning van de gemeente) in `sourceNote`.
 

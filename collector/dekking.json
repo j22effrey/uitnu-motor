@@ -540,12 +540,13 @@
         "naam": "Stichting Oude Groninger Kerken",
         "type": "kerk",
         "plaats": "Groningen",
-        "website": "https://oudegroningerkerken.nl/",
+        "website": "https://kerkalspodium.nl/",
         "hosts": [
-          "oudegroningerkerken.nl"
+          "kerkalspodium.nl",
+          "groningerkerken.nl"
         ],
         "verwacht90": 10,
-        "opmerking": "Beheert o.a. dorpskerken rond Ten Boer (Thesinge, Garmerwolde, Woltersum, Wittewierum, Ten Post). groningerkerken.nl is een alias."
+        "opmerking": "Beheert oude kerken in de hele provincie; de agenda staat op kerkalspodium.nl (groningerkerken.nl linkt erheen). oudegroningerkerken.nl is NIET de stichting (een nagemaakte site zonder agenda)."
       },
       {
         "naam": "Synagoge Groningen",

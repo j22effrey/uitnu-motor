@@ -21,13 +21,15 @@ from datetime import date, timedelta
 from html import unescape
 from html.parser import HTMLParser
 import heapq
+import http.client
 import json
 import re
 import time
 from typing import Callable, Iterable
 from urllib.parse import urljoin, urlparse, urlunparse
 from urllib.error import HTTPError
-from urllib.request import Request, HTTPRedirectHandler, build_opener
+from http.cookiejar import CookieJar
+from urllib.request import HTTPCookieProcessor, Request, HTTPRedirectHandler, build_opener
 from urllib.robotparser import RobotFileParser
 from xml.etree import ElementTree
 
@@ -35,8 +37,11 @@ from collector.dutch_agenda_html import AgendaEvent, parse_agenda
 from collector.jsonld_events import StructuredEvent, parse_html
 from pipeline.event_model import RawEvent
 
-USER_AGENT = "UITNU-Crawler/0.1 (+first-party-event-discovery)"
+# Zonder het woord 'discovery': de firewall van onder meer de RUG weigerde ons daarop (400).
+USER_AGENT = "UITNU-Crawler/0.1 (+https://uitnu.pages.dev/over/)"
 MAX_RESPONSE_BYTES = 2_000_000
+# Sommige websites sturen meer dan 100 kopregels mee (Groninger Landschap: 102 cookies); Python stopt dan.
+http.client._MAXHEADERS = max(getattr(http.client, "_MAXHEADERS", 100), 500)
 
 _EVENT_HINTS = (
     "agenda", "event", "events", "evenement", "evenementen", "programma",
@@ -259,7 +264,8 @@ def default_fetch(url: str, *, timeout: float = 15) -> Fetched:
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.5",
         },
     )
-    with build_opener(_SameSiteRedirectHandler()).open(req, timeout=timeout) as response:
+    # Cookies alleen binnen dit ene verzoek: een wachtkamer (De Klinker) zet er een en stuurt terug.
+    with build_opener(HTTPCookieProcessor(CookieJar()), _SameSiteRedirectHandler()).open(req, timeout=timeout) as response:
         raw = response.read(MAX_RESPONSE_BYTES + 1)
         if len(raw) > MAX_RESPONSE_BYTES:
             raise ValueError(f"response too large: {url}")
@@ -277,6 +283,33 @@ def default_fetch(url: str, *, timeout: float = 15) -> Fetched:
 SOFT_404 = re.compile(r"\b404\b[^<]{0,80}(?:not be found|not found|niet gevonden)|page not found|pagina niet gevonden", re.I)
 ANTI_BOT = re.compile(r"captcha|cloudflare|access denied|forbidden|toegang geweigerd|just a moment|verify you are human"
                       r"|\blog ?in\b|inloggen|sign in|wachtwoord|password", re.I)
+
+
+def clean_robots(lines: list[str]) -> list[str]:
+    """robots.txt zonder groepen met een lege 'User-agent:' (geen geldige naam volgens RFC 9309). Python past
+    zo'n lege regel op elke bot toe; de Dorpskerk Haren sloot daarmee per ongeluk iedereen uit, terwijl de
+    regel voor '*' alles toestaat."""
+    # Alleen als er ook een groep voor '*' is: staat er alleen 'User-agent:' met 'Disallow: /', dan wilde de
+    # eigenaar waarschijnlijk iedereen weren, en houden we ons daaraan.
+    if not any(re.match(r"\s*user-agent\s*:\s*\*", line.split("#", 1)[0], re.I) for line in lines):
+        return list(lines)
+    out, skip, in_agents = [], False, False
+    for line in lines:
+        key, _, value = line.split("#", 1)[0].partition(":")
+        key = key.strip().lower()
+        if key == "user-agent":
+            if not in_agents:
+                skip = True  # een nieuwe groep: overslaan tot er een echte naam in staat
+            in_agents = True
+            if value.strip():
+                skip = False
+                out.append(line)
+            continue
+        if key:
+            in_agents = False
+        if not skip:
+            out.append(line)
+    return out
 
 
 def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: float) -> tuple[RobotFileParser, list[str]]:
@@ -298,7 +331,7 @@ def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: flo
                     return rp, []
                 rp.disallow_all = True
                 return rp, []
-            rp.parse(fetched.text.splitlines())
+            rp.parse(clean_robots(fetched.text.splitlines()))
             return rp, parse_robots_sitemaps(fetched.text, root_url)
         if fetched.status in (404, 410):
             rp.parse([])  # Explicitly absent robots.txt permits crawling.

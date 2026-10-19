@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 import json
 from typing import Any, Iterable
 
-USER_AGENT = "UITNU-MVP/0.3 (+event-discovery-prototype)"
+USER_AGENT = "UITNU-MVP/0.3 (+https://uitnu.pages.dev/over/)"
 
 @dataclass
 class StructuredEvent:
