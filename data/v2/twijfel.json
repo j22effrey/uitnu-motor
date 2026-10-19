@@ -70,11 +70,21 @@
   ]
  },
  {
-  "id": "evt_575873bdb4b03a",
-  "title": "The Incomer",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/the-incomer/",
+  "id": "evt_d95e6c752ee388",
+  "title": "Zondag de negenste",
+  "kind": "film",
+  "reason": "website filmhuisemmen.nl",
+  "url": "https://www.filmhuisemmen.nl/zondag-de-negenste/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "nacht-van-zuidlaren-2026",
+  "title": "Nacht van Zuidlaren",
+  "kind": "feest",
+  "reason": "oude categorie 'feest'",
+  "url": "https://www.evenementenzuidlaardermarkt.nl/agenda-2026/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -85,6 +95,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://buurtcentrumtuinpad.nl/Locatie/buurtcentrum-tuinpad/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_f1993225a03a80",
+  "title": "Toutes Directions",
+  "kind": "film",
+  "reason": "website denieuwekolk.nl",
+  "url": "https://denieuwekolk.nl/bios/agenda/toutes-directions",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -110,11 +130,31 @@
   ]
  },
  {
+  "id": "evt_700002c0c4c9e8",
+  "title": "Amoeba",
+  "kind": "film",
+  "reason": "website filmhuisemmen.nl",
+  "url": "https://www.filmhuisemmen.nl/amoeba/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_fa37f5dbd82ea7",
   "title": "Hoe koop je een elektrische auto?",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://forum.nl/nl/agenda/hoe-koop-je-een-elektrische-auto?date=20-10-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_ec62d1c43367ec",
+  "title": "Kokuho (16 jr.)",
+  "kind": "film",
+  "reason": "website denieuwekolk.nl",
+  "url": "https://denieuwekolk.nl/bios/agenda/filmliga-kokuho",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -156,6 +196,16 @@
   "kind": "kunst",
   "reason": "website ontdekwec.nl",
   "url": "https://ontdekwec.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_0b5ca10981a592",
+  "title": "Toutes Directions",
+  "kind": "film",
+  "reason": "website denieuwekolk.nl",
+  "url": "https://denieuwekolk.nl/bios/agenda/toutes-directions",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -271,16 +321,6 @@
   ]
  },
  {
-  "id": "evt_39c8c9d3e9730c",
-  "title": "Over dit evenement",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.svscopus.nl/evenementen/143262-algemene-leden-vergadering/sign-up",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_2e1d5585983c0a",
   "title": "Birdwatching",
   "kind": "overig",
@@ -383,16 +423,6 @@
   ]
  },
  {
-  "id": "evt_c5f9003a1549aa",
-  "title": "Popavond: Bad Shoes & Stëlz Takeover",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://koudum.nl/mc-locations/de-klink/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_399c6a3b44869d",
   "title": "The Drop - Greppeltocht bij JSDB",
   "kind": "overig",
@@ -428,6 +458,16 @@
   "kind": "kunst",
   "reason": "website ontdekwec.nl",
   "url": "https://ontdekwec.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_37dda627cb9ae3",
+  "title": "Kokuho (16 jr.)",
+  "kind": "film",
+  "reason": "website denieuwekolk.nl",
+  "url": "https://denieuwekolk.nl/bios/agenda/filmliga-kokuho",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -503,11 +543,11 @@
   ]
  },
  {
-  "id": "evt_d59cf18fed953f",
-  "title": "Popavond: Bad Shoes &amp; Stëlz Takeover",
+  "id": "evt_c5f9003a1549aa",
+  "title": "Popavond: Bad Shoes & Stëlz Takeover",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://koudum.nl/mc-events/popavond-bad-shoes-stelz-takeover/",
+  "url": "https://koudum.nl/mc-locations/de-klink/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -643,11 +683,21 @@
   ]
  },
  {
-  "id": "evt_6d05c6bad8b6a3",
-  "title": "Home",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/home/",
+  "id": "evt_88e234d82f24a7",
+  "title": "Los Tigres",
+  "kind": "film",
+  "reason": "website denieuwekolk.nl",
+  "url": "https://denieuwekolk.nl/bios/agenda/filmliga-los-tigres",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_bd3170aa0e4513",
+  "title": "Des preuves d’amour",
+  "kind": "film",
+  "reason": "website filmhuisemmen.nl",
+  "url": "https://www.filmhuisemmen.nl/des-preuves-damour/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -663,21 +713,31 @@
   ]
  },
  {
-  "id": "evt_f58e19ae6bc3ba",
-  "title": "The Cycle of Love",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/the-cycle-of-love/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_ea3daf8aca5331",
   "title": "Connexa middag",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://minnertsga.frl/evenement/connexa-middag-4/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a63a98e0d242ec",
+  "title": "Primavera",
+  "kind": "film",
+  "reason": "website filmhuisemmen.nl",
+  "url": "https://www.filmhuisemmen.nl/primavera/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_ee1689209db9f4",
+  "title": "Los Tigres",
+  "kind": "film",
+  "reason": "website denieuwekolk.nl",
+  "url": "https://denieuwekolk.nl/bios/agenda/filmliga-los-tigres",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -768,16 +828,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.scharnegoutum.nl/agenda/vve-vergadering/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_43cf4470741994",
-  "title": "Over dit evenement",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.svscopus.nl/evenementen/144009-halloween-borrel/sign-up",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -943,6 +993,16 @@
   ]
  },
  {
+  "id": "evt_d6257a5bc74093",
+  "title": "Los Tigres",
+  "kind": "film",
+  "reason": "website denieuwekolk.nl",
+  "url": "https://denieuwekolk.nl/bios/agenda/filmliga-los-tigres",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_ca849729a2229e",
   "title": "Steendammer uurtje",
   "kind": "overig",
@@ -1103,11 +1163,11 @@
   ]
  },
  {
-  "id": "evt_cdc2e319410be2",
-  "title": "Pour le Plaisir",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/pour-le-plaisir/",
+  "id": "evt_930e5049ec3aab",
+  "title": "De Gaulle: Résistance",
+  "kind": "film",
+  "reason": "website filmhuisemmen.nl",
+  "url": "https://www.filmhuisemmen.nl/de-gaulle-resistance/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1123,11 +1183,11 @@
   ]
  },
  {
-  "id": "evt_3cad259140b73a",
-  "title": "Pressure",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/pressure/",
+  "id": "evt_583842c357d85d",
+  "title": "On a String",
+  "kind": "film",
+  "reason": "website filmhuisemmen.nl",
+  "url": "https://www.filmhuisemmen.nl/on-a-string/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1784,16 +1844,6 @@
   ]
  },
  {
-  "id": "evt_b049767f407238",
-  "title": "Juste une Illusion",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/just-une-illusion/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_63277a4f587b2d",
   "title": "Houtmeesters seizoen 2026/ 2027",
   "kind": "kunst",
@@ -1809,16 +1859,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://buurthuus-noordwolde.nl/?post_type=product&p=2837&preview=true",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_17789905b46903",
-  "title": "Tussen Surabaya en Stadskanaal door Jan Folkerts",
-  "kind": "kunst",
-  "reason": "website groningerarchieven.nl",
-  "url": "https://www.groningerarchieven.nl/actueel/agenda/387-tussen-surabaya-en-stadskanaal-door-jan-folkerts",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2188,16 +2228,6 @@
   ]
  },
  {
-  "id": "evt_1e31d07191bd8e",
-  "title": "Heart of the Beast",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/heart-of-the-beast/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_843236f28bbeb2",
   "title": "THE DOG DAYS ARE OVER 2.0 19:30 - 20:40",
   "kind": "overig",
@@ -2218,11 +2248,11 @@
   ]
  },
  {
-  "id": "evt_59ecdf02d4f595",
-  "title": "500 Miles",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/500-miles/",
+  "id": "evt_a997198f9ae921",
+  "title": "Building the Future: Jongerenparticipatie in de Praktijk 15:00 - 18:00",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10387149?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2253,6 +2283,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10381803?stlt=jh&lang=nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_33724ed516c18d",
+  "title": "Teckel 20:00 - 21:15",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10383702?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2298,6 +2338,16 @@
   ]
  },
  {
+  "id": "evt_5ac0b7d94861bf",
+  "title": "RUIS 19:00 - 19:15",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10387136?stlt=jh&lang=nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_803b1deefade0d",
   "title": "BEYOND 20:00 - 20:50",
   "kind": "overig",
@@ -2313,6 +2363,16 @@
   "kind": "theater",
   "reason": "website huisorlando.nl",
   "url": "https://www.huisorlando.nl/productie-agamemnon/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_0a31759f654f46",
+  "title": "RUIS 21:00 - 21:15",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10387137?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2995,16 +3055,6 @@
   ]
  },
  {
-  "id": "evt_0eaee492b387da",
-  "title": "Wen er maar aan",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/wen-er-maar-aan/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_5c8ea3d0824262",
   "title": "Glasfusen",
   "kind": "overig",
@@ -3045,16 +3095,6 @@
   ]
  },
  {
-  "id": "evt_c002837d255317",
-  "title": "Schlager Parade",
-  "kind": "sport",
-  "reason": "zaal De Bonte Wever",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/102998?p_id=486236",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_032187853887c2",
   "title": "80’s Verantwoord",
   "kind": "overig",
@@ -3070,16 +3110,6 @@
   "kind": "theater",
   "reason": "website huisorlando.nl",
   "url": "https://www.huisorlando.nl/productie-every-brilliant-thing/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_a9785e2533003c",
-  "title": "Doors open 20:00, starts at 20:30",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/en/business/conferences-and-events/edwin-evers-band",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3241,16 +3271,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://easterein.nl/agenda/the-hoochies/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_a91b99a2eaf34c",
-  "title": "The Beloved",
-  "kind": "theater",
-  "reason": "website vanberesteyn.nl",
-  "url": "https://www.vanberesteyn.nl/programma/the-beloved/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3599,6 +3619,16 @@
   ]
  },
  {
+  "id": "evt_990aef49279534",
+  "title": "+ Annemarijn Maandag",
+  "kind": "sport",
+  "reason": "zaal De Bonte Wever",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_676af0ea3e2548",
   "title": "Night of the DinoLights",
   "kind": "kinderen",
@@ -3759,6 +3789,16 @@
   ]
  },
  {
+  "id": "evt_b2076d9104b2f8",
+  "title": "Doors open 20:00, starts at 20:30",
+  "kind": "sport",
+  "reason": "website debontewever.nl",
+  "url": "https://www.debontewever.nl/en/business/conferences-and-events/pink-floyd-project",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_bebeb68f168899",
   "title": "European Youth Countrymatch...",
   "kind": "sport",
@@ -3793,7 +3833,7 @@
   "title": "Pink Floyd Project",
   "kind": "sport",
   "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/pink-floyd-project",
+  "url": "https://www.debontewever.nl/en/business/conferences-and-events/pink-floyd-project",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3954,16 +3994,6 @@
   "kind": "kinderen",
   "reason": "website dinoparklandgoedtenaxx.nl",
   "url": "https://www.dinoparklandgoedtenaxx.nl/event/night-of-the-dinolights-20-december",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_42701ad8adad40",
-  "title": "Starts at 11:00",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/en/business/conferences-and-events/delightful-country-living-winter-wonderfair",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4810,16 +4840,6 @@
   ]
  },
  {
-  "id": "evt_6d089dab280ef0",
-  "title": "De Bonte Wever 25",
-  "kind": "sport",
-  "reason": "website debontewever.nl",
-  "url": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_2cff3614a1f1b4",
   "title": "Lustrum: Kielzog & De Wereld",
   "kind": "theater",
@@ -5492,16 +5512,6 @@
   ]
  },
  {
-  "id": "evt_e2f4fd1f8f525f",
-  "title": "HAND UPON THE LEVER – 2027 WORLD TOUR",
-  "kind": "sport",
-  "reason": "zaal De Bonte Wever",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/105860?p_id=500492",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_11914ac7603f5e",
   "title": "HT Roeirace",
   "kind": "overig",
@@ -6022,26 +6032,6 @@
   "kind": "theater",
   "reason": "website ioannistheatertsjerkewier.nl",
   "url": "https://www.ioannistheatertsjerkewier.nl/event/alexander-broussard-una-storia-italiana-da-solo/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b9085cd3a4ee20",
-  "title": "PAPIERBAK",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.nijeberkoop.nl/category/plaatselijk-belang/omrin/afvalkalender/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_8f3c83730a1bd7",
-  "title": "PAPIERBAK",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.nijeberkoop.nl/category/plaatselijk-belang/omrin/afvalkalender/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]

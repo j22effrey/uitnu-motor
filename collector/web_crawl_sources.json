@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-16",
+  "updated": "2026-10-19",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -11088,6 +11088,27 @@
         "lon": 6.8869
       },
       "note": "De films (Filmliga Eemsmond) van De Molenberg in Delfzijl staan tussen de voorstellingen op /voorstellingen/ (WordPress, robots.txt staat het toe), met data-genres='film'. Alleen de dag, geen begintijd. Alles wat niet 'film' is valt in deze bron weg; het theaterprogramma van De Molenberg staat nog helemaal niet in de motor (apart nakijken). De dag achter de titel ('Wen er maar aan (17-11)') valt weg. Plek en kaartpin nog nakijken (Molenberg, Delfzijl). Geen kindHint (geldt per website/zaal; botst als het theaterprogramma later ook een bron wordt); data-genres 'film' wordt ScreeningEvent. De Molenberg speelt nu op een tijdelijke locatie: Sikkel 3, Delfzijl (contactpagina, 19 oktober 2026).",
+      "policyReviewedAt": "2026-10-19"
+    },
+    {
+      "id": "evenementenzuidlaardermarkt-nl-web",
+      "name": "Stichting Evenementen Zuidlaardermarkt: agenda",
+      "rootUrl": "https://www.evenementenzuidlaardermarkt.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.evenementenzuidlaardermarkt.nl/agenda-2026/"
+      },
+      "activatedFromCandidate": "evenementenzuidlaardermarkt.nl",
+      "defaultPlace": {
+        "city": "Zuidlaren",
+        "lat": 53.0938,
+        "lon": 6.683
+      },
       "policyReviewedAt": "2026-10-19"
     }
   ]
