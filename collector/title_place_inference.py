@@ -89,11 +89,13 @@ def locate_city(event: RawEvent, *, geocode_fn=None, timeout: float = 8) -> RawE
     if geocode_fn is None:
         from collector.pdok_geocode import geocode as geocode_fn
     want = _norm(event.city)
-    for result in geocode_fn(event.city, rows=6, timeout=timeout):
-        if (result.type or "").casefold() not in ALLOWED_TYPES:
-            continue
-        if _norm((result.label or "").split(",", 1)[0]) != want:
-            continue
+    province = _norm((event.raw or {}).get("provincie") or "")
+    results = [r for r in geocode_fn(event.city, rows=6, timeout=timeout)
+               if (r.type or "").casefold() in ALLOWED_TYPES and _norm((r.label or "").split(",", 1)[0]) == want]
+    # Plaatsen met dezelfde naam (Zuidwolde in Groningen en in Drenthe): de provincie van de bron eerst.
+    if province:
+        results.sort(key=lambda r: _norm((r.label or "").rsplit(",", 1)[-1]) != province)
+    for result in results:
         raw = dict(event.raw or {})
         raw["city_geocode"] = {"pdok_label": result.label, "pdok_type": result.type}
         return replace(event, lat=result.lat, lon=result.lon, raw=raw)

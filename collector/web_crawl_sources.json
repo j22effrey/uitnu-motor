@@ -10207,14 +10207,21 @@
         "startDate": "date",
         "url": "url",
         "id": "id",
-        "genre": "type",
+        "genre": "tags.0",
         "pageParam": "page",
         "maxPages": 12,
         "genres": {
-          "Voorstelling": "TheaterEvent",
-          "Café live": "MusicEvent"
+          "Muziek": "MusicEvent",
+          "Cabaret": "ComedyEvent",
+          "Toneel": "TheaterEvent",
+          "Dans": "DanceEvent",
+          "Musical": "TheaterEvent",
+          "Jeugd": "ChildrensEvent",
+          "Familie": "ChildrensEvent"
         },
-        "skipTitle": "^Geannuleerd"
+        "skipTitle": "^Geannuleerd|^Muzikale Herinneringen|bootcamp|^Themadag",
+        "skipField": "tags",
+        "skipValue": "Groepsles|Cursus"
       },
       "defaultPlace": {
         "venue": "Kielzog",
@@ -10223,7 +10230,7 @@
         "lon": 6.757
       },
       "kindHint": "theater",
-      "note": "Het programma komt als gegevens van /api/v1/agenda (zelfde adres dat de eigen agendapagina gebruikt; robots.txt staat het toe). Alleen de dag, geen begintijd. Uitjes met '@Meeden' e.d. in de naam zijn op een andere plek in de gemeente; die krijgen nu de plek Kielzog. Eerder vond de test 0 uitjes omdat de agenda met JavaScript laadt. Workshops (type 'Workshop') zijn losse workshops, die blijven staan.",
+      "note": "Het programma komt als gegevens van /api/v1/agenda (zelfde adres dat de eigen agendapagina gebruikt; robots.txt staat het toe). Alleen de dag, geen begintijd. Uitjes met '@Meeden' e.d. in de naam zijn op een andere plek in de gemeente; die krijgen nu de plek Kielzog. Eerder vond de test 0 uitjes omdat de agenda met JavaScript laadt. Workshops (type 'Workshop') zijn losse workshops, die blijven staan. Soort uit het eerste kenmerk (tags: Muziek, Cabaret, Toneel); groepslessen, cursusdagen (Themadag), Salsa Bootcamp en de zangochtenden 'Muzikale Herinneringen' (op wisselende plekken) vallen weg.",
       "policyReviewedAt": "2026-10-16"
     },
     {
@@ -10369,7 +10376,8 @@
         },
         "roomFallback": {
           "city": "Groningen"
-        }
+        },
+        "skipTitle": "^stille nacht"
       },
       "defaultPlace": {
         "venue": "Stadslab Groningen",
@@ -10378,7 +10386,7 @@
         "lon": 6.5389
       },
       "kindHint": "feest",
-      "note": "Agenda op /agenda/ als blokken met kop, 'Datum:', 'Tijd:' en 'Locatie:'. Kaartverkoop via Stager/CM: die links nooit gebruiken. Een meerdaags feest ('vrijdag 16 en zaterdag 17 oktober', Oktofest) komt er nu als één dag in (de laatste); zo nodig de eerste dag als los uitje in data/events.json.",
+      "note": "Agenda op /agenda/ als blokken met kop, 'Datum:', 'Tijd:' en 'Locatie:'. Kaartverkoop via Stager/CM: die links nooit gebruiken. Een meerdaags feest ('vrijdag 16 en zaterdag 17 oktober', Oktofest) komt er nu als één dag in (de laatste); zo nodig de eerste dag als los uitje in data/events.json. 'Stille Nacht' in de Akerk komt al via de bron van de Akerk.",
       "policyReviewedAt": "2026-10-16"
     },
     {
@@ -10432,7 +10440,8 @@
           "url": "<h2>\\s*<a href=\"([^\"]+)\"",
           "date": "<time[^>]*>(.*?)</time>"
         },
-        "skipTitle": "spreekuur"
+        "skipTitle": "spreekuur",
+        "dropFromTitle": "\\s*\\(VOL\\)"
       },
       "defaultPlace": {
         "venue": "Drents Archief",
@@ -10614,7 +10623,7 @@
         "start": "Date",
         "url": "URL",
         "room": "InfoDetails.Location.Text",
-        "skipTitle": "vergader|bedrijfsuitje|groepsuitje|schoolreis|kinderfeest|natuurwijs|met je klas",
+        "skipTitle": "vergader|bedrijfsuitje|groepsuitje|schoolreis|kinderfeest|natuurwijs|met je klas|^beleef het boomkroonpad$",
         "rooms": {
           "Lauwersmeer": {
             "venue": "Nationaal Park Lauwersmeer",
@@ -10746,7 +10755,8 @@
           "Expositie": "ExhibitionEvent",
           "Lezing": "EducationEvent"
         },
-        "skipTitle": "pilates|mantra|taiz|avondgebed|rondom de stilte|^viering"
+        "skipTitle": "pilates|mantra|taiz|avondgebed|rondom de stilte|^viering|oplaad ?workshop",
+        "province": "Groningen"
       },
       "kindHint": "muziek",
       "policyReviewedAt": "2026-10-16",

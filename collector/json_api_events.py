@@ -104,10 +104,13 @@ def parse_items(payload, config: dict, *, source_name: str, root_url: str, today
                 place[key] = _text(value_at(item, config[key])) or None
         for key in ("lat", "lon"):
             if config.get(key) and place.get(key) is None:
+                value = value_at(item, config[key])
                 try:
-                    place[key] = float(value_at(item, config[key]))
+                    number = float(str(value).replace(",", ".")) if not isinstance(value, bool) else None
                 except (TypeError, ValueError):
-                    pass
+                    number = None
+                if number is not None and -180 <= number <= 180:  # geen nan, inf of onzin
+                    place[key] = number
         out.append(RawEvent(
             source_name=source_name,
             source_type="structured_web",

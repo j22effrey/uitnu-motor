@@ -278,7 +278,7 @@ CLUB_SESSION = re.compile(
     r"|^(?:hard)?loop ?groep|^fiets ?(?:club|groep)|^(?:jeugd|tiener|ouderen|senioren)? ?soos\b|^peuter ?(?:mee)?speel\w*"
     r"|^speel je mee \w+|^stut en steun|^repetitie|^oefen(?:avond|ochtend)|^training\b|^jeugdtraining"
     r"|^(?:een |dorps)?bakkie\b|^kookclub|^bingo(?:avond|middag)?$|^(?:thuis|uit)wedstrijd\b"
-    r"|^(?:ochtend ?)?koffie ?leut|^(?:de )?\w+club\b|^leesclub|^(?:christelijke )?vrouwengroep|^\w*dansclub|^soos\w*|^inloop\b|^\w+inloop$"
+    r"|^(?:ochtend ?)?koffie ?leut|^(?:de )?(?!(?:blues|jazz|folk|comedy|film|pop|muziek|swing)club)\w+club\b|^leesclub|^(?:christelijke )?vrouwengroep|^\w*dansclub|^soos\w*|^inloop\b|^\w+inloop$"
     r"|^startgroep \d|^(?:knltb|knvb|nevobo|knbb|kndb|nhv)\b|^verenigingsavond|^\d0 ?\+? ?(?:gym\w*|fit\w*|yoga)"
     r"|^.*\btraining (?:[ojm]\d|jo\d|mo\d|jeugd|selectie)"
     # meditatie, een retraite of qigong: een vaste les of cursus, net als yoga

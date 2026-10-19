@@ -62,3 +62,31 @@ def test_gegevens_met_een_plek_per_uitje():
               "venue": "properties.location", "lat": "geometry.coordinates.1", "lon": "geometry.coordinates.0"}
     [event] = parse_items(data, config, source_name="gl", root_url="https://gl.nl/", today=date(2026, 10, 19))
     assert (event.venue, event.lat, event.lon) == ("Onbekend bos", 52.95, 6.31)
+
+
+def test_alleen_een_lege_user_agent_blijft_een_blokkade():
+    assert not _robots("User-agent:\nDisallow: /\n").can_fetch(USER_AGENT, "https://x.nl/agenda")
+
+
+def test_plaats_met_dezelfde_naam_in_de_provincie_van_de_bron():
+    from types import SimpleNamespace
+    from collector.title_place_inference import locate_city
+    from pipeline.event_model import RawEvent
+
+    def pdok(name, rows=6, timeout=8):
+        return [SimpleNamespace(type="woonplaats", label="Zuidwolde, De Wolden, Drenthe", lat=52.67, lon=6.43),
+                SimpleNamespace(type="woonplaats", label="Zuidwolde, Het Hogeland, Groningen", lat=53.26, lon=6.59)]
+
+    event = RawEvent(source_name="k", source_type="structured_web", source_url="https://k.nl/", source_id=None,
+                     title="Klankkoor", start_at="2026-10-25", city="Zuidwolde", raw={"provincie": "Groningen"})
+    assert locate_city(event, geocode_fn=pdok).lat == 53.26
+    zonder = RawEvent(source_name="k", source_type="structured_web", source_url="https://k.nl/", source_id=None,
+                      title="Klankkoor", start_at="2026-10-25", city="Zuidwolde", raw={})
+    assert locate_city(zonder, geocode_fn=pdok).lat == 52.67
+
+
+def test_bluesclub_is_een_optreden_geen_clubavond():
+    from pipeline.v2.classify import not_an_outing
+    assert not_an_outing({"title": "Bluesclub Kielzog"}) is None
+    assert not_an_outing({"title": "Jazzclub: Shuteen Erdenebaatar Quartet"}) is None
+    assert not_an_outing({"title": "Biljartclub"})

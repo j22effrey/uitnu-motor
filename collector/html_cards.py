@@ -17,6 +17,7 @@ Per bron ingesteld in extractorConfig, zonder nieuwe code per website:
     skipExtra    een toevoeging achter de titel die niets zegt ('support')
     roomFallback de plek als de zaal niet in rooms staat ('elders': alleen de stad, geen zaal)
     skipTags     kenmerken die geen uitje zijn ('Spreekuur', 'Basisvaardigheden')
+    province     bij een plaatsnaam per kaartje: de provincie, voor plaatsen die vaker voorkomen (Zuidwolde)
 
 Datums in de vormen van collector/when.py ('do 15.10', 'Thursday 15 October', '16-10-2026 / 10:00').
 Alleen feiten: naam, datum en tijd, zaal, soort en link. Geen teksten. robots.txt geldt voor elke pagina.
@@ -134,7 +135,8 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
             lon=place.get("lon"),
             category=_map(genres, genre) or genre or None,
             verification_status="organizer_confirmed",
-            raw={"source_feed": page_url, "genre": genre or None, "room": room or None},
+            raw={"source_feed": page_url, "genre": genre or None, "room": room or None,
+                 "provincie": config.get("province") or None},
         ))
     return out
 

@@ -289,6 +289,10 @@ def clean_robots(lines: list[str]) -> list[str]:
     """robots.txt zonder groepen met een lege 'User-agent:' (geen geldige naam volgens RFC 9309). Python past
     zo'n lege regel op elke bot toe; de Dorpskerk Haren sloot daarmee per ongeluk iedereen uit, terwijl de
     regel voor '*' alles toestaat."""
+    # Alleen als er ook een groep voor '*' is: staat er alleen 'User-agent:' met 'Disallow: /', dan wilde de
+    # eigenaar waarschijnlijk iedereen weren, en houden we ons daaraan.
+    if not any(re.match(r"\s*user-agent\s*:\s*\*", line.split("#", 1)[0], re.I) for line in lines):
+        return list(lines)
     out, skip, in_agents = [], False, False
     for line in lines:
         key, _, value = line.split("#", 1)[0].partition(":")
