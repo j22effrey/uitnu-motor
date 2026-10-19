@@ -391,6 +391,8 @@ def _agenda_to_raw(source: CrawlSource, item: AgendaEvent, page_url: str) -> Raw
             if times[1] < times[0]:
                 end_date += timedelta(days=1)
             end_at = f"{end_date.isoformat()}T{times[1]}:00"
+    if item.end_date and not end_at:
+        end_at = item.end_date  # een periode: van de eerste tot en met de laatste dag
     return RawEvent(
         source_name=source.name,
         source_type="structured_web" if trusted_first_party else "discovery_web",
