@@ -349,7 +349,9 @@ SERVICE_OR_MEETING = re.compile(
     r"|\benergie ?(?:delen|loket|coach\w*|cafe)\b|subsidie\w*|\bondernemers ?(?:avond|cafe|ontbijt)\b|\bnetwerk ?(?:borrel|bijeenkomst)\b"
     r"|\bnieuwjaars ?(?:receptie|bijeenkomst|visite|byienkomst)\b|basisschool\w*|\bopen lessen\b|\bouderavond\b|\w*reunie\w*"
     r"|vrienden ?dag|\bgroep \d(?: ?[-/] ?\d)?\b"
-    r"|sociaal werker|inloopavond nieuwbouw|nieuwbouwplan\w*|\binloopavond\b|gemeente \w+ bijeenkomst|open call|schrijf ?ochtend|\bis (?:weer )?geopend$")
+    r"|sociaal werker|inloopavond nieuwbouw|nieuwbouwplan\w*|\binloopavond\b|gemeente \w+ bijeenkomst|open call|schrijf ?ochtend|\bis (?:weer )?geopend$"
+    # zorg in een zaal ('Bloedprikken Certe' in De Skans, 19 oktober 2026)
+    r"|bloed ?prik\w*|\bprik ?post\w*|griep ?prik\w*|\bbloed ?afname")
 SERVICE_PUBLIC = re.compile(r"concert|voorstelling|optreden|uitvoering|festival|expositie|tentoonstelling|markt|beurs|\bshow\b|musical"
                             r"|theater|toneel|cabaret|optocht")
 MEMBERS_ONLY = re.compile(r"(?:alleen|enkel|uitsluitend) (?:voor )?(?:leden|bewoners|inwoners|dorpsbewoners|buurtbewoners|donateurs)"
