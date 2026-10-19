@@ -150,3 +150,14 @@ def test_periode_begint_op_de_eerste_dag_en_nachtfeest_is_een_avond():
     assert parse_end_day("02 - 06 nov 2026", "2026-11-02") == "2026-11-06"
     assert parse_end_day("vr 16 okt 23:00 - za 17 okt 04:00", "2026-10-16") is None
     assert parse_when("20:30 - 22 oktober", today=today) != "2026-10-30"
+
+
+def test_film_blijft_film_bij_samenvoegen():
+    from pipeline.v2.convert import merge_duplicates
+    base = {"title": "La Vita Va Così", "venue": {"name": "De Winsinghhof", "city": "Roden"}, "price": None,
+            "occurrences": [{"date": "2026-11-03", "startTime": "20:00"}], "tags": [], "url": None}
+    theater = {**base, "schemaType": "TheaterEvent", "sources": [{"url": "https://theaterroden.nl/voorstelling/1"}]}
+    film = {**base, "schemaType": "ScreeningEvent", "sources": [{"url": "https://theaterroden.nl/la-vita"}],
+            "occurrences": [{"date": "2026-11-03", "startTime": "20:00"}]}
+    [merged] = merge_duplicates([theater, film])
+    assert merged["schemaType"] == "ScreeningEvent"
