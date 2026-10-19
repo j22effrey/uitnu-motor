@@ -336,12 +336,14 @@ def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: flo
         if fetched.status in (404, 410):
             rp.parse([])  # Explicitly absent robots.txt permits crawling.
             return rp, []
+        rp.uitnu_reason = f"robots.txt gaf status {fetched.status}"
     except HTTPError as exc:
         if exc.code in (404, 410):
             rp.parse([])  # urllib raises for missing robots.txt.
             return rp, []
-    except Exception:
-        pass
+        rp.uitnu_reason = f"robots.txt gaf status {exc.code}"
+    except Exception as exc:  # noqa: BLE001
+        rp.uitnu_reason = f"robots.txt niet bereikbaar: {type(exc).__name__}: {exc}"[:200]
     # 401, 403, 5xx and network errors are not evidence of permission.
     rp.disallow_all = True
     return rp, []

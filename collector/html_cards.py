@@ -161,7 +161,7 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
     seen_pages: set[str] = set()
     for url in urls:
         if not robots.can_fetch(USER_AGENT, url):
-            raise PermissionError(f"robots.txt staat {url} niet toe")
+            raise PermissionError(f"robots.txt staat {url} niet toe" + (f" ({robots.uitnu_reason})" if getattr(robots, "uitnu_reason", None) else ""))
         page = page_fetch(url, timeout=timeout)
         events = parse_cards(page.text, config, source_name=source_name, page_url=page.url or url, today=today)
         # Een pagina zonder kaartjes, of dezelfde als de vorige (de site negeert het paginanummer): klaar.

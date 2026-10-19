@@ -143,7 +143,7 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
         raise ValueError("json_api zonder extractorConfig.endpointUrl")
     robots, _ = _load_robots(root_url, robots_fetch, timeout=timeout)
     if not robots.can_fetch(USER_AGENT, endpoint):
-        raise PermissionError(f"robots.txt staat {endpoint} niet toe")
+        raise PermissionError(f"robots.txt staat {endpoint} niet toe" + (f" ({robots.uitnu_reason})" if getattr(robots, "uitnu_reason", None) else ""))
     param = config.get("pageParam")
     if not param:
         return parse_items(json.loads(json_fetch(endpoint, timeout=timeout)), config,
