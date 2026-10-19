@@ -204,6 +204,26 @@ def run(*, sources_path: str, workers: int = 4, timeout: float = 15, budget_seco
     return staged
 
 
+def update_error_log(previous: dict, staged: dict, now: datetime) -> dict:
+    """Per bron die deze ronde niet gelezen kon worden: wat er misging en sinds wanneer. Zo is te zien
+    waarom een bron in de motor niets oplevert terwijl hij het elders wel doet (Vera, oktober 2026)."""
+    stamp = now.strftime("%Y-%m-%dT%H:%M+00:00")
+    log = {}
+    for key, run in (staged.get("source_runs") or {}).items():
+        diagnostics = run.get("diagnostics") or {}
+        # Niet aan de beurt geweest of de tijd was op: dan is er met de website niets mis.
+        if run.get("complete") or diagnostics.get("onlangsGelezen") or diagnostics.get("tijdOp"):
+            continue
+        if run.get("error"):
+            reason = str(run["error"])[:300]
+        else:
+            reason = "geen enkele pagina gelezen (robots.txt of website onbereikbaar)"
+        earlier = previous.get(key) if isinstance(previous.get(key), dict) else {}
+        since = earlier.get("sinds") or stamp
+        log[key] = {"fout": reason, "sinds": since, "laatst": stamp}
+    return dict(sorted(log.items()))
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Stage active UITNU source output without publishing")
     parser.add_argument("--sources", default="collector/web_crawl_sources.json")
@@ -215,6 +235,7 @@ if __name__ == "__main__":
     parser.add_argument("--fetch-log", help="per bron wanneer die voor het laatst helemaal gelezen is (wordt bijgewerkt)")
     parser.add_argument("--fresh-hours", type=float, default=None,
                         help="een bron die korter dan zoveel uur geleden gelezen is, deze ronde overslaan")
+    parser.add_argument("--error-log", help="per bron die niet gelezen kon worden: de fout en sinds wanneer")
     parser.add_argument("--pretty", action="store_true")
     args = parser.parse_args()
 
@@ -232,4 +253,11 @@ if __name__ == "__main__":
     if args.output:
         with open(args.output, "w", encoding="utf-8") as handle:
             handle.write(text + "\n")
+    if args.error_log:
+        # Alleen een verslag: gaat dit mis, dan loopt de ronde gewoon door.
+        try:
+            errors = update_error_log(read_fetch_log(args.error_log), payload, datetime.now(timezone.utc))
+            Path(args.error_log).write_text(json.dumps(errors, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        except Exception as error:  # noqa: BLE001
+            print(f"Ophaalfouten niet bewaard: {error}", file=sys.stderr)
     print(text)
