@@ -1010,14 +1010,39 @@
       "rootUrl": "https://www.vanberesteyn.nl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "json_api",
       "extractorConfig": {
-        "agendaUrl": "https://www.vanberesteyn.nl/"
+        "endpointUrl": "https://www.vanberesteyn.nl/wp-admin/admin-ajax.php?action=bs_get_events",
+        "items": "data",
+        "title": [
+          "title"
+        ],
+        "startDate": "date",
+        "startTime": "time",
+        "url": "url",
+        "id": "id",
+        "genre": "genres.0",
+        "pageParam": "page",
+        "maxPages": 10,
+        "genres": {
+          "Populaire muziek": "MusicEvent",
+          "Klassiek": "MusicEvent",
+          "Jazz": "MusicEvent",
+          "Chansons": "MusicEvent",
+          "Country": "MusicEvent",
+          "Folk": "MusicEvent",
+          "Cabaret": "ComedyEvent",
+          "Toneel": "TheaterEvent",
+          "Musical": "TheaterEvent",
+          "Muziektheater": "TheaterEvent",
+          "Show": "TheaterEvent",
+          "Oet Grunn": "TheaterEvent",
+          "Theaterlezing": "EducationEvent",
+          "Jeugd": "ChildrensEvent",
+          "Dans": "DanceEvent",
+          "Feest": "SocialEvent"
+        }
       },
-      "activatedFromCandidate": "vanberesteyn.nl",
       "defaultPlace": {
         "venue": "Theater vanBeresteyn",
         "city": "Veendam",
@@ -1025,7 +1050,9 @@
         "lon": 6.8760208
       },
       "kindHint": "theater",
-      "policyReviewedAt": "2026-10-12"
+      "activatedFromCandidate": "vanberesteyn.nl",
+      "note": "Het hele programma (101 uitjes) komt van admin-ajax.php?action=bs_get_events (robots.txt staat alles toe), 24 per pagina. De oude instelling las alleen de voorpagina (een paar uitgelichte voorstellingen) en gaf rommeltitels als 'Selecteer tijdstip'; daardoor ontbrak o.a. 'Ernst en Bobbie hebben geen idee' (18 okt). Drie uitjes zijn 'In het Margaretha Hardenberg Cultuurcentrum' (genre-veld), die krijgen nu de plek vanBeresteyn.",
+      "policyReviewedAt": "2026-10-16"
     },
     {
       "id": "elsloo-fr-nl-web",
@@ -10163,6 +10190,697 @@
       },
       "kindHint": "kunst",
       "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "kielzog-nl-api",
+      "name": "Kielzog",
+      "rootUrl": "https://www.kielzog.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "json_api",
+      "extractorConfig": {
+        "endpointUrl": "https://www.kielzog.nl/api/v1/agenda",
+        "items": "data",
+        "title": [
+          "title"
+        ],
+        "startDate": "date",
+        "url": "url",
+        "id": "id",
+        "genre": "type",
+        "pageParam": "page",
+        "maxPages": 12,
+        "genres": {
+          "Voorstelling": "TheaterEvent",
+          "Café live": "MusicEvent"
+        },
+        "skipTitle": "^Geannuleerd"
+      },
+      "defaultPlace": {
+        "venue": "Kielzog",
+        "city": "Hoogezand",
+        "lat": 53.1536,
+        "lon": 6.757
+      },
+      "kindHint": "theater",
+      "note": "Het programma komt als gegevens van /api/v1/agenda (zelfde adres dat de eigen agendapagina gebruikt; robots.txt staat het toe). Alleen de dag, geen begintijd. Uitjes met '@Meeden' e.d. in de naam zijn op een andere plek in de gemeente; die krijgen nu de plek Kielzog. Eerder vond de test 0 uitjes omdat de agenda met JavaScript laadt. Workshops (type 'Workshop') zijn losse workshops, die blijven staan.",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "indeklinker-nl-web",
+      "name": "Cultuurhuis De Klinker",
+      "rootUrl": "https://www.indeklinker.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.indeklinker.nl/theater",
+        "pageParam": "p54_page",
+        "maxPages": 20,
+        "card": "<li\\s+data-entry-id=\"\\d+\"\\s+class=\" eventCard",
+        "fields": {
+          "title": "<h3 class=\"title\">(.*?)</h3>",
+          "date": "<span class=\"start\">(.*?)</span>",
+          "time": "<span class=\"time\">\\s*([0-9:.]+)",
+          "url": "<a class=\"desc\" href=\"([^\"]+)\"",
+          "room": "<div class=\"venue\">\\s*([^|<]+?)\\s*(?:\\||</div>)",
+          "genre": "class=\"genres__link\"[^>]*>([^<]+)<"
+        },
+        "genres": {
+          "Film": "ScreeningEvent",
+          "Kidsfilm": "ScreeningEvent",
+          "Muziek": "MusicEvent",
+          "Pop": "MusicEvent",
+          "Klassiek": "MusicEvent",
+          "Cabaret": "ComedyEvent",
+          "Comedy": "ComedyEvent",
+          "Toneel": "TheaterEvent",
+          "Dans": "DanceEvent",
+          "Show Amusement": "TheaterEvent",
+          "Musical": "TheaterEvent",
+          "Jeugd en Familie": "ChildrensEvent",
+          "Kinderfilm": "ScreeningEvent",
+          "Streektaal": "TheaterEvent",
+          "Muziektheater": "TheaterEvent",
+          "Opera Operette": "MusicEvent",
+          "Theatercollege": "EducationEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Cultuurhuis De Klinker",
+        "city": "Winschoten",
+        "lat": 53.1474,
+        "lon": 7.0338
+      },
+      "kindHint": "theater",
+      "note": "Programma als kaartjes op /theater, 9 per pagina, bladeren met ?p54_page=2 (robots.txt staat '?p*_page=' uitdrukkelijk toe; andere ?-adressen niet). Crawl-delay 5 seconden. Films staan er ook in (filmliga).",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "huisorlando-nl-web",
+      "name": "Huis Orlando",
+      "rootUrl": "https://www.huisorlando.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.huisorlando.nl/agenda/",
+        "card": "<tr\\b",
+        "fields": {
+          "date": "<h5>(.*?)</h5>",
+          "title": "<br ?/?>(.*?)(?:<br ?/?>|</td>)",
+          "room": "</h5>.*?<td[^>]*>(.*?)<br",
+          "url": "<td[^>]*>\\s*<h5><a href=\"([^\"]+)\""
+        },
+        "rooms": {
+          "Kielzog": {
+            "venue": "Kielzog",
+            "city": "Hoogezand",
+            "lat": 53.1536,
+            "lon": 6.757
+          },
+          "Meroakel": {
+            "venue": "Theater Meroakel",
+            "city": "Warffum",
+            "lat": 53.3943,
+            "lon": 6.5616
+          },
+          "Holt 1654": {
+            "venue": "In 't Holt 1654",
+            "city": "Zuidhorn",
+            "lat": 53.2432,
+            "lon": 6.4086
+          },
+          "Prinsentheater": {
+            "venue": "Prinsentheater",
+            "city": "Groningen",
+            "lat": 53.2281,
+            "lon": 6.559
+          },
+          "Blauwe Schuit": {
+            "venue": "De Blauwe Schuit",
+            "city": "Winsum",
+            "lat": 53.3302,
+            "lon": 6.5175
+          }
+        },
+        "roomFallback": {
+          "city": "Groningen"
+        }
+      },
+      "defaultPlace": {
+        "city": "Groningen",
+        "lat": 53.2194,
+        "lon": 6.5665
+      },
+      "kindHint": "theater",
+      "note": "Toneelgezelschap uit Groningen dat door de provincie speelt; de agenda is een tabel op /agenda/ (datum en tijd, dan 'Productie <plaats>, <zaal>' en de titel). Zo komen ook voorstellingen in kleine zalen zonder eigen website erin, zoals Theater Meroakel in Warffum (Cloaca, 17 okt). Nieuwe speelplekken in 'rooms' zetten; onbekende plekken krijgen alleen de stad Groningen. Coördinaten De Blauwe Schuit = midden van Winsum (bij benadering).",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "stadslabgroningen-nl-web",
+      "name": "Stadslab Groningen",
+      "rootUrl": "https://stadslabgroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://stadslabgroningen.nl/agenda/",
+        "card": "<div class=\"wp-block-media-text\\b",
+        "fields": {
+          "title": "<h2 class=\"wp-block-heading\">(.*?)</h2>",
+          "date": "Datum:\\s*(?:</strong>)?\\s*(.*?)<br",
+          "time": "Tijd:\\s*(?:</strong>)?\\s*([0-9]{1,2}[.:][0-9]{2})",
+          "room": "Locatie:\\s*(?:</strong>)?\\s*([^<]*)"
+        },
+        "rooms": {
+          "Stadslab": {
+            "venue": "Stadslab Groningen",
+            "city": "Groningen",
+            "lat": 53.2111,
+            "lon": 6.5389
+          },
+          "Akerk": {
+            "venue": "Der Aa-kerk",
+            "city": "Groningen",
+            "lat": 53.2183,
+            "lon": 6.5626
+          }
+        },
+        "roomFallback": {
+          "city": "Groningen"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Stadslab Groningen",
+        "city": "Groningen",
+        "lat": 53.2111,
+        "lon": 6.5389
+      },
+      "kindHint": "feest",
+      "note": "Agenda op /agenda/ als blokken met kop, 'Datum:', 'Tijd:' en 'Locatie:'. Kaartverkoop via Stager/CM: die links nooit gebruiken. Een meerdaags feest ('vrijdag 16 en zaterdag 17 oktober', Oktofest) komt er nu als één dag in (de laatste); zo nodig de eerste dag als los uitje in data/events.json.",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "groningerarchieven-nl-web",
+      "name": "Groninger Archieven",
+      "rootUrl": "https://www.groningerarchieven.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.groningerarchieven.nl/actueel/agenda",
+        "card": "<a href=\"[^\"]+\"\\s+title=\"[^\"]*\"\\s+class=\"ic-list-event",
+        "fields": {
+          "title": "<h2>\\s*<span[^>]*>(.*?)</span>",
+          "date": "<div class=\"ic-date\">(.*?)<div class=\"ic-time\">",
+          "time": "<div class=\"ic-time\">\\s*([0-9]{1,2}:[0-9]{2})",
+          "url": "^<a href=\"([^\"]+)\"",
+          "tags": "<div class=\"ic-cat\">\\s*<span[^>]*>\\s*(.*?)\\s*</span>"
+        },
+        "genres": {
+          "Lezing": "EducationEvent",
+          "Boekpresentatie": "EducationEvent",
+          "Maand van de Geschiedenis": "EducationEvent"
+        },
+        "pageParam": "page",
+        "maxPages": 5,
+        "skipTags": "^(Cursus|Beginnerscursus|Introductiebijeenkomst|Spreekuur)$"
+      },
+      "defaultPlace": {
+        "venue": "Groninger Archieven",
+        "city": "Groningen",
+        "lat": 53.2116,
+        "lon": 6.5605
+      },
+      "kindHint": "kunst",
+      "note": "Joomla iCagenda-lijst op /actueel/agenda, bladeren met ?page=2. Geen robots.txt (404) = welkom. Cursussen, spreekuren en introductiemiddagen overslaan (geen uitje voor het grote publiek); depotrondleidingen, lezingen en boekpresentaties blijven. Stond nog niet in de kandidatenlijst.",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "drentsarchief-nl-web",
+      "name": "Drents Archief",
+      "rootUrl": "https://www.drentsarchief.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.drentsarchief.nl/ervaren/agenda",
+        "card": "<div class=\"com-content-category-blog__item",
+        "fields": {
+          "title": "<h2>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h2>\\s*<a href=\"([^\"]+)\"",
+          "date": "<time[^>]*>(.*?)</time>"
+        },
+        "skipTitle": "spreekuur"
+      },
+      "defaultPlace": {
+        "venue": "Drents Archief",
+        "city": "Assen",
+        "lat": 52.9935,
+        "lon": 6.5645
+      },
+      "kindHint": "kunst",
+      "note": "Agenda op /ervaren/agenda (Joomla-blog). Alleen de dag (het <time>-veld bevat een publicatietijd, die niet gebruiken). Spreekuren overslaan. Activiteiten van het Noordelijk Archeologisch Depot (Nuis) staan hier soms tussen; die krijgen nu de plek Drents Archief. nadnuis.nl zelf heeft geen agenda.",
+      "policyReviewedAt": "2026-10-16"
+    },
+    {
+      "id": "groningerlandschap-api",
+      "name": "Het Groninger Landschap",
+      "rootUrl": "https://www.groningerlandschap.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "json_api",
+      "extractorConfig": {
+        "endpointUrl": "https://www.groningerlandschap.nl/wp-json/nrdq-theme/v1/geojson/activiteiten?paged=50",
+        "items": "features",
+        "title": "properties.name",
+        "startDate": "properties.date",
+        "url": "properties.link",
+        "id": "properties.id",
+        "genre": "properties.label",
+        "genres": {
+          "Exposities": "ExhibitionEvent",
+          "Jeugdactiviteiten": "ChildrensEvent",
+          "Lezingen": "EducationEvent"
+        },
+        "room": "properties.location",
+        "rooms": {
+          "Bezoekerscentrum Waddenkust": {
+            "venue": "Bezoekerscentrum Waddenkust",
+            "city": "Pieterburen",
+            "lat": 53.4004,
+            "lon": 6.4517
+          },
+          "Bezoekerscentrum Reitdiep": {
+            "venue": "Bezoekerscentrum Reitdiep",
+            "city": "Groningen",
+            "lat": 53.251,
+            "lon": 6.5645
+          },
+          "Bezoekerscentrum Ennemaborg": {
+            "venue": "Bezoekerscentrum Ennemaborg",
+            "city": "Midwolda",
+            "lat": 53.1923,
+            "lon": 6.9991
+          },
+          "Landgoed Ennemaborg": {
+            "venue": "Landgoed Ennemaborg",
+            "city": "Midwolda",
+            "lat": 53.1923,
+            "lon": 6.9994
+          },
+          "Bezoekerscentrum Dollard": {
+            "venue": "Bezoekerscentrum Dollard",
+            "city": "Termunten",
+            "lat": 53.2975,
+            "lon": 7.0751
+          },
+          "Landgoed Coendersborg": {
+            "venue": "Landgoed Coendersborg",
+            "city": "Nuis",
+            "lat": 53.1481,
+            "lon": 6.3009
+          },
+          "Coendersborg": {
+            "venue": "Landgoed Coendersborg",
+            "city": "Nuis",
+            "lat": 53.1481,
+            "lon": 6.3009
+          },
+          "Molen Wilhelmina": {
+            "venue": "Molen Wilhelmina",
+            "city": "Groningen",
+            "lat": 53.2428,
+            "lon": 6.5686
+          },
+          "Vakantiewoning Harssensbosch": {
+            "venue": "Harssensbosch",
+            "city": "Groningen",
+            "lat": 53.2629,
+            "lon": 6.5307
+          },
+          "Parkeerplaats Paviljoen De Leine": {
+            "venue": "Paviljoen De Leine",
+            "city": "Kropswolde",
+            "lat": 53.1389,
+            "lon": 6.7105
+          },
+          "Paviljoen de Leine": {
+            "venue": "Paviljoen De Leine",
+            "city": "Kropswolde",
+            "lat": 53.1389,
+            "lon": 6.7105
+          },
+          "Parkeerplaats Waesingeweg/Strandweg": {
+            "venue": "Kropswolderbuitenpolder",
+            "city": "Kropswolde",
+            "lat": 53.1479,
+            "lon": 6.6983
+          },
+          "Parkeerplaats Waesingeweg / Strandweg Kropswolde": {
+            "venue": "Kropswolderbuitenpolder",
+            "city": "Kropswolde",
+            "lat": 53.1473,
+            "lon": 6.7021
+          },
+          "Bourtangerveld": {
+            "venue": "Bourtangerveld",
+            "city": "Bourtange",
+            "lat": 53.0086,
+            "lon": 7.1896
+          },
+          "Vesting Bourtange": {
+            "venue": "Vesting Bourtange",
+            "city": "Bourtange",
+            "lat": 53.0086,
+            "lon": 7.1895
+          },
+          "Lettelberterpetten": {
+            "venue": "Lettelberterpetten",
+            "city": "Lettelbert",
+            "lat": 53.1938,
+            "lon": 6.4298
+          },
+          "NDCE Grootegast": {
+            "venue": "NDCE",
+            "city": "Grootegast",
+            "lat": 53.2154,
+            "lon": 6.2833
+          },
+          "Forum Groningen": {
+            "venue": "Forum Groningen",
+            "city": "Groningen",
+            "lat": 53.219,
+            "lon": 6.5697
+          },
+          "Noordpolderzijl": {
+            "venue": "Noordpolderzijl",
+            "city": "Noordpolderzijl",
+            "lat": 53.4325,
+            "lon": 6.583
+          },
+          "Veenborg Welgelegen": {
+            "venue": "Veenborg Welgelegen",
+            "city": "Veendam",
+            "lat": 53.1545,
+            "lon": 6.7972
+          }
+        },
+        "skipTitle": "overzicht activiteiten|^nog te zien|beschermersavond|^wandelroute|^fietsroute|op aanvraag",
+        "lat": "geometry.coordinates.1",
+        "lon": "geometry.coordinates.0",
+        "venue": "properties.location",
+        "skipField": "properties.label",
+        "skipValue": "^(Wandelroutes|Fietsroutes|Vaarexcursies)$"
+      },
+      "kindHint": "natuur",
+      "policyReviewedAt": "2026-10-16",
+      "note": "De activiteiten (excursies, lezingen, kinderactiviteiten, exposities in de bezoekerscentra) staan als gegevens (GeoJSON) op de eigen website; robots.txt staat /wp-json/ toe. Het nummer 'paged' telt op (paged=50 geeft alles in één keer). Per uitje alleen de eerstvolgende datum en geen tijd (de tijd staat alleen op de pagina van het uitje). De plek komt uit 'location' via rooms; 'Meerdere locaties' blijft zonder plek. LET OP: deze website stuurt meer dan 100 'Set-Cookie'-regels mee; Python weigert dat ('got more than 100 headers'). Eerst http.client._MAXHEADERS ophogen (bijv. 1000) in collector/site_crawler.py, anders faalt deze bron. Liever ook een kleine uitbreiding van json_api: lat/lon/venue per item ('geometry.coordinates.1', 'geometry.coordinates.0', 'properties.location'), dan is rooms niet meer nodig."
+    },
+    {
+      "id": "staatsbosbeheer-api",
+      "name": "Staatsbosbeheer",
+      "rootUrl": "https://www.staatsbosbeheer.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "json_api",
+      "extractorConfig": {
+        "endpointUrl": "https://www.staatsbosbeheer.nl/api/activities?resultType=Activities&perPage=100",
+        "pageParam": "page",
+        "maxPages": 8,
+        "items": "Results",
+        "title": "Title",
+        "start": "Date",
+        "url": "URL",
+        "room": "InfoDetails.Location.Text",
+        "skipTitle": "vergader|bedrijfsuitje|groepsuitje|schoolreis|kinderfeest|natuurwijs|met je klas",
+        "rooms": {
+          "Lauwersmeer": {
+            "venue": "Nationaal Park Lauwersmeer",
+            "city": "Lauwersoog",
+            "lat": 53.385056,
+            "lon": 6.235943
+          },
+          "Drents-Friese Wold": {
+            "venue": "Drents-Friese Wold",
+            "city": "Appelscha",
+            "lat": 52.953193,
+            "lon": 6.310575
+          },
+          "Hondsrug": {
+            "venue": "Buitencentrum Boomkroonpad",
+            "city": "Drouwen",
+            "lat": 52.949836,
+            "lon": 6.745159
+          },
+          "Zuidoost-Drenthe": {
+            "venue": "Emmerdennen",
+            "city": "Emmen",
+            "lat": 52.789558,
+            "lon": 6.907713
+          },
+          "Ruinen": {
+            "venue": "Luchtwachttoren Hees",
+            "city": "Ruinen",
+            "lat": 52.734601,
+            "lon": 6.383752
+          },
+          "Westerwolde": {
+            "venue": "Westerwolde",
+            "city": "Ter Apel",
+            "lat": 52.876366,
+            "lon": 7.07548
+          },
+          "Orvelte": {
+            "venue": "Orvelte",
+            "city": "Orvelte",
+            "lat": 52.844815,
+            "lon": 6.65825
+          },
+          "Kop van Drenthe": {
+            "venue": "Kop van Drenthe",
+            "city": "Norg",
+            "lat": 53.081157,
+            "lon": 6.501852
+          },
+          "Hart van Drenthe": {
+            "venue": "Hart van Drenthe",
+            "city": "Hooghalen",
+            "lat": 52.921074,
+            "lon": 6.569745
+          },
+          "Groningse Stuwwallen": {
+            "venue": "Groningse Stuwwallen",
+            "city": "Westerlee",
+            "lat": 53.150453,
+            "lon": 6.986392
+          },
+          "Súdwest-Fryslân": {
+            "venue": "Súdwest-Fryslân",
+            "city": "Oudemirdum",
+            "lat": 52.849125,
+            "lon": 5.533169
+          },
+          "Súdeast-Fryslân": {
+            "venue": "Súdeast-Fryslân",
+            "city": "Beetsterzwaag",
+            "lat": 53.038847,
+            "lon": 6.151392
+          },
+          "Terschelling": {
+            "venue": "Terschelling",
+            "city": "West-Terschelling",
+            "lat": 53.361562,
+            "lon": 5.214722
+          },
+          "Vlieland": {
+            "venue": "Vlieland",
+            "city": "Oost-Vlieland",
+            "lat": 53.295238,
+            "lon": 5.065335
+          },
+          "Schiermonnikoog": {
+            "venue": "Nationaal Park Schiermonnikoog",
+            "city": "Schiermonnikoog",
+            "lat": 53.48,
+            "lon": 6.16
+          },
+          "Ameland": {
+            "venue": "Ameland",
+            "city": "Nes",
+            "lat": 53.445,
+            "lon": 5.775
+          }
+        }
+      },
+      "kindHint": "natuur",
+      "policyReviewedAt": "2026-10-16",
+      "note": "Landelijke activiteitenlijst als gegevens op de eigen website (/api/activities; robots.txt verbiedt alleen /sitecore/ en /zoekresultaten). Ongeveer 400 activiteiten in heel Nederland, 4 pagina's van 100. Alleen gebieden in rooms krijgen een plek met kaartpin; de rest (buiten het werkgebied) heeft geen plek en valt weg. Per activiteit alleen de eerstvolgende datum (HasMoreDates) zonder tijd ('T00:00:00Z' = tijd onbekend); alle data en tijden staan alleen op de pagina van de activiteit. Routes, speelbossen en groepsuitjes hebben geen datum en vallen vanzelf weg. Landelijk uitbreiden: rooms aanvullen, of json_api lat/lon per item laten lezen ('GeoCoordinate.Latitude', 'GeoCoordinate.Longitude')."
+    },
+    {
+      "id": "kerkalspodium-sogk-web",
+      "name": "Stichting Oude Groninger Kerken (Kerk als podium)",
+      "rootUrl": "https://kerkalspodium.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://kerkalspodium.nl/nl/activiteiten/{page}",
+        "firstPage": 0,
+        "maxPages": 15,
+        "card": "<article class=\"m-activity__card a-layout",
+        "fields": {
+          "title": "m-activity__card-title[^\"]*\">(.*?)</h2>",
+          "url": "m-activity__card-link\" href=\"([^\"]+)\"",
+          "id": "/(\\d+)/-/",
+          "date": "m-activity__card-date\">.*?<span>(.*?)</span>",
+          "genre": "m-activity__card-type\">(.*?)</span>",
+          "tags": "m-activity__card-type\">(.*?)</span>",
+          "city": "m-activity__card-location\">.*?<span>(.*?)</span>"
+        },
+        "skipTags": "^dienst$",
+        "genres": {
+          "Concert": "MusicEvent",
+          "Theater": "TheaterEvent",
+          "Expositie": "ExhibitionEvent",
+          "Lezing": "EducationEvent"
+        },
+        "skipTitle": "pilates|mantra|taiz|avondgebed|rondom de stilte|^viering"
+      },
+      "kindHint": "muziek",
+      "policyReviewedAt": "2026-10-16",
+      "note": "De agenda van de Stichting Oude Groninger Kerken staat op kerkalspodium.nl (de eigen site van de stichting; groningerkerken.nl linkt erheen). robots.txt staat /nl/activiteiten toe. Kaartjes met vaste opbouw, 10 per pagina, pagina's /nl/activiteiten/0 t/m /5 (ongeveer 56 uitjes). VEREIST twee kleine uitbreidingen van html_cards: (1) bladeren met een pad ('{page}' in endpointUrl, firstPage 0) in plaats van ?p=, (2) een veld 'city' per kaartje (de plaats van de kerk), zodat elke kerk zijn eigen dorp krijgt. 'Dienst' (kerkdienst) en vaste meditatie/pilates vallen weg. Tijd staat alleen op de pagina van het uitje. LET OP: oudegroningerkerken.nl in tips.json en dekking.json is NIET de stichting maar een nagemaakte (AI-)website zonder agenda; vervangen door groningerkerken.nl / kerkalspodium.nl."
+    },
+    {
+      "id": "vugroningen-web",
+      "name": "Volksuniversiteit Groningen (lezingen)",
+      "rootUrl": "https://www.vugroningen.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.vugroningen.nl/lezingen-en-excursies/lezingen",
+        "card": "<div class=\"course-item col-12\">",
+        "fields": {
+          "title": "field--name-title\"><a href=\"[^\"]+\">(.*?)</a>",
+          "url": "field--name-title\"><a href=\"([^\"]+)\"",
+          "id": "field-variant-number[^>]*>([A-Z]{1,3}\\d+)<",
+          "date": "class=\"option\">\\s*([^<]+?)\\s*</label>",
+          "tags": "calendar\"><span class=\"info-item\">(.*?)</span>",
+          "room": "map-marker-alt\"><span class=\"info-item\">(.*?)</span>"
+        },
+        "skipTags": "^(?:[2-9]|\\d\\d) sessies",
+        "rooms": {
+          "Doopsgezinde Kerk": {
+            "venue": "Doopsgezinde Kerk",
+            "city": "Groningen",
+            "lat": 53.2198968,
+            "lon": 6.5643539
+          }
+        },
+        "roomFallback": {
+          "city": "Groningen"
+        }
+      },
+      "kindHint": "lezing",
+      "policyReviewedAt": "2026-10-16",
+      "note": "Lezingen staan als kaartjes op /lezingen-en-excursies/lezingen (robots.txt verbiedt alleen adressen met '?', dus geen bladeren via ?page). Datum en tijd uit de eerste startdatum. Lezingenreeksen van 2 of meer sessies (betaalde cursus, inschrijven voor alles) vallen weg via skipTags: dat is een cursus, geen los uitje (regel 4). Daardoor valt ook 'Het alledaagse leven in Noord-Korea' (3 sessies, € 51, start 19 oktober, Doopsgezinde Kerk) weg; de eigenaar kan anders beslissen."
+    },
+    {
+      "id": "tuingoedfoltz-web",
+      "name": "Tuingoed Foltz",
+      "rootUrl": "https://www.tuingoedfoltz.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.tuingoedfoltz.nl/",
+        "card": "<div class=\"blogItem\"",
+        "fields": {
+          "title": "<h2><a[^>]*>(.*?)</a>",
+          "url": "<h2><a href=\"([^\"]+)\"",
+          "date": "<div class=\"date\">(.*?)</div>"
+        },
+        "skipTitle": "^bestel|openingstijden|welcome|^blog"
+      },
+      "defaultPlace": {
+        "venue": "Tuingoed Foltz",
+        "city": "Meeden",
+        "lat": 53.1386,
+        "lon": 6.9306
+      },
+      "kindHint": "natuur",
+      "policyReviewedAt": "2026-10-16",
+      "note": "Kwekerij en tuinen met maandelijkse themaweekends (zoals de Fruit- en Snoeidagen 17 en 18 oktober). Stond nergens in de kandidaten. Geen robots.txt (404 = welkom). De themadagen staan als kaartjes op de voorpagina (<div class='blogItem'> met <div class='date'>17 okt t/m 18 okt 2026</div>); /agenda.html is leeg. Getest: 3 kaartjes, waarvan 'Bestel vruchtbomen' (een artikel) wegvalt via skipTitle. Einddatum 't/m' wordt nog niet gelezen (when.py leest alleen een eindtijd)."
+    },
+    {
+      "id": "geboektinharen-web",
+      "name": "Geboekt in Haren / Culturele Raad Haren",
+      "rootUrl": "https://www.geboektinharen.com/",
+      "role": "organizer",
+      "enabled": false,
+      "disabledReason": "Eerst beslissen: is dit een organisator of een verzamelagenda? (zie note)",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.geboektinharen.com/",
+        "card": "data-hook=\"events-card\"",
+        "fields": {
+          "title": "data-hook=\"title\"[^>]*>(.*?)</a>",
+          "url": "data-hook=\"title\"[^>]*href=\"([^\"]+)\"",
+          "date": "data-hook=\"short-date\">(.*?)</div>",
+          "room": "data-hook=\"short-location\">(.*?)</div>"
+        },
+        "skipTitle": "uitverkocht|volgeboekt",
+        "rooms": {
+          "Dorpshuis De Groenenberg": {
+            "venue": "Dorpshuis De Groenenberg",
+            "city": "Glimmen"
+          },
+          "'t Clockhuys": {
+            "venue": "'t Clockhuys",
+            "city": "Haren"
+          },
+          "Filmzaal 't Clockhuys": {
+            "venue": "'t Clockhuys",
+            "city": "Haren"
+          },
+          "Forumbibliotheek Haren": {
+            "venue": "Forumbibliotheek Haren",
+            "city": "Haren"
+          },
+          "Ontmoetingskerk": {
+            "venue": "Ontmoetingskerk",
+            "city": "Haren"
+          },
+          "Boomker boeken": {
+            "venue": "Boomker boeken",
+            "city": "Haren"
+          },
+          "Dorpskerk Haren": {
+            "venue": "Dorpskerk",
+            "city": "Haren"
+          },
+          "Dorpskerk": {
+            "venue": "Dorpskerk",
+            "city": "Haren"
+          },
+          "Forum Groningen (ingang fietsenstalling)": {
+            "venue": "Forum Groningen",
+            "city": "Groningen"
+          },
+          "Biotoop Haren": {
+            "venue": "Biotoop",
+            "city": "Haren"
+          },
+          "Bartholomeuskerk Noordlaren": {
+            "venue": "Bartholomeuskerk",
+            "city": "Noordlaren"
+          }
+        }
+      },
+      "policyReviewedAt": "2026-10-16",
+      "note": "Wix-site van Geboekt in Haren, met de agenda van de Culturele Raad Haren en zijn commissies (letteren, podiumkunsten, filmhuis 't Clockhuys, Stichting Dorpskerkconcerten Haren). robots.txt staat alles toe. Kaartjes op de voorpagina (data-hook='events-card'), datum zonder jaar ('wo 21 okt', jaar uit de weekdag), plek via rooms. Getest: 19 uitjes, waaronder Maarten Loonen 21 okt in Dorpshuis De Groenenberg Glimmen. REGELVRAAG: er staan ook uitjes van anderen op (Nut-lezingen, bibliotheek, boekhandel Boomker). Het is de gezamenlijke site van de Harense cultuurorganisaties (vergelijkbaar met een dorpssite), geen commerciële uitagenda; de eigenaar beslist of dit mag. Daarom staat hij uit. De jsonld_event-crawler werkt hier niet goed (bezoekt oude pagina's)."
     }
   ]
 }

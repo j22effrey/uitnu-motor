@@ -10,6 +10,7 @@ extractorConfig, met de plek van elk gegeven ('Performance.StartTime'):
     id           een vaste code van het uitje
     genre        de soort volgens de organisator; genres zet die om naar schema.org ('MusicEvent')
     room         de zaal; rooms zet een zaal om naar een andere plek ({"venue": ..., "city": ...})
+    lat, lon, venue, city  de plek per uitje, als die er zelf bij staat ('geometry.coordinates.1')
     skipTitle    titels die geen uitje zijn (een abonnement of serie)
     startDate    in plaats van 'start': de dag in een eigen veld, ook als getal (seconden sinds 1970) of
                  als Nederlandse tekst ('za 17 okt 2026'); startTime: de tijd in een eigen veld ('20:30')
@@ -27,7 +28,8 @@ from html import unescape
 from typing import Callable
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 from urllib.error import HTTPError
-from urllib.request import Request, build_opener
+from http.cookiejar import CookieJar
+from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 from collector.site_crawler import USER_AGENT, _SameSiteRedirectHandler, _load_robots, default_fetch
 from collector.when import parse_when
@@ -96,7 +98,16 @@ def parse_items(payload, config: dict, *, source_name: str, root_url: str, today
         genre = _text(value_at(item, config.get("genre"))) if config.get("genre") else ""
         room = _text(value_at(item, config.get("room"))) if config.get("room") else ""
         place = rooms.get(room)
-        place = {"venue": place} if isinstance(place, str) else (place if isinstance(place, dict) else {})
+        place = {"venue": place} if isinstance(place, str) else (dict(place) if isinstance(place, dict) else {})
+        for key in ("venue", "city"):
+            if config.get(key) and not place.get(key):
+                place[key] = _text(value_at(item, config[key])) or None
+        for key in ("lat", "lon"):
+            if config.get(key) and place.get(key) is None:
+                try:
+                    place[key] = float(value_at(item, config[key]))
+                except (TypeError, ValueError):
+                    pass
         out.append(RawEvent(
             source_name=source_name,
             source_type="structured_web",
@@ -118,7 +129,7 @@ def parse_items(payload, config: dict, *, source_name: str, root_url: str, today
 
 def _fetch_json_text(url: str, *, timeout: float) -> str:
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
-    with build_opener(_SameSiteRedirectHandler()).open(request, timeout=timeout) as response:
+    with build_opener(HTTPCookieProcessor(CookieJar()), _SameSiteRedirectHandler()).open(request, timeout=timeout) as response:
         return response.read(8_000_000).decode(response.headers.get_content_charset() or "utf-8", "replace")
 
 

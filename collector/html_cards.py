@@ -3,11 +3,12 @@
 Per bron ingesteld in extractorConfig, zonder nieuwe code per website:
 
     endpointUrl  de pagina (of het stukje HTML dat de pagina zelf ophaalt) met de kaartjes
-    pageParam, maxPages, firstPage  bladeren: ?p=1, ?p=2, ... tot een pagina zonder kaartjes
+    pageParam, maxPages, firstPage  bladeren: ?p=1, ?p=2, ... tot een pagina zonder kaartjes; of '{page}' in
+                 endpointUrl voor een paginanummer in het pad (/activiteiten/0, /activiteiten/1, ...)
     card         waar een kaartje begint (een reguliere expressie, bijv. '<article class="program__item"')
     fields       per gegeven een reguliere expressie met één groep, binnen het kaartje:
                  title, extra (wordt achter de titel gezet), start (ISO), date (tekst), time, end,
-                 url, id, genre, room, tags
+                 url, id, genre, room, tags, venue en city (de plek per kaartje, als die er zelf bij staat)
     dropFromTitle  wat uit de titel weg moet (bijv. '<sup.*?</sup>' voor het land van een band)
     genres       de soort volgens de organisator -> schema.org ('muziek' -> 'MusicEvent'); bij een lijst
                  van kenmerken telt het eerste kenmerk dat in de lijst staat
@@ -109,7 +110,12 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
         place = _map(rooms, room)
         if place is None and fields.get("room") and fallback:
             place = fallback  # een zaal die we niet kennen ('elders'): niet de vaste zaal invullen
-        place = {"venue": place} if isinstance(place, str) else (place if isinstance(place, dict) else {})
+        place = {"venue": place} if isinstance(place, str) else (dict(place) if isinstance(place, dict) else {})
+        own_venue, own_city = _clean(_field(card, fields.get("venue"))), _clean(_field(card, fields.get("city")))
+        if own_venue and not place.get("venue"):
+            place["venue"] = own_venue
+        if own_city and not place.get("city"):
+            place["city"] = own_city
         key = (title, start, link)
         if key in seen:
             continue  # hetzelfde kaartje staat vaker op de pagina (uitgelicht en in de lijst)
@@ -140,9 +146,12 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
         raise ValueError("html_cards zonder extractorConfig.endpointUrl")
     robots, _ = _load_robots(root_url, page_fetch, timeout=timeout)
     param = config.get("pageParam")
-    first = int(config.get("firstPage") or 1)
-    urls = [endpoint] if not param else [with_param(endpoint, param, n)
-                                          for n in range(first, first + int(config.get("maxPages") or 10))]
+    first = int(config.get("firstPage", 1) or 0)
+    pages = range(first, first + int(config.get("maxPages") or 10))
+    if "{page}" in endpoint:
+        urls = [endpoint.replace("{page}", str(n)) for n in pages]
+    else:
+        urls = [endpoint] if not param else [with_param(endpoint, param, n) for n in pages]
     out: list[RawEvent] = []
     seen_pages: set[str] = set()
     for url in urls:
