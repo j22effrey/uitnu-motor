@@ -211,15 +211,15 @@ def update_error_log(previous: dict, staged: dict, now: datetime) -> dict:
     log = {}
     for key, run in (staged.get("source_runs") or {}).items():
         diagnostics = run.get("diagnostics") or {}
-        if run.get("complete") or diagnostics.get("onlangsGelezen"):
+        # Niet aan de beurt geweest of de tijd was op: dan is er met de website niets mis.
+        if run.get("complete") or diagnostics.get("onlangsGelezen") or diagnostics.get("tijdOp"):
             continue
         if run.get("error"):
             reason = str(run["error"])[:300]
-        elif diagnostics.get("tijdOp"):
-            reason = "de tijd was op"
         else:
             reason = "geen enkele pagina gelezen (robots.txt of website onbereikbaar)"
-        since = (previous.get(key) or {}).get("sinds") or stamp
+        earlier = previous.get(key) if isinstance(previous.get(key), dict) else {}
+        since = earlier.get("sinds") or stamp
         log[key] = {"fout": reason, "sinds": since, "laatst": stamp}
     return dict(sorted(log.items()))
 
@@ -245,10 +245,6 @@ if __name__ == "__main__":
     if args.fetch_log:
         Path(args.fetch_log).write_text(json.dumps(payload["fetch_log"], ensure_ascii=False, indent=2) + "\n",
                                         encoding="utf-8")
-    if args.error_log:
-        previous = read_fetch_log(args.error_log)
-        errors = update_error_log(previous, payload, datetime.now(timezone.utc))
-        Path(args.error_log).write_text(json.dumps(errors, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     runs = list(payload["source_runs"].values())
     skipped = sum(1 for r in runs if (r.get("diagnostics") or {}).get("onlangsGelezen"))
     print(f"Bronnen: {len(runs) - skipped} opgehaald, waarvan {sum(1 for r in runs if r.get('complete'))} "
@@ -257,4 +253,11 @@ if __name__ == "__main__":
     if args.output:
         with open(args.output, "w", encoding="utf-8") as handle:
             handle.write(text + "\n")
+    if args.error_log:
+        # Alleen een verslag: gaat dit mis, dan loopt de ronde gewoon door.
+        try:
+            errors = update_error_log(read_fetch_log(args.error_log), payload, datetime.now(timezone.utc))
+            Path(args.error_log).write_text(json.dumps(errors, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        except Exception as error:  # noqa: BLE001
+            print(f"Ophaalfouten niet bewaard: {error}", file=sys.stderr)
     print(text)
