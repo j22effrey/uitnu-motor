@@ -38,8 +38,15 @@ def test_hulp_cursus_en_inspraak_zijn_niet_noemenswaardig():
                   "Cursus: Orde op je Android", "Workshop veilige wachtwoorden", "2e werksessie Dorpsvisie",
                   "Woningbouw avond in Ons Gebouw", "Informatieavond torenspits kerk", "Inloopdag schade-energie-subsidies",
                   "Presentatie 1e conceptontwerp Dorpsplein", "Plaatselijk Belang – Ondernemersavond", "Nieuwjaarsreceptie",
-                  "Open Lessen obs J. Emmens", "Filmmiddag groep 1-4", "Vriendendag", "Doarpsreünie Wynjewâld"):
+                  "Open Lessen obs J. Emmens", "Filmmiddag groep 1-4", "Vriendendag", "Doarpsreünie Wynjewâld",
+                  "Bloedprikken Certe", "Prikpost Certe", "Griepprik 2026", "Spreekuur wijkagent"):
         assert not_an_outing(_event(title)), title
+
+
+def test_zorg_in_een_zaal_is_geen_uitje_maar_een_show_over_zorg_blijft():
+    # 'Bloedprikken Certe' stond als theater in De Skans (19 oktober 2026)
+    for title in ("Kapsalon de Musical", "Bloed, zweet en tranen – voorstelling"):
+        assert not not_an_outing(_event(title)), title
 
 
 def test_clubspel_competitie_en_mededelingen_zijn_geen_uitje():
