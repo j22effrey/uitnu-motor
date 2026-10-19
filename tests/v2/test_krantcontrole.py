@@ -113,3 +113,31 @@ def test_tabel_met_een_periode_loopt_door_tot_de_laatste_dag():
     assert events["Livemuziek in feesttent"].start_date == "2026-10-16"
     assert events["Livemuziek in feesttent"].end_date == "2026-10-20"
     assert events["Opening kermis"].end_date is None
+
+
+def test_periode_in_regels_en_kaartjes_loopt_door():
+    from collector.dutch_agenda_html import extract_blocks, parse_line_agenda
+    from collector.when import parse_end_day
+    assert parse_end_day("17 okt t/m 18 okt 2026", "2026-10-17") == "2026-10-18"
+    assert parse_end_day("vr 16 - zo 18 oktober", "2026-10-16") == "2026-10-18"
+    assert parse_end_day("28 december t/m 3 januari", "2026-12-28") == "2027-01-03"
+    assert parse_end_day("za 17 okt 20:00 - 23:00", "2026-10-17") is None
+    html = ("<ul><li>Kunstroute Paterswolde: 16 t/m 25 oktober</li><li>Lezing over vogels: 12 november</li>"
+            "<li>Kerstconcert: 20 december</li></ul><p>Agenda 2026</p>")
+    events = {e.title: e for e in parse_line_agenda(extract_blocks(html, "https://x.nl/"), "https://x.nl/",
+                                                    today=date(2026, 10, 19))}
+    assert events["Kunstroute Paterswolde"].end_date == "2026-10-25"
+    assert events["Lezing over vogels"].end_date is None
+    card = '<article><h2>Fruit- en Snoeidagen</h2><div class="date">17 okt t/m 18 okt 2026</div></article>'
+    [event] = html_cards.parse_cards(card, {"card": "<article", "fields": {"title": "<h2>(.*?)</h2>",
+                                     "date": 'class="date">(.*?)</div>'}}, source_name="t", page_url="https://t.nl/",
+                                     today=date(2026, 10, 17))
+    assert (event.start_at, event.end_at) == ("2026-10-17", "2026-10-18")
+
+
+def test_studievereniging_wordt_geen_bron():
+    from collector.auto_activate import eligible
+    base = {"probeStatus": "supported", "robotsStatus": "allowed", "url": "https://www.svscopus.nl/"}
+    assert not eligible({**base, "name": "Studievereniging Scopus"})
+    assert not eligible({**base, "name": "Studentenvereniging Vindicat"})
+    assert eligible({**base, "name": "Muziekvereniging Concordia", "url": "https://concordia.example/"})

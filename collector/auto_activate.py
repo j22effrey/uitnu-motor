@@ -41,8 +41,15 @@ def deep_page(url: str) -> bool:
     return len([part for part in urlparse(url or "").path.split("/") if part]) >= 3
 
 
+# Verenigingen voor studenten (studievereniging, studentenvereniging, dispuut, corps): hun activiteiten zijn
+# voor de eigen leden, niet voor het grote publiek (vaste regel 4; Studievereniging Scopus, oktober 2026).
+MEMBERS_ORG = re.compile(r"studie ?vereniging|studenten ?vereniging|studentenroeivereniging|\bdispuut\b|studentencorps"
+                         r"|\bvindicat\b|\balbertus magnus\b", re.I)
+
+
 def eligible(candidate: dict) -> bool:
-    return (candidate.get("activationStatus") in (None, "candidate")
+    return (not MEMBERS_ORG.search(str(candidate.get("name") or ""))
+            and candidate.get("activationStatus") in (None, "candidate")
             and candidate.get("probeStatus") == "supported"
             and candidate.get("robotsStatus") == "allowed"
             and candidate.get("policyStatus") != "blocked"

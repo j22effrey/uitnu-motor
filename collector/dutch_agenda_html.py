@@ -354,6 +354,7 @@ def _parse_line(line: str, href: str | None) -> dict | None:
             time_text = f"{int(bare.group(1)):02d}:{bare.group(2)}"
     return {
         "title": title, "day": int(groups["d1"]), "month": MONTHS[groups["mon"].casefold().rstrip(".")],
+        "end_day": int(groups["d2"]) if groups.get("d2") else None,
         "weekday": WEEKDAYS.get((groups.get("wd") or "").casefold()),
         "year": int(groups["year"]) if groups.get("year") else None,
         "time": time_text, "href": href, "weak": after_range,

@@ -32,7 +32,7 @@ from urllib.parse import urljoin
 
 from collector.json_api_events import with_param
 from collector.site_crawler import USER_AGENT, _load_robots, default_fetch
-from collector.when import parse_when
+from collector.when import parse_end_day, parse_when
 from pipeline.event_model import RawEvent
 
 
@@ -103,6 +103,9 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
         if end and not re.match(r"20\d{2}-\d{2}-\d{2}", end):
             end_time = parse_when(start[:10], end, today=today)
             end = end_time if end_time and "T" in end_time else ""
+        if not end:
+            # Een periode in de datum ('17 okt t/m 18 okt 2026'): het uitje loopt tot en met de laatste dag.
+            end = parse_end_day(_clean(_field(card, fields.get("date"))), start) or ""
         link = _clean(_field(card, fields.get("url")))
         if skip_url and link and skip_url.search(link):
             continue

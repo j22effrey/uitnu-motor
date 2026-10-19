@@ -119,6 +119,31 @@ def parse_day(value, today: date) -> tuple[date | None, str | None]:
     return None, None
 
 
+_RANGE_SAME_MONTH = re.compile(rf"\b(\d{{1,2}})\s*(?:-|–|t/m|tot en met|tot)\s*(\d{{1,2}})\s+({_MONTH})\b", re.I)
+_RANGE_TO = re.compile(rf"(?:-|–|t/m|tot en met|\btot\b|\buntil\b)\s*(?:(?:{_WEEKDAY})\.?,?\s+)?(\d{{1,2}})[\s.]+({_MONTH})\b", re.I)
+
+
+def parse_end_day(text, start: str | None) -> str | None:
+    """De laatste dag van een periode ('17 t/m 18 oktober', '17 okt t/m 18 okt 2026', 'tot en met 25 okt'),
+    als die na de begindag ligt en hooguit twee maanden later. Anders None."""
+    text = " ".join(str(text or "").split())
+    try:
+        first = date.fromisoformat(str(start or "")[:10])
+    except ValueError:
+        return None
+    m = _RANGE_SAME_MONTH.search(text)
+    day, month = (int(m.group(2)), MONTHS[m.group(3).lower()]) if m else (None, None)
+    if not m:
+        m = _RANGE_TO.search(text)
+        if not m:
+            return None
+        day, month = int(m.group(1)), MONTHS[m.group(2).lower()]
+    end = _date(first.year + (1 if month < first.month else 0), month, day)
+    if not end or end <= first or (end - first).days > 62:
+        return None
+    return end.isoformat()
+
+
 def parse_when(day_value, time_value=None, *, today: date | None = None) -> str | None:
     """'2026-10-17T20:30', '2026-10-17' (tijd onbekend) of None als de datum niet te lezen is."""
     today = today or date.today()

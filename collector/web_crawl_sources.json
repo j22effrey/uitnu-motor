@@ -8958,7 +8958,7 @@
       "name": "Studievereniging Scopus",
       "rootUrl": "https://www.svscopus.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -8973,7 +8973,8 @@
         "lat": 53.2411887,
         "lon": 6.5316682
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Studievereniging: activiteiten voor de eigen leden, niet voor het grote publiek (vaste regel 4; gemeld door de eigenaar, 19 oktober 2026)."
     },
     {
       "id": "vvvterschelling-nl-web",
