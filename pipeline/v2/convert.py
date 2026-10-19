@@ -208,6 +208,13 @@ def merge_key(event: dict) -> tuple[str, str, str]:
     return (title, event["occurrences"][0]["date"], slugify(event["venue"]["city"]))
 
 
+def _keep_screening(keep: dict, event: dict) -> None:
+    """Noemt één van de bronnen het een filmvertoning, dan is het een film: een theater dat ook films draait
+    zet ze in het theaterprogramma als 'voorstelling' (Theater De Winsinghhof Roden, de filmclub)."""
+    if event.get("schemaType") == "ScreeningEvent" and keep.get("schemaType") != "ScreeningEvent":
+        keep["schemaType"] = "ScreeningEvent"
+
+
 def _merge_exact(events: list[dict]) -> list[dict]:
     """Hetzelfde evenement uit meerdere bestanden wordt één record met alle bronnen."""
     merged: dict[tuple[str, str, str], dict] = {}
@@ -219,6 +226,7 @@ def _merge_exact(events: list[dict]) -> list[dict]:
         keep = merged[key]
         known = {s["url"] for s in keep["sources"]}
         keep["sources"] += [s for s in event["sources"] if s["url"] not in known]
+        _keep_screening(keep, event)
         for field in ("price",):
             if not keep.get(field) and event.get(field):
                 keep[field] = event[field]

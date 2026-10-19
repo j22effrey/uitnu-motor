@@ -190,7 +190,9 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     before = len(events)
     for event in events:
         facts = page_facts_for(event, photo_cache, lists)
-        if facts.get("type"):
+        # Wat de pagina zegt telt, behalve dat een filmvertoning een film blijft (een theater noemt ook de films
+        # van zijn filmclub een 'voorstelling').
+        if facts.get("type") and event.get("schemaType") != "ScreeningEvent":
             event["schemaType"] = facts["type"]
         if facts.get("hints"):
             event["pageHints"] = facts["hints"]
