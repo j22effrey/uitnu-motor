@@ -10606,7 +10606,13 @@
       },
       "kindHint": "natuur",
       "policyReviewedAt": "2026-10-16",
-      "note": "De activiteiten (excursies, lezingen, kinderactiviteiten, exposities in de bezoekerscentra) staan als gegevens (GeoJSON) op de eigen website; robots.txt staat /wp-json/ toe. Het nummer 'paged' telt op (paged=50 geeft alles in één keer). Per uitje alleen de eerstvolgende datum en geen tijd (de tijd staat alleen op de pagina van het uitje). De plek komt uit 'location' via rooms; 'Meerdere locaties' blijft zonder plek. LET OP: deze website stuurt meer dan 100 'Set-Cookie'-regels mee; Python weigert dat ('got more than 100 headers'). Eerst http.client._MAXHEADERS ophogen (bijv. 1000) in collector/site_crawler.py, anders faalt deze bron. Liever ook een kleine uitbreiding van json_api: lat/lon/venue per item ('geometry.coordinates.1', 'geometry.coordinates.0', 'properties.location'), dan is rooms niet meer nodig."
+      "note": "De activiteiten (excursies, lezingen, kinderactiviteiten, exposities in de bezoekerscentra) staan als gegevens (GeoJSON) op de eigen website; robots.txt staat /wp-json/ toe. Het nummer 'paged' telt op (paged=50 geeft alles in één keer). Per uitje alleen de eerstvolgende datum en geen tijd (de tijd staat alleen op de pagina van het uitje). De plek komt uit 'location' via rooms; 'Meerdere locaties' blijft zonder plek. LET OP: deze website stuurt meer dan 100 'Set-Cookie'-regels mee; Python weigert dat ('got more than 100 headers'). Eerst http.client._MAXHEADERS ophogen (bijv. 1000) in collector/site_crawler.py, anders faalt deze bron. Liever ook een kleine uitbreiding van json_api: lat/lon/venue per item ('geometry.coordinates.1', 'geometry.coordinates.0', 'properties.location'), dan is rooms niet meer nodig.",
+      "defaultPlace": {
+        "venue": "Reitdiep",
+        "city": "Groningen",
+        "lat": 53.2507654,
+        "lon": 6.5643092
+      }
     },
     {
       "id": "staatsbosbeheer-api",
