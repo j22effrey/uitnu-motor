@@ -49,7 +49,8 @@ van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bo
    `SERVICE_OR_MEETING`, `PAGE_HEADING` en `NOT_AN_OUTING`). Afspraak van 16 oktober 2026 (voorbeeld 'Visje
    eten' in Dörpshoes Nijland): samen eten, koken, bingo of een high tea in het dorp of in een dorpshuis,
    buurthuis of MFC is ook niet noemenswaardig (`VILLAGE_HALL`); een show, live muziek, een muziekbingo in
-   een café, een wijn- of bierproeverij of een kookworkshop blijft staan.
+   een café, een wijn- of bierproeverij of een kookworkshop blijft staan. Ook nooit een studie- of
+   studentenvereniging als bron: dat is voor de eigen leden (`MEMBERS_ORG` in `auto_activate.py`; Scopus, 19 oktober 2026).
 5. **Werkwijze.** Altijd eerst testen (`python -m pytest tests/v2`), dan een pull request met uitleg
    in gewone taal. Claude voegt die pull request daarna zelf samen (afspraak met de eigenaar van
    13 oktober 2026), maar alleen als de tests slagen en, bij een verandering aan het ophalen of
