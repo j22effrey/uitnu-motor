@@ -7,6 +7,11 @@
    "reden": "Showcasefestival met honderden artiesten op tientallen podia in de binnenstad."
   },
   {
+   "naam": "^kermis\\b",
+   "soort": "feest",
+   "reden": "Een kermis is 'Feest en kermis', ook als de naam van de markt erin staat (Kermis Zuidlaardermarkt)."
+  },
+  {
    "naam": "noorderzon",
    "soort": "festival",
    "reden": "Festival in en rond het Noorderplantsoen met tenten en podia en veel verschillende artiesten."

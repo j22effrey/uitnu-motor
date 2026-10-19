@@ -102,3 +102,14 @@ def test_html_tekens_in_de_naam_en_een_kopje_als_naam():
     assert not_an_outing({"title": "Filmclub seizoen 2026 | 2027"})
     assert not_an_outing({"title": "Filmclub: Perfect Days"}) is None
     assert not_an_outing({"title": "Over de rivier, een voorstelling"}) is None
+
+
+def test_tabel_met_een_periode_loopt_door_tot_de_laatste_dag():
+    from collector.dutch_agenda_html import parse_table_agenda
+    html = ("<p>Programma Zuidlaardermarkt 2026</p><table><tr><th>Datum</th><th>Tijd</th><th>Activiteit</th></tr>"
+            "<tr><td>16 oktober</td><td>19.00 uur</td><td>Opening kermis</td></tr>"
+            "<tr><td>16 tot en met 20 oktober</td><td>Vanaf 20.00 uur</td><td>Livemuziek in feesttent</td></tr></table>")
+    events = {e.title: e for e in parse_table_agenda(html, "https://x.nl/programma", today=date(2026, 10, 19))}
+    assert events["Livemuziek in feesttent"].start_date == "2026-10-16"
+    assert events["Livemuziek in feesttent"].end_date == "2026-10-20"
+    assert events["Opening kermis"].end_date is None

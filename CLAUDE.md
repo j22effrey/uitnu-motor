@@ -147,6 +147,9 @@ Groningen (oktober 2026, eerst 9 van de 72 plekken goed):
   een cookie (De Klinker) is geen blokkade; meer dan 100 kopregels mag; een lege 'User-agent:' in robots.txt
   telt niet; grote natuurorganisaties (Groninger Landschap, Staatsbosbeheer) en de Oude Groninger Kerken
   (kerkalspodium.nl) hebben hun eigen agenda als gegevens of kaartjes.
+- Les van de Zuidlaardermarkt (oktober 2026): een programma met een periode ('16 tot en met 20 oktober') loopt
+  door tot de laatste dag; en het hart van zo'n evenement (de kermis met openingstijden) staat vaak niet als
+  regel in het programma: zet het dan als los uitje in `data/events.json` met de gemeente als bron.
 - Festivals en grote jaarlijkse evenementen zonder leesbare agenda: als losse uitjes in
   `data/events.json`, met de bron (de organisator of de jaarplanning van de gemeente) in `sourceNote`.
 

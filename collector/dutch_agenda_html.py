@@ -105,6 +105,7 @@ class AgendaEvent:
     start_date: str
     time_text: str | None
     event_url: str | None
+    end_date: str | None = None  # bij een periode ('16 tot en met 20 oktober')
 
 
 class _BlocksParser(HTMLParser):
@@ -433,7 +434,10 @@ def _dated_events(items: list[dict], page_text: str, page_url: str, today: date)
         dates = _assign_years(items, base)
         good = sum(1 for item, d in zip(items, dates) if d and item["weekday"] is not None and d.weekday() == item["weekday"])
         bad = sum(1 for item, d in zip(items, dates) if d and item["weekday"] is not None and d.weekday() != item["weekday"])
-        upcoming = any(d and d >= today for d in dates)
+        # Een periode die nog loopt ('16 tot en met 20 oktober' op 19 oktober) telt ook als komend.
+        upcoming = any(d and (d >= today or (item.get("end_day") or 0) >= today.day > d.day
+                              and d.month == today.month and d.year == today.year)
+                       for item, d in zip(items, dates))
         return 2 * good - 3 * bad + (1 if upcoming else 0) + (0.5 if base == today.year else 0)
 
     base = max((today.year - 1, today.year, today.year + 1), key=score)
@@ -450,8 +454,14 @@ def _dated_events(items: list[dict], page_text: str, page_url: str, today: date)
         if key in seen:
             continue
         seen.add(key)
+        end = None
+        if item.get("end_day") and item["end_day"] > day.day:
+            try:
+                end = day.replace(day=item["end_day"]).isoformat()
+            except ValueError:
+                end = None
         out.append(AgendaEvent(title=item["title"], start_date=day.isoformat(), time_text=item["time"],
-                               event_url=item["href"] or page_url))
+                               event_url=item["href"] or page_url, end_date=end))
     return out
 
 
@@ -536,7 +546,7 @@ def parse_table_agenda(html: str, page_url: str, *, today: date | None = None) -
             time_cell = cells[columns["time"]] if "time" in columns else ""
             bare = _BARE_TIME.match(time_cell)
             items.append({
-                "title": title, "day": int(match.group("d1")),
+                "title": title, "day": int(match.group("d1")), "end_day": int(match.group("d2")) if match.group("d2") else None,
                 "month": MONTHS[match.group("mon").casefold().rstrip(".")],
                 "weekday": WEEKDAYS.get((match.group("wd") or "").casefold()),
                 "year": int(match.group("year")) if match.group("year") else None,
