@@ -10898,6 +10898,196 @@
       },
       "policyReviewedAt": "2026-10-16",
       "note": "Wix-site van Geboekt in Haren, met de agenda van de Culturele Raad Haren en zijn commissies (letteren, podiumkunsten, filmhuis 't Clockhuys, Stichting Dorpskerkconcerten Haren). robots.txt staat alles toe. Kaartjes op de voorpagina (data-hook='events-card'), datum zonder jaar ('wo 21 okt', jaar uit de weekdag), plek via rooms. Getest: 19 uitjes, waaronder Maarten Loonen 21 okt in Dorpshuis De Groenenberg Glimmen. REGELVRAAG: er staan ook uitjes van anderen op (Nut-lezingen, bibliotheek, boekhandel Boomker). Het is de gezamenlijke site van de Harense cultuurorganisaties (vergelijkbaar met een dorpssite), geen commerciële uitagenda; de eigenaar beslist of dit mag. Daarom staat hij uit. De jsonld_event-crawler werkt hier niet goed (bezoekt oude pagina's)."
+    },
+    {
+      "id": "filmhuisemmen-nl-web",
+      "name": "Filmhuis Emmen",
+      "rootUrl": "https://www.filmhuisemmen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.filmhuisemmen.nl/programma/",
+        "card": "<li class=bg-",
+        "fields": {
+          "title": "<h1 class=\"link-naar-meer\"><a [^>]*>(.*?)<br>",
+          "date": "<h1 class=\"link-naar-meer\"><a [^>]*>.*?<br>([^<]*20\\d\\d)<br>",
+          "time": "Aanvang:\\s*(\\d{1,2}[:.]\\d{2})",
+          "url": "<h1 class=\"link-naar-meer\"><a href=\"([^\"]+)\""
+        },
+        "genres": {}
+      },
+      "defaultPlace": {
+        "venue": "Kinepolis Emmen (Filmhuis Emmen)",
+        "city": "Emmen",
+        "lat": 52.7843,
+        "lon": 6.8925
+      },
+      "kindHint": "film",
+      "note": "Filmhuis Emmen draait op maandag (20:00) en dinsdag (19:15) in Kinepolis Emmen, Westeind 70. Het programma staat als lijst op /programma/ (WordPress, robots.txt staat het toe): titel, dag en aanvang per film. Kinepolis zelf weigert de motor (robots.txt 403); dit is het eigen programma van het filmhuis.",
+      "policyReviewedAt": "2026-10-19"
+    },
+    {
+      "id": "denieuwekolk-nl-bios",
+      "name": "De Nieuwe Kolk (bios)",
+      "rootUrl": "https://denieuwekolk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://denieuwekolk.nl/bios/agenda",
+        "card": "<a href=\"/bios/agenda/[^\"/]+/bestel/",
+        "fields": {
+          "title": "aria-label=\"Bestel tickets voor (.*), \\w+ \\d{1,2} \\w+ \\d{1,2}:\\d{2}\"",
+          "date": "aria-label=\"Bestel tickets voor .*, (\\w+ \\d{1,2} \\w+) \\d{1,2}:\\d{2}\"",
+          "time": "aria-label=\"Bestel tickets voor .*, \\w+ \\d{1,2} \\w+ (\\d{1,2}:\\d{2})\"",
+          "url": "^<a href=\"(/bios/agenda/[^\"/]+)/bestel/",
+          "id": "/bestel/([0-9a-f-]+)\""
+        },
+        "genres": {}
+      },
+      "defaultPlace": {
+        "venue": "De Nieuwe Kolk",
+        "city": "Assen",
+        "lat": 52.994304,
+        "lon": 6.5586416
+      },
+      "kindHint": "film",
+      "note": "De bioscoop van De Nieuwe Kolk staat als kaartjes op /bios/agenda (robots.txt staat het toe): per voorstelling een bestelknop met naam, dag en tijd ('Bestel tickets voor Toutes Directions, dinsdag 20 oktober 14:00'). Het jaar volgt uit de weekdag. De bestaande bron denieuwekolk-nl-web (schema.org) vond maar 1 film; dit is een tweede bron alleen voor de bios. Pagina is ruim 1 MB (onder de grens van 2 MB). Kaartverkoop zelf niet ophalen. kindHint 'film' staat al op denieuwekolk-nl-web (zelfde website en zaal), dus dit verandert niets aan de indeling van het theater.",
+      "policyReviewedAt": "2026-10-19"
+    },
+    {
+      "id": "vanberesteyn-nl-film",
+      "name": "Filmhuis vanBeresteyn",
+      "rootUrl": "https://www.vanberesteyn.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "json_api",
+      "extractorConfig": {
+        "endpointUrl": "https://www.vanberesteyn.nl/wp-admin/admin-ajax.php?action=bs_get_events&filters=eyJjYXRlZ29yeSI6WzhdfQ==",
+        "items": "data",
+        "title": [
+          "title"
+        ],
+        "startDate": "date",
+        "startTime": "time",
+        "url": "url",
+        "id": "id",
+        "pageParam": "page",
+        "maxPages": 5,
+        "skipField": "status",
+        "skipValue": "^cancelled$",
+        "genre": "status",
+        "genres": {
+          "onsale": "ScreeningEvent",
+          "soldout": "ScreeningEvent",
+          "few": "ScreeningEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Theater vanBeresteyn",
+        "city": "Veendam",
+        "lat": 53.1076013,
+        "lon": 6.8760208
+      },
+      "note": "Alleen de films van Theater & Filmhuis vanBeresteyn: hetzelfde admin-ajax.php als de bron vanberesteyn-nl-web, met het filter van de eigen programmapagina (filters = base64 van {\"category\":[8]}, de rubriek 'Film'). De films hebben in die bron geen genre en worden daar nu als 'theater' ingedeeld (bijv. 'The Cycle of Love', 27 okt). Geannuleerde voorstellingen vallen weg. Geen kindHint: die geldt in build.py per website en per zaal, en zou dan ook de theatervoorstellingen van vanberesteyn.nl als 'film' indelen. De films hebben geen eigen genreveld; daarom staat 'genre' op het veld 'status' (onsale/soldout) en wordt dat binnen deze bron (alleen rubriek Film) omgezet naar ScreeningEvent. Netter: een vaste soort per bron in json_api (kleine code-aanpassing).",
+      "policyReviewedAt": "2026-10-19"
+    },
+    {
+      "id": "theaterroden-nl-filmclub",
+      "name": "Filmclub De Winsinghhof",
+      "rootUrl": "https://theaterroden.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://theaterroden.nl/filmclub",
+        "card": "<article class=\"event event-preview\"",
+        "fields": {
+          "title": "<h3 class=\"event-title\">(.*?)</h3>",
+          "date": "<time datetime=\"(20\\d{2}-\\d{2}-\\d{2}) \\d{2}:\\d{2}\"",
+          "time": "<time datetime=\"20\\d{2}-\\d{2}-\\d{2} (\\d{2}:\\d{2})\"",
+          "url": "<a href=\"([^\"]+)\" class=\"event-hgroup\"",
+          "genre": "<p class=\"event-genre\"><a [^>]*>(.*?)</a>"
+        },
+        "genres": {
+          "Filmclub": "ScreeningEvent",
+          "Kinderfilm": "ScreeningEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Theater De Winsinghhof",
+        "city": "Roden",
+        "lat": 53.1386,
+        "lon": 6.4269
+      },
+      "note": "De filmclub van Theater De Winsinghhof (vroeger cinemaroden.nl) staat op /filmclub als kaartjes met <time datetime>. De films staan ook in de bron theaterroden-nl-web, maar worden daar als 'theater' ingedeeld (La Vita Va Cosi, 19 okt). Speelt een film twee keer op een dag, dan telt alleen de eerste tijd. /kinderfilm heeft dezelfde opbouw (nu leeg). Geen kindHint (die geldt per website en zou het theater als 'film' indelen); de rubriek 'Filmclub' wordt ScreeningEvent.",
+      "policyReviewedAt": "2026-10-19"
+    },
+    {
+      "id": "theaterdekoornbeurs-nl-film",
+      "name": "De Koornbeurs Film",
+      "rootUrl": "https://www.theaterdekoornbeurs.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.theaterdekoornbeurs.nl/film/",
+        "card": "<div class=\"row performance-preview\"",
+        "fields": {
+          "title": "<p class=\"performance-artist\">(.*?)</p>",
+          "extra": "<p class=\"performance-title\">(.*?)</p>",
+          "date": "<div class=\"col-xs-3 col-md-1 performance-date\">(.*?)</div>",
+          "time": "<p class=\"performance-time\">(.*?)</p>",
+          "url": "<a href=\"(/voorstelling/[^\"]+)\"",
+          "id": "/voorstelling/(\\d+)/",
+          "genre": "<p class=\"performance-genre\">(.*?)</p>"
+        },
+        "genres": {
+          "Film": "ScreeningEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Theater De Koornbeurs",
+        "city": "Franeker",
+        "lat": 53.1875,
+        "lon": 5.54
+      },
+      "note": "De filmpagina van De Koornbeurs (Theater & Film, Franeker) toont alleen de rubriek 'Film' als kaartjes (dag, tijd, titel, rubriek). Die films kwamen tot nu toe alleen via de bron van franeker.nl binnen en werden als 'theater' ingedeeld (Pressure, 20 okt). Ook live-uitzendingen van ballet en opera (The Royal Ballet) staan in de rubriek Film. Kaartverkoop via podiumnederland.nl niet ophalen. Geen kindHint: die geldt per website en per zaal, en de theatervoorstellingen in De Koornbeurs (via franeker.nl) zouden dan 'film' worden; de rubriek 'Film' wordt ScreeningEvent.",
+      "policyReviewedAt": "2026-10-19"
+    },
+    {
+      "id": "demolenberg-nl-film",
+      "name": "Bioscoop De Molenberg",
+      "rootUrl": "https://www.demolenberg.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.demolenberg.nl/voorstellingen/",
+        "card": "<article class=\"events__item\"",
+        "fields": {
+          "title": "<h2 class=\"events__item__title\">(.*?)</h2>",
+          "extra": "<h3 class=\"events__item__subtitle\">(.*?)</h3>",
+          "date": "<time class=\"event__date\">(.*?)</time>",
+          "url": "<a href=\"([^\"]+)\" class=\"events__item__link\"",
+          "tags": "data-genres=\"([^\"]*)\"",
+          "genre": "data-genres=\"([^\"]*)\""
+        },
+        "skipTags": "^(?!.*\\bfilm\\b)",
+        "genres": {
+          "film": "ScreeningEvent"
+        },
+        "dropFromTitle": "\\(\\d{1,2}-\\d{1,2}\\)"
+      },
+      "defaultPlace": {
+        "venue": "Theater & Congrescentrum De Molenberg",
+        "city": "Delfzijl",
+        "lat": 53.3297,
+        "lon": 6.9187
+      },
+      "note": "De films (Filmliga Eemsmond) van De Molenberg in Delfzijl staan tussen de voorstellingen op /voorstellingen/ (WordPress, robots.txt staat het toe), met data-genres='film'. Alleen de dag, geen begintijd. Alles wat niet 'film' is valt in deze bron weg; het theaterprogramma van De Molenberg staat nog helemaal niet in de motor (apart nakijken). De dag achter de titel ('Wen er maar aan (17-11)') valt weg. Plek en kaartpin nog nakijken (Molenberg, Delfzijl). Geen kindHint (geldt per website/zaal; botst als het theaterprogramma later ook een bron wordt); data-genres 'film' wordt ScreeningEvent.",
+      "policyReviewedAt": "2026-10-19"
     }
   ]
 }
