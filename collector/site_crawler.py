@@ -320,6 +320,7 @@ def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: flo
     try:
         fetched = fetcher(robots_url, timeout=timeout)
         if not same_site(root_url, fetched.url):
+            rp.uitnu_reason = f"robots.txt verwijst naar een andere site ({fetched.url})"
             rp.disallow_all = True
             return rp, []
         if 200 <= fetched.status < 300:
@@ -329,6 +330,7 @@ def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: flo
                 if SOFT_404.search(fetched.text) and not ANTI_BOT.search(fetched.text[:5_000]):
                     rp.parse([])
                     return rp, []
+                rp.uitnu_reason = "robots.txt is een HTML-pagina (anti-bot, inlog of iets anders)"
                 rp.disallow_all = True
                 return rp, []
             rp.parse(clean_robots(fetched.text.splitlines()))

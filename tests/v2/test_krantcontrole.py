@@ -141,3 +141,12 @@ def test_studievereniging_wordt_geen_bron():
     assert not eligible({**base, "name": "Studievereniging Scopus"})
     assert not eligible({**base, "name": "Studentenvereniging Vindicat"})
     assert eligible({**base, "name": "Muziekvereniging Concordia", "url": "https://concordia.example/"})
+
+
+def test_periode_begint_op_de_eerste_dag_en_nachtfeest_is_een_avond():
+    from collector.when import parse_end_day, parse_when
+    today = date(2026, 10, 19)
+    assert parse_when("02 - 06 nov 2026", today=today) == "2026-11-02"
+    assert parse_end_day("02 - 06 nov 2026", "2026-11-02") == "2026-11-06"
+    assert parse_end_day("vr 16 okt 23:00 - za 17 okt 04:00", "2026-10-16") is None
+    assert parse_when("20:30 - 22 oktober", today=today) != "2026-10-30"

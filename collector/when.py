@@ -106,6 +106,14 @@ def parse_day(value, today: date) -> tuple[date | None, str | None]:
     if m:
         rest = text[m.end():]
         return _date(int(m.group(3)), int(m.group(2)), int(m.group(1))), parse_time(rest)
+    r = _RANGE_SAME_MONTH.search(text)
+    if r:
+        # '02 - 06 nov 2026': de eerste dag is het begin (niet de laatste).
+        year = re.search(r"\b(20\d{2})\b", text[r.end():r.end() + 8])
+        month = MONTHS[r.group(3).lower()]
+        day = _date(int(year.group(1)), month, int(r.group(1))) if year else _by_weekday(month, int(r.group(1)), None, today)
+        if day:
+            return day, parse_time(text[r.end():])
     m = WORD_RE.search(text)
     if m:
         weekday = WEEKDAYS.get(m.group(1).lower()) if m.group(1) else None
@@ -119,7 +127,7 @@ def parse_day(value, today: date) -> tuple[date | None, str | None]:
     return None, None
 
 
-_RANGE_SAME_MONTH = re.compile(rf"\b(\d{{1,2}})\s*(?:-|–|t/m|tot en met|tot)\s*(\d{{1,2}})\s+({_MONTH})\b", re.I)
+_RANGE_SAME_MONTH = re.compile(rf"(?<![:.\d])\b(\d{{1,2}})\s*(?:-|–|t/m|tot en met|tot)\s*(?:(?:{_WEEKDAY})\.?\s+)?(\d{{1,2}})\s+({_MONTH})\b", re.I)
 _RANGE_TO = re.compile(rf"(?:-|–|t/m|tot en met|\btot\b|\buntil\b)\s*(?:(?:{_WEEKDAY})\.?,?\s+)?(\d{{1,2}})[\s.]+({_MONTH})\b", re.I)
 
 
@@ -141,6 +149,8 @@ def parse_end_day(text, start: str | None) -> str | None:
     end = _date(first.year + (1 if month < first.month else 0), month, day)
     if not end or end <= first or (end - first).days > 62:
         return None
+    if (end - first).days == 1 and re.search(r"\b0[0-6][:.]\d{2}\b", text[m.end():]):
+        return None  # een feest tot na middernacht ('vr 16 okt 23:00 - za 17 okt 04:00') is één avond
     return end.isoformat()
 
 
