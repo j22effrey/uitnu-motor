@@ -25,11 +25,13 @@ Alleen feiten: naam, datum en tijd, zaal, soort en link. Geen teksten. robots.tx
 from __future__ import annotations
 
 import re
+import threading
 import time
+from collections import defaultdict
 from datetime import date
 from html import unescape
 from typing import Callable
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from collector.json_api_events import with_param
 from collector.site_crawler import USER_AGENT, _load_robots, default_fetch
@@ -150,6 +152,12 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
     return out
 
 
+# Twee bronnen op dezelfde website (de bibliotheek per gemeente) wachten op elkaar, zodat de Crawl-delay per
+# website geldt en niet per bron.
+_HOST_LOCKS: defaultdict[str, threading.Lock] = defaultdict(threading.Lock)
+_HOST_LAST: dict[str, float] = {}
+
+
 def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
           page_fetch: Callable = default_fetch, today: date | None = None) -> list[RawEvent]:
     endpoint = str(config.get("endpointUrl") or "")
@@ -165,11 +173,22 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
         urls = [endpoint] if not param else [with_param(endpoint, param, n) for n in pages]
     # Vraagt robots.txt om tijd tussen twee pagina's (Crawl-delay), dan wachten we die (hooguit 15 seconden).
     delay = min(float(robots.crawl_delay(USER_AGENT) or 0), 15.0)
+    host = urlparse(endpoint).netloc.lower()
+    if not delay:
+        return _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, host, 0.0)
+    with _HOST_LOCKS[host]:
+        return _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, host, delay)
+
+
+def _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, host, delay) -> list[RawEvent]:
     out: list[RawEvent] = []
     seen_pages: set[str] = set()
-    for n, url in enumerate(urls):
-        if n and delay:
-            time.sleep(delay)
+    for url in urls:
+        if delay:
+            wait = delay - (time.monotonic() - _HOST_LAST.get(host, float("-inf")))
+            if wait > 0:
+                time.sleep(wait)
+            _HOST_LAST[host] = time.monotonic()
         if not robots.can_fetch(USER_AGENT, url):
             raise PermissionError(f"robots.txt staat {url} niet toe" + (f" ({robots.uitnu_reason})" if getattr(robots, "uitnu_reason", None) else ""))
         page = page_fetch(url, timeout=timeout)

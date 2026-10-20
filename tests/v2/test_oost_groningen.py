@@ -52,7 +52,13 @@ def test_wacht_tussen_paginas_als_robots_txt_dat_vraagt(monkeypatch):
     events = html_cards.fetch({**CONFIG, "endpointUrl": "https://b.nl/agenda/{page}", "maxPages": 5}, source_name="b",
                               root_url="https://b.nl/", page_fetch=_fetcher(pages, "User-agent: *\nCrawl-delay: 10\n"),
                               today=date(2026, 10, 20))
-    assert len(events) == 2 and waits == [10.0, 10.0]  # voor pagina 2 en voor de lege pagina 3
+    assert len(events) == 2 and len(waits) == 2 and all(9.9 < w <= 10 for w in waits)  # voor pagina 2 en de lege pagina 3
+    # Een tweede bron op dezelfde website wacht ook op de vorige bezoeken (de Crawl-delay geldt per website).
+    waits.clear()
+    html_cards.fetch({**CONFIG, "endpointUrl": "https://b.nl/agenda/{page}", "maxPages": 1}, source_name="b2",
+                     root_url="https://b.nl/", page_fetch=_fetcher(pages, "User-agent: *\nCrawl-delay: 10\n"),
+                     today=date(2026, 10, 20))
+    assert len(waits) == 1 and waits[0] > 9.9
     waits.clear()
     html_cards.fetch({**CONFIG, "endpointUrl": "https://b.nl/agenda/{page}"}, source_name="b", root_url="https://b.nl/",
                      page_fetch=_fetcher(pages), today=date(2026, 10, 20))
