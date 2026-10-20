@@ -24,6 +24,7 @@ import heapq
 import http.client
 import json
 import re
+import sys
 import time
 from typing import Callable, Iterable
 from urllib.parse import urljoin, urlparse, urlunparse
@@ -317,7 +318,13 @@ def parse_robots(rp: RobotFileParser, lines: list[str]) -> None:
     lengte gaat 'Allow' voor. Python 3.12 neemt de eerste regel die past; bij Vera ('Disallow: /wp/wp-admin/' en
     daarna 'Allow: /wp/wp-admin/admin-ajax.php') weigerde de motor daardoor het programma (oktober 2026)."""
     rp.parse(clean_robots(lines))
+    if sys.version_info >= (3, 13):
+        return  # Python 3.13 volgt RFC 9309 zelf (langste regel, met '*' en '$')
     for entry in [*rp.entries, *([rp.default_entry] if rp.default_entry else [])]:
+        # Python 3.12 kent '*' en '$' niet: zo'n regel past nooit. Dan niet sorteren, zodat een eerdere
+        # 'Disallow' blijft gelden en we nooit iets ophalen wat de website verbiedt.
+        if any("%2A" in rule.path or "%24" in rule.path for rule in entry.rulelines):
+            continue
         entry.rulelines.sort(key=lambda rule: (-len(rule.path), not rule.allowance))
 
 

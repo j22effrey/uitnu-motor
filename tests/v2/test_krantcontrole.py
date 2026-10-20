@@ -180,3 +180,8 @@ def test_robots_langste_regel_telt_zoals_rfc_9309():
     rp = RobotFileParser()
     parse_robots(rp, "User-agent: *\nAllow: /\nDisallow: /geheim\n".splitlines())
     assert not rp.can_fetch(USER_AGENT, "https://v.nl/geheim/x") and rp.can_fetch(USER_AGENT, "https://v.nl/agenda")
+    # Met een jokerteken ('*' of '$', dat Python 3.12 niet kent) blijft de strengere volgorde: nooit iets
+    # ophalen wat de website verbiedt.
+    rp = RobotFileParser()
+    parse_robots(rp, "User-agent: *\nDisallow: /\nAllow: /agenda\nDisallow: /agenda/*?print\n".splitlines())
+    assert not rp.can_fetch(USER_AGENT, "https://v.nl/agenda/x?print=1")
