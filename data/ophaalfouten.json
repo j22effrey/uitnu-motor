@@ -1,47 +1,127 @@
 {
+  "achlum-info-web": {
+    "fout": "URLError: <urlopen error timed out>",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "cgkzuidlaren-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "clcleeuwarden-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "dorpshuisdesingel-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
   "easthim-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T21:13+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "em2groningen-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
   },
   "ferwertonline-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-20T13:24+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
-  },
-  "gerarddou-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-20T13:24+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
+    "laatst": "2026-10-20T19:59+00:00"
   },
   "gkv-uithuizermeeden-nl-web": {
     "fout": "URLError: <urlopen error [Errno -2] Name or service not known>",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "goutum-info-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
   },
   "hemelum-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-10-20T13:24+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "houtstad-ijlst-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "itjoo-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
   },
   "lemmerbinnen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "martinikerk-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "mfcgroningen-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "nijeberkoop-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "schoolplatendeinum-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "stinze-stiens-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "terapelbruist-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
   },
   "vera-groningen-web": {
     "fout": "PermissionError: robots.txt staat https://www.vera-groningen.nl/wp/wp-admin/admin-ajax.php?action=renderProgramme&category=all&page=1&perpage=200&search=&lang=nl niet toe",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
+    "laatst": "2026-10-20T19:59+00:00"
   },
   "vugroningen-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "warten-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "westergeest-frl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
   },
   "wijkbelangwesteinde-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-10-20T01:14+00:00",
-    "laatst": "2026-10-20T14:53+00:00"
+    "laatst": "2026-10-20T19:59+00:00"
+  },
+  "wjukken-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-20T19:59+00:00",
+    "laatst": "2026-10-20T19:59+00:00"
   }
 }
