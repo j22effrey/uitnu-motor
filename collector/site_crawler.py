@@ -312,6 +312,15 @@ def clean_robots(lines: list[str]) -> list[str]:
     return out
 
 
+def parse_robots(rp: RobotFileParser, lines: list[str]) -> None:
+    """robots.txt inlezen zoals RFC 9309 het bedoelt: de langste (meest specifieke) regel telt, en bij gelijke
+    lengte gaat 'Allow' voor. Python 3.12 neemt de eerste regel die past; bij Vera ('Disallow: /wp/wp-admin/' en
+    daarna 'Allow: /wp/wp-admin/admin-ajax.php') weigerde de motor daardoor het programma (oktober 2026)."""
+    rp.parse(clean_robots(lines))
+    for entry in [*rp.entries, *([rp.default_entry] if rp.default_entry else [])]:
+        entry.rulelines.sort(key=lambda rule: (-len(rule.path), not rule.allowance))
+
+
 def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: float) -> tuple[RobotFileParser, list[str]]:
     p = urlparse(root_url)
     robots_url = f"{p.scheme}://{p.netloc}/robots.txt"
@@ -333,7 +342,7 @@ def _load_robots(root_url: str, fetcher: Callable[..., Fetched], *, timeout: flo
                 rp.uitnu_reason = "robots.txt is een HTML-pagina (anti-bot, inlog of iets anders)"
                 rp.disallow_all = True
                 return rp, []
-            rp.parse(clean_robots(fetched.text.splitlines()))
+            parse_robots(rp, fetched.text.splitlines())
             return rp, parse_robots_sitemaps(fetched.text, root_url)
         if fetched.status in (404, 410):
             rp.parse([])  # Explicitly absent robots.txt permits crawling.

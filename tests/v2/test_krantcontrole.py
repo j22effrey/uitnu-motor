@@ -167,3 +167,16 @@ def test_stripshow_is_geen_uitje_voor_iedereen():
     from pipeline.v2.classify import not_an_outing
     assert not_an_outing({"title": "Thunder From Down Under – De ultieme Ladies Night Out!! (18+)"})
     assert not_an_outing({"title": "Ladies Night"}) is None
+
+
+def test_robots_langste_regel_telt_zoals_rfc_9309():
+    """Vera: 'Disallow: /wp/wp-admin/' en daarna 'Allow: /wp/wp-admin/admin-ajax.php'. Python 3.12 nam de eerste
+    regel en weigerde het programma; volgens RFC 9309 telt de langste regel (oktober 2026)."""
+    from collector.site_crawler import parse_robots
+    rp = RobotFileParser()
+    parse_robots(rp, "User-agent: *\nDisallow: /wp/wp-admin/\nAllow: /wp/wp-admin/admin-ajax.php\n".splitlines())
+    assert rp.can_fetch(USER_AGENT, "https://v.nl/wp/wp-admin/admin-ajax.php?action=renderProgramme")
+    assert not rp.can_fetch(USER_AGENT, "https://v.nl/wp/wp-admin/options.php")
+    rp = RobotFileParser()
+    parse_robots(rp, "User-agent: *\nAllow: /\nDisallow: /geheim\n".splitlines())
+    assert not rp.can_fetch(USER_AGENT, "https://v.nl/geheim/x") and rp.can_fetch(USER_AGENT, "https://v.nl/agenda")
