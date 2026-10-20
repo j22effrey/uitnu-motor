@@ -31,7 +31,7 @@ from .kinds import DISCIPLINE_HINTS, KINDS, LEGACY_HINTS, SCHEMA_KIND_HINTS
 
 def normalize(text: str) -> str:
     """Kleine letters, zonder accenten en met enkele spaties."""
-    text = unicodedata.normalize("NFKD", text or "")
+    text = unicodedata.normalize("NFKD", (text or "").replace("\u00ad", ""))  # zonder zachte afbreekstreepjes
     text = "".join(ch for ch in text if not unicodedata.combining(ch))
     return re.sub(r"\s+", " ", text.lower()).strip()
 
@@ -388,7 +388,7 @@ SENIORS_PATH = re.compile(r"/[\w-]*(?:ouderen|senioren|55-?plus|50-?plus)[\w-]*(
 VENUE_PAGE = re.compile(r"/(?:locations?|locaties?|venues?)/([^/]+)/?$")
 # De rubriek in de link van een uitje ("/cursusprogramma/..."): zo deelt de organisator zelf in.
 URL_KINDS: list[tuple[str, re.Pattern[str]]] = [
-    ("lezing", re.compile(r"cursus|workshop|lezing")),
+    ("lezing", re.compile(r"cursus|workshop|lezing|talks")),
     ("film", re.compile(r"^films?$|filmhuis|bioscoop|^bios$|^cinema$")),
     ("theater", re.compile(r"theater|voorstelling")),
     ("muziek", re.compile(r"concert|muziek")),
@@ -401,6 +401,8 @@ URL_KINDS: list[tuple[str, re.Pattern[str]]] = [
 VENUE_RULES: dict[str, str] = {
     "simplon.nl": "muziek",
     "vera-groningen.nl": "muziek",
+    "engelstede.nl": "muziek",                      # muziekpodium De Engelstede (bands zonder trefwoord)
+    "jongeharten.podiumnederland.nl": "theater",    # festival Jonge Harten: theater voor jongeren
     # Festivals volgens vaste regel 3 (reden in overrides.json, 'namen'): het hele programma hoort erbij.
     "explorethenorth.nl": "festival",
     "visserijdagenharlingen.nl": "festival",
@@ -629,11 +631,31 @@ def page_hints(text: str) -> dict:
     return hints
 
 
+# Gevonden bij het nalopen van de hele agenda (20 oktober 2026, 3.024 uitjes): menukopjes en knoppen,
+# aanbiedingen, mededelingen, werkgroepen en vrijwilligerswerk, vaste dorps- en clubavonden, computerhulp.
+SWEEP_HEADING = re.compile(r"^\W*(?://.*|\d+ excursies|alle datums|event info|ontdek alle \w+|nu te zien|leste nijs"
+                           r"|maandelijkse weergave|tickets en info|thema: .*|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
+                           r"|\w+ jaaragenda(?: \d{4})?|welkom bij .*|museum open|save the date|wordt verwacht\W*"
+                           r"|in [\w ]+ is altijd wat te doen|bestel de serie|doors open .*|.+ datum"
+                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|.+ algemeen)\W*$")
+SWEEP_NOT_OUTING = re.compile(
+    r"\bpapierbak\b|straatverlichting|eerste schop in de grond|sinterklaas ?journaal|\bdaghap\b|voor \d+[,.]\d{2}!?$"
+    r"|\bwerkgroep\b|\bklusdag\b|\b(?:voorjaars|najaars)werk\b|\b(?:najaars|voorjaars)bijeenkomst\b|\bvve\b|professionalsmeeting"
+    r"|\bspekclub\b|\bmancave\b|powervrouwen|^praathuis$|^gezellige (?:middag|avond)$|^dorpsstee voor"
+    r"|\bbiodanza\b|kaboutervoetbal|poeziekring|^volksdansen$|dinsdagavondvaren|\bresepsje\b|thu(?:is|s)wedstr\w*feest"
+    r"|\blinux\b|chatgpt|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond|kinderen in een scheiding"
+    r"|\bvieren dienst\b|\bdienst m\.? ?m\.? ?v\b|\b(?:50|55|60|65) ?\+")
+
+
 def not_an_outing(event: dict) -> str | None:
     """De reden waarom dit geen uitje is (een gewone kerkdienst), of None."""
     title = normalize(event.get("title") or "")
     if ADULT_ONLY.search(title):
         return f"alleen voor volwassenen: '{event.get('title')}'"
+    if SWEEP_HEADING.match(title):
+        return f"geen naam van een uitje: '{event.get('title')}'"
+    if SWEEP_NOT_OUTING.search(title) and not SERVICE_PUBLIC.search(title):
+        return f"niet noemenswaardig (vrijwilligers, werkgroep, vaste avond of hulp): '{event.get('title')}'"
     if MEMBERS_ONLY.search(title) or (MEMBERS_UNLESS_PUBLIC.search(title) and not PUBLIC_EVENT.search(title)
                                          and not re.search(r"^open |voor iedereen", title)):
         return f"alleen voor leden of dorpsbewoners: '{event.get('title')}'"

@@ -93,6 +93,7 @@ OSM_TYPES: dict[tuple[str, str], int] = {
 # Nooit als bron: andere agenda's, verzamelsites, media en sociale netwerken.
 EXCLUDED_HOSTS = {
     "visitgroningen.nl", "kultuuragenda.nl", "wattedoenin.nl", "insidegroningen.com",
+    "vvvterschelling.nl", "museum.nl",  # verzamelagenda's (nalopen van de agenda, 20 oktober 2026)
     "uitagenda.nl", "uitinnederland.nl", "uitzinnig.nl", "eventbrite.nl", "eventbrite.com",
     "dvhn.nl", "rtvnoord.nl", "oogtv.nl", "groningerinternetcourant.nl",
     "uitservice.nl", "lc.nl", "frieschdagblad.nl",   # krantenagenda's (Mediahuis Noord): verzamelagenda, nooit een bron

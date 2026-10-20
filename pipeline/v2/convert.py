@@ -134,6 +134,9 @@ def clean_title(value: str | None) -> str:
     rest = rest if len(rest) >= 3 else title
     untimed = LEADING_TIME.sub("", rest, count=1)
     rest = untimed if len(untimed) >= 3 else rest
+    # Een tijd achter de naam ('BEEF 16:00 - 17:05', Jonge Harten): die staat al bij het uitje.
+    timed = re.sub(r"\s+(?:[|I]\s+)?\d{1,2}[:.]\d{2}\s*[-–]\s*\d{1,2}[:.]\d{2}$", "", rest)
+    rest = timed if len(timed) >= 3 else rest
     bare = TRAILING_LABEL.sub("", rest)
     return bare if len(bare.split()) >= 2 else rest
 
