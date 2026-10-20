@@ -955,7 +955,7 @@
         "lat": 52.9244547,
         "lon": 6.7907727
       },
-      "kindHint": "kunst",
+      "kindHint": "muziek",
       "policyReviewedAt": "2026-10-12"
     },
     {
@@ -6697,7 +6697,7 @@
       "name": "Maritiem Centrum Abraham Fock",
       "rootUrl": "https://www.museum.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -6711,7 +6711,8 @@
         "lon": 5.6365808
       },
       "kindHint": "kunst",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Verzamelagenda (VVV of museum.nl): volgens vaste regel 1 nooit een bron (nalopen van de agenda, 20 oktober 2026)."
     },
     {
       "id": "museumlemmer-nl-web",
@@ -6908,7 +6909,8 @@
         "lat": 52.9793258,
         "lon": 5.4439207
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "kindHint": "theater"
     },
     {
       "id": "mfasexbierumpietersbierum-nl-web",
@@ -7068,8 +7070,8 @@
         "lat": 52.9840952,
         "lon": 6.5428525
       },
-      "kindHint": "sport",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "note": "Geen kindHint: De Bonte Wever is sporthal én zaal voor concerten en shows (twaalf concerten stonden als 'sport', 20 oktober 2026)."
     },
     {
       "id": "meerstad-eu-web",
@@ -8981,7 +8983,7 @@
       "name": "Natuurschuur Lies",
       "rootUrl": "https://www.vvvterschelling.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -8996,7 +8998,8 @@
         "lat": 53.3965521,
         "lon": 5.3262963
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Verzamelagenda (VVV of museum.nl): volgens vaste regel 1 nooit een bron (nalopen van de agenda, 20 oktober 2026)."
     },
     {
       "id": "greetsiel-de-web",

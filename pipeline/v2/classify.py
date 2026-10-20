@@ -31,7 +31,7 @@ from .kinds import DISCIPLINE_HINTS, KINDS, LEGACY_HINTS, SCHEMA_KIND_HINTS
 
 def normalize(text: str) -> str:
     """Kleine letters, zonder accenten en met enkele spaties."""
-    text = unicodedata.normalize("NFKD", text or "")
+    text = unicodedata.normalize("NFKD", (text or "").replace("\u00ad", ""))  # zonder zachte afbreekstreepjes
     text = "".join(ch for ch in text if not unicodedata.combining(ch))
     return re.sub(r"\s+", " ", text.lower()).strip()
 
@@ -388,7 +388,7 @@ SENIORS_PATH = re.compile(r"/[\w-]*(?:ouderen|senioren|55-?plus|50-?plus)[\w-]*(
 VENUE_PAGE = re.compile(r"/(?:locations?|locaties?|venues?)/([^/]+)/?$")
 # De rubriek in de link van een uitje ("/cursusprogramma/..."): zo deelt de organisator zelf in.
 URL_KINDS: list[tuple[str, re.Pattern[str]]] = [
-    ("lezing", re.compile(r"cursus|workshop|lezing")),
+    ("lezing", re.compile(r"cursus|workshop|lezing|talks")),
     ("film", re.compile(r"^films?$|filmhuis|bioscoop|^bios$|^cinema$")),
     ("theater", re.compile(r"theater|voorstelling")),
     ("muziek", re.compile(r"concert|muziek")),
@@ -401,6 +401,8 @@ URL_KINDS: list[tuple[str, re.Pattern[str]]] = [
 VENUE_RULES: dict[str, str] = {
     "simplon.nl": "muziek",
     "vera-groningen.nl": "muziek",
+    "engelstede.nl": "muziek",                      # muziekpodium De Engelstede (bands zonder trefwoord)
+    "jongeharten.podiumnederland.nl": "theater",    # festival Jonge Harten: theater voor jongeren
     # Festivals volgens vaste regel 3 (reden in overrides.json, 'namen'): het hele programma hoort erbij.
     "explorethenorth.nl": "festival",
     "visserijdagenharlingen.nl": "festival",
@@ -629,11 +631,44 @@ def page_hints(text: str) -> dict:
     return hints
 
 
+# Gevonden bij het nalopen van de hele agenda (20 oktober 2026, 3.024 uitjes): menukopjes en knoppen,
+# aanbiedingen, mededelingen, werkgroepen en vrijwilligerswerk, vaste dorps- en clubavonden, computerhulp.
+SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|ontdek alle \w+|nu te zien|leste nijs"
+                           r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
+                           r"|\w+ jaaragenda(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
+                           r"|in [\w ]+ is altijd wat te doen|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
+                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen)\W*$")
+# Kopjes die ook de naam van een uitje kunnen zijn ('Welkom bij de Kerstmarkt', 'Thema: Halloween griezeltocht').
+SWEEP_HEADING_SOFT = re.compile(r"^\W*(?:welkom bij .*|//.*)$")
+SWEEP_NOT_OUTING = re.compile(
+    r"\bpapierbak\b|straatverlichting|eerste schop in de grond|sinterklaas ?journaal|\bdaghap\b"
+    r"|^(?:elke|lekker|lekkere)\b.*\bvoor \d+[,.]\d{2}!?$"
+    r"|\bwerkgroep\b|\bklusdag\b|\b(?:voorjaars|najaars)werk\b|\b(?:najaars|voorjaars)bijeenkomst\b|\bvve\b|professionalsmeeting"
+    r"|\bspekclub\b|\bmancave\b|powervrouwen|^praathuis$|^gezellige (?:middag|avond)$|^dorpsstee voor"
+    r"|\bbiodanza\b|kaboutervoetbal|poeziekring|^volksdansen$|dinsdagavondvaren"
+    r"|\bvieren dienst\b|\bdienst m\.? ?m\.? ?v\b|\b(?:50|55|60|65) ?\+")
+# Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
+SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
+                        r"|kinderen in een scheiding")
+# Het feest van de eigen club na de laatste thuiswedstrijd ('Létste thúswedstrydfeest VV Suameer').
+SWEEP_CLUB_PARTY = re.compile(r"thu(?:is|s)wedstr\w*feest")
+SWEEP_PUBLIC = re.compile(r"lezing|debat|excursie|wandel\w*|workshop|feest|party|\bdans|\blive\b|voorstelling")
+
+
 def not_an_outing(event: dict) -> str | None:
     """De reden waarom dit geen uitje is (een gewone kerkdienst), of None."""
     title = normalize(event.get("title") or "")
     if ADULT_ONLY.search(title):
         return f"alleen voor volwassenen: '{event.get('title')}'"
+    public = SERVICE_PUBLIC.search(title) or PUBLIC_EVENT.search(title)
+    if SWEEP_HEADING.match(title) or (SWEEP_HEADING_SOFT.match(title) and not public and not SWEEP_PUBLIC.search(title)):
+        return f"geen naam van een uitje: '{event.get('title')}'"
+    if SWEEP_NOT_OUTING.search(title) and not SERVICE_PUBLIC.search(title) and not SWEEP_PUBLIC.search(title):
+        return f"niet noemenswaardig (vrijwilligers, werkgroep, vaste avond): '{event.get('title')}'"
+    if SWEEP_CLUB_PARTY.search(title):
+        return f"alleen voor leden of dorpsbewoners: '{event.get('title')}'"
+    if SWEEP_HELP.search(title) and not re.search(r"lezing|debat", title):
+        return f"hulp bij de computer of thuis: '{event.get('title')}'"
     if MEMBERS_ONLY.search(title) or (MEMBERS_UNLESS_PUBLIC.search(title) and not PUBLIC_EVENT.search(title)
                                          and not re.search(r"^open |voor iedereen", title)):
         return f"alleen voor leden of dorpsbewoners: '{event.get('title')}'"

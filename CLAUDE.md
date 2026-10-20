@@ -156,6 +156,11 @@ Groningen (oktober 2026, eerst 9 van de 72 plekken goed):
   Winschoten), de evenementenpagina van een nieuw dorp (Blauwestad) en de bibliotheek per gemeente
   (ticketing.groningsebibliotheken.nl met `p_id` per gemeente). `html_cards` wacht de Crawl-delay van robots.txt
   (hooguit 15 seconden per pagina) en volgt `<base href>`.
+- Les van het nalopen (20 oktober 2026; de eigenaar: 'grappig dat je dat pas eruit filtert als ik een screenshot
+  toon'): wacht niet op voorbeelden. Loop de hele agenda na (alle titels, met hulpagenten in delen) en maak van wat
+  geen uitje is of de verkeerde soort heeft een algemene regel (`SWEEP_*` in `classify.py`, `tests/v2/test_nalopen.py`),
+  met een uitzondering voor echte uitjes met dezelfde woorden. Een VVV of museum.nl is een verzamelagenda: geen bron;
+  zet de grote evenementen die alleen daar stonden als tip (de organisator).
 - Festivals en grote jaarlijkse evenementen zonder leesbare agenda: als losse uitjes in
   `data/events.json`, met de bron (de organisator of de jaarplanning van de gemeente) in `sourceNote`.
 
