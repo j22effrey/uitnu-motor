@@ -57,12 +57,47 @@
       "rootUrl": "https://www.martiniplaza.nl/nl/agenda",
       "role": "venue",
       "enabled": true,
-      "extractorHint": "jsonld_event",
-      "extractorEvidence": "official-agenda:public-events:2026-10-03",
-      "extractorConfig": {},
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.martiniplaza.nl/nl/mvc/event/partial?view=list&q=&genre=&StartDate=&EndDate=&label=&guid=952b58c4-f3f2-4af0-88c7-765679261573",
+        "pageParam": "p",
+        "firstPage": 1,
+        "maxPages": 30,
+        "card": "<div class=\"event list",
+        "fields": {
+          "title": "<h2 class=\"title\">\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h2 class=\"title\">\\s*<a[^>]*href=\"([^\"]+)\"",
+          "id": "data-program-id=\"(\\d+)\"",
+          "date": "<h6 class=\"date\">(.*?)</h6>",
+          "tags": "<div class=\"labels\">(.*?)</div>"
+        },
+        "skipTitle": "\\((?:19|20)\\d\\d\\)\\s*$|voorlichtingsbijeenkomst|promotiedagen|loods of stock|ondernemingsprijs|martiniplaza connect|tech to the future|fem\\.event|symposium",
+        "skipTags": "congres",
+        "genres": {
+          "musical": "TheaterEvent",
+          "cabaret": "ComedyEvent",
+          "familie": "ChildrensEvent",
+          "ballet": "DanceEvent",
+          "toneel": "TheaterEvent",
+          "theatercollege": "EducationEvent",
+          "concert": "MusicEvent",
+          "muziek": "MusicEvent",
+          "sport": "SportsEvent",
+          "beurs": "BusinessEvent",
+          "festival": "Festival",
+          "show": "TheaterEvent",
+          "theater": "TheaterEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "MartiniPlaza",
+        "city": "Groningen"
+      },
       "maxPages": 60,
       "maxDepth": 2,
-      "minDelaySeconds": 0.35
+      "minDelaySeconds": 0.35,
+      "note": "Het programma laadt per 12 voorstellingen via /nl/mvc/event/partial?p=N ('Toon meer'); robots.txt verbiedt alleen /mvc/ in de hoofdmap, niet /nl/mvc/. De lijst noemt geen jaar en geen tijd: datums zonder jaar kiest when.py; titels met '(2027)' (meer dan een jaar vooruit) slaan we over omdat het jaar anders fout wordt.",
+      "policyReviewedAt": "2026-10-21"
     },
     {
       "id": "inside-groningen-web",
@@ -990,9 +1025,33 @@
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://www.theatergeertteis.nl/"
+        "endpointUrl": "https://www.theatergeertteis.nl/voorstellingen?vt=grid",
+        "pageParam": "p",
+        "firstPage": 1,
+        "maxPages": 20,
+        "card": "<div class=\"preview\" itemscope",
+        "fields": {
+          "title": "<div class=\"eventinfo\">\\s*<h3>(.*?)</h3>",
+          "extra": "<h4>(.*?)</h4>",
+          "start": "itemprop=\"startDate\" content=\"([^\"]+)\"",
+          "url": "<a href=\"(/voorstellingen/[^\"]+)\"",
+          "genre": "<span class=\"genre\">\\s*<span>(.*?)</span>"
+        },
+        "genres": {
+          "Cabaret": "ComedyEvent",
+          "Concert": "MusicEvent",
+          "Jeugd & Familie": "ChildrensEvent",
+          "Show & Muziek": "MusicEvent",
+          "Musical": "TheaterEvent",
+          "Toneel": "TheaterEvent",
+          "Klassiek": "MusicEvent",
+          "Dans": "DanceEvent",
+          "Theatercollege": "EducationEvent",
+          "Oet Grunn": "TheaterEvent"
+        },
+        "dropFromTitle": "\\s*\\|\\s*\\d{1,2}[:.]\\d{2}\\s*uur"
       },
       "activatedFromCandidate": "theatergeertteis.nl",
       "defaultPlace": {
@@ -1002,7 +1061,8 @@
         "lon": 6.9531889
       },
       "kindHint": "theater",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-21",
+      "note": "Het hele programma staat op /voorstellingen, 12 per pagina (?p=1..10), met schema.org startDate per kaartje; de voorpagina toonde er maar een paar. robots.txt: Crawl-delay 1, /voorstellingen toegestaan."
     },
     {
       "id": "vanberesteyn-nl-web",
@@ -11449,6 +11509,35 @@
       },
       "note": "Agenda van de Groningse bibliotheken, alleen de activiteiten in Pekela (p_id=8). De bibliotheek organiseert zelf (geen verzamelsite); de kaartverkoop is van de bibliotheek en robots.txt staat het toe, met Crawl-delay 10 (html_cards wacht die). Spreekuren, hulp en vaste inloop vallen weg via skipTitle.",
       "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "np-lauwersmeer-web",
+      "name": "Nationaal Park Lauwersmeer",
+      "rootUrl": "https://www.np-lauwersmeer.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.np-lauwersmeer.nl/doen-zien/activiteitenkalender/page/{page}/",
+        "firstPage": 1,
+        "maxPages": 8,
+        "card": "<div class=\"activity umbrella-click",
+        "fields": {
+          "title": "<h2 class=\"activity__title\">(.*?)</h2>",
+          "date": "<div class=\"activity__long-date\">(.*?)</div>",
+          "url": "<a href=\"([^\"]+)\" class=\"activity__read-more-link",
+          "city": "<h2 class=\"activity__title\">[^<]*?\\s(?:–|&#8211;|-)\\s*([A-Z][\\w\\'-]+(?: [A-Z][\\w\\'-]+)?)\\s*</h2>"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Nationaal Park Lauwersmeer",
+        "city": "Lauwersoog",
+        "lat": 53.385056,
+        "lon": 6.235943
+      },
+      "kindHint": "natuur",
+      "policyReviewedAt": "2026-10-21",
+      "note": "Activiteitenkalender van het Nationaal Park (WordPress, robots.txt staat alles toe), 10 per pagina via /page/N/. De lijst noemt geen tijd. Beter later: /wp-json/wp/v2/activiteiten heeft per activiteit begin- en eindtijd en de plek (acf.dates.startdate '20261020', acf.dates.starttime '19:00:00', acf.waar), maar collector/when.py leest de datumvorm JJJJMMDD nog niet."
     }
   ]
 }

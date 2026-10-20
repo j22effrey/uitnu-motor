@@ -260,7 +260,7 @@ CLUB_ONLY = re.compile(r"^\w*\d0 ?-?(?:plus|\+)(?: ?(?:club|soos|societeit|midda
 # van welke bron ook. (Let op: 'Sexbierum' is een dorp, dus 'sex' alleen als los woord.)
 ADULT_ONLY = re.compile(r"\bnaakt\b|\bnaked\b|\bmen only\b|\bt-?girl|\berot|\bsex\b|\bsexy\b|\bseks\b|swinger"
                         r"|\bfetish|\bbdsm\b|\bporn|\bxxx\b|\badults? only\b|\b18\+ ?(?:party|feest)|darkroom"
-                        r"|gay ?sauna|\bsauna ?party|\bcruising\b|strip ?club|striptease|peepshow|\bkinky\b|\bfkk\b|\bnudis"
+                        r"|gay ?sauna|\bsauna ?party|\bcruising\b|strip ?club|striptease(?! van de dood)|peepshow|\bkinky\b|\bfkk\b|\bnudis"
                         r"|thunder from down under|chippendales|\bmale revue\b|mannenstrip")
 # Niet voor het grote publiek (vraag van de eigenaar, 13 oktober): de vaste les of oefenavond van een
 # club of groep ('Koor', 'Fanfare Swettewyn', 'Wandelgroep Wommels', 'Yoga', 'Koffieochtend'), een
