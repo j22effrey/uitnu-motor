@@ -2,36 +2,41 @@
   "easthim-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T21:13+00:00",
-    "laatst": "2026-10-20T01:14+00:00"
+    "laatst": "2026-10-20T08:07+00:00"
+  },
+  "ferwertonline-nl-web": {
+    "fout": "HTTPError: HTTP Error 404: Not Found",
+    "sinds": "2026-10-20T08:07+00:00",
+    "laatst": "2026-10-20T08:07+00:00"
   },
   "gkv-uithuizermeeden-nl-web": {
     "fout": "URLError: <urlopen error [Errno -2] Name or service not known>",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-20T01:14+00:00"
+    "laatst": "2026-10-20T08:07+00:00"
   },
   "lemmerbinnen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-20T01:14+00:00"
+    "laatst": "2026-10-20T08:07+00:00"
   },
-  "sleen-nu-web": {
+  "mfcgroningen-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-19T21:13+00:00",
-    "laatst": "2026-10-20T01:14+00:00"
+    "sinds": "2026-10-20T08:07+00:00",
+    "laatst": "2026-10-20T08:07+00:00"
   },
   "vera-groningen-web": {
     "fout": "PermissionError: robots.txt staat https://www.vera-groningen.nl/wp/wp-admin/admin-ajax.php?action=renderProgramme&category=all&page=1&perpage=200&search=&lang=nl niet toe",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-20T01:14+00:00"
+    "laatst": "2026-10-20T08:07+00:00"
   },
   "vugroningen-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-20T01:14+00:00"
+    "laatst": "2026-10-20T08:07+00:00"
   },
   "wijkbelangwesteinde-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-10-20T01:14+00:00",
-    "laatst": "2026-10-20T01:14+00:00"
+    "laatst": "2026-10-20T08:07+00:00"
   }
 }
