@@ -12,6 +12,21 @@
    "reden": "Een kermis is 'Feest en kermis', ook als de naam van de markt erin staat (Kermis Zuidlaardermarkt)."
   },
   {
+   "naam": "^voorlees|^boekstart",
+   "soort": "kinderen",
+   "reden": "Een voorleesuurtje of Boekstarthalfuurtje in de bibliotheek is voor jonge kinderen, geen lezing."
+  },
+  {
+   "naam": "^adrillen\\b",
+   "soort": "markt",
+   "reden": "Adrillen is de jaarmarkt van Winschoten op de eerste maandag van november (City Club Winschoten)."
+  },
+  {
+   "naam": "^moonlight shopping\\b",
+   "soort": "markt",
+   "reden": "Moonlight Shopping in Winschoten: de binnenstad 's avonds open met kramen en sfeer, zoals een avondmarkt."
+  },
+  {
    "naam": "noorderzon",
    "soort": "festival",
    "reden": "Festival in en rond het Noorderplantsoen met tenten en podia en veel verschillende artiesten."

@@ -11291,6 +11291,161 @@
       },
       "activatedFromCandidate": "kerkinfraneker.nl",
       "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "centrumwinschoten-nl-web",
+      "name": "City Club Winschoten",
+      "rootUrl": "https://www.centrumwinschoten.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.centrumwinschoten.nl/evenementen/",
+        "card": "<div class=\"event-item-preview\"",
+        "fields": {
+          "title": "<h3 class=\"title\">(.*?)</h3>",
+          "url": "<a class=\"event-item-link[^\"]*\" href=\"([^\"]+)\"",
+          "date": "<div class=\"date\">.*?<span>([^<]+)</span>"
+        },
+        "skipTitle": "koopzondag|^winkelweek\\b"
+      },
+      "defaultPlace": {
+        "venue": "Binnenstad Winschoten",
+        "city": "Winschoten",
+        "lat": 53.1436,
+        "lon": 7.0347
+      },
+      "note": "De ondernemersvereniging van de binnenstad organiseert zelf de evenementen (Sinterklaasintocht, Moonlight Shopping, straattheater). Koopzondagen zijn geen uitje. robots.txt staat het toe (Crawl-delay 10; er is maar één pagina).",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "blauwestad-nl-web",
+      "name": "Blauwestad (evenementenagenda)",
+      "rootUrl": "https://www.blauwestad.nl/",
+      "role": "municipality",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.blauwestad.nl/evenementen/",
+        "card": "<article\\b[^>]*\\btype-events\\b",
+        "fields": {
+          "title": "<h3[^>]*>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h3[^>]*>\\s*<a\\s+href=\"?([^\" >]+)",
+          "date": "<span>\\s*((?:maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag)[^<]*20\\d\\d)\\s*</span>",
+          "venue": "class=\"location[^\"]*\"[^>]*>(?:\\s*<i[^>]*></i>)?\\s*([^<]+)</a>"
+        },
+        "skipTitle": "stembureau|showroom"
+      },
+      "defaultPlace": {
+        "venue": "Blauwestad",
+        "city": "Blauwestad",
+        "lat": 53.17,
+        "lon": 7.05
+      },
+      "policyReviewedAt": "2026-10-20",
+      "note": "De evenementenagenda van Blauwestad (de gemeente en de ontwikkelaar van het dorp): Waterbei, Kom over de brug, Blaauwbekmarathon. robots.txt staat alles toe."
+    },
+    {
+      "id": "groningsebibliotheken-westerwolde-web",
+      "name": "Bibliotheken Westerwolde",
+      "rootUrl": "https://ticketing.groningsebibliotheken.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://ticketing.groningsebibliotheken.nl/agenda/pagina/{page}/?p_id=12",
+        "maxPages": 12,
+        "card": "<div class=\"item-wrap col",
+        "fields": {
+          "title": "<h4[^>]*>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h4[^>]*>\\s*<a href=\"([^\"]+)\"",
+          "id": "data-id=\"(\\d+)\"",
+          "date": "<div class=\"item-date-box[^\"]*\"[^>]*>(.*?)</div>",
+          "time": "<span class=\"item-time\">\\s*([0-9:.]+)",
+          "end": "<span class=\"item-time\">\\s*[0-9:.]+\\s*-\\s*([0-9:.]+)",
+          "room": "<p class=\"location\">\\s*([^<]*?)\\s*<br"
+        },
+        "skipTitle": "digitaal caf|computerhulp|informatiepunt|taalhuis|hulp bij|klik ?& ?tik|mobiele bibliotheek|digitaal nalatenschap|handwerkcaf|quiltcaf|puzzelruil|studiekring|spreekuur|meet ?& ?greet|koffie en kiekjes|pietendansles|schrijfcaf",
+        "rooms": {
+          "bibliotheek ter apel": {
+            "venue": "Bibliotheek Ter Apel",
+            "city": "Ter Apel"
+          },
+          "steunstee ter apel": {
+            "venue": "Steunstee",
+            "city": "Ter Apel"
+          },
+          "bibliotheek bellingwolde": {
+            "venue": "Bibliotheek Bellingwolde",
+            "city": "Bellingwolde"
+          },
+          "bibliotheek vlagtwedde": {
+            "venue": "Bibliotheek Vlagtwedde",
+            "city": "Vlagtwedde"
+          },
+          "bibliotheek blijham": {
+            "venue": "Bibliotheek Blijham",
+            "city": "Blijham"
+          }
+        },
+        "roomFallback": {
+          "city": "Ter Apel"
+        },
+        "genres": {}
+      },
+      "defaultPlace": {
+        "city": "Ter Apel"
+      },
+      "note": "Agenda van de Groningse bibliotheken, alleen de activiteiten in Westerwolde (p_id=12). De bibliotheek organiseert zelf (geen verzamelsite); de kaartverkoop is van de bibliotheek en robots.txt staat het toe, met Crawl-delay 10 (html_cards wacht die). Spreekuren, hulp en vaste inloop vallen weg via skipTitle.",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "groningsebibliotheken-pekela-web",
+      "name": "Bibliotheken Pekela",
+      "rootUrl": "https://ticketing.groningsebibliotheken.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://ticketing.groningsebibliotheken.nl/agenda/pagina/{page}/?p_id=8",
+        "maxPages": 10,
+        "card": "<div class=\"item-wrap col",
+        "fields": {
+          "title": "<h4[^>]*>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h4[^>]*>\\s*<a href=\"([^\"]+)\"",
+          "id": "data-id=\"(\\d+)\"",
+          "date": "<div class=\"item-date-box[^\"]*\"[^>]*>(.*?)</div>",
+          "time": "<span class=\"item-time\">\\s*([0-9:.]+)",
+          "end": "<span class=\"item-time\">\\s*[0-9:.]+\\s*-\\s*([0-9:.]+)",
+          "room": "<p class=\"location\">\\s*([^<]*?)\\s*<br"
+        },
+        "skipTitle": "digitaal caf|computerhulp|informatiepunt|taalhuis|hulp bij|klik ?& ?tik|mobiele bibliotheek|digitaal nalatenschap|handwerkcaf|quiltcaf|puzzelruil|studiekring|spreekuur|meet ?& ?greet|koffie en kiekjes|pietendansles|schrijfcaf",
+        "rooms": {
+          "bibliotheek oude pekela": {
+            "venue": "Bibliotheek Oude Pekela",
+            "city": "Oude Pekela"
+          },
+          "de kiepe": {
+            "venue": "De Kiepe",
+            "city": "Nieuwe Pekela"
+          },
+          "de riggel": {
+            "venue": "De Riggel",
+            "city": "Nieuwe Pekela"
+          }
+        },
+        "roomFallback": {
+          "city": "Oude Pekela"
+        },
+        "genres": {}
+      },
+      "defaultPlace": {
+        "city": "Oude Pekela"
+      },
+      "note": "Agenda van de Groningse bibliotheken, alleen de activiteiten in Pekela (p_id=8). De bibliotheek organiseert zelf (geen verzamelsite); de kaartverkoop is van de bibliotheek en robots.txt staat het toe, met Crawl-delay 10 (html_cards wacht die). Spreekuren, hulp en vaste inloop vallen weg via skipTitle.",
+      "policyReviewedAt": "2026-10-20"
     }
   ]
 }
