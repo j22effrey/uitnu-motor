@@ -31,7 +31,7 @@ def test_vrijwilligers_vaste_avonden_en_hulp_zijn_geen_uitje():
                   "Najaarsbijeenkomst Plaatselijk Belang Appelscha", "vve bedrijfsverzamelgebouw Scharnegoutum",
                   "Bartoleshûs Spekclub", "Mancave", "Nije Powervrouwen", "Praathuis", "Gezellige Middag",
                   "Biodanza met Kees", "Kaboutervoetbal", "Poëziekring", "Volksdansen", "Start dinsdagavondvaren",
-                  "Nijjierstoernooi en -resepsje VV Suameer", "Létste thúswedstrydfeest VV Suameer",
+                  "Létste thúswedstrydfeest VV Suameer",
                   "Linux informatie en installatie avond", "Workshop ChatGPT voor beginners", "Workshop Delpher",
                   "Workshop: Cyberveiligheid in begrijpelijke taal", "Pubquiz 50+",
                   "Anders vieren dienst m.m.v. Rokus Maasland/ The Bowery"):
@@ -42,7 +42,10 @@ def test_echte_uitjes_blijven_staan():
     for title in ("Natuurwerkdag Buningshof", "Jeugdworkshop Vogelkastjes timmeren Buningshof", "Concerten in de kerk",
                   "Sinterklaasintocht Meeden", "Pubquiz", "Biodanza voorstelling", "Open dag Volksdansgroep",
                   "Workshop schilderen voor beginners", "Concert voor 12,50", "Dark Sky weekend", "Stille tocht",
-                  "Seniorentheater", "Herfstwandeling"):
+                  "Seniorentheater", "Herfstwandeling", "Concert verplaatst naar nieuwe datum", "Welkom bij de Kerstmarkt",
+                  "Thema: Halloween griezeltocht", "// Live: Racoon", "Lezing werkgroep Oud Ezinge",
+                  "Excursie werkgroep vogels", "Lezing: ChatGPT en AI", "50+ Party met DJ Henk", "Hitster avond voor 5,00",
+                  "Nijjierstoernooi en -resepsje VV Suameer"):
         assert not not_an_outing(_event(title)), title
 
 

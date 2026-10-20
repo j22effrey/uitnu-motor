@@ -633,18 +633,26 @@ def page_hints(text: str) -> dict:
 
 # Gevonden bij het nalopen van de hele agenda (20 oktober 2026, 3.024 uitjes): menukopjes en knoppen,
 # aanbiedingen, mededelingen, werkgroepen en vrijwilligerswerk, vaste dorps- en clubavonden, computerhulp.
-SWEEP_HEADING = re.compile(r"^\W*(?://.*|\d+ excursies|alle datums|event info|ontdek alle \w+|nu te zien|leste nijs"
-                           r"|maandelijkse weergave|tickets en info|thema: .*|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
-                           r"|\w+ jaaragenda(?: \d{4})?|welkom bij .*|museum open|save the date|wordt verwacht\W*"
-                           r"|in [\w ]+ is altijd wat te doen|bestel de serie|doors open .*|.+ datum"
-                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|.+ algemeen)\W*$")
+SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|ontdek alle \w+|nu te zien|leste nijs"
+                           r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
+                           r"|\w+ jaaragenda(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
+                           r"|in [\w ]+ is altijd wat te doen|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
+                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen)\W*$")
+# Kopjes die ook de naam van een uitje kunnen zijn ('Welkom bij de Kerstmarkt', 'Thema: Halloween griezeltocht').
+SWEEP_HEADING_SOFT = re.compile(r"^\W*(?:welkom bij .*|//.*)$")
 SWEEP_NOT_OUTING = re.compile(
-    r"\bpapierbak\b|straatverlichting|eerste schop in de grond|sinterklaas ?journaal|\bdaghap\b|voor \d+[,.]\d{2}!?$"
+    r"\bpapierbak\b|straatverlichting|eerste schop in de grond|sinterklaas ?journaal|\bdaghap\b"
+    r"|^(?:elke|lekker|lekkere)\b.*\bvoor \d+[,.]\d{2}!?$"
     r"|\bwerkgroep\b|\bklusdag\b|\b(?:voorjaars|najaars)werk\b|\b(?:najaars|voorjaars)bijeenkomst\b|\bvve\b|professionalsmeeting"
     r"|\bspekclub\b|\bmancave\b|powervrouwen|^praathuis$|^gezellige (?:middag|avond)$|^dorpsstee voor"
-    r"|\bbiodanza\b|kaboutervoetbal|poeziekring|^volksdansen$|dinsdagavondvaren|\bresepsje\b|thu(?:is|s)wedstr\w*feest"
-    r"|\blinux\b|chatgpt|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond|kinderen in een scheiding"
+    r"|\bbiodanza\b|kaboutervoetbal|poeziekring|^volksdansen$|dinsdagavondvaren"
     r"|\bvieren dienst\b|\bdienst m\.? ?m\.? ?v\b|\b(?:50|55|60|65) ?\+")
+# Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
+SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
+                        r"|kinderen in een scheiding")
+# Het feest van de eigen club na de laatste thuiswedstrijd ('Létste thúswedstrydfeest VV Suameer').
+SWEEP_CLUB_PARTY = re.compile(r"thu(?:is|s)wedstr\w*feest")
+SWEEP_PUBLIC = re.compile(r"lezing|debat|excursie|wandel\w*|workshop|feest|party|\bdans|\blive\b|voorstelling")
 
 
 def not_an_outing(event: dict) -> str | None:
@@ -652,10 +660,15 @@ def not_an_outing(event: dict) -> str | None:
     title = normalize(event.get("title") or "")
     if ADULT_ONLY.search(title):
         return f"alleen voor volwassenen: '{event.get('title')}'"
-    if SWEEP_HEADING.match(title):
+    public = SERVICE_PUBLIC.search(title) or PUBLIC_EVENT.search(title)
+    if SWEEP_HEADING.match(title) or (SWEEP_HEADING_SOFT.match(title) and not public and not SWEEP_PUBLIC.search(title)):
         return f"geen naam van een uitje: '{event.get('title')}'"
-    if SWEEP_NOT_OUTING.search(title) and not SERVICE_PUBLIC.search(title):
-        return f"niet noemenswaardig (vrijwilligers, werkgroep, vaste avond of hulp): '{event.get('title')}'"
+    if SWEEP_NOT_OUTING.search(title) and not SERVICE_PUBLIC.search(title) and not SWEEP_PUBLIC.search(title):
+        return f"niet noemenswaardig (vrijwilligers, werkgroep, vaste avond): '{event.get('title')}'"
+    if SWEEP_CLUB_PARTY.search(title):
+        return f"alleen voor leden of dorpsbewoners: '{event.get('title')}'"
+    if SWEEP_HELP.search(title) and not re.search(r"lezing|debat", title):
+        return f"hulp bij de computer of thuis: '{event.get('title')}'"
     if MEMBERS_ONLY.search(title) or (MEMBERS_UNLESS_PUBLIC.search(title) and not PUBLIC_EVENT.search(title)
                                          and not re.search(r"^open |voor iedereen", title)):
         return f"alleen voor leden of dorpsbewoners: '{event.get('title')}'"
