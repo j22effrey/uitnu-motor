@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -11110,6 +11110,187 @@
         "lon": 6.683
       },
       "policyReviewedAt": "2026-10-19"
+    },
+    {
+      "id": "detheaterboerderij-nl-web",
+      "name": "De Theaterboerderij",
+      "rootUrl": "https://www.detheaterboerderij.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.detheaterboerderij.nl/http-test-detheaterboerderij-nl-agenda/?ical=1"
+      },
+      "activatedFromCandidate": "detheaterboerderij.nl",
+      "defaultPlace": {
+        "venue": "De Theaterboerderij",
+        "city": "Ekehaar",
+        "lat": 52.9531203,
+        "lon": 6.6031944
+      },
+      "kindHint": "theater",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "dekluiseext-nl-web",
+      "name": "Dorpsmuseum De Kluis",
+      "rootUrl": "https://dekluiseext.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://dekluiseext.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "dekluiseext.nl",
+      "defaultPlace": {
+        "venue": "Dorpsmuseum De Kluis",
+        "city": "Eext",
+        "lat": 53.0181357,
+        "lon": 6.7368709
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "britsum-frl-web",
+      "name": "Britsum",
+      "rootUrl": "https://www.britsum.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.britsum.frl/events/?ical=1"
+      },
+      "activatedFromCandidate": "britsum.frl",
+      "defaultPlace": {
+        "venue": "Britsum",
+        "city": "Britsum",
+        "lat": 53.2524934,
+        "lon": 5.7839431
+      },
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "museumsloten-nl-web",
+      "name": "Museum Sloten",
+      "rootUrl": "https://www.museumsloten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://museumsloten.nl/"
+      },
+      "activatedFromCandidate": "museumsloten.nl",
+      "defaultPlace": {
+        "venue": "Museum Sloten",
+        "city": "Sloten",
+        "lat": 52.8947855,
+        "lon": 5.6456312
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "boerhoornrolde-nl-web",
+      "name": "MFC Boerhoorn",
+      "rootUrl": "https://www.boerhoornrolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.boerhoornrolde.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "boerhoornrolde.nl",
+      "defaultPlace": {
+        "venue": "MFC Boerhoorn",
+        "city": "Rolde",
+        "lat": 52.9831566,
+        "lon": 6.6473694
+      },
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "wijkbelangwesteinde-nl-web",
+      "name": "Wijkbelang Westeinde",
+      "rootUrl": "https://wijkbelangwesteinde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://wijkbelangwesteinde.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "wijkbelangwesteinde.nl",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "keppelstok-nl-web",
+      "name": "Protestantse Gemeente Drachtstercompagnie",
+      "rootUrl": "https://www.keppelstok.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "keppelstok.nl",
+      "defaultPlace": {
+        "venue": "Protestantse Gemeente Drachtstercompagnie",
+        "city": "Drachtstercompagnie",
+        "lat": 53.1340792,
+        "lon": 6.1395202
+      },
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "oudega-info-web",
+      "name": "Jachthaven Alddjip",
+      "rootUrl": "https://www.oudega.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://oudega.info/agenda/"
+      },
+      "activatedFromCandidate": "oudega.info",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "kerkinfraneker-nl-web",
+      "name": "De Voorhof",
+      "rootUrl": "https://www.kerkinfraneker.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.kerkinfraneker.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "kerkinfraneker.nl",
+      "policyReviewedAt": "2026-10-20"
     }
   ]
 }
