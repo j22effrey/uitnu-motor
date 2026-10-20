@@ -28,7 +28,7 @@ def test_vaste_ontmoetingen_in_het_dorp_zijn_niet_noemenswaardig():
                   "Doarpsmiel: samen koken, samen eten", "Duits Dorpsdiner", "Running Dinner: Nostalgisch Hellum",
                   "Dorpskamer: Koffie, stoelgymnastiek", "Doarpskeamer + Kledingreparatie", "Gezamenlijk eten in de Huiskamer",
                   "Handwerkcafé Stekje los", "Taalcafé", "Internetcafé", "Vrouwencafé", "Creatief café", "Hobbylub",
-                  "Lekker Ite", "Bewegen en ontmoeten", "Snackavond", "Bakje Begine"):
+                  "Lekker Ite", "Bewegen en ontmoeten", "Snackavond", "Bakje Begine", "Bouwploeg", "Cafetaria verkoop"):
         assert not_an_outing(_event(title)), title
 
 
@@ -45,7 +45,8 @@ def test_hulp_cursus_en_inspraak_zijn_niet_noemenswaardig():
 
 def test_zorg_in_een_zaal_is_geen_uitje_maar_een_show_over_zorg_blijft():
     # 'Bloedprikken Certe' stond als theater in De Skans (19 oktober 2026)
-    for title in ("Kapsalon de Musical", "Bloed, zweet en tranen – voorstelling"):
+    for title in ("Kapsalon de Musical", "Bloed, zweet en tranen – voorstelling",
+                  "Bouwploeg presenteert de carnavalswagen"):
         assert not not_an_outing(_event(title)), title
 
 

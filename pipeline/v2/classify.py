@@ -309,6 +309,8 @@ CLUB_INTERNAL = re.compile(r"\w*competitie\b|clubkampioenschap\w*|\bslot ?to(?:e
 # dorpshuis, een borrel, een dorpsmaaltijd, de dorpskamer, een handwerk- of taalcafé, de soos. Staat er iets
 # bij dat wel een uitje is ('Koffieconcert', 'Borrel met live muziek', 'Dorpskamer: lezing'), dan blijft het staan.
 VILLAGE_ROUTINE = re.compile(
+    # vrijwilligers aan het werk en de eigen kantine ('Bouwploeg' in MFC Wjukken, 'Cafetaria verkoop' in Westerlee)
+    r"^bouwploeg$|^cafetaria ?verkoop$|"
     r"\bkoffie ?(?:ochtend|inloop|uurtje|drinken|middag|moment|tafel|leut)|\bop de koffie\b|\bbakkie\b|\bbakje\b|buurtbakje"
     r"|\w*borrel\w*|\bvrij ?mi ?bo\b|\bsoep ?(?:uur|maaltijd|middag|ochtend)|\bstamppot ?(?:ochtend|middag|avond|eten)"
     r"|\bfriet ?avond|\bsnack ?(?:avond|bar)\b|\w*maaltijd\b|\bsamen (?:eten|koken|lunchen|tafelen)\b|running dinner"
