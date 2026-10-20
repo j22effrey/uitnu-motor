@@ -22,7 +22,7 @@ from urllib.robotparser import RobotFileParser
 
 from collector.dutch_agenda_html import parse_agenda
 from collector.jsonld_events import parse_html
-from collector.site_crawler import CrawlSource, Fetched, USER_AGENT, crawl_source, default_fetch, same_site
+from collector.site_crawler import CrawlSource, Fetched, USER_AGENT, crawl_source, default_fetch, parse_robots, same_site
 from collector.source_candidates import candidate_priority, canonical_url, host_key
 from collector.wordpress_events import build_url as wordpress_events_url
 
@@ -166,7 +166,7 @@ def robots_status(url: str, fetcher: Callable[..., Fetched], timeout: float) -> 
             if "html" in (fetched.content_type or "").lower():
                 rp.parse(["User-agent: *", "Disallow: /"])
                 return rp, "invalid", None
-            rp.parse(fetched.text.splitlines())
+            parse_robots(rp, fetched.text.splitlines())
             return rp, "loaded", None
         if fetched.status in (404, 410):
             rp.parse([])
