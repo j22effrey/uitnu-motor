@@ -1,15 +1,5 @@
 [
  {
-  "id": "evt_30bae1af889d7c",
-  "title": "Bouwploeg",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://wjukken.nl/agenda/bouwploeg-36/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_7509d4d07f1f31",
   "title": "Het zonnestelsel in het klein",
   "kind": "overig",
@@ -256,16 +246,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.societeitdeharmonie.nl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_9c31a405ce3244",
-  "title": "Cafetaria verkoop",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.westerlee.nl/agenda/agenda/cafetaria-verkoop/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1801,6 +1781,17 @@
   "url": "https://reduzum.com/agenda/?event_id1=60256",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_9c8abc139305c5",
+  "title": "Café ’t Pareltje: patches maken",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/cafe-t-pareltje-patches-maken/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
   ]
  },
  {
@@ -4176,6 +4167,17 @@
   "url": "https://natuurverenigingzuidwolde.nl/agenda/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b5304b2085ba16",
+  "title": "Kruidkoek & Joost Oomen",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/kruidkoek-joost-oomen-12/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
   ]
  },
  {

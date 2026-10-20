@@ -1,14 +1,14 @@
 {
  "version": 2,
- "refreshedAt": "2026-10-20T13:28:09+00:00",
+ "refreshedAt": "2026-10-20T14:58:28+00:00",
  "today": "2026-10-20",
  "total": 3800,
- "inputRecords": 9101,
- "outsideArea": 0,
- "geenUitje": 3539,
+ "inputRecords": 9210,
+ "outsideArea": 2,
+ "geenUitje": 3621,
  "vasteActiviteit": 999,
  "vertaling": 7,
- "teVerVooruit": 263,
+ "teVerVooruit": 289,
  "uitgeslotenBron": 6,
  "onleesbaar": [],
  "area": {
@@ -29,21 +29,21 @@
   "theater": 851,
   "muziek": 825,
   "film": 503,
-  "overig": 301,
+  "overig": 299,
   "feest": 273,
   "kunst": 219,
   "lezing": 185,
   "natuur": 170,
-  "markt": 166,
+  "markt": 167,
   "sport": 109,
   "kinderen": 103,
-  "festival": 50,
+  "festival": 51,
   "eten": 45
  },
  "byCity": {
-  "Groningen": 1162,
+  "Groningen": 1163,
   "Assen": 237,
-  "Leeuwarden": 183,
+  "Leeuwarden": 184,
   "Emmen": 177,
   "Franeker": 133,
   "Hoogezand": 131,
@@ -124,7 +124,6 @@
   "Koekangerveld": 6,
   "Oudega": 6,
   "Sloten": 6,
-  "Mantgum": 5,
   "Marssum": 5,
   "Beilen": 5,
   "Oldemarkt": 5,
@@ -145,6 +144,7 @@
   "Fochteloo": 5,
   "Zurich": 5,
   "Oudeschans": 5,
+  "Mantgum": 4,
   "Haren Gn": 4,
   "Gaastmeer": 4,
   "Klein Wetsinge": 4,
@@ -187,7 +187,6 @@
   "Wezup": 3,
   "Spannum": 2,
   "Hooghalen": 2,
-  "Westerlee": 2,
   "Appingedam": 2,
   "Eenum": 2,
   "Sappemeer": 2,
@@ -248,6 +247,7 @@
   "Lageland": 1,
   "Kornwerderzand": 1,
   "Elim": 1,
+  "Westerlee": 1,
   "Grootegast": 1,
   "Rotstergaast": 1,
   "Tzum": 1,
@@ -290,7 +290,7 @@
   "vanberesteyn.nl": 99,
   "skans.nl": 95,
   "theaterroden.nl": 72,
-  "explorethenorth.nl": 67,
+  "explorethenorth.nl": 69,
   "sliekerfilm.nl": 65,
   "vvvterschelling.nl": 50,
   "simplon.nl": 49,
@@ -390,7 +390,6 @@
   "koekangerveld.com": 6,
   "itjoo.nl": 6,
   "friesmuseum.nl": 6,
-  "wjukken.nl": 5,
   "franeker.nl": 5,
   "demoeting.nl": 5,
   "filmhuisemmen.nl": 5,
@@ -418,6 +417,7 @@
   "dorpzurich.nl": 5,
   "sumar.nl": 5,
   "simmerdeis.nl": 5,
+  "wjukken.nl": 4,
   "ontdekwec.nl": 4,
   "gevangenismuseum.nl": 4,
   "degaastmar.nl": 4,
@@ -440,7 +440,6 @@
   "groatekerk.nl": 4,
   "plaatselijkbelangappelscha.nl": 4,
   "ferwertonline.nl": 4,
-  "neushoorn.nl": 4,
   "pboosterhesselen.nl": 4,
   "luxor.nl": 4,
   "harich-ruigahuizen.nl": 4,
@@ -459,6 +458,7 @@
   "tsiispakhus.nl": 3,
   "dorpsbelangenharkstede.nl": 3,
   "buinerveen.info": 3,
+  "neushoorn.nl": 3,
   "roswinkel.com": 3,
   "kunstkerkhogeland.nl": 3,
   "meerstad.eu": 3,
@@ -471,9 +471,9 @@
   "evenementenzuidlaardermarkt.nl": 2,
   "eemsdelta.nl": 2,
   "hooghalen.nu": 2,
-  "westerlee.nl": 2,
   "kvmidfryslan.nl": 2,
   "kunstgroephethoogeland.nl": 2,
+  "em2groningen.nl": 2,
   "goutum.info": 2,
   "tryater.nl": 2,
   "viadukt.nl": 2,
@@ -519,7 +519,6 @@
   "schoonloo.com": 1,
   "finaleraces.nl": 1,
   "avdesprinter.nl": 1,
-  "em2groningen.nl": 1,
   "princessehof.nl": 1,
   "pgbeilen.nl": 1,
   "terschelling.nl": 1,
@@ -558,6 +557,7 @@
   "leeuwarden.nl": 1,
   "elim-drenthe.nl": 1,
   "oldeberkoop.frl": 1,
+  "westerlee.nl": 1,
   "spooktochtzeerijp.nl": 1,
   "tsjom.nl": 1,
   "injipsingboertange.nl": 1,
@@ -600,8 +600,8 @@
   "hfc15.nl": 1
  },
  "photos": {
-  "organisator": 622,
-  "wikimedia": 3103,
+  "organisator": 629,
+  "wikimedia": 3096,
   "zonder": 75
  },
  "twijfel": 600,
@@ -627,9 +627,9 @@
   "meerdaags": "Meerdaags"
  },
  "changes": {
-  "new": 84,
-  "changed": 172,
-  "removed": 49
+  "new": 3,
+  "changed": 47,
+  "removed": 3
  },
  "gate": {
   "passed": true,
@@ -637,7 +637,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "3800 nu, 3765 vorige keer (minimaal 85%)"
+    "detail": "3800 nu, 3800 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -647,7 +647,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "301 van 3800 (8%)"
+    "detail": "299 van 3800 (8%)"
    },
    {
     "name": "velden_compleet",
