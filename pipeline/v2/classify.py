@@ -161,10 +161,10 @@ NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst
                            # mededelingen voor het dorp, geen uitje
                            r"|oud ?papier|collecte\w*|kopij|wintertijd|zomertijd|\w*afval|container|\w*spreekuur"
                            # zaalverhuur en vaste clubavonden in de agenda van een dorpshuis
-                           r"|verhuur|zaalhuur|bezet|gereserveerd|onderhoud|schoonmaak\w*|\w*overleg|(?<!open )repetitie\w*"
+                           r"|verhuur|zaalhuur|bezet|gereserveerd|onderhoud|schoonmaak\w*|\w*overleg|(?<!open )(?<!openbare )(?<!generale )repetitie\w*"
                            r"|oefenavond|trainingsavond|contactavond|vrouwenvereniging|vrouwen van nu|afdelingsavond"
                            r"|ledenavond|(?:advents?|paas|pinkster)dienst|doorzichtige zak|papier en karton"
-                           r"|verantwoord alcohol schenken|\w*vergadering\w*|(?<!open )(?<!\w)\w*repetitie|\bnieuws\b|voorzitter"
+                           r"|verantwoord alcohol schenken|\w*vergadering\w*|(?<!open )(?<!openbare )(?<!generale )(?<!\w)\w*repetitie|\bnieuws\b|voorzitter"
                            r"|\bverkeer\b|wegafsluiting|wegwerkzaamheden|wintertied|dagelijks bestuur|\w*dagsbestuur|^bestuur"
                            r"|bestuursoverleg|\w*dienst in de \w*kerk|dankdienst|dankdag voor gewas|\w*actie\b"
                            r"|black friday|schoen(tje)? (zetten|ophalen)|kerst[\w-]*dienst|jantje beton"

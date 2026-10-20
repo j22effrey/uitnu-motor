@@ -22,6 +22,11 @@
    "reden": "Uurtje Cultuurtje in Sociëteit de Harmonie is een reeks lezingen."
   },
   {
+   "naam": "^lumia\\b",
+   "soort": "kunst",
+   "reden": "LUMIA in de Martinikerk is een licht- en geluidskunstwerk (kunst), geen concert of feest."
+  },
+  {
    "naam": "^voorlees|^boekstart",
    "soort": "kinderen",
    "reden": "Een voorleesuurtje of Boekstarthalfuurtje in de bibliotheek is voor jonge kinderen, geen lezing."
