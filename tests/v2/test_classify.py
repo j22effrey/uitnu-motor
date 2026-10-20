@@ -72,3 +72,16 @@ def test_organisator_zegt_wat_het_is():
 def test_correctie_heeft_altijd_een_reden():
     for entry in OVERRIDES["namen"]:
         assert entry["reden"] and entry["soort"] in KINDS, entry
+
+
+def test_film_in_de_bios_rubriek_ook_als_de_zaal_theaterevent_zegt():
+    """De Nieuwe Kolk noemt elke film een TheaterEvent; de rubriek '/bios/' zegt wat het is (20 oktober 2026)."""
+    def kind(title, url, schema="TheaterEvent"):
+        return classify({"id": title, "title": title, "url": url, "schemaType": schema,
+                         "occurrences": [{"date": "2026-10-20"}], "sources": [{"url": url}]})["kind"]
+    assert kind("Whalefall", "https://denieuwekolk.nl/bios/agenda/whalefall") == "film"
+    assert kind("Sense and Sensibility", "https://denieuwekolk.nl/bios/agenda/sense-and-sensibility") == "film"
+    # Het theater van dezelfde zaal blijft theater, en een concert in de bios blijft een concert.
+    assert kind("Plien & Bianca - Harrekidee!", "https://denieuwekolk.nl/theater/agenda/plien-bianca") == "theater"
+    assert kind("Live in de bios", "https://denieuwekolk.nl/bios/agenda/live", "MusicEvent") == "muziek"
+    assert kind("Jochem Myjer", "https://bios.example/cinema/jochem-myjer", "ComedyEvent") == "theater"
