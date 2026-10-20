@@ -247,7 +247,8 @@ def content_hash(event: dict) -> str:
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:12]
 
 
-_STOPWORDS = {"de", "het", "een", "en", "van", "in", "op", "te", "bij", "aan", "voor", "met", "the", "of", "and"}
+_STOPWORDS = {"de", "het", "een", "en", "van", "in", "op", "te", "bij", "aan", "voor", "met", "the", "of", "and",
+              "support", "live", "feat", "presenteert", "presents"}
 
 
 def _title_words(title: str, city: str) -> set[str]:
@@ -276,6 +277,14 @@ def _same_slot(a: dict, b: dict) -> bool:
     return not (oa.get("startTime") and ob.get("startTime") and oa["startTime"] != ob["startTime"])
 
 
+def _same_name(a: set[str], b: set[str]) -> bool:
+    """Twee namen voor hetzelfde uitje: de ene naam zit helemaal in de andere ('HAEVN' en 'HAEVN + support'),
+    of ze delen minstens twee woorden. Eén gedeeld woord is te weinig in een zaal met meerdere zalen: in De
+    Oosterpoort verdwenen zo concerten op dezelfde avond ('Noord-Nederlands Orkest', oktober 2026)."""
+    shared = a & b
+    return bool(shared) and (len(shared) >= 2 or shared in (a, b))
+
+
 def merge_same_venue(events: list[dict]) -> list[dict]:
     """Twee namen voor hetzelfde uitje: zelfde plek, zelfde dagen en tijd, en een gedeeld woord in de titel."""
     result: list[dict] = []
@@ -286,7 +295,7 @@ def merge_same_venue(events: list[dict]) -> list[dict]:
             words = _title_words(event["title"], event["venue"].get("city"))
             for other in result:
                 if (_venue_key(other) == key and _same_slot(other, event)
-                        and words & _title_words(other["title"], other["venue"].get("city"))):
+                        and _same_name(words, _title_words(other["title"], other["venue"].get("city")))):
                     twin = other
                     break
         if twin is None:
