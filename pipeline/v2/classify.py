@@ -161,10 +161,10 @@ NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst
                            # mededelingen voor het dorp, geen uitje
                            r"|oud ?papier|collecte\w*|kopij|wintertijd|zomertijd|\w*afval|container|\w*spreekuur"
                            # zaalverhuur en vaste clubavonden in de agenda van een dorpshuis
-                           r"|verhuur|zaalhuur|bezet|gereserveerd|onderhoud|schoonmaak\w*|\w*overleg|repetitie\w*"
+                           r"|verhuur|zaalhuur|bezet|gereserveerd|onderhoud|schoonmaak\w*|\w*overleg|(?<!open )(?<!openbare )(?<!generale )repetitie\w*"
                            r"|oefenavond|trainingsavond|contactavond|vrouwenvereniging|vrouwen van nu|afdelingsavond"
                            r"|ledenavond|(?:advents?|paas|pinkster)dienst|doorzichtige zak|papier en karton"
-                           r"|verantwoord alcohol schenken|\w*vergadering\w*|\w*repetitie|\bnieuws\b|voorzitter"
+                           r"|verantwoord alcohol schenken|\w*vergadering\w*|(?<!open )(?<!openbare )(?<!generale )(?<!\w)\w*repetitie|\bnieuws\b|voorzitter"
                            r"|\bverkeer\b|wegafsluiting|wegwerkzaamheden|wintertied|dagelijks bestuur|\w*dagsbestuur|^bestuur"
                            r"|bestuursoverleg|\w*dienst in de \w*kerk|dankdienst|dankdag voor gewas|\w*actie\b"
                            r"|black friday|schoen(tje)? (zetten|ophalen)|kerst[\w-]*dienst|jantje beton"
@@ -644,12 +644,13 @@ SWEEP_NOT_OUTING = re.compile(
     r"\bpapierbak\b|straatverlichting|eerste schop in de grond|sinterklaas ?journaal|\bdaghap\b"
     r"|^(?:elke|lekker|lekkere)\b.*\bvoor \d+[,.]\d{2}!?$"
     r"|\bwerkgroep\b|\bklusdag\b|\b(?:voorjaars|najaars)werk\b|\b(?:najaars|voorjaars)bijeenkomst\b|\bvve\b|professionalsmeeting"
-    r"|\bspekclub\b|\bmancave\b|powervrouwen|^praathuis$|^gezellige (?:middag|avond)$|^dorpsstee voor"
+    r"|\bkovvie\b|kleding-? ?ruil-? ?rek|\bspekclub\b|\bmancave\b|powervrouwen|^praathuis$|^gezellige (?:middag|avond)$|^dorpsstee voor"
     r"|\bbiodanza\b|kaboutervoetbal|poeziekring|^volksdansen$|dinsdagavondvaren"
     r"|\bvieren dienst\b|\bdienst m\.? ?m\.? ?v\b|\b(?:50|55|60|65) ?\+")
 # Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
 SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
-                        r"|kinderen in een scheiding")
+                        r"|kinderen in een scheiding|computercursus|\bdigi ?(?:vitaler|sterker|taal)\b|zorgverzekeraar"
+                        r"|digitale nalatenschap|raadplegen van digitale|\bseniorweb\b")
 # Het feest van de eigen club na de laatste thuiswedstrijd ('Létste thúswedstrydfeest VV Suameer').
 SWEEP_CLUB_PARTY = re.compile(r"thu(?:is|s)wedstr\w*feest")
 SWEEP_PUBLIC = re.compile(r"lezing|debat|excursie|wandel\w*|workshop|feest|party|\bdans|\blive\b|voorstelling")

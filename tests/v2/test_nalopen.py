@@ -33,7 +33,8 @@ def test_vrijwilligers_vaste_avonden_en_hulp_zijn_geen_uitje():
                   "Biodanza met Kees", "Kaboutervoetbal", "Poëziekring", "Volksdansen", "Start dinsdagavondvaren",
                   "Létste thúswedstrydfeest VV Suameer",
                   "Linux informatie en installatie avond", "Workshop ChatGPT voor beginners", "Workshop Delpher",
-                  "Workshop: Cyberveiligheid in begrijpelijke taal", "Pubquiz 50+",
+                  "Workshop: Cyberveiligheid in begrijpelijke taal", "Pubquiz 50+", "De DigiVitaler - Computercursus",
+                  "Check je zorgverzekeraar", "Keuvel, Kovvie en bordspelletjes", "Workshop Digitale Nalatenschap",
                   "Anders vieren dienst m.m.v. Rokus Maasland/ The Bowery"):
         assert not_an_outing(_event(title)), title
 
@@ -45,7 +46,7 @@ def test_echte_uitjes_blijven_staan():
                   "Seniorentheater", "Herfstwandeling", "Concert verplaatst naar nieuwe datum", "Welkom bij de Kerstmarkt",
                   "Thema: Halloween griezeltocht", "// Live: Racoon", "Lezing werkgroep Oud Ezinge",
                   "Excursie werkgroep vogels", "Lezing: ChatGPT en AI", "50+ Party met DJ Henk", "Hitster avond voor 5,00",
-                  "Nijjierstoernooi en -resepsje VV Suameer"):
+                  "Nijjierstoernooi en -resepsje VV Suameer", "Educa Symfonia – Open Repetitie", "Openbare repetitie NNO", "Open generale repetitie"):
         assert not not_an_outing(_event(title)), title
 
 

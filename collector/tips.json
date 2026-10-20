@@ -682,6 +682,194 @@
       "plaats": "Terschelling",
       "reden": "Groot evenement op Terschelling dat alleen via de VVV binnenkwam; de VVV is een verzamelagenda en geen bron meer (nalopen van de agenda, 20 oktober 2026).",
       "datum": "2026-10-20"
+    },
+    {
+      "url": "https://www.skkw.nl/voorstellingen/",
+      "naam": "Stichting Kulturele Kommissie Winsum",
+      "plaats": "Winsum",
+      "reden": "Organiseert ongeveer twee voorstellingen per maand (sep-mei) in Winsum; de test leest de agenda (html_agenda_dutch). Voorstellingen spelen o.a. in Op Maarhuizen. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20"
+    },
+    {
+      "url": "https://stichtingjazzingroningen.nl/agenda/",
+      "naam": "Stichting Jazz in Groningen",
+      "plaats": "Groningen",
+      "reden": "Organisator van jazzconcerten (o.a. in Brouwerij Martinus); de test leest de agenda (html_agenda_dutch) en de concertpagina's hebben schema.org Event. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20"
+    },
+    {
+      "url": "https://www.kunstruimtedesmederij.nl/Exposities/",
+      "naam": "Kunstruimte De Smederij",
+      "reden": "Exposities, live muziek en kerstmarkt staan op /Exposities/ (de voorpagina heeft geen agenda); de test leest die pagina. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Sappemeer"
+    },
+    {
+      "url": "https://deblauweschuit-winsum.nl/",
+      "naam": "Cultuurcentrum De Blauwe Schuit",
+      "reden": "Cultuurcentrum in Winsum met voorstellingen en lezingen; The Events Calendar (wordpress_tribe) werkt. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Winsum"
+    },
+    {
+      "url": "https://www.stichtingcultureelslochteren.nl/",
+      "naam": "Stichting Cultureel Slochteren",
+      "reden": "Organiseert exposities en het Slochter Vertelcafé; The Events Calendar (wordpress_tribe) werkt. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Slochteren"
+    },
+    {
+      "url": "https://www.pkn-bellingwolde.nl/agendapagina",
+      "naam": "Protestantse Gemeente Bellingwolde (Magnuskerk)",
+      "reden": "Agenda met concerten (o.a. Arpeggio, Jeduthun) en filmavonden naast kerkdiensten; de test leest /agendapagina (html_agenda_dutch). Alleen met www (zonder www een kapot certificaat). (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Bellingwolde"
+    },
+    {
+      "url": "https://slavernijverledengroningen.nl/",
+      "naam": "Slavernijverleden Groningen",
+      "reden": "Maandelijkse openbare stadswandeling (za 10-12 uur) met data op de voorpagina; de test leest ze (html_agenda_dutch). (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://garrelsdiep.nl/",
+      "naam": "Garrelsdiep",
+      "reden": "Avonden en gesprekken in Garrelsweer; agenda als iCal (ics) en schema.org Event. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Garrelsweer"
+    },
+    {
+      "url": "https://wilhelminaleens.nl/",
+      "naam": "Muziekvereniging Wilhelmina Leens",
+      "reden": "Concerten zoals Brass & Rock; The Events Calendar werkt. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Leens"
+    },
+    {
+      "url": "https://www.luthersbachensemble.nl/",
+      "naam": "Luthers Bach Ensemble",
+      "reden": "Concertagenda (o.a. Dido & Aeneas); The Events Calendar werkt. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://www.hetgrootstekerstfeest.nl/",
+      "naam": "Het Grootste Kerstfeest",
+      "reden": "Eigen website met schema.org Event (19 dec). (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://podiumauxesis.nl/",
+      "naam": "Podium Auxesis",
+      "reden": "Concerten en masterclasses met data ('27.11.2026 om 19:30'); de test leest ze. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://www.kerksolwerd.nl/activiteiten",
+      "naam": "Kerk van Solwerd",
+      "reden": "Lezingen en exposities (o.a. Marjoleine de Vos, 2 nov); de test leest /activiteiten. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Appingedam"
+    },
+    {
+      "url": "https://flal.nl/",
+      "naam": "FLAL",
+      "reden": "Wandeltochten zoals 'n Daam en Dieken; The Events Calendar werkt. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Oosterwijtwerd"
+    },
+    {
+      "url": "https://duurzamehuizenroute.nl/open-dagen",
+      "naam": "Duurzame Huizen Route",
+      "reden": "Landelijke open dagen (ook in Appingedam); /open-dagen heeft schema.org Event. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20"
+    },
+    {
+      "url": "https://plantsoenloop.nl/",
+      "naam": "Plantsoenloop",
+      "reden": "Jaarlijkse loop in het Noorderplantsoen; de test leest de datum. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://www.prummeltour.nl/",
+      "naam": "Prummeltour",
+      "reden": "Prummelweek met gebouwen en verhalen in de Veenkoloniën; de test leest de agenda. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Musselkanaal"
+    },
+    {
+      "url": "https://mozartconcerten.nl/groningen/",
+      "naam": "Mozartconcerten (Beleef Klassiek) Groningen",
+      "reden": "Requiem & Eine Kleine Nachtmusik in de Martinikerk (17 april 2027); de test leest de pagina. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://groningensaxfest.com/nl/",
+      "naam": "Groningen Sax Fest",
+      "reden": "Saxofoonfestival; de site heeft schema.org Event. Festival-status eerst toetsen aan regel 3. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://stadsparknightrun.nl/",
+      "naam": "Stadspark Nightrun",
+      "reden": "Avondloop in het Stadspark (12 dec); de test leest de datum. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://podiumverwondering.nl/",
+      "naam": "Podium Verwondering",
+      "reden": "Concerten (o.a. Thom Gerrits); The Events Calendar werkt. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://venstersoprilke.nl/",
+      "naam": "Vensters op Rilke",
+      "reden": "Concertavond met wereldpremières (22 nov); schema.org Event op de site. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20",
+      "plaats": "Groningen"
+    },
+    {
+      "url": "https://www.artphy.nl/",
+      "naam": "Kunsthal Artphy",
+      "plaats": "Onstwedde",
+      "reden": "Kunsthal met eigen activiteitenpagina (WordPress, The Events Calendar: /events/?ical=1 en /wp-json/tribe/); stond nog niet in de bronnen. robots.txt staat alles toe. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20"
+    },
+    {
+      "url": "https://www.vestingoudeschans.com/",
+      "naam": "Stichting Vesting Oudeschans",
+      "plaats": "Oudeschans",
+      "reden": "Museum en koffieconcerten in de Garnizoenskerk; robots.txt werkt nu (de oude test zei 'robots_unavailable'), opnieuw testen. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20"
+    },
+    {
+      "url": "https://www.giezelbaargbloazers.nl/agenda.php",
+      "naam": "Giezelbaargbloazers oet Veele",
+      "plaats": "Veele",
+      "reden": "Midwinterhoornblazers met eigen agenda (tabel Dag | Datum | Activiteit) met hun optredens in het seizoen; robots.txt staat het toe (Crawl-delay 10). (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20"
+    },
+    {
+      "url": "https://www.opewsum.nl/",
+      "naam": "Op Ewsum (borgterrein, WerkPro)",
+      "plaats": "Middelstum",
+      "reden": "Agenda met EventON-kalender (laadt via AJAX); elk uitje heeft een eigen pagina /events/... met schema.org Event (startDate). Mogelijk json_api via /wp-json/wp/v2/ajde_events (lijst) + detailpagina. Streekmarkten, workshops, wandelingen. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20"
+    },
+    {
+      "url": "https://nicolaikerk-appingedam.nl/agenda.html",
+      "naam": "Nicolaïkerk Appingedam",
+      "plaats": "Appingedam",
+      "reden": "Concertkerk met eigen agenda (concerten Groninger Mozart Ensemble 29 nov, Messiah 17 dec, kerstconcert 19 dec, Winterwarm 12 dec); stond nog niet in de bronnen of kandidaten. Diensten staan er ook in en vallen vanzelf weg. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
+      "datum": "2026-10-20"
     }
   ]
 }

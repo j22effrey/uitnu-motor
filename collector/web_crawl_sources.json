@@ -8752,7 +8752,7 @@
       "name": "Synagoge",
       "rootUrl": "https://www.synagogegroningen.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -8761,7 +8761,8 @@
         "agendaUrl": "https://www.synagogegroningen.nl/"
       },
       "activatedFromCandidate": "synagogegroningen.nl",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Vervangen door synagogegroningen-nl-agenda (de agenda op /agenda; de voorpagina gaf 0 uitjes), 21 oktober 2026."
     },
     {
       "id": "tcbaflo-net-web",
@@ -11538,6 +11539,408 @@
       "kindHint": "natuur",
       "policyReviewedAt": "2026-10-21",
       "note": "Activiteitenkalender van het Nationaal Park (WordPress, robots.txt staat alles toe), 10 per pagina via /page/N/. De lijst noemt geen tijd. Beter later: /wp-json/wp/v2/activiteiten heeft per activiteit begin- en eindtijd en de plek (acf.dates.startdate '20261020', acf.dates.starttime '19:00:00', acf.waar), maar collector/when.py leest de datumvorm JJJJMMDD nog niet."
+    },
+    {
+      "id": "demolenberg-nl-web",
+      "name": "Theater De Molenberg",
+      "rootUrl": "https://www.demolenberg.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.demolenberg.nl/voorstellingen/",
+        "card": "<article class=\"events__item\"",
+        "fields": {
+          "title": "<h2 class=\"events__item__title\">(.*?)</h2>",
+          "extra": "<h3 class=\"events__item__subtitle\">(.*?)</h3>",
+          "date": "<time class=\"event__date\">(.*?)</time>",
+          "url": "<a href=\"([^\"]+)\" class=\"events__item__link\"",
+          "tags": "data-genres=\"([^\"]*)\"",
+          "genre": "data-genres=\"([^\"]*)\""
+        },
+        "skipTags": "(^|,)film(,|$)",
+        "genres": {
+          "cabaret": "ComedyEvent",
+          "familievoorstelling": "ChildrensEvent",
+          "toneel": "TheaterEvent",
+          "muziek": "MusicEvent",
+          "blues": "MusicEvent",
+          "theatercollege": "EducationEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Theater & Congrescentrum De Molenberg",
+        "city": "Delfzijl",
+        "lat": 53.3231,
+        "lon": 6.8869
+      },
+      "note": "Theaterprogramma van De Molenberg (tijdelijk Sikkel 3, Delfzijl) op /voorstellingen/; zelfde pagina als demolenberg-nl-film maar zonder de films (die bron blijft). Soort uit data-genres. Alleen de dag.",
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "synagogegroningen-nl-agenda",
+      "name": "Synagoge Groningen",
+      "rootUrl": "https://www.synagogegroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.synagogegroningen.nl/agenda",
+        "card": "<span class=\"color_46 wixui-rich-text__text\">\\d{1,2}[^<|]*(okt|nov|dec|jan|feb|mrt|maart|apr|mei|jun|jul|aug|sep)",
+        "fields": {
+          "date": "^<span[^>]*>([^|<]+)\\|",
+          "time": "^<span[^>]*>[^|<]+\\|\\s*(\\d{1,2}[.:]\\d{2})",
+          "title": "^<span[^>]*>(?:[^|<]*\\|)+\\s*([^|<]+?)\\s*</span>",
+          "genre": "^<span[^>]*>[^|<]+\\|[^|<]+\\|\\s*([^|<]+?)\\s*\\|"
+        },
+        "genres": {
+          "Concert": "MusicEvent",
+          "Kinder-maand": "ChildrensEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Synagoge Groningen",
+        "city": "Groningen"
+      },
+      "note": "Vervangt synagogegroningen-nl-web (die keek op de voorpagina en vond 0). Wix-pagina /agenda met kopregels '24 okt. | 20.00 | Concert | Gabriel Palatchi'; robots.txt staat het toe. Bij meerdere data ('11 & 20 & 23 dec.') telt alleen de laatste.",
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "opmaarhuizen-nl-web",
+      "name": "Op Maarhuizen",
+      "rootUrl": "https://opmaarhuizen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://opmaarhuizen.nl/agenda",
+        "card": "<div id=\"no-\\d+\" class=\"card",
+        "fields": {
+          "date": "<h3 class=\"pt-12[^\"]*\">([^<]*)<br",
+          "title": "<h3 class=\"pt-12[^\"]*\">[^<]*<br\\s*/?>(.*?)</h3>",
+          "url": "<a href=\"([^\"]+)\"",
+          "genre": "<span class=\"text-heavymetal\">#([^<]+)</span>"
+        },
+        "dropFromTitle": "\\s*-\\s*UITVERKOCHT",
+        "genres": {
+          "muziek": "MusicEvent",
+          "theater": "TheaterEvent",
+          "lezing": "EducationEvent",
+          "seizoensdiner": "FoodEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Op Maarhuizen",
+        "city": "Winsum"
+      },
+      "note": "Agenda op /agenda als kaartjes ('<div id=\"no-163\" class=\"card'), datum zonder jaar in de h3 vóór <br/>, titel erna. Soort uit #muziek/#theater/#lezing. Ook voorstellingen van SKKW en gasten. Plek: Maarhuizen 3 (bij Winsum); kaartpin nakijken.",
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "roodehaan-com-web",
+      "name": "Roodehaan concerten",
+      "rootUrl": "https://www.roodehaan.com/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.roodehaan.com/concerten/",
+        "card": "<p class=\"wp-block-paragraph\">(Maandag|Dinsdag|Woensdag|Donderdag|Vrijdag|Zaterdag|Zondag) \\d",
+        "fields": {
+          "date": "^<p[^>]*>([A-Za-z]+ \\d{1,2} [a-z]+(?: 20\\d\\d)?)",
+          "time": "^<p[^>]*>[A-Za-z]+ \\d{1,2} [a-z]+(?: 20\\d\\d)? (\\d{1,2}[.:]\\d{2})",
+          "title": "^<p[^>]*>[^<]*<strong>(.*?)</strong>"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Roodehaan",
+        "city": "Westeremden"
+      },
+      "kindHint": "muziek",
+      "note": "Huiskamer-/schuurconcerten op zondagmiddag in Westeremden; de concerten staan als losse alinea's ('Zondag 8 november 15.00 <strong>J.M. Baccus</strong>') op /concerten/. Kaarten via ticketkantoor.nl (niet ophalen). Plek en kaartpin nakijken.",
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "brouwerijmartinus-nl-web",
+      "name": "Brouwerij Martinus",
+      "rootUrl": "https://www.brouwerijmartinus.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.brouwerijmartinus.nl/agenda/",
+        "card": "<div class=\"nectar-hor-list-item(?=(?:(?!Afgelopen evenementen)[\\s\\S])*Afgelopen evenementen)",
+        "fields": {
+          "date": "<h3>(\\d{1,2} [a-z]+)</h3>",
+          "title": "</h3></div><div class=\"nectar-list-item\" data-text-align=\"left\">\\s*([^,.<:]{3,80}(?::[^,.<]{2,90})?)\\s*[,.<]",
+          "time": "data-text-align=\"right\">\\s*(\\d{1,2}[.:]\\d{2})\\s*uur"
+        },
+        "skipTitle": "(?i)besloten|gesloten|bordspel|spelletjes"
+      },
+      "defaultPlace": {
+        "venue": "Brouwerij Martinus",
+        "city": "Groningen"
+      },
+      "kindHint": "muziek",
+      "note": "Agenda als lijst op /agenda/ (WordPress, robots.txt staat het toe), zonder jaartal. Onder de kop 'Afgelopen evenementen' staan oude uitjes zonder jaar; die zouden als volgend jaar gelezen worden. Daarom telt een kaartje alleen als die kop er nog na komt (lookahead in 'card'). De titel is het begin van de omschrijving tot de eerste komma of punt (alleen de naam). Bordspel-/spelletjesmiddagen vallen weg. Ook de concerten van Stichting Jazz in Groningen staan hier.",
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "carambole-winschoten-nl-web",
+      "name": "Grand Café Carambole",
+      "rootUrl": "https://www.carambole-winschoten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.carambole-winschoten.nl/agenda/",
+        "card": "<div class=\"col-sm-4 vevent\">",
+        "fields": {
+          "title": "<h2 class=\"summary\">(.*?)</h2>",
+          "date": "class=\"value-title\" title=\"(\\d{1,2}-\\d{1,2}-20\\d\\d)\"",
+          "url": "<a class=\"url flyerlink\" href=\"([^\"]+)\""
+        },
+        "skipTitle": "(?i)pubquiz|gesloten"
+      },
+      "defaultPlace": {
+        "venue": "Grand Café Carambole, Blijhamsterstraat 2",
+        "city": "Winschoten"
+      },
+      "kindHint": "muziek",
+      "note": "Grand café met eigen agenda (hCalendar 'vevent'-kaartjes): bluesmiddagen, tributebands, optredens. Pubquizzen vallen weg (café-routine).",
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "theaterpannenkoek-web",
+      "name": "Theater Pannenkoek",
+      "rootUrl": "https://www.theaterpannenkoek.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.theaterpannenkoek.nl/agenda/",
+        "card": "<tr data-datum=",
+        "fields": {
+          "date": "data-datum=\"(\\d{4}-\\d{2}-\\d{2})\"",
+          "time": "tp-tijd\">\\s*(\\d{1,2}[:.]\\d{2})",
+          "title": "tp-titel\">(?:<a[^>]*>)?([^<]+)",
+          "url": "tp-titel\"><a href=\"([^\"]+)\"",
+          "venue": "tp-locatie\">([^<,]+)",
+          "room": "tp-locatie\">([^<]+)"
+        },
+        "rooms": {
+          "musselkanaal": {
+            "city": "Musselkanaal"
+          },
+          "oude pekela": {
+            "city": "Oude Pekela"
+          },
+          "ter apel": {
+            "city": "Ter Apel"
+          },
+          "veendam": {
+            "city": "Veendam"
+          },
+          "loppersum": {
+            "city": "Loppersum"
+          },
+          "bedum": {
+            "city": "Bedum"
+          },
+          "marum": {
+            "city": "Marum"
+          },
+          "siddeburen": {
+            "city": "Siddeburen"
+          },
+          "winschoten": {
+            "city": "Winschoten"
+          },
+          "havezate roden": {
+            "city": "Roden"
+          },
+          "slochteren": {
+            "city": "Slochteren"
+          },
+          "coevorden": {
+            "city": "Coevorden"
+          },
+          "beilen": {
+            "city": "Beilen"
+          },
+          "westerbork": {
+            "city": "Westerbork"
+          },
+          "borger": {
+            "city": "Borger"
+          },
+          "uithuizen": {
+            "city": "Uithuizen"
+          },
+          "leens": {
+            "city": "Leens"
+          },
+          "wijert": {
+            "city": "Groningen"
+          }
+        }
+      },
+      "kindHint": "kinderen",
+      "note": "Kindertheater (2-8 jaar) dat speelt in bibliotheken, borgen en MFC's. De speellijst staat als tabel op /agenda/ (rijen <tr data-datum=...>, met titel, locatie en tijd). De plaats komt uit de locatie (rooms per plaatsnaam); een onbekende locatie krijgt geen plaats. Getest op 20 oktober 2026: 18 voorstellingen in oktober, waaronder Borg van Grunnsylvanie (Menkemaborg 28 okt, Verhildersum 31 okt). robots.txt staat alles toe.",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "groningsebibliotheken-oldambt-web",
+      "name": "Bibliotheken Oldambt",
+      "rootUrl": "https://ticketing.groningsebibliotheken.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://ticketing.groningsebibliotheken.nl/agenda/pagina/{page}/?p_id=7",
+        "maxPages": 12,
+        "card": "<div class=\"item-wrap col",
+        "fields": {
+          "title": "<h4[^>]*>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h4[^>]*>\\s*<a href=\"([^\"]+)\"",
+          "id": "data-id=\"(\\d+)\"",
+          "date": "<div class=\"item-date-box[^\"]*\"[^>]*>(.*?)</div>",
+          "time": "<span class=\"item-time\">\\s*([0-9:.]+)",
+          "end": "<span class=\"item-time\">\\s*[0-9:.]+\\s*-\\s*([0-9:.]+)",
+          "room": "<p class=\"location\">\\s*([^<]*?)\\s*<br"
+        },
+        "skipTitle": "digitaal caf|computerhulp|informatiepunt|taalhuis|hulp bij|klik ?& ?tik|mobiele bibliotheek|digitaal nalatenschap|handwerkcaf|quiltcaf|puzzelruil|studiekring|spreekuur|meet ?& ?greet|koffie en kiekjes|pietendansles|schrijfcaf",
+        "rooms": {
+          "bibliotheek winschoten": {
+            "venue": "Bibliotheek Winschoten",
+            "city": "Winschoten"
+          },
+          "bibliotheek finsterwolde": {
+            "venue": "Bibliotheek Finsterwolde",
+            "city": "Finsterwolde"
+          },
+          "bibliotheek midwolda/oostwold": {
+            "venue": "Bibliotheek Midwolda/Oostwold",
+            "city": "Oostwold"
+          }
+        },
+        "roomFallback": {
+          "city": "Winschoten"
+        },
+        "genres": {}
+      },
+      "defaultPlace": {
+        "city": "Winschoten"
+      },
+      "note": "Zelfde agenda en instelling als Bibliotheken Westerwolde, alleen p_id=7 (Oldambt). Getest op 20 oktober 2026 met collector/html_cards.py (31 resp. 29 uitjes op 3 pagina's); Crawl-delay 10 wordt gewacht.",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "groningsebibliotheken-stadskanaal-web",
+      "name": "Bibliotheken Stadskanaal",
+      "rootUrl": "https://ticketing.groningsebibliotheken.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://ticketing.groningsebibliotheken.nl/agenda/pagina/{page}/?p_id=9",
+        "maxPages": 12,
+        "card": "<div class=\"item-wrap col",
+        "fields": {
+          "title": "<h4[^>]*>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h4[^>]*>\\s*<a href=\"([^\"]+)\"",
+          "id": "data-id=\"(\\d+)\"",
+          "date": "<div class=\"item-date-box[^\"]*\"[^>]*>(.*?)</div>",
+          "time": "<span class=\"item-time\">\\s*([0-9:.]+)",
+          "end": "<span class=\"item-time\">\\s*[0-9:.]+\\s*-\\s*([0-9:.]+)",
+          "room": "<p class=\"location\">\\s*([^<]*?)\\s*<br"
+        },
+        "skipTitle": "digitaal caf|computerhulp|informatiepunt|taalhuis|hulp bij|klik ?& ?tik|mobiele bibliotheek|digitaal nalatenschap|handwerkcaf|quiltcaf|puzzelruil|studiekring|spreekuur|meet ?& ?greet|koffie en kiekjes|pietendansles|schrijfcaf",
+        "rooms": {
+          "bibliotheek stadskanaal": {
+            "venue": "Bibliotheek Stadskanaal",
+            "city": "Stadskanaal"
+          },
+          "bibliotheek musselkanaal": {
+            "venue": "Bibliotheek Musselkanaal",
+            "city": "Musselkanaal"
+          },
+          "bibliotheek onstwedde": {
+            "venue": "Bibliotheek Onstwedde",
+            "city": "Onstwedde"
+          }
+        },
+        "roomFallback": {
+          "city": "Stadskanaal"
+        },
+        "genres": {}
+      },
+      "defaultPlace": {
+        "city": "Stadskanaal"
+      },
+      "note": "Zelfde agenda en instelling als Bibliotheken Westerwolde, alleen p_id=9 (Stadskanaal). Getest op 20 oktober 2026 met collector/html_cards.py (31 resp. 29 uitjes op 3 pagina's); Crawl-delay 10 wordt gewacht.",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "parkzicht-veendam-web",
+      "name": "Brouwhotel Parkzicht",
+      "rootUrl": "https://www.parkzicht.com/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.parkzicht.com/agenda/",
+        "card": "<div class=\"agendadatum",
+        "fields": {
+          "date": "agendadatum[^>]*>\\s*<a[^>]*>(.*?)</a>",
+          "title": "agendaitemtitle[^>]*>\\s*<a[^>]*>\\s*([^<]+?)\\s*</a>",
+          "url": "agendadatum[^>]*>\\s*<a href=\"([^\"]+)\""
+        },
+        "genres": {},
+        "skipTitle": "easytoys"
+      },
+      "defaultPlace": {
+        "venue": "Brouwhotel Parkzicht",
+        "city": "Veendam"
+      },
+      "note": "Brouwhotel Parkzicht (Museumplein 3, Veendam; parkzicht.com, niet hotelparkzicht.nl = Eindhoven). Agenda met kaartjes op /agenda/ (datum '24 Oct' zonder jaar, <base href> aanwezig). Getest op 20 oktober 2026: 13 uitjes (dinnershows, tributes, X-Mass parties, bierfestival). 'EasyToys Ladies Bingo' wordt overgeslagen. robots.txt bestaat niet (404) = welkom.",
+      "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "lycurgus-web",
+      "name": "Lycurgus Groningen (volleybal, eredivisie)",
+      "rootUrl": "https://www.lycurgus.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.lycurgus.nl/wedstrijden/",
+        "card": "<td data-label=\"Datum\">",
+        "fields": {
+          "date": "data-label=\"Datum\">\\s*([0-9]{2}-[0-9]{2}-[0-9]{4})",
+          "time": "data-label=\"Tijd\">\\s*([0-9]{1,2}:[0-9]{2})",
+          "title": "data-label=\"Thuis\">\\s*(Lycurgus Groningen)\\s*<",
+          "extra": "data-label=\"Uit\">\\s*([^<]+?)\\s*<",
+          "room": "data-label=\"Locatie\">\\s*([^<]+?)\\s*<"
+        },
+        "rooms": {
+          "alfa-college": {
+            "venue": "Alfa-college Sportcentrum",
+            "city": "Groningen"
+          }
+        },
+        "genres": {},
+        "skipTitle": "^Lycurgus Groningen$"
+      },
+      "defaultPlace": {
+        "venue": "Alfa-college Sportcentrum",
+        "city": "Groningen"
+      },
+      "kindHint": "sport",
+      "note": "Volleybal-eredivisie (topsport, geen amateurcompetitie). Het wedstrijdprogramma staat als tabel op /wedstrijden/; alleen thuiswedstrijden (kolom 'Thuis' = Lycurgus Groningen) in het Alfa-college Sportcentrum, Kardingerweg 48. Uitwedstrijden vallen weg (skipTitle). Kaartverkoop (cm.com) wordt niet gelezen. Getest op 20 oktober 2026: 7 thuiswedstrijden tot februari 2027.",
+      "policyReviewedAt": "2026-10-20"
     }
   ]
 }
