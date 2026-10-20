@@ -25,10 +25,13 @@ Alleen feiten: naam, datum en tijd, zaal, soort en link. Geen teksten. robots.tx
 from __future__ import annotations
 
 import re
+import threading
+import time
+from collections import defaultdict
 from datetime import date
 from html import unescape
 from typing import Callable
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from collector.json_api_events import with_param
 from collector.site_crawler import USER_AGENT, _load_robots, default_fetch
@@ -75,6 +78,9 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
     fallback = config.get("roomFallback") if isinstance(config.get("roomFallback"), dict) else None
     genres = config.get("genres") if isinstance(config.get("genres"), dict) else {}
     rooms = config.get("rooms") if isinstance(config.get("rooms"), dict) else {}
+    # Relatieve links gelden vanaf <base href="..."> als de pagina die heeft (City Club Winschoten).
+    base = re.search(r"<base\s[^>]*href=[\"']([^\"']+)", html, re.I)
+    link_base = urljoin(page_url, base.group(1)) if base else page_url
     out: list[RawEvent] = []
     seen: set[tuple] = set()
     for card in split_cards(html, config.get("card") or r"<article\b"):
@@ -103,9 +109,11 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
         if end and not re.match(r"20\d{2}-\d{2}-\d{2}", end):
             end_time = parse_when(start[:10], end, today=today)
             end = end_time if end_time and "T" in end_time else ""
-        if not end:
-            # Een periode in de datum ('17 okt t/m 18 okt 2026'): het uitje loopt tot en met de laatste dag.
-            end = parse_end_day(_clean(_field(card, fields.get("date"))), start) or ""
+        # Een periode in de datum ('17 okt t/m 18 okt 2026'): het uitje loopt tot en met de laatste dag,
+        # ook als er een eindtijd per dag bij staat (een tentoonstelling van 10.00 tot 17.00).
+        period = parse_end_day(_clean(_field(card, fields.get("date"))), start)
+        if period and (not end or end[:10] == start[:10]):
+            end = period
         link = _clean(_field(card, fields.get("url")))
         if skip_url and link and skip_url.search(link):
             continue
@@ -127,7 +135,7 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
         out.append(RawEvent(
             source_name=source_name,
             source_type="structured_web",
-            source_url=urljoin(page_url, link) if link else page_url,
+            source_url=urljoin(link_base, link) if link else page_url,
             source_id=_clean(_field(card, fields.get("id"))) or None,
             title=title,
             start_at=start,
@@ -144,6 +152,12 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
     return out
 
 
+# Twee bronnen op dezelfde website (de bibliotheek per gemeente) wachten op elkaar, zodat de Crawl-delay per
+# website geldt en niet per bron.
+_HOST_LOCKS: defaultdict[str, threading.Lock] = defaultdict(threading.Lock)
+_HOST_LAST: dict[str, float] = {}
+
+
 def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
           page_fetch: Callable = default_fetch, today: date | None = None) -> list[RawEvent]:
     endpoint = str(config.get("endpointUrl") or "")
@@ -157,9 +171,24 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
         urls = [endpoint.replace("{page}", str(n)) for n in pages]
     else:
         urls = [endpoint] if not param else [with_param(endpoint, param, n) for n in pages]
+    # Vraagt robots.txt om tijd tussen twee pagina's (Crawl-delay), dan wachten we die (hooguit 15 seconden).
+    delay = min(float(robots.crawl_delay(USER_AGENT) or 0), 15.0)
+    host = urlparse(endpoint).netloc.lower()
+    if not delay:
+        return _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, host, 0.0)
+    with _HOST_LOCKS[host]:
+        return _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, host, delay)
+
+
+def _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, host, delay) -> list[RawEvent]:
     out: list[RawEvent] = []
     seen_pages: set[str] = set()
     for url in urls:
+        if delay:
+            wait = delay - (time.monotonic() - _HOST_LAST.get(host, float("-inf")))
+            if wait > 0:
+                time.sleep(wait)
+            _HOST_LAST[host] = time.monotonic()
         if not robots.can_fetch(USER_AGENT, url):
             raise PermissionError(f"robots.txt staat {url} niet toe" + (f" ({robots.uitnu_reason})" if getattr(robots, "uitnu_reason", None) else ""))
         page = page_fetch(url, timeout=timeout)
