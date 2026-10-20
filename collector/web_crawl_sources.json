@@ -71,7 +71,7 @@
           "date": "<h6 class=\"date\">(.*?)</h6>",
           "tags": "<div class=\"labels\">(.*?)</div>"
         },
-        "skipTitle": "\\((?:19|20)\\d\\d\\)\\s*$|voorlichtingsbijeenkomst|promotiedagen|loods of stock|ondernemingsprijs|martiniplaza connect|tech to the future|fem\\.event",
+        "skipTitle": "\\((?:19|20)\\d\\d\\)\\s*$|voorlichtingsbijeenkomst|promotiedagen|loods of stock|ondernemingsprijs|martiniplaza connect|tech to the future|fem\\.event|symposium",
         "skipTags": "congres",
         "genres": {
           "musical": "TheaterEvent",

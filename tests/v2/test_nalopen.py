@@ -82,8 +82,16 @@ def test_concerten_op_dezelfde_avond_in_een_grote_zaal_blijven_apart():
     assert len(out) == 4
     same = merge_same_venue([ev("HAEVN", "https://s.nl/e"), ev("HAEVN – + support: Ilse", "https://t.nl/e")])
     assert len(same) == 1
+    # De naam van de plek telt niet als gedeeld woord ('Drents-Friese Wold').
+    def wold(title, url):
+        e = ev(title, url)
+        e["venue"] = {"name": "Drents-Friese Wold", "city": "Appelscha"}
+        return e
+    assert len(merge_same_venue([wold("Workshop natuurjournalen Drents-Friese Wold", "https://n.nl/a"),
+                                 wold("Roofvogel fietstocht in het Drents-Friese Wold", "https://n.nl/b")])) == 2
 
 
 def test_cabaret_met_striptease_in_de_naam_is_geen_stripshow():
     assert not not_an_outing(_event("David Linszen – Striptease Van De Dood"))
-    assert not_an_outing(_event("Striptease show met strippers"))
+    for title in ("Striptease show met strippers", "Male striptease", "Striptease-avond", "Ladies night striptease"):
+        assert not_an_outing(_event(title)), title

@@ -251,8 +251,9 @@ _STOPWORDS = {"de", "het", "een", "en", "van", "in", "op", "te", "bij", "aan", "
               "support", "live", "feat", "presenteert", "presents"}
 
 
-def _title_words(title: str, city: str) -> set[str]:
-    city_words = set(slugify(city or "").split("-"))
+def _title_words(title: str, city: str, venue: str = "") -> set[str]:
+    # De plaats en de naam van de plek zelf zeggen niets over welk uitje het is ('Drents-Friese Wold').
+    city_words = set(slugify(city or "").split("-")) | set(slugify(venue or "").split("-"))
     return {w for w in slugify(title).split("-")
             if len(w) > 2 and not w.isdigit() and w not in _STOPWORDS and w not in city_words}
 
@@ -292,10 +293,10 @@ def merge_same_venue(events: list[dict]) -> list[dict]:
         key = _venue_key(event)
         twin = None
         if key:
-            words = _title_words(event["title"], event["venue"].get("city"))
+            words = _title_words(event["title"], event["venue"].get("city"), event["venue"].get("name"))
             for other in result:
                 if (_venue_key(other) == key and _same_slot(other, event)
-                        and _same_name(words, _title_words(other["title"], other["venue"].get("city")))):
+                        and _same_name(words, _title_words(other["title"], other["venue"].get("city"), other["venue"].get("name")))):
                     twin = other
                     break
         if twin is None:
