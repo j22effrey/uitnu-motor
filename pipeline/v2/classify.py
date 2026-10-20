@@ -387,7 +387,7 @@ VENUE_PAGE = re.compile(r"/(?:locations?|locaties?|venues?)/([^/]+)/?$")
 # De rubriek in de link van een uitje ("/cursusprogramma/..."): zo deelt de organisator zelf in.
 URL_KINDS: list[tuple[str, re.Pattern[str]]] = [
     ("lezing", re.compile(r"cursus|workshop|lezing")),
-    ("film", re.compile(r"^films?$|filmhuis|bioscoop")),
+    ("film", re.compile(r"^films?$|filmhuis|bioscoop|^bios$|^cinema$")),
     ("theater", re.compile(r"theater|voorstelling")),
     ("muziek", re.compile(r"concert|muziek")),
     ("kunst", re.compile(r"tentoonstelling|exposities?$")),
@@ -547,6 +547,11 @@ def classify(event: dict, overrides: dict | None = None,
     # 2b. Een podium zegt zelf dat het een voorstelling, concert of film is: dat gaat voor een los trefwoord
     # over eten, natuur, sport of lezing in de titel ('Claudia de Breij', 'Oersoep', 'Amber Run').
     schema_kind = SCHEMA_KIND_HINTS.get(str(event.get("schemaType") or ""))
+    section = url_section(event.get("url"))
+    # Een film in de rubriek '/bios/' blijft een film, ook als de zaal elk uitje een TheaterEvent noemt
+    # (De Nieuwe Kolk, 20 oktober 2026).
+    if section and section[0] == "film" and event.get("schemaType") == "TheaterEvent":
+        schema_kind = None
     first = next((k for k in PRIORITY if k in found), None)
     if schema_kind in PERFORMANCE_KINDS and first in WEAK_KEYWORD_KINDS:
         return result(schema_kind, "organisator",
@@ -562,7 +567,6 @@ def classify(event: dict, overrides: dict | None = None,
     # 3. Wat de organisator zelf op de pagina van het uitje zet
     if schema_kind:
         return result(schema_kind, "organisator", f"de organisator noemt het een {event['schemaType']}", 0.75)
-    section = url_section(event.get("url"))
     # Een film in de rubriek '/film/' van de bioscoop blijft een film, ook als de pagina 'komedie' of 'band' zegt.
     if section and section[0] == "film":
         return result("film", "organisator", f"de organisator zet het in de rubriek '{section[1]}'", 0.7)
