@@ -9970,6 +9970,29 @@
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Tolbert%2C_de_Hervormde_Kerk_RM23985_foto2_2015-05-10_16.11.jpg/1280px-Tolbert%2C_de_Hervormde_Kerk_RM23985_foto2_2015-05-10_16.11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q3078677"
   },
+  "plaats:twijzelerheide": {
+   "checkedAt": "2026-10-21",
+   "photos": [
+    {
+     "author": "Willemjans",
+     "file": "File:Twijzelerheide Klokkenstoel 1157.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Twijzelerheide_Klokkenstoel_1157.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Twijzelerheide_Klokkenstoel_1157.JPG/1280px-Twijzelerheide_Klokkenstoel_1157.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Theun",
+     "file": "File:Swadde twijzelerheide.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Swadde_twijzelerheide.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Swadde_twijzelerheide.JPG/1280px-Swadde_twijzelerheide.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Twijzelerheide_Klokkenstoel_1157.JPG/1280px-Twijzelerheide_Klokkenstoel_1157.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "wikidata": "Q630597"
+  },
   "plaats:tzum": {
    "checkedAt": "2026-10-13",
    "photos": [
@@ -12381,6 +12404,10 @@
    "checkedAt": "2026-10-14",
    "url": null
   },
+  "plek:bonifatiuskerk|vries": {
+   "checkedAt": "2026-10-21",
+   "url": null
+  },
   "plek:borg verhildersum|leens": {
    "checkedAt": "2026-10-21",
    "photos": [
@@ -12450,6 +12477,10 @@
   },
   "plek:brink|zuidlaren": {
    "checkedAt": "2026-10-19",
+   "url": null
+  },
+  "plek:brouwdok buitendijks|harlingen": {
+   "checkedAt": "2026-10-21",
    "url": null
   },
   "plek:buismanskoai piaam|piaam": {
@@ -12729,6 +12760,14 @@
   },
   "plek:de pompel overschild|steendam": {
    "checkedAt": "2026-10-13",
+   "url": null
+  },
+  "plek:de poort|winsum": {
+   "checkedAt": "2026-10-21",
+   "url": null
+  },
+  "plek:de postwagen posta7|tolbert": {
+   "checkedAt": "2026-10-21",
    "url": null
   },
   "plek:de postwagen tolbert|tolbert": {
@@ -13016,6 +13055,61 @@
    "checkedAt": "2026-10-19",
    "url": null
   },
+  "plek:doopsgezinde kerk|groningen": {
+   "checkedAt": "2026-10-21",
+   "photos": [
+    {
+     "author": "CWKramer",
+     "file": "File:Groningen Oude Boteringestraat 33.JPG",
+     "license": "CC BY-SA 3.0 nl",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen_Oude_Boteringestraat_33.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Groningen_Oude_Boteringestraat_33.JPG/1280px-Groningen_Oude_Boteringestraat_33.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "G.Th. Delemarre",
+     "file": "File:Exterieur naar het noord-westen - Groningen - 20093193 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_naar_het_noord-westen_-_Groningen_-_20093193_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Exterieur_naar_het_noord-westen_-_Groningen_-_20093193_-_RCE.jpg/1280px-Exterieur_naar_het_noord-westen_-_Groningen_-_20093193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Hardscarf",
+     "file": "File:Groningen - doopsgezinde kerk - interieur (1).jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen_-_doopsgezinde_kerk_-_interieur_(1).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Groningen_-_doopsgezinde_kerk_-_interieur_%281%29.jpg/1280px-Groningen_-_doopsgezinde_kerk_-_interieur_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Hardscarf",
+     "file": "File:Groningen - doopsgezinde kerk - interieur (2).jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen_-_doopsgezinde_kerk_-_interieur_(2).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Groningen_-_doopsgezinde_kerk_-_interieur_%282%29.jpg/1280px-Groningen_-_doopsgezinde_kerk_-_interieur_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Hardscarf",
+     "file": "File:Groningen - doopsgezinde kerk - interieur (3).jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Groningen_-_doopsgezinde_kerk_-_interieur_(3).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Groningen_-_doopsgezinde_kerk_-_interieur_%283%29.jpg/1280px-Groningen_-_doopsgezinde_kerk_-_interieur_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "G.Th. Delemarre",
+     "file": "File:Interieur naar het oosten - Groningen - 20093195 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Interieur_naar_het_oosten_-_Groningen_-_20093195_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Interieur_naar_het_oosten_-_Groningen_-_20093195_-_RCE.jpg/1280px-Interieur_naar_het_oosten_-_Groningen_-_20093195_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Groningen_Oude_Boteringestraat_33.JPG/1280px-Groningen_Oude_Boteringestraat_33.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "wikidata": "Q2584803"
+  },
   "plek:dorp grou|grou": {
    "checkedAt": "2026-10-19",
    "url": null
@@ -13176,6 +13270,10 @@
   },
   "plek:evangelische gemeente de rank|groningen": {
    "checkedAt": "2026-10-13",
+   "url": null
+  },
+  "plek:evenemententerrein leek|leek": {
+   "checkedAt": "2026-10-21",
    "url": null
   },
   "plek:fabrykswei|oosterend": {
@@ -13969,6 +14067,61 @@
    "checkedAt": "2026-10-14",
    "url": null
   },
+  "plek:jacobikerk|appingedam": {
+   "checkedAt": "2026-10-21",
+   "photos": [
+    {
+     "author": "Gouwenaar",
+     "file": "File:Jacobikerk Uithuizen.jpg",
+     "license": "Public domain",
+     "licenseUrl": null,
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Jacobikerk_Uithuizen.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Jacobikerk_Uithuizen.jpg/1280px-Jacobikerk_Uithuizen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Exterieur OOSTGEVEL - Uithuizen - 20281455 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_OOSTGEVEL_-_Uithuizen_-_20281455_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Exterieur_OOSTGEVEL_-_Uithuizen_-_20281455_-_RCE.jpg/1280px-Exterieur_OOSTGEVEL_-_Uithuizen_-_20281455_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Exterieur ZUIDGEVEL - Uithuizen - 20281453 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_ZUIDGEVEL_-_Uithuizen_-_20281453_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Exterieur_ZUIDGEVEL_-_Uithuizen_-_20281453_-_RCE.jpg/1280px-Exterieur_ZUIDGEVEL_-_Uithuizen_-_20281453_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "A. J. van der Wal",
+     "file": "File:Exterieur ZUIDGEVEL - Uithuizen - 20281454 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_ZUIDGEVEL_-_Uithuizen_-_20281454_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Exterieur_ZUIDGEVEL_-_Uithuizen_-_20281454_-_RCE.jpg/1280px-Exterieur_ZUIDGEVEL_-_Uithuizen_-_20281454_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Unknown author Unknown author",
+     "file": "File:Kerk vanuit het noorden - Uithuizen - 20211155 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Kerk_vanuit_het_noorden_-_Uithuizen_-_20211155_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Kerk_vanuit_het_noorden_-_Uithuizen_-_20211155_-_RCE.jpg/1280px-Kerk_vanuit_het_noorden_-_Uithuizen_-_20211155_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Unknown author Unknown author",
+     "file": "File:Kerk vanuit het zuid-oosten - Uithuizen - 20211156 - RCE.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Kerk_vanuit_het_zuid-oosten_-_Uithuizen_-_20211156_-_RCE.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Kerk_vanuit_het_zuid-oosten_-_Uithuizen_-_20211156_-_RCE.jpg/1280px-Kerk_vanuit_het_zuid-oosten_-_Uithuizen_-_20211156_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Jacobikerk_Uithuizen.jpg/1280px-Jacobikerk_Uithuizen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "wikidata": "Q2663160"
+  },
   "plek:jacobikerk|uithuizen": {
    "checkedAt": "2026-10-14",
    "photos": [
@@ -14152,6 +14305,10 @@
   },
   "plek:kielzog|hoogezand": {
    "checkedAt": "2026-10-19",
+   "url": null
+  },
+  "plek:kinderboekenhuis|winsum": {
+   "checkedAt": "2026-10-21",
    "url": null
   },
   "plek:kinepolis emmen filmhuis emmen|emmen": {
@@ -14341,6 +14498,10 @@
   },
   "plek:lichtfontein|appelscha": {
    "checkedAt": "2026-10-14",
+   "url": null
+  },
+  "plek:literair cafe de graanrepubliek|groningen": {
+   "checkedAt": "2026-10-21",
    "url": null
   },
   "plek:liudgertsjerke|ferwerd": {
@@ -14725,6 +14886,10 @@
    "checkedAt": "2026-10-20",
    "url": null
   },
+  "plek:museum helmantel|westeremden": {
+   "checkedAt": "2026-10-21",
+   "url": null
+  },
   "plek:museum joure|joure": {
    "checkedAt": "2026-10-14",
    "photos": [
@@ -14784,6 +14949,10 @@
    "checkedAt": "2026-10-14",
    "url": null
   },
+  "plek:museum m hlmann muzeheerd|appingedam": {
+   "checkedAt": "2026-10-21",
+   "url": null
+  },
   "plek:museum proefkolonie frederiksoord|frederiksoord": {
    "checkedAt": "2026-10-13",
    "url": null
@@ -14794,6 +14963,10 @@
   },
   "plek:museum t kiekhuus|wolvega": {
    "checkedAt": "2026-10-14",
+   "url": null
+  },
+  "plek:museum termunterzijl|termunterzijl": {
+   "checkedAt": "2026-10-21",
    "url": null
   },
   "plek:museum van de streek|stadskanaal": {
@@ -15016,6 +15189,21 @@
    "checkedAt": "2026-10-14",
    "url": null
   },
+  "plek:noord nederlands trein tram museum|zuidbroek": {
+   "checkedAt": "2026-10-21",
+   "photos": [
+    {
+     "author": "Spoorjan",
+     "file": "File:NNTM 2014-III.JPG",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:NNTM_2014-III.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/NNTM_2014-III.JPG/1280px-NNTM_2014-III.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/NNTM_2014-III.JPG/1280px-NNTM_2014-III.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "wikidata": "Q18326395"
+  },
   "plek:noorderlicht|groningen": {
    "checkedAt": "2026-10-13",
    "url": null
@@ -15178,6 +15366,10 @@
    "checkedAt": "2026-10-14",
    "url": null
   },
+  "plek:posta7|tolbert": {
+   "checkedAt": "2026-10-21",
+   "url": null
+  },
   "plek:prinsentheater|groningen": {
    "checkedAt": "2026-10-19",
    "url": null
@@ -15271,6 +15463,10 @@
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/SimplonGroningen.png/1280px-SimplonGroningen.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q2795688"
   },
+  "plek:sinnige stee naast sporthal de brug|groningen": {
+   "checkedAt": "2026-10-21",
+   "url": null
+  },
   "plek:sint piterkerk|grou": {
    "checkedAt": "2026-10-15",
    "url": null
@@ -15338,8 +15534,16 @@
    "checkedAt": "2026-10-14",
    "url": null
   },
+  "plek:stadskantoor appingedam|appingedam": {
+   "checkedAt": "2026-10-21",
+   "url": null
+  },
   "plek:stadslab groningen|groningen": {
    "checkedAt": "2026-10-19",
+   "url": null
+  },
+  "plek:stadspark|groningen": {
+   "checkedAt": "2026-10-21",
    "url": null
   },
   "plek:stadsschouwburg de harmonie|leeuwarden": {
@@ -15557,6 +15761,10 @@
   },
   "plek:t hoekje|ferwerd": {
    "checkedAt": "2026-10-15",
+   "url": null
+  },
+  "plek:t hoeske van opoe iet|delfzijl": {
+   "checkedAt": "2026-10-21",
    "url": null
   },
   "plek:t kleine kerkje|gieterveen": {
@@ -15822,6 +16030,21 @@
    ],
    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Fortbourtange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "wikidata": "Q5470838"
+  },
+  "plek:vestingmuseum oudeschans|oudeschans": {
+   "checkedAt": "2026-10-21",
+   "photos": [
+    {
+     "author": "Editør",
+     "file": "File:Vestingmuseum Oudeschans.jpg",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:Vestingmuseum_Oudeschans.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Vestingmuseum_Oudeschans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    }
+   ],
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Vestingmuseum_Oudeschans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "wikidata": "Q15961660"
   },
   "plek:vipassana meditatiecentrum groningen|groningen": {
    "checkedAt": "2026-10-14",
@@ -19784,6 +20007,11 @@
    "image": null,
    "via": null
   },
+  "https://dorpshuislekkum.nl/index.php/agenda/evenementdetail/2655/-/koffieochtend": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
   "https://dorpshuislekkum.nl/index.php/agenda/evenementdetail/2681/-/toneel-oefenavond": {
    "checkedAt": "2026-10-17",
    "image": null,
@@ -21408,6 +21636,15 @@
    "image": "https://a.storyblok.com/f/286043840377434/1365x2048/cee6c16469/2026-01-30-fixy-misfit-ravi-steneker-1.jpg",
    "type": "MusicEvent",
    "via": "schema.org"
+  },
+  "https://flal.nl/evenement/n-daam-en-dieken-wandeltocht/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "sport",
+    "woord": "40 km"
+   },
+   "image": null,
+   "via": null
   },
   "https://flal.nl/evenement/tusken-bosken-en-wetter-wandeltocht/": {
    "checkedAt": "2026-10-21",
@@ -24865,6 +25102,15 @@
    "image": null,
    "via": null
   },
+  "https://groningensaxfest.com/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "masterclass"
+   },
+   "image": "https://groningensaxfest.com/assets/og-image.png",
+   "via": "og:image"
+  },
   "https://grootegast.nl/agenda/grootegast-xtreme/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -25933,6 +26179,11 @@
    "image": "https://kaatsmuseum.nl/wp-content/uploads/2026/05/Tentoonstelling-2026.webp",
    "via": "og:image"
   },
+  "https://kamerkoordualis.nl/concertagenda/": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/allerzielen-2026/13717/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
    "image": null,
@@ -25980,6 +26231,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/dokwerk-saxophone-quartet/13809/-/-/-/-/4": {
    "checkedAt": "2026-10-20",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/ensemble-pynarello/13808/-/-/-/-/2": {
+   "checkedAt": "2026-10-21",
    "image": null,
    "via": null
   },
@@ -26060,6 +26316,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/ubbegas-verhaal-een-tijdloze-reis/13789/-/-/-/-/0": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/ubbegas-verhaal-een-tijdloze-reis/13790/-/-/-/-/1": {
+   "checkedAt": "2026-10-21",
    "image": null,
    "via": null
   },
@@ -29995,6 +30256,16 @@
    "image": "https://opmaarhuizen.nl/img/containers/social_images/boerderij-met-kippen---stella-dekker.jpg/6f6736cdc687482126fd2eb4ca20850c.jpg",
    "via": "og:image"
   },
+  "https://opmaarhuizen.nl/bat-human": {
+   "checkedAt": "2026-10-21",
+   "image": "https://opmaarhuizen.nl/img/containers/social_images/boerderij-met-kippen---stella-dekker.jpg/6f6736cdc687482126fd2eb4ca20850c.jpg",
+   "via": "og:image"
+  },
+  "https://opmaarhuizen.nl/de-skkw-presenteert-joost-botman-en-jos-kolenberg": {
+   "checkedAt": "2026-10-21",
+   "image": "https://opmaarhuizen.nl/img/containers/social_images/boerderij-met-kippen---stella-dekker.jpg/6f6736cdc687482126fd2eb4ca20850c.jpg",
+   "via": "og:image"
+  },
   "https://opmaarhuizen.nl/familiegeheimen": {
    "checkedAt": "2026-10-21",
    "image": "https://opmaarhuizen.nl/img/containers/social_images/boerderij-met-kippen---stella-dekker.jpg/6f6736cdc687482126fd2eb4ca20850c.jpg",
@@ -30003,6 +30274,11 @@
   "https://opmaarhuizen.nl/herfstdiner": {
    "checkedAt": "2026-10-21",
    "image": "https://opmaarhuizen.nl/img/containers/social_images/stancephotography_-lisette&matthijs-497.jpg/647f7a1127d55edd2c47fbd5e2fe1629.jpg",
+   "via": "og:image"
+  },
+  "https://opmaarhuizen.nl/them-dirty-dimes": {
+   "checkedAt": "2026-10-21",
+   "image": "https://opmaarhuizen.nl/img/containers/social_images/boerderij-met-kippen---stella-dekker.jpg/6f6736cdc687482126fd2eb4ca20850c.jpg",
    "via": "og:image"
   },
   "https://overentinghe.nl/evenementen/5ritmes-dans/2026-10-18/": {
@@ -30679,6 +30955,15 @@
    "image": null,
    "via": null
   },
+  "https://plantsoenloop.nl/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "sport",
+    "woord": "loop"
+   },
+   "image": null,
+   "via": null
+  },
   "https://podium34.nl/events/ep-release-nina-bailey/": {
    "checkedAt": "2026-10-17",
    "image": "https://podium34.nl/wp-content/uploads/2026/10/IMG_2745.jpg",
@@ -30716,6 +31001,24 @@
     "woord": "gitarist"
    },
    "image": "https://podiumverwondering.nl/wp-content/uploads/2026/09/Affiche-Liam-Grant-Glenn-Jones.jpg",
+   "via": "schema.org"
+  },
+  "https://podiumverwondering.nl/event/grace-elizabeth-harvey/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "literatuur"
+   },
+   "image": "https://podiumverwondering.nl/wp-content/uploads/2026/09/Affiche-Grace-Elizabeth-Harvey.jpg",
+   "via": "schema.org"
+  },
+  "https://podiumverwondering.nl/event/sole-fiesta/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "muziek",
+    "woord": "zingen"
+   },
+   "image": "https://podiumverwondering.nl/wp-content/uploads/2026/09/Affiche-Sole-Fiesta.jpg",
    "via": "schema.org"
   },
   "https://podiumverwondering.nl/event/thom-gerrits/": {
@@ -31578,6 +31881,11 @@
    "image": "https://sliekerfilm.nl/app/uploads/2022/07/Slieker_gebouw-bcca.jpg",
    "via": "og:image"
   },
+  "https://sliekerfilm.nl/film/all-of-a-sudden/": {
+   "checkedAt": "2026-10-21",
+   "image": "https://sliekerfilm.nl/app/uploads/2026/09/ALL-of-a-sudden.jpg",
+   "via": "og:image"
+  },
   "https://sliekerfilm.nl/film/amarga-navidad/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -31696,6 +32004,11 @@
   "https://sliekerfilm.nl/film/naza/": {
    "checkedAt": "2026-10-13",
    "image": "https://sliekerfilm.nl/app/uploads/2026/09/Naza_ps_1_jpg_sd-high-scaled.jpg",
+   "via": "og:image"
+  },
+  "https://sliekerfilm.nl/film/primetime/": {
+   "checkedAt": "2026-10-21",
+   "image": "https://sliekerfilm.nl/app/uploads/2026/09/Primetime_ps_1_jpg_sd-low.jpg",
    "via": "og:image"
   },
   "https://sliekerfilm.nl/film/sense-and-sensibility/": {
@@ -32051,6 +32364,11 @@
    "image": null,
    "via": null
   },
+  "https://stichtingjazzingroningen.nl/events/": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
   "https://stiens.frl/evenement/beleefdag/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -32384,6 +32702,11 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8406",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/762507/Maakplaats:-eLAB-op-woensdag.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8550",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/762551/Maakplaats:-eLAB-op-woensdag.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8551",
@@ -32392,6 +32715,16 @@
   "https://ticketing.groningsebibliotheken.nl/inschrijven/762552/Maakplaats:-eLAB-op-woensdag.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8551",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/762579/Bieb-Vibes:-Oplap-&-Cosplay-atelier.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7656",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/762590/Bieb-Vibes:-Techclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7657",
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/768385/Taalondersteuning-vrouwengroep.html": {
@@ -32404,9 +32737,39 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=6672",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768387/Taalondersteuning-vrouwengroep.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=6672",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768388/Taalondersteuning-vrouwengroep.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=6672",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/768545/Teken--en-schilderclub.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8484",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768546/Teken--en-schilderclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8484",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768547/Teken--en-schilderclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8484",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768684/Teken--en-schilderclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768685/Teken--en-schilderclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/772634/Microscopenmiddag.html": {
@@ -32451,7 +32814,30 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8180",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772814/Mantelzorg-&-Ontmoeting.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7112",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/772850/Damles-breintraining.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "sport",
+    "woord": "dammen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7325",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772851/Damles-breintraining.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "sport",
+    "woord": "dammen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7325",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772852/Damles-breintraining.html": {
    "checkedAt": "2026-10-21",
    "hints": {
     "soort": "sport",
@@ -32478,7 +32864,35 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=1770",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772918/Haak-en-breiclub.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "handwerk"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=1770",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772919/Haak-en-breiclub.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "handwerk"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=1770",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/772927/Tekenclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772928/Tekenclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772929/Tekenclub.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
    "via": "og:image"
@@ -32565,7 +32979,35 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=5932",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/773642/Het-leukste-uurtje-van-de--week.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "verhalen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=5932",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/773643/Het-leukste-uurtje-van-de--week.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "verhalen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=5932",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/773947/Seniorweb.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8528",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/773948/Seniorweb.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8528",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/773949/Seniorweb.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8528",
    "via": "og:image"
@@ -32588,6 +33030,57 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8500",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774106/Breinbieb-lezing:-Sociale-cognitiestoornissen-bij-neurologische-aandoeningen.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8539",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774117/Lunchlezing-met-Sanne-Meijer.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "lezing"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8529",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774118/Schrijfworkshop-met-Lilian-Zielstra.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8530",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774119/Workshop-raadplegen-van-digitale-bronnen.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8533",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774120/Schilderen-op-oude-foto's.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8542",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774139/Lunchlezing-met-Sanne-Meijer.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "lezing"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8529",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774140/Draken&Dobbelstenen.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8552",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774173/Workshop-Delpher.html": {
    "checkedAt": "2026-10-20",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8559",
@@ -32600,6 +33093,11 @@
     "woord": "workshop"
    },
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8561",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774181/Schermen-in-het-gezin:-hoe-vind-je-de-balans?.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8564",
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774210/Schrijfworkshop-met-Lilian-Zielstra.html": {
@@ -32647,7 +33145,26 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8582",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774286/Knutsel--en-tekenclub-voor-kinderen.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "kinderen",
+    "woord": "knutsel"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8595",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774319/Tekenclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7543",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774320/Tekenclub.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7543",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774321/Tekenclub.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7543",
    "via": "og:image"
@@ -32661,6 +33178,49 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8096",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774330/Keuvel,-Kovvie-en-bordspelletjes.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "feest",
+    "woord": "spellen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8096",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774331/Keuvel,-Kovvie-en-bordspelletjes.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "feest",
+    "woord": "spellen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8096",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774363/Het-Kleding-Ruil-Rek-komt-terug!.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8626",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774367/Even-Offline.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8580",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774369/Het-leven-en-belang-van-de-bijen-in-je-tuin.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8663",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774372/Even-Offline.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8580",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774373/Hackshield.html": {
+   "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8633",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774375/AI-Nep-of-Echt?!.html": {
    "checkedAt": "2026-10-20",
    "hints": {
@@ -32668,6 +33228,24 @@
     "woord": "kunst"
    },
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8635",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774379/Rondleiding-door-molen-Dijkstra.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "kunst",
+    "woord": "rondleiding"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8637",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774380/Rondleiding-door-molen-Dijkstra.html": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "kunst",
+    "woord": "rondleiding"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8637",
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774382/AI-Nep-of-Echt?!.html": {
@@ -33659,6 +34237,15 @@
    "checkedAt": "2026-10-12",
    "image": "https://regionieuwshoogeveen.nl/wp-content/uploads/2024/12/Henk-sieders.jpg",
    "via": "og:image"
+  },
+  "https://wilhelminaleens.nl/agenda/brass-rock-2026/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "muziek",
+    "woord": "band"
+   },
+   "image": "https://wilhelminaleens.nl/wp-content/uploads/2026/09/Poster-Brass-Rock-DEF-Online-scaled.png",
+   "via": "schema.org"
   },
   "https://wintergoud.nl/": {
    "checkedAt": "2026-10-12",
@@ -35008,6 +35595,15 @@
    "image": null,
    "via": null
   },
+  "https://www.deblauweschuit-winsum.nl/evenement/cabaretvoorstelling-voor-spek-en-bonen-van-guido-spek/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://www.deblauweschuit-winsum.nl/evenement/cabaretvoorstelling-voor-spek-en-bonen-van-guido-spek/#primaryimage",
+   "via": "schema.org"
+  },
   "https://www.deblauweschuit-winsum.nl/evenement/coronavaccinatie/": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -35026,9 +35622,50 @@
    "image": "https://www.deblauweschuit-winsum.nl/evenement/dorpskamer-ouderenwerk-winsum/#primaryimage",
    "via": "schema.org"
   },
+  "https://www.deblauweschuit-winsum.nl/evenement/ixta-noa-thema-avond-veiligheid/": {
+   "checkedAt": "2026-10-21",
+   "image": "https://www.deblauweschuit-winsum.nl/evenement/ixta-noa-thema-avond-veiligheid/#primaryimage",
+   "via": "schema.org"
+  },
+  "https://www.deblauweschuit-winsum.nl/evenement/lezing-over-kunstschilder-henri-matisse-in-de-blauwe-schuit/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "kunst",
+    "woord": "kunst"
+   },
+   "image": "https://www.deblauweschuit-winsum.nl/evenement/lezing-over-kunstschilder-henri-matisse-in-de-blauwe-schuit/#primaryimage",
+   "via": "schema.org"
+  },
+  "https://www.deblauweschuit-winsum.nl/evenement/liedjes-en-verhalenprogramma-iedereen-zichzelf/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "verhalen"
+   },
+   "image": "https://www.deblauweschuit-winsum.nl/evenement/liedjes-en-verhalenprogramma-iedereen-zichzelf/#primaryimage",
+   "via": "schema.org"
+  },
   "https://www.deblauweschuit-winsum.nl/evenement/maak-kennis-met-de-wijsheid-van-de-alkracht/": {
    "checkedAt": "2026-10-21",
    "image": "https://www.deblauweschuit-winsum.nl/evenement/maak-kennis-met-de-wijsheid-van-de-alkracht/#primaryimage",
+   "via": "schema.org"
+  },
+  "https://www.deblauweschuit-winsum.nl/evenement/retourtje-parijs-door-gertjan-piek/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "verhalen"
+   },
+   "image": "https://www.deblauweschuit-winsum.nl/evenement/retourtje-parijs-door-gertjan-piek/#primaryimage",
+   "via": "schema.org"
+  },
+  "https://www.deblauweschuit-winsum.nl/evenement/workshop-kleur-in-je-interieur-door-anja-de-vos-bullinga-2/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://www.deblauweschuit-winsum.nl/evenement/workshop-kleur-in-je-interieur-door-anja-de-vos-bullinga-2/#primaryimage",
    "via": "schema.org"
   },
   "https://www.deblauweschuit-winsum.nl/evenement/workshop-kleur-in-je-interieur-door-anja-de-vos-bullinga/": {
@@ -35421,6 +36058,21 @@
    "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/Acting-The-Maggot-Irish-Rebels-Rovers-rechtenvrij-5.jpg",
    "via": "og:image"
   },
+  "https://www.demolenberg.nl/voorstellingen/bert-hadders-en-herman-sandman/": {
+   "checkedAt": "2026-10-21",
+   "image": "https://www.demolenberg.nl/wp-content/uploads/2025/04/Hadders-en-Sandman-2025-Reyer-Boxem-1-scaled.jpg",
+   "via": "og:image"
+  },
+  "https://www.demolenberg.nl/voorstellingen/blauwe-vinkjes/": {
+   "checkedAt": "2026-10-21",
+   "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/Blauwe-Vinkjes-Poeha-Mark-Engelen-5.jpg",
+   "via": "og:image"
+  },
+  "https://www.demolenberg.nl/voorstellingen/eemsmond-big-band-2/": {
+   "checkedAt": "2026-10-21",
+   "image": "https://www.demolenberg.nl/wp-content/uploads/2025/05/Eemsmond-Big-Band-1-scaled.jpg",
+   "via": "og:image"
+  },
   "https://www.demolenberg.nl/voorstellingen/guido-spek/": {
    "checkedAt": "2026-10-21",
    "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/2627_GV_Voor_Spek_en_Bonen_f_Meis_Belle_Wahr_en_Jip_Merkies_1-1024x394.jpg",
@@ -35431,6 +36083,11 @@
    "image": "https://www.demolenberg.nl/wp-content/uploads/2026/10/Heart-of-the-Beast_st_8_jpg_sd-high_2026-Paramount-Pictures-All-Rights-Reserved-1024x423.jpg",
    "via": "og:image"
   },
+  "https://www.demolenberg.nl/voorstellingen/johan-goossens/": {
+   "checkedAt": "2026-10-21",
+   "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/Johan-Goossens-Het-Volle-Leven-Jouk-Oosterhof-CAMPAGNEBEELD-4.jpg",
+   "via": "og:image"
+  },
   "https://www.demolenberg.nl/voorstellingen/sense-and-sensibility/": {
    "checkedAt": "2026-10-20",
    "image": "https://www.demolenberg.nl/wp-content/uploads/2026/10/Sense-and-Sensibility_ps_1_jpg_sd-high_2026-Focus-Features-LLC-All-Rights-Reserved.jpg",
@@ -35439,6 +36096,11 @@
   "https://www.demolenberg.nl/voorstellingen/stone-water/": {
    "checkedAt": "2026-10-21",
    "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/Stone-Water-1.jpg",
+   "via": "og:image"
+  },
+  "https://www.demolenberg.nl/voorstellingen/syb-van-der-ploeg-en-maarten-peters/": {
+   "checkedAt": "2026-10-21",
+   "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/Simon-Garfunkel-MBN11-6-2020-pdf-grafie-1637.jpg",
    "via": "og:image"
   },
   "https://www.demolenberg.nl/voorstellingen/thijs-van-de-meeberg/": {
@@ -37812,6 +38474,11 @@
    "image": null,
    "via": null
   },
+  "https://www.kerksolwerd.nl/activiteiten?type=sogk&page=3": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
   "https://www.kerkuithuizen.nl/activiteiten?type=sogk&page=2": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -38419,9 +39086,29 @@
    "image": "https://static.martiniplaza.nl/cache/autosalon-van-het-noorden-2027.10656/autosalon-van-het-noorden-2027-s1920x1080.jpg",
    "via": "og:image"
   },
+  "https://www.martiniplaza.nl/nl/agenda/cats-het-meesterwerk": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/cats-het-meesterwerk.16313/cats-het-meesterwerk-s1920x1080.jpg",
+   "via": "og:image"
+  },
   "https://www.martiniplaza.nl/nl/agenda/donar-groningen-cso-voluntari-2026": {
    "checkedAt": "2026-10-21",
    "image": "https://static.martiniplaza.nl/cache/donar-groningen-cso-voluntari-2026.16187/donar-groningen-cso-voluntari-2026-s1920x1080.jpg",
+   "via": "og:image"
+  },
+  "https://www.martiniplaza.nl/nl/agenda/donar-groningen-hubo-limburg-united-2026": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/donar-groningen-hubo-limburg-united-2026.16187/donar-groningen-hubo-limburg-united-2026-s1920x1080.jpg",
+   "via": "og:image"
+  },
+  "https://www.martiniplaza.nl/nl/agenda/donar-groningen-tria-eka-ael-bc-2026": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/donar-groningen-tria-eka-ael-bc-2026.16187/donar-groningen-tria-eka-ael-bc-2026-s1920x1080.jpg",
+   "via": "og:image"
+  },
+  "https://www.martiniplaza.nl/nl/agenda/francis-van-broekhuizen": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/francis-van-broekhuizen-tosca.16911/francis-van-broekhuizen-tosca-s1920x1080-v1.jpg",
    "via": "og:image"
   },
   "https://www.martiniplaza.nl/nl/agenda/fred-van-leer": {
@@ -38439,6 +39126,16 @@
    "image": "https://static.martiniplaza.nl/cache/jethro-tull.16241/jethro-tull-s1920x1080.jpg",
    "via": "og:image"
   },
+  "https://www.martiniplaza.nl/nl/agenda/juf-braaksel": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/juf-braaksel-de-musical.17081/juf-braaksel-de-musical-s1920x1080-v1.png",
+   "via": "og:image"
+  },
+  "https://www.martiniplaza.nl/nl/agenda/milo-berlijn-presenteert-de-zorgshow": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/milo-berlijn-presenteert-pimp-theatershow-de-zorgs.15933/milo-berlijn-presenteert-pimp-theatershow-de-zorgs-s1920x1080.png",
+   "via": "og:image"
+  },
   "https://www.martiniplaza.nl/nl/agenda/misf-herstvakantie-2026": {
    "checkedAt": "2026-10-12",
    "image": "https://static.martiniplaza.nl/cache/mega-indoor-springkussen-festival.10760/mega-indoor-springkussen-festival-s1920x1080.jpg",
@@ -38449,9 +39146,24 @@
    "image": "https://static.martiniplaza.nl/cache/rob-lamberti-a-celebration-of-george-michael.17310/rob-lamberti-a-celebration-of-george-michael-s1920x1080.png",
    "via": "og:image"
   },
+  "https://www.martiniplaza.nl/nl/agenda/stadjersmarkt-2026": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/stadjersmarkt-2026.17709/stadjersmarkt-2026-s1920x1080.png",
+   "via": "og:image"
+  },
+  "https://www.martiniplaza.nl/nl/agenda/tafkal-serieus-grappig-uitverkocht": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/tafkal-serieus-grappig-uitverkocht.17302/tafkal-serieus-grappig-uitverkocht-s1920x1080.png",
+   "via": "og:image"
+  },
   "https://www.martiniplaza.nl/nl/agenda/taptoe-groningen-2026": {
    "checkedAt": "2026-10-12",
    "image": "https://static.martiniplaza.nl/cache/taptoe-groningen-2026.13770/taptoe-groningen-2026-s1920x1080.png",
+   "via": "og:image"
+  },
+  "https://www.martiniplaza.nl/nl/agenda/the-dire-straits-experience": {
+   "checkedAt": "2026-10-21",
+   "image": "https://static.martiniplaza.nl/cache/the-dire-straits-experience-the-long-highway-2026-.15845/the-dire-straits-experience-the-long-highway-2026--s1920x1080.jpg",
    "via": "og:image"
   },
   "https://www.meerstad.eu/2026-nieuwbouwfestival-groningen/": {
@@ -38704,6 +39416,15 @@
     "woord": "vogel"
    },
    "image": "https://www.np-lauwersmeer.nl/wp-content/uploads/2026/07/Wereldtrekvogeldag.jpg",
+   "via": "og:image"
+  },
+  "https://www.np-lauwersmeer.nl/activiteiten/donkere-nachten-van-het-lauwersmeer-07-11/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "natuur",
+    "woord": "wandel"
+   },
+   "image": "https://www.np-lauwersmeer.nl/wp-content/uploads/2021/07/Blz.-2-Dark-Sky-route_-met-naamsvermelding-©-Jannie-Bouwman-scaled.jpg",
    "via": "og:image"
   },
   "https://www.np-lauwersmeer.nl/activiteiten/nacht-van-de-nacht-in-lauwersmeer/": {
@@ -39039,7 +39760,17 @@
    "image": null,
    "via": null
   },
+  "https://www.parkzicht.com/agenda/-cobus-oosting-eventjes-wat-anders/": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
   "https://www.parkzicht.com/agenda/-friends-of-bogdike/": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
+  "https://www.parkzicht.com/agenda/abba-lionel-richie-tribute/": {
    "checkedAt": "2026-10-21",
    "image": null,
    "via": null
@@ -39109,6 +39840,35 @@
    "image": "https://www.pgbeilen.nl/wp-content/uploads/2026/09/Kerkasiel.png",
    "via": "schema.org"
   },
+  "https://www.pkn-bellingwolde.nl/agenda.aspx?lIntNavId=17745&lIntEntityId=422553&ldate=2026-11-12": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "film",
+    "woord": "documentaire"
+   },
+   "image": null,
+   "via": null
+  },
+  "https://www.pkn-bellingwolde.nl/kerkdienst.aspx?lIntNavId=17744&lIntEntityId=429062&ldate=2026-10-25": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
+  "https://www.pkn-bellingwolde.nl/kerkdienst.aspx?lIntNavId=17744&lIntEntityId=429063&ldate=2026-11-01": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
+  "https://www.pkn-bellingwolde.nl/kerkdienst.aspx?lIntNavId=17744&lIntEntityId=429064&ldate=2026-11-04": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
+  "https://www.pkn-bellingwolde.nl/kerkdienst.aspx?lIntNavId=17744&lIntEntityId=429065&ldate=2026-11-08": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
   "https://www.pknanloozuidlaren.nl/cursusprogramma/2118-pareltjes-uit-de-werkgemeenschap": {
    "checkedAt": "2026-10-12",
    "image": null,
@@ -39163,6 +39923,16 @@
   },
   "https://www.princessehof.nl/te-zien-en-te-doen/activiteiten/herfstvakantie-klei-je-eigen-koffietegel": {
    "checkedAt": "2026-10-14",
+   "image": null,
+   "via": null
+  },
+  "https://www.prummeltour.nl/": {
+   "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
+  "https://www.prummeltour.nl/hce": {
+   "checkedAt": "2026-10-21",
    "image": null,
    "via": null
   },
@@ -41965,6 +42735,15 @@
    "image": "https://www.terpoarte.nl/wp-content/uploads/2025/10/Header_800x500_rouwverwerking-150x150.jpg",
    "via": "og:image"
   },
+  "https://www.terpoarte.nl/event/kerkdiestdeinum/": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "eten",
+    "woord": "koffie"
+   },
+   "image": "https://www.terpoarte.nl/wp-content/uploads/2019/10/kerkdienst-deinum-150x150.jpg",
+   "via": "og:image"
+  },
   "https://www.terpoarte.nl/event/leerhuisland-van-belofte-3/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -42795,6 +43574,74 @@
    "image": "https://cdn.vera-groningen.nl/2026/03/velocity-made-good-2400-kopie.jpg",
    "via": "og:image"
   },
+  "https://www.vera-groningen.nl/?post_type=events&p=151279&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "sport",
+    "woord": "bewegen"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/03/Angine-De-Poitrine-2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=151519&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "feest",
+    "woord": "feest"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/04/2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=151534&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "muziek",
+    "woord": "band"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/04/2400-kopie-1.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=152263&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "image": "https://cdn.vera-groningen.nl/2026/05/Hippotraktor-2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=152556&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "theater",
+    "woord": "dans"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/05/Los-Piranas-2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=152600&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "muziek",
+    "woord": "pop"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/05/Shearwater-Loma-Any-Kind-2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=153215&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "muziek",
+    "woord": "band"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/06/supersuckers-2400-2.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=153264&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "natuur",
+    "woord": "wandel"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/06/The-Homesick-2400.jpg",
+   "via": "og:image"
+  },
   "https://www.vera-groningen.nl/?post_type=events&p=153536&lang=nl": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -42807,6 +43654,24 @@
   "https://www.vera-groningen.nl/?post_type=events&p=153671&lang=nl": {
    "checkedAt": "2026-10-21",
    "image": "https://cdn.vera-groningen.nl/2026/07/Taxi-Lotta-2400-scaled.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=154134&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "feest",
+    "woord": "halloween"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/09/2400-banner.-ELYSIUM.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=154197&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "muziek",
+    "woord": "muziek"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/03/Pushin-Wood-Soundsystem-2400.jpg",
    "via": "og:image"
   },
   "https://www.vera-groningen.nl/?post_type=events&p=154330&lang=nl": {
@@ -42827,6 +43692,15 @@
    "image": "https://cdn.vera-groningen.nl/2026/09/the-fly.png",
    "via": "og:image"
   },
+  "https://www.vera-groningen.nl/?post_type=events&p=154548&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "muziek",
+    "woord": "muziek"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/09/The-Etters-2400.jpg",
+   "via": "og:image"
+  },
   "https://www.vera-groningen.nl/?post_type=events&p=154647&lang=nl": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -42834,6 +43708,42 @@
     "woord": "techno"
    },
    "image": "https://cdn.vera-groningen.nl/2026/10/Caron-2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=154867&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/10/Nagusame-2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=154871&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/10/Scherm­afbeelding-2026-10-15-om-19.54.40.png",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=154880&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/10/cult-classic-preview.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=154976&lang=nl": {
+   "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "feest",
+    "woord": "feest"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/10/Pyrex-2400.jpg",
    "via": "og:image"
   },
   "https://www.verhildersum.nl/nl/agenda/ede-staal-mijn-groningen-mien-grunnen/": {

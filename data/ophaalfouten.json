@@ -2,61 +2,51 @@
   "artphy-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-21T00:37+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   },
   "buurtcentrumoranjewijk-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-10-21T00:37+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
-  },
-  "clcleeuwarden-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-20T19:59+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   },
   "easthim-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T21:13+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   },
   "gerarddou-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T00:37+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   },
   "gkv-uithuizermeeden-nl-web": {
     "fout": "URLError: <urlopen error [Errno -2] Name or service not known>",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   },
   "lemmerbinnen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   },
   "mfcgroningen-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-20T19:59+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   },
-  "schoolplatendeinum-nl-web": {
-    "fout": "TimeoutError: The read operation timed out",
-    "sinds": "2026-10-20T19:59+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
-  },
-  "stinze-stiens-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-20T19:59+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+  "mozartconcerten-nl-web": {
+    "fout": "TypeError: unhashable type: 'list'",
+    "sinds": "2026-10-21T05:36+00:00",
+    "laatst": "2026-10-21T05:36+00:00"
   },
   "vugroningen-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   },
   "wijkbelangwesteinde-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-10-20T01:14+00:00",
-    "laatst": "2026-10-21T00:37+00:00"
+    "laatst": "2026-10-21T05:36+00:00"
   }
 }
