@@ -103,13 +103,22 @@ class _PageParser(HTMLParser):
             self._buf.append(data)
 
 
+# Geen foto van het uitje: stockfoto's, een ontwerp zonder titel, kaartjes en 'uitverkocht'-plaatjes; en
+# te kleine plaatjes (een miniatuur van 150 x 150). Gevonden bij het nakijken van de foto's (oktober 2026).
+STOCK_OR_GRAPHIC = re.compile(r"pixabay|shutterstock|adobestock|unsplash|pexels|istock|ontwerp-zonder-titel"
+                              r"|ticket_|uitverkocht")
+TOO_SMALL = re.compile(r"-(?:[1-3]\d\d)x(?:[1-3]\d\d)\.(?:jpe?g|png|webp)|[?&](?:w|width)=(?:[1-3]\d\d)\b"
+                       r"|[?&]x=[1-3]\d\d&y=[1-3]\d\d\b")
+
+
 def _image_value(value) -> str | None:
     if isinstance(value, str):
         return value.strip() or None
     if isinstance(value, list):
         return next((found for found in map(_image_value, value) if found), None)
     if isinstance(value, dict):
-        return _image_value(value.get("url") or value.get("contentUrl") or value.get("@id"))
+        # Geen '@id': dat is bij Yoast een verwijzing ('.../#primaryimage'), geen foto (oktober 2026).
+        return _image_value(value.get("url") or value.get("contentUrl"))
     return None
 
 
@@ -121,8 +130,12 @@ def usable_image(value: str | None, page_url: str) -> str | None:
     parsed = urlparse(url)
     if parsed.scheme not in {"http", "https"} or not parsed.netloc or len(url) > 1000:
         return None
+    if parsed.fragment or url.split("#")[0].rstrip("/") == page_url.split("#")[0].rstrip("/"):
+        return None  # een verwijzing naar de pagina zelf, geen foto
     filename = parsed.path.rsplit("/", 1)[-1].casefold()
     if filename.endswith((".svg", ".gif", ".ico")) or any(h in filename for h in SKIP_FILE_HINTS):
+        return None
+    if STOCK_OR_GRAPHIC.search(url.casefold()) or TOO_SMALL.search(url.casefold()) or filename in {"images.png", "image.png"}:
         return None
     return url
 
@@ -449,7 +462,11 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
     polite = _Polite(fetch, sleeper=sleeper, clock=clock, timeout=timeout)
     stats: Counter = Counter()
 
-    # 1. De pagina van elk uitje (één keer, daarna onthouden).
+    # 1. De pagina van elk uitje (één keer, daarna onthouden). Een eerder bewaard plaatje dat geen foto
+    #    blijkt (een verwijzing als '#primaryimage', een stockfoto): die pagina meteen opnieuw bekijken.
+    for page, entry in cache["pages"].items():
+        if entry.get("image") and not usable_image(entry["image"], page):
+            cache["pages"][page] = {**entry, "image": None, "checkedAt": "2000-01-01"}
     for event in events:
         for page in photos.event_pages(event):
             if page in lists or not _due(cache["pages"].get(page), today, RECHECK_EMPTY_DAYS, "image"):

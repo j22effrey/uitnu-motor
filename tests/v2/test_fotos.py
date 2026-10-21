@@ -386,3 +386,16 @@ def test_door_ai_gemaakt_plaatje_is_geen_foto_ook_niet_uit_de_bewaarde_lijst():
              "venue": {"city": "Haren"}}
     photo = choose_photo(event, cache, lists=set(), names={})
     assert photo is None or photo.get("type") != "organisator"
+
+
+def test_geen_verwijzing_stockfoto_of_miniatuur_als_foto():
+    """Nakijken van de foto's (oktober 2026): Yoast '#primaryimage' is een verwijzing, geen foto; stockfoto's,
+    kaartjes en miniaturen zijn geen foto van het uitje."""
+    from collector.event_photos import usable_image
+    page = "https://appelscha.nl/tstevent/markt/"
+    for bad in ("https://appelscha.nl/tstevent/markt/#primaryimage", "https://x.nl/maan-pixabay.jpg",
+                "https://x.nl/uploads/foto-150x150.jpg", "https://x.nl/ticket_1_eersterang.png", "https://x.nl/images.png",
+                "https://x.nl/img.jpg?width=200"):
+        assert usable_image(bad, page) is None, bad
+    for good in ("https://x.nl/uploads/concert-1024x683.jpg", "https://x.nl/img.jpg?w=1200"):
+        assert usable_image(good, page) == good
