@@ -106,10 +106,7 @@ def _routine_key(event: dict) -> tuple[str, str]:
     title = re.sub(rf"\b\d{{1,2}}[:.]\d{{2}}\b|\b\d{{1,2}} {_MONTH}\b|\b(?:uur|van|tot|t/m|vanaf|om)\b", " ",
                    normalize(event.get("title") or ""))
     hosts = [s.get("host") for s in event.get("sources") or [] if s.get("host")]
-    # Een vaste activiteit is steeds op dezelfde plek. Dezelfde lezing van de bibliotheek in Nieuwe Pekela,
-    # Winschoten en Onstwedde (één website voor alle vestigingen) is een rondgang, geen clubavond (oktober 2026).
-    city = normalize((event.get("venue") or {}).get("city") or "")
-    return " ".join(title.split()), f"{hosts[0] if hosts else ''}|{city}"
+    return " ".join(title.split()), (hosts[0] if hosts else "")
 
 
 def routines(events: list[dict], today: date | None = None) -> set[int]:
@@ -121,6 +118,11 @@ def routines(events: list[dict], today: date | None = None) -> set[int]:
     for (title, _), indexes in groups.items():
         days = sorted({date.fromisoformat(events[i]["occurrences"][0]["date"]) for i in indexes})
         if not title or len(days) < ROUTINE_MIN:
+            continue
+        # Een rondgang: dezelfde lezing van de bibliotheek in Nieuwe Pekela, Winschoten en Onstwedde (één website
+        # voor alle vestigingen), elke plaats één keer. Komt een plaats vaker terug, dan is het een vaste activiteit.
+        cities = [normalize((events[i].get("venue") or {}).get("city") or "") for i in indexes]
+        if all(cities) and len(set(cities)) == len(cities):
             continue
         gaps = sorted((b - a).days for a, b in zip(days, days[1:]))
         if (days[-1] - days[0]).days < ROUTINE_MIN_SPAN_DAYS and (

@@ -240,7 +240,8 @@
           "city": "<ul>\\s*<li[^>]*>\\s*(?:<p>)?[^,<]+,\\s*([^,<]+)",
           "venue": "<ul>\\s*<li[^>]*>\\s*(?:<p>)?[^,<]+,\\s*[^,<]+,\\s*([^<]+)"
         },
-        "province": "Groningen"
+        "province": "Groningen",
+        "skipTitle": "^\\w+$|winterwelvaart"
       },
       "maxPages": 1,
       "maxDepth": 1,
@@ -6071,7 +6072,7 @@
       "name": "Leek",
       "rootUrl": "https://www.leek.nl/",
       "role": "organizer",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -6095,7 +6096,8 @@
         "lon": 6.3792
       },
       "note": "Leek.nl (Promotieplatform Leek, Handelsvereniging Leek Nietap, Volksvermaken Leek Nietap en de gemeente Westerkwartier): de agenda staat als kaartjes <a class=\"agendaItem\"> op /agenda/, alles op een pagina. html_agenda_dutch leverde 0 op. robots.txt staat alles toe behalve /login/.",
-      "policyReviewedAt": "2026-10-21"
+      "policyReviewedAt": "2026-10-21",
+      "disabledReason": "Promotieplatform dat uitjes van anderen verzamelt (winkels, cafés, bibliotheek, filmhuis): volgens vaste regel 1 geen bron (21 oktober 2026). De organisatoren zelf als tip of bron."
     },
     {
       "id": "noardeast-fryslan-nl-web",
@@ -12661,7 +12663,7 @@
           "venue": "dbms-card-block--location\"><span class=\"dbms-card-date\">(.*?)</span>",
           "room": "dbms-card-block--location\"><span class=\"dbms-card-date\">(.*?)</span>"
         },
-        "skipTitle": "oud papier|ledenvergadering|vergadering|spreekuur",
+        "skipTitle": "oud papier|ledenvergadering|vergadering|spreekuur|spelletjesmiddag jeugd",
         "rooms": {
           "Dorpshuis": {
             "venue": "Dorpshuis Meerstad",
@@ -12783,7 +12785,7 @@
             "city": "Ommelanderwijk"
           }
         },
-        "skipTitle": "campagne|verkiezing|supersaturday|tussen de kiezers|durf campagne|gemeenteraad|^ven van|groepen \\d|jachtseizoen"
+        "skipTitle": "campagne|verkiezing|supersaturday|tussen de kiezers|durf campagne|gemeenteraad|^ven van|groepen \\d|jachtseizoen|remproef|koffiekar|sportdag|^les\\b"
       },
       "defaultPlace": {
         "city": "Veendam"
