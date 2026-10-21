@@ -12819,6 +12819,44 @@
       },
       "policyReviewedAt": "2026-10-21",
       "note": "Speellijst van Theatergroep WAARK (organisator, Groningstalig theater) met elke speelplek: veel dorpshuizen en kleine zalen in Groningen en Drenthe (o.a. Siep&Co Oude Pekela, 29-31 oktober 2026). robots.txt staat alles toe behalve /wp-admin/. Kaartverkoop loopt via de zalen; we nemen alleen de feiten over."
+    },
+    {
+      "id": "margarethahardenbergcultuurcentrum-nl-web",
+      "name": "Margaretha Hardenberg Cultuurcentrum",
+      "rootUrl": "https://margarethahardenbergcultuurcentrum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://margarethahardenbergcultuurcentrum.nl/programma/"
+      },
+      "activatedFromCandidate": "margarethahardenbergcultuurcentrum.nl",
+      "defaultPlace": {
+        "city": "Wildervank"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "scheepsjoagers-nl-web",
+      "name": "Shantykoor De Scheepsjoagers (Muntendam)",
+      "rootUrl": "https://scheepsjoagers.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://scheepsjoagers.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "scheepsjoagers.nl",
+      "defaultPlace": {
+        "city": "Muntendam"
+      },
+      "policyReviewedAt": "2026-10-21"
     }
   ]
 }
