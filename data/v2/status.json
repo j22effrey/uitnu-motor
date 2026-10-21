@@ -1,14 +1,14 @@
 {
  "version": 2,
- "refreshedAt": "2026-10-21T08:08:04+00:00",
+ "refreshedAt": "2026-10-21T12:29:46+00:00",
  "today": "2026-10-21",
- "total": 4265,
- "inputRecords": 9817,
- "outsideArea": 0,
- "geenUitje": 3817,
+ "total": 4257,
+ "inputRecords": 9932,
+ "outsideArea": 8,
+ "geenUitje": 3907,
  "vasteActiviteit": 976,
  "vertaling": 5,
- "teVerVooruit": 264,
+ "teVerVooruit": 289,
  "uitgeslotenBron": 6,
  "onleesbaar": [],
  "area": {
@@ -26,7 +26,7 @@
   "radiusKm": 110
  },
  "byKind": {
-  "muziek": 1073,
+  "muziek": 1061,
   "theater": 976,
   "film": 496,
   "lezing": 282,
@@ -37,13 +37,13 @@
   "markt": 157,
   "sport": 132,
   "kinderen": 123,
-  "festival": 52,
-  "eten": 50
+  "festival": 55,
+  "eten": 51
  },
  "byCity": {
   "Groningen": 1450,
   "Assen": 235,
-  "Leeuwarden": 192,
+  "Leeuwarden": 196,
   "Emmen": 176,
   "Winschoten": 145,
   "Hoogezand": 133,
@@ -100,7 +100,6 @@
   "Drachten": 9,
   "Makkum": 9,
   "Lauwerzijl": 9,
-  "Borger": 8,
   "Harkema": 8,
   "Grou": 8,
   "Minnertsga": 8,
@@ -189,7 +188,6 @@
   "Pieterzijl": 3,
   "Echtenerbrug": 3,
   "Wezup": 3,
-  "Doesburg": 3,
   "Suameer": 3,
   "Hooghalen": 2,
   "Oldehove": 2,
@@ -225,6 +223,7 @@
   "Termunterzijl": 1,
   "Garrelsweer": 1,
   "Kollum": 1,
+  "Borger": 1,
   "Grijpskerk": 1,
   "Blokzijl": 1,
   "Thesinge": 1,
@@ -284,8 +283,6 @@
   "Brucht": 1,
   "Paesens-Moddergat": 1,
   "Wilhelminaoord": 1,
-  "Nunspeet": 1,
-  "Harderwijk": 1,
   "Antwerkpen": 1,
   "Meerstad": 1,
   "Burgum": 1,
@@ -306,23 +303,23 @@
   "theatergeertteis.nl": 115,
   "theaterdekoornbeurs.nl": 102,
   "vanberesteyn.nl": 99,
+  "explorethenorth.nl": 73,
   "theaterroden.nl": 72,
   "vera-groningen.nl": 69,
   "sliekerfilm.nl": 68,
   "demolenberg.nl": 68,
-  "explorethenorth.nl": 68,
   "ticketing.groningsebibliotheken.nl": 56,
   "simplon.nl": 49,
   "itfryskegea.nl": 48,
   "societeitdeharmonie.nl": 36,
   "debontewever.nl": 30,
   "jongeharten.podiumnederland.nl": 30,
-  "kerkalspodium.nl": 29,
   "kunsthalle-emden.de": 28,
   "groningerlandschap.nl": 26,
   "onstwedde.info": 26,
   "overentinghe.nl": 26,
   "easterein.nl": 25,
+  "kerkalspodium.nl": 25,
   "demeenthe.nl": 24,
   "tumultgroningen.nl": 24,
   "scharnegoutum.nl": 22,
@@ -340,7 +337,6 @@
   "debontewever.avayo.nl": 15,
   "reduzum.com": 14,
   "wommels.nl": 14,
-  "luthersbachensemble.nl": 14,
   "sneek.nl": 14,
   "engelstede.nl": 14,
   "marrumonline.nl": 14,
@@ -370,6 +366,7 @@
   "noordlaren.eu": 10,
   "stinze-stiens.nl": 10,
   "ontdekdebieb.op-shop.nl": 9,
+  "luthersbachensemble.nl": 9,
   "berlikum.com": 9,
   "onderdewadden.nl": 9,
   "dinoparklandgoedtenaxx.nl": 9,
@@ -395,8 +392,8 @@
   "museumjoure.nl": 7,
   "kuinre.nl": 7,
   "akerk.nl": 7,
-  "podium34.nl": 7,
   "spijk.net": 7,
+  "vestingoudeschans.com": 6,
   "veenkoloniaalmuseum.nl": 6,
   "harmonie.nl": 6,
   "hortusharen.nl": 6,
@@ -448,6 +445,7 @@
   "koudum.nl": 4,
   "landvaneen.nl": 4,
   "ydedepunt.com": 4,
+  "marssum.info": 4,
   "franeker.nl": 4,
   "hannemahuis.nl": 4,
   "maallust.nl": 4,
@@ -467,7 +465,6 @@
   "bulthuiseenrum.nl": 4,
   "groatekerk.nl": 4,
   "ferwertonline.nl": 4,
-  "neushoorn.nl": 4,
   "pboosterhesselen.nl": 4,
   "luxor.nl": 4,
   "harich-ruigahuizen.nl": 4,
@@ -478,7 +475,6 @@
   "ontdekwec.nl": 3,
   "museumnieuwlande.nl": 3,
   "theaterpannenkoek.nl": 3,
-  "marssum.info": 3,
   "stiens.frl": 3,
   "cafethert.nl": 3,
   "kunstcentrumdeploeg.nl": 3,
@@ -491,16 +487,15 @@
   "tsiispakhus.nl": 3,
   "dorpsbelangenharkstede.nl": 3,
   "buinerveen.info": 3,
+  "neushoorn.nl": 3,
   "roswinkel.com": 3,
   "kunstkerkhogeland.nl": 3,
   "noordscheschut.com": 3,
   "pieterzijl.net": 3,
   "lumia-groningen.nl": 3,
   "wezup.info": 3,
-  "vestingoudeschans.com": 2,
   "drentsschildersgenootschap.nl": 2,
   "kindermaand.nl": 2,
-  "tynaarlo.nl": 2,
   "prummeltour.nl": 2,
   "hooghalen.nu": 2,
   "kvmidfryslan.nl": 2,
@@ -544,8 +539,10 @@
   "groningermuseum.nl": 1,
   "oermuseum.nl": 1,
   "museummohlmann.nl": 1,
+  "tynaarlo.nl": 1,
   "eisinga-planetarium.nl": 1,
   "kaatsmuseum.nl": 1,
+  "evenementenzuidlaardermarkt.nl": 1,
   "advendo-franeker.nl": 1,
   "groningensaxfest.com": 1,
   "sasa-appingedam.nl": 1,
@@ -619,8 +616,8 @@
   "bazuin-winsum.nl": 1,
   "dansinternationaal.nl": 1,
   "wergea.com": 1,
-  "kiekhuus.nl": 1,
   "ticketteam.friesmuseum.nl": 1,
+  "kiekhuus.nl": 1,
   "schoolplatendeinum.nl": 1,
   "woltersum.net": 1,
   "holwierde.com": 1,
@@ -667,8 +664,8 @@
   "pridegroningen.nl": 1
  },
  "photos": {
-  "organisator": 1254,
-  "wikimedia": 2945,
+  "organisator": 1258,
+  "wikimedia": 2933,
   "zonder": 66
  },
  "twijfel": 564,
@@ -694,9 +691,9 @@
   "meerdaags": "Meerdaags"
  },
  "changes": {
-  "new": 52,
-  "changed": 222,
-  "removed": 23
+  "new": 7,
+  "changed": 44,
+  "removed": 15
  },
  "gate": {
   "passed": true,
@@ -704,7 +701,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "4265 nu, 4232 vorige keer (minimaal 85%)"
+    "detail": "4257 nu, 4265 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -714,7 +711,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "211 van 4265 (5%)"
+    "detail": "211 van 4257 (5%)"
    },
    {
     "name": "velden_compleet",
@@ -725,8 +722,8 @@
  },
  "dekking": {
   "gecontroleerd": 441,
-  "goed": 87,
-  "ontbreektTotaal": 348,
+  "goed": 86,
+  "ontbreektTotaal": 349,
   "ontbreekt": [
    {
     "naam": "'t Pakhuis",
@@ -1259,6 +1256,15 @@
     "periode": "volgende editie",
     "type": "museum",
     "waarom": "de test vond geen leesbare agenda: uitzoeken waar het programma staat"
+   },
+   {
+    "naam": "Podium 34",
+    "plaats": "Borger",
+    "website": "https://podium34.nl/",
+    "gevonden": 0,
+    "verwacht": 1,
+    "periode": "90 dagen",
+    "type": "cultuurcentrum"
    },
    {
     "naam": "Botanische Tuin De Kruidhof",
@@ -2552,16 +2558,6 @@
     "periode": "volgende editie",
     "type": "museum",
     "waarom": "de test vond geen leesbare agenda: uitzoeken waar het programma staat"
-   },
-   {
-    "naam": "Jan Kruis Museum",
-    "plaats": "Orvelte",
-    "website": "https://jankruismuseum.nl/",
-    "gevonden": 0,
-    "verwacht": 1,
-    "periode": "volgende editie",
-    "type": "museum",
-    "waarom": "de test vond geen leesbare agenda: uitzoeken waar het programma staat"
    }
   ],
   "teWeinig": [
@@ -2616,7 +2612,7 @@
   ],
   "perSoort": {
    "cultuurcentrum": {
-    "ontbreekt": 14,
+    "ontbreekt": 15,
     "teWeinig": 0
    },
    "bioscoop": {
