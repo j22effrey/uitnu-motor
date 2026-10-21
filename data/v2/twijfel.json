@@ -663,16 +663,6 @@
   ]
  },
  {
-  "id": "evt_b68a29ac41e7a0",
-  "title": "Linet Aten exposeert",
-  "kind": "kunst",
-  "reason": "oude categorie 'expo'",
-  "url": "https://www.kerksolwerd.nl/activiteiten",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_8200b6c2aba51b",
   "title": "Linet Aten exposeert",
   "kind": "theater",
@@ -688,6 +678,26 @@
   "kind": "kunst",
   "reason": "oude categorie 'expo'",
   "url": "https://www.kerkmidwolde.nl/activiteiten",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b68a29ac41e7a0",
+  "title": "Linet Aten exposeert",
+  "kind": "kunst",
+  "reason": "oude categorie 'expo'",
+  "url": "https://www.kerkuithuizen.nl/activiteiten",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b68a29ac41e7a0",
+  "title": "Linet Aten exposeert",
+  "kind": "kunst",
+  "reason": "oude categorie 'expo'",
+  "url": "https://www.kerksolwerd.nl/activiteiten",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1234,11 +1244,11 @@
   ]
  },
  {
-  "id": "evt_4e0c837cf33d26",
-  "title": "Öffentliche Führung \"Zickzack\"",
-  "kind": "sport",
-  "reason": "oude categorie 'sport'",
-  "url": "https://www.landesmuseum-emden.dehttps://www.landesmuseum-emden.de/angebote/veranstaltungenhttps://www.landesmuseum-emden.de/angebote/veranstaltungen",
+  "id": "evt_0c92ab01541f96",
+  "title": "Öffentliche Führung",
+  "kind": "kunst",
+  "reason": "website kunsthalle-emden.de",
+  "url": "https://kunsthalle-emden.de/kunst-aktiv/veranstaltungsdetails/ffentliche-f-hrung-2026-11-08-11-30-133867",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3231,11 +3241,11 @@
   ]
  },
  {
-  "id": "evt_9373b201e8c23d",
-  "title": "Öffentliche Führung \"Zickzack\"",
-  "kind": "sport",
-  "reason": "oude categorie 'sport'",
-  "url": "https://www.landesmuseum-emden.dehttps://www.landesmuseum-emden.de/angebote/veranstaltungenhttps://www.landesmuseum-emden.de/angebote/veranstaltungen",
+  "id": "evt_596ccb1a7c4cd3",
+  "title": "Öffentliche Führung",
+  "kind": "kunst",
+  "reason": "website kunsthalle-emden.de",
+  "url": "https://kunsthalle-emden.de/kunst-aktiv/veranstaltungsdetails/ffentliche-f-hrung-2026-12-13-11-30-133872",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3385,7 +3395,7 @@
   "title": "Pink Floyd Project",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/pink-floyd-project",
+  "url": "https://www.debontewever.nl/en/business/conferences-and-events/pink-floyd-project",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3401,21 +3411,21 @@
   ]
  },
  {
-  "id": "evt_817485ba7a6552",
-  "title": "Licht en Donker",
-  "kind": "kunst",
-  "reason": "website hethoogeland.com",
-  "url": "https://www.hethoogeland.com/agenda/licht-en-donker/",
+  "id": "evt_24cb91febab22e",
+  "title": "“The Full Circle” club tour – An Evening of Classics & Highlights",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/108529?p_id=525010",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_e8c4afade54fd5",
-  "title": "“The Full Circle” clubtour – An Evening of Classics & Highlights",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108529?p_id=525010",
+  "id": "evt_817485ba7a6552",
+  "title": "Licht en Donker",
+  "kind": "kunst",
+  "reason": "website hethoogeland.com",
+  "url": "https://www.hethoogeland.com/agenda/licht-en-donker/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4038,6 +4048,16 @@
   "kind": "theater",
   "reason": "website theaterroden.nl",
   "url": "https://theaterroden.nl/tiepelzinneg",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_7a8ca5e7d2a588",
+  "title": "Pump Up The 90's",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.debontewever.nl/nl/events/pump-up-the-90s",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5484,6 +5504,86 @@
   "kind": "kunst",
   "reason": "website kunstencentrumk38.nl",
   "url": "https://kunstencentrumk38.nl/agenda-item/bk-k38-4/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_37cc6f5931b04d",
+  "title": "Hindeloopen",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d1765da996b18a",
+  "title": "Stavoren",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c5eca3ad86bb3b",
+  "title": "Heeg",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_81aaeb318b56c3",
+  "title": "Sloten",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_59c55425f58433",
+  "title": "Echtenerbrug",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_871d3c453461a7",
+  "title": "Echtenerbrug",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c9616bac410384",
+  "title": "Lemmer I",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c7c2e0d94c89b3",
+  "title": "Lemmer Finale",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
