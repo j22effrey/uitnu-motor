@@ -86,11 +86,21 @@ def test_standaardfoto_van_de_website_telt_niet_en_dan_wikimedia_van_de_plek():
     assert counts == {"organisator": 0, "wikimedia": 1, "zonder": 0}
 
 
-def test_eerst_voorpagina_bekijken_voor_een_foto_van_de_organisator():
+def test_zonder_voorpagina_alleen_een_foto_die_bij_een_uitje_hoort():
+    """Is de voorpagina nog niet bekeken, dan telt een foto die maar bij één uitje staat (en de website heeft
+    verschillende foto's per uitje). Een plaatje dat bij meerdere uitjes terugkomt is de standaardfoto."""
     cache = dict(CACHE, homepages={})
     events = [_v2("Concert A", "https://melk.example/a")]
     photos.attach_photos(events, cache)
+    assert events[0]["image"]["type"] == "organisator"
+    shared = dict(CACHE, homepages={}, pages={**CACHE["pages"], "https://melk.example/b": {"image": "https://melk.example/a.jpg"}})
+    events = [_v2("Concert A", "https://melk.example/a")]
+    photos.attach_photos(events, shared)
     assert events[0]["image"]["type"] == "wikimedia"
+    only = dict(CACHE, homepages={}, pages={"https://solo.example/a": {"image": "https://solo.example/a.jpg"}})
+    events = [_v2("Concert A", "https://solo.example/a")]
+    photos.attach_photos(events, only)
+    assert events[0]["image"]["type"] == "wikimedia"  # één foto van die website: nog niet zeker
 
 
 def test_agendalijst_geeft_geen_foto_per_uitje():
@@ -376,3 +386,16 @@ def test_door_ai_gemaakt_plaatje_is_geen_foto_ook_niet_uit_de_bewaarde_lijst():
              "venue": {"city": "Haren"}}
     photo = choose_photo(event, cache, lists=set(), names={})
     assert photo is None or photo.get("type") != "organisator"
+
+
+def test_geen_verwijzing_stockfoto_of_miniatuur_als_foto():
+    """Nakijken van de foto's (oktober 2026): Yoast '#primaryimage' is een verwijzing, geen foto; stockfoto's,
+    kaartjes en miniaturen zijn geen foto van het uitje."""
+    from collector.event_photos import usable_image
+    page = "https://appelscha.nl/tstevent/markt/"
+    for bad in ("https://appelscha.nl/tstevent/markt/#primaryimage", "https://x.nl/maan-pixabay.jpg",
+                "https://x.nl/uploads/foto-150x150.jpg", "https://x.nl/ticket_1_eersterang.png", "https://x.nl/images.png",
+                "https://x.nl/img.jpg?width=200"):
+        assert usable_image(bad, page) is None, bad
+    for good in ("https://x.nl/uploads/concert-1024x683.jpg", "https://x.nl/img.jpg?w=1200"):
+        assert usable_image(good, page) == good

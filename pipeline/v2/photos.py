@@ -78,6 +78,29 @@ def page_facts_for(event: dict, cache: dict, lists: set[str]) -> dict:
     return {}
 
 
+_USES: dict[int, tuple[int, dict, dict]] = {}
+
+
+def _own_photo(cache: dict, host: str, image: str) -> bool:
+    """Zonder de voorpagina toch zeker van een eigen foto: het plaatje staat bij maar één uitje van die
+    website, en de website gebruikt verschillende foto's per uitje. Een standaardfoto of logo komt bij
+    meerdere uitjes terug (oktober 2026: 19 voorpagina's bekeken, ruim 700 echte foto's bleven liggen)."""
+    pages = cache.get("pages") or {}
+    memo = _USES.get(id(cache))
+    if not memo or memo[0] != len(pages):
+        uses: dict = {}
+        distinct: dict = {}
+        for page, entry in pages.items():
+            if entry.get("image"):
+                key = (host_of(page), entry["image"])
+                uses[key] = uses.get(key, 0) + 1
+                distinct.setdefault(host_of(page), set()).add(entry["image"])
+        memo = (len(pages), uses, distinct)
+        _USES[id(cache)] = memo
+    _, uses, distinct = memo
+    return uses.get((host, image), 0) == 1 and len(distinct.get(host, ())) >= 2
+
+
 def _organizer_photo(event: dict, cache: dict, lists: set[str], names: dict[str, str]) -> dict | None:
     from collector.event_photos import usable_image  # hier pas: de fotozoeker gebruikt zelf de fabriek
     pages = cache.get("pages") or {}
@@ -89,10 +112,11 @@ def _organizer_photo(event: dict, cache: dict, lists: set[str], names: dict[str,
         if not image or not usable_image(image, page):
             continue  # ook een eerder bewaard plaatje dat geen foto is (logo, door AI gemaakt)
         host = host_of(page)
-        if host not in homepages:
-            continue  # voorpagina nog niet bekeken: we weten nog niet of dit de standaardfoto is
-        if image == homepages[host].get("image"):
-            continue  # de standaardfoto van de hele website, niet van dit uitje
+        if host in homepages:
+            if image == homepages[host].get("image"):
+                continue  # de standaardfoto van de hele website, niet van dit uitje
+        elif not _own_photo(cache, host, image):
+            continue  # voorpagina nog niet bekeken en niet zeker dat dit een eigen foto van het uitje is
         name = names.get(host) or host
         return {
             "url": image,
