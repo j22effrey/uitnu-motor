@@ -32,7 +32,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
+      # Altijd de nieuwste versie van main: een ronde die op een vorige moest wachten, begon anders met de
+      # agenda van vóór die ronde en botste bij het opslaan (21 oktober 2026, ronde 54).
       - uses: actions/checkout@v7
+        with:
+          ref: main
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
@@ -117,8 +121,27 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -q -m "motor: $(python -c 'import json;print(len(json.load(open("data/v2/events.json"))))') uitjes, $(python -c 'import json;print(sum(1 for s in json.load(open("collector/web_crawl_sources.json"))["sources"] if s.get("enabled")))') actieve bronnen"
-          git pull -q --rebase origin main
-          git push -q
+          # Is main intussen veranderd (een samengevoegde wijziging), dan bij een botsing per bestand kiezen:
+          # wat de motor zelf maakt, neemt de motor (in een rebase is dat 'theirs'); wat met de hand wordt
+          # bijgehouden (losse uitjes, bronnenlijst), houdt de versie van main ('ours'). De volgende ronde
+          # rekent alles opnieuw door. Hooguit drie pogingen.
+          for poging in 1 2 3; do
+            if git pull -q --rebase origin main; then
+              git push -q && break
+            else
+              for f in $(git diff --name-only --diff-filter=U); do
+                case "$f" in
+                  data/events.json|collector/web_crawl_sources.json|collector/tips.json) git checkout --ours -- "$f" ;;
+                  *) git checkout --theirs -- "$f" ;;
+                esac
+                git add -- "$f"
+              done
+              if GIT_EDITOR=true git rebase --continue && git push -q; then break; fi
+              git rebase --abort 2>/dev/null || true
+            fi
+            if [ "$poging" = 3 ]; then echo "Opslaan lukte niet na drie pogingen."; exit 1; fi
+            sleep 5
+          done
           echo "veranderd=ja" >> "$GITHUB_OUTPUT"
 
       - name: Site opnieuw laten bouwen
