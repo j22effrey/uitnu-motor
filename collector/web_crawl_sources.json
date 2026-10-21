@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -11941,6 +11941,491 @@
       "kindHint": "sport",
       "note": "Volleybal-eredivisie (topsport, geen amateurcompetitie). Het wedstrijdprogramma staat als tabel op /wedstrijden/; alleen thuiswedstrijden (kolom 'Thuis' = Lycurgus Groningen) in het Alfa-college Sportcentrum, Kardingerweg 48. Uitwedstrijden vallen weg (skipTitle). Kaartverkoop (cm.com) wordt niet gelezen. Getest op 20 oktober 2026: 7 thuiswedstrijden tot februari 2027.",
       "policyReviewedAt": "2026-10-20"
+    },
+    {
+      "id": "vestingoudeschans-com-web",
+      "name": "Vestingmuseum",
+      "rootUrl": "https://www.vestingoudeschans.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.vestingoudeschans.com/activiteiten-energie-cooperatie-oudeschans-eco/actueel/"
+      },
+      "activatedFromCandidate": "vestingoudeschans.com",
+      "defaultPlace": {
+        "city": "Oudeschans"
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "artphy-nl-web",
+      "name": "Kunsthal Artphy",
+      "rootUrl": "https://www.artphy.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.artphy.nl/events/?ical=1"
+      },
+      "activatedFromCandidate": "artphy.nl",
+      "defaultPlace": {
+        "city": "Onstwedde"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "deblauweschuit-winsum-nl-web",
+      "name": "Cultuurcentrum De Blauwe Schuit",
+      "rootUrl": "https://deblauweschuit-winsum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://deblauweschuit-winsum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "deblauweschuit-winsum.nl",
+      "defaultPlace": {
+        "city": "Winsum"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "duurzamehuizenroute-nl-web",
+      "name": "Duurzame Huizen Route",
+      "rootUrl": "https://duurzamehuizenroute.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "duurzamehuizenroute.nl",
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "flal-nl-web",
+      "name": "FLAL",
+      "rootUrl": "https://flal.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://flal.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "flal.nl",
+      "defaultPlace": {
+        "city": "Oosterwijtwerd"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "garrelsdiep-nl-web",
+      "name": "Garrelsdiep",
+      "rootUrl": "https://garrelsdiep.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://garrelsdiep.nl/blog/events/?ical=1"
+      },
+      "activatedFromCandidate": "garrelsdiep.nl",
+      "defaultPlace": {
+        "city": "Garrelsweer"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "groningensaxfest-com-web",
+      "name": "Groningen Sax Fest",
+      "rootUrl": "https://groningensaxfest.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "groningensaxfest.com",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "hetgrootstekerstfeest-nl-web",
+      "name": "Het Grootste Kerstfeest",
+      "rootUrl": "https://www.hetgrootstekerstfeest.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "hetgrootstekerstfeest.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "kerksolwerd-nl-web",
+      "name": "Kerk van Solwerd",
+      "rootUrl": "https://www.kerksolwerd.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kerksolwerd.nl/activiteiten"
+      },
+      "activatedFromCandidate": "kerksolwerd.nl",
+      "defaultPlace": {
+        "city": "Appingedam"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "kunstruimtedesmederij-nl-web",
+      "name": "Kunstruimte De Smederij",
+      "rootUrl": "https://www.kunstruimtedesmederij.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kunstruimtedesmederij.nl/Exposities/"
+      },
+      "activatedFromCandidate": "kunstruimtedesmederij.nl",
+      "defaultPlace": {
+        "city": "Sappemeer"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "luthersbachensemble-nl-web",
+      "name": "Luthers Bach Ensemble",
+      "rootUrl": "https://www.luthersbachensemble.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.luthersbachensemble.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "luthersbachensemble.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "mozartconcerten-nl-web",
+      "name": "Mozartconcerten (Beleef Klassiek) Groningen",
+      "rootUrl": "https://mozartconcerten.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://mozartconcerten.nl/groningen/"
+      },
+      "activatedFromCandidate": "mozartconcerten.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "opewsum-nl-web",
+      "name": "Op Ewsum (borgterrein, WerkPro)",
+      "rootUrl": "https://www.opewsum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "opewsum.nl",
+      "defaultPlace": {
+        "city": "Middelstum"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "pkn-bellingwolde-nl-web",
+      "name": "Protestantse Gemeente Bellingwolde (Magnuskerk)",
+      "rootUrl": "https://www.pkn-bellingwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pkn-bellingwolde.nl/agendapagina"
+      },
+      "activatedFromCandidate": "pkn-bellingwolde.nl",
+      "defaultPlace": {
+        "city": "Bellingwolde"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "plantsoenloop-nl-web",
+      "name": "Plantsoenloop",
+      "rootUrl": "https://plantsoenloop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://plantsoenloop.nl/"
+      },
+      "activatedFromCandidate": "plantsoenloop.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "podiumauxesis-nl-web",
+      "name": "Podium Auxesis",
+      "rootUrl": "https://podiumauxesis.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://podiumauxesis.nl/"
+      },
+      "activatedFromCandidate": "podiumauxesis.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "podiumverwondering-nl-web",
+      "name": "Podium Verwondering",
+      "rootUrl": "https://podiumverwondering.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://podiumverwondering.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "podiumverwondering.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "prummeltour-nl-web",
+      "name": "Prummeltour",
+      "rootUrl": "https://www.prummeltour.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.prummeltour.nl/"
+      },
+      "activatedFromCandidate": "prummeltour.nl",
+      "defaultPlace": {
+        "city": "Musselkanaal"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "slavernijverledengroningen-nl-web",
+      "name": "Slavernijverleden Groningen",
+      "rootUrl": "https://slavernijverledengroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://slavernijverledengroningen.nl/"
+      },
+      "activatedFromCandidate": "slavernijverledengroningen.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "stadsparknightrun-nl-web",
+      "name": "Stadspark Nightrun",
+      "rootUrl": "https://stadsparknightrun.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://stadsparknightrun.nl/"
+      },
+      "activatedFromCandidate": "stadsparknightrun.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "stichtingcultureelslochteren-nl-web",
+      "name": "Stichting Cultureel Slochteren",
+      "rootUrl": "https://www.stichtingcultureelslochteren.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.stichtingcultureelslochteren.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "stichtingcultureelslochteren.nl",
+      "defaultPlace": {
+        "city": "Slochteren"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "stichtingjazzingroningen-nl-web",
+      "name": "Stichting Jazz in Groningen",
+      "rootUrl": "https://stichtingjazzingroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://stichtingjazzingroningen.nl/events/"
+      },
+      "activatedFromCandidate": "stichtingjazzingroningen.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "venstersoprilke-nl-web",
+      "name": "Vensters op Rilke",
+      "rootUrl": "https://venstersoprilke.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "venstersoprilke.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "wilhelminaleens-nl-web",
+      "name": "Muziekvereniging Wilhelmina Leens",
+      "rootUrl": "https://wilhelminaleens.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://wilhelminaleens.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "wilhelminaleens.nl",
+      "defaultPlace": {
+        "city": "Leens"
+      },
+      "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "twijzelerheide-net-web",
+      "name": "Twijzelerheide",
+      "rootUrl": "http://www.twijzelerheide.net/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://twijzelerheide.net/2026/09/18/programma-2026-2027-christelijk-plattelandsvrouwen-bond-cpb/"
+      },
+      "activatedFromCandidate": "twijzelerheide.net",
+      "policyReviewedAt": "2026-10-21",
+      "defaultPlace": {
+        "city": "Twijzelerheide",
+        "lat": 53.2411,
+        "lon": 6.0472
+      }
+    },
+    {
+      "id": "buitendijks-nl-web",
+      "name": "Brouwdok Buitendijks",
+      "rootUrl": "https://buitendijks.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "buitendijks.nl",
+      "defaultPlace": {
+        "venue": "Brouwdok Buitendijks",
+        "city": "Harlingen",
+        "lat": 53.171272,
+        "lon": 5.4127177
+      },
+      "policyReviewedAt": "2026-10-21"
     }
   ]
 }
