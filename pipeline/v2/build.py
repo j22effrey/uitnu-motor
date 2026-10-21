@@ -106,7 +106,10 @@ def _routine_key(event: dict) -> tuple[str, str]:
     title = re.sub(rf"\b\d{{1,2}}[:.]\d{{2}}\b|\b\d{{1,2}} {_MONTH}\b|\b(?:uur|van|tot|t/m|vanaf|om)\b", " ",
                    normalize(event.get("title") or ""))
     hosts = [s.get("host") for s in event.get("sources") or [] if s.get("host")]
-    return " ".join(title.split()), (hosts[0] if hosts else "")
+    # Een vaste activiteit is steeds op dezelfde plek. Dezelfde lezing van de bibliotheek in Nieuwe Pekela,
+    # Winschoten en Onstwedde (één website voor alle vestigingen) is een rondgang, geen clubavond (oktober 2026).
+    city = normalize((event.get("venue") or {}).get("city") or "")
+    return " ".join(title.split()), f"{hosts[0] if hosts else ''}|{city}"
 
 
 def routines(events: list[dict], today: date | None = None) -> set[int]:
