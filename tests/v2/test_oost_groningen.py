@@ -72,3 +72,26 @@ def test_voorleesuurtje_is_voor_kinderen_en_adrillen_is_een_markt():
     assert kind("Boekstarthalfuurtje") == "kinderen"
     assert kind("Adrillen") == "markt"
     assert kind("Lezing over voorlezen") == "lezing"
+
+
+def test_dezelfde_lezing_in_meerdere_plaatsen_is_geen_vaste_clubavond():
+    """De bibliotheek (één website voor alle vestigingen) houdt dezelfde lezing in Nieuwe Pekela, Winschoten,
+    Onstwedde en Leek: een rondgang, geen wekelijkse clubavond (oktober 2026)."""
+    from pipeline.v2.build import routines
+    def ev(day, city):
+        return {"title": "Lunchlezing met Sanne Meijer", "kind": "lezing", "venue": {"city": city},
+                "occurrences": [{"date": day}], "sources": [{"host": "ticketing.groningsebibliotheken.nl"}]}
+    tour = [ev("2026-10-23", "Nieuwe Pekela"), ev("2026-10-30", "Winschoten"), ev("2026-11-06", "Onstwedde"), ev("2026-11-13", "Leek")]
+    assert routines(tour, today=date(2026, 10, 21)) == set()
+    weekly = [ev(d, "Leek") for d in ("2026-10-23", "2026-10-30", "2026-11-06", "2026-11-13", "2026-11-20")]
+    assert routines(weekly, today=date(2026, 10, 21)) == {0, 1, 2, 3, 4}
+
+
+def test_peuteruurtje_in_een_paar_vestigingen_blijft_een_vaste_activiteit():
+    from pipeline.v2.build import routines
+    def ev(day, city):
+        return {"title": "Dreumesuurtje", "kind": "kinderen", "venue": {"city": city},
+                "occurrences": [{"date": day}], "sources": [{"host": "ticketing.groningsebibliotheken.nl"}]}
+    events = [ev("2026-10-22", "Stadskanaal"), ev("2026-10-29", "Onstwedde"), ev("2026-11-05", "Stadskanaal"),
+              ev("2026-11-12", "Onstwedde")]
+    assert routines(events, today=date(2026, 10, 21)) == {0, 1, 2, 3}

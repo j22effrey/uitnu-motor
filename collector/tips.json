@@ -870,6 +870,69 @@
       "plaats": "Appingedam",
       "reden": "Concertkerk met eigen agenda (concerten Groninger Mozart Ensemble 29 nov, Messiah 17 dec, kerstconcert 19 dec, Winterwarm 12 dec); stond nog niet in de bronnen of kandidaten. Diensten staan er ook in en vallen vanzelf weg. (vergelijking met VisitGroningen als controlelijst, oktober 2026)",
       "datum": "2026-10-20"
+    },
+    {
+      "url": "https://www.intholt1654.nl/theaterzaal/programma",
+      "naam": "In 't Holt 1654 (grand café met theaterzaal)",
+      "plaats": "Zuidhorn",
+      "reden": "Eigen programmapagina van de theaterzaal (PPM-show met gasten, pubquiz, muziekavonden); robots.txt staat alles toe. (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21"
+    },
+    {
+      "url": "https://desmidse.net/",
+      "naam": "Jeugd- en Jongerenwerk De Smidse (Niekerk, Oldekerk, Faan)",
+      "plaats": "Niekerk",
+      "reden": "Organisator van de feestweek, Spijkerpop (festival, editie 2027 met o.a. Drukwerk), Oktoberfest en de spooktocht; eigen website met ticketshop. robots.txt staat het toe. (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21"
+    },
+    {
+      "url": "https://stuurhuusdoezum.nl/",
+      "naam": "Dorpshuis 't Stuurhuus Doezum",
+      "plaats": "Doezum",
+      "reden": "Website van het dorpshuis (gevonden via de dorpshuizenlijst). Er staat o.a. een Top 2000 quiz met de Spanband op 28 november op het programma. Vanaf hier niet bereikbaar (verbinding verbroken), dus de motor moet hem zelf testen. (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21"
+    },
+    {
+      "url": "https://www.mfagrootegast.nl/",
+      "naam": "MFA Grootegast",
+      "plaats": "Grootegast",
+      "reden": "Multifunctionele accommodatie (dorpshuis) van Grootegast, gevonden via de dorpshuizenlijst; vanaf hier niet bereikbaar, de motor moet hem zelf testen. (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21"
+    },
+    {
+      "url": "https://scheepsjoagers.nl/agenda/",
+      "naam": "Shantykoor De Scheepsjoagers (Muntendam)",
+      "reden": "Eigen agenda (The Events Calendar, /wp-json/tribe/ werkt) van het shantykoor uit Muntendam; o.a. Kerstconcert zo 20 december in dorpshuis De Menterne. Let op: ALV (vergadering) en optredens in verzorgingshuizen (De Breehorn) zijn geen uitje voor publiek. (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21",
+      "plaats": "Muntendam"
+    },
+    {
+      "url": "https://garsthuizen.info/",
+      "naam": "'t Binhoes, dorpshuis Startenhuizen en Garsthuizen",
+      "reden": "Het dorpshuis van Startenhuizen en Garsthuizen (Smydingheweg 3, Garsthuizen) houdt 'af en toe op vrijdag een café-avond met live muziek of een lezing'; contact via binhoes@garsthuizen.info. De site garsthuizen.info kon ik vanaf hier niet bereiken: graag laten testen. (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21",
+      "plaats": "Garsthuizen"
+    },
+    {
+      "url": "https://www.schanspop.nl/",
+      "naam": "Schanspop Siddeburen",
+      "reden": "Jaarlijks popfestival in Siddeburen (sinds 1987, Stichting Schanspop2000), met veel verschillende artiesten, deels in de openlucht; editie 2026 was 14-16 mei. Hoort in de dekking; volgende editie nog niet aangekondigd. (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21",
+      "plaats": "Siddeburen"
+    },
+    {
+      "url": "https://margarethahardenbergcultuurcentrum.nl/",
+      "naam": "Margaretha Hardenberg Cultuurcentrum",
+      "plaats": "Wildervank",
+      "reden": "Cultuurcentrum in Wildervank (concerten, theater, kerstmarkt) met eigen agenda op /programma/ (WP Event Manager); de test vindt 10 uitjes. Stond nog niet in de motor. robots.txt staat alles toe. (dorpenronde Groningen, 21 oktober 2026) (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21"
+    },
+    {
+      "url": "https://www.siepco.info/activiteiten/",
+      "naam": "Siep&Co (Stichting Industrieel Erfgoed Pekela & Culturele Ontwikkeling)",
+      "plaats": "Oude Pekela",
+      "reden": "Erfgoedlocatie en podium in de oude strokartonfabriek met eigen activiteitenpagina (concerten zoals Late Summer Blues, film, Open Monumentendag, WAARK-première 29-31 okt). robots.txt staat het toe. (dorpen van Groningen nagelopen, 21 oktober 2026)",
+      "datum": "2026-10-21"
     }
   ]
 }

@@ -119,6 +119,11 @@ def routines(events: list[dict], today: date | None = None) -> set[int]:
         days = sorted({date.fromisoformat(events[i]["occurrences"][0]["date"]) for i in indexes})
         if not title or len(days) < ROUTINE_MIN:
             continue
+        # Een rondgang: dezelfde lezing van de bibliotheek in Nieuwe Pekela, Winschoten en Onstwedde (één website
+        # voor alle vestigingen), elke plaats één keer. Komt een plaats vaker terug, dan is het een vaste activiteit.
+        cities = [normalize((events[i].get("venue") or {}).get("city") or "") for i in indexes]
+        if all(cities) and len(set(cities)) == len(cities):
+            continue
         gaps = sorted((b - a).days for a, b in zip(days, days[1:]))
         if (days[-1] - days[0]).days < ROUTINE_MIN_SPAN_DAYS and (
                 gaps[-1] == 1 or (today and (days[0] - today).days > ROUTINE_LATER_DAYS)):
