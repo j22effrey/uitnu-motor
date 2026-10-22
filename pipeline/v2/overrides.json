@@ -91,6 +91,11 @@
    "naam": "visserijdagen",
    "soort": "festival",
    "reden": "Driedaags evenement in de binnenstad en haven van Harlingen met meerdere podia en veel verschillende artiesten, plus markt en kermis. Het programma op visserijdagenharlingen.nl hoort erbij."
+  },
+  {
+   "naam": "^lbe\\b",
+   "soort": "muziek",
+   "reden": "LBE is het Luthers Bach Ensemble: concerten met koor en orkest (ook de familievoorstelling van de Matthäus Passion is een concert)."
   }
  ],
  "uitjes": {

@@ -129,7 +129,8 @@ def _undouble(title: str) -> str:
 # aanvang 19.30 uur – jongeren t/m 27 jaar – zaal open 30 minuten voor aanvang concert'): staan al bij het uitje.
 _DATE = rf"\d{{1,2}}\s+{_MONTHS}(?:\s+\d{{4}})?"
 PRACTICAL_PART = re.compile(
-    rf"^(?:(?:{_DAYS}\s+)?{_DATE}|aanvang\b.*|zaal open\b.*|deuren open\b.*|(?:kinderen en )?jongeren t/m \d+ jaar)$",
+    rf"^(?:(?:{_DAYS}\s+)?{_DATE}|aanvang\b.*|zaal open\b.*|deuren open\b.*|(?:kinderen en )?jongeren t/m \d+ jaar"
+    rf"|(?:eerste rang|tweede rang|reguliere?|losse|vip)\s+tickets?)$",
     re.IGNORECASE)
 TITLE_PARTS = re.compile(r"\s*[–—]\s*|\s+-\s+|\s*\|\s*")
 # Een datum of tijd aan het eind van een deel: 'Scherven van de Wereld wo 11 nov' (of 'vr 20 – zo 22 nov'), 'Toneelvereniging ODI, zaterdag
@@ -149,7 +150,7 @@ def _tidy(title: str, city: str | None, venue: str | None) -> str:
     """Haalt de praktische zaken uit een lange naam: datum, aanvang, zaal open, leeftijd, en de plaats of het
     gebouw als los deel. Het eerste deel blijft altijd staan; een deel van de echte naam ook."""
     places = {slugify(place) for place in (city, venue) if place}
-    places |= {slugify(part) for place in (venue,) if place for part in re.split(r"[,(]", place) if part.strip()}
+    places |= {slugify(part) for part in re.split(r"[,(/|]|\s+I\s+", venue or "") if part.strip()}
     unlabeled = LEADING_LABEL.sub("", title)
     if unlabeled != title:
         title = unlabeled[:1].upper() + unlabeled[1:]
@@ -157,15 +158,15 @@ def _tidy(title: str, city: str | None, venue: str | None) -> str:
     parts = TITLE_PARTS.split(title)
     if len(parts) > 1:
         drop = {index for index, part in enumerate(parts)
-                if index and (PRACTICAL_PART.match(part) or slugify(part) in places)}
-        # 'Groningen – Martinikerk – 22 oktober 2026': na de plaats volgt het gebouw, voor de datum.
-        for index in range(1, len(parts) - 2):
-            if slugify(parts[index]) == slugify(city or "-") and PRACTICAL_PART.match(parts[index + 2]):
-                drop.add(index + 1)
-        if drop:
-            title = " – ".join(part for index, part in enumerate(parts) if index not in drop)
+                if index and (PRACTICAL_PART.match(part) or slugify(part) in places
+                              or f"-{slugify(part)}-" in f"-{slugify(venue or '')}-")}
+        kept = [part for index, part in enumerate(parts) if index not in drop]
+        # Blijft er één los woord over ('Muziek | De Oosterpoort'), dan is de hele naam nodig om uitjes uit elkaar
+        # te houden.
+        if drop and len(" ".join(kept).split()) >= 2:
+            title = " – ".join(kept)
     shorter = TRAILING_WHEN.sub("", title)
-    return shorter if len(shorter.split()) >= 2 else title
+    return _undouble(shorter if len(shorter.split()) >= 2 else title)
 
 
 def clean_title(value: str | None, city: str | None = None, venue: str | None = None) -> str:

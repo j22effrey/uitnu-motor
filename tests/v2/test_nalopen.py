@@ -117,3 +117,13 @@ def test_praktische_zaken_gaan_uit_een_lange_naam():
                   "Groningen – Stad van verhalen", "Expositie 7 november", "Sneek – Sneekweek"):
         assert clean_title(title, "Sneek", "Theater Sneek") == title, title
     assert clean_title("Explore the North Festivalweekend vr 20 – zo 22 nov") == "Explore the North Festivalweekend"
+
+
+def test_inkorten_laat_de_echte_naam_heel():
+    # Nakijkronde: alleen het gebouw valt weg, geen deel van de naam; nooit één los woord over; kaartsoort weg.
+    assert clean_title("Bach – Groningen – Johannes Passion – 2 april", "Groningen", "Martinikerk") == "Bach – Johannes Passion"
+    assert clean_title("Muziek | De Oosterpoort", "Groningen", "De Oosterpoort") == "Muziek | De Oosterpoort"
+    assert clean_title("LBE – Messiah – reguliere ticket", "Groningen", "Martinikerk") == "LBE – Messiah"
+    assert clean_title("LBE – Matthäus Passion – Antwerpen – Sint-Carolus Borromeuskerk – 9 maart 2027", "Antwerkpen",
+                       "Sint-Carolus Borromeuskerk / Antwerpen") == "LBE – Matthäus Passion"
+    assert clean_title("Zomervakantie rijlessen Zomervakantie rijlessen 20 juli t/m 16 augustus 2026") == "Zomervakantie rijlessen"
