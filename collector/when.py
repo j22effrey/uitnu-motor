@@ -129,6 +129,8 @@ def parse_day(value, today: date) -> tuple[date | None, str | None]:
 
 _RANGE_SAME_MONTH = re.compile(rf"(?<![:.\d])\b(\d{{1,2}})\s*(?:-|–|t/m|tot en met|tot)\s*(?:(?:{_WEEKDAY})\.?\s+)?(\d{{1,2}})\s+({_MONTH})\b", re.I)
 _RANGE_TO = re.compile(rf"(?:-|–|t/m|tot en met|\btot\b|\buntil\b)\s*(?:(?:{_WEEKDAY})\.?,?\s+)?(\d{{1,2}})[\s.]+({_MONTH})\b", re.I)
+# In cijfers: '13-11-2026 t/m 14-11-2026' (WTC Expo).
+_RANGE_NUMERIC = re.compile(r"(?:\s-\s|–|t/m|tot en met|\btot\b)\s*(\d{1,2})[-./](\d{1,2})[-./](20\d\d)\b", re.I)
 
 
 def parse_end_day(text, start: str | None) -> str | None:
@@ -143,9 +145,15 @@ def parse_end_day(text, start: str | None) -> str | None:
     day, month = (int(m.group(2)), MONTHS[m.group(3).lower()]) if m else (None, None)
     if not m:
         m = _RANGE_TO.search(text)
+        if m:
+            day, month = int(m.group(1)), MONTHS[m.group(2).lower()]
+    if not m:
+        m = _RANGE_NUMERIC.search(text)
         if not m:
             return None
-        day, month = int(m.group(1)), MONTHS[m.group(2).lower()]
+        day, month = int(m.group(1)), int(m.group(2))
+        if not 1 <= month <= 12:
+            return None
     end = _date(first.year + (1 if month < first.month else 0), month, day)
     if not end or end <= first or (end - first).days > 62:
         return None
