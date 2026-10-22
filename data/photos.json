@@ -15444,6 +15444,10 @@
    "checkedAt": "2026-10-16",
    "url": null
   },
+  "plek:it bynt|wommels": {
+   "checkedAt": "2026-10-22",
+   "url": null
+  },
   "plek:it gryn|stiens": {
    "checkedAt": "2026-10-14",
    "url": null
@@ -18557,13 +18561,13 @@
    "via": "og:image"
   },
   "https://appelscha.nl/tstevent/uilen-csi-in-het-drents-friese-wold-2/2026-11-21/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "natuur",
     "woord": "natuur"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://appelscha.nl/wp-content/uploads/2022/03/CSI-Uilen-met-braakballen-pluizen-in-het-Boswachterslab.jpg",
+   "via": "og:image"
   },
   "https://appelscha.nl/tstevent/veenexcursie-beleef-het-hoogveen/2026-11-01/": {
    "checkedAt": "2026-10-21",
@@ -18752,6 +18756,15 @@
     "woord": "markt"
    },
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/beetsterzwaag-olterterp/library/variants/s3n9jNQhyUuoaKYtBcaQvCiUkRUm3jAJn009U49D-m.webp",
+   "via": "og:image"
+  },
+  "https://beetsterzwaag.frl/dag-van-de-opsterlandse-geschiedenis-op-24-oktober": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "markt",
+    "woord": "markt"
+   },
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/beetsterzwaag-olterterp/library/variants/tu8BgBOOLc7OWrtAHHj0wOYUnEIsxsIDfoK16f4c-m.webp",
    "via": "og:image"
   },
   "https://beetsterzwaag.frl/discussieavond-3-november-over-hoe-het-gaat-met-de-jeugd-in-beetsterzwaag": {
@@ -19690,9 +19703,9 @@
    "via": "og:image"
   },
   "https://buurtcentrumoranjewijk.nl/activiteit/wij-centrum-schildersbuurt-maandag-en-vrijdag-2/2026-11-20/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://buurtcentrumoranjewijk.nl/wp-content/uploads/2024/07/Asset-4.png",
+   "via": "og:image"
   },
   "https://buurtcentrumoranjewijk.nl/activiteit/wij-centrum-schildersbuurt-maandag-en-vrijdag-2/2026-11-23/": {
    "checkedAt": "2000-01-01",
@@ -22346,6 +22359,16 @@
    "image": "https://explorethenorth.nl/wp-content/uploads/2026/06/Alabaster-DePlume_-credit-Chris-Almeida-@chrisdnm-scaled-optimized.jpg",
    "via": "og:image"
   },
+  "https://explorethenorth.nl/event/alexander-moto-terug-naar-hip-hop/": {
+   "checkedAt": "2026-10-22",
+   "image": "https://explorethenorth.nl/wp-content/uploads/2026/10/moto-in-de-city-2-1-optimized.jpg",
+   "via": "og:image"
+  },
+  "https://explorethenorth.nl/event/aminata-soumare-hannan-van-rooij-als-een-zoutpilaar/": {
+   "checkedAt": "2026-10-22",
+   "image": "https://explorethenorth.nl/wp-content/uploads/2026/10/Hannan-van-Rooij-Aminata-Soumare-ALS-een-zoutpilaar-optimized.jpg",
+   "via": "og:image"
+  },
   "https://explorethenorth.nl/event/anne-marijn-voorhorst-goldscammer/": {
    "checkedAt": "2026-10-18",
    "image": "https://explorethenorth.nl/wp-content/uploads/2026/09/1-1-1440x1920-optimized.png",
@@ -22607,6 +22630,15 @@
    "image": "https://explorethenorth.nl/wp-content/uploads/2026/09/mel-kikker-scaled-optimized.jpg",
    "via": "og:image"
   },
+  "https://explorethenorth.nl/event/mikkl/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "muziek",
+    "woord": "muziek"
+   },
+   "image": "https://explorethenorth.nl/wp-content/uploads/2026/10/mikkl-768x960-optimized.png",
+   "via": "og:image"
+  },
   "https://explorethenorth.nl/event/n-i-t-e-f-i-s-h/": {
    "checkedAt": "2026-10-18",
    "image": "https://explorethenorth.nl/wp-content/uploads/2026/09/NITEFISH_Pressbilder_StudioForgatmigej_79-scaled-optimized.jpg",
@@ -22731,6 +22763,11 @@
   "https://explorethenorth.nl/fy/event/de-rustruimte/": {
    "checkedAt": "2026-10-18",
    "image": "https://explorethenorth.nl/wp-content/uploads/2026/09/de-rustruimte-2-optimized.jpg",
+   "via": "og:image"
+  },
+  "https://explorethenorth.nl/fy/event/ellemieke-meijers-willemijn-vd-walle-lj-de-brouwer-maria-magdalena-decort-de-verwonderkamer/": {
+   "checkedAt": "2026-10-22",
+   "image": "https://explorethenorth.nl/wp-content/uploads/2026/07/de-verwonderkamer-grafisch-optimized.jpg",
    "via": "og:image"
   },
   "https://explorethenorth.nl/fy/event/in-audio-underfining-oer-de-leste-ronde-fan-e-winkel-op-tsjillen/": {
@@ -22954,6 +22991,16 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/blik-op-je-toekomst-8?date=07-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/blik-op-je-toekomst-8.28821/blik-op-je-toekomst-8-s1920x1080.jpg",
+   "via": "og:image"
+  },
+  "https://forum.nl/nl/agenda/blik-op-je-toekomst-8?date=08-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/blik-op-je-toekomst-8.28821/blik-op-je-toekomst-8-s1920x1080.jpg",
+   "via": "og:image"
+  },
   "https://forum.nl/nl/agenda/cinekid-lab?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/cinekid-lab-4.15019/cinekid-lab-4-s1920x1080.jpg",
@@ -22972,6 +23019,11 @@
   "https://forum.nl/nl/agenda/cursussen/3d-printafval-van-mislukt-naar-nieuw-product?date=08-11-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/3d-printafval-van-mislukt-naar-nieuw-product.28623/3d-printafval-van-mislukt-naar-nieuw-product-s1920x1080.jpg",
+   "via": "og:image"
+  },
+  "https://forum.nl/nl/agenda/cursussen/bouw-je-eigen-broedplaats?date=06-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/bouw-je-eigen-broedplaats.28641/bouw-je-eigen-broedplaats-s1920x1080.jpg",
    "via": "og:image"
   },
   "https://forum.nl/nl/agenda/cursussen/doe-er-zelf-wat-aan-democratie-voor-en-door-jongeren?date=07-11-2026": {
@@ -23079,6 +23131,11 @@
    "image": "https://static.forum.nl/cache/werkplaats-sunnemeerten.28358/werkplaats-sunnemeerten-s1920x1080.jpg",
    "via": "og:image"
   },
+  "https://forum.nl/nl/agenda/de-nieuwe-hoop-heft-in-eigen-handen?date=06-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/de-nieuwe-hoop-heft-in-eigen-handen.28724/de-nieuwe-hoop-heft-in-eigen-handen-s1920x1080.jpg",
+   "via": "og:image"
+  },
   "https://forum.nl/nl/agenda/desanne-van-brederode?date=29-11-2026": {
    "checkedAt": "2026-10-20",
    "image": "https://static.forum.nl/cache/desanne-van-brederode-verlangen-naar-innigheid.27480/desanne-van-brederode-verlangen-naar-innigheid-s1920x1080.jpg",
@@ -23103,6 +23160,11 @@
   "https://forum.nl/nl/agenda/duurzaam-luieren-zindelijk?date=07-11-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/duurzaam-luieren-zindelijk.28440/duurzaam-luieren-zindelijk-s1920x1080.png",
+   "via": "og:image"
+  },
+  "https://forum.nl/nl/agenda/ed-skelets-rariteitenkabinet-7?date=08-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/ed-skelets-rariteitenkabinet-7.28801/ed-skelets-rariteitenkabinet-7-s1920x1080.jpg",
    "via": "og:image"
   },
   "https://forum.nl/nl/agenda/everybody-to-kenmure-street?date=18-11-2026": {
@@ -25001,6 +25063,11 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/het-carnaval-van-de-insecten-3?date=08-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/het-carnaval-van-de-insecten-3.28635/het-carnaval-van-de-insecten-3-s1920x1080.jpg",
+   "via": "og:image"
+  },
   "https://forum.nl/nl/agenda/hoe-koop-je-een-elektrische-auto?date=20-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/hoe-koop-je-een-elektrische-auto.27647/hoe-koop-je-een-elektrische-auto-s1920x1080.jpg",
@@ -25263,6 +25330,11 @@
   "https://forum.nl/nl/agenda/repair-cafe-kids?date=11-11-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/repair-cafe-kids-6.20577/repair-cafe-kids-6-s1920x1080.jpg",
+   "via": "og:image"
+  },
+  "https://forum.nl/nl/agenda/ringgesprek-barrieres-slechten-de-stad-verbinden?date=06-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/ringgesprek-barrieres-slechten-de-stad-verbinden.28827/ringgesprek-barrieres-slechten-de-stad-verbinden-s1920x1080.jpg",
    "via": "og:image"
   },
   "https://forum.nl/nl/agenda/shaun-het-schaap-het-beest-van-de-boerderij?date=16-10-2026": {
@@ -25721,6 +25793,11 @@
    "image": "https://static.forum.nl/cache/jeroen-wiersma-biografie-van-het-ommeland.28633/jeroen-wiersma-biografie-van-het-ommeland-s1920x1080.jpg",
    "via": "og:image"
   },
+  "https://forum.nl/nl/agenda/talks-events/jim-van-os-wie-is-hier-eigenlijk-onbegrepen?date=08-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/jim-van-os-wie-is-hier-eigenlijk-onbegrepen.28823/jim-van-os-wie-is-hier-eigenlijk-onbegrepen-s1920x1080.jpg",
+   "via": "og:image"
+  },
   "https://forum.nl/nl/agenda/talks-events/joris-luyendijk-dit-gaat-ook-over-ons?date=15-11-2026": {
    "checkedAt": "2026-10-17",
    "image": "https://static.forum.nl/cache/joris-luyendijk-dit-gaat-ook-over-ons.28587/joris-luyendijk-dit-gaat-ook-over-ons-s1920x1080.jpg",
@@ -25736,6 +25813,11 @@
    "image": "https://static.forum.nl/cache/kenniscafe-van-wie-is-de-maan.28164/kenniscafe-van-wie-is-de-maan-s1920x1080.jpg",
    "via": "og:image"
   },
+  "https://forum.nl/nl/agenda/talks-events/lets-meet?date=08-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/lets-meet.23857/lets-meet-s1920x1080.jpg",
+   "via": "og:image"
+  },
   "https://forum.nl/nl/agenda/talks-events/lets-show?date=06-11-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/lets-show.28585/lets-show-s1920x1080.jpg",
@@ -25744,6 +25826,11 @@
   "https://forum.nl/nl/agenda/talks-events/liesbeth-van-rossum-een-andere-kijk-op-obesitas?date=06-11-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/liesbeth-van-rossum-een-andere-kijk-op-obesitas.28602/liesbeth-van-rossum-een-andere-kijk-op-obesitas-s1920x1080.jpg",
+   "via": "og:image"
+  },
+  "https://forum.nl/nl/agenda/talks-events/margo-van-den-brink-drijvende-wijken?date=06-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/margo-van-den-brink-drijvende-wijken.28830/margo-van-den-brink-drijvende-wijken-s1920x1080.jpg",
    "via": "og:image"
   },
   "https://forum.nl/nl/agenda/talks-events/michel-poulain-blue-zones?date=07-11-2026": {
@@ -25781,6 +25868,11 @@
    "image": "https://static.forum.nl/cache/nij-begun-van-start-met-drie-miljard.28638/nij-begun-van-start-met-drie-miljard-s1920x1080.jpg",
    "via": "og:image"
   },
+  "https://forum.nl/nl/agenda/talks-events/nominatieshow-bronzen-havik?date=07-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/nominatieshow-bronzen-havik.28825/nominatieshow-bronzen-havik-s1920x1080.jpg",
+   "via": "og:image"
+  },
   "https://forum.nl/nl/agenda/talks-events/omgevingsvisie-groningen-2050": {
    "checkedAt": "2026-10-15",
    "image": "https://static.forum.nl/cache/omgevingsvisie-groningen-2050.22396/omgevingsvisie-groningen-2050-s1920x1080.jpg",
@@ -25814,6 +25906,11 @@
   "https://forum.nl/nl/agenda/talks-events/spellenweek-speelavond?date=30-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/spellenweek-speelavond.27635/spellenweek-speelavond-s1920x1080.jpg",
+   "via": "og:image"
+  },
+  "https://forum.nl/nl/agenda/talks-events/spiekerboks?date=08-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/spiekerboks.28842/spiekerboks-s1920x1080.jpg",
    "via": "og:image"
   },
   "https://forum.nl/nl/agenda/talks-events/spreeuwenlogica-wat-als-niemand-de-baas-is?date=24-10-2026": {
@@ -25872,6 +25969,11 @@
    "image": "https://static.forum.nl/cache/28408.28408/28408.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/un-kuenta-wan-tori-ons-verhoal?date=08-11-2026": {
+   "checkedAt": "2026-10-22",
+   "image": "https://static.forum.nl/cache/un-kuenta-wan-tori-ons-verhoal.28840/un-kuenta-wan-tori-ons-verhoal-s1920x1080.png",
+   "via": "og:image"
   },
   "https://forum.nl/nl/agenda/vincent-luyendijk-de-fijne-stad?date=06-11-2026": {
    "checkedAt": "2026-10-16",
@@ -26844,13 +26946,13 @@
    "via": "og:image"
   },
   "https://harich-ruigahuizen.nl/evenement/vocal-group-sjonge-jonge/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "theater",
     "woord": "musical"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://harich-ruigahuizen.nl/wp-content/uploads/2026/05/Sjonge-Jonge.jpg",
+   "via": "og:image"
   },
   "https://harich-ruigahuizen.nl/evenement/woningbouw-avond-in-ons-gebouw/": {
    "checkedAt": "2026-10-15",
@@ -27717,9 +27819,9 @@
    "via": "schema.org"
   },
   "https://klameare-workum.nl/event/pier-21-wat-spilet/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://klameare-workum.nl/wp-content/uploads/2026/09/Pier21.jpg",
+   "via": "og:image"
   },
   "https://klameare-workum.nl/event/wei-fan-dreamen/": {
    "checkedAt": "2026-10-21",
@@ -28779,6 +28881,11 @@
    "image": null,
    "via": null
   },
+  "https://marrumonline.nl/evenement/lichtjes-van-herinnering/": {
+   "checkedAt": "2026-10-22",
+   "image": null,
+   "via": null
+  },
   "https://marrumonline.nl/evenement/open-atelier-frank-bloem-bij-het-lage-noorden/": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -29246,6 +29353,15 @@
    "image": null,
    "via": null
   },
+  "https://ngk-hoogezand-sappemeer.nl/activiteit/dankdienst-voor-het-leven-van-wiljo-mertens/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "muziek",
+    "woord": "zingen"
+   },
+   "image": null,
+   "via": null
+  },
   "https://ngk-hoogezand-sappemeer.nl/activiteit/ds-a-m-pathuis-59/": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -29273,6 +29389,11 @@
   },
   "https://ngk-hoogezand-sappemeer.nl/activiteit/ds-r-sietsma-16/": {
    "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://ngk-hoogezand-sappemeer.nl/activiteit/thema-avond-maakt-geld-gelukkig/": {
+   "checkedAt": "2026-10-22",
    "image": null,
    "via": null
   },
@@ -30538,6 +30659,11 @@
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/oldeberkoop/library/variants/Mjz7TCqDAI32Y6G6bpl83bwoCck0yRmMECi9UsRf-m.webp",
    "via": "og:image"
   },
+  "https://oldeberkoop.frl/evenement/poezie-zondagmiddag-pand-31-herfst-editie": {
+   "checkedAt": "2026-10-22",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/oldeberkoop/featured/og5FyGfHXTjvvB3pMVmVQizd1s1Lo6vJ2mntNXFi.jpeg",
+   "via": "og:image"
+  },
   "https://oldeberkoop.frl/evenement/zaterdag-kast-tot-kast-markt-repaircafe": {
    "checkedAt": "2026-10-15",
    "hints": {
@@ -30880,6 +31006,11 @@
   "https://onstwedde.info/agenda/artikel/pieter-nanne-brengt-muziektheatervoorstelling-in-holte-1": {
    "checkedAt": "2026-10-14",
    "image": "https://onstwedde.info/fileadmin/_processed_/c/5/csm_Pieter-Nanne-1536x1085_456ffdddea.jpg",
+   "via": "og:image"
+  },
+  "https://onstwedde.info/agenda/artikel/publiekslezing-doodnormaal-wat-doet-er-echt-toe-op-28-oktober-1": {
+   "checkedAt": "2026-10-22",
+   "image": "https://onstwedde.info/fileadmin/user_upload/Publiekslezing__Doodnormaal__Aangepast_.png",
    "via": "og:image"
   },
   "https://onstwedde.info/agenda/artikel/spooktocht-in-het-halminghshoes-in-smeerling-15-oktober-1": {
@@ -34645,6 +34776,16 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8680",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774448/Wat-heb-je-vandaag-online-meegemaakt?.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8682",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774449/Wat-heb-je-vandaag-online-meegemaakt?.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8683",
+   "via": "og:image"
+  },
   "https://ticketshop.barontheater.nl/programma/circus-santelli-721": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -34703,19 +34844,19 @@
    "via": null
   },
   "https://tjuchem.net/event/algemene-ledenvergadering-2/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://tjuchem.net/wp-content/uploads/2026/06/Voorzittershamer.jpg",
+   "via": "og:image"
   },
   "https://tjuchem.net/event/oud-papier-6/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://tjuchem.net/wp-content/uploads/2026/04/Oud-papier-1971-03.jpg",
+   "via": "og:image"
   },
   "https://tjuchem.net/event/pubquiz/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://tjuchem.net/wp-content/uploads/2026/09/PubQuiz-2025-1.jpg",
+   "via": "og:image"
   },
   "https://tryater.nl/programma/fnin/": {
    "checkedAt": "2026-10-17",
@@ -35027,6 +35168,15 @@
    "image": null,
    "via": null
   },
+  "https://tumultgroningen.nl/agenda/bouwers-en-verbinders": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://tumultgroningen.nl/media/1/2-Agenda/2026/_1200x630_crop_center-center_82_none_ns/4a53c057-7a43-4d12-9e93-2fb73dfc4d47.jpeg?v=1792672103",
+   "via": "og:image"
+  },
   "https://tumultgroningen.nl/agenda/een-middag-vol-franse-chansons-van-aznavour-tot-zaz": {
    "checkedAt": "2026-10-18",
    "image": "https://tumultgroningen.nl/media/1/_1200x630_crop_center-center_82_none_ns/Cest-une-chanson-qui-nous-ressemble-foto_2026-10-05-122708_wiae.png?v=1791457434",
@@ -35327,6 +35477,15 @@
    "checkedAt": "2026-10-14",
    "image": null,
    "via": null
+  },
+  "https://venstersoprilke.nl": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "muziek",
+    "woord": "muziek"
+   },
+   "image": "https://venstersoprilke.nl/opengraph.jpg",
+   "via": "schema.org"
   },
   "https://visvliet.com/agenda/spekclub-snert-eten/": {
    "checkedAt": "2026-10-17",
@@ -35983,6 +36142,15 @@
    "image": "https://wommels.nl/wp-content/uploads/2025/09/DJI_20250619180657_0098_D.jpg",
    "via": "og:image"
   },
+  "https://wommels.nl/activiteit/pietenpret-in-de-bieb-20261120-1430/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "feest",
+    "woord": "sinterklaas"
+   },
+   "image": "https://wommels.nl/wp-content/uploads/2025/09/DJI_20250619180657_0098_D.jpg",
+   "via": "og:image"
+  },
   "https://wommels.nl/activiteit/pop-up-boekenclub-20261125-1015/": {
    "checkedAt": "2026-10-18",
    "hints": {
@@ -36038,6 +36206,11 @@
     "soort": "feest",
     "woord": "puzzel"
    },
+   "image": "https://wommels.nl/wp-content/uploads/2025/09/DJI_20250619180657_0098_D.jpg",
+   "via": "og:image"
+  },
+  "https://wommels.nl/activiteit/repair-cafe/": {
+   "checkedAt": "2026-10-22",
    "image": "https://wommels.nl/wp-content/uploads/2025/09/DJI_20250619180657_0098_D.jpg",
    "via": "og:image"
   },
@@ -36334,9 +36507,9 @@
    "via": null
   },
   "https://www.atlastheater.nl/voorstellingen/op-scherp-jasper-van-der-veen-21-nov/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "image": null,
-   "via": "og:image"
+   "via": null
   },
   "https://www.atlastheater.nl/voorstellingen/rare-leeftijd-ricky-koole-26-nov/": {
    "checkedAt": "2000-01-01",
@@ -36711,6 +36884,11 @@
    "image": "https://www.bolsward.nl/wp-content/uploads/2026/02/Aad-voshol-lezing.jpg",
    "via": "og:image"
   },
+  "https://www.bolsward.nl/agenda/voorlezen-knutselen-prinses-arabella-in-het-theater/": {
+   "checkedAt": "2026-10-22",
+   "image": "https://www.bolsward.nl/wp-content/uploads/2026/08/69ccc4c210fbdee43304f712.jpg",
+   "via": "og:image"
+  },
   "https://www.bolsward.nl/agenda/voorstelling-lees-mij-zei-de-brief/": {
    "checkedAt": "2026-10-17",
    "image": "https://www.bolsward.nl/wp-content/uploads/2026/08/lees-mij-1a_Anne-Marie-Adema.jpg",
@@ -37007,6 +37185,11 @@
   "https://www.deblauweschuit-winsum.nl/evenement/ixta-noa-thema-avond-veiligheid/": {
    "checkedAt": "2026-10-21",
    "image": "https://www.deblauweschuit-winsum.nl/wp-content/uploads/2026/05/a34313c4-59cc-4e12-8f19-c40de20ab5b1.jpg",
+   "via": "og:image"
+  },
+  "https://www.deblauweschuit-winsum.nl/evenement/janneke-jager-jaagt/": {
+   "checkedAt": "2026-10-22",
+   "image": "https://www.deblauweschuit-winsum.nl/wp-content/uploads/2026/03/Schermafbeelding-2026-03-10-om-14.12.52.png",
    "via": "og:image"
   },
   "https://www.deblauweschuit-winsum.nl/evenement/lezing-over-kunstschilder-henri-matisse-in-de-blauwe-schuit/": {
@@ -37498,6 +37681,11 @@
   "https://www.demolenberg.nl/voorstellingen/sense-and-sensibility/": {
    "checkedAt": "2026-10-20",
    "image": "https://www.demolenberg.nl/wp-content/uploads/2026/10/Sense-and-Sensibility_ps_1_jpg_sd-high_2026-Focus-Features-LLC-All-Rights-Reserved.jpg",
+   "via": "og:image"
+  },
+  "https://www.demolenberg.nl/voorstellingen/soraya-de-bakker/": {
+   "checkedAt": "2026-10-22",
+   "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/Soraya-de-Bakker-Help-ik-ga-trouwen-Nander-de-Wijk-2.jpg",
    "via": "og:image"
   },
   "https://www.demolenberg.nl/voorstellingen/stone-water/": {
@@ -38432,13 +38620,13 @@
    "via": "og:image"
   },
   "https://www.groningerlandschap.nl/activiteiten/er-op-uit/wandeling-nacht-van-de-nacht-5/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "natuur",
     "woord": "natuur"
    },
    "image": null,
-   "via": "og:image"
+   "via": null
   },
   "https://www.groningerlandschap.nl/activiteiten/er-op-uit/wandeling-nacht-van-de-nacht-6/": {
    "checkedAt": "2026-10-21",
@@ -38791,13 +38979,13 @@
    "via": "og:image"
   },
   "https://www.houtstad-ijlst.nl/event/repaircafe-ijlst/2026-11-21/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "lezing",
     "woord": "repair caf"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://www.houtstad-ijlst.nl/wp-content/uploads/2025/12/repair-cafe-ijlst-bordje-edited.jpg",
+   "via": "og:image"
   },
   "https://www.houtstad-ijlst.nl/event/verhalenavond-friesland/": {
    "checkedAt": "2026-10-22",
@@ -40450,6 +40638,15 @@
    "image": "https://www.luxor.nl/media/poster/thumb/the-last-viking_35361_199995_ps.jpg",
    "via": "og:image"
   },
+  "https://www.luxor.nl/specials-events/luxor-max": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": null,
+   "via": null
+  },
   "https://www.luxor.nl/specials-events/peuter-kleuter": {
    "checkedAt": "2026-10-17",
    "hints": {
@@ -40924,6 +41121,15 @@
    "image": "https://www.np-lauwersmeer.nl/wp-content/uploads/2025/03/Riet-en-melkweg-in-Dark-Sky-Park-Lauwersmeer-@prov.Groningen.jpg",
    "via": "og:image"
   },
+  "https://www.np-lauwersmeer.nl/activiteiten/vollemaanwandeling-lauwersmeer-21-11/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "natuur",
+    "woord": "wandel"
+   },
+   "image": "https://www.np-lauwersmeer.nl/wp-content/uploads/2019/10/Lauwersmeer-bij-maanlicht.png",
+   "via": "og:image"
+  },
   "https://www.np-lauwersmeer.nl/activiteiten/vollemaanwandeling-lauwersmeer-23-10/": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -40960,6 +41166,11 @@
   },
   "https://www.oldenzijl.nl/wordpress/": {
    "checkedAt": "2026-10-14",
+   "image": null,
+   "via": null
+  },
+  "https://www.oldenzijl.nl/wordpress/2026/10/22/reactie-op-de-brief-van-ikzorg/": {
+   "checkedAt": "2026-10-22",
    "image": null,
    "via": null
   },
@@ -42270,6 +42481,15 @@
   "https://www.sneek.nl/activiteiten/osss-ouwe-sneker-stappers-societeit/78257": {
    "checkedAt": "2026-10-21",
    "image": "https://assets.plaece.nl/thumb/EiUekcCSfsdQBLOe0uliMcuCrurPpecYcEvSWpZS1F8/resizing_type:fit/width:650/height:366/gravity:sm/aHR0cHM6Ly9hc3NldHMucGxhZWNlLm5sL29kcC1mcmllc2xhbmQvaW1hZ2UvbmFhbWxvb3NfMTk4NzY5OTIyMS5qcGc.jpg",
+   "via": "og:image"
+  },
+  "https://www.sneek.nl/activiteiten/over-de-liefde/110752": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "lezing",
+    "woord": "verhalen"
+   },
+   "image": "https://assets.plaece.nl/thumb/9AVp_qdNJJXm9XeSDmzUwgz08iw6f9iSWmKMF_Q5qRA/resizing_type:fit/width:650/height:366/gravity:sm/aHR0cHM6Ly9hc3NldHMucGxhZWNlLm5sL29kcC1mcmllc2xhbmQvaW1hZ2UvYWFmLWVuLWxpZXNfNzUzODMzMjc2LmpwZw.jpg",
    "via": "og:image"
   },
   "https://www.sneek.nl/activiteiten/sound-bath-klank-ligconcert/110437": {
@@ -44569,6 +44789,15 @@
    "image": "https://www.theatergeertteis.nl/uploads/sm_image/36fa7bf5-f509-5cc9-b8a7-b1970368bcbb/3555491777/Juf%20Roos%20-%20AFK%20-%20Scenefoto%205.jpg",
    "via": "og:image"
   },
+  "https://www.theatergeertteis.nl/voorstellingen/a-tribute-to-cliff-richard-the-shadows": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://www.theatergeertteis.nl/uploads/sm_image/e8032a1a-a066-5f1e-9d8b-10ddb03caf13/3551971963/Webbanner-Cliff-Richard-theater-geert-teis-stadskanaal-2627.jpg",
+   "via": "og:image"
+  },
   "https://www.theatergeertteis.nl/voorstellingen/dikkie-dik-dirk-scheele-2": {
    "checkedAt": "2026-10-12",
    "hints": {
@@ -44576,6 +44805,15 @@
     "woord": "kids"
    },
    "image": "https://www.theatergeertteis.nl/uploads/sm_image/bcf2f015-bc54-5438-91c6-02ab46700728/3543501128/Webbanner-Dirk-Scheele-theater-geert-teis-stadskanaal-2627-2.jpg",
+   "via": "og:image"
+  },
+  "https://www.theatergeertteis.nl/voorstellingen/dilana-smith": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://www.theatergeertteis.nl/uploads/sm_image/4dced991-a3e8-5455-a986-58e8acc93b35/3549640158/Webbanner-Dilana-Smith-theater-geert-teis-stadskanaal-2627.jpg",
    "via": "og:image"
   },
   "https://www.theatergeertteis.nl/voorstellingen/ernst-bobbie-en-de-rest-3-1330-uur": {
@@ -44630,6 +44868,42 @@
     "woord": "theater"
    },
    "image": "https://www.theatergeertteis.nl/uploads/sm_image/fb46c1b3-522d-5be4-b859-7b7609f1987c/3551450785/Webbanner-Numidia-in-Concert-theater-geert-teis-stadskanaal-2627.jpg",
+   "via": "og:image"
+  },
+  "https://www.theatergeertteis.nl/voorstellingen/roald-dahls-charlie-and-the-chocolate-factory": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://www.theatergeertteis.nl/uploads/sm_image/f982146c-e136-5ef7-80b7-df56b627e407/3556192356/1000083318.jpg",
+   "via": "og:image"
+  },
+  "https://www.theatergeertteis.nl/voorstellingen/roald-dahls-charlie-and-the-chocolate-factory-2": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://www.theatergeertteis.nl/uploads/sm_image/f982146c-e136-5ef7-80b7-df56b627e407/3556192356/1000083318.jpg",
+   "via": "og:image"
+  },
+  "https://www.theatergeertteis.nl/voorstellingen/sara-kroos": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "natuur",
+    "woord": "sterren"
+   },
+   "image": "https://www.theatergeertteis.nl/uploads/sm_image/c98d3b94-ac07-5127-8f36-5ada441cc438/3551781406/Webbanner-Sara-Kroos-theater-geert-teis-stadskanaal-2627.jpg",
+   "via": "og:image"
+  },
+  "https://www.theatergeertteis.nl/voorstellingen/sherlock-holmes-try-out": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://www.theatergeertteis.nl/uploads/sm_image/36dbb992-8c09-5f93-b104-cae743eb727d/3551359682/Webbanner-Sherlock-Holmes-theater-geert-teis-stadskanaal-2627-2.jpg",
    "via": "og:image"
   },
   "https://www.theatergeertteis.nl/voorstellingen/the-cosmic-carnival": {
@@ -44873,6 +45147,15 @@
   "https://www.uithuizermeeden.nl/agenda/whiskey-proeverij/": {
    "checkedAt": "2026-10-20",
    "image": "http://www.uithuizermeeden.nl/assets/Uploads/IMG-20260722-WA0001__FocusFillWyIwLjAwIiwiMC4wMCIsMTIwMCw2MzBd.jpg",
+   "via": "og:image"
+  },
+  "https://www.uithuizermeeden.nl/nieuws/bouwe-luursema-neemt-bezoekers-mee-in-de-geschiedenis-van-groningse-steenhuizen/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "sport",
+    "woord": "loop"
+   },
+   "image": "http://www.uithuizermeeden.nl/assets/Uploads/20261020_204732__FocusFillWyIwLjAwIiwiMC4wMCIsMTIwMCw2MzBd.jpg",
    "via": "og:image"
   },
   "https://www.uithuizermeeden.nl/nieuws/de-meijster-zeemeermin-is-weer-thuis/": {
@@ -45176,6 +45459,15 @@
    "image": "https://cdn.vera-groningen.nl/2026/04/adult-dvd-2400.jpg",
    "via": "og:image"
   },
+  "https://www.vera-groningen.nl/?post_type=events&p=151754&lang=nl": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/04/Leenalchi-2400-2.jpg",
+   "via": "og:image"
+  },
   "https://www.vera-groningen.nl/?post_type=events&p=152263&lang=nl": {
    "checkedAt": "2026-10-21",
    "image": "https://cdn.vera-groningen.nl/2026/05/Hippotraktor-2400.jpg",
@@ -45366,6 +45658,15 @@
     "woord": "feest"
    },
    "image": "https://cdn.vera-groningen.nl/2026/10/Pyrex-2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=155059&lang=nl": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "muziek",
+    "woord": "muziek"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/10/VRLCHT-2400.jpg",
    "via": "og:image"
   },
   "https://www.vera-groningen.nl/?post_type=events&p=155064&lang=nl": {
@@ -46338,6 +46639,11 @@
   },
   "https://zoek.officielebekendmakingen.nl/gmb-2026-480408.html": {
    "checkedAt": "2026-10-15",
+   "image": null,
+   "via": null
+  },
+  "https://zoek.officielebekendmakingen.nl/gmb-2026-492731.html": {
+   "checkedAt": "2026-10-22",
    "image": null,
    "via": null
   },
