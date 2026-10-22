@@ -125,7 +125,51 @@ def _undouble(title: str) -> str:
     return title
 
 
-def clean_title(value: str | None) -> str:
+# Praktische zaken als los deel van de naam ('LBE – Dido & Aeneas – Groningen – Martinikerk – 22 oktober 2026 –
+# aanvang 19.30 uur – jongeren t/m 27 jaar – zaal open 30 minuten voor aanvang concert'): staan al bij het uitje.
+_DATE = rf"\d{{1,2}}\s+{_MONTHS}(?:\s+\d{{4}})?"
+PRACTICAL_PART = re.compile(
+    rf"^(?:(?:{_DAYS}\s+)?{_DATE}|aanvang\b.*|zaal open\b.*|deuren open\b.*|(?:kinderen en )?jongeren t/m \d+ jaar"
+    rf"|(?:eerste rang|tweede rang|reguliere?|losse|vip)\s+tickets?)$",
+    re.IGNORECASE)
+TITLE_PARTS = re.compile(r"\s*[–—]\s*|\s+-\s+|\s*\|\s*")
+# Een datum of tijd aan het eind van een deel: 'Scherven van de Wereld wo 11 nov' (of 'vr 20 – zo 22 nov'), 'Toneelvereniging ODI, zaterdag
+# 20.15u', 'Nacht van de Nacht van 19.30 – ca. 21.00 uur. Verzamelen bij de kerk', 'WO II 7 november 2026 t/m 17 mei 2027'.
+TRAILING_WHEN = re.compile(
+    rf"(?:(?:\s+(?:ma|di|wo|do|vr|za|zo)\s+\d{{1,2}}\s*[–-])?\s+(?:ma|di|wo|do|vr|za|zo)\s+\d{{1,2}}\s+(?:jan|feb|mrt|apr|mei|jun|jul|aug|sep|okt|nov|dec)"
+    rf"|,\s*{_DAYS}\s+\d{{1,2}}[.:]\d{{2}}\s*u(?:ur)?"
+    rf"|\s+(?:van\s+)?\d{{1,2}}[.:]\d{{2}}\s*[–-]\s*(?:ca\.\s*)?\d{{1,2}}[.:]\d{{2}}\s*uur\b.*"
+    rf"|\s+{_DATE}\s+(?:t/m|tot en met|tot|[–-])\s+{_DATE})$", re.IGNORECASE)
+# Een aanduiding voor de naam ('Activiteit Concert van NIHZ', 'Nu te zien: fotografe ...').
+LEADING_LABEL = re.compile(r"^(?:activiteit:?|nu te zien:)\s+(?=\S)", re.IGNORECASE)
+# Een schreeuwende melding achter de naam ('Theeproeverij *WEGENS SUCCES VOLGEBOEKT*').
+TRAILING_SHOUT = re.compile(r"\s*\*[^*a-z]{4,}\*\s*$")
+
+
+def _tidy(title: str, city: str | None, venue: str | None) -> str:
+    """Haalt de praktische zaken uit een lange naam: datum, aanvang, zaal open, leeftijd, en de plaats of het
+    gebouw als los deel. Het eerste deel blijft altijd staan; een deel van de echte naam ook."""
+    places = {slugify(place) for place in (city, venue) if place}
+    places |= {slugify(part) for part in re.split(r"[,(/|]|\s+I\s+", venue or "") if part.strip()}
+    unlabeled = LEADING_LABEL.sub("", title)
+    if unlabeled != title:
+        title = unlabeled[:1].upper() + unlabeled[1:]
+    title = TRAILING_SHOUT.sub("", title)
+    parts = TITLE_PARTS.split(title)
+    if len(parts) > 1:
+        drop = {index for index, part in enumerate(parts)
+                if index and (PRACTICAL_PART.match(part) or slugify(part) in places
+                              or f"-{slugify(part)}-" in f"-{slugify(venue or '')}-")}
+        kept = [part for index, part in enumerate(parts) if index not in drop]
+        # Blijft er één los woord over ('Muziek | De Oosterpoort'), dan is de hele naam nodig om uitjes uit elkaar
+        # te houden.
+        if drop and len(" ".join(kept).split()) >= 2:
+            title = " – ".join(kept)
+    shorter = TRAILING_WHEN.sub("", title)
+    return _undouble(shorter if len(shorter.split()) >= 2 else title)
+
+
+def clean_title(value: str | None, city: str | None = None, venue: str | None = None) -> str:
     # '&amp;' en '&#8211;' uit de HTML van de bron: tekens zoals de organisator ze bedoelt (twee keer, voor '&amp;amp;').
     entity = re.compile(r"&#?\w+;")  # alleen met puntkomma: 'Kunst&centrum' blijft heel
     text = entity.sub(lambda m: unescape(m.group()), entity.sub(lambda m: unescape(m.group()), value or ""))
@@ -138,7 +182,7 @@ def clean_title(value: str | None) -> str:
     timed = re.sub(r"\s+(?:[|I]\s+)?\d{1,2}[:.]\d{2}\s*[-–]\s*\d{1,2}[:.]\d{2}$", "", rest)
     rest = timed if len(timed) >= 3 else rest
     bare = TRAILING_LABEL.sub("", rest)
-    return bare if len(bare.split()) >= 2 else rest
+    return _tidy(bare if len(bare.split()) >= 2 else rest, city, venue)
 
 
 def to_v2(raw: dict, today: date) -> dict | None:
@@ -182,7 +226,7 @@ def to_v2(raw: dict, today: date) -> dict | None:
             sources.append({"type": kind, "url": link, "host": _host(link),
                             "seenAt": raw.get("lastSourceAudit")})
 
-    title = clean_title(raw.get("title"))
+    title = clean_title(raw.get("title"), city, raw.get("location"))
     return {
         "id": raw.get("id") or slugify(f"{title}-{city}-{start}"),
         "slug": slugify(f"{title}-{city}-{start}"),

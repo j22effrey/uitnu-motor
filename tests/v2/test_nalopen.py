@@ -96,3 +96,34 @@ def test_cabaret_met_striptease_in_de_naam_is_geen_stripshow():
     assert not not_an_outing(_event("David Linszen – Striptease Van De Dood"))
     for title in ("Striptease show met strippers", "Male striptease", "Striptease-avond", "Ladies night striptease"):
         assert not_an_outing(_event(title)), title
+
+
+def test_praktische_zaken_gaan_uit_een_lange_naam():
+    # Datum, aanvang, zaal open, leeftijd, plaats en gebouw staan al bij het uitje (Fever-vergelijking, 21 oktober 2026).
+    assert clean_title("LBE – Dido & Aeneas – Groningen– Martinikerk – 22 oktober 2026 – aanvang 19.30 uur – jongeren "
+                       "t/m 27 jaar – zaal open 30 minuten voor aanvang concert", "Groningen", "Martinikerk I Groningen") \
+        == "LBE – Dido & Aeneas"
+    assert clean_title("Live: The Acoustic Roos — BROUWDOK BUITENDIJKS", "Harlingen", "Brouwdok Buitendijks") \
+        == "Live: The Acoustic Roos"
+    assert clean_title("UITfestival SWF | Sneek", "Sneek", None) == "UITfestival SWF"
+    assert clean_title("Film avond – 29 oktober") == "Film avond"
+    assert clean_title("Nacht van de Nacht van 19.30 – ca. 21.00 uur. Verzamelen bij de kerk van Eenum.") == "Nacht van de Nacht"
+    assert clean_title("Japanse Theeproeverij *WEGENS SUCCES VOLGEBOEKT*") == "Japanse Theeproeverij"
+    assert clean_title("Activiteit Concert van NIHZ") == "Concert van NIHZ"
+    assert clean_title("Expositie Zij hielden koers 7 november 2026 t/m 17 mei 2027") == "Expositie Zij hielden koers"
+    # De echte naam blijft heel: artiest en voorstelling, of een plaats die de naam is.
+    for title in ("Noord Nederlands Orkest en Alexei Volodin – Rachmaninoff Paganini-rapsodie",
+                  "Ghostbusters Halloween Experience – SPOT | X YUSUF BOSS | De Wijk De Wereld",
+                  "Groningen – Stad van verhalen", "Expositie 7 november", "Sneek – Sneekweek"):
+        assert clean_title(title, "Sneek", "Theater Sneek") == title, title
+    assert clean_title("Explore the North Festivalweekend vr 20 – zo 22 nov") == "Explore the North Festivalweekend"
+
+
+def test_inkorten_laat_de_echte_naam_heel():
+    # Nakijkronde: alleen het gebouw valt weg, geen deel van de naam; nooit één los woord over; kaartsoort weg.
+    assert clean_title("Bach – Groningen – Johannes Passion – 2 april", "Groningen", "Martinikerk") == "Bach – Johannes Passion"
+    assert clean_title("Muziek | De Oosterpoort", "Groningen", "De Oosterpoort") == "Muziek | De Oosterpoort"
+    assert clean_title("LBE – Messiah – reguliere ticket", "Groningen", "Martinikerk") == "LBE – Messiah"
+    assert clean_title("LBE – Matthäus Passion – Antwerpen – Sint-Carolus Borromeuskerk – 9 maart 2027", "Antwerkpen",
+                       "Sint-Carolus Borromeuskerk / Antwerpen") == "LBE – Matthäus Passion"
+    assert clean_title("Zomervakantie rijlessen Zomervakantie rijlessen 20 juli t/m 16 augustus 2026") == "Zomervakantie rijlessen"
