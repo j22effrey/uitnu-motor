@@ -2,126 +2,151 @@
   "artphy-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-21T00:37+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "brugeskerk-nl-web": {
     "fout": "HTTPError: HTTP Error 500: Internal Server Error",
     "sinds": "2026-10-22T17:56+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
+  },
+  "buurtcentrumoranjewijk-nl-web": {
+    "fout": "HTTPError: HTTP Error 500: Internal Server Error",
+    "sinds": "2026-10-22T22:21+00:00",
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "carambole-winschoten-nl-web": {
     "fout": "PermissionError: robots.txt staat https://www.carambole-winschoten.nl/agenda/ niet toe (robots.txt gaf status 503)",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "cgkleeuwarden-nl-web": {
     "fout": "HTTPError: HTTP Error 503: Service Unavailable",
     "sinds": "2026-10-22T01:53+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
+  },
+  "clcleeuwarden-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-22T22:21+00:00",
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "dorpsbelangen-meerstad-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-21T18:45+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "dorpshuisechtenerbrug-nl-web": {
     "fout": "URLError: <urlopen error timed out>",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
+  },
+  "dorpshuislekkum-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-22T22:21+00:00",
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "easthim-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T21:13+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
-  },
-  "ferwertonline-nl-web": {
-    "fout": "HTTPError: HTTP Error 404: Not Found",
-    "sinds": "2026-10-22T17:56+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "gerarddou-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "gkv-uithuizermeeden-nl-web": {
     "fout": "URLError: <urlopen error [Errno -2] Name or service not known>",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "hallumonline-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "hempensteerns-nl-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "lemmerbinnen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-22T01:53+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "mfcgroningen-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-22T01:53+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "ontmoetingskerkharen-nl-web": {
     "fout": "HTTPError: HTTP Error 406: Not Acceptable",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "parkzicht-veendam-web": {
     "fout": "PermissionError: robots.txt staat https://www.parkzicht.com/agenda/ niet toe (robots.txt gaf status 503)",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
+  },
+  "pknanloozuidlaren-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-22T22:21+00:00",
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "roodehaan-com-web": {
     "fout": "PermissionError: robots.txt staat https://www.roodehaan.com/concerten/ niet toe (robots.txt niet bereikbaar: URLError: <urlopen error _ssl.c:993: The handshake operation timed out>)",
     "sinds": "2026-10-22T17:56+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "societeitdeharmonie-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-22T01:53+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
+  },
+  "sportcentrumdehullen-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-22T22:21+00:00",
+    "laatst": "2026-10-22T22:21+00:00"
+  },
+  "stinze-stiens-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-22T22:21+00:00",
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "tsjerkwert-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T12:24+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
-  "vledderveengroningen-nl-web": {
+  "uithuizermeeden-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "sinds": "2026-10-22T22:21+00:00",
+    "laatst": "2026-10-22T22:21+00:00"
+  },
+  "viadukt-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-22T22:21+00:00",
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "vosseparkwijk-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "vugroningen-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "westerlee-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T12:24+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   },
   "wijkbelangwesteinde-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-10-22T12:42+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
-  },
-  "wjelsryp-frl-web": {
-    "fout": "TimeoutError: The read operation timed out",
-    "sinds": "2026-10-22T17:56+00:00",
-    "laatst": "2026-10-22T17:56+00:00"
+    "laatst": "2026-10-22T22:21+00:00"
   }
 }
