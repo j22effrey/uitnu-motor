@@ -758,6 +758,328 @@
         ],
         "verwacht90": 1
       }
+    ],
+    "Heerenveen": [
+      {
+        "naam": "sc Heerenveen (Abe Lenstra Stadion)",
+        "type": "sport",
+        "plaats": "Heerenveen",
+        "website": "https://www.sc-heerenveen.nl/wedstrijden",
+        "hosts": [
+          "sc-heerenveen.nl"
+        ],
+        "verwacht90": 3,
+        "opmerking": "Eredivisie; thuiswedstrijden eerste elftal (config in vondst_V)."
+      },
+      {
+        "naam": "Thialf",
+        "type": "sport",
+        "plaats": "Heerenveen",
+        "website": "https://thialf.nl/",
+        "hosts": [
+          "thialf.nl"
+        ],
+        "verwacht90": 5,
+        "opmerking": "Schaatsen (kwalificatietoernooi wereldbeker vanaf 30 okt 2026, NK's). Site gaf op 22-10-2026 overal HTTP 500."
+      },
+      {
+        "naam": "UNIS/Jumbo Flyers Heerenveen (ijshockey, Thialf)",
+        "type": "sport",
+        "plaats": "Heerenveen",
+        "website": "https://heerenveenflyers.com/wedstrijden/",
+        "hosts": [
+          "heerenveenflyers.com"
+        ],
+        "verwacht90": 4
+      },
+      {
+        "naam": "WK IJsspeedway (Thialf)",
+        "type": "sport",
+        "plaats": "Heerenveen",
+        "website": "https://ijsspeedway.nl/",
+        "hosts": [
+          "ijsspeedway.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Jaarlijks in april; datum 2027 nog niet bekend."
+      }
+    ],
+    "Oranjewoud": [
+      {
+        "naam": "Oranjewoud Festival",
+        "type": "festival-organisator",
+        "plaats": "Oranjewoud",
+        "website": "https://www.oranjewoudfestival.nl/",
+        "hosts": [
+          "oranjewoudfestival.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "27-30 mei 2027."
+      }
+    ],
+    "Leeuwarden": [
+      {
+        "naam": "SC Cambuur (Kooi Stadion)",
+        "type": "sport",
+        "plaats": "Leeuwarden",
+        "website": "https://cambuur.nl/thuiswedstrijden/",
+        "hosts": [
+          "cambuur.nl"
+        ],
+        "verwacht90": 3,
+        "opmerking": "Eredivisie."
+      },
+      {
+        "naam": "Elfstedenhal",
+        "type": "sport",
+        "plaats": "Leeuwarden",
+        "website": "https://elfstedenhal.frl/agenda/",
+        "hosts": [
+          "elfstedenhal.frl"
+        ],
+        "verwacht90": 10,
+        "opmerking": "IJshockey OG Capitals, NK shorttrack, familiedagen."
+      },
+      {
+        "naam": "WTC Expo",
+        "type": "evenementenhal",
+        "plaats": "Leeuwarden",
+        "website": "https://wtcexpo.nl/agenda/",
+        "hosts": [
+          "wtcexpo.nl"
+        ],
+        "verwacht90": 5
+      },
+      {
+        "naam": "AquaZoo Leeuwarden",
+        "type": "dierentuin",
+        "plaats": "Leeuwarden",
+        "website": "https://www.aquazoo.nl/evenementen",
+        "hosts": [
+          "aquazoo.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Evenementenpagina (Dinoweken) nog zonder leesbare datums."
+      },
+      {
+        "naam": "Elfstedenwandeltocht",
+        "type": "sport",
+        "plaats": "Leeuwarden",
+        "website": "https://www.elfstedenwandeltocht.nl/",
+        "hosts": [
+          "elfstedenwandeltocht.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "4 t/m 8 mei 2027; startplaats op de site niet bevestigd, daarom nog geen los uitje."
+      },
+      {
+        "naam": "KFPS Hengstenkeuring (WTC Expo)",
+        "type": "sport",
+        "plaats": "Leeuwarden",
+        "website": "https://kfps.nl/",
+        "hosts": [
+          "kfps.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Friese paarden, half januari in WTC Expo; datum 2027 nog niet gevonden."
+      }
+    ],
+    "Emmen": [
+      {
+        "naam": "FC Emmen (De Oude Meerdijk)",
+        "type": "sport",
+        "plaats": "Emmen",
+        "website": "https://fcemmen.nl/wedstrijdschema/",
+        "hosts": [
+          "fcemmen.nl"
+        ],
+        "verwacht90": 3,
+        "opmerking": "Eerste divisie."
+      },
+      {
+        "naam": "WILDLANDS Adventure Zoo",
+        "type": "dierentuin",
+        "plaats": "Emmen",
+        "website": "https://www.wildlands.nl/",
+        "hosts": [
+          "wildlands.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "WILDnights 18 dec 2026 - 3 jan 2027."
+      }
+    ],
+    "Assen": [
+      {
+        "naam": "TT Circuit Assen",
+        "type": "sport",
+        "plaats": "Assen",
+        "website": "https://www.ttcircuit.com/evenementen",
+        "hosts": [
+          "ttcircuit.com"
+        ],
+        "verwacht90": 2,
+        "opmerking": "TT Assen 25-27 juni 2027; publieks- en sportevenementen."
+      },
+      {
+        "naam": "TT Festival Assen",
+        "type": "festival-organisator",
+        "plaats": "Assen",
+        "website": "https://ttfestival.nl/",
+        "hosts": [
+          "ttfestival.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Binnenstad, week voor de TT; data 2027 nog niet bekend (2026: 20-28 juni)."
+      }
+    ],
+    "Wolvega": [
+      {
+        "naam": "Victoria Park Wolvega (drafbaan)",
+        "type": "sport",
+        "plaats": "Wolvega",
+        "website": "https://www.victoriaparkwolvega.nl/agenda/",
+        "hosts": [
+          "victoriaparkwolvega.nl"
+        ],
+        "verwacht90": 4,
+        "opmerking": "Circa 39 meetings per jaar."
+      }
+    ],
+    "Franeker": [
+      {
+        "naam": "PC Franeker (kaatsen)",
+        "type": "sport",
+        "plaats": "Franeker",
+        "website": "https://www.pc-franeker.nl/",
+        "hosts": [
+          "pc-franeker.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "174e PC op 4 augustus 2027."
+      }
+    ],
+    "Sneek": [
+      {
+        "naam": "Sneekweek",
+        "type": "sport",
+        "plaats": "Sneek",
+        "website": "https://www.sneekweek.nl/",
+        "hosts": [
+          "sneekweek.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Begin augustus; data 2027 nog niet bekend."
+      },
+      {
+        "naam": "SKS Skûtsjesilen",
+        "type": "sport",
+        "plaats": "Sneek",
+        "website": "https://www.skutsjesilen.nl/",
+        "hosts": [
+          "skutsjesilen.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "24 juli - 6 augustus 2027, elf plaatsen; finale in Sneek."
+      },
+      {
+        "naam": "IFKS Skûtsjesilen",
+        "type": "sport",
+        "plaats": "Sneek",
+        "website": "https://www.ifks.frl/",
+        "hosts": [
+          "ifks.frl"
+        ],
+        "jaarlijks": true
+      }
+    ],
+    "Dokkum": [
+      {
+        "naam": "Admiraliteitsdagen Dokkum",
+        "type": "feest",
+        "plaats": "Dokkum",
+        "website": "https://admiraliteitsdagen.nl/",
+        "hosts": [
+          "admiraliteitsdagen.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Eens per twee jaar; 2-5 september 2027."
+      }
+    ],
+    "Bolsward": [
+      {
+        "naam": "Fietselfstedentocht",
+        "type": "sport",
+        "plaats": "Bolsward",
+        "website": "https://www.fietselfstedentocht.frl/",
+        "hosts": [
+          "fietselfstedentocht.frl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Pinkstermaandag; 17 mei 2027."
+      }
+    ],
+    "Westerbork": [
+      {
+        "naam": "Drentse Fiets4Daagse",
+        "type": "sport",
+        "plaats": "Westerbork",
+        "website": "https://fiets4daagse.nl/",
+        "hosts": [
+          "fiets4daagse.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "15-18 juli 2027 (Dalen, Diever, Westerbork)."
+      }
+    ],
+    "Drouwen": [
+      {
+        "naam": "Attractiepark Drouwenerzand",
+        "type": "pretpark",
+        "plaats": "Drouwen",
+        "website": "https://drouwenerzand.nl/",
+        "hosts": [
+          "drouwenerzand.nl"
+        ],
+        "jaarlijks": true
+      }
+    ],
+    "Zuidlaren": [
+      {
+        "naam": "Speelpark Sprookjeshof",
+        "type": "pretpark",
+        "plaats": "Zuidlaren",
+        "website": "https://sprookjeshof.nl/agenda-en-evenementen",
+        "hosts": [
+          "sprookjeshof.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "Agendapagina laadt leeg (JavaScript)."
+      }
+    ],
+    "Appelscha": [
+      {
+        "naam": "Duinen Zathe",
+        "type": "pretpark",
+        "plaats": "Appelscha",
+        "website": "https://www.duinenzathe.nl/",
+        "hosts": [
+          "duinenzathe.nl"
+        ],
+        "jaarlijks": true
+      }
+    ],
+    "Borger": [
+      {
+        "naam": "Hunebedcentrum",
+        "type": "museum",
+        "plaats": "Borger",
+        "website": "https://www.hunebedcentrum.eu/evenementen-2/",
+        "hosts": [
+          "hunebedcentrum.eu"
+        ],
+        "verwacht90": 2,
+        "opmerking": "Kalender met excursies en activiteiten; robots.txt staat de motor nu toe (oude test zei 'blocked': opnieuw testen)."
+      }
     ]
   }
 }

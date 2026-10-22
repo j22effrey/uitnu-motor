@@ -16,6 +16,10 @@ extractorConfig, met de plek van elk gegeven ('Performance.StartTime'):
                  als Nederlandse tekst ('za 17 okt 2026'); startTime: de tijd in een eigen veld ('20:30')
     skipField, skipValue  een uitje overslaan als dat veld bij deze tekst past (bijv. de categorie 'Archief')
     pageParam, maxPages   bladeren: ?page=1, ?page=2, ... tot een lege lijst (hooguit maxPages)
+    method, form          'POST' met formuliervelden (De Harmonie: /api/agenda met set=19)
+    monthParams           per maand ophalen: {"month": "maand", "year": "jaar", "monthBase": 0, "months": 5}
+                          (monthBase 0: januari = 0), vanaf deze maand
+    urlTemplate           de link uit velden van het uitje: '/agenda/{slug}/{id}'
 
 Alleen feiten: naam, datum en tijd, zaal, soort en link. Geen teksten.
 """
@@ -95,6 +99,11 @@ def parse_items(payload, config: dict, *, source_name: str, root_url: str, today
         if skip_value and skip_value.search(json.dumps(value_at(item, config["skipField"]), ensure_ascii=False)):
             continue
         link = _text(value_at(item, config.get("url"))) if config.get("url") else ""
+        if not link and config.get("urlTemplate"):
+            fields = re.findall(r"\{([\w.]+)\}", config["urlTemplate"])
+            values = {f: _text(value_at(item, f)) for f in fields}
+            if all(values.values()):
+                link = re.sub(r"\{([\w.]+)\}", lambda m: values[m.group(1)], config["urlTemplate"])
         genre = _text(value_at(item, config.get("genre"))) if config.get("genre") else ""
         room = _text(value_at(item, config.get("room"))) if config.get("room") else ""
         place = rooms.get(room)
@@ -130,8 +139,9 @@ def parse_items(payload, config: dict, *, source_name: str, root_url: str, today
     return out
 
 
-def _fetch_json_text(url: str, *, timeout: float) -> str:
-    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
+def _fetch_json_text(url: str, *, timeout: float, data: dict | None = None) -> str:
+    body = urlencode(data).encode() if data is not None else None
+    request = Request(url, data=body, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
     with build_opener(HTTPCookieProcessor(CookieJar()), _SameSiteRedirectHandler()).open(request, timeout=timeout) as response:
         return response.read(8_000_000).decode(response.headers.get_content_charset() or "utf-8", "replace")
 
@@ -144,6 +154,25 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
     robots, _ = _load_robots(root_url, robots_fetch, timeout=timeout)
     if not robots.can_fetch(USER_AGENT, endpoint):
         raise PermissionError(f"robots.txt staat {endpoint} niet toe" + (f" ({robots.uitnu_reason})" if getattr(robots, "uitnu_reason", None) else ""))
+    months = config.get("monthParams") if isinstance(config.get("monthParams"), dict) else None
+    if months:
+        # Per maand (een POST-formulier of ?maand=..&jaar=..), vanaf deze maand.
+        today = date.today()
+        out: list[RawEvent] = []
+        for step in range(int(months.get("months") or 6)):
+            month0 = (today.month - 1 + step) % 12
+            year = today.year + (today.month - 1 + step) // 12
+            fields = {**(config.get("form") or {}), months.get("month", "month"): month0 + int(months.get("monthBase", 1)),
+                      months.get("year", "year"): year}
+            if str(config.get("method") or "GET").upper() == "POST":
+                text = json_fetch(endpoint, timeout=timeout, data=fields)
+            else:
+                url = endpoint
+                for key, value in fields.items():
+                    url = with_param(url, key, value)
+                text = json_fetch(url, timeout=timeout)
+            out.extend(parse_items(json.loads(text), config, source_name=source_name, root_url=root_url))
+        return out
     param = config.get("pageParam")
     if not param:
         return parse_items(json.loads(json_fetch(endpoint, timeout=timeout)), config,

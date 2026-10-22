@@ -253,3 +253,23 @@ def test_nakijkronde_podium_zegt_voorstelling_wint_van_los_trefwoord():
                                 ("Kerstmarkt", "MusicEvent", "markt"), ("Whisky Festival Groningen", "MusicEvent", "eten")]:
         assert classify({**base, "title": title, "schemaType": schema})["kind"] == kind, title
     assert classify({**base, "title": "Breicafé"})["kind"] == "lezing"
+
+
+def test_json_api_per_maand_met_een_formulier_en_een_linksjabloon():
+    # De Harmonie (Leeuwarden): POST /api/agenda met maand (januari = 0) en jaar, per maand (22 oktober 2026).
+    asked = []
+
+    def json_fetch(url, timeout=15, data=None):
+        asked.append(dict(data))
+        return json.dumps({"items": [{"titel": f"Voorstelling {data['maand']}", "datum": f"{data['jaar']}-{data['maand'] + 1:02d}-20",
+                                      "slug": "voorstelling", "id": 7, "genre": "Toneel"}]})
+
+    def robots(url, timeout=15):
+        return Fetched(url=url, status=404, content_type="text/plain", text="")
+
+    cfg = {"endpointUrl": "https://harmonie.nl/api/agenda", "method": "POST", "form": {"set": "19"},
+           "monthParams": {"month": "maand", "year": "jaar", "monthBase": 0, "months": 3}, "items": "items",
+           "title": ["titel"], "startDate": "datum", "urlTemplate": "/agenda/{slug}/{id}"}
+    events = json_api_events.fetch(cfg, source_name="De Harmonie", root_url="https://harmonie.nl/", robots_fetch=robots, json_fetch=json_fetch)
+    assert len(events) == 3 and all(a["set"] == "19" for a in asked)
+    assert events[0].source_url == "https://harmonie.nl/agenda/voorstelling/7"

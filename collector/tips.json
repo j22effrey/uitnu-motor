@@ -933,6 +933,132 @@
       "plaats": "Oude Pekela",
       "reden": "Erfgoedlocatie en podium in de oude strokartonfabriek met eigen activiteitenpagina (concerten zoals Late Summer Blues, film, Open Monumentendag, WAARK-première 29-31 okt). robots.txt staat het toe. (dorpen van Groningen nagelopen, 21 oktober 2026)",
       "datum": "2026-10-21"
+    },
+    {
+      "url": "https://vledderveendrenthe.nl/",
+      "naam": "Vledderveen (Drenthe), dorpssite met dorpshuisagenda",
+      "plaats": "Vledderveen",
+      "reden": "The Events Calendar met ics-feed (https://vledderveendrenthe.nl/?ical=1); let op: vooral afvalinzameling, vaste lessen (spinning, qigong, yoga) en snackavonden; af en toe een rommelmarkt, sinterklaasintocht of dorpsfeest",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.hunebedcentrum.eu/evenementen-2/",
+      "naam": "Hunebedcentrum Borger",
+      "plaats": "Borger",
+      "reden": "Modern Events Calendar met JSON-LD (50 Event-blokken per maand); robots.txt staat alles toe behalve /wp-json/, maar wordt geserveerd als text/html",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://aaipop.frl/",
+      "naam": "Aaipop (Frysktalich festival, Nijland)",
+      "plaats": "Nijland",
+      "reden": "Grootste Friestalige muziekfestival, elk jaar op Paasmaandag rond MFC De Mande in Nijland, vier podia en achttien artiesten (festival volgens regel 3). Hoort in de dekking; programma 2027 nog niet bekend (Paasmaandag 2027 = 29 maart).",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://thomastsjerke.nl/",
+      "naam": "Thomastsjerke Katlijk (concerten)",
+      "plaats": "Katlijk",
+      "reden": "Historische kerk (Stichting Alde Fryske Tsjerken) met ongeveer vier concerten per jaar, met datum en tijd op de voorpagina ('Binnenkort in de Thomastsjerke').",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://jubbega-hoornsterzwaag.nl/",
+      "naam": "Jubbega Hoornsterzwaag (dorpssite)",
+      "plaats": "Jubbega",
+      "reden": "Dorpswebsite voor Jubbega en Hoornsterzwaag met een agenda op de voorpagina.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.centrumheerenveen.nl/agenda/",
+      "naam": "Centrum Heerenveen (HCOV, ondernemersvereniging)",
+      "plaats": "Heerenveen",
+      "reden": "Ondernemersvereniging van het centrum (zoals City Club Winschoten) met een agenda van evenementen in het centrum (intocht Sinterklaas, kroegentocht, Nieuw Geluid) en een deel van het Posthuis-programma; schema.org Event op de pagina.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.haske-joure.nl/agenda/",
+      "naam": "'t Haske Joure (zalencentrum met dansavonden, concerten en beurzen)",
+      "plaats": "Joure",
+      "reden": "Eigen agenda (The Events Calendar, ook ics en schema.org) met concerten, theater, dansavonden en beurzen in Joure.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://akkrumnescentraal.nl/evenementen/2026/",
+      "naam": "Stichting Akkrum-Nes Centraal (evenementen)",
+      "plaats": "Akkrum",
+      "reden": "Organisator van de grote evenementen in Akkrum-Nes (o.a. Grote Muziekavond Akkrum met De Mastreechter Staar, Harmonie Akkrum en Syb van der Ploeg, 7-11-2026 20:00 in de Utingeradeelhal, € 30).",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://museumdrachten.nl/agenda/",
+      "naam": "Museum Dr8888 (Drachten)",
+      "plaats": "Drachten",
+      "reden": "Kandidaat museumdrachten.nl staat op 'blocked' met robots 'invalid', maar robots.txt (via www -> museumdrachten.nl) is nu een gewone Yoast-robots die alles toestaat (text/plain). Graag opnieuw testen. Agenda staat op /agenda/ (nu alleen 'Teruggeefdagen'); tentoonstellingen op /tentoonstelling/.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://nijbeets.frl/agenda?weergave=lijst",
+      "naam": "Dorpsplatform .frl (Nij Beets, Lippenhuizen, Beetsterzwaag, Appelscha, Oldeberkoop)",
+      "plaats": "Nij Beets",
+      "reden": "Vijf dorpen gebruiken hetzelfde dorpsplatform ('Download de app', Laravel) met een lijstweergave /agenda?weergave=lijst (nijbeets.frl 50, beetsterzwaag.frl 39, lippenhuizen.frl 28, oldeberkoop.frl 11, appelscha.frl 6 komende items). robots.txt staat alles toe. De kaartjes hebben link, naam (<h3>), tijd ('13:00 – 20:00') en datum als 'okt.' boven '22'. Probleem: collector/when.py leest 'okt. 22' (maand vóór dag) niet, en de Friese maand 'des.' ook niet; de maandweergave ('so 3 okt · 09:30 – 12:30') wel, behalve 'des'. Met een kleine aanpassing in when.py (maand-dag-volgorde en Friese maanden des/maaie) werkt één html_cards-config per dorp: card '<a href=\"https://<dorp>.frl/evenement/', title '<h3[^>]*>(.*?)</h3>', time/end uit '<p class=\"mt-1 text-sm text-gray-500\">'. Let op: veel kerkdiensten (Eredienst), koffie-uurtjes en klaverjassen erin (skipTitle). De huidige bronnen beetsterzwaag-frl-web, appelscha-frl-web en oldeberkoop-frl-web (html_agenda_dutch op de voorpagina) leveren nu maar 0-2 uitjes.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.dorpsbelangnes.nl/agenda/",
+      "naam": "Dorpsbelang Nes (agenda)",
+      "plaats": "Nes",
+      "reden": "Eigen agenda van Dorpsbelang Nes (Ameland) met datum, tijd en locatie per activiteit (nu: Oudejaarskuier 30 december 2026 17:00-21:00 vanaf Kerkplein); organiseert ook de markten en kinderbraderie in Nes.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.eisinga-planetarium.nl/",
+      "naam": "Koninklijk Eise Eisinga Planetarium",
+      "plaats": "Franeker",
+      "reden": "Nieuw adres van planetarium-friesland.nl (status 'moved' in de motor; dekking zegt 'verhuisd: nieuw adres nakijken'). Echt het museum zelf, geen verkocht domein. Activiteiten staan als nieuwsberichten (Nacht van de Nacht, Museumnacht).",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.dronryp.nl/agenda",
+      "naam": "Dorpsagenda Dronryp (Dorpsbelang Dronryp)",
+      "plaats": "Dronrijp",
+      "reden": "Dorpsagenda met regels 'vr 6 nov / titel / 20.00u' en een pagina per activiteit (?event=...). Noemenswaardig o.a.: za 24 okt 10.00 'Kunstige route door Dronryp' (kunstenaars uit het dorp), vr 6 nov 20.00 't Nut Collegetour met Arno Brok. Veel routine (oud papier, jeugdhonk Interije, DigiD-hulp) valt vanzelf weg door de regels.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.observeum.nl/agenda/",
+      "naam": "Observeum (museum en sterrenwacht) Burgum",
+      "plaats": "Burgum",
+      "reden": "Agenda met lezingen en avonden (Verhalenavond 20 nov, lezing 'Van jager tot boer' 1 nov, legpuzzeldag 19 dec); source_probe vindt html_agenda_dutch met 3 uitjes.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://hurdegaryp.nl/",
+      "naam": "Dorpswebsite Hurdegaryp",
+      "plaats": "Hurdegaryp",
+      "reden": "Dorpssite met agenda; source_probe vindt nu html_agenda_dutch (o.a. Natuurwerkdag Dorpstuin).",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.harmoniedokkum.nl/",
+      "naam": "Stedelijke Harmonie Dockum",
+      "plaats": "Dokkum",
+      "reden": "Muziekvereniging met concerten; The Events Calendar (wordpress_tribe) met o.a. Inloopconcert Grote Kerk Dokkum 20 november 2026 19:30.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://sensedokkum.nl/programma/",
+      "naam": "Sense Dokkum (theater en partycentrum, Hogedijken 18-2)",
+      "plaats": "Dokkum",
+      "reden": "Theaterzaal van Dokkum (cabaret, concerten, filmseizoen) met The Events Calendar; nu staan er alleen afgelopen voorstellingen (t/m april 2026), het nieuwe seizoen nog niet.",
+      "datum": "2026-10-22"
+    },
+    {
+      "url": "https://www.joyforpeople.nl/agenda",
+      "naam": "Gospelkoor Joy for People Dokkum",
+      "plaats": "Dokkum",
+      "reden": "Koor met eigen concertagenda (Kerstconcert 'Keep the Faith' 20 december 2026, De Herberg Dokkum); source_probe vindt html_agenda_dutch.",
+      "datum": "2026-10-22"
     }
   ]
 }
