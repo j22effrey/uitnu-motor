@@ -6,6 +6,7 @@ Voor lezers die per bron ingesteld worden (json_api, html_cards). Bekende vormen
 - Nederlands met jaar: 'za 17 okt 2026', '17 oktober 2026', '16-10-2026 / 10:00', '22/10/2026 20:15'
 - Nederlands zonder jaar met weekdag: 'za 17 okt', 'do 15.10' (de weekdag bepaalt het jaar)
 - Engels zonder jaar met weekdag: 'Thursday 15 October', 'Sat 28 Nov 2026'
+- maand eerst: 'okt. 28', 'des. 5 2026' (dorpsapp.nl), ook met Friese maanden ('des', 'mai')
 De tijd mag apart staan ('20:30', '20.30 uur', 'doors: 20:00 | start: 20:30', '09:00 & 10:30'):
 de eerste tijd telt, of de tijd na 'start'.
 """
@@ -28,6 +29,9 @@ MONTHS = {
     "oktober": 10, "okt": 10, "october": 10, "oct": 10,
     "november": 11, "nov": 11,
     "december": 12, "dec": 12,
+    # Fries: 'jannewaris', 'maaie', 'desimber' (dorpssites in Fryslân, zoals op dorpsapp.nl)
+    "jannewaris": 1, "febrewaris": 2, "maaie": 5, "mai": 5, "juny": 6, "july": 7,
+    "septimber": 9, "novimber": 11, "desimber": 12, "des": 12,
 }
 WEEKDAYS = {
     "ma": 0, "maandag": 0, "mon": 0, "monday": 0,
@@ -48,6 +52,7 @@ ISO_RE = re.compile(r"\b(20\d{2})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2}))?")
 NUMERIC_RE = re.compile(r"(?<![\d])(\d{1,2})[-/.](\d{1,2})[-/.](20\d{2})(?!\d)")
 WORD_RE = re.compile(rf"(?:\b({_WEEKDAY})\.?,?\s+)?(\d{{1,2}})\s+({_MONTH})\.?(?:\s+(20\d{{2}}))?\b", re.I)
 SHORT_RE = re.compile(rf"\b({_WEEKDAY})\.?\s+(\d{{1,2}})\.(\d{{1,2}})(?![\d.])", re.I)
+MONTH_FIRST_RE = re.compile(rf"\b({_MONTH})\.?\s+(\d{{1,2}})(?![\d:.])(?:,?\s+(20\d{{2}}))?", re.I)
 START_RE = re.compile(r"\b(?:start\w*|aanvang|begin\w*)\s*:?\s*(?:om\s*)?(\d{1,2})[:.](\d{2})", re.I)
 TIME_RE = re.compile(r"(?<![\d.:])(\d{1,2})[:.](\d{2})(?![\d])")
 
@@ -124,6 +129,12 @@ def parse_day(value, today: date) -> tuple[date | None, str | None]:
     m = SHORT_RE.search(text)
     if m:
         return _by_weekday(int(m.group(3)), int(m.group(2)), WEEKDAYS[m.group(1).lower()], today), parse_time(text[m.end():])
+    m = MONTH_FIRST_RE.search(text)
+    if m:
+        month, day = MONTHS[m.group(1).lower()], int(m.group(2))
+        if m.group(3):
+            return _date(int(m.group(3)), month, day), parse_time(text[m.end():])
+        return _by_weekday(month, day, None, today), parse_time(text[m.end():])
     return None, None
 
 

@@ -127,3 +127,16 @@ def test_inkorten_laat_de_echte_naam_heel():
     assert clean_title("LBE – Matthäus Passion – Antwerpen – Sint-Carolus Borromeuskerk – 9 maart 2027", "Antwerkpen",
                        "Sint-Carolus Borromeuskerk / Antwerpen") == "LBE – Matthäus Passion"
     assert clean_title("Zomervakantie rijlessen Zomervakantie rijlessen 20 juli t/m 16 augustus 2026") == "Zomervakantie rijlessen"
+
+
+def test_datums_in_fries_en_met_de_maand_eerst():
+    # Dorpsapp.nl (gauw.frl, ijlst.frl) en beurzen van WTC Expo (Drenthe/Friesland-ronde, 22 oktober 2026).
+    from datetime import date
+    from collector.when import parse_end_day, parse_when
+    today = date(2026, 10, 22)
+    assert parse_when("okt. 28", today=today) == "2026-10-28"
+    assert parse_when("des. 5 19:30", today=today) == "2026-12-05T19:30"
+    assert parse_when("12 desimber 2026", today=today) == "2026-12-12"
+    assert parse_when("april 12:00", today=today) is None
+    assert parse_end_day("13-11-2026 t/m 14-11-2026", "2026-11-13") == "2026-11-14"
+    assert parse_end_day("13-11-2026", "2026-11-13") is None
