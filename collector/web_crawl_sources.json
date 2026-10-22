@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -12857,6 +12857,25 @@
         "city": "Muntendam"
       },
       "policyReviewedAt": "2026-10-21"
+    },
+    {
+      "id": "skkw-nl-web",
+      "name": "Stichting Kulturele Kommissie Winsum",
+      "rootUrl": "https://www.skkw.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.skkw.nl/voorstellingen/"
+      },
+      "activatedFromCandidate": "skkw.nl",
+      "defaultPlace": {
+        "city": "Winsum"
+      },
+      "policyReviewedAt": "2026-10-22"
     }
   ]
 }

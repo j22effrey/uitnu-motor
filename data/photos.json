@@ -13475,6 +13475,10 @@
    "checkedAt": "2026-10-18",
    "url": null
   },
+  "plek:baptistengemeente groningen de cirkel|leeuwarden": {
+   "checkedAt": "2026-10-22",
+   "url": null
+  },
   "plek:baptistengemeente groningen de cirkel|surhuisterveen": {
    "checkedAt": "2026-10-14",
    "url": null
@@ -19168,13 +19172,13 @@
    "via": "og:image"
   },
   "https://boijl.com/event/gezellige-koffieochtend/2026-11-18/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "eten",
     "woord": "koffie"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://boijl.com/wp-content/uploads/2026/01/Koffies_kafea.nl_.jpg",
+   "via": "og:image"
   },
   "https://boijl.com/event/gezellige-koffieochtend/2026-12-02/": {
    "checkedAt": "2000-01-01",
@@ -19231,13 +19235,13 @@
    "via": "og:image"
   },
   "https://boijl.com/event/koersbal-2026-april-mei/2026-11-18/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "sport",
     "woord": "loop"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://boijl.com/wp-content/uploads/2017/02/koersbalx.jpg",
+   "via": "og:image"
   },
   "https://boijl.com/event/koersbal-2026-april-mei/2026-11-25/": {
    "checkedAt": "2000-01-01",
@@ -19396,13 +19400,13 @@
    "via": null
   },
   "https://bulthuiseenrum.nl/evenement/4686/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "lezing",
     "woord": "lezing"
    },
    "image": null,
-   "via": "schema.org"
+   "via": null
   },
   "https://bulthuiseenrum.nl/evenement/disco-party-back-to-the-seventies/": {
    "checkedAt": "2000-01-01",
@@ -19609,9 +19613,9 @@
    "via": "og:image"
   },
   "https://buurtcentrumoranjewijk.nl/activiteit/spaanse-les/2026-11-18/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://buurtcentrumoranjewijk.nl/wp-content/uploads/2024/07/spaanse-conversatie-scaled.jpg",
+   "via": "og:image"
   },
   "https://buurtcentrumoranjewijk.nl/activiteit/spaanse-les/2026-11-25/": {
    "checkedAt": "2000-01-01",
@@ -19659,9 +19663,9 @@
    "via": "og:image"
   },
   "https://buurtcentrumoranjewijk.nl/activiteit/wij-centrum-schildersbuurt-maandag-en-vrijdag-2/2026-11-16/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://buurtcentrumoranjewijk.nl/wp-content/uploads/2024/07/Asset-4.png",
+   "via": "og:image"
   },
   "https://buurtcentrumoranjewijk.nl/activiteit/wij-centrum-schildersbuurt-maandag-en-vrijdag-2/2026-11-20/": {
    "checkedAt": "2000-01-01",
@@ -21156,8 +21160,8 @@
    "via": "schema.org"
   },
   "https://dorpshuisboijl.nl/event/schietclub-2-2/2026-11-18/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
+   "checkedAt": "2026-10-22",
+   "image": "https://dorpshuisboijl.nl/wp-content/uploads/2022/10/12032675_1205725106110087_4689250539702071042_o.jpg",
    "via": "schema.org"
   },
   "https://dorpshuisboijl.nl/event/schietclub-2-2/2026-11-25/": {
@@ -22740,13 +22744,13 @@
    "via": "schema.org"
   },
   "https://ferwertonline.nl/evenement/borrel-bites-en-de-bijbel-open-2/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "eten",
     "woord": "borrel"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://ferwertonline.nl/wp-content/uploads/2026/10/Borrel-and-bites-en-de-bijbel-open-2026.jpg.jpeg",
+   "via": "og:image"
   },
   "https://ferwertonline.nl/evenement/borrel-bites-en-de-bijbel-open/": {
    "checkedAt": "2026-10-21",
@@ -27537,6 +27541,11 @@
    "image": null,
    "via": null
   },
+  "https://kerkalspodium.nl/nl/activiteiten/halloweenconcert-capriccio-clarinet-orchestra/13811/-/-/-/-/1": {
+   "checkedAt": "2026-10-22",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/halloweenconcert-capriccio-clarinet-orchestra/13811/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
    "image": null,
@@ -27574,6 +27583,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/lichtjesavond/13830/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/literair-concert-rondom-de-toren-van-babel/13776/-/-/-/-/0": {
+   "checkedAt": "2026-10-22",
    "image": null,
    "via": null
   },
@@ -29440,13 +29454,13 @@
    "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/breek-de-week-2/2026-11-18/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "eten",
     "woord": "koffie"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://nijeskalm.nl/wp-content/uploads/2024/09/breek-de-week.jpg",
+   "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/breek-de-week-2/2026-11-25/": {
    "checkedAt": "2000-01-01",
@@ -29496,9 +29510,9 @@
    "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/de-ontmoeting/2026-11-18/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://nijeskalm.nl/wp-content/uploads/2024/09/ontmoeting-scaled.jpg",
+   "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/de-ontmoeting/2026-11-25/": {
    "checkedAt": "2000-01-01",
@@ -29640,13 +29654,13 @@
    "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/handwerkcafe-3/2026-11-19/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "lezing",
     "woord": "handwerk"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://nijeskalm.nl/wp-content/uploads/2023/02/hanwerken.jpg",
+   "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/handwerkcafe-3/2026-11-26/": {
    "checkedAt": "2000-01-01",
@@ -29787,13 +29801,13 @@
    "via": null
   },
   "https://nijeskalm.nl/evenement/ite-jo-mei/2026-11-18/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "eten",
     "woord": "maaltijd"
    },
    "image": null,
-   "via": "schema.org"
+   "via": null
   },
   "https://nijeskalm.nl/evenement/ite-jo-mei/2026-11-25/": {
    "checkedAt": "2000-01-01",
@@ -29906,9 +29920,9 @@
    "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/meidenclub-in-jeugdhonk/2026-11-19/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://nijeskalm.nl/wp-content/uploads/2026/01/meidenclub.jpg",
+   "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/meidenclub-in-jeugdhonk/2026-11-26/": {
    "checkedAt": "2000-01-01",
@@ -30002,13 +30016,13 @@
    "via": null
   },
   "https://nijeskalm.nl/evenement/naaigroep-stiens-2/2026-11-19/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "lezing",
     "woord": "cursus"
    },
    "image": null,
-   "via": "og:image"
+   "via": null
   },
   "https://nijeskalm.nl/evenement/naaigroep-stiens-2/2026-11-24/": {
    "checkedAt": "2000-01-01",
@@ -30143,9 +30157,9 @@
    "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/tienerclub-stiens-vanaf-10-jaar-2/2026-11-17/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://nijeskalm.nl/wp-content/uploads/2024/09/tienerclub.jpg",
+   "via": "og:image"
   },
   "https://nijeskalm.nl/evenement/tienerclub-stiens-vanaf-10-jaar-2/2026-11-24/": {
    "checkedAt": "2000-01-01",
@@ -31049,6 +31063,15 @@
   },
   "https://ontdekdebieb.op-shop.nl/16751/schaken-voor-jong-en-oud/21-10-2026": {
    "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "sport",
+    "woord": "loop"
+   },
+   "image": null,
+   "via": null
+  },
+  "https://ontdekdebieb.op-shop.nl/16752/schaken-voor-jong-en-oud/28-10-2026": {
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "sport",
     "woord": "loop"
@@ -32713,9 +32736,9 @@
    "via": "og:image"
   },
   "https://skans.nl/agenda-voorstelling/biljart-us-fertier-3/2026-11-18/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://skans.nl/wp-content/uploads/2024/10/2.png",
+   "via": "og:image"
   },
   "https://skans.nl/agenda-voorstelling/biljart-us-fertier-3/2026-11-25/": {
    "checkedAt": "2000-01-01",
@@ -32803,9 +32826,9 @@
    "via": "og:image"
   },
   "https://skans.nl/agenda-voorstelling/bloedprikken-certe-2/2026-11-19/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://skans.nl/wp-content/uploads/2024/10/12.png",
+   "via": "og:image"
   },
   "https://skans.nl/agenda-voorstelling/bloedprikken-certe-2/2026-11-24/": {
    "checkedAt": "2000-01-01",
@@ -33720,6 +33743,15 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8405",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/760898/Dreumesuurtje.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "lezing",
+    "woord": "voorlees"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8407",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/760920/Dreumesuurtje.html": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -33774,6 +33806,11 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=6672",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768389/Taalondersteuning-vrouwengroep.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=6672",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/768545/Teken--en-schilderclub.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8484",
@@ -33789,6 +33826,11 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8484",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768548/Teken--en-schilderclub.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8484",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/768684/Teken--en-schilderclub.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
@@ -33799,6 +33841,11 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/768686/Teken--en-schilderclub.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/769592/Voorlezen-en-knutselen.html": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -33806,6 +33853,15 @@
     "woord": "voorlees"
    },
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7058",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772618/Keuvel,-Kovvie-en-bordspelletjes-in-de-bieb-van-Finsterwolde.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "eten",
+    "woord": "koffie"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8125",
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/772634/Microscopenmiddag.html": {
@@ -33882,6 +33938,15 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7325",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772853/Damles-breintraining.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "sport",
+    "woord": "dammen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7325",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/772904/Voorleesuurtje.html": {
    "checkedAt": "2026-10-20",
    "hints": {
@@ -33918,6 +33983,15 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=1770",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772920/Haak-en-breiclub.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "lezing",
+    "woord": "handwerk"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=1770",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/772927/Tekenclub.html": {
    "checkedAt": "2026-10-21",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
@@ -33930,6 +34004,11 @@
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/772929/Tekenclub.html": {
    "checkedAt": "2026-10-21",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/772930/Tekenclub.html": {
+   "checkedAt": "2026-10-22",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=3180",
    "via": "og:image"
   },
@@ -33958,6 +34037,20 @@
     "woord": "workshop"
    },
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8325",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/773407/Sterrenkundewandeling.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "natuur",
+    "woord": "sterren"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=4762",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/773409/Microscopiedag.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=5988",
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/773426/De-DigiSterker---Computercursus.html": {
@@ -33994,6 +34087,15 @@
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/773495/Workshop-Digitale-Nalatenschap.html": {
    "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "lezing",
+    "woord": "workshop"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8376",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/773497/Workshop-Digitale-Nalatenschap.html": {
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "lezing",
     "woord": "workshop"
@@ -34057,6 +34159,11 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8528",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/773950/Seniorweb.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8528",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/773993/Boekstarthalfuurtje.html": {
    "checkedAt": "2026-10-20",
    "hints": {
@@ -34082,6 +34189,24 @@
     "woord": "film"
    },
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8504",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774011/Altijd-en-Overal.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "kunst",
+    "woord": "kunst"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8506",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774028/Tussen-veer-en-verf.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "natuur",
+    "woord": "natuur"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8518",
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774106/Breinbieb-lezing:-Sociale-cognitiestoornissen-bij-neurologische-aandoeningen.html": {
@@ -34231,6 +34356,24 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8584",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774227/Hout-komt-tot-leven.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "kunst",
+    "woord": "expositie"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8588",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774228/In-eigen-gedachten-zijn.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "kunst",
+    "woord": "expositie"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8590",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774286/Knutsel--en-tekenclub-voor-kinderen.html": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -34255,6 +34398,11 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7543",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774322/Tekenclub.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=7543",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774329/Keuvel,-Kovvie-en-bordspelletjes.html": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -34275,6 +34423,15 @@
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774331/Keuvel,-Kovvie-en-bordspelletjes.html": {
    "checkedAt": "2026-10-21",
+   "hints": {
+    "soort": "feest",
+    "woord": "spellen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8096",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774332/Keuvel,-Kovvie-en-bordspelletjes.html": {
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "feest",
     "woord": "spellen"
@@ -34316,6 +34473,11 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8635",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774377/Expositie-Mirja-Wark.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8636",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774379/Rondleiding-door-molen-Dijkstra.html": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -34352,9 +34514,23 @@
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8531",
    "via": "og:image"
   },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774386/Verhalenpad-'Kikker-in-de-wind'.html": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "lezing",
+    "woord": "verhalen"
+   },
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8641",
+   "via": "og:image"
+  },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774412/De-Bieb-Pubquiz.html": {
    "checkedAt": "2026-10-20",
    "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8669",
+   "via": "og:image"
+  },
+  "https://ticketing.groningsebibliotheken.nl/inschrijven/774428/Lezing-door-Mirja-Wark.html": {
+   "checkedAt": "2026-10-22",
+   "image": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8678",
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774433/Presentatie-door-Bert-Roossien:-bruggen-in-de-Kanaalstreek.html": {
@@ -34566,13 +34742,13 @@
    "via": "og:image"
   },
   "https://tsjom.nl/evenement/koffieochtend-3/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "sport",
     "woord": "loop"
    },
    "image": null,
-   "via": "schema.org"
+   "via": null
   },
   "https://tsjom.nl/evenement/krekt-rekke-17/": {
    "checkedAt": "2026-10-17",
@@ -35504,6 +35680,11 @@
    "image": null,
    "via": null
   },
+  "https://wjukken.nl/agenda/lezing-dbieb-over-online-fraude-en-veiligheid/": {
+   "checkedAt": "2026-10-22",
+   "image": null,
+   "via": null
+  },
   "https://wjukken.nl/agenda/mantgumer-maten-34/": {
    "checkedAt": "2026-10-17",
    "image": null,
@@ -35516,6 +35697,11 @@
   },
   "https://wjukken.nl/agenda/schilderles-met-ernesto-32/": {
    "checkedAt": "2026-10-21",
+   "image": null,
+   "via": null
+  },
+  "https://wjukken.nl/agenda/vrouwen-in-beweging-28/": {
+   "checkedAt": "2026-10-22",
    "image": null,
    "via": null
   },
@@ -36691,6 +36877,15 @@
    "image": "https://www.deblauweschuit-winsum.nl/wp-content/uploads/2026/10/Scherm­afbeelding-2026-10-20-om-13.56.59.png",
    "via": "og:image"
   },
+  "https://www.deblauweschuit-winsum.nl/evenement/ggd-coronavaccinatie/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "kunst",
+    "woord": "cultuur"
+   },
+   "image": "https://www.deblauweschuit-winsum.nl/wp-content/uploads/2026/10/Scherm­afbeelding-2026-10-07-om-14.05.06.png",
+   "via": "og:image"
+  },
   "https://www.deblauweschuit-winsum.nl/evenement/huis-orlando-speelt-agamemnon/": {
    "checkedAt": "2026-10-21",
    "image": "https://www.deblauweschuit-winsum.nl/wp-content/uploads/2026/09/Scherm­afbeelding-2026-09-14-om-13.21.25.png",
@@ -36736,6 +36931,11 @@
     "woord": "verhalen"
    },
    "image": "https://www.deblauweschuit-winsum.nl/wp-content/uploads/2026/09/Retourtje_Parijs_persfoto_300dpi.jpg",
+   "via": "og:image"
+  },
+  "https://www.deblauweschuit-winsum.nl/evenement/workshop-collage-vrouw-door-anja-de-vos-bullinga/": {
+   "checkedAt": "2026-10-22",
+   "image": "https://www.deblauweschuit-winsum.nl/wp-content/uploads/2026/09/Scherm­afbeelding-2026-09-22-om-12.04.55.png",
    "via": "og:image"
   },
   "https://www.deblauweschuit-winsum.nl/evenement/workshop-kleur-in-je-interieur-door-anja-de-vos-bullinga-2/": {
@@ -36943,13 +37143,13 @@
    "via": null
   },
   "https://www.degaastmar.nl/evenement/koffie-ochtend-2/": {
-   "checkedAt": "2000-01-01",
+   "checkedAt": "2026-10-22",
    "hints": {
     "soort": "sport",
     "woord": "loop"
    },
-   "image": null,
-   "via": "schema.org"
+   "image": "https://www.degaastmar.nl/wp-content/uploads/2026/09/Dorpshuis-Dorpskerk-2.jpg",
+   "via": "og:image"
   },
   "https://www.degaastmar.nl/evenement/koffie-ochtend/": {
    "checkedAt": "2026-10-21",
@@ -37161,6 +37361,11 @@
   "https://www.demolenberg.nl/voorstellingen/johan-goossens/": {
    "checkedAt": "2026-10-21",
    "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/Johan-Goossens-Het-Volle-Leven-Jouk-Oosterhof-CAMPAGNEBEELD-4.jpg",
+   "via": "og:image"
+  },
+  "https://www.demolenberg.nl/voorstellingen/pieter-jouke/": {
+   "checkedAt": "2026-10-22",
+   "image": "https://www.demolenberg.nl/wp-content/uploads/2026/04/Pieter-Jouke-Uit-Stilstand-Jaap-Reedijk-6.jpg",
    "via": "og:image"
   },
   "https://www.demolenberg.nl/voorstellingen/sense-and-sensibility/": {
@@ -37843,6 +38048,12 @@
   },
   "https://www.google.com/calendar/event?eid=XzhkMzNjZ3BqNnQzM2FiOWw3MHM0MmI5azg0cGs4YmExNnNyazhiYTI2bDJqMGNobzZjc2o4ZTloNjRfMjAyNjEwMjFUMDc0NTAwWiA2NGRmNmU3ZGZkZDBkOTIwYzE0ZTdhYzhhYWVmYzczMmZmNzJiZmI2N2Q4NTY4MDE1NmQ1MTAwZmE0OTY0YjJhQGc&ctz=Europe/Paris": {
    "checkedAt": "2026-10-21",
+   "image": null,
+   "note": "robots.txt staat het niet toe",
+   "via": null
+  },
+  "https://www.google.nl/maps/place/Caf%C3%A9+De+Lijst/@52.7276281,6.475064,17z/data=!4m12!1m6!3m5!1s0x47c81a91b1fdb109:0x16ea80d9e726d26d!2sCaf%C3%A9+De+Lijst!8m2!3d52.7276249!4d6.4772527!3m4!1s0x47c81a91b1fdb109:0x16ea80d9e726d26d!8m2!3d52.7276249!4d6.4772527": {
+   "checkedAt": "2026-10-22",
    "image": null,
    "note": "robots.txt staat het niet toe",
    "via": null
@@ -40339,9 +40550,9 @@
    "via": "og:image"
   },
   "https://www.museumjoure.nl/agenda/workshop-maak-je-eigen-zilveren-ring-5/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://www.museumjoure.nl/wp-content/uploads/2025/07/03-05-Lisette-Reijns-Atelier-Goudsmid-Juwelier-Reparaties-_MK-2023-64-standard-kopie.jpg",
+   "via": "og:image"
   },
   "https://www.museumjoure.nl/agenda/workshop-omgaan-met-klokken-voor-beginners-2/": {
    "checkedAt": "2026-10-21",
@@ -41867,6 +42078,33 @@
    "checkedAt": "2026-10-13",
    "image": "https://www.sfdeinum.nl/back-site/upload-bs/sfdeinum/fotoalbums/nieuws/_185x200/banner-homepage-veo_20261013132101601.png",
    "via": "og:image"
+  },
+  "https://www.skkw.nl/voorstelling/freek-de-jonge-wisten-wij-veel/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": null,
+   "via": null
+  },
+  "https://www.skkw.nl/voorstelling/joost-botman-en-jos-kolenberg/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "lezing",
+    "woord": "verhalen"
+   },
+   "image": "https://www.skkw.nl/wp-content/uploads/joost-botman-en-jos-kolenberg.jpg",
+   "via": "schema.org"
+  },
+  "https://www.skkw.nl/voorstelling/mart-hillen/": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "theater",
+    "woord": "theater"
+   },
+   "image": "https://www.skkw.nl/wp-content/uploads/mart-hillen.jpg",
+   "via": "schema.org"
   },
   "https://www.sleen.nu/home/agenda/pagina/2": {
    "checkedAt": "2026-10-15",
@@ -43744,9 +43982,9 @@
    "via": null
   },
   "https://www.sumar.nl/evenement/algemene-najaarsledenvergadering-vv-suameer/": {
-   "checkedAt": "2000-01-01",
-   "image": null,
-   "via": "schema.org"
+   "checkedAt": "2026-10-22",
+   "image": "https://www.sumar.nl/wp-content/uploads/2026/08/IMG_1134-1.jpeg",
+   "via": "og:image"
   },
   "https://www.sumar.nl/evenement/halloweenparty-vv-suameer/": {
    "checkedAt": "2026-10-21",
@@ -44717,6 +44955,15 @@
    "image": null,
    "via": null
   },
+  "https://www.vera-groningen.nl/?post_type=events&p=149705&lang=nl": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "soort": "muziek",
+    "woord": "band"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/01/ferocious-dog-2400.jpg",
+   "via": "og:image"
+  },
   "https://www.vera-groningen.nl/?post_type=events&p=150560&lang=nl": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -44831,6 +45078,16 @@
    "image": "https://cdn.vera-groningen.nl/2026/07/Taxi-Lotta-2400-scaled.jpg",
    "via": "og:image"
   },
+  "https://www.vera-groningen.nl/?post_type=events&p=153856&lang=nl": {
+   "checkedAt": "2026-10-22",
+   "hints": {
+    "podia": "podia",
+    "soort": "muziek",
+    "woord": "band"
+   },
+   "image": "https://cdn.vera-groningen.nl/2026/08/LAWN-2400.jpg",
+   "via": "og:image"
+  },
   "https://www.vera-groningen.nl/?post_type=events&p=154134&lang=nl": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -44874,6 +45131,11 @@
     "woord": "muziek"
    },
    "image": "https://cdn.vera-groningen.nl/2026/09/The-Etters-2400.jpg",
+   "via": "og:image"
+  },
+  "https://www.vera-groningen.nl/?post_type=events&p=154626&lang=nl": {
+   "checkedAt": "2026-10-22",
+   "image": "https://cdn.vera-groningen.nl/2026/09/Orsini-2400.jpg",
    "via": "og:image"
   },
   "https://www.vera-groningen.nl/?post_type=events&p=154647&lang=nl": {
@@ -45932,6 +46194,6 @@
    "via": "og:image"
   }
  },
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "version": 1
 }
