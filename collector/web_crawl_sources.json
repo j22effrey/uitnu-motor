@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -12876,6 +12876,25 @@
         "city": "Winsum"
       },
       "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "garsthuizen-info-web",
+      "name": "'t Binhoes, dorpshuis Startenhuizen en Garsthuizen",
+      "rootUrl": "https://garsthuizen.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.garsthuizen.info/"
+      },
+      "activatedFromCandidate": "garsthuizen.info",
+      "defaultPlace": {
+        "city": "Garsthuizen"
+      },
+      "policyReviewedAt": "2026-10-23"
     }
   ]
 }
