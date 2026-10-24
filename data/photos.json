@@ -17228,6 +17228,10 @@
    "checkedAt": "2026-10-21",
    "url": null
   },
+  "plek:st josephkerk heeg|heeg": {
+   "checkedAt": "2026-10-24",
+   "url": null
+  },
   "plek:stadskantoor appingedam|appingedam": {
    "checkedAt": "2026-10-21",
    "url": null
@@ -19009,6 +19013,11 @@
     "woord": "wandel"
    },
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/beetsterzwaag-olterterp/library/variants/nwGHIbv0hffbWaIjQroHUVEc5z2oNh253wOo8vsK-s.webp",
+   "via": "og:image"
+  },
+  "https://beetsterzwaag.frl/lidmaatschap-plaatselijk-belang": {
+   "checkedAt": "2026-10-24",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/beetsterzwaag-olterterp/library/variants/DAKZRFO1ZaZa3YrftmOtO2s4BRlrQ9cl59hQM8QO-l.webp",
    "via": "og:image"
   },
   "https://beetsterzwaag.frl/nieuws-van-de-redactie-van-de-dorpsapp": {
@@ -27391,6 +27400,11 @@
     "soort": "feest",
     "woord": "sinterklaas"
    },
+   "image": null,
+   "via": null
+  },
+  "https://heeg.frl/evenement/koor-aubada-zingt-zondagmorgen-in-de-st-josephkerk/": {
+   "checkedAt": "2026-10-24",
    "image": null,
    "via": null
   },
@@ -38795,6 +38809,11 @@
    "image": null,
    "via": null
   },
+  "https://www.elim-drenthe.nl/8053-2/": {
+   "checkedAt": "2026-10-24",
+   "image": "https://www.elim-drenthe.nl/wp-content/uploads/2026/10/FB_IMG_1792793644979-819x1024.jpg",
+   "via": "og:image"
+  },
   "https://www.elim-drenthe.nl/de-vijftiende-editie-van-brugpop/": {
    "checkedAt": "2026-10-17",
    "hints": {
@@ -38803,6 +38822,11 @@
    },
    "image": "https://www.elim-drenthe.nl/wp-content/uploads/2026/10/Brugpop-2026.3-1024x576.jpg",
    "via": "og:image"
+  },
+  "https://www.elim-drenthe.nl/page/2/": {
+   "checkedAt": "2026-10-24",
+   "image": null,
+   "via": null
   },
   "https://www.elim-drenthe.nl/wintertied-komt-eraan/": {
    "checkedAt": "2026-10-14",
@@ -41845,6 +41869,11 @@
    "image": null,
    "via": null
   },
+  "https://www.oldenzijl.nl/wordpress/2026/10/24/olnzielster-oktober-2026/": {
+   "checkedAt": "2026-10-24",
+   "image": null,
+   "via": null
+  },
   "https://www.ommelanderwijk.com/activiteiten/": {
    "checkedAt": "2026-10-12",
    "image": null,
@@ -42754,6 +42783,11 @@
    "image": null,
    "via": null
   },
+  "https://www.scharnegoutum.nl/agenda/onderhoud-tapinstallatie/": {
+   "checkedAt": "2026-10-24",
+   "image": null,
+   "via": null
+  },
   "https://www.scharnegoutum.nl/agenda/onderhoud/": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -43035,6 +43069,15 @@
   },
   "https://www.scharnegoutum.nl/agenda/yin-yoga-reserve-les/2026-10-27/": {
    "checkedAt": "2026-10-14",
+   "hints": {
+    "soort": "sport",
+    "woord": "yoga"
+   },
+   "image": null,
+   "via": null
+  },
+  "https://www.scharnegoutum.nl/agenda/ying-yoga-4/": {
+   "checkedAt": "2026-10-24",
    "hints": {
     "soort": "sport",
     "woord": "yoga"
@@ -47260,6 +47303,11 @@
    "checkedAt": "2026-10-19",
    "image": null,
    "via": null
+  },
+  "https://ysbrechtum.com/interkerkelijke-dienst/": {
+   "checkedAt": "2026-10-24",
+   "image": "https://ysbrechtum.com/wp-content/uploads/2026/10/2026-10-ikw.png",
+   "via": "og:image"
   },
   "https://ysbrechtum.com/jubileum-darttoernooi/": {
    "checkedAt": "2026-10-13",
