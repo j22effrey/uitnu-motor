@@ -13953,6 +13953,10 @@
    "checkedAt": "2026-10-21",
    "url": null
   },
+  "plek:catechisatielokaal sint piterkerk|grou": {
+   "checkedAt": "2026-10-24",
+   "url": null
+  },
   "plek:cleopatra|groningen": {
    "checkedAt": "2026-10-14",
    "url": null
@@ -22289,6 +22293,11 @@
    "image": null,
    "via": null
   },
+  "https://echtenerbrug.info/agenda/evenementdetail/446/17,27,28/gft-echtenerbrug-echten": {
+   "checkedAt": "2026-10-24",
+   "image": null,
+   "via": null
+  },
   "https://echtenerbrug.info/agenda/evenementdetail/473/17,27,28/restafval-delfstrahuizen": {
    "checkedAt": "2026-10-20",
    "image": null,
@@ -28104,6 +28113,11 @@
    "image": null,
    "via": null
   },
+  "https://kerkalspodium.nl/nl/activiteiten/ubbegas-verhaal-een-tijdloze-reis/13788/-/-/-/-/0": {
+   "checkedAt": "2026-10-24",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/ubbegas-verhaal-een-tijdloze-reis/13788/-/-/-/-/1": {
    "checkedAt": "2026-10-19",
    "image": null,
@@ -28121,6 +28135,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/ubbegas-verhaal-een-tijdloze-reis/13790/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/van-zijl-consort-met-sopraan-dorien-deodatus/13802/-/-/-/-/1": {
+   "checkedAt": "2026-10-24",
    "image": null,
    "via": null
   },
@@ -33682,6 +33701,11 @@
    "image": "https://sliekerfilm.nl/app/uploads/2026/07/16131-justeuneillusion-cineart-textless-scaled.jpg",
    "via": "og:image"
   },
+  "https://sliekerfilm.nl/film/killer-of-sheep-1978/": {
+   "checkedAt": "2026-10-24",
+   "image": "https://sliekerfilm.nl/app/uploads/2026/10/Killer-Of-Sheep-digitale-restauratie-_ps_1_jpg_sd-low.jpg",
+   "via": "og:image"
+  },
   "https://sliekerfilm.nl/film/kleine-films-grote-verhalen-6/": {
    "checkedAt": "2026-10-13",
    "hints": {
@@ -33731,6 +33755,15 @@
     "woord": "documentaire"
    },
    "image": "https://sliekerfilm.nl/app/uploads/2026/09/The-Cycle-of-Love_ps_1_jpg_sd-low.jpg",
+   "via": "og:image"
+  },
+  "https://sliekerfilm.nl/film/the-texas-chain-saw-massacre/": {
+   "checkedAt": "2026-10-24",
+   "hints": {
+    "soort": "feest",
+    "woord": "halloween"
+   },
+   "image": "https://sliekerfilm.nl/app/uploads/2026/09/The-Texas-Chain-Saw-Massacre-50th-Anniversary_ps_1_jpg_sd-low.jpg",
    "via": "og:image"
   },
   "https://sliekerfilm.nl/film/toutes-directions/": {
@@ -36224,6 +36257,15 @@
     "woord": "bingo"
    },
    "image": "https://wijnjewoude.net/wp-content/uploads/2026/10/swingel-benefiet-banner.jpg",
+   "via": "schema.org"
+  },
+  "https://wijnjewoude.net/agenda/inbrengen-spullen-voor-kerstmarkt/": {
+   "checkedAt": "2026-10-24",
+   "hints": {
+    "soort": "markt",
+    "woord": "markt"
+   },
+   "image": "https://wijnjewoude.net/wp-content/uploads/2022/11/kerstmarkt-2022-1.jpg",
    "via": "schema.org"
   },
   "https://wijnjewoude.net/agenda/kerkdienst-met-folkert-wesseling-swingel-benefiet/": {
@@ -38946,6 +38988,12 @@
   },
   "https://www.google.com/calendar/event?eid=XzY1MmpjY3BnNjByMzBiYTY2OTEzaWI5azc1MTM4YjlvOGQxNDJiOWs2MG9rMmNpMzY1MmthZHBvNm9fMjAyNjEwMjBUMDcwMDAwWiA2NGRmNmU3ZGZkZDBkOTIwYzE0ZTdhYzhhYWVmYzczMmZmNzJiZmI2N2Q4NTY4MDE1NmQ1MTAwZmE0OTY0YjJhQGc&ctz=Europe/Paris": {
    "checkedAt": "2026-10-20",
+   "image": null,
+   "note": "robots.txt staat het niet toe",
+   "via": null
+  },
+  "https://www.google.com/calendar/event?eid=XzZ0MzNjZGhnNmdxajRiYTE4NHFqY2I5azc1MGthYmExNzBzamViYTM4OHFqOGU5aThvc2o4ZGhnODQgNjRkZjZlN2RmZGQwZDkyMGMxNGU3YWM4YWFlZmM3MzJmZjcyYmZiNjdkODU2ODAxNTZkNTEwMGZhNDk2NGIyYUBn&ctz=Europe/Paris": {
+   "checkedAt": "2026-10-24",
    "image": null,
    "note": "robots.txt staat het niet toe",
    "via": null
@@ -47323,6 +47371,6 @@
    "via": "og:image"
   }
  },
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "version": 1
 }
