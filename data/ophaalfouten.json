@@ -1,312 +1,152 @@
 {
-  "adorp-com-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "annen-info-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "baptistengemeente-info-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+  "barontheater-nl-web": {
+    "fout": "PermissionError: robots.txt staat https://www.barontheater.nl/ niet toe (robots.txt niet bereikbaar: URLError: <urlopen error [Errno 101] Network is unreachable>)",
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "bitgum-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-24T11:53+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "blitsaerd-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "brugeskerk-nl-web": {
     "fout": "HTTPError: HTTP Error 500: Internal Server Error",
     "sinds": "2026-10-22T17:56+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "buinerveen-info-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "buren-ameland-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "buurtcentrumoranjewijk-nl-web": {
     "fout": "HTTPError: HTTP Error 500: Internal Server Error",
     "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "carambole-winschoten-nl-web": {
     "fout": "PermissionError: robots.txt staat https://www.carambole-winschoten.nl/agenda/ niet toe (robots.txt gaf status 503)",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "cgkleeuwarden-nl-web": {
     "fout": "HTTPError: HTTP Error 503: Service Unavailable",
     "sinds": "2026-10-22T01:53+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
-  "chaplinspub-nl-web": {
+  "cvvoranjenassau-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "de-groenenberg-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "debrinkpub-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "debuorkerij-terherne-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "demelkfabriek-eu-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "doarpshuswergea-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "doopsgezindendrachtenureterp-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "doopsgezindengroningen-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "doopsgezindenleeuwarden-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "doopsgezindroden-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "doopsgezindsurhuisterveen-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "dorpsbelangen-meerstad-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-21T18:45+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "dorpshuislutten-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "dorpshuiszeerijp-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "easthim-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T21:13+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
-  "eeserveen-info-web": {
+  "explorethenorth-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "ferwertonline-nl-web": {
-    "fout": "HTTPError: HTTP Error 404: Not Found",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "fochteloo-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "gkv-uithuizermeeden-nl-web": {
     "fout": "URLError: <urlopen error [Errno -2] Name or service not known>",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
-  "hetkleinekerkje-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+  "hildegardparochie-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "lemmerbinnen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-22T01:53+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "luthersbachensemble-nl-web": {
     "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
     "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "luttenleeft-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "margarethakerknorg-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "mfcgroningen-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-24T21:34+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "minnertsga-frl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-24T11:53+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
-  "mozartconcerten-nl-web": {
-    "fout": "TypeError: unhashable type: 'list'",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "ngkmarum-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "nieuwschoonebeek-com-web": {
+  "mummelhuus-nl-web": {
     "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "ontmoetingskerkharen-nl-web": {
     "fout": "HTTPError: HTTP Error 406: Not Acceptable",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
-  "parkkerk-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "pg-harlingen-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "pkn-openoed-nl-web": {
+  "opendeonline-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
-  "plaatselijkbelangappelscha-nl-web": {
+  "schoolplatendeinum-nl-web": {
+    "fout": "TimeoutError: The read operation timed out",
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
+  },
+  "terpoarte-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
-  "podium34-nl-web": {
+  "tryater-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "podiumzuidhaege-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "sebaldeburen-net-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "spijk-net-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "stichtingnobilis-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "tcdelfzijl-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "tsjerkwert-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T12:24+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "twijzelerheide-net-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "viadukt-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "visvliet-com-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T05:33+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "vugroningen-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
+  },
+  "vvvameland-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
+  },
+  "wehe-denhoorn-nl-web": {
+    "fout": "URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)>",
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "westerlee-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T12:24+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "wijkbelangwesteinde-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-10-22T12:42+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   },
-  "wilhelminaleens-nl-web": {
-    "fout": "TimeoutError: The read operation timed out",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+  "winneweer-com-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-10-25T17:11+00:00",
+    "laatst": "2026-10-25T17:11+00:00"
   },
   "wwswergea-nl-web": {
     "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
     "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "ydedepunt-com-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
-  },
-  "zwembadeneemsmond-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-10-25T12:22+00:00",
-    "laatst": "2026-10-25T12:22+00:00"
+    "laatst": "2026-10-25T17:11+00:00"
   }
 }
