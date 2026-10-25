@@ -21651,6 +21651,11 @@
    "image": null,
    "via": null
   },
+  "https://dorpshuislekkum.nl/index.php/agenda/evenementdetail/2682/-/toneel-oefenavond": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://dorpshuislekkum.nl/index.php/agenda/evenementdetail/2702/-/biljarten-competitie": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -27240,6 +27245,11 @@
     "woord": "feest"
    },
    "image": "https://grou.nl/wp-content/uploads/2026/09/Scherm­afbeelding-2026-09-16-om-23.16.10.png",
+   "via": "schema.org"
+  },
+  "https://grou.nl/event/meet-up-inspiratie-in-de-wereld-vinden/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://grou.nl/wp-content/uploads/2025/11/Scherm­afbeelding-2025-11-27-om-20.16.28.png",
    "via": "schema.org"
   },
   "https://grou.nl/event/zanger-pianist-roon-staal/": {
@@ -34084,6 +34094,11 @@
    "image": null,
    "via": null
   },
+  "https://stedum.com/event/koffieochtend-moarstee/": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://stedum.com/event/najaarsbingo/": {
    "checkedAt": "2026-10-12",
    "image": null,
@@ -36418,6 +36433,15 @@
    "image": "https://wijnjewoude.net/wp-content/uploads/2025/12/klaverjassen.jpg",
    "via": "schema.org"
   },
+  "https://wijnjewoude.net/agenda/klaverjassen-in-de-swingel-12-4/": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "eten",
+    "woord": "koffie"
+   },
+   "image": "https://wijnjewoude.net/wp-content/uploads/2025/12/klaverjassen.jpg",
+   "via": "schema.org"
+  },
   "https://wijnjewoude.net/agenda/lezing-reitze-jonkman/": {
    "checkedAt": "2026-10-12",
    "hints": {
@@ -36456,6 +36480,15 @@
   },
   "https://wijnjewoude.net/agenda/open-kerk-4/": {
    "checkedAt": "2026-10-20",
+   "hints": {
+    "soort": "eten",
+    "woord": "koffie"
+   },
+   "image": "https://wijnjewoude.net/wp-content/uploads/2021/04/gereformeerde-kerk-wijnjewoude-scaled-e1617392870376.jpg",
+   "via": "schema.org"
+  },
+  "https://wijnjewoude.net/agenda/open-kerk-5/": {
+   "checkedAt": "2026-10-25",
    "hints": {
     "soort": "eten",
     "woord": "koffie"
@@ -37551,6 +37584,11 @@
    "image": "https://www.bolsward.nl/wp-content/uploads/2026/02/IMG_5263-kopie-scaled.jpeg",
    "via": "og:image"
   },
+  "https://www.bolsward.nl/agenda/blend-run-club-5-km-door-bolsward/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://www.bolsward.nl/wp-content/uploads/2026/08/857488000_28355006404202061_6921885978860533945_n.png.jpeg",
+   "via": "og:image"
+  },
   "https://www.bolsward.nl/agenda/boog-cabaret-lebbis-satan-is-moe/": {
    "checkedAt": "2026-10-14",
    "image": "https://www.bolsward.nl/wp-content/uploads/2026/08/Lebbis-Satan-is-moe-Staand-fotocredits-Martin-Oudshoorn.jpg",
@@ -37619,6 +37657,15 @@
     "woord": "beurs"
    },
    "image": "https://www.bolsward.nl/wp-content/uploads/2025/10/SKIBEURS-2025-.jpg",
+   "via": "og:image"
+  },
+  "https://www.bolsward.nl/agenda/veerhuys-party-30-back-to-the-90s/": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "feest",
+    "woord": "feest"
+   },
+   "image": "https://www.bolsward.nl/wp-content/uploads/2026/02/857246857_18381209491242063_7221452557294475269_n.jpg",
    "via": "og:image"
   },
   "https://www.bolsward.nl/agenda/verhalenavond-froukje-santing-pake-en-zijn-vee/": {
@@ -39630,6 +39677,11 @@
    "image": "https://www.hildegardparochie.nl/wp-content/uploads/2022/04/emmaus-event-1.jpg",
    "via": "schema.org"
   },
+  "https://www.hildegardparochie.nl/event/32e-zondag-door-het-jaar-2/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://www.hildegardparochie.nl/wp-content/uploads/2022/04/emmaus-event-1.jpg",
+   "via": "schema.org"
+  },
   "https://www.hildegardparochie.nl/event/32e-zondag-door-het-jaar-3/": {
    "checkedAt": "2026-10-25",
    "image": "https://www.hildegardparochie.nl/wp-content/uploads/2022/04/nicolaas-event-1.jpg",
@@ -39678,6 +39730,11 @@
   "https://www.hildegardparochie.nl/event/ochtendgebed-3/": {
    "checkedAt": "2026-10-15",
    "image": "https://www.hildegardparochie.nl/wp-content/uploads/2022/04/emmaus-event-1.jpg",
+   "via": "schema.org"
+  },
+  "https://www.hildegardparochie.nl/event/ochtendgebed-4/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://www.hildegardparochie.nl/wp-content/uploads/2026/10/kerk-met-banner-voor-ochtendgebed-400x226-1.avif",
    "via": "schema.org"
   },
   "https://www.hildegardparochie.nl/event/ochtendgebed-7/": {
@@ -40809,6 +40866,11 @@
     "woord": "jongeren"
    },
    "image": "https://www.jongeharten.nl/wp-content/uploads/2025/10/Field-en-afterparty-Jonge-Harten-23.11.2024-Daniek-Snijder-38-1-1024x683.jpg",
+   "via": "og:image"
+  },
+  "https://www.jongeharten.nl/programma/lets-meet/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://www.jongeharten.nl/wp-content/uploads/2026/10/25.11.23-Jonge-Harten-Alwin-van-Wijngaarden-103.jpg",
    "via": "og:image"
   },
   "https://www.jongeharten.nl/programma/my-little-crisis-my-little-celebration/": {
@@ -42307,6 +42369,11 @@
   },
   "https://www.pgbeilen.nl/agenda/eredienst-wg-beilen-37/": {
    "checkedAt": "2026-10-12",
+   "image": null,
+   "via": null
+  },
+  "https://www.pgbeilen.nl/agenda/gemeenteavond-wg-beilen-6/": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
