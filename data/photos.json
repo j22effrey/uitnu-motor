@@ -16063,6 +16063,10 @@
    "checkedAt": "2026-10-15",
    "url": null
   },
+  "plek:locatie wordt later bepaald|echtenerbrug": {
+   "checkedAt": "2026-10-25",
+   "url": null
+  },
   "plek:locatie wordt later bepaald|kuinre": {
    "checkedAt": "2026-10-21",
    "url": null
@@ -18014,6 +18018,10 @@
    "checkedAt": "2026-10-21",
    "url": null
   },
+  "plek:walfriduskerk|hellum": {
+   "checkedAt": "2026-10-25",
+   "url": null
+  },
   "plek:warkumerwaard it soal|workum": {
    "checkedAt": "2026-10-14",
    "url": null
@@ -18510,6 +18518,11 @@
   "https://appelscha.frl/nieuws": {
    "checkedAt": "2026-10-13",
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/appelscha/library/VvcxvZ7URHoPDROUPvcTfbiVnwV09bfkktiiI1an.jpg",
+   "via": "og:image"
+  },
+  "https://appelscha.frl/prikbord-in-de-dorpsapp": {
+   "checkedAt": "2026-10-25",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/appelscha/library/variants/rH5wf53Qcl4BNuXDHjCemcB6mLnmZYV0x2oiCLg3-m.webp",
    "via": "og:image"
   },
   "https://appelscha.frl/welkom-bij-de-appelschase-bc": {
@@ -29932,6 +29945,11 @@
    "image": null,
    "via": null
   },
+  "https://ngkharkstede.nl/agenda-item/kerkdienst/": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://nicolaikerk-appingedam.nl/agenda.html": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -31603,6 +31621,11 @@
    "image": null,
    "via": null
   },
+  "https://ontdekdebieb.op-shop.nl/14562/digitaal-spreekuur/12-11-2026": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://ontdekdebieb.op-shop.nl/14590/digitaal-spreekuur/27-10-2026": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -31650,6 +31673,15 @@
    "image": null,
    "via": null
   },
+  "https://ontdekdebieb.op-shop.nl/14655/digi-taalhuis/12-11-2026": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "lezing",
+    "woord": "cursus"
+   },
+   "image": null,
+   "via": null
+  },
   "https://ontdekdebieb.op-shop.nl/14674/digi-taalhuis/22-10-2026": {
    "checkedAt": "2026-10-21",
    "hints": {
@@ -31677,6 +31709,15 @@
    "image": null,
    "via": null
   },
+  "https://ontdekdebieb.op-shop.nl/14677/digi-taalhuis/12-11-2026": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "lezing",
+    "woord": "cursus"
+   },
+   "image": null,
+   "via": null
+  },
   "https://ontdekdebieb.op-shop.nl/14707/juridisch-spreekuur/22-10-2026": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -31689,6 +31730,11 @@
   },
   "https://ontdekdebieb.op-shop.nl/14709/juridisch-spreekuur/05-11-2026": {
    "checkedAt": "2026-10-23",
+   "image": null,
+   "via": null
+  },
+  "https://ontdekdebieb.op-shop.nl/14710/juridisch-spreekuur/12-11-2026": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -34074,6 +34120,15 @@
    "image": null,
    "via": null
   },
+  "https://stedum.com/event/dorpsmaaltijd-in-de-delleweer/": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "eten",
+    "woord": "maaltijd"
+   },
+   "image": null,
+   "via": null
+  },
   "https://stedum.com/event/dorpsstee-voor-een-gezellige-avond/": {
    "checkedAt": "2026-10-15",
    "image": null,
@@ -36442,6 +36497,15 @@
    "image": "https://wijnjewoude.net/wp-content/uploads/2025/12/klaverjassen.jpg",
    "via": "schema.org"
   },
+  "https://wijnjewoude.net/agenda/ledenvergadering-ijsclub-great-foarut-11/": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "eten",
+    "woord": "wijn"
+   },
+   "image": null,
+   "via": null
+  },
   "https://wijnjewoude.net/agenda/lezing-reitze-jonkman/": {
    "checkedAt": "2026-10-12",
    "hints": {
@@ -38648,6 +38712,15 @@
    "image": null,
    "via": null
   },
+  "https://www.dorpsbelangenhellum.nl/evenement/kinderdisco-3/": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "kinderen",
+    "woord": "kinderdisco"
+   },
+   "image": "https://www.dorpsbelangenhellum.nl/wp-content/uploads/2026/10/kinderdisco_hellum_oktober_2026_flyer.png",
+   "via": "schema.org"
+  },
   "https://www.dorpsbelangenhellum.nl/evenement/oud-papier-inzameling-17/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -39997,6 +40070,15 @@
   "https://www.indeklinker.nl/theater/film-the-cycle-of-love-57y5": {
    "checkedAt": "2026-10-19",
    "image": "https://img.indeklinker.nl/_fwczadNtCHRETOgWwGlPmSnhuGUn5ApICyZyc3HHks/c:539:282:fp:0.5:0.33/s:1200:630:1/aHR0cHM6Ly93d3cuaW5kZWtsaW5rZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzI1Njk4X29yaWcuanBlZw",
+   "via": "schema.org"
+  },
+  "https://www.indeklinker.nl/theater/film-the-cycle-of-love-tj43": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "lezing",
+    "woord": "verhalen"
+   },
+   "image": "https://img.indeklinker.nl/6_6nGUcR8dcvabiyAwy9D5PMEARFWkR6NfeQCQ9xYN0/c:636:333:fp:0.5:0.33/s:1200:630:1/aHR0cHM6Ly93d3cuaW5kZWtsaW5rZXIubmwvL2Ntc19maWxlcy9zeXN0ZW0vaW1hZ2VzL2ltZzI1NzU2X29yaWcuanBlZw",
    "via": "schema.org"
   },
   "https://www.indeklinker.nl/theater/film-the-cycle-of-love-zx5h": {
