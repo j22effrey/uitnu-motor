@@ -26567,6 +26567,11 @@
    "image": "https://franeker.nl/assets/themes/franeker/og-image.webp?v=7b4945b764",
    "via": "og:image"
   },
+  "https://franeker.nl/contact?onderwerp=tip": {
+   "checkedAt": "2026-10-25",
+   "image": "https://franeker.nl/og/default/cb1cc5f096e68758ea86c69b760770efb03486728e3a8d3ce140cc0e9b3f7d18",
+   "via": "og:image"
+  },
   "https://franeker.nl/fixi-meldingen?melding=1488653821701376": {
    "checkedAt": "2026-10-20",
    "image": "https://franeker.nl/assets/themes/franeker/og-image.webp?v=7b4945b764",
@@ -27403,6 +27408,15 @@
    "image": null,
    "via": null
   },
+  "https://harmonie.nl/agenda/noordelijk-film-festival/53134": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://harmonie-development.s3.eu-north-1.amazonaws.com/voorstellingen/53134/agenda/89ghFw02K3dWfOXOqxfohwiKe2TElkdPjx6Ggzc0.jpg",
+   "via": "schema.org"
+  },
   "https://harmonie.nl/agenda/scherven-van-de-wereld/53090": {
    "checkedAt": "2026-10-16",
    "hints": {
@@ -28083,6 +28097,11 @@
    "image": null,
    "via": null
   },
+  "https://kerkalspodium.nl/nl/activiteiten/allerzielen-met-marjoleine-de-vos/13780/-/-/-/-/1": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/allerzielen-met-marjoleine-de-vos/13780/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
    "image": null,
@@ -28143,6 +28162,11 @@
    "image": null,
    "via": null
   },
+  "https://kerkalspodium.nl/nl/activiteiten/ensemble-pynarello/13808/-/-/-/-/1": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/ensemble-pynarello/13808/-/-/-/-/2": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -28153,8 +28177,18 @@
    "image": null,
    "via": null
   },
+  "https://kerkalspodium.nl/nl/activiteiten/erwin-de-vries-komt-naar-kolham/13818/-/-/-/-/0": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/erwin-de-vries-komt-naar-kolham/13818/-/-/-/-/1": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/halloweenconcert-capriccio-clarinet-orchestra/13811/-/-/-/-/0": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -28165,6 +28199,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/halloweenconcert-capriccio-clarinet-orchestra/13811/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/herdenkingsweek/13829/-/-/-/-/1": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -28200,6 +28239,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/klimaatkoor-noord/13806/-/-/-/-/0": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/lezing-en-muziek-over-ede-staal/13774/-/-/-/-/0": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -28263,6 +28307,11 @@
    "image": null,
    "via": null
   },
+  "https://kerkalspodium.nl/nl/activiteiten/ubbegas-verhaal-een-tijdloze-reis/13790/-/-/-/-/0": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/ubbegas-verhaal-een-tijdloze-reis/13790/-/-/-/-/1": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -28270,6 +28319,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/ubbegas-verhaal-een-tijdloze-reis/13790/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/van-zijl-consort-met-sopraan-dorien-deodatus/13802/-/-/-/-/0": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -39307,6 +39361,12 @@
    "note": "robots.txt staat het niet toe",
    "via": null
   },
+  "https://www.google.com/calendar/event?eid=NTllYmNkOTB2YWtqMGFqNTBlOTVsYTQ4OHRfMjAyNjEwMjZUMDgwMDAwWiA2NGRmNmU3ZGZkZDBkOTIwYzE0ZTdhYzhhYWVmYzczMmZmNzJiZmI2N2Q4NTY4MDE1NmQ1MTAwZmE0OTY0YjJhQGc&ctz=Europe/Paris": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "note": "robots.txt staat het niet toe",
+   "via": null
+  },
   "https://www.google.com/calendar/event?eid=NjE3ZjRxcm02YXFzMGcyNWQyZDJ1OTU1MnIgNjRkZjZlN2RmZGQwZDkyMGMxNGU3YWM4YWFlZmM3MzJmZjcyYmZiNjdkODU2ODAxNTZkNTEwMGZhNDk2NGIyYUBn&ctz=Europe/Paris": {
    "checkedAt": "2026-10-16",
    "image": null,
@@ -39771,6 +39831,11 @@
    },
    "image": "http://static1.squarespace.com/static/5e7379e705097a2b8b509895/t/6ab23c7bae14e00b87aafbaf/1790065787361/noname_13-christmas-background-4704061.jpg?format=1500w",
    "via": "schema.org"
+  },
+  "https://www.hervormdegemeente-ommelanderwijk-zuidwending.nl/": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
   },
   "https://www.hetkleinekerkje.nl/gord-jesse-31-oktober/": {
    "checkedAt": "2026-10-14",
