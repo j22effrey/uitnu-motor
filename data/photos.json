@@ -15353,6 +15353,10 @@
    "checkedAt": "2026-10-13",
    "url": null
   },
+  "plek:hervormde kerk boijl|boijl": {
+   "checkedAt": "2026-10-25",
+   "url": null
+  },
   "plek:het lage noorden|marrum": {
    "checkedAt": "2026-10-14",
    "url": null
@@ -17738,6 +17742,14 @@
    "checkedAt": "2026-10-22",
    "url": null
   },
+  "plek:veld a a|franeker": {
+   "checkedAt": "2026-10-25",
+   "url": null
+  },
+  "plek:veld a b|franeker": {
+   "checkedAt": "2026-10-25",
+   "url": null
+  },
   "plek:veld a|franeker": {
    "checkedAt": "2026-10-22",
    "url": null
@@ -19409,6 +19421,11 @@
    "image": "https://boeremapark.nl/wp-content/uploads/2026/04/image-4.png",
    "via": "og:image"
   },
+  "https://boijl.com/event/algemene-ledenvergadering/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://boijl.com/wp-content/uploads/2025/01/Kerk_klokkentoren_liggend.jpg",
+   "via": "og:image"
+  },
   "https://boijl.com/event/fotomiddag/": {
    "checkedAt": "2026-10-24",
    "image": "https://boijl.com/wp-content/uploads/2021/06/1a.jpg",
@@ -19522,6 +19539,11 @@
    "image": null,
    "via": "schema.org"
   },
+  "https://boijl.com/event/lichtjesavond/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://boijl.com/wp-content/uploads/2026/10/Lichtjesavond.jpg",
+   "via": "og:image"
+  },
   "https://boijl.com/event/meer-bewegen-voor-ouderen-2026-apr-mei/2026-10-23/": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -19560,6 +19582,15 @@
    },
    "image": "https://boijl.com/wp-content/uploads/2026/09/Oktoberfest.jpg",
    "via": "og:image"
+  },
+  "https://boijl.com/event/open-repetitie-gemengd-koor-boyl/": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "muziek",
+    "woord": "koor"
+   },
+   "image": null,
+   "via": null
   },
   "https://boijl.com/event/prijsklaverjassen/2026-10-23/": {
    "checkedAt": "2026-10-21",
@@ -27996,6 +28027,11 @@
    "image": null,
    "via": null
   },
+  "https://kerkalspodium.nl/nl/activiteiten/allerzielen-2026/13717/-/-/-/-/1": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/allerzielen-2026/13717/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
    "image": null,
@@ -28003,6 +28039,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/allerzielen-met-marjoleine-de-vos/13780/-/-/-/-/2": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/allerzielen/13819/-/-/-/-/1": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -28028,6 +28069,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/concert-kamerkoor-dualis/13785/-/-/-/-/3": {
    "checkedAt": "2026-10-20",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/de-bisschop-een-spookverhaal/13810/-/-/-/-/0": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -28096,6 +28142,11 @@
    "image": null,
    "via": null
   },
+  "https://kerkalspodium.nl/nl/activiteiten/klankkoor-met-open-armen/13792/-/-/-/-/0": {
+   "checkedAt": "2026-10-25",
+   "image": null,
+   "via": null
+  },
   "https://kerkalspodium.nl/nl/activiteiten/klankkoor-met-open-armen/13792/-/-/-/-/1": {
    "checkedAt": "2026-10-19",
    "image": null,
@@ -28108,6 +28159,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/lezing-en-muziek-over-ede-staal/13774/-/-/-/-/1": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/lichtjesavond/13830/-/-/-/-/1": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -28133,6 +28189,11 @@
   },
   "https://kerkalspodium.nl/nl/activiteiten/theaterconcert-milonge-in-de-dorpskerk-in-garmerwolde/13605/-/-/-/-/3": {
    "checkedAt": "2026-10-20",
+   "image": null,
+   "via": null
+  },
+  "https://kerkalspodium.nl/nl/activiteiten/trauma-in-de-weeldenis-concert-erwin-de-vries/13799/-/-/-/-/0": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -29474,6 +29535,11 @@
   },
   "https://marssum.info/agenda/volksdansen-2026-10-28/": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://marssum.info/agenda/volksdansen-2026-11-04/": {
+   "checkedAt": "2026-10-25",
    "image": null,
    "via": null
   },
@@ -31639,6 +31705,15 @@
    "hints": {
     "soort": "feest",
     "woord": "spellen"
+   },
+   "image": null,
+   "via": null
+  },
+  "https://ontdekdebieb.op-shop.nl/16312/doorlopende-film-hip-franeker-winter-en-sinterklaastijd-in-en-rond-franeker/01-10-2026": {
+   "checkedAt": "2026-10-25",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
    },
    "image": null,
    "via": null
@@ -36785,6 +36860,11 @@
    "image": "https://wommels.nl/wp-content/uploads/2025/09/DJI_20250619180657_0098_D.jpg",
    "via": "og:image"
   },
+  "https://wommels.nl/activiteit/leovardia-1-sds-1-20261107-1430/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://wommels.nl/wp-content/uploads/2025/09/DJI_20250619180657_0098_D.jpg",
+   "via": "og:image"
+  },
   "https://wommels.nl/activiteit/lezing-opgraving-stapert-tsiispakhus/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -36902,6 +36982,11 @@
   },
   "https://wommels.nl/activiteit/restafval-20261124-0000/": {
    "checkedAt": "2026-10-18",
+   "image": "https://wommels.nl/wp-content/uploads/2025/09/DJI_20250619180657_0098_D.jpg",
+   "via": "og:image"
+  },
+  "https://wommels.nl/activiteit/sds-1-avc-1-20261031-1430/": {
+   "checkedAt": "2026-10-25",
    "image": "https://wommels.nl/wp-content/uploads/2025/09/DJI_20250619180657_0098_D.jpg",
    "via": "og:image"
   },
@@ -39543,6 +39628,16 @@
   "https://www.hildegardparochie.nl/event/30e-zondag-door-het-jaar/": {
    "checkedAt": "2026-10-14",
    "image": "https://www.hildegardparochie.nl/wp-content/uploads/2022/04/emmaus-event-1.jpg",
+   "via": "schema.org"
+  },
+  "https://www.hildegardparochie.nl/event/32e-zondag-door-het-jaar-3/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://www.hildegardparochie.nl/wp-content/uploads/2022/04/nicolaas-event-1.jpg",
+   "via": "schema.org"
+  },
+  "https://www.hildegardparochie.nl/event/32e-zondag-door-het-jaar/": {
+   "checkedAt": "2026-10-25",
+   "image": "https://www.hildegardparochie.nl/wp-content/uploads/2022/04/jozef-event-1.jpg",
    "via": "schema.org"
   },
   "https://www.hildegardparochie.nl/event/allerheiligen-2/": {
@@ -47477,6 +47572,6 @@
    "via": "og:image"
   }
  },
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "version": 1
 }
