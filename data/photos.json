@@ -18227,6 +18227,11 @@
    "image": null,
    "via": null
   },
+  "http://www.jongeren.amaryllisleeuwarden.nl": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
   "http://www.kerksolwerd.nl": {
    "checkedAt": "2026-10-12",
    "image": null,
@@ -19138,6 +19143,20 @@
   "https://beetsterzwaag.frl/praat-op-3-november-mee-met-de-ggd-over-hoe-gaat-het-met-onze-jeugd-in-beetsterzwaag": {
    "checkedAt": "2026-10-18",
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/beetsterzwaag-olterterp/library/variants/tu8BgBOOLc7OWrtAHHj0wOYUnEIsxsIDfoK16f4c-m.webp",
+   "via": "og:image"
+  },
+  "https://berlikum.com/connexa-komt-naar-je-toe-een-luisterendoor-en-een-bakje-koffie-voor-mantelzorgers/": {
+   "checkedAt": "2026-10-26",
+   "image": "https://berlikum.com/wp-content/uploads/2026/10/Connexa-komt-naar-je-toe-week-van-de-mantelzorg-scaled.png",
+   "via": "og:image"
+  },
+  "https://berlikum.com/lichtjesavond-2026/": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "feest",
+    "woord": "lichtjes"
+   },
+   "image": "https://berlikum.com/wp-content/uploads/2026/10/02-Lichtjesavond-2024-26102024-scaled.jpg",
    "via": "og:image"
   },
   "https://berlikum.com/zangavond-in-de-vermaning/": {
@@ -23697,6 +23716,50 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/all-of-a-sudden?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28212.28212/28212.webp",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/all-of-a-sudden?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28212.28212/28212.webp",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/all-of-a-sudden?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28212.28212/28212.webp",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/all-of-a-sudden?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28212.28212/28212.webp",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/andiamo-a-bere-lultima?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
+  "https://forum.nl/nl/agenda/film/andiamo-a-bere-lultima?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
+  "https://forum.nl/nl/agenda/film/andiamo-a-bere-lultima?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
+  "https://forum.nl/nl/agenda/film/andiamo-a-bere-lultima?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
   "https://forum.nl/nl/agenda/film/brand-new-landscape?date=17-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28330.28330/28330.jpg",
@@ -23729,6 +23792,12 @@
   },
   "https://forum.nl/nl/agenda/film/brand-new-landscape?date=25-10-2026": {
    "checkedAt": "2026-10-19",
+   "image": "https://static.forum.nl/cache/28330.28330/28330.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/brand-new-landscape?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/28330.28330/28330.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
@@ -23849,6 +23918,12 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/classics-shall-we-dance-30th-anniversary?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28137.28137/28137.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/classics-some-like-it-hot?date=18-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/26459.26459/26459.jpg",
@@ -23941,6 +24016,12 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/coward?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28047.28047/28047.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/coward?date=22-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28047.28047/28047.jpg",
@@ -23983,6 +24064,24 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/coward?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28047.28047/28047.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/coward?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28047.28047/28047.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/coward?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28047.28047/28047.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/coyote-vs-acme-nl?date=24-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/coyote-vs-acme-nl-6.28181/coyote-vs-acme-nl-6-s1920x1080.jpg",
@@ -23990,6 +24089,24 @@
   },
   "https://forum.nl/nl/agenda/film/coyote-vs-acme?date=21-10-2026": {
    "checkedAt": "2026-10-16",
+   "image": "https://static.forum.nl/cache/28181.28181/28181.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/coyote-vs-acme?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28181.28181/28181.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/coyote-vs-acme?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28181.28181/28181.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/coyote-vs-acme?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/28181.28181/28181.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
@@ -24041,6 +24158,12 @@
   "https://forum.nl/nl/agenda/film/dial-q-filmquiz-13?date=14-11-2026": {
    "checkedAt": "2026-10-17",
    "image": "https://static.forum.nl/cache/27830.27830/27830.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/digger?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27583.27583/27583.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -24112,6 +24235,18 @@
   },
   "https://forum.nl/nl/agenda/film/digger?date=27-10-2026": {
    "checkedAt": "2026-10-19",
+   "image": "https://static.forum.nl/cache/27583.27583/27583.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/digger?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27583.27583/27583.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/digger?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/27583.27583/27583.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
@@ -24252,6 +24387,22 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/docs-imago?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://static.forum.nl/cache/27825.27825/27825.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-naza?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28243.28243/28243.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/docs-naza?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28243.28243/28243.png",
@@ -24327,6 +24478,30 @@
   "https://forum.nl/nl/agenda/film/docs-naza?date=28-10-2026": {
    "checkedAt": "2026-10-19",
    "image": "https://static.forum.nl/cache/28243.28243/28243.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-naza?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28243.28243/28243.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-naza?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28243.28243/28243.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-naza?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28243.28243/28243.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-the-cycle-of-love?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27824.27824/27824.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -24408,6 +24583,24 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/docs-the-cycle-of-love?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27824.27824/27824.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-the-cycle-of-love?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27824.27824/27824.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-the-cycle-of-love?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27824.27824/27824.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/downtown?date=17-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/27748.27748/27748.jpg",
@@ -24429,6 +24622,22 @@
   "https://forum.nl/nl/agenda/film/downtown?date=23-10-2026": {
    "checkedAt": "2026-10-19",
    "image": "https://static.forum.nl/cache/27748.27748/27748.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/downtown?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27748.27748/27748.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/erupcja?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://static.forum.nl/cache/28048.28048/28048.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -24484,6 +24693,16 @@
   },
   "https://forum.nl/nl/agenda/film/erupcja?date=27-10-2026": {
    "checkedAt": "2026-10-19",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://static.forum.nl/cache/28048.28048/28048.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/erupcja?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
    "hints": {
     "soort": "film",
     "woord": "film"
@@ -24684,6 +24903,30 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/klara-and-the-sun?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28131.28131/28131.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/klara-and-the-sun?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28131.28131/28131.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/klara-and-the-sun?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28131.28131/28131.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/klara-and-the-sun?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28131.28131/28131.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/kledingpraat?date=08-11-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/kledingpraat.28646/kledingpraat-s1920x1080.jpg",
@@ -24762,6 +25005,11 @@
    "image": null,
    "via": null
   },
+  "https://forum.nl/nl/agenda/film/linconnue?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
   "https://forum.nl/nl/agenda/film/lotte-op-zoek-naar-de-draken?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/27909.27909/27909.jpg",
@@ -24771,6 +25019,24 @@
   "https://forum.nl/nl/agenda/film/marvelous-mind-donnie-darko?date=23-11-2026": {
    "checkedAt": "2026-10-18",
    "image": "https://static.forum.nl/cache/27386.27386/27386.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/maspalomas?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28122.28122/28122.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/maspalomas?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28122.28122/28122.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/maspalomas?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28122.28122/28122.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -24886,6 +25152,34 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/pressure?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "sport",
+    "woord": "loop"
+   },
+   "image": "https://static.forum.nl/cache/27709.27709/27709.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/primetime?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28675.28675/28675.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/primetime?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28675.28675/28675.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/primetime?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28675.28675/28675.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/ramayana?date=06-11-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28552.28552/28552.jpg",
@@ -24978,6 +25272,24 @@
   },
   "https://forum.nl/nl/agenda/film/sense-and-sensibility?date=28-10-2026": {
    "checkedAt": "2026-10-19",
+   "image": "https://static.forum.nl/cache/27948.27948/27948.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/sense-and-sensibility?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27948.27948/27948.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/sense-and-sensibility?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27948.27948/27948.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/sense-and-sensibility?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/27948.27948/27948.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
@@ -25096,6 +25408,24 @@
   },
   "https://forum.nl/nl/agenda/film/the-beloved?date=28-10-2026": {
    "checkedAt": "2026-10-19",
+   "image": "https://static.forum.nl/cache/27946.27946/27946.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/the-beloved?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27946.27946/27946.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/the-beloved?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27946.27946/27946.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/the-beloved?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/27946.27946/27946.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
@@ -25220,6 +25550,12 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/the-social-reckoning?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28017.28017/28017.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/toutes-directions?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/27581.27581/27581.jpg",
@@ -25320,6 +25656,24 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/wicker?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28128.28128/28128.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wicker?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28128.28128/28128.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wicker?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28128.28128/28128.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/wild-horse-nine?date=01-11-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28133.28133/28133.jpg",
@@ -25369,6 +25723,24 @@
   },
   "https://forum.nl/nl/agenda/film/wildwood?date=28-10-2026": {
    "checkedAt": "2026-10-19",
+   "image": "https://static.forum.nl/cache/28061.28061/28061.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wildwood?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28061.28061/28061.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wildwood?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28061.28061/28061.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wildwood?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/28061.28061/28061.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
@@ -25501,6 +25873,24 @@
   },
   "https://forum.nl/nl/agenda/film/youri?date=28-10-2026": {
    "checkedAt": "2026-10-19",
+   "image": "https://static.forum.nl/cache/27954.27954/27954.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/youri?date=29-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27954.27954/27954.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/youri?date=30-10-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27954.27954/27954.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/youri?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/27954.27954/27954.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
@@ -25766,6 +26156,16 @@
   },
   "https://forum.nl/nl/agenda/minoes-25th-anniversary?date=25-10-2026": {
    "checkedAt": "2026-10-19",
+   "hints": {
+    "soort": "film",
+    "woord": "bioscoop"
+   },
+   "image": "https://static.forum.nl/cache/27576.27576/27576.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/minoes-25th-anniversary?date=31-10-2026": {
+   "checkedAt": "2026-10-26",
    "hints": {
     "soort": "film",
     "woord": "bioscoop"
@@ -31380,6 +31780,15 @@
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/oldeberkoop/library/variants/jPyP8vK5YIFcFHZ4t6DmjTjoC3fV1EbRy8jYvvyj-l.webp",
    "via": "og:image"
   },
+  "https://oldeberkoop.frl/tsjechische-jeugd-korfballers-uit-brno-komen-4-dagen-oefenen-in-oldeberkoop-bij-lintjo": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "sport",
+    "woord": "korfbal"
+   },
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/oldeberkoop/library/variants/rn2OsCXsNfs8mbUjf0JHTqPIafdQLkR5moz3FNbD-l.webp",
+   "via": "og:image"
+  },
   "https://oldeberkoop.nl/event/muziek-op-stapel-stapel-op-muziek-ronald-brautigam/": {
    "checkedAt": "2026-10-15",
    "hints": {
@@ -31738,6 +32147,11 @@
   "https://onstwedde.info/agenda/artikel/the-oldtime-stingband-in-kleinkunsttheater-holte-op-8-november-1": {
    "checkedAt": "2026-10-19",
    "image": "https://onstwedde.info/fileadmin/user_upload/onstwedde-poster-1200x628.png",
+   "via": "og:image"
+  },
+  "https://onstwedde.info/agenda/artikel/uitvoering-gymnastiekvereniging-csvo-op-31-oktober-1": {
+   "checkedAt": "2026-10-26",
+   "image": "https://onstwedde.info/fileadmin/user_upload/90jarig_jubileum.jpeg",
    "via": "og:image"
   },
   "https://onstwedde.info/agenda/artikel/vco-72-d1-vios-kolham-d1": {
@@ -43841,6 +44255,11 @@
   },
   "https://www.societeitdeharmonie.nl/agenda/expositie-aletta-van-den-berg/": {
    "checkedAt": "2026-10-18",
+   "image": null,
+   "via": null
+  },
+  "https://www.societeitdeharmonie.nl/agenda/filmopname-omroep-max-en-rtv-noord/": {
+   "checkedAt": "2026-10-26",
    "image": null,
    "via": null
   },
