@@ -16788,6 +16788,10 @@
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Neushoorn%2C_Ljouwert.jpg/1280px-Neushoorn%2C_Ljouwert.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "wikidata": "Q48650435"
   },
+  "plek:nicolaaskerk|middelstum": {
+   "checkedAt": "2026-10-26",
+   "url": null
+  },
   "plek:nicolaikerk i appingedam|appingedam": {
    "checkedAt": "2026-10-21",
    "url": null
@@ -17293,6 +17297,10 @@
   },
   "plek:sportpark hoogkerk|groningen": {
    "checkedAt": "2026-10-13",
+   "url": null
+  },
+  "plek:sportveld sparta kantine|wartena": {
+   "checkedAt": "2026-10-26",
    "url": null
   },
   "plek:sportveld|ter apel": {
@@ -18591,6 +18599,11 @@
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/appelscha/library/variants/wM0mhRgLhyk6clXhEhCErwe2H5ebdUwugsBGWiNg-s.webp",
    "via": "og:image"
   },
+  "https://appelscha.frl/evenement/vrijdag-30-oktober-pubquiz": {
+   "checkedAt": "2026-10-26",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/appelscha/library/variants/ZSOWSjpJuKjENKom0rqhwU9e4PHDryjAKJifDZfV-l.webp",
+   "via": "og:image"
+  },
   "https://appelscha.frl/kom-gezellig-klaverjassen": {
    "checkedAt": "2026-10-12",
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/appelscha/library/variants/LHYZ0zmMI6GQmyXrUG0VRmF31MBFSSGjMVkGidQs-m.webp",
@@ -19087,6 +19100,11 @@
     "woord": "loop"
    },
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/beetsterzwaag-olterterp/library/variants/tu8BgBOOLc7OWrtAHHj0wOYUnEIsxsIDfoK16f4c-m.webp",
+   "via": "og:image"
+  },
+  "https://beetsterzwaag.frl/evenement/allerzielen-in-de-martenskerk": {
+   "checkedAt": "2026-10-26",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/beetsterzwaag-olterterp/branding/ktqMuuJu77OxwFPAINnlzNvggloFSKXOhSiS6yfa.webp",
    "via": "og:image"
   },
   "https://beetsterzwaag.frl/evenement/dag-van-de-opsterlandse-geschiedenis-op-24-oktober": {
@@ -20400,6 +20418,16 @@
    "type": "TheaterEvent",
    "via": "og:image"
   },
+  "https://denieuwekolk.nl/bios/agenda/coyote-vs-acme": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://media.denieuwekolk.nl/be3050c0-ed34-a12e-a065-d77f2fafab01/coyote-vs-acme-nl-ps-1-jpg-sd-high?crop=2097%2C1258%2C0%2C862&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
   "https://denieuwekolk.nl/bios/agenda/de-club-van-sinterklaas-film-paniek-in-het-pietendorp": {
    "checkedAt": "2026-10-19",
    "hints": {
@@ -20513,6 +20541,16 @@
     "woord": "bioscoop"
    },
    "image": "https://media.denieuwekolk.nl/019ecf65-de71-762c-bfa4-13a2c9f1b875/minions-monsters-1sheet-uncomfortablejames-nl-datum?crop=2688%2C1613%2C0%2C1113&scale=1920&optimizer=image",
+   "type": "TheaterEvent",
+   "via": "schema.org"
+  },
+  "https://denieuwekolk.nl/bios/agenda/other-mommy": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://media.denieuwekolk.nl/790a7a64-5e93-51b3-568d-d161f7c6716d/other-mommy?crop=2425%2C1455%2C0%2C1192&scale=1920&optimizer=image",
    "type": "TheaterEvent",
    "via": "schema.org"
   },
@@ -23722,6 +23760,18 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/all-of-a-sudden?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28212.28212/28212.webp",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/all-of-a-sudden?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28212.28212/28212.webp",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/all-of-a-sudden?date=29-10-2026": {
    "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/28212.28212/28212.webp",
@@ -23741,6 +23791,16 @@
    "via": "schema.org"
   },
   "https://forum.nl/nl/agenda/film/andiamo-a-bere-lultima?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
+  "https://forum.nl/nl/agenda/film/andiamo-a-bere-lultima?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
+  "https://forum.nl/nl/agenda/film/andiamo-a-bere-lultima?date=03-11-2026": {
    "checkedAt": "2026-10-26",
    "image": null,
    "via": null
@@ -23996,6 +24056,16 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/classics-trainspotting-30th-anniversary?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://static.forum.nl/cache/27653.27653/27653.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/classics-trainspotting-30th-anniversary?date=18-10-2026": {
    "checkedAt": "2026-10-16",
    "hints": {
@@ -24017,6 +24087,18 @@
    "via": "schema.org"
   },
   "https://forum.nl/nl/agenda/film/coward?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28047.28047/28047.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/coward?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28047.28047/28047.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/coward?date=03-11-2026": {
    "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/28047.28047/28047.jpg",
    "type": "ScreeningEvent",
@@ -24086,6 +24168,18 @@
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/coyote-vs-acme-nl-6.28181/coyote-vs-acme-nl-6-s1920x1080.jpg",
    "via": "og:image"
+  },
+  "https://forum.nl/nl/agenda/film/coyote-vs-acme?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28181.28181/28181.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/coyote-vs-acme?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28181.28181/28181.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
   },
   "https://forum.nl/nl/agenda/film/coyote-vs-acme?date=21-10-2026": {
    "checkedAt": "2026-10-16",
@@ -24162,6 +24256,18 @@
    "via": "schema.org"
   },
   "https://forum.nl/nl/agenda/film/digger?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27583.27583/27583.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/digger?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27583.27583/27583.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/digger?date=03-11-2026": {
    "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/27583.27583/27583.jpg",
    "type": "ScreeningEvent",
@@ -24266,6 +24372,12 @@
   "https://forum.nl/nl/agenda/film/docs-cutting-through-rocks?date=31-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28353.28353/28353.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-de-manager?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27827.27827/27827.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -24403,6 +24515,18 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/docs-naza?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28243.28243/28243.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-naza?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28243.28243/28243.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/docs-naza?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28243.28243/28243.png",
@@ -24500,6 +24624,18 @@
    "via": "schema.org"
   },
   "https://forum.nl/nl/agenda/film/docs-the-cycle-of-love?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27824.27824/27824.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-the-cycle-of-love?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27824.27824/27824.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/docs-the-cycle-of-love?date=03-11-2026": {
    "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/27824.27824/27824.jpg",
    "type": "ScreeningEvent",
@@ -24632,6 +24768,16 @@
    "via": "schema.org"
   },
   "https://forum.nl/nl/agenda/film/erupcja?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://static.forum.nl/cache/28048.28048/28048.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/erupcja?date=02-11-2026": {
    "checkedAt": "2026-10-26",
    "hints": {
     "soort": "film",
@@ -24867,6 +25013,12 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/human-nature?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27944.27944/27944.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/human-nature?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/27944.27944/27944.jpg",
@@ -24904,6 +25056,18 @@
    "via": "schema.org"
   },
   "https://forum.nl/nl/agenda/film/klara-and-the-sun?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28131.28131/28131.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/klara-and-the-sun?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28131.28131/28131.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/klara-and-the-sun?date=03-11-2026": {
    "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/28131.28131/28131.jpg",
    "type": "ScreeningEvent",
@@ -25019,6 +25183,24 @@
   "https://forum.nl/nl/agenda/film/marvelous-mind-donnie-darko?date=23-11-2026": {
    "checkedAt": "2026-10-18",
    "image": "https://static.forum.nl/cache/27386.27386/27386.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/maspalomas?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28122.28122/28122.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/maspalomas?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28122.28122/28122.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/maspalomas?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28122.28122/28122.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -25162,6 +25344,24 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/primetime?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28675.28675/28675.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/primetime?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28675.28675/28675.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/primetime?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28675.28675/28675.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/primetime?date=29-10-2026": {
    "checkedAt": "2026-10-26",
    "image": "https://static.forum.nl/cache/28675.28675/28675.jpg",
@@ -25195,6 +25395,24 @@
   "https://forum.nl/nl/agenda/film/rip-tim-curry-the-rocky-horror-picture-show?date=30-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28073.28073/28073.png",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/sense-and-sensibility?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27948.27948/27948.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/sense-and-sensibility?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27948.27948/27948.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/sense-and-sensibility?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27948.27948/27948.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -25334,6 +25552,24 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/the-beloved?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27946.27946/27946.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/the-beloved?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27946.27946/27946.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/the-beloved?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27946.27946/27946.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/the-beloved?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/27946.27946/27946.jpg",
@@ -25430,6 +25666,18 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/the-incomer?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27755.27755/27755.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/the-incomer?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27755.27755/27755.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/the-incomer?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/27755.27755/27755.jpg",
@@ -25472,6 +25720,12 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/the-odyssey?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27006.27006/27006.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/the-odyssey?date=19-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/27006.27006/27006.jpg",
@@ -25487,6 +25741,12 @@
   "https://forum.nl/nl/agenda/film/the-plague?date=20-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/26708.26708/26708.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/the-social-reckoning?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28017.28017/28017.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -25598,6 +25858,12 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/verhalen-uit-de-magische-tuin?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27918.27918/27918.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/verhalen-uit-de-magische-tuin?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": null,
@@ -25611,6 +25877,24 @@
   "https://forum.nl/nl/agenda/film/verhalen-uit-de-magische-tuin?date=25-10-2026": {
    "checkedAt": "2026-10-19",
    "image": "https://static.forum.nl/cache/27918.27918/27918.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wicker?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28128.28128/28128.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wicker?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28128.28128/28128.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wicker?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28128.28128/28128.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -25691,6 +25975,24 @@
    "image": "https://static.forum.nl/cache/wildplukwandeling.28642/wildplukwandeling-s1920x1080.jpg",
    "via": "og:image"
   },
+  "https://forum.nl/nl/agenda/film/wildwood?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28061.28061/28061.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wildwood?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28061.28061/28061.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/wildwood?date=03-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28061.28061/28061.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/wildwood?date=22-10-2026": {
    "checkedAt": "2026-10-19",
    "image": "https://static.forum.nl/cache/28061.28061/28061.jpg",
@@ -25745,6 +26047,12 @@
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
+  "https://forum.nl/nl/agenda/film/yellow-letters?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/28044.28044/28044.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
   "https://forum.nl/nl/agenda/film/yellow-letters?date=16-10-2026": {
    "checkedAt": "2026-10-16",
    "image": "https://static.forum.nl/cache/28044.28044/28044.jpg",
@@ -25796,6 +26104,18 @@
   "https://forum.nl/nl/agenda/film/yellow-letters?date=28-10-2026": {
    "checkedAt": "2026-10-19",
    "image": "https://static.forum.nl/cache/28044.28044/28044.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/youri?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27954.27954/27954.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
+  },
+  "https://forum.nl/nl/agenda/film/youri?date=02-11-2026": {
+   "checkedAt": "2026-10-26",
+   "image": "https://static.forum.nl/cache/27954.27954/27954.jpg",
    "type": "ScreeningEvent",
    "via": "schema.org"
   },
@@ -26218,6 +26538,16 @@
    "checkedAt": "2026-10-22",
    "image": "https://static.forum.nl/cache/ringgesprek-barrieres-slechten-de-stad-verbinden.28827/ringgesprek-barrieres-slechten-de-stad-verbinden-s1920x1080.jpg",
    "via": "og:image"
+  },
+  "https://forum.nl/nl/agenda/shaun-het-schaap-het-beest-van-de-boerderij?date=01-11-2026": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "film",
+    "woord": "film"
+   },
+   "image": "https://static.forum.nl/cache/27886.27886/27886.jpg",
+   "type": "ScreeningEvent",
+   "via": "schema.org"
   },
   "https://forum.nl/nl/agenda/shaun-het-schaap-het-beest-van-de-boerderij?date=16-10-2026": {
    "checkedAt": "2026-10-16",
@@ -27468,6 +27798,15 @@
     "woord": "koor"
    },
    "image": "https://grotekerkleeuwarden.nl/wp-content/uploads/2026/08/Allerzielen_VB1.png",
+   "via": "schema.org"
+  },
+  "https://grotekerkleeuwarden.nl/event/allerzielenconcert-in-de-grote-kerk/": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "muziek",
+    "woord": "concert"
+   },
+   "image": "https://grotekerkleeuwarden.nl/wp-content/uploads/2026/01/202411121852-1.jpg",
    "via": "schema.org"
   },
   "https://grotekerkleeuwarden.nl/event/avondgebed-9/2026-10-18/": {
@@ -29000,6 +29339,11 @@
    "image": null,
    "via": null
   },
+  "https://koudum.nl/mc-events/opnieuw-ledenvergadering-oranjevereniging-koudum-2/": {
+   "checkedAt": "2026-10-26",
+   "image": "https://koudum.nl/wp-content/uploads/2022/11/oranjevereniging.jpg",
+   "via": "og:image"
+  },
   "https://koudum.nl/mc-events/popavond-bad-shoes-stelz-takeover/": {
    "checkedAt": "2026-10-14",
    "image": "https://koudum.nl/wp-content/uploads/2026/08/popavonden-de-klink-2026-2027.jpg",
@@ -30072,6 +30416,11 @@
    "image": null,
    "via": null
   },
+  "https://marssum.info/agenda/koffie-inloopochtend-3/": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
   "https://marssum.info/agenda/ophalen-oud-papier-15/": {
    "checkedAt": "2026-10-12",
    "image": null,
@@ -30146,6 +30495,11 @@
   },
   "https://marssum.info/locaties/dorpshuis-nij-franjum/": {
    "checkedAt": "2026-10-14",
+   "image": null,
+   "via": null
+  },
+  "https://marssum.info/maandag-2-november-kerk-open-voor-allerzielen/": {
+   "checkedAt": "2026-10-26",
    "image": null,
    "via": null
   },
@@ -31766,6 +32120,15 @@
    "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/oldeberkoop/featured/og5FyGfHXTjvvB3pMVmVQizd1s1Lo6vJ2mntNXFi.jpeg",
    "via": "og:image"
   },
+  "https://oldeberkoop.frl/evenement/snertactie-kv-lintjo": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "eten",
+    "woord": "snert"
+   },
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/oldeberkoop/library/variants/tyt1KSL77UJwA43GGcqtJChoxqJcYAAStiapcXIe-l.webp",
+   "via": "og:image"
+  },
   "https://oldeberkoop.frl/evenement/zaterdag-kast-tot-kast-markt-repaircafe": {
    "checkedAt": "2026-10-15",
    "hints": {
@@ -31937,6 +32300,11 @@
   "https://onstwedde.info/agenda/artikel/gewoon-van-hier-in-bibliotheken-gemeente-stadskanaal-1": {
    "checkedAt": "2026-10-16",
    "image": "https://onstwedde.info/fileadmin/user_upload/Bibliotheek_foto_1200x628.png",
+   "via": "og:image"
+  },
+  "https://onstwedde.info/agenda/artikel/gratis-dreumesuurtje-in-bibliotheek-op-28-oktober-1": {
+   "checkedAt": "2026-10-26",
+   "image": "https://onstwedde.info/fileadmin/user_upload/dreumesuurtje-met-kinderen-1200x628.png",
    "via": "og:image"
   },
   "https://onstwedde.info/agenda/artikel/heerink-van-der-zande-brengen-country-klassiekers-naar-holte-1": {
@@ -36886,6 +37254,11 @@
    "image": null,
    "via": null
   },
+  "https://visvliet.com/author/tineke/": {
+   "checkedAt": "2026-10-26",
+   "image": null,
+   "via": null
+  },
   "https://vitalismarkten.nl/agenda/": {
    "checkedAt": "2026-10-12",
    "image": null,
@@ -38352,6 +38725,11 @@
   "https://www.bolsward.nl/agenda/kindervoorstelling-buren/": {
    "checkedAt": "2026-10-13",
    "image": "https://www.bolsward.nl/wp-content/uploads/2026/08/BUREN-en-hondjes_Tjitske-Veenstra-scaled.jpg",
+   "via": "og:image"
+  },
+  "https://www.bolsward.nl/agenda/kom-fierder-op-pad-door-historisch-bolsward/": {
+   "checkedAt": "2026-10-26",
+   "image": "https://www.bolsward.nl/wp-content/uploads/2026/02/Kom-fierder-Op-pad-door-historisch-Bolsward-1024x683.png",
    "via": "og:image"
   },
   "https://www.bolsward.nl/agenda/sinterklaas-in-bolsward/": {
@@ -42061,6 +42439,16 @@
    "image": "https://www.kvmidfryslan.nl/wp-content/themes/ids/assets/img/kv-mid-fryslan.png",
    "via": "og:image"
   },
+  "https://www.kvmidfryslan.nl/tsjechische-jeugdkorfballers-oefenen-tegen-jeugd-k-v-mid-fryslan/": {
+   "checkedAt": "2026-10-26",
+   "image": "https://www.kvmidfryslan.nl/wp-content/uploads/2026/10/21-630x630.png",
+   "via": "og:image"
+  },
+  "https://www.kvmidfryslan.nl/zaterdag-is-het-weer-mid-fryslan-dei/": {
+   "checkedAt": "2026-10-26",
+   "image": "https://www.kvmidfryslan.nl/wp-content/uploads/2021/11/IMG_1825-scaled-945x630.jpg",
+   "via": "og:image"
+  },
   "https://www.lauwerzijl.info/kalender/bierproeverij/": {
    "checkedAt": "2026-10-20",
    "hints": {
@@ -43310,6 +43698,15 @@
    "image": "https://www.sasa-appingedam.nl/media/nx3jfwp1/4-mei-herdenking-appingedam-2023-083.jpg",
    "via": "og:image"
   },
+  "https://www.schaatsen.nl/schaatsfan/tickets/": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "sport",
+    "woord": "wedstrijd"
+   },
+   "image": "https://www.schaatsen.nl/media/images/20240105_194541_ISU_EK_Afstanden.2e16d0ba.fill-1200x628_fHLo2nz.webp",
+   "via": "og:image"
+  },
   "https://www.scharnegoutum.nl/agenda/bc-de-lakenkrakers-toernooi/": {
    "checkedAt": "2026-10-13",
    "hints": {
@@ -44220,6 +44617,11 @@
   },
   "https://www.societeitdeharmonie.nl/": {
    "checkedAt": "2026-10-19",
+   "image": null,
+   "via": null
+  },
+  "https://www.societeitdeharmonie.nl/agenda/algemeen": {
+   "checkedAt": "2026-10-26",
    "image": null,
    "via": null
   },
@@ -45935,6 +46337,15 @@
     "woord": "wandel"
    },
    "image": "https://www.staatsbosbeheer.nl/-/media/04-activiteiten/avond-en-nacht/volle-maan-bos-7705.jpg",
+   "via": "og:image"
+  },
+  "https://www.staatsbosbeheer.nl/activiteiten/hondsrug/code-storm-hondsrug": {
+   "checkedAt": "2026-10-26",
+   "hints": {
+    "soort": "natuur",
+    "woord": "natuur"
+   },
+   "image": "https://www.staatsbosbeheer.nl/-/media/hondsrug/hondsrug-code-storm.jpg",
    "via": "og:image"
   },
   "https://www.staatsbosbeheer.nl/activiteiten/hondsrug/help-de-boswachter-in-boswachterij-gieten-borger": {
