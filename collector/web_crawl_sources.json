@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-23",
+  "updated": "2026-10-26",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -12895,6 +12895,130 @@
         "city": "Garsthuizen"
       },
       "policyReviewedAt": "2026-10-23"
+    },
+    {
+      "id": "drachtstercompagnie-frl-web",
+      "name": "Drachtstercompagnie",
+      "rootUrl": "https://drachtstercompagnie.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://drachtstercompagnie.frl/"
+      },
+      "activatedFromCandidate": "drachtstercompagnie.frl",
+      "defaultPlace": {
+        "city": "Drachtstercompagnie",
+        "lat": 53.13333,
+        "lon": 6.13333
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "eextinfo-nl-web",
+      "name": "Eext",
+      "rootUrl": "https://www.eextinfo.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.eextinfo.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "eextinfo.nl",
+      "defaultPlace": {
+        "city": "Eext",
+        "lat": 53.0169,
+        "lon": 6.7339
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "leermens-net-web",
+      "name": "Leermens",
+      "rootUrl": "https://www.leermens.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.leermens.net/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "leermens.net",
+      "defaultPlace": {
+        "city": "Leermens",
+        "lat": 53.3458,
+        "lon": 6.7975
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "niezijl-com-web",
+      "name": "Niezijlster Courant -",
+      "rootUrl": "https://niezijl.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "niezijl.com",
+      "defaultPlace": {
+        "city": "Niezijl",
+        "lat": 53.26667,
+        "lon": 6.34028
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "roodeschool-com-web",
+      "name": "Roodeschool.com",
+      "rootUrl": "https://roodeschool.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://roodeschool.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "roodeschool.com",
+      "defaultPlace": {
+        "city": "Roodeschool",
+        "lat": 53.4206,
+        "lon": 6.7636
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "vries-nu-web",
+      "name": "Dé website met nieuws voor, door en over Vries",
+      "rootUrl": "https://www.vries.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.vries.nu/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "vries.nu",
+      "defaultPlace": {
+        "city": "Vries",
+        "lat": 53.0733,
+        "lon": 6.5769
+      },
+      "policyReviewedAt": "2026-10-26"
     }
   ]
 }
