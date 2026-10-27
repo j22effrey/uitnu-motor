@@ -56,7 +56,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"^(?:beker:? )?[\w .'/&-]+ (?:[dhj]s ?)?\d+ [-–] [\w .'/&-]+ (?:[dhj]s ?)?\d+\b", r"\b(?:sv|vv|sc|fc)\b",
         r"toernoai", r"toenooi", r"blijart", r"picklebal", r"kickboks", r"loopgroep", r"stoelfit", r"\bracing\b",
         r"\btt assen\b", r"skutsje", r"zeilwedstrijd", r"\bdammen\b", r"damclub",
-        r"\bdraf(?:sport|koers|race)", r"harddraverij", r"(?<!tentoonstelling )(?<!\w)kaats(?:en|partij|wedstrijd)\b", r"fierljep", r"kunstrijden", r"\bspeedway\b", r"autocross",
+        r"\bdraf(?:sport|koers|race)", r"harddraverij", r"(?<!tentoonstelling )(?<!\w)kaats(?:en|partij|wedstrijd)\b", r"\btennis", r"\bpadel", r"\bsquash\b", r"fierljep", r"kunstrijden", r"\bspeedway\b", r"autocross",
         r"\bisu\b", r"allround", r"\b[ewn]k (?:allround|sprint|afstanden|schaatsen|wielrennen|voetbal|zwemmen)",
     ]),
     "natuur": _compile([
