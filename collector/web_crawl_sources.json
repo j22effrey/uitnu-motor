@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -13019,6 +13019,111 @@
         "lon": 6.5769
       },
       "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "akkrum-net-web",
+      "name": "- Akkrum.net, de nieuwssite van Akkrum en Nes",
+      "rootUrl": "https://akkrum.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://akkrum.net/"
+      },
+      "activatedFromCandidate": "akkrum.net",
+      "defaultPlace": {
+        "city": "Akkrum",
+        "lat": 53.05,
+        "lon": 5.83611
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "bantega-net-web",
+      "name": "Bantega",
+      "rootUrl": "https://www.bantega.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.bantega.net/"
+      },
+      "activatedFromCandidate": "bantega.net",
+      "defaultPlace": {
+        "city": "Bantega",
+        "lat": 52.8422,
+        "lon": 5.7964
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "bontebok-frl-web",
+      "name": "Bontebok",
+      "rootUrl": "https://www.bontebok.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.bontebok.frl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "bontebok.frl",
+      "defaultPlace": {
+        "city": "Bontebok",
+        "lat": 52.9631,
+        "lon": 6.0256
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "pbgorredijk-nl-web",
+      "name": "Plaatselijk Belang Gorredijk",
+      "rootUrl": "https://www.pbgorredijk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pbgorredijk.nl/event-details/sinterklaas-intocht-gorredijk"
+      },
+      "activatedFromCandidate": "pbgorredijk.nl",
+      "defaultPlace": {
+        "city": "Gorredijk",
+        "lat": 53.0033,
+        "lon": 6.0697
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "skarsterbrege-nl-web",
+      "name": "Skarsterbrege",
+      "rootUrl": "https://www.skarsterbrege.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.skarsterbrege.nl/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "skarsterbrege.nl",
+      "defaultPlace": {
+        "city": "Scharsterbrug",
+        "lat": 52.9431,
+        "lon": 5.7797
+      },
+      "policyReviewedAt": "2026-10-27"
     }
   ]
 }
