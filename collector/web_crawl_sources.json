@@ -6221,7 +6221,7 @@
           "city": "^<tr><td>[^<]*</td><td>[^<]*</td><td>([A-Z][^<]*?)(?:\\s+e\\.o\\.)?</td>",
           "tags": "^<tr><td>[^<]*</td><td>[^<]*</td><td>([^<]*)</td>"
         },
-        "skipTitle": "afgelast|verplaatst|geannuleerd",
+        "skipTitle": "afgelast|verplaatst|geannuleerd|reservedatum|voorlopig",
         "skipTags": "doortocht|gemeente|diverse",
         "province": "Fryslân",
         "firstPage": 2026,
