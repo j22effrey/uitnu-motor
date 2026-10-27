@@ -14124,7 +14124,12 @@
       "maxDepth": 1,
       "minDelaySeconds": 1,
       "note": "De gemeente zet hier de vastgestelde evenementenkalender (grote evenementen en schaarse locaties: Oldehoofsterkerkhof, Wilhelminaplein, Prinsentuin, Groene Ster) als tabel per maand: 'Datum | Evenement | Plaats, locatie'. Alleen feiten. Voorbije maanden haalt de gemeente weg; de kalender voor 2027 wordt in december vastgesteld. Een periode ('9 tot en met 17 oktober') loopt door tot de laatste dag; bij '23 en 24 oktober' leest when.py alleen één dag. Plaatsnamen staan soms in het Fries (Warten = Wartena, Grou).",
-      "policyReviewedAt": "2026-10-22"
+      "policyReviewedAt": "2026-10-22",
+      "defaultPlace": {
+        "city": "Leeuwarden",
+        "lat": 53.2005936,
+        "lon": 5.7918548
+      }
     },
     {
       "id": "princessehof-nl-web",
@@ -15142,6 +15147,200 @@
         "lat": 52.9431,
         "lon": 5.7797
       },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "observeum-nl-web",
+      "name": "Observeum",
+      "rootUrl": "https://www.observeum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.observeum.nl/agenda/"
+      },
+      "activatedFromCandidate": "observeum.nl",
+      "defaultPlace": {
+        "venue": "Observeum",
+        "city": "Burgum",
+        "lat": 53.2040801,
+        "lon": 6.0004589
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "akkrumnescentraal-nl-web",
+      "name": "Stichting Akkrum-Nes Centraal (evenementen)",
+      "rootUrl": "https://akkrumnescentraal.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://akkrumnescentraal.nl/evenementen/grote-muziekavond-akkrum"
+      },
+      "activatedFromCandidate": "akkrumnescentraal.nl",
+      "defaultPlace": {
+        "city": "Akkrum"
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "centrumheerenveen-nl-web",
+      "name": "Centrum Heerenveen (HCOV, ondernemersvereniging)",
+      "rootUrl": "https://www.centrumheerenveen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "centrumheerenveen.nl",
+      "defaultPlace": {
+        "city": "Heerenveen"
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "harmoniedokkum-nl-web",
+      "name": "Stedelijke Harmonie Dockum",
+      "rootUrl": "https://www.harmoniedokkum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.harmoniedokkum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "harmoniedokkum.nl",
+      "defaultPlace": {
+        "city": "Dokkum"
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "haske-joure-nl-web",
+      "name": "'t Haske Joure (zalencentrum met dansavonden, concerten en beurzen)",
+      "rootUrl": "https://www.haske-joure.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.haske-joure.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "haske-joure.nl",
+      "defaultPlace": {
+        "city": "Joure"
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "joyforpeople-nl-web",
+      "name": "Gospelkoor Joy for People Dokkum",
+      "rootUrl": "https://www.joyforpeople.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.joyforpeople.nl/agenda"
+      },
+      "activatedFromCandidate": "joyforpeople.nl",
+      "defaultPlace": {
+        "city": "Dokkum"
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "jubbega-hoornsterzwaag-nl-web",
+      "name": "Jubbega Hoornsterzwaag (dorpssite)",
+      "rootUrl": "https://jubbega-hoornsterzwaag.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://jubbega-hoornsterzwaag.nl/"
+      },
+      "activatedFromCandidate": "jubbega-hoornsterzwaag.nl",
+      "defaultPlace": {
+        "city": "Jubbega"
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "sensedokkum-nl-web",
+      "name": "Sense Dokkum (theater en partycentrum, Hogedijken 18-2)",
+      "rootUrl": "https://sensedokkum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://sensedokkum.nl/programma/?ical=1"
+      },
+      "activatedFromCandidate": "sensedokkum.nl",
+      "defaultPlace": {
+        "city": "Dokkum"
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "thomastsjerke-nl-web",
+      "name": "Thomastsjerke Katlijk (concerten)",
+      "rootUrl": "https://thomastsjerke.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://thomastsjerke.nl/"
+      },
+      "activatedFromCandidate": "thomastsjerke.nl",
+      "defaultPlace": {
+        "city": "Katlijk"
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "verhalenhuisbrandaan-nl-web",
+      "name": "Verhalenhuis Brandaan",
+      "rootUrl": "https://www.verhalenhuisbrandaan.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "verhalenhuisbrandaan.nl",
+      "defaultPlace": {
+        "venue": "Verhalenhuis Brandaan",
+        "city": "Orvelte",
+        "lat": 52.8440023,
+        "lon": 6.6601959
+      },
+      "kindHint": "kunst",
       "policyReviewedAt": "2026-10-27"
     }
   ]

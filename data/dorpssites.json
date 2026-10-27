@@ -11082,7 +11082,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.54028,
    "lon": 6.58194,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://rottumeroog.nl/",
@@ -11277,7 +11277,7 @@
    "gemeente": "Westerwolde",
    "lat": 53.06971,
    "lon": 7.07468,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://wedde.nl/en-gb",
@@ -11342,7 +11342,7 @@
    "gemeente": "Stadskanaal",
    "lat": 53.0353,
    "lon": 7.0411,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://onstwedde.info/",
@@ -11572,7 +11572,7 @@
    "gemeente": "Borger-Odoorn",
    "lat": 52.9236,
    "lon": 6.7922,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.borger.nl/",
@@ -11582,8 +11582,8 @@
     },
     {
      "url": "https://borger.com/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (HTTPError)"
+     "oordeel": "nee",
+     "reden": "verwijst door naar geo.org"
     },
     {
      "url": "http://borger.info/",
@@ -11628,7 +11628,7 @@
    "gemeente": "Borger-Odoorn",
    "lat": 52.9047,
    "lon": 6.7672,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://westdorp.nl/",
@@ -11638,13 +11638,13 @@
     {
      "url": "http://westdorp.com/",
      "adres": "https://westdorp.com/",
-     "oordeel": "nee",
-     "reden": "verwijst door naar buydomains.com"
+     "oordeel": "fout",
+     "reden": "niet bereikbaar (ConnectionResetError)"
     },
     {
      "url": "https://westdorp.net/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -11803,7 +11803,7 @@
    "gemeente": "Borger-Odoorn",
    "lat": 52.9308,
    "lon": 6.8353,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://buinen.nl/",
@@ -12344,7 +12344,7 @@
    "gemeente": "Borger-Odoorn",
    "lat": 52.9078,
    "lon": 6.8056,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://ees.nl/",
@@ -12453,7 +12453,7 @@
    "gemeente": "Stadskanaal",
    "lat": 52.98947,
    "lon": 6.9504,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.stadskanaal.nl/",
@@ -12475,8 +12475,8 @@
     {
      "url": "http://stadskanaalonline.nl/",
      "adres": "https://stadskanaalonline.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "http://stadskanaal.eu/",
@@ -12498,7 +12498,7 @@
    "gemeente": "Borger-Odoorn",
    "lat": 52.9683,
    "lon": 6.9583,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://nieuwbuinen.nl/",
@@ -12759,7 +12759,7 @@
    "gemeente": "Stadskanaal",
    "lat": 52.9861,
    "lon": 7.00778,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://vledderveen.nl/",
@@ -12775,8 +12775,8 @@
     {
      "url": "http://vledderveen.eu/",
      "adres": "https://vledderveen.eu/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "https://vledderveengroningen.nl/",
@@ -13024,7 +13024,7 @@
    "gemeente": "",
    "lat": 53.49,
    "lon": 6.225,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.schiermonnikoog.nl/",
@@ -13572,7 +13572,7 @@
    "gemeente": "Midden-Drenthe",
    "lat": 52.8517,
    "lon": 6.6094,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://westerbork.nl/",
@@ -13815,7 +13815,7 @@
    "gemeente": "Coevorden",
    "lat": 52.8622,
    "lon": 6.7461,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://dekiel.nl/",
@@ -14078,13 +14078,12 @@
    "gemeente": "Midden-Drenthe",
    "lat": 52.8436,
    "lon": 6.6597,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
-     "url": "https://orvelte.net/",
-     "adres": "https://orvelte.nl/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "url": "https://orvelte.nl/",
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: postcode van elders, provincie Drenthe"
     },
     {
      "url": "http://orvelte.com/",
@@ -14096,22 +14095,16 @@
      "url": "https://orvelte.info/",
      "oordeel": "nee",
      "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
-    },
-    {
-     "url": "http://orvelte.eu/",
-     "adres": "https://orvelte.eu/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
     }
    ]
   },
   "Q3483873": {
    "naam": "Vlagtwedde",
    "soort": "dorp",
-   "gemeente": "Westerwolde",
+   "gemeente": "Vlagtwedde",
    "lat": 53.0261,
    "lon": 7.1117,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://vlagtwedde.com/",
@@ -14392,7 +14385,7 @@
    "gemeente": "Stadskanaal",
    "lat": 52.955,
    "lon": 7.0381,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://mussel.nl/",
@@ -14405,10 +14398,12 @@
      "reden": "(bijna) lege pagina"
     },
     {
-     "url": "http://www.mussel.info/",
+     "url": "https://www.mussel.info/",
      "adres": "https://mussel.info/",
-     "oordeel": "nee",
-     "reden": "foutmelding 404"
+     "oordeel": "twijfel",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek",
+     "titel": "Site is in onderhoud, kom snel weer terug!",
+     "naam": "Site is in onderhoud, kom snel weer terug!"
     },
     {
      "url": "https://mussel.net/",
@@ -14447,7 +14442,7 @@
    "gemeente": "Coevorden",
    "lat": 52.84611,
    "lon": 6.75611,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://schoonoord.nl/",
@@ -14456,16 +14451,14 @@
      "reden": "(bijna) lege pagina"
     },
     {
-     "url": "http://schoonoord.com/",
-     "adres": "https://schoonoord.com/",
-     "oordeel": "nee",
-     "reden": "verwijst door naar hugedomains.com"
+     "url": "https://schoonoord.com/",
+     "oordeel": "fout",
+     "reden": "niet bereikbaar (URLError)"
     },
     {
-     "url": "http://schoonoord.info/",
-     "adres": "https://schoonoord.info/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "url": "https://schoonoord.info/",
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "https://schoonoord.net/",
@@ -14860,7 +14853,7 @@
    "gemeente": "Schiermonnikoog",
    "lat": 53.4806,
    "lon": 6.16389,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.schiermonnikoog.nl/",
@@ -14936,7 +14929,7 @@
    "gemeente": "Stadskanaal",
    "lat": 52.955,
    "lon": 7.0628,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://kopstukken.nl/en-gb",
@@ -14958,8 +14951,8 @@
     },
     {
      "url": "https://kopstukken.nu/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     }
    ]
   },
@@ -15164,7 +15157,7 @@
    "gemeente": "Borger-Odoorn",
    "lat": 52.8817,
    "lon": 6.8642,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.exloo.info/",
@@ -15211,8 +15204,8 @@
     {
      "url": "http://exloo.nu/",
      "adres": "https://exloo.nu/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -15583,10 +15576,10 @@
   "Q2015371": {
    "naam": "Zandberg",
    "soort": "dorp",
-   "gemeente": "Westerwolde",
+   "gemeente": "Borger-Odoorn",
    "lat": 52.9178,
    "lon": 7.0242,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://zandberg.nl/",
@@ -15601,8 +15594,8 @@
     },
     {
      "url": "https://zandberg.net/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "http://zandberg.org/",
@@ -15630,7 +15623,7 @@
    "gemeente": "Westerwolde",
    "lat": 52.9178,
    "lon": 7.0408,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://terapelkanaal.nl/",
@@ -15886,7 +15879,7 @@
    "gemeente": "Borger-Odoorn",
    "lat": 52.8508,
    "lon": 6.8481,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://odoorn.nl/",
@@ -15913,8 +15906,8 @@
     },
     {
      "url": "https://odoorn.nu/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "http://odoorn.eu/",
@@ -16397,7 +16390,7 @@
    "gemeente": "Coevorden",
    "lat": 52.81472,
    "lon": 6.82306,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://thaantje.nl/",
@@ -16406,8 +16399,8 @@
     },
     {
      "url": "https://thaantje.info/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "foutmelding 403"
     }
    ]
   },
@@ -16429,15 +16422,15 @@
   "Q670791": {
    "naam": "Bourtange",
    "soort": "dorp",
-   "gemeente": "Bourtange",
+   "gemeente": "Vlagtwedde",
    "lat": 53.0067,
    "lon": 7.1917,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.bourtange.nl/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar",
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe",
      "bron": "wikidata"
     },
     {
@@ -16744,7 +16737,7 @@
    "gemeente": "Coevorden",
    "lat": 52.7903,
    "lon": 6.7186,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://aalden.nl/",
@@ -16758,9 +16751,12 @@
      "reden": "verwijst door naar hugedomains.com"
     },
     {
-     "url": "https://dorpsbelangenaalden.nl/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "url": "https://www.dorpsbelangenaalden.nl/",
+     "adres": "https://dorpsbelangenaalden.nl/",
+     "oordeel": "dorpssite",
+     "reden": "dorpswoorden (dorpsbelangen, mfc, vereniging dorpsbelangen); gemeente Coevorden, dorpen in de buurt (zweeloo)",
+     "titel": "Dorpsbelangen Aalden – voor een goede leefkwaliteit in Aalden",
+     "naam": "Dorpsbelangen Aalden"
     }
    ]
   },
@@ -16917,7 +16913,7 @@
    "gemeente": "Coevorden",
    "lat": 52.7936,
    "lon": 6.7303,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://zweeloo.nl/",
@@ -16927,8 +16923,8 @@
     {
      "url": "http://zweeloo.net/",
      "adres": "https://zweeloo.net/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "https://zweeloo.nu/",
@@ -17095,7 +17091,7 @@
    "gemeente": "Coevorden",
    "lat": 52.7814,
    "lon": 6.6956,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.meppen.nl/",
@@ -17108,7 +17104,7 @@
     {
      "url": "https://meppen.com/",
      "oordeel": "fout",
-     "reden": "niet bereikbaar (HTTPError)"
+     "reden": "robots.txt niet bereikbaar"
     },
     {
      "url": "https://meppen.info/",
@@ -17577,13 +17573,13 @@
    "gemeente": "Westerwolde",
    "lat": 52.8815,
    "lon": 7.06543,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://theem.nl/",
      "adres": "https://theem.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (RemoteDisconnected)"
+     "oordeel": "nee",
+     "reden": "(bijna) lege pagina"
     },
     {
      "url": "http://t-heem.nl/",
@@ -17600,8 +17596,8 @@
     {
      "url": "http://theem.net/",
      "adres": "https://theem.net/",
-     "oordeel": "nee",
-     "reden": "robots.txt staat de robot niet toe"
+     "oordeel": "fout",
+     "reden": "robots.txt niet bereikbaar"
     },
     {
      "url": "http://www.theem.org/",
@@ -17915,7 +17911,7 @@
    "gemeente": "Midden-Drenthe",
    "lat": 52.7653,
    "lon": 6.6069,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://nieuwbalinge.nl/",
@@ -17936,8 +17932,10 @@
     },
     {
      "url": "https://nieuwbalinge.eu/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "dorpssite",
+     "reden": "dorpswoorden (dorpskrant, ijsvereniging); de plaatsnaam komt in het land maar één keer voor",
+     "titel": "Website van Nieuw Balinge",
+     "naam": "Website van Nieuw Balinge"
     }
    ]
   },
@@ -18079,7 +18077,7 @@
    "gemeente": "Westerwolde",
    "lat": 52.9464,
    "lon": 7.1514,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://sellingen.nl/",
@@ -18097,10 +18095,9 @@
      "reden": "domeinnaam te koop, geparkeerd of nog leeg"
     },
     {
-     "url": "http://sellingenonline.nl/",
-     "adres": "https://sellingenonline.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "url": "https://sellingenonline.nl/",
+     "oordeel": "nee",
+     "reden": "domeinnaam te koop, geparkeerd of nog leeg"
     },
     {
      "url": "http://www.dorpsverenigingsellingen.nlrobots.txt/",
@@ -18119,8 +18116,8 @@
     {
      "url": "http://beleefsellingen.nl/",
      "adres": "https://beleefsellingen.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -19001,7 +18998,7 @@
    "gemeente": "Coevorden",
    "lat": 52.7722,
    "lon": 6.8175,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://diphoorn.nl/",
@@ -19525,10 +19522,10 @@
   "Q2472474": {
    "naam": "Stuifzand",
    "soort": "dorp",
-   "gemeente": "Hoogeveen",
+   "gemeente": "Midden-Drenthe",
    "lat": 52.7472,
    "lon": 6.4992,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://stuifzand.nl/",
@@ -19538,14 +19535,16 @@
     {
      "url": "http://stuifzand.com/ho/",
      "adres": "https://stuifzand.com/",
-     "oordeel": "nee",
-     "reden": "hoort misschien bij een andere plaats: provincie Drenthe"
+     "oordeel": "twijfel",
+     "reden": "hoort bij deze streek (dorpen in de buurt (zuidwolde), provincie Drenthe), maar geen dorpswoorden",
+     "titel": "StuifzandHandelsonderneming",
+     "naam": "StuifzandHandelsonderneming"
     },
     {
      "url": "http://stuifzand.info/",
      "adres": "https://stuifzand.info/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "https://stuifzand.net/",
@@ -21036,7 +21035,7 @@
    "gemeente": "Hoogeveen",
    "lat": 52.7167,
    "lon": 6.46667,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.hoogeveen.nl/",
@@ -21222,7 +21221,7 @@
    "gemeente": "Emmen",
    "lat": 52.7811,
    "lon": 6.8994,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://gemeente.emmen.nl/",
@@ -21254,15 +21253,16 @@
      "reden": "niet bereikbaar (URLError)"
     },
     {
-     "url": "https://emmen.eu/",
-     "oordeel": "nee",
-     "reden": "robots.txt staat de robot niet toe"
+     "url": "http://emmen.eu/",
+     "adres": "https://emmen.eu/",
+     "oordeel": "fout",
+     "reden": "robots.txt niet bereikbaar"
     },
     {
      "url": "http://onsemmen.nl/",
      "adres": "https://onsemmen.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "http://inemmen.nl/",
@@ -21274,7 +21274,7 @@
      "url": "https://www.emmenactueel.nl/",
      "adres": "https://emmenactueel.nl/",
      "oordeel": "twijfel",
-     "reden": "hoort bij deze streek (dorpen in de buurt (erica, klazienaveen, nieuw dordrecht), provincie Drenthe), maar geen dorpswoorden",
+     "reden": "hoort bij deze streek (dorpen in de buurt (erica, klazienaveen), provincie Drenthe), maar geen dorpswoorden",
      "titel": "Emmen Actueel | Oog voor wat er speelt in de regio",
      "naam": "Emmen Actueel"
     }
@@ -21956,10 +21956,10 @@
   "Q926052": {
    "naam": "Nieuwlande",
    "soort": "dorp",
-   "gemeente": "Hoogeveen",
+   "gemeente": "Hardenberg",
    "lat": 52.6958,
    "lon": 6.6119,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://nieuwlande.nl/",
@@ -21973,8 +21973,8 @@
     },
     {
      "url": "https://nieuwlande.info/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -22267,7 +22267,7 @@
    "gemeente": "Emmen",
    "lat": 52.7436,
    "lon": 6.9444,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://oranjedorp.nl/",
@@ -22287,11 +22287,10 @@
      "reden": "robots.txt staat de robot niet toe"
     },
     {
-     "url": "https://oranjedorp.net/",
-     "oordeel": "dorpssite",
-     "reden": "dorpswoorden (dorpshuis, ons dorp, plaatselijk belang); gemeente Emmen, dorpen in de buurt (emmen), provincie Drenthe",
-     "titel": "Welkom | Plaatselijk Belang Oranjedorp",
-     "naam": "Plaatselijk Belang Oranjedorp"
+     "url": "http://oranjedorp.net/",
+     "adres": "https://oranjedorp.net/",
+     "oordeel": "fout",
+     "reden": "robots.txt niet bereikbaar"
     }
    ]
   },
@@ -22844,7 +22843,7 @@
    "gemeente": "Coevorden",
    "lat": 52.7,
    "lon": 6.75,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://dalen.com/",
@@ -22919,7 +22918,7 @@
    "gemeente": "",
    "lat": 53.22361,
    "lon": 6.58528,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://oosterpark.nl/",
@@ -23359,7 +23358,7 @@
    "gemeente": "Hoogeveen",
    "lat": 52.6833,
    "lon": 6.5,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://alteveer.nl/",
@@ -23380,8 +23379,8 @@
     {
      "url": "http://alteveer.eu/",
      "adres": "https://alteveer.eu/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (IncompleteRead)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -23391,7 +23390,7 @@
    "gemeente": "Midden-Groningen",
    "lat": 53.26194,
    "lon": 6.72139,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://blokum.com/",
@@ -23444,7 +23443,7 @@
    "gemeente": "Groningen",
    "lat": 53.20226,
    "lon": 6.59732,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://gideon.nl/",
@@ -23555,7 +23554,7 @@
    "gemeente": "Ameland",
    "lat": 53.4472,
    "lon": 5.7989,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.buren.nl/",
@@ -23616,16 +23615,15 @@
      "reden": "(bijna) lege pagina"
     },
     {
-     "url": "http://inburen.nl/",
-     "adres": "https://inburen.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "url": "https://inburen.nl/",
+     "oordeel": "nee",
+     "reden": "verwijst door naar booking.com"
     },
     {
      "url": "http://burenbruist.nl/",
      "adres": "https://burenbruist.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "https://beleefburen.nl/",
@@ -23645,8 +23643,8 @@
     {
      "url": "http://bueren.net/",
      "adres": "https://bueren.net/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "verwijst door naar swoppen.com"
     },
     {
      "url": "https://www.bueren.de/de/index.php",
@@ -23692,7 +23690,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.22111,
    "lon": 6.42583,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://westerdijk.nl/",
@@ -23730,7 +23728,7 @@
    "gemeente": "Emmen",
    "lat": 52.7108,
    "lon": 6.8483,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://veenoord.nl/",
@@ -23751,14 +23749,14 @@
     {
      "url": "http://veenoord.nu/",
      "adres": "https://veenoord.nu/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "http://veenoord.eu/",
      "adres": "https://veenoord.eu/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -23777,7 +23775,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.3187,
    "lon": 6.4661,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://aduarderzijl.nl/en-gb",
@@ -23786,9 +23784,12 @@
      "reden": "domeinnaam te koop, geparkeerd of nog leeg"
     },
     {
-     "url": "https://aduarderzijl.com/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "url": "https://www.aduarderzijl.com/",
+     "adres": "https://aduarderzijl.com/",
+     "oordeel": "twijfel",
+     "reden": "hoort bij deze streek (dorpen in de buurt (feerwerd), provincie Groningen), maar geen dorpswoorden",
+     "titel": "Camping & Jachthaven Aduarderzijl",
+     "naam": "Camping & Jachthaven Aduarderzijl"
     }
    ]
   },
@@ -24012,7 +24013,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.3183,
    "lon": 6.4533,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://allersmaborg.nl/",
@@ -24133,7 +24134,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.3025,
    "lon": 6.36056,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://ikum.net/",
@@ -24218,7 +24219,7 @@
    "gemeente": "Groningen",
    "lat": 53.3075,
    "lon": 6.70806,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://hemert.nl/",
@@ -24230,7 +24231,7 @@
      "url": "http://hemert.com/",
      "adres": "https://hemert.com/",
      "oordeel": "fout",
-     "reden": "niet bereikbaar (TimeoutError)"
+     "reden": "niet bereikbaar (URLError)"
     },
     {
      "url": "https://hemert.net/",
@@ -24359,7 +24360,7 @@
    "gemeente": "Hoogeveen",
    "lat": 52.6822,
    "lon": 6.5794,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.elim.nl/",
@@ -24418,7 +24419,7 @@
      "url": "https://www.elim-drenthe.nl/",
      "adres": "https://elim-drenthe.nl/",
      "oordeel": "dorpssite",
-     "reden": "dorpswoorden (dorpshuis, mfc, ons dorp); gemeente Hoogeveen, dorpen in de buurt (hoogeveen, nieuwlande), provincie Drenthe",
+     "reden": "dorpswoorden (ons dorp); gemeente Hoogeveen, dorpen in de buurt (hollandscheveld, hoogeveen, noordscheschut), provincie Drenthe",
      "titel": "Dorp Elim | Een Oase in Drenthe",
      "naam": "Dorp Elim"
     }
@@ -24611,7 +24612,7 @@
    "gemeente": "Loppersum",
    "lat": 53.34139,
    "lon": 6.74222,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://stork.nl/",
@@ -24662,7 +24663,7 @@
    "gemeente": "Emmen",
    "lat": 52.715,
    "lon": 6.8625,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://nieuwamsterdam.nl/",
@@ -24709,7 +24710,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.31306,
    "lon": 6.355,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://www.electra.nl/",
@@ -24733,7 +24734,8 @@
      "reden": "niet bereikbaar (HTTPError)"
     },
     {
-     "url": "https://electra.org/",
+     "url": "http://electra.org/",
+     "adres": "https://electra.org/",
      "oordeel": "fout",
      "reden": "niet bereikbaar (HTTPError)"
     },
@@ -24760,13 +24762,13 @@
    "gemeente": "Het Hogeland",
    "lat": 53.34,
    "lon": 6.4533,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://grootmaarslag.nl/",
      "adres": "https://grootmaarslag.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -24776,7 +24778,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.13362,
    "lon": 6.37173,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://oostindie.nl/",
@@ -24913,7 +24915,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.31278,
    "lon": 6.36139,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://lammerburen.nl/",
@@ -25062,13 +25064,13 @@
    "gemeente": "Het Hogeland",
    "lat": 53.35414,
    "lon": 6.50931,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://dedingen.nl/",
      "adres": "https://dedingen.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "http://dedingen.com/",
@@ -25159,7 +25161,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.33,
    "lon": 6.4394,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://schouwen.nl/",
@@ -25173,10 +25175,10 @@
      "reden": "(bijna) lege pagina"
     },
     {
-     "url": "http://schouwen.net/",
+     "url": "http://www.schouwen.net/",
      "adres": "https://schouwen.net/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (TimeoutError)"
+     "oordeel": "nee",
+     "reden": "de plaatsnaam staat niet op de pagina"
     },
     {
      "url": "http://www.schouwen.org/",
@@ -25187,8 +25189,8 @@
     {
      "url": "http://schouwenonline.nl/",
      "adres": "https://schouwenonline.nl/",
-     "oordeel": "nee",
-     "reden": "domeinnaam te koop, geparkeerd of nog leeg"
+     "oordeel": "fout",
+     "reden": "robots.txt niet bereikbaar"
     }
    ]
   },
@@ -25198,7 +25200,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.18655,
    "lon": 6.3721,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://traan.nl/",
@@ -25237,7 +25239,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.29486,
    "lon": 6.29536,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://thoekje.nl/",
@@ -25300,7 +25302,7 @@
    "gemeente": "Groningen",
    "lat": 53.18722,
    "lon": 6.59333,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://sjorshemmen.nlrobots.txt/",
@@ -25419,7 +25421,7 @@
    "gemeente": "Midden-Groningen",
    "lat": 53.17889,
    "lon": 6.85639,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://tveen.nl/",
@@ -25485,7 +25487,7 @@
    "gemeente": "Loppersum",
    "lat": 53.38556,
    "lon": 6.74361,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://honderd.nl/",
@@ -25636,7 +25638,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.3836,
    "lon": 6.69306,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://zevenhuizen.nl/",
@@ -25702,13 +25704,13 @@
    "gemeente": "Het Hogeland",
    "lat": 53.4,
    "lon": 6.61444,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://kloosterwijtwerd.nl/",
      "adres": "https://kloosterwijtwerd.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -25727,7 +25729,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.18655,
    "lon": 6.3721,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://traan.nl/",
@@ -25853,7 +25855,7 @@
    "gemeente": "Midden-Groningen",
    "lat": 53.17583,
    "lon": 6.83028,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://spitsbergen.nl/",
@@ -25873,8 +25875,7 @@
      "reden": "niet bereikbaar (URLError)"
     },
     {
-     "url": "http://spitsbergen.org/",
-     "adres": "https://spitsbergen.org/",
+     "url": "https://spitsbergen.org/",
      "oordeel": "nee",
      "reden": "robots.txt staat de robot niet toe"
     }
@@ -25911,7 +25912,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.1975,
    "lon": 6.2314,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://peebos.nl/",
@@ -25941,7 +25942,7 @@
    "gemeente": "",
    "lat": 53.3167,
    "lon": 6.83333,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://oling.nl/en-gb",
@@ -26017,12 +26018,13 @@
    "gemeente": "Het Hogeland",
    "lat": 53.3491,
    "lon": 6.2972,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
-     "url": "https://panser.nl/",
+     "url": "https://panser.nl/nl-nl",
+     "adres": "https://panser.nl/",
      "oordeel": "nee",
-     "reden": "verwijst door naar mooiedomeinnaam.nl"
+     "reden": "domeinnaam te koop, geparkeerd of nog leeg"
     },
     {
      "url": "https://panser.com/",
@@ -26092,7 +26094,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.4014,
    "lon": 6.58667,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.stichtingwadwerd.nl/",
@@ -26103,8 +26105,8 @@
     {
      "url": "http://wadwerd.org/",
      "adres": "https://wadwerd.org/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -26185,7 +26187,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.38134,
    "lon": 6.38782,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://debaat.nl/",
@@ -26194,9 +26196,10 @@
      "reden": "robots.txt staat de robot niet toe"
     },
     {
-     "url": "https://de-baat.nl/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "url": "https://www.de-baat.nl/start/",
+     "adres": "https://de-baat.nl/",
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
      "url": "https://debaat.com/",
@@ -26206,8 +26209,8 @@
     {
      "url": "http://debaat.net/",
      "adres": "https://debaat.net/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -26232,7 +26235,7 @@
    "gemeente": "Veendam",
    "lat": 53.06556,
    "lon": 6.91722,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://numerodertien.nl/",
@@ -26398,7 +26401,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.3986,
    "lon": 6.3931,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://bokum.nl/",
@@ -26526,7 +26529,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.3667,
    "lon": 6.3472,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.klei.nl/",
@@ -26543,8 +26546,8 @@
     {
      "url": "http://klei.net/",
      "adres": "https://klei.net/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "verwijst door naar buydomains.com"
     },
     {
      "url": "http://klei.org/",
@@ -26560,7 +26563,7 @@
    "gemeente": "Eemsdelta",
    "lat": 53.37412,
    "lon": 6.86613,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://nes.nl/",
@@ -26584,9 +26587,10 @@
      "reden": "verwijst door naar telepathy.com"
     },
     {
-     "url": "https://nes.org/",
-     "oordeel": "nee",
-     "reden": "verwijst door naar sedo.com"
+     "url": "http://nes.org/",
+     "adres": "https://nes.org/",
+     "oordeel": "fout",
+     "reden": "niet bereikbaar (URLError)"
     },
     {
      "url": "https://www.dorpsbelangnes.nl/",
@@ -26627,7 +26631,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.3947,
    "lon": 6.4242,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://broek.nl/",
@@ -26670,7 +26674,7 @@
    "gemeente": "Westerkwartier",
    "lat": 53.2367,
    "lon": 6.2283,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://dorp.com/",
@@ -26708,7 +26712,7 @@
    "gemeente": "Het Hogeland",
    "lat": 53.4353,
    "lon": 6.79611,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://koningsoord.nl/",
@@ -26995,7 +26999,7 @@
    "gemeente": "Midden-Groningen",
    "lat": 53.13333,
    "lon": 6.94694,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://bovenstreek.nl/",
@@ -27092,7 +27096,7 @@
    "gemeente": "Scheemda",
    "lat": 53.12656,
    "lon": 6.96046,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://bovenstreek.nl/",
@@ -27108,13 +27112,13 @@
    "gemeente": "Het Hogeland",
    "lat": 53.38667,
    "lon": 6.2625,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://marnehuizen.nl/",
      "adres": "https://marnehuizen.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -27196,7 +27200,7 @@
    "gemeente": "Oldambt",
    "lat": 53.13204,
    "lon": 7.01389,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://bovenstreek.nl/",
@@ -27393,7 +27397,7 @@
    "gemeente": "Aa en Hunze",
    "lat": 53.0258,
    "lon": 6.8361,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://broek.nl/",
@@ -27436,7 +27440,7 @@
    "gemeente": "Westerveld",
    "lat": 52.86898,
    "lon": 6.42746,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://www.voshaar.nlrobots.txt/",
@@ -27496,7 +27500,7 @@
    "gemeente": "Stadskanaal",
    "lat": 53.0366,
    "lon": 7.0643,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://sterenborg.com/",
@@ -27510,8 +27514,7 @@
      "reden": "niet bereikbaar (URLError)"
     },
     {
-     "url": "http://sterenborg.net/",
-     "adres": "https://sterenborg.net/",
+     "url": "https://sterenborg.net/",
      "oordeel": "nee",
      "reden": "de plaatsnaam staat niet op de pagina"
     },
@@ -27554,13 +27557,13 @@
    "gemeente": "Opsterland",
    "lat": 53.0561,
    "lon": 6.2061,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://wijnjeterp.nl/",
      "adres": "https://wijnjeterp.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "https://weinterp.nl/",
@@ -27678,7 +27681,7 @@
    "gemeente": "Midden-Drenthe",
    "lat": 52.92085,
    "lon": 6.53761,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://www.halen.nl/",
@@ -27707,8 +27710,8 @@
     {
      "url": "http://halen.org/",
      "adres": "https://halen.org/",
-     "oordeel": "nee",
-     "reden": "(bijna) lege pagina"
+     "oordeel": "fout",
+     "reden": "niet bereikbaar (URLError)"
     }
    ]
   },
@@ -27775,7 +27778,7 @@
    "gemeente": "Stadskanaal",
    "lat": 52.92065,
    "lon": 7.02696,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://zandberg.nl/",
@@ -27790,8 +27793,8 @@
     },
     {
      "url": "https://zandberg.net/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "http://zandberg.org/",
@@ -27916,10 +27919,10 @@
   "Q2735906": {
    "naam": "Polen",
    "soort": "gehucht",
-   "gemeente": "Delfzijl",
+   "gemeente": "Bierum",
    "lat": 53.4181,
    "lon": 6.8553,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://polen.nl/",
@@ -27946,8 +27949,7 @@
      "reden": "foutmelding 404"
     },
     {
-     "url": "http://polen.org/",
-     "adres": "https://polen.org/",
+     "url": "https://polen.org/",
      "oordeel": "nee",
      "reden": "robots.txt staat de robot niet toe"
     }
@@ -28055,7 +28057,7 @@
    "gemeente": "Westerwolde",
    "lat": 52.9858,
    "lon": 7.1561,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://plaggenborg.nl/",
@@ -28068,10 +28070,10 @@
      "reden": "robots.txt niet bereikbaar"
     },
     {
-     "url": "http://plaggenborg.net/",
+     "url": "https://www.plaggenborg.net/",
      "adres": "https://plaggenborg.net/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
      "url": "http://plaggenborg.org/",
@@ -28111,12 +28113,14 @@
    "gemeente": "Westerwolde",
    "lat": 52.92222,
    "lon": 7.11333,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://veersteveldhuis.nl/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "twijfel",
+     "reden": "hoort bij deze streek (gemeente Westerwolde, dorpen in de buurt (sellingen), provincie Groningen), maar geen dorpswoorden",
+     "titel": "'t Veerste Veldhuis - Home",
+     "naam": "'t Veerste Veldhuis"
     }
    ]
   },
@@ -28144,13 +28148,13 @@
    "gemeente": "Westerwolde",
    "lat": 52.9492,
    "lon": 7.1292,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://www.overdiep.nl/",
      "adres": "https://www.overdiep.nl/",
-     "oordeel": "nee",
-     "reden": "(bijna) lege pagina"
+     "oordeel": "fout",
+     "reden": "robots.txt niet bereikbaar"
     },
     {
      "url": "https://overdiep.com/",
@@ -28280,7 +28284,7 @@
    "gemeente": "Westerwolde",
    "lat": 53.09503,
    "lon": 7.15737,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://bovenstreek.nl/",
@@ -28296,7 +28300,7 @@
    "gemeente": "Westerwolde",
    "lat": 53.0908,
    "lon": 7.0528,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.hoorn.nl/",
@@ -28374,7 +28378,7 @@
    "gemeente": "Hoogeveen",
    "lat": 52.72167,
    "lon": 6.52069,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://www.wijkkrakeel.nlrobots.txt/",
@@ -28526,7 +28530,7 @@
    "gemeente": "Westerwolde",
    "lat": 53.14,
    "lon": 7.1697,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://denham.nl/",
@@ -28569,7 +28573,7 @@
    "gemeente": "Westerwolde",
    "lat": 52.9278,
    "lon": 7.1283,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.laude.nl/",
@@ -28603,18 +28607,18 @@
    "gemeente": "Scheemda",
    "lat": 53.1758,
    "lon": 7.0458,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
-     "url": "https://meerland.nl/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "url": "https://www.meerland.nl/",
+     "adres": "https://meerland.nl/",
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
-     "url": "http://meerland.com/",
-     "adres": "https://meerland.com/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "url": "https://meerland.com/",
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
      "url": "http://meerland.net/",
@@ -28630,13 +28634,13 @@
    "gemeente": "Westerwolde",
    "lat": 52.9139,
    "lon": 7.0986,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://terwisch.nl/",
      "adres": "https://terwisch.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -28646,7 +28650,7 @@
    "gemeente": "Stadskanaal",
    "lat": 53.0175,
    "lon": 7.06,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://barlage.nl/",
@@ -28759,7 +28763,7 @@
    "gemeente": "Westerwolde",
    "lat": 53.0242,
    "lon": 7.1394,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.weite.com/",
@@ -28777,7 +28781,7 @@
      "url": "https://www.weite.net/",
      "adres": "https://weite.net/",
      "oordeel": "nee",
-     "reden": "(bijna) lege pagina"
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
      "url": "http://weite.org/",
@@ -28793,7 +28797,7 @@
    "gemeente": "Stadskanaal",
    "lat": 52.94528,
    "lon": 7.00778,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://horsten.nl/",
@@ -28814,8 +28818,8 @@
     },
     {
      "url": "https://horsten.net/",
-     "oordeel": "nee",
-     "reden": "(bijna) lege pagina"
+     "oordeel": "fout",
+     "reden": "robots.txt niet bereikbaar"
     },
     {
      "url": "https://horsten.org/",
@@ -36034,7 +36038,7 @@
    "gemeente": "Ameland",
    "lat": 53.43806,
    "lon": 5.61753,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.sierdisposables.nl/",
@@ -36043,7 +36047,8 @@
      "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
-     "url": "https://sier.com/",
+     "url": "http://sier.com/",
+     "adres": "https://sier.com/",
      "oordeel": "nee",
      "reden": "robots.txt staat de robot niet toe"
     },
@@ -36055,8 +36060,8 @@
     {
      "url": "http://sier.org/",
      "adres": "https://sier.org/",
-     "oordeel": "nee",
-     "reden": "verwijst door naar buydomains.com"
+     "oordeel": "fout",
+     "reden": "niet bereikbaar (ConnectionResetError)"
     },
     {
      "url": "https://www.sieronline.nl/",
@@ -36099,7 +36104,7 @@
    "gemeente": "Noordoostpolder",
    "lat": 52.7631,
    "lon": 5.6614,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://creil.nl/",
@@ -36163,7 +36168,7 @@
    "gemeente": "De Wolden",
    "lat": 52.67,
    "lon": 6.3697,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://veeningen.nl/",
@@ -36202,7 +36207,7 @@
    "gemeente": "Zwartewaterland",
    "lat": 52.6419,
    "lon": 6.0703,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://zwartsluis.nl/",
@@ -36265,13 +36270,13 @@
    "gemeente": "Staphorst",
    "lat": 52.63333,
    "lon": 6.2,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.staphorst.nl/",
      "adres": "https://staphorst.nl/",
      "oordeel": "nee",
-     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
+     "reden": "hoort misschien bij een andere plaats: dorpen in de buurt (rouveen)"
     },
     {
      "url": "https://staphorst.com/",
@@ -36451,7 +36456,7 @@
    "gemeente": "Súdwest-Fryslân",
    "lat": 52.8833,
    "lon": 5.3583,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://stavoren.nl/",
@@ -36509,7 +36514,7 @@
    "gemeente": "Súdwest-Fryslân",
    "lat": 53.1119,
    "lon": 5.3939,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.benelux.zurich.com/",
@@ -36538,8 +36543,7 @@
      "naam": "Zurich"
     },
     {
-     "url": "http://www.zurich.eu/",
-     "adres": "https://www.zurich.eu/",
+     "url": "https://www.zurich.eu/",
      "oordeel": "nee",
      "reden": "foutmelding 404"
     },
@@ -36562,9 +36566,10 @@
      "reden": "niet bereikbaar (URLError)"
     },
     {
-     "url": "https://surch.nl/",
+     "url": "https://surch.nl/nl-nl",
+     "adres": "https://surch.nl/",
      "oordeel": "nee",
-     "reden": "verwijst door naar mooiedomeinnaam.nl"
+     "reden": "domeinnaam te koop, geparkeerd of nog leeg"
     },
     {
      "url": "https://surch.net/lander",
@@ -36586,7 +36591,7 @@
    "gemeente": "De Wolden",
    "lat": 52.6742,
    "lon": 6.4875,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://alteveer.nl/",
@@ -36607,8 +36612,8 @@
     {
      "url": "http://alteveer.eu/",
      "adres": "https://alteveer.eu/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (IncompleteRead)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -36732,7 +36737,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.6006,
    "lon": 6.3911,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://balkbrug.nl/",
@@ -36813,7 +36818,7 @@
    "gemeente": "Terschelling",
    "lat": 53.3769,
    "lon": 5.2933,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://striep.nl/en-gb",
@@ -36879,7 +36884,7 @@
    "gemeente": "Ommen",
    "lat": 52.5789,
    "lon": 6.3525,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://vinkenbuurt.nl/",
@@ -36889,8 +36894,8 @@
     {
      "url": "http://vinkenbuurt.com/",
      "adres": "https://vinkenbuurt.com/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -36900,16 +36905,15 @@
    "gemeente": "Terschelling",
    "lat": 53.3936,
    "lon": 5.325,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://lies.com/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
-     "url": "http://lies.info/",
-     "adres": "https://lies.info/",
+     "url": "https://lies.info/",
      "oordeel": "nee",
      "reden": "robots.txt staat de robot niet toe"
     },
@@ -36954,13 +36958,13 @@
    "gemeente": "De Wolden",
    "lat": 52.6394,
    "lon": 6.4469,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
-     "url": "https://www.linde-gas.nl/",
+     "url": "https://www.linde-gas.nl/shop/nl/nl-ig/home",
      "adres": "https://linde.nl/",
      "oordeel": "nee",
-     "reden": "foutmelding 403"
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
      "url": "https://www.linde.com/",
@@ -36979,12 +36983,6 @@
      "adres": "https://linde.org/",
      "oordeel": "nee",
      "reden": "domeinnaam te koop, geparkeerd of nog leeg"
-    },
-    {
-     "url": "http://linde.eu/",
-     "adres": "https://linde.eu/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (ConnectionResetError)"
     }
    ]
   },
@@ -36994,7 +36992,7 @@
    "gemeente": "Terschelling",
    "lat": 53.3769,
    "lon": 5.2711,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://kaard.com/",
@@ -37011,7 +37009,7 @@
      "url": "http://kaard.org/cgi-sys/defaultwebpage.cgi",
      "adres": "https://kaard.org/",
      "oordeel": "nee",
-     "reden": "(bijna) lege pagina"
+     "reden": "domeinnaam te koop, geparkeerd of nog leeg"
     },
     {
      "url": "http://kaard.eu/",
@@ -37033,7 +37031,7 @@
    "gemeente": "Dalfsen",
    "lat": 52.5833,
    "lon": 6.2833,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://nieuwleusen.com/",
@@ -37235,7 +37233,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.5661,
    "lon": 6.5233,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://rheezerveen.nl/",
@@ -37255,7 +37253,7 @@
    "gemeente": "Terschelling",
    "lat": 53.375,
    "lon": 5.2547,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://hee.com/",
@@ -37353,7 +37351,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.65,
    "lon": 6.6186,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://dekrim.nl/",
@@ -37429,7 +37427,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.5914,
    "lon": 6.6139,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://collendoorn.nl/",
@@ -37488,7 +37486,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.6133,
    "lon": 6.6508,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://ane.nl/",
@@ -37497,8 +37495,8 @@
     },
     {
      "url": "https://ane.com/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "(bijna) lege pagina"
     },
     {
      "url": "https://ane.info/",
@@ -37522,8 +37520,7 @@
      "reden": "robots.txt staat de robot niet toe"
     },
     {
-     "url": "http://ane.eu/",
-     "adres": "https://ane.eu/",
+     "url": "https://ane.eu/",
      "oordeel": "nee",
      "reden": "robots.txt staat de robot niet toe"
     }
@@ -37550,7 +37547,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.6103,
    "lon": 6.6728,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.gramsbergen.nl/",
@@ -37569,7 +37566,7 @@
     {
      "url": "https://gramsbergen.info/",
      "oordeel": "nee",
-     "reden": "robots.txt staat de robot niet toe"
+     "reden": "foutmelding 403"
     },
     {
      "url": "http://gramsbergen.net/",
@@ -37591,7 +37588,7 @@
    "gemeente": "Terschelling",
    "lat": 53.3964,
    "lon": 5.3419,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.hoorn.nl/",
@@ -37660,8 +37657,10 @@
     {
      "url": "https://www.hoornactueel.nl/",
      "adres": "https://hoornactueel.nl/",
-     "oordeel": "nee",
-     "reden": "hoort misschien bij een andere plaats: provincie Friesland"
+     "oordeel": "twijfel",
+     "reden": "hoort misschien bij een andere plaats: provincie Friesland",
+     "titel": "hoornactueel.nl - HoornActueel.nl: Jouw Kompas voor Nieuws, Cultuur en Meer in Hoorn!",
+     "naam": "Jouw Kompas voor Nieuws, Cultuur en Meer in Hoorn!"
     },
     {
      "url": "http://hoornbruist.nl/",
@@ -37694,7 +37693,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.6275,
    "lon": 6.5544,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://slagharen.nl/",
@@ -37739,7 +37738,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.6111,
    "lon": 6.5733,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://lutten.nl/",
@@ -37787,13 +37786,13 @@
    "gemeente": "Coevorden",
    "lat": 52.6697,
    "lon": 6.6981,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://steenwijksmoer.nl/",
      "adres": "https://steenwijksmoer.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "https://steenwijksmoer.info/",
@@ -37803,8 +37802,8 @@
     {
      "url": "http://dorpsteenwijksmoer.nl/",
      "adres": "https://dorpsteenwijksmoer.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -37814,7 +37813,7 @@
    "gemeente": "Coevorden",
    "lat": 52.66103,
    "lon": 6.74046,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://coevorden.nl/",
@@ -37877,7 +37876,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.6003,
    "lon": 6.6911,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://denvelde.nl/",
@@ -37912,7 +37911,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.5469,
    "lon": 6.5803,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://rheeze.nl/",
@@ -37948,7 +37947,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.5694,
    "lon": 6.59,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://heemse.nl/en-gb",
@@ -37971,8 +37970,8 @@
     },
     {
      "url": "https://inheemse.nl/",
-     "oordeel": "nee",
-     "reden": "verwijst door naar 123zelfstroom.nl"
+     "oordeel": "fout",
+     "reden": "robots.txt niet bereikbaar"
     }
    ]
   },
@@ -38040,7 +38039,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.5669,
    "lon": 6.6608,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://hoogenweg.nl/",
@@ -38063,8 +38062,8 @@
     },
     {
      "url": "https://hoogenweg.eu/",
-     "oordeel": "fout",
-     "reden": "foutmelding 500"
+     "oordeel": "nee",
+     "reden": "(bijna) lege pagina"
     }
    ]
   },
@@ -38074,7 +38073,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.57,
    "lon": 6.7108,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://radewijk.nl/",
@@ -38083,8 +38082,10 @@
     },
     {
      "url": "https://radewijk.eu/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "dorpssite",
+     "reden": "dorpswoorden (plaatselijk belang); gemeente Hardenberg, dorpen in de buurt (hardenberg), provincie Overijssel",
+     "titel": "Home - Radewijk Online",
+     "naam": "Radewijk Online"
     },
     {
      "url": "https://pbradewijk.nl/",
@@ -38101,7 +38102,7 @@
    "gemeente": "Vlieland",
    "lat": 53.2959,
    "lon": 5.0665,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://oostvlieland.nl/",
@@ -38128,7 +38129,7 @@
    "gemeente": "Ommen",
    "lat": 52.5269,
    "lon": 6.4497,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://arrien.nl/",
@@ -38167,7 +38168,7 @@
    "gemeente": "Emmen",
    "lat": 52.6936,
    "lon": 6.8667,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://zandpol.nl/",
@@ -38177,8 +38178,8 @@
     {
      "url": "http://pbzandpol.nl/",
      "adres": "https://pbzandpol.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -38188,7 +38189,7 @@
    "gemeente": "Emmen",
    "lat": 52.725,
    "lon": 6.9842,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://klazienaveen.nl/",
@@ -38201,7 +38202,8 @@
      "reden": "niet bereikbaar (HTTPError)"
     },
     {
-     "url": "https://klazienaveen.info/",
+     "url": "https://klazienaveen.online/",
+     "adres": "https://klazienaveen.info/",
      "oordeel": "dorpssite",
      "reden": "dorpswoorden (belangenvereniging, buurtvereniging); gemeente Emmen, postcode uit de buurt, dorpen in de buurt (emmen)",
      "titel": "Belangenvereniging Klazienaveen",
@@ -38225,7 +38227,7 @@
    "gemeente": "Emmen",
    "lat": 52.7206,
    "lon": 7.0422,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://zwartemeer.nl/",
@@ -38250,7 +38252,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.5931,
    "lon": 6.6639,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://loozen.nl/",
@@ -38432,12 +38434,12 @@
    "gemeente": "Emmen",
    "lat": 52.7125,
    "lon": 6.9258,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://erica.nl/",
      "oordeel": "nee",
-     "reden": "hoort misschien bij een andere plaats: postcode van elders"
+     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
     },
     {
      "url": "http://erica.com/",
@@ -38460,13 +38462,15 @@
     {
      "url": "https://erica.ceo/",
      "adres": "https://erica.org/",
-     "oordeel": "fout",
-     "reden": "robots.txt niet bereikbaar"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     },
     {
      "url": "https://ericaonline.nl/",
-     "oordeel": "nee",
-     "reden": "hoort misschien bij een andere plaats: niets op de pagina wijst naar deze streek"
+     "oordeel": "twijfel",
+     "reden": "hoort bij deze streek (gemeente Emmen, dorpen in de buurt (emmen, nieuw amsterdam, schoonebeek), provincie Drenthe), maar geen dorpswoorden",
+     "titel": "Nieuws uit Erica: 112, weer, evenementen en afval | ericaonline",
+     "naam": "Nieuws uit Erica"
     },
     {
      "url": "https://erica.nu/",
@@ -38496,7 +38500,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.57583,
    "lon": 6.61944,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.hardenberg.nl/",
@@ -38701,7 +38705,7 @@
    "gemeente": "Súdwest-Fryslân",
    "lat": 52.8625,
    "lon": 5.3897,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.scharl.com/",
@@ -38746,7 +38750,7 @@
    "gemeente": "Súdwest-Fryslân",
    "lat": 53.0293,
    "lon": 5.6332,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://bons.nl/",
@@ -38779,14 +38783,14 @@
     },
     {
      "url": "https://buns.info/",
-     "oordeel": "nee",
-     "reden": "domeinnaam te koop, geparkeerd of nog leeg"
+     "oordeel": "fout",
+     "reden": "robots.txt niet bereikbaar"
     },
     {
-     "url": "https://buns.net/lander",
+     "url": "http://buns.net/",
      "adres": "https://buns.net/",
-     "oordeel": "nee",
-     "reden": "(bijna) lege pagina"
+     "oordeel": "fout",
+     "reden": "niet bereikbaar (TimeoutError)"
     }
    ]
   },
@@ -38796,7 +38800,7 @@
    "gemeente": "Steenwijkerland",
    "lat": 52.6789,
    "lon": 6.1364,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://doosje.nl/",
@@ -38816,8 +38820,8 @@
     {
      "url": "http://doosjeonline.nl/",
      "adres": "https://doosjeonline.nl/",
-     "oordeel": "fout",
-     "reden": "niet bereikbaar (URLError)"
+     "oordeel": "nee",
+     "reden": "robots.txt staat de robot niet toe"
     }
    ]
   },
@@ -38875,7 +38879,7 @@
    "gemeente": "",
    "lat": 53.2583,
    "lon": 4.9558,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://www.vlieland.nl/",
@@ -38910,15 +38914,15 @@
      "reden": "niet bereikbaar (URLError)"
     },
     {
-     "url": "http://vlieland.nu/",
-     "adres": "https://vlieland.nu/",
+     "url": "https://vlieland.nu/",
      "oordeel": "fout",
      "reden": "robots.txt niet bereikbaar"
     },
     {
-     "url": "https://vlieland.frl/",
-     "oordeel": "nee",
-     "reden": "verwijst door naar sedo.com"
+     "url": "http://vlieland.frl/",
+     "adres": "https://vlieland.frl/",
+     "oordeel": "fout",
+     "reden": "niet bereikbaar (URLError)"
     },
     {
      "url": "https://vlielandinfo.nl/",
@@ -38968,7 +38972,7 @@
    "gemeente": "De Wolden",
    "lat": 52.62428,
    "lon": 6.39433,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://wildenberg.nl/",
@@ -39116,7 +39120,7 @@
    "gemeente": "Hardenberg",
    "lat": 52.58054,
    "lon": 6.60545,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "http://www.marslandenhypotheek.nl/",
@@ -39215,7 +39219,7 @@
    "gemeente": "Coevorden",
    "lat": 52.67814,
    "lon": 6.74883,
-   "gekekenOp": "2026-10-13",
+   "gekekenOp": "2026-10-27",
    "sites": [
     {
      "url": "https://deloo.nl/",
@@ -39335,5 +39339,5 @@
    ]
   }
  },
- "klaarOp": "2026-10-26"
+ "klaarOp": "2026-10-27"
 }
