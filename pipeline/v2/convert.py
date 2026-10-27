@@ -247,6 +247,8 @@ def to_v2(raw: dict, today: date) -> dict | None:
         "legacyCategory": raw.get("category"),
         "legacyDiscipline": raw.get("cultureDiscipline"),
         "schemaType": raw.get("schemaType"),
+        # Een groot evenement verder over de grens (grensregister, zoals de Gallimarkt in Leer): mag verder weg liggen.
+        **({"grensUitje": True} if raw.get("grensUitje") else {}),
     }
 
 

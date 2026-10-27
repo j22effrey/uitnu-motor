@@ -38,6 +38,8 @@ distance_km = area.distance_km
 
 
 def in_area(event: dict) -> bool:
+    if event.get("grensUitje"):
+        return area.in_area(event["venue"].get("lat"), event["venue"].get("lon"), margin_km=area.GRENS_KM)
     return area.in_area(event["venue"].get("lat"), event["venue"].get("lon"))
 
 

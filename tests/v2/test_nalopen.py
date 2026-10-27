@@ -182,3 +182,12 @@ def test_soortenronde_oktober_2026():
     for title in ("Fiering fanút de Martini tsjerke", "2de Advent", "Gedachteniszondag", "Scoor je tickets voor Avondvibes"):
         assert not_an_outing(_event(title)), title
     assert not not_an_outing(_event("Adventsconcert in de Martinikerk"))
+
+
+def test_grensregister_mag_verder_over_de_grens():
+    # De Gallimarkt in Leer (ongeveer 20 km over de grens) alleen als hij in het grensregister staat.
+    from pipeline.v2.build import in_area
+    leer = {"venue": {"lat": 53.2316, "lon": 7.4446}}
+    assert not in_area(leer)
+    assert in_area({**leer, "grensUitje": True})
+    assert not in_area({"venue": {"lat": 53.0793, "lon": 8.8017}, "grensUitje": True})   # Bremen: te ver
