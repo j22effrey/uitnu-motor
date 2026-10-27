@@ -3,7 +3,7 @@
 Zonder foto toont de site een kaart met alleen tekst; illustraties gebruiken we niet."""
 import json
 from collections import Counter
-from datetime import date
+from datetime import date, timedelta
 
 from collector import event_photos as ep
 from collector.site_crawler import Fetched
@@ -306,7 +306,7 @@ def test_fabriek_zet_de_foto_bij_het_uitje_en_telt_ze(tmp_path):
     assert [e["hash"] for e in again] == [e["hash"] for e in events]
 
 
-def test_tijdelijke_storing_wordt_niet_onthouden(tmp_path):
+def test_tijdelijke_storing_wacht_een_paar_dagen(tmp_path):
     (tmp_path / "events.json").write_text(json.dumps([_raw("a", "Concert", "https://stuk.example/a", "Bunne")]))
 
     def fetch(url, timeout=15):
@@ -318,8 +318,13 @@ def test_tijdelijke_storing_wordt_niet_onthouden(tmp_path):
     stats = ep.run(tmp_path, tmp_path / "photos.json", today=TODAY, fetch=fetch, fetch_json=fetch_json,
                    sleeper=lambda s: None)
     cache = json.loads((tmp_path / "photos.json").read_text())
-    assert cache["pages"] == {} and cache["commons"] == {}  # volgende nacht gewoon opnieuw
+    # Onthouden als 'tijdelijk': niet elke ronde opnieuw (dan gaan de 150 pagina's op aan dezelfde storingen),
+    # maar over een paar dagen wel. Wikimedia blijft gewoon de volgende ronde opnieuw.
+    page = cache["pages"]["https://stuk.example/a"]
+    assert page["tijdelijk"] and not page["image"] and cache["commons"] == {}
     assert stats["tijdelijk onbereikbaar"] == 1 and stats["fouten bij Wikimedia"] == 1
+    assert not ep._due(page, TODAY, ep.RECHECK_EMPTY_DAYS, "image")
+    assert ep._due(page, TODAY + timedelta(days=ep.RECHECK_TEMPORARY_DAYS), ep.RECHECK_EMPTY_DAYS, "image")
 
 
 def test_stopt_op_tijd_en_bewaart_wat_er_is(tmp_path):

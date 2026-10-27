@@ -138,7 +138,7 @@ def parse_day(value, today: date) -> tuple[date | None, str | None]:
     return None, None
 
 
-_RANGE_SAME_MONTH = re.compile(rf"(?<![:.\d])\b(\d{{1,2}})\s*(?:-|–|t/m|tot en met|tot)\s*(?:(?:{_WEEKDAY})\.?\s+)?(\d{{1,2}})\s+({_MONTH})\b", re.I)
+_RANGE_SAME_MONTH = re.compile(rf"(?<![:.\d])\b(\d{{1,2}})\s*(?:-|–|t/m|tot en met|tot|\ben\b)\s*(?:(?:{_WEEKDAY})\.?\s+)?(\d{{1,2}})\s+({_MONTH})\b", re.I)
 _RANGE_TO = re.compile(rf"(?:-|–|t/m|tot en met|\btot\b|\buntil\b)\s*(?:(?:{_WEEKDAY})\.?,?\s+)?(\d{{1,2}})[\s.]+({_MONTH})\b", re.I)
 # In cijfers: '13-11-2026 t/m 14-11-2026' (WTC Expo).
 _RANGE_NUMERIC = re.compile(r"(?:\s-\s|–|t/m|tot en met|\btot\b)\s*(\d{1,2})[-./](\d{1,2})[-./](20\d\d)\b", re.I)
