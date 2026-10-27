@@ -26,6 +26,24 @@ def _still_running(event: dict, today: str) -> bool:
     return any((o.get("endDate") or o.get("date") or "") >= today for o in event.get("occurrences") or [])
 
 
+# Valt een enkele bron ineens leeg (de website even zonder agenda, Parkzicht en VVV Ameland in oktober 2026),
+# dan houdt die bron zijn uitjes van de vorige keer, net als bij een storing. Zijn het er meer, dan is er iets
+# groters mis en houdt de keuring de hele agenda tegen.
+MAX_CARRIED_HOSTS = 5
+
+
+def dropped_hosts(new_events: list[dict], previous_events: list[dict] | None, today: str | None = None,
+                  retired_hosts: set[str] | None = None, delivered: Counter | None = None) -> list[str]:
+    """Grote bronnen die vorige keer leverden en nu niets: niet bewust uitgezet, en ook vóór de filters leeg."""
+    if not previous_events:
+        return []
+    if today:
+        previous_events = [e for e in previous_events if _still_running(e, today)]
+    before, now = _hosts(previous_events), (delivered if delivered is not None else _hosts(new_events))
+    return [h for h, n in before.items() if n >= SOURCE_DROP_MIN and now.get(h, 0) == 0
+            and h not in (retired_hosts or set())]
+
+
 def run_gate(new_events: list[dict], previous_events: list[dict] | None, today: str | None = None,
              retired_hosts: set[str] | None = None, delivered: Counter | None = None) -> dict:
     """Vergelijk met de vorige run. Evenementen die inmiddels voorbij zijn tellen niet mee:
