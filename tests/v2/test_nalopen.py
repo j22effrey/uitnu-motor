@@ -179,9 +179,19 @@ def test_soortenronde_oktober_2026():
     assert kind("90-jarig jubileum CSVO") == "feest"
     assert kind("Jandino – De grote jubileumshow") != "feest"
     assert kind("Kerstworkshop op een houten schaats") == "lezing"
-    for title in ("Fiering fanút de Martini tsjerke", "2de Advent", "Gedachteniszondag", "Scoor je tickets voor Avondvibes"):
+    for title in ("Fiering fanút de Martini tsjerke", "2de Advent", "Gedachteniszondag", "Viering vanuit de Martini kerk Easterein"):
         assert not_an_outing(_event(title)), title
-    assert not not_an_outing(_event("Adventsconcert in de Martinikerk"))
+    # Nakijkronde: echte uitjes met dezelfde woorden blijven staan.
+    for title in ("Adventsconcert in de Martinikerk", "Concert 4e advent Martinikerk", "3e Advent: kerstconcert met kamerkoor",
+                  "Viering vanuit de Martinikerk: Bach cantate", "Feestelijke fiering 100 jaar kaatsclub", "Fiering fan Sinteklaas",
+                  "Matthäus Passion 40 dagen tiid", "Scoor je tickets voor Avondvibes"):
+        assert not not_an_outing(_event(title)), title
+    assert kind("Playbackshow Kollum") != "lezing"
+    assert kind("Jam maken met de kinderen") != "muziek"
+    assert kind("Tarot reading") != "lezing"
+    assert kind("Celtic Steps – An Irish Christmas") == "theater"
+    assert kind("Kerstcarols bij de boom") == "muziek"
+    assert classify({"title": "Najib Amhali – Theatertour", "schemaType": "ComedyEvent"})["kind"] == "theater"
 
 
 def test_grensregister_mag_verder_over_de_grens():

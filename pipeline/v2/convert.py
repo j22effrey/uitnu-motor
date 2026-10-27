@@ -141,7 +141,7 @@ TRAILING_WHEN = re.compile(
     rf"|\s+(?:van\s+)?\d{{1,2}}[.:]\d{{2}}\s*[–-]\s*(?:ca\.\s*)?\d{{1,2}}[.:]\d{{2}}\s*uur\b.*"
     rf"|\s+{_DATE}\s+(?:t/m|tot en met|tot|[–-])\s+{_DATE})$", re.IGNORECASE)
 # Een aanduiding voor de naam ('Activiteit Concert van NIHZ', 'Nu te zien: fotografe ...').
-LEADING_LABEL = re.compile(r"^(?:activiteit:?|nu te zien:)\s+(?=\S)", re.IGNORECASE)
+LEADING_LABEL = re.compile(r"^(?:activiteit:?|nu te zien:|scoor je tickets(?: voor)?:?)\s+(?=\S)", re.IGNORECASE)
 # Een schreeuwende melding achter de naam ('Theeproeverij *WEGENS SUCCES VOLGEBOEKT*').
 TRAILING_SHOUT = re.compile(r"\s*\*[^*a-z]{4,}\*\s*$")
 

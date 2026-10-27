@@ -92,16 +92,16 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"dans(middag|avond|feest|club)", r"trick or treat", r"spokentocht", r"ladies ?night", r"happy hour",
         r"hollandse avond", r"hitster", r"pijltjes gooien", r"kerstmiddag", r"\bsint\b", r"klozum", r"carnaval",
         r"nieuwjaars ?(receptie|visite|bijeenkomst)", r"spookhuis", r"\bgala\b", r"paasvuur", r"vreugdevuur",
-        r"(?:\d+-?jarig |^)jubileum\b(?!.*(?:show|tour|voorstelling|concert))", r"^dansen (?:in|bij|op)\b", r"neut\W?e?n schait\W?e?n", r"noten schieten", r"puzzel", r"bordspel",
+        r"(?:\d+-?jarig |^)jubileum\b(?!.*(?:show|tour|voorstelling|concert))", r"^dansen (?:in|bij|op)\b", r"playback", r"neut\W?e?n schait\W?e?n", r"noten schieten", r"puzzel", r"bordspel",
         r"paasmiddag", r"bridgedrive", r"\bforro\b",
     ]),
     "theater": _compile([
-        r"theater(?!tour|tournee)", r"voorstelling", r"toneel", r"cabaret", r"comedy", r"stand-?up",
+        r"theater(?!tour|tournee)", r"voorstelling", r"\bsteps\b", r"\bdance\b(?! ?(?:party|night|event|classics))", r"toneel", r"cabaret", r"comedy", r"stand-?up",
         r"musical", r"\bopera\b", r"ballet", r"\bdans(voorstelling|theater)?\b",
         r"poppen(kast|theater)", r"circus", r"teater", r"komeedzje", r"komedie", r"klucht",
     ]),
     "muziek": _compile([
-        r"concert", r"^live\b", r"^[\w']+ live\b", r"\blive ?(?:muziek|music|band|op het plein)\b|\blivemuziek", r"band\b", r"\bkoor(?!nbeurs)", r"koren", r"orkest", r"\bdj\b", r"optreden",
+        r"concert", r"^live\b", r"^(?!kunst|boeren)[\w']+ live\b", r"\blive ?(?:muziek|music|band|op het plein)\b|\blivemuziek", r"band\b", r"\bkoor(?!nbeurs)", r"koren", r"orkest", r"\bdj\b", r"optreden",
         r"gospel", r"fanfare", r"shanty", r"smartlap",
         r"clubnacht", r"\bparty\b", r"\bjazz", r"\bpop\b", r"\brock", r"\bblues", r"\bmetal\b",
         r"hip-?hop", r"techno", r"\bhouse\b", r"recital", r"\borgel", r"cantate", r"muziek",
@@ -112,9 +112,9 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"saxofo", r"klarinet", r"violist", r"\bviool", r"gitarist", r"harpist", r"trompet", r"fluitist", r"pianist",
         r"\bzingt\b", r"cantorij", r"evensong",
         # theatertour van een zanger, en muziekwoorden die er nog niet in stonden (soortenronde, 27 oktober 2026)
-        r"theatertour", r"unplugged", r"songbook", r"\bjam\b", r"\bfolk\b", r"\birish\b", r"\bierse?\b", r"celtic",
+        r"theatertour", r"unplugged", r"songbook", r"\bjam\b(?!\s*(?:maken|koken))", r"\bfolk\b", r"\birish\b", r"\bierse?\b", r"celtic",
         r"symfon", r"symphon", r"\bchoir\b", r"popkoor", r"gitaar", r"guitar", r"\bcountry\b", r"\bsoul\b", r"schlager",
-        r"chanson", r"\btenors?\b", r"\bcarols?\b", r"sjongen", r"zing mee", r"muzika", r"world tour", r"club ?tour",
+        r"chanson", r"\btenors?\b", r"carols?\b", r"sjongen", r"zing mee", r"muzika", r"world tour", r"club ?tour",
     ]),
     "kunst": _compile([
         r"tentoonstelling", r"expositie", r"\bexpo\b", r"museum", r"galerie", r"\bkunst",
@@ -123,9 +123,9 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
     ]),
     "lezing": _compile([
         r"lezing", r"workshop", r"cursus", r"masterclass", r"\bdebat\b",
-        r"podcast", r"in gesprek\b", r"reading", r"luistertafel", r"topstukken klassieke", r"boekbespreking",
+        r"podcast", r"in gesprek\b", r"(?<!tarot )reading", r"luistertafel", r"topstukken klassieke", r"boekbespreking",
         r"stof tot nadenken", r"vertelt over", r"vertelcaf", r"ferhaal", r"ferhale", r"boekewike", r"inspiratiesessie",
-        r"vraag de pro\b", r"maakplaats", r"^maak je eigen", r"playback",
+        r"vraag de pro\b", r"maakplaats", r"^maak je eigen",
         r"symposium", r"voorlees", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
         r"repair ?caf", r"bloemschik", r"verkeersregels", r"creatief caf", r"handwerk", r"informatie ?avond",
         r"\bbrei(?:en|werk|cafe|club|middag|avond|ochtend|les)\b", r"\bhaak", r"\bcrea\b", r"digitaal ?huis", r"literatuur", r"leesclub", r"boekenclub", r"verhalen", r"doe-? ?middag", r"thema ?avond", r"webinar",
@@ -174,10 +174,11 @@ NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst
                            r"|huwelijk|kerkzangdienst|(?:advent|kerstnacht|paas|reformatie) ?(?:viering|zondag)|reformatiedag"
                            r"|gemeenteavond|\w*gearkomste|redactievergadering"
                            # vieringen in de kerk (ook in het Fries) en de zondagen van de veertigdagentijd (soortenronde)
-                           r"|\bfiering\b|viering vanuit|kerstviering met liturgie|\d(?:ste|de|e) advent\b|gedachtenis ?zondag"
-                           r"|snein \d+ dagen tiid|\d+ dagen tiid|^oudjaarsavond\W*$"
+                           r"|^fiering (?:fan[uú]t|mei)\b|yn dizze fiering|^(?:\d{4}, )?viering vanuit de martini ?kerk(?: easterein)?(?: om \d+ uur)?\W*$"
+                           r"|^\d(?:ste|de|e) advent\W*$|^gedachtenis ?zondag\W*$"
+                           r"|^\d\w* snein \d+ dagen tiid|^oudjaarsavond\W*$"
                            # geen uitje: kaartverkoop, inloop van een lab, budgetadvies, open dag van een rijschool
-                           r"|scoor je tickets|walk-in smartlab|budgetcaf\w*|rijopleiding|steendammer uurtje|formulierenloket"
+                           r"|budgetcaf\w*|rijopleiding|formulierenloket"
                            # mededelingen voor het dorp, geen uitje
                            r"|oud ?papier|collecte\w*|kopij|wintertijd|zomertijd|\w*afval|container|\w*spreekuur"
                            # zaalverhuur en vaste clubavonden in de agenda van een dorpshuis
@@ -581,6 +582,10 @@ def classify(event: dict, overrides: dict | None = None,
         return result(schema_kind, "organisator",
                       f"de organisator noemt het een {event['schemaType']} (gaat voor trefwoord '{found[first][0]}')", 0.75)
 
+    # Een theatertour is meestal een zanger (Krezip, Karsu), maar bij een cabaretier (Najib Amhali) zegt de
+    # organisator 'comedy': dan theater.
+    if event.get("schemaType") == "ComedyEvent" and re.search(r"theatertour|theatertournee", normalize(title)):
+        return result("theater", "organisator", "theatertour van een cabaretier (de organisator noemt het comedy)", 0.75)
     # 2c. Wandelingen en excursies zijn natuur, behalve bij een echte wedstrijd
     if "natuur" in found and race:
         return result("sport", "trefwoord", f"wedstrijd ({found['sport'][0]}) in de natuur", 0.85)
