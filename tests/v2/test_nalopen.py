@@ -210,3 +210,15 @@ def test_een_bron_die_ineens_leeg_is_houdt_de_agenda_niet_tegen():
     old = [{"id": f"p{i}", "sources": [{"host": "parkzicht.com"}], "occurrences": [{"date": "2026-11-01"}]} for i in range(12)]
     assert dropped_hosts([], old, "2026-10-27", delivered=Counter()) == ["parkzicht.com"]
     assert dropped_hosts([], old, "2026-10-27", retired_hosts={"parkzicht.com"}, delivered=Counter()) == []
+
+
+def test_dagcontrole_27_oktober_hulp_spelavond_en_discussieavond():
+    # Hulp met telefoon of computer, een bordspelavond in het dorp en een discussieavond zijn geen uitje.
+    for title in ("Walk-in Smartlab", "Bordspelavond", "Bordspelavond voor jong en oud, schuif gezellig aan!",
+                  "Discussieavond 3 november over Hoe het gaat met de jeugd"):
+        assert not_an_outing(_event(title)), title
+    # Echte uitjes met dezelfde woorden blijven staan.
+    for title in ("Bordspellentoernooi Groningen", "Bieb Vibes: Bordspellencafé", "Hitster avond voor 5,00",
+                  "Walk-in concert in de Martinikerk", "Walk-in Workshop keramiek", "Walk-in Disco",
+                  "Debat: discussieavond met de lijsttrekkers live", "Bordspelavond met live muziek"):
+        assert not not_an_outing(_event(title)), title
