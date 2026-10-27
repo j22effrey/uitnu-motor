@@ -22,7 +22,7 @@ from pipeline import area
 
 from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
 from .dekking import auto_register, coverage, load_register, merge_registers
-from .convert import TICKET_HOSTS, content_hash, load_first_party, merge_duplicates, to_v2
+from .convert import TICKET_HOSTS, content_hash, load_first_party, merge_duplicates, merge_key, to_v2
 from .gate import MAX_CARRIED_HOSTS, dropped_hosts, run_gate
 from .kinds import KINDS, TAGS
 from .photos import attach_photos, host_of, list_pages, page_facts_for
@@ -249,13 +249,20 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     dropped = dropped_hosts(events, in_area_previous, today.isoformat(), retired_hosts=gone, delivered=delivered)
     if dropped and len(dropped) <= MAX_CARRIED_HOSTS:
         have = {e["id"] for e in events}
+        # Niet dubbel: hetzelfde uitje kan nu via een andere website binnenkomen (andere id), en een adres
+        # (slug) mag maar één keer voorkomen.
+        slugs = {e.get("slug") for e in events}
+        keys = {merge_key(e) for e in events}
         for old in in_area_previous:
             hosts_of = {s.get("host") for s in old.get("sources") or []}
             host = next((h for h in dropped if h in hosts_of), None)
-            if host and old["id"] not in have and any((o.get("endDate") or o.get("date") or "") >= today.isoformat()
-                                                     for o in old.get("occurrences") or []):
+            running = any((o.get("endDate") or o.get("date") or "") >= today.isoformat() for o in old.get("occurrences") or [])
+            if (host and running and old["id"] not in have and old.get("slug") not in slugs
+                    and merge_key(old) not in keys):
                 events.append(old)
                 have.add(old["id"])
+                slugs.add(old.get("slug"))
+                keys.add(merge_key(old))
                 carried[host] = carried.get(host, 0) + 1
         delivered = delivered + Counter({h: n for h, n in carried.items()})
         events.sort(key=lambda e: (e["occurrences"][0]["date"], e["occurrences"][0].get("startTime") or "", e["title"]))
