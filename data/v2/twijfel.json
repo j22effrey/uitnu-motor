@@ -20,11 +20,51 @@
   ]
  },
  {
+  "id": "evt_6a6c597554cc5f",
+  "title": "Bruggen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://franeker.nl/fixi-meldingen?melding=3512989775376243",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_9c32f4b902b73b",
+  "title": "Gebouwen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://franeker.nl/fixi-meldingen?melding=1826111429065617",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_37dc8e985dda6a",
   "title": "Het zonnestelsel in het klein",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.eisinga-planetarium.nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_72a5819c22b665",
+  "title": "Kerncentrale in de Eemshaven roept nog steeds veel vragen op in de regio",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.uithuizermeeden.nl/nieuws/kerncentrale-in-de-eemshaven-roept-nog-steeds-veel-vragen-op-in-de-regio/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_0a0cde0993c4ae",
+  "title": "Kribbetjesroute",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://schraard.com/evenement/kribbetjesroute",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -45,16 +85,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://buurtcentrumtuinpad.nl/Locatie/buurtcentrum-tuinpad/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_fa8bdfd0de9c77",
-  "title": "Werkplaats Sunnemeerten",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/werkplaats-sunnemeerten?date=27-10-2026",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -161,6 +191,16 @@
   ]
  },
  {
+  "id": "evt_1f176ea21809f0",
+  "title": "All of a Sudden",
+  "kind": "film",
+  "reason": "website sliekerfilm.nl",
+  "url": "https://sliekerfilm.nl/programma/default",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_6464c9a8504f2a",
   "title": "De late herfstjas",
   "kind": "overig",
@@ -186,6 +226,16 @@
   "kind": "muziek",
   "reason": "website iduna.nl",
   "url": "https://iduna.nl/agenda/geoff-tate/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c021a8e3cdfbc3",
+  "title": "Primetime",
+  "kind": "film",
+  "reason": "website sliekerfilm.nl",
+  "url": "https://sliekerfilm.nl/programma/default",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -481,16 +531,6 @@
   ]
  },
  {
-  "id": "evt_f8bf83e7fe8aac",
-  "title": "Linet Aten exposeert",
-  "kind": "kunst",
-  "reason": "oude categorie 'expo'",
-  "url": "https://www.kerksolwerd.nl/activiteiten",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_ebb94414ddbfd7",
   "title": "Linet Aten exposeert",
   "kind": "kunst",
@@ -511,11 +551,11 @@
   ]
  },
  {
-  "id": "evt_56f789d6c905cd",
-  "title": "Walk-in Smartlab",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/walk-in-smartlab?date=31-10-2026",
+  "id": "evt_f8bf83e7fe8aac",
+  "title": "Linet Aten exposeert",
+  "kind": "kunst",
+  "reason": "oude categorie 'expo'",
+  "url": "https://www.kerksolwerd.nl/activiteiten",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -642,16 +682,6 @@
   ]
  },
  {
-  "id": "evt_0ea06b5e6b840a",
-  "title": "Walk-in Smartlab",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/walk-in-smartlab?date=01-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_b79f06aff53860",
   "title": "Öffentliche Führung",
   "kind": "kunst",
@@ -732,36 +762,6 @@
   ]
  },
  {
-  "id": "evt_1d1def215729ca",
-  "title": "BoekFrutselen: creatief met oude boeken",
-  "kind": "lezing",
-  "reason": "website bind.op-shop.nl",
-  "url": "https://bind.op-shop.nl/17227/boekfrutselen-creatief-met-oude-boeken/02-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_3855b4be129abc",
-  "title": "Schrijf je eigen mini-kinderboek met Liesbeth Rosendaal",
-  "kind": "lezing",
-  "reason": "website bind.op-shop.nl",
-  "url": "https://bind.op-shop.nl/16958/schrijf-je-eigen-mini-kinderboek-met-liesbeth-rosendaal/02-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_07a99d36fafe9e",
-  "title": "Fryske Jûn",
-  "kind": "lezing",
-  "reason": "website bmf.op-shop.nl",
-  "url": "https://bmf.op-shop.nl/9346/fryske-jn/02-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_930e5049ec3aab",
   "title": "De Gaulle: Résistance",
   "kind": "film",
@@ -812,6 +812,16 @@
   ]
  },
  {
+  "id": "evt_412ae9744c85fe",
+  "title": "OnderOns: het uurtje van Bert Kraan",
+  "kind": "theater",
+  "reason": "website vanberesteyn.nl",
+  "url": "https://www.vanberesteyn.nl/programma/onderons-het-uurtje-van-bert-kraan/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_400c9509484267",
   "title": "Wat heb je vandaag online...",
   "kind": "lezing",
@@ -827,16 +837,6 @@
   "kind": "film",
   "reason": "website filmhuisemmen.nl",
   "url": "https://www.filmhuisemmen.nl/on-a-string/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_ed1ee8617eef78",
-  "title": "Open Sessions Emmen",
-  "kind": "lezing",
-  "reason": "website facet-emmen.op-shop.nl",
-  "url": "https://facet-emmen.op-shop.nl/8848/open-sessions-emmen/03-11-2026",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -873,31 +873,31 @@
   ]
  },
  {
-  "id": "evt_c7c6774c0e2344",
-  "title": "Heel de klas leest. Jij tekent erop los!",
-  "kind": "lezing",
-  "reason": "website bind.op-shop.nl",
-  "url": "https://bind.op-shop.nl/17393/heel-de-klas-leest-jij-tekent-erop-los/04-11-2026",
+  "id": "evt_7aa281d4a7defc",
+  "title": "Plan je bezoek",
+  "kind": "kunst",
+  "reason": "website hannemahuis.nl",
+  "url": "https://hannemahuis.nl/plan-je-bezoek",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_0d4ae836a090af",
-  "title": "Stine Jensen over de kracht van lezen",
-  "kind": "lezing",
-  "reason": "website bind.op-shop.nl",
-  "url": "https://bind.op-shop.nl/17236/stine-jensen-over-de-kracht-van-lezen/04-11-2026",
+  "id": "evt_30d22acc2c1646",
+  "title": "Plan your visit",
+  "kind": "kunst",
+  "reason": "website hannemahuis.nl",
+  "url": "https://hannemahuis.nl/plan-je-bezoek",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_3ac79a1bd7bd32",
-  "title": "Bullet Journaling: denk helder, plan bewust, leef rustiger",
-  "kind": "lezing",
-  "reason": "website dbieb.op-shop.nl",
-  "url": "https://dbieb.op-shop.nl/10789/bullet-journaling-denk-helder-plan-bewust-leef-rustiger/05-11-2026",
+  "id": "evt_959de8669aa5f6",
+  "title": "Planen Sie Ihren Besuch",
+  "kind": "kunst",
+  "reason": "website hannemahuis.nl",
+  "url": "https://hannemahuis.nl/plan-je-bezoek",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1124,6 +1124,16 @@
   ]
  },
  {
+  "id": "evt_0efafae032a9eb",
+  "title": "Samen voor een bloeiend Woltersum!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://woltersum.net/evenement/samen-voor-een-bloeiend-woltersum-woltersum/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_f16aacb0d23639_ed5d5b5c0385",
   "title": "Bouw je eigen lampje op zonne-energie",
   "kind": "lezing",
@@ -1325,11 +1335,31 @@
   ]
  },
  {
+  "id": "evt_30f03e6611250e",
+  "title": "JobOn: New here? Find your people!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/jobon-new-here-find-your-people?date=09-11-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_a2630123b59e67",
   "title": "Schermen in het gezin: hoe vind...",
   "kind": "lezing",
   "reason": "website ticketing.groningsebibliotheken.nl",
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774181/Schermen-in-het-gezin:-hoe-vind-je-de-balans?.html",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d93324d16a0c08",
+  "title": "Huurderscafé in Vries",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.vries.nu/agendapunt/huurderscafe-in-vries/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1433,6 +1463,16 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
+  "id": "evt_eec37d406ab620",
+  "title": "Meet me at the lighthouse",
+  "kind": "lezing",
+  "reason": "website ontdekdebieb.op-shop.nl",
+  "url": "https://ontdekdebieb.op-shop.nl/19656/meet-me-at-the-lighthouse/12-11-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -1729,11 +1769,31 @@
   ]
  },
  {
-  "id": "evt_611021d213ea80",
+  "id": "evt_2b0f373a6a67ae",
+  "title": "het hart van Bolsward",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.bolsward.nl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d2b85fa49af2cb",
   "title": "Microscopiedag",
   "kind": "lezing",
   "reason": "website ticketing.groningsebibliotheken.nl",
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/773409/Microscopiedag.html",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d8aeae50935fa7",
+  "title": "Opening Meet-o-Theek",
+  "kind": "lezing",
+  "reason": "website ticketing.groningsebibliotheken.nl",
+  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774488/Opening-Meet-o-Theek.html",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1894,16 +1954,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://2gemeenten.nl/agenda/terug-in-de-feesttent-pirateneditie/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_bd0c8a7bf1bfdb",
-  "title": "Meet me at the lighthouse",
-  "kind": "lezing",
-  "reason": "website ontdekdebieb.op-shop.nl",
-  "url": "https://ontdekdebieb.op-shop.nl/19660/meet-me-at-the-lighthouse/15-11-2026",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2466,6 +2516,17 @@
   ]
  },
  {
+  "id": "evt_147401243e71c0",
+  "title": "De midfestival IDFA check-in",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/de-midfestival-idfa-check-in?date=20-11-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
   "id": "evt_c4a712e320ceb6",
   "title": "Tristan Forever",
   "kind": "overig",
@@ -2526,6 +2587,16 @@
   ]
  },
  {
+  "id": "evt_c10600c6834f98",
+  "title": "Mijn roots - Myn woartels",
+  "kind": "kunst",
+  "reason": "website friesscheepvaartmuseum.nl",
+  "url": "https://verhalenavond.nl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_a348a3e60359ca",
   "title": "SHY",
   "kind": "theater",
@@ -2541,6 +2612,16 @@
   "kind": "theater",
   "reason": "website huisorlando.nl",
   "url": "https://www.huisorlando.nl/productie-agamemnon/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_45df2d3b3ffd7d",
+  "title": "Terence Hansen",
+  "kind": "muziek",
+  "reason": "oude categorie 'muziek'",
+  "url": "https://podiumverwondering.nl/event/terence-hansen/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3468,6 +3549,16 @@
   ]
  },
  {
+  "id": "evt_7ea4d5b0f7f674",
+  "title": "“Ik wilde met het duingras praten” door creatief collectief Tante Hans",
+  "kind": "muziek",
+  "reason": "oude categorie 'muziek'",
+  "url": "https://podiumverwondering.nl/event/ik-wilde-met-het-duingras-praten-door-creatief-collectief-tante-hans/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_99e49a7d807fad",
   "title": "Plan Nine",
   "kind": "muziek",
@@ -3653,6 +3744,16 @@
   "kind": "lezing",
   "reason": "website dbieb.op-shop.nl",
   "url": "https://dbieb.op-shop.nl/10650/spraakmakende-boeken-aleksej-salnikov-de-petrovs-en-de-griep/01-12-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a3a0ea0a94a0a2",
+  "title": "Van AI-revolutie naar AI-apocalyps?",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/van-ai-revolutie-naar-ai-apocalyps?date=01-12-2026",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4341,6 +4442,16 @@
   ]
  },
  {
+  "id": "evt_9be0541db08da9_651308111ee8",
+  "title": "“Dinner For One” door Bas de Bruijn en Trea Alers",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://podiumverwondering.nl/event/dinner-for-one-door-bas-de-bruijn-en-trea-alers/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_bebeb68f168899",
   "title": "European Youth Countrymatch...",
   "kind": "sport",
@@ -5012,6 +5123,16 @@
   ]
  },
  {
+  "id": "evt_4d68a879693e0d",
+  "title": "Asaba Duo",
+  "kind": "muziek",
+  "reason": "oude categorie 'muziek'",
+  "url": "https://podiumverwondering.nl/event/asaba-duo/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_4a50f7543b8d65",
   "title": "DOEK!",
   "kind": "theater",
@@ -5492,6 +5613,16 @@
   ]
  },
  {
+  "id": "evt_6d3fabbb220d74",
+  "title": "Helen met kristallen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://landvaneen.nl/activiteiten/kristal-meditatie-en-kaartlegging/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_801c9ea9c60a98",
   "title": "Lycurgus Groningen – Draisma Dynamo",
   "kind": "sport",
@@ -5638,6 +5769,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://slavernijverledengroningen.nl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_f5bdba90256121",
+  "title": "Balgendag",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://delantearne.nl/wp-content/uploads/2025/06/Balgendag-1.jpg.webp",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6203,11 +6344,31 @@
   ]
  },
  {
+  "id": "evt_6d089dab280ef0",
+  "title": "De Bonte Wever 25",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_553f67f1e6e7e6",
   "title": "Faulty Towers The Dining Experience",
   "kind": "theater",
   "reason": "website harmonie.nl",
   "url": "https://harmonie.nl/agenda/faulty-towers-the-dining-experience/52996",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_26ef3857b08858",
+  "title": "Harlingen en de Oostzeevaart",
+  "kind": "kunst",
+  "reason": "website hannemahuis.nl",
+  "url": "https://hannemahuis.nl/agendaitem/agendaitem-7",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6399,6 +6560,16 @@
   "kind": "theater",
   "reason": "website theaterhofpoort.nl",
   "url": "https://www.theaterhofpoort.nl/niet-schieten",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_54601ef60e4103",
+  "title": "Stappers van Toen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://delantearne.nl/evenementen/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6639,6 +6810,16 @@
   "kind": "theater",
   "reason": "oude categorie 'theater'",
   "url": "https://www.shakespearetheaterdiever.nl/Speeldata",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_39b74fb44b342b",
+  "title": "Adrian Snell – The Passion",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://eventsforchrist.nl/en/event/the-passion-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6890,6 +7071,16 @@
   "kind": "muziek",
   "reason": "website neushoorn.nl",
   "url": "https://www.neushoorn.nl/events/physical-graffiti",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c77fd9268c33bd",
+  "title": "Villagers of Ioannina City",
+  "kind": "muziek",
+  "reason": "website neushoorn.nl",
+  "url": "https://www.neushoorn.nl/events/villagers-of-ioannina-city",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -7577,6 +7768,16 @@
   ]
  },
  {
+  "id": "evt_7b3df7816e7b1d",
+  "title": "Groundwork Basictraining",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://delantearne.nl/evenementen/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_a2f7bbf8fc0205",
   "title": "Dflat Carpet",
   "kind": "overig",
@@ -8077,6 +8278,16 @@
   "kind": "kunst",
   "reason": "website glasuniek.nl",
   "url": "https://www.glasuniek.nl/agenda-glaskunstenaar-linda-van-huffelen",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a2c92644349164",
+  "title": "Snoekvissen met Nea byt",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://reduzum.com/agenda/?event_id1=60752",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
