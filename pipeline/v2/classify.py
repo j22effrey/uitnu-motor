@@ -44,10 +44,12 @@ def _compile(patterns: Iterable[str]) -> list[re.Pattern[str]]:
 # dat sommige patronen bewust zonder woordgrens aan het begin werken.
 PATTERNS: dict[str, list[re.Pattern[str]]] = {
     "film": _compile([r"\bfilm", r"bioscoop", r"cinema", r"filmhuis", r"documentaire", r"cinekid",
-                      r"\((?:19|20)\d\d\)\s*$"]),   # 'L'Histoire de Souleymane (2024)': een film met jaartal
+                      r"\((?:19|20)\d\d\)\s*$",
+                      # Forum Groningen: 'Docs:' en 'Classics:'; filmvertoningen van theater en sport
+                      r"^(?:docs|classics|cinema|kinderfilm):", r"national theatre live", r"\bnt live\b", r"reel rock", r"popcornfestival"]),   # 'L'Histoire de Souleymane (2024)': een film met jaartal
     "sport": _compile([
         r"hardloop", r"(?<!ver)(?<!door)(?<!aan)(?<!uit)loop\b", r"run\b", r"\btrail", r"toertocht", r"\d+\s?(km|kilometer|mijl)\b", r"\bmijl\b", r"marathon",
-        r"triatlon", r"wedstrijd", r"toernooi", r"regatta", r"roeiwedstrijd", r"schaats",
+        r"triatlon", r"wedstrijd", r"toernooi", r"regatta", r"roeiwedstrijd", r"(?<!houten )schaats",
         r"wielren", r"mountainbike", r"\bmtb\b", r"voetbal", r"korfbal", r"handbal", r"hockey",
         r"zwemtocht", r"sportdag", r"\brace\b", r"obstacle", r"gymnastiek", r"biljart", r"\bsjoel", r"koersbal", r"jeu de boules", r"gym",
         r"valpreventie", r"bewegen", r"\byoga", r"pilates", r"zumba", r"volleybal", r"badminton", r"tafeltennis",
@@ -56,7 +58,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"^(?:beker:? )?[\w .'/&-]+ (?:[dhj]s ?)?\d+ [-–] [\w .'/&-]+ (?:[dhj]s ?)?\d+\b", r"\b(?:sv|vv|sc|fc)\b",
         r"toernoai", r"toenooi", r"blijart", r"picklebal", r"kickboks", r"loopgroep", r"stoelfit", r"\bracing\b",
         r"\btt assen\b", r"skutsje", r"zeilwedstrijd", r"\bdammen\b", r"damclub",
-        r"\bdraf(?:sport|koers|race)", r"harddraverij", r"(?<!tentoonstelling )(?<!\w)kaats(?:en|partij|wedstrijd)\b", r"fierljep", r"kunstrijden", r"\bspeedway\b", r"autocross",
+        r"\bdraf(?:sport|koers|race)", r"harddraverij", r"(?<!tentoonstelling )(?<!\w)kaats(?:en|partij|wedstrijd)\b", r"\btennis", r"\bpadel", r"\bsquash\b", r"sneekweek", r"zwem ?(?:vier|4)daagse", r"(?:zitmaaier|kart|auto|motor|fiets|boten|bedden|zeepkisten|kisten|tractor|ezel|paarden|junkyard|mud|color|kleuren|schaats|ski|zwem|roei)race", r"fierljep", r"kunstrijden", r"\bspeedway\b", r"autocross",
         r"\bisu\b", r"allround", r"\b[ewn]k (?:allround|sprint|afstanden|schaatsen|wielrennen|voetbal|zwemmen)",
     ]),
     "natuur": _compile([
@@ -77,7 +79,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"\bsoep", r"(?:vrijdag ?)?(?:middag|avond) ?caf",
     ]),
     "markt": _compile([
-        r"markt", r"(?<=\w)maart\b", r"braderie", r"beurs", r"fair\b", r"\bsalon\b|(?:woon|bruids|beauty|wellness|auto|boten|reis|vakantie)salon\b",
+        r"markt", r"(?<=\w)maart\b", r"braderie", r"(?<!koorn)beurs", r"modelspoor", r"advent im rathaus|weihnachtsmarkt", r"fair\b", r"\bsalon\b|(?:woon|bruids|beauty|wellness|auto|boten|reis|vakantie)salon\b",
         r"reis ?event", r"reizen\b.*\bevent", r"rommel", r"vlooi", r"snuffel", r"krystmerk", r"\bmerke\b", r"\w+ruil\b", r"ruilbeurs", r"modelbouw",
         r"bazaa?r\b", r"kerstbo[oa]mverkoop",
     ]),
@@ -90,16 +92,16 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"dans(middag|avond|feest|club)", r"trick or treat", r"spokentocht", r"ladies ?night", r"happy hour",
         r"hollandse avond", r"hitster", r"pijltjes gooien", r"kerstmiddag", r"\bsint\b", r"klozum", r"carnaval",
         r"nieuwjaars ?(receptie|visite|bijeenkomst)", r"spookhuis", r"\bgala\b", r"paasvuur", r"vreugdevuur",
-        r"jubileum(?!\w*concert)", r"neut\W?e?n schait\W?e?n", r"noten schieten", r"puzzel", r"bordspel",
+        r"(?:\d+-?jarig |^)jubileum\b(?!.*(?:show|tour|voorstelling|concert))", r"^dansen (?:in|bij|op)\b", r"playback", r"neut\W?e?n schait\W?e?n", r"noten schieten", r"puzzel", r"bordspel",
         r"paasmiddag", r"bridgedrive", r"\bforro\b",
     ]),
     "theater": _compile([
-        r"theater", r"voorstelling", r"toneel", r"cabaret", r"comedy", r"stand-?up",
+        r"theater(?!tour|tournee)", r"voorstelling", r"\bsteps\b", r"\bdance\b(?! ?(?:party|night|event|classics))", r"toneel", r"cabaret", r"comedy", r"stand-?up",
         r"musical", r"\bopera\b", r"ballet", r"\bdans(voorstelling|theater)?\b",
         r"poppen(kast|theater)", r"circus", r"teater", r"komeedzje", r"komedie", r"klucht",
     ]),
     "muziek": _compile([
-        r"concert", r"\blive\b", r"band\b", r"\bkoor", r"koren", r"orkest", r"\bdj\b", r"optreden",
+        r"concert", r"^live\b", r"^(?!kunst|boeren)[\w']+ live\b", r"\blive ?(?:muziek|music|band|op het plein)\b|\blivemuziek", r"band\b", r"\bkoor(?!nbeurs)", r"koren", r"orkest", r"\bdj\b", r"optreden",
         r"gospel", r"fanfare", r"shanty", r"smartlap",
         r"clubnacht", r"\bparty\b", r"\bjazz", r"\bpop\b", r"\brock", r"\bblues", r"\bmetal\b",
         r"hip-?hop", r"techno", r"\bhouse\b", r"recital", r"\borgel", r"cantate", r"muziek",
@@ -109,6 +111,10 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"huiskamer(?:podium|concert)", r"accordeon", r"blokfluit", r"cellist", r"\bcello", r"fagot",
         r"saxofo", r"klarinet", r"violist", r"\bviool", r"gitarist", r"harpist", r"trompet", r"fluitist", r"pianist",
         r"\bzingt\b", r"cantorij", r"evensong",
+        # theatertour van een zanger, en muziekwoorden die er nog niet in stonden (soortenronde, 27 oktober 2026)
+        r"theatertour", r"unplugged", r"songbook", r"\bjam\b(?!\s*(?:maken|koken))", r"\bfolk\b", r"\birish\b", r"\bierse?\b", r"celtic",
+        r"symfon", r"symphon", r"\bchoir\b", r"popkoor", r"gitaar", r"guitar", r"\bcountry\b", r"\bsoul\b", r"schlager",
+        r"chanson", r"\btenors?\b", r"carols?\b", r"sjongen", r"zing mee", r"muzika", r"world tour", r"club ?tour",
     ]),
     "kunst": _compile([
         r"tentoonstelling", r"expositie", r"\bexpo\b", r"museum", r"galerie", r"\bkunst",
@@ -117,6 +123,9 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
     ]),
     "lezing": _compile([
         r"lezing", r"workshop", r"cursus", r"masterclass", r"\bdebat\b",
+        r"podcast", r"in gesprek\b", r"(?<!tarot )reading", r"luistertafel", r"topstukken klassieke", r"boekbespreking",
+        r"stof tot nadenken", r"vertelt over", r"vertelcaf", r"ferhaal", r"ferhale", r"boekewike", r"inspiratiesessie",
+        r"vraag de pro\b", r"maakplaats", r"^maak je eigen",
         r"symposium", r"voorlees", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
         r"repair ?caf", r"bloemschik", r"verkeersregels", r"creatief caf", r"handwerk", r"informatie ?avond",
         r"\bbrei(?:en|werk|cafe|club|middag|avond|ochtend|les)\b", r"\bhaak", r"\bcrea\b", r"digitaal ?huis", r"literatuur", r"leesclub", r"boekenclub", r"verhalen", r"doe-? ?middag", r"thema ?avond", r"webinar",
@@ -136,6 +145,10 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"speeltuin", r"ballonnen", r"klimpark", r"indoor ?speel", r"speel ?(je mee ?)?(ochtend|middag)",
         r"paasei", r"knustel", r"\bkamp\b", r"^jongeren\b", r"pompoen",
         r"jeugd ?soos", r"tiener ?soos", r"(?:foar|voor) de jeugd", r"sprookjes(?:tocht|wandeling|route|speurtocht)",
+        # voorstellingen en feestjes voor jonge kinderen ('Woezel & Pip', 'Sinterklaasshow (3+)', '(6-10 jr)')
+        r"\([1-5]\+\)", r"\(\d-\d{1,2} ?(?:jaar|jr)\)", r"woezel", r"buurman (?:&|en) buurman", r"full minties",
+        r"sinterklaas ?(?:show|voorstelling|theater|sprookje|kinderconcert)", r"\bsint ?show", r"pieten", r"kinderkerst",
+        r"meet (?:&|and) greet met sinterklaas",
     ]),
 }
 
@@ -160,6 +173,12 @@ NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst
                            r"|woord- en communieviering|rouwdienst|uitvaartdienst|kerst(?:nacht)?dienst|tsjerketsjinst"
                            r"|huwelijk|kerkzangdienst|(?:advent|kerstnacht|paas|reformatie) ?(?:viering|zondag)|reformatiedag"
                            r"|gemeenteavond|\w*gearkomste|redactievergadering"
+                           # vieringen in de kerk (ook in het Fries) en de zondagen van de veertigdagentijd (soortenronde)
+                           r"|^fiering (?:fan[uú]t|mei)\b|yn dizze fiering|^(?:\d{4}, )?viering vanuit de martini ?kerk(?: easterein)?(?: om \d+ uur)?\W*$"
+                           r"|^\d(?:ste|de|e) advent\W*$|^gedachtenis ?zondag\W*$"
+                           r"|^\d\w* snein \d+ dagen tiid|^oudjaarsavond\W*$"
+                           # geen uitje: kaartverkoop, inloop van een lab, budgetadvies, open dag van een rijschool
+                           r"|budgetcaf\w*|rijopleiding|formulierenloket"
                            # mededelingen voor het dorp, geen uitje
                            r"|oud ?papier|collecte\w*|kopij|wintertijd|zomertijd|\w*afval|container|\w*spreekuur"
                            # zaalverhuur en vaste clubavonden in de agenda van een dorpshuis
@@ -563,6 +582,10 @@ def classify(event: dict, overrides: dict | None = None,
         return result(schema_kind, "organisator",
                       f"de organisator noemt het een {event['schemaType']} (gaat voor trefwoord '{found[first][0]}')", 0.75)
 
+    # Een theatertour is meestal een zanger (Krezip, Karsu), maar bij een cabaretier (Najib Amhali) zegt de
+    # organisator 'comedy': dan theater.
+    if event.get("schemaType") == "ComedyEvent" and re.search(r"theatertour|theatertournee", normalize(title)):
+        return result("theater", "organisator", "theatertour van een cabaretier (de organisator noemt het comedy)", 0.75)
     # 2c. Wandelingen en excursies zijn natuur, behalve bij een echte wedstrijd
     if "natuur" in found and race:
         return result("sport", "trefwoord", f"wedstrijd ({found['sport'][0]}) in de natuur", 0.85)

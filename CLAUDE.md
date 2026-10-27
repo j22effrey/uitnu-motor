@@ -5,6 +5,10 @@ Noord-Nederland: de provincies Groningen, Fryslân en Drenthe, plus een rand van
 (`AREA_PROVINCES` en `MARGIN_KM` in `pipeline/area.py`; de grenzen staan in `pipeline/provincies.json`,
 van het CBS). Daarna wordt het landelijk (een langer lijstje provincies), dus bouw niets dat alleen voor
 één regio werkt. Eerder was het 60 km rond Groningen-centrum.
+Grote, populaire evenementen verder over de grens (de Gallimarkt in Leer, kerstmarkten in Ostfriesland en het
+Emsland) staan in het grensregister (`collector/grensregister.json`) en mogen tot 60 km over de grens (`GRENS_KM`):
+alleen als los uitje in `data/events.json` met `"grensUitje": true`, met de organisator of de stad als bron
+(afspraak met de eigenaar, 27 oktober 2026).
 
 ## Communicatie
 

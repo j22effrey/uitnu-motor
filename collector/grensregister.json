@@ -1,0 +1,157 @@
+{
+  "uitleg": "Grensregister: grote, populaire evenementen verder over de grens (tot 60 km, pipeline/area.py GRENS_KM) waar veel mensen uit het werkgebied heen gaan. Alleen wat hier staat mag verder dan de gewone rand van 10 km. Staat er een nieuwe editie vast bij de organisator of de stad, zet die dan als los uitje in data/events.json met \"grensUitje\": true (het wekelijkse onderhoud kijkt dit na). Geen verzamelsites als bron.",
+  "evenementen": [
+    {
+      "naam": "Gallimarkt Leer",
+      "plaats": "Leer (Ostfriesland)",
+      "afstandKm": 12,
+      "organisatorUrl": "https://leer.de/Stadt-Leben/Stadt-Leer-Ostfriesland-/Gallimarkt/",
+      "waarom": "Grootste kermis en jaarmarkt van Oost-Friesland, elk jaar in oktober sinds 1508; veel Nederlanders uit Groningen en Drenthe",
+      "opmerking": "2026-editie was 14-18 okt 2026 (518e); 2027-datum nog niet gepubliceerd door Stadt Leer (leer.de/gallimarkt 27-10-2026 gelezen). Verwacht medio okt 2027; verder volgen."
+    },
+    {
+      "naam": "Weihnachtsmarkt Leer",
+      "plaats": "Leer (Ostfriesland)",
+      "afstandKm": 12,
+      "organisatorUrl": "https://www.touristik-leer.de/",
+      "waarom": "Grote kerstmarkt in de historische binnenstad, 50+ kramen, gezellig en dicht bij de grens",
+      "opmerking": null
+    },
+    {
+      "naam": "Emder Matjestage und Traditionsschifftreffen",
+      "plaats": "Emden",
+      "afstandKm": 15,
+      "organisatorUrl": "https://www.emden-touristik.de/veranstaltungen/emder-matjestage",
+      "waarom": "Groot havenfeest met traditionele schepen, livebands en haring, tot 180.000 bezoekers; Emden ligt aan de Dollard",
+      "opmerking": "2026 was 29-31 mei (35e editie); 2027-datum nog niet gepubliceerd (emden-touristik.de gelezen 27-10-2026). Meestal eind mei/begin juni."
+    },
+    {
+      "naam": "Maritimer Engelkemarkt (kerstmarkt Emden)",
+      "plaats": "Emden",
+      "afstandKm": 15,
+      "organisatorUrl": "https://www.emden-touristik.de/veranstaltungen/maritimer-engelkemarkt-1",
+      "waarom": "Kerstmarkt aan Ratsdelft en Stadtgarten, vlak over de Dollard",
+      "opmerking": null
+    },
+    {
+      "naam": "Delft- und Hafenfest Emden",
+      "plaats": "Emden",
+      "afstandKm": 15,
+      "organisatorUrl": "https://www.emden-touristik.de/veranstaltungen/delft-und-hafenfest",
+      "waarom": "Groot stads- en havenfeest in juli met muziek en kramen",
+      "opmerking": "2026: 17-19 juli; 2027 nog niet gepubliceerd (gelezen 27-10-2026)."
+    },
+    {
+      "naam": "Emden à la carte",
+      "plaats": "Emden",
+      "afstandKm": 15,
+      "organisatorUrl": "https://www.emden-touristik.de/veranstaltungen/emden-a-la-carte",
+      "waarom": "Eet- en drinkfestival aan de Ratsdelft, augustus",
+      "opmerking": "2026: 7-9 aug; 2027 nog niet gepubliceerd."
+    },
+    {
+      "naam": "Internationales Filmfest Emden-Norderney",
+      "plaats": "Emden",
+      "afstandKm": 15,
+      "organisatorUrl": "https://www.emden-touristik.de/veranstaltungen/internationales-filmfest",
+      "waarom": "Bekend filmfestival, juni",
+      "opmerking": "2026: 3-10 juni; 2027 nog niet gepubliceerd."
+    },
+    {
+      "naam": "Weihnachtsmarkt Lingen (Ems)",
+      "plaats": "Lingen (Ems)",
+      "afstandKm": 22,
+      "organisatorUrl": "https://www.lingen.de/",
+      "waarom": "Grote kerstmarkt met overdekte ijsbaan, populair in Zuidoost-Drenthe",
+      "opmerking": null
+    },
+    {
+      "naam": "Kivelingsfest Lingen",
+      "plaats": "Lingen (Ems)",
+      "afstandKm": 22,
+      "organisatorUrl": "https://kivelinge.de/",
+      "waarom": "Historisch middeleeuws volksfeest op de markt, om de drie jaar met Pinksteren; duizenden bezoekers",
+      "opmerking": "Organisator kivelinge.de: 'Das nächste Pfingsten 2027'; exacte dagen niet gelezen (Pinksteren 2027 = 16 mei, dus waarschijnlijk 15-17 mei). Nog te bevestigen."
+    },
+    {
+      "naam": "EmslandArena Lingen (grote shows en concerten)",
+      "plaats": "Lingen (Ems)",
+      "afstandKm": 22,
+      "organisatorUrl": "https://www.emslandarena.com/",
+      "waarom": "Grootste concertzaal van het Emsland: Santiano, Bonamassa, Fantastischen Vier open air",
+      "opmerking": "Lat/lon zaal bij benadering. Meer 2027-shows (Unheilig 12-2, Ina Müller 4-3) alleen op kaartverkoopsites gezien; niet overgenomen."
+    },
+    {
+      "naam": "Weihnachtsmarkt Meppen (met reuzenrad)",
+      "plaats": "Meppen",
+      "afstandKm": 25,
+      "organisatorUrl": "https://www.weihnachtsmarkt-meppen.de/",
+      "waarom": "Grote kerstmarkt met reuzenrad, ijsbaan en pyramide",
+      "opmerking": null
+    },
+    {
+      "naam": "Rathauskirmes Meppen",
+      "plaats": "Meppen",
+      "afstandKm": 25,
+      "organisatorUrl": "https://www.meppen-tourismus.de/events-tickets/veranstaltungen/rathauskirmes/",
+      "waarom": "Kermis in het centrum, oktober",
+      "opmerking": "2026: 16-19 okt; 2027 nog niet gepubliceerd. Ook Frühjahrskirmes en Summer City Open Air (2026: 6 juni) volgen."
+    },
+    {
+      "naam": "Nörder Wiehnacht (kerstmarkt Norden)",
+      "plaats": "Norden",
+      "afstandKm": 55,
+      "organisatorUrl": "https://www.norden.de/Stadtleben/Kultur-Freizeit/M%C3%A4rkte-Feste/N%C3%B6rder-Wiehnacht/",
+      "waarom": "Kerstmarkt in Norden, populaire stad voor Nederlanders die naar de kust gaan",
+      "opmerking": null
+    },
+    {
+      "naam": "Malle Open Air Papenburg",
+      "plaats": "Papenburg",
+      "afstandKm": 18,
+      "organisatorUrl": "https://www.papenburg.de/kultur-freizeit/stadtpark-open-air/malle-open-air",
+      "waarom": "Mallorca-feest in Stadtpark, groot publiek uit het Emsland en daarbuiten",
+      "opmerking": "Lat/lon bij benadering. Onderdeel van Stadtpark Open Air 12-15 aug 2027 (programma groeit; opnieuw lezen)."
+    },
+    {
+      "naam": "Papenburger Weihnachtsmärkte (Mühlenplatz, Untenende, Aschendorf)",
+      "plaats": "Papenburg",
+      "afstandKm": 18,
+      "organisatorUrl": "https://www.papenburg.de/",
+      "waarom": "Kerstmarkten bij Meyers Mühle, sfeervol, dicht bij de grens",
+      "opmerking": "Stad zegt: tweede en derde adventsweekend. Alleen via aggregator gezien 4-6 en 11-13 dec 2026 (niet officieel gelezen); stad publiceert in nov een verkeersbericht."
+    },
+    {
+      "naam": "Papenburger Stadtfest en Maimarkt",
+      "plaats": "Papenburg",
+      "afstandKm": 18,
+      "organisatorUrl": "https://www.papenburg.de/",
+      "waarom": "Stadsfeest langs het kanaal (2026: 5-7 juni) en kermis op de Untenender Marktplatz (2026: 8-11 mei)",
+      "opmerking": "Geen 2027-datums gevonden bij Stadt Papenburg."
+    },
+    {
+      "naam": "Michaelismarkt Weener",
+      "plaats": "Weener",
+      "afstandKm": 5,
+      "organisatorUrl": "https://www.weener.de/",
+      "waarom": "Oudste volksfeest van het Rheiderland (518e editie 26-27 sept 2026), vlak bij Winschoten/Westerwolde",
+      "opmerking": "2027-datum niet gevonden. Ook Johannimarkt (voorjaar) en Adventsmarkt (2026 volgens aggregator 5-6 dec, niet officieel gelezen)."
+    },
+    {
+      "naam": "Auricher Weihnachtszauber",
+      "plaats": "Aurich",
+      "afstandKm": 45,
+      "organisatorUrl": "https://www.aurich.de/",
+      "waarom": "Kerstmarkt op Marktplatz en in voetgangersgebied",
+      "opmerking": "Alleen aggregator: 23 nov-30 dec 2026; officieel niet bevestigd."
+    },
+    {
+      "naam": "Wikingerfest am Meer Norddeich",
+      "plaats": "Norden (Norddeich)",
+      "afstandKm": 55,
+      "organisatorUrl": "https://www.norddeich.de/",
+      "waarom": "Groot Vikingenfestival aan de kust, eind juli/begin augustus",
+      "opmerking": "2026: 30 juli-2 aug (aggregator); 2027 niet gevonden."
+    }
+  ]
+}

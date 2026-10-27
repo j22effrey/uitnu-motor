@@ -16,6 +16,9 @@ from pathlib import Path
 
 AREA_PROVINCES = ("Groningen", "Fryslân", "Drenthe")
 MARGIN_KM = 10
+# Grote evenementen verder over de grens waar veel mensen uit het werkgebied heen gaan (de Gallimarkt in Leer,
+# kerstmarkten in Ostfriesland): alleen als ze met de hand in het grensregister staan, tot zo ver.
+GRENS_KM = 60
 PROVINCES_PATH = Path(__file__).with_name("provincies.json")
 AREA_LABEL = "Noord-Nederland"
 

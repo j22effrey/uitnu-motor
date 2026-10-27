@@ -157,3 +157,47 @@ def test_kerkdiensten_huwelijken_en_kaatsmuseum():
     for title in ("Huwelijk", "Kerkzangdienst", "Advent viering", "Reformatie zondag", "Kerstnachtviering"):
         assert not_an_outing(_event(title)), title
     assert not not_an_outing(_event("Adventsconcert met koor"))
+
+
+def test_soortenronde_oktober_2026():
+    # Volledige ronde over alle soorten (27 oktober 2026): algemene regels, met uitzonderingen voor echte uitjes.
+    from pipeline.v2.classify import classify
+    kind = lambda title: classify({"title": title})["kind"]
+    assert kind("Tennis op gravelbaan Nes") == "sport"
+    assert kind("Woezel & Pip De Musical – Feest in de Tovertuin (2+)") == "kinderen"
+    assert kind("De grote Sinterklaasshow") == "kinderen"
+    assert kind("Intocht Sinterklaas") == "feest"
+    assert kind("Krezip – Theatertour") == "muziek"
+    assert kind("Nirvana Unplugged") == "muziek"
+    assert kind("Sunday Jam") == "muziek"
+    assert kind("De Misdaadpodcast Live") == "lezing"
+    assert kind("Topstukken Klassieke Muziek: Mahler") == "lezing"
+    assert kind("Daddy Cool in De Koornbeurs") != "markt"
+    assert kind("Docs: Cutting Through Rocks") == "film"
+    assert kind("Zitmaaierrace Ureterp") == "sport"
+    assert kind("Amazing Grace") != "sport"
+    assert kind("90-jarig jubileum CSVO") == "feest"
+    assert kind("Jandino – De grote jubileumshow") != "feest"
+    assert kind("Kerstworkshop op een houten schaats") == "lezing"
+    for title in ("Fiering fanút de Martini tsjerke", "2de Advent", "Gedachteniszondag", "Viering vanuit de Martini kerk Easterein"):
+        assert not_an_outing(_event(title)), title
+    # Nakijkronde: echte uitjes met dezelfde woorden blijven staan.
+    for title in ("Adventsconcert in de Martinikerk", "Concert 4e advent Martinikerk", "3e Advent: kerstconcert met kamerkoor",
+                  "Viering vanuit de Martinikerk: Bach cantate", "Feestelijke fiering 100 jaar kaatsclub", "Fiering fan Sinteklaas",
+                  "Matthäus Passion 40 dagen tiid", "Scoor je tickets voor Avondvibes"):
+        assert not not_an_outing(_event(title)), title
+    assert kind("Playbackshow Kollum") != "lezing"
+    assert kind("Jam maken met de kinderen") != "muziek"
+    assert kind("Tarot reading") != "lezing"
+    assert kind("Celtic Steps – An Irish Christmas") == "theater"
+    assert kind("Kerstcarols bij de boom") == "muziek"
+    assert classify({"title": "Najib Amhali – Theatertour", "schemaType": "ComedyEvent"})["kind"] == "theater"
+
+
+def test_grensregister_mag_verder_over_de_grens():
+    # De Gallimarkt in Leer (ongeveer 20 km over de grens) alleen als hij in het grensregister staat.
+    from pipeline.v2.build import in_area
+    leer = {"venue": {"lat": 53.2316, "lon": 7.4446}}
+    assert not in_area(leer)
+    assert in_area({**leer, "grensUitje": True})
+    assert not in_area({"venue": {"lat": 53.0793, "lon": 8.8017}, "grensUitje": True})   # Bremen: te ver
