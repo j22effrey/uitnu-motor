@@ -140,3 +140,20 @@ def test_datums_in_fries_en_met_de_maand_eerst():
     assert parse_when("april 12:00", today=today) is None
     assert parse_end_day("13-11-2026 t/m 14-11-2026", "2026-11-13") == "2026-11-14"
     assert parse_end_day("13-11-2026", "2026-11-13") is None
+
+
+def test_maand_eerst_alleen_als_datum_aan_het_begin():
+    # Nakijkronde: 'vanaf maart 2 x per week' of 'mei 5 km loop' is geen datum.
+    from datetime import date
+    from collector.when import parse_when
+    today = date(2026, 10, 27)
+    for text in ("vanaf maart 2 x per week", "mei 5 km loop", "Fête des 3 rois", "jun 30 jaar jubileum"):
+        assert parse_when(text, today=today) is None, text
+    assert parse_when("za okt. 31", today=today) == "2026-10-31"
+
+
+def test_kerkdiensten_huwelijken_en_kaatsmuseum():
+    from pipeline.v2.classify import not_an_outing
+    for title in ("Huwelijk", "Kerkzangdienst", "Advent viering", "Reformatie zondag", "Kerstnachtviering"):
+        assert not_an_outing(_event(title)), title
+    assert not not_an_outing(_event("Adventsconcert met koor"))

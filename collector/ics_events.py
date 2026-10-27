@@ -49,7 +49,8 @@ def city_from_location(loc: str) -> str | None:
     parts = [p.strip() for p in (loc or "").split(",") if p.strip()]
     for part in reversed(parts[1:]):
         part = re.sub(r"^\d{4}\s?[A-Za-z]{2}\s+", "", part).strip()  # '9243 JL Bakkeveen' -> 'Bakkeveen'
-        if not part or part.casefold() in _COUNTRIES or re.search(r"\d", part):
+        # ook geen provincie-afkorting ('Zuidwolde, GR, 9785 AS')
+        if not part or part.casefold() in _COUNTRIES or re.search(r"\d", part) or re.fullmatch(r"[A-Z]{2,3}", part):
             continue
         if part[0].islower() or len(part.split()) > 4:
             continue

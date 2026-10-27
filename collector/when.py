@@ -6,7 +6,7 @@ Voor lezers die per bron ingesteld worden (json_api, html_cards). Bekende vormen
 - Nederlands met jaar: 'za 17 okt 2026', '17 oktober 2026', '16-10-2026 / 10:00', '22/10/2026 20:15'
 - Nederlands zonder jaar met weekdag: 'za 17 okt', 'do 15.10' (de weekdag bepaalt het jaar)
 - Engels zonder jaar met weekdag: 'Thursday 15 October', 'Sat 28 Nov 2026'
-- maand eerst: 'okt. 28', 'des. 5 2026' (dorpsapp.nl), ook met Friese maanden ('des', 'mai')
+- maand eerst, alleen aan het begin: 'okt. 28', 'des. 5 2026' (dorpsapp.nl), ook met Friese maanden ('des', 'mai')
 De tijd mag apart staan ('20:30', '20.30 uur', 'doors: 20:00 | start: 20:30', '09:00 & 10:30'):
 de eerste tijd telt, of de tijd na 'start'.
 """
@@ -52,7 +52,7 @@ ISO_RE = re.compile(r"\b(20\d{2})-(\d{1,2})-(\d{1,2})(?!\d)(?:[T ](\d{2}):(\d{2}
 NUMERIC_RE = re.compile(r"(?<![\d])(\d{1,2})[-/.](\d{1,2})[-/.](20\d{2})(?!\d)")
 WORD_RE = re.compile(rf"(?:\b({_WEEKDAY})\.?,?\s+)?(\d{{1,2}})\s+({_MONTH})\.?(?:,?\s+(20\d{{2}}))?\b", re.I)
 SHORT_RE = re.compile(rf"\b({_WEEKDAY})\.?\s+(\d{{1,2}})\.(\d{{1,2}})(?![\d.])", re.I)
-MONTH_FIRST_RE = re.compile(rf"\b({_MONTH})\.?\s+(\d{{1,2}})(?![\d:.])(?:,?\s+(20\d{{2}}))?", re.I)
+MONTH_FIRST_RE = re.compile(rf"^(?:(?:{_WEEKDAY})\.?,?\s+)?({_MONTH})\.?\s+(\d{{1,2}})(?![\d:.])(?!\s*(?:km|kilometer|x\b|keer|jaar|uur|min|euro))(?:,?\s+(20\d{{2}}))?", re.I)
 START_RE = re.compile(r"\b(?:start\w*|aanvang|begin\w*)\s*:?\s*(?:om\s*)?(\d{1,2})[:.](\d{2})", re.I)
 TIME_RE = re.compile(r"(?<![\d.:])(\d{1,2})[:.](\d{2})(?![\d])")
 

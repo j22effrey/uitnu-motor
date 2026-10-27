@@ -56,7 +56,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"^(?:beker:? )?[\w .'/&-]+ (?:[dhj]s ?)?\d+ [-–] [\w .'/&-]+ (?:[dhj]s ?)?\d+\b", r"\b(?:sv|vv|sc|fc)\b",
         r"toernoai", r"toenooi", r"blijart", r"picklebal", r"kickboks", r"loopgroep", r"stoelfit", r"\bracing\b",
         r"\btt assen\b", r"skutsje", r"zeilwedstrijd", r"\bdammen\b", r"damclub",
-        r"\bdraf(?:sport|koers|race)", r"harddraverij", r"kaatsen", r"\bkaats", r"fierljep", r"\bspeedway\b", r"autocross",
+        r"\bdraf(?:sport|koers|race)", r"harddraverij", r"(?<!tentoonstelling )(?<!\w)kaats(?:en|partij|wedstrijd)\b", r"fierljep", r"kunstrijden", r"\bspeedway\b", r"autocross",
         r"\bisu\b", r"allround", r"\b[ewn]k (?:allround|sprint|afstanden|schaatsen|wielrennen|voetbal|zwemmen)",
     ]),
     "natuur": _compile([
@@ -78,7 +78,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
     ]),
     "markt": _compile([
         r"markt", r"(?<=\w)maart\b", r"braderie", r"beurs", r"fair\b", r"\bsalon\b|(?:woon|bruids|beauty|wellness|auto|boten|reis|vakantie)salon\b",
-        r"reis ?event", r"reizen\b.*\bevent", r"rommel", r"vlooien", r"snuffel", r"krystmerk", r"\bmerke\b", r"\w+ruil\b", r"ruilbeurs", r"modelbouw",
+        r"reis ?event", r"reizen\b.*\bevent", r"rommel", r"vlooi", r"snuffel", r"krystmerk", r"\bmerke\b", r"\w+ruil\b", r"ruilbeurs", r"modelbouw",
         r"bazaa?r\b", r"kerstbo[oa]mverkoop",
     ]),
     "feest": _compile([
@@ -158,6 +158,7 @@ OUTDOOR = re.compile(r"\bbuiten|openlucht|strand")
 NOT_AN_OUTING = re.compile(r"\b(eredienst(?:en)?|kerkdienst(?:en)?|zondagsdienst|ochtenddienst|middagdienst|avonddienst"
                            r"|gebedsdienst|gebedsuur|gebedskring|bijbelstudie|bijbelkring|eucharistieviering"
                            r"|woord- en communieviering|rouwdienst|uitvaartdienst|kerst(?:nacht)?dienst|tsjerketsjinst"
+                           r"|huwelijk|kerkzangdienst|(?:advent|kerstnacht|paas|reformatie) ?(?:viering|zondag)|reformatiedag"
                            r"|gemeenteavond|\w*gearkomste|redactievergadering"
                            # mededelingen voor het dorp, geen uitje
                            r"|oud ?papier|collecte\w*|kopij|wintertijd|zomertijd|\w*afval|container|\w*spreekuur"

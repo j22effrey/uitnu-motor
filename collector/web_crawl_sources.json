@@ -895,7 +895,7 @@
           "month": "maand",
           "year": "jaar",
           "monthBase": 0,
-          "months": 5
+          "months": 13
         },
         "items": "items",
         "title": [
@@ -924,7 +924,8 @@
           "Literair": "LiteraryEvent",
           "Theatercollege": "EducationEvent",
           "Festival": "Festival"
-        }
+        },
+        "skipTitle": "\\bcursus\\b"
       },
       "defaultPlace": {
         "venue": "Stadsschouwburg de Harmonie",
@@ -2564,7 +2565,7 @@
           "title": "class=\"dorpsapp-agenda-title\">(.*?)</span>",
           "venue": "class=\"dorpsapp-agenda-location\">(.*?)</span>"
         },
-        "skipTitle": "vergadering|klaverjas|biljart|bingo|verkoop|herdenking|aksje"
+        "skipTitle": "vergadering|klaverjas|biljart|bingo|verkoop|herdenking|aksje|warmtetour"
       },
       "defaultPlace": {
         "city": "Holwert",
@@ -4070,7 +4071,8 @@
         "lat": 53.2139415,
         "lon": 5.9433814
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "kindHint": "theater"
     },
     {
       "id": "tryater-nl-web",
@@ -13196,7 +13198,7 @@
           "city": "id=\"location-detail\">\\s*<p>.*?\\d{4}\\s?[A-Z]{2}\\s+([^<]+?)\\s*</p>",
           "tags": "data-icon-before=\"style\">(.*?)</ul>"
         },
-        "skipTitle": "informatiepunt|\\bIDO\\b|taalpunt|taalhuis|taalcaf|spreekuur|digitaal|digisterker|klik ?& ?tik|oefenplein|hulp bij|computer|kleintje bieb|voorleesuurtje|peuter|boekenstart|leesclub|leeskring|breinbieb|biebfabriek|verkiezing|inloop|koffie|puzzel|handwerk|breicaf|repair|spelletjes|schrijfcaf|alleen op afspraak|vakantielezen|zomerlezen|informatieplein|digi-slim|ict hulp|energieloket|schaakclub|babbelen|poëziegroep|po.ziegroep|checkpunt|uk & ik|ouder- en kindgroep|workshop:? (belastingen|toeslagen|pensioen|zoeken op het internet|whatsapp|ai\\b|reizen met het openbaar|waar heb ik recht|slim omgaan)|foto.s maken en bewerken|slimwijzer|vrijwilligersmarkt|ontmoetingscaf|crea caf|creatief atelier|bakkie|historische vereniging|samen lezen|kunst door de brievenbus|ouderavond|ontmoetingsroute|dungeons|lasergamen|speel mee|cursus|historisch caf",
+        "skipTitle": "informatiepunt|\\bIDO\\b|taalpunt|taalhuis|taalcaf|spreekuur|digitaal|digisterker|klik ?& ?tik|oefenplein|hulp bij|computer|kleintje bieb|voorleesuurtje|peuter|boekenstart|leesclub|leeskring|breinbieb|biebfabriek|verkiezing|inloop|koffie|puzzel|handwerk|breicaf|repair|spelletjes|schrijfcaf|alleen op afspraak|vakantielezen|zomerlezen|informatieplein|digi-slim|ict hulp|energieloket|schaakclub|babbelen|poëziegroep|po.ziegroep|checkpunt|uk & ik|ouder- en kindgroep|workshop:? (belastingen|toeslagen|pensioen|zoeken op het internet|whatsapp|ai\\b|reizen met het openbaar|waar heb ik recht|slim omgaan)|foto.s maken en bewerken|slimwijzer|vrijwilligersmarkt|ontmoetingscaf|crea caf|creatief atelier|bakkie|historische vereniging|samen lezen|kunst door de brievenbus|ouderavond|ontmoetingsroute|dungeons|lasergamen|speel mee|cursus|historisch caf|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
         "skipTags": "Informatiepunt Digitale Overheid|Taalhuis|Taalpunt|Digitaal spreekuur|Oefenplein|Gemeenteraadsverkiezingen|Kleintje Bieb|BiebFabriek|Breinbieb",
         "province": "Drenthe",
         "rooms": {
@@ -13232,7 +13234,7 @@
           "venue": "data-reveal=\"location-detail\">([^<]+)",
           "city": "id=\"location-detail\">\\s*<p>.*?<br/>\\s*\\d{4}\\s?[A-Z]{2}\\s+([^<]+?)\\s*</p>"
         },
-        "skipTitle": "spreekuur|informatiepunt|\\bIDO\\b|taalhuis|taalpunt|taalcaf|koffieochtend|koffie ?uurtje|digitaal|digicaf|digisterker|klik ?& ?tik|computer|hulp bij|oefenplein|seniorweb|e-reader|smartphone|tablet|wijkagent|woonborg|vip!|neie naober|spelletjes|handwerk|breicaf|haakcaf|puzzel|leesclub|leeskring|voorleesmoment|samen lezen|boekstart|peuter|dreumes|kleintje bieb|inloop|cursus|training|repair|schrijfcaf|bieb-?scan|bibliotheek op school|studiekring|budget|geldzaken|belasting|ruilbeurs|ontmoet|bakkie|babbel|informatieplein|energieloket|checkpunt|slimwijzer|naobuur|ict|schaakclub|po[eë]ziegroep|iphone|android|internet|pensioen|verleiding|historische vereniging|creatief ontmoet|kunst door de brievenbus|facet lab|facet studio|bankieren|digid|kennis met ai|haak aan|kom buurten|week van de opvoeding|taalatelier|regenboogcaf",
+        "skipTitle": "spreekuur|informatiepunt|\\bIDO\\b|taalhuis|taalpunt|taalcaf|koffieochtend|koffie ?uurtje|digitaal|digicaf|digisterker|klik ?& ?tik|computer|hulp bij|oefenplein|seniorweb|e-reader|smartphone|tablet|wijkagent|woonborg|vip!|neie naober|spelletjes|handwerk|breicaf|haakcaf|puzzel|leesclub|leeskring|voorleesmoment|samen lezen|boekstart|peuter|dreumes|kleintje bieb|inloop|cursus|training|repair|schrijfcaf|bieb-?scan|bibliotheek op school|studiekring|budget|geldzaken|belasting|ruilbeurs|ontmoet|bakkie|babbel|informatieplein|energieloket|checkpunt|slimwijzer|naobuur|ict|schaakclub|po[eë]ziegroep|iphone|android|internet|pensioen|verleiding|historische vereniging|creatief ontmoet|kunst door de brievenbus|facet lab|facet studio|bankieren|digid|kennis met ai|haak aan|kom buurten|week van de opvoeding|taalatelier|regenboogcaf|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
         "genres": {},
         "province": "Drenthe",
         "skipTags": "Digitale vaardigheden|Cursus|Praatgroep|Taal\\b|Peuters"
@@ -13335,11 +13337,12 @@
         "feedUrl": "https://pbzuidwolde.nl/events.ics"
       },
       "defaultPlace": {
+        "venue": "Dorpshuis De Kern",
         "city": "Zuidwolde",
-        "lat": 52.6714,
-        "lon": 6.4278
+        "lat": 53.2622,
+        "lon": 6.6071
       },
-      "note": "Agenda van Plaatselijk Belang Zuidwolde (WordPress Events Manager); de agenda staat als ics-feed op /events.ics (robots.txt staat het toe). Zuidwolde (De Wolden, Drenthe), niet Zuidwolde (Groningen).",
+      "note": "Agenda van Plaatselijk Belang Zuidwolde (WordPress Events Manager); de agenda staat als ics-feed op /events.ics (robots.txt staat het toe). Zuidwolde (De Wolden, Drenthe), niet Zuidwolde (Groningen). Zuidwolde in de gemeente Het Hogeland (Groningen, 9785), niet Zuidwolde in Drenthe.",
       "policyReviewedAt": "2026-10-22"
     },
     {
@@ -13680,7 +13683,8 @@
       "maxDepth": 1,
       "minDelaySeconds": 1,
       "note": "Doarpskultuerhûs De Spylder in Warns: film, theater, muziek en lezingen (Event Espresso). robots.txt (Yoast) staat alles toe. Het seizoensprogramma staat op /programma2526/ (de naam van de pagina is gebleven, de inhoud is seizoen 2026-2027): per uitje een <article> met titel, datum, tijd en zaal. Bij een nieuw seizoen kan de pagina een nieuwe naam krijgen: dan endpointUrl aanpassen. Alleen feiten.",
-      "policyReviewedAt": "2026-10-22"
+      "policyReviewedAt": "2026-10-22",
+      "kindHint": "theater"
     },
     {
       "id": "workum-nl-agenda",
@@ -13729,7 +13733,7 @@
           "time": "<span class=\"activity__time\">\\s*(\\d{1,2}[:.]\\d\\d)",
           "end": "<span class=\"activity__time\">\\s*\\d{1,2}[:.]\\d\\d\\s*-\\s*(\\d{1,2}[:.]\\d\\d)"
         },
-        "skipTitle": "museummaatje|spreekuur|digi|inloop"
+        "skipTitle": "museummaatje|spreekuur|digi|inloop|een stoel erbij|ken jij je buren"
       },
       "defaultPlace": {
         "venue": "De Tiid, Jongemastraat 2",
@@ -13768,7 +13772,7 @@
           "room": "data-reveal=\"location-detail\">\\s*([^<]+?)\\s*</div>"
         },
         "skipUrl": "/vanaf/",
-        "skipTitle": "spreekuur|digitaal caf|digitale overheid|informatiepunt|taalhuis|taalcaf|hulp bij|regelhulp|repair ?caf|wandelgroep|praathuis|vrouwenpraat|samenlezen|creatief caf|mantelzorg|klik ?& ?tik|digiveilig|open maakplaats|terugkomavond|voorleeshalfuurtje|maandelijks voorlezen|leesclub|leeskring|boekenclub|spelletjes|oefenen|bieb ?caf|senior caf|offline caf|koffie en een goed gesprek|cursus|ontmoetingsmoment|hartcheck|informatieavond|puzzelruil|leer programmeren|leer schaken|mediamiddag|webinar|bordspellen|spellenmiddag|ai-doen|juridisch|informatiebijeenkomst",
+        "skipTitle": "spreekuur|digitaal caf|digitale overheid|informatiepunt|taalhuis|taalcaf|hulp bij|regelhulp|repair ?caf|wandelgroep|praathuis|vrouwenpraat|samenlezen|creatief caf|mantelzorg|klik ?& ?tik|digiveilig|open maakplaats|terugkomavond|voorleeshalfuurtje|maandelijks voorlezen|leesclub|leeskring|boekenclub|spelletjes|oefenen|bieb ?caf|senior caf|offline caf|koffie en een goed gesprek|cursus|ontmoetingsmoment|hartcheck|informatieavond|puzzelruil|leer programmeren|leer schaken|mediamiddag|webinar|bordspellen|spellenmiddag|ai-doen|juridisch|informatiebijeenkomst|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
         "genres": {},
         "province": "Fryslân",
         "rooms": {
@@ -13891,7 +13895,8 @@
       "maxDepth": 1,
       "minDelaySeconds": 1,
       "policyReviewedAt": "2026-10-22",
-      "note": "Podium Gorter (Raadhuisstraat 27, Balk): kunst en muziek, 'Programma 2026-2027' op de voorpagina in Divi-blokken: per blok een kop 'Zondag 25 oktober 2026 Aanvang 15.30 uur Entree € 15,00 p.p.' en de naam in een h1 (met ondertitel in h3). Geen aparte pagina per voorstelling, dus de link is de voorpagina."
+      "note": "Podium Gorter (Raadhuisstraat 27, Balk): kunst en muziek, 'Programma 2026-2027' op de voorpagina in Divi-blokken: per blok een kop 'Zondag 25 oktober 2026 Aanvang 15.30 uur Entree € 15,00 p.p.' en de naam in een h1 (met ondertitel in h3). Geen aparte pagina per voorstelling, dus de link is de voorpagina.",
+      "kindHint": "theater"
     },
     {
       "id": "lawei-nl-web",
@@ -14289,7 +14294,7 @@
             "city": "Grou"
           }
         },
-        "skipTitle": "spreekuur|inloop|taalkamer|language caf|wereldcaf|loket|meet ?up|samen lezen|mei-inoar|voorleespicknick|webinar|repair|opvoedpunt|talentgesprek|UP!-gesprek|voorlichting|Heel Nederland Eet|serie$|puber|Smartphonevrij",
+        "skipTitle": "spreekuur|inloop|taalkamer|language caf|wereldcaf|loket|meet ?up|samen lezen|mei-inoar|voorleespicknick|webinar|repair|opvoedpunt|talentgesprek|UP!-gesprek|voorlichting|Heel Nederland Eet|serie$|puber|Smartphonevrij|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
         "skipTags": "spreekuur&amp;advies|digitaal&amp;computer"
       },
       "defaultPlace": {
@@ -14396,7 +14401,7 @@
             "city": "Buitenpost"
           }
         },
-        "skipTitle": "spreekuur|inloop|taalkamer|language caf|wereldcaf|loket|meet ?up|samen lezen|mei-inoar|voorleespicknick|webinar|repair|opvoedpunt|talentgesprek|UP!-gesprek|voorlichting|Heel Nederland Eet|serie$|puber|Smartphonevrij|Bildts Aigene|Koffie met",
+        "skipTitle": "spreekuur|inloop|taalkamer|language caf|wereldcaf|loket|meet ?up|samen lezen|mei-inoar|voorleespicknick|webinar|repair|opvoedpunt|talentgesprek|UP!-gesprek|voorlichting|Heel Nederland Eet|serie$|puber|Smartphonevrij|Bildts Aigene|Koffie met|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
         "skipTags": "Digitaal en computer|Geld &amp; Recht"
       },
       "defaultPlace": {
@@ -14502,7 +14507,8 @@
           "date": "bg-primary[^>]*>\\s*([0-9]{1,2}-[0-9]{1,2}-20[0-9]{2})",
           "title": "highlight__title[^>]*>(.*?)</h2>",
           "time": "text-muted[^>]*>\\s*([0-9]{1,2}[.:][0-9]{2})"
-        }
+        },
+        "skipTitle": "swingo"
       },
       "defaultPlace": {
         "venue": "Doarpshûs De Nije Warf",
@@ -14537,7 +14543,7 @@
           "room": "data-reveal=\"location-detail\">([^<]+)<",
           "tags": "<ul class=\"tags\">(.*?)</ul>"
         },
-        "skipTitle": "digitaal caf|digid|digiveilig|computer|tablet|smartphone|informatiepunt|taalhuis|taalcaf|hulp bij|klik ?& ?tik|spreekuur|inloop|mobiele bibliotheek|nalatenschap|handwerk|breicaf|schrijfcaf|mantelzorg|repair ?caf|fraude|belastingaangifte|cursus|oefenen|samen lezen|leesclub|leeskring|boekenclub|voorleesuur|peuter|dreumes|baby|nederlands leren|ontmoet|digi|brei|haak|doarpskeamer|wollige woensdag|hartcheck|valpreventie|pati[eë]ntenportaal|^voorleespret$|^mini voorleespret|knutselclub|eetgedrag|zintuigen",
+        "skipTitle": "digitaal caf|digid|digiveilig|computer|tablet|smartphone|informatiepunt|taalhuis|taalcaf|hulp bij|klik ?& ?tik|spreekuur|inloop|mobiele bibliotheek|nalatenschap|handwerk|breicaf|schrijfcaf|mantelzorg|repair ?caf|fraude|belastingaangifte|cursus|oefenen|samen lezen|leesclub|leeskring|boekenclub|voorleesuur|peuter|dreumes|baby|nederlands leren|ontmoet|digi|brei|haak|doarpskeamer|wollige woensdag|hartcheck|valpreventie|pati[eë]ntenportaal|^voorleespret$|^mini voorleespret|knutselclub|eetgedrag|zintuigen|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
         "rooms": {
           "Bibliotheek Buitenpost": {
             "venue": "Bibliotheek Buitenpost",
@@ -14632,7 +14638,7 @@
           "room": "data-reveal=\"location-detail\">([^<]+)<",
           "tags": "<ul class=\"tags\">(.*?)</ul>"
         },
-        "skipTitle": "digitaal caf|digid|digiveilig|computer|tablet|smartphone|informatiepunt|taalhuis|taalcaf|hulp bij|klik ?& ?tik|spreekuur|inloop|mobiele bibliotheek|nalatenschap|handwerk|breicaf|schrijfcaf|mantelzorg|repair ?caf|fraude|belastingaangifte|cursus|oefenen|samen lezen|leesclub|leeskring|boekenclub|voorleesuur|peuter|dreumes|baby|nederlands leren|ontmoet|digi|brei|haak|doarpskeamer|wollige woensdag|hartcheck|valpreventie|pati[eë]ntenportaal|^voorleespret$|^mini voorleespret|knutselclub|eetgedrag|zintuigen|taalkamer|voorleespicknick|boekstart|laaggeletterd|kom maar kipjes",
+        "skipTitle": "digitaal caf|digid|digiveilig|computer|tablet|smartphone|informatiepunt|taalhuis|taalcaf|hulp bij|klik ?& ?tik|spreekuur|inloop|mobiele bibliotheek|nalatenschap|handwerk|breicaf|schrijfcaf|mantelzorg|repair ?caf|fraude|belastingaangifte|cursus|oefenen|samen lezen|leesclub|leeskring|boekenclub|voorleesuur|peuter|dreumes|baby|nederlands leren|ontmoet|digi|brei|haak|doarpskeamer|wollige woensdag|hartcheck|valpreventie|pati[eë]ntenportaal|^voorleespret$|^mini voorleespret|knutselclub|eetgedrag|zintuigen|taalkamer|voorleespicknick|boekstart|laaggeletterd|kom maar kipjes|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
         "rooms": {
           "dbieb Burgum": {
             "venue": "dbieb Burgum",
@@ -14689,7 +14695,8 @@
       },
       "maxPages": 1,
       "note": "Theateragenda van Theater/Zalencentrum De Colle (Gerrit Bleekerstraat 3, Kollum; programmaraad van Stichting Kollum Promotie) als kaartjes: titel (h2), 'zaterdag 24 oktober 2026 | 11:00 (zaal open ...)' (h3), prijs. Kaartverkoop via MGTickets; we nemen alleen de feiten over van de eigen site. robots.txt staat alles toe (Crawl-delay 5).",
-      "policyReviewedAt": "2026-10-22"
+      "policyReviewedAt": "2026-10-22",
+      "kindHint": "theater"
     },
     {
       "id": "maskelynbuitenpost-nl-web",
@@ -14849,7 +14856,7 @@
           "url": "<a href=\"([^\"]+)\"",
           "end": "\\d{1,2}:\\d{2}\\s*-\\s*(\\d{1,2}:\\d{2})\\s*uur"
         },
-        "skipTitle": "clinic|schaatsles|training"
+        "skipTitle": "clinic|schaatsles|training|testavond"
       },
       "defaultPlace": {
         "venue": "Elfstedenhal",
