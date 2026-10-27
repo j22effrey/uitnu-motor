@@ -346,6 +346,9 @@ VILLAGE_ROUTINE = re.compile(
     # 'Keallepoat kafee', 'Spieksters aan toavel', 'Heel Spijk bakt'); een kookworkshop blijft staan.
     r"|^[\w'-]+ eten$|^eetcaf|\bkook(?:t|en) met\b|^(?:[\w-]+ )?koken\b(?!.*(?:workshop|masterclass|demonstratie|wedstrijd|kinder|kids))"
     r"|(?<!filosofysk )\bkafee\b|^heel \w+ bakt\b|\b(?:aan|oan) (?:tafel|toavel)\b(?!.*\bsint)|koningsontbijt"
+    # Een bordspel- of spelletjesavond ('Bordspelavond voor jong en oud') is een vaste ontmoeting; een toernooi
+    # of een bordspellencafé blijft staan.
+    r"|^bordspel ?(?:avond|middag)\b|^spelletjes ?(?:avond|middag)\b"
     # Bingo in het dorp ('Bingo avond', 'Kinderbingo', 'Najaarsbingo van de Oranjevereniging'); een muziek- of dragbingo
     # in een club of café blijft staan.
     r"|^(?!.*\b(?:show|drag|loco|rave|party|fout|silent|quiz|disco|kroeg)\b).*\b\w*bingo\w*\b")
@@ -368,7 +371,7 @@ SERVICE_OR_MEETING = re.compile(
     r"|\baed\b|reanimatie\w*|\behbo\b|\bbhv\b|verkeersregels|\bdigid\b|\bop de computer\b|veilige wachtwoorden"
     r"|\bcursus:? (?:computer|android|ipad|iphone|tablet|laptop|smartphone|fotoboek|foto'?s ordenen|verder werken)|\borde op je \w+"
     r"|dorpsvisie|omgevingsvisie|woningbouw\w*|\w*bouwplan\w*|schetsplan|conceptontwerp|werksessie|inspraak\w*|klankbord\w*"
-    r"|informatie ?(?:avond|bijeenkomst|middag|ochtend)|\binfo ?(?:avond|bijeenkomst)\b|voorlichting\w*"
+    r"|^discussie ?(?:avond|middag|bijeenkomst)|informatie ?(?:avond|bijeenkomst|middag|ochtend)|\binfo ?(?:avond|bijeenkomst)\b|voorlichting\w*"
     r"|\benergie ?(?:delen|loket|coach\w*|cafe)\b|subsidie\w*|\bondernemers ?(?:avond|cafe|ontbijt)\b|\bnetwerk ?(?:borrel|bijeenkomst)\b"
     r"|\bnieuwjaars ?(?:receptie|bijeenkomst|visite|byienkomst)\b|basisschool\w*|\bopen lessen\b|\bouderavond\b|\w*reunie\w*"
     r"|vrienden ?dag|\bgroep \d(?: ?[-/] ?\d)?\b"
@@ -675,7 +678,9 @@ SWEEP_NOT_OUTING = re.compile(
 # Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
 SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
                         r"|kinderen in een scheiding|computercursus|\bdigi ?(?:vitaler|sterker|taal)\b|zorgverzekeraar"
-                        r"|digitale nalatenschap|raadplegen van digitale|\bseniorweb\b")
+                        r"|digitale nalatenschap|raadplegen van digitale|\bseniorweb\b"
+                        # Een inloopspreekuur voor hulp met telefoon of computer ('Walk-in Smartlab' in Forum).
+                        r"|^walk-?in (?:smartlab|spreekuur|hulp|inloop|computer|telefoon|ipad|lab)\b")
 # Het feest van de eigen club na de laatste thuiswedstrijd ('Létste thúswedstrydfeest VV Suameer').
 SWEEP_CLUB_PARTY = re.compile(r"thu(?:is|s)wedstr\w*feest")
 SWEEP_PUBLIC = re.compile(r"lezing|debat|excursie|wandel\w*|workshop|feest|party|\bdans|\blive\b|voorstelling")
