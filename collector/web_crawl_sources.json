@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-22",
+  "updated": "2026-10-27",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -14895,6 +14895,254 @@
       "kindHint": "sport",
       "note": "IJshockey (Eredivisie/BeNe League en Beker): thuiswedstrijden in Thialf uit de tabellen op /wedstrijden/ (datum, competitie, tijd, thuis, uit). Alleen rijen met de Flyers als thuisclub; oefenwedstrijden staan in een andere tabel en vallen weg. De .ics op de site bevat ook uitwedstrijden (ics kent geen filter).",
       "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "garsthuizen-info-web",
+      "name": "'t Binhoes, dorpshuis Startenhuizen en Garsthuizen",
+      "rootUrl": "https://garsthuizen.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.garsthuizen.info/"
+      },
+      "activatedFromCandidate": "garsthuizen.info",
+      "defaultPlace": {
+        "city": "Garsthuizen"
+      },
+      "policyReviewedAt": "2026-10-23"
+    },
+    {
+      "id": "drachtstercompagnie-frl-web",
+      "name": "Drachtstercompagnie",
+      "rootUrl": "https://drachtstercompagnie.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://drachtstercompagnie.frl/"
+      },
+      "activatedFromCandidate": "drachtstercompagnie.frl",
+      "defaultPlace": {
+        "city": "Drachtstercompagnie",
+        "lat": 53.13333,
+        "lon": 6.13333
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "eextinfo-nl-web",
+      "name": "Eext",
+      "rootUrl": "https://www.eextinfo.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.eextinfo.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "eextinfo.nl",
+      "defaultPlace": {
+        "city": "Eext",
+        "lat": 53.0169,
+        "lon": 6.7339
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "leermens-net-web",
+      "name": "Leermens",
+      "rootUrl": "https://www.leermens.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.leermens.net/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "leermens.net",
+      "defaultPlace": {
+        "city": "Leermens",
+        "lat": 53.3458,
+        "lon": 6.7975
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "niezijl-com-web",
+      "name": "Niezijlster Courant -",
+      "rootUrl": "https://niezijl.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "niezijl.com",
+      "defaultPlace": {
+        "city": "Niezijl",
+        "lat": 53.26667,
+        "lon": 6.34028
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "roodeschool-com-web",
+      "name": "Roodeschool.com",
+      "rootUrl": "https://roodeschool.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://roodeschool.com/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "roodeschool.com",
+      "defaultPlace": {
+        "city": "Roodeschool",
+        "lat": 53.4206,
+        "lon": 6.7636
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "vries-nu-web",
+      "name": "Dé website met nieuws voor, door en over Vries",
+      "rootUrl": "https://www.vries.nu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.vries.nu/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "vries.nu",
+      "defaultPlace": {
+        "city": "Vries",
+        "lat": 53.0733,
+        "lon": 6.5769
+      },
+      "policyReviewedAt": "2026-10-26"
+    },
+    {
+      "id": "akkrum-net-web",
+      "name": "- Akkrum.net, de nieuwssite van Akkrum en Nes",
+      "rootUrl": "https://akkrum.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://akkrum.net/"
+      },
+      "activatedFromCandidate": "akkrum.net",
+      "defaultPlace": {
+        "city": "Akkrum",
+        "lat": 53.05,
+        "lon": 5.83611
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "bantega-net-web",
+      "name": "Bantega",
+      "rootUrl": "https://www.bantega.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.bantega.net/"
+      },
+      "activatedFromCandidate": "bantega.net",
+      "defaultPlace": {
+        "city": "Bantega",
+        "lat": 52.8422,
+        "lon": 5.7964
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "bontebok-frl-web",
+      "name": "Bontebok",
+      "rootUrl": "https://www.bontebok.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.bontebok.frl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "bontebok.frl",
+      "defaultPlace": {
+        "city": "Bontebok",
+        "lat": 52.9631,
+        "lon": 6.0256
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "pbgorredijk-nl-web",
+      "name": "Plaatselijk Belang Gorredijk",
+      "rootUrl": "https://www.pbgorredijk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pbgorredijk.nl/event-details/sinterklaas-intocht-gorredijk"
+      },
+      "activatedFromCandidate": "pbgorredijk.nl",
+      "defaultPlace": {
+        "city": "Gorredijk",
+        "lat": 53.0033,
+        "lon": 6.0697
+      },
+      "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "skarsterbrege-nl-web",
+      "name": "Skarsterbrege",
+      "rootUrl": "https://www.skarsterbrege.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://www.skarsterbrege.nl/agenda/?ical=1"
+      },
+      "activatedFromCandidate": "skarsterbrege.nl",
+      "defaultPlace": {
+        "city": "Scharsterbrug",
+        "lat": 52.9431,
+        "lon": 5.7797
+      },
+      "policyReviewedAt": "2026-10-27"
     }
   ]
 }
