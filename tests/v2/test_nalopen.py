@@ -157,3 +157,28 @@ def test_kerkdiensten_huwelijken_en_kaatsmuseum():
     for title in ("Huwelijk", "Kerkzangdienst", "Advent viering", "Reformatie zondag", "Kerstnachtviering"):
         assert not_an_outing(_event(title)), title
     assert not not_an_outing(_event("Adventsconcert met koor"))
+
+
+def test_soortenronde_oktober_2026():
+    # Volledige ronde over alle soorten (27 oktober 2026): algemene regels, met uitzonderingen voor echte uitjes.
+    from pipeline.v2.classify import classify
+    kind = lambda title: classify({"title": title})["kind"]
+    assert kind("Tennis op gravelbaan Nes") == "sport"
+    assert kind("Woezel & Pip De Musical – Feest in de Tovertuin (2+)") == "kinderen"
+    assert kind("De grote Sinterklaasshow") == "kinderen"
+    assert kind("Intocht Sinterklaas") == "feest"
+    assert kind("Krezip – Theatertour") == "muziek"
+    assert kind("Nirvana Unplugged") == "muziek"
+    assert kind("Sunday Jam") == "muziek"
+    assert kind("De Misdaadpodcast Live") == "lezing"
+    assert kind("Topstukken Klassieke Muziek: Mahler") == "lezing"
+    assert kind("Daddy Cool in De Koornbeurs") != "markt"
+    assert kind("Docs: Cutting Through Rocks") == "film"
+    assert kind("Zitmaaierrace Ureterp") == "sport"
+    assert kind("Amazing Grace") != "sport"
+    assert kind("90-jarig jubileum CSVO") == "feest"
+    assert kind("Jandino – De grote jubileumshow") != "feest"
+    assert kind("Kerstworkshop op een houten schaats") == "lezing"
+    for title in ("Fiering fanút de Martini tsjerke", "2de Advent", "Gedachteniszondag", "Scoor je tickets voor Avondvibes"):
+        assert not_an_outing(_event(title)), title
+    assert not not_an_outing(_event("Adventsconcert in de Martinikerk"))
