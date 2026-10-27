@@ -96,6 +96,21 @@
    "naam": "^lbe\\b",
    "soort": "muziek",
    "reden": "LBE is het Luthers Bach Ensemble: concerten met koor en orkest (ook de familievoorstelling van de Matthäus Passion is een concert)."
+  },
+  {
+   "naam": "^oerol\\b",
+   "soort": "festival",
+   "reden": "Oerol op Terschelling: tien dagen theater, muziek en kunst op tientallen plekken over het hele eiland, met veel verschillende makers."
+  },
+  {
+   "naam": "into the great wide open",
+   "soort": "festival",
+   "reden": "Muziekfestival op Vlieland met meerdere podia en veel verschillende artiesten."
+  },
+  {
+   "naam": "bierfestival",
+   "soort": "eten",
+   "reden": "Een (speciaal)bierfestival is proeven bij brouwers: 'Eten en drinken', geen festival met podia (regel 3)."
   }
  ],
  "uitjes": {

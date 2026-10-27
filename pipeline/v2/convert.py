@@ -292,7 +292,7 @@ def content_hash(event: dict) -> str:
 
 
 _STOPWORDS = {"de", "het", "een", "en", "van", "in", "op", "te", "bij", "aan", "voor", "met", "the", "of", "and",
-              "support", "live", "feat", "presenteert", "presents"}
+              "support", "live", "feat", "presenteert", "presents", "voorstelling", "concert", "lezing"}
 
 
 def _title_words(title: str, city: str, venue: str = "") -> set[str]:
@@ -322,6 +322,26 @@ def _same_slot(a: dict, b: dict) -> bool:
     return not (oa.get("startTime") and ob.get("startTime") and oa["startTime"] != ob["startTime"])
 
 
+def _same_city_time(a: dict, b: dict) -> bool:
+    """Zelfde plaats, dagen en een bekende, gelijke begintijd."""
+    oa, ob = a["occurrences"][0], b["occurrences"][0]
+    city = slugify(a["venue"].get("city") or "")
+    return (bool(a["venue"].get("city")) and city == slugify(b["venue"].get("city") or "") and _same_slot(a, b)
+            and bool(oa.get("startTime")) and oa.get("startTime") == ob.get("startTime"))
+
+
+def _vague_twin(a: dict, b: dict) -> bool:
+    """De ene kant noemt alleen de plaats en geen tijd (de dorpsagenda: 'Voorstelling X' in Workum), de andere
+    heeft een echte zaal (Kultuerhús Klameare): zelfde plaats en dagen."""
+    def vague(e: dict) -> bool:
+        return _venue_key(e) is None and not e["occurrences"][0].get("startTime")
+    oa, ob = a["occurrences"][0], b["occurrences"][0]
+    days = oa["date"] == ob["date"] and (oa.get("endDate") or oa["date"]) == (ob.get("endDate") or ob["date"])
+    city = slugify(a["venue"].get("city") or "")
+    return (days and bool(city) and city == slugify(b["venue"].get("city") or "")
+            and (vague(a) != vague(b)) and bool(_venue_key(a) or _venue_key(b)))
+
+
 def _same_name(a: set[str], b: set[str]) -> bool:
     """Twee namen voor hetzelfde uitje: de ene naam zit helemaal in de andere ('HAEVN' en 'HAEVN + support'),
     of ze delen minstens twee woorden. Eén gedeeld woord is te weinig in een zaal met meerdere zalen: in De
@@ -336,16 +356,29 @@ def merge_same_venue(events: list[dict]) -> list[dict]:
     for event in events:
         key = _venue_key(event)
         twin = None
+        words = _title_words(event["title"], event["venue"].get("city"), event["venue"].get("name"))
         if key:
-            words = _title_words(event["title"], event["venue"].get("city"), event["venue"].get("name"))
             for other in result:
                 if (_venue_key(other) == key and _same_slot(other, event)
                         and _same_name(words, _title_words(other["title"], other["venue"].get("city"), other["venue"].get("name")))):
                     twin = other
                     break
+        if twin is None and words:
+            # Hetzelfde uitje op twee websites (het dorp en het theater: 'Voorstelling Laurens de Groot – HUN' en
+            # 'Laurens de Groot – HUN'), met een andere zaalnaam: zelfde plaats, dag en begintijd, en de ene naam
+            # zit helemaal in de andere. Alleen met een echte zaal aan beide kanten (niet 'Centrum Delfzijl').
+            for other in result:
+                if _same_city_time(other, event) if (key and _venue_key(other)) else _vague_twin(other, event):
+                    theirs = _title_words(other["title"], other["venue"].get("city"), other["venue"].get("name"))
+                    if theirs and (words <= theirs or theirs <= words):
+                        twin = other
+                        break
         if twin is None:
             result.append(event)
             continue
+        if _venue_key(twin) is None and _venue_key(event):
+            # De zaal en de naam van de zaal zelf zijn preciezer dan die van de dorpsagenda.
+            twin["venue"], twin["title"] = event["venue"], event["title"]
         known = {s["url"] for s in twin["sources"]}
         twin["sources"] += [s for s in event["sources"] if s["url"] not in known]
         occ, extra = twin["occurrences"][0], event["occurrences"][0]

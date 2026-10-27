@@ -34,6 +34,9 @@ LEGACY_HINTS: dict[str, str] = {
     "festival": "festival",
     "sport": "sport",
     "muziek": "muziek",
+    # losse uitjes in data/events.json gebruiken de soorten zelf als categorie
+    "theater": "theater", "film": "film", "kunst": "kunst", "lezing": "lezing", "natuur": "natuur",
+    "kinderen": "kinderen", "eten": "eten",
 }
 
 # Bij 'podium en cultuur' wist de eerste pipeline vaak de discipline al (soms van de organisator zelf).

@@ -425,7 +425,7 @@
       "name": "De Melkfabriek",
       "rootUrl": "http://www.demelkfabriek.eu/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -439,7 +439,8 @@
         "venue": "De Melkfabriek",
         "city": "Bunne"
       },
-      "kindHint": "theater"
+      "kindHint": "theater",
+      "disabledReason": "De Melkfabriek is per 1 juli 2026 gesloten ('De Melkfabriek: Het Einde!'); agenda leeg."
     },
     {
       "id": "institutfrancais-nl-web",
@@ -485,20 +486,40 @@
       "rootUrl": "https://www.neushoorn.nl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://www.neushoorn.nl/programma/"
+        "endpointUrl": "https://www.neushoorn.nl/programma",
+        "card": "<div[^>]*class=\"program_item\"",
+        "fields": {
+          "date": "class=\"program_date\">([^<]+)<",
+          "time": "class=\"program_time\">\\s*(\\d{1,2}[:.]\\d\\d)",
+          "title": "class=\"program_title\">(.*?)</h3>",
+          "url": "href=\"(/events/[^\"]+)\"",
+          "genre": "fs-list-field=\"hoofdgenre\"[^>]*>([^<]+)<",
+          "venue": "class=\"program_title\">[^<]*?@\\s*([^<]+)</h3>"
+        },
+        "genres": {
+          "Pop": "MusicEvent",
+          "Rock": "MusicEvent",
+          "Hiphop": "MusicEvent",
+          "Dance": "MusicEvent",
+          "Metal": "MusicEvent",
+          "Comedy": "ComedyEvent"
+        },
+        "pageParam": "d9baa62c_page",
+        "maxPages": 4,
+        "dropFromTitle": "\\s*@\\s*[^<]+$"
       },
-      "activatedFromCandidate": "neushoorn.nl",
-      "policyReviewedAt": "2026-10-11",
+      "maxPages": 1,
+      "minDelaySeconds": 1,
       "defaultPlace": {
         "venue": "Neushoorn",
-        "city": "Leeuwarden"
+        "city": "Leeuwarden",
+        "lat": 53.2058,
+        "lon": 5.7956
       },
-      "kindHint": "muziek"
+      "kindHint": "muziek",
+      "policyReviewedAt": "2026-10-22"
     },
     {
       "id": "openluchttheatersellingen-nl-web",
@@ -735,7 +756,7 @@
       "name": "Tweestryd",
       "rootUrl": "https://www.wildlands.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -744,7 +765,8 @@
         "agendaUrl": "https://www.wildlands.nl/dagprogramma"
       },
       "activatedFromCandidate": "wildlands.nl",
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "disabledReason": "Leest alleen de dagelijkse dierpresentaties van /dagprogramma (met verkeerde datums zoals 23-03-2026 en de naam 'Tweestryd'); geen echte uitjes. Grote evenementen (WILDnights) als los uitje."
     },
     {
       "id": "klassiekeacademie-nl-web",
@@ -859,17 +881,52 @@
     {
       "id": "harmonie-nl-web",
       "name": "Stadsschouwburg de Harmonie",
-      "rootUrl": "https://www.harmonie.nl/",
+      "rootUrl": "https://harmonie.nl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "json_api",
       "extractorConfig": {
-        "agendaUrl": "https://harmonie.nl/laat-je-inspireren/van-leeuwarden-naar-de-tijd-van-de-t-rex"
+        "endpointUrl": "https://harmonie.nl/api/agenda",
+        "method": "POST",
+        "form": {
+          "set": "19"
+        },
+        "monthParams": {
+          "month": "maand",
+          "year": "jaar",
+          "monthBase": 0,
+          "months": 13
+        },
+        "items": "items",
+        "title": [
+          "titel"
+        ],
+        "startDate": "datum",
+        "id": "id",
+        "genre": "genre",
+        "urlTemplate": "/agenda/{slug}/{id}",
+        "skipField": "genre",
+        "skipValue": "^Cursus$",
+        "genres": {
+          "Cabaret": "ComedyEvent",
+          "Comedy": "ComedyEvent",
+          "Klassiek": "MusicEvent",
+          "Muziek": "MusicEvent",
+          "Opera": "MusicEvent",
+          "Musical": "TheaterEvent",
+          "Muziektheater": "TheaterEvent",
+          "Toneel": "TheaterEvent",
+          "Dans": "DanceEvent",
+          "Jeugd & Familie": "ChildrensEvent",
+          "Circus": "TheaterEvent",
+          "Visueel theater": "TheaterEvent",
+          "Jongerentheater": "TheaterEvent",
+          "Literair": "LiteraryEvent",
+          "Theatercollege": "EducationEvent",
+          "Festival": "Festival"
+        },
+        "skipTitle": "\\bcursus\\b"
       },
-      "activatedFromCandidate": "harmonie.nl",
       "defaultPlace": {
         "venue": "Stadsschouwburg de Harmonie",
         "city": "Leeuwarden",
@@ -877,7 +934,8 @@
         "lon": 5.7900791
       },
       "kindHint": "theater",
-      "policyReviewedAt": "2026-10-12"
+      "note": "Het programma komt uit /api/agenda (POST, formulier maand=0..11 (januari=0) en jaar, plus set=19; zonder token werkt het). Per maand 16-45 voorstellingen. Geen begintijd in de lijst; die staat in de JSON-LD (subEvent.startDate) op de pagina /agenda/{slug}/{id}. VEREIST UITBREIDING van json_api: method/form (POST), monthParams (per maand bladeren) en urlTemplate. De oude instelling (html_agenda_dutch op een 'laat-je-inspireren'-pagina) vond 4 uitjes, waarvan 3 met de toegankelijkheidspagina als link.",
+      "policyReviewedAt": "2026-10-22"
     },
     {
       "id": "huizemaas-nl-web",
@@ -2222,7 +2280,7 @@
       "name": "Dorpshuis Peize",
       "rootUrl": "https://dorpshuispeize.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -2236,7 +2294,8 @@
         "lat": 53.1478,
         "lon": 6.4961
       },
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "disabledReason": "Evenementenkalender van Dorpshuis Peize is sinds februari 2020 leeg; de rest van de site zijn vaste lessen en clubs."
     },
     {
       "id": "dorpshuisusquert-nl-web",
@@ -2491,22 +2550,31 @@
     },
     {
       "id": "holwert-frl-web",
-      "name": "Holwert",
+      "name": "Holwert (dorpsagenda)",
       "rootUrl": "https://www.holwert.frl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "jsonld_event",
-      "extractorConfig": {},
-      "activatedFromCandidate": "holwert.frl",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.holwert.frl/agenda/",
+        "card": "<li class=\"dorpsapp-agenda-item\">",
+        "fields": {
+          "url": "class=\"dorpsapp-agenda-link\" href=\"([^\"]+)\"",
+          "date": "class=\"dorpsapp-agenda-date\"[^>]*>([^<]+)</time>",
+          "time": "class=\"dorpsapp-agenda-date\"[^>]*>[^<]*?20[0-9]{2},\\s*([0-9]{1,2}:[0-9]{2})",
+          "title": "class=\"dorpsapp-agenda-title\">(.*?)</span>",
+          "venue": "class=\"dorpsapp-agenda-location\">(.*?)</span>"
+        },
+        "skipTitle": "vergadering|klaverjas|biljart|bingo|verkoop|herdenking|aksje|warmtetour"
+      },
       "defaultPlace": {
         "city": "Holwert",
         "lat": 53.3683,
         "lon": 5.9006
       },
-      "policyReviewedAt": "2026-10-12"
+      "maxPages": 1,
+      "note": "Dorpsagenda van Holwert (Dorpsbelang, plugin 'dorpsapp') als lijst: '<time>vrijdag 23 oktober 2026, 20:00</time>' of een periode ('2 september 2026 – 25 oktober 2026'), titel en plek. Was jsonld_event, maar de site heeft geen schema.org meer (0 uitjes, en de crawl liep vast). robots.txt staat alles toe behalve wp-admin. Vergaderingen, bingo, klaverjassen, biljarten en verkoopacties vallen weg.",
+      "policyReviewedAt": "2026-10-22"
     },
     {
       "id": "holwierde-com-web",
@@ -2534,7 +2602,7 @@
       "name": "Dorpsbelangen Hoogersmilde",
       "rootUrl": "https://www.hoogersmilde.eu/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -2548,7 +2616,8 @@
         "lat": 52.9063,
         "lon": 6.39391
       },
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "disabledReason": "Agenda van hoogersmilde.eu wordt niet meer bijgewerkt (Drenthe-ronde, 22 oktober 2026)."
     },
     {
       "id": "hooghalen-nu-web",
@@ -2786,7 +2855,7 @@
       "name": "Nij Beets Doarpsite",
       "rootUrl": "https://www.nijbeets.info/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -2800,7 +2869,8 @@
         "lat": 53.0697,
         "lon": 6.0028
       },
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "disabledReason": "nijbeets.info is 'tijdelijk offline in verband met onderhoud' en /agenda/ geeft 404; het dorp gebruikt nu nijbeets.frl."
     },
     {
       "id": "noordlaren-eu-web",
@@ -3099,7 +3169,7 @@
       "name": "Roden",
       "rootUrl": "https://roden.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -3111,7 +3181,8 @@
         "lat": 53.1383,
         "lon": 6.4325
       },
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-10-12",
+      "disabledReason": "Agenda van roden.nl toont alleen uitjes uit 2024; niet meer bijgewerkt (Drenthe-ronde, 22 oktober 2026)."
     },
     {
       "id": "roodeschool-net-web",
@@ -3308,24 +3379,32 @@
     },
     {
       "id": "terherne-nl-web",
-      "name": "Dorpsinformatie Terherne",
+      "name": "Dorpsinformatie Terherne (Plaatselijk Belang)",
       "rootUrl": "https://terherne.nl/",
-      "role": "venue",
+      "role": "organizer",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://terherne.nl/"
+        "endpointUrl": "https://terherne.nl/",
+        "card": "<tr><td>",
+        "fields": {
+          "date": "^<tr><td>(.*?)</td>",
+          "title": "^<tr><td>.*?</td><td>(.*?)</td>",
+          "venue": "^<tr><td>(?:.*?</td><td>){2}(.*?)</td>"
+        },
+        "skipTitle": "biljart|vergadering|start inschrijving|start vaar",
+        "province": "Fryslân"
       },
-      "activatedFromCandidate": "terherne.nl",
       "defaultPlace": {
-        "city": "Terhorne",
-        "lat": 53.0403,
-        "lon": 5.7808
+        "city": "Terherne",
+        "lat": 53.0636,
+        "lon": 5.7863
       },
-      "policyReviewedAt": "2026-10-12"
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "policyReviewedAt": "2026-10-22",
+      "note": "De dorpssite zet een 'Jaaroverzicht per maand' als tabellen (datum | naam | plek) op de voorpagina. Vervangt html_agenda_dutch, dat alleen de kop 'Nieuws uit Terherne' als uitje las. Datums zonder jaar ('zaterdag 21 nov.'): when.py kiest de eerstvolgende; een periode als 'vr 11, za 12 en zo 13 dec.' wordt alleen de eerste dag."
     },
     {
       "id": "ternaard-nu-web",
@@ -3992,7 +4071,8 @@
         "lat": 53.2139415,
         "lon": 5.9433814
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "kindHint": "theater"
     },
     {
       "id": "tryater-nl-web",
@@ -4061,7 +4141,7 @@
       "name": "Tynaarlo",
       "rootUrl": "https://www.tynaarlo.nl/",
       "role": "organizer",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -4075,7 +4155,8 @@
         "city": "Zuidlaren",
         "lat": 53.0938,
         "lon": 6.683
-      }
+      },
+      "disabledReason": "Programmapagina van de Zuidlaardermarkt 2026 (zonder jaartal): na de markt leest de motor de voorbije dagen als oktober 2027. Rond september 2027 weer aanzetten als het nieuwe programma er staat (Drenthe-ronde, 22 oktober 2026)."
     },
     {
       "id": "bloemencorsoeelde-nl-web",
@@ -4162,20 +4243,39 @@
       "rootUrl": "https://www.ttcircuit.com/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://www.ttcircuit.com/"
+        "endpointUrl": "https://www.ttcircuit.com/evenementen",
+        "pageParam": "p",
+        "firstPage": 1,
+        "maxPages": 6,
+        "card": "<div class=\"card card-row group\">",
+        "fields": {
+          "title": "<h2 class=\"!mb-0[^\"]*\">(.*?)</h2>",
+          "tags": "<div class=\"bold font-primary uppercase italic\">(.*?)</div>",
+          "date": "</h2><div[^>]*><div>(.*?)</div>",
+          "room": "<div class=\"bold text-yellow[^\"]*\"><div>(.*?)</div>",
+          "url": "<a href=\"([^\"]+)\""
+        },
+        "skipTags": "trackday|vrije training|racecursus|rijtraining|opleiding",
+        "genres": {
+          "Publieksevenement": "SportsEvent",
+          "Sportevenement": "SportsEvent"
+        },
+        "rooms": {
+          "TT Circuit": "TT Circuit Assen",
+          "TT Junior Track": "TT Junior Track (TT Circuit Assen)"
+        }
       },
-      "activatedFromCandidate": "ttcircuit.com",
       "defaultPlace": {
+        "venue": "TT Circuit Assen",
         "city": "Assen",
         "lat": 52.9592,
         "lon": 6.5236
       },
-      "policyReviewedAt": "2026-10-13"
+      "kindHint": "sport",
+      "note": "Vervangt html_agenda_dutch op de voorpagina (die las ook menu's en externe links als 'KNMV'). /evenementen heeft kaartjes per evenement (soort, naam, datum, baan, link) met ?p=2 enz. Trackdays, vrije trainingen en racecursussen zijn voor deelnemers: weg via skipTags; publieks- en sportevenementen blijven.",
+      "policyReviewedAt": "2026-10-22"
     },
     {
       "id": "visserijdagenharlingen-nl-web",
@@ -4350,7 +4450,7 @@
       "name": "Dorpsbelang Iens / Edens",
       "rootUrl": "https://www.dorpsbelangiens.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -4364,7 +4464,8 @@
         "lat": 53.1222,
         "lon": 5.6139
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "De agenda van Dorpsbelang Iens is sinds 2024 leeg ('Er zijn geen aankomende evenementen'); de ics-link geeft HTML (nagekeken 22 oktober 2026)."
     },
     {
       "id": "dorpshuisechtenerbrug-nl-web",
@@ -6042,7 +6143,7 @@
       "name": "Westerveld",
       "rootUrl": "https://www.gemeentewesterveld.nl/",
       "role": "organizer",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -6051,7 +6152,8 @@
         "agendaUrl": "https://www.gemeentewesterveld.nl/"
       },
       "activatedFromCandidate": "gemeentewesterveld.nl",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Gemeentewebsite zonder evenementenkalender; html_agenda_dutch leest alleen nieuws en raadsvergaderingen (0 uitjes). Evenementen van de gemeente staan in het Gemeenteblad (vergunningen)."
     },
     {
       "id": "grootegast-nl-web",
@@ -6104,7 +6206,7 @@
       "name": "Noardeast-Fryslân",
       "rootUrl": "https://www.noardeast-fryslan.nl/",
       "role": "organizer",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -6113,7 +6215,8 @@
         "agendaUrl": "https://www.noardeast-fryslan.nl/"
       },
       "activatedFromCandidate": "noardeast-fryslan.nl",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Leest vooral nieuwsberichten als uitje. De evenementenkalender van de gemeente (tabel per jaar, maand in de kop) kan de motor nog niet lezen; de grote evenementen staan als losse uitjes in data/events.json (Friesland-ronde, 22 oktober 2026)."
     },
     {
       "id": "terpoarte-nl-web",
@@ -6316,20 +6419,63 @@
       "rootUrl": "https://www.schouwburgogterop.nl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://www.schouwburgogterop.nl/"
+        "endpointUrl": "https://www.schouwburgogterop.nl/",
+        "card": "<article class=\"program-block\"",
+        "fields": {
+          "title": "program-block__title\">([^<]+)",
+          "extra": "program-block__subtitle\"[^>]*>([^<]+)",
+          "date": "program-block__datetime\">([^<]+)",
+          "url": "<a class=\"button icon-info\" href=\"([^\"]+)\"",
+          "id": "data-showid=\"(\\d+)\"",
+          "room": "program-block__label\">([^<]+)",
+          "tags": "program-block__tags[^\"]*\">(.*?)</ul>"
+        },
+        "genres": {
+          "Cabaret": "ComedyEvent",
+          "Toneel": "TheaterEvent",
+          "Muziektheater": "TheaterEvent",
+          "Muziek": "MusicEvent",
+          "Klassiek": "MusicEvent",
+          "Dans": "DanceEvent",
+          "Jeugd & familie": "ChildrensEvent",
+          "Film": "ScreeningEvent",
+          "Theatercollege": "LiteraryEvent"
+        },
+        "rooms": {
+          "De Plataan": {
+            "venue": "De Plataan",
+            "city": "Meppel"
+          },
+          "ME Studio": {
+            "venue": "ME Studio",
+            "city": "Meppel"
+          },
+          "Vegafabriek": {
+            "venue": "De Vegafabriek",
+            "city": "Meppel"
+          },
+          "Mariakerk": {
+            "venue": "Grote of Mariakerk",
+            "city": "Meppel"
+          },
+          "Grote Kerk": {
+            "venue": "Grote of Mariakerk",
+            "city": "Meppel"
+          }
+        },
+        "roomFallback": {
+          "city": "Meppel"
+        }
       },
-      "activatedFromCandidate": "schouwburgogterop.nl",
       "defaultPlace": {
         "city": "Meppel",
         "lat": 52.6957,
         "lon": 6.1944
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-22",
+      "note": "Ogterop speelt tijdens de vernieuwbouw (tot 2029) 'On Tour' op andere plekken in Meppel (De Plataan, ME Studio, Vegafabriek, Grote of Mariakerk). De voorpagina toont de voorstellingen als kaartjes (article.program-block) met titel, ondertitel, datum/tijd, zaal en soort. De volledige lijst (48) komt uit /shows.php?page=N, maar dat is JSON met ge-escapete HTML (\\/), wat html_cards nog niet leest. robots.txt: alles toegestaan, Crawl-delay 10 (één pagina)."
     },
     {
       "id": "simplon-nl-web",
@@ -6640,19 +6786,27 @@
     },
     {
       "id": "defryskemarren-nl-web",
-      "name": "Gemeente De Fryske Marren Binnenhaven Lemmer",
+      "name": "De Fryske Marren evenementenkalender",
       "rootUrl": "https://www.defryskemarren.nl/",
-      "role": "venue",
+      "role": "organizer",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
-      "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://www.defryskemarren.nl/direct-regelen/vergunningen-toestemming/evenementenkalender/"
+        "endpointUrl": "https://www.defryskemarren.nl/direct-regelen/vergunningen-toestemming/evenementenkalender/",
+        "card": "<tr><td>",
+        "fields": {
+          "title": "^<tr><td>(.*?)</td>",
+          "city": "^<tr><td>.*?</td><td>(.*?)</td>",
+          "venue": "^<tr><td>(?:.*?</td><td>){2}(.*?)</td>",
+          "date": "^<tr><td>(?:.*?</td><td>){3}(\\d{1,2}-\\d{1,2}-20\\d\\d)</td>"
+        },
+        "province": "Fryslân"
       },
-      "activatedFromCandidate": "defryskemarren.nl",
-      "policyReviewedAt": "2026-10-13"
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "policyReviewedAt": "2026-10-22",
+      "note": "De gemeente zet hier alle grotere evenementen met vergunning (per maand een tabel 'Evenement | Plaats | Locatie | Start datum | Eind datum'; de jaarplanning 2027 komt na januari 2027). Alleen feiten. Vervangt de oude instelling (html_agenda_dutch op de voorpagina vond niets). Kanttekening: de einddatum ('4-10-2026') leest html_cards niet (geen ISO en geen maandnaam), dus meerdaagse evenementen (Winterevenement Joure 1-31 dec, Natuurweek) tonen alleen de begindag. De april-maand staat in een ander formaat ('Datum: 6 april') en wordt niet gelezen (verleden)."
     },
     {
       "id": "groatekerk-nl-web",
@@ -6698,7 +6852,7 @@
       "name": "Paardenreddingboot",
       "rootUrl": "https://www.vvvameland.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -6708,7 +6862,8 @@
       },
       "activatedFromCandidate": "vvvameland.nl",
       "kindHint": "theater",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "VVV Ameland is een verzamelagenda (regel 1: nooit een VVV als bron); de uitjes kwamen voor een groot deel uit verhuur van tennisbanen. De echte evenementen staan bij de gemeente (ameland.nl/evenementenkalender), Theaterkerk Nes, de Amelander Musea en de bibliotheek."
     },
     {
       "id": "terschelling-nl-web",
@@ -8502,7 +8657,14 @@
         "agendaUrl": "https://www.margarethakerknorg.nl/agenda/"
       },
       "activatedFromCandidate": "margarethakerknorg.nl",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-22",
+      "defaultPlace": {
+        "venue": "Sint-Margarethakerk",
+        "city": "Norg",
+        "lat": 53.0672,
+        "lon": 6.4591
+      },
+      "note": "Agenda van de Sint-Margarethakerk Norg (concerten van o.a. de Culturele Raad Norg en Stichting Muziek Norg). defaultPlace toegevoegd: de agenda noemt zelf geen plaats, waardoor alle uitjes wegvielen."
     },
     {
       "id": "mcpbfriesland-eu-web",
@@ -12875,6 +13037,1863 @@
       "defaultPlace": {
         "city": "Winsum"
       },
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "museumvosbergen-nl-web",
+      "name": "Museum Vosbergen",
+      "rootUrl": "https://www.museumvosbergen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.museumvosbergen.nl/ons-podium",
+        "card": "<div class=\"dmRespRow u_Vos\\d+",
+        "fields": {
+          "id": "u_(Vos\\d+)",
+          "title": "<h2[^>]*>(.*?)</h2>",
+          "date": "<h3>\\s*<span[^>]*>\\s*([A-Za-z]+dag \\d{1,2} [A-Za-z]+,? \\d{1,2}[:.]\\d{2})",
+          "room": "Locatie:\\s*([^<]+?)\\s*<"
+        },
+        "rooms": {
+          "MUSEUM VOSBERGEN": {
+            "venue": "Museum Vosbergen",
+            "city": "Eelde"
+          },
+          "dorpskerk Eelde": {
+            "venue": "Dorpskerk Eelde",
+            "city": "Eelde"
+          }
+        },
+        "roomFallback": {
+          "city": "Eelde"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Museum Vosbergen",
+        "city": "Eelde",
+        "lat": 53.1386,
+        "lon": 6.5761
+      },
+      "kindHint": "muziek",
+      "note": "Concerten en voorstellingen van Museum Vosbergen (muziekinstrumentenmuseum) op /ons-podium; elke voorstelling is een blok 'dmRespRow u_VosJJMMDD' (Duda-site, HTML staat in de pagina).",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "kampwesterbork-nl-web",
+      "name": "Herinneringscentrum Kamp Westerbork",
+      "rootUrl": "https://www.kampwesterbork.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.kampwesterbork.nl/zien-en-doen",
+        "card": "<a class=\"[^\"]*\" href=\"/zien-en-doen/[^\"]+\"><div class=\"texts\">",
+        "fields": {
+          "title": "<h3>(.*?)</h3>",
+          "date": "<div class=\"date\">(.*?)</div>",
+          "url": "href=\"([^\"]+)\""
+        },
+        "skipTitle": "dagelijkse rondleiding|familieprogramma|gratis boek|kinderroute|vaste tentoonstelling"
+      },
+      "defaultPlace": {
+        "venue": "Herinneringscentrum Kamp Westerbork",
+        "city": "Hooghalen",
+        "lat": 52.9165,
+        "lon": 6.5466
+      },
+      "note": "Activiteiten van het Herinneringscentrum als kaartjes op /zien-en-doen (Next.js/Sanity, HTML staat in de pagina). Dagelijkse of maandelijkse dingen zonder datum vallen vanzelf weg.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "podiamiddendrenthe-nl-web",
+      "name": "Podia Midden-Drenthe",
+      "rootUrl": "https://podiamiddendrenthe.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://podiamiddendrenthe.nl/agenda/",
+        "card": "<article\\s+class=\"post-\\d+ agenda ",
+        "fields": {
+          "title": "<h2 class=\"entry-title\"[^>]*><a[^>]*>(.*?)</a>",
+          "url": "<h2 class=\"entry-title\"[^>]*><a href=\"([^\"]+)\"",
+          "id": "id=\"(post-\\d+)\"",
+          "date": "<div class=\"datum-agenda-archive\">\\s*<span class=\"dag\">[^<]*</span>\\s*([^<]+?)\\s*</div>",
+          "genre": "categorie_agenda-([a-z]+)",
+          "room": "\\b(Westerbork|Beilen|Smilde|Bovensmilde|Hooghalen|Wijster|Witteveen|Orvelte|Nieuw-Balinge)\\b"
+        },
+        "genres": {
+          "film": "ScreeningEvent",
+          "concert": "MusicEvent",
+          "muziek": "MusicEvent",
+          "theater": "TheaterEvent",
+          "lezing": "EducationEvent"
+        },
+        "province": "Drenthe",
+        "rooms": {
+          "westerbork": {
+            "venue": "Bibliotheek Westerbork",
+            "city": "Westerbork"
+          },
+          "beilen": {
+            "city": "Beilen"
+          },
+          "smilde": {
+            "city": "Smilde"
+          },
+          "bovensmilde": {
+            "city": "Bovensmilde"
+          },
+          "hooghalen": {
+            "city": "Hooghalen"
+          },
+          "wijster": {
+            "city": "Wijster"
+          },
+          "witteveen": {
+            "city": "Witteveen"
+          },
+          "orvelte": {
+            "city": "Orvelte"
+          },
+          "nieuw-balinge": {
+            "city": "Nieuw-Balinge"
+          }
+        },
+        "roomFallback": {
+          "city": "Beilen"
+        }
+      },
+      "defaultPlace": {
+        "city": "Beilen",
+        "lat": 52.8617,
+        "lon": 6.5136
+      },
+      "note": "Stichting Podia Midden-Drenthe maakt zelf een programma van films, lezingen en voorstellingen (Stefanuskerk Beilen, bibliotheek Westerbork). Kaartjes op /agenda/ (WordPress, eigen berichttype 'agenda'); de plaats staat alleen in de naam of het korte stukje en wordt daaruit gelezen.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "bindbibliotheken-web",
+      "name": "Bind bibliotheken (Drenthe)",
+      "rootUrl": "https://bind.op-shop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://bind.op-shop.nl/",
+        "pageParam": "page",
+        "maxPages": 60,
+        "firstPage": 1,
+        "card": "<article class=\"product-row\"",
+        "fields": {
+          "title": "<span class=\"visually-hidden\">([^<]+)</span>\\s*</h3>",
+          "url": "<h3>\\s*<a href=\"([^\"]+)\"",
+          "id": "<h3>\\s*<a href=\"/(\\d+/[^\"/]+/[0-9-]+)\"",
+          "date": "data-icon-before=\"event\">\\s*<b>\\s*([^<]+?)\\s*</b>",
+          "time": "data-icon-before=\"schedule\">\\s*([0-9]{1,2}:[0-9]{2})",
+          "end": "data-icon-before=\"schedule\">\\s*[0-9]{1,2}:[0-9]{2}\\s*-\\s*([0-9]{1,2}:[0-9]{2})",
+          "venue": "data-reveal=\"location-detail\">\\s*([^<]+?)\\s*</div>",
+          "city": "id=\"location-detail\">\\s*<p>.*?\\d{4}\\s?[A-Z]{2}\\s+([^<]+?)\\s*</p>",
+          "tags": "data-icon-before=\"style\">(.*?)</ul>"
+        },
+        "skipTitle": "informatiepunt|\\bIDO\\b|taalpunt|taalhuis|taalcaf|spreekuur|digitaal|digisterker|klik ?& ?tik|oefenplein|hulp bij|computer|kleintje bieb|voorleesuurtje|peuter|boekenstart|leesclub|leeskring|breinbieb|biebfabriek|verkiezing|inloop|koffie|puzzel|handwerk|breicaf|repair|spelletjes|schrijfcaf|alleen op afspraak|vakantielezen|zomerlezen|informatieplein|digi-slim|ict hulp|energieloket|schaakclub|babbelen|poëziegroep|po.ziegroep|checkpunt|uk & ik|ouder- en kindgroep|workshop:? (belastingen|toeslagen|pensioen|zoeken op het internet|whatsapp|ai\\b|reizen met het openbaar|waar heb ik recht|slim omgaan)|foto.s maken en bewerken|slimwijzer|vrijwilligersmarkt|ontmoetingscaf|crea caf|creatief atelier|bakkie|historische vereniging|samen lezen|kunst door de brievenbus|ouderavond|ontmoetingsroute|dungeons|lasergamen|speel mee|cursus|historisch caf|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
+        "skipTags": "Informatiepunt Digitale Overheid|Taalhuis|Taalpunt|Digitaal spreekuur|Oefenplein|Gemeenteraadsverkiezingen|Kleintje Bieb|BiebFabriek|Breinbieb",
+        "province": "Drenthe",
+        "rooms": {
+          "Wijkpunt De Koeberg": {
+            "venue": "Wijkpunt De Koeberg",
+            "city": "Meppel"
+          }
+        }
+      },
+      "note": "Activiteiten van Bind bibliotheken (Drenthe: Aa en Hunze, Midden-Drenthe, Noordenveld, Tynaarlo, Borger-Odoorn, Coevorden, De Wolden, Meppel, Westerveld) in de eigen kaartverkoop bind.op-shop.nl (robots.txt: Allow /). Plaats per kaartje uit het adres. Spreekuren, taalhulp en vaste inloop vallen weg.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "facet-emmen-bibliotheek-web",
+      "name": "Facet Emmen (bibliotheken gemeente Emmen)",
+      "rootUrl": "https://facet-emmen.op-shop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://facet-emmen.op-shop.nl/",
+        "pageParam": "page",
+        "maxPages": 10,
+        "card": "<article class=\"product-row\"",
+        "fields": {
+          "title": "<h3>\\s*<a[^>]*>\\s*(.*?)\\s*</a>",
+          "url": "<h3>\\s*<a href=\"([^\"]+)\"",
+          "date": "data-icon-before=\"event\">\\s*<b>\\s*([^<]+?)\\s*</b>",
+          "time": "data-icon-before=\"schedule\">\\s*(\\d{1,2}:\\d{2})",
+          "end": "data-icon-before=\"schedule\">\\s*\\d{1,2}:\\d{2}\\s*-\\s*(\\d{1,2}:\\d{2})",
+          "tags": "<ul class=\"tags\">(.*?)</ul>",
+          "venue": "data-reveal=\"location-detail\">([^<]+)",
+          "city": "id=\"location-detail\">\\s*<p>.*?<br/>\\s*\\d{4}\\s?[A-Z]{2}\\s+([^<]+?)\\s*</p>"
+        },
+        "skipTitle": "spreekuur|informatiepunt|\\bIDO\\b|taalhuis|taalpunt|taalcaf|koffieochtend|koffie ?uurtje|digitaal|digicaf|digisterker|klik ?& ?tik|computer|hulp bij|oefenplein|seniorweb|e-reader|smartphone|tablet|wijkagent|woonborg|vip!|neie naober|spelletjes|handwerk|breicaf|haakcaf|puzzel|leesclub|leeskring|voorleesmoment|samen lezen|boekstart|peuter|dreumes|kleintje bieb|inloop|cursus|training|repair|schrijfcaf|bieb-?scan|bibliotheek op school|studiekring|budget|geldzaken|belasting|ruilbeurs|ontmoet|bakkie|babbel|informatieplein|energieloket|checkpunt|slimwijzer|naobuur|ict|schaakclub|po[eë]ziegroep|iphone|android|internet|pensioen|verleiding|historische vereniging|creatief ontmoet|kunst door de brievenbus|facet lab|facet studio|bankieren|digid|kennis met ai|haak aan|kom buurten|week van de opvoeding|taalatelier|regenboogcaf|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
+        "genres": {},
+        "province": "Drenthe",
+        "skipTags": "Digitale vaardigheden|Cursus|Praatgroep|Taal\\b|Peuters"
+      },
+      "note": "Facet (bibliotheek en cultuur in de gemeente Emmen) zet de activiteiten van alle vestigingen in één lijst op facet-emmen.op-shop.nl (zelfde systeem als Bind bibliotheken; robots.txt Allow: /), 20 per pagina, ?page=N (8 pagina's). skipTitle laat spreekuren en vaste groepen weg; plaats en zaal uit het adres. De zaal heet op de site 'Emmen centrum' (Facet, Raadhuisplein); dat komt als plek door.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "theaterhofpoort-nl-web",
+      "name": "Theater Hofpoort",
+      "rootUrl": "https://www.theaterhofpoort.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "theater",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.theaterhofpoort.nl/programma",
+        "card": "<a id=\"\\d+\" file=\"false\" class=\"[^\"]*\" href=\"/",
+        "fields": {
+          "url": "^<a [^>]*href=\"([^\"]+)\"",
+          "genre": "type=\"dynamic_page\"[^>]*>\\s*([^<]+?)\\s*</a>",
+          "room": "type=\"dynamic_page\".*?<span[^>]*>\\s*([^<]+?)\\s*</span>",
+          "title": "<strong[^>]*>\\s*([^<]+?)\\s*</strong>",
+          "extra": "<strong[^>]*>[^<]+</strong>.*?<span[^>]*t-font-size-set=\"true\"[^>]*>\\s*([^<]+?)\\s*</span>",
+          "date": "<strong[^>]*>\\s*([^<]*?20\\d\\d)[^<]*</strong>",
+          "time": "<strong[^>]*>[^<]*20\\d\\d\\s*-\\s*(\\d{1,2}[:.]\\d{2})"
+        },
+        "genres": {
+          "muziek": "MusicEvent",
+          "cabaret": "ComedyEvent",
+          "toneel": "TheaterEvent",
+          "familie": "ChildrensEvent"
+        },
+        "rooms": {
+          "Theater Hofpoort": {
+            "venue": "Theater Hofpoort",
+            "city": "Coevorden"
+          },
+          "Museum Thijnhof": {
+            "venue": "Museum Thijnhof",
+            "city": "Coevorden"
+          },
+          "Sporthal Dalen": {
+            "venue": "Sporthal Sportpark 't Grootveld",
+            "city": "Dalen"
+          }
+        },
+        "roomFallback": {
+          "city": "Coevorden"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Theater Hofpoort",
+        "city": "Coevorden",
+        "lat": 52.6606,
+        "lon": 6.7406
+      },
+      "policyReviewedAt": "2026-10-22",
+      "note": "Theater Hofpoort (Coevorden) zet het seizoen op /programma (Duda-website; robots.txt staat alles toe). Elk kaartje begint met de afbeeldingslink; daarna soort, zaal, naam (<strong>), ondertitel en 'vrijdag 9 oktober 2026 - 20:15 uur'. Een paar voorstellingen spelen elders (@Museum Thijnhof, Sporthal Dalen); die staan dan in de ondertitel. Oude seizoenskaartjes (2025) die nog op de pagina staan vallen vanzelf weg (voorbij)."
+    },
+    {
+      "id": "vangogh-drenthe-nl-web",
+      "name": "Van Gogh Huis Drenthe",
+      "rootUrl": "https://www.vangogh-drenthe.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "kunst",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.vangogh-drenthe.nl/agenda/",
+        "card": "<div class=\"img-eventitem imgclearfix\"",
+        "fields": {
+          "date": "img-eventitem-datum\">(.*?)</span>",
+          "title": "img-eventitem-titel\"><a[^>]*>(.*?)</a>",
+          "time": "img-agenda-omschrijving\">.*?(\\d{1,2}[.:]\\d{2})\\s*[-–]\\s*\\d{1,2}[.:]\\d{2}",
+          "end": "img-agenda-omschrijving\">.*?\\d{1,2}[.:]\\d{2}\\s*[-–]\\s*(\\d{1,2}[.:]\\d{2})",
+          "url": "img-agenda-omschrijving\">.*?<a href=\"(https?://[^\"]+)\""
+        },
+        "skipTitle": "vriendenlezing|exclusief voor vrienden",
+        "genres": {},
+        "dropFromTitle": "\\s*\\*nieuw\\*"
+      },
+      "defaultPlace": {
+        "venue": "Van Gogh Huis",
+        "city": "Nieuw-Amsterdam",
+        "lat": 52.7137,
+        "lon": 6.855
+      },
+      "note": "Het Van Gogh Huis (Nieuw-Amsterdam/Veenoord) zet de agenda als lijst op /agenda/ (WordPress, robots.txt staat het toe): dag en maand, naam, korte omschrijving met tijd. De Vriendenlezing is alleen voor Vrienden (skipTitle).",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "pbzuidwolde-nl-web",
+      "name": "Plaatselijk Belang Zuidwolde",
+      "rootUrl": "https://pbzuidwolde.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://pbzuidwolde.nl/events.ics"
+      },
+      "defaultPlace": {
+        "venue": "Dorpshuis De Kern",
+        "city": "Zuidwolde",
+        "lat": 53.2622,
+        "lon": 6.6071
+      },
+      "note": "Agenda van Plaatselijk Belang Zuidwolde (WordPress Events Manager); de agenda staat als ics-feed op /events.ics (robots.txt staat het toe). Zuidwolde (De Wolden, Drenthe), niet Zuidwolde (Groningen). Zuidwolde in de gemeente Het Hogeland (Groningen, 9785), niet Zuidwolde in Drenthe.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "ontdekpoort-nl-web",
+      "name": "Poort Sneek (Theater Sneek, Bolwerk, Noorderkerk)",
+      "rootUrl": "https://ontdekpoort.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://ontdekpoort.nl/programma/",
+        "card": "\\{\"id\":\\d+,\"date_start_ts\":",
+        "fields": {
+          "id": "^\\{\"id\":(\\d+)",
+          "start": "\"date_start_ts\":(\\d+)",
+          "title": "<h2 class=\\\\\"[^>]*>(.*?)</h2>",
+          "extra": "<h3 class=\\\\\"[^>]*>(.*?)</h3>",
+          "url": "href=\\\\\"(https://ontdekpoort\\.nl/programma/[^\\\\\"]+)",
+          "room": "\"location_key\":\"([^\"]+)\"",
+          "genre": "\"genre_slugs\":\\[\"([^\"]+)\"",
+          "tags": "\"genre_slugs\":(\\[[^\\]]*\\])"
+        },
+        "skipTags": "schoolvoorstelling|intern-evenement",
+        "genres": {
+          "muziek": "MusicEvent",
+          "pop": "MusicEvent",
+          "rock": "MusicEvent",
+          "blues-roots": "MusicEvent",
+          "heavy": "MusicEvent",
+          "iers": "MusicEvent",
+          "hip-hop-muziek": "MusicEvent",
+          "dance": "MusicEvent",
+          "klassiek-opera": "MusicEvent",
+          "cabaret-comedy": "ComedyEvent",
+          "toneel": "TheaterEvent",
+          "musical": "TheaterEvent",
+          "show-entertainment": "TheaterEvent",
+          "dans": "DanceEvent",
+          "jeugd-familie": "ChildrensEvent",
+          "film": "ScreeningEvent",
+          "theatercollege": "EducationEvent",
+          "festival": "Festival"
+        },
+        "rooms": {
+          "theater-westersingel-28": {
+            "venue": "Poort Theater, Westersingel 28",
+            "city": "Sneek",
+            "lat": 53.0323,
+            "lon": 5.6545
+          },
+          "bolwerk-kerkgracht-8": {
+            "venue": "Poort Bolwerk, Kerkgracht 8",
+            "city": "Sneek",
+            "lat": 53.0336,
+            "lon": 5.6611
+          },
+          "noorderkerk-oud-kerkhof-11": {
+            "venue": "Poort Noorderkerk, Oud Kerkhof 11",
+            "city": "Sneek",
+            "lat": 53.0345,
+            "lon": 5.6589
+          },
+          "theaterstudio-oud-kerkhof-11": {
+            "venue": "Poort Theaterstudio, Oud Kerkhof 11",
+            "city": "Sneek",
+            "lat": 53.0345,
+            "lon": 5.6589
+          },
+          "atriumplein-oud-kerkhof-11": {
+            "venue": "Poort Atrium, Oud Kerkhof 11",
+            "city": "Sneek",
+            "lat": 53.0345,
+            "lon": 5.6589
+          },
+          "veemarkthal-stationsstraat-2": {
+            "venue": "Veemarkthal, Stationsstraat 2",
+            "city": "Sneek"
+          }
+        }
+      },
+      "defaultPlace": {
+        "venue": "Poort Theater, Westersingel 28",
+        "city": "Sneek",
+        "lat": 53.0323,
+        "lon": 5.6545
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Poort is sinds 2026 de naam voor Theater Sneek, poppodium Bolwerk, Atrium/Akte2 en de Noorderkerk in Sneek (theatersneek.nl verwijst naar ontdekpoort.nl). De pagina /programma/ bevat alle voorstellingen als gegevens in de HTML (per uitje id, date_start_ts, genre_slugs, location_key en een stukje HTML met naam en ondertitel); html_cards leest die. Schoolvoorstellingen en interne evenementen vallen weg. Cursussen staan op een andere pagina en komen dus niet mee. Alleen feiten.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "gauw-frl-agenda",
+      "name": "Gauw en De Lege Geaën (dorpswebsite)",
+      "rootUrl": "https://gauw.frl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://gauw.frl/agenda?weergave=lijst",
+        "card": "<a href=\"[^\"]+/evenement/[^\"]+\"\\s+class=\"group flex gap-4 rounded-2xl",
+        "fields": {
+          "url": "^<a href=\"([^\"]+)\"",
+          "title": "<h3[^>]*>(.*?)</h3>",
+          "date": "tracking-wide\">\\s*([a-z]+\\.?</div>\\s*<div[^>]*>\\s*\\d{1,2})\\s*</div>",
+          "time": "<p class=\"mt-1 text-sm text-gray-500\">\\s*(\\d{1,2}:\\d\\d)",
+          "end": "<p class=\"mt-1 text-sm text-gray-500\">\\s*\\d{1,2}:\\d\\d\\s*–\\s*(\\d{1,2}:\\d\\d)",
+          "room": "<span class=\"text-gray-400\">·\\s*([^<]+?)\\s*</span>"
+        },
+        "rooms": {
+          "Tersoal": {
+            "city": "Terzool",
+            "lat": 53.0517,
+            "lon": 5.7064
+          },
+          "Dearsum": {
+            "city": "Deersum",
+            "lat": 53.0837,
+            "lon": 5.7214
+          },
+          "Gauw": {
+            "city": "Gauw"
+          }
+        },
+        "skipTitle": "klaverjas|biljart|badminton|koersbal|vergadering|plekberaad|kopij|verschijningsdatum|yoga|knutselclub|meer bewegen|tafeltennis|pilates|zumba|dammen|volleybal|picklebal|bridge|breiclub|loopgroep|muziekles|kickboksen|competitiewedstrijd|eten is ontmoeten|borrel|koffie|reanimatie|lotgenoten|kledingactie|huisbezoek|verkiezing|50\\+|^IJVC|update kruispunt|bijeenkomst verbinding|winterseizoen|^[A-Z][\\w .'-]+ \\d – [A-Z][\\w .'-]+ \\d"
+      },
+      "defaultPlace": {
+        "city": "Gauw",
+        "lat": 53.0627,
+        "lon": 5.7124
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Dorpswebsite op het Dorpsapp-platform (dorpsapp.nl, door Bergsma Media; robots.txt staat alles toe). De lijstweergave (/agenda?weergave=lijst) toont alle komende activiteiten als kaartjes met maand+dag ('okt.' '28', zonder jaar), tijd, organisator en, bij een activiteit uit een buurdorp, '· <dorp>'. LET OP: when.py leest 'okt. 28' (maand eerst) en de Friese maand 'des.'/'mai.' nog niet; zonder die kleine aanpassing levert deze bron 0. Gauw.frl toont ook de activiteiten van Tersoal, Dearsum en Offingawier (De Lege Geaën); daarom alleen deze ene bron voor die dorpen, niet ook tersoal.nl/dearsum.nl/offingawier.nl (dan dubbel).",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "schraard-com-agenda",
+      "name": "Schraard (dorpswebsite)",
+      "rootUrl": "https://schraard.com/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://schraard.com/agenda?weergave=lijst",
+        "card": "<a href=\"[^\"]+/evenement/[^\"]+\"\\s+class=\"group flex gap-4 rounded-2xl",
+        "fields": {
+          "url": "^<a href=\"([^\"]+)\"",
+          "title": "<h3[^>]*>(.*?)</h3>",
+          "date": "tracking-wide\">\\s*([a-z]+\\.?</div>\\s*<div[^>]*>\\s*\\d{1,2})\\s*</div>",
+          "time": "<p class=\"mt-1 text-sm text-gray-500\">\\s*(\\d{1,2}:\\d\\d)",
+          "end": "<p class=\"mt-1 text-sm text-gray-500\">\\s*\\d{1,2}:\\d\\d\\s*–\\s*(\\d{1,2}:\\d\\d)",
+          "room": "<span class=\"text-gray-400\">·\\s*([^<]+?)\\s*</span>"
+        },
+        "rooms": {},
+        "skipTitle": "klaverjas|biljart|badminton|koersbal|vergadering|plekberaad|kopij|verschijningsdatum|yoga|knutselclub|meer bewegen|tafeltennis|pilates|zumba|dammen|volleybal|picklebal|bridge|breiclub|loopgroep|muziekles|kickboksen|competitiewedstrijd|eten is ontmoeten|borrel|koffie|reanimatie|lotgenoten|kledingactie|huisbezoek|verkiezing|50\\+|^IJVC|update kruispunt|bijeenkomst verbinding|winterseizoen|^[A-Z][\\w .'-]+ \\d – [A-Z][\\w .'-]+ \\d"
+      },
+      "defaultPlace": {
+        "city": "Schraard",
+        "lat": 53.0617,
+        "lon": 5.4522
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Dorpswebsite op het Dorpsapp-platform (dorpsapp.nl, door Bergsma Media; robots.txt staat alles toe). De lijstweergave (/agenda?weergave=lijst) toont alle komende activiteiten als kaartjes met maand+dag ('okt.' '28', zonder jaar), tijd, organisator en, bij een activiteit uit een buurdorp, '· <dorp>'. LET OP: when.py leest 'okt. 28' (maand eerst) en de Friese maand 'des.'/'mai.' nog niet; zonder die kleine aanpassing levert deze bron 0. ",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "schettens-longerhouw-nl-agenda",
+      "name": "Schettens-Longerhouw (dorpswebsite)",
+      "rootUrl": "https://schettens-longerhouw.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://schettens-longerhouw.nl/agenda?weergave=lijst",
+        "card": "<a href=\"[^\"]+/evenement/[^\"]+\"\\s+class=\"group flex gap-4 rounded-2xl",
+        "fields": {
+          "url": "^<a href=\"([^\"]+)\"",
+          "title": "<h3[^>]*>(.*?)</h3>",
+          "date": "tracking-wide\">\\s*([a-z]+\\.?</div>\\s*<div[^>]*>\\s*\\d{1,2})\\s*</div>",
+          "time": "<p class=\"mt-1 text-sm text-gray-500\">\\s*(\\d{1,2}:\\d\\d)",
+          "end": "<p class=\"mt-1 text-sm text-gray-500\">\\s*\\d{1,2}:\\d\\d\\s*–\\s*(\\d{1,2}:\\d\\d)",
+          "room": "<span class=\"text-gray-400\">·\\s*([^<]+?)\\s*</span>"
+        },
+        "rooms": {},
+        "skipTitle": "klaverjas|biljart|badminton|koersbal|vergadering|plekberaad|kopij|verschijningsdatum|yoga|knutselclub|meer bewegen|tafeltennis|pilates|zumba|dammen|volleybal|picklebal|bridge|breiclub|loopgroep|muziekles|kickboksen|competitiewedstrijd|eten is ontmoeten|borrel|koffie|reanimatie|lotgenoten|kledingactie|huisbezoek|verkiezing|50\\+|^IJVC|update kruispunt|bijeenkomst verbinding|winterseizoen|^[A-Z][\\w .'-]+ \\d – [A-Z][\\w .'-]+ \\d"
+      },
+      "defaultPlace": {
+        "city": "Schettens",
+        "lat": 53.0679,
+        "lon": 5.4889
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Dorpswebsite op het Dorpsapp-platform (dorpsapp.nl, door Bergsma Media; robots.txt staat alles toe). De lijstweergave (/agenda?weergave=lijst) toont alle komende activiteiten als kaartjes met maand+dag ('okt.' '28', zonder jaar), tijd, organisator en, bij een activiteit uit een buurdorp, '· <dorp>'. LET OP: when.py leest 'okt. 28' (maand eerst) en de Friese maand 'des.'/'mai.' nog niet; zonder die kleine aanpassing levert deze bron 0. ",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "arum-frl-agenda",
+      "name": "Arum (dorpswebsite)",
+      "rootUrl": "https://arum.frl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://arum.frl/agenda?weergave=lijst",
+        "card": "<a href=\"[^\"]+/evenement/[^\"]+\"\\s+class=\"group flex gap-4 rounded-2xl",
+        "fields": {
+          "url": "^<a href=\"([^\"]+)\"",
+          "title": "<h3[^>]*>(.*?)</h3>",
+          "date": "tracking-wide\">\\s*([a-z]+\\.?</div>\\s*<div[^>]*>\\s*\\d{1,2})\\s*</div>",
+          "time": "<p class=\"mt-1 text-sm text-gray-500\">\\s*(\\d{1,2}:\\d\\d)",
+          "end": "<p class=\"mt-1 text-sm text-gray-500\">\\s*\\d{1,2}:\\d\\d\\s*–\\s*(\\d{1,2}:\\d\\d)",
+          "room": "<span class=\"text-gray-400\">·\\s*([^<]+?)\\s*</span>"
+        },
+        "rooms": {},
+        "skipTitle": "klaverjas|biljart|badminton|koersbal|vergadering|plekberaad|kopij|verschijningsdatum|yoga|knutselclub|meer bewegen|tafeltennis|pilates|zumba|dammen|volleybal|picklebal|bridge|breiclub|loopgroep|muziekles|kickboksen|competitiewedstrijd|eten is ontmoeten|borrel|koffie|reanimatie|lotgenoten|kledingactie|huisbezoek|verkiezing|50\\+|^IJVC|update kruispunt|bijeenkomst verbinding|winterseizoen|^[A-Z][\\w .'-]+ \\d – [A-Z][\\w .'-]+ \\d"
+      },
+      "defaultPlace": {
+        "city": "Arum",
+        "lat": 53.1311,
+        "lon": 5.4806
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Dorpswebsite op het Dorpsapp-platform (dorpsapp.nl, door Bergsma Media; robots.txt staat alles toe). De lijstweergave (/agenda?weergave=lijst) toont alle komende activiteiten als kaartjes met maand+dag ('okt.' '28', zonder jaar), tijd, organisator en, bij een activiteit uit een buurdorp, '· <dorp>'. LET OP: when.py leest 'okt. 28' (maand eerst) en de Friese maand 'des.'/'mai.' nog niet; zonder die kleine aanpassing levert deze bron 0. ",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "ijlst-frl-agenda",
+      "name": "IJlst (stadswebsite)",
+      "rootUrl": "https://ijlst.frl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://ijlst.frl/agenda?weergave=lijst",
+        "card": "<a href=\"[^\"]+/evenement/[^\"]+\"\\s+class=\"group flex gap-4 rounded-2xl",
+        "fields": {
+          "url": "^<a href=\"([^\"]+)\"",
+          "title": "<h3[^>]*>(.*?)</h3>",
+          "date": "tracking-wide\">\\s*([a-z]+\\.?</div>\\s*<div[^>]*>\\s*\\d{1,2})\\s*</div>",
+          "time": "<p class=\"mt-1 text-sm text-gray-500\">\\s*(\\d{1,2}:\\d\\d)",
+          "end": "<p class=\"mt-1 text-sm text-gray-500\">\\s*\\d{1,2}:\\d\\d\\s*–\\s*(\\d{1,2}:\\d\\d)",
+          "room": "<span class=\"text-gray-400\">·\\s*([^<]+?)\\s*</span>"
+        },
+        "rooms": {},
+        "skipTitle": "klaverjas|biljart|badminton|koersbal|vergadering|plekberaad|kopij|verschijningsdatum|yoga|knutselclub|meer bewegen|tafeltennis|pilates|zumba|dammen|volleybal|picklebal|bridge|breiclub|loopgroep|muziekles|kickboksen|competitiewedstrijd|eten is ontmoeten|borrel|koffie|reanimatie|lotgenoten|kledingactie|huisbezoek|verkiezing|50\\+|^IJVC|update kruispunt|bijeenkomst verbinding|winterseizoen|^[A-Z][\\w .'-]+ \\d – [A-Z][\\w .'-]+ \\d"
+      },
+      "defaultPlace": {
+        "city": "IJlst",
+        "lat": 53.0103,
+        "lon": 5.6211
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Dorpswebsite op het Dorpsapp-platform (dorpsapp.nl, door Bergsma Media; robots.txt staat alles toe). De lijstweergave (/agenda?weergave=lijst) toont alle komende activiteiten als kaartjes met maand+dag ('okt.' '28', zonder jaar), tijd, organisator en, bij een activiteit uit een buurdorp, '· <dorp>'. LET OP: when.py leest 'okt. 28' (maand eerst) en de Friese maand 'des.'/'mai.' nog niet; zonder die kleine aanpassing levert deze bron 0. ",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "miluk-nl-web",
+      "name": "Milûk Harlingen (podium en film)",
+      "rootUrl": "https://miluk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://miluk.nl/agenda/",
+        "card": "<div class=\"miluk-card\"",
+        "fields": {
+          "title": "<div class=\"miluk-title\"><a [^>]*>(.*?)</a>",
+          "url": "<div class=\"miluk-title\"><a href=\"([^\"]+)\"",
+          "date": "<div class=\"miluk-date\"><span>([^<]+)</span>",
+          "time": "<div class=\"miluk-date\"><span>[^<]+</span><span class=\"miluk-time\">\\s*(\\d{1,2}[:.]\\d\\d)",
+          "genre": "<span class=\"miluk-tag miluk-tag-([a-z]+)\""
+        },
+        "genres": {
+          "film": "ScreeningEvent",
+          "muziek": "MusicEvent",
+          "theater": "TheaterEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Milûk, Midlumerlaan 24",
+        "city": "Harlingen",
+        "lat": 53.1712,
+        "lon": 5.4284
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Cultureel centrum Milûk in Harlingen (stichting; podium, film, middagconcerten 'Taek ontvangt'). Geen robots.txt (404) = welkom. De agenda /agenda/ is een rij kaartjes (miluk-card) met soort, titel en een of meer data; html_cards neemt per kaartje de eerste speeldag (films met meerdere vertoningen komen dus met hun eerste dag). Alleen feiten.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "despylder-nl-web",
+      "name": "De Spylder, doarpskultuerhûs Warns",
+      "rootUrl": "https://www.despylder.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.despylder.nl/programma2526/",
+        "card": "<article id=\"post-\\d+\" class=\"[^\"]*espresso_events",
+        "fields": {
+          "id": "^<article id=\"post-(\\d+)\"",
+          "title": "<h2 [^>]*class=\"entry-title\">\\s*<a [^>]*>(.*?)</a>",
+          "url": "<h2 [^>]*class=\"entry-title\">\\s*<a [^>]*href=\"([^\"]+)\"",
+          "date": "ee-event-datetimes-li-daterange\">\\s*<span[^>]*></span>(.*?)</span>",
+          "time": "ee-event-datetimes-li-timerange\">\\s*<span[^>]*></span>&nbsp;(\\d{1,2}:\\d\\d)",
+          "end": "ee-event-datetimes-li-timerange\">\\s*<span[^>]*></span>&nbsp;\\d{1,2}:\\d\\d\\s*-\\s*(\\d{1,2}:\\d\\d)",
+          "genre": "espresso_event_categories-([a-z-]+)"
+        },
+        "skipTitle": "^Freon|^Word ook Freon",
+        "genres": {
+          "muziek": "MusicEvent",
+          "film": "ScreeningEvent",
+          "cabaret": "ComedyEvent",
+          "theater": "TheaterEvent",
+          "dans": "DanceEvent",
+          "lezing": "EducationEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "De Spylder",
+        "city": "Warns",
+        "lat": 52.8789,
+        "lon": 5.3958
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Doarpskultuerhûs De Spylder in Warns: film, theater, muziek en lezingen (Event Espresso). robots.txt (Yoast) staat alles toe. Het seizoensprogramma staat op /programma2526/ (de naam van de pagina is gebleven, de inhoud is seizoen 2026-2027): per uitje een <article> met titel, datum, tijd en zaal. Bij een nieuw seizoen kan de pagina een nieuwe naam krijgen: dan endpointUrl aanpassen. Alleen feiten.",
+      "policyReviewedAt": "2026-10-22",
+      "kindHint": "theater"
+    },
+    {
+      "id": "workum-nl-agenda",
+      "name": "Workum.nl (stadswebsite, agenda)",
+      "rootUrl": "https://workum.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://workum.nl/agenda/",
+        "pageParam": "paged",
+        "maxPages": 4,
+        "card": "<li class=\"calendar-overview__item\"",
+        "fields": {
+          "date": "calendar-label__day\">\\s*(\\d{1,2}\\s*</span>\\s*<span class=\"calendar__month\">\\s*[a-z]+)",
+          "title": "class=\"calendar-overview__link\">(.*?)</a>",
+          "url": "<a href=\"([^\"]+)\" class=\"calendar-overview__link\""
+        },
+        "skipTitle": "theaterles|beweeggroep|samen wandelen|vergaderdata|vergadering|mediamiddag|disco zwemmen|klaverjas|koffie|huisbezoek|übersetzt|not translated|net oerset",
+        "skipUrl": "workum\\.nl/(de|en|frl)/"
+      },
+      "defaultPlace": {
+        "city": "Workum",
+        "lat": 52.9797,
+        "lon": 5.4484
+      },
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "Stadswebsite van Workum (Plaatselijk Belang en ondernemers; robots.txt weert alleen enkele zoekbots). De agenda /agenda/ is een lijst met dag + maand (zonder jaar en zonder tijd) en een link; html_cards leest die. Vaste lessen en vergaderingen vallen weg via skipTitle. Alleen feiten.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "detiid-nl-web",
+      "name": "De Tiid Bolsward (museum, bibliotheek en archief)",
+      "rootUrl": "https://www.detiid.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.detiid.nl/agenda",
+        "card": "<a class=\"activity\" href=",
+        "fields": {
+          "url": "^<a class=\"activity\" href=\"([^\"]+)\"",
+          "title": "<div class=\"activity__title\">(.*?)</div>",
+          "date": "<span class=\"activity__date\">(.*?)</span>\\s*</span>",
+          "time": "<span class=\"activity__time\">\\s*(\\d{1,2}[:.]\\d\\d)",
+          "end": "<span class=\"activity__time\">\\s*\\d{1,2}[:.]\\d\\d\\s*-\\s*(\\d{1,2}[:.]\\d\\d)"
+        },
+        "skipTitle": "museummaatje|spreekuur|digi|inloop|een stoel erbij|ken jij je buren"
+      },
+      "defaultPlace": {
+        "venue": "De Tiid, Jongemastraat 2",
+        "city": "Bolsward",
+        "lat": 53.0636,
+        "lon": 5.5292
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "De Tiid in Bolsward (Museum De Tiid, de bibliotheek en het gemeentearchief onder één dak). robots.txt staat het toe. De agenda /agenda is een lijst kaartjes (activity) met titel, datum met jaar en tijd. Alleen feiten.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "bmf-op-shop-nl-web",
+      "name": "Bibliotheken Mar en Fean",
+      "rootUrl": "https://bmf.op-shop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://bmf.op-shop.nl/",
+        "pageParam": "page",
+        "maxPages": 12,
+        "card": "<article class=\"product-row\"",
+        "fields": {
+          "title": "<h3>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h3>\\s*<a href=\"([^\"]+)\"",
+          "date": "data-icon-before=\"event\">\\s*<b>(.*?)</b>",
+          "time": "data-icon-before=\"schedule\">\\s*(\\d{1,2}[:.]\\d\\d)",
+          "end": "data-icon-before=\"schedule\">\\s*\\d{1,2}[:.]\\d\\d\\s*-\\s*(\\d{1,2}[:.]\\d\\d)",
+          "venue": "data-reveal=\"location-detail\">\\s*([^<]+?)\\s*</div>",
+          "city": "id=\"location-detail\">\\s*<p>.*?\\d{4}\\s?[A-Z]{2}\\s+([^<]+?)\\s*</p>",
+          "genre": "data-icon-before=\"category\">\\s*([^<]+?)\\s*</li>",
+          "room": "data-reveal=\"location-detail\">\\s*([^<]+?)\\s*</div>"
+        },
+        "skipUrl": "/vanaf/",
+        "skipTitle": "spreekuur|digitaal caf|digitale overheid|informatiepunt|taalhuis|taalcaf|hulp bij|regelhulp|repair ?caf|wandelgroep|praathuis|vrouwenpraat|samenlezen|creatief caf|mantelzorg|klik ?& ?tik|digiveilig|open maakplaats|terugkomavond|voorleeshalfuurtje|maandelijks voorlezen|leesclub|leeskring|boekenclub|spelletjes|oefenen|bieb ?caf|senior caf|offline caf|koffie en een goed gesprek|cursus|ontmoetingsmoment|hartcheck|informatieavond|puzzelruil|leer programmeren|leer schaken|mediamiddag|webinar|bordspellen|spellenmiddag|ai-doen|juridisch|informatiebijeenkomst|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
+        "genres": {},
+        "province": "Fryslân",
+        "rooms": {
+          "De Tiid Bolsward": {
+            "venue": "De Tiid",
+            "city": "Bolsward"
+          },
+          "Ús Kompenije": {
+            "venue": "Ús Kompenije",
+            "city": "Jubbega"
+          },
+          "Doarpskeamer Akkrum-Nes": {
+            "venue": "Doarpskeamer",
+            "city": "Akkrum"
+          }
+        }
+      },
+      "maxPages": 12,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "policyReviewedAt": "2026-10-22",
+      "defaultPlace": {
+        "city": "Heerenveen"
+      },
+      "note": "Activiteiten van Bibliotheken Mar en Fean (eigen kaartverkoop op op-shop.nl; de bibliotheek organiseert zelf). Vestigingen in Heerenveen, Akkrum-Nes, Jubbega, Joure, Lemmer, Balk, maar ook Sneek, Bolsward, Makkum, Koudum, Workum, Wommels (Súdwest-Fryslân): één bron voor alles, de plaats komt per kaartje uit het adres. Vaste spreekuren, cafés, cursussen en terugkerende 'vanaf'-activiteiten vallen weg (skipTitle/skipUrl). robots.txt: Allow /."
+    },
+    {
+      "id": "nationaallandschap-frl-web",
+      "name": "Nationaal Landschap Zuidwest Fryslân / Bezoekerscentrum Mar en Klif",
+      "rootUrl": "https://nationaallandschap.frl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://nationaallandschap.frl/evenementen/",
+        "card": "<div class=\"event-widget\">",
+        "fields": {
+          "title": "<h3>(.*?)</h3>",
+          "url": "href=\"([^\"]+)\"",
+          "date": "class=\"num\">\\s*([^<]*?)(?:\\s+-\\s+[^<]*)?\\s*</div>",
+          "city": "class=\"num\">[^<]*?\\s-\\s+([^<]+?)\\s*</div>"
+        },
+        "rooms": {},
+        "skipTitle": "ambassadeur|koffie met kennis|cursus",
+        "province": "Fryslân"
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "policyReviewedAt": "2026-10-22",
+      "defaultPlace": {
+        "venue": "Bezoekerscentrum Mar en Klif",
+        "city": "Oudemirdum",
+        "lat": 52.8505,
+        "lon": 5.5352
+      },
+      "note": "Alleen het blok 'uitgelicht' (event-widget) met de eigen activiteiten van Nationaal Landschap Zuidwest Fryslân en Bezoekerscentrum Mar en Klif (lezingen, wandelingen, exposities). De lijst eronder ('#events') is een verzameling van activiteiten van anderen en wordt bewust NIET gelezen. Plaats per kaartje uit de datumregel ('23 oktober - Sint Nicolaasga'). Geen tijden op de lijst. De lezingen in de bibliotheek staan ook in de bron van Bibliotheken Mar en Fean (dubbel, met tijd)."
+    },
+    {
+      "id": "theaterlemmer-nl-web",
+      "name": "Theater Hege Fonnen Lemmer (Teater op'e Lemmer)",
+      "rootUrl": "https://www.theaterlemmer.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "theater",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.theaterlemmer.nl/programma",
+        "card": "<a href=\"/programma/\\d+--",
+        "fields": {
+          "title": "<div class=\"text\">(.*?)</div>",
+          "date": "<div class=\"date\">(.*?)</div>",
+          "url": "^<a href=\"([^\"]+)\"",
+          "genre": "data-category=\"(\\d+)\""
+        },
+        "genres": {
+          "2": "MusicEvent",
+          "4": "ComedyEvent"
+        },
+        "province": "Fryslân"
+      },
+      "defaultPlace": {
+        "venue": "Theater Hege Fonnen (Sport- en cultuurcentrum)",
+        "city": "Lemmer",
+        "lat": 52.8381,
+        "lon": 5.7233
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "policyReviewedAt": "2026-10-22",
+      "note": "Programma van Theater Hege Fonnen / Teater op'e Lemmer in het sport- en cultuurcentrum (Betelgeuze 2). Kaartjes per voorstelling als <a href='/programma/NNN--...'> met datum 'za 24 okt '26' en titel. Geen begintijd op de lijst (meestal 20.00 uur). Kaartverkoop via Primera en weticket (die lezen we niet)."
+    },
+    {
+      "id": "podiumgorter-nl-web",
+      "name": "Podium Gorter Balk",
+      "rootUrl": "https://podiumgorter.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://podiumgorter.nl/",
+        "card": "<div class=\"et_pb_section et_pb_section_\\d+",
+        "fields": {
+          "date": "<h2[^>]*>.*?<strong>\\s*((?:maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag)\\s+\\d{1,2}\\s+[a-z]+\\s+20\\d\\d)",
+          "time": "<h2[^>]*>.*?Aanvang\\s+(\\d{1,2}[.:]\\d\\d)",
+          "title": "<h1[^>]*>(.*?)</h1>",
+          "extra": "<h1[^>]*>.*?</h1>\\s*<h3[^>]*>(.*?)</h3>"
+        },
+        "skipExtra": "try out",
+        "province": "Fryslân"
+      },
+      "defaultPlace": {
+        "venue": "Podium Gorter, Raadhuisstraat 27",
+        "city": "Balk",
+        "lat": 52.8986,
+        "lon": 5.5786
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "policyReviewedAt": "2026-10-22",
+      "note": "Podium Gorter (Raadhuisstraat 27, Balk): kunst en muziek, 'Programma 2026-2027' op de voorpagina in Divi-blokken: per blok een kop 'Zondag 25 oktober 2026 Aanvang 15.30 uur Entree € 15,00 p.p.' en de naam in een h1 (met ondertitel in h3). Geen aparte pagina per voorstelling, dus de link is de voorpagina.",
+      "kindHint": "theater"
+    },
+    {
+      "id": "lawei-nl-web",
+      "name": "Schouwburg De Lawei",
+      "rootUrl": "https://www.lawei.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.lawei.nl/agenda",
+        "pageParam": "p54_page",
+        "maxPages": 40,
+        "card": "<li\\s+data-entry-id=\"\\d+\"\\s+class=\" eventCard",
+        "fields": {
+          "title": "<h3 class=\"title\">(.*?)</h3>",
+          "extra": "<div class=\"subtitle\">([^<]+)</div>",
+          "date": "<div class=\"top-date\">(.*?)</div>",
+          "time": "<div class=\"time\">\\s*<span class=\"start\">\\s*([0-9]{1,2}[.:][0-9]{2})",
+          "url": "<a class=\"desc\" href=\"([^\"]+)\"",
+          "room": "<div class=\"venue\">\\s*([^|<]+?)\\s*(?:\\||</div>)",
+          "genre": "(?:production-type-(?=movie)|class=\"genres__link\"[^>]*>)(movie|[^<]+)<?"
+        },
+        "skipTitle": "^(cadeaubon|voordeelpas|abonnement)",
+        "genres": {
+          "film": "ScreeningEvent",
+          "filmhuis": "ScreeningEvent",
+          "muziek": "MusicEvent",
+          "pop": "MusicEvent",
+          "klassiek": "MusicEvent",
+          "concert": "MusicEvent",
+          "cabaret": "ComedyEvent",
+          "comedy": "ComedyEvent",
+          "toneel": "TheaterEvent",
+          "theater": "TheaterEvent",
+          "dans": "DanceEvent",
+          "musical": "TheaterEvent",
+          "show": "TheaterEvent",
+          "familie": "ChildrensEvent",
+          "jeugd": "ChildrensEvent",
+          "lezing": "EducationEvent",
+          "movie": "ScreeningEvent",
+          "circus": "TheaterEvent",
+          "theatercollege": "EducationEvent",
+          "muziektheater": "TheaterEvent",
+          "culinair": "FoodEvent",
+          "De Docu": "ScreeningEvent"
+        },
+        "rooms": {
+          "Op locatie (vrije zit)": {
+            "city": "Drachten"
+          },
+          "Doopsgezinde Kerk Drachten": {
+            "venue": "Doopsgezinde Kerk",
+            "city": "Drachten"
+          }
+        }
+      },
+      "defaultPlace": {
+        "venue": "Schouwburg De Lawei",
+        "city": "Drachten",
+        "lat": 53.1079,
+        "lon": 6.0947
+      },
+      "kindHint": "theater",
+      "note": "Zelfde platform als De Klinker: kaartjes op /agenda, 9 per pagina, bladeren met ?p54_page=2 (robots.txt staat '?p*_page=' uitdrukkelijk toe). Wachtkamer met cookie (csq_token) is geen blokkade. Crawl-delay 5 seconden. Ook het filmhuis staat in de agenda. Een reeks voorstellingen staat als één kaartje met een periode ('do 22 okt - za 31 okt').",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "iduna-nl-web",
+      "name": "Poppodium Iduna",
+      "rootUrl": "https://iduna.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://iduna.nl/evenementen/",
+        "card": "class=\"ct-div-block card set-bg-color\"",
+        "fields": {
+          "title": "card-titel-container[^>]*>(.*?)</div></div></div>",
+          "date": "class=\"ct-code-block set-text-color\"[^>]*>([^<]+)<",
+          "url": "data-url=\"([^\"]+)\"",
+          "genre": "data-genre=\"([^\"]*)\"",
+          "tags": "card-subtitel[^>]*><span[^>]*>([^<]+)</span>"
+        },
+        "skipTitle": "^(cadeaubon|gift ?card)",
+        "genres": {
+          "metal": "MusicEvent",
+          "rock": "MusicEvent",
+          "pop": "MusicEvent",
+          "tribute": "MusicEvent",
+          "blues": "MusicEvent",
+          "punk": "MusicEvent",
+          "hiphop": "MusicEvent",
+          "dance": "MusicEvent",
+          "singer-songwriter": "MusicEvent",
+          "jazz": "MusicEvent",
+          "folk": "MusicEvent",
+          "comedy": "ComedyEvent",
+          "dans": "DanceEvent",
+          "nl-dance": "DanceEvent",
+          "hardcore": "MusicEvent",
+          "reggae": "MusicEvent",
+          "americana": "MusicEvent",
+          "funk": "MusicEvent",
+          "hardrock-2": "MusicEvent",
+          "lokaal": "MusicEvent",
+          "wave": "MusicEvent"
+        },
+        "skipTags": "geannuleerd|afgelast|verplaatst naar"
+      },
+      "defaultPlace": {
+        "venue": "Poppodium Iduna",
+        "city": "Drachten",
+        "lat": 53.1063,
+        "lon": 6.0995
+      },
+      "kindHint": "muziek",
+      "note": "Alle concerten als kaartjes op /evenementen/ (één pagina). Datum zonder jaar en zonder tijd ('do 3 december'); de tijd staat alleen op de pagina van het concert. De REST-API (/wp-json/wp/v2/agenda) heeft geen datum. Kaarten via Stager (niet ophalen). robots.txt: alleen Crawl-delay 1. De ondertitel wordt niet overgenomen (is beschrijvende tekst), alleen gebruikt om geannuleerde concerten over te slaan.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "uutgaon-ooststellingwerf-web",
+      "name": "Uutgaon.nl (activiteitenkalender gemeente Ooststellingwerf)",
+      "rootUrl": "https://www.uutgaon.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.uutgaon.nl/agenda?frequency%5B0%5D=non_recurrent&format=fragment",
+        "pageParam": "page",
+        "firstPage": 1,
+        "maxPages": 15,
+        "card": "<div class=\"postpreview\">",
+        "fields": {
+          "title": "<h3[^>]*>(.*?)</h3>",
+          "url": "<a href=\"(https://www\\.uutgaon\\.nl/agenda/[^\"]+)\"",
+          "date": "<p class=\"u-text-ui3 heading4\">\\s*([^<]*?20\\d\\d)",
+          "time": "<p class=\"u-text-ui3 heading4\">[^<]*?20\\d\\d\\s+(?:van|om)\\s+(\\d{1,2}:\\d\\d)",
+          "end": "<p class=\"u-text-ui3 heading4\">[^<]*?20\\d\\d\\s+van\\s+\\d{1,2}:\\d\\d\\s+tot\\s+(\\d{1,2}:\\d\\d)",
+          "venue": "<span class=\"tag-label\">([^<]+)</span>",
+          "city": "class=\"postpreview-meta-item\">.*?data-tooltip=\"[^\"]*?,\\s*([^\",]+?)(?:,\\s*Nederland)?\"",
+          "tags": "entity-content-title[^>]*>([^<]+)<"
+        },
+        "province": "Fryslân"
+      },
+      "note": "Uutgaon.nl wordt 'beheerd door Gemeente Ooststellingwerf' (mijnbuurtje-platform): de activiteitenkalender van de gemeente, waar organisatoren zelf hun activiteit invoeren. Alleen eenmalige activiteiten (frequency=non_recurrent; vaste wekelijkse dingen vallen zo al weg), als HTML-fragment (format=fragment) met ?page=2,... Per kaartje naam, datum ('donderdag 22 oktober 2026 van 19:30 tot 21:30 uur'), plek en plaats (uit het adres). Geen teksten. robots.txt verbiedt alleen /static/js/.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "filmkerkwolvega-nl-web",
+      "name": "Filmkerk Wolvega",
+      "rootUrl": "https://filmkerkwolvega.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://filmkerkwolvega.nl/agenda/",
+        "card": "data-elementor-type=\"loop-item\"",
+        "fields": {
+          "title": "<h2 class=\"elementor-heading-title[^\"]*\">(.*?)</h2>",
+          "date": "<p class=\"elementor-heading-title[^\"]*\">\\s*(\\d{1,2}/\\d{1,2}/20\\d\\d)",
+          "url": "<a [^>]*href=\"(https://filmkerkwolvega\\.nl/[^\"]+)\"",
+          "genre": "event-type-([a-z-]+)"
+        },
+        "skipTitle": "besloten|opnamedag|draaiperiode",
+        "dropFromTitle": "\\((?:uitverkocht|\\d{1,2}u)\\)",
+        "genres": {
+          "film": "ScreeningEvent",
+          "muziek": "MusicEvent",
+          "theater": "TheaterEvent",
+          "workshop": "EducationEvent",
+          "podcasts": "EducationEvent"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Filmkerk Wolvega",
+        "city": "Wolvega"
+      },
+      "note": "Elementor-lijst op /agenda/ met per kaartje naam en datum (dd/mm/jjjj); besloten vertoningen (bedrijven, opnames) overgeslagen. Tijd alleen als '(20u)' in de naam staat.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "filmhuisnoordwolde-nl-web",
+      "name": "Filmhuis Noordwolde",
+      "rootUrl": "https://www.filmhuisnoordwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.filmhuisnoordwolde.nl/",
+        "card": "<div class=\"movie-card",
+        "fields": {
+          "title": "<h2>(.*?)</h2>",
+          "date": "<h3>([^<]*20\\d\\d)</h3>",
+          "url": "<a href=\"(/filmagenda/[^\"]+)\""
+        }
+      },
+      "defaultPlace": {
+        "venue": "Filmhuis Noordwolde ('t Buurthuus)",
+        "city": "Noordwolde"
+      },
+      "kindHint": "film",
+      "note": "Filmagenda op de voorpagina als kaartjes (movie-card: naam en datum). 'Alle voorstellingen zijn op vrijdagavond, aanvang 20.00 uur' staat onderaan, niet per kaartje (dus geen tijd). In 't Buurthuus, Hoofdstraat Oost 34a.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "leeuwarden-municipal-calendar-web",
+      "name": "Gemeente Leeuwarden evenementenkalender",
+      "rootUrl": "https://www.leeuwarden.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.leeuwarden.nl/document/evenementenkalender/",
+        "card": "<tr>\\s*<td",
+        "fields": {
+          "date": "^<tr>\\s*<td[^>]*>\\s*([^<]*\\d[^<]*?)\\s*</td>",
+          "title": "^<tr>\\s*<td[^>]*>[^<]*</td>\\s*<td[^>]*>\\s*(.*?)\\s*</td>",
+          "city": "^<tr>\\s*<td[^>]*>[^<]*</td>\\s*<td[^>]*>.*?</td>\\s*<td[^>]*>\\s*([^,;<]+)",
+          "venue": "^<tr>\\s*<td[^>]*>[^<]*</td>\\s*<td[^>]*>.*?</td>\\s*<td[^>]*>\\s*[^,<]+,\\s*([^<]+?)\\s*</td>"
+        },
+        "province": "Fryslân"
+      },
+      "maxPages": 1,
+      "maxDepth": 1,
+      "minDelaySeconds": 1,
+      "note": "De gemeente zet hier de vastgestelde evenementenkalender (grote evenementen en schaarse locaties: Oldehoofsterkerkhof, Wilhelminaplein, Prinsentuin, Groene Ster) als tabel per maand: 'Datum | Evenement | Plaats, locatie'. Alleen feiten. Voorbije maanden haalt de gemeente weg; de kalender voor 2027 wordt in december vastgesteld. Een periode ('9 tot en met 17 oktober') loopt door tot de laatste dag; bij '23 en 24 oktober' leest when.py alleen één dag. Plaatsnamen staan soms in het Fries (Warten = Wartena, Grou).",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "princessehof-nl-web",
+      "name": "Keramiekmuseum Princessehof (activiteiten)",
+      "rootUrl": "https://www.princessehof.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.princessehof.nl/te-zien-en-te-doen/activiteiten",
+        "card": "<article class=\"[^\"]*item-activitycard",
+        "fields": {
+          "date": "<figcaption>\\s*(\\d{1,2}\\s+[a-z]+\\s+20\\d\\d)",
+          "end": "<figcaption>[^<]*?t/m\\s*(\\d{1,2}\\s+[a-z]+\\s+20\\d\\d)",
+          "title": "<h2>(.*?)</h2>",
+          "url": "href=\"(/te-zien-en-te-doen/activiteiten/[^\"]+)\""
+        },
+        "skipTitle": "Kinderfeest|Prikkelarm|MuseumMetgezel"
+      },
+      "maxPages": 1,
+      "minDelaySeconds": 1,
+      "defaultPlace": {
+        "venue": "Keramiekmuseum Princessehof",
+        "city": "Leeuwarden",
+        "lat": 53.2034,
+        "lon": 5.792
+      },
+      "kindHint": "kunst",
+      "note": "Activiteiten als kaartjes met de datum (of periode 'D maand JJJJ t/m D maand JJJJ') in figcaption. Kaartjes zonder datum ('Op aanvraag', kinderfeestjes) vallen vanzelf weg. Tentoonstellingen laadt de site met JavaScript (zelfde platform als het Fries Museum).",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "tresoar-nl-api",
+      "name": "Tresoar (agenda)",
+      "rootUrl": "https://www.tresoar.nl/bezoeken/agenda/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "json_api",
+      "extractorConfig": {
+        "endpointUrl": "https://api.tresoar.nl/agenda?perPage=*",
+        "items": "items",
+        "title": [
+          "titel.NL"
+        ],
+        "startDate": "startdatum",
+        "startTime": "tijdstip",
+        "endDate": "einddatum",
+        "url": "url",
+        "id": "_id",
+        "skipTitle": "Silent Book Club|Erfgoed-lab|Data Dag|vrijwilligers"
+      },
+      "defaultPlace": {
+        "venue": "Tresoar",
+        "city": "Leeuwarden",
+        "lat": 53.2057,
+        "lon": 5.7998
+      },
+      "kindHint": "lezing",
+      "note": "Tresoar (Fries archief en literatuurmuseum, Boterhoek 1) laadt de agenda met JavaScript uit api.tresoar.nl/agenda (575 items incl. archief; de motor laat voorbije weg). Velden: titel.NL, startdatum/einddatum (ISO, middernacht), tijdstip ('19.30 - 22.00'), url (slug onder /bezoeken/agenda/). Overgeslagen: Silent Book Club (samen lezen), dagen voor vrijwilligers of vakmensen.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "debeatriks-nl-web",
+      "name": "De Beatriks",
+      "rootUrl": "https://debeatriks.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://debeatriks.nl/",
+        "card": "<a href=\"https://debeatriks.nl/events/(?!page/|feed/)[^\"]+\" class=\"(?:flex|block)[^\"]*reveal",
+        "fields": {
+          "date": "uppercase font-bold[^\"]*\">\\s*(\\d{1,2}\\s+[a-z]+)\\s*</p>",
+          "title": "<h1[^>]*>(.*?)</h1>",
+          "url": "^<a href=\"([^\"]+)\""
+        }
+      },
+      "defaultPlace": {
+        "venue": "De Beatriks",
+        "city": "Leeuwarden",
+        "lat": 53.2047,
+        "lon": 5.7889
+      },
+      "kindHint": "muziek",
+      "note": "De voorpagina (blok 'shows') toont alle komende avonden als kaartjes met '30 okt' en de naam. Het archief /events/ heeft ook voorbije avonden en geeft een 404 na de laatste pagina; daarom de voorpagina. Geen tijden in de lijst.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "wtcexpo-nl-web",
+      "name": "WTC Expo Leeuwarden (agenda)",
+      "rootUrl": "https://wtcexpo.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://wtcexpo.nl/agenda/",
+        "card": "<a class=\"post\"",
+        "fields": {
+          "date": "class=\"post-date\">\\s*(\\d{2}-\\d{2}-20\\d\\d)",
+          "end": "class=\"post-date\">[^<]*t/m\\s*(\\d{2}-\\d{2}-20\\d\\d)",
+          "title": "class=\"post-title\">(.*?)</div>",
+          "url": "href=\"([^\"]+)\""
+        },
+        "skipTitle": "HorecaEvenTT|vakbeurs"
+      },
+      "maxPages": 1,
+      "minDelaySeconds": 1,
+      "defaultPlace": {
+        "venue": "WTC Expo",
+        "city": "Leeuwarden",
+        "lat": 53.19,
+        "lon": 5.772
+      },
+      "note": "Evenementenhal WTC Expo (Heliconweg): beurzen, vlooienmarkten, feesten, shows. Kaartjes met 'DD-MM-JJJJ' of 'DD-MM-JJJJ t/m DD-MM-JJJJ'. De link gaat vaak naar de site van de organisator (prima: de organisator).",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "dbieb-op-shop-lezingen",
+      "name": "dbieb (lezingen en voorstellingen)",
+      "rootUrl": "https://dbieb.op-shop.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://dbieb.op-shop.nl/?tags%5B%5D=54&tags%5B%5D=78&tags%5B%5D=8",
+        "pageParam": "page",
+        "maxPages": 8,
+        "card": "<article class=\"product-row\"",
+        "fields": {
+          "title": "<h3>\\s*<a[^>]*>\\s*(.*?)\\s*</a>",
+          "url": "<h3>\\s*<a href=\"([^\"]+)\"",
+          "date": "data-icon-before=\"event\">\\s*<b>\\s*([^<]+?)\\s*</b>",
+          "time": "data-icon-before=\"schedule\">\\s*(\\d{1,2}:\\d\\d)",
+          "room": "data-reveal=\"location-detail\">([^<]+)<"
+        },
+        "rooms": {
+          "dbieb Leeuwarden": {
+            "venue": "dbieb Leeuwarden (Blokhuispoort)",
+            "city": "Leeuwarden"
+          },
+          "dbieb Stiens": {
+            "venue": "dbieb Stiens",
+            "city": "Stiens"
+          },
+          "dbieb Grou": {
+            "venue": "dbieb Grou",
+            "city": "Grou"
+          },
+          "dbieb Burgum": {
+            "venue": "dbieb Burgum",
+            "city": "Burgum"
+          },
+          "dbieb Gytsjerk": {
+            "venue": "dbieb Gytsjerk",
+            "city": "Giekerk"
+          },
+          "dbieb pop-up Leeuwarden Oost": {
+            "venue": "dbieb pop-up Leeuwarden Oost",
+            "city": "Leeuwarden"
+          },
+          "De Pleats Burgum": {
+            "venue": "De Pleats",
+            "city": "Burgum"
+          },
+          "Doarpskeamer Grou": {
+            "venue": "Doarpskeamer",
+            "city": "Grou"
+          }
+        },
+        "skipTitle": "spreekuur|inloop|taalkamer|language caf|wereldcaf|loket|meet ?up|samen lezen|mei-inoar|voorleespicknick|webinar|repair|opvoedpunt|talentgesprek|UP!-gesprek|voorlichting|Heel Nederland Eet|serie$|puber|Smartphonevrij|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
+        "skipTags": "spreekuur&amp;advies|digitaal&amp;computer"
+      },
+      "defaultPlace": {
+        "venue": "dbieb Leeuwarden",
+        "city": "Leeuwarden"
+      },
+      "note": "Bibliotheek dbieb (gemeenten Leeuwarden en Tytsjerksteradiel) zet de hele agenda op dbieb.op-shop.nl (robots.txt: Allow: /). Alleen de rubrieken college&lezing (54), voorstelling (78) en kunst&cultuur (8); spreekuren, taalkamers, inloop en voorlichting zijn geen uitje. Activiteiten met meerdere data staan in een tabel per kaartje; dan leest html_cards alleen het kaartje zelf.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "ontdekdebieb-op-shop-lezingen",
+      "name": "Bibliotheken Noord Fryslân / ontdekdebieb (lezingen en cultuur)",
+      "rootUrl": "https://ontdekdebieb.op-shop.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://ontdekdebieb.op-shop.nl/?tags%5B%5D=172&tags%5B%5D=135",
+        "pageParam": "page",
+        "maxPages": 8,
+        "card": "<article class=\"product-row\"",
+        "fields": {
+          "title": "<h3>\\s*<a[^>]*>\\s*(.*?)\\s*</a>",
+          "url": "<h3>\\s*<a href=\"([^\"]+)\"",
+          "date": "data-icon-before=\"event\">\\s*<b>\\s*([^<]+?)\\s*</b>",
+          "time": "data-icon-before=\"schedule\">\\s*(\\d{1,2}:\\d\\d)",
+          "room": "data-reveal=\"location-detail\">([^<]+)<"
+        },
+        "rooms": {
+          "Bibliotheek Ameland - Nes": {
+            "venue": "Bibliotheek Ameland - Nes",
+            "city": "Nes"
+          },
+          "Bibliotheek Buitenpost": {
+            "venue": "Bibliotheek Buitenpost",
+            "city": "Buitenpost"
+          },
+          "Bibliotheek De Westereen": {
+            "venue": "Bibliotheek De Westereen",
+            "city": "De Westereen"
+          },
+          "Bibliotheek Dokkum": {
+            "venue": "Bibliotheek Dokkum",
+            "city": "Dokkum"
+          },
+          "Bibliotheek Dronryp": {
+            "venue": "Bibliotheek Dronryp",
+            "city": "Dronrijp"
+          },
+          "Bibliotheek Franeker": {
+            "venue": "Bibliotheek Franeker",
+            "city": "Franeker"
+          },
+          "Bibliotheek Hallum": {
+            "venue": "Bibliotheek Hallum",
+            "city": "Hallum"
+          },
+          "Bibliotheek Harlingen": {
+            "venue": "Bibliotheek Harlingen",
+            "city": "Harlingen"
+          },
+          "Bibliotheek Kollum": {
+            "venue": "Bibliotheek Kollum",
+            "city": "Kollum"
+          },
+          "Bibliotheek Schiermonnikoog": {
+            "venue": "Bibliotheek Schiermonnikoog",
+            "city": "Schiermonnikoog"
+          },
+          "Bibliotheek St.- Annaparochie": {
+            "venue": "Bibliotheek St.- Annaparochie",
+            "city": "Sint Annaparochie"
+          },
+          "Bibliotheek Surhuisterveen": {
+            "venue": "Bibliotheek Surhuisterveen",
+            "city": "Surhuisterveen"
+          },
+          "Bibliotheek Terschelling": {
+            "venue": "Bibliotheek Terschelling",
+            "city": "West-Terschelling"
+          },
+          "Bibliotheek Vlieland": {
+            "venue": "Bibliotheek Vlieland",
+            "city": "Oost-Vlieland"
+          },
+          "Franeker/De Trije": {
+            "venue": "De Trije",
+            "city": "Franeker"
+          },
+          "St.- Annaparochie/MFC Ons huis": {
+            "venue": "MFC Ons Huis",
+            "city": "Sint Annaparochie"
+          },
+          "Biebpunt Feanwâlden": {
+            "venue": "Biebpunt",
+            "city": "Feanwâlden"
+          },
+          "Dokkum/ Dokwurk": {
+            "venue": "Dokwurk",
+            "city": "Dokkum"
+          },
+          "'t Koartling Buitenpost": {
+            "venue": "'t Koartling",
+            "city": "Buitenpost"
+          }
+        },
+        "skipTitle": "spreekuur|inloop|taalkamer|language caf|wereldcaf|loket|meet ?up|samen lezen|mei-inoar|voorleespicknick|webinar|repair|opvoedpunt|talentgesprek|UP!-gesprek|voorlichting|Heel Nederland Eet|serie$|puber|Smartphonevrij|Bildts Aigene|Koffie met|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
+        "skipTags": "Digitaal en computer|Geld &amp; Recht"
+      },
+      "defaultPlace": {
+        "venue": "Bibliotheek Franeker",
+        "city": "Franeker"
+      },
+      "note": "Bibliotheken Noord Fryslân (ontdekdebieb.nl; o.a. Franeker, Sint Annaparochie, Dronryp, Ameland, Schiermonnikoog, Vlieland, Terschelling, Harlingen, Dokkum) zet de agenda op ontdekdebieb.op-shop.nl (robots.txt: Allow: /). Alleen de rubrieken Lezing (172) en Cultuur & historie (135); spreekuren, taal, digitaal en ontmoeting zijn geen uitje. Een deel van Franeker komt nu al binnen via franeker.nl; de motor ontdubbelt op naam en datum.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "waadhoeke-municipal-calendar-web",
+      "name": "Gemeente Waadhoeke evenementenkalender",
+      "rootUrl": "https://www.waadhoeke.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.waadhoeke.nl/evenementenkalender",
+        "card": "<li data-list-item-id=",
+        "fields": {
+          "date": "^<li[^>]*>\\s*(?:<span>)?\\s*([^:<]*\\d[^:<]*?)\\s*:",
+          "title": "^<li[^>]*>\\s*(?:<span>)?[^:<]*:\\s*(?:</span>)?\\s*(?:<a[^>]*>)?\\s*(?:<span>)?\\s*([^<]+?)\\s*(?:&nbsp;)?\\s*<",
+          "url": "^<li[^>]*>(?:(?!</li>).)*?href=\"(https?://[^\"]+)\"",
+          "end": "^<li[^>]*>\\s*(?:<span>)?[^:<]*?t/m\\s*(\\d{1,2}\\s+[a-z]+)"
+        },
+        "province": "Fryslân"
+      },
+      "maxPages": 1,
+      "minDelaySeconds": 1,
+      "note": "De gemeente Waadhoeke zet de aangemelde evenementen van het jaar per maand op /evenementenkalender ('11 t/m 20 december: Kryst yn Frjentsjer', soms met link naar de organisator). Geen vaste plaats per regel: de plaats staat in de naam ('in Franeker') of ontbreekt (dan de gemeente). De kalender 2027 komt later op dezelfde of een nieuwe pagina. Zonder plaats in de naam valt de motor terug op Franeker (hoofdplaats; Kryst yn Frjentsjer = Kerst in Franeker).",
+      "policyReviewedAt": "2026-10-22",
+      "defaultPlace": {
+        "city": "Franeker"
+      }
+    },
+    {
+      "id": "schierstins-nl-web",
+      "name": "De Schierstins Feanwâlden (agenda)",
+      "rootUrl": "https://www.schierstins.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.schierstins.nl/agenda/",
+        "card": "<article class=\"post\"",
+        "fields": {
+          "date": "fa-calendar\"></i>\\s*([0-9]{1,2}-[0-9]{1,2}-20[0-9]{2})",
+          "time": "fa-clock\"></i>\\s*([0-9]{1,2}[.:][0-9]{2})",
+          "title": "class=\"entry-title[^\"]*\"><a[^>]*>(.*?)</a>",
+          "url": "class=\"entry-title[^\"]*\"><a href=\"([^\"]+)\""
+        }
+      },
+      "defaultPlace": {
+        "venue": "De Schierstins",
+        "city": "Feanwâlden",
+        "lat": 53.23954,
+        "lon": 5.99069
+      },
+      "maxPages": 1,
+      "note": "Agenda van Cultureel Historisch Centrum De Schierstins (organisator en podium) als kaartjes: datum '13-03-2027', tijd 'uur · plek', titel met link. robots.txt staat alles toe. Vanaf 19 oktober 2026 tijdelijk gesloten (verbouwing, weer open begin 2027); de agenda blijft staan.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "paradisobar-nl-web",
+      "name": "Paradiso Bar Kollum (agenda)",
+      "rootUrl": "https://www.paradisobar.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.paradisobar.nl/agenda/",
+        "card": "<div class=\"agenda-item\">",
+        "fields": {
+          "title": "class=\"title\">(.*?)</a>",
+          "url": "<a href=\"([^\"]+)\" class=\"title\"",
+          "date": "class=\"date\"[^>]*>(.*?)</a>",
+          "time": "(?:Aanvang|[Oo]pen (?:vanaf|van))[:\\s]*([0-9]{1,2}[.:][0-9]{2})"
+        },
+        "skipTitle": "klaverjas|darttoernooi"
+      },
+      "defaultPlace": {
+        "venue": "Paradiso Bar",
+        "city": "Kollum",
+        "lat": 53.2808,
+        "lon": 6.15182
+      },
+      "maxPages": 1,
+      "note": "Agenda van Paradiso Bar / Eetcafé De Koornbeurs in Kollum (uitgaanscafé met live optredens en dj's, Voorstraat 65) als kaartjes: titel met link, dag en maand ('07 NOV', zonder jaar), 'Aanvang'/'Open vanaf' met tijd. Klaverjas- en darttoernooien vallen weg (clubspel). robots.txt staat alles toe behalve wp-admin.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "nijewarf-frl-web",
+      "name": "Doarpshûs De Nije Warf Wâlterswâld (agenda)",
+      "rootUrl": "https://www.nijewarf.frl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.nijewarf.frl/agenda/",
+        "card": "<div class=\"col-12 col-md-6 col-lg-4 mb-5\">",
+        "fields": {
+          "url": "<a href=\"(/agenda/[^\"]+)\"",
+          "date": "bg-primary[^>]*>\\s*([0-9]{1,2}-[0-9]{1,2}-20[0-9]{2})",
+          "title": "highlight__title[^>]*>(.*?)</h2>",
+          "time": "text-muted[^>]*>\\s*([0-9]{1,2}[.:][0-9]{2})"
+        },
+        "skipTitle": "swingo"
+      },
+      "defaultPlace": {
+        "venue": "Doarpshûs De Nije Warf",
+        "city": "Wâlterswâld",
+        "lat": 53.29149,
+        "lon": 6.03121
+      },
+      "maxPages": 1,
+      "note": "Agenda van dorpshuis De Nije Warf (Foarwei 31A, Wâlterswâld) als kaartjes: datum '07-11-2026', titel, '20.00 · plek'. robots.txt staat alles toe. Veel is voor het dorp zelf (Swingo, Sinterklaasfeest); de gewone filters halen dat weg, een winterfair of live muziek blijft.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "ontdekdebieb-noordoost-web",
+      "name": "Bibliotheek Noord Fryslân (Noardeast-Fryslân, Dantumadiel, Achtkarspelen)",
+      "rootUrl": "https://ontdekdebieb.op-shop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://ontdekdebieb.op-shop.nl/?locations%5B%5D=1&locations%5B%5D=2&locations%5B%5D=3&locations%5B%5D=6&locations%5B%5D=8&locations%5B%5D=11&locations%5B%5D=99&locations%5B%5D=182&locations%5B%5D=140&locations%5B%5D=185&locations%5B%5D=93&locations%5B%5D=94&locations%5B%5D=31&locations%5B%5D=96&locations%5B%5D=100",
+        "pageParam": "page",
+        "maxPages": 15,
+        "card": "<article class=\"product-row\"",
+        "fields": {
+          "title": "<h3>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h3>\\s*<a href=\"([^\"]+)\"",
+          "id": "<h3>\\s*<a href=\"/(\\d+/[^\"]+)\"",
+          "date": "data-icon-before=\"event\">\\s*<b>(.*?)</b>",
+          "time": "data-icon-before=\"schedule\">\\s*([0-9]{1,2}:[0-9]{2})",
+          "end": "data-icon-before=\"schedule\">\\s*[0-9]{1,2}:[0-9]{2}\\s*-\\s*([0-9]{1,2}:[0-9]{2})",
+          "room": "data-reveal=\"location-detail\">([^<]+)<",
+          "tags": "<ul class=\"tags\">(.*?)</ul>"
+        },
+        "skipTitle": "digitaal caf|digid|digiveilig|computer|tablet|smartphone|informatiepunt|taalhuis|taalcaf|hulp bij|klik ?& ?tik|spreekuur|inloop|mobiele bibliotheek|nalatenschap|handwerk|breicaf|schrijfcaf|mantelzorg|repair ?caf|fraude|belastingaangifte|cursus|oefenen|samen lezen|leesclub|leeskring|boekenclub|voorleesuur|peuter|dreumes|baby|nederlands leren|ontmoet|digi|brei|haak|doarpskeamer|wollige woensdag|hartcheck|valpreventie|pati[eë]ntenportaal|^voorleespret$|^mini voorleespret|knutselclub|eetgedrag|zintuigen|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
+        "rooms": {
+          "Bibliotheek Buitenpost": {
+            "venue": "Bibliotheek Buitenpost",
+            "city": "Buitenpost"
+          },
+          "Bibliotheek De Westereen": {
+            "venue": "Bibliotheek De Westereen",
+            "city": "De Westereen"
+          },
+          "Bibliotheek Dokkum": {
+            "venue": "Bibliotheek Dokkum",
+            "city": "Dokkum"
+          },
+          "Bibliotheek Hallum": {
+            "venue": "Bibliotheek Hallum",
+            "city": "Hallum"
+          },
+          "Bibliotheek Kollum": {
+            "venue": "Bibliotheek Kollum",
+            "city": "Kollum"
+          },
+          "Bibliotheek Surhuisterveen": {
+            "venue": "Bibliotheek Surhuisterveen",
+            "city": "Surhuisterveen"
+          },
+          "Biebpunt Feanwâlden": {
+            "venue": "Biebpunt Feanwâlden",
+            "city": "Feanwâlden"
+          },
+          "Buitenpost/ De Schakel - Protestantse kerk": {
+            "venue": "De Schakel",
+            "city": "Buitenpost"
+          },
+          "Dokkum/ Dokwurk": {
+            "venue": "Dokwurk",
+            "city": "Dokkum"
+          },
+          "Feanwâlden/ De Ferbining": {
+            "venue": "De Ferbining",
+            "city": "Feanwâlden"
+          },
+          "Hallum / CBS It Fundamint": {
+            "venue": "CBS It Fundamint",
+            "city": "Hallum"
+          },
+          "Hallum / OBS Op 'e Dobbe": {
+            "venue": "OBS Op 'e Dobbe",
+            "city": "Hallum"
+          },
+          "Huiskamerbibliotheek Holwert": {
+            "venue": "Huiskamerbibliotheek Holwert",
+            "city": "Holwert"
+          },
+          "Kollum, Meckama State": {
+            "venue": "Meckama State",
+            "city": "Kollum"
+          },
+          "'t Koartling Buitenpost": {
+            "venue": "'t Koartling",
+            "city": "Buitenpost"
+          }
+        },
+        "roomFallback": {
+          "city": "Dokkum"
+        },
+        "province": "Fryslân"
+      },
+      "minDelaySeconds": 1,
+      "note": "Activiteitenagenda van Bibliotheek Noord Fryslân (op-shop.nl, eigen kaartverkoop van de bibliotheek), alleen de vestigingen en biebpunten in Noardeast-Fryslân, Dantumadiel en Achtkarspelen (filter locations[] = 1 Dokkum, 2 Buitenpost, 3 De Westereen, 6 Hallum, 8 Kollum, 11 Surhuisterveen, 99 Feanwâlden, 182/100 Buitenpost, 140 Dokwurk, 185 De Ferbining, 93/94 Hallum, 31 Holwert, 96 Meckama State). Kaartjes <article class=\"product-row\"> met titel, 'do 22 okt 2026', tijd en vestiging. robots.txt staat alles toe (alleen SemrushBot niet). Cursussen, digitale hulp, spreekuren en peuteruurtjes vallen weg via skipTitle; lezingen, workshops, voorstellingen en exposities blijven. Waadhoeke/Harlingen/eilanden komen via andere bronnen (franeker.nl).",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "dbieb-tytsjerksteradiel-web",
+      "name": "dbieb (bibliotheek) Tytsjerksteradiel: Burgum, Gytsjerk, Oentsjerk",
+      "rootUrl": "https://dbieb.op-shop.nl/",
+      "role": "venue",
+      "enabled": true,
+      "kindHint": "lezing",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://dbieb.op-shop.nl/?locations%5B%5D=84&locations%5B%5D=2&locations%5B%5D=4&locations%5B%5D=11&locations%5B%5D=120",
+        "pageParam": "page",
+        "maxPages": 15,
+        "card": "<article class=\"product-row\"",
+        "fields": {
+          "title": "<h3>\\s*<a[^>]*>(.*?)</a>",
+          "url": "<h3>\\s*<a href=\"([^\"]+)\"",
+          "id": "<h3>\\s*<a href=\"/(\\d+/[^\"]+)\"",
+          "date": "data-icon-before=\"event\">\\s*<b>(.*?)</b>",
+          "time": "data-icon-before=\"schedule\">\\s*([0-9]{1,2}:[0-9]{2})",
+          "end": "data-icon-before=\"schedule\">\\s*[0-9]{1,2}:[0-9]{2}\\s*-\\s*([0-9]{1,2}:[0-9]{2})",
+          "room": "data-reveal=\"location-detail\">([^<]+)<",
+          "tags": "<ul class=\"tags\">(.*?)</ul>"
+        },
+        "skipTitle": "digitaal caf|digid|digiveilig|computer|tablet|smartphone|informatiepunt|taalhuis|taalcaf|hulp bij|klik ?& ?tik|spreekuur|inloop|mobiele bibliotheek|nalatenschap|handwerk|breicaf|schrijfcaf|mantelzorg|repair ?caf|fraude|belastingaangifte|cursus|oefenen|samen lezen|leesclub|leeskring|boekenclub|voorleesuur|peuter|dreumes|baby|nederlands leren|ontmoet|digi|brei|haak|doarpskeamer|wollige woensdag|hartcheck|valpreventie|pati[eë]ntenportaal|^voorleespret$|^mini voorleespret|knutselclub|eetgedrag|zintuigen|taalkamer|voorleespicknick|boekstart|laaggeletterd|kom maar kipjes|marktplaats|nierfalen|stamboom|amnesty|s[uû]n (?:&|en) wolw[eê]zen|bieb ?atelier|boekverkoop|boekstart|voorleesuur|voorlezen|silent reading",
+        "rooms": {
+          "dbieb Burgum": {
+            "venue": "dbieb Burgum",
+            "city": "Burgum"
+          },
+          "dbieb Gytsjerk": {
+            "venue": "dbieb Gytsjerk",
+            "city": "Gytsjerk"
+          },
+          "BOB gebouw Oentsjerk": {
+            "venue": "BOB-gebouw",
+            "city": "Oentsjerk"
+          },
+          "De Pleats Burgum": {
+            "venue": "De Pleats",
+            "city": "Burgum"
+          },
+          "Glinstra State": {
+            "venue": "Glinstra State",
+            "city": "Burgum"
+          }
+        },
+        "roomFallback": {
+          "city": "Burgum"
+        },
+        "province": "Fryslân"
+      },
+      "minDelaySeconds": 1,
+      "note": "Activiteitenagenda van dbieb (bibliotheek Leeuwarden en Tytsjerksteradiel, eigen kaartverkoop op op-shop.nl), alleen de plekken in Tytsjerksteradiel (locations[] = 2 dbieb Burgum, 4 dbieb Gytsjerk, 11 De Pleats Burgum, 84 BOB-gebouw Oentsjerk, 120 Glinstra State). Zelfde opbouw als Bibliotheek Noord Fryslân (kaartjes product-row). robots.txt staat alles toe (alleen SemrushBot niet). Cursussen, digitale hulp en vaste inloop vallen weg via skipTitle. Leeuwarden/Grou/Stiens horen bij een andere bron of groep.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "decolle-nl-theater",
+      "name": "Theater De Colle Kollum (theateragenda)",
+      "rootUrl": "https://www.decolle.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.decolle.nl/theater/theateragenda/",
+        "card": "<div class=\"col-12 item-col",
+        "fields": {
+          "url": "<a href=\"([^\"]+)\"",
+          "title": "<h2>(.*?)</h2>",
+          "date": "<h3>([^|<]+)",
+          "time": "<h3>[^|<]*\\|\\s*([0-9]{1,2}[:.][0-9]{2})"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Theater De Colle",
+        "city": "Kollum",
+        "lat": 53.2765,
+        "lon": 6.1545
+      },
+      "maxPages": 1,
+      "note": "Theateragenda van Theater/Zalencentrum De Colle (Gerrit Bleekerstraat 3, Kollum; programmaraad van Stichting Kollum Promotie) als kaartjes: titel (h2), 'zaterdag 24 oktober 2026 | 11:00 (zaal open ...)' (h3), prijs. Kaartverkoop via MGTickets; we nemen alleen de feiten over van de eigen site. robots.txt staat alles toe (Crawl-delay 5).",
+      "policyReviewedAt": "2026-10-22",
+      "kindHint": "theater"
+    },
+    {
+      "id": "maskelynbuitenpost-nl-web",
+      "name": "Stichting Maskelyn Buitenpost (voorstellingen)",
+      "rootUrl": "https://maskelynbuitenpost.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "kindHint": "theater",
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://maskelynbuitenpost.nl/alle-voorstellingen/",
+        "card": "<table border=\"0px\">",
+        "fields": {
+          "date": "bgcolor=\"#4e046b\"[^>]*>(.*?)</td>",
+          "title": "<h4>(.*?)</h4>",
+          "url": "<h4>.*?href=\"([^\"]+)\"",
+          "time": "Aanvang:</strong>\\s*([0-9]{1,2}[:.][0-9]{2})",
+          "room": "Aanvang:</strong>[^|<]*\\|\\s*([^<]+?)\\s*</td>"
+        },
+        "skipTitle": "\\(vervalt\\)|vervallen|afgelast",
+        "rooms": {
+          "The Point": {
+            "venue": "The Point",
+            "city": "Buitenpost"
+          },
+          "Kruiskerk": {
+            "venue": "Kruiskerk",
+            "city": "Buitenpost"
+          },
+          "Mariakerk": {
+            "venue": "Mariakerk",
+            "city": "Buitenpost"
+          },
+          "Raadzaal Gemeentehuis Buitenpost": {
+            "venue": "Raadzaal gemeentehuis",
+            "city": "Buitenpost"
+          },
+          "Petruskerk Twijzel": {
+            "venue": "Petruskerk",
+            "city": "Twijzel"
+          }
+        },
+        "roomFallback": {
+          "city": "Buitenpost"
+        }
+      },
+      "defaultPlace": {
+        "city": "Buitenpost"
+      },
+      "maxPages": 1,
+      "note": "Seizoensprogramma van Stichting Maskelyn Buitenpost (organisator van theater, cabaret en concerten op wisselende plekken: The Point, Kruiskerk, raadzaal, Petruskerk Twijzel) als tabelletjes: dag/datum/maand zonder jaar, titel met link, 'Aanvang: 20:00 uur |plek'. robots.txt staat alles toe behalve wp-admin. Afgelaste voorstellingen ('(vervalt)') vallen weg.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "sc-heerenveen-nl-wedstrijden",
+      "name": "sc Heerenveen (thuiswedstrijden)",
+      "rootUrl": "https://www.sc-heerenveen.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.sc-heerenveen.nl/wedstrijden",
+        "card": "<div class=\"card--match card--match-(?:program|latest)\">",
+        "fields": {
+          "title": "<div class=\"card--match__logo-container\">.*?alt=\"([^\"]+?) club\"",
+          "extra": "card--match__logo-container(?:--away)?\">(?:(?!card--match__logo-container).)*?</div>.*?card--match__logo-container[^\"]*\">.*?alt=\"([^\"]+?) club\"",
+          "date": "<span class=\"card--match__date\">(.*?)</span>",
+          "time": "<span class=\"card--match__time\">(.*?)</span>",
+          "url": "<a href=\"(/hoofdelftallen/[^\"]+)\"",
+          "genre": "<span class=\"card--match__league-name\">(.*?)</span>",
+          "tags": "<span class=\"card--match__league-name\">(.*?)</span>"
+        },
+        "skipTitle": "^(?!sc Heerenveen – )",
+        "genres": {
+          "Eredivisie": "SportsEvent",
+          "KNVB Beker": "SportsEvent"
+        },
+        "skipTags": "^(?!.*(?:VriendenLoterij Eredivisie|KNVB Beker))"
+      },
+      "defaultPlace": {
+        "venue": "Abe Lenstra Stadion",
+        "city": "Heerenveen",
+        "lat": 52.9589,
+        "lon": 5.9372
+      },
+      "kindHint": "sport",
+      "note": "Eredivisie en KNVB Beker: alleen de thuiswedstrijden van het eerste mannenelftal (de thuisclub staat als eerste logo; skipTitle). Het hele seizoen staat als kaartjes op /wedstrijden; vrouwen en jeugd vallen weg op de competitienaam (skipTags). Wedstrijden met 'N.T.B.' als datum komen vanzelf zodra de datum vastligt.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "cambuur-nl-thuiswedstrijden",
+      "name": "SC Cambuur (thuiswedstrijden)",
+      "rootUrl": "https://cambuur.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://cambuur.nl/thuiswedstrijden/",
+        "card": "<p><strong>SC Cambuur (?:&#8211;|–|-) ",
+        "fields": {
+          "title": "^<p><strong>([^<]+)</strong>",
+          "date": "<br>\\s*((?:maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag) \\d{1,2} \\w+(?: 20\\d\\d)?)\\s*\\|",
+          "time": "\\|\\s*(\\d{1,2}[.:]\\d{2})\\s*uur"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Kooi Stadion",
+        "city": "Leeuwarden",
+        "lat": 53.1981,
+        "lon": 5.8183
+      },
+      "kindHint": "sport",
+      "note": "Eredivisie: de pagina 'Thuiswedstrijden' noemt de eerstvolgende thuisduels met datum en aftrap (alinea's met '<strong>SC Cambuur – ...</strong>'). robots.txt heeft alleen Content-Signal-commentaar, geen verbod.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "fcemmen-nl-wedstrijdschema",
+      "name": "FC Emmen (thuiswedstrijden)",
+      "rootUrl": "https://fcemmen.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://fcemmen.nl/wedstrijdschema/",
+        "card": "<tr><td>\\d+</td><td>\\w+</td><td>[\\d-]+</td><td>[^<]*</td><td><strong>FC Emmen</strong>",
+        "fields": {
+          "title": "<td><strong>(FC Emmen)</strong></td>",
+          "extra": "<strong>FC Emmen</strong></td><td>([^<]+)</td>",
+          "date": "<td>(\\d{1,2}-\\d{1,2}-20\\d\\d)</td>",
+          "time": "<td>(\\d{1,2}[.:]\\d{2}) uur</td>"
+        }
+      },
+      "defaultPlace": {
+        "venue": "De Oude Meerdijk",
+        "city": "Emmen",
+        "lat": 52.7752,
+        "lon": 6.9417
+      },
+      "kindHint": "sport",
+      "note": "Keuken Kampioen Divisie: tabel 'Competitieprogramma' (ronde, dag, datum, tijd, thuis, uit); alleen rijen met FC Emmen als thuisclub. De agendalink op de pagina gaat naar maak-agenda.nl (derde partij): niet gebruiken.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "elfstedenhal-frl-agenda",
+      "name": "Elfstedenhal",
+      "rootUrl": "https://elfstedenhal.frl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://elfstedenhal.frl/agenda/",
+        "card": "<div class=\"wpex-post-cards-entry",
+        "fields": {
+          "title": "vcex-page-title__text\">(.*?)</span>",
+          "date": "home-agenda-date[^\"]*\">(?:<span[^>]*>(?:<span[^>]*></span>)?</span>)?(.*?)</div>",
+          "time": "(\\d{1,2}:\\d{2})(?:\\s*-\\s*\\d{1,2}:\\d{2})?\\s*uur",
+          "url": "<a href=\"([^\"]+)\"",
+          "end": "\\d{1,2}:\\d{2}\\s*-\\s*(\\d{1,2}:\\d{2})\\s*uur"
+        },
+        "skipTitle": "clinic|schaatsles|training|testavond"
+      },
+      "defaultPlace": {
+        "venue": "Elfstedenhal",
+        "city": "Leeuwarden",
+        "lat": 53.1857,
+        "lon": 5.8303
+      },
+      "kindHint": "sport",
+      "note": "Overdekte ijsbaan: thuiswedstrijden van ijshockeyclub OG Capitals, NK shorttrack, KNSB Shorttrack Cup, Friesland Bokaal, Bikkelavonden en Familie Fundagen. /agenda/ heeft kaartjes met naam, datum ('14 november') en aanvangstijd. Bochtenclinics zijn lessen: weg.",
+      "policyReviewedAt": "2026-10-22"
+    },
+    {
+      "id": "heerenveenflyers-com-wedstrijden",
+      "name": "UNIS Flyers Heerenveen (thuiswedstrijden ijshockey)",
+      "rootUrl": "https://heerenveenflyers.com/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://heerenveenflyers.com/wedstrijden/",
+        "card": "<tr\\s+class=\"row-\\d+\"><td\\s+class=\"column-1\">\\d{1,2} \\w+ 20\\d\\d</td><td\\s+class=\"column-2\">[^<]*</td><td\\s+class=\"column-3\">[^<]*</td><td\\s+class=\"column-4\">[^<]*Flyers Heerenveen</td>",
+        "fields": {
+          "title": "class=\"column-4\">([^<]+)</td>",
+          "extra": "class=\"column-5\">([^<]+)</td>",
+          "date": "class=\"column-1\">([^<]+)</td>",
+          "time": "class=\"column-3\">(\\d{1,2}:\\d{2})",
+          "genre": "class=\"column-2\">([^<]+)</td>"
+        }
+      },
+      "defaultPlace": {
+        "venue": "Thialf",
+        "city": "Heerenveen",
+        "lat": 52.9547,
+        "lon": 5.9419
+      },
+      "kindHint": "sport",
+      "note": "IJshockey (Eredivisie/BeNe League en Beker): thuiswedstrijden in Thialf uit de tabellen op /wedstrijden/ (datum, competitie, tijd, thuis, uit). Alleen rijen met de Flyers als thuisclub; oefenwedstrijden staan in een andere tabel en vallen weg. De .ics op de site bevat ook uitwedstrijden (ics kent geen filter).",
       "policyReviewedAt": "2026-10-22"
     },
     {
