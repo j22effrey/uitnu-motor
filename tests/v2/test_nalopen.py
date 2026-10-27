@@ -201,3 +201,12 @@ def test_grensregister_mag_verder_over_de_grens():
     assert not in_area(leer)
     assert in_area({**leer, "grensUitje": True})
     assert not in_area({"venue": {"lat": 53.0793, "lon": 8.8017}, "grensUitje": True})   # Bremen: te ver
+
+
+def test_een_bron_die_ineens_leeg_is_houdt_de_agenda_niet_tegen():
+    # Oktober 2026: Parkzicht en VVV Ameland leverden ineens niets; de keuring hield vier rondes alles tegen.
+    from collections import Counter
+    from pipeline.v2.gate import dropped_hosts
+    old = [{"id": f"p{i}", "sources": [{"host": "parkzicht.com"}], "occurrences": [{"date": "2026-11-01"}]} for i in range(12)]
+    assert dropped_hosts([], old, "2026-10-27", delivered=Counter()) == ["parkzicht.com"]
+    assert dropped_hosts([], old, "2026-10-27", retired_hosts={"parkzicht.com"}, delivered=Counter()) == []

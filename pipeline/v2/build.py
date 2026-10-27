@@ -22,8 +22,8 @@ from pipeline import area
 
 from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
 from .dekking import auto_register, coverage, load_register, merge_registers
-from .convert import TICKET_HOSTS, content_hash, load_first_party, merge_duplicates, to_v2
-from .gate import run_gate
+from .convert import TICKET_HOSTS, content_hash, load_first_party, merge_duplicates, merge_key, to_v2
+from .gate import MAX_CARRIED_HOSTS, dropped_hosts, run_gate
 from .kinds import KINDS, TAGS
 from .photos import attach_photos, host_of, list_pages, page_facts_for
 
@@ -243,8 +243,30 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     # Wat elke website aanleverde vóór de filters: een bron die levert, is niet kapot.
     delivered = Counter(h for e in converted + excluded + too_far
                         for h in {s.get("host") for s in e.get("sources") or [] if s.get("host")})
-    gate = run_gate(events, [e for e in previous if in_area(e)] if previous else previous, today.isoformat(),
-                    retired_hosts=gone, delivered=delivered)
+    in_area_previous = [e for e in previous if in_area(e)] if previous else previous
+    # Een enkele bron die ineens leeg is: zijn uitjes van de vorige keer blijven staan (zie gate.MAX_CARRIED_HOSTS).
+    carried: dict[str, int] = {}
+    dropped = dropped_hosts(events, in_area_previous, today.isoformat(), retired_hosts=gone, delivered=delivered)
+    if dropped and len(dropped) <= MAX_CARRIED_HOSTS:
+        have = {e["id"] for e in events}
+        # Niet dubbel: hetzelfde uitje kan nu via een andere website binnenkomen (andere id), en een adres
+        # (slug) mag maar één keer voorkomen.
+        slugs = {e.get("slug") for e in events}
+        keys = {merge_key(e) for e in events}
+        for old in in_area_previous:
+            hosts_of = {s.get("host") for s in old.get("sources") or []}
+            host = next((h for h in dropped if h in hosts_of), None)
+            running = any((o.get("endDate") or o.get("date") or "") >= today.isoformat() for o in old.get("occurrences") or [])
+            if (host and running and old["id"] not in have and old.get("slug") not in slugs
+                    and merge_key(old) not in keys):
+                events.append(old)
+                have.add(old["id"])
+                slugs.add(old.get("slug"))
+                keys.add(merge_key(old))
+                carried[host] = carried.get(host, 0) + 1
+        delivered = delivered + Counter({h: n for h, n in carried.items()})
+        events.sort(key=lambda e: (e["occurrences"][0]["date"], e["occurrences"][0].get("startTime") or "", e["title"]))
+    gate = run_gate(events, in_area_previous, today.isoformat(), retired_hosts=gone, delivered=delivered)
 
     prev_by_id = {e["id"]: e for e in previous or []}
     new_ids = {e["id"] for e in events}
@@ -259,6 +281,8 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "refreshedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "today": today.isoformat(),
         "total": len(events),
+        # Bronnen die ineens leeg waren: hun uitjes van de vorige keer bleven staan (nakijken in het onderhoud).
+        "bewaardVanVorigeKeer": carried,
         "inputRecords": len(raw),
         "outsideArea": len(outside),
         "geenUitje": len(skipped),
