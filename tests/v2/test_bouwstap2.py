@@ -98,3 +98,12 @@ def test_robot_probeert_ook_programma_pagina(monkeypatch):
     found = probe._strict_agenda_probe("https://x.example/", Robots(), fetcher=fetcher, timeout=5)
     assert found["url"] == "https://x.example/programma/"
     assert asked[:4] == ["https://x.example/agenda/", "https://x.example/evenementen/", "https://x.example/activiteiten/", "https://x.example/programma/"]
+
+
+def test_zelfde_uitje_op_twee_websites_met_een_andere_zaalnaam():
+    # Drenthe/Friesland-ronde: workum.nl en het theater zelf ('Voorstelling Laurens de Groot – HUN').
+    a = _event("Voorstelling Laurens de Groot – HUN", venue="Klameare")
+    b = _event("Laurens de Groot – HUN", venue="Theater Klameare Workum")
+    assert len(merge_duplicates([a, b])) == 1
+    assert len(merge_duplicates([_event("Bieb Vibes: Bordspellencafé", venue="Bibliotheek"),
+                                 _event("Bieb Vibes: Oplap & Cosplay atelier", venue="De Bieb")])) == 2
