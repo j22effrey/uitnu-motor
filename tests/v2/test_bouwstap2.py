@@ -107,3 +107,9 @@ def test_zelfde_uitje_op_twee_websites_met_een_andere_zaalnaam():
     assert len(merge_duplicates([a, b])) == 1
     assert len(merge_duplicates([_event("Bieb Vibes: Bordspellencafé", venue="Bibliotheek"),
                                  _event("Bieb Vibes: Oplap & Cosplay atelier", venue="De Bieb")])) == 2
+    # De dorpsagenda noemt alleen de plaats, zonder tijd; het theater heeft de zaal en de tijd.
+    dorp = _event("Voorstelling The Diamond Baritones", venue="Warffum", time=None)
+    zaal = _event("The Diamond Baritones – Wonderland", venue="Kultuerhús Klameare")
+    merged = merge_duplicates([dorp, zaal])
+    assert len(merged) == 1 and merged[0]["occurrences"][0]["startTime"]
+    assert merged[0]["venue"]["name"] == "Kultuerhús Klameare" and merged[0]["title"] == "The Diamond Baritones – Wonderland"
