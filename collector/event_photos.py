@@ -47,6 +47,7 @@ WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 
 RECHECK_EMPTY_DAYS = 21          # pagina zonder foto: na drie weken opnieuw kijken
+RECHECK_TEMPORARY_DAYS = 3       # pagina die even niet bereikbaar was: over een paar dagen opnieuw
 RECHECK_HOMEPAGE_DAYS = 30       # standaardfoto van een website: maandelijks verversen
 RECHECK_COMMONS_EMPTY_DAYS = 60  # plek of plaats zonder foto op Commons
 FORGET_PAGE_DAYS = 30            # pagina's van uitjes die niet meer in de agenda staan
@@ -434,6 +435,8 @@ def _age_days(entry: dict, today: date) -> int:
 def _due(entry: dict | None, today: date, recheck_days: int, field: str) -> bool:
     if entry is None:
         return True
+    if entry.get("tijdelijk"):
+        recheck_days = min(recheck_days, RECHECK_TEMPORARY_DAYS)
     return not entry.get(field) and _age_days(entry, today) >= recheck_days
 
 
@@ -477,6 +480,11 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
             stats["pagina's bekeken"] += 1
             if temporary:
                 stats["tijdelijk onbereikbaar"] += 1
+                # Onthouden en pas over een paar dagen opnieuw: anders gaat elke ronde het grootste deel van
+                # de 150 pagina's op aan dezelfde onbereikbare pagina's (oktober 2026: 109 van de 150), en
+                # komen nieuwe uitjes (De Harmonie, De Lawei) nooit aan de beurt.
+                old = cache["pages"].get(page) or {}
+                cache["pages"][page] = {**old, "image": old.get("image"), "checkedAt": stamp, "tijdelijk": True}
                 continue
             image, via = extract_page_image(fetched.text, fetched.url, event.get("title")) if fetched else (None, None)
             facts = page_facts(fetched.text, event.get("title")) if fetched else {}

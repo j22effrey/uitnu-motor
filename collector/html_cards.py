@@ -18,12 +18,18 @@ Per bron ingesteld in extractorConfig, zonder nieuwe code per website:
     roomFallback de plek als de zaal niet in rooms staat ('elders': alleen de stad, geen zaal)
     skipTags     kenmerken die geen uitje zijn ('Spreekuur', 'Basisvaardigheden')
     province     bij een plaatsnaam per kaartje: de provincie, voor plaatsen die vaker voorkomen (Zuidwolde)
+    dateContext  een kopje boven de kaartjes dat bij de datum hoort (een reguliere expressie met één groep):
+                 een tabel per maand met alleen het dagnummer erin ('<h2[^>]*>([^<]+)</h2>' voor
+                 'januari 2026', gemeente Noardeast-Fryslân)
+    jsonHtml     de pagina is JSON met de kaartjes als HTML in dit veld (Schouwburg Ogterop: shows.php geeft
+                 {"html": ..., "pages": ...})
 
 Datums in de vormen van collector/when.py ('do 15.10', 'Thursday 15 October', '16-10-2026 / 10:00').
 Alleen feiten: naam, datum en tijd, zaal, soort en link. Geen teksten. robots.txt geldt voor elke pagina.
 """
 from __future__ import annotations
 
+import json
 import re
 import threading
 import time
@@ -31,6 +37,7 @@ from collections import defaultdict
 from datetime import date
 from html import unescape
 from typing import Callable
+from urllib.error import HTTPError
 from urllib.parse import urljoin, urlparse
 
 from collector.json_api_events import with_param
@@ -83,7 +90,12 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
     link_base = urljoin(page_url, base.group(1)) if base else page_url
     out: list[RawEvent] = []
     seen: set[tuple] = set()
-    for card in split_cards(html, config.get("card") or r"<article\b"):
+    context = [(m.start(), _clean(m.group(1))) for m in re.finditer(config["dateContext"], html, re.I | re.S)] \
+        if config.get("dateContext") else []
+    marks = [m.start() for m in re.finditer(config.get("card") or r"<article\b", html, re.I)]
+    for at, card in zip(marks, split_cards(html, config.get("card") or r"<article\b")):
+        # Het laatste kopje vóór dit kaartje ('januari 2026') hoort bij de datum ('23 en 24').
+        heading = next((text for pos, text in reversed(context) if pos < at), "")
         raw_title = _field(card, fields.get("title"))
         title = _clean(drop.sub(" ", raw_title) if drop else raw_title)
         raw_extra = _field(card, fields.get("extra"))
@@ -100,9 +112,9 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
         start = _clean(_field(card, fields.get("start")))
         if start and not re.match(r"20\d{2}-\d{2}-\d{2}", start):
             start = parse_when(start, today=today) or ""
+        day_text = " ".join(x for x in (_clean(_field(card, fields.get("date"))), heading) if x)
         if not start:
-            start = parse_when(_clean(_field(card, fields.get("date"))), _clean(_field(card, fields.get("time"))),
-                               today=today) or ""
+            start = parse_when(day_text, _clean(_field(card, fields.get("time"))), today=today) or ""
         if not start:
             continue
         end = _clean(_field(card, fields.get("end")))
@@ -111,7 +123,7 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
             end = end_time if end_time and "T" in end_time else ""
         # Een periode in de datum ('17 okt t/m 18 okt 2026'): het uitje loopt tot en met de laatste dag,
         # ook als er een eindtijd per dag bij staat (een tentoonstelling van 10.00 tot 17.00).
-        period = parse_end_day(_clean(_field(card, fields.get("date"))), start)
+        period = parse_end_day(day_text, start)
         if period and (not end or end[:10] == start[:10]):
             end = period
         link = _clean(_field(card, fields.get("url")))
@@ -180,6 +192,20 @@ def fetch(config: dict, *, source_name: str, root_url: str, timeout: float = 15,
         return _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, host, delay)
 
 
+def _html_of(text: str, config: dict) -> str:
+    """De HTML van een pagina; bij 'jsonHtml' het veld met HTML uit de JSON (leeg als dat er niet is)."""
+    field = config.get("jsonHtml")
+    if not field:
+        return text
+    try:
+        value = json.loads(text)
+    except ValueError:
+        return ""
+    for part in str(field).split("."):
+        value = value.get(part) if isinstance(value, dict) else None
+    return value if isinstance(value, str) else ""
+
+
 def _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, host, delay) -> list[RawEvent]:
     out: list[RawEvent] = []
     seen_pages: set[str] = set()
@@ -191,11 +217,18 @@ def _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, 
             _HOST_LAST[host] = time.monotonic()
         if not robots.can_fetch(USER_AGENT, url):
             raise PermissionError(f"robots.txt staat {url} niet toe" + (f" ({robots.uitnu_reason})" if getattr(robots, "uitnu_reason", None) else ""))
-        page = page_fetch(url, timeout=timeout)
-        events = parse_cards(page.text, config, source_name=source_name, page_url=page.url or url, today=today)
+        try:
+            page = page_fetch(url, timeout=timeout)
+        except HTTPError as exc:
+            # Een volgende pagina die (nog) niet bestaat (de kalender van volgend jaar): klaar.
+            if seen_pages and exc.code in (404, 410):
+                break
+            raise
+        text = _html_of(page.text, config)
+        events = parse_cards(text, config, source_name=source_name, page_url=page.url or url, today=today)
         # Een pagina zonder kaartjes, of dezelfde als de vorige (de site negeert het paginanummer): klaar.
         # (Een pagina waarvan alle kaartjes wegvallen, zoals alleen spreekuren, telt niet als einde.)
-        cards = split_cards(page.text, config.get("card") or r"<article\b")
+        cards = split_cards(text, config.get("card") or r"<article\b")
         key = "|".join(cards)
         if not cards or key in seen_pages:
             break

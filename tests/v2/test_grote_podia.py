@@ -273,3 +273,31 @@ def test_json_api_per_maand_met_een_formulier_en_een_linksjabloon():
     events = json_api_events.fetch(cfg, source_name="De Harmonie", root_url="https://harmonie.nl/", robots_fetch=robots, json_fetch=json_fetch)
     assert len(events) == 3 and all(a["set"] == "19" for a in asked)
     assert events[0].source_url == "https://harmonie.nl/agenda/voorstelling/7"
+
+
+def test_html_cards_kopje_bij_de_datum_json_met_html_en_een_jaar_dat_nog_niet_bestaat():
+    # Noardeast-Fryslân: een tabel per maand, maand en jaar in het kopje; Ogterop: kaartjes als HTML in JSON.
+    from urllib.error import HTTPError
+    table = ('<h2 class="section__title">november 2026</h2><table><tr><th>Datum</th></tr>'
+             '<tr><td>14</td><td>Sinterklaasintocht</td><td>Dokkum</td></tr>'
+             '<tr><td>21 en 22</td><td>Wintermarkt</td><td>Kollum</td></tr></table>'
+             '<h2 class="section__title">december 2026</h2><table><tr><td>11</td><td>Kerstfair</td><td>Dokkum</td></tr></table>')
+    cfg = {"card": "<tr><td>", "dateContext": r"<h2[^>]*section__title[^>]*>([^<]+)</h2>",
+           "fields": {"date": r"^<tr><td>([^<]+)</td>", "title": r"^<tr><td>[^<]*</td><td>([^<]+)</td>"}}
+    events = html_cards.parse_cards(table, cfg, source_name="Gemeente", page_url="https://gemeente.example/", today=TODAY)
+    assert [(e.title, e.start_at, e.end_at) for e in events] == [
+        ("Sinterklaasintocht", "2026-11-14", None), ("Wintermarkt", "2026-11-21", "2026-11-22"), ("Kerstfair", "2026-12-11", None)]
+
+    def robots(url, timeout=15):
+        return Fetched(url=url, status=404, content_type="text/plain", text="")
+
+    def pages(url, timeout=15):
+        if url.endswith("2027"):
+            raise HTTPError(url, 404, "Not Found", {}, None)
+        html = '<article class="show"><span class="t">No Other Choice</span><time>wo 04 nov. 2026 - 19:30</time></article>'
+        return Fetched(url=url, status=200, content_type="application/json", text=json.dumps({"html": html, "pages": 1}))
+
+    cfg = {"endpointUrl": "https://ogterop.example/shows-{page}", "firstPage": 2026, "maxPages": 2, "jsonHtml": "html",
+           "card": r'<article class="show"', "fields": {"title": r'class="t">([^<]+)', "date": r"<time>([^<]+)</time>"}}
+    events = html_cards.fetch(cfg, source_name="Ogterop", root_url="https://ogterop.example/", page_fetch=pages, today=TODAY)
+    assert [(e.title, e.start_at) for e in events] == [("No Other Choice", "2026-11-04T19:30")]

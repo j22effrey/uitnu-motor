@@ -6206,17 +6206,30 @@
       "name": "Noardeast-Fryslân",
       "rootUrl": "https://www.noardeast-fryslan.nl/",
       "role": "organizer",
-      "enabled": false,
+      "enabled": true,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://www.noardeast-fryslan.nl/"
+        "endpointUrl": "https://www.noardeast-fryslan.nl/evenementenkalender-{page}",
+        "card": "<tr><td>",
+        "dateContext": "<h2[^>]*section__title[^>]*>([^<]+)</h2>",
+        "fields": {
+          "date": "^<tr><td>([^<]+)</td>",
+          "title": "^<tr><td>[^<]*</td><td>([^<]+)</td>",
+          "city": "^<tr><td>[^<]*</td><td>[^<]*</td><td>([A-Z][^<]*?)(?:\\s+e\\.o\\.)?</td>",
+          "tags": "^<tr><td>[^<]*</td><td>[^<]*</td><td>([^<]*)</td>"
+        },
+        "skipTitle": "afgelast|verplaatst|geannuleerd",
+        "skipTags": "doortocht|gemeente|diverse",
+        "province": "Fryslân",
+        "firstPage": 2026,
+        "maxPages": 2
       },
       "activatedFromCandidate": "noardeast-fryslan.nl",
-      "policyReviewedAt": "2026-10-13",
-      "disabledReason": "Leest vooral nieuwsberichten als uitje. De evenementenkalender van de gemeente (tabel per jaar, maand in de kop) kan de motor nog niet lezen; de grote evenementen staan als losse uitjes in data/events.json (Friesland-ronde, 22 oktober 2026)."
+      "policyReviewedAt": "2026-10-27",
+      "note": "Evenementenkalender van de gemeente (tabel per maand, per jaar een pagina; het dagnummer staat in de tabel, maand en jaar in het kopje: dateContext). Afgelaste en doortochten overgeslagen. De pagina van volgend jaar komt vanzelf mee zodra die bestaat. 27 oktober 2026."
     },
     {
       "id": "terpoarte-nl-web",
@@ -6421,7 +6434,7 @@
       "enabled": true,
       "extractorHint": "html_cards",
       "extractorConfig": {
-        "endpointUrl": "https://www.schouwburgogterop.nl/",
+        "endpointUrl": "https://www.schouwburgogterop.nl/shows.php",
         "card": "<article class=\"program-block\"",
         "fields": {
           "title": "program-block__title\">([^<]+)",
@@ -6467,7 +6480,11 @@
         },
         "roomFallback": {
           "city": "Meppel"
-        }
+        },
+        "pageParam": "page",
+        "firstPage": 1,
+        "maxPages": 6,
+        "jsonHtml": "html"
       },
       "defaultPlace": {
         "city": "Meppel",
@@ -6475,7 +6492,7 @@
         "lon": 6.1944
       },
       "policyReviewedAt": "2026-10-22",
-      "note": "Ogterop speelt tijdens de vernieuwbouw (tot 2029) 'On Tour' op andere plekken in Meppel (De Plataan, ME Studio, Vegafabriek, Grote of Mariakerk). De voorpagina toont de voorstellingen als kaartjes (article.program-block) met titel, ondertitel, datum/tijd, zaal en soort. De volledige lijst (48) komt uit /shows.php?page=N, maar dat is JSON met ge-escapete HTML (\\/), wat html_cards nog niet leest. robots.txt: alles toegestaan, Crawl-delay 10 (één pagina)."
+      "note": "Ogterop speelt tijdens de vernieuwbouw (tot 2029) 'On Tour' op andere plekken in Meppel (De Plataan, ME Studio, Vegafabriek, Grote of Mariakerk). De voorpagina toont de voorstellingen als kaartjes (article.program-block) met titel, ondertitel, datum/tijd, zaal en soort. De volledige lijst (48) komt uit /shows.php?page=N, maar dat is JSON met ge-escapete HTML (\\/), wat html_cards nog niet leest. robots.txt: alles toegestaan, Crawl-delay 10 (één pagina). Het hele programma (alle pagina's) komt uit /shows.php?page=N (JSON met HTML in het veld html), 27 oktober 2026."
     },
     {
       "id": "simplon-nl-web",
