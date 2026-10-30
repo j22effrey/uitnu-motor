@@ -19460,6 +19460,10 @@
    "checkedAt": "2026-10-12",
    "url": null
   },
+  "plek:mfc de swingel|wijnjewoude": {
+   "checkedAt": "2026-10-30",
+   "url": null
+  },
   "plek:mfc it joo|oudega": {
    "checkedAt": "2026-10-14",
    "url": null
@@ -22027,7 +22031,7 @@
    "via": null
   },
   "http://www.mijnknltb.toernooi.nl": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -22255,6 +22259,11 @@
    },
    "image": "https://a-theater.nl/wp-content/uploads/2026/07/1173x640-Met-blokjes-Wouter-Monden.webp",
    "via": "schema.org"
+  },
+  "https://achlum.info/evenement/vol-programma-op-het-voetbalveld/": {
+   "checkedAt": "2026-10-30",
+   "image": "https://achlum.info/wp-content/uploads/2026/05/Screenshot_20260505_153019_Adobe-Acrobat.jpg",
+   "via": "og:image"
   },
   "https://admiraliteitsdagen.nl/": {
    "checkedAt": "2026-10-27",
@@ -24891,6 +24900,11 @@
    "image": "https://buurtcentrumoranjewijk.nl/wp-content/uploads/2024/07/Asset-4.png",
    "via": "og:image"
   },
+  "https://buurtcentrumtuinpad.nl/activiteit_of_cursus/2026-afspraakmorgen-aic-autisme/": {
+   "checkedAt": "2026-10-30",
+   "image": null,
+   "via": null
+  },
   "https://buurtcentrumtuinpad.nl/activiteit_of_cursus/2026-tekenen-en-schilderen/": {
    "checkedAt": "2026-10-21",
    "image": null,
@@ -25214,6 +25228,11 @@
    },
    "image": null,
    "via": null
+  },
+  "https://debeatriks.nl/events/cavolo-nero-support/": {
+   "checkedAt": "2026-10-30",
+   "image": "https://1njbm.upcloudobjects.com/debeatriks/2026/04/cavolo-nero-lowres-jantinatalsma-11-1024x682.jpg",
+   "via": "og:image"
   },
   "https://debeatriks.nl/events/lawn-chair-support-2/": {
    "checkedAt": "2026-10-27",
@@ -26345,7 +26364,7 @@
    "via": null
   },
   "https://dmdebuitenplaats.nl/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -26921,6 +26940,11 @@
   },
   "https://dorpshuislekkum.nl/index.php/agenda/evenementdetail/2704/-/biljarten-competitie": {
    "checkedAt": "2026-10-29",
+   "image": null,
+   "via": null
+  },
+  "https://dorpshuislekkum.nl/index.php/agenda/evenementdetail/2755/-/vinyl-friday": {
+   "checkedAt": "2026-10-30",
    "image": null,
    "via": null
   },
@@ -27721,7 +27745,7 @@
    "via": "og:image"
   },
   "https://elfstedenhal.frl/agenda/capitals-eindhoven-kemphanen-2/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -29147,7 +29171,7 @@
    "via": null
   },
   "https://forms.gle/FCvrsq7fkSQYmTvBA": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -35832,7 +35856,7 @@
    "via": "og:image"
   },
   "https://in.njuko.com/plantsoenloop-20261782746976569/w/6a428f62137315f8f83cc8f2?currentPage=select-competition": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -37274,6 +37298,11 @@
    "image": "https://mijnbuurtje.imgix.net/2609/0ff03700-b2a8-11f1-893d-03e7af0ef65d.png?h=2000&w=1414&s=a96753bbbc20fa04570401148af3d01b",
    "via": "og:image"
   },
+  "https://levendigmusselkanaal.nl/agenda/151828/2026-11-05/doe-mee-met-de-sportinstuif": {
+   "checkedAt": "2026-10-30",
+   "image": "https://mijnbuurtje.imgix.net/2609/0ff03700-b2a8-11f1-893d-03e7af0ef65d.png?h=2000&w=1414&s=a96753bbbc20fa04570401148af3d01b",
+   "via": "og:image"
+  },
   "https://levendigmusselkanaal.nl/agenda/152682/2026-10-20/peutergym-in-de-veenhorst": {
    "checkedAt": "2026-10-15",
    "hints": {
@@ -37312,6 +37341,15 @@
   },
   "https://levendigmusselkanaal.nl/agenda/152682/2026-11-03/peutergym-in-de-veenhorst": {
    "checkedAt": "2026-10-27",
+   "hints": {
+    "soort": "sport",
+    "woord": "gym"
+   },
+   "image": "https://mijnbuurtje.imgix.net/2610/a86b9520-bda2-11f1-a79f-f95c25db0a26.jpg?h=2000&w=1414&s=c19780f6976b778ff01fa58b43701cdb",
+   "via": "og:image"
+  },
+  "https://levendigmusselkanaal.nl/agenda/152682/2026-11-05/peutergym-in-de-veenhorst": {
+   "checkedAt": "2026-10-30",
    "hints": {
     "soort": "sport",
     "woord": "gym"
@@ -37725,7 +37763,7 @@
    "via": "og:image"
   },
   "https://lingen.de/veranstaltungen_4/weihnachtsmarkt/weihnachtsmarkt_1.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -38009,6 +38047,11 @@
   },
   "https://marssum.info/agenda/biljart-en-kaartsoos-2-2026-11-02/": {
    "checkedAt": "2026-10-23",
+   "image": null,
+   "via": null
+  },
+  "https://marssum.info/agenda/biljart-en-kaartsoos-2-2026-11-06/": {
+   "checkedAt": "2026-10-30",
    "image": null,
    "via": null
   },
@@ -41077,7 +41120,7 @@
    "via": "og:image"
   },
   "https://ontdekpoort.nl/programma/10402/los-domingos/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -41148,7 +41191,7 @@
    "via": "og:image"
   },
   "https://ontdekpoort.nl/programma/2891/romijn-conen/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -41162,7 +41205,7 @@
    "via": "og:image"
   },
   "https://ontdekpoort.nl/programma/2895/skimer/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -41292,7 +41335,7 @@
    "via": "og:image"
   },
   "https://ontdekpoort.nl/programma/2992/voor-haar-de-frans-halsema-musical/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -41316,7 +41359,7 @@
    "via": "og:image"
   },
   "https://ontdekpoort.nl/programma/8195/sirenia-illumishade-support/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -42494,7 +42537,7 @@
    "via": "og:image"
   },
   "https://podiumzuidhaege.nl/a/ful-voor-de-vrijheid/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -42590,12 +42633,12 @@
    "via": null
   },
   "https://rcdeweide.nl/events/ouder-kind-toernooi-2/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://rcdeweide.nl/events/vrijwilligersmiddag-huldiging-kampioenen/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -44531,7 +44574,7 @@
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/762568/Gamecafé.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -44556,7 +44599,7 @@
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/762602/Bieb-Vibes:-Gamecafé.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -44566,7 +44609,7 @@
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/762613/Bieb-Vibes:-Bordspellencafé.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -44581,7 +44624,7 @@
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/767730/Wolcafé.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -44636,7 +44679,7 @@
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/768437/Taalcafé.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -44735,7 +44778,7 @@
    "via": "og:image"
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/771153/Verhalencafé.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -45315,12 +45358,12 @@
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774152/Geef-oude-foto’s-een-nieuw-leven.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/774155/Geef-oude-foto’s-een-nieuw-leven.html": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -46787,6 +46830,15 @@
    "image": "https://wijnjewoude.net/wp-content/uploads/2026/04/HF-Personen-Dorpsfeest-128.bmp",
    "via": "schema.org"
   },
+  "https://wijnjewoude.net/agenda/dorpskamer-30/": {
+   "checkedAt": "2026-10-30",
+   "hints": {
+    "soort": "sport",
+    "woord": "biljart"
+   },
+   "image": null,
+   "via": null
+  },
   "https://wijnjewoude.net/agenda/dorpskamer-31/": {
    "checkedAt": "2026-10-18",
    "hints": {
@@ -46968,6 +47020,11 @@
    "image": "https://wijnjewoude.net/wp-content/uploads/2026/09/image.jpeg",
    "via": "schema.org"
   },
+  "https://wijnjewoude.net/agenda/swingelcafe-23-5/": {
+   "checkedAt": "2026-10-30",
+   "image": "https://wijnjewoude.net/wp-content/uploads/2022/11/swingelcafe.jpeg",
+   "via": "schema.org"
+  },
   "https://wijnjewoude.net/agenda/vroege-vogel-wandeltocht-swingel-benefiet/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -47120,6 +47177,11 @@
    "image": null,
    "via": null
   },
+  "https://wjukken.nl/agenda/bridge-13/": {
+   "checkedAt": "2026-10-30",
+   "image": null,
+   "via": null
+  },
   "https://wjukken.nl/agenda/doarpskeamer-algemeen-76/": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -47180,6 +47242,11 @@
    "image": null,
    "via": null
   },
+  "https://wjukken.nl/agenda/filmhuis-lhistoire-de-souleymane-2024/": {
+   "checkedAt": "2026-10-30",
+   "image": null,
+   "via": null
+  },
   "https://wjukken.nl/agenda/harmonie-35/": {
    "checkedAt": "2026-10-16",
    "image": null,
@@ -47187,6 +47254,11 @@
   },
   "https://wjukken.nl/agenda/harmonie-36/": {
    "checkedAt": "2026-10-23",
+   "image": null,
+   "via": null
+  },
+  "https://wjukken.nl/agenda/herensoos-11/": {
+   "checkedAt": "2026-10-30",
    "image": null,
    "via": null
   },
@@ -47774,7 +47846,7 @@
    "via": null
   },
   "https://www.actiefinemmen.nl/schoonebeek": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -48815,6 +48887,11 @@
    "checkedAt": "2026-10-28",
    "image": null,
    "tijdelijk": true
+  },
+  "https://www.cda.nl/friesland/waadhoeke/agenda/raadsvergadering/?datum=05-11-2026": {
+   "checkedAt": "2026-10-30",
+   "image": null,
+   "via": null
   },
   "https://www.cda.nl/friesland/waadhoeke/agenda/raadsvergadering/?datum=22-10-2026": {
    "checkedAt": "2026-10-19",
@@ -50548,6 +50625,12 @@
    "note": "robots.txt staat het niet toe",
    "via": null
   },
+  "https://www.google.com/calendar/event?eid=NmJuY3VmMTI4NWdhMDFvbWxodW5xZHJwdHIgNjRkZjZlN2RmZGQwZDkyMGMxNGU3YWM4YWFlZmM3MzJmZjcyYmZiNjdkODU2ODAxNTZkNTEwMGZhNDk2NGIyYUBn&ctz=Europe/Paris": {
+   "checkedAt": "2026-10-30",
+   "image": null,
+   "note": "robots.txt staat het niet toe",
+   "via": null
+  },
   "https://www.google.com/calendar/event?eid=NnNzOXZkNGU4cGg3bjN0dTdjcHNrM2s1ZjJfMjAyNjEwMTRUMDgxNTAwWiA2NGRmNmU3ZGZkZDBkOTIwYzE0ZTdhYzhhYWVmYzczMmZmNzJiZmI2N2Q4NTY4MDE1NmQ1MTAwZmE0OTY0YjJhQGc&ctz=Europe/Paris": {
    "checkedAt": "2026-10-14",
    "image": null,
@@ -52200,6 +52283,15 @@
    "image": "https://www.injipsingboertange.nl/wp-content/uploads/2026/09/Collage.jpg",
    "via": "schema.org"
   },
+  "https://www.ioannistheatertsjerkewier.nl/event/boekpresentatie-de-maatschap-te-wier/": {
+   "checkedAt": "2026-10-30",
+   "hints": {
+    "soort": "lezing",
+    "woord": "presentatie"
+   },
+   "image": null,
+   "via": null
+  },
   "https://www.ioannistheatertsjerkewier.nl/event/dameskoor-leedvermaak-o-l-v-trees-teertstra/": {
    "checkedAt": "2026-10-14",
    "hints": {
@@ -52710,7 +52802,7 @@
    "via": null
   },
   "https://www.kerkomroep.nl/kerken/21190": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -55309,67 +55401,67 @@
    "via": null
   },
   "https://www.scfraneker.nl/200/62355/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/62411/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/62480/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/62584/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/62774/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/62818/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63010/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63037/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63265/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63309/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63472/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63477/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63628/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -55384,7 +55476,7 @@
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63635/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -55404,12 +55496,12 @@
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63665/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63667/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -55424,17 +55516,17 @@
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63761/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63763/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63764/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -55444,7 +55536,7 @@
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63780/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -55454,27 +55546,27 @@
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63791/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63822/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63826/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63885/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63888/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -55489,327 +55581,327 @@
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63902/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63911/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63916/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63917/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63918/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/63924/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64096/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64112/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64121/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64129/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64166/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64167/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64180/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64187/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64244/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64263/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64301/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64313/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64326/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64335/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64369/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64372/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64374/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64375/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64376/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64380/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64401/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64422/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64425/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64431/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64437/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64460/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64467/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64473/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64478/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64503/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64508/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64520/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64522/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64537/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64554/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64578/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64584/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64593/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64610/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64621/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64625/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64637/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64641/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64658/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64664/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64681/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64696/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64708/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64713/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64720/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64730/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64741/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64743/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64788/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64806/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64817/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64838/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64846/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.scfraneker.nl/200/64866/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -56768,12 +56860,12 @@
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-church-of-cash-tribute-to-the-man-in-black/111010": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-hillbilly-moonshiners-blowback-mountain-and-other-bad-decisions/111012": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -56798,7 +56890,7 @@
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-prins-claus-conservatorium-coffee-break/110982": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -56833,6 +56925,11 @@
   },
   "https://www.sneek.nl/activiteiten/micha-wertheim-voor-iedereen/110885": {
    "checkedAt": "2026-10-29",
+   "image": null,
+   "tijdelijk": true
+  },
+  "https://www.sneek.nl/activiteiten/motorboot-sneek/110771": {
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -57011,6 +57108,11 @@
   },
   "https://www.spijk.net/event/crea-avond-2/": {
    "checkedAt": "2026-10-18",
+   "image": null,
+   "via": null
+  },
+  "https://www.spijk.net/event/dorpsagenda-overleg/": {
+   "checkedAt": "2026-10-30",
    "image": null,
    "via": null
   },
@@ -60860,37 +60962,37 @@
    "via": null
   },
   "https://www.vvdronrijp.nl/113/11133/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11200/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11262/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11293/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11361/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11439/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11470/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -60900,12 +61002,12 @@
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11503/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11512/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -60920,7 +61022,7 @@
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11520/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -60935,7 +61037,7 @@
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11525/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -60960,12 +61062,12 @@
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11641/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
   "https://www.vvdronrijp.nl/113/11645/uitslagen/wedstrijd-details/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -61330,7 +61432,7 @@
    "via": null
   },
   "https://www.weihnachtsmarkt-meppen.de/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -61360,7 +61462,7 @@
    "tijdelijk": true
   },
   "https://www.westerlee.nl/agenda/agenda/soos-53/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -61405,7 +61507,7 @@
    "tijdelijk": true
   },
   "https://www.westerlee.nl/agenda/voetbalvelden-koeperlaand/agenda/westerlee-1-znc-1/": {
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-30",
    "image": null,
    "tijdelijk": true
   },
@@ -61816,6 +61918,6 @@
    "via": "og:image"
   }
  },
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "version": 1
 }
