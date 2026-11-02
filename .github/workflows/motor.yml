@@ -1,8 +1,8 @@
 name: UITNU motor
 
-# Elke drie uur een ronde: nieuwe websites testen, goede bronnen aanzetten, agenda's ophalen,
+# Ongeveer elke drie uur een ronde: nieuwe websites testen, goede bronnen aanzetten, agenda's ophalen,
 # keuren en publiceren. Daarna bouwt Cloudflare de site opnieuw (gratis tot 500 keer per maand;
-# dit zijn er hooguit 8 per dag). GitHub Actions is gratis: dit is een openbare repo. GitHub slaat
+# dit zijn er hooguit 12 per dag). GitHub Actions is gratis: dit is een openbare repo. GitHub slaat
 # geplande rondes soms over of begint later; dan komt de volgende gewoon.
 # Om kleine websites te sparen: elke agenda hooguit om de zes uur ophalen, nieuwe plekken zoeken
 # eens per week. Met de hand gestart doet de motor alles.
@@ -12,7 +12,9 @@ name: UITNU motor
 # wachten op elkaar (concurrency hieronder).
 on:
   schedule:
-    - cron: '23 */3 * * *'
+    # Elke twee uur gepland: GitHub slaat bij drukte veel geplande rondes over (oktober 2026 kwam er maar
+    # ongeveer één per zes à acht uur), zo komt er toch ongeveer elke drie à vier uur een ronde.
+    - cron: '23 */2 * * *'
   workflow_dispatch:
     inputs:
       alleen_publiceren:

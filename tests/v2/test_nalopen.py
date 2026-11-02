@@ -222,3 +222,39 @@ def test_dagcontrole_27_oktober_hulp_spelavond_en_discussieavond():
                   "Walk-in concert in de Martinikerk", "Walk-in Workshop keramiek", "Walk-in Disco",
                   "Debat: discussieavond met de lijsttrekkers live", "Bordspelavond met live muziek"):
         assert not not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_1_november_mededelingen_cursus_en_gebed():
+    for title in ("Omrin november", "Agenda 12 november 2026", "Nederlands Nog 18 plekken vrij", "Bidden voor Vrede",
+                  "Ontmoetingsochtenden MFC"):
+        assert not_an_outing(_event(title)), title
+    for title in ("Agenda 12 november: Kerstmarkt", "Bidden voor vrede: concert in de Martinikerk",
+                  "Workshop Nederlands nog 3 plekken vrij", "Omrin duurzaamheidsfestival", "Ontmoetingsavond met de schrijver: lezing"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_1_november_jeugdwedstrijd_met_plusje():
+    assert not_an_outing(_event("Tzummarum 18+1 - Zeerobben 18+1"))
+    page = {**_event("Thuisploeg - Uitploeg"), "url": "https://www.scfraneker.nl/200/63638/uitslagen/wedstrijd-details/"}
+    assert not_an_outing(page)
+    assert not not_an_outing(_event("Boney M 1976 - Het feest"))
+    assert not not_an_outing({**page, "title": "Zaalvoetbaltoernooi"})
+
+
+def test_dagcontrole_1_november_rommel_in_de_naam():
+    junk = 'Other Mommy (16 jr.), dinsdag 3 november 21:20"> Bestel @keyframes fadeIn { from { opacity: 0; } }'
+    assert clean_title(junk) == "Other Mommy (16 jr.)"
+    assert clean_title('Vier minus drei, maandag 16 november 13:00"> Bestel') == "Vier minus drei"
+    assert clean_title("Wine > Beer") == "Wine > Beer"
+
+
+def test_dagcontrole_1_november_soorten():
+    def kind(title, url="https://dorp.example/agenda/x"):
+        event = {**_event(title), "url": url, "sources": [{"url": url, "host": url.split("/")[2]}]}
+        return classify(event, OVERRIDES)["kind"]
+    assert kind("Pop-up Museum 20 jaar paardenredding") != "muziek"
+    assert kind("Pop-up concert") == "muziek"
+    assert kind("Stroomdalkapel geeft concert in Eetcafé Hoving") == "muziek"
+    assert kind("Eetcafé De Poort") == "eten"
+    assert kind("Leren boekbinden") == "lezing"
+    assert classify({"title": "Het Diner", "url": "https://denieuwekolk.nl/bios/agenda/het-diner"})["kind"] == "film"

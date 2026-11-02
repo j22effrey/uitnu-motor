@@ -4575,7 +4575,7 @@
       "name": "Franeker.nl",
       "rootUrl": "https://franeker.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -4589,7 +4589,8 @@
         "lat": 53.1875,
         "lon": 5.54
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Franeker.nl is een 'lokale stadspoort': de agenda zijn doorverwijzingen naar de verzamelagenda van friesland.nl (Merk Fryslân), geen organisator (regel 1). De organisatoren zelf (Planetarium, Martena, De Koornbeurs, kerken) staan los in de bronnenlijst. Gevonden 2 november 2026."
     },
     {
       "id": "harich-ruigahuizen-nl-web",
@@ -12137,20 +12138,20 @@
       "extractorHint": "html_cards",
       "extractorConfig": {
         "endpointUrl": "https://www.parkzicht.com/agenda/",
-        "card": "<div class=\"agendadatum",
+        "card": "<div class=\"blog-item-preview\">",
         "fields": {
-          "date": "agendadatum[^>]*>\\s*<a[^>]*>(.*?)</a>",
-          "title": "agendaitemtitle[^>]*>\\s*<a[^>]*>\\s*([^<]+?)\\s*</a>",
-          "url": "agendadatum[^>]*>\\s*<a href=\"([^\"]+)\""
+          "title": "blog-item-preview-title[^>]*>([^<]+)<",
+          "date": "blog-field-date\">\\s*<span class=\"sr-only\">Datum</span>\\s*([^<]+?)\\s*</li>",
+          "url": "<a class=\"blog-item-link[^\"]*\" href=\"([^\"]+)\""
         },
-        "genres": {},
-        "skipTitle": "easytoys"
+        "skipTitle": "easytoys",
+        "genres": {}
       },
       "defaultPlace": {
         "venue": "Brouwhotel Parkzicht",
         "city": "Veendam"
       },
-      "note": "Brouwhotel Parkzicht (Museumplein 3, Veendam; parkzicht.com, niet hotelparkzicht.nl = Eindhoven). Agenda met kaartjes op /agenda/ (datum '24 Oct' zonder jaar, <base href> aanwezig). Getest op 20 oktober 2026: 13 uitjes (dinnershows, tributes, X-Mass parties, bierfestival). 'EasyToys Ladies Bingo' wordt overgeslagen. robots.txt bestaat niet (404) = welkom.",
+      "note": "Brouwhotel Parkzicht (Museumplein 3, Veendam; parkzicht.com, niet hotelparkzicht.nl = Eindhoven). Agenda met kaartjes op /agenda/ (datum '24 Oct' zonder jaar, <base href> aanwezig). Getest op 20 oktober 2026: 13 uitjes (dinnershows, tributes, X-Mass parties, bierfestival). 'EasyToys Ladies Bingo' wordt overgeslagen. robots.txt bestaat niet (404) = welkom. De site is omgebouwd (oktober 2026): kaartjes 'blog-item-preview' op /agenda/.",
       "policyReviewedAt": "2026-10-20"
     },
     {
