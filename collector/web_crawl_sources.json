@@ -9804,11 +9804,18 @@
       "rootUrl": "https://em2groningen.nl/",
       "role": "venue",
       "enabled": true,
-      "maxPages": 40,
-      "maxDepth": 3,
       "minDelaySeconds": 0.5,
-      "extractorHint": "jsonld_event",
-      "extractorConfig": {},
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://em2groningen.nl/agenda/",
+        "card": "<li class=\"list-row\">",
+        "fields": {
+          "title": "<h2 class=\"list-row__title\"[^>]*><a[^>]*>(.*?)</a>",
+          "start": "<time datetime=\"([^\"]+)\"",
+          "url": "<h2 class=\"list-row__title\"[^>]*><a href=\"([^\"]+)\""
+        },
+        "dropFromTitle": "\\s*✰\\s*aanmelden\\s*$"
+      },
       "activatedFromCandidate": "em2groningen.nl",
       "defaultPlace": {
         "venue": "EM2",
@@ -9817,7 +9824,8 @@
         "lon": 6.5391945
       },
       "kindHint": "muziek",
-      "policyReviewedAt": "2026-10-14"
+      "policyReviewedAt": "2026-11-02",
+      "note": "/agenda/ is een lijst met kaartjes (datum, titel, link); alle komende uitjes staan op één pagina (/agenda/page/2/ geeft dezelfde lijst). De gegevens in de pagina (jsonld_event) gaven maar 1 uitje. Wekelijks onderhoud 2 november 2026 (dekking: 0 van 5)."
     },
     {
       "id": "wsv-stnic-nl-web",
@@ -15826,6 +15834,36 @@
         "lon": 6.5167
       },
       "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "fcgroningen-nl-thuiswedstrijden",
+      "name": "FC Groningen (thuiswedstrijden)",
+      "rootUrl": "https://www.fcgroningen.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.fcgroningen.nl/fc-groningen-1/wedstrijden/",
+        "card": "<div class=\"matches__overview__item\">",
+        "fields": {
+          "title": "matches__overview__match-left[^>]*>\\s*([^<]+?)\\s*</div>",
+          "extra": "matches__overview__match-right[^>]*>\\s*([^<]+?)\\s*</div>",
+          "date": "matches__overview__match-date\">\\s*([^<]+?)\\s*</div>",
+          "time": "matches__overview__match-time\">\\s*([^<]+?)\\s*</div>",
+          "url": "<a href=\"([^\"]+)\" class=\"match__url\""
+        },
+        "skipTitle": "^(?!FC Groningen [–-] )"
+      },
+      "defaultPlace": {
+        "venue": "Euroborg",
+        "city": "Groningen",
+        "lat": 53.2059,
+        "lon": 6.5886
+      },
+      "kindHint": "sport",
+      "note": "De pagina Wedstrijden van het eerste elftal: links staat de thuisploeg. Uitwedstrijden (links een andere ploeg) worden overgeslagen. Geen robots.txt (404). Wekelijks onderhoud 2 november 2026 (dekking: FC Groningen 0 van 4).",
+      "policyReviewedAt": "2026-11-02",
+      "minDelaySeconds": 0.5
     }
   ]
 }
