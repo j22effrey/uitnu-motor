@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-27",
+  "updated": "2026-11-02",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -15453,6 +15453,379 @@
       },
       "kindHint": "kunst",
       "policyReviewedAt": "2026-10-27"
+    },
+    {
+      "id": "engelum-com-web",
+      "name": "engelum.com",
+      "rootUrl": "https://engelum.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://engelum.com/skerne-wibe/agenda-skerne-wibe"
+      },
+      "activatedFromCandidate": "engelum.com",
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "rottevalle-com-web",
+      "name": "Rottevalle",
+      "rootUrl": "https://rottevalle.com/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://rottevalle.com/agenda.ics"
+      },
+      "activatedFromCandidate": "rottevalle.com",
+      "policyReviewedAt": "2026-11-02",
+      "defaultPlace": {
+        "city": "Rottevalle",
+        "lat": 53.1453,
+        "lon": 6.1036
+      }
+    },
+    {
+      "id": "blije-frl-web",
+      "name": "Blije",
+      "rootUrl": "https://blije.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://blije.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "blije.frl",
+      "defaultPlace": {
+        "city": "Blija",
+        "lat": 53.3517,
+        "lon": 5.8611
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "dearsum-nl-web",
+      "name": "Dearsum",
+      "rootUrl": "https://dearsum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://dearsum.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "dearsum.nl",
+      "defaultPlace": {
+        "city": "Deersum",
+        "lat": 53.0867,
+        "lon": 5.7156
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "dorpshuisroderwolde-nl-web",
+      "name": "Dorpshuis Roderwolde",
+      "rootUrl": "https://www.dorpshuisroderwolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dorpshuisroderwolde.nl/agenda"
+      },
+      "activatedFromCandidate": "dorpshuisroderwolde.nl",
+      "defaultPlace": {
+        "city": "Roderwolde",
+        "lat": 53.1683,
+        "lon": 6.4697
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "ingwierrum-frl-web",
+      "name": "Ingwierrum e.o.",
+      "rootUrl": "https://ingwierrum.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://ingwierrum.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "ingwierrum.frl",
+      "defaultPlace": {
+        "city": "Engwierum",
+        "lat": 53.3197,
+        "lon": 6.1367
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "inveenhuizen-nl-web",
+      "name": "Erfgoedgids Veenhuizen",
+      "rootUrl": "https://www.inveenhuizen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.inveenhuizen.nl/"
+      },
+      "activatedFromCandidate": "inveenhuizen.nl",
+      "defaultPlace": {
+        "city": "Veenhuizen",
+        "lat": 53.0328,
+        "lon": 6.3958
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "jorwert-nl-web",
+      "name": "Jorwert",
+      "rootUrl": "https://jorwert.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://jorwert.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "jorwert.nl",
+      "defaultPlace": {
+        "city": "Jorwerd",
+        "lat": 53.14528,
+        "lon": 5.71194
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "leens-info-web",
+      "name": "Leens",
+      "rootUrl": "https://www.leens.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.leens.info/agenda"
+      },
+      "activatedFromCandidate": "leens.info",
+      "defaultPlace": {
+        "city": "Leens",
+        "lat": 53.35,
+        "lon": 6.36667
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "lippenhuizen-frl-web",
+      "name": "Lippenhuzen",
+      "rootUrl": "https://lippenhuizen.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://lippenhuizen.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "lippenhuizen.frl",
+      "defaultPlace": {
+        "city": "Lippenhuizen",
+        "lat": 53.0169,
+        "lon": 6.0936
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "noardburgum-nl-web",
+      "name": "Noardburgum",
+      "rootUrl": "https://noardburgum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://noardburgum.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "noardburgum.nl",
+      "defaultPlace": {
+        "city": "Noordbergum",
+        "lat": 53.2236,
+        "lon": 6.0039
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "oudeschip-nl-web",
+      "name": "Dorp Oudeschip",
+      "rootUrl": "https://oudeschip.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://oudeschip.nl/"
+      },
+      "activatedFromCandidate": "oudeschip.nl",
+      "defaultPlace": {
+        "city": "Oudeschip",
+        "lat": 53.4303,
+        "lon": 6.8228
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "rolde-nl-web",
+      "name": "Rolde nieuws, activiteiten en evenementen",
+      "rootUrl": "https://www.rolde.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.rolde.nl/"
+      },
+      "activatedFromCandidate": "rolde.nl",
+      "defaultPlace": {
+        "city": "Rolde",
+        "lat": 52.9869,
+        "lon": 6.6461
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "suwald-nl-web",
+      "name": "Suwâld",
+      "rootUrl": "https://suwald.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://suwald.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "suwald.nl",
+      "defaultPlace": {
+        "city": "Suwâld",
+        "lat": 53.1781,
+        "lon": 5.9269
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "ternaard-frl-web",
+      "name": "Ternaard",
+      "rootUrl": "https://ternaard.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://ternaard.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "ternaard.frl",
+      "defaultPlace": {
+        "city": "Ternaard",
+        "lat": 53.3806,
+        "lon": 5.9639
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "tersoal-nl-web",
+      "name": "Tersoal",
+      "rootUrl": "https://tersoal.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://tersoal.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "tersoal.nl",
+      "defaultPlace": {
+        "city": "Terzool",
+        "lat": 53.0747,
+        "lon": 5.7372
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "tinallinge-info-web",
+      "name": "Tinallinge.info",
+      "rootUrl": "https://tinallinge.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://tinallinge.info/het-dorp/dorpsagenda/"
+      },
+      "activatedFromCandidate": "tinallinge.info",
+      "defaultPlace": {
+        "city": "Tinallinge",
+        "lat": 53.3567,
+        "lon": 6.5342
+      },
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "wijster-info-web",
+      "name": "Wijster",
+      "rootUrl": "https://wijster.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://wijster.info/agenda.ics"
+      },
+      "activatedFromCandidate": "wijster.info",
+      "defaultPlace": {
+        "city": "Wijster",
+        "lat": 52.8161,
+        "lon": 6.5167
+      },
+      "policyReviewedAt": "2026-11-02"
     }
   ]
 }
