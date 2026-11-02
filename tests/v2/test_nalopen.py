@@ -284,26 +284,21 @@ def test_dagcontrole_1_november_rondleiding_in_inschrijfformulier():
 
 
 # Dagcontrole 2 november 2026 (252 nieuwe uitjes): wat er nog tussen zat.
-def _hall(title, venue=None):
-    event = _event(title)
-    event["venue"] = {"name": venue} if venue else {}
-    return event
-
-
 def test_dagcontrole_2_november_geen_uitje():
     for title in ("Stampot eten in het Bartoleshûs", "Koppelkaarten in Dorpshuis de Molenwiek", "Mini-klup kampioenskip",
                   "Bijeenkomst Verbinding zondag 22 november", "Bijeenkomst Feilich Ûnderweis",
                   "Uitnodiging Plekberaad De Lege Geaën", "Gezamenlijke klimaatdienst",
                   "Parochiebrede Avond", "Droge worst aktie VVR", "Drop aktie VVR ⚽", "ophalen schoentje in het Heirhuys.",
                   "Acteercursus", "Moi-cursus", "Djembe met Ria Ybema",
-                  "2026 Volgend jaar Oktober 2026 Zaterdag, 31 Oktober 2026", "Foar yn de agenda", "Film in Friesland"):
+                  "2026 Volgend jaar Oktober 2026 Zaterdag, 31 Oktober 2026", "Foar yn de agenda", "Film in Friesland", "bijeenkomst 1", "bijeenkomst 4 (afsluiting)"):
         assert not_an_outing(_event(title)), title
 
 
 def test_dagcontrole_2_november_echte_uitjes_blijven_staan():
     for title in ("Acteercursus-openbare les", "Stampot buffet met live muziek", "Bijeenkomst en lezing over Menno ter Braak",
                   "Kerstconcert 'Keep the Faith'", "Workshop bloembollen planten",
-                  "Cursus Fotografie met Smartphone", "Ophalen prins carnaval", "Pubquiz VVR", "Klaverjasdrive voor iedereen: prijsklaverjassen"):
+                  "Cursus Fotografie met Smartphone", "Ophalen prins carnaval", "Bijeenkomst Open Dag", "Bijeenkomst Dichters in de Kerk",
+                  "Bijeenkomst Poëzie en muziek", "Bijeenkomst Kerstfair", "Film in Friesland: Brimstone", "Pubquiz VVR", "Klaverjasdrive voor iedereen: prijsklaverjassen"):
         assert not not_an_outing(_event(title)), title
 
 

@@ -690,7 +690,7 @@ SWEEP_NOT_OUTING = re.compile(
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
     # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.
-    r"|^(?:bijeenkomst|uitnodiging)\b|\bklimaatdienst\b|\bparochie\w* ?avond\b|\bplekberaad\b"
+    r"|^(?:bijeenkomst|uitnodiging)\b(?!.*\b(?:open|dag|poezie|dichters?|muziek|concert|\w*fair|\w*markt|sprekers?|\w*kerk|expositie|film|optreden|show)\b)|\bklimaatdienst\b|\bparochie\w* ?avond\b|\bplekberaad\b"
     r"|\b(?:droge worst|worst|drop|oliebollen|bloembollen) ?(?:actie|aktie)\b|^ophalen (?:van )?(?:het |de )?(?:schoentje|bestelling\w*|pakket\w*|worst|drop)\b")
 # Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
 SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
