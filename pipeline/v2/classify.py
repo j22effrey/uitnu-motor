@@ -52,7 +52,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"triatlon", r"wedstrijd", r"toernooi", r"regatta", r"roeiwedstrijd", r"(?<!houten )schaats",
         r"wielren", r"mountainbike", r"\bmtb\b", r"voetbal", r"korfbal", r"handbal", r"hockey",
         r"zwemtocht", r"sportdag", r"\brace\b", r"obstacle", r"gymnastiek", r"biljart", r"\bsjoel", r"koersbal", r"jeu de boules", r"gym",
-        r"valpreventie", r"bewegen", r"\byoga", r"pilates", r"zumba", r"volleybal", r"badminton", r"tafeltennis",
+        r"valpreventie", r"bewegen", r"(?<!concert met )\byoga(?!.*concert)", r"pilates", r"zumba", r"volleybal", r"badminton", r"tafeltennis",
         r"schietclub", r"klootschiet", r"\bdart", r"lasergam", r"bowl", r"fitness", r"kampioen",
         # een wedstrijd: 'Westerlee 1 - VVS 1' of 'Covos DS1 – VC Sneek DS2', of een sportclub (SV, VV, SC, FC)
         r"^(?:beker:? )?[\w .'/&-]+ (?:[dhj]s ?)?\d+ [-–] [\w .'/&-]+ (?:[dhj]s ?)?\d+\b", r"\b(?:sv|vv|sc|fc)\b",
@@ -300,7 +300,7 @@ CLUB_SESSION = re.compile(
     r"|^(?:hard)?loop ?groep|^fiets ?(?:club|groep)|^(?:jeugd|tiener|ouderen|senioren)? ?soos\b|^peuter ?(?:mee)?speel\w*"
     r"|^speel je mee \w+|^stut en steun|^repetitie|^oefen(?:avond|ochtend)|^training\b|^jeugdtraining"
     r"|^(?:een |dorps)?bakkie\b|^kookclub|^bingo(?:avond|middag)?$|^(?:thuis|uit)wedstrijd\b"
-    r"|^(?:ochtend ?)?koffie ?leut|^(?:de )?(?!(?:blues|jazz|folk|comedy|film|pop|muziek|swing)club)\w+club\b|^leesclub|^(?:christelijke )?vrouwengroep|^\w*dansclub|^soos\w*|^inloop\b|^\w+inloop$"
+    r"|^(?:ochtend ?)?koffie ?leut|^(?:de )?(?!(?:blues|jazz|folk|comedy|film|pop|muziek|swing)club)\w+club\b|^leesclub|^djembe\b|^[\w-]*cursus$|^(?:christelijke )?vrouwengroep|^\w*dansclub|^soos\w*|^inloop\b|^\w+inloop$"
     r"|^startgroep \d|^(?:knltb|knvb|nevobo|knbb|kndb|nhv)\b|^verenigingsavond|^\d0 ?\+? ?(?:gym\w*|fit\w*|yoga)"
     r"|^.*\btraining (?:[ojm]\d|jo\d|mo\d|jeugd|selectie)"
     # meditatie, een retraite of qigong: een vaste les of cursus, net als yoga
@@ -321,13 +321,13 @@ MATCH_PATH = re.compile(r"/uitslagen/(?:[\w-]+/)*wedstrijd-details", re.IGNORECA
 # De Molenwiek'). Een toernooi, drive of prijsklaverjassen is open voor iedereen en blijft staan.
 CLUB_GAME = re.compile(r"\w*biljart\w*|\bblijart\w*|\w*klaverjas\w*|^bridge(?:n|club)?\b(?! over\b)|\bbridge ?(?:club|avond|middag|les)\b"
                        r"|\bbridgen\b|\bsjoel\w*|^dammen\b|\bdam ?(?:club|avond|middag)\b|^schaken\b|\bschaak ?(?:club|avond|middag|les)\b"
-                       r"|\bkoersbal\b|\bjeu de boules\b|\bdart(?:en|s)?\b|pijltjes gooien")
+                       r"|\bkoersbal\b|\bjeu de boules\b|\bdart(?:en|s)?\b|pijltjes gooien|\bkoppelkaart\w*")
 CLUB_GAME_PUBLIC = re.compile(PUBLIC_EVENT.pattern + r"|\bprijs\w+|\bopen\b|\b(?:nk|wk|ek)\b|grand prix|masters|\bcup\b"
                               r"|international|nederlands kampioenschap")
 # Alleen voor de leden van een club, ook al heet het toernooi: de competitie, het clubkampioenschap,
 # het slottoernooi van het seizoen, een bekerwedstrijd.
 CLUB_INTERNAL = re.compile(r"\w*competitie\b|clubkampioenschap\w*|\bslot ?to(?:er|e)?n(?:oo|oa)i\b"
-                           r"|\bsluitings-? ?to(?:er|e)?n(?:oo|oa)i\b|\bclub ?to(?:er|e)?n(?:oo|oa)i\b|\bonderlinge\b|bekerwedstrijd\w*")
+                           r"|\bsluitings-? ?to(?:er|e)?n(?:oo|oa)i\b|\bclub ?to(?:er|e)?n(?:oo|oa)i\b|\bonderlinge\b|bekerwedstrijd\w*|\bkl[ua][bp] ?kampioenskip\b")
 # Niet noemenswaardig (vraag van de eigenaar, 14 oktober: 'stuk voor stuk niet noemenswaardig', zoals in
 # Westerlee): wat een dorpshuis of buurtcentrum voor de eigen mensen doet. Koffie, soep of friet in het
 # dorpshuis, een borrel, een dorpsmaaltijd, de dorpskamer, een handwerk- of taalcafé, de soos. Staat er iets
@@ -336,7 +336,7 @@ VILLAGE_ROUTINE = re.compile(
     # vrijwilligers aan het werk en de eigen kantine ('Bouwploeg' in MFC Wjukken, 'Cafetaria verkoop' in Westerlee)
     r"^bouwploeg$|^cafetaria ?verkoop$|"
     r"\bkoffie ?(?:ochtend|inloop|uurtje|drinken|middag|moment|tafel|leut)|\bop de koffie\b|\bbakkie\b|\bbakje\b|buurtbakje"
-    r"|\w*borrel\w*|\bvrij ?mi ?bo\b|\bsoep ?(?:uur|maaltijd|middag|ochtend)|\bstamppot ?(?:ochtend|middag|avond|eten)"
+    r"|\w*borrel\w*|\bvrij ?mi ?bo\b|\bsoep ?(?:uur|maaltijd|middag|ochtend)|\bstam(?:p)?pot ?(?:ochtend|middag|avond|eten)"
     r"|\bfriet ?avond|\bsnack ?(?:avond|bar)\b|\w*maaltijd\b|\bsamen (?:eten|koken|lunchen|tafelen)\b|running dinner"
     r"|\b(?:dorps|doarps|buurt|buur)(?:maaltijd|diner|etentje|eten|lunch|tafel|miel|iten)\b|\bopen tafel\b|\bstamtafel\b"
     r"|\bite\b|\w*(?:brunch|buffet)\b|\w*lunch(?:buffet)?\b"
@@ -671,7 +671,7 @@ SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event inf
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
-                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen)\W*$")
+                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen|\d{4} volgend jaar .*|foar yn de agenda|film in friesland)\W*$")
 # Kopjes die ook de naam van een uitje kunnen zijn ('Welkom bij de Kerstmarkt', 'Thema: Halloween griezeltocht').
 SWEEP_HEADING_SOFT = re.compile(r"^\W*(?:welkom bij .*|//.*)$")
 SWEEP_NOT_OUTING = re.compile(
@@ -686,7 +686,12 @@ SWEEP_NOT_OUTING = re.compile(
     # vaste bijeenkomst van de kerk). Dagcontrole 1 november 2026. 'Pubquiz - nog 3 plekken vrij' blijft staan.
     r"|^omrin (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december|afvalkalender)\b"
     r"|^(?:nederlands|english|engels|deutsch|duits|frysk|fries)?\s*(?:nog \d+ (?:plek|plekken|plaatsen) (?:vrij|beschikbaar)"
-    r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b")
+    r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b"
+    # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
+    # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
+    # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.
+    r"|^(?:bijeenkomst|uitnodiging)\b(?!.*\b(?:open|dag|poezie|dichters?|muziek|concert|\w*fair|\w*markt|sprekers?|\w*kerk|expositie|film|optreden|show)\b)|\bklimaatdienst\b|\bparochie\w* ?avond\b|\bplekberaad\b"
+    r"|\b(?:droge worst|worst|drop|oliebollen|bloembollen) ?(?:actie|aktie)\b|^ophalen (?:van )?(?:het |de )?(?:schoentje|bestelling\w*|pakket\w*|worst|drop)\b")
 # Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
 SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
                         r"|kinderen in een scheiding|computercursus|\bdigi ?(?:vitaler|sterker|taal)\b|zorgverzekeraar"
