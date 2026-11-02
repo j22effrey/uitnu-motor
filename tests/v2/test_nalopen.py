@@ -312,3 +312,16 @@ def test_afgebroken_naam_valt_weg():
     assert clean_title("Kerstconcert 'Keep the Faith'…") == "Kerstconcert 'Keep the Faith'"
     # het soortlabel achter de naam blijft: het is bewijs voor de soort (Le ballon rouge | Klassieke muziek)
     assert clean_title("Le ballon rouge | Klassieke muziek") == "Le ballon rouge | Klassieke muziek"
+
+
+def test_bronnen_van_het_onderhoud_van_2_november_staan_goed_ingesteld():
+    """EM2 (kaartjeslijst in plaats van gegevens in de pagina) en de thuiswedstrijden van FC Groningen."""
+    sources = {s["id"]: s for s in json.loads((Path(__file__).parents[2] / "collector" / "web_crawl_sources.json")
+                                              .read_text(encoding="utf-8"))["sources"]}
+    em2, fcg = sources["em2groningen-nl-web"], sources["fcgroningen-nl-thuiswedstrijden"]
+    assert em2["extractorHint"] == "html_cards" and em2["defaultPlace"]["venue"] == "EM2"
+    assert fcg["extractorHint"] == "html_cards" and fcg["kindHint"] == "sport"
+    # uitwedstrijden (links een andere ploeg) worden overgeslagen, thuiswedstrijden niet
+    import re
+    skip = re.compile(fcg["extractorConfig"]["skipTitle"], re.I)
+    assert skip.search("AZ – FC Groningen") and not skip.search("FC Groningen – PSV")
