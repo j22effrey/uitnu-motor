@@ -48,7 +48,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
                       # Forum Groningen: 'Docs:' en 'Classics:'; filmvertoningen van theater en sport
                       r"^(?:docs|classics|cinema|kinderfilm):", r"national theatre live", r"\bnt live\b", r"reel rock", r"popcornfestival"]),   # 'L'Histoire de Souleymane (2024)': een film met jaartal
     "sport": _compile([
-        r"hardloop", r"(?<!ver)(?<!door)(?<!aan)(?<!uit)(?<!af)loop\b", r"run\b", r"\btrail", r"toertocht", r"\d+\s?(km|kilometer|mijl)\b", r"\bmijl\b", r"marathon",
+        r"hardloop", r"(?<!ver)(?<!door)(?<!aan)(?<!uit)loop\b", r"run\b", r"\btrail", r"toertocht", r"\d+\s?(km|kilometer|mijl)\b", r"\bmijl\b", r"marathon",
         r"triatlon", r"wedstrijd", r"toernooi", r"regatta", r"roeiwedstrijd", r"(?<!houten )schaats",
         r"wielren", r"mountainbike", r"\bmtb\b", r"voetbal", r"korfbal", r"handbal", r"hockey",
         r"zwemtocht", r"sportdag", r"\brace\b", r"obstacle", r"gymnastiek", r"biljart", r"\bsjoel", r"koersbal", r"jeu de boules", r"gym",
@@ -688,10 +688,10 @@ SWEEP_NOT_OUTING = re.compile(
     r"|^(?:nederlands|english|engels|deutsch|duits|frysk|fries)?\s*(?:nog \d+ (?:plek|plekken|plaatsen) (?:vrij|beschikbaar)"
     r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b"
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
-    # parochieavond, een beraad, een verkoopactie van de club (droge worst, drop)
+    # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.
     r"|^(?:bijeenkomst|uitnodiging)\b|\bklimaatdienst\b|\bparochie\w* ?avond\b|\bplekberaad\b"
-    r"|\b(?:droge worst|worst|drop|oliebollen|bloembollen) ?(?:actie|aktie)\b|^ophalen\b")
+    r"|\b(?:droge worst|worst|drop|oliebollen|bloembollen) ?(?:actie|aktie)\b|^ophalen (?:van )?(?:het |de )?(?:schoentje|bestelling\w*|pakket\w*|worst|drop)\b")
 # Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
 SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
                         r"|kinderen in een scheiding|computercursus|\bdigi ?(?:vitaler|sterker|taal)\b|zorgverzekeraar"

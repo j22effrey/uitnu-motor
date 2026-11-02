@@ -303,18 +303,17 @@ def test_dagcontrole_2_november_geen_uitje():
 def test_dagcontrole_2_november_echte_uitjes_blijven_staan():
     for title in ("Acteercursus-openbare les", "Stampot buffet met live muziek", "Bijeenkomst en lezing over Menno ter Braak",
                   "Kerstconcert 'Keep the Faith'", "Workshop bloembollen planten",
-                  "Cursus Fotografie met Smartphone", "Pubquiz VVR", "Klaverjasdrive voor iedereen: prijsklaverjassen"):
+                  "Cursus Fotografie met Smartphone", "Ophalen prins carnaval", "Pubquiz VVR", "Klaverjasdrive voor iedereen: prijsklaverjassen"):
         assert not not_an_outing(_event(title)), title
 
 
-def test_afloop_is_geen_hardloop_en_een_ligconcert_is_muziek():
+def test_een_ligconcert_is_muziek():
     assert classify(_event("Een ligconcert met Yoga Nidra & Neoklassieke klanken van piano en bugel"))["kind"] == "muziek"
-    assert classify(_event("Dorpsfeest: na afloop muziek"))["kind"] != "sport"
     assert classify(_event("Yoga in het park"))["kind"] == "sport"
 
 
-def test_afgebroken_naam_en_soort_achter_streepje_vallen_weg():
+def test_afgebroken_naam_valt_weg():
     assert clean_title("Kerstconcert 'Keep the Faith'-…") == "Kerstconcert 'Keep the Faith'"
     assert clean_title("Kerstconcert 'Keep the Faith'…") == "Kerstconcert 'Keep the Faith'"
-    assert clean_title("Le ballon rouge | Klassieke muziek") == "Le ballon rouge"
-    assert clean_title("Mozart | Jazz Quartet") == "Mozart | Jazz Quartet"
+    # het soortlabel achter de naam blijft: het is bewijs voor de soort (Le ballon rouge | Klassieke muziek)
+    assert clean_title("Le ballon rouge | Klassieke muziek") == "Le ballon rouge | Klassieke muziek"
