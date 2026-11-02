@@ -73,7 +73,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"high tea", r"brunch", r"\bdiner\b", r"barbecue", r"\bbbq\b", r"kookworkshop",
         r"whisk(e)?y", r"cocktail", r"\bgin\b", r"(samen|gezamenlijk) eten", r"aan de kook", r"stamppot",
         r"maaltijd", r"\bkoffie(?!concert)", r"\blunch", r"vrijmibo", r"borrel", r"frietavond", r"visje eten",
-        r"eetcaf", r"kookclub", r"lunch", r"\beten\b", r"jenever", r"etentje", r"diner\b", r"eetclub", r"snert", r"pannenkoek",
+        r"(?<!in )(?<!bij )(?<!at )eetcaf", r"kookclub", r"lunch", r"\beten\b", r"jenever", r"etentje", r"diner\b", r"eetclub", r"snert", r"pannenkoek",
         r"italiaanse avond", r"bakkie", r"bakje", r"\bkoken\b", r"\bite\b", r"(?:dorps|buurt|aanschuif|samen) ?tafel\b",
         r"buffet", r"\bbakt\b", r"bakwedstrijd", r"aan (?:tafel|toavel)\b", r"\bkookt\b",
         r"\bsoep", r"(?:vrijdag ?)?(?:middag|avond) ?caf",
@@ -103,10 +103,10 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
     "muziek": _compile([
         r"concert", r"^live\b", r"^(?!kunst|boeren)[\w']+ live\b", r"\blive ?(?:muziek|music|band|op het plein)\b|\blivemuziek", r"band\b", r"\bkoor(?!nbeurs)", r"koren", r"orkest", r"\bdj\b", r"optreden",
         r"gospel", r"fanfare", r"shanty", r"smartlap",
-        r"clubnacht", r"\bparty\b", r"\bjazz", r"\bpop\b", r"\brock", r"\bblues", r"\bmetal\b",
+        r"clubnacht", r"\bparty\b", r"\bjazz", r"\bpop\b(?![- ]?up)", r"\brock", r"\bblues", r"\bmetal\b",
         r"hip-?hop", r"techno", r"\bhouse\b", r"recital", r"\borgel", r"cantate", r"muziek",
         r"singer-?songwriter", r"\brave\b", r"taptoe", r"\btrio\b", r"kwartet", r"kwintet", r"\bensemble\b",
-        r"worship", r"\bmusic\b", r"jam ?sessie", r"zang", r"zingen", r"ensemble", r"piano", r"pop\b", r"draaiorgel",
+        r"worship", r"\bmusic\b", r"jam ?sessie", r"zang", r"zingen", r"ensemble", r"piano", r"pop\b(?![- ]?up)", r"draaiorgel",
         r"\bwinds\b", r"\bbazuin\b", r"brass ?band", r"blaasorkest", r"\w+koor\b", r"tribute",
         r"huiskamer(?:podium|concert)", r"accordeon", r"blokfluit", r"cellist", r"\bcello", r"fagot",
         r"saxofo", r"klarinet", r"violist", r"\bviool", r"gitarist", r"harpist", r"trompet", r"fluitist", r"pianist",
@@ -125,7 +125,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"lezing", r"workshop", r"cursus", r"masterclass", r"\bdebat\b",
         r"podcast", r"in gesprek\b", r"(?<!tarot )reading", r"luistertafel", r"topstukken klassieke", r"boekbespreking",
         r"stof tot nadenken", r"vertelt over", r"vertelcaf", r"ferhaal", r"ferhale", r"boekewike", r"inspiratiesessie",
-        r"vraag de pro\b", r"maakplaats", r"^maak je eigen",
+        r"vraag de pro\b", r"maakplaats", r"^maak je eigen", r"^leren \w+$",
         r"symposium", r"voorlees", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
         r"repair ?caf", r"bloemschik", r"verkeersregels", r"creatief caf", r"handwerk", r"informatie ?avond",
         r"\bbrei(?:en|werk|cafe|club|middag|avond|ochtend|les)\b", r"\bhaak", r"\bcrea\b", r"digitaal ?huis", r"literatuur", r"leesclub", r"boekenclub", r"verhalen", r"doe-? ?middag", r"thema ?avond", r"webinar",
@@ -312,8 +312,11 @@ PUBLIC_EVENT = re.compile(r"concert|uitvoering|optreden|voorstelling|toerno(?:o|
                           r"|demonstratie|clinic|workshop|festival|jubileum|markt|expositie|tentoonstelling|\bshow\b|gala"
                           r"|feest|viering|proefles|kennismak|presentatie|lezing|actie|benefiet|\bquiz")
 # Teamnummers zijn kort ('1', 'DS1', 'MA1', 'JO13-2'); een jaartal ('Boney M 1976') is geen team.
-TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'/&-]+ (?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2} ?[-–] ?[\w .'/&-]+ "
-                        r"(?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}\b")
+# Ook met een plusje voor jeugd- en veteranenteams ('Tzummarum 18+1 - Zeerobben 18+1', dagcontrole 1 november).
+TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'/&-]+ (?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)? ?[-–] ?[\w .'/&-]+ "
+                        r"(?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)?\b")
+# De uitslagenpagina van een club ('scfraneker.nl/200/63638/uitslagen/wedstrijd-details/'): een competitiewedstrijd.
+MATCH_PATH = re.compile(r"/uitslagen/(?:[\w-]+/)*wedstrijd-details", re.IGNORECASE)
 # Een spel of sport van de club, ook midden in de naam ('Maatbiljarten Krekt Rekke', 'Darten in dorpshuis
 # De Molenwiek'). Een toernooi, drive of prijsklaverjassen is open voor iedereen en blijft staan.
 CLUB_GAME = re.compile(r"\w*biljart\w*|\bblijart\w*|\w*klaverjas\w*|^bridge(?:n|club)?\b(?! over\b)|\bbridge ?(?:club|avond|middag|les)\b"
@@ -339,7 +342,7 @@ VILLAGE_ROUTINE = re.compile(
     r"|\bite\b|\w*(?:brunch|buffet)\b|\w*lunch(?:buffet)?\b"
     r"|dorpskamer|doarpskeamer|dorpshuiskamer|buurtkamer|\bhuiskamer\b|\w*handwerk\w*|\bbrei ?cafe|\bhaak ?cafe|\bcreatief cafe|\bcrea ?(?:cafe|doe)"
     r"|\b(?:vrouwen|mannen|internet|computer|digi|taal|mienskip) ?cafe\b|digi-? ?taalhuis|\btaalhuis\b|\w*soos\b"
-    r"|\bhobby ?(?:club|lub|middag|avond)\b|\bontmoetings?(?:middag|ochtend|avond)\b|\bbewegen en ontmoeten\b"
+    r"|\bhobby ?(?:club|lub|middag|avond)\b|\bontmoetings?(?:middag|ochtend|avond)(?:en)?\b|\bbewegen en ontmoeten\b"
     r"|\bcafe ?avond in (?:het )?(?:buurthuis|dorpshuis)|\bverrassingsmiddag\b"
     r"|positieve gezondheid"
     # Samen eten of koken in het dorp ('Visje eten', 'Mosselen eten', 'Turks koken', 'Koken met de Wegwijzer',
@@ -589,6 +592,9 @@ def classify(event: dict, overrides: dict | None = None,
     # organisator 'comedy': dan theater.
     if event.get("schemaType") == "ComedyEvent" and re.search(r"theatertour|theatertournee", normalize(title)):
         return result("theater", "organisator", "theatertour van een cabaretier (de organisator noemt het comedy)", 0.75)
+    # Een film in de rubriek '/bios/' van de bioscoop blijft een film, ook als de titel naar eten klinkt ('Het Diner').
+    if section and section[0] == "film" and list(found) == ["eten"]:
+        return result("film", "organisator", f"de organisator zet het in de rubriek '{section[1]}'", 0.7)
     # 2c. Wandelingen en excursies zijn natuur, behalve bij een echte wedstrijd
     if "natuur" in found and race:
         return result("sport", "trefwoord", f"wedstrijd ({found['sport'][0]}) in de natuur", 0.85)
@@ -664,7 +670,7 @@ def page_hints(text: str) -> dict:
 SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|ontdek alle \w+|nu te zien|leste nijs"
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
-                           r"|in [\w ]+ is altijd wat te doen|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
+                           r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
                            r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen)\W*$")
 # Kopjes die ook de naam van een uitje kunnen zijn ('Welkom bij de Kerstmarkt', 'Thema: Halloween griezeltocht').
 SWEEP_HEADING_SOFT = re.compile(r"^\W*(?:welkom bij .*|//.*)$")
@@ -674,7 +680,13 @@ SWEEP_NOT_OUTING = re.compile(
     r"|\bwerkgroep\b|\bklusdag\b|\b(?:voorjaars|najaars)werk\b|\b(?:najaars|voorjaars)bijeenkomst\b|\bvve\b|professionalsmeeting"
     r"|\bkovvie\b|kleding-? ?ruil-? ?rek|\bspekclub\b|\bmancave\b|powervrouwen|^praathuis$|^gezellige (?:middag|avond)$|^dorpsstee voor"
     r"|\bbiodanza\b|kaboutervoetbal|poeziekring|^volksdansen$|dinsdagavondvaren"
-    r"|\bvieren dienst\b|\bdienst m\.? ?m\.? ?v\b|\b(?:50|55|60|65) ?\+")
+    r"|\bvieren dienst\b|\bdienst m\.? ?m\.? ?v\b|\b(?:50|55|60|65) ?\+"
+    # De afvalkalender ('Omrin november'), een naam die alleen de beschikbaarheid noemt ('Nederlands Nog 18 plekken
+    # vrij', 'Volgeboekt'; een keuze uit een inschrijfformulier, zonder de naam van het uitje) en een gebedsavond (een
+    # vaste bijeenkomst van de kerk). Dagcontrole 1 november 2026. 'Pubquiz - nog 3 plekken vrij' blijft staan.
+    r"|^omrin (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december|afvalkalender)\b"
+    r"|^(?:nederlands|english|engels|deutsch|duits|frysk|fries)?\s*(?:nog \d+ (?:plek|plekken|plaatsen) (?:vrij|beschikbaar)"
+    r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b")
 # Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
 SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
                         r"|kinderen in een scheiding|computercursus|\bdigi ?(?:vitaler|sterker|taal)\b|zorgverzekeraar"
@@ -729,6 +741,8 @@ def not_an_outing(event: dict) -> str | None:
     link = urlparse(event.get("url") or "")
     if SERVICE_PATH.search(f"{link.path}?{link.query}") and not PUBLIC_EVENT.search(title):
         return f"kerkdienst (rubriek in de link): '{event.get('title')}'"
+    if MATCH_PATH.search(link.path) and not PUBLIC_EVENT.search(title):
+        return f"competitiewedstrijd van een club (uitslagenpagina): '{event.get('title')}'"
     if SENIORS_PATH.search(link.path) and not SENIORS_PUBLIC.search(title):
         return f"voor de ouderen van het dorp (rubriek in de link): '{event.get('title')}'"
     venue_page = VENUE_PAGE.search(link.path)

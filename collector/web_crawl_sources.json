@@ -4575,7 +4575,7 @@
       "name": "Franeker.nl",
       "rootUrl": "https://franeker.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -4589,7 +4589,8 @@
         "lat": 53.1875,
         "lon": 5.54
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Franeker.nl is een 'lokale stadspoort': de agenda zijn doorverwijzingen naar de verzamelagenda van friesland.nl (Merk Fryslân), geen organisator (regel 1). De Koornbeurs staat nu zelf in de bronnenlijst (film en theater), net als de kerken (kerkinfraneker.nl) en de gemeente Waadhoeke (evenementenkalender); Museum Martena staat er ook zelf in en het Planetarium als tip. Gevonden 2 november 2026."
     },
     {
       "id": "harich-ruigahuizen-nl-web",
@@ -11367,6 +11368,88 @@
       "policyReviewedAt": "2026-10-19"
     },
     {
+      "id": "theaterdekoornbeurs-nl-theater",
+      "name": "De Koornbeurs Theater",
+      "rootUrl": "https://www.theaterdekoornbeurs.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.theaterdekoornbeurs.nl/theater/",
+        "card": "<div class=\"row performance-preview\"",
+        "fields": {
+          "title": "<p class=\"performance-artist\">(.*?)</p>",
+          "extra": "<p class=\"performance-title\">(.*?)</p>",
+          "date": "<div class=\"col-xs-3 col-md-1 performance-date\">(.*?)</div>",
+          "time": "<p class=\"performance-time\">(.*?)</p>",
+          "url": "<a href=\"(/voorstelling/[^\"]+)\"",
+          "id": "/voorstelling/(\\d+)/",
+          "genre": "<p class=\"performance-genre\">(.*?)</p>",
+          "room": "<p class=\"performance-artist\">\\s*(Klassiek in het Martena Museum)\\s*</p>"
+        },
+        "genres": {
+          "Muziek": "MusicEvent",
+          "Klassiek": "MusicEvent",
+          "Tribute": "MusicEvent",
+          "Cabaret": "ComedyEvent",
+          "Show": "TheaterEvent",
+          "Theater": "TheaterEvent",
+          "Toneel": "TheaterEvent",
+          "Musical": "TheaterEvent",
+          "Muziektheater": "TheaterEvent",
+          "Verteltheater": "TheaterEvent",
+          "Frysk": "TheaterEvent",
+          "Dans": "DanceEvent",
+          "Jeugd en Familie": "ChildrensEvent",
+          "Theaterlezingen": "EducationEvent",
+          "Film": "ScreeningEvent"
+        },
+        "skipExtra": "^startgroep\\b",
+        "rooms": {
+          "Klassiek in het Martena Museum": {
+            "venue": "Museum Martena",
+            "city": "Franeker",
+            "lat": 53.1864174,
+            "lon": 5.542203
+          }
+        }
+      },
+      "defaultPlace": {
+        "venue": "Theater De Koornbeurs",
+        "city": "Franeker",
+        "lat": 53.1876,
+        "lon": 5.5432
+      },
+      "note": "De theaterpagina van De Koornbeurs (Franeker): dezelfde kaartjes als de filmpagina, met de rubriek per voorstelling (Cabaret, Muziek, Te Gast, Jeugd en Familie, ...). Tot 2 november 2026 kwam dit programma alleen via franeker.nl binnen, een stadspoort die nu uit staat (verzamelsite). 'Te Gast' zegt niets over de soort en blijft dus aan de trefwoorden over. Kaartverkoop via podiumnederland.nl niet ophalen. De Midnightwalk staat er per startgroep ('Startgroep 1 19:00'): die toevoeging valt weg, zodat het één uitje met meerdere begintijden wordt. 'Klassiek in het Martena Museum' krijgt de plek van het museum.",
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
+      "id": "museummartena-nl-web",
+      "name": "Museum Martena",
+      "rootUrl": "https://www.museummartena.nl/",
+      "role": "venue",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://www.museummartena.nl/activiteiten",
+        "card": "<article class=\"textblock",
+        "fields": {
+          "date": "textblock-title[^>]*>\\s*(\\d{1,2}\\s+[a-z]+(?:\\s+20\\d{2})?)",
+          "title": "textblock-title[^>]*>\\s*\\d{1,2}\\s+[a-z]+(?:\\s+20\\d{2})?\\s*:?\\s*([^<]+?)\\s*</h2>"
+        },
+        "genres": {}
+      },
+      "defaultPlace": {
+        "venue": "Museum Martena",
+        "city": "Franeker",
+        "lat": 53.1864174,
+        "lon": 5.542203
+      },
+      "activatedFromCandidate": "museummartena.nl",
+      "note": "De activiteiten van Museum Martena (Franeker) staan als tekstblokken op /activiteiten, met de datum vooraan in de kop ('20 november Verhalenavond: ...'); een blok zonder datum (inschrijven) wordt overgeslagen. Kwam eerder alleen via franeker.nl binnen (verzamelsite, uit sinds 2 november 2026).",
+      "policyReviewedAt": "2026-11-02"
+    },
+    {
       "id": "demolenberg-nl-film",
       "name": "Bioscoop De Molenberg",
       "rootUrl": "https://www.demolenberg.nl/",
@@ -12137,20 +12220,20 @@
       "extractorHint": "html_cards",
       "extractorConfig": {
         "endpointUrl": "https://www.parkzicht.com/agenda/",
-        "card": "<div class=\"agendadatum",
+        "card": "<div class=\"blog-item-preview\">",
         "fields": {
-          "date": "agendadatum[^>]*>\\s*<a[^>]*>(.*?)</a>",
-          "title": "agendaitemtitle[^>]*>\\s*<a[^>]*>\\s*([^<]+?)\\s*</a>",
-          "url": "agendadatum[^>]*>\\s*<a href=\"([^\"]+)\""
+          "title": "blog-item-preview-title[^>]*>([^<]+)<",
+          "date": "blog-field-date\">\\s*<span class=\"sr-only\">Datum</span>\\s*([^<]+?)\\s*</li>",
+          "url": "<a class=\"blog-item-link[^\"]*\" href=\"([^\"]+)\""
         },
-        "genres": {},
-        "skipTitle": "easytoys"
+        "skipTitle": "easytoys",
+        "genres": {}
       },
       "defaultPlace": {
         "venue": "Brouwhotel Parkzicht",
         "city": "Veendam"
       },
-      "note": "Brouwhotel Parkzicht (Museumplein 3, Veendam; parkzicht.com, niet hotelparkzicht.nl = Eindhoven). Agenda met kaartjes op /agenda/ (datum '24 Oct' zonder jaar, <base href> aanwezig). Getest op 20 oktober 2026: 13 uitjes (dinnershows, tributes, X-Mass parties, bierfestival). 'EasyToys Ladies Bingo' wordt overgeslagen. robots.txt bestaat niet (404) = welkom.",
+      "note": "Brouwhotel Parkzicht (Museumplein 3, Veendam; parkzicht.com, niet hotelparkzicht.nl = Eindhoven). De site is omgebouwd (oktober 2026): kaartjes 'blog-item-preview' op /agenda/, datum met jaar ('8 november 2026'), links via <base href>. Getest op 1 november 2026: 11 uitjes (dinnershows, tributes, X-Mass parties). 'EasyToys Ladies Bingo' (een erotiekmerk) wordt overgeslagen. robots.txt bestaat niet (404) = welkom.",
       "policyReviewedAt": "2026-10-20"
     },
     {
@@ -12528,15 +12611,26 @@
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://slavernijverledengroningen.nl/"
+        "endpointUrl": "https://slavernijverledengroningen.nl/",
+        "card": "<span class=\"event-choice",
+        "titleText": "Stadswandeling Slavernijverleden Groningen",
+        "fields": {
+          "date": "class=\"date\">(\\d{1,2}</span>\\s*<span class=\"month\">[a-z]+)<",
+          "time": "class=\"time\">\\s*(\\d{1,2}[:.]\\d{2})",
+          "end": "class=\"time\">[^<]*?-\\s*(\\d{1,2}[:.]\\d{2})",
+          "extra": "class=\"event-language\">([^<]+)<"
+        },
+        "skipExtra": "^Nederlands$",
+        "genres": {}
       },
       "activatedFromCandidate": "slavernijverledengroningen.nl",
       "defaultPlace": {
         "city": "Groningen"
       },
-      "policyReviewedAt": "2026-10-21"
+      "policyReviewedAt": "2026-11-02",
+      "note": "De rondleiding staat alleen als keuzes in het inschrijfformulier op de voorpagina (dag, datum, tijd, taal, plekken); de oude agendalezer maakte daar namen als 'Nederlands Nog 18 plekken vrij' van. Dagcontrole 1 november 2026."
     },
     {
       "id": "stadsparknightrun-nl-web",

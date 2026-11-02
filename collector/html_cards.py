@@ -9,6 +9,8 @@ Per bron ingesteld in extractorConfig, zonder nieuwe code per website:
     fields       per gegeven een reguliere expressie met één groep, binnen het kaartje:
                  title, extra (wordt achter de titel gezet), start (ISO), date (tekst), time, end,
                  url, id, genre, room, tags, venue en city (de plek per kaartje, als die er zelf bij staat)
+    titleText    een vaste naam als de kaartjes alleen een datum hebben (de keuzes in een inschrijfformulier voor
+                 een rondleiding: Slavernijverleden Groningen); een veld 'extra' komt erachter ('English')
     dropFromTitle  wat uit de titel weg moet (bijv. '<sup.*?</sup>' voor het land van een band)
     genres       de soort volgens de organisator -> schema.org ('muziek' -> 'MusicEvent'); bij een lijst
                  van kenmerken telt het eerste kenmerk dat in de lijst staat
@@ -96,7 +98,7 @@ def parse_cards(html: str, config: dict, *, source_name: str, page_url: str, tod
     for at, card in zip(marks, split_cards(html, config.get("card") or r"<article\b")):
         # Het laatste kopje vóór dit kaartje ('januari 2026') hoort bij de datum ('23 en 24').
         heading = next((text for pos, text in reversed(context) if pos < at), "")
-        raw_title = _field(card, fields.get("title"))
+        raw_title = _field(card, fields.get("title")) or str(config.get("titleText") or "")
         title = _clean(drop.sub(" ", raw_title) if drop else raw_title)
         raw_extra = _field(card, fields.get("extra"))
         extra = _clean(drop.sub(" ", raw_extra) if drop else raw_extra)

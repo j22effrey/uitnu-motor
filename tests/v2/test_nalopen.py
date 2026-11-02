@@ -222,3 +222,62 @@ def test_dagcontrole_27_oktober_hulp_spelavond_en_discussieavond():
                   "Walk-in concert in de Martinikerk", "Walk-in Workshop keramiek", "Walk-in Disco",
                   "Debat: discussieavond met de lijsttrekkers live", "Bordspelavond met live muziek"):
         assert not not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_1_november_mededelingen_cursus_en_gebed():
+    for title in ("Omrin november", "Agenda 12 november 2026", "Nederlands Nog 18 plekken vrij", "Nederlands Volgeboekt",
+                  "English Nog 1 plek vrij", "Bidden voor Vrede", "Ontmoetingsochtenden MFC"):
+        assert not_an_outing(_event(title)), title
+    for title in ("Agenda 12 november: Kerstmarkt", "Bidden voor vrede: concert in de Martinikerk",
+                  "Workshop Nederlands nog 3 plekken vrij", "Pubquiz - nog 3 plekken vrij",
+                  "Kinderdisco - nog 10 plekken vrij", "Rondleiding Planetarium - nog 4 plaatsen vrij", "Omrin duurzaamheidsfestival", "Ontmoetingsavond met de schrijver: lezing"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_1_november_jeugdwedstrijd_met_plusje():
+    assert not_an_outing(_event("Tzummarum 18+1 - Zeerobben 18+1"))
+    page = {**_event("Thuisploeg - Uitploeg"), "url": "https://www.scfraneker.nl/200/63638/uitslagen/wedstrijd-details/"}
+    assert not_an_outing(page)
+    assert not not_an_outing(_event("Boney M 1976 - Het feest"))
+    assert not not_an_outing({**page, "title": "Zaalvoetbaltoernooi"})
+
+
+def test_dagcontrole_1_november_rommel_in_de_naam():
+    junk = 'Other Mommy (16 jr.), dinsdag 3 november 21:20"> Bestel @keyframes fadeIn { from { opacity: 0; } }'
+    assert clean_title(junk) == "Other Mommy (16 jr.)"
+    assert clean_title('Vier minus drei, maandag 16 november 13:00"> Bestel') == "Vier minus drei"
+    assert clean_title("Wine > Beer") == "Wine > Beer"
+    assert clean_title('Concert "Bach 300" > uitverkocht') == 'Concert "Bach 300" > uitverkocht'
+
+
+def test_dagcontrole_1_november_soorten():
+    def kind(title, url="https://dorp.example/agenda/x"):
+        event = {**_event(title), "url": url, "sources": [{"url": url, "host": url.split("/")[2]}]}
+        return classify(event, OVERRIDES)["kind"]
+    assert kind("Pop-up Museum 20 jaar paardenredding") != "muziek"
+    assert kind("Pop-up concert") == "muziek"
+    assert kind("Stroomdalkapel geeft concert in Eetcafé Hoving") == "muziek"
+    assert kind("Eetcafé De Poort") == "eten"
+    assert kind("Leren boekbinden") == "lezing"
+    assert classify({"title": "Het Diner", "url": "https://denieuwekolk.nl/bios/agenda/het-diner"})["kind"] == "film"
+
+
+def test_dagcontrole_1_november_rondleiding_in_inschrijfformulier():
+    """Slavernijverleden Groningen: de rondleiding staat alleen als keuzes in het formulier (titleText)."""
+    from datetime import date
+    from collector import html_cards
+    html = ('<span class="event-choice"><span class="day">Zaterdag</span><span class="date">7</span>'
+            '<span class="month">november</span><span class="time">10:00 - 12:00</span>'
+            '<span class="event-language">Nederlands</span><span class="places">Nog 1 plek vrij</span></span>'
+            '<span class="event-choice"><span class="day">Zaterdag</span><span class="date">3</span>'
+            '<span class="month">april</span><span class="time">10:00 - 12:00</span>'
+            '<span class="event-language">English</span><span class="places">Nog 25 plekken vrij</span></span>')
+    cfg = {"card": '<span class="event-choice', "titleText": "Stadswandeling Slavernijverleden Groningen",
+           "fields": {"date": 'class="date">(\\d{1,2}</span>\\s*<span class="month">[a-z]+)<',
+                      "time": 'class="time">\\s*(\\d{1,2}[:.]\\d{2})', "end": 'class="time">[^<]*?-\\s*(\\d{1,2}[:.]\\d{2})',
+                      "extra": 'class="event-language">([^<]+)<'},
+           "skipExtra": "^Nederlands$"}
+    events = html_cards.parse_cards(html, cfg, source_name="S", page_url="https://s.example/", today=date(2026, 11, 2))
+    assert [(e.title, e.start_at, e.end_at) for e in events] == [
+        ("Stadswandeling Slavernijverleden Groningen", "2026-11-07T10:00", "2026-11-07T12:00"),
+        ("Stadswandeling Slavernijverleden Groningen – English", "2027-04-03T10:00", "2027-04-03T12:00")]

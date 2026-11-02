@@ -111,6 +111,13 @@ LINK_NOTE = re.compile(r"\s*\((?:opent (?:bij de bron|in (?:een )?nieuw (?:venst
                        r"|externe link|external link)\)\s*", re.IGNORECASE)
 
 
+# Stukjes HTML of stijlregels die in de naam zijn beland ('Other Mommy (16 jr.), dinsdag 3 november 21:20"> Bestel
+# @keyframes fadeIn { ... }'): alles vanaf de losse '">' hoort er niet bij, en de dag en tijd ervoor staan al bij het uitje.
+HTML_JUNK = re.compile(r"""(?:,?\s*(?:ma|di|woens?|do|vrij?|za|zon?)\w*\s+\d{1,2}\s+[a-z]+\s+\d{1,2}[:.]\d{2})?\s*">.*$"""
+                       r"""|\s*@keyframes\b.*$""", re.IGNORECASE | re.DOTALL)
+HTML_TAG = re.compile(r"</?[a-z][a-z0-9]*(?:\s[^<>]*)?/?>", re.IGNORECASE)
+
+
 def _undouble(title: str) -> str:
     """Een naam die er twee keer staat ('Taalcafé Taalcafé', of afgekapt: 'Kinderboekenweek: Spot aan! -
     met Mark in de bieb! Kinderboekenweek: Spot aan! - m'): één keer is genoeg."""
@@ -174,6 +181,9 @@ def clean_title(value: str | None, city: str | None = None, venue: str | None = 
     entity = re.compile(r"&#?\w+;")  # alleen met puntkomma: 'Kunst&centrum' blijft heel
     text = entity.sub(lambda m: unescape(m.group()), entity.sub(lambda m: unescape(m.group()), value or ""))
     title = _undouble(LINK_NOTE.sub(" ", re.sub(r"\s+", " ", text)).strip())
+    cleaned = re.sub(r"\s+", " ", HTML_JUNK.sub("", HTML_TAG.sub(" ", title)))
+    if cleaned != title and len(cleaned.strip(" ,")) >= 3:
+        title = cleaned.strip(" ,")
     rest = DATE_PREFIX.sub("", title, count=1)
     rest = rest if len(rest) >= 3 else title
     untimed = LEADING_TIME.sub("", rest, count=1)
