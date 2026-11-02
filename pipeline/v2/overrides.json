@@ -12,6 +12,11 @@
    "reden": "Een kermis is 'Feest en kermis', ook als de naam van de markt erin staat (Kermis Zuidlaardermarkt)."
   },
   {
+   "naam": "^stadswandeling slavernijverleden",
+   "soort": "kunst",
+   "reden": "Een rondleiding langs de sporen van het slavernijverleden in de binnenstad van Groningen: erfgoed, geen natuuruitje."
+  },
+  {
    "naam": "album ?presentatie|\\bep[ -]?release|release ?party|pre-?release",
    "soort": "muziek",
    "reden": "Een album- of EP-presentatie is een optreden van een band, geen lezing ('Long Legs Mosquito albumpresentatie')."

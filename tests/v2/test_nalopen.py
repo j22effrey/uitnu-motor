@@ -258,3 +258,24 @@ def test_dagcontrole_1_november_soorten():
     assert kind("Eetcafé De Poort") == "eten"
     assert kind("Leren boekbinden") == "lezing"
     assert classify({"title": "Het Diner", "url": "https://denieuwekolk.nl/bios/agenda/het-diner"})["kind"] == "film"
+
+
+def test_dagcontrole_1_november_rondleiding_in_inschrijfformulier():
+    """Slavernijverleden Groningen: de rondleiding staat alleen als keuzes in het formulier (titleText)."""
+    from datetime import date
+    from collector import html_cards
+    html = ('<span class="event-choice"><span class="day">Zaterdag</span><span class="date">7</span>'
+            '<span class="month">november</span><span class="time">10:00 - 12:00</span>'
+            '<span class="event-language">Nederlands</span><span class="places">Nog 1 plek vrij</span></span>'
+            '<span class="event-choice"><span class="day">Zaterdag</span><span class="date">3</span>'
+            '<span class="month">april</span><span class="time">10:00 - 12:00</span>'
+            '<span class="event-language">English</span><span class="places">Nog 25 plekken vrij</span></span>')
+    cfg = {"card": '<span class="event-choice', "titleText": "Stadswandeling Slavernijverleden Groningen",
+           "fields": {"date": 'class="date">(\\d{1,2}</span>\\s*<span class="month">[a-z]+)<',
+                      "time": 'class="time">\\s*(\\d{1,2}[:.]\\d{2})', "end": 'class="time">[^<]*?-\\s*(\\d{1,2}[:.]\\d{2})',
+                      "extra": 'class="event-language">([^<]+)<'},
+           "skipExtra": "^Nederlands$"}
+    events = html_cards.parse_cards(html, cfg, source_name="S", page_url="https://s.example/", today=date(2026, 11, 2))
+    assert [(e.title, e.start_at, e.end_at) for e in events] == [
+        ("Stadswandeling Slavernijverleden Groningen", "2026-11-07T10:00", "2026-11-07T12:00"),
+        ("Stadswandeling Slavernijverleden Groningen – English", "2027-04-03T10:00", "2027-04-03T12:00")]

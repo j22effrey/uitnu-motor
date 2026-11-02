@@ -12529,15 +12529,26 @@
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
-      "extractorHint": "html_agenda_dutch",
+      "extractorHint": "html_cards",
       "extractorConfig": {
-        "agendaUrl": "https://slavernijverledengroningen.nl/"
+        "endpointUrl": "https://slavernijverledengroningen.nl/",
+        "card": "<span class=\"event-choice",
+        "titleText": "Stadswandeling Slavernijverleden Groningen",
+        "fields": {
+          "date": "class=\"date\">(\\d{1,2}</span>\\s*<span class=\"month\">[a-z]+)<",
+          "time": "class=\"time\">\\s*(\\d{1,2}[:.]\\d{2})",
+          "end": "class=\"time\">[^<]*?-\\s*(\\d{1,2}[:.]\\d{2})",
+          "extra": "class=\"event-language\">([^<]+)<"
+        },
+        "skipExtra": "^Nederlands$",
+        "genres": {}
       },
       "activatedFromCandidate": "slavernijverledengroningen.nl",
       "defaultPlace": {
         "city": "Groningen"
       },
-      "policyReviewedAt": "2026-10-21"
+      "policyReviewedAt": "2026-11-02",
+      "note": "De rondleiding staat alleen als keuzes in het inschrijfformulier op de voorpagina (dag, datum, tijd, taal, plekken); de oude agendalezer maakte daar namen als 'Nederlands Nog 18 plekken vrij' van. Dagcontrole 1 november 2026."
     },
     {
       "id": "stadsparknightrun-nl-web",
