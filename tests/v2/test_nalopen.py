@@ -225,11 +225,12 @@ def test_dagcontrole_27_oktober_hulp_spelavond_en_discussieavond():
 
 
 def test_dagcontrole_1_november_mededelingen_cursus_en_gebed():
-    for title in ("Omrin november", "Agenda 12 november 2026", "Nederlands Nog 18 plekken vrij", "Bidden voor Vrede",
-                  "Ontmoetingsochtenden MFC"):
+    for title in ("Omrin november", "Agenda 12 november 2026", "Nederlands Nog 18 plekken vrij", "Nederlands Volgeboekt",
+                  "English Nog 1 plek vrij", "Bidden voor Vrede", "Ontmoetingsochtenden MFC"):
         assert not_an_outing(_event(title)), title
     for title in ("Agenda 12 november: Kerstmarkt", "Bidden voor vrede: concert in de Martinikerk",
-                  "Workshop Nederlands nog 3 plekken vrij", "Omrin duurzaamheidsfestival", "Ontmoetingsavond met de schrijver: lezing"):
+                  "Workshop Nederlands nog 3 plekken vrij", "Pubquiz - nog 3 plekken vrij",
+                  "Kinderdisco - nog 10 plekken vrij", "Rondleiding Planetarium - nog 4 plaatsen vrij", "Omrin duurzaamheidsfestival", "Ontmoetingsavond met de schrijver: lezing"):
         assert not not_an_outing(_event(title)), title
 
 
@@ -246,6 +247,7 @@ def test_dagcontrole_1_november_rommel_in_de_naam():
     assert clean_title(junk) == "Other Mommy (16 jr.)"
     assert clean_title('Vier minus drei, maandag 16 november 13:00"> Bestel') == "Vier minus drei"
     assert clean_title("Wine > Beer") == "Wine > Beer"
+    assert clean_title('Concert "Bach 300" > uitverkocht') == 'Concert "Bach 300" > uitverkocht'
 
 
 def test_dagcontrole_1_november_soorten():

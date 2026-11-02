@@ -681,10 +681,12 @@ SWEEP_NOT_OUTING = re.compile(
     r"|\bkovvie\b|kleding-? ?ruil-? ?rek|\bspekclub\b|\bmancave\b|powervrouwen|^praathuis$|^gezellige (?:middag|avond)$|^dorpsstee voor"
     r"|\bbiodanza\b|kaboutervoetbal|poeziekring|^volksdansen$|dinsdagavondvaren"
     r"|\bvieren dienst\b|\bdienst m\.? ?m\.? ?v\b|\b(?:50|55|60|65) ?\+"
-    # De afvalkalender ('Omrin november'), een cursus die bijna vol zit ('Nederlands Nog 18 plekken vrij') en een
-    # gebedsavond (een vaste bijeenkomst van de kerk). Dagcontrole 1 november 2026.
+    # De afvalkalender ('Omrin november'), een naam die alleen de beschikbaarheid noemt ('Nederlands Nog 18 plekken
+    # vrij', 'Volgeboekt'; een keuze uit een inschrijfformulier, zonder de naam van het uitje) en een gebedsavond (een
+    # vaste bijeenkomst van de kerk). Dagcontrole 1 november 2026. 'Pubquiz - nog 3 plekken vrij' blijft staan.
     r"|^omrin (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december|afvalkalender)\b"
-    r"|\bnog \d+ (?:plekken|plaatsen) (?:vrij|beschikbaar)\b|\bgebedsavond\b|^bidden voor\b")
+    r"|^(?:nederlands|english|engels|deutsch|duits|frysk|fries)?\s*(?:nog \d+ (?:plek|plekken|plaatsen) (?:vrij|beschikbaar)"
+    r"|volgeboekt|vol|uitverkocht)$|\bgebedsavond\b|^bidden voor\b")
 # Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
 SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
                         r"|kinderen in een scheiding|computercursus|\bdigi ?(?:vitaler|sterker|taal)\b|zorgverzekeraar"
