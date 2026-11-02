@@ -17,6 +17,11 @@
    "reden": "Een rondleiding langs de sporen van het slavernijverleden in de binnenstad van Groningen: erfgoed, geen natuuruitje."
   },
   {
+   "naam": "^midnightwalk\\b",
+   "soort": "natuur",
+   "reden": "Avondwandeling van ongeveer 6 km door de historische binnenstad van Franeker, met muziek en verlichting; start en finish in De Koornbeurs, dat het in het theaterprogramma zet (organisator, 2 november 2026). Geen voorstelling."
+  },
+  {
    "naam": "album ?presentatie|\\bep[ -]?release|release ?party|pre-?release",
    "soort": "muziek",
    "reden": "Een album- of EP-presentatie is een optreden van een band, geen lezing ('Long Legs Mosquito albumpresentatie')."

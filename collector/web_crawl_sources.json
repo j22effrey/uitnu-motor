@@ -4590,7 +4590,7 @@
         "lon": 5.54
       },
       "policyReviewedAt": "2026-10-13",
-      "disabledReason": "Franeker.nl is een 'lokale stadspoort': de agenda zijn doorverwijzingen naar de verzamelagenda van friesland.nl (Merk Fryslân), geen organisator (regel 1). De Koornbeurs staat nu zelf in de bronnenlijst (film en theater), net als de kerken (kerkinfraneker.nl) en de gemeente Waadhoeke (evenementenkalender); het Planetarium en Museum Martena staan als tip. Gevonden 2 november 2026."
+      "disabledReason": "Franeker.nl is een 'lokale stadspoort': de agenda zijn doorverwijzingen naar de verzamelagenda van friesland.nl (Merk Fryslân), geen organisator (regel 1). De Koornbeurs staat nu zelf in de bronnenlijst (film en theater), net als de kerken (kerkinfraneker.nl) en de gemeente Waadhoeke (evenementenkalender); Museum Martena staat er ook zelf in en het Planetarium als tip. Gevonden 2 november 2026."
     },
     {
       "id": "harich-ruigahuizen-nl-web",
@@ -11384,7 +11384,8 @@
           "time": "<p class=\"performance-time\">(.*?)</p>",
           "url": "<a href=\"(/voorstelling/[^\"]+)\"",
           "id": "/voorstelling/(\\d+)/",
-          "genre": "<p class=\"performance-genre\">(.*?)</p>"
+          "genre": "<p class=\"performance-genre\">(.*?)</p>",
+          "room": "<p class=\"performance-artist\">\\s*(Klassiek in het Martena Museum)\\s*</p>"
         },
         "genres": {
           "Muziek": "MusicEvent",
@@ -11402,6 +11403,15 @@
           "Jeugd en Familie": "ChildrensEvent",
           "Theaterlezingen": "EducationEvent",
           "Film": "ScreeningEvent"
+        },
+        "skipExtra": "^startgroep\\b",
+        "rooms": {
+          "Klassiek in het Martena Museum": {
+            "venue": "Museum Martena",
+            "city": "Franeker",
+            "lat": 53.1864174,
+            "lon": 5.542203
+          }
         }
       },
       "defaultPlace": {
@@ -11410,7 +11420,7 @@
         "lat": 53.1876,
         "lon": 5.5432
       },
-      "note": "De theaterpagina van De Koornbeurs (Franeker): dezelfde kaartjes als de filmpagina, met de rubriek per voorstelling (Cabaret, Muziek, Te Gast, Jeugd en Familie, ...). Tot 2 november 2026 kwam dit programma alleen via franeker.nl binnen, een stadspoort die nu uit staat (verzamelsite). 'Te Gast' zegt niets over de soort en blijft dus aan de trefwoorden over. Kaartverkoop via podiumnederland.nl niet ophalen.",
+      "note": "De theaterpagina van De Koornbeurs (Franeker): dezelfde kaartjes als de filmpagina, met de rubriek per voorstelling (Cabaret, Muziek, Te Gast, Jeugd en Familie, ...). Tot 2 november 2026 kwam dit programma alleen via franeker.nl binnen, een stadspoort die nu uit staat (verzamelsite). 'Te Gast' zegt niets over de soort en blijft dus aan de trefwoorden over. Kaartverkoop via podiumnederland.nl niet ophalen. De Midnightwalk staat er per startgroep ('Startgroep 1 19:00'): die toevoeging valt weg, zodat het één uitje met meerdere begintijden wordt. 'Klassiek in het Martena Museum' krijgt de plek van het museum.",
       "policyReviewedAt": "2026-11-02"
     },
     {

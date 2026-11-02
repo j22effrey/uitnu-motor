@@ -686,7 +686,7 @@ SWEEP_NOT_OUTING = re.compile(
     # vaste bijeenkomst van de kerk). Dagcontrole 1 november 2026. 'Pubquiz - nog 3 plekken vrij' blijft staan.
     r"|^omrin (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december|afvalkalender)\b"
     r"|^(?:nederlands|english|engels|deutsch|duits|frysk|fries)?\s*(?:nog \d+ (?:plek|plekken|plaatsen) (?:vrij|beschikbaar)"
-    r"|volgeboekt|vol|uitverkocht)$|\bgebedsavond\b|^bidden voor\b")
+    r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b")
 # Hulp bij de computer of thuis (ook als 'workshop'); een lezing over hetzelfde onderwerp blijft staan.
 SWEEP_HELP = re.compile(r"\blinux\b|\bchatgpt\b|\bdelpher\b|cyberveilig\w*|foto'?s digitaliseren|installatie ?avond"
                         r"|kinderen in een scheiding|computercursus|\bdigi ?(?:vitaler|sterker|taal)\b|zorgverzekeraar"
