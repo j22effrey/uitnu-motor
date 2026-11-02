@@ -281,3 +281,40 @@ def test_dagcontrole_1_november_rondleiding_in_inschrijfformulier():
     assert [(e.title, e.start_at, e.end_at) for e in events] == [
         ("Stadswandeling Slavernijverleden Groningen", "2026-11-07T10:00", "2026-11-07T12:00"),
         ("Stadswandeling Slavernijverleden Groningen – English", "2027-04-03T10:00", "2027-04-03T12:00")]
+
+
+# Dagcontrole 2 november 2026 (252 nieuwe uitjes): wat er nog tussen zat.
+def _hall(title, venue=None):
+    event = _event(title)
+    event["venue"] = {"name": venue} if venue else {}
+    return event
+
+
+def test_dagcontrole_2_november_geen_uitje():
+    for title in ("Stampot eten in het Bartoleshûs", "Koppelkaarten in Dorpshuis de Molenwiek", "Mini-klup kampioenskip",
+                  "Bijeenkomst Verbinding zondag 22 november", "Bijeenkomst Feilich Ûnderweis",
+                  "Uitnodiging Plekberaad De Lege Geaën", "Gezamenlijke klimaatdienst",
+                  "Parochiebrede Avond", "Droge worst aktie VVR", "Drop aktie VVR ⚽", "ophalen schoentje in het Heirhuys.",
+                  "Acteercursus", "Moi-cursus", "Djembe met Ria Ybema",
+                  "2026 Volgend jaar Oktober 2026 Zaterdag, 31 Oktober 2026", "Foar yn de agenda", "Film in Friesland"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_2_november_echte_uitjes_blijven_staan():
+    for title in ("Acteercursus-openbare les", "Stampot buffet met live muziek", "Bijeenkomst en lezing over Menno ter Braak",
+                  "Kerstconcert 'Keep the Faith'", "Workshop bloembollen planten",
+                  "Cursus Fotografie met Smartphone", "Pubquiz VVR", "Klaverjasdrive voor iedereen: prijsklaverjassen"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_afloop_is_geen_hardloop_en_een_ligconcert_is_muziek():
+    assert classify(_event("Een ligconcert met Yoga Nidra & Neoklassieke klanken van piano en bugel"))["kind"] == "muziek"
+    assert classify(_event("Dorpsfeest: na afloop muziek"))["kind"] != "sport"
+    assert classify(_event("Yoga in het park"))["kind"] == "sport"
+
+
+def test_afgebroken_naam_en_soort_achter_streepje_vallen_weg():
+    assert clean_title("Kerstconcert 'Keep the Faith'-…") == "Kerstconcert 'Keep the Faith'"
+    assert clean_title("Kerstconcert 'Keep the Faith'…") == "Kerstconcert 'Keep the Faith'"
+    assert clean_title("Le ballon rouge | Klassieke muziek") == "Le ballon rouge"
+    assert clean_title("Mozart | Jazz Quartet") == "Mozart | Jazz Quartet"
