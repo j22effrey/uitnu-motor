@@ -1,5 +1,25 @@
 [
  {
+  "id": "evt_495b0ee9c043f0",
+  "title": "Gemeente Veendam biedt hulp bij aanschaf energiezuinige apparaten",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.ommelanderwijk.com/author/admin/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_ca7b4c4e1f967d",
+  "title": "Levendig Musselkanaal als snelkoppeling op je telefoon!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://levendigmusselkanaal.nl/berichten/levendig-musselkanaal-als-snelkoppeling-op-je-telefoon",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_e441b46f2e4823",
   "title": "Mantgumer Maten",
   "kind": "overig",
@@ -30,21 +50,21 @@
   ]
  },
  {
-  "id": "evt_930e5049ec3aab",
-  "title": "De Gaulle: Résistance",
-  "kind": "film",
-  "reason": "website filmhuisemmen.nl",
-  "url": "https://www.filmhuisemmen.nl/de-gaulle-resistance/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_3c475467a57d08",
   "title": "Stranger Things Have Happened",
   "kind": "muziek",
   "reason": "website brouwerijmartinus.nl",
   "url": "https://www.brouwerijmartinus.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_fb59b75b8fbf1e",
+  "title": "Even Offline",
+  "kind": "lezing",
+  "reason": "website ticketing.groningsebibliotheken.nl",
+  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774686/Even-Offline.html",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -135,6 +155,26 @@
   "kind": "film",
   "reason": "website filmhuisemmen.nl",
   "url": "https://www.filmhuisemmen.nl/on-a-string/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b5bb1b4beb952d",
+  "title": "Classic Jamming",
+  "kind": "muziek",
+  "reason": "website brouwerijmartinus.nl",
+  "url": "https://www.brouwerijmartinus.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_be784cfda7a7d0",
+  "title": "Dankdagviering",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.leens.info/agenda",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -672,16 +712,6 @@
   ]
  },
  {
-  "id": "evt_3e071f5bef829c",
-  "title": "Samenkomst",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.cgkzuidlaren.nl/ontmoeten/samenkomsten",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_8a056d588cf2b4",
   "title": "Weids op Hete Kolen",
   "kind": "overig",
@@ -872,6 +902,16 @@
   ]
  },
  {
+  "id": "evt_502cf965ab848a",
+  "title": "VKB Onderzoek",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://hfc15.nl/evenement/vkb-onderzoek/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_84feffb6e37482",
   "title": "OnderOns: Liedjescafé",
   "kind": "theater",
@@ -912,6 +952,16 @@
   ]
  },
  {
+  "id": "evt_8ebdb4a9fe48ce",
+  "title": "Libertas Danza",
+  "kind": "muziek",
+  "reason": "website brouwerijmartinus.nl",
+  "url": "https://www.brouwerijmartinus.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_220ec6d4c30730",
   "title": "Rôt reugeltsje",
   "kind": "overig",
@@ -937,6 +987,16 @@
   "kind": "lezing",
   "reason": "website ticketing.groningsebibliotheken.nl",
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774373/Hackshield.html",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_3cf4fb3bde907c",
+  "title": "Dorpshuis Nieuw-Roden",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://nieuwroden.nu/activiteiten/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1146,6 +1206,16 @@
   ]
  },
  {
+  "id": "evt_b4c8a8aca0687f",
+  "title": "Microscopiedag in Groningen en Drenthe",
+  "kind": "muziek",
+  "reason": "website kerkalspodium.nl",
+  "url": "https://kerkalspodium.nl/nl/activiteiten/microscopiedag-in-groningen-en-drenthe/13841/-/-/-/-/0",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_40bcecd4905d07",
   "title": "Oldeclooster gaait löss",
   "kind": "overig",
@@ -1327,16 +1397,6 @@
   ]
  },
  {
-  "id": "evt_c84f9c9b3dc609",
-  "title": "Samenkomst",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.cgkzuidlaren.nl/ontmoeten/samenkomsten",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_0b780a91711a31",
   "title": "Öffentliche Führung",
   "kind": "kunst",
@@ -1508,6 +1568,17 @@
   ]
  },
  {
+  "id": "evt_923b865e927274",
+  "title": "FESTIVALHART DAG 4",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.jongeharten.nl/programma/festivalhart-dag-4/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
   "id": "evt_d7c1d6f23dfc66",
   "title": "DIEP",
   "kind": "theater",
@@ -1543,6 +1614,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.vries.nu/agendapunt/alain-verheij-over-zijn-boek-de-prijs-van-vergeving/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_f08e21c5189b8c",
+  "title": "Libertas Danza",
+  "kind": "muziek",
+  "reason": "website brouwerijmartinus.nl",
+  "url": "https://www.brouwerijmartinus.nl/agenda/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1625,6 +1706,17 @@
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/772636/Microscopenmiddag.html",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_0c9e5c2342f1a3",
+  "title": "FESTIVALHART DAG 6",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.jongeharten.nl/programma/festivalhart-dag-6/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
@@ -1754,6 +1846,17 @@
   ]
  },
  {
+  "id": "evt_ba68674acb75d3",
+  "title": "FESTIVALHART DAG 7",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.jongeharten.nl/programma/festivalhart-dag-7/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
   "id": "evt_147401243e71c0",
   "title": "De midfestival IDFA check-in",
   "kind": "overig",
@@ -1820,6 +1923,16 @@
   "kind": "theater",
   "reason": "website jongeharten.podiumnederland.nl",
   "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10381797?stlt=jh&lang=nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_ae7dc8920e0e86",
+  "title": "Samen proosten op onze toppers!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://arum.frl/evenement/samen-proosten-op-onze-toppers",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2061,16 +2174,6 @@
   ]
  },
  {
-  "id": "evt_bd093c26e7df78",
-  "title": "Pier 21 – Wat spilet",
-  "kind": "theater",
-  "reason": "website klameare-workum.nl",
-  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_6b358b8c23ec34",
   "title": "Rinske Bouwman – De Mismis",
   "kind": "festival",
@@ -2141,6 +2244,17 @@
   "url": "https://www.decolle.nl/agenda/koen-van-schoen-zet-zijn-schoen/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_0591ccc19d9f1c",
+  "title": "FESTIVALHART DAG 8",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.jongeharten.nl/programma/festivalhart-dag-8/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
@@ -2254,6 +2368,16 @@
   ]
  },
  {
+  "id": "evt_bd093c26e7df78",
+  "title": "Pier 21 – Wat spilet",
+  "kind": "theater",
+  "reason": "website klameare-workum.nl",
+  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_19fe25beee70ff",
   "title": "Popavond: Groove Departement",
   "kind": "overig",
@@ -2283,6 +2407,16 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
+  "id": "evt_424cb19ec0dedd",
+  "title": "Bockwalk 2026",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.inveenhuizen.nl/agenda/bockwalk-2026/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -2427,16 +2561,6 @@
   ]
  },
  {
-  "id": "evt_487f8a79729e3e",
-  "title": "Christus, Koning van het heelal",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.hildegardparochie.nl/event/christus-koning-van-het-heelal-3/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_63dafa00d391dc",
   "title": "Christus, Koning van het heelal",
   "kind": "overig",
@@ -2472,16 +2596,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://schraard.com/evenement/de-zoete-inval-3",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_c1eed88a54e044",
-  "title": "Bock-walk 2026",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.inveenhuizen.nl/agenda/bockwalk-2026/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2527,6 +2641,16 @@
   ]
  },
  {
+  "id": "evt_e9a358c057bc5c",
+  "title": "Libertas Danza",
+  "kind": "muziek",
+  "reason": "website brouwerijmartinus.nl",
+  "url": "https://www.brouwerijmartinus.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_29f2f1a0b733e4",
   "title": "Zorg: tegen welke prijs?",
   "kind": "overig",
@@ -2562,6 +2686,26 @@
   "kind": "muziek",
   "reason": "website neushoorn.nl",
   "url": "https://www.neushoorn.nl/events/level-up",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_6a789f4a08ce13",
+  "title": "POPRONDE 101 | Skills & Knowledge #5",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://tumultgroningen.nl/agenda/popronde-101-skills-knowledge-5",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_79d9352368485c",
+  "title": "United Nations “Orange The World”",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.margarethakerknorg.nl/agenda/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2612,6 +2756,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://debuorkerij-terherne.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_48d2a16436fdf9",
+  "title": "Een middag met Groen van Prinsterer",
+  "kind": "kunst",
+  "reason": "website fraeylemaborg.nl",
+  "url": "https://fraeylemaborg.nl/agenda/een-middag-met-groen-van-prinsterer/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3019,6 +3173,16 @@
   ]
  },
  {
+  "id": "evt_1dcb86c1438059",
+  "title": "R.C. Sullivan + Nagusame + Beyond Cruelty",
+  "kind": "muziek",
+  "reason": "website neushoorn.nl",
+  "url": "https://www.neushoorn.nl/events/r-c-sullivan-nagusame-beyond-cruelty",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_e432095747d747",
   "title": "Krystbeam opsette🎄🎅🏼",
   "kind": "overig",
@@ -3269,6 +3433,16 @@
   ]
  },
  {
+  "id": "evt_86b728d99f4e40",
+  "title": "Kerstcreativiteit en gezelligheid",
+  "kind": "lezing",
+  "reason": "website ticketing.groningsebibliotheken.nl",
+  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774669/Kerstcreativiteit-en-gezelligheid.html",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_60fe9634afa84b",
   "title": "Scrooge",
   "kind": "overig",
@@ -3399,7 +3573,17 @@
   ]
  },
  {
-  "id": "evt_0bcf1c4c6ce43b",
+  "id": "evt_fe45880b4a7811",
+  "title": "Echoes of Joy: the Xmas Edition",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "http://www.zangformatielink.com",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_7ebff519371a7c",
   "title": "Echoes of Joy: the Xmas Edition",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
@@ -3524,6 +3708,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.bantega.net/agenda/kerstviering-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_48499d4b553f83",
+  "title": "Springfestijn",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.debontewever.nl/nl/events/springfestijn",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3664,6 +3858,27 @@
   "kind": "theater",
   "reason": "website theaterroden.nl",
   "url": "https://theaterroden.nl/hexed-nederlands-gesproken",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a947165a433b6b",
+  "title": "Spring festival",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.debontewever.nl/en/business/conferences-and-events/spring-festival",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
+  "id": "evt_813fdf55273fac",
+  "title": "Springfestijn 25",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3871,10 +4086,10 @@
  },
  {
   "id": "evt_32b9481c715402",
-  "title": "De Wichter van Champ Clark",
+  "title": "De wichter van Champ Clark",
   "kind": "theater",
-  "reason": "website a-theater.nl",
-  "url": "https://a-theater.nl/show/de-wichter-van-champ-clark/",
+  "reason": "website waark.nl",
+  "url": "https://www.waark.nl/speellijst/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3941,10 +4156,10 @@
  },
  {
   "id": "evt_693d94fcca00fc",
-  "title": "De Wichter van Champ Clark",
+  "title": "De wichter van Champ Clark",
   "kind": "theater",
-  "reason": "website a-theater.nl",
-  "url": "https://a-theater.nl/show/de-wichter-van-champ-clark-2/",
+  "reason": "website waark.nl",
+  "url": "https://www.waark.nl/speellijst/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4195,6 +4410,16 @@
   "kind": "theater",
   "reason": "website theaterroden.nl",
   "url": "https://theaterroden.nl/tiepelzinneg",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_1409761d0d2895",
+  "title": "Erwin de Vries",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://tjuchem.net/event/erwin-de-vries/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4565,6 +4790,16 @@
   "kind": "theater",
   "reason": "website theaterroden.nl",
   "url": "https://theaterroden.nl/hardleers",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_de505d0d1b38f1",
+  "title": "Fryske gedichten schrijven met Arjan Hut",
+  "kind": "lezing",
+  "reason": "website ontdekdebieb.op-shop.nl",
+  "url": "https://ontdekdebieb.op-shop.nl/19389/fryske-gedichten-schrijven-met-arjan-hut/04-02-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5296,16 +5531,6 @@
   "kind": "theater",
   "reason": "website kielzog.nl",
   "url": "https://www.kielzog.nl/evenementen/online-buurt-op-de-bühne?instance=yesplan-6566779905-1790950573",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_6d089dab280ef0",
-  "title": "De Bonte Wever 25",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6254,6 +6479,16 @@
   ]
  },
  {
+  "id": "evt_abc7cbfdaa96c7",
+  "title": "De wichter van Champ Clark",
+  "kind": "theater",
+  "reason": "website waark.nl",
+  "url": "https://www.waark.nl/speellijst/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_308c6ce3823a28",
   "title": "Opvoeden, hoe dan…!? – Ilse van den Heuvel & Marieke van Ginneken",
   "kind": "theater",
@@ -6978,6 +7213,16 @@
   ]
  },
  {
+  "id": "evt_acee8bee62a371",
+  "title": "Vechtdal Rally",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://witharen.nl/agenda/mod/event/vechtdal-rally",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_37e812190cf6cb",
   "title": "It Heidenskip festival",
   "kind": "overig",
@@ -7004,6 +7249,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://simmerdeis.nl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_6750d3353a5a55",
+  "title": "de liefde",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.pridegroningen.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -7289,26 +7544,6 @@
   ]
  },
  {
-  "id": "evt_d769d9cb45c13c",
-  "title": "sluiting om 16.00 uur",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.leens.info/agenda",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_9887e89487f1f9",
-  "title": "Leensterweek",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.leens.info/agenda",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "admiraliteitsdagen-dokkum-2027",
   "title": "Admiraliteitsdagen Dokkum",
   "kind": "feest",
@@ -7347,16 +7582,6 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
-  ]
- },
- {
-  "id": "evt_2b21d0061e53bb",
-  "title": "Schuimparty",
-  "kind": "feest",
-  "reason": "oude categorie 'feest'",
-  "url": "https://www.leens.info/agenda",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
