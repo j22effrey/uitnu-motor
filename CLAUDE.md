@@ -189,6 +189,10 @@ festival en de grensuitjes. Niet: een voorstelling met 'kermis' of 'festival' in
 2 november 2026; de eigenaar: 'ik kwam er te laat achter'): de grootste jaarmarkt van de provincie ontbrak, omdat
 gemeente-oldambt.nl de motor weigert (firewall). Zo'n evenement hoort in `collector/dekking.json` en, zodra de datum
 bekend is, als los uitje in `data/events.json`.
+Daarom staat elke gemeente van het werkgebied in `collector/gemeenten.json`, met de bronnen van haar
+evenementenkalender; de motor meldt elke ronde welke gemeente geen werkende agenda heeft en waarom
+(`status.json` onder `dekking.gemeenten`). Een gemeente die de motor weigert (een firewall): niet omzeilen, maar de
+gemeente vragen `UITNU-Crawler` toe te laten, en de grote evenementen daar als los uitje zetten.
 
 ## Indeling (soorten)
 

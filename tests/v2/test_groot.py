@@ -50,3 +50,27 @@ def test_mark_zet_tag_en_reden():
     assert events[0]["tags"] == ["groot"] and events[0]["groot"].startswith("publiekstrekker")
     assert "groot" not in events[1] and events[1]["tags"] == []
     assert groot.summary(events)["aantal"] == 1
+
+
+def test_gemeente_zonder_werkende_agenda_valt_op():
+    """Les van Adrillen: een gemeente die de motor weigert, was nooit een bron en viel nergens op."""
+    from datetime import date
+    from pipeline.v2.dekking import municipalities
+    register = {"gemeenten": [
+        {"naam": "Veendam", "website": "https://www.veendam.nl/", "agenda": ["veendam-kalender"]},
+        {"naam": "Ooststellingwerf", "website": "https://www.ooststellingwerf.nl/", "agenda": ["uutgaon"]},
+        {"naam": "Oldambt", "website": "https://www.gemeente-oldambt.nl/", "agenda": []},
+        {"naam": "Pekela", "website": "https://www.pekela.nl/", "agenda": ["pekela-oud"], "opmerking": "geen kalender"},
+    ]}
+    sources = [{"id": "veendam-kalender", "rootUrl": "https://www.veendam.nl/"},
+               {"id": "uutgaon", "rootUrl": "https://www.uutgaon.nl/"},
+               {"id": "pekela-oud", "rootUrl": "https://www.pekela.nl/", "enabled": False}]
+    candidates = {"candidates": [{"host": "gemeente-oldambt.nl", "probeStatus": "error", "lastError": "robots.txt niet bereikbaar"}]}
+    event = lambda url: {"url": url, "sources": [{"host": url.split("/")[2], "url": url}], "occurrences": [{"date": "2026-11-20"}]}
+    events = [event("https://www.veendam.nl/evenement/1"), event("https://www.uutgaon.nl/activiteit/2"),
+              {**event("https://www.pekela.nl/oud"), "occurrences": [{"date": "2026-10-01"}]}]
+    result = municipalities(events, register, sources, candidates, date(2026, 11, 3))
+    assert result["totaal"] == 4 and result["metAgenda"] == 2
+    why = {row["naam"]: row["waarom"] for row in result["zonderAgenda"]}
+    assert "storing" in why["Oldambt"] and "robots.txt niet bereikbaar" in why["Oldambt"]
+    assert why["Pekela"].startswith("geen kalender") and "pekela-oud staat uit" in why["Pekela"]

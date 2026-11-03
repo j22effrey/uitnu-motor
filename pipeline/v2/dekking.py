@@ -133,3 +133,51 @@ def coverage(events: list[dict], register: dict, today: date) -> dict:
     shown = [r for r in missing if not r.get("type")] + [r for r in missing if r.get("type")][:MAX_ROWS]
     return {"gecontroleerd": checked, "goed": ok, "ontbreektTotaal": len(missing), "ontbreekt": shown,
             "teWeinig": short, "perSoort": by_type}
+
+
+def municipalities(events: list[dict], register: dict, sources: list[dict], candidates: dict | list, today: date) -> dict:
+    """Heeft elke gemeente in het werkgebied een werkende evenementenkalender? (collector/gemeenten.json)
+
+    Een gemeente telt als 'met agenda' als er komende uitjes zijn van haar eigen website of van een bron die bij haar
+    hoort ('agenda'). Zonder: in het verslag, met de reden die we weten (een firewall, geen kalender) of wat de test
+    van haar website zei. Les van Adrillen (2 november 2026): een website die de motor vanaf het begin weigert, viel
+    nergens op, omdat hij nooit een bron was.
+    """
+    now = today.isoformat()
+    upcoming_hosts: set[str] = set()
+    for event in events:
+        if not any((o.get("endDate") or o.get("date") or "") >= now for o in event.get("occurrences") or []):
+            continue
+        upcoming_hosts |= {_host(s.get("host")) for s in event.get("sources") or [] if s.get("host")}
+        upcoming_hosts |= {_host(urlparse(u).netloc) for u in [event.get("url")] + [s.get("url") for s in event.get("sources") or []] if u}
+    by_id = {s.get("id"): s for s in sources if isinstance(s, dict)}
+    rows = candidates.get("candidates", []) if isinstance(candidates, dict) else candidates or []
+    tests = {_host(c.get("host")): c for c in rows if isinstance(c, dict)}
+    missing, ok = [], 0
+    for town in register.get("gemeenten") or []:
+        own = _host(urlparse(town.get("website") or "").netloc)
+        hosts, off = {own}, []
+        for source_id in town.get("agenda") or []:
+            source = by_id.get(source_id)
+            if not source:
+                off.append(f"{source_id} staat niet in de bronnenlijst")
+                continue
+            if source.get("enabled") is False:
+                off.append(f"{source_id} staat uit")
+                continue
+            config = source.get("extractorConfig") or {}
+            for url in (source.get("rootUrl"), config.get("endpointUrl"), config.get("agendaUrl")):
+                if url:
+                    hosts.add(_host(urlparse(url).netloc))
+        if hosts & upcoming_hosts:
+            ok += 1
+            continue
+        test = tests.get(own) or {}
+        why = town.get("opmerking") or WHY.get(str(test.get("probeStatus")), "nog geen bron: evenementenkalender of jaarplanning grote evenementen zoeken")
+        if not town.get("opmerking") and test.get("lastError"):
+            why += f" ({test['lastError']})"
+        if off:
+            why += "; " + "; ".join(off)
+        missing.append({"naam": town.get("naam"), "provincie": town.get("provincie"), "website": town.get("website"), "waarom": why})
+    return {"totaal": len(register.get("gemeenten") or []), "metAgenda": ok, "zonderAgenda": missing}
+

@@ -21,7 +21,7 @@ from collector.discover_venues import is_excluded
 from pipeline import area
 
 from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
-from .dekking import auto_register, coverage, load_register, merge_registers
+from .dekking import auto_register, coverage, load_register, merge_registers, municipalities
 from .convert import TICKET_HOSTS, content_hash, load_first_party, merge_duplicates, merge_key, to_v2
 from .gate import MAX_CARRIED_HOSTS, dropped_hosts, run_gate
 from . import groot
@@ -325,8 +325,13 @@ def _coverage(events: list[dict], today: date) -> dict:
         sources = load_register(root / "collector" / "web_crawl_sources.json").get("sources") or []
         off = {urlparse(x.get("rootUrl") or "").netloc.lower().removeprefix("www.") for x in sources
                if isinstance(x, dict) and x.get("enabled") is False}
-        found = auto_register(load_register(root / "data" / "source_candidates.json"), hosts, off)
-        return coverage(events, merge_registers(manual, found), today)
+        candidates = load_register(root / "data" / "source_candidates.json")
+        found = auto_register(candidates, hosts, off)
+        result = coverage(events, merge_registers(manual, found), today)
+        # Elke gemeente: heeft ze een werkende evenementenkalender? (collector/gemeenten.json)
+        result["gemeenten"] = municipalities(events, load_register(root / "collector" / "gemeenten.json"), sources,
+                                             candidates, today)
+        return result
     except Exception as exc:  # noqa: BLE001 - een kapotte lijst is geen reden om niet te publiceren
         return {"gecontroleerd": 0, "fout": f"{type(exc).__name__}: {exc}"}
 
@@ -377,6 +382,11 @@ def main(argv: list[str] | None = None) -> int:
               f"{len(gaps['teWeinig'])} met te weinig uitjes.")
         for row in (gaps["teWeinig"] + gaps["ontbreekt"])[:15]:
             print(f"  DEKKING {row['plaats']}: {row['naam']} heeft {row['gevonden']} (verwacht {row['verwacht']}, {row['periode']})")
+        towns = gaps.get("gemeenten") or {}
+        if towns.get("totaal"):
+            print(f"Gemeenten met een werkende evenementenkalender: {towns['metAgenda']} van {towns['totaal']}.")
+            for row in towns.get("zonderAgenda") or []:
+                print(f"  GEMEENTE {row['naam']}: {row['waarom']}")
     _write_json(out_dir / "twijfel.json", doubts)
     if status["gate"]["passed"] or args.force:
         _write_json(out_dir / "events.json", events)
