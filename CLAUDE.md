@@ -178,6 +178,18 @@ Groningen (oktober 2026, eerst 9 van de 72 plekken goed):
   in `data/events.json` met een `sourceNote` waar het vandaan komt. Een plaatsnaam is genoeg: de
   motor zet zelf de kaartpin (`collector/geocode_curated.py`). Facebook zelf lezen we nooit.
 
+## Grote evenementen (uitlichten)
+
+Wat veel publiek trekt (vaak met afzettingen, een feesttent of een kermis) krijgt de tag `groot` en in het veld
+`groot` de reden (`pipeline/v2/groot.py`, met vaste namen in `pipeline/v2/groot.json`, altijd met reden): jaarmarkt,
+kermis, intocht, braderie, optocht, Koningsdag, marathon, skûtsjesilen, TT, een wedstrijd in een stadion, een echt
+festival en de grensuitjes. Niet: een voorstelling met 'kermis' of 'festival' in de naam, iets kleins
+(lampionnenoptocht, rommelmarkt, kinderkermis) of iets dat elke week terugkomt. De site zet ze bovenaan de voorpagina
+(de komende drie weken, binnen de gekozen afstand) en geeft de kaartjes een label. Les van Adrillen (Winschoten,
+2 november 2026; de eigenaar: 'ik kwam er te laat achter'): de grootste jaarmarkt van de provincie ontbrak, omdat
+gemeente-oldambt.nl de motor weigert (firewall). Zo'n evenement hoort in `collector/dekking.json` en, zodra de datum
+bekend is, als los uitje in `data/events.json`.
+
 ## Indeling (soorten)
 
 Muziek, Festival, Theater en comedy, Film, Markt en beurs, Feest en kermis, Kinderen en familie,

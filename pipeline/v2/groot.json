@@ -1,0 +1,35 @@
+{
+ "uitleg": "Vaste namen voor grote evenementen (pipeline/v2/groot.py). 'naam' werkt op de titel (kleine letters, zonder accenten, als zoekpatroon); 'groot' true licht het uit, false nooit (een naam die op een publiekstrekker lijkt maar het niet is). Altijd met een reden.",
+ "namen": [
+  {
+   "naam": "afterparty|\\bunofficial\\b|\\bpre-?party\\b",
+   "groot": false,
+   "reden": "Een feest rond een groot evenement (ESNS Unofficial afterparty) is zelf niet groot."
+  },
+  {
+   "naam": "eurosonic|noorderslag|\\besns\\b",
+   "groot": true,
+   "reden": "Showcasefestival met honderden artiesten op tientallen podia in de binnenstad van Groningen."
+  },
+  {
+   "naam": "\\bnoorderzon\\b",
+   "groot": true,
+   "reden": "Noorderzon: tien dagen festival in het Noorderplantsoen in Groningen, tienduizenden bezoekers."
+  },
+  {
+   "naam": "\\badrillen\\b|allerheiligenmarkt",
+   "groot": true,
+   "reden": "Adrillen (Allerheiligenmarkt) in Winschoten: de grootste jaarmarkt van de provincie Groningen, met kermis in de binnenstad."
+  },
+  {
+   "naam": "zuidlaardermarkt",
+   "groot": true,
+   "reden": "Zuidlaardermarkt: een van de grootste paardenmarkten van Europa, met kermis en tienduizenden bezoekers."
+  },
+  {
+   "naam": "jouw kop is kermis",
+   "groot": false,
+   "reden": "Een voorstelling van Klub Karmijn, geen kermis."
+  }
+ ]
+}

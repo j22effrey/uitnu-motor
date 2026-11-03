@@ -1080,6 +1080,19 @@
         "verwacht90": 2,
         "opmerking": "Kalender met excursies en activiteiten; robots.txt staat de motor nu toe (oude test zei 'blocked': opnieuw testen)."
       }
+    ],
+    "Winschoten": [
+      {
+        "naam": "Adrillen (Allerheiligenmarkt) met kermis",
+        "type": "jaarmarkt",
+        "plaats": "Winschoten",
+        "website": "https://www.gemeente-oldambt.nl/adrillen",
+        "hosts": [
+          "gemeente-oldambt.nl"
+        ],
+        "jaarlijks": true,
+        "opmerking": "De grootste jaarmarkt van de provincie Groningen (binnenstad, meer dan 100 kramen, hobbymarkt, kermis op het Marktplein vanaf de woensdag ervoor). In 2026 op maandag 2 november. gemeente-oldambt.nl weigert de motor (firewall, ook robots.txt): als los uitje in data/events.json zetten zodra de gemeente de datum voor 2027 noemt. Gemist op 2 november 2026 (melding van de eigenaar)."
+      }
     ]
   }
 }

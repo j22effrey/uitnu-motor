@@ -24,6 +24,7 @@ from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
 from .dekking import auto_register, coverage, load_register, merge_registers
 from .convert import TICKET_HOSTS, content_hash, load_first_party, merge_duplicates, merge_key, to_v2
 from .gate import MAX_CARRIED_HOSTS, dropped_hosts, run_gate
+from . import groot
 from .kinds import KINDS, TAGS
 from .photos import attach_photos, host_of, list_pages, page_facts_for
 
@@ -219,6 +220,11 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     events = [e for i, e in enumerate(events) if i not in routine]
     translated = translations(events)
     events = [e for i, e in enumerate(events) if i not in translated]
+    # Grote evenementen (veel publiek, vaak met afzettingen) licht de site uit (pipeline/v2/groot.py).
+    groot.mark(events)
+    for event in events:
+        if event.get("groot"):
+            event["hash"] = content_hash(event)
 
     # Unieke slugs, voor als twee titels toevallig hetzelfde worden afgekapt
     seen: Counter = Counter()
@@ -297,6 +303,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "bySourceHost": dict(hosts.most_common()),
         "photos": photo_counts,
         "twijfel": len(doubts),
+        "groot": groot.summary(events),
         "kinds": KINDS,
         "tags": TAGS,
         "changes": {k: len(v) for k, v in changes.items()},
