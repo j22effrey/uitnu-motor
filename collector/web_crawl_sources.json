@@ -16063,6 +16063,176 @@
         "lon": 6.9477668
       },
       "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "pkn-ried-skingen-nl-web",
+      "name": "Walburgakerk",
+      "rootUrl": "https://pkn.ried-skingen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://pkn.ried-skingen.nl/events/"
+      },
+      "activatedFromCandidate": "pkn.ried-skingen.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "cgkhoogeveen-nl-web",
+      "name": "Ichthuskerk",
+      "rootUrl": "https://www.cgkhoogeveen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://cgkhoogeveen.nl/"
+      },
+      "activatedFromCandidate": "cgkhoogeveen.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "columnakerk-nl-web",
+      "name": "Columnakerk",
+      "rootUrl": "https://www.columnakerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://columnakerk.nl/"
+      },
+      "activatedFromCandidate": "columnakerk.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "detorenruiters-nl-web",
+      "name": "De Torenruiters",
+      "rootUrl": "https://www.detorenruiters.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.detorenruiters.nl/activiteiten"
+      },
+      "activatedFromCandidate": "detorenruiters.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "ngkgrijpskerk-nl-web",
+      "name": "Nederlandse Gereformeerde Kerk",
+      "rootUrl": "https://www.ngkgrijpskerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.ngkgrijpskerk.nl/"
+      },
+      "activatedFromCandidate": "ngkgrijpskerk.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "pkn-ng-nl-web",
+      "name": "Trefpuntkerk",
+      "rootUrl": "https://www.pkn-ng.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pkn-ng.nl/"
+      },
+      "activatedFromCandidate": "pkn-ng.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "pknbedum-nl-web",
+      "name": "Maranathakerk",
+      "rootUrl": "https://www.pknbedum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pknbedum.nl/"
+      },
+      "activatedFromCandidate": "pknbedum.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "sagittariusemmen-nl-web",
+      "name": "Handboogsportvereniging Sagittarius Emmen",
+      "rootUrl": "https://www.sagittariusemmen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://sagittariusemmen.nl/aktiviteiten-kalender/"
+      },
+      "activatedFromCandidate": "sagittariusemmen.nl",
+      "defaultPlace": {
+        "venue": "Handboogsportvereniging Sagittarius Emmen",
+        "city": "Emmen",
+        "lat": 52.8042697,
+        "lon": 6.915478
+      },
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "scoutduco-nl-web",
+      "name": "Waterscouting Duco van Martena",
+      "rootUrl": "https://scoutduco.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "scoutduco.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "hoogthij-nl-web",
+      "name": "MFC Hoogthij",
+      "rootUrl": "https://hoogthij.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://hoogthij.nl/agenda/"
+      },
+      "activatedFromCandidate": "hoogthij.nl",
+      "defaultPlace": {
+        "venue": "MFC Hoogthij",
+        "city": "Steenwijkerwold",
+        "lat": 52.8038836,
+        "lon": 6.0655337
+      },
+      "policyReviewedAt": "2026-11-03"
     }
   ]
 }
