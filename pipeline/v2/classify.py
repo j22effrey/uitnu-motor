@@ -315,6 +315,7 @@ PUBLIC_EVENT = re.compile(r"concert|uitvoering|optreden|voorstelling|toerno(?:o|
 # Ook met een plusje voor jeugd- en veteranenteams ('Tzummarum 18+1 - Zeerobben 18+1', dagcontrole 1 november).
 TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'/&-]+ (?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)? ?[-–] ?[\w .'/&-]+ "
                         r"(?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)?\b")
+NEWS_PATH = re.compile(r"/(?:nieuws|nieuwsberichten?|berichten|author)/", re.IGNORECASE)
 # De uitslagenpagina van een club ('scfraneker.nl/200/63638/uitslagen/wedstrijd-details/'): een competitiewedstrijd.
 MATCH_PATH = re.compile(r"/uitslagen/(?:[\w-]+/)*wedstrijd-details", re.IGNORECASE)
 # Een spel of sport van de club, ook midden in de naam ('Maatbiljarten Krekt Rekke', 'Darten in dorpshuis
@@ -671,7 +672,7 @@ SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event inf
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
-                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen|\d{4} volgend jaar .*|foar yn de agenda|film in friesland)\W*$")
+                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen|\d{4} volgend jaar .*|foar yn de agenda|film in friesland|bericht(?:en)? (?:navigatie|paginering)|starts at \d{1,2}[:.]\d{2}|events|evenementen in en om [\w ]+|het weer in [\w ]+|ophaaldagen in [\w ]+)\W*$")
 # Kopjes die ook de naam van een uitje kunnen zijn ('Welkom bij de Kerstmarkt', 'Thema: Halloween griezeltocht').
 SWEEP_HEADING_SOFT = re.compile(r"^\W*(?:welkom bij .*|//.*)$")
 SWEEP_NOT_OUTING = re.compile(
@@ -686,7 +687,7 @@ SWEEP_NOT_OUTING = re.compile(
     # vaste bijeenkomst van de kerk). Dagcontrole 1 november 2026. 'Pubquiz - nog 3 plekken vrij' blijft staan.
     r"|^omrin (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december|afvalkalender)\b"
     r"|^(?:nederlands|english|engels|deutsch|duits|frysk|fries)?\s*(?:nog \d+ (?:plek|plekken|plaatsen) (?:vrij|beschikbaar)"
-    r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b"
+    r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b|\bdankdag(?:viering|dienst)?\b(?!.*(?:concert|orgel|muziek|optreden))|^stemmen op\b|^uitzending op\b"
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
     # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.
@@ -748,6 +749,10 @@ def not_an_outing(event: dict) -> str | None:
         return f"kerkdienst (rubriek in de link): '{event.get('title')}'"
     if MATCH_PATH.search(link.path) and not PUBLIC_EVENT.search(title):
         return f"competitiewedstrijd van een club (uitslagenpagina): '{event.get('title')}'"
+    # Een nieuwsbericht van een dorpssite ('Kledingbieb krijgt vaste plek', 'Levendig Musselkanaal als snelkoppeling'): de link
+    # staat onder nieuws, berichten of de schrijver, en de titel noemt niets van een uitje. (Dagcontrole 3 november 2026.)
+    if NEWS_PATH.search(link.path) and not PUBLIC_EVENT.search(title) and not _matches(title):
+        return f"nieuwsbericht, geen uitje (rubriek in de link): '{event.get('title')}'"
     if SENIORS_PATH.search(link.path) and not SENIORS_PUBLIC.search(title):
         return f"voor de ouderen van het dorp (rubriek in de link): '{event.get('title')}'"
     venue_page = VENUE_PAGE.search(link.path)

@@ -325,3 +325,36 @@ def test_bronnen_van_het_onderhoud_van_2_november_staan_goed_ingesteld():
     import re
     skip = re.compile(fcg["extractorConfig"]["skipTitle"], re.I)
     assert skip.search("AZ – FC Groningen") and not skip.search("FC Groningen – PSV")
+
+
+# Dagcontrole 3 november 2026 (412 nieuwe uitjes): kopjes van websites, nieuwsberichten, dankdag.
+def _news(title, path):
+    event = _event(title)
+    event["url"] = f"https://dorp.example{path}"
+    return event
+
+
+def test_dagcontrole_3_november_geen_uitje():
+    for title in ("Bericht navigatie", "Berichten paginering", "Starts at 11:00", "Events", "Evenementen in en om Rolde",
+                  "Het weer in Rolde", "Ophaaldagen in Rolde", "Dankdagviering", "Stemmen op Dorpshuis v/h jaar",
+                  "Uitzending op RTV Drenthe"):
+        assert not_an_outing(_event(title)), title
+    assert not_an_outing(_news("Kledingbieb krijgt vaste plek boven Blij van Toen", "/nieuws/kledingbieb-krijgt-vaste-plek"))
+    assert not_an_outing(_news("Levendig Musselkanaal als snelkoppeling op je telefoon!", "/berichten/levendig-musselkanaal"))
+    assert not_an_outing(_news("Beste dorpsbewoners,", "/author/garsthuizen/"))
+
+
+def test_dagcontrole_3_november_echte_uitjes_blijven_staan():
+    for title in ("Events Night met live muziek", "Evenementen in en om Rolde: de Kerstmarkt", "Dankdagconcert in de kerk", "Dankdagviering met orgelconcert"):
+        assert not not_an_outing(_event(title)), title
+    for title, path in (("Workshop Kerstballen schilderen à la Van Gogh", "/nieuws/kerstballen-schilderen"),
+                        ("Bierproeverij", "/author/garsthuizen/"), ("Spooktocht Zeerijp", "/author/garsthuizen/"),
+                        ("Lezing: Het verzet door de familie Brouwer tijdens WOII", "/nieuws/"),
+                        ("20 november Bingojûn met Fegebart – live muziekbingo", "/home/nieuws/17-cultuur/2076")):
+        assert not not_an_outing(_news(title, path)), title
+
+
+def test_festivalhart_pannenkoek_en_microscopiedag_krijgen_de_goede_soort():
+    for title, kind in (("FESTIVALHART DAG 3", "theater"), ("FESTIVALHART DAG 5", "theater"),
+                        ("Theater Pannenkoek - Kom uit die kraan!", "kinderen"), ("Microscopiedag in Groningen en Drenthe", "lezing")):
+        assert classify(_event(title), OVERRIDES)["kind"] == kind, title

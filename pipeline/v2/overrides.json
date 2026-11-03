@@ -121,6 +121,21 @@
    "naam": "bierfestival",
    "soort": "eten",
    "reden": "Een (speciaal)bierfestival is proeven bij brouwers: 'Eten en drinken', geen festival met podia (regel 3)."
+  },
+  {
+   "naam": "^festivalhart dag \\d",
+   "soort": "theater",
+   "reden": "Dagcontrole 3 november 2026: de dagen van Festivalhart (Jonge Harten) stonden als overig, lezing en sport; het is een theaterfestival met voorstellingen op meerdere plekken, dus theater."
+  },
+  {
+   "naam": "^theater pannenkoek\\b",
+   "soort": "kinderen",
+   "reden": "Dagcontrole 3 november 2026: Theater Pannenkoek is kindertheater in de bibliotheek, geen eten (het woord pannenkoek zit in de naam van het gezelschap)."
+  },
+  {
+   "naam": "^microscopiedag\\b",
+   "soort": "lezing",
+   "reden": "Dagcontrole 3 november 2026: een dag over microscopen, geen muziek; de soort van het podium (kerkalspodium) gaf muziek."
   }
  ],
  "uitjes": {
