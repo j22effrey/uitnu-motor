@@ -292,16 +292,6 @@
   ]
  },
  {
-  "id": "evt_9ec1f84c6353b6",
-  "title": "Gezelligheid aan de Haven",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://reduzum.com/agenda/?event_id1=60568",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_30e34e202b453c",
   "title": "Interview Connie Palmen",
   "kind": "lezing",
@@ -707,16 +697,6 @@
   "kind": "lezing",
   "reason": "website ticketing.groningsebibliotheken.nl",
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774367/Even-Offline.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_efe8dbd432c681",
-  "title": "Grijs",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://schoonloo.com/agenda",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1970,6 +1950,16 @@
   ]
  },
  {
+  "id": "evt_bd093c26e7df78",
+  "title": "Pier 21 – Wat spilet",
+  "kind": "theater",
+  "reason": "website klameare-workum.nl",
+  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_6b358b8c23ec34",
   "title": "Rinske Bouwman – De Mismis",
   "kind": "festival",
@@ -2083,6 +2073,16 @@
   ]
  },
  {
+  "id": "evt_1aeae438606c9d",
+  "title": "Jongereintoaniel en Ienakter yn de Tuolle",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://offingawier.nl/evenement/jongereintoaniel-en-ienakter-yn-de-tuolle",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_ab46a402353b80",
   "title": "Ashes to Ashes",
   "kind": "theater",
@@ -2148,16 +2148,6 @@
   "kind": "theater",
   "reason": "website huisorlando.nl",
   "url": "https://www.huisorlando.nl/productie-cloaca/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_bd093c26e7df78",
-  "title": "Pier 21 – Wat spilet",
-  "kind": "theater",
-  "reason": "website klameare-workum.nl",
-  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2235,6 +2225,16 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
+  "id": "evt_5d9f345e38808d",
+  "title": "De kaartferkeap fan it Mearke 2026 is los!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://winsum.frl/evenement/de-kaartferkeap-fan-it-mearke-2026-is-los",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -2341,6 +2341,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.hildegardparochie.nl/event/christus-koning-van-het-heelal/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_487f8a79729e3e",
+  "title": "Christus, Koning van het heelal",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.hildegardparochie.nl/event/christus-koning-van-het-heelal-3/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2506,21 +2516,21 @@
   ]
  },
  {
-  "id": "evt_900d469a3b14b1",
-  "title": "Scrap & Yap",
-  "kind": "muziek",
-  "reason": "website neushoorn.nl",
-  "url": "https://www.neushoorn.nl/events/scrap-yap",
+  "id": "evt_9c2a93b357484e",
+  "title": "Inspiratiecafé: Hoop voor Oekraïne",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://winsum.frl/evenement/inspiratiecafe-hoop-voor-oekraine",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_b80709b47a5611",
-  "title": "Laitsje & Meitsje",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://debuorkerij-terherne.nl/agenda/",
+  "id": "evt_900d469a3b14b1",
+  "title": "Scrap & Yap",
+  "kind": "muziek",
+  "reason": "website neushoorn.nl",
+  "url": "https://www.neushoorn.nl/events/scrap-yap",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2646,6 +2656,16 @@
   ]
  },
  {
+  "id": "evt_74dbb3179501ee",
+  "title": "Wie doet ermee aan de Garage Sale?",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://exmorra.info/evenement/wie-doet-ermee-aan-de-garage-sale",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_a54ab47080dd20",
   "title": "Öffentliche Führung",
   "kind": "kunst",
@@ -2722,6 +2742,16 @@
   "kind": "muziek",
   "reason": "website podium34.nl",
   "url": "https://podium34.nl/events/marieke-schenk-support-sabine/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_46d0b1bf6d066f",
+  "title": "Nightlife 03/12/2026 2 November 2026",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://hetpakhuisgroningen.nl/agenda/popronde-2023/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2948,6 +2978,16 @@
   ]
  },
  {
+  "id": "evt_990aef49279534",
+  "title": "+ Annemarijn Maandag",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_e432095747d747",
   "title": "Krystbeam opsette🎄🎅🏼",
   "kind": "overig",
@@ -2963,6 +3003,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.noardeast-fryslan.nl/evenementenkalender-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_3b32644f90ad81",
+  "title": "Kerstboom plaatsen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://schraard.com/evenement/kerstboom-plaatsen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3013,16 +3063,6 @@
   "kind": "theater",
   "reason": "oude categorie 'theater'",
   "url": "https://www.shakespearetheaterdiever.nl/Speeldata",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_990aef49279534",
-  "title": "+ Annemarijn Maandag",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3448,6 +3488,16 @@
   ]
  },
  {
+  "id": "evt_9f2e0550b4ef5c_7b4302864f89",
+  "title": "Kerstkabouters in het Drents-Friese Wold",
+  "kind": "kinderen",
+  "reason": "oude categorie 'familie'",
+  "url": "https://appelscha.nl/tstevent/kerstkabouters-in-het-drents-friese-wold/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "doedag-angkor-drents-museum-2026-12-23",
   "title": "Doedag Angkor (familie)",
   "kind": "kinderen",
@@ -3642,15 +3692,15 @@
   "title": "Spring festival",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/en/business/conferences-and-events/spring-festival",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
-  "id": "evt_813fdf55273fac",
-  "title": "Springfestijn 25",
+  "id": "evt_786e08f5988b66",
+  "title": "Springfestijn",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
@@ -3674,6 +3724,16 @@
   "kind": "kinderen",
   "reason": "oude categorie 'kinderen'",
   "url": "https://drentsmuseum.nl/activiteiten/doedagen-angkor",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_281efe2b4174d1",
+  "title": "Oliebollendag",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://schraard.com/evenement/oliebollendag",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3861,10 +3921,10 @@
  },
  {
   "id": "evt_32b9481c715402",
-  "title": "De wichter van Champ Clark",
+  "title": "De Wichter van Champ Clark",
   "kind": "theater",
-  "reason": "website waark.nl",
-  "url": "https://www.waark.nl/speellijst/",
+  "reason": "website a-theater.nl",
+  "url": "https://a-theater.nl/show/de-wichter-van-champ-clark/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3931,10 +3991,10 @@
  },
  {
   "id": "evt_693d94fcca00fc",
-  "title": "De wichter van Champ Clark",
+  "title": "De Wichter van Champ Clark",
   "kind": "theater",
-  "reason": "website waark.nl",
-  "url": "https://www.waark.nl/speellijst/",
+  "reason": "website a-theater.nl",
+  "url": "https://a-theater.nl/show/de-wichter-van-champ-clark-2/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5782,11 +5842,51 @@
   ]
  },
  {
+  "id": "evt_af80f977a9995a",
+  "title": "Verkiezingsweek waterschap/ provinciale",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://offingawier.nl/evenement/verkiezingsweek-waterschap-provinciale",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_ef585b41a255c8",
+  "title": "Verkiezingsweek waterschap/ provinciale",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://offingawier.nl/evenement/verkiezingsweek-waterschap-provinciale-2027-03-16",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c983cf3b099b54",
+  "title": "Verkiezingsweek waterschap/ provinciale",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://offingawier.nl/evenement/verkiezingsweek-waterschap-provinciale-2027-03-17",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_cfd2c40209234c",
   "title": "Meester Mark – Later word ik 7",
   "kind": "theater",
   "reason": "website lawei.nl",
   "url": "https://www.lawei.nl/agenda/meester-mark-55rf",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_834b05fb2ef30a",
+  "title": "Verkiezingsweek waterschap/ provinciale",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://offingawier.nl/evenement/verkiezingsweek-waterschap-provinciale-2027-03-18",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5817,6 +5917,16 @@
   "kind": "theater",
   "reason": "website theaterroden.nl",
   "url": "https://theaterroden.nl/tribute-tom-petty",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_8b74fb8c1e45c3",
+  "title": "Verkiezingsweek waterschap/ provinciale",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://offingawier.nl/evenement/verkiezingsweek-waterschap-provinciale-2027-03-19",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6219,16 +6329,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.baptistengemeente.info/activiteit/preach-by-wrapfest-x-cme/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_abc7cbfdaa96c7",
-  "title": "De wichter van Champ Clark",
-  "kind": "theater",
-  "reason": "website waark.nl",
-  "url": "https://www.waark.nl/speellijst/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6775,6 +6875,16 @@
   ]
  },
  {
+  "id": "evt_409d57930a63c4",
+  "title": "Afsluiting Fris en Chips",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://winsum.frl/evenement/afsluiting-fris-en-chips",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_ab805898299ac0",
   "title": "Maarten van Rossem",
   "kind": "theater",
@@ -6850,6 +6960,16 @@
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
   "url": "https://www.vanberesteyn.nl/programma/simsala-saartje-3/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_46cfaeff9dd588",
+  "title": "Tech Event NoordNL",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.debontewever.nl/nl/events/tech-event-noordnl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -15864,6 +15864,205 @@
       "note": "De pagina Wedstrijden van het eerste elftal: links staat de thuisploeg. Uitwedstrijden (links een andere ploeg) worden overgeslagen. Geen robots.txt (404). Wekelijks onderhoud 2 november 2026 (dekking: FC Groningen 0 van 4).",
       "policyReviewedAt": "2026-11-02",
       "minDelaySeconds": 0.5
+    },
+    {
+      "id": "ameland-nl-web",
+      "name": "Jaap Klaassen Hal",
+      "rootUrl": "https://www.ameland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "ameland.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "mitselwier-nl-web",
+      "name": "Metslawier",
+      "rootUrl": "https://mitselwier.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://mitselwier.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "mitselwier.nl",
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "giethoorn-com-web",
+      "name": "Giethoorn",
+      "rootUrl": "https://giethoorn.com/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://giethoorn.com/agenda-overzicht/"
+      },
+      "activatedFromCandidate": "giethoorn.com",
+      "policyReviewedAt": "2026-11-03",
+      "defaultPlace": {
+        "city": "Giethoorn",
+        "lat": 52.73972,
+        "lon": 6.0775
+      }
+    },
+    {
+      "id": "exmorra-info-web",
+      "name": "Exmorra",
+      "rootUrl": "https://exmorra.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://exmorra.info/agenda.ics"
+      },
+      "activatedFromCandidate": "exmorra.info",
+      "defaultPlace": {
+        "city": "Exmorra",
+        "lat": 53.0553,
+        "lon": 5.4636
+      },
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "langelille-com-web",
+      "name": "Langelille",
+      "rootUrl": "https://langelille.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://langelille.com/my-calendar/"
+      },
+      "activatedFromCandidate": "langelille.com",
+      "defaultPlace": {
+        "city": "Langelille",
+        "lat": 52.8425,
+        "lon": 5.8417
+      },
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "offingawier-nl-web",
+      "name": "Offingawier",
+      "rootUrl": "https://offingawier.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://offingawier.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "offingawier.nl",
+      "defaultPlace": {
+        "city": "Offingawier",
+        "lat": 53.0319,
+        "lon": 5.6969
+      },
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "winsum-frl-web",
+      "name": "Winsum",
+      "rootUrl": "https://winsum.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://winsum.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "winsum.frl",
+      "defaultPlace": {
+        "city": "Winsum",
+        "lat": 53.1525,
+        "lon": 5.6328
+      },
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "woudsendonline-nl-web",
+      "name": "Woudsend Online",
+      "rootUrl": "https://www.woudsendonline.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.woudsendonline.nl/"
+      },
+      "activatedFromCandidate": "woudsendonline.nl",
+      "defaultPlace": {
+        "city": "Woudsend",
+        "lat": 52.9428,
+        "lon": 5.6275
+      },
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "zuidwolde-info-web",
+      "name": "Zuidwolde.info",
+      "rootUrl": "https://www.zuidwolde.info/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.zuidwolde.info/"
+      },
+      "activatedFromCandidate": "zuidwolde.info",
+      "defaultPlace": {
+        "city": "Zuidwolde",
+        "lat": 52.6714,
+        "lon": 6.4278
+      },
+      "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "scangelslo-nl-web",
+      "name": "SC Angelslo",
+      "rootUrl": "https://scangelslo.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://scangelslo.nl/"
+      },
+      "activatedFromCandidate": "scangelslo.nl",
+      "defaultPlace": {
+        "venue": "SC Angelslo",
+        "city": "Emmen",
+        "lat": 52.7805988,
+        "lon": 6.9477668
+      },
+      "policyReviewedAt": "2026-11-03"
     }
   ]
 }
