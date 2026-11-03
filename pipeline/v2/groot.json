@@ -7,6 +7,26 @@
    "reden": "Een feest rond een groot evenement (ESNS Unofficial afterparty) is zelf niet groot."
   },
   {
+   "naam": "marathon cup",
+   "groot": false,
+   "reden": "Schaatswedstrijd van de marathoncompetitie in de ijshal: weinig publiek, geen afzettingen."
+  },
+  {
+   "naam": "winterwelvaart",
+   "groot": true,
+   "reden": "WinterWelVaart in Groningen: tientallen oude schepen in de binnenstad en een kerstmarkt, tienduizenden bezoekers."
+  },
+  {
+   "naam": "stadslichtfestival",
+   "groot": true,
+   "reden": "Stadslichtfestival Hoogeveen: lichtkunst door de hele binnenstad."
+  },
+  {
+   "naam": "lemster dickens",
+   "groot": true,
+   "reden": "Lemster Dickens Festijn: de binnenstad van Lemmer in Dickens-sfeer, duizenden bezoekers."
+  },
+  {
    "naam": "eurosonic|noorderslag|\\besns\\b",
    "groot": true,
    "reden": "Showcasefestival met honderden artiesten op tientallen podia in de binnenstad van Groningen."

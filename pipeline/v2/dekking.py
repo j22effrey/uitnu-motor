@@ -135,41 +135,34 @@ def coverage(events: list[dict], register: dict, today: date) -> dict:
             "teWeinig": short, "perSoort": by_type}
 
 
-def municipalities(events: list[dict], register: dict, sources: list[dict], candidates: dict | list, today: date) -> dict:
+def municipalities(register: dict, sources: list[dict], candidates: dict | list, delivered: set[str]) -> dict:
     """Heeft elke gemeente in het werkgebied een werkende evenementenkalender? (collector/gemeenten.json)
 
-    Een gemeente telt als 'met agenda' als er komende uitjes zijn van haar eigen website of van een bron die bij haar
-    hoort ('agenda'). Zonder: in het verslag, met de reden die we weten (een firewall, geen kalender) of wat de test
-    van haar website zei. Les van Adrillen (2 november 2026): een website die de motor vanaf het begin weigert, viel
-    nergens op, omdat hij nooit een bron was.
+    Een gemeente telt als 'met agenda' als een bron die aan staat en bij haar hoort (haar eigen website, of een id onder
+    'agenda') deze ronde komende uitjes ophaalde ('delivered': de websites van de bronnen die dat deden). Een uitje dat
+    met de hand in data/events.json staat, telt niet: dat zegt niets over haar kalender. Zonder: in het verslag, met de
+    reden die we weten (een firewall, geen kalender) of wat de test van haar website zei. Les van Adrillen
+    (2 november 2026): een website die de motor vanaf het begin weigert, viel nergens op, omdat hij nooit een bron was.
     """
-    now = today.isoformat()
-    upcoming_hosts: set[str] = set()
-    for event in events:
-        if not any((o.get("endDate") or o.get("date") or "") >= now for o in event.get("occurrences") or []):
-            continue
-        upcoming_hosts |= {_host(s.get("host")) for s in event.get("sources") or [] if s.get("host")}
-        upcoming_hosts |= {_host(urlparse(u).netloc) for u in [event.get("url")] + [s.get("url") for s in event.get("sources") or []] if u}
+    on = [s for s in sources if isinstance(s, dict) and s.get("enabled") is not False]
     by_id = {s.get("id"): s for s in sources if isinstance(s, dict)}
     rows = candidates.get("candidates", []) if isinstance(candidates, dict) else candidates or []
     tests = {_host(c.get("host")): c for c in rows if isinstance(c, dict)}
     missing, ok = [], 0
-    for town in register.get("gemeenten") or []:
-        own = _host(urlparse(town.get("website") or "").netloc)
-        hosts, off = {own}, []
+    towns = [t for t in register.get("gemeenten") or [] if isinstance(t, dict)]
+    for town in towns:
+        own = _host(urlparse(str(town.get("website") or "")).netloc)
+        hosts = {_host(urlparse(str(s.get("rootUrl") or "")).netloc) for s in on} & {own} if own else set()
+        off = []
         for source_id in town.get("agenda") or []:
             source = by_id.get(source_id)
             if not source:
                 off.append(f"{source_id} staat niet in de bronnenlijst")
-                continue
-            if source.get("enabled") is False:
+            elif source.get("enabled") is False:
                 off.append(f"{source_id} staat uit")
-                continue
-            config = source.get("extractorConfig") or {}
-            for url in (source.get("rootUrl"), config.get("endpointUrl"), config.get("agendaUrl")):
-                if url:
-                    hosts.add(_host(urlparse(url).netloc))
-        if hosts & upcoming_hosts:
+            else:
+                hosts.add(_host(urlparse(str(source.get("rootUrl") or "")).netloc))
+        if hosts & delivered:
             ok += 1
             continue
         test = tests.get(own) or {}
@@ -179,5 +172,4 @@ def municipalities(events: list[dict], register: dict, sources: list[dict], cand
         if off:
             why += "; " + "; ".join(off)
         missing.append({"naam": town.get("naam"), "provincie": town.get("provincie"), "website": town.get("website"), "waarom": why})
-    return {"totaal": len(register.get("gemeenten") or []), "metAgenda": ok, "zonderAgenda": missing}
-
+    return {"totaal": len(towns), "metAgenda": ok, "zonderAgenda": missing}

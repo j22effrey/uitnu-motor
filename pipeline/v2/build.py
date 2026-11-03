@@ -309,7 +309,7 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "changes": {k: len(v) for k, v in changes.items()},
         "gate": gate,
         # Staat alles erin wat er zeker hoort? (collector/dekking.json)
-        "dekking": _coverage(events, today),
+        "dekking": {**_coverage(events, today), "gemeenten": _municipalities(raw, today)},
     }
     status["_twijfel"] = doubts
     return events, status
@@ -327,13 +327,25 @@ def _coverage(events: list[dict], today: date) -> dict:
                if isinstance(x, dict) and x.get("enabled") is False}
         candidates = load_register(root / "data" / "source_candidates.json")
         found = auto_register(candidates, hosts, off)
-        result = coverage(events, merge_registers(manual, found), today)
-        # Elke gemeente: heeft ze een werkende evenementenkalender? (collector/gemeenten.json)
-        result["gemeenten"] = municipalities(events, load_register(root / "collector" / "gemeenten.json"), sources,
-                                             candidates, today)
-        return result
+        return coverage(events, merge_registers(manual, found), today)
     except Exception as exc:  # noqa: BLE001 - een kapotte lijst is geen reden om niet te publiceren
         return {"gecontroleerd": 0, "fout": f"{type(exc).__name__}: {exc}"}
+
+
+def _municipalities(raw: list[dict], today: date) -> dict:
+    """Elke gemeente: heeft ze een werkende evenementenkalender? (collector/gemeenten.json). Telt alleen wat een bron
+    deze ronde ophaalde (data/auto_events.json), niet wat met de hand is toegevoegd. Een fout hier laat de rest van het
+    verslag en de fabriek staan."""
+    try:
+        root = HERE.parent.parent
+        now = today.isoformat()
+        delivered = {urlparse(str(r.get("sourceRoot") or "")).netloc.lower().removeprefix("www.") for r in raw
+                     if r.get("_file") == "auto_events.json" and str(r.get("endDate") or r.get("startDate") or "") >= now}
+        sources = load_register(root / "collector" / "web_crawl_sources.json").get("sources") or []
+        return municipalities(load_register(root / "collector" / "gemeenten.json"), sources,
+                              load_register(root / "data" / "source_candidates.json"), delivered - {""})
+    except Exception as exc:  # noqa: BLE001 - een kapotte lijst is geen reden om niet te publiceren
+        return {"totaal": 0, "fout": f"{type(exc).__name__}: {exc}"}
 
 
 DOUBT_METHODS = {"geen", "bronhint", "locatie"}
