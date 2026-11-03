@@ -345,7 +345,8 @@ def test_dagcontrole_3_november_geen_uitje():
 
 
 def test_dagcontrole_3_november_echte_uitjes_blijven_staan():
-    for title in ("Events Night met live muziek", "Evenementen in en om Rolde: de Kerstmarkt", "Dankdagconcert in de kerk"):
+    for title in ("Events Night met live muziek", "Evenementen in en om Rolde: de Kerstmarkt", "Dankdagconcert in de kerk",
+                  "Dankdag voor gewas en arbeid met orgelconcert"):
         assert not not_an_outing(_event(title)), title
     for title, path in (("Workshop Kerstballen schilderen à la Van Gogh", "/nieuws/kerstballen-schilderen"),
                         ("Bierproeverij", "/author/garsthuizen/"), ("Spooktocht Zeerijp", "/author/garsthuizen/"),
