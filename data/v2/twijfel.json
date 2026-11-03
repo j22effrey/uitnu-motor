@@ -10,16 +10,6 @@
   ]
  },
  {
-  "id": "evt_b220655b8a4e95",
-  "title": "Groningers onderweg: reizen door de eeuwen heen",
-  "kind": "kunst",
-  "reason": "website groningerarchieven.nl",
-  "url": "https://www.groningerarchieven.nl/actueel/agenda/379-groningers-onderweg-reizen-door-de-eeuwen-heen",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_ae82640b3764fc",
   "title": "Politie bij 't Inloophuus",
   "kind": "overig",
@@ -50,31 +40,11 @@
   ]
  },
  {
-  "id": "evt_b2d3af544e500c",
-  "title": "Hanze Hogeschool",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://buurtcentrumtuinpad.nl/Locatie/buurtcentrum-tuinpad/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_412ae9744c85fe",
   "title": "OnderOns: het uurtje van Bert Kraan",
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
   "url": "https://www.vanberesteyn.nl/programma/onderons-het-uurtje-van-bert-kraan/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_400c9509484267",
-  "title": "Wat heb je vandaag online",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774448/Wat-heb-je-vandaag-online-meegemaakt?.html",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -446,7 +416,7 @@
   "title": "Vijf jaar Spoorzicht",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://koudum.nl/mc-events/vijf-jaar-spoorzicht/",
+  "url": "https://koudum.nl/mc-locations/cafe-spoorzicht/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -577,6 +547,16 @@
   "kind": "theater",
   "reason": "website theaterroden.nl",
   "url": "https://theaterroden.nl/dirk-scheele-dikkie-dik",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_bc08a8a01905e6",
+  "title": "Opendeurdienst",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://ternaard.nu/agenda/opendeurdienst/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -772,6 +752,16 @@
   ]
  },
  {
+  "id": "evt_73795308fc0e15",
+  "title": "Hanze Hogeschool",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://buurtcentrumtuinpad.nl/Locatie/buurtcentrum-tuinpad/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_84feffb6e37482",
   "title": "OnderOns: Liedjescafé",
   "kind": "theater",
@@ -953,6 +943,17 @@
   ]
  },
  {
+  "id": "evt_fcad84c494f746",
+  "title": "Megapielsessie: Jambient gehost door Cloud Mind",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/megapielsessie-jambient-gehost-door-cloud-mind/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
   "id": "evt_d58b01c1de986f",
   "title": "Neushoorn",
   "kind": "festival",
@@ -971,6 +972,17 @@
   "url": "https://www.leeuwarden.nl/afval-en-recycling/schoon-belonen/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_be33be63480e1a",
+  "title": "Solderboys: gehost door Cloud Mind",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/solderboys/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
   ]
  },
  {
@@ -1066,16 +1078,6 @@
   ]
  },
  {
-  "id": "evt_2b0f373a6a67ae",
-  "title": "het hart van Bolsward",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.bolsward.nl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_d8aeae50935fa7",
   "title": "Opening Meet-o-Theek",
   "kind": "lezing",
@@ -1101,6 +1103,16 @@
   "kind": "theater",
   "reason": "website jongeharten.podiumnederland.nl",
   "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10384560?stlt=jh&lang=nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c64c05bc79f6ee",
+  "title": "Als woorden kunnen spreken",
+  "kind": "theater",
+  "reason": "website jongeharten.podiumnederland.nl",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10389825?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1206,6 +1218,16 @@
   ]
  },
  {
+  "id": "evt_eeada8c68fa54c",
+  "title": "Ontdek de tuinen en stinzenflora",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.stinze-stiens.nl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_0b780a91711a31",
   "title": "Öffentliche Führung",
   "kind": "kunst",
@@ -1289,9 +1311,9 @@
  {
   "id": "evt_3b87e2fa5286f5",
   "title": "CONTRA",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.jongeharten.nl/programma/contra/",
+  "kind": "theater",
+  "reason": "website jongeharten.podiumnederland.nl",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10366405?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1407,11 +1429,31 @@
   ]
  },
  {
+  "id": "evt_719eff8e817979",
+  "title": "Inspiratieavond Warten Bloeit",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://warten.nl/evenement/inspiratieavond-warten-bloeit/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_c10c73dbb717c6",
   "title": "The Revolution (will not be streamed)",
   "kind": "theater",
   "reason": "website jongeharten.podiumnederland.nl",
   "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10381803?stlt=jh&lang=nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_6df8d7b17026cc",
+  "title": "Als woorden kunnen spreken",
+  "kind": "theater",
+  "reason": "website jongeharten.podiumnederland.nl",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10389826?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2396,6 +2438,16 @@
   ]
  },
  {
+  "id": "evt_c18a485a331aa2",
+  "title": "Prikkelarme openstelling",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.groningermuseum.nl/prikkelarme-openstelling",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_d196aa8ed1764d",
   "title": "Us Ideael - Nieuw Levenv",
   "kind": "overig",
@@ -2416,8 +2468,8 @@
   ]
  },
  {
-  "id": "evt_30002c20fa604a",
-  "title": "Tine Tammes: Hoogleraar tegen de stroom in",
+  "id": "evt_af585ae008e853",
+  "title": "Tine Tammes: Hoogleraar tegen de stroom in (VOL)",
   "kind": "kunst",
   "reason": "website groningerarchieven.nl",
   "url": "https://www.groningerarchieven.nl/actueel/agenda/386-boekpresentatie-tine-tammes-1871-1947-hoogleraar-tegen-de-stroom-in",
@@ -2516,16 +2568,6 @@
   ]
  },
  {
-  "id": "evt_9c2a93b357484e",
-  "title": "Inspiratiecafé: Hoop voor Oekraïne",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://winsum.frl/evenement/inspiratiecafe-hoop-voor-oekraine",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_900d469a3b14b1",
   "title": "Scrap & Yap",
   "kind": "muziek",
@@ -2611,16 +2653,6 @@
   "kind": "theater",
   "reason": "oude categorie 'theater'",
   "url": "https://www.shakespearetheaterdiever.nl/Speeldata",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_74ecd5b48a7eca",
-  "title": "Kollumer Avond",
-  "kind": "theater",
-  "reason": "website decolle.nl",
-  "url": "https://www.decolle.nl/agenda/kollumer-avond/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2767,21 +2799,21 @@
   ]
  },
  {
-  "id": "evt_1a66abcea3631a",
-  "title": "Tabletop Testing Night",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/tabletop-testing-night?date=04-12-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_062b4715870bb7",
   "title": "FRIDAY",
   "kind": "muziek",
   "reason": "website neushoorn.nl",
   "url": "https://www.neushoorn.nl/events/friday",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_41151e348938fb",
+  "title": "het hart van Bolsward",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.bolsward.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2963,26 +2995,6 @@
   "kind": "muziek",
   "reason": "website neushoorn.nl",
   "url": "https://www.neushoorn.nl/events/paceshifters",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_1dcb86c1438059",
-  "title": "R.C. Sullivan + Nagusame + Beyond Cruelty",
-  "kind": "muziek",
-  "reason": "website neushoorn.nl",
-  "url": "https://www.neushoorn.nl/events/r-c-sullivan-nagusame-beyond-cruelty",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_990aef49279534",
-  "title": "+ Annemarijn Maandag",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3248,21 +3260,21 @@
   ]
  },
  {
-  "id": "evt_86b728d99f4e40",
-  "title": "Kerstcreativiteit en gezelligheid",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774669/Kerstcreativiteit-en-gezelligheid.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_60fe9634afa84b",
   "title": "Scrooge",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://berlikum.com/agenda/page/2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d4fd26f8641eb2",
+  "title": "Winteravondvaart met de Raaitkou",
+  "kind": "kunst",
+  "reason": "website fraeylemaborg.nl",
+  "url": "https://fraeylemaborg.nl/agenda/winteravondvaart-met-de-raaitkou/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3699,8 +3711,8 @@
   ]
  },
  {
-  "id": "evt_786e08f5988b66",
-  "title": "Springfestijn",
+  "id": "evt_813fdf55273fac",
+  "title": "Springfestijn 25",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
@@ -3870,6 +3882,16 @@
   ]
  },
  {
+  "id": "evt_52419b02e4ad36",
+  "title": "De wichter van Champ Clark",
+  "kind": "theater",
+  "reason": "website waark.nl",
+  "url": "https://www.waark.nl/speellijst/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_0cb717db9abb44",
   "title": "OG CAPITALS – DORDRECHT LIONS",
   "kind": "sport",
@@ -4005,6 +4027,16 @@
   "kind": "kunst",
   "reason": "website houtstad-ijlst.nl",
   "url": "https://www.houtstad-ijlst.nl/event/houtmeesters-seizoen-2026-2027/2027-01-11/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d255130f697396",
+  "title": "DomoticaGrunn",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://forum.nl/nl/agenda/domoticagrunn?date=12-01-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4330,6 +4362,16 @@
   ]
  },
  {
+  "id": "evt_dca01a3e44887e",
+  "title": "Braand",
+  "kind": "theater",
+  "reason": "website ticketshop.barontheater.nl",
+  "url": "https://ticketshop.barontheater.nl/programma/braand-746",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_e3ccf0424d381a",
   "title": "De wichter van Champ Clark",
   "kind": "theater",
@@ -4634,7 +4676,7 @@
   "title": "Wat Blijft Er Van Ons Over",
   "kind": "kunst",
   "reason": "website podiumzuidhaege.nl",
-  "url": "https://podiumzuidhaege.nl/programma/page/2/",
+  "url": "https://podiumzuidhaege.nl/a/wat-blijft-er-van-ons-over-2/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5341,6 +5383,16 @@
   ]
  },
  {
+  "id": "evt_6d089dab280ef0",
+  "title": "De Bonte Wever 25",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_553f67f1e6e7e6",
   "title": "Faulty Towers The Dining Experience",
   "kind": "theater",
@@ -5406,6 +5458,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://schoonloo.com/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_960aca39135b26",
+  "title": "DomoticaGrunn",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://forum.nl/nl/agenda/domoticagrunn?date=02-03-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6364,7 +6426,7 @@
   ]
  },
  {
-  "id": "evt_7e3fc1412eae42",
+  "id": "evt_44ab50e6b0f552",
   "title": "De wichter van Champ Clark",
   "kind": "theater",
   "reason": "website waark.nl",
@@ -6489,6 +6551,16 @@
   "kind": "kunst",
   "reason": "website houtstad-ijlst.nl",
   "url": "https://www.houtstad-ijlst.nl/event/houtmeesters-seizoen-2026-2027/2027-04-12/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_0956ad5b3b9a60",
+  "title": "DomoticaGrunn",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://forum.nl/nl/agenda/domoticagrunn?date=13-04-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6915,6 +6987,16 @@
   ]
  },
  {
+  "id": "evt_f7b96f9b20e522",
+  "title": "DomoticaGrunn",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://forum.nl/nl/agenda/domoticagrunn?date=25-05-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_1601c7f5f92870",
   "title": "Ons Kind",
   "kind": "theater",
@@ -6969,7 +7051,7 @@
   "title": "Tech Event NoordNL",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/tech-event-noordnl",
+  "url": "https://www.debontewever.nl/nl/events",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -7154,6 +7236,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.bantega.net/agenda/iepenloftspul-bantegea-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_4bead449255c1c",
+  "title": "DomoticaGrunn",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://forum.nl/nl/agenda/domoticagrunn?date=06-07-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -7485,6 +7577,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.debontewever.nl/nl/events/new-blues-festival-assen",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_7736d38264d324",
+  "title": "Cruise Event Groningen 2027",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.reis-events.nl/event/cruise-event-groningen-2027/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
