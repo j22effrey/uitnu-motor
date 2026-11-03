@@ -21,9 +21,10 @@ from collector.discover_venues import is_excluded
 from pipeline import area
 
 from .classify import FESTIVAL, classify, normalize, not_an_outing, venue_key
-from .dekking import auto_register, coverage, load_register, merge_registers
+from .dekking import auto_register, coverage, load_register, merge_registers, municipalities
 from .convert import TICKET_HOSTS, content_hash, load_first_party, merge_duplicates, merge_key, to_v2
 from .gate import MAX_CARRIED_HOSTS, dropped_hosts, run_gate
+from . import groot
 from .kinds import KINDS, TAGS
 from .photos import attach_photos, host_of, list_pages, page_facts_for
 
@@ -219,6 +220,11 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     events = [e for i, e in enumerate(events) if i not in routine]
     translated = translations(events)
     events = [e for i, e in enumerate(events) if i not in translated]
+    # Grote evenementen (veel publiek, vaak met afzettingen) licht de site uit (pipeline/v2/groot.py).
+    groot.mark(events)
+    for event in events:
+        if event.get("groot"):
+            event["hash"] = content_hash(event)
 
     # Unieke slugs, voor als twee titels toevallig hetzelfde worden afgekapt
     seen: Counter = Counter()
@@ -297,12 +303,13 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "bySourceHost": dict(hosts.most_common()),
         "photos": photo_counts,
         "twijfel": len(doubts),
+        "groot": groot.summary(events),
         "kinds": KINDS,
         "tags": TAGS,
         "changes": {k: len(v) for k, v in changes.items()},
         "gate": gate,
         # Staat alles erin wat er zeker hoort? (collector/dekking.json)
-        "dekking": _coverage(events, today),
+        "dekking": {**_coverage(events, today), "gemeenten": _municipalities(raw, today)},
     }
     status["_twijfel"] = doubts
     return events, status
@@ -318,10 +325,27 @@ def _coverage(events: list[dict], today: date) -> dict:
         sources = load_register(root / "collector" / "web_crawl_sources.json").get("sources") or []
         off = {urlparse(x.get("rootUrl") or "").netloc.lower().removeprefix("www.") for x in sources
                if isinstance(x, dict) and x.get("enabled") is False}
-        found = auto_register(load_register(root / "data" / "source_candidates.json"), hosts, off)
+        candidates = load_register(root / "data" / "source_candidates.json")
+        found = auto_register(candidates, hosts, off)
         return coverage(events, merge_registers(manual, found), today)
     except Exception as exc:  # noqa: BLE001 - een kapotte lijst is geen reden om niet te publiceren
         return {"gecontroleerd": 0, "fout": f"{type(exc).__name__}: {exc}"}
+
+
+def _municipalities(raw: list[dict], today: date) -> dict:
+    """Elke gemeente: heeft ze een werkende evenementenkalender? (collector/gemeenten.json). Telt alleen wat een bron
+    deze ronde ophaalde (data/auto_events.json), niet wat met de hand is toegevoegd. Een fout hier laat de rest van het
+    verslag en de fabriek staan."""
+    try:
+        root = HERE.parent.parent
+        now = today.isoformat()
+        delivered = {urlparse(str(r.get("sourceRoot") or "")).netloc.lower().removeprefix("www.") for r in raw
+                     if r.get("_file") == "auto_events.json" and str(r.get("endDate") or r.get("startDate") or "") >= now}
+        sources = load_register(root / "collector" / "web_crawl_sources.json").get("sources") or []
+        return municipalities(load_register(root / "collector" / "gemeenten.json"), sources,
+                              load_register(root / "data" / "source_candidates.json"), delivered - {""})
+    except Exception as exc:  # noqa: BLE001 - een kapotte lijst is geen reden om niet te publiceren
+        return {"totaal": 0, "fout": f"{type(exc).__name__}: {exc}"}
 
 
 DOUBT_METHODS = {"geen", "bronhint", "locatie"}
@@ -370,6 +394,11 @@ def main(argv: list[str] | None = None) -> int:
               f"{len(gaps['teWeinig'])} met te weinig uitjes.")
         for row in (gaps["teWeinig"] + gaps["ontbreekt"])[:15]:
             print(f"  DEKKING {row['plaats']}: {row['naam']} heeft {row['gevonden']} (verwacht {row['verwacht']}, {row['periode']})")
+        towns = gaps.get("gemeenten") or {}
+        if towns.get("totaal"):
+            print(f"Gemeenten met een werkende evenementenkalender: {towns['metAgenda']} van {towns['totaal']}.")
+            for row in towns.get("zonderAgenda") or []:
+                print(f"  GEMEENTE {row['naam']}: {row['waarom']}")
     _write_json(out_dir / "twijfel.json", doubts)
     if status["gate"]["passed"] or args.force:
         _write_json(out_dir / "events.json", events)

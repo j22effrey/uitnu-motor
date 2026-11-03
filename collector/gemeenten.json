@@ -1,0 +1,270 @@
+{
+ "uitleg": "Alle gemeenten in het werkgebied (pipeline/area.py), met hun website en de bronnen die hun evenementenkalender of jaarplanning grote evenementen lezen ('agenda': ids uit collector/web_crawl_sources.json; een bron op de eigen website van de gemeente telt ook zonder id). Elke ronde meldt de motor in status.json onder dekking.gemeenten welke gemeente geen werkende agenda heeft, en waarom (pipeline/v2/dekking.py). 'opmerking': wat we al weten (een firewall, geen kalender). Les van Adrillen (2 november 2026): een gemeente die de motor vanaf het begin weigert, was nooit een bron en viel dus nergens op. Landelijk: dezelfde lijst, met meer provincies.",
+ "gemeenten": [
+  {
+   "naam": "Eemsdelta",
+   "provincie": "Groningen",
+   "website": "https://www.eemsdelta.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Groningen",
+   "provincie": "Groningen",
+   "website": "https://gemeente.groningen.nl/",
+   "agenda": [],
+   "opmerking": "De website weigert de motor (Microsoft-firewall, ook robots.txt); de evenementenkalender (groningen-municipal-calendar-web) staat daarom uit. Nog vragen om UITNU-Crawler toe te laten (3 november 2026)."
+  },
+  {
+   "naam": "Het Hogeland",
+   "provincie": "Groningen",
+   "website": "https://www.hethogeland.nl/",
+   "agenda": [
+    "hogeland-municipal-calendar-web"
+   ]
+  },
+  {
+   "naam": "Midden-Groningen",
+   "provincie": "Groningen",
+   "website": "https://www.midden-groningen.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Oldambt",
+   "provincie": "Groningen",
+   "website": "https://www.gemeente-oldambt.nl/",
+   "agenda": [],
+   "opmerking": "De website weigert de motor (Microsoft-firewall, ook robots.txt). Adrillen (Winschoten) gemist op 2 november 2026. Nog vragen om UITNU-Crawler toe te laten (3 november 2026)."
+  },
+  {
+   "naam": "Pekela",
+   "provincie": "Groningen",
+   "website": "https://www.pekela.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Stadskanaal",
+   "provincie": "Groningen",
+   "website": "https://www.stadskanaal.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Veendam",
+   "provincie": "Groningen",
+   "website": "https://www.veendam.nl/",
+   "agenda": [
+    "gemeente-veendam-evenementenkalender"
+   ]
+  },
+  {
+   "naam": "Westerkwartier",
+   "provincie": "Groningen",
+   "website": "https://www.westerkwartier.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Westerwolde",
+   "provincie": "Groningen",
+   "website": "https://www.westerwolde.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Aa en Hunze",
+   "provincie": "Drenthe",
+   "website": "https://www.aaenhunze.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Assen",
+   "provincie": "Drenthe",
+   "website": "https://www.assen.nl/",
+   "agenda": [],
+   "opmerking": "De website weigert de motor (Microsoft-firewall, ook robots.txt). Nog vragen om UITNU-Crawler toe te laten (3 november 2026)."
+  },
+  {
+   "naam": "Borger-Odoorn",
+   "provincie": "Drenthe",
+   "website": "https://www.borger-odoorn.nl/",
+   "agenda": [],
+   "opmerking": "De website weigert de motor (Microsoft-firewall, ook robots.txt). Nog vragen om UITNU-Crawler toe te laten (3 november 2026)."
+  },
+  {
+   "naam": "Coevorden",
+   "provincie": "Drenthe",
+   "website": "https://www.coevorden.nl/",
+   "agenda": [],
+   "opmerking": "De website weigert de motor (Microsoft-firewall, ook robots.txt). Nog vragen om UITNU-Crawler toe te laten (3 november 2026)."
+  },
+  {
+   "naam": "De Wolden",
+   "provincie": "Drenthe",
+   "website": "https://www.dewolden.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Emmen",
+   "provincie": "Drenthe",
+   "website": "https://gemeente.emmen.nl/",
+   "agenda": [],
+   "opmerking": "De website weigert de motor (Microsoft-firewall, ook robots.txt). Nog vragen om UITNU-Crawler toe te laten (3 november 2026)."
+  },
+  {
+   "naam": "Hoogeveen",
+   "provincie": "Drenthe",
+   "website": "https://www.hoogeveen.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Meppel",
+   "provincie": "Drenthe",
+   "website": "https://www.meppel.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Midden-Drenthe",
+   "provincie": "Drenthe",
+   "website": "https://www.middendrenthe.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Noordenveld",
+   "provincie": "Drenthe",
+   "website": "https://www.noordenveld.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Tynaarlo",
+   "provincie": "Drenthe",
+   "website": "https://www.tynaarlo.nl/",
+   "agenda": [
+    "tynaarlo-nl-web"
+   ]
+  },
+  {
+   "naam": "Westerveld",
+   "provincie": "Drenthe",
+   "website": "https://www.gemeentewesterveld.nl/",
+   "agenda": [],
+   "opmerking": "Geen evenementenkalender op de website (nagekeken in de Drenthe-ronde, oktober 2026); evenementen staan alleen in het Gemeenteblad."
+  },
+  {
+   "naam": "Achtkarspelen",
+   "provincie": "Fryslân",
+   "website": "https://www.achtkarspelen.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Ameland",
+   "provincie": "Fryslân",
+   "website": "https://www.ameland.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Dantumadiel",
+   "provincie": "Fryslân",
+   "website": "https://www.dantumadiel.frl/",
+   "agenda": []
+  },
+  {
+   "naam": "De Fryske Marren",
+   "provincie": "Fryslân",
+   "website": "https://www.defryskemarren.nl/",
+   "agenda": [
+    "defryskemarren-nl-web"
+   ]
+  },
+  {
+   "naam": "Harlingen",
+   "provincie": "Fryslân",
+   "website": "https://www.harlingen.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Heerenveen",
+   "provincie": "Fryslân",
+   "website": "https://www.heerenveen.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Leeuwarden",
+   "provincie": "Fryslân",
+   "website": "https://www.leeuwarden.nl/",
+   "agenda": [
+    "leeuwarden-municipal-calendar-web"
+   ]
+  },
+  {
+   "naam": "Noardeast-Fryslân",
+   "provincie": "Fryslân",
+   "website": "https://www.noardeast-fryslan.nl/",
+   "agenda": [
+    "noardeast-fryslan-nl-web"
+   ]
+  },
+  {
+   "naam": "Ooststellingwerf",
+   "provincie": "Fryslân",
+   "website": "https://www.ooststellingwerf.nl/",
+   "agenda": [
+    "uutgaon-ooststellingwerf-web"
+   ]
+  },
+  {
+   "naam": "Opsterland",
+   "provincie": "Fryslân",
+   "website": "https://www.opsterland.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Schiermonnikoog",
+   "provincie": "Fryslân",
+   "website": "https://www.schiermonnikoog.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Smallingerland",
+   "provincie": "Fryslân",
+   "website": "https://www.smallingerland.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Súdwest-Fryslân",
+   "provincie": "Fryslân",
+   "website": "https://www.sudwestfryslan.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Terschelling",
+   "provincie": "Fryslân",
+   "website": "https://www.terschelling.nl/",
+   "agenda": [
+    "terschelling-nl-web"
+   ]
+  },
+  {
+   "naam": "Tytsjerksteradiel",
+   "provincie": "Fryslân",
+   "website": "https://www.t-diel.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Vlieland",
+   "provincie": "Fryslân",
+   "website": "https://www.vlieland.nl/",
+   "agenda": []
+  },
+  {
+   "naam": "Waadhoeke",
+   "provincie": "Fryslân",
+   "website": "https://www.waadhoeke.nl/",
+   "agenda": [
+    "waadhoeke-municipal-calendar-web"
+   ]
+  },
+  {
+   "naam": "Weststellingwerf",
+   "provincie": "Fryslân",
+   "website": "https://www.weststellingwerf.nl/",
+   "agenda": []
+  }
+ ]
+}

@@ -21,6 +21,7 @@ TAGS: dict[str, str] = {
     "kinderen": "Voor kinderen",
     "buiten": "Buiten",
     "meerdaags": "Meerdaags",
+    "groot": "Groot evenement",
 }
 
 # Oude categorie uit de eerste pipeline -> soort. Alleen gebruikt als niets anders past.

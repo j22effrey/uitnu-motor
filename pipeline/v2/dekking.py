@@ -133,3 +133,47 @@ def coverage(events: list[dict], register: dict, today: date) -> dict:
     shown = [r for r in missing if not r.get("type")] + [r for r in missing if r.get("type")][:MAX_ROWS]
     return {"gecontroleerd": checked, "goed": ok, "ontbreektTotaal": len(missing), "ontbreekt": shown,
             "teWeinig": short, "perSoort": by_type}
+
+
+def municipalities(register: dict, sources: list[dict], candidates: dict | list, delivered: set[str]) -> dict:
+    """Heeft elke gemeente in het werkgebied een werkende evenementenkalender? (collector/gemeenten.json)
+
+    Een gemeente telt als 'met agenda' als een bron die aan staat en bij haar hoort (haar eigen website, of een id onder
+    'agenda') deze ronde komende uitjes ophaalde ('delivered': de websites van de bronnen die dat deden). Een uitje dat
+    met de hand in data/events.json staat, telt niet: dat zegt niets over haar kalender. Zonder: in het verslag, met de
+    reden die we weten (een firewall, geen kalender) of wat de test van haar website zei. Les van Adrillen
+    (2 november 2026): een website die de motor vanaf het begin weigert, viel nergens op, omdat hij nooit een bron was.
+    """
+    on = [s for s in sources if isinstance(s, dict) and s.get("enabled") is not False]
+    by_id = {s.get("id"): s for s in sources if isinstance(s, dict)}
+    rows = candidates.get("candidates", []) if isinstance(candidates, dict) else candidates or []
+    tests = {_host(c.get("host")): c for c in rows if isinstance(c, dict)}
+    missing, ok = [], 0
+    towns = [t for t in register.get("gemeenten") or [] if isinstance(t, dict)]
+    for town in towns:
+        own = _host(urlparse(str(town.get("website") or "")).netloc)
+        hosts = {_host(urlparse(str(s.get("rootUrl") or "")).netloc) for s in on} & {own} if own else set()
+        off = []
+        for source_id in town.get("agenda") or []:
+            source = by_id.get(source_id)
+            if not source:
+                off.append(f"{source_id} staat niet in de bronnenlijst")
+            elif source.get("enabled") is False:
+                off.append(f"{source_id} staat uit")
+            else:
+                hosts.add(_host(urlparse(str(source.get("rootUrl") or "")).netloc))
+        # Bronnen die aan staan en bij deze gemeente horen, maar deze ronde geen komende uitjes ophaalden.
+        idle = sorted({s.get("id") for s in on if _host(urlparse(str(s.get("rootUrl") or "")).netloc) in hosts} - {None})
+        if hosts & delivered:
+            ok += 1
+            continue
+        test = tests.get(own) or {}
+        why = town.get("opmerking") or WHY.get(str(test.get("probeStatus")), "nog geen bron: evenementenkalender of jaarplanning grote evenementen zoeken")
+        if not town.get("opmerking") and test.get("lastError"):
+            why += f" ({test['lastError']})"
+        if idle:
+            why += f"; {', '.join(idle)} staat aan maar haalde geen komende uitjes op"
+        if off:
+            why += "; " + "; ".join(off)
+        missing.append({"naam": town.get("naam"), "provincie": town.get("provincie"), "website": town.get("website"), "waarom": why})
+    return {"totaal": len(towns), "metAgenda": ok, "zonderAgenda": missing}
