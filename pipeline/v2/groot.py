@@ -41,7 +41,9 @@ CROWD = re.compile(
 # Dit is er in bijna elk dorp (een intocht, Koningsdag, de kermis): groot in een stad of grote plaats, in een klein dorp
 # niet. Een grotere plaats: met uitjes van minstens zoveel verschillende organisatoren (websites) in de agenda. Een dorp
 # heeft er meestal één (de dorpswebsite), een stad meerdere; het aantal uitjes zegt minder (één drukke dorpswebsite).
-VILLAGE_WORDS = re.compile(r"intocht|koningsdag|koningsnacht|kermis|braderie|optocht|vuurwerk|feestweek|marathon|\bmerke\b")
+VILLAGE_WORDS = re.compile(r"intocht|koningsdag|koningsnacht|kermis|braderie|optocht|vuurwerk|feestweek|marathon|\bmerke\b|dickens")
+# In het dorpshuis of buurthuis is het voor het dorp of de wijk zelf, hoe groot de plaats ook is.
+SMALL_VENUE = re.compile(r"dorpshuis|buurthuis|wijkcentrum|\bmfc\b|dorpskerk")
 BIG_PLACE = 3
 # Zo heet het, maar het is klein of voor een klein publiek.
 NOT_CROWD = re.compile(
@@ -116,8 +118,8 @@ def groot_reason(event: dict, register: list | None = None, frequent: set | None
     hit = CROWD.search(title)
     if hit and kind in CROWD_KINDS and not NOT_CROWD.search(title):
         city = normalize((event.get("venue") or {}).get("city"))
-        if VILLAGE_WORDS.search(hit.group(0)) and sizes is not None and sizes.get(city, 0) < BIG_PLACE:
-            return None  # een intocht of Koningsdag in een klein dorp
+        if VILLAGE_WORDS.search(hit.group(0)) and (SMALL_VENUE.search(venue) or (sizes is not None and sizes.get(city, 0) < BIG_PLACE)):
+            return None  # een intocht of Koningsdag in een klein dorp of in het dorpshuis
         return f"publiekstrekker: '{hit.group(0)}'"
     return None
 

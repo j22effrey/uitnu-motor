@@ -54,7 +54,8 @@ def test_samenstellingen_en_alleen_in_een_grotere_plaats():
            _event("Bloemencorso Eelde", city="Eelde"), _event("Lemster Dickens Festijn", city="Lemmer")]
     # Een dorp met één drukke dorpswebsite blijft een dorp.
     small = [_event("Intocht Sinterklaas", city="Tzum"), _event("Koningsdag", city="Lauwerzijl"),
-             _event("Fakkel optocht", city="Bontebok")] + [_event(f"Activiteit {i}", city="Tzum") for i in range(30)]
+             _event("Fakkel optocht", city="Bontebok"), _event("Dickens Kerstfair", city="Haulerwijk"),
+             _event("Intocht Sinterklaas", city="Leeuwarden", venue="Dorpshuis Ous Hoes")] + [_event(f"Activiteit {i}", city="Tzum") for i in range(30)]
     events = town + big + small
     groot.mark(events, REGISTER)
     assert all(e.get("groot") for e in big)
@@ -96,3 +97,6 @@ def test_gemeente_zonder_werkende_agenda_valt_op():
     why = {row["naam"]: row["waarom"] for row in result["zonderAgenda"]}
     assert "storing" in why["Oldambt"] and "robots.txt niet bereikbaar" in why["Oldambt"]
     assert why["Pekela"].startswith("geen kalender") and "pekela-oud staat uit" in why["Pekela"]
+    # Een bron die aan staat maar niets ophaalt, staat er eerlijk bij.
+    idle = municipalities(register, sources, candidates, {"uutgaon.nl"})
+    assert "veendam-kalender staat aan maar haalde geen komende uitjes op" in {r["naam"]: r["waarom"] for r in idle["zonderAgenda"]}["Veendam"]

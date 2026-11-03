@@ -162,6 +162,8 @@ def municipalities(register: dict, sources: list[dict], candidates: dict | list,
                 off.append(f"{source_id} staat uit")
             else:
                 hosts.add(_host(urlparse(str(source.get("rootUrl") or "")).netloc))
+        # Bronnen die aan staan en bij deze gemeente horen, maar deze ronde geen komende uitjes ophaalden.
+        idle = sorted({s.get("id") for s in on if _host(urlparse(str(s.get("rootUrl") or "")).netloc) in hosts} - {None})
         if hosts & delivered:
             ok += 1
             continue
@@ -169,6 +171,8 @@ def municipalities(register: dict, sources: list[dict], candidates: dict | list,
         why = town.get("opmerking") or WHY.get(str(test.get("probeStatus")), "nog geen bron: evenementenkalender of jaarplanning grote evenementen zoeken")
         if not town.get("opmerking") and test.get("lastError"):
             why += f" ({test['lastError']})"
+        if idle:
+            why += f"; {', '.join(idle)} staat aan maar haalde geen komende uitjes op"
         if off:
             why += "; " + "; ".join(off)
         missing.append({"naam": town.get("naam"), "provincie": town.get("provincie"), "website": town.get("website"), "waarom": why})
