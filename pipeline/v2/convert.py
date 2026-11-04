@@ -105,7 +105,7 @@ TRAILING_LABEL = re.compile(r"\s+(?:start|datum|aanvang)\s*:?\s*$", re.IGNORECAS
 # Een datum achter de naam ("Wildavond 6 november 2026", "... op 13 december"): de datum staat al bij het uitje.
 _DATE_MONTHS = (r"jan(?:uari)?|feb(?:ruari)?|mrt|maart|apr(?:il)?|mei|jun[ie]?|jul[iy]?|aug(?:ustus)?|sep(?:tember)?|okt(?:ober)?|oct(?:ober)?"
            r"|nov(?:ember)?|dec(?:ember)?|january|february|march|may|august|october")
-TRAILING_DATE = re.compile(rf"(?<=[\w)!?])(?<!t/m)(?<!tot)(?<!van)(?<!\s\w\w)\s+(?:op\s+)?\d{{1,2}}\s+(?:{_DATE_MONTHS})(?:\s+\d{{4}})?\s*$", re.IGNORECASE)
+TRAILING_DATE = re.compile(rf"(?<=[\w)!?])(?<!t/m)(?<!tot)(?<!van)(?<!vanaf)(?<!vanuit)(?<!sinds)(?<!\s\w\w)\s+(?:op\s+)?\d{{1,2}}\s+(?:{_DATE_MONTHS})(?:\s+\d{{4}})?\s*$", re.IGNORECASE)
 TRAILING_CUT = re.compile(r"\s*[-–]?\s*(?:…|\.{3})\s*$")
 # Een tijd voor de naam ('16:00 Kerstmarkt'): de tijd staat al bij het uitje.
 LEADING_TIME = re.compile(r"^\d{1,2}[:.]\d{2}(?:\s*(?:-|–|—|tot|t/m)\s*\d{1,2}[:.]\d{2})?(?:\s*uur)?\s*[-–—:]?\s+"
