@@ -358,3 +358,34 @@ def test_festivalhart_pannenkoek_en_microscopiedag_krijgen_de_goede_soort():
     for title, kind in (("FESTIVALHART DAG 3", "theater"), ("FESTIVALHART DAG 5", "theater"),
                         ("Theater Pannenkoek - Kom uit die kraan!", "kinderen"), ("Microscopiedag in Groningen en Drenthe", "lezing")):
         assert classify(_event(title), OVERRIDES)["kind"] == kind, title
+
+
+# Dagcontrole 4 november 2026 (274 nieuwe uitjes): kopjes, mededelingen, dorpsroutines, datum achter de naam, soorten.
+def test_dagcontrole_4_november_geen_uitje():
+    for title in ("AKTIVITEITEN KALENDER 2026", "Activiteitenkalender", "Wedstrijdschema SC Angelslo 1",
+                  "5 5 november 2026 ● (1 evenement) Internationaal Race Event PNWC 5",
+                  "Advendo BBD presenteert: Disney in Conc... zondag 15 november 2026",
+                  "Opendeurdienst", "Christus, Koning van het heelal", "Verkiezingsweek waterschap/ provinciale",
+                  "De kaartferkeap fan it Mearke 2026 is los!", "Kerstboom plaatsen", "Test concert in the Jacobuskerk",
+                  "Koffie-ochtend", "Koffie en spelletjes", "Eten is ontmoeten", "Schuif eens gezellig aan", "Vrouwenavond"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_4_november_echte_uitjes_blijven_staan():
+    for title in ("Koffieconcert met het Noorder Kamerkoor", "Verkiezingsdebat met de lijsttrekkers", "Kaartverkoop live optreden gestart: voorstelling",
+                  "Test Match: Nederland - Duitsland", "Wedstrijd Kaatsen Franeker",
+                  "Wildavond met live muziek", "Efteling vertelt... Baron 1898", "Wacht even... het concert begint"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_datum_achter_de_naam_valt_weg_maar_een_periode_blijft_heel():
+    assert clean_title("Bier, kluif en ballen 28 november 2026") == "Bier, kluif en ballen"
+    assert clean_title("Kerstconcert Excelsior Schraard op 13 december") == "Kerstconcert Excelsior Schraard"
+    assert clean_title("Expositie Zij hielden koers 7 november 2026 t/m 17 mei 2027") == "Expositie Zij hielden koers"
+    assert clean_title("Explore the North Festivalweekend vr 20 – zo 22 nov") == "Explore the North Festivalweekend"
+
+
+def test_giethoorn_forum_soorten():
+    for title, kind in (("Wildavond", "eten"), ("Local Wild: game from De Wieden", "eten"), ("Onbeperkt spareribs weekend", "eten"),
+                        ("DomoticaGrunn", "lezing"), ("Kleintje Koffie 2027 (0+)", "kinderen")):
+        assert classify(_event(title), OVERRIDES)["kind"] == kind, title

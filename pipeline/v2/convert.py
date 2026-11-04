@@ -102,6 +102,10 @@ DATE_PREFIX = re.compile(
 # Een losse aanduiding achter de naam ('Durf moedig te zijn Start'): die hoort niet bij de naam.
 TRAILING_LABEL = re.compile(r"\s+(?:start|datum|aanvang)\s*:?\s*$", re.IGNORECASE)
 # Een afgebroken naam ("Kerstconcert 'Keep the Faith'-…"). (Dagcontrole 2 november 2026.)
+# Een datum achter de naam ("Wildavond 6 november 2026", "... op 13 december"): de datum staat al bij het uitje.
+_DATE_MONTHS = (r"jan(?:uari)?|feb(?:ruari)?|mrt|maart|apr(?:il)?|mei|jun[ie]?|jul[iy]?|aug(?:ustus)?|sep(?:tember)?|okt(?:ober)?|oct(?:ober)?"
+           r"|nov(?:ember)?|dec(?:ember)?|january|february|march|may|august|october")
+TRAILING_DATE = re.compile(rf"(?<=[\w)!?])(?<!t/m)(?<!tot)(?<!van)(?<!\s\w\w)\s+(?:op\s+)?\d{{1,2}}\s+(?:{_DATE_MONTHS})(?:\s+\d{{4}})?\s*$", re.IGNORECASE)
 TRAILING_CUT = re.compile(r"\s*[-–]?\s*(?:…|\.{3})\s*$")
 # Een tijd voor de naam ('16:00 Kerstmarkt'): de tijd staat al bij het uitje.
 LEADING_TIME = re.compile(r"^\d{1,2}[:.]\d{2}(?:\s*(?:-|–|—|tot|t/m)\s*\d{1,2}[:.]\d{2})?(?:\s*uur)?\s*[-–—:]?\s+"
@@ -193,7 +197,7 @@ def clean_title(value: str | None, city: str | None = None, venue: str | None = 
     # Een tijd achter de naam ('BEEF 16:00 - 17:05', Jonge Harten): die staat al bij het uitje.
     timed = re.sub(r"\s+(?:[|I]\s+)?\d{1,2}[:.]\d{2}\s*[-–]\s*\d{1,2}[:.]\d{2}$", "", rest)
     rest = timed if len(timed) >= 3 else rest
-    cut = TRAILING_CUT.sub("", rest)
+    cut = TRAILING_DATE.sub("", TRAILING_CUT.sub("", rest))
     rest = cut if len(cut.split()) >= 2 else rest
     bare = TRAILING_LABEL.sub("", rest)
     return _tidy(bare if len(bare.split()) >= 2 else rest, city, venue)

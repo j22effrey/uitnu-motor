@@ -136,6 +136,21 @@
    "naam": "^microscopiedag\\b",
    "soort": "lezing",
    "reden": "Dagcontrole 3 november 2026: een dag over microscopen, geen muziek; de soort van het podium (kerkalspodium) gaf muziek."
+  },
+  {
+   "naam": "^wildavond\\b|^local wild\\b|spareribs weekend|(?:bij|at) de eetkamer van giethoorn",
+   "soort": "eten",
+   "reden": "Dagcontrole 4 november 2026: diners bij de restaurants en het hotel van Giethoorn (wildavond, wild uit de Wieden, spareribs, kerstdiner); 'live muziek' op de pagina is bijzaak."
+  },
+  {
+   "naam": "^domoticagrunn\\b",
+   "soort": "lezing",
+   "reden": "Dagcontrole 4 november 2026: DomoticaGrunn is een bijeenkomst over slimme huizen in Forum, geen sport (de oude categorie klopte niet)."
+  },
+  {
+   "naam": "^kleintje koffie\\b",
+   "soort": "kinderen",
+   "reden": "Dagcontrole 4 november 2026: Kleintje Koffie (0+) in Forum is een ochtend voor ouders met een baby of peuter, geen eten en drinken."
   }
  ],
  "uitjes": {
