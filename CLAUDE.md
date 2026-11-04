@@ -126,6 +126,8 @@ alleen als los uitje in `data/events.json` met `"grensUitje": true`, met de orga
    tekst voor schermlezers in de naam ('(opent bij de bron)'), een dubbele naam en een begintijd van
    00:00 (dat is 'tijd onbekend'). Een link die eigenlijk een e-mailadres is, telt niet als link.
    Eén kapot uitje laat de fabriek niet vastlopen (het staat in `status.json` onder `onleesbaar`).
+   Een uitje zonder kaartpin krijgt het midden van zijn plaats (`place_pins`, met `venue.pin: "plaats"`), anders
+   verdwijnt het als je op de site een plaats met een afstand kiest (november 2026: 12% had geen pin).
    Een bron bewust uitzetten: `"enabled": false` met `disabledReason` in de bronnenlijst (een
    nieuwssite ook op de uitsluitlijst); de keuring weet dan dat die uitjes mogen verdwijnen.
 

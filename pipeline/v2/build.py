@@ -44,6 +44,32 @@ def in_area(event: dict) -> bool:
     return area.in_area(event["venue"].get("lat"), event["venue"].get("lon"))
 
 
+# Twee plaatsen met dezelfde naam die zo dicht bij elkaar liggen, zijn dezelfde plaats (Assen staat twee keer in Wikidata).
+SAME_PLACE_KM = 5
+
+
+def place_pins(events: list[dict], places: dict) -> int:
+    """Uitjes zonder kaartpin krijgen het midden van hun plaats (data/dorpssites.json), met venue.pin = 'plaats'.
+    Een naam die op twee plekken ver uit elkaar voorkomt (Winsum in Groningen en in Fryslân), blijft zonder pin.
+    Les van november 2026: 777 uitjes (12%) hadden geen pin en vielen weg bij 'Leeuwarden, 25 km', zoals de
+    Sinterklaasintocht van Leeuwarden."""
+    spots: dict[str, list[tuple[float, float]]] = {}
+    for place in (places.get("plaatsen") or {}).values():
+        if isinstance(place, dict) and place.get("naam") and place.get("lat") is not None and place.get("lon") is not None:
+            spots.setdefault(normalize(place["naam"]), []).append((float(place["lat"]), float(place["lon"])))
+    filled = 0
+    for event in events:
+        venue = event.get("venue") or {}
+        if venue.get("lat") is not None and venue.get("lon") is not None:
+            continue
+        found = spots.get(normalize(venue.get("city")))
+        if not found or any(distance_km(found[0][0], found[0][1], lat, lon) > SAME_PLACE_KM for lat, lon in found):
+            continue
+        venue["lat"], venue["lon"], venue["pin"] = found[0][0], found[0][1], "plaats"
+        filled += 1
+    return filled
+
+
 def _read_json(path: Path, default):
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
@@ -190,6 +216,8 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     outside = [e for e in converted if not in_area(e)]
     skipped = [e for e in converted if in_area(e) and not_an_outing(e)]
     events = merge_duplicates([e for e in converted if in_area(e) and not not_an_outing(e)])
+    # Zonder kaartpin verdwijnt een uitje als je een plaats met een afstand kiest: dan het midden van de plaats.
+    place_pins(events, _read_json(data_dir / "dorpssites.json", {}))
 
     if photo_cache is None:
         photo_cache = _read_json(data_dir / "photos.json", {})

@@ -113,3 +113,19 @@ def test_lichtparade_winterfair_en_sinterklaas_komt():
     groot.mark(events, REGISTER)
     assert all(e.get("groot") for e in big)
     assert not any(e.get("groot") for e in small)
+
+
+def test_kaartpin_van_de_plaats_voor_uitjes_zonder_pin():
+    from pipeline.v2.build import place_pins
+    places = {"plaatsen": {
+        "Q1": {"naam": "Leeuwarden", "lat": 53.2, "lon": 5.78},
+        "Q2": {"naam": "Assen", "lat": 52.995, "lon": 6.560}, "Q3": {"naam": "Assen", "lat": 52.997, "lon": 6.562},
+        "Q4": {"naam": "Winsum", "lat": 53.333, "lon": 6.517}, "Q5": {"naam": "Winsum", "lat": 53.152, "lon": 5.633},
+    }}
+    ev = lambda city, lat=None: {"title": "x", "venue": {"city": city, "lat": lat, "lon": None if lat is None else 6.0}}
+    events = [ev("Leeuwarden"), ev("Assen"), ev("Winsum"), ev("Groningen", 53.2), ev("Onbekend")]
+    assert place_pins(events, places) == 2
+    assert events[0]["venue"]["lat"] == 53.2 and events[0]["venue"]["pin"] == "plaats"
+    assert events[1]["venue"]["lat"] == 52.995
+    assert events[2]["venue"]["lat"] is None  # twee keer Winsum, ver uit elkaar: niet raden
+    assert "pin" not in events[3]["venue"]
