@@ -69,8 +69,8 @@ PLACE_WORDS = ("plaats", "dorp", "stad", "gemeente", "vesting", "buurtschap", "g
 # Wikidata-soorten voor woonplaatsen (dorp, stad, gemeente, ...).
 PLACE_TYPES = {"Q486972", "Q532", "Q3957", "Q515", "Q1549591", "Q2039348", "Q1852859", "Q5084", "Q15284"}
 # Bestanden in een Commons-categorie die geen foto van de plek zijn.
-NOT_A_PHOTO = re.compile(r"\bkaart|\bmaps?\b|wapen|coat of arms|\blogo|\bvlag\b|\bflag\b|locatie|location|"
-                         r"plattegrond|grafsteen|gravestone|tekening|drawing|postcard|ansichtkaart|\bscan\b")
+# Wat geen foto van een plek is (een kaart, logo, wapen of 3D-foto); de lijst staat in pipeline/v2/photos.py.
+NOT_A_PHOTO = photos.NOT_A_PHOTO
 
 
 # ---------------------------------------------------------------- foto op de pagina zelf
@@ -399,6 +399,8 @@ def category_photos(category: str, fetch_json: Callable[..., dict], *, limit: in
 def commons_photos(item: dict, fetch_json: Callable[..., dict], limit: int = PHOTOS_PER_PLACE) -> list[dict]:
     """De foto's van een gebouw of plaats: de hoofdfoto uit Wikidata, aangevuld uit de Commons-categorie."""
     main = commons_info(item["file"], fetch_json)
+    if main and not photos._looks_like_photo(main):
+        main = None  # ook de hoofdfoto uit Wikidata kan een ansichtkaart of 3D-foto zijn (Gorredijk)
     out = [main] if main else []
     if item.get("category"):
         out += category_photos(item["category"], fetch_json, limit=limit - len(out),
@@ -442,7 +444,13 @@ def _due(entry: dict | None, today: date, recheck_days: int, field: str) -> bool
 
 def _commons_due(entry: dict | None, today: date) -> bool:
     if entry and entry.get("url"):
-        return "photos" not in entry  # uit de tijd van één foto per plaats: één keer aanvullen
+        if "photos" not in entry:
+            return True  # uit de tijd van één foto per plaats: één keer aanvullen
+        # Vallen er bewaarde foto's af (een 3D-foto, een plattegrond; zie photos.NOT_A_PHOTO), dan opnieuw zoeken,
+        # zodat een plaats niet zonder foto of met maar één foto blijft (Gorredijk, Assen; november 2026).
+        stored = [r for r in entry.get("photos") or [] if isinstance(r, dict) and r.get("url")]
+        good = [r for r in stored if photos._looks_like_photo(r)]
+        return len(good) < len(stored) and entry.get("checkedAt") != today.isoformat()
     return _due(entry, today, RECHECK_COMMONS_EMPTY_DAYS, "url")
 
 
@@ -543,7 +551,7 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
                 errors += 1
                 break
             stats["opzoekingen op Wikimedia"] += 1
-            if not found and old and old.get("url"):
+            if not found and old and old.get("url") and photos._looks_like_photo(old):
                 found = [{k: old[k] for k in ("file", "url", "pageUrl", "author", "license", "licenseUrl") if k in old}]
             entry = {"url": found[0]["url"], "photos": found} if found else {"url": None}
             cache["commons"][key] = {**entry, "checkedAt": stamp, **({"wikidata": item["id"]} if item else {})}

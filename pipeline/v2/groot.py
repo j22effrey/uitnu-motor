@@ -37,11 +37,13 @@ CROWD = re.compile(
     r"jaarmarkt|kermis\b|intocht\b|braderie|optocht|corso\b|koningsdag|koningsnacht|bevrijdingsfestival"
     r"|\bairshow\b|vuurwerk|marathon\b|\btriathlon\b|wielerronde|motorcross|autocross|harddraverij"
     r"|skutsjesilen|\bsks\b|sneekweek|elfstedentocht|\btt assen\b|wereldbeker|world cup|feestweek\b|\bmerke\b"
-    r"|paardenmarkt|allerheiligenmarkt|dickens")
+    r"|paardenmarkt|allerheiligenmarkt|dickens|parade\b|sunnemeerten"
+    r"|sinterklaas komt|aankomst (?:van )?sinterklaas")
 # Dit is er in bijna elk dorp (een intocht, Koningsdag, de kermis): groot in een stad of grote plaats, in een klein dorp
 # niet. Een grotere plaats: met uitjes van minstens zoveel verschillende organisatoren (websites) in de agenda. Een dorp
 # heeft er meestal één (de dorpswebsite), een stad meerdere; het aantal uitjes zegt minder (één drukke dorpswebsite).
-VILLAGE_WORDS = re.compile(r"intocht|koningsdag|koningsnacht|kermis|braderie|optocht|vuurwerk|feestweek|marathon|\bmerke\b|dickens")
+VILLAGE_WORDS = re.compile(r"intocht|koningsdag|koningsnacht|kermis|braderie|optocht|vuurwerk|feestweek|marathon|\bmerke\b|dickens"
+                           r"|parade|sinterklaas|aankomst")
 # In het dorpshuis of buurthuis is het voor het dorp of de wijk zelf, hoe groot de plaats ook is.
 SMALL_VENUE = re.compile(r"dorpshuis|buurthuis|wijkcentrum|\bmfc\b|dorpskerk")
 BIG_PLACE = 3
@@ -88,14 +90,24 @@ def often(events: list[dict]) -> set[tuple[str, str]]:
     return {key for key, found in weeks.items() if len(found) >= OFTEN}
 
 
+# Een website met uitjes in zoveel plaatsen (een gemeente, de bibliotheek) is geen organisator van één plaats.
+WIDE_HOST = 5
+
+
 def place_sizes(events: list[dict]) -> Counter:
-    """Van hoeveel verschillende organisatoren (websites) er uitjes per plaats zijn: een maat voor hoe groot een plaats is."""
+    """Van hoeveel verschillende organisatoren (websites) er uitjes per plaats zijn: een maat voor hoe groot een plaats is.
+    Websites met uitjes in veel plaatsen (gemeentesites, bibliotheken) tellen niet mee: die maken een dorp niet groter."""
     hosts: dict[str, set[str]] = {}
+    cities: dict[str, set[str]] = {}
     for event in events:
         city = normalize((event.get("venue") or {}).get("city"))
-        hosts.setdefault(city, set()).update(str(s.get("host") or "").lower().removeprefix("www.")
-                                             for s in event.get("sources") or [] if s.get("host"))
-    return Counter({city: len(found) for city, found in hosts.items()})
+        for source in event.get("sources") or []:
+            host = str(source.get("host") or "").lower().removeprefix("www.")
+            if host:
+                hosts.setdefault(city, set()).add(host)
+                cities.setdefault(host, set()).add(city)
+    wide = {host for host, found in cities.items() if len(found) >= WIDE_HOST}
+    return Counter({city: len(found - wide) for city, found in hosts.items()})
 
 
 def groot_reason(event: dict, register: list | None = None, frequent: set | None = None,
