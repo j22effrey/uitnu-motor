@@ -399,6 +399,8 @@ def category_photos(category: str, fetch_json: Callable[..., dict], *, limit: in
 def commons_photos(item: dict, fetch_json: Callable[..., dict], limit: int = PHOTOS_PER_PLACE) -> list[dict]:
     """De foto's van een gebouw of plaats: de hoofdfoto uit Wikidata, aangevuld uit de Commons-categorie."""
     main = commons_info(item["file"], fetch_json)
+    if main and not photos._looks_like_photo(main):
+        main = None  # ook de hoofdfoto uit Wikidata kan een ansichtkaart of 3D-foto zijn (Gorredijk)
     out = [main] if main else []
     if item.get("category"):
         out += category_photos(item["category"], fetch_json, limit=limit - len(out),
