@@ -90,14 +90,24 @@ def often(events: list[dict]) -> set[tuple[str, str]]:
     return {key for key, found in weeks.items() if len(found) >= OFTEN}
 
 
+# Een website met uitjes in zoveel plaatsen (een gemeente, de bibliotheek) is geen organisator van één plaats.
+WIDE_HOST = 5
+
+
 def place_sizes(events: list[dict]) -> Counter:
-    """Van hoeveel verschillende organisatoren (websites) er uitjes per plaats zijn: een maat voor hoe groot een plaats is."""
+    """Van hoeveel verschillende organisatoren (websites) er uitjes per plaats zijn: een maat voor hoe groot een plaats is.
+    Websites met uitjes in veel plaatsen (gemeentesites, bibliotheken) tellen niet mee: die maken een dorp niet groter."""
     hosts: dict[str, set[str]] = {}
+    cities: dict[str, set[str]] = {}
     for event in events:
         city = normalize((event.get("venue") or {}).get("city"))
-        hosts.setdefault(city, set()).update(str(s.get("host") or "").lower().removeprefix("www.")
-                                             for s in event.get("sources") or [] if s.get("host"))
-    return Counter({city: len(found) for city, found in hosts.items()})
+        for source in event.get("sources") or []:
+            host = str(source.get("host") or "").lower().removeprefix("www.")
+            if host:
+                hosts.setdefault(city, set()).add(host)
+                cities.setdefault(host, set()).add(city)
+    wide = {host for host, found in cities.items() if len(found) >= WIDE_HOST}
+    return Counter({city: len(found - wide) for city, found in hosts.items()})
 
 
 def groot_reason(event: dict, register: list | None = None, frequent: set | None = None,

@@ -130,7 +130,8 @@ def _organizer_photo(event: dict, cache: dict, lists: set[str], names: dict[str,
 
 
 # Geen foto van een plek: een kaart, logo, wapen, tekening of scan (collector/event_photos.py gebruikt dezelfde lijst).
-NOT_A_PHOTO = re.compile(r"\bkaart|\bmaps?\b|wapen|coat of arms|\blogo|\bvlag\b|\bflag\b|locatie|location|"
+NOT_A_PHOTO = re.compile(r"\bkaart|\bmaps?\b|wapen|coat of arms|\blogo|\bvlag\b|\bflag\b|locatiekaart|location map|"
+                         r"^(?:file:)?(?:locatie|location)\b|"
                          r"plattegrond|grafsteen|gravestone|tekening|drawing|postcard|ansichtkaart|\bscan\b|"
                          # Een rood-blauwe 3D-foto (anaglyph) ziet er op een kaartje kapot uit (Assen, november 2026).
                          r"(?<![a-z])3d(?![a-z])|anaglyph|stereo")

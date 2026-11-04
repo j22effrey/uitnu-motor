@@ -442,7 +442,13 @@ def _due(entry: dict | None, today: date, recheck_days: int, field: str) -> bool
 
 def _commons_due(entry: dict | None, today: date) -> bool:
     if entry and entry.get("url"):
-        return "photos" not in entry  # uit de tijd van één foto per plaats: één keer aanvullen
+        if "photos" not in entry:
+            return True  # uit de tijd van één foto per plaats: één keer aanvullen
+        # Vallen er bewaarde foto's af (een 3D-foto, een plattegrond; zie photos.NOT_A_PHOTO), dan opnieuw zoeken,
+        # zodat een plaats niet zonder foto of met maar één foto blijft (Gorredijk, Assen; november 2026).
+        stored = [r for r in entry.get("photos") or [] if isinstance(r, dict) and r.get("url")]
+        good = [r for r in stored if photos._looks_like_photo(r)]
+        return len(good) < len(stored) and entry.get("checkedAt") != today.isoformat()
     return _due(entry, today, RECHECK_COMMONS_EMPTY_DAYS, "url")
 
 
@@ -543,7 +549,7 @@ def run(data_dir: str | Path, cache_path: str | Path, *, today: date | None = No
                 errors += 1
                 break
             stats["opzoekingen op Wikimedia"] += 1
-            if not found and old and old.get("url"):
+            if not found and old and old.get("url") and photos._looks_like_photo(old):
                 found = [{k: old[k] for k in ("file", "url", "pageUrl", "author", "license", "licenseUrl") if k in old}]
             entry = {"url": found[0]["url"], "photos": found} if found else {"url": None}
             cache["commons"][key] = {**entry, "checkedAt": stamp, **({"wikidata": item["id"]} if item else {})}
