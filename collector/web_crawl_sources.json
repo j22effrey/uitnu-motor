@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16233,6 +16233,91 @@
         "lon": 6.0655337
       },
       "policyReviewedAt": "2026-11-03"
+    },
+    {
+      "id": "deinumdorp-nl-web",
+      "name": "Deinum",
+      "rootUrl": "https://deinumdorp.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://deinumdorp.nl/"
+      },
+      "activatedFromCandidate": "deinumdorp.nl",
+      "defaultPlace": {
+        "venue": "Deinum",
+        "city": "Deinum",
+        "lat": 53.1918199,
+        "lon": 5.7243881
+      },
+      "policyReviewedAt": "2026-11-04"
+    },
+    {
+      "id": "anloo-info-nl-web",
+      "name": "Anloo",
+      "rootUrl": "https://www.anloo-info.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.anloo-info.nl/agenda/"
+      },
+      "activatedFromCandidate": "anloo-info.nl",
+      "defaultPlace": {
+        "city": "Anloo",
+        "lat": 53.0433,
+        "lon": 6.6994
+      },
+      "policyReviewedAt": "2026-11-04"
+    },
+    {
+      "id": "vvminnertsga-nl-web",
+      "name": "VV Minnertsga",
+      "rootUrl": "https://www.vvminnertsga.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://vvminnertsga.nl/"
+      },
+      "activatedFromCandidate": "vvminnertsga.nl",
+      "defaultPlace": {
+        "venue": "VV Minnertsga",
+        "city": "Minnertsga",
+        "lat": 53.2506533,
+        "lon": 5.6005217
+      },
+      "policyReviewedAt": "2026-11-04"
+    },
+    {
+      "id": "zusjesdeboer-nl-web",
+      "name": "Zusjes De Boer",
+      "rootUrl": "https://www.zusjesdeboer.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "zusjesdeboer.nl",
+      "defaultPlace": {
+        "venue": "Zusjes De Boer",
+        "city": "Assen",
+        "lat": 52.9935511,
+        "lon": 6.5601263
+      },
+      "policyReviewedAt": "2026-11-04"
     }
   ]
 }
