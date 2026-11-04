@@ -14,7 +14,7 @@ from __future__ import annotations
 import re
 import unicodedata
 import zlib
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 # Een pagina waar drie of meer verschillende uitjes naar verwijzen is een agendalijst,
 # geen pagina van één uitje. De foto daarop hoort niet bij elk uitje afzonderlijk.
@@ -129,14 +129,28 @@ def _organizer_photo(event: dict, cache: dict, lists: set[str], names: dict[str,
     return None
 
 
+# Geen foto van een plek: een kaart, logo, wapen, tekening of scan (collector/event_photos.py gebruikt dezelfde lijst).
+NOT_A_PHOTO = re.compile(r"\bkaart|\bmaps?\b|wapen|coat of arms|\blogo|\bvlag\b|\bflag\b|locatie|location|"
+                         r"plattegrond|grafsteen|gravestone|tekening|drawing|postcard|ansichtkaart|\bscan\b|"
+                         # Een rood-blauwe 3D-foto (anaglyph) ziet er op een kaartje kapot uit (Assen, november 2026).
+                         r"(?<![a-z])3d(?![a-z])|anaglyph|stereo")
+
+
+def _looks_like_photo(record: dict) -> bool:
+    """Op de bestandsnaam (niet de hele link: daar staan mappen als '/3/3d/' in) geen kaart, logo of 3D-foto."""
+    name = unquote(str(record.get("pageUrl") or record.get("url") or "")).rsplit("/", 1)[-1]
+    return not NOT_A_PHOTO.search(name.casefold().replace("_", " "))
+
+
 def _pick(record: dict | None, event: dict, slot: int | None = None) -> dict | None:
     """Per gebouw of plaats bewaart de zoeker meerdere foto's; dit uitje krijgt er één van.
     Met 'slot' om de beurt (zie attach_photos), anders vast gekozen op de naam van het uitje."""
     if not record:
         return None
-    options = [r for r in record.get("photos") or [] if isinstance(r, dict) and r.get("url")]
+    # Wat de zoeker eerder bewaarde, maar nu geen goede foto meer vindt (een 3D-foto): niet tonen.
+    options = [r for r in record.get("photos") or [] if isinstance(r, dict) and r.get("url") and _looks_like_photo(r)]
     if not options:
-        return record if record.get("url") else None
+        return record if record.get("url") and _looks_like_photo(record) else None
     if slot is None:
         slot = zlib.crc32(str(event.get("slug") or event.get("id") or event.get("title")).encode())
     return options[slot % len(options)]

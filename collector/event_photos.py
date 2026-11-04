@@ -69,8 +69,8 @@ PLACE_WORDS = ("plaats", "dorp", "stad", "gemeente", "vesting", "buurtschap", "g
 # Wikidata-soorten voor woonplaatsen (dorp, stad, gemeente, ...).
 PLACE_TYPES = {"Q486972", "Q532", "Q3957", "Q515", "Q1549591", "Q2039348", "Q1852859", "Q5084", "Q15284"}
 # Bestanden in een Commons-categorie die geen foto van de plek zijn.
-NOT_A_PHOTO = re.compile(r"\bkaart|\bmaps?\b|wapen|coat of arms|\blogo|\bvlag\b|\bflag\b|locatie|location|"
-                         r"plattegrond|grafsteen|gravestone|tekening|drawing|postcard|ansichtkaart|\bscan\b")
+# Wat geen foto van een plek is (een kaart, logo, wapen of 3D-foto); de lijst staat in pipeline/v2/photos.py.
+NOT_A_PHOTO = photos.NOT_A_PHOTO
 
 
 # ---------------------------------------------------------------- foto op de pagina zelf

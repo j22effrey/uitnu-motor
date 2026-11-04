@@ -100,3 +100,16 @@ def test_gemeente_zonder_werkende_agenda_valt_op():
     # Een bron die aan staat maar niets ophaalt, staat er eerlijk bij.
     idle = municipalities(register, sources, candidates, {"uutgaon.nl"})
     assert "veendam-kalender staat aan maar haalde geen komende uitjes op" in {r["naam"]: r["waarom"] for r in idle["zonderAgenda"]}["Veendam"]
+
+
+def test_lichtparade_winterfair_en_sinterklaas_komt():
+    town = [_event(f"Concert {i}", kind="muziek", city="Groningen", host=f"podium{i}.example") for i in range(groot.BIG_PLACE)]
+    big = [_event("Sunnemeerten Parade (lichtparade)", city="Groningen"), _event("Stadjersmarkt 2026", kind="markt", city="Groningen"),
+           _event("Sinterklaas komt naar Groningen!", city="Groningen")]
+    # Een winterfair of kerstmarkt is meestal klein (school, kerk, wijk): alleen via groot.json (WinterWelVaart, Dickens).
+    small = [_event("Winterfair Groningen", kind="markt", city="Groningen"), _event("Kerstmarkt Camminghaburen", kind="markt", city="Groningen"),
+             _event("Sint Maarten lampionoptocht 2026", city="Groningen")]
+    events = town + big + small
+    groot.mark(events, REGISTER)
+    assert all(e.get("groot") for e in big)
+    assert not any(e.get("groot") for e in small)

@@ -47,6 +47,16 @@
    "reden": "Zuidlaardermarkt: een van de grootste paardenmarkten van Europa, met kermis en tienduizenden bezoekers."
   },
   {
+   "naam": "stadjersmarkt",
+   "groot": true,
+   "reden": "Stadjersmarkt in MartiniPlaza (Groningen): grote markt met honderden kramen en duizenden bezoekers."
+  },
+  {
+   "naam": "^supervlooi\\b",
+   "groot": true,
+   "reden": "Supervlooi in het WTC Expo (Leeuwarden): een van de grootste vlooienmarkten van het land."
+  },
+  {
    "naam": "jouw kop is kermis",
    "groot": false,
    "reden": "Een voorstelling van Klub Karmijn, geen kermis."
