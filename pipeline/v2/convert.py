@@ -197,6 +197,7 @@ def clean_title(value: str | None, city: str | None = None, venue: str | None = 
     # Een tijd achter de naam ('BEEF 16:00 - 17:05', Jonge Harten): die staat al bij het uitje.
     timed = re.sub(r"\s+(?:[|I]\s+)?\d{1,2}[:.]\d{2}\s*[-–]\s*\d{1,2}[:.]\d{2}$", "", rest)
     rest = timed if len(timed) >= 3 else rest
+    rest = re.sub(r"^\+\s+(?=\w)", "", rest)   # '+ Annemarijn Maandag': het plusje is de voorprogramma-regel van de zaal
     cut = TRAILING_DATE.sub("", TRAILING_CUT.sub("", rest))
     rest = cut if len(cut.split()) >= 2 else rest
     bare = TRAILING_LABEL.sub("", rest)
