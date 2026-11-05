@@ -402,7 +402,7 @@ def test_dagcontrole_5_november_geen_uitje():
 
 def test_dagcontrole_5_november_echte_uitjes_blijven_staan():
     for title in ("Lezing werkgroep Oud Ezinge", "Yoga workshop in het park", "Yoga festival", "Jubileum vereniging: concert",
-                  "Reis door de tijd: voorstelling", "3-daagse Kerstmarkt", "Excursie vogelwerkgroep Zuidwolde"):
+                  "Reis door de tijd: voorstelling", "3-daagse Kerstmarkt", "Excursie vogelwerkgroep Zuidwolde", "Natuurwerkgroep Rondleiding"):
         assert not not_an_outing(_event(title)), title
 
 
