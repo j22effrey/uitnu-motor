@@ -391,3 +391,23 @@ def test_giethoorn_forum_soorten():
     for title, kind in (("Wildavond", "eten"), ("Local Wild: game from De Wieden", "eten"), ("Onbeperkt spareribs weekend", "eten"),
                         ("DomoticaGrunn", "lezing"), ("Kleintje Koffie 2027 (0+)", "kinderen")):
         assert classify(_event(title), OVERRIDES)["kind"] == kind, title
+
+
+# Dagcontrole 5 november 2026 (122 nieuwe uitjes): werkgroepen, yogalessen, reispakketten, verenigingsnaam, plusje.
+def test_dagcontrole_5_november_geen_uitje():
+    for title in ("Vogelwerkgroep", "Plantenwerkgroep", "Keatsferiening", "Nieuw blok yogalessen start 21 oktober de kaats kantine",
+                  "5-day Music Spectacle", "4-Daagse muziekreis met Dana Winner"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_5_november_echte_uitjes_blijven_staan():
+    for title in ("Lezing werkgroep Oud Ezinge", "Yoga workshop in het park", "Yoga festival", "Jubileum vereniging: concert",
+                  "Reis door de tijd: voorstelling", "3-daagse Kerstmarkt", "Excursie vogelwerkgroep Zuidwolde"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_plusje_voor_de_naam_valt_weg_en_soorten():
+    assert clean_title("+ Annemarijn Maandag") == "Annemarijn Maandag"
+    assert clean_title("A+B Festival") == "A+B Festival"
+    for title, kind in (("Kom maar, kipjes! | Kippenpret", "kinderen"), ("Top 2000 Krystkafee", "feest")):
+        assert classify(_event(title), OVERRIDES)["kind"] == kind, title
