@@ -1,81 +1,20 @@
 [
  {
-  "id": "evt_17c293e8d52953",
-  "title": "Adventskalender Musselkanaal",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://levendigmusselkanaal.nl/uitgelicht/adventskalender-musselkanaal",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_d60cdd1f16f803",
-  "title": "Even Offline",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774686/Even-Offline.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_09f4059f9a9c70",
-  "title": "Kleintje Bieb",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.sleen.nu/home/agenda",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_1355ad8ddd426c",
-  "title": "Plantenwerkgroep",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://natuurverenigingzuidwolde.nl/waarnemingen/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_cf9d9ca325f5af",
-  "title": "Woorden op Woensdag",
-  "kind": "festival",
-  "reason": "website explorethenorth.nl",
-  "url": "https://explorethenorth.nl/event/woorden-op-woensdag-26/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
-  ]
- },
- {
-  "id": "evt_30d22acc2c1646",
-  "title": "Plan your visit",
-  "kind": "kunst",
-  "reason": "website hannemahuis.nl",
-  "url": "https://hannemahuis.nl/plan-je-bezoek",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_959de8669aa5f6",
-  "title": "Planen Sie Ihren Besuch",
-  "kind": "kunst",
-  "reason": "website hannemahuis.nl",
-  "url": "https://hannemahuis.nl/plan-je-bezoek",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_bc88e22ec2f498",
   "title": "Doe mee met de sportinstuif",
   "kind": "sport",
   "reason": "oude categorie 'sport'",
   "url": "https://levendigmusselkanaal.nl/agenda/151828/2026-11-05/doe-mee-met-de-sportinstuif",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_54ea8e750be59b",
+  "title": "Even Offline",
+  "kind": "lezing",
+  "reason": "website ticketing.groningsebibliotheken.nl",
+  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774686/Even-Offline.html",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -99,6 +38,26 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
+  "id": "evt_f3a1345dcd5fcd",
+  "title": "Plantenwerkgroep",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://natuurverenigingzuidwolde.nl/waarnemingen/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_dff5c3e2b44391",
+  "title": "Vrouwen in beweging",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://wjukken.nl/agenda/vrouwen-in-beweging-30/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -853,6 +812,16 @@
   ]
  },
  {
+  "id": "evt_ea12975b78f747",
+  "title": "Doe mee met de sportinstuif",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://levendigmusselkanaal.nl/agenda/151828/2026-11-12/doe-mee-met-de-sportinstuif",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_f7e62b4f6f6367",
   "title": "Het leven en belang van de bijen",
   "kind": "lezing",
@@ -1083,6 +1052,16 @@
   "kind": "theater",
   "reason": "website jongeharten.podiumnederland.nl",
   "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10389825?stlt=jh&lang=nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a514a7654f2cc4",
+  "title": "TALK: Wat als weerstand wijsheid is?",
+  "kind": "theater",
+  "reason": "website jongeharten.podiumnederland.nl",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10384638?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2106,6 +2085,16 @@
   ]
  },
  {
+  "id": "evt_cea958d4c293c3",
+  "title": "TALK: Wat als weerstand wijsheid is?",
+  "kind": "theater",
+  "reason": "website jongeharten.podiumnederland.nl",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10384639?stlt=jh&lang=nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "shakespearetheater-diever-midzomernachtdroom-matinee-2026-11-21",
   "title": "Midzomernachtdroom (matinee)",
   "kind": "theater",
@@ -3081,16 +3070,6 @@
   ]
  },
  {
-  "id": "evt_990aef49279534",
-  "title": "+ Annemarijn Maandag",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_e432095747d747",
   "title": "Krystbeam opsette🎄🎅🏼",
   "kind": "overig",
@@ -3156,6 +3135,16 @@
   "kind": "theater",
   "reason": "oude categorie 'theater'",
   "url": "https://www.shakespearetheaterdiever.nl/Speeldata",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_990aef49279534",
+  "title": "+ Annemarijn Maandag",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3436,6 +3425,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://berlikum.com/agenda/page/2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_8bab65a5b74f77",
+  "title": "Swerve // We Are The Harvest",
+  "kind": "kunst",
+  "reason": "website viadukt.nl",
+  "url": "http://www.viadukt.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3801,17 +3800,6 @@
   ]
  },
  {
-  "id": "evt_a947165a433b6b",
-  "title": "Spring festival",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
-  ]
- },
- {
   "id": "evt_813fdf55273fac",
   "title": "Springfestijn 25",
   "kind": "overig",
@@ -3953,11 +3941,11 @@
   ]
  },
  {
-  "id": "evt_52419b02e4ad36",
-  "title": "De wichter van Champ Clark",
+  "id": "evt_dc664f7fae31f5",
+  "title": "De Wichter van Champ Clark – Extra show!",
   "kind": "theater",
-  "reason": "website waark.nl",
-  "url": "https://www.waark.nl/speellijst/",
+  "reason": "website a-theater.nl",
+  "url": "https://a-theater.nl/show/de-wichter-van-champ-clark-extra-show/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5059,16 +5047,6 @@
   "kind": "theater",
   "reason": "website kielzog.nl",
   "url": "https://www.kielzog.nl/evenementen/tbs-met-job-knoester",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_27ae8d50264a84",
-  "title": "Rob Clamp and the Ashmen",
-  "kind": "muziek",
-  "reason": "oude categorie 'muziek'",
-  "url": "https://podiumverwondering.nl/event/rob-clamp-and-the-ashmen/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]

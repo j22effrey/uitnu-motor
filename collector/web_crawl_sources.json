@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16318,6 +16318,47 @@
         "lon": 6.5601263
       },
       "policyReviewedAt": "2026-11-04"
+    },
+    {
+      "id": "stuurhuusdoezum-nl-web",
+      "name": "Dorpshuis 't Stuurhuus Doezum",
+      "rootUrl": "https://stuurhuusdoezum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://stuurhuusdoezum.nl/index.php/events/?ical=1"
+      },
+      "activatedFromCandidate": "stuurhuusdoezum.nl",
+      "defaultPlace": {
+        "city": "Doezum"
+      },
+      "policyReviewedAt": "2026-11-05"
+    },
+    {
+      "id": "necdelfzijl-nl-web",
+      "name": "NEC Delfzijl",
+      "rootUrl": "https://www.necdelfzijl.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.necdelfzijl.nl/programma"
+      },
+      "activatedFromCandidate": "necdelfzijl.nl",
+      "defaultPlace": {
+        "venue": "NEC Delfzijl",
+        "city": "Delfzijl",
+        "lat": 53.3305546,
+        "lon": 6.9161152
+      },
+      "policyReviewedAt": "2026-11-05"
     }
   ]
 }
