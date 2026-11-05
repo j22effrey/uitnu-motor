@@ -2659,56 +2659,6 @@
   }
  },
  {
-  "id": "evt_f3a1345dcd5fcd",
-  "slug": "plantenwerkgroep-zuidwolde-2026-11-05",
-  "title": "Plantenwerkgroep",
-  "occurrences": [
-   {
-    "date": "2026-11-05",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Natuurvereniging Zuidwolde",
-   "city": "Zuidwolde",
-   "lat": 52.6571115,
-   "lon": 6.4239135
-  },
-  "price": "Zie organisator",
-  "url": "https://natuurverenigingzuidwolde.nl/waarnemingen/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://natuurverenigingzuidwolde.nl/waarnemingen/",
-    "host": "natuurverenigingzuidwolde.nl",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "4db247c96268",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Molen_De_Vlijt_Zuidwolde_2.JPG/1280px-Molen_De_Vlijt_Zuidwolde_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Zuidwolde",
-   "credit": "Foto: Silver Spoon · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Silver Spoon",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molen_De_Vlijt_Zuidwolde_2.JPG"
-  }
- },
- {
   "id": "evt_916a1953295999",
   "slug": "pressure-drachten-2026-11-05",
   "title": "Pressure",
@@ -2947,58 +2897,6 @@
    "alt": "Foto bij The Charlies pre-releaseparty",
    "credit": "Foto: Podium 34",
    "sourceUrl": "https://podium34.nl/events/the-charlies-pre-releaseparty/"
-  }
- },
- {
-  "id": "evt_ded70678cc57ea",
-  "slug": "vogelwerkgroep-zuidwolde-2026-11-05",
-  "title": "Vogelwerkgroep",
-  "occurrences": [
-   {
-    "date": "2026-11-05",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Natuurvereniging Zuidwolde",
-   "city": "Zuidwolde",
-   "lat": 52.6571115,
-   "lon": 6.4239135
-  },
-  "price": "Zie organisator",
-  "url": "https://natuurverenigingzuidwolde.nl/waarnemingen/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://natuurverenigingzuidwolde.nl/waarnemingen/",
-    "host": "natuurverenigingzuidwolde.nl",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "natuur",
-  "kindLabel": "Natuur en buiten",
-  "tags": [
-   "buiten"
-  ],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'vogel'",
-   "confidence": 0.8
-  },
-  "hash": "c2cff7e3c631",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg/1280px-Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Zuidwolde",
-   "credit": "Foto: Elias Canneman · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Elias Canneman",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg"
   }
  },
  {
@@ -16101,15 +15999,15 @@
   },
   "hash": "1adbf956642a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg/1280px-Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Molen_De_Vlijt_Zuidwolde_2.JPG/1280px-Molen_De_Vlijt_Zuidwolde_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "G.Th. Delemarre",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_Hoofdstraat_94,_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg"
+   "credit": "Foto: Silver Spoon · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Silver Spoon",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molen_De_Vlijt_Zuidwolde_2.JPG"
   }
  },
  {
@@ -38963,56 +38861,6 @@
   }
  },
  {
-  "id": "evt_c27568c888481a",
-  "slug": "nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-exmorra-2026-11-11",
-  "title": "Nieuw blok yogalessen start 21 oktober de kaats kantine",
-  "occurrences": [
-   {
-    "date": "2026-11-11",
-    "endDate": null,
-    "startTime": "18:30",
-    "endTime": "19:30"
-   }
-  ],
-  "venue": {
-   "name": "Kaatskantine",
-   "city": "Exmorra",
-   "lat": 53.0553,
-   "lon": 5.4636
-  },
-  "price": "Zie organisator",
-  "url": "https://exmorra.info/evenement/nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-2",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://exmorra.info/evenement/nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-2",
-    "host": "exmorra.info",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'yoga'",
-   "confidence": 0.8
-  },
-  "hash": "668a7a77d8a8",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Kerkje_van_Exmorra.jpg/1280px-Kerkje_van_Exmorra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Exmorra",
-   "credit": "Foto: http://picasaweb.google.com/molenaarserf/ · CC BY 3.0 · Wikimedia Commons",
-   "author": "http://picasaweb.google.com/molenaarserf/",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerkje_van_Exmorra.jpg"
-  }
- },
- {
   "id": "evt_96e5d680201aea",
   "slug": "verity-assen-2026-11-11",
   "title": "Verity",
@@ -58013,15 +57861,15 @@
   },
   "hash": "dc803f842c3f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg/1280px-Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg/1280px-Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "G.Th. Delemarre",
+   "credit": "Foto: Elias Canneman · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Elias Canneman",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_Hoofdstraat_94,_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg"
   }
  },
  {
@@ -67441,56 +67289,6 @@
    "alt": "Foto bij Classics: Shall We Dance? - 30th Anniversary",
    "credit": "Foto: Forum Groningen",
    "sourceUrl": "https://forum.nl/nl/agenda/film/classics-shall-we-dance-30th-anniversary?date=18-11-2026"
-  }
- },
- {
-  "id": "evt_7e67be4a2179b1",
-  "slug": "nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-exmorra-2026-11-18",
-  "title": "Nieuw blok yogalessen start 21 oktober de kaats kantine",
-  "occurrences": [
-   {
-    "date": "2026-11-18",
-    "endDate": null,
-    "startTime": "18:30",
-    "endTime": "19:30"
-   }
-  ],
-  "venue": {
-   "name": "Kaatskantine",
-   "city": "Exmorra",
-   "lat": 53.0553,
-   "lon": 5.4636
-  },
-  "price": "Zie organisator",
-  "url": "https://exmorra.info/evenement/nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-e",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://exmorra.info/evenement/nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-e",
-    "host": "exmorra.info",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'yoga'",
-   "confidence": 0.8
-  },
-  "hash": "d7f628381b9b",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/20190821_Exmorra.jpg/1280px-20190821_Exmorra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Exmorra",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190821_Exmorra.jpg"
   }
  },
  {
@@ -101555,56 +101353,6 @@
   }
  },
  {
-  "id": "evt_4a056ec910d891",
-  "slug": "nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-exmorra-2026-11-25",
-  "title": "Nieuw blok yogalessen start 21 oktober de kaats kantine",
-  "occurrences": [
-   {
-    "date": "2026-11-25",
-    "endDate": null,
-    "startTime": "18:30",
-    "endTime": "19:30"
-   }
-  ],
-  "venue": {
-   "name": "Kaatskantine",
-   "city": "Exmorra",
-   "lat": 53.0553,
-   "lon": 5.4636
-  },
-  "price": "Zie organisator",
-  "url": "https://exmorra.info/evenement/nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-4",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://exmorra.info/evenement/nieuw-blok-yogalessen-start-21-oktober-de-kaats-kantine-4",
-    "host": "exmorra.info",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'yoga'",
-   "confidence": 0.8
-  },
-  "hash": "582159e02555",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/20190821_slakken_door_Frans_Faber_Exmorra.jpg/1280px-20190821_slakken_door_Frans_Faber_Exmorra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Exmorra",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190821_slakken_door_Frans_Faber_Exmorra.jpg"
-  }
- },
- {
   "id": "evt_1c9cf3fc3df386",
   "slug": "boekbespreking-het-diner-van-herman-koch-borger-2026-11-25",
   "title": "Boekbespreking: Het Diner van Herman Koch",
@@ -105014,56 +104762,6 @@
    "confidence": 0.8
   },
   "hash": "a810e7a3f01e",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
-  }
- },
- {
-  "id": "evt_f26db9b4b175a6",
-  "slug": "5-day-music-spectacle-assen-2026-11-27",
-  "title": "5-day Music Spectacle",
-  "occurrences": [
-   {
-    "date": "2026-11-27",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "Zie organisator",
-  "url": "https://www.bolderman.nl/all-inclusive-muziekspektakel-noord-nederland?date=2025-11-24#prices",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.bolderman.nl/all-inclusive-muziekspektakel-noord-nederland?date=2025-11-24#prices",
-    "host": "bolderman.nl",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'music'",
-   "confidence": 0.8
-  },
-  "hash": "8c2801f545d5",
   "image": {
    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
@@ -114793,56 +114491,6 @@
   }
  },
  {
-  "id": "evt_30b9c31882364d",
-  "slug": "the-queens-of-abba-tribute-assen-2026-11-28",
-  "title": "+ The Queens of Abba Tribute",
-  "occurrences": [
-   {
-    "date": "2026-11-28",
-    "endDate": null,
-    "startTime": "20:30",
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "Zie organisator",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/102065?p_id=450800",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://debontewever.avayo.nl/bestel/tickets/102065?p_id=450800",
-    "host": "debontewever.avayo.nl",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'tribute'",
-   "confidence": 0.8
-  },
-  "hash": "3254c57d82b2",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
-  }
- },
- {
   "id": "evt_134d2aecec14a6",
   "slug": "alarm-leeuwarden-2026-11-28",
   "title": "ALARM!",
@@ -115121,6 +114769,56 @@
    "license": "CC BY 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Holwerd_(NL)_-_panoramio_(1).jpg"
+  }
+ },
+ {
+  "id": "evt_30b9c31882364d",
+  "slug": "the-queens-of-abba-tribute-assen-2026-11-28",
+  "title": "The Queens of Abba Tribute",
+  "occurrences": [
+   {
+    "date": "2026-11-28",
+    "endDate": null,
+    "startTime": "20:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Bonte Wever",
+   "city": "Assen",
+   "lat": 52.9840952,
+   "lon": 6.5428525
+  },
+  "price": "Zie organisator",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/102065?p_id=450800",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://debontewever.avayo.nl/bestel/tickets/102065?p_id=450800",
+    "host": "debontewever.avayo.nl",
+    "seenAt": "2026-11-05"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'tribute'",
+   "confidence": 0.8
+  },
+  "hash": "2f316e925254",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "De Bonte Wever",
+   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
+   "author": "Ronn",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
   }
  },
  {
@@ -120831,15 +120529,15 @@
   },
   "hash": "84578e5cdb23",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/De_Stuw_Zuid_Wolde_%2833741259261%29.jpg/1280px-De_Stuw_Zuid_Wolde_%2833741259261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg/1280px-Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: kees torn · CC BY-SA 2.0 · Wikimedia Commons",
-   "author": "kees torn",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Stuw_Zuid_Wolde_(33741259261).jpg"
+   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "G.Th. Delemarre",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_Hoofdstraat_94,_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg"
   }
  },
  {
@@ -131199,59 +130897,6 @@
   }
  },
  {
-  "id": "evt_8e84d441c0f5af",
-  "slug": "4-daagse-muziekreis-met-dana-winner-assen-2026-12-07",
-  "title": "4-Daagse muziekreis met Dana Winner",
-  "occurrences": [
-   {
-    "date": "2026-12-07",
-    "endDate": "2026-12-10",
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.99528,
-   "lon": 6.56056,
-   "pin": "plaats"
-  },
-  "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/nl/events/4-daagse-muziekreis-met-dana-winner",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events/4-daagse-muziekreis-met-dana-winner",
-    "host": "debontewever.nl",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [
-   "meerdaags"
-  ],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'muziek'",
-   "confidence": 0.8
-  },
-  "hash": "923305554a52",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
-  }
- },
- {
   "id": "evt_c29be21c9cbb4c",
   "slug": "the-best-of-sven-matthijs-leeuwarden-2026-12-07",
   "title": "The Best of Sven & Matthijs",
@@ -134753,56 +134398,6 @@
    "alt": "Foto bij Turner Williams Jr. + Woordenvangenincijfers",
    "credit": "Foto: Vera",
    "sourceUrl": "https://www.vera-groningen.nl/?post_type=events&p=154978&lang=nl"
-  }
- },
- {
-  "id": "evt_ba88a0bdc212e7",
-  "slug": "4-daagse-muziekreis-met-dana-winner-assen-2026-12-10",
-  "title": "4-Daagse muziekreis met Dana Winner",
-  "occurrences": [
-   {
-    "date": "2026-12-10",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/nl/events/4-daagse-muziekreis-met-dana-winner",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events/4-daagse-muziekreis-met-dana-winner",
-    "host": "debontewever.nl",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'muziek'",
-   "confidence": 0.8
-  },
-  "hash": "77fdae556de9",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
   }
  },
  {
@@ -144538,56 +144133,6 @@
   }
  },
  {
-  "id": "evt_990aef49279534",
-  "slug": "annemarijn-maandag-assen-2026-12-12",
-  "title": "+ Annemarijn Maandag",
-  "occurrences": [
-   {
-    "date": "2026-12-12",
-    "endDate": null,
-    "startTime": "20:15",
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "Zie organisator",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
-    "host": "debontewever.avayo.nl",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "1317ffaf3757",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
-  }
- },
- {
   "id": "evt_50649f507c74be",
   "slug": "amy-egbers-en-muza-valiaddinzade-veendam-2026-12-12",
   "title": "Amy Egbers en Muza Valiaddinzade",
@@ -144632,6 +144177,56 @@
    "alt": "Foto bij Amy Egbers en Muza Valiaddinzade",
    "credit": "Foto: Filmhuis vanBeresteyn",
    "sourceUrl": "https://www.vanberesteyn.nl/programma/amy-en-muza/"
+  }
+ },
+ {
+  "id": "evt_990aef49279534",
+  "slug": "annemarijn-maandag-assen-2026-12-12",
+  "title": "Annemarijn Maandag",
+  "occurrences": [
+   {
+    "date": "2026-12-12",
+    "endDate": null,
+    "startTime": "20:15",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "De Bonte Wever",
+   "city": "Assen",
+   "lat": 52.9840952,
+   "lon": 6.5428525
+  },
+  "price": "Zie organisator",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
+    "host": "debontewever.avayo.nl",
+    "seenAt": "2026-11-05"
+   }
+  ],
+  "kind": "overig",
+  "kindLabel": "Overig",
+  "tags": [],
+  "classification": {
+   "method": "geen",
+   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+   "confidence": 0.2
+  },
+  "hash": "850dfe6db891",
+  "image": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "De Bonte Wever",
+   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
+   "author": "Ronn",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
   }
  },
  {
@@ -155686,15 +155281,15 @@
     "seenAt": "2026-11-05"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "feest",
+  "kindLabel": "Feest en kermis",
   "tags": [],
   "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'informatie' op de pagina van de organisator",
-   "confidence": 0.65
+   "method": "correctie",
+   "reason": "Dagcontrole 5 november 2026: een Top 2000-avond in het café van het dorp (muziekquiz en meezingen), geen lezing.",
+   "confidence": 1.0
   },
-  "hash": "98ff5301156c",
+  "hash": "66d508f614d1",
   "image": {
    "url": "https://ferwertonline.nl/wp-content/uploads/2026/11/Scherm­afbeelding-2026-11-04-om-20.19.30-1024x580.png",
    "type": "organisator",
@@ -158051,15 +157646,15 @@
   },
   "hash": "15f8ccf640c5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Evening_Glory_%285947756052%29.jpg/1280px-Evening_Glory_%285947756052%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg/1280px-Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: Bert Kaufmann from Roermond, Netherlands · CC BY-SA 2.0 · Wikimedia Commons",
-   "author": "Bert Kaufmann from Roermond, Netherlands",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Evening_Glory_(5947756052).jpg"
+   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "G.Th. Delemarre",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_Hoofdstraat_94,_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg"
   }
  },
  {
@@ -158657,15 +158252,15 @@
   },
   "hash": "124b9c9481ad",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Molen_De_Vlijt_Zuidwolde_2.JPG/1280px-Molen_De_Vlijt_Zuidwolde_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/De_Stuw_Zuid_Wolde_%2833741259261%29.jpg/1280px-De_Stuw_Zuid_Wolde_%2833741259261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: Silver Spoon · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Silver Spoon",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molen_De_Vlijt_Zuidwolde_2.JPG"
+   "credit": "Foto: kees torn · CC BY-SA 2.0 · Wikimedia Commons",
+   "author": "kees torn",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Stuw_Zuid_Wolde_(33741259261).jpg"
   }
  },
  {
@@ -160275,15 +159870,15 @@
   },
   "hash": "2020c6c8f0b6",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg/1280px-Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Evening_Glory_%285947756052%29.jpg/1280px-Evening_Glory_%285947756052%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: Elias Canneman · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Elias Canneman",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg"
+   "credit": "Foto: Bert Kaufmann from Roermond, Netherlands · CC BY-SA 2.0 · Wikimedia Commons",
+   "author": "Bert Kaufmann from Roermond, Netherlands",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Evening_Glory_(5947756052).jpg"
   }
  },
  {
@@ -171703,56 +171298,6 @@
   }
  },
  {
-  "id": "evt_e0b7344c6e30d0",
-  "slug": "atelier-algemeen-plantenwerkgroep-zuidwolde-2026-12-28",
-  "title": "Atelier Algemeen Plantenwerkgroep",
-  "occurrences": [
-   {
-    "date": "2026-12-28",
-    "endDate": null,
-    "startTime": "13:30",
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Natuurvereniging Zuidwolde",
-   "city": "Zuidwolde",
-   "lat": 52.6571115,
-   "lon": 6.4239135
-  },
-  "price": "Zie organisator",
-  "url": "https://natuurverenigingzuidwolde.nl/agenda/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://natuurverenigingzuidwolde.nl/agenda/",
-    "host": "natuurverenigingzuidwolde.nl",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'atelier'",
-   "confidence": 0.8
-  },
-  "hash": "baf95fc73da9",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg/1280px-Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Zuidwolde",
-   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "G.Th. Delemarre",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_Hoofdstraat_94,_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg"
-  }
- },
- {
   "id": "evt_293c7ff43f9e09",
   "slug": "eindejaarsplantenjacht-zuidwolde-2026-12-28",
   "title": "Eindejaarsplantenjacht",
@@ -171793,15 +171338,15 @@
   },
   "hash": "0bb5509cd56c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg/1280px-Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Molen_De_Vlijt_Zuidwolde_2.JPG/1280px-Molen_De_Vlijt_Zuidwolde_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "G.Th. Delemarre",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_Hoofdstraat_94,_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg"
+   "credit": "Foto: Silver Spoon · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Silver Spoon",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molen_De_Vlijt_Zuidwolde_2.JPG"
   }
  },
  {
@@ -173952,15 +173497,15 @@
   },
   "hash": "79b4dd429b75",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/De_Stuw_Zuid_Wolde_%2833741259261%29.jpg/1280px-De_Stuw_Zuid_Wolde_%2833741259261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg/1280px-Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: kees torn · CC BY-SA 2.0 · Wikimedia Commons",
-   "author": "kees torn",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Stuw_Zuid_Wolde_(33741259261).jpg"
+   "credit": "Foto: Elias Canneman · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Elias Canneman",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg"
   }
  },
  {
@@ -177385,15 +176930,15 @@
   },
   "hash": "690fc9b2492f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Evening_Glory_%285947756052%29.jpg/1280px-Evening_Glory_%285947756052%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg/1280px-Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: Bert Kaufmann from Roermond, Netherlands · CC BY-SA 2.0 · Wikimedia Commons",
-   "author": "Bert Kaufmann from Roermond, Netherlands",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Evening_Glory_(5947756052).jpg"
+   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "G.Th. Delemarre",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_Hoofdstraat_94,_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225906_-_RCE.jpg"
   }
  },
  {
@@ -189258,17 +188803,17 @@
     "seenAt": "2026-11-04"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [
    "meerdaags"
   ],
   "classification": {
-   "method": "locatie",
-   "reason": "website bind.op-shop.nl",
-   "confidence": 0.6
+   "method": "correctie",
+   "reason": "Dagcontrole 5 november 2026: Kom maar, kipjes! (Kippenpret) is een voorstelling voor kleuters in de bibliotheek, geen lezing.",
+   "confidence": 1.0
   },
-  "hash": "450cb5ba69ff",
+  "hash": "37ad251523d3",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Rodervaart_vanaf_fietsbrug_Sandebuursedijk.jpg/1280px-Rodervaart_vanaf_fietsbrug_Sandebuursedijk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -210620,15 +210165,15 @@
   },
   "hash": "a808d27fc8d6",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Molen_De_Vlijt_Zuidwolde_2.JPG/1280px-Molen_De_Vlijt_Zuidwolde_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg/1280px-Boerderij_Hoofdstraat_94%2C_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: Silver Spoon · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Silver Spoon",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Molen_De_Vlijt_Zuidwolde_2.JPG"
+   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "G.Th. Delemarre",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_Hoofdstraat_94,_tegelwerk_in_de_huiskamer_-_Zuidwolde_-_20225907_-_RCE.jpg"
   }
  },
  {
@@ -223962,15 +223507,15 @@
   },
   "hash": "917b1bcd2294",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg/1280px-Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/De_Stuw_Zuid_Wolde_%2833741259261%29.jpg/1280px-De_Stuw_Zuid_Wolde_%2833741259261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Zuidwolde",
-   "credit": "Foto: Elias Canneman · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Elias Canneman",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boerderij_27_-_Zuidwolde_-_20414142_-_RCE.jpg"
+   "credit": "Foto: kees torn · CC BY-SA 2.0 · Wikimedia Commons",
+   "author": "kees torn",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Stuw_Zuid_Wolde_(33741259261).jpg"
   }
  },
  {
@@ -234139,56 +233684,6 @@
   }
  },
  {
-  "id": "evt_98565b4930f2e6",
-  "slug": "keatsferiening-reduzum-2027-03-06",
-  "title": "Keatsferiening",
-  "occurrences": [
-   {
-    "date": "2027-03-06",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Reduzum",
-   "city": "Reduzum",
-   "lat": 53.1175,
-   "lon": 5.7842
-  },
-  "price": "Zie organisator",
-  "url": "https://reduzum.com/agenda/?event_id1=60839",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://reduzum.com/agenda/?event_id1=60839",
-    "host": "reduzum.com",
-    "seenAt": "2026-11-05"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "d28e3fb25cb0",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_01.jpg/1280px-Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Reduzum",
-   "credit": "Foto: Agnes Monkelbaan · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Agnes Monkelbaan",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenksteen_in_Roordahuizum,_23-03-2026._(actm.)_01.jpg"
-  }
- },
- {
   "id": "evt_a1b9c934c4e074",
   "slug": "legends-of-rock-tribute-festival-xl-leeuwarden-2027-03-06",
   "title": "LEGENDS of ROCK Tribute Festival XL",
@@ -235072,7 +234567,7 @@
   },
   "hash": "fd7c78dee800",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_02.jpg/1280px-Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_01.jpg/1280px-Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Reduzum",
@@ -235080,7 +234575,7 @@
    "author": "Agnes Monkelbaan",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenksteen_in_Roordahuizum,_23-03-2026._(actm.)_02.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenksteen_in_Roordahuizum,_23-03-2026._(actm.)_01.jpg"
   }
  },
  {
@@ -237989,15 +237484,15 @@
   },
   "hash": "a9d4f6776499",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Drinkhoorn_roordahuizum.JPG/1280px-Drinkhoorn_roordahuizum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_02.jpg/1280px-Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Reduzum",
-   "credit": "Foto: Arch · Public domain · Wikimedia Commons",
-   "author": "Arch",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drinkhoorn_roordahuizum.JPG"
+   "credit": "Foto: Agnes Monkelbaan · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Agnes Monkelbaan",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenksteen_in_Roordahuizum,_23-03-2026._(actm.)_02.jpg"
   }
  },
  {
@@ -288076,15 +287571,15 @@
   },
   "hash": "c9bec5655ca2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/2022_Reduzum%2C_Haedstrjitte.jpg/1280px-2022_Reduzum%2C_Haedstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Drinkhoorn_roordahuizum.JPG/1280px-Drinkhoorn_roordahuizum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Reduzum",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Reduzum,_Haedstrjitte.jpg"
+   "credit": "Foto: Arch · Public domain · Wikimedia Commons",
+   "author": "Arch",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drinkhoorn_roordahuizum.JPG"
   }
  },
  {
@@ -298264,15 +297759,15 @@
   },
   "hash": "1d50cfea86b2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_01.jpg/1280px-Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/2022_Reduzum%2C_Haedstrjitte.jpg/1280px-2022_Reduzum%2C_Haedstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Reduzum",
-   "credit": "Foto: Agnes Monkelbaan · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Agnes Monkelbaan",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenksteen_in_Roordahuizum,_23-03-2026._(actm.)_01.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Reduzum,_Haedstrjitte.jpg"
   }
  },
  {
@@ -305350,7 +304845,7 @@
   },
   "hash": "b62143a41ebe",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_02.jpg/1280px-Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_01.jpg/1280px-Gedenksteen_in_Roordahuizum%2C_23-03-2026._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Reduzum",
@@ -305358,7 +304853,7 @@
    "author": "Agnes Monkelbaan",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenksteen_in_Roordahuizum,_23-03-2026._(actm.)_02.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenksteen_in_Roordahuizum,_23-03-2026._(actm.)_01.jpg"
   }
  },
  {

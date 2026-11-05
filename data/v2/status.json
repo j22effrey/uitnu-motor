@@ -1,17 +1,17 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-05T01:47:03+00:00",
+ "refreshedAt": "2026-11-05T05:48:12+00:00",
  "today": "2026-11-05",
- "total": 6255,
+ "total": 6245,
  "bewaardVanVorigeKeer": {
   "scfraneker.nl": 16,
   "vvdronrijp.nl": 9
  },
  "inputRecords": 12562,
  "outsideArea": 9,
- "geenUitje": 4154,
+ "geenUitje": 4165,
  "vasteActiviteit": 1244,
- "vertaling": 11,
+ "vertaling": 10,
  "teVerVooruit": 297,
  "uitgeslotenBron": 3,
  "onleesbaar": [],
@@ -30,17 +30,17 @@
   "radiusKm": 110
  },
  "byKind": {
-  "muziek": 1628,
+  "muziek": 1625,
   "theater": 1430,
   "film": 645,
-  "lezing": 552,
-  "feest": 385,
-  "sport": 284,
-  "kinderen": 281,
-  "kunst": 277,
+  "lezing": 550,
+  "feest": 386,
+  "kinderen": 282,
+  "sport": 281,
+  "kunst": 276,
   "markt": 250,
-  "overig": 225,
-  "natuur": 176,
+  "overig": 223,
+  "natuur": 175,
   "eten": 64,
   "festival": 58
  },
@@ -48,7 +48,7 @@
   "Groningen": 1579,
   "Leeuwarden": 605,
   "Drachten": 305,
-  "Assen": 205,
+  "Assen": 202,
   "Emmen": 201,
   "Sneek": 199,
   "Winschoten": 142,
@@ -83,9 +83,9 @@
   "Balk": 19,
   "Noordwolde": 19,
   "Kollum": 19,
-  "Reduzum": 19,
   "Dokkum": 19,
   "Opende": 18,
+  "Reduzum": 18,
   "Holwert": 18,
   "Wier": 17,
   "Vries": 17,
@@ -98,7 +98,6 @@
   "Joure": 15,
   "Burgum": 15,
   "Oosterend": 15,
-  "Zuidwolde": 14,
   "Onstwedde": 14,
   "Hoogeveen": 14,
   "Lemmer": 14,
@@ -114,6 +113,7 @@
   "Ter Apel": 11,
   "Borger": 11,
   "Lauwersoog": 11,
+  "Zuidwolde": 11,
   "Wildervank": 11,
   "Offingawier": 11,
   "Bontebok": 11,
@@ -180,7 +180,6 @@
   "Koekangerveld": 6,
   "Fochteloo": 6,
   "Nieuw-Roden": 6,
-  "Exmorra": 6,
   "Emmer-Compascuum": 6,
   "Gramsbergen": 6,
   "De Westereen": 6,
@@ -252,6 +251,7 @@
   "Vlagtwedde": 3,
   "Marssum": 3,
   "Garsthuizen": 3,
+  "Exmorra": 3,
   "Noordscheschut": 3,
   "Baflo": 3,
   "Tjuchem": 3,
@@ -438,11 +438,11 @@
   "itfryskegea.nl": 29,
   "kunsthalle-emden.de": 28,
   "filmkerkwolvega.nl": 28,
-  "debontewever.nl": 27,
   "rottevalle.com": 26,
   "tumultgroningen.nl": 26,
   "waark.nl": 25,
   "jubbega-hoornsterzwaag.nl": 25,
+  "debontewever.nl": 25,
   "scharnegoutum.nl": 25,
   "jongeharten.nl": 25,
   "sneek.nl": 24,
@@ -458,11 +458,11 @@
   "onstwedde.info": 18,
   "scfraneker.nl": 18,
   "houtstad-ijlst.nl": 18,
-  "reduzum.com": 18,
   "skans.nl": 18,
   "giethoorn.com": 17,
   "ticketshop.barontheater.nl": 17,
   "ioannistheatertsjerkewier.nl": 17,
+  "reduzum.com": 17,
   "delantearne.nl": 17,
   "skutsjesilen.nl": 17,
   "groningerlandschap.nl": 16,
@@ -493,7 +493,6 @@
   "uithuizermeeden.nl": 12,
   "dorpsbelangenschildwolde.nl": 12,
   "dorpsbelangschiermonnikoog.nl": 12,
-  "natuurverenigingzuidwolde.nl": 11,
   "warten.nl": 11,
   "offingawier.nl": 11,
   "klameare-workum.nl": 11,
@@ -533,6 +532,7 @@
   "victoriaparkwolvega.nl": 8,
   "detiid.nl": 8,
   "visvliet.com": 8,
+  "natuurverenigingzuidwolde.nl": 8,
   "veendam.nl": 8,
   "minnertsga.frl": 8,
   "synagogegroningen.nl": 8,
@@ -577,7 +577,6 @@
   "schoonloo.com": 6,
   "koekangerveld.com": 6,
   "nieuwroden.nu": 6,
-  "exmorra.info": 6,
   "plazasportzassen.nl": 6,
   "itjoo.nl": 6,
   "niehove.eu": 6,
@@ -666,6 +665,7 @@
   "centrumwinschoten.nl": 3,
   "garsthuizen.info": 3,
   "glasuniek.nl": 3,
+  "exmorra.info": 3,
   "terschelling.nl": 3,
   "noordscheschut.com": 3,
   "tjuchem.net": 3,
@@ -820,7 +820,6 @@
   "norden.de": 1,
   "touristik-leer.de": 1,
   "dorpshuiskolham.nl": 1,
-  "bolderman.nl": 1,
   "debrinkpub.nl": 1,
   "wintergoud.nl": 1,
   "redevents.world": 1,
@@ -902,10 +901,10 @@
  },
  "photos": {
   "organisator": 2061,
-  "wikimedia": 4034,
+  "wikimedia": 4024,
   "zonder": 135
  },
- "twijfel": 749,
+ "twijfel": 746,
  "groot": {
   "aantal": 83,
   "redenen": {
@@ -945,9 +944,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 37,
-  "changed": 162,
-  "removed": 58
+  "new": 0,
+  "changed": 4,
+  "removed": 10
  },
  "gate": {
   "passed": true,
@@ -955,7 +954,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "6255 nu, 6231 vorige keer (minimaal 85%)"
+    "detail": "6245 nu, 6255 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -965,7 +964,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "225 van 6255 (4%)"
+    "detail": "223 van 6245 (4%)"
    },
    {
     "name": "velden_compleet",
