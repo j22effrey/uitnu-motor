@@ -20,21 +20,21 @@
   ]
  },
  {
-  "id": "evt_da6659fd010c6f",
-  "title": "Even Offline",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774474/Even-Offline.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_58b11a19677cef",
   "title": "Even Offline",
   "kind": "lezing",
   "reason": "website ticketing.groningsebibliotheken.nl",
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774372/Even-Offline.html",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_da6659fd010c6f",
+  "title": "Even Offline",
+  "kind": "lezing",
+  "reason": "website ticketing.groningsebibliotheken.nl",
+  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774686/Even-Offline.html",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -60,31 +60,11 @@
   ]
  },
  {
-  "id": "evt_b1d85ea3a0a1d8",
-  "title": "De nieuwe hoop: het heft in handen",
-  "kind": "kunst",
-  "reason": "oude categorie 'expo'",
-  "url": "https://forum.nl/nl/agenda/de-nieuwe-hoop-het-heft-in-handen?date=06-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_84496af65b6c84",
   "title": "Blijer oerke",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://blije.frl/evenement/blijer-oerke-3",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_0dbab3b8153983",
-  "title": "Floris Alkemade - Hoe maak je als regio een schaalsprong?",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/floris-alkemade-hoe-maak-je-als-regio-een-schaalsprong?date=06-11-2026",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1417,6 +1397,16 @@
   ]
  },
  {
+  "id": "evt_ea7f6be1899295",
+  "title": "Houtbewerking",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://oldeberkoop.frl/evenement/houtbewerking",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_05274bbb0e398b",
   "title": "Tien",
   "kind": "theater",
@@ -1502,6 +1492,16 @@
   "kind": "theater",
   "reason": "website huisorlando.nl",
   "url": "https://www.huisorlando.nl/productie-agamemnon/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_4d277ab57f797d",
+  "title": "Groot huisbezoek Hijken-Hooghalen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.pgbeilen.nl/agenda/groot-huisbezoek-hijken-hooghalen/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3487,8 +3487,8 @@
   ]
  },
  {
-  "id": "evt_8ca572117b1871",
-  "title": "Fortnite Esports x Real Life",
+  "id": "evt_3ca7edc7616b24",
+  "title": "Fortnite E-sports x Real Life",
   "kind": "sport",
   "reason": "website bvsport.nl",
   "url": "https://www.bvsport.nl/events/fortnite-esports-x-real-life/",
@@ -3727,6 +3727,17 @@
   ]
  },
  {
+  "id": "evt_a947165a433b6b",
+  "title": "Spring festival",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
   "id": "evt_813fdf55273fac",
   "title": "Springfestijn 25",
   "kind": "overig",
@@ -3802,6 +3813,16 @@
   "kind": "feest",
   "reason": "website stadslabgroningen.nl",
   "url": "https://stadslabgroningen.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_20db7cdaaad232",
+  "title": "OUD & NIEUW Dansen bij Martinus",
+  "kind": "muziek",
+  "reason": "website brouwerijmartinus.nl",
+  "url": "https://www.brouwerijmartinus.nl/agenda/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3933,6 +3954,16 @@
   "kind": "sport",
   "reason": "website lycurgus.nl",
   "url": "https://www.lycurgus.nl/wedstrijden/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_e1d3ae22fa7cb0",
+  "title": "Master Pullz Assen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://masterpullz.com/beurs/mp-assen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4298,16 +4329,6 @@
   ]
  },
  {
-  "id": "evt_79b391bbf710c3",
-  "title": "Kim Schuddeboom",
-  "kind": "theater",
-  "reason": "website theaterroden.nl",
-  "url": "https://theaterroden.nl/hardleers",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_de505d0d1b38f1",
   "title": "Fryske gedichten schrijven met Arjan Hut",
   "kind": "lezing",
@@ -4328,31 +4349,11 @@
   ]
  },
  {
-  "id": "evt_ae6d1efe61e692",
-  "title": "Sonus Meteor Shower",
-  "kind": "kunst",
-  "reason": "oude categorie 'expo'",
-  "url": "https://tumultgroningen.nl/agenda/sonus-meteor-shower",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_63a44d15d81adb",
   "title": "Thijs Kemperink",
   "kind": "theater",
   "reason": "website ticketshop.barontheater.nl",
   "url": "https://ticketshop.barontheater.nl/programma/thijs-kemperink-727",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_9fd657c96a5083",
-  "title": "Govert de Roos",
-  "kind": "theater",
-  "reason": "website theaterhofpoort.nl",
-  "url": "https://www.theaterhofpoort.nl/govert-de-roos",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4395,17 +4396,6 @@
   "url": "https://www.plazasportzassen.nl/agenda/masterclass-padel-experience",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_09d86900ff0e85",
-  "title": "Deelname aan het Frysk Harmony Festival",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.harmoniedokkum.nl/index.php/event/deelname-aan-het-frysk-harmony-festival-heerenveen/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
@@ -6638,6 +6628,26 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://delantearne.nl/evenementen/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_ec0b51c64eba28",
+  "title": "Assen Card Convention",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.debontewever.nl/nl/events/assen-card-convention-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_4d3d4688086788",
+  "title": "Assen Card Convention",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.assencardconvention.nl/standhouders",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
