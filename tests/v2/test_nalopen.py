@@ -436,3 +436,42 @@ def test_dagcontrole_6_november_echte_uitjes_blijven_staan():
     for title in ("Weihnachtsmarkt in Visquard", "Kerstmarkt Hooghalen", "Boerenmarkt met live muziek", "Thuiskeuken workshop: sushi maken",
                   "DorpsStee Kerstconcert", "Wochenmarkt in Pewsum"):
         assert not not_an_outing(_event(title)), title
+
+
+def test_herstelde_link_is_geen_lege_bron():
+    # 6 november 2026: de dagcontrole herstelde 'https://www.greetsiel.dehttps://www.greetsiel.de/...'. Het webadres van
+    # die uitjes werd 'greetsiel.de' in plaats van 'greetsiel.dehttps:'; de keuring zag de oude naam als lege bron en
+    # hield twee rondes alles tegen. Staan de uitjes er nog (zelfde id of adres), dan is de bron niet leeg.
+    from collections import Counter
+    from pipeline.v2.build import carry_over
+    from pipeline.v2.gate import dropped_hosts, run_gate
+
+    def event(i, host, title=None):
+        return {"id": f"{host}{i}", "slug": f"{host}-{i}", "title": title or f"Uitje {i}", "kind": "markt",
+                "url": f"https://{host}/agenda/{i}", "occurrences": [{"date": "2026-11-20"}],
+                "venue": {"city": "Greetsiel"}, "sources": [{"host": host, "url": f"https://{host}/agenda/{i}"}]}
+    renamed = [{**event(i, "greetsiel.dehttps:"), "id": f"g{i}", "slug": f"greetsiel-{i}"} for i in range(12)]
+    empty = [event(i, "podium.example", f"Concert {i}") for i in range(12)]
+    matches = [event(i, "club.example", f"Club JO1{i}-1 - Gasten JO1{i}-2") for i in range(12)]
+    previous = renamed + empty + matches
+    new = [{**event(i, "greetsiel.de"), "id": f"g{i}", "slug": f"greetsiel-{i}"} for i in range(12)]
+    delivered = Counter({"greetsiel.de": 12})
+    dropped = dropped_hosts(new, previous, "2026-11-06", delivered=delivered)
+    assert sorted(dropped) == ["club.example", "greetsiel.dehttps:", "podium.example"]
+    before = {c["name"]: c["passed"] for c in run_gate(new, previous, "2026-11-06", delivered=delivered)["checks"]}
+    assert before["geen_bron_ineens_leeg"] is False
+
+    carried, covered, ruled_out, delivered = carry_over(new, previous, dropped, "2026-11-06", delivered)
+    # De hernoemde bron staat er nog; de echt lege bron houdt zijn uitjes van de vorige keer (zoals eerder);
+    # de jeugdwedstrijden van een club gaan door de regels van nu en blijven niet staan (vaste regel 4).
+    assert covered == {"greetsiel.dehttps:": 12}
+    assert carried == {"podium.example": 12}
+    assert ruled_out == {"club.example": 12}
+    assert len(new) == 24 and not any("JO1" in e["title"] for e in new)
+    checks = {c["name"]: c["passed"] for c in run_gate(new, previous, "2026-11-06", delivered=delivered)["checks"]}
+    assert checks["geen_bron_ineens_leeg"]
+
+    # Een wedstrijd op de sites van beide clubs telt voor allebei.
+    both = {**matches[0], "id": "x", "slug": "x", "sources": [{"host": "club.example"}, {"host": "andere.example"}]}
+    _, _, ruled_out, _ = carry_over([], [both], ["club.example", "andere.example"], "2026-11-06", Counter())
+    assert ruled_out == {"club.example": 1, "andere.example": 1}
