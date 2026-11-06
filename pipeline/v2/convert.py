@@ -67,6 +67,13 @@ TICKET_HOSTS = re.compile(r"(?:^|\.)(?:stager\.co|ticketmaster\.\w+|eventix\.io|
 def _web_link(value) -> str | None:
     """Een link zoals de organisator hem gaf, of None als het geen echt webadres is (of een kaartverkoopsite)."""
     link = str(value or "").strip()
+    # Een website die twee keer voor de link staat ('https://www.greetsiel.dehttps://www.greetsiel.de/erlebnisse/...'):
+    # het tweede adres is het goede. (Dagcontrole 6 november 2026: 12 uitjes met een kapotte link.)
+    while True:   # ook drie keer achter elkaar
+        doubled = re.match(r"^https?://([^/?#]+)(?:/[^?#]*?)?(https?://\1(?:[/?#].*)?)$", link)
+        if not doubled:
+            break
+        link = doubled.group(2)
     if not canonical_url(link) or TICKET_HOSTS.search(_host(link) or ""):
         return None
     return link

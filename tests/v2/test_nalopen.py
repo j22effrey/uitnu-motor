@@ -411,3 +411,28 @@ def test_plusje_voor_de_naam_valt_weg_en_soorten():
     assert clean_title("A+B Festival") == "A+B Festival"
     for title, kind in (("Kom maar, kipjes! | Kippenpret", "kinderen"), ("Top 2000 Krystkafee", "feest")):
         assert classify(_event(title), OVERRIDES)["kind"] == kind, title
+
+
+# Dagcontrole 6 november 2026 (111 nieuwe uitjes): kapotte dubbele link, vrijwilligersdag, dorpshuisroutines.
+def test_dubbele_website_voor_de_link_wordt_hersteld():
+    from pipeline.v2.convert import _web_link
+    assert _web_link("https://www.greetsiel.dehttps://www.greetsiel.de/erlebnisse/veranstaltungskalender") == \
+        "https://www.greetsiel.de/erlebnisse/veranstaltungskalender"
+    assert _web_link("https://www.landesmuseum-emden.de/veranstaltungenhttps://www.landesmuseum-emden.de/veranstaltungen") == \
+        "https://www.landesmuseum-emden.de/veranstaltungen"
+    assert _web_link("https://www.landesmuseum-emden.dehttps://www.landesmuseum-emden.de/veranstaltungenhttps://www.landesmuseum-emden.de/veranstaltungen") == \
+        "https://www.landesmuseum-emden.de/veranstaltungen"
+    assert _web_link("https://a.de/x/https://a.de.example") == "https://a.de/x/https://a.de.example"
+    assert _web_link("https://dorp.example/agenda/x?url=https://elders.example/") == "https://dorp.example/agenda/x?url=https://elders.example/"
+
+
+def test_dagcontrole_6_november_geen_uitje():
+    for title in ("SW Doet", "NL Doet", "DorpsStee", "Thuiskamer", "Thuiskeuken",
+                  "H'Andel Winkel", "Ontmoet elkaar in de Ontmoeting"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_6_november_echte_uitjes_blijven_staan():
+    for title in ("Weihnachtsmarkt in Visquard", "Kerstmarkt Hooghalen", "Boerenmarkt met live muziek", "Thuiskeuken workshop: sushi maken",
+                  "DorpsStee Kerstconcert", "Wochenmarkt in Pewsum"):
+        assert not not_an_outing(_event(title)), title
