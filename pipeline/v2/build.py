@@ -216,25 +216,28 @@ def carry_over(events: list[dict], previous: list[dict], dropped: list[str], tod
     keys = {merge_key(e) for e in events}
     for old in previous:
         hosts_of = {s.get("host") for s in old.get("sources") or []}
-        host = next((h for h in dropped if h in hosts_of), None)
+        # Alle lege bronnen van dit uitje tellen mee (een wedstrijd kan op de sites van beide clubs staan).
+        hosts = [h for h in dropped if h in hosts_of]
         running = any((o.get("endDate") or o.get("date") or "") >= today for o in old.get("occurrences") or [])
-        if not (host and running):
+        if not (hosts and running):
             continue
         if old["id"] in have or old.get("slug") in slugs or merge_key(old) in keys:
             # Het uitje staat er nog, alleen onder een ander webadres (een herstelde link: 'greetsiel.dehttps:'
             # werd 'greetsiel.de', 6 november 2026). Dan is de bron niet leeg.
-            covered[host] = covered.get(host, 0) + 1
-            continue
-        if not_an_outing(old):
-            # Een bewaard uitje gaat ook door de regels van nu: de jeugd- en seniorenwedstrijden van SC Franeker en
-            # vv Dronrijp bleven anders elke ronde staan, terwijl ze geen uitje zijn (vaste regel 4; 6 november 2026).
-            ruled_out[host] = ruled_out.get(host, 0) + 1
-            continue
-        events.append(old)
-        have.add(old["id"])
-        slugs.add(old.get("slug"))
-        keys.add(merge_key(old))
-        carried[host] = carried.get(host, 0) + 1
+            tally = covered
+        elif not_an_outing(old):
+            # Een bewaard uitje gaat ook door de regels van nu (not_an_outing): de jeugd- en seniorenwedstrijden van
+            # SC Franeker en vv Dronrijp bleven anders elke ronde staan, terwijl ze geen uitje zijn (vaste regel 4;
+            # 6 november 2026).
+            tally = ruled_out
+        else:
+            events.append(old)
+            have.add(old["id"])
+            slugs.add(old.get("slug"))
+            keys.add(merge_key(old))
+            tally = carried
+        for host in hosts:
+            tally[host] = tally.get(host, 0) + 1
     return carried, covered, ruled_out, delivered + Counter(carried) + Counter(covered) + Counter(ruled_out)
 
 

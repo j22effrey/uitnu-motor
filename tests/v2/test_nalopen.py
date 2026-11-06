@@ -458,7 +458,8 @@ def test_herstelde_link_is_geen_lege_bron():
     delivered = Counter({"greetsiel.de": 12})
     dropped = dropped_hosts(new, previous, "2026-11-06", delivered=delivered)
     assert sorted(dropped) == ["club.example", "greetsiel.dehttps:", "podium.example"]
-    assert not run_gate(new, previous, "2026-11-06", delivered=delivered)["passed"]
+    before = {c["name"]: c["passed"] for c in run_gate(new, previous, "2026-11-06", delivered=delivered)["checks"]}
+    assert before["geen_bron_ineens_leeg"] is False
 
     carried, covered, ruled_out, delivered = carry_over(new, previous, dropped, "2026-11-06", delivered)
     # De hernoemde bron staat er nog; de echt lege bron houdt zijn uitjes van de vorige keer (zoals eerder);
@@ -469,3 +470,8 @@ def test_herstelde_link_is_geen_lege_bron():
     assert len(new) == 24 and not any("JO1" in e["title"] for e in new)
     checks = {c["name"]: c["passed"] for c in run_gate(new, previous, "2026-11-06", delivered=delivered)["checks"]}
     assert checks["geen_bron_ineens_leeg"]
+
+    # Een wedstrijd op de sites van beide clubs telt voor allebei.
+    both = {**matches[0], "id": "x", "slug": "x", "sources": [{"host": "club.example"}, {"host": "andere.example"}]}
+    _, _, ruled_out, _ = carry_over([], [both], ["club.example", "andere.example"], "2026-11-06", Counter())
+    assert ruled_out == {"club.example": 1, "andere.example": 1}
