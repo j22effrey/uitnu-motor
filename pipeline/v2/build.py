@@ -201,6 +201,43 @@ def convert_all(raw: list[dict], today: date) -> tuple[list[dict], list[str]]:
     return converted, broken
 
 
+def carry_over(events: list[dict], previous: list[dict], dropped: list[str], today: str,
+               delivered: Counter) -> tuple[dict, dict, dict, Counter]:
+    """Een bron die ineens leeg is: zijn komende uitjes van de vorige keer blijven staan (voegt ze toe aan events).
+    Geeft terug, per website: hoeveel uitjes bewaard zijn, hoeveel er nog staan onder een ander webadres, hoeveel
+    een regel nu weglaat; en 'delivered' bijgewerkt voor de keuring (in alle drie gevallen is de bron niet kapot)."""
+    carried: dict[str, int] = {}
+    covered: dict[str, int] = {}
+    ruled_out: dict[str, int] = {}
+    have = {e["id"] for e in events}
+    # Niet dubbel: hetzelfde uitje kan nu via een andere website binnenkomen (andere id), en een adres
+    # (slug) mag maar één keer voorkomen.
+    slugs = {e.get("slug") for e in events}
+    keys = {merge_key(e) for e in events}
+    for old in previous:
+        hosts_of = {s.get("host") for s in old.get("sources") or []}
+        host = next((h for h in dropped if h in hosts_of), None)
+        running = any((o.get("endDate") or o.get("date") or "") >= today for o in old.get("occurrences") or [])
+        if not (host and running):
+            continue
+        if old["id"] in have or old.get("slug") in slugs or merge_key(old) in keys:
+            # Het uitje staat er nog, alleen onder een ander webadres (een herstelde link: 'greetsiel.dehttps:'
+            # werd 'greetsiel.de', 6 november 2026). Dan is de bron niet leeg.
+            covered[host] = covered.get(host, 0) + 1
+            continue
+        if not_an_outing(old):
+            # Een bewaard uitje gaat ook door de regels van nu: de jeugd- en seniorenwedstrijden van SC Franeker en
+            # vv Dronrijp bleven anders elke ronde staan, terwijl ze geen uitje zijn (vaste regel 4; 6 november 2026).
+            ruled_out[host] = ruled_out.get(host, 0) + 1
+            continue
+        events.append(old)
+        have.add(old["id"])
+        slugs.add(old.get("slug"))
+        keys.add(merge_key(old))
+        carried[host] = carried.get(host, 0) + 1
+    return carried, covered, ruled_out, delivered + Counter(carried) + Counter(covered) + Counter(ruled_out)
+
+
 def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] | None = None,
           photo_cache: dict | None = None, names: dict[str, str] | None = None,
           venue_kinds: dict[str, str] | None = None, retired: set[str] | None = None) -> tuple[list[dict], dict]:
@@ -280,25 +317,11 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
     in_area_previous = [e for e in previous if in_area(e)] if previous else previous
     # Een enkele bron die ineens leeg is: zijn uitjes van de vorige keer blijven staan (zie gate.MAX_CARRIED_HOSTS).
     carried: dict[str, int] = {}
+    covered: dict[str, int] = {}
+    ruled_out: dict[str, int] = {}
     dropped = dropped_hosts(events, in_area_previous, today.isoformat(), retired_hosts=gone, delivered=delivered)
     if dropped and len(dropped) <= MAX_CARRIED_HOSTS:
-        have = {e["id"] for e in events}
-        # Niet dubbel: hetzelfde uitje kan nu via een andere website binnenkomen (andere id), en een adres
-        # (slug) mag maar één keer voorkomen.
-        slugs = {e.get("slug") for e in events}
-        keys = {merge_key(e) for e in events}
-        for old in in_area_previous:
-            hosts_of = {s.get("host") for s in old.get("sources") or []}
-            host = next((h for h in dropped if h in hosts_of), None)
-            running = any((o.get("endDate") or o.get("date") or "") >= today.isoformat() for o in old.get("occurrences") or [])
-            if (host and running and old["id"] not in have and old.get("slug") not in slugs
-                    and merge_key(old) not in keys):
-                events.append(old)
-                have.add(old["id"])
-                slugs.add(old.get("slug"))
-                keys.add(merge_key(old))
-                carried[host] = carried.get(host, 0) + 1
-        delivered = delivered + Counter({h: n for h, n in carried.items()})
+        carried, covered, ruled_out, delivered = carry_over(events, in_area_previous, dropped, today.isoformat(), delivered)
         events.sort(key=lambda e: (e["occurrences"][0]["date"], e["occurrences"][0].get("startTime") or "", e["title"]))
     gate = run_gate(events, in_area_previous, today.isoformat(), retired_hosts=gone, delivered=delivered)
 
@@ -317,6 +340,10 @@ def build(data_dir: Path, out_dir: Path, today: date, overrides: dict[str, str] 
         "total": len(events),
         # Bronnen die ineens leeg waren: hun uitjes van de vorige keer bleven staan (nakijken in het onderhoud).
         "bewaardVanVorigeKeer": carried,
+        # Bron leverde niets, maar de uitjes staan er nog onder een ander webadres (nakijken of de bron nog werkt).
+        "nogAanwezigAnderAdres": covered,
+        # Bron leverde niets, en wat er vorige keer stond laat een regel van nu weg (dus niet bewaard).
+        "nietBewaardDoorRegel": ruled_out,
         "inputRecords": len(raw),
         "outsideArea": len(outside),
         "geenUitje": len(skipped),
