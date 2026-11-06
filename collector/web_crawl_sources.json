@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16359,6 +16359,46 @@
         "lon": 6.9161152
       },
       "policyReviewedAt": "2026-11-05"
+    },
+    {
+      "id": "dotgroningen-nl-web",
+      "name": "DOT Groningen",
+      "rootUrl": "https://dotgroningen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "dotgroningen.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-11-06"
+    },
+    {
+      "id": "vvsoostwold-nl-web",
+      "name": "Sportcomplex VVS",
+      "rootUrl": "https://www.vvsoostwold.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.vvsoostwold.nl/activiteitenkalender"
+      },
+      "activatedFromCandidate": "vvsoostwold.nl",
+      "defaultPlace": {
+        "venue": "Sportcomplex VVS",
+        "city": "Oostwold",
+        "lat": 53.1994468,
+        "lon": 7.0494038
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-11-06"
     }
   ]
 }
