@@ -413,7 +413,7 @@ def test_plusje_voor_de_naam_valt_weg_en_soorten():
         assert classify(_event(title), OVERRIDES)["kind"] == kind, title
 
 
-# Dagcontrole 6 november 2026 (111 nieuwe uitjes): kapotte link, weekmarkt, dorpshuisroutines.
+# Dagcontrole 6 november 2026 (111 nieuwe uitjes): kapotte dubbele link, vrijwilligersdag, dorpshuisroutines.
 def test_dubbele_website_voor_de_link_wordt_hersteld():
     from pipeline.v2.convert import _web_link
     assert _web_link("https://www.greetsiel.dehttps://www.greetsiel.de/erlebnisse/veranstaltungskalender") == \
@@ -422,6 +422,7 @@ def test_dubbele_website_voor_de_link_wordt_hersteld():
         "https://www.landesmuseum-emden.de/veranstaltungen"
     assert _web_link("https://www.landesmuseum-emden.dehttps://www.landesmuseum-emden.de/veranstaltungenhttps://www.landesmuseum-emden.de/veranstaltungen") == \
         "https://www.landesmuseum-emden.de/veranstaltungen"
+    assert _web_link("https://a.de/x/https://a.de.example") == "https://a.de/x/https://a.de.example"
     assert _web_link("https://dorp.example/agenda/x?url=https://elders.example/") == "https://dorp.example/agenda/x?url=https://elders.example/"
 
 

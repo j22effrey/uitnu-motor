@@ -70,7 +70,7 @@ def _web_link(value) -> str | None:
     # Een website die twee keer voor de link staat ('https://www.greetsiel.dehttps://www.greetsiel.de/erlebnisse/...'):
     # het tweede adres is het goede. (Dagcontrole 6 november 2026: 12 uitjes met een kapotte link.)
     while True:   # ook drie keer achter elkaar
-        doubled = re.match(r"^https?://([^/?#]+)(?:/[^?#]*?)?(https?://\1.*)$", link)
+        doubled = re.match(r"^https?://([^/?#]+)(?:/[^?#]*?)?(https?://\1(?:[/?#].*)?)$", link)
         if not doubled:
             break
         link = doubled.group(2)
