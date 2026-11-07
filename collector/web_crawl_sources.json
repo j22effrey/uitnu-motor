@@ -752,6 +752,34 @@
       "activatedFromCandidate": "forum.nl"
     },
     {
+      "id": "forum-nl-letsgro",
+      "name": "Forum Groningen (Let's Gro, buiten het gebouw)",
+      "rootUrl": "https://forum.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "extractorHint": "html_cards",
+      "extractorConfig": {
+        "endpointUrl": "https://forum.nl/nl/lets-gro-timetable",
+        "card": "<li>\\s*<a href=\"\"",
+        "fields": {
+          "title": "<span class=\"title\">([^<]+)</span>",
+          "id": "data-id=\"(\\d+)\"",
+          "url": "data-ticket-link=\"([^\"]+)\"",
+          "date": "data-date=\"(\\d{2}-\\d{2}-20\\d{2})\"",
+          "time": "data-start=\"[^\" ]+ (\\d{1,2}:\\d{2})\"",
+          "end": "data-end=\"[^\" ]+ (\\d{1,2}:\\d{2})\"",
+          "venue": "data-location=\"([^\"]+)\""
+        },
+        "skipTitle": "^mensa$|\\bloket\\b"
+      },
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "note": "Het programma van Let's Gro (begin november) buiten het gebouw: Tumult, Niemeyer, Nieuwe Markt, de Haddingestraatgarage, ... Forum's eigen agenda (forum-nl-web) leest alleen het gebouw zelf; de volledige agenda noemt de plek van deze uitjes niet. Buiten het festival staat hier niets: 0 uitjes is dan gewoon. Mensa (samen eten) en het loket vallen weg. Les van de silent disco in de Haddingestraatgarage (6 november 2026), die ontbrak.",
+      "policyReviewedAt": "2026-11-07",
+      "minDelaySeconds": 0.5
+    },
+    {
       "id": "wildlands-nl-web",
       "name": "Tweestryd",
       "rootUrl": "https://www.wildlands.nl/",
