@@ -475,3 +475,17 @@ def test_herstelde_link_is_geen_lege_bron():
     both = {**matches[0], "id": "x", "slug": "x", "sources": [{"host": "club.example"}, {"host": "andere.example"}]}
     _, _, ruled_out, _ = carry_over([], [both], ["club.example", "andere.example"], "2026-11-06", Counter())
     assert ruled_out == {"club.example": 1, "andere.example": 1}
+
+
+# Dagcontrole 7 november 2026 (115 nieuwe uitjes): clubprogramma's, rummiclub, scootmobieltraining, huisbezoek.
+def test_dagcontrole_7_november_geen_uitje():
+    for title in ("Programma thuis", "Selecties zaterdag", "Matchday", "VVS O11-1JM", "Museum open in 2027", "Klaver-rummiclub",
+                  "Scootmobieltraining Zuidhorn", "Groot huisbezoek Hijken-Hooghalen"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_7_november_echte_uitjes_blijven_staan():
+    for title in ("Museum open in 2027: nieuwe expositie", "Rummikub toernooi voor iedereen", "Matchday live: concert na afloop",
+                  "Programma thuis in Concert", "Klaver-rummiclub toernooi", "Selecties zaterdag: open dag",
+                  "Huisbezoek van Sinterklaas", "Scootmobieltocht Westerkwartier", "Scootmobielrally", "Mo1-2", "Jazz J5-3", "M83-1"):
+        assert not not_an_outing(_event(title)), title
