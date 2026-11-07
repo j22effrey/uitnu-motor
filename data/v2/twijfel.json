@@ -170,16 +170,6 @@
   ]
  },
  {
-  "id": "evt_97580d9396c7ae",
-  "title": "Draken&Dobbelstenen",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774140/Draken&Dobbelstenen.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_baf0ebdc5d714d",
   "title": "Kleding– en snuisterijen verkoop, Marnehoes",
   "kind": "overig",
@@ -230,16 +220,6 @@
   ]
  },
  {
-  "id": "evt_223fcc96c5c8e6",
-  "title": "Een AI-fabriek voor Groningen",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/een-ai-fabriek-voor-groningen?date=07-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_7b19a652cf48c0",
   "title": "Stadmakers van morgen – van manifest naar werktafel",
   "kind": "overig",
@@ -265,16 +245,6 @@
   "kind": "theater",
   "reason": "oude categorie 'theater'",
   "url": "https://vlechttheater.nl/product/699985b7df527/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_ac2be0951514a4",
-  "title": "De wichter van Champ Clark",
-  "kind": "theater",
-  "reason": "website waark.nl",
-  "url": "https://www.waark.nl/speellijst/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1060,6 +1030,16 @@
   "kind": "theater",
   "reason": "website waark.nl",
   "url": "https://www.waark.nl/speellijst/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_0cc05f718bbe3a",
+  "title": "Hjerstkonsert Concordia de Gaastmar + Pubkwis",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.degaastmar.nl/evenement/najaarsconcert-concordia-de-gaastmar/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1980,6 +1960,16 @@
   ]
  },
  {
+  "id": "evt_bd093c26e7df78",
+  "title": "Pier 21 – Wat spilet",
+  "kind": "theater",
+  "reason": "website klameare-workum.nl",
+  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_19fe25beee70ff",
   "title": "Popavond: Groove Departement",
   "kind": "overig",
@@ -2213,21 +2203,11 @@
   ]
  },
  {
-  "id": "evt_bd093c26e7df78",
-  "title": "Pier 21 – Wat spilet",
-  "kind": "theater",
-  "reason": "website klameare-workum.nl",
-  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_fba5d076e84b20",
   "title": "Aminata Soumaré & Hannan van Rooij – Als een zoutpilaar",
   "kind": "festival",
   "reason": "website explorethenorth.nl",
-  "url": "https://explorethenorth.nl/fy/event/aminata-soumare-hannan-van-rooij-als-een-zoutpilaar/",
+  "url": "https://explorethenorth.nl/event/aminata-soumare-hannan-van-rooij-als-een-zoutpilaar/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
@@ -2281,7 +2261,7 @@
   "title": "De Rustruimte",
   "kind": "festival",
   "reason": "website explorethenorth.nl",
-  "url": "https://explorethenorth.nl/fy/event/de-rustruimte/",
+  "url": "https://explorethenorth.nl/event/de-rustruimte/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
@@ -2292,7 +2272,7 @@
   "title": "Eline de Vries – SRV",
   "kind": "festival",
   "reason": "website explorethenorth.nl",
-  "url": "https://explorethenorth.nl/fy/event/in-audio-underfining-oer-de-leste-ronde-fan-e-winkel-op-tsjillen/",
+  "url": "https://explorethenorth.nl/event/een-audio-ervaring-over-de-laatste-ronde-van-de-winkel-op-wielen/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
@@ -2379,6 +2359,17 @@
   "kind": "festival",
   "reason": "website explorethenorth.nl",
   "url": "https://explorethenorth.nl/event/ruth-ruijgers-olaf-visser-de-slaperdijken/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
+  "id": "evt_99295f763f17e9",
+  "title": "Vincent Swierstra – De Magiër",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/vincent-swierstra-de-magier/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
@@ -3312,16 +3303,6 @@
   "kind": "sport",
   "reason": "website lycurgus.nl",
   "url": "https://www.lycurgus.nl/wedstrijden/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_45f8145e9a5993",
-  "title": "Lichtceremonie",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.synagogegroningen.nl/agenda",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4818,16 +4799,6 @@
   ]
  },
  {
-  "id": "evt_c727577777d99a",
-  "title": "Marica van der Meer",
-  "kind": "theater",
-  "reason": "website ioannistheatertsjerkewier.nl",
-  "url": "https://www.ioannistheatertsjerkewier.nl/event/marica-van-der-meer/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_ea07a0c9957831",
   "title": "Alex Roeka – Op Drift",
   "kind": "theater",
@@ -4883,16 +4854,6 @@
   "kind": "theater",
   "reason": "website lawei.nl",
   "url": "https://www.lawei.nl/agenda/bontehond-bbyw",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_3e9fdab00498fc",
-  "title": "Girls on Fire 3",
-  "kind": "theater",
-  "reason": "website harmonie.nl",
-  "url": "https://harmonie.nl/agenda/girls-on-fire-3/53001",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6686,7 +6647,7 @@
   "title": "Tech Event NoordNL",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/tech-event-noordnl",
+  "url": "https://www.debontewever.nl/nl/events",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6896,6 +6857,16 @@
   ]
  },
  {
+  "id": "evt_1f9bb6a3baf247",
+  "title": "Beach Event 2027",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.uithuizermeeden.nl/agenda/beach-event-2027/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_156d124e23b0d2",
   "title": "Trekkertrek",
   "kind": "overig",
@@ -7091,6 +7062,16 @@
   "kind": "markt",
   "reason": "oude categorie 'markt'",
   "url": "https://www.ameland.nl/evenementenkalender",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_53d148b47955eb",
+  "title": "Vakantieweek 2027",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.uithuizermeeden.nl/agenda/vakantieweek-2027/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
