@@ -25,6 +25,8 @@ Per bron ingesteld in extractorConfig, zonder nieuwe code per website:
                  'januari 2026', gemeente Noardeast-Fryslân)
     jsonHtml     de pagina is JSON met de kaartjes als HTML in dit veld (Schouwburg Ogterop: shows.php geeft
                  {"html": ..., "pages": ...})
+    missingIsEmpty  een pagina die er (even) niet is (404) betekent: geen uitjes, geen storing. Voor een festivalpagina
+                 die tussen twee edities verdwijnt (Let's Gro van Forum).
 
 Datums in de vormen van collector/when.py ('do 15.10', 'Thursday 15 October', '16-10-2026 / 10:00').
 Alleen feiten: naam, datum en tijd, zaal, soort en link. Geen teksten. robots.txt geldt voor elke pagina.
@@ -222,8 +224,9 @@ def _fetch_pages(urls, config, robots, source_name, timeout, page_fetch, today, 
         try:
             page = page_fetch(url, timeout=timeout)
         except HTTPError as exc:
-            # Een volgende pagina die (nog) niet bestaat (de kalender van volgend jaar): klaar.
-            if seen_pages and exc.code in (404, 410):
+            # Een volgende pagina die (nog) niet bestaat (de kalender van volgend jaar): klaar. Bij 'missingIsEmpty'
+            # ook de eerste: een festivalpagina die tussen twee edities weg is (Let's Gro), is leeg, geen storing.
+            if (seen_pages or config.get("missingIsEmpty")) and exc.code in (404, 410):
                 break
             raise
         text = _html_of(page.text, config)

@@ -489,3 +489,49 @@ def test_dagcontrole_7_november_echte_uitjes_blijven_staan():
                   "Programma thuis in Concert", "Klaver-rummiclub toernooi", "Selecties zaterdag: open dag",
                   "Huisbezoek van Sinterklaas", "Scootmobieltocht Westerkwartier", "Scootmobielrally", "Mo1-2", "Jazz J5-3", "M83-1"):
         assert not not_an_outing(_event(title)), title
+
+
+def test_lets_gro_buiten_het_gebouw():
+    # 6 november 2026: de silent disco in de Haddingestraatgarage (Let's Gro, van Forum) ontbrak. Forum's eigen agenda
+    # leest alleen het gebouw; het programma op andere plekken staat op een eigen pagina, met de plek per uitje.
+    import json
+    from datetime import date
+    from pathlib import Path
+    from collector import html_cards
+    from collector.active_source_runner import apply_default_place, default_place
+    sources = json.loads((Path(__file__).parents[2] / "collector" / "web_crawl_sources.json").read_text(encoding="utf-8"))
+    source = next(s for s in sources["sources"] if s["id"] == "forum-nl-letsgro")
+    item = ('<li>\n <a href=""\n data-id="{id}"\n data-date="06-11-2026"\n data-start="11/06/2026 19:00"\n'
+            ' data-end="11/06/2026 21:00"\n data-location="{loc}"\n data-ticket-title="Meer info"\n'
+            ' data-ticket-link="https://forum.nl/nl/agenda/talks-events/{slug}">\n <img src="x.jpg" alt="{t}" />\n'
+            ' <span class="title">{t}</span>\n <span class="text"><p>Tekst</p></span>\n </a>\n</li>')
+    page = "<ul>" + item.format(id=1645768, loc="Haddingestraatgarage", slug="silent-disco-in-de-haddingestraatgarage",
+                                t="Silent disco in de Haddingestraatgarage") \
+        + item.format(id=1, loc="Externe Locaties", slug="mensa", t="Mensa") + "</ul>"
+    events = html_cards.parse_cards(page, source["extractorConfig"], source_name=source["name"],
+                                    page_url=source["extractorConfig"]["endpointUrl"], today=date(2026, 11, 6))
+    [disco] = [apply_default_place(e, default_place(source)) for e in events]   # samen eten (Mensa) valt weg
+    assert disco.title == "Silent disco in de Haddingestraatgarage"
+    assert disco.start_at.startswith("2026-11-06T19:00") and disco.end_at.startswith("2026-11-06T21:00")
+    assert (disco.venue, disco.city, disco.lat) == ("Haddingestraatgarage", "Groningen", None)
+    assert disco.source_url == "https://forum.nl/nl/agenda/talks-events/silent-disco-in-de-haddingestraatgarage"
+
+
+def test_festivalpagina_die_weg_is_is_leeg():
+    # Tussen twee edities van Let's Gro kan Forum de pagina weghalen (404). Met missingIsEmpty is de bron dan leeg en
+    # klaar; anders telt hij als storing en blijven alle uitjes van forum.nl van de vorige keer staan.
+    from datetime import date
+    from urllib.error import HTTPError
+    import pytest
+    from collector import html_cards
+    from collector.site_crawler import Fetched
+
+    def fetch(url, timeout=15):
+        if url.endswith("robots.txt"):
+            return Fetched(url=url, status=200, content_type="text/plain", text="User-agent: *\nDisallow: /views/\n")
+        raise HTTPError(url, 404, "Not Found", {}, None)
+    config = {"endpointUrl": "https://forum.example/nl/lets-gro-timetable", "card": "<li>", "fields": {"title": "<b>(.*?)</b>"}}
+    with pytest.raises(HTTPError):
+        html_cards.fetch(config, source_name="f", root_url="https://forum.example/", page_fetch=fetch, today=date(2027, 1, 5))
+    assert html_cards.fetch({**config, "missingIsEmpty": True}, source_name="f", root_url="https://forum.example/",
+                            page_fetch=fetch, today=date(2027, 1, 5)) == []
