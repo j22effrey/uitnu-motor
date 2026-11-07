@@ -515,3 +515,23 @@ def test_lets_gro_buiten_het_gebouw():
     assert disco.start_at.startswith("2026-11-06T19:00") and disco.end_at.startswith("2026-11-06T21:00")
     assert (disco.venue, disco.city, disco.lat) == ("Haddingestraatgarage", "Groningen", None)
     assert disco.source_url == "https://forum.nl/nl/agenda/talks-events/silent-disco-in-de-haddingestraatgarage"
+
+
+def test_festivalpagina_die_weg_is_is_leeg():
+    # Tussen twee edities van Let's Gro kan Forum de pagina weghalen (404). Met missingIsEmpty is de bron dan leeg en
+    # klaar; anders telt hij als storing en blijven alle uitjes van forum.nl van de vorige keer staan.
+    from datetime import date
+    from urllib.error import HTTPError
+    import pytest
+    from collector import html_cards
+    from collector.site_crawler import Fetched
+
+    def fetch(url, timeout=15):
+        if url.endswith("robots.txt"):
+            return Fetched(url=url, status=200, content_type="text/plain", text="User-agent: *\nDisallow: /views/\n")
+        raise HTTPError(url, 404, "Not Found", {}, None)
+    config = {"endpointUrl": "https://forum.example/nl/lets-gro-timetable", "card": "<li>", "fields": {"title": "<b>(.*?)</b>"}}
+    with pytest.raises(HTTPError):
+        html_cards.fetch(config, source_name="f", root_url="https://forum.example/", page_fetch=fetch, today=date(2027, 1, 5))
+    assert html_cards.fetch({**config, "missingIsEmpty": True}, source_name="f", root_url="https://forum.example/",
+                            page_fetch=fetch, today=date(2027, 1, 5)) == []
