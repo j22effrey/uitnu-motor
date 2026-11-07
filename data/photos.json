@@ -2155,6 +2155,45 @@
    "checkedAt": "2026-10-13",
    "url": null
   },
+  "plaats:de knipe": {
+   "checkedAt": "2026-11-07",
+   "photos": [
+    {
+     "author": "RomkeHoekstra",
+     "file": "File:2023 De Knipe, Skoatterlânske Kompanjonsfeart.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Knipe,_Skoatterl%C3%A2nske_Kompanjonsfeart.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/2023_De_Knipe%2C_Skoatterl%C3%A2nske_Kompanjonsfeart.jpg/1280px-2023_De_Knipe%2C_Skoatterl%C3%A2nske_Kompanjonsfeart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "RomkeHoekstra",
+     "file": "File:2023 De Knipe, Meyerwei.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:2023_De_Knipe,_Meyerwei.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2023_De_Knipe%2C_Meyerwei.jpg/1280px-2023_De_Knipe%2C_Meyerwei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "TUFOWKTM",
+     "file": "File:De Knijpe vaart 02.JPG",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:De_Knijpe_vaart_02.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/De_Knijpe_vaart_02.JPG/1280px-De_Knijpe_vaart_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+     "author": "Jan dijkstra",
+     "file": "File:De Knipe een dorp bij Heerenveen in Friesland.jpg",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "pageUrl": "https://commons.wikimedia.org/wiki/File:De_Knipe_een_dorp_bij_Heerenveen_in_Friesland.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/De_Knipe_een_dorp_bij_Heerenveen_in_Friesland.jpg/1280px-De_Knipe_een_dorp_bij_Heerenveen_in_Friesland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+   ],
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/2023_De_Knipe%2C_Skoatterl%C3%A2nske_Kompanjonsfeart.jpg/1280px-2023_De_Knipe%2C_Skoatterl%C3%A2nske_Kompanjonsfeart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "wikidata": "Q2466507"
+  },
   "plaats:de marne": {
    "checkedAt": "2026-10-21",
    "photos": [
@@ -21263,6 +21302,10 @@
    "checkedAt": "2026-10-19",
    "url": null
   },
+  "plek:nec delfzijl|delfzijl": {
+   "checkedAt": "2026-11-07",
+   "url": null
+  },
   "plek:neushoorn|leeuwarden": {
    "checkedAt": "2026-10-14",
    "photos": [
@@ -22092,6 +22135,10 @@
   },
   "plek:sportcomplex it bosk|bitgum": {
    "checkedAt": "2026-10-14",
+   "url": null
+  },
+  "plek:sportcomplex vvs|oostwold": {
+   "checkedAt": "2026-11-07",
    "url": null
   },
   "plek:sporthal de bongerd|haulerwijk": {
@@ -23512,7 +23559,7 @@
    "via": null
   },
   "http://www.eeserveen.info/agenda/?event_id1=4690": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -23552,8 +23599,9 @@
    "via": null
   },
   "http://www.portable-antiquities.nl/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "http://www.schouwburgogterop.nl": {
@@ -23917,7 +23965,7 @@
    "via": null
   },
   "https://akerk.nl/event/interstellar-tribute-to-hans-zimmer-mystery-ensemble": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -25109,7 +25157,7 @@
    "via": null
   },
   "https://avoassen.nl/agenda/bestuursvergadering-9/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -26125,9 +26173,9 @@
    "via": null
   },
   "https://bitgum.nl/evenement/bezet-38/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/bitgum/branding/h30YtIbWxJGaHtMcN6L3p5yk9ogP8GkMnOsXTqqa.jpg",
+   "via": "og:image"
   },
   "https://bitgum.nl/evenement/bezet-39/": {
    "checkedAt": "2026-10-14",
@@ -26210,9 +26258,9 @@
    "via": null
   },
   "https://bitgum.nl/evenement/harmonie-110/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/bitgum/branding/h30YtIbWxJGaHtMcN6L3p5yk9ogP8GkMnOsXTqqa.jpg",
+   "via": "og:image"
   },
   "https://bitgum.nl/evenement/harmonie-111/": {
    "checkedAt": "2026-11-06",
@@ -26275,9 +26323,9 @@
    "via": null
   },
   "https://bitgum.nl/evenement/harmonie-95/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/bitgum/branding/h30YtIbWxJGaHtMcN6L3p5yk9ogP8GkMnOsXTqqa.jpg",
+   "via": "og:image"
   },
   "https://bitgum.nl/evenement/harmonie-96/": {
    "checkedAt": "2026-11-06",
@@ -26360,9 +26408,9 @@
    "via": null
   },
   "https://bitgum.nl/evenement/kaartclub-kcb-6/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/bitgum/branding/h30YtIbWxJGaHtMcN6L3p5yk9ogP8GkMnOsXTqqa.jpg",
+   "via": "og:image"
   },
   "https://bitgum.nl/evenement/kaartclub-kcb-7/": {
    "checkedAt": "2026-10-12",
@@ -26400,9 +26448,9 @@
    "via": null
   },
   "https://bitgum.nl/evenement/koersbal-20/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/bitgum/branding/h30YtIbWxJGaHtMcN6L3p5yk9ogP8GkMnOsXTqqa.jpg",
+   "via": "og:image"
   },
   "https://bitgum.nl/evenement/koersbal-21/": {
    "checkedAt": "2026-10-15",
@@ -26410,9 +26458,9 @@
    "via": null
   },
   "https://bitgum.nl/evenement/najaarsvergadering-o-k-k-beetgum/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/bitgum/branding/h30YtIbWxJGaHtMcN6L3p5yk9ogP8GkMnOsXTqqa.jpg",
+   "via": "og:image"
   },
   "https://bitgum.nl/evenement/putsjemoarn-nationale-natuurwerkdag/": {
    "checkedAt": "2026-11-05",
@@ -26499,14 +26547,14 @@
    "via": null
   },
   "https://bitgum.nl/evenement/soos-78/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/bitgum/branding/h30YtIbWxJGaHtMcN6L3p5yk9ogP8GkMnOsXTqqa.jpg",
+   "via": "og:image"
   },
   "https://bitgum.nl/evenement/soos-79/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/bitgum/branding/h30YtIbWxJGaHtMcN6L3p5yk9ogP8GkMnOsXTqqa.jpg",
+   "via": "og:image"
   },
   "https://bitgum.nl/evenement/soos-80/": {
    "checkedAt": "2026-11-06",
@@ -27685,7 +27733,7 @@
    "via": null
   },
   "https://buurtcentrumoranjewijk.nl/activiteit/collage-maken/2026-11-16/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "kinderen",
     "woord": "knutsel"
@@ -27967,7 +28015,7 @@
    "via": null
   },
   "https://buurtcentrumoranjewijk.nl/activiteit/samen-vitaal/2026-11-19/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -28435,7 +28483,7 @@
    "via": null
   },
   "https://dansinternationaal.nl/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -29564,7 +29612,7 @@
    "via": "og:image"
   },
   "https://debontewever.avayo.nl/bestel/tickets/100736?p_id=442868": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -31023,13 +31071,13 @@
    "via": "schema.org"
   },
   "https://dewittehaas.nl/activiteiten-schiermonnikoog/141126-workshop-natuurfotografie/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "lezing",
     "woord": "workshop"
    },
-   "image": null,
-   "via": null
+   "image": "https://dewittehaas.nl/wp-content/uploads/2021/11/2018-03-05-fotoworkshop-vuurtoren-ganzen.jpg",
+   "via": "schema.org"
   },
   "https://dewittehaas.nl/activiteiten-schiermonnikoog/151026-natuurwandeling-ochtendlicht/": {
    "checkedAt": "2026-10-13",
@@ -31199,6 +31247,11 @@
    "image": null,
    "via": null
   },
+  "https://doopsgezindendrachtenureterp.nl/agenda/": {
+   "checkedAt": "2026-11-07",
+   "image": null,
+   "via": null
+  },
   "https://doopsgezindsurhuisterveen.nl/": {
    "checkedAt": "2026-10-14",
    "image": "https://doopsgezindsurhuisterveen.nl/wp-content/uploads/sites/113/2023/06/Surhuisterveen-Doopsgezinde-Kerk-ext.A-foto-04-08-2018-f2.jpg",
@@ -31229,8 +31282,9 @@
    "via": null
   },
   "https://dorpsbelangenharkstede.nl/event/repair-cafe-20261114/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://dorpsbelangenharkstede.nl/event/repair-cafe-20270109/": {
@@ -32582,7 +32636,7 @@
    "via": null
   },
   "https://dorpshuisusquert.nl/event/samen-koken-samen-eten-2/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -32622,7 +32676,7 @@
    "via": null
   },
   "https://dorpshuisusquert.nl/event/soos-7/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -32663,6 +32717,16 @@
   },
   "https://dorpshuiszeerijp.nl/": {
    "checkedAt": "2026-11-06",
+   "image": null,
+   "via": null
+  },
+  "https://drachtstercompagnie.frl/event/expositie-oudheidskamer/?event_date=2026-11-14": {
+   "checkedAt": "2026-11-07",
+   "image": null,
+   "via": null
+  },
+  "https://drachtstercompagnie.frl/event/expositie-oudheidskamer/?event_date=2026-11-15": {
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -33035,7 +33099,7 @@
    "via": null
   },
   "https://easterein.nl/agenda/griene-kontainer-gft-23/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -33253,7 +33317,7 @@
    "via": null
   },
   "https://easterein.nl/agenda/sds-1-friesland-1/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -33282,7 +33346,7 @@
    "via": null
   },
   "https://easterein.nl/agenda/spokentocht/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -33549,7 +33613,7 @@
    "tijdelijk": true
   },
   "https://elfstedenhal.frl/agenda/capitals-unis-flyers-beker/": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -33801,7 +33865,7 @@
    "via": null
   },
   "https://elsloo-fr.nl/agenda/ouderengym/2026-11-19/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -35401,7 +35465,11 @@
    "via": "og:image"
   },
   "https://ferwertonline.nl/evenement/ferhalejun-pleatslik-nut-ferwert-en-hegebeintum/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
+   "hints": {
+    "soort": "lezing",
+    "woord": "ferhale"
+   },
    "image": null,
    "via": null
   },
@@ -35483,7 +35551,7 @@
    "via": "og:image"
   },
   "https://ferwertonline.nl/evenement/vrijwilligersavond-dbfh/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -42290,7 +42358,7 @@
    "via": null
   },
   "https://gasselternijveen-online.nl/event/historisch-cafe-6/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "lezing",
     "woord": "verhalen"
@@ -42469,7 +42537,7 @@
    "via": "schema.org"
   },
   "https://gasselternijveen-online.nl/event/samen-eten-2/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "eten",
     "woord": "maaltijd"
@@ -42997,7 +43065,7 @@
    "via": null
   },
   "https://groatekerk.nl/zondag-15-november-concert-met-symfonieorkest-de-harmonie-en-hiske-oosterwijk/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -44948,7 +45016,7 @@
    "via": null
   },
   "https://hfc15.nl/evenement/knvb-vc1-pupillen-bijeenkomst-5/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -45661,7 +45729,7 @@
    "via": "og:image"
   },
   "https://itmaskelyn.nl/evenement/tjep-kookt-met-dames-onder-de-pannen/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -45810,7 +45878,7 @@
    "via": null
   },
   "https://jirnsum.com/event/sint-maarten-optocht-2/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -47386,7 +47454,7 @@
    "via": "og:image"
   },
   "https://koudum.nl/mc-locations/bibliotheek/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -47499,7 +47567,7 @@
    "via": null
   },
   "https://kunsthalle-emden.de/kunst-aktiv/veranstaltungsdetails/ffentliche-f-hrung-2026-11-15-11-30-133868": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -47564,7 +47632,7 @@
    "via": null
   },
   "https://kunsthalle-emden.de/kunst-aktiv/veranstaltungsdetails/fortbildung-arttacke-2026-11-19-09-30-141814": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -47619,7 +47687,7 @@
    "via": null
   },
   "https://kunsthalle-emden.de/kunst-aktiv/veranstaltungsdetails/sonntags-atelier-2026-11-15-11-00-134107": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -49112,7 +49180,7 @@
    "via": null
   },
   "https://marrumonline.nl/evenement/sinterklaas-intocht/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -49150,7 +49218,7 @@
    "via": null
   },
   "https://marrumonline.nl/evenement/vrijwilligersavond-dorpshuis-de-nije-tille/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -49684,9 +49752,9 @@
    "via": null
   },
   "https://minnertsga.frl/evenement/biobak-18/": {
-   "checkedAt": "2026-10-17",
-   "image": null,
-   "via": null
+   "checkedAt": "2026-11-07",
+   "image": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/minnertsga/branding/g9UfBAmC5ckfG0AbWcP47AzBaNUxiKndaeKjaBig.webp",
+   "via": "og:image"
   },
   "https://minnertsga.frl/evenement/biobak-19/": {
    "checkedAt": "2026-10-20",
@@ -49979,7 +50047,7 @@
    "via": null
   },
   "https://ngk-hoogezand-sappemeer.nl/activiteit/br-f-pathuis-8/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -50033,7 +50101,7 @@
    "via": null
   },
   "https://ngkharkstede.nl/agenda-item/kerkdienst-4/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -50098,7 +50166,7 @@
    "via": null
   },
   "https://niehove.eu/agenda-item/jaarvergadering-de-schaats-6/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -50123,7 +50191,7 @@
    "via": null
   },
   "https://niehove.eu/agenda-item/tzigane-mon-amie/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -52865,7 +52933,7 @@
    "via": null
   },
   "https://noordscheschut.com/evenement/jamsessie-8/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -52885,7 +52953,7 @@
    "via": null
   },
   "https://noordscheschut.com/evenement/klaverjassen-6/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "sport",
     "woord": "vv"
@@ -52930,7 +52998,7 @@
    "via": null
   },
   "https://noordscheschut.com/evenement/oud-papier-10/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -53990,7 +54058,7 @@
    "via": "schema.org"
   },
   "https://oldemarkt.info/agenda/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -54235,7 +54303,7 @@
    "via": null
   },
   "https://onstwedde.info/agenda/artikel/kom-en-zing-mee-in-d-ekkelkaamp-op-zondag-15-november-1": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -56088,7 +56156,7 @@
    "via": null
   },
   "https://oosternieland.nl/agenda/vergadering-activiteitencommissie-7/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -56138,7 +56206,7 @@
    "via": null
   },
   "https://oosternieland.nl/agenda/visje-eten-25/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "eten",
     "woord": "koffie"
@@ -57463,7 +57531,7 @@
    "via": "schema.org"
   },
   "https://pieterzijl.net/event/koffieochtend-pieterzijl-4/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -57493,7 +57561,7 @@
    "via": null
   },
   "https://pieterzijl.net/event/samen-eten-2/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -57930,7 +57998,7 @@
    "via": null
   },
   "https://ravenswoud.nl/wp/activiteiten/bingo-3/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -57955,7 +58023,7 @@
    "via": null
   },
   "https://ravenswoud.nl/wp/activiteiten/klaverjassen-2/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -58039,7 +58107,7 @@
    "via": null
   },
   "https://reduzum.com/agenda/?event_id1=54542": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -58144,7 +58212,7 @@
    "via": null
   },
   "https://reduzum.com/agenda/?event_id1=60443": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -58989,12 +59057,13 @@
    "via": null
   },
   "https://schoonloo.com/agenda/sint-maarten": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "feest",
     "woord": "sint maarten"
    },
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://schoonloo.com/agenda/soos-xl-5": {
@@ -59676,7 +59745,7 @@
    "via": null
   },
   "https://skans.nl/agenda-voorstelling/biodanza-met-kees/2026-11-18/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -60499,7 +60568,7 @@
    "via": null
   },
   "https://stedum.com/event/%e2%9a%ab-afval-grijze-container-restafval-11/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -60893,7 +60962,7 @@
    "via": null
   },
   "https://steendam.info/activiteit/oud-papier-52/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -62140,7 +62209,7 @@
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/767733/Wolcafé.html": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -62245,7 +62314,7 @@
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/768440/Taalcafé.html": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -62370,7 +62439,7 @@
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/768729/Voorlezen-in-het-Gronings-door-Gé-Post.html": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -62398,7 +62467,7 @@
    "tijdelijk": true
   },
   "https://ticketing.groningsebibliotheken.nl/inschrijven/771154/Verhalencafé.html": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -64102,7 +64171,7 @@
    "via": null
   },
   "https://tsiispakhus.nl/evenemint/verhalenavond-mijn-roots/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "lezing",
     "woord": "verhalen"
@@ -64120,8 +64189,9 @@
    "via": "og:image"
   },
   "https://tsjom.nl/evenement/aed-cursus-3/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://tsjom.nl/evenement/alv-st-toer-3/": {
@@ -64130,8 +64200,9 @@
    "via": null
   },
   "https://tsjom.nl/evenement/intocht-sinterklaas-3/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://tsjom.nl/evenement/kerkdienst-19/": {
@@ -64184,8 +64255,9 @@
    "via": null
   },
   "https://tsjom.nl/evenement/kerkenraad-11/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://tsjom.nl/evenement/kerkenraad-12/": {
@@ -64199,8 +64271,9 @@
    "via": null
   },
   "https://tsjom.nl/evenement/kiemmkracht-koken-2/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://tsjom.nl/evenement/kiemmkracht-koken/": {
@@ -64261,8 +64334,9 @@
    "tijdelijk": true
   },
   "https://tsjom.nl/evenement/krekt-rekke-17/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://tsjom.nl/evenement/krekt-rekke-18/": {
@@ -64399,13 +64473,15 @@
    "via": null
   },
   "https://tsjom.nl/evenement/yoga-299/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://tsjom.nl/evenement/yoga-300/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
+   "tijdelijk": true,
    "via": null
   },
   "https://tsjom.nl/evenement/yoga-301/": {
@@ -65139,6 +65215,11 @@
    "image": "https://verhalenavond.nl/wp-content/uploads/2026/07/Verhalenavond_CR-scaled.jpg",
    "via": "og:image"
   },
+  "https://visvliet.com/": {
+   "checkedAt": "2026-11-07",
+   "image": null,
+   "via": null
+  },
   "https://visvliet.com/agenda/categorie/bartoleshus/": {
    "checkedAt": "2026-10-31",
    "image": null,
@@ -65314,6 +65395,11 @@
    "image": null,
    "via": null
   },
+  "https://vvminnertsga.nl/selecties-zaterdag-7-november/": {
+   "checkedAt": "2026-11-07",
+   "image": null,
+   "via": null
+  },
   "https://vvminnertsga.nl/uitnodiging-algemene-ledenvergadering-v-v-minnertsga/": {
    "checkedAt": "2026-11-04",
    "image": null,
@@ -65366,7 +65452,7 @@
    "via": null
   },
   "https://warten.nl/evenement/inloopmoment-warten-sociaal-werker-10/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -65431,7 +65517,7 @@
    "via": null
   },
   "https://warten.nl/evenement/pubquiz-21/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "feest",
     "woord": "quiz"
@@ -65616,6 +65702,15 @@
    "image": "https://wijnjewoude.net/wp-content/uploads/2026/04/HF-Personen-Dorpsfeest-128.bmp",
    "via": "schema.org"
   },
+  "https://wijnjewoude.net/agenda/dorpskamer-29/": {
+   "checkedAt": "2026-11-07",
+   "hints": {
+    "soort": "sport",
+    "woord": "biljart"
+   },
+   "image": null,
+   "via": null
+  },
   "https://wijnjewoude.net/agenda/dorpskamer-30/": {
    "checkedAt": "2026-10-30",
    "hints": {
@@ -65668,6 +65763,15 @@
     "woord": "markt"
    },
    "image": "https://wijnjewoude.net/wp-content/uploads/2022/11/kerstmarkt-2022-1.jpg",
+   "via": "schema.org"
+  },
+  "https://wijnjewoude.net/agenda/intocht-sinterklaas-5/": {
+   "checkedAt": "2026-11-07",
+   "hints": {
+    "soort": "natuur",
+    "woord": "natuur"
+   },
+   "image": "https://wijnjewoude.net/wp-content/uploads/2025/11/sint-2025.jpg",
    "via": "schema.org"
   },
   "https://wijnjewoude.net/agenda/kerkdienst-met-folkert-wesseling-swingel-benefiet/": {
@@ -65844,6 +65948,11 @@
   },
   "https://wijnjewoude.net/agenda/swingelcafe-23-5/": {
    "checkedAt": "2026-10-30",
+   "image": "https://wijnjewoude.net/wp-content/uploads/2022/11/swingelcafe.jpeg",
+   "via": "schema.org"
+  },
+  "https://wijnjewoude.net/agenda/swingelcafe-23-6/": {
+   "checkedAt": "2026-11-07",
    "image": "https://wijnjewoude.net/wp-content/uploads/2022/11/swingelcafe.jpeg",
    "via": "schema.org"
   },
@@ -66800,7 +66909,7 @@
    "via": null
   },
   "https://wjukken.nl/evenement/the-last-viking-2025/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -67538,7 +67647,7 @@
    "via": null
   },
   "https://www.aolegemientehoes.nl/agenda/aanmeldformulier-workshop-fotografie": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -68146,6 +68255,15 @@
     "woord": "lichtjes"
    },
    "image": "https://www.bantega.net/media/pages/agenda/lichtjesdag-2026/1d994cbabd-1791535230/handen-met-brandende-kaars-900x600-crop.jpg",
+   "via": "og:image"
+  },
+  "https://www.bantega.net/agenda/muzikale-inloopochtend-2026": {
+   "checkedAt": "2026-11-07",
+   "hints": {
+    "soort": "eten",
+    "woord": "koffie"
+   },
+   "image": "https://www.bantega.net/media/pages/agenda/muzikale-inloopochtend-2026/040c8d202c-1793967745/inloopchtend-900x600-crop.jpg",
    "via": "og:image"
   },
   "https://www.bantega.net/agenda/nieuwjaarsreceptie-2027": {
@@ -69292,7 +69410,7 @@
    "via": null
   },
   "https://www.cafedelijst.nl/quiznight.php": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "eten",
     "woord": "wijn"
@@ -69311,7 +69429,7 @@
    "via": null
   },
   "https://www.carambole-winschoten.nl/agenda/-a-tribute-to-deep-purple-met-purple-strangers-1/": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -69321,7 +69439,7 @@
    "via": null
   },
   "https://www.carambole-winschoten.nl/agenda/-bluesmiddag-21/": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -70710,7 +70828,7 @@
    "via": null
   },
   "https://www.derank-groningen.nl/dienst/nathan-troost-3/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -70850,7 +70968,7 @@
    "via": "og:image"
   },
   "https://www.detiid.nl/agenda/kom-fierder-op-pad-door-historisch-bolsward/2": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -74406,7 +74524,7 @@
    "via": null
   },
   "https://www.injipsingboertange.nl/evenement/klaver-rummiclub-5/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "feest",
     "woord": "spellen"
@@ -74458,7 +74576,7 @@
    "via": null
   },
   "https://www.injipsingboertange.nl/evenement/ouderensoos-51/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -74662,7 +74780,7 @@
    "via": null
   },
   "https://www.injipsingboertange.nl/evenement/wandelclub-46/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "natuur",
     "woord": "wandel"
@@ -74770,7 +74888,7 @@
    "via": null
   },
   "https://www.injipsingboertange.nl/evenement/wandelclub-98/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "natuur",
     "woord": "wandel"
@@ -76089,7 +76207,7 @@
    "via": null
   },
   "https://www.kuinre.nl/event/boomfeestdag/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -76109,7 +76227,7 @@
    "via": null
   },
   "https://www.kuinre.nl/event/houtdag-kuinderbos-3/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -76139,7 +76257,7 @@
    "via": null
   },
   "https://www.kuinre.nl/event/stichting-ouderen-kuinre-blankenham/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "eten",
     "woord": "gezamenlijk eten"
@@ -76158,7 +76276,7 @@
    "via": null
   },
   "https://www.kuinre.nl/event/vrouwen-van-kuinre-13/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -76391,7 +76509,7 @@
    "via": null
   },
   "https://www.lauwerzijl.info/kalender/spelletjesavond-2/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "feest",
     "woord": "spellen"
@@ -77868,7 +77986,7 @@
    "via": null
   },
   "https://www.luxor.nl/specials-events/peuter-kleuter": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "film",
     "woord": "bioscoop"
@@ -78473,6 +78591,11 @@
   },
   "https://www.natuurwerkdag.nl/klussen/": {
    "checkedAt": "2026-10-12",
+   "image": null,
+   "via": null
+  },
+  "https://www.necdelfzijl.nl/programma": {
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -79411,7 +79534,7 @@
    "via": null
   },
   "https://www.ontmoetingskerkharen.nl/agenda/kerkdienst-zondag-15-november-2026/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -79594,7 +79717,7 @@
    "via": null
   },
   "https://www.opendeonline.nl/agenda/ledenvergadering-uitvaartvereniging-de-laatste-eer-opende": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -79852,12 +79975,12 @@
    "via": null
   },
   "https://www.pboosterhesselen.nl/agenda/podium-hesselen-de-storyville-jazzband/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
   "https://www.pboosterhesselen.nl/agenda/puzzelruilbeurs-8/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -80130,6 +80253,11 @@
    "image": "https://www.rolde.nl/uploads/media/1/rolde-molen.802abe2d.webp",
    "via": "og:image"
   },
+  "https://www.rolde.nl/3d": {
+   "checkedAt": "2026-11-07",
+   "image": "https://www.rolde.nl/uploads/media/1/rolde-in-3d/rolde-in-3d-deelbeeld.jpg",
+   "via": "og:image"
+  },
   "https://www.rolde.nl/bedrijven/woonzorgcentrum-de-wenning": {
    "checkedAt": "2026-11-04",
    "image": "https://www.rolde.nl/uploads/branding/1/rolde-mark.web.webp?v=12c7b2a3",
@@ -80159,6 +80287,11 @@
    "image": "https://www.rolde.nl/uploads/branding/1/rolde-mark.web.webp?v=12c7b2a3",
    "via": "og:image"
   },
+  "https://www.rolde.nl/en/events/winter-market-at-de-wenning": {
+   "checkedAt": "2026-11-07",
+   "image": "https://www.rolde.nl/uploads/branding/1/rolde-mark.web.webp?v=12c7b2a3",
+   "via": "og:image"
+  },
   "https://www.rolde.nl/en/residents-evening-about-housing-in-aa-en-hunze": {
    "checkedAt": "2026-11-02",
    "image": null,
@@ -80166,6 +80299,11 @@
   },
   "https://www.rolde.nl/evenementen/toekomstpraat": {
    "checkedAt": "2026-11-04",
+   "image": "https://www.rolde.nl/uploads/branding/1/rolde-mark.web.webp?v=12c7b2a3",
+   "via": "og:image"
+  },
+  "https://www.rolde.nl/evenementen/wintermarkt-bij-de-wenning": {
+   "checkedAt": "2026-11-07",
    "image": "https://www.rolde.nl/uploads/branding/1/rolde-mark.web.webp?v=12c7b2a3",
    "via": "og:image"
   },
@@ -81030,7 +81168,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/bc-scharnegoutum/2026-11-19/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "sport",
     "woord": "biljart"
@@ -81119,7 +81257,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/bloedprikken/2026-11-18/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -81212,7 +81350,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/de-keu-keninginnen-5/2026-11-18/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "sport",
     "woord": "loop"
@@ -81302,7 +81440,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/de-lakenkrakers/2026-11-17/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "sport",
     "woord": "wedstrijd"
@@ -81386,7 +81524,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/de-stadige-strikers/2026-11-16/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -81498,7 +81636,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/fanfare-swettewyn/2026-11-16/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "lezing",
     "woord": "informatie"
@@ -81618,7 +81756,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/klaverjassen-2/2026-11-13/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -81733,7 +81871,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/muziekles-2/2026-11-19/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "muziek",
     "woord": "muziek"
@@ -81917,7 +82055,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/stal-schukken-2/2026-11-16/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -82092,7 +82230,7 @@
    "via": null
   },
   "https://www.scharnegoutum.nl/agenda/workshop-vilten/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "lezing",
     "woord": "workshop"
@@ -82459,7 +82597,7 @@
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/bieb-cafe-sneek-het-vioolconcert-van-tsjaikovski-een-meesterwerk-om-te-ontdekken/107952": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -82479,22 +82617,22 @@
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-martha-high-the-funky-divas-the-godess-of-soul-james-brown-s-backingvocaliste/111022": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-money-the-man-dan-the-middle-men-hendrix-experience-on-steroids/111024": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-new-wave-generation-the-best-of-depeche-mode-blondie-talking-heads-joy-division/111026": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-oliver-wakeman-eldest-son-of-rick-wakeman-an-evening-of-yes-and-originals/111028": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -82504,12 +82642,12 @@
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-roberto-jacketti-the-scooters-dj-rene-cd-i-save-the-day/111014": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/concert-the-fortunate-sons-europe-s-nr-one-ccr-tribute-band/111030": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -82524,7 +82662,7 @@
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/de-grote-sinterklaasshow/109918": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -82573,7 +82711,7 @@
    "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/open-dagen-duurzame-huizen-route/110776": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -82600,6 +82738,11 @@
    },
    "image": "https://assets.plaece.nl/thumb/9AVp_qdNJJXm9XeSDmzUwgz08iw6f9iSWmKMF_Q5qRA/resizing_type:fit/width:650/height:366/gravity:sm/aHR0cHM6Ly9hc3NldHMucGxhZWNlLm5sL29kcC1mcmllc2xhbmQvaW1hZ2UvYWFmLWVuLWxpZXNfNzUzODMzMjc2LmpwZw.jpg",
    "via": "og:image"
+  },
+  "https://www.sneek.nl/activiteiten/sinterklaas-wandeltocht-sneek/76501": {
+   "checkedAt": "2026-11-07",
+   "image": null,
+   "tijdelijk": true
   },
   "https://www.sneek.nl/activiteiten/sinterklaashuis-sneek/110944": {
    "checkedAt": "2026-11-06",
@@ -82671,7 +82814,7 @@
    "via": null
   },
   "https://www.societeitdeharmonie.nl/agenda/de-schrijver-aan-het-woorddetlevvan-heest-overdit-was-het/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -82711,7 +82854,7 @@
    "via": null
   },
   "https://www.societeitdeharmonie.nl/agenda/klaverjassen-16-november/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -82721,7 +82864,7 @@
    "via": null
   },
   "https://www.societeitdeharmonie.nl/agenda/lezing-over-de-meeuw-anton-tsjechov/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -82811,7 +82954,7 @@
    "via": null
   },
   "https://www.societeitdeharmonie.nl/agenda/uurtje-cultuurtje-mesopotamie-of-het-tweestromenland-en-het-oudste-schrift-door-floor-haaijer/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -82957,7 +83100,7 @@
    "via": null
   },
   "https://www.spijk.net/event/muziekevenement-onder-de-toren/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "muziek",
     "woord": "muziek"
@@ -83000,7 +83143,7 @@
    "via": null
   },
   "https://www.spijk.net/event/spelletjesmiddag-3/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -83024,7 +83167,7 @@
    "via": null
   },
   "https://www.spijk.net/event/superbingo-met-ancora/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "feest",
     "woord": "bingo"
@@ -83065,7 +83208,7 @@
    "via": null
   },
   "https://www.spotgroningen.nl/events/rockit/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "muziek",
     "woord": "optreden"
@@ -86423,17 +86566,17 @@
    "via": null
   },
   "https://www.theaterdekoornbeurs.nl/voorstelling/10047591/ccr/10362780": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
   "https://www.theaterdekoornbeurs.nl/voorstelling/10047592/verbroedering/10362781": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
   "https://www.theaterdekoornbeurs.nl/voorstelling/10047593/dahldiner-twee-nu-nog-lekkerder/10362782": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -86443,17 +86586,17 @@
    "via": null
   },
   "https://www.theaterdekoornbeurs.nl/voorstelling/10047595/filmgeschiedenis-in-vogelvlucht/10362784": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
   "https://www.theaterdekoornbeurs.nl/voorstelling/10047596/Titel/10362785": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
   "https://www.theaterdekoornbeurs.nl/voorstelling/10047597/breekbare-mensen/10362786": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -88397,7 +88540,7 @@
    "via": null
   },
   "https://www.veenkoloniaalmuseum.nl/tentoonstellingen-en-activiteiten/tentoonstellingen/36/overzichtstentoonstelling-anja-jager": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -89017,7 +89160,7 @@
    "via": null
   },
   "https://www.vipassana-groningen.nl/wp/event/basiscursus/2026-11-16/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "lezing",
     "woord": "cursus"
@@ -89067,7 +89210,7 @@
    "via": null
   },
   "https://www.vipassana-groningen.nl/wp/event/deep-relaxation/2026-11-20/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -89203,7 +89346,7 @@
    "via": null
   },
   "https://www.vipassana-groningen.nl/wp/event/weekend-vipassana-meditatie/": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "hints": {
     "soort": "lezing",
     "woord": "meditatie"
@@ -89954,7 +90097,7 @@
    "tijdelijk": true
   },
   "https://www.westerlee.nl/agenda/agenda/soos-56/": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -89979,7 +90122,7 @@
    "tijdelijk": true
   },
   "https://www.westerlee.nl/agenda/voetbalvelden-koeperlaand/agenda/westerlee-1-vvs-1/": {
-   "checkedAt": "2026-11-04",
+   "checkedAt": "2026-11-07",
    "image": null,
    "tijdelijk": true
   },
@@ -90259,7 +90402,7 @@
    "via": null
   },
   "https://ydedepunt.com/agenda/?event_id1=16053": {
-   "checkedAt": "2026-10-17",
+   "checkedAt": "2026-11-07",
    "image": null,
    "via": null
   },
@@ -90489,6 +90632,6 @@
    "via": "og:image"
   }
  },
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "version": 1
 }

@@ -2,121 +2,121 @@
   "amdgbeilen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-27T01:29+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "bitgum-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-24T11:53+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "blokzijl-nl-web": {
     "fout": "HTTPError: HTTP Error 406: Not Acceptable",
     "sinds": "2026-10-27T16:01+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "cambuur-nl-thuiswedstrijden": {
-    "fout": "HTTPError: HTTP Error 403: Forbidden",
+    "fout": "PermissionError: robots.txt staat https://cambuur.nl/thuiswedstrijden/ niet toe (robots.txt gaf status 403)",
     "sinds": "2026-11-05T01:34+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "carambole-winschoten-nl-web": {
     "fout": "PermissionError: robots.txt staat https://www.carambole-winschoten.nl/agenda/ niet toe (robots.txt niet bereikbaar: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.carambole-winschoten.nl'. (_ssl.c:)",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "detiid-nl-web": {
     "fout": "PermissionError: robots.txt staat https://www.detiid.nl/agenda niet toe (robots.txt niet bereikbaar: URLError: <urlopen error [Errno 101] Network is unreachable>)",
     "sinds": "2026-10-29T19:08+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "dorpsbelangen-meerstad-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-21T18:45+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "dorpshuisechtenerbrug-nl-web": {
     "fout": "URLError: <urlopen error timed out>",
     "sinds": "2026-11-06T22:15+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "easthim-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-19T21:13+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "ferwertonline-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-06T22:15+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "gerarddou-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-11-06T16:39+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "gkv-uithuizermeeden-nl-web": {
     "fout": "URLError: <urlopen error [Errno -2] Name or service not known>",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "harich-ruigahuizen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-06T11:02+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
-  },
-  "leeuwarden-remonstranten-nl-web": {
-    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-11-06T22:15+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "lemmerbinnen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-03T08:02+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "minnertsga-frl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-24T11:53+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "mltc-nl-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-27T16:01+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "mozartconcerten-nl-web": {
     "fout": "TypeError: unhashable type: 'list'",
     "sinds": "2026-11-06T22:15+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "sensedokkum-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-05T10:15+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "skarsterbrege-nl-web": {
     "fout": "HTTPError: HTTP Error 500: Internal Server Error",
     "sinds": "2026-10-27T01:29+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "tsjom-nl-web": {
-    "fout": "HTTPError: HTTP Error 404: Not Found",
+    "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-11-06T11:02+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
+  },
+  "twijzelerheide-net-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-07T02:31+00:00",
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "vugroningen-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-10-19T15:39+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "westerlee-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T12:24+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   },
   "wijkbelangwesteinde-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-11-03T08:02+00:00",
-    "laatst": "2026-11-06T22:15+00:00"
+    "laatst": "2026-11-07T02:31+00:00"
   }
 }
