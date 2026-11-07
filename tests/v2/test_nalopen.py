@@ -486,5 +486,6 @@ def test_dagcontrole_7_november_geen_uitje():
 
 def test_dagcontrole_7_november_echte_uitjes_blijven_staan():
     for title in ("Museum open in 2027: nieuwe expositie", "Rummikub toernooi voor iedereen", "Matchday live: concert na afloop",
-                  "Programma thuis in Concert", "Klaver-rummiclub toernooi", "Selecties zaterdag: open dag"):
+                  "Programma thuis in Concert", "Klaver-rummiclub toernooi", "Selecties zaterdag: open dag",
+                  "Huisbezoek van Sinterklaas", "Scootmobieltocht Westerkwartier", "Scootmobielrally", "Mo1-2", "Jazz J5-3", "M83-1"):
         assert not not_an_outing(_event(title)), title
