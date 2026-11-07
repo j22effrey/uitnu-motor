@@ -1,14 +1,14 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-07T02:41:22+00:00",
+ "refreshedAt": "2026-11-07T05:49:54+00:00",
  "today": "2026-11-07",
- "total": 6118,
+ "total": 6108,
  "bewaardVanVorigeKeer": {},
  "nogAanwezigAnderAdres": {},
  "nietBewaardDoorRegel": {},
  "inputRecords": 12389,
  "outsideArea": 7,
- "geenUitje": 4204,
+ "geenUitje": 4214,
  "vasteActiviteit": 1143,
  "vertaling": 9,
  "teVerVooruit": 300,
@@ -33,12 +33,12 @@
   "theater": 1407,
   "film": 585,
   "lezing": 525,
-  "feest": 403,
+  "feest": 400,
   "kinderen": 283,
-  "sport": 273,
-  "kunst": 264,
+  "sport": 270,
+  "kunst": 263,
   "markt": 248,
-  "overig": 214,
+  "overig": 211,
   "natuur": 178,
   "eten": 65,
   "festival": 55
@@ -57,7 +57,7 @@
   "Franeker": 104,
   "Appelscha": 97,
   "Roden": 88,
-  "Delfzijl": 67,
+  "Delfzijl": 66,
   "Workum": 55,
   "Heerenveen": 50,
   "Meppel": 49,
@@ -71,10 +71,10 @@
   "Rottevalle": 27,
   "Schiermonnikoog": 25,
   "Scharnegoutum": 25,
-  "Opende": 24,
   "Jubbega": 24,
   "Harlingen": 24,
   "Dwingeloo": 24,
+  "Opende": 23,
   "IJlst": 23,
   "Surhuisterveen": 23,
   "Bolsward": 22,
@@ -120,7 +120,6 @@
   "Schildwolde": 11,
   "Musselkanaal": 10,
   "Borger": 10,
-  "Minnertsga": 10,
   "Krummhörn": 10,
   "Earnewald": 10,
   "Hurdegaryp": 10,
@@ -133,17 +132,17 @@
   "Rolde": 9,
   "Jorwerd": 9,
   "Boijl": 9,
+  "Minnertsga": 9,
   "Lauwerzijl": 9,
   "Hallum": 9,
-  "Beilen": 9,
   "Eext": 9,
   "Wijnjewoude": 8,
   "Grou": 8,
-  "Sellingen": 8,
   "Finsterwolde": 8,
   "Spijk": 8,
   "Gaastmeer": 8,
   "Tietjerk": 8,
+  "Beilen": 8,
   "Ten Boer": 8,
   "Oudeschans": 7,
   "Grootegast": 7,
@@ -162,8 +161,6 @@
   "Klazienaveen": 7,
   "Oranjewoud": 6,
   "Adorp": 6,
-  "Oldeberkoop": 6,
-  "Oostwold": 6,
   "Bitgum": 6,
   "Katlijk": 6,
   "Easterein": 6,
@@ -196,7 +193,9 @@
   "Woudsend": 5,
   "Den Andel": 5,
   "Stedum": 5,
+  "Sellingen": 5,
   "Lutten": 5,
+  "Oldeberkoop": 5,
   "Heeg": 5,
   "Oldemarkt": 5,
   "Bedum": 5,
@@ -210,6 +209,7 @@
   "Harkema": 5,
   "Gieterveen": 5,
   "Donkerbroek": 5,
+  "Oostwold": 5,
   "Veelerveen": 5,
   "Westerbork": 5,
   "Buren": 5,
@@ -397,8 +397,7 @@
   "De Veenhoop": 1,
   "Elahuizen": 1,
   "Papenburg": 1,
-  "Oost-Vlieland": 1,
-  "Damwâld": 1
+  "Oost-Vlieland": 1
  },
  "bySourceHost": {
   "spotgroningen.nl": 502,
@@ -523,7 +522,6 @@
   "wildro.nl": 9,
   "despylder.nl": 9,
   "wijnjewoude.net": 8,
-  "opendeonline.nl": 8,
   "koudum.nl": 8,
   "natuurverenigingzuidwolde.nl": 8,
   "veendam.nl": 8,
@@ -544,6 +542,7 @@
   "ifks.frl": 8,
   "kloosterterapel.nl": 7,
   "theaterlemmer.nl": 7,
+  "opendeonline.nl": 7,
   "steendam.info": 7,
   "grou.nl": 7,
   "den-horn.nl": 7,
@@ -588,7 +587,6 @@
   "museumbelvedere.nl": 5,
   "langelille.com": 5,
   "leens.info": 5,
-  "vvsoostwold.nl": 5,
   "makkum.nl": 5,
   "doopsgezindendrachtenureterp.nl": 5,
   "stedum.com": 5,
@@ -604,7 +602,6 @@
   "oldemarkt.info": 5,
   "gramsbergen.nl": 5,
   "kuinre.nl": 5,
-  "injipsingboertange.nl": 5,
   "adorp.com": 5,
   "pieterzijl.net": 5,
   "dorpzurich.nl": 5,
@@ -645,6 +642,7 @@
   "joyforpeople.nl": 4,
   "doopsgezindengroningen.nl": 4,
   "princessehof.nl": 4,
+  "vvsoostwold.nl": 4,
   "gridgroningen.nl": 4,
   "aolegemientehoes.nl": 3,
   "woudsendonline.nl": 3,
@@ -699,12 +697,9 @@
   "museummartena.nl": 2,
   "noordenveld.nl": 2,
   "apexboulders.nl": 2,
-  "necdelfzijl.nl": 2,
   "ommelanderwijk.com": 2,
   "dewijk.info": 2,
   "terphegebeintum.nl": 2,
-  "oldeberkoop.frl": 2,
-  "vvminnertsga.nl": 2,
   "zoek.officielebekendmakingen.nl": 2,
   "dorpsverenigingsellingen.nl": 2,
   "cafethert.nl": 2,
@@ -720,6 +715,7 @@
   "elim-drenthe.nl": 2,
   "dantumadiel.frl": 2,
   "hortusharen.nl": 2,
+  "injipsingboertange.nl": 2,
   "zuidwolde.info": 2,
   "kerkfeerwerd.nl": 2,
   "gscf.nl": 2,
@@ -778,6 +774,7 @@
   "pekela.nl": 1,
   "natuurwerkdag.nl": 1,
   "muzeeaquarium.nl": 1,
+  "necdelfzijl.nl": 1,
   "marathonschaatsenthialf.nl": 1,
   "in.njuko.com": 1,
   "spooktochtmiddelstum.nl": 1,
@@ -786,6 +783,7 @@
   "kvmidfryslan.nl": 1,
   "stichtingcultureelslochteren.nl": 1,
   "akkrumnescentraal.nl": 1,
+  "vvminnertsga.nl": 1,
   "hollandholsteinshow.nl": 1,
   "landesmuseum-emden.de": 1,
   "westerlee.nl": 1,
@@ -801,7 +799,7 @@
   "zuiderburen.nl": 1,
   "dansinternationaal.nl": 1,
   "nutalgemeen.nl": 1,
-  "pgbeilen.nl": 1,
+  "oldeberkoop.frl": 1,
   "wergea.com": 1,
   "bokswebdesign.nl": 1,
   "tsiispakhus.nl": 1,
@@ -903,15 +901,14 @@
   "papenburg.de": 1,
   "admiraliteitsdagen.nl": 1,
   "intothegreatwideopen.nl": 1,
-  "desukerei.nl": 1,
   "stichtingnobilis.nl": 1
  },
  "photos": {
-  "organisator": 2191,
-  "wikimedia": 3791,
-  "zonder": 136
+  "organisator": 2190,
+  "wikimedia": 3783,
+  "zonder": 135
  },
- "twijfel": 711,
+ "twijfel": 707,
  "groot": {
   "aantal": 85,
   "redenen": {
@@ -951,9 +948,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 39,
-  "changed": 46,
-  "removed": 78
+  "new": 0,
+  "changed": 0,
+  "removed": 10
  },
  "gate": {
   "passed": true,
@@ -961,7 +958,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "6118 nu, 6097 vorige keer (minimaal 85%)"
+    "detail": "6108 nu, 6118 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -971,7 +968,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "214 van 6118 (3%)"
+    "detail": "211 van 6108 (3%)"
    },
    {
     "name": "velden_compleet",
@@ -982,8 +979,8 @@
  },
  "dekking": {
   "gecontroleerd": 461,
-  "goed": 114,
-  "ontbreektTotaal": 340,
+  "goed": 113,
+  "ontbreektTotaal": 341,
   "ontbreekt": [
    {
     "naam": "Duinen Zathe",
@@ -1690,6 +1687,15 @@
     "periode": "volgende editie",
     "type": "museum",
     "waarom": "de test vond geen leesbare agenda: uitzoeken waar het programma staat"
+   },
+   {
+    "naam": "Openluchtmuseum De Sûkerei",
+    "plaats": "Damwâld",
+    "website": "https://desukerei.nl/",
+    "gevonden": 0,
+    "verwacht": 1,
+    "periode": "volgende editie",
+    "type": "museum"
    },
    {
     "naam": "Andledon",
@@ -2911,16 +2917,6 @@
     "periode": "volgende editie",
     "type": "museum",
     "waarom": "de test vond geen leesbare agenda: uitzoeken waar het programma staat"
-   },
-   {
-    "naam": "de Notenkraker",
-    "plaats": "Paterswolde",
-    "website": "https://www.ccdenotenkraker.nl/",
-    "gevonden": 0,
-    "verwacht": 1,
-    "periode": "90 dagen",
-    "type": "cultuurcentrum",
-    "waarom": "de test vond geen leesbare agenda: uitzoeken waar het programma staat"
    }
   ],
   "teWeinig": [
@@ -2999,7 +2995,7 @@
     "teWeinig": 0
    },
    "museum": {
-    "ontbreekt": 151,
+    "ontbreekt": 152,
     "teWeinig": 0
    },
    "club": {

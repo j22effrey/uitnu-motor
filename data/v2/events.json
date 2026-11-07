@@ -3659,53 +3659,6 @@
   }
  },
  {
-  "id": "evt_14d067cd7fd5f7",
-  "slug": "matchday-oldeberkoop-2026-11-07",
-  "title": "Matchday",
-  "occurrences": [
-   {
-    "date": "2026-11-07",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Oldeberkoop",
-   "city": "Oldeberkoop",
-   "lat": 52.9381,
-   "lon": 6.1339
-  },
-  "price": "Zie organisator",
-  "url": "https://oldeberkoop.frl/evenement/zaterdag-7-november-matchday",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://oldeberkoop.frl/evenement/zaterdag-7-november-matchday",
-    "host": "oldeberkoop.frl",
-    "seenAt": "2026-11-06"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'wedstrijd' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "fe384cca21d5",
-  "image": {
-   "url": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/oldeberkoop/library/variants/VKnkNAVcf3m488opFpoFmWGo7jLNqjOLFJYetnNC-l.webp",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Matchday",
-   "credit": "Foto: Oldeberkoop",
-   "sourceUrl": "https://oldeberkoop.frl/evenement/zaterdag-7-november-matchday"
-  }
- },
- {
   "id": "evt_a99ee99e735249",
   "slug": "moonloops-nomads-radio-borger-2026-11-07",
   "title": "Moonloops + Nomads Radio",
@@ -4340,56 +4293,6 @@
   }
  },
  {
-  "id": "evt_12b7040f20d69e",
-  "slug": "programma-thuis-delfzijl-2026-11-07",
-  "title": "Programma thuis",
-  "occurrences": [
-   {
-    "date": "2026-11-07",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "NEC Delfzijl",
-   "city": "Delfzijl",
-   "lat": 53.3305546,
-   "lon": 6.9161152
-  },
-  "price": "Zie organisator",
-  "url": "https://www.necdelfzijl.nl/programma",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.necdelfzijl.nl/programma",
-    "host": "necdelfzijl.nl",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "4dd77455c38f",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Delfzijl",
-   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "C messier",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
-  }
- },
- {
   "id": "evt_d71a20868e8657",
   "slug": "republiek-dansavond-groningen-2026-11-07",
   "title": "Republiek ✰ Dansavond",
@@ -4534,56 +4437,6 @@
    "alt": "Foto bij Rondleiding voor volwassenen bij Tumult",
    "credit": "Foto: Tumult (voorheen Vrijdag)",
    "sourceUrl": "https://tumultgroningen.nl/agenda/rondleiding-voor-volwassenen-bij-tumult"
-  }
- },
- {
-  "id": "evt_812981d03f08bd",
-  "slug": "selecties-zaterdag-minnertsga-2026-11-07",
-  "title": "Selecties zaterdag",
-  "occurrences": [
-   {
-    "date": "2026-11-07",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "VV Minnertsga",
-   "city": "Minnertsga",
-   "lat": 53.2506533,
-   "lon": 5.6005217
-  },
-  "price": "Zie organisator",
-  "url": "https://vvminnertsga.nl/selecties-zaterdag-7-november/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://vvminnertsga.nl/selecties-zaterdag-7-november/",
-    "host": "vvminnertsga.nl",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "1ea545ccf52e",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Minnertsga",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
@@ -5138,56 +4991,6 @@
    "license": "CC BY 2.0",
    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grafitti_Boterdiep_Groningen_(8087126308).jpg"
-  }
- },
- {
-  "id": "evt_dbab0391b51858",
-  "slug": "vvs-o11-1jm-oostwold-2026-11-07",
-  "title": "VVS O11-1JM",
-  "occurrences": [
-   {
-    "date": "2026-11-07",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Sportcomplex VVS",
-   "city": "Oostwold",
-   "lat": 53.1994468,
-   "lon": 7.0494038
-  },
-  "price": "Zie organisator",
-  "url": "https://www.vvsoostwold.nl/activiteitenkalender",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.vvsoostwold.nl/activiteitenkalender",
-    "host": "vvsoostwold.nl",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website vvsoostwold.nl",
-   "confidence": 0.6
-  },
-  "hash": "d1f42915920b",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Oost-_en_Noordgevel_-_Oostwold_%28Westerkwartier%29_-_20176047_-_RCE.jpg/1280px-Oost-_en_Noordgevel_-_Oostwold_%28Westerkwartier%29_-_20176047_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Oostwold",
-   "credit": "Foto: A. J. van der Wal · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "A. J. van der Wal",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oost-_en_Noordgevel_-_Oostwold_(Westerkwartier)_-_20176047_-_RCE.jpg"
   }
  },
  {
@@ -33578,7 +33381,7 @@
   },
   "hash": "219409851d43",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -33586,7 +33389,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
@@ -52109,7 +51912,7 @@
   },
   "hash": "aab4bc2fb8fc",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -52117,7 +51920,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
   }
  },
  {
@@ -53673,15 +53476,15 @@
   },
   "hash": "b1bfaea3413e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Kramer, A. (Fotograaf)",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
   }
  },
  {
@@ -53732,56 +53535,6 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_De_Zwette1_Sneek.jpg"
-  }
- },
- {
-  "id": "evt_1c34d57d8b1d92",
-  "slug": "scootmobieltraining-zuidhorn-opende-2026-11-17",
-  "title": "Scootmobieltraining Zuidhorn",
-  "occurrences": [
-   {
-    "date": "2026-11-17",
-    "endDate": null,
-    "startTime": "09:00",
-    "endTime": "12:00"
-   }
-  ],
-  "venue": {
-   "name": "Opende",
-   "city": "Opende",
-   "lat": 53.1725,
-   "lon": 6.19806
-  },
-  "price": "Zie organisator",
-  "url": "https://www.opendeonline.nl/agenda/scootmobieltraining-zuidhorn",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.opendeonline.nl/agenda/scootmobieltraining-zuidhorn",
-    "host": "opendeonline.nl",
-    "seenAt": "2026-11-06"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'loop' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "15a5b577cd2f",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Benzine_pomp_aan_de_Skieding._Opende.JPG/1280px-Benzine_pomp_aan_de_Skieding._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Opende",
-   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Baykedevries",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Benzine_pomp_aan_de_Skieding._Opende.JPG"
   }
  },
  {
@@ -61935,56 +61688,6 @@
   }
  },
  {
-  "id": "evt_4d277ab57f797d",
-  "slug": "groot-huisbezoek-hijken-hooghalen-beilen-2026-11-19",
-  "title": "Groot huisbezoek Hijken-Hooghalen",
-  "occurrences": [
-   {
-    "date": "2026-11-19",
-    "endDate": null,
-    "startTime": "21:00",
-    "endTime": "23:00"
-   }
-  ],
-  "venue": {
-   "name": "Pauluskerk",
-   "city": "Beilen",
-   "lat": 52.863668,
-   "lon": 6.5165828
-  },
-  "price": "EUR 0",
-  "url": "https://www.pgbeilen.nl/agenda/groot-huisbezoek-hijken-hooghalen/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.pgbeilen.nl/agenda/groot-huisbezoek-hijken-hooghalen/",
-    "host": "pgbeilen.nl",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "986b1250f5ac",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/20210531_fietsbrug_Beilen.jpg/1280px-20210531_fietsbrug_Beilen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Beilen",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20210531_fietsbrug_Beilen.jpg"
-  }
- },
- {
   "id": "evt_6d5bad855422ab",
   "slug": "just-look-up-groningen-2026-11-19",
   "title": "Just Look Up",
@@ -64025,15 +63728,15 @@
   },
   "hash": "a2af0fe5b6fd",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
+   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Kramer, A. (Fotograaf)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
   }
  },
  {
@@ -66344,56 +66047,6 @@
   }
  },
  {
-  "id": "evt_2daa0616a09370",
-  "slug": "klaver-rummiclub-sellingen-2026-11-20",
-  "title": "Klaver-rummiclub",
-  "occurrences": [
-   {
-    "date": "2026-11-20",
-    "endDate": null,
-    "startTime": "19:30",
-    "endTime": "19:30"
-   }
-  ],
-  "venue": {
-   "name": "Kantine JVV",
-   "city": "Sellingen",
-   "lat": 52.94773035,
-   "lon": 7.12837428
-  },
-  "price": "€3",
-  "url": "https://www.injipsingboertange.nl/evenement/klaver-rummiclub-5/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.injipsingboertange.nl/evenement/klaver-rummiclub-5/",
-    "host": "injipsingboertange.nl",
-    "seenAt": "2026-11-06"
-   }
-  ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'rummi'",
-   "confidence": 0.8
-  },
-  "hash": "895fb40faa87",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-46-31_PM.jpeg/1280px-Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-46-31_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Sellingen",
-   "credit": "Foto: Characea · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Characea",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borgertange_Bos,_Sellingen,_Nederland_May_27,_2022_01-46-31_PM.jpeg"
-  }
- },
- {
   "id": "evt_da9e7fd46c17e1",
   "slug": "kom-dansen-of-kijken-boijl-2026-11-20",
   "title": "Kom dansen of kijken",
@@ -66482,15 +66135,15 @@
   },
   "hash": "11b363ab81fa",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/De_Hervormde_kerk_van_Opende.jpg/1280px-De_Hervormde_kerk_van_Opende.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Benzine_pomp_aan_de_Skieding._Opende.JPG/1280px-Benzine_pomp_aan_de_Skieding._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
-   "credit": "Foto: Uberprutser · CC BY-SA 3.0 nl · Wikimedia Commons",
-   "author": "Uberprutser",
-   "license": "CC BY-SA 3.0 nl",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Hervormde_kerk_van_Opende.jpg"
+   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Baykedevries",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Benzine_pomp_aan_de_Skieding._Opende.JPG"
   }
  },
  {
@@ -68039,15 +67692,15 @@
   },
   "hash": "4186e4b48443",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/A28_-_panoramio_-_StevenL_%289%29.jpg/1280px-A28_-_panoramio_-_StevenL_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/20210531_fietsbrug_Beilen.jpg/1280px-20210531_fietsbrug_Beilen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Beilen",
-   "credit": "Foto: StevenL · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "StevenL",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:A28_-_panoramio_-_StevenL_(9).jpg"
+   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20210531_fietsbrug_Beilen.jpg"
   }
  },
  {
@@ -70420,7 +70073,7 @@
   },
   "hash": "12ed0a258198",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -70428,7 +70081,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
   }
  },
  {
@@ -71094,15 +70747,15 @@
   },
   "hash": "a9a1e7b5e701",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Aan_de_kaleweg_Opende.JPG/1280px-Aan_de_kaleweg_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/De_Hervormde_kerk_van_Opende.jpg/1280px-De_Hervormde_kerk_van_Opende.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
-   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Baykedevries",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aan_de_kaleweg_Opende.JPG"
+   "credit": "Foto: Uberprutser · CC BY-SA 3.0 nl · Wikimedia Commons",
+   "author": "Uberprutser",
+   "license": "CC BY-SA 3.0 nl",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Hervormde_kerk_van_Opende.jpg"
   }
  },
  {
@@ -73007,7 +72660,7 @@
   },
   "hash": "90d1aa5e7b49",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG/1280px-Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Aan_de_kaleweg_Opende.JPG/1280px-Aan_de_kaleweg_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -73015,7 +72668,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aan_de_kaleweg_Opende.JPG"
   }
  },
  {
@@ -76698,7 +76351,7 @@
   "hash": "712584d948dc",
   "groot": "publiekstrekker: 'intocht'",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-47-00_PM.jpeg/1280px-Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-47-00_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-46-31_PM.jpeg/1280px-Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-46-31_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Sellingen",
@@ -76706,7 +76359,7 @@
    "author": "Characea",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borgertange_Bos,_Sellingen,_Nederland_May_27,_2022_01-47-00_PM.jpeg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borgertange_Bos,_Sellingen,_Nederland_May_27,_2022_01-46-31_PM.jpeg"
   }
  },
  {
@@ -88243,15 +87896,15 @@
   },
   "hash": "f11ff43ac527",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Beilen_landweg_zandweg.jpg/1280px-Beilen_landweg_zandweg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/A28_-_panoramio_-_StevenL_%289%29.jpg/1280px-A28_-_panoramio_-_StevenL_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Beilen",
-   "credit": "Foto: JakobHosp · CC0 · Wikimedia Commons",
-   "author": "JakobHosp",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beilen_landweg_zandweg.jpg"
+   "credit": "Foto: StevenL · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "StevenL",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:A28_-_panoramio_-_StevenL_(9).jpg"
   }
  },
  {
@@ -98641,7 +98294,7 @@
   },
   "hash": "2e83f5efbeec",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Begin_Blotevoetenpad_aan_de_kaleweg..jpg/1280px-Begin_Blotevoetenpad_aan_de_kaleweg..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG/1280px-Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -98649,7 +98302,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begin_Blotevoetenpad_aan_de_kaleweg..jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG"
   }
  },
  {
@@ -101382,7 +101035,7 @@
   },
   "hash": "e151661ead15",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-48-12_PM.jpeg/1280px-Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-48-12_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-47-00_PM.jpeg/1280px-Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-47-00_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Sellingen",
@@ -101390,7 +101043,7 @@
    "author": "Characea",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borgertange_Bos,_Sellingen,_Nederland_May_27,_2022_01-48-12_PM.jpeg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borgertange_Bos,_Sellingen,_Nederland_May_27,_2022_01-47-00_PM.jpeg"
   }
  },
  {
@@ -110043,7 +109696,7 @@
   },
   "hash": "94e6a2353985",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -110051,7 +109704,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
@@ -112378,7 +112031,7 @@
   },
   "hash": "a0c4c5e98d16",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Bejaarden_woningen_aan_de_Bossingel_Opende.JPG/1280px-Bejaarden_woningen_aan_de_Bossingel_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Begin_Blotevoetenpad_aan_de_kaleweg..jpg/1280px-Begin_Blotevoetenpad_aan_de_kaleweg..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -112386,7 +112039,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bejaarden_woningen_aan_de_Bossingel_Opende.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begin_Blotevoetenpad_aan_de_kaleweg..jpg"
   }
  },
  {
@@ -116118,56 +115771,6 @@
    "alt": "Foto bij Live: ZoWhatsNew",
    "credit": "Foto: Brouwdok Buitendijks",
    "sourceUrl": "https://buitendijks.nl/buitendijks-events/live-zowhatsnew"
-  }
- },
- {
-  "id": "evt_2f2df097c78b26",
-  "slug": "klaver-rummiclub-sellingen-2026-12-04",
-  "title": "Klaver-rummiclub",
-  "occurrences": [
-   {
-    "date": "2026-12-04",
-    "endDate": null,
-    "startTime": "19:30",
-    "endTime": "19:30"
-   }
-  ],
-  "venue": {
-   "name": "Kantine JVV",
-   "city": "Sellingen",
-   "lat": 52.94773035,
-   "lon": 7.12837428
-  },
-  "price": "€3",
-  "url": "https://www.injipsingboertange.nl/evenement/klaver-rummiclub-6/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.injipsingboertange.nl/evenement/klaver-rummiclub-6/",
-    "host": "injipsingboertange.nl",
-    "seenAt": "2026-11-06"
-   }
-  ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'rummi'",
-   "confidence": 0.8
-  },
-  "hash": "50f75268699a",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_02-32-38_PM.jpeg/1280px-Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_02-32-38_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Sellingen",
-   "credit": "Foto: Characea · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Characea",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borgertange_Bos,_Sellingen,_Nederland_May_27,_2022_02-32-38_PM.jpeg"
   }
  },
  {
@@ -124454,15 +124057,15 @@
   },
   "hash": "bd9319400a56",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Kerk_van_Sellingen.jpg/1280px-Kerk_van_Sellingen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-48-12_PM.jpeg/1280px-Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-48-12_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Sellingen",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerk_van_Sellingen.jpg"
+   "credit": "Foto: Characea · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Characea",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borgertange_Bos,_Sellingen,_Nederland_May_27,_2022_01-48-12_PM.jpeg"
   }
  },
  {
@@ -134283,7 +133886,7 @@
   },
   "hash": "28c2cdab40b4",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Benzine_pomp_aan_de_Skieding._Opende.JPG/1280px-Benzine_pomp_aan_de_Skieding._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Bejaarden_woningen_aan_de_Bossingel_Opende.JPG/1280px-Bejaarden_woningen_aan_de_Bossingel_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -134291,7 +133894,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Benzine_pomp_aan_de_Skieding._Opende.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bejaarden_woningen_aan_de_Bossingel_Opende.JPG"
   }
  },
  {
@@ -135672,15 +135275,15 @@
   },
   "hash": "9dacbc2ecc84",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Broes willus",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
   }
  },
  {
@@ -139434,15 +139037,15 @@
   },
   "hash": "f2eab9603e46",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/DVM_260.JPG/1280px-DVM_260.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Beilen_landweg_zandweg.jpg/1280px-Beilen_landweg_zandweg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Beilen",
-   "credit": "Foto: Spoorjan · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Spoorjan",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:DVM_260.JPG"
+   "credit": "Foto: JakobHosp · CC0 · Wikimedia Commons",
+   "author": "JakobHosp",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beilen_landweg_zandweg.jpg"
   }
  },
  {
@@ -139580,7 +139183,7 @@
   },
   "hash": "3e91998b325f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -139588,7 +139191,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
   }
  },
  {
@@ -145361,15 +144964,15 @@
   },
   "hash": "ad1e4ae91172",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hooghalen_Holtesch_Land_van_Ons_1.jpg/1280px-Hooghalen_Holtesch_Land_van_Ons_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/DVM_260.JPG/1280px-DVM_260.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Beilen",
-   "credit": "Foto: JakobHosp · CC0 · Wikimedia Commons",
-   "author": "JakobHosp",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hooghalen_Holtesch_Land_van_Ons_1.jpg"
+   "credit": "Foto: Spoorjan · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Spoorjan",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:DVM_260.JPG"
   }
  },
  {
@@ -145953,56 +145556,6 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20220509_Hoge_en_Lage_der_Aa_Groningen.jpg"
-  }
- },
- {
-  "id": "evt_e61fd65d867468",
-  "slug": "klaver-rummiclub-sellingen-2026-12-18",
-  "title": "Klaver-rummiclub",
-  "occurrences": [
-   {
-    "date": "2026-12-18",
-    "endDate": null,
-    "startTime": "19:30",
-    "endTime": "19:30"
-   }
-  ],
-  "venue": {
-   "name": "Kantine JVV",
-   "city": "Sellingen",
-   "lat": 52.94773035,
-   "lon": 7.12837428
-  },
-  "price": "€3",
-  "url": "https://www.injipsingboertange.nl/evenement/klaver-rummiclub-7/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.injipsingboertange.nl/evenement/klaver-rummiclub-7/",
-    "host": "injipsingboertange.nl",
-    "seenAt": "2026-11-06"
-   }
-  ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'rummi'",
-   "confidence": 0.8
-  },
-  "hash": "4de7fe6d3705",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-42-36_PM.jpeg/1280px-Borgertange_Bos%2C_Sellingen%2C_Nederland_May_27%2C_2022_01-42-36_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Sellingen",
-   "credit": "Foto: Characea · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Characea",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borgertange_Bos,_Sellingen,_Nederland_May_27,_2022_01-42-36_PM.jpeg"
   }
  },
  {
@@ -159462,7 +159015,7 @@
   },
   "hash": "6c2b6e5c8b5e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -159470,7 +159023,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
   }
  },
  {
@@ -165594,15 +165147,15 @@
   },
   "hash": "5e79d0c2f990",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/De_Hervormde_kerk_van_Opende.jpg/1280px-De_Hervormde_kerk_van_Opende.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Benzine_pomp_aan_de_Skieding._Opende.JPG/1280px-Benzine_pomp_aan_de_Skieding._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
-   "credit": "Foto: Uberprutser · CC BY-SA 3.0 nl · Wikimedia Commons",
-   "author": "Uberprutser",
-   "license": "CC BY-SA 3.0 nl",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Hervormde_kerk_van_Opende.jpg"
+   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Baykedevries",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Benzine_pomp_aan_de_Skieding._Opende.JPG"
   }
  },
  {
@@ -167912,15 +167465,15 @@
   },
   "hash": "da4d1246d9c2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/De_Gave_ten_oosten_van_Oostwold_%28Westerkwartier%29.jpg/1280px-De_Gave_ten_oosten_van_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Oost-_en_Noordgevel_-_Oostwold_%28Westerkwartier%29_-_20176047_-_RCE.jpg/1280px-Oost-_en_Noordgevel_-_Oostwold_%28Westerkwartier%29_-_20176047_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oostwold",
-   "credit": "Foto: Cauda Rubra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Cauda Rubra",
+   "credit": "Foto: A. J. van der Wal · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "A. J. van der Wal",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Gave_ten_oosten_van_Oostwold_(Westerkwartier).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oost-_en_Noordgevel_-_Oostwold_(Westerkwartier)_-_20176047_-_RCE.jpg"
   }
  },
  {
@@ -178503,15 +178056,15 @@
   },
   "hash": "573f83ebfdb2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Aan_de_kaleweg_Opende.JPG/1280px-Aan_de_kaleweg_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/De_Hervormde_kerk_van_Opende.jpg/1280px-De_Hervormde_kerk_van_Opende.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
-   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Baykedevries",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aan_de_kaleweg_Opende.JPG"
+   "credit": "Foto: Uberprutser · CC BY-SA 3.0 nl · Wikimedia Commons",
+   "author": "Uberprutser",
+   "license": "CC BY-SA 3.0 nl",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Hervormde_kerk_van_Opende.jpg"
   }
  },
  {
@@ -180461,15 +180014,15 @@
   },
   "hash": "eb834cc2acbd",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Beilen_Rotonde.JPG/1280px-Beilen_Rotonde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hooghalen_Holtesch_Land_van_Ons_1.jpg/1280px-Hooghalen_Holtesch_Land_van_Ons_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Beilen",
-   "credit": "Foto: Gerardus · Public domain · Wikimedia Commons",
-   "author": "Gerardus",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beilen_Rotonde.JPG"
+   "credit": "Foto: JakobHosp · CC0 · Wikimedia Commons",
+   "author": "JakobHosp",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hooghalen_Holtesch_Land_van_Ons_1.jpg"
   }
  },
  {
@@ -184583,7 +184136,7 @@
   },
   "hash": "c806adbc1228",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
@@ -184591,7 +184144,7 @@
    "author": "Broes willus",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
   }
  },
  {
@@ -186386,15 +185939,15 @@
   },
   "hash": "586c32cc11b5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
+   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Broes willus",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
   }
  },
  {
@@ -186786,7 +186339,7 @@
   },
   "hash": "6b057549c080",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG/1280px-Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Aan_de_kaleweg_Opende.JPG/1280px-Aan_de_kaleweg_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -186794,7 +186347,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aan_de_kaleweg_Opende.JPG"
   }
  },
  {
@@ -191300,7 +190853,7 @@
   },
   "hash": "b2780f90b05e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Hoofdstraat_Oostwold_%28Westerkwartier%29.jpg/1280px-Hoofdstraat_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/De_Gave_ten_oosten_van_Oostwold_%28Westerkwartier%29.jpg/1280px-De_Gave_ten_oosten_van_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oostwold",
@@ -191308,7 +190861,7 @@
    "author": "Cauda Rubra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoofdstraat_Oostwold_(Westerkwartier).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Gave_ten_oosten_van_Oostwold_(Westerkwartier).jpg"
   }
  },
  {
@@ -192357,7 +191910,7 @@
   },
   "hash": "64d8a668ddab",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Begin_Blotevoetenpad_aan_de_kaleweg..jpg/1280px-Begin_Blotevoetenpad_aan_de_kaleweg..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG/1280px-Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -192365,7 +191918,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begin_Blotevoetenpad_aan_de_kaleweg..jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG"
   }
  },
  {
@@ -198030,7 +197583,7 @@
   },
   "hash": "10bd8d7ccc6a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Bejaarden_woningen_aan_de_Bossingel_Opende.JPG/1280px-Bejaarden_woningen_aan_de_Bossingel_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Begin_Blotevoetenpad_aan_de_kaleweg..jpg/1280px-Begin_Blotevoetenpad_aan_de_kaleweg..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -198038,7 +197591,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bejaarden_woningen_aan_de_Bossingel_Opende.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begin_Blotevoetenpad_aan_de_kaleweg..jpg"
   }
  },
  {
@@ -202993,15 +202546,15 @@
   },
   "hash": "3863c09fb151",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "C messier",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
   }
  },
  {
@@ -204076,15 +203629,15 @@
   },
   "hash": "b7889173d559",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Kramer, A. (Fotograaf)",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
   }
  },
  {
@@ -204377,7 +203930,7 @@
   },
   "hash": "0e80b2abf5a6",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Benzine_pomp_aan_de_Skieding._Opende.JPG/1280px-Benzine_pomp_aan_de_Skieding._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Bejaarden_woningen_aan_de_Bossingel_Opende.JPG/1280px-Bejaarden_woningen_aan_de_Bossingel_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -204385,7 +203938,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Benzine_pomp_aan_de_Skieding._Opende.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bejaarden_woningen_aan_de_Bossingel_Opende.JPG"
   }
  },
  {
@@ -205381,15 +204934,15 @@
   },
   "hash": "b27d6ae904d6",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
+   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Kramer, A. (Fotograaf)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
   }
  },
  {
@@ -209203,15 +208756,15 @@
   },
   "hash": "53b0f840d5ba",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/20210531_fietsbrug_Beilen.jpg/1280px-20210531_fietsbrug_Beilen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Beilen_Rotonde.JPG/1280px-Beilen_Rotonde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Beilen",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20210531_fietsbrug_Beilen.jpg"
+   "credit": "Foto: Gerardus · Public domain · Wikimedia Commons",
+   "author": "Gerardus",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beilen_Rotonde.JPG"
   }
  },
  {
@@ -211541,15 +211094,15 @@
   },
   "hash": "4f4e3365be3d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Broes willus",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
   }
  },
  {
@@ -212288,7 +211841,7 @@
   },
   "hash": "44780e351b8a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -212296,7 +211849,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
@@ -213192,7 +212745,7 @@
   },
   "hash": "f5cd0c70f367",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
@@ -213200,7 +212753,7 @@
    "author": "Broes willus",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
   }
  },
  {
@@ -216376,15 +215929,15 @@
   },
   "hash": "4ea5c6e7279b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
+   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Broes willus",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
   }
  },
  {
@@ -217184,15 +216737,15 @@
   },
   "hash": "d91f85617e01",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "C messier",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
   }
  },
  {
@@ -219152,15 +218705,15 @@
   },
   "hash": "dd61ac457cd4",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Kramer, A. (Fotograaf)",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
   }
  },
  {
@@ -224353,15 +223906,15 @@
   },
   "hash": "3da64cd982e2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
+   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Kramer, A. (Fotograaf)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
   }
  },
  {
@@ -224787,15 +224340,15 @@
   },
   "hash": "0e522d5ca2d3",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/De_Hervormde_kerk_van_Opende.jpg/1280px-De_Hervormde_kerk_van_Opende.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Benzine_pomp_aan_de_Skieding._Opende.JPG/1280px-Benzine_pomp_aan_de_Skieding._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
-   "credit": "Foto: Uberprutser · CC BY-SA 3.0 nl · Wikimedia Commons",
-   "author": "Uberprutser",
-   "license": "CC BY-SA 3.0 nl",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Hervormde_kerk_van_Opende.jpg"
+   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Baykedevries",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Benzine_pomp_aan_de_Skieding._Opende.JPG"
   }
  },
  {
@@ -226336,15 +225889,15 @@
   },
   "hash": "dc7e9bc98b38",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Broes willus",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
   }
  },
  {
@@ -227131,15 +226684,15 @@
   },
   "hash": "8978b6b8e8c4",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Aan_de_kaleweg_Opende.JPG/1280px-Aan_de_kaleweg_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/De_Hervormde_kerk_van_Opende.jpg/1280px-De_Hervormde_kerk_van_Opende.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
-   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Baykedevries",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aan_de_kaleweg_Opende.JPG"
+   "credit": "Foto: Uberprutser · CC BY-SA 3.0 nl · Wikimedia Commons",
+   "author": "Uberprutser",
+   "license": "CC BY-SA 3.0 nl",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Hervormde_kerk_van_Opende.jpg"
   }
  },
  {
@@ -230699,7 +230252,7 @@
   },
   "hash": "39ee07454377",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
@@ -230707,7 +230260,7 @@
    "author": "Broes willus",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
   }
  },
  {
@@ -231603,15 +231156,15 @@
   },
   "hash": "2340eb0bd43d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
+   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Broes willus",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
   }
  },
  {
@@ -232944,15 +232497,15 @@
   },
   "hash": "55faa6d61eaf",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "C messier",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
   }
  },
  {
@@ -234554,7 +234107,7 @@
   },
   "hash": "d9ef4ad392cc",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG/1280px-Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Aan_de_kaleweg_Opende.JPG/1280px-Aan_de_kaleweg_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -234562,7 +234115,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aan_de_kaleweg_Opende.JPG"
   }
  },
  {
@@ -237219,15 +236772,15 @@
   },
   "hash": "e9661b555371",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Kramer, A. (Fotograaf)",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
   }
  },
  {
@@ -238174,15 +237727,15 @@
   },
   "hash": "69b219a0d21a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
+   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Kramer, A. (Fotograaf)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
   }
  },
  {
@@ -240021,15 +239574,15 @@
   },
   "hash": "8abf405b8b2c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Broes willus",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
   }
  },
  {
@@ -241218,7 +240771,7 @@
   },
   "hash": "559a5c88d348",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Begin_Blotevoetenpad_aan_de_kaleweg..jpg/1280px-Begin_Blotevoetenpad_aan_de_kaleweg..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG/1280px-Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -241226,7 +240779,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begin_Blotevoetenpad_aan_de_kaleweg..jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonia_Hoeve_1912_Drachtsterweg._Opende.JPG"
   }
  },
  {
@@ -244358,7 +243911,7 @@
   },
   "hash": "ce9001fb14ff",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
@@ -244366,7 +243919,7 @@
    "author": "Broes willus",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
   }
  },
  {
@@ -245958,15 +245511,15 @@
   },
   "hash": "39e252b2242d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
+   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Broes willus",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
   }
  },
  {
@@ -248602,15 +248155,15 @@
   },
   "hash": "49dcfa6074b3",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "C messier",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
   }
  },
  {
@@ -249454,15 +249007,15 @@
   },
   "hash": "ff290328ebb7",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Kramer, A. (Fotograaf)",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
   }
  },
  {
@@ -249754,7 +249307,7 @@
   },
   "hash": "99e9035463b7",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Bejaarden_woningen_aan_de_Bossingel_Opende.JPG/1280px-Bejaarden_woningen_aan_de_Bossingel_Opende.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Begin_Blotevoetenpad_aan_de_kaleweg..jpg/1280px-Begin_Blotevoetenpad_aan_de_kaleweg..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Opende",
@@ -249762,7 +249315,7 @@
    "author": "Baykedevries",
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bejaarden_woningen_aan_de_Bossingel_Opende.JPG"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begin_Blotevoetenpad_aan_de_kaleweg..jpg"
   }
  },
  {
@@ -250455,15 +250008,15 @@
   },
   "hash": "eb420c0f94ad",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
+   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Kramer, A. (Fotograaf)",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
   }
  },
  {
@@ -255115,15 +254668,15 @@
   },
   "hash": "3e67421010ec",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Arwerd.jpg/1280px-Arwerd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Broes willus",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arwerd.jpg"
   }
  },
  {
@@ -257787,7 +257340,7 @@
   },
   "hash": "4ce4b2363d50",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Biessumerwaard_in_Delfzijl_Noord.jpg/1280px-Biessumerwaard_in_Delfzijl_Noord.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
@@ -257795,7 +257348,7 @@
    "author": "Broes willus",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessumerwaard_in_Delfzijl_Noord.jpg"
   }
  },
  {
@@ -259698,15 +259251,15 @@
   },
   "hash": "5dffb116ab9b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Biessummerbos.jpg/1280px-Biessummerbos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
+   "credit": "Foto: Broes willus · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Broes willus",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biessummerbos.jpg"
   }
  },
  {
@@ -260495,15 +260048,15 @@
   },
   "hash": "19e04a739150",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Zicht_op_Delfzijl1.jpg/1280px-Zicht_op_Delfzijl1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "C messier",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_Delfzijl1.jpg"
   }
  },
  {
@@ -261792,15 +261345,15 @@
   },
   "hash": "3ac0b3fc4598",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg/1280px-Aanzicht_gedenksteen_gesloopte_brug%2C_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Delfzijl_1427.jpg/1280px-Delfzijl_1427.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Delfzijl",
-   "credit": "Foto: Kramer, A. (Fotograaf) · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Kramer, A. (Fotograaf)",
+   "credit": "Foto: C messier · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "C messier",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aanzicht_gedenksteen_gesloopte_brug,_verplaatst_naar_dijk_bij_de_Dorpsterzijl_-_Delfzijl_-_20371193_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delfzijl_1427.jpg"
   }
  },
  {
@@ -268636,15 +268189,15 @@
   },
   "hash": "05439a46f31b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Kleine_Oostwolderpolder_-_molenromp.jpg/1280px-Kleine_Oostwolderpolder_-_molenromp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Hoofdstraat_Oostwold_%28Westerkwartier%29.jpg/1280px-Hoofdstraat_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oostwold",
-   "credit": "Foto: Hardscarf · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Hardscarf",
+   "credit": "Foto: Cauda Rubra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Cauda Rubra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kleine_Oostwolderpolder_-_molenromp.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoofdstraat_Oostwold_(Westerkwartier).jpg"
   }
  },
  {
@@ -289377,15 +288930,15 @@
   },
   "hash": "006d1be695bf",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/MFC_De_Gaveborg_Oostwold_%28Westerkwartier%29.jpg/1280px-MFC_De_Gaveborg_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Kleine_Oostwolderpolder_-_molenromp.jpg/1280px-Kleine_Oostwolderpolder_-_molenromp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oostwold",
-   "credit": "Foto: Cauda Rubra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Cauda Rubra",
+   "credit": "Foto: Hardscarf · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Hardscarf",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:MFC_De_Gaveborg_Oostwold_(Westerkwartier).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kleine_Oostwolderpolder_-_molenromp.jpg"
   }
  },
  {
@@ -299431,46 +298984,6 @@
    "licenseUrl": null,
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appelscha.jpg"
   }
- },
- {
-  "id": "evt_3ab07aa96fc7af",
-  "slug": "museum-open-in-2027-damwald-2027-10-30",
-  "title": "Museum open in 2027",
-  "occurrences": [
-   {
-    "date": "2027-10-30",
-    "endDate": null,
-    "startTime": "13:30",
-    "endTime": "17:00"
-   }
-  ],
-  "venue": {
-   "name": "Openluchtmuseum De Sûkerei",
-   "city": "Damwâld",
-   "lat": 53.2927753,
-   "lon": 6.0117867
-  },
-  "price": "Zie organisator",
-  "url": "https://desukerei.nl/activiteiten/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://desukerei.nl/activiteiten/",
-    "host": "desukerei.nl",
-    "seenAt": "2026-11-06"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'museum'",
-   "confidence": 0.8
-  },
-  "hash": "b7c82a507554",
-  "image": null
  },
  {
   "id": "evt_4c22bf0a882524",
