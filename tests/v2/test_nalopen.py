@@ -535,3 +535,21 @@ def test_festivalpagina_die_weg_is_is_leeg():
         html_cards.fetch(config, source_name="f", root_url="https://forum.example/", page_fetch=fetch, today=date(2027, 1, 5))
     assert html_cards.fetch({**config, "missingIsEmpty": True}, source_name="f", root_url="https://forum.example/",
                             page_fetch=fetch, today=date(2027, 1, 5)) == []
+
+
+# Dagcontrole 8 november 2026 (123 nieuwe uitjes): kopjes, dorpsroutines, Frans/Frysk concert, clubbron uit.
+def test_dagcontrole_8_november_geen_uitje():
+    for title in ("Voorpagina", "De Bonte Wever 25", "Zondag 8 november 14:30 uur", "Zaterdag 21 november",
+                  "Damensauna im Koppke Greetsiel", "Gratis verwendag voor minima", "Dorphuis open", "Zaterdag snack dag in Elim!"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_8_november_echte_uitjes_blijven_staan():
+    for title in ("Zaterdag 21 november: Kerstmarkt", "Zondag 8 november Concert in de kerk", "Sauna-avond met live muziek",
+                  "Dorpshuis open dag met optreden", "Voorpagina Festival", "Snackdag Foodtruck Festival"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_frysk_konsert_is_muziek():
+    assert classify(_event("Hjerstkonsert Concordia de Gaastmar"), OVERRIDES)["kind"] == "muziek"
+    assert classify(_event("Hjerstkonsert Concordia de Gaastmar + Pubkwis"), OVERRIDES)["kind"] == "muziek"
