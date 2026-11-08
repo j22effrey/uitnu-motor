@@ -3403,53 +3403,6 @@
   }
  },
  {
-  "id": "evt_9b35292b740d88",
-  "slug": "voorpagina-elim-2026-11-08",
-  "title": "Voorpagina",
-  "occurrences": [
-   {
-    "date": "2026-11-08",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Elim",
-   "city": "Elim",
-   "lat": 52.6822,
-   "lon": 6.5794
-  },
-  "price": "Zie organisator",
-  "url": "https://www.elim-drenthe.nl/zondag-8-november-2026/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.elim-drenthe.nl/zondag-8-november-2026/",
-    "host": "elim-drenthe.nl",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "99e31a69d3dc",
-  "image": {
-   "url": "https://www.elim-drenthe.nl/wp-content/uploads/2026/11/887348975_1464302962250194_2384342728993753560_n-1024x691.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Voorpagina",
-   "credit": "Foto: Dorp Elim",
-   "sourceUrl": "https://www.elim-drenthe.nl/zondag-8-november-2026/"
-  }
- },
- {
   "id": "evt_8a056d588cf2b4",
   "slug": "weids-op-hete-kolen-bolsward-2026-11-08",
   "title": "Weids op Hete Kolen",
@@ -3494,103 +3447,6 @@
    "alt": "Foto bij Weids op Hete Kolen",
    "credit": "Foto: Bolsward",
    "sourceUrl": "https://www.bolsward.nl/agenda/weids-op-hete-kolen/"
-  }
- },
- {
-  "id": "evt_14c105a73bb790",
-  "slug": "zaterdag-snack-dag-in-elim-elim-2026-11-08",
-  "title": "Zaterdag snack dag in Elim!",
-  "occurrences": [
-   {
-    "date": "2026-11-08",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Elim",
-   "city": "Elim",
-   "lat": 52.6822,
-   "lon": 6.5794
-  },
-  "price": "Zie organisator",
-  "url": "https://www.elim-drenthe.nl/zondag-8-november-2026/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.elim-drenthe.nl/zondag-8-november-2026/",
-    "host": "elim-drenthe.nl",
-    "seenAt": "2026-11-08"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "3fac7afbdea5",
-  "image": {
-   "url": "https://www.elim-drenthe.nl/wp-content/uploads/2026/11/887348975_1464302962250194_2384342728993753560_n-1024x691.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Zaterdag snack dag in Elim!",
-   "credit": "Foto: Dorp Elim",
-   "sourceUrl": "https://www.elim-drenthe.nl/zondag-8-november-2026/"
-  }
- },
- {
-  "id": "evt_72e574572061e6",
-  "slug": "zondag-8-november-14-30-uur-enumatil-2026-11-08",
-  "title": "Zondag 8 november 14:30 uur",
-  "occurrences": [
-   {
-    "date": "2026-11-08",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Enumatil",
-   "city": "Enumatil",
-   "lat": 53.21457999,
-   "lon": 6.41093251
-  },
-  "price": "Zie organisator",
-  "url": "https://www.ngkgrijpskerk.nl/erediensten/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.ngkgrijpskerk.nl/erediensten/",
-    "host": "ngkgrijpskerk.nl",
-    "seenAt": "2026-11-08"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "1c042dcc1b5c",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Enumatil%2C_korenmolen_Eben_Ha%C3%ABzer_%28RM41081%29_in_straatzicht_foto8_2013-08-25_10.57.jpg/1280px-Enumatil%2C_korenmolen_Eben_Ha%C3%ABzer_%28RM41081%29_in_straatzicht_foto8_2013-08-25_10.57.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Enumatil",
-   "credit": "Foto: Michielverbeek · CC BY-SA 3.0 nl · Wikimedia Commons",
-   "author": "Michielverbeek",
-   "license": "CC BY-SA 3.0 nl",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enumatil,_korenmolen_Eben_Ha%C3%ABzer_(RM41081)_in_straatzicht_foto8_2013-08-25_10.57.jpg"
   }
  },
  {
@@ -6430,7 +6286,7 @@
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'fanfare'",
+   "reason": "trefwoord 'konsert'",
    "confidence": 0.8
   },
   "hash": "559a0d5bb1d6",
@@ -6477,7 +6333,7 @@
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'fanfare'",
+   "reason": "trefwoord 'konsert'",
    "confidence": 0.8
   },
   "hash": "c761a0a32ea9",
@@ -7795,7 +7651,7 @@
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'fanfare'",
+   "reason": "trefwoord 'konsert'",
    "confidence": 0.8
   },
   "hash": "955bdca39cf5",
@@ -17210,56 +17066,6 @@
   }
  },
  {
-  "id": "evt_d41250cc1bc148",
-  "slug": "damensauna-im-koppke-greetsiel-krummhorn-2026-11-11",
-  "title": "Damensauna im Koppke Greetsiel",
-  "occurrences": [
-   {
-    "date": "2026-11-11",
-    "endDate": null,
-    "startTime": "09:00",
-    "endTime": "22:00"
-   }
-  ],
-  "venue": {
-   "name": "Campener Leuchtturm",
-   "city": "Krummhörn",
-   "lat": 53.4057184,
-   "lon": 7.0155746
-  },
-  "price": "Zie organisator",
-  "url": "https://www.greetsiel.de/erlebnisse/veranstaltungskalender",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.greetsiel.de/erlebnisse/veranstaltungskalender",
-    "host": "greetsiel.de",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "aef7eb8535d1",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg/1280px-Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Krummhörn",
-   "credit": "Foto: PantheraLeo1359531 · CC BY 4.0 · Wikimedia Commons",
-   "author": "PantheraLeo1359531",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg"
-  }
- },
- {
   "id": "evt_61bced8d8e12a6",
   "slug": "lezing-chez-matisse-oosterwolde-2026-11-11",
   "title": "Lezing ‘Chez Matisse’",
@@ -22062,15 +21868,15 @@
   },
   "hash": "6007f2b76101",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Beningaburg37.JPG/1280px-Beningaburg37.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg/1280px-Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: User:Matthias Süßen · CC BY 3.0 · Wikimedia Commons",
-   "author": "User:Matthias Süßen",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beningaburg37.JPG"
+   "credit": "Foto: PantheraLeo1359531 · CC BY 4.0 · Wikimedia Commons",
+   "author": "PantheraLeo1359531",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg"
   }
  },
  {
@@ -35890,15 +35696,15 @@
     "seenAt": "2026-11-07"
    }
   ],
-  "kind": "overig",
-  "kindLabel": "Overig",
+  "kind": "muziek",
+  "kindLabel": "Muziek",
   "tags": [],
   "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
+   "method": "trefwoord",
+   "reason": "trefwoord 'konsert'",
+   "confidence": 0.8
   },
-  "hash": "f2631cb0a49f",
+  "hash": "3b91792a3795",
   "image": {
    "url": "https://www.degaastmar.nl/wp-content/uploads/2026/09/Black-and-Yellow-Minimalist-Elegant-Music-Concert-Invitation.jpg",
    "type": "organisator",
@@ -61176,58 +60982,6 @@
   }
  },
  {
-  "id": "evt_cc6e8bdf4f143c",
-  "slug": "gratis-verwendag-voor-minima-sleen-2026-11-21",
-  "title": "Gratis verwendag voor minima",
-  "occurrences": [
-   {
-    "date": "2026-11-21",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Sleen",
-   "city": "Sleen",
-   "lat": 52.7733,
-   "lon": 6.8019
-  },
-  "price": "Zie organisator",
-  "url": "https://www.sleen.nu/home/agenda/pagina/2",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.sleen.nu/home/agenda/pagina/2",
-    "host": "sleen.nu",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [
-   "gratis"
-  ],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "a8157741bfbf",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Joodse-begraafplaats-Sleen.JPG/1280px-Joodse-begraafplaats-Sleen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Sleen",
-   "credit": "Foto: Jandebehanger · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Jandebehanger",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joodse-begraafplaats-Sleen.JPG"
-  }
- },
- {
   "id": "evt_1a15b079536463",
   "slug": "hjidna-leeuwarden-2026-11-21",
   "title": "HJIDNA",
@@ -63847,15 +63601,15 @@
   },
   "hash": "3c0f23446a5c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Transformatorhuisje_in_Sleen.jpg/1280px-Transformatorhuisje_in_Sleen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Joodse-begraafplaats-Sleen.JPG/1280px-Joodse-begraafplaats-Sleen.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Sleen",
-   "credit": "Foto: AnthonyRuijtenbeek · CC BY 4.0 · Wikimedia Commons",
-   "author": "AnthonyRuijtenbeek",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transformatorhuisje_in_Sleen.jpg"
+   "credit": "Foto: Jandebehanger · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Jandebehanger",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joodse-begraafplaats-Sleen.JPG"
   }
  },
  {
@@ -93808,15 +93562,15 @@
   },
   "hash": "aa9227ae9d83",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg/1280px-Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Beningaburg37.JPG/1280px-Beningaburg37.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: JoachimKohler-HB · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "JoachimKohler-HB",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bienenst%C3%B6cke_(Magazinbeuten)_Rapsfeld_Krummh%C3%B6rn_(2023).jpg"
+   "credit": "Foto: User:Matthias Süßen · CC BY 3.0 · Wikimedia Commons",
+   "author": "User:Matthias Süßen",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beningaburg37.JPG"
   }
  },
  {
@@ -94801,15 +94555,15 @@
   },
   "hash": "4efc948df300",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_%28Zollweg%29_-_panoramio.jpg/1280px-Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_%28Zollweg%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg/1280px-Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: Thotti22 · CC BY 3.0 · Wikimedia Commons",
-   "author": "Thotti22",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_(Zollweg)_-_panoramio.jpg"
+   "credit": "Foto: JoachimKohler-HB · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "JoachimKohler-HB",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bienenst%C3%B6cke_(Magazinbeuten)_Rapsfeld_Krummh%C3%B6rn_(2023).jpg"
   }
  },
  {
@@ -94903,15 +94657,15 @@
   },
   "hash": "55ce3ae55294",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/20190821_Wytmarsumerfeart_Schettens.jpg/1280px-20190821_Wytmarsumerfeart_Schettens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Huizen_aan_het_water_in_Schettens.JPG/1280px-Huizen_aan_het_water_in_Schettens.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schettens",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190821_Wytmarsumerfeart_Schettens.jpg"
+   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Baykedevries",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huizen_aan_het_water_in_Schettens.JPG"
   }
  },
  {
@@ -95454,56 +95208,6 @@
    "license": "CC BY 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aletta_Jacobs_in_Groningen.jpg"
-  }
- },
- {
-  "id": "evt_4af2b4f8e62889",
-  "slug": "dorphuis-open-schettens-2026-11-28",
-  "title": "Dorphuis open",
-  "occurrences": [
-   {
-    "date": "2026-11-28",
-    "endDate": null,
-    "startTime": "17:00",
-    "endTime": "22:00"
-   }
-  ],
-  "venue": {
-   "name": "Schettens",
-   "city": "Schettens",
-   "lat": 53.0679,
-   "lon": 5.4889
-  },
-  "price": "Zie organisator",
-  "url": "https://schettens-longerhouw.nl/evenement/dorphuis-open",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://schettens-longerhouw.nl/evenement/dorphuis-open",
-    "host": "schettens-longerhouw.nl",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "e7fad0810904",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Huizen_aan_het_water_in_Schettens.JPG/1280px-Huizen_aan_het_water_in_Schettens.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Schettens",
-   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Baykedevries",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huizen_aan_het_water_in_Schettens.JPG"
   }
  },
  {
@@ -98227,15 +97931,15 @@
   },
   "hash": "bb2126bae04a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Das_Dorf_Hauen_bei_Greetsiel%2C_Gemeinde_Krummh%C3%B6rn%2C_Hauener_Ring.jpg/1280px-Das_Dorf_Hauen_bei_Greetsiel%2C_Gemeinde_Krummh%C3%B6rn%2C_Hauener_Ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_%28Zollweg%29_-_panoramio.jpg/1280px-Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_%28Zollweg%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: Tremomini · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Tremomini",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Das_Dorf_Hauen_bei_Greetsiel,_Gemeinde_Krummh%C3%B6rn,_Hauener_Ring.jpg"
+   "credit": "Foto: Thotti22 · CC BY 3.0 · Wikimedia Commons",
+   "author": "Thotti22",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_(Zollweg)_-_panoramio.jpg"
   }
  },
  {
@@ -100334,15 +100038,15 @@
   },
   "hash": "104aa99f126b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sch%C3%B6pfwerk_Greetsiel.JPG/1280px-Sch%C3%B6pfwerk_Greetsiel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Das_Dorf_Hauen_bei_Greetsiel%2C_Gemeinde_Krummh%C3%B6rn%2C_Hauener_Ring.jpg/1280px-Das_Dorf_Hauen_bei_Greetsiel%2C_Gemeinde_Krummh%C3%B6rn%2C_Hauener_Ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: Pe-sa · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Pe-sa",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sch%C3%B6pfwerk_Greetsiel.JPG"
+   "credit": "Foto: Tremomini · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Tremomini",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Das_Dorf_Hauen_bei_Greetsiel,_Gemeinde_Krummh%C3%B6rn,_Hauener_Ring.jpg"
   }
  },
  {
@@ -112654,15 +112358,15 @@
   },
   "hash": "3e1371d3f2b0",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg/1280px-Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sch%C3%B6pfwerk_Greetsiel.JPG/1280px-Sch%C3%B6pfwerk_Greetsiel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: PantheraLeo1359531 · CC BY 4.0 · Wikimedia Commons",
-   "author": "PantheraLeo1359531",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg"
+   "credit": "Foto: Pe-sa · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Pe-sa",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sch%C3%B6pfwerk_Greetsiel.JPG"
   }
  },
  {
@@ -115058,15 +114762,15 @@
   },
   "hash": "469740c99ff4",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Trial_rijder_training.jpg/1280px-Trial_rijder_training.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Transformatorhuisje_in_Sleen.jpg/1280px-Transformatorhuisje_in_Sleen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Sleen",
-   "credit": "Foto: Klaaz · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Klaaz",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trial_rijder_training.jpg"
+   "credit": "Foto: AnthonyRuijtenbeek · CC BY 4.0 · Wikimedia Commons",
+   "author": "AnthonyRuijtenbeek",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transformatorhuisje_in_Sleen.jpg"
   }
  },
  {
@@ -129596,15 +129300,15 @@
   },
   "hash": "d4dd4f794423",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Beningaburg37.JPG/1280px-Beningaburg37.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg/1280px-Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: User:Matthias Süßen · CC BY 3.0 · Wikimedia Commons",
-   "author": "User:Matthias Süßen",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beningaburg37.JPG"
+   "credit": "Foto: PantheraLeo1359531 · CC BY 4.0 · Wikimedia Commons",
+   "author": "PantheraLeo1359531",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg"
   }
  },
  {
@@ -159437,15 +159141,15 @@
   },
   "hash": "0ae9db3e3f9c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg/1280px-Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Beningaburg37.JPG/1280px-Beningaburg37.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: JoachimKohler-HB · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "JoachimKohler-HB",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bienenst%C3%B6cke_(Magazinbeuten)_Rapsfeld_Krummh%C3%B6rn_(2023).jpg"
+   "credit": "Foto: User:Matthias Süßen · CC BY 3.0 · Wikimedia Commons",
+   "author": "User:Matthias Süßen",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beningaburg37.JPG"
   }
  },
  {
@@ -161010,15 +160714,15 @@
   },
   "hash": "70ee10b8aa7d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_%28Zollweg%29_-_panoramio.jpg/1280px-Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_%28Zollweg%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg/1280px-Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Krummhörn",
-   "credit": "Foto: Thotti22 · CC BY 3.0 · Wikimedia Commons",
-   "author": "Thotti22",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_(Zollweg)_-_panoramio.jpg"
+   "credit": "Foto: JoachimKohler-HB · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "JoachimKohler-HB",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bienenst%C3%B6cke_(Magazinbeuten)_Rapsfeld_Krummh%C3%B6rn_(2023).jpg"
   }
  },
  {
@@ -213471,53 +213175,6 @@
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Grooth_2012-III.JPG"
-  }
- },
- {
-  "id": "evt_6d089dab280ef0",
-  "slug": "de-bonte-wever-25-assen-2027-02-28",
-  "title": "De Bonte Wever 25",
-  "occurrences": [
-   {
-    "date": "2027-02-28",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "Zie organisator",
-  "url": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027",
-    "host": "debontewever.nl",
-    "seenAt": "2026-11-07"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'toernooi' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "7c5fc508770c",
-  "image": {
-   "url": "https://s3.eu-central-1.amazonaws.com/media.2025.debontewever.nl/media/3307/DOdarts2.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij De Bonte Wever 25",
-   "credit": "Foto: De Bonte Wever",
-   "sourceUrl": "https://www.debontewever.nl/nl/events/dutch-open-darts-2027"
   }
  },
  {
