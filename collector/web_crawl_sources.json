@@ -16372,7 +16372,7 @@
       "name": "NEC Delfzijl",
       "rootUrl": "https://www.necdelfzijl.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -16387,7 +16387,8 @@
         "lat": 53.3305546,
         "lon": 6.9161152
       },
-      "policyReviewedAt": "2026-11-05"
+      "policyReviewedAt": "2026-11-05",
+      "disabledReason": "Dagcontrole 8 november 2026: de pagina 'Programma' van voetbalclub NEC Delfzijl geeft alleen wedstrijden van amateurteams ('NEC Delfzijl 1', 'Helpman 1', 'Programma thuis'); dat zijn geen uitjes voor het grote publiek (vaste regel 4)."
     },
     {
       "id": "dotgroningen-nl-web",
