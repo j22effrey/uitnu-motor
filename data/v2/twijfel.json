@@ -50,6 +50,16 @@
   ]
  },
  {
+  "id": "evt_3e071f5bef829c",
+  "title": "Samenkomst",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.cgkzuidlaren.nl/ontmoeten/samenkomsten",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_8a056d588cf2b4",
   "title": "Weids op Hete Kolen",
   "kind": "overig",
@@ -80,31 +90,21 @@
   ]
  },
  {
-  "id": "evt_3d8d1bb0ff6ebc",
-  "title": "Toekomst Mobiliteit",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/toekomst-mobiliteit?date=08-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_448dcb8ce9c9ea",
-  "title": "Un kuenta, wan tori, ons verhoal",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/un-kuenta-wan-tori-ons-verhoal?date=08-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_0c92ab01541f96",
   "title": "Öffentliche Führung",
   "kind": "kunst",
   "reason": "website kunsthalle-emden.de",
   "url": "https://kunsthalle-emden.de/kunst-aktiv/veranstaltungsdetails/ffentliche-f-hrung-2026-11-08-11-30-133867",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d933e733f4278d",
+  "title": "Let’s Meet",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.jongeharten.nl/programma/lets-meet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -205,16 +205,6 @@
   "kind": "lezing",
   "reason": "website ticketing.groningsebibliotheken.nl",
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774367/Even-Offline.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_efe8dbd432c681",
-  "title": "Grijs",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://schoonloo.com/agenda",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -375,16 +365,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://lippenhuizen.frl/evenement/rieneke-v-d-wal-en-haar-reis-door-tanzania",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_2bbc96b0783459",
-  "title": "Babyschwimmen im Koppke Greetsiel",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.greetsiel.de/erlebnisse/veranstaltungskalender",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2818,7 +2798,7 @@
   ]
  },
  {
-  "id": "evt_e432095747d747",
+  "id": "evt_e432095747d747_3e1134282c6a",
   "title": "Krystbeam opsette🎄🎅🏼",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
@@ -3218,16 +3198,6 @@
   ]
  },
  {
-  "id": "evt_8bab65a5b74f77",
-  "title": "Swerve // We Are The Harvest",
-  "kind": "kunst",
-  "reason": "website viadukt.nl",
-  "url": "http://www.viadukt.nl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_6896c09cddb04b",
   "title": "The Illusionists",
   "kind": "theater",
@@ -3575,17 +3545,6 @@
   "url": "https://www.synagogegroningen.nl/agenda",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_a947165a433b6b",
-  "title": "Spring festival",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
@@ -4740,31 +4699,11 @@
   ]
  },
  {
-  "id": "evt_3ca61cc9e2d1e6",
-  "title": "Generale repetitie toanielferiening de Twa doarpen",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.bontebok.frl/agenda/generale-repetitie-toanielferiening-de-twa-doarpen/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_b9d668c8a9f37d",
   "title": "DE ZILVEREN BAL",
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/de-zilveren-bal-2/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b0458ac647bc14",
-  "title": "Slomosa",
-  "kind": "muziek",
-  "reason": "website neushoorn.nl",
-  "url": "https://www.neushoorn.nl/events/slomosa",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4866,16 +4805,6 @@
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
   "url": "https://www.vanberesteyn.nl/programma/anneke-van-giersbergen-2/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_1c46f7d279d085",
-  "title": "Niet schieten",
-  "kind": "theater",
-  "reason": "website theaterhofpoort.nl",
-  "url": "https://www.theaterhofpoort.nl/niet-schieten",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -6824,16 +6753,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.uithuizermeeden.nl/agenda/eemsmondweek-2027/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_12f08cd8c60c4e",
-  "title": "Glasrijk Tubbergen , jubileumeditie met The Power of Glass als thema.",
-  "kind": "kunst",
-  "reason": "website glasuniek.nl",
-  "url": "https://www.glasuniek.nl/agenda-glaskunstenaar-linda-van-huffelen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
