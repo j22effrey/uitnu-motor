@@ -553,3 +553,21 @@ def test_dagcontrole_8_november_echte_uitjes_blijven_staan():
 def test_frysk_konsert_is_muziek():
     assert classify(_event("Hjerstkonsert Concordia de Gaastmar"), OVERRIDES)["kind"] == "muziek"
     assert classify(_event("Hjerstkonsert Concordia de Gaastmar + Pubkwis"), OVERRIDES)["kind"] == "muziek"
+
+
+# Dagcontrole 9 november 2026 (57 nieuwe uitjes): kerkdiensten, klusdagen, Nederlandstalig reispakket, Führung.
+def test_dagcontrole_9_november_geen_uitje():
+    for title in ("1e advent, ds Peter Smilde Drachten", "Samenkomst", "Klusdagen Real80", "Klusdagen Offroad Real80",
+                  "5-daags Muziekspektakel", "5-day Music Spectacle"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_9_november_echte_uitjes_blijven_staan():
+    for title in ("Adventsconcert in de kerk", "Advent Markt", "Kerstmarkt Samenkomst op het plein", "Dagtrip naar Texel",
+                  "Muziekspektakel in de Oosterpoort", "Klusdag voor kinderen: workshop timmeren"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_fuhrung_in_het_museum_is_kunst():
+    assert classify(_event("Öffentliche Führung durch die Sonderausstellung"), OVERRIDES)["kind"] == "kunst"
+    assert classify(_event("Führung in plattdeutscher Sprache"), OVERRIDES)["kind"] == "kunst"
