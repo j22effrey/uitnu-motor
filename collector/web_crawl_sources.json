@@ -1935,9 +1935,9 @@
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
-      "extractorHint": "wordpress_tribe",
+      "extractorHint": "ics",
       "extractorConfig": {
-        "endpointUrl": "https://bitgum.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+        "feedUrl": "https://bitgum.nl/agenda.ics"
       },
       "activatedFromCandidate": "bitgum.nl",
       "defaultPlace": {
@@ -1945,7 +1945,8 @@
         "lat": 53.2367,
         "lon": 5.6875
       },
-      "policyReviewedAt": "2026-10-12"
+      "policyReviewedAt": "2026-11-09",
+      "note": "Wekelijks onderhoud 9 november 2026: de Events-Calendar-gegevens (wp-json/tribe) gaven 404; de site heeft wel een agenda.ics."
     },
     {
       "id": "boarnburgum-nl-web",
@@ -4566,9 +4567,9 @@
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
-      "extractorHint": "wordpress_tribe",
+      "extractorHint": "ics",
       "extractorConfig": {
-        "endpointUrl": "https://easthim.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+        "feedUrl": "https://easthim.nl/agenda.ics"
       },
       "activatedFromCandidate": "easthim.nl",
       "defaultPlace": {
@@ -4576,7 +4577,8 @@
         "lat": 53.0161,
         "lon": 5.6003
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-11-09",
+      "note": "Wekelijks onderhoud 9 november 2026: de Events-Calendar-gegevens (wp-json/tribe) gaven 404; de site heeft wel een agenda.ics."
     },
     {
       "id": "echtenerbrug-info-web",
@@ -4756,9 +4758,9 @@
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
-      "extractorHint": "wordpress_tribe",
+      "extractorHint": "ics",
       "extractorConfig": {
-        "endpointUrl": "https://minnertsga.frl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+        "feedUrl": "https://minnertsga.frl/agenda.ics"
       },
       "activatedFromCandidate": "minnertsga.frl",
       "defaultPlace": {
@@ -4766,7 +4768,8 @@
         "lat": 53.2508,
         "lon": 5.595
       },
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-11-09",
+      "note": "Wekelijks onderhoud 9 november 2026: de Events-Calendar-gegevens (wp-json/tribe) gaven 404; de site heeft wel een agenda.ics."
     },
     {
       "id": "nijemirdum-nl-web",
@@ -7634,7 +7637,7 @@
       "name": "MLTC",
       "rootUrl": "https://www.mltc.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -7650,7 +7653,8 @@
         "lon": 6.1738092
       },
       "kindHint": "sport",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Wekelijks onderhoud 9 november 2026: mltc.nl weigert de motor (403 Forbidden, ook robots.txt, sinds 27 oktober); we laten de site met rust."
     },
     {
       "id": "ntcnijeveen-nl-web",
@@ -8109,7 +8113,7 @@
       "name": "De Wijngaard",
       "rootUrl": "https://gkv.uithuizermeeden.nl/",
       "role": "venue",
-      "enabled": true,
+      "enabled": false,
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -8118,7 +8122,8 @@
         "feedUrl": "https://gkv.uithuizermeeden.nl/events/?ical=1"
       },
       "activatedFromCandidate": "gkv.uithuizermeeden.nl",
-      "policyReviewedAt": "2026-10-13"
+      "policyReviewedAt": "2026-10-13",
+      "disabledReason": "Wekelijks onderhoud 9 november 2026: de website gkv.uithuizermeeden.nl bestaat niet meer (de naam is niet te vinden, sinds 19 oktober)."
     },
     {
       "id": "groningen-christengemeenschap-nl-web",
@@ -11121,7 +11126,7 @@
       "name": "Volksuniversiteit Groningen (lezingen)",
       "rootUrl": "https://www.vugroningen.nl/",
       "role": "organizer",
-      "enabled": true,
+      "enabled": false,
       "extractorHint": "html_cards",
       "extractorConfig": {
         "endpointUrl": "https://www.vugroningen.nl/lezingen-en-excursies/lezingen",
@@ -11149,7 +11154,8 @@
       },
       "kindHint": "lezing",
       "policyReviewedAt": "2026-10-16",
-      "note": "Lezingen staan als kaartjes op /lezingen-en-excursies/lezingen (robots.txt verbiedt alleen adressen met '?', dus geen bladeren via ?page). Datum en tijd uit de eerste startdatum. Lezingenreeksen van 2 of meer sessies (betaalde cursus, inschrijven voor alles) vallen weg via skipTags: dat is een cursus, geen los uitje (regel 4). Daardoor valt ook 'Het alledaagse leven in Noord-Korea' (3 sessies, € 51, start 19 oktober, Doopsgezinde Kerk) weg; de eigenaar kan anders beslissen."
+      "note": "Lezingen staan als kaartjes op /lezingen-en-excursies/lezingen (robots.txt verbiedt alleen adressen met '?', dus geen bladeren via ?page). Datum en tijd uit de eerste startdatum. Lezingenreeksen van 2 of meer sessies (betaalde cursus, inschrijven voor alles) vallen weg via skipTags: dat is een cursus, geen los uitje (regel 4). Daardoor valt ook 'Het alledaagse leven in Noord-Korea' (3 sessies, € 51, start 19 oktober, Doopsgezinde Kerk) weg; de eigenaar kan anders beslissen.",
+      "disabledReason": "Wekelijks onderhoud 9 november 2026: vugroningen.nl weigert de motor op de GitHub-server (403 Forbidden sinds 19 oktober); we laten de site met rust. Opnieuw proberen kan als de VU Groningen de crawler toelaat."
     },
     {
       "id": "tuingoedfoltz-web",
@@ -12961,7 +12967,7 @@
       "name": "Dorpsbelangen Meerstad",
       "rootUrl": "https://dorpsbelangenmeerstad.nl/",
       "role": "organizer",
-      "enabled": true,
+      "enabled": false,
       "extractorHint": "html_cards",
       "extractorConfig": {
         "endpointUrl": "https://dorpsbelangenmeerstad.nl/activiteiten/?dbmsc1_view=cards",
@@ -12989,7 +12995,8 @@
       "maxDepth": 1,
       "minDelaySeconds": 1,
       "note": "Kalender van Dorpsbelangen Meerstad (eigen WordPress-plugin dbms-activiteiten). De standaardweergave laadt met JavaScript; ?dbmsc1_view=cards geeft dezelfde activiteiten als kaartjes in de HTML (datum 'dd-mm-jjjj · uu:mm', plek per kaartje). robots.txt verbiedt alleen ?dbmsc1_cat en ?dbmsc1_tag. Oud papier valt weg.",
-      "policyReviewedAt": "2026-10-21"
+      "policyReviewedAt": "2026-10-21",
+      "disabledReason": "Wekelijks onderhoud 9 november 2026: dorpsbelangenmeerstad.nl weigert de motor op de GitHub-server (403 Forbidden sinds 21 oktober); we laten de site met rust."
     },
     {
       "id": "glimmen-net-web",

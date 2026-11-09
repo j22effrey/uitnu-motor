@@ -571,3 +571,21 @@ def test_dagcontrole_9_november_echte_uitjes_blijven_staan():
 def test_fuhrung_in_het_museum_is_kunst():
     assert classify(_event("Öffentliche Führung durch die Sonderausstellung"), OVERRIDES)["kind"] == "kunst"
     assert classify(_event("Führung in plattdeutscher Sprache"), OVERRIDES)["kind"] == "kunst"
+
+
+# Wekelijks onderhoud 9 november 2026: de twijfellijst (soort vastgelegd met reden), bronnen met agenda.ics.
+def test_twijfellijst_9_november():
+    for title, kind in (("De wichter van Champ Clark", "theater"), ("Demonstratie Paardenreddingboot Hollum", "kunst"),
+                        ("Kofferbakverkoop Ballum", "markt"), ("Duncan Macmillan: Every Brilliant Thing", "theater"),
+                        ("De Sterke Wil", "theater"), ("Zalige Vrouwtjes", "theater"), ("Ons Kind", "theater"),
+                        ("Buurt op de Bühne", "theater"), ("Microscopenmiddag", "lezing")):
+        assert classify(_event(title), OVERRIDES)["kind"] == kind, title
+
+
+def test_bronnen_van_het_onderhoud_van_9_november():
+    sources = {s["id"]: s for s in json.loads((Path(__file__).parents[2] / "collector" / "web_crawl_sources.json")
+                                              .read_text(encoding="utf-8"))["sources"]}
+    for sid in ("bitgum-nl-web", "minnertsga-frl-web", "easthim-nl-web"):
+        assert sources[sid]["extractorHint"] == "ics" and sources[sid]["extractorConfig"]["feedUrl"].endswith("/agenda.ics"), sid
+    for sid in ("gkv-uithuizermeeden-nl-web", "mltc-nl-web", "vugroningen-web", "dorpsbelangen-meerstad-web"):
+        assert sources[sid]["enabled"] is False and sources[sid]["disabledReason"], sid
