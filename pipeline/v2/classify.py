@@ -672,13 +672,13 @@ SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event inf
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
-                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen|\d{4} volgend jaar .*|foar yn de agenda|film in friesland|bericht(?:en)? (?:navigatie|paginering)|starts at \d{1,2}[:.]\d{2}|events|evenementen in en om [\w ]+|het weer in [\w ]+|ophaaldagen in [\w ]+|test ?(?:concert|evenement|event)\b.*|a[ck]tiviteiten ?kalender(?: \d{4})?|[\w-]*(?:vereniging|feriening)|dorpsstee|voorpagina|de bonte wever(?: \d+)?|(?:zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag) \d{1,2} [a-z]+(?: \d{1,2}[:.]\d{2}(?: uur)?)?|programma (?:thuis|uit)|selecties? (?:zaterdag|zondag)|matchday|museum open(?: in)?(?: \d{4})?|(?:\w+ )?[ojm]\d{1,2}-\d{1,2}(?:jm|mp)|wedstrijdschema .*|.*\(\d+ evenement(?:en)?\).*)\W*$")
+                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen|\d{4} volgend jaar .*|foar yn de agenda|film in friesland|bericht(?:en)? (?:navigatie|paginering)|starts at \d{1,2}[:.]\d{2}|events|evenementen in en om [\w ]+|het weer in [\w ]+|ophaaldagen in [\w ]+|test ?(?:concert|evenement|event)\b.*|a[ck]tiviteiten ?kalender(?: \d{4})?|[\w-]*(?:vereniging|feriening)|dorpsstee|voorpagina|samenkomst(?:en)?|de bonte wever(?: \d+)?|(?:zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag) \d{1,2} [a-z]+(?: \d{1,2}[:.]\d{2}(?: uur)?)?|programma (?:thuis|uit)|selecties? (?:zaterdag|zondag)|matchday|museum open(?: in)?(?: \d{4})?|(?:\w+ )?[ojm]\d{1,2}-\d{1,2}(?:jm|mp)|wedstrijdschema .*|.*\(\d+ evenement(?:en)?\).*)\W*$")
 # Kopjes die ook de naam van een uitje kunnen zijn ('Welkom bij de Kerstmarkt', 'Thema: Halloween griezeltocht').
 SWEEP_HEADING_SOFT = re.compile(r"^\W*(?:welkom bij .*|//.*)$")
 SWEEP_NOT_OUTING = re.compile(
     r"\bpapierbak\b|straatverlichting|eerste schop in de grond|sinterklaas ?journaal|\bdaghap\b"
     r"|^(?:elke|lekker|lekkere)\b.*\bvoor \d+[,.]\d{2}!?$"
-    r"|\w*werkgroep\b(?!.*(?:rondleiding|excursie|wandeling|open))|\bklusdag\b|\b(?:voorjaars|najaars)werk\b|\b(?:najaars|voorjaars)bijeenkomst\b|\bvve\b|professionalsmeeting"
+    r"|\w*werkgroep\b(?!.*(?:rondleiding|excursie|wandeling|open))|\bklusdag(?:en)?\b|\b(?:voorjaars|najaars)werk\b|\b(?:najaars|voorjaars)bijeenkomst\b|\bvve\b|professionalsmeeting"
     r"|\bkovvie\b|kleding-? ?ruil-? ?rek|\bspekclub\b|\bmancave\b|powervrouwen|^praathuis$|^gezellige (?:middag|avond)$|^dorpsstee voor"
     r"|\bbiodanza\b|kaboutervoetbal|poeziekring|^volksdansen$|dinsdagavondvaren"
     r"|\bvieren dienst\b|\bdienst m\.? ?m\.? ?v\b|\b(?:50|55|60|65) ?\+"
@@ -690,7 +690,7 @@ SWEEP_NOT_OUTING = re.compile(
     r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b|\bdankdag(?:viering|dienst)?\b(?!.*(?:concert|orgel|muziek|optreden))|^stemmen op\b|^uitzending op\b"
     # Dagcontrole 4 november 2026: een open-deurdienst en Christus Koning (kerk), verkiezingen en de start van de kaartverkoop
     # (mededelingen), een kerstboom plaatsen (vrijwilligerswerk); een testregel van een website staat bij de kopjes.
-    r"|\bopendeurdienst\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
+    r"|\bopendeurdienst\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
     # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.

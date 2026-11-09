@@ -161,6 +161,11 @@
    "naam": "^top 2000 krystkafee",
    "soort": "feest",
    "reden": "Dagcontrole 5 november 2026: een Top 2000-avond in het café van het dorp (muziekquiz en meezingen), geen lezing."
+  },
+  {
+   "naam": "^(?:offentliche )?fuhrung\\b",
+   "soort": "kunst",
+   "reden": "Dagcontrole 9 november 2026: een Führung (rondleiding) in het Landesmuseum Emden is Kunst en erfgoed; de oude categorie 'sport' klopte niet."
   }
  ],
  "uitjes": {
