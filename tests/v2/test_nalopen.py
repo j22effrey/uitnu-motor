@@ -564,7 +564,7 @@ def test_dagcontrole_9_november_geen_uitje():
 
 def test_dagcontrole_9_november_echte_uitjes_blijven_staan():
     for title in ("Adventsconcert in de kerk", "Advent Markt", "Kerstmarkt Samenkomst op het plein", "Dagtrip naar Texel",
-                  "Muziekspektakel in de Oosterpoort", "Klusdag voor kinderen: workshop timmeren"):
+                  "Muziekspektakel in de Oosterpoort", "2-daags muziekspektakel", "3-daags Spektakel in Ahoy", "Rock ds Kapel", "Avond met ds Koos", "Mini ds fest", "Klusdag voor kinderen: workshop timmeren"):
         assert not not_an_outing(_event(title)), title
 
 

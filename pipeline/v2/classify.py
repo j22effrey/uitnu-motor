@@ -690,7 +690,7 @@ SWEEP_NOT_OUTING = re.compile(
     r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b|\bdankdag(?:viering|dienst)?\b(?!.*(?:concert|orgel|muziek|optreden))|^stemmen op\b|^uitzending op\b"
     # Dagcontrole 4 november 2026: een open-deurdienst en Christus Koning (kerk), verkiezingen en de start van de kaartverkoop
     # (mededelingen), een kerstboom plaatsen (vrijwilligerswerk); een testregel van een website staat bij de kopjes.
-    r"|\bopendeurdienst\b|^\d+e advent\b|\bds\.? (?!en\b|of\b)[a-z]{2,}|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|daags|dagen)\b.*\b\w*(?:trip|reis|spectacle|spektakel|arrangement)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
+    r"|\bopendeurdienst\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
     # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.
