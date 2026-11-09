@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16429,6 +16429,27 @@
       },
       "kindHint": "sport",
       "policyReviewedAt": "2026-11-06"
+    },
+    {
+      "id": "dorpshuisdoezum-nl-web",
+      "name": "'t Stuurhuus -",
+      "rootUrl": "https://dorpshuisdoezum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://stuurhuusdoezum.nl/index.php/events/?ical=1"
+      },
+      "activatedFromCandidate": "dorpshuisdoezum.nl",
+      "defaultPlace": {
+        "city": "Doezum",
+        "lat": 53.2008,
+        "lon": 6.25
+      },
+      "policyReviewedAt": "2026-11-09"
     }
   ]
 }
