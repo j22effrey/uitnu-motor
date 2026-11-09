@@ -1,16 +1,16 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-09T02:41:15+00:00",
+ "refreshedAt": "2026-11-09T05:50:17+00:00",
  "today": "2026-11-09",
- "total": 5843,
+ "total": 5837,
  "bewaardVanVorigeKeer": {},
  "nogAanwezigAnderAdres": {},
  "nietBewaardDoorRegel": {},
  "inputRecords": 12115,
  "outsideArea": 8,
- "geenUitje": 4225,
+ "geenUitje": 4232,
  "vasteActiviteit": 1158,
- "vertaling": 8,
+ "vertaling": 7,
  "teVerVooruit": 303,
  "uitgeslotenBron": 1,
  "onleesbaar": [],
@@ -29,27 +29,27 @@
   "radiusKm": 110
  },
  "byKind": {
-  "muziek": 1559,
+  "muziek": 1558,
   "theater": 1375,
   "film": 523,
   "lezing": 469,
   "feest": 395,
   "kinderen": 286,
-  "sport": 269,
-  "kunst": 250,
+  "sport": 265,
+  "kunst": 252,
   "markt": 235,
-  "overig": 197,
+  "overig": 194,
   "natuur": 156,
   "eten": 74,
   "festival": 55
  },
  "byCity": {
-  "Groningen": 1422,
+  "Groningen": 1420,
   "Leeuwarden": 589,
-  "Drachten": 298,
+  "Drachten": 297,
   "Emmen": 197,
   "Sneek": 192,
-  "Assen": 151,
+  "Assen": 150,
   "Winschoten": 131,
   "Hoogezand": 126,
   "Stadskanaal": 123,
@@ -105,7 +105,6 @@
   "Hoogeveen": 13,
   "Marrum": 13,
   "Lemmer": 13,
-  "Zuidlaren": 13,
   "Giethoorn": 13,
   "Musselkanaal": 12,
   "Oosterwolde": 12,
@@ -114,6 +113,7 @@
   "Onstwedde": 11,
   "Koudum": 11,
   "Bontebok": 11,
+  "Zuidlaren": 11,
   "Hindeloopen": 11,
   "Krummhörn": 10,
   "Spijk": 10,
@@ -439,7 +439,7 @@
   "overentinghe.nl": 23,
   "easterein.nl": 23,
   "hethogeland.nl": 22,
-  "debontewever.nl": 22,
+  "debontewever.nl": 21,
   "sneek.nl": 21,
   "holwert.frl": 20,
   "shakespearetheaterdiever.nl": 20,
@@ -660,7 +660,6 @@
   "despitkeet.nl": 3,
   "onderdendam.com": 3,
   "haulerwijk.nl": 3,
-  "real80.nl": 3,
   "dorpsbelangenharkstede.nl": 3,
   "dorpshuisechtenerbrug.nl": 3,
   "tersoal.nl": 3,
@@ -696,7 +695,6 @@
   "injipsingboertange.nl": 2,
   "maallust.nl": 2,
   "zuidwolde.info": 2,
-  "cgkzuidlaren.nl": 2,
   "kerkfeerwerd.nl": 2,
   "gscf.nl": 2,
   "ingwierrum.frl": 2,
@@ -816,7 +814,6 @@
   "welzijninnoordenveld.nl": 1,
   "youtu.be": 1,
   "kampwesterbork.nl": 1,
-  "keppelstok.nl": 1,
   "vipassana-groningen.nl": 1,
   "hetpakhuisgroningen.nl": 1,
   "atelierroutehogenoorden.nl": 1,
@@ -839,6 +836,7 @@
   "wildlands.nl": 1,
   "hethoogeland.com": 1,
   "hetgrootstekerstfeest.nl": 1,
+  "real80.nl": 1,
   "ervaarharen.nl": 1,
   "giezelbaargbloazers.nl": 1,
   "christmasnight.nl": 1,
@@ -888,10 +886,10 @@
  },
  "photos": {
   "organisator": 2302,
-  "wikimedia": 3410,
+  "wikimedia": 3404,
   "zonder": 131
  },
- "twijfel": 661,
+ "twijfel": 643,
  "groot": {
   "aantal": 81,
   "redenen": {
@@ -930,9 +928,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 21,
-  "changed": 172,
-  "removed": 93
+  "new": 1,
+  "changed": 2,
+  "removed": 7
  },
  "gate": {
   "passed": true,
@@ -940,7 +938,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5843 nu, 5838 vorige keer (minimaal 85%)"
+    "detail": "5837 nu, 5843 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -950,7 +948,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "197 van 5843 (3%)"
+    "detail": "194 van 5837 (3%)"
    },
    {
     "name": "velden_compleet",
