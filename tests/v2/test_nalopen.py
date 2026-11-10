@@ -589,3 +589,17 @@ def test_bronnen_van_het_onderhoud_van_9_november():
         assert sources[sid]["extractorHint"] == "ics" and sources[sid]["extractorConfig"]["feedUrl"].endswith("/agenda.ics"), sid
     for sid in ("gkv-uithuizermeeden-nl-web", "mltc-nl-web", "vugroningen-web", "dorpsbelangen-meerstad-web"):
         assert sources[sid]["enabled"] is False and sources[sid]["disabledReason"], sid
+
+
+# Dagcontrole 10 november 2026 (382 nieuwe uitjes, ruim de helft film): commissie, kaartverkoop-melding, inspraak, meditatiecursus.
+def test_dagcontrole_10_november_geen_uitje():
+    for title in ("Sinterklaascommissie", "Scoor je tickets", "Welkom in de Ontmoeting!",
+                  "Uitnodiging inloopbijeenkomst woningbouw Oosterbroek II te Oldemarkt", "Haronie",
+                  "Basiscursus inzichtmeditatie (wachtlijst)"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_10_november_echte_uitjes_blijven_staan():
+    for title in ("Commissie voor de Kunsten: lezing", "Scoor je tickets voor het concert van Racoon", "Harmonie Concordia: Kerstconcert",
+                  "Uitnodiging Kerstmarkt Oldemarkt", "Meditatiefestival", "Welkom in de Ontmoeting: Kerstconcert"):
+        assert not not_an_outing(_event(title)), title
