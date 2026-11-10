@@ -296,7 +296,7 @@ CLUB_SESSION = re.compile(
     r"|^spellen ?(?:middag|avond)|^koffie ?(?:ochtend|inloop|uurtje|drinken|middag)|^(?:vrijdag ?)?(?:middag|avond) ?caf[eé]"
     r"|^samen eten\b|^eetclub|^breiclub|^haakclub|^handwerk(?:club|en)\b|^naaiclub|^creaclub|^crea ?(?:avond|middag|ochtend)"
     r"|^(?:muziek|gitaar|piano|zang|dans|teken|schilder)les\b|^(?:kinder|jeugd|gemengd |mannen|vrouwen|shanty|sjong)?ko(?:o|a)r\b"
-    r"|^fanfare\b|^brass ?band\b|^muziekvereniging|^harmonie\b|^wandel ?(?:club|groep)|^wandel je fit|^kuier ?(?:klub|groep)"
+    r"|^fanfare\b|^brass ?band\b|^muziekvereniging|^har(?:m)?onie\b|^wandel ?(?:club|groep)|^wandel je fit|^kuier ?(?:klub|groep)"
     r"|^(?:hard)?loop ?groep|^fiets ?(?:club|groep)|^(?:jeugd|tiener|ouderen|senioren)? ?soos\b|^peuter ?(?:mee)?speel\w*"
     r"|^speel je mee \w+|^stut en steun|^repetitie|^oefen(?:avond|ochtend)|^training\b|^jeugdtraining"
     r"|^(?:een |dorps)?bakkie\b|^kookclub|^bingo(?:avond|middag)?$|^(?:thuis|uit)wedstrijd\b"
@@ -306,7 +306,7 @@ CLUB_SESSION = re.compile(
     # meditatie, een retraite of qigong: een vaste les of cursus, net als yoga
     r"|^.*\blichtcirkel|^mantra ?zingen|^klankschaal(?:beleving|meditatie)|^5 ?ritmes|^vrouw, lijf (?:&|en) stem"
     r"|^inloop(?:kwartier|moment|uur|ochtend|middag)\b|^peuter ?gym|^power yoga|^.*\byoga\b.*\bgevorderd|^.*\bgevorderd(?:en)?$|^beeldhouwen\b|^tekenen en schilderen$"
-    r"|^.*\bmedit(?:atie|eren)\w*|^.*retr(?:aite|eat)|^.*\bqi ?gong\b|^.*\btai ?chi\b|^.*\bdeep relaxation\b")
+    r"|^.*\bmedit(?:atie|eren)\w*|^.*\w+meditatie\b|^.*retr(?:aite|eat)|^.*\bqi ?gong\b|^.*\btai ?chi\b|^.*\bdeep relaxation\b")
 # (Een kampioenschap van de club, zoals 'Klaverjassen (kampioenschap v. teams)', is voor de leden.)
 PUBLIC_EVENT = re.compile(r"concert|uitvoering|optreden|voorstelling|toerno(?:o|a)i|toenooi|drive\b|open (?:dag|les|avond|huis|podium)"
                           r"|demonstratie|clinic|workshop|festival|jubileum|markt|expositie|tentoonstelling|\bshow\b|gala"
@@ -672,7 +672,7 @@ SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event inf
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
-                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen|\d{4} volgend jaar .*|foar yn de agenda|film in friesland|bericht(?:en)? (?:navigatie|paginering)|starts at \d{1,2}[:.]\d{2}|events|evenementen in en om [\w ]+|het weer in [\w ]+|ophaaldagen in [\w ]+|test ?(?:concert|evenement|event)\b.*|a[ck]tiviteiten ?kalender(?: \d{4})?|[\w-]*(?:vereniging|feriening)|dorpsstee|voorpagina|samenkomst(?:en)?|de bonte wever(?: \d+)?|(?:zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag) \d{1,2} [a-z]+(?: \d{1,2}[:.]\d{2}(?: uur)?)?|programma (?:thuis|uit)|selecties? (?:zaterdag|zondag)|matchday|museum open(?: in)?(?: \d{4})?|(?:\w+ )?[ojm]\d{1,2}-\d{1,2}(?:jm|mp)|wedstrijdschema .*|.*\(\d+ evenement(?:en)?\).*)\W*$")
+                           r"|(?:gereformeerde|hervormde|protestantse) kerk \w+|(?:\w+ ){1,2}algemeen|\d{4} volgend jaar .*|foar yn de agenda|film in friesland|bericht(?:en)? (?:navigatie|paginering)|starts at \d{1,2}[:.]\d{2}|events|evenementen in en om [\w ]+|het weer in [\w ]+|ophaaldagen in [\w ]+|test ?(?:concert|evenement|event)\b.*|a[ck]tiviteiten ?kalender(?: \d{4})?|[\w-]*(?:vereniging|feriening)|dorpsstee|voorpagina|samenkomst(?:en)?|[\w-]*commissie|(?:scoor|bestel|koop) je tickets?!?|uitnodiging inloopbijeenkomst .*|welkom in de ontmoeting!?|de bonte wever(?: \d+)?|(?:zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag) \d{1,2} [a-z]+(?: \d{1,2}[:.]\d{2}(?: uur)?)?|programma (?:thuis|uit)|selecties? (?:zaterdag|zondag)|matchday|museum open(?: in)?(?: \d{4})?|(?:\w+ )?[ojm]\d{1,2}-\d{1,2}(?:jm|mp)|wedstrijdschema .*|.*\(\d+ evenement(?:en)?\).*)\W*$")
 # Kopjes die ook de naam van een uitje kunnen zijn ('Welkom bij de Kerstmarkt', 'Thema: Halloween griezeltocht').
 SWEEP_HEADING_SOFT = re.compile(r"^\W*(?:welkom bij .*|//.*)$")
 SWEEP_NOT_OUTING = re.compile(
