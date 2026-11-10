@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16457,6 +16457,110 @@
         "lon": 6.25
       },
       "policyReviewedAt": "2026-11-09"
+    },
+    {
+      "id": "emmenactueel-nl-web",
+      "name": "Emmen Actueel",
+      "rootUrl": "https://www.emmenactueel.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.emmenactueel.nl/"
+      },
+      "activatedFromCandidate": "emmenactueel.nl",
+      "defaultPlace": {
+        "city": "Emmen",
+        "lat": 52.7811,
+        "lon": 6.8994
+      },
+      "policyReviewedAt": "2026-11-10"
+    },
+    {
+      "id": "steenwijkerwold-eu-web",
+      "name": "Steenwijkerwold",
+      "rootUrl": "https://steenwijkerwold.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://steenwijkerwold.eu/evenementen/?ical=1"
+      },
+      "activatedFromCandidate": "steenwijkerwold.eu",
+      "defaultPlace": {
+        "city": "Steenwijkerwold",
+        "lat": 52.8036,
+        "lon": 6.0617
+      },
+      "policyReviewedAt": "2026-11-10"
+    },
+    {
+      "id": "wier-frl-web",
+      "name": "Wier",
+      "rootUrl": "https://wier.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://wier.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "wier.frl",
+      "defaultPlace": {
+        "city": "Wier",
+        "lat": 53.2519,
+        "lon": 5.6242
+      },
+      "policyReviewedAt": "2026-11-10"
+    },
+    {
+      "id": "zwartsluisactueel-nl-web",
+      "name": "Zwartsluis Actueel",
+      "rootUrl": "https://www.zwartsluisactueel.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.zwartsluisactueel.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "zwartsluisactueel.nl",
+      "defaultPlace": {
+        "city": "Zwartsluis",
+        "lat": 52.6419,
+        "lon": 6.0703
+      },
+      "policyReviewedAt": "2026-11-10"
+    },
+    {
+      "id": "borgergroep-nl-web",
+      "name": "Scouting de Borgergroep",
+      "rootUrl": "https://borgergroep.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "borgergroep.nl",
+      "defaultPlace": {
+        "venue": "Scouting de Borgergroep",
+        "city": "Joure",
+        "lat": 52.9748809,
+        "lon": 5.8149717
+      },
+      "policyReviewedAt": "2026-11-10"
     }
   ]
 }

@@ -1,97 +1,182 @@
 {
+  "abendlokalpyrami-de-web": {
+    "fout": "HTTPError: HTTP Error 410: Gone",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "achlum-info-web": {
+    "fout": "URLError: <urlopen error timed out>",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
   "amdgbeilen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-27T01:29+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "blokzijl-nl-web": {
     "fout": "HTTPError: HTTP Error 406: Not Acceptable",
     "sinds": "2026-10-27T16:01+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
-  "buurtcentrumoranjewijk-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-11-09T21:28+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+  "bontebok-frl-web": {
+    "fout": "TimeoutError: The read operation timed out",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "cambuur-nl-thuiswedstrijden": {
-    "fout": "HTTPError: HTTP Error 403: Forbidden",
+    "fout": "PermissionError: robots.txt staat https://cambuur.nl/thuiswedstrijden/ niet toe (robots.txt gaf status 403)",
     "sinds": "2026-11-05T01:34+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "carambole-winschoten-nl-web": {
     "fout": "PermissionError: robots.txt staat https://www.carambole-winschoten.nl/agenda/ niet toe (robots.txt niet bereikbaar: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.carambole-winschoten.nl'. (_ssl.c:)",
     "sinds": "2026-10-21T17:59+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
-  "de-groenenberg-nl-web": {
+  "cgkzuidlaren-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-11-09T21:28+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
-  "deblauweschuit-winsum-nl-web": {
-    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
-    "sinds": "2026-11-09T21:28+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+  "clcleeuwarden-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "detiid-nl-web": {
     "fout": "PermissionError: robots.txt staat https://www.detiid.nl/agenda niet toe (robots.txt niet bereikbaar: URLError: <urlopen error [Errno 101] Network is unreachable>)",
     "sinds": "2026-10-29T19:08+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
-  "dorpsbelangenroderwolde-nl-web": {
+  "dorpshuisdesingel-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
-    "sinds": "2026-11-09T21:28+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "dorpshuisechtenerbrug-nl-web": {
     "fout": "URLError: <urlopen error timed out>",
     "sinds": "2026-11-06T22:15+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
-  "glimmen-net-web": {
-    "fout": "PermissionError: robots.txt staat https://glimmen.net/calendar/agenda-glimmen-komende-periode/ niet toe (robots.txt niet bereikbaar: URLError: <urlopen error [Errno 101] Network is unreachable>)",
-    "sinds": "2026-11-09T21:28+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+  "ferwertonline-nl-web": {
+    "fout": "HTTPError: HTTP Error 404: Not Found",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "gerarddou-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "goutum-info-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "groningsebibliotheken-westerkwartier-web": {
+    "fout": "HTTPError: HTTP Error 502: Bad Gateway",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "harich-ruigahuizen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-06T11:02+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "houtstad-ijlst-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "itjoo-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "lemmerbinnen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-03T08:02+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
-  "mozartconcerten-nl-web": {
-    "fout": "TypeError: unhashable type: 'list'",
-    "sinds": "2026-11-09T10:33+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+  "martinikerk-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "nijeberkoop-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "schoolplatendeinum-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "sensedokkum-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-07T13:21+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "skarsterbrege-nl-web": {
     "fout": "URLError: <urlopen error timed out>",
     "sinds": "2026-10-27T01:29+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "stinze-stiens-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "sumar-nl-web": {
+    "fout": "HTTPError: HTTP Error 404: Not Found",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "terapelbruist-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "tresoar-nl-api": {
+    "fout": "PermissionError: robots.txt staat https://api.tresoar.nl/agenda?perPage=* niet toe (robots.txt niet bereikbaar: URLError: <urlopen error timed out>)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "tsjerkwert-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "tsjom-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-06T11:02+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "warten-nl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "westergeest-frl-web": {
+    "fout": "URLError: <urlopen error [Errno 101] Network is unreachable>",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "westerlee-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-10-21T12:24+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
   },
   "wijkbelangwesteinde-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-11-03T08:02+00:00",
-    "laatst": "2026-11-09T21:28+00:00"
+    "laatst": "2026-11-10T05:18+00:00"
+  },
+  "wjukken-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-10T05:18+00:00",
+    "laatst": "2026-11-10T05:18+00:00"
   }
 }
