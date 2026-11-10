@@ -10,26 +10,6 @@
   ]
  },
  {
-  "id": "evt_cbc13edc829df7",
-  "title": "Even Offline",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774367/Even-Offline.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_ee1130150656bc",
-  "title": "Even Offline",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774372/Even-Offline.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_b635b38a85f379",
   "title": "Even Offline",
   "kind": "lezing",
@@ -45,6 +25,16 @@
   "kind": "lezing",
   "reason": "website ticketing.groningsebibliotheken.nl",
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774372/Even-Offline.html",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_4c2f7d8b5b0d3f",
+  "title": "Welkom in de Dorpsapp!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://beetsterzwaag.frl/update-voor-verenigingen-in-de-dorpsapp",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -125,6 +115,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://lippenhuizen.frl/evenement/rieneke-v-d-wal-en-haar-reis-door-tanzania",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_2bbc96b0783459",
+  "title": "Babyschwimmen im Koppke Greetsiel",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.greetsiel.de/erlebnisse/veranstaltungskalender",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -226,16 +226,6 @@
   "kind": "lezing",
   "reason": "website ticketing.groningsebibliotheken.nl",
   "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774369/Het-leven-en-belang-van-de-bijen-in-je-tuin.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_33ff611d232e4a",
-  "title": "Wat heb je vandaag online",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774449/Wat-heb-je-vandaag-online-meegemaakt?.html",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -445,6 +435,16 @@
   ]
  },
  {
+  "id": "evt_f5a1c0da55e093",
+  "title": "Zeehondenkijktocht",
+  "kind": "kunst",
+  "reason": "website ontdekwec.nl",
+  "url": "https://ontdekwec.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_7a230a0814a3ce",
   "title": "BEEF",
   "kind": "theater",
@@ -485,7 +485,7 @@
   ]
  },
  {
-  "id": "evt_30a5eebc9cc634",
+  "id": "evt_6bb39047a48a8c",
   "title": "Every Brilliant Thing",
   "kind": "theater",
   "reason": "website jongeharten.podiumnederland.nl",
@@ -667,7 +667,7 @@
   ]
  },
  {
-  "id": "evt_8b7ae22745505a",
+  "id": "evt_d7b9457d1e2df7",
   "title": "Every Brilliant Thing",
   "kind": "theater",
   "reason": "website jongeharten.podiumnederland.nl",
@@ -679,9 +679,9 @@
  {
   "id": "evt_3b87e2fa5286f5",
   "title": "CONTRA",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.jongeharten.nl/programma/contra/",
+  "kind": "theater",
+  "reason": "website jongeharten.podiumnederland.nl",
+  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10366405?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1361,8 +1361,8 @@
   ]
  },
  {
-  "id": "evt_bf721e074c7b3c",
-  "title": "Vind het licht",
+  "id": "evt_37d72e5f5fa8ec",
+  "title": "Vind het licht – met Femke Zwiep, Daan Orsel, Jet Sterkman, Michael ter Maat en Temo Rekhviashvili",
   "kind": "festival",
   "reason": "website explorethenorth.nl",
   "url": "https://explorethenorth.nl/event/vind-het-licht/",
@@ -1596,8 +1596,8 @@
   ]
  },
  {
-  "id": "evt_983e10f7eeb3fc",
-  "title": "De Poezieboys",
+  "id": "evt_d80ff98d1b5805",
+  "title": "De Poezieboys – Poezienight",
   "kind": "festival",
   "reason": "website explorethenorth.nl",
   "url": "https://explorethenorth.nl/event/de-poezieboys/",
@@ -2327,16 +2327,6 @@
   ]
  },
  {
-  "id": "evt_e1031cd3e5c50e",
-  "title": "Kleintje Bieb",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.sleen.nu/home/agenda/pagina/2",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_ea849fdb55833f",
   "title": "DOT Dome Live Planetarium: Journey through the Universe (ENG)",
   "kind": "overig",
@@ -2633,6 +2623,16 @@
   "kind": "sport",
   "reason": "website lycurgus.nl",
   "url": "https://www.lycurgus.nl/wedstrijden/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_45f8145e9a5993",
+  "title": "Lichtceremonie",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.synagogegroningen.nl/agenda",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2978,6 +2978,16 @@
   ]
  },
  {
+  "id": "evt_ba431af35753af",
+  "title": "Kerstvakantie? Game on!",
+  "kind": "sport",
+  "reason": "website bvsport.nl",
+  "url": "https://www.bvsport.nl/events/kerstvakantie-sportdag-lasergamen-bunker-trefbal-meer/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "doedag-angkor-drents-museum-2026-12-23",
   "title": "Doedag Angkor (familie)",
   "kind": "kinderen",
@@ -3003,6 +3013,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://easterein.nl/agenda/kerstnacht-door-de-jongeren-georganiseerd-met-de-organist/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_fd650b15dc4c82",
+  "title": "EMO58",
+  "kind": "muziek",
+  "reason": "website neushoorn.nl",
+  "url": "https://www.neushoorn.nl/events/emo58-dec",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3108,16 +3128,6 @@
   ]
  },
  {
-  "id": "evt_a01aea207fd70b",
-  "title": "Familiefilm: Felix, op zoek naar de schat van M",
-  "kind": "kunst",
-  "reason": "website museumjoure.nl",
-  "url": "https://www.museumjoure.nl/agenda/familiefilm-felix-op-zoek-naar-de-schat-van-m/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "skuurverkoop-ballum-2026-12-29",
   "title": "Skuurverkoop Ballum",
   "kind": "markt",
@@ -3133,6 +3143,27 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.synagogegroningen.nl/agenda",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a947165a433b6b",
+  "title": "Spring festival",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
+  "id": "evt_786e08f5988b66",
+  "title": "Springfestijn",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3539,16 +3570,6 @@
   ]
  },
  {
-  "id": "evt_1f8ec5a675e4db",
-  "title": "Vrij-Gezellig",
-  "kind": "muziek",
-  "reason": "website neushoorn.nl",
-  "url": "https://www.neushoorn.nl/events/vrij-gezellig",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_d81886a92846a2",
   "title": "FRIESLAND CUP CHALLENGER",
   "kind": "sport",
@@ -3891,6 +3912,16 @@
  {
   "id": "evt_efed0d0bf19065",
   "title": "Een blik door middeleeuwse ogen",
+  "kind": "kunst",
+  "reason": "website kloosterterapel.nl",
+  "url": "https://kloosterterapel.nl/activiteiten/lezing-debra-hemminga/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_97e389c570ef03",
+  "title": "Terug in de",
   "kind": "kunst",
   "reason": "website kloosterterapel.nl",
   "url": "https://kloosterterapel.nl/activiteiten/lezing-debra-hemminga/",
@@ -4270,16 +4301,6 @@
   ]
  },
  {
-  "id": "evt_d7949bf29df203",
-  "title": "Rudeboy X BOSKAT",
-  "kind": "muziek",
-  "reason": "website em2groningen.nl",
-  "url": "https://em2groningen.nl/event/rudeboy-x-boskat/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_7f4339e5ca0b54",
   "title": "De betoverde klas",
   "kind": "theater",
@@ -4300,36 +4321,6 @@
   ]
  },
  {
-  "id": "evt_bc18364b5af15f",
-  "title": "Yorick van Norden",
-  "kind": "theater",
-  "reason": "website theaterhofpoort.nl",
-  "url": "https://www.theaterhofpoort.nl/yorick-van-norden",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_fa5152b209506d",
-  "title": "Fly-Inn Indoorvliegen Aero Club Drachten",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "http://drachten.net/events.php",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_a594930d017dd6",
-  "title": "Fred Delfgaauw",
-  "kind": "theater",
-  "reason": "website theaterroden.nl",
-  "url": "https://theaterroden.nl/fred-delfgaauw-2027",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_2a7b8c10160710",
   "title": "Lustrum: Kielzog & De Wereld",
   "kind": "theater",
@@ -4345,26 +4336,6 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/nk-shorttrack-junioren-4/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_f29afc29c1b00a",
-  "title": "Krystl",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://lippenhuizen.frl/evenement/krystl",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_39b74fb44b342b",
-  "title": "Adrian Snell – The Passion",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://eventsforchrist.nl/en/event/the-passion-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4576,6 +4547,16 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/11stedenbattle-finale-2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_8fa4fb65422c05",
+  "title": "EasyToys: It's Playtime Night",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://debontewever.avayo.nl/bestel/tickets/110671?p_id=541861",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5303,11 +5284,21 @@
   ]
  },
  {
-  "id": "evt_4d3d4688086788",
+  "id": "evt_ec0b51c64eba28",
   "title": "Assen Card Convention",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.debontewever.nl/nl/events/assen-card-convention-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_4d3d4688086788",
+  "title": "Assen Card Convention",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.assencardconvention.nl/standhouders",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
