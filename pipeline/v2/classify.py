@@ -296,7 +296,7 @@ CLUB_SESSION = re.compile(
     r"|^spellen ?(?:middag|avond)|^koffie ?(?:ochtend|inloop|uurtje|drinken|middag)|^(?:vrijdag ?)?(?:middag|avond) ?caf[eé]"
     r"|^samen eten\b|^eetclub|^breiclub|^haakclub|^handwerk(?:club|en)\b|^naaiclub|^creaclub|^crea ?(?:avond|middag|ochtend)"
     r"|^(?:muziek|gitaar|piano|zang|dans|teken|schilder)les\b|^(?:kinder|jeugd|gemengd |mannen|vrouwen|shanty|sjong)?ko(?:o|a)r\b"
-    r"|^fanfare\b|^brass ?band\b|^muziekvereniging|^har(?:m)?onie\b|^wandel ?(?:club|groep)|^wandel je fit|^kuier ?(?:klub|groep)"
+    r"|^fanfare\b|^brass ?band\b|^muziekvereniging|^har(?:m)?onie\b|^vrouwen in beweging\b|^wandel ?(?:club|groep)|^wandel je fit|^kuier ?(?:klub|groep)"
     r"|^(?:hard)?loop ?groep|^fiets ?(?:club|groep)|^(?:jeugd|tiener|ouderen|senioren)? ?soos\b|^peuter ?(?:mee)?speel\w*"
     r"|^speel je mee \w+|^stut en steun|^repetitie|^oefen(?:avond|ochtend)|^training\b|^jeugdtraining"
     r"|^(?:een |dorps)?bakkie\b|^kookclub|^bingo(?:avond|middag)?$|^(?:thuis|uit)wedstrijd\b"
@@ -352,7 +352,7 @@ VILLAGE_ROUTINE = re.compile(
     r"|(?<!filosofysk )\bkafee\b|^heel \w+ bakt\b|\b(?:aan|oan) (?:tafel|toavel)\b(?!.*\bsint)|koningsontbijt"
     # Een bordspel- of spelletjesavond ('Bordspelavond voor jong en oud') is een vaste ontmoeting; een toernooi
     # of een bordspellencafé blijft staan.
-    r"|\bsnack ?dag\b|^bordspel ?(?:avond|middag)\b|^spelletjes ?(?:avond|middag)\b|^thuis(?:kamer|keuken)$|^ontmoet elkaar in de ontmoeting\b|^h.?andel winkel$"
+    r"|\bsnack ?dag\b|\bfrietuurtje\w*|^bordspel ?(?:avond|middag)\b|^spelletjes ?(?:avond|middag)\b|^thuis(?:kamer|keuken)$|^ontmoet elkaar in de ontmoeting\b|^h.?andel winkel$"
     # Bingo in het dorp ('Bingo avond', 'Kinderbingo', 'Najaarsbingo van de Oranjevereniging'); een muziek- of dragbingo
     # in een club of café blijft staan.
     r"|^(?!.*\b(?:show|drag|loco|rave|party|fout|silent|quiz|disco|kroeg)\b).*\b\w*bingo\w*\b")
@@ -690,7 +690,7 @@ SWEEP_NOT_OUTING = re.compile(
     r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b|\bdankdag(?:viering|dienst)?\b(?!.*(?:concert|orgel|muziek|optreden))|^stemmen op\b|^uitzending op\b"
     # Dagcontrole 4 november 2026: een open-deurdienst en Christus Koning (kerk), verkiezingen en de start van de kaartverkoop
     # (mededelingen), een kerstboom plaatsen (vrijwilligerswerk); een testregel van een website staat bij de kopjes.
-    r"|\bopendeurdienst\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
+    r"|\bopendeurdienst\b|\binloop ?spreek(?:uur|uren)\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
     # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.

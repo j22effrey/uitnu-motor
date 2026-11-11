@@ -603,3 +603,23 @@ def test_dagcontrole_10_november_echte_uitjes_blijven_staan():
     for title in ("Commissie voor de Kunsten: lezing", "Scoor je tickets voor het concert van Racoon", "Harmonie Concordia: Kerstconcert",
                   "Uitnodiging Kerstmarkt Oldemarkt", "Meditatiefestival", "Welkom in de Ontmoeting: Kerstconcert"):
         assert not not_an_outing(_event(title)), title
+
+
+# Dagcontrole 11 november 2026 (102 nieuwe uitjes): weekdag en datum voor de naam, spreekuur, frietuurtje, beweegclub.
+def test_weekdag_en_datum_zonder_streepje_voor_de_naam_valt_weg():
+    assert clean_title("ZONDAG 17 JANUARI MIJN HEMEL BLAUW") == "MIJN HEMEL BLAUW"
+    assert clean_title("Zondag 14 februari The Northern Sanwich") == "The Northern Sanwich"
+    assert clean_title("Zondag 14 februari") == "Zondag 14 februari"
+    assert clean_title("14 februari Trio X") == "14 februari Trio X"
+    assert clean_title("Zondag 15 november 2026 – 14.30 uur – Trio X") == "Trio X"
+
+
+def test_dagcontrole_11_november_geen_uitje():
+    for title in ("Inloopspreekuren duurzaamheid in Vries", "Frietuurtjes 2 keer op zondag, 15 en 29 november",
+                  "Vrouwen in beweging"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_11_november_echte_uitjes_blijven_staan():
+    for title in ("Frietuurtje met live muziek", "Vrouwen in beweging: dansworkshop voor iedereen"):
+        assert not not_an_outing(_event(title)), title

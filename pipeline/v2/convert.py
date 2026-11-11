@@ -106,6 +106,9 @@ DATE_PREFIX = re.compile(
     rf"(?:\s*(?:[-–—]|om)\s*\d{{1,2}}[.:]\d{{2}}(?:\s*uur)?)?\s*[-–—:]\s+", re.IGNORECASE)
 
 
+WEEKDAY_DATE_PREFIX = re.compile(rf"^\s*{_DAYS}\s+\d{{1,2}}\s+{_MONTHS}(?:\s+\d{{4}})?\s+(?=\S)", re.IGNORECASE)
+
+
 # Een losse aanduiding achter de naam ('Durf moedig te zijn Start'): die hoort niet bij de naam.
 TRAILING_LABEL = re.compile(r"\s+(?:start|datum|aanvang)\s*:?\s*$", re.IGNORECASE)
 # Een afgebroken naam ("Kerstconcert 'Keep the Faith'-…"). (Dagcontrole 2 november 2026.)
@@ -199,6 +202,10 @@ def clean_title(value: str | None, city: str | None = None, venue: str | None = 
         title = cleaned.strip(" ,")
     rest = DATE_PREFIX.sub("", title, count=1)
     rest = rest if len(rest) >= 3 else title
+    # 'ZONDAG 17 JANUARI MIJN HEMEL BLAUW' (Groate Kerk): weekdag en datum zonder streepje; alleen mét weekdag, en er
+    # moet nog een naam overblijven. (Dagcontrole 11 november 2026.)
+    bare = WEEKDAY_DATE_PREFIX.sub("", rest, count=1)
+    rest = bare if len(bare.split()) >= 2 else rest
     untimed = LEADING_TIME.sub("", rest, count=1)
     rest = untimed if len(untimed) >= 3 else rest
     # Een tijd achter de naam ('BEEF 16:00 - 17:05', Jonge Harten): die staat al bij het uitje.
