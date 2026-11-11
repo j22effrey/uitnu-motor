@@ -625,3 +625,9 @@ def test_dagcontrole_11_november_echte_uitjes_blijven_staan():
     for title in ("Frietuurtje met live muziek", "Vrouwen in beweging: dansworkshop voor iedereen",
                   "Vrouwen in Beweging Wandeltocht", "Frietuurtje bij de kermis"):
         assert not not_an_outing(_event(title)), title
+
+
+def test_easytoys_avond_is_een_avond_voor_volwassenen():
+    """EasyToys is een merk voor erotisch speelgoed: 'It's Playtime Night' is geen uitje voor het grote publiek (regel 4)."""
+    assert not_an_outing(_event("EasyToys: It's Playtime Night"))
+    assert not not_an_outing(_event("Speelgoedbeurs voor kinderen"))
