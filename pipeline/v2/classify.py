@@ -296,7 +296,7 @@ CLUB_SESSION = re.compile(
     r"|^spellen ?(?:middag|avond)|^koffie ?(?:ochtend|inloop|uurtje|drinken|middag)|^(?:vrijdag ?)?(?:middag|avond) ?caf[eé]"
     r"|^samen eten\b|^eetclub|^breiclub|^haakclub|^handwerk(?:club|en)\b|^naaiclub|^creaclub|^crea ?(?:avond|middag|ochtend)"
     r"|^(?:muziek|gitaar|piano|zang|dans|teken|schilder)les\b|^(?:kinder|jeugd|gemengd |mannen|vrouwen|shanty|sjong)?ko(?:o|a)r\b"
-    r"|^fanfare\b|^brass ?band\b|^muziekvereniging|^har(?:m)?onie\b|^vrouwen in beweging\b|^wandel ?(?:club|groep)|^wandel je fit|^kuier ?(?:klub|groep)"
+    r"|^fanfare\b|^brass ?band\b|^muziekvereniging|^har(?:m)?onie\b|^vrouwen in beweging$|^wandel ?(?:club|groep)|^wandel je fit|^kuier ?(?:klub|groep)"
     r"|^(?:hard)?loop ?groep|^fiets ?(?:club|groep)|^(?:jeugd|tiener|ouderen|senioren)? ?soos\b|^peuter ?(?:mee)?speel\w*"
     r"|^speel je mee \w+|^stut en steun|^repetitie|^oefen(?:avond|ochtend)|^training\b|^jeugdtraining"
     r"|^(?:een |dorps)?bakkie\b|^kookclub|^bingo(?:avond|middag)?$|^(?:thuis|uit)wedstrijd\b"
@@ -352,7 +352,7 @@ VILLAGE_ROUTINE = re.compile(
     r"|(?<!filosofysk )\bkafee\b|^heel \w+ bakt\b|\b(?:aan|oan) (?:tafel|toavel)\b(?!.*\bsint)|koningsontbijt"
     # Een bordspel- of spelletjesavond ('Bordspelavond voor jong en oud') is een vaste ontmoeting; een toernooi
     # of een bordspellencafé blijft staan.
-    r"|\bsnack ?dag\b|\bfrietuurtje\w*|^bordspel ?(?:avond|middag)\b|^spelletjes ?(?:avond|middag)\b|^thuis(?:kamer|keuken)$|^ontmoet elkaar in de ontmoeting\b|^h.?andel winkel$"
+    r"|\bsnack ?dag\b|^frietuurtje\w*(?! .*\b(?:kermis|markt|feest|concert|live)\b)|^bordspel ?(?:avond|middag)\b|^spelletjes ?(?:avond|middag)\b|^thuis(?:kamer|keuken)$|^ontmoet elkaar in de ontmoeting\b|^h.?andel winkel$"
     # Bingo in het dorp ('Bingo avond', 'Kinderbingo', 'Najaarsbingo van de Oranjevereniging'); een muziek- of dragbingo
     # in een club of café blijft staan.
     r"|^(?!.*\b(?:show|drag|loco|rave|party|fout|silent|quiz|disco|kroeg)\b).*\b\w*bingo\w*\b")

@@ -610,6 +610,7 @@ def test_weekdag_en_datum_zonder_streepje_voor_de_naam_valt_weg():
     assert clean_title("ZONDAG 17 JANUARI MIJN HEMEL BLAUW") == "MIJN HEMEL BLAUW"
     assert clean_title("Zondag 14 februari The Northern Sanwich") == "The Northern Sanwich"
     assert clean_title("Zondag 14 februari") == "Zondag 14 februari"
+    assert clean_title("Zondag 15 november Kerstmarkt") == "Zondag 15 november Kerstmarkt"   # één woord over: laten staan
     assert clean_title("14 februari Trio X") == "14 februari Trio X"
     assert clean_title("Zondag 15 november 2026 – 14.30 uur – Trio X") == "Trio X"
 
@@ -621,5 +622,6 @@ def test_dagcontrole_11_november_geen_uitje():
 
 
 def test_dagcontrole_11_november_echte_uitjes_blijven_staan():
-    for title in ("Frietuurtje met live muziek", "Vrouwen in beweging: dansworkshop voor iedereen"):
+    for title in ("Frietuurtje met live muziek", "Vrouwen in beweging: dansworkshop voor iedereen",
+                  "Vrouwen in Beweging Wandeltocht", "Frietuurtje bij de kermis"):
         assert not not_an_outing(_event(title)), title
