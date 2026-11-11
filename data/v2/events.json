@@ -8285,56 +8285,6 @@
   }
  },
  {
-  "id": "evt_d330d0143008e6",
-  "slug": "vrouwen-in-beweging-mantgum-2026-11-12",
-  "title": "Vrouwen in beweging",
-  "occurrences": [
-   {
-    "date": "2026-11-12",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "MFC Wjukken",
-   "city": "Mantgum",
-   "lat": 53.1295752,
-   "lon": 5.7233738
-  },
-  "price": "Zie organisator",
-  "url": "https://wjukken.nl/agenda/vrouwen-in-beweging-31/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://wjukken.nl/agenda/vrouwen-in-beweging-31/",
-    "host": "wjukken.nl",
-    "seenAt": "2026-11-11"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "62233166f4ab",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Mantgum_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Mantgum",
-   "credit": "Foto: Udo Ockema · CC BY 3.0 · Wikimedia Commons",
-   "author": "Udo Ockema",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mantgum_b.jpg"
-  }
- },
- {
   "id": "evt_4600d7e3990c29",
   "slug": "wen-er-maar-aan-drachten-2026-11-12",
   "title": "Wen er maar aan",
@@ -10200,56 +10150,6 @@
    "license": "CC BY 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winsum_(gr.)-hoofdstraat.jpg"
-  }
- },
- {
-  "id": "evt_6062268a192df7",
-  "slug": "inloopspreekuren-duurzaamheid-in-vries-vries-2026-11-12",
-  "title": "Inloopspreekuren duurzaamheid in Vries",
-  "occurrences": [
-   {
-    "date": "2026-11-12",
-    "endDate": null,
-    "startTime": "19:00",
-    "endTime": "21:00"
-   }
-  ],
-  "venue": {
-   "name": "Gemeentehuis, Vries",
-   "city": "Vries",
-   "lat": 53.0733,
-   "lon": 6.5769
-  },
-  "price": "Zie organisator",
-  "url": "https://www.vries.nu/agendapunt/inloopspreekuren-duurzaamheid-in-vries-2/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.vries.nu/agendapunt/inloopspreekuren-duurzaamheid-in-vries-2/",
-    "host": "vries.nu",
-    "seenAt": "2026-11-11"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "0c06afd14d09",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Sint_Bonifatiuskerk_Vries.jpg/1280px-Sint_Bonifatiuskerk_Vries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Vries",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sint_Bonifatiuskerk_Vries.jpg"
   }
  },
  {
@@ -14148,15 +14048,15 @@
   },
   "hash": "531bff724d88",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/20190515_De_Yde_in_Mantgum2.jpg/1280px-20190515_De_Yde_in_Mantgum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Mantgum_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Mantgum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190515_De_Yde_in_Mantgum2.jpg"
+   "credit": "Foto: Udo Ockema · CC BY 3.0 · Wikimedia Commons",
+   "author": "Udo Ockema",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mantgum_b.jpg"
   }
  },
  {
@@ -16954,15 +16854,15 @@
   },
   "hash": "d251839f4ee8",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/20090711_Landscape_near_Vries_Dr_NL.jpg/1280px-20090711_Landscape_near_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Sint_Bonifatiuskerk_Vries.jpg/1280px-Sint_Bonifatiuskerk_Vries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Wutsje · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Wutsje",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20090711_Landscape_near_Vries_Dr_NL.jpg"
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sint_Bonifatiuskerk_Vries.jpg"
   }
  },
  {
@@ -19153,56 +19053,6 @@
    "alt": "Foto bij Fries Project Orkest en Jeugd Dans Opleiding Fryslân – GenZ vs. Boomers",
    "credit": "Foto: Explore the North",
    "sourceUrl": "https://explorethenorth.nl/event/fries-project-orkest-en-jeugd-dans-opleiding-fryslan-genz-vs-boomers/"
-  }
- },
- {
-  "id": "evt_1724868bc94029",
-  "slug": "frietuurtjes-2-keer-op-zondag-15-en-29-november-adorp-2026-11-14",
-  "title": "Frietuurtjes 2 keer op zondag, 15 en 29 november",
-  "occurrences": [
-   {
-    "date": "2026-11-14",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Adorp",
-   "city": "Adorp",
-   "lat": 53.2747,
-   "lon": 6.5344
-  },
-  "price": "Zie organisator",
-  "url": "https://adorp.com/category/algemeen-nieuws/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://adorp.com/category/algemeen-nieuws/",
-    "host": "adorp.com",
-    "seenAt": "2026-11-11"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "a7d58c3f0669",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/20260525_Oude_Adorperweg.jpg/1280px-20260525_Oude_Adorperweg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Adorp",
-   "credit": "Foto: AbvanG · CC0 · Wikimedia Commons",
-   "author": "AbvanG",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20260525_Oude_Adorperweg.jpg"
   }
  },
  {
@@ -24120,7 +23970,7 @@
   "hash": "201de7ae2f2b",
   "groot": "publiekstrekker: 'intocht'",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/20141014_Kerkweg_Yde-Vries_Dr_NL.jpg/1280px-20141014_Kerkweg_Yde-Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/20141007_Berk_Veenweg_Vries_Dr_NL.jpg/1280px-20141007_Berk_Veenweg_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
@@ -24128,7 +23978,7 @@
    "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141014_Kerkweg_Yde-Vries_Dr_NL.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141007_Berk_Veenweg_Vries_Dr_NL.jpg"
   }
  },
  {
@@ -24462,15 +24312,15 @@
   },
   "hash": "962205e4e5bf",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/8132.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg/1280px-8132.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/20260525_Oude_Adorperweg.jpg/1280px-20260525_Oude_Adorperweg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Adorp",
-   "credit": "Foto: Andre Hosper · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Andre Hosper",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:8132.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg"
+   "credit": "Foto: AbvanG · CC0 · Wikimedia Commons",
+   "author": "AbvanG",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20260525_Oude_Adorperweg.jpg"
   }
  },
  {
@@ -24514,7 +24364,7 @@
   },
   "hash": "2847a0e0aeaf",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/8133.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel_Westerkwartier.jpg/1280px-8133.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel_Westerkwartier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/8132.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg/1280px-8132.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Adorp",
@@ -24522,7 +24372,7 @@
    "author": "Andre Hosper",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:8133.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel_Westerkwartier.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:8132.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg"
   }
  },
  {
@@ -26542,15 +26392,15 @@
   },
   "hash": "983b09b14ff3",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/20141007_Berk_Veenweg_Vries_Dr_NL.jpg/1280px-20141007_Berk_Veenweg_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/20090711_Landscape_near_Vries_Dr_NL.jpg/1280px-20090711_Landscape_near_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Wutsje / Wikimedia Commons / CC-BY-SA 4.0 · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141007_Berk_Veenweg_Vries_Dr_NL.jpg"
+   "credit": "Foto: Wutsje · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Wutsje",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20090711_Landscape_near_Vries_Dr_NL.jpg"
   }
  },
  {
@@ -32521,7 +32371,7 @@
   },
   "hash": "1870bce85315",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/8134.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg/1280px-8134.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/8133.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel_Westerkwartier.jpg/1280px-8133.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel_Westerkwartier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Adorp",
@@ -32529,7 +32379,7 @@
    "author": "Andre Hosper",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:8134.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:8133.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel_Westerkwartier.jpg"
   }
  },
  {
@@ -33713,15 +33563,15 @@
   },
   "hash": "35baea11d01f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/20200913_06_Vries_%2850342900237%29.jpg/1280px-20200913_06_Vries_%2850342900237%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/20141014_Kerkweg_Yde-Vries_Dr_NL.jpg/1280px-20141014_Kerkweg_Yde-Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Sjaak Kempe from Groningen, The Netherlands · CC BY 2.0 · Wikimedia Commons",
-   "author": "Sjaak Kempe from Groningen, The Netherlands",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20200913_06_Vries_(50342900237).jpg"
+   "credit": "Foto: Wutsje / Wikimedia Commons / CC-BY-SA 4.0 · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141014_Kerkweg_Yde-Vries_Dr_NL.jpg"
   }
  },
  {
@@ -33967,6 +33817,56 @@
   }
  },
  {
+  "id": "evt_bf3cfafe2cb5dc",
+  "slug": "concert-met-symfonieorkest-de-harmonie-en-hiske-oosterwijk-st-jacobiparochie-202",
+  "title": "CONCERT MET SYMFONIEORKEST DE HARMONIE EN HISKE OOSTERWIJK",
+  "occurrences": [
+   {
+    "date": "2026-11-15",
+    "endDate": null,
+    "startTime": "15:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Groate Kerk",
+   "city": "St.-Jacobiparochie",
+   "lat": 53.2729117,
+   "lon": 5.6033826
+  },
+  "price": "Zie organisator",
+  "url": "https://groatekerk.nl/zondag-15-november-concert-met-symfonieorkest-de-harmonie-en-hiske-oosterwijk/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://groatekerk.nl/zondag-15-november-concert-met-symfonieorkest-de-harmonie-en-hiske-oosterwijk/",
+    "host": "groatekerk.nl",
+    "seenAt": "2026-11-11"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "59138cd0287e",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Jacobskerk_Sint-Jacobiparochie.jpg/1280px-Jacobskerk_Sint-Jacobiparochie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Groate Kerk",
+   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jacobskerk_Sint-Jacobiparochie.jpg"
+  }
+ },
+ {
   "id": "evt_7ba286fa8bb8a9",
   "slug": "concert-fryslan-brass-opende-2026-11-15",
   "title": "Concert Fryslân Brass",
@@ -34112,56 +34012,6 @@
    "alt": "Foto bij Wild Horse Nine",
    "credit": "Foto: Forum Groningen",
    "sourceUrl": "https://forum.nl/nl/agenda/film/wild-horse-nine?date=15-11-2026"
-  }
- },
- {
-  "id": "evt_bf3cfafe2cb5dc",
-  "slug": "zondag-15-november-concert-met-symfonieorkest-de-harmonie-en-hiske-oosterwijk-st",
-  "title": "ZONDAG 15 NOVEMBER CONCERT MET SYMFONIEORKEST DE HARMONIE EN HISKE OOSTERWIJK",
-  "occurrences": [
-   {
-    "date": "2026-11-15",
-    "endDate": null,
-    "startTime": "15:30",
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Groate Kerk",
-   "city": "St.-Jacobiparochie",
-   "lat": 53.2729117,
-   "lon": 5.6033826
-  },
-  "price": "Zie organisator",
-  "url": "https://groatekerk.nl/zondag-15-november-concert-met-symfonieorkest-de-harmonie-en-hiske-oosterwijk/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://groatekerk.nl/zondag-15-november-concert-met-symfonieorkest-de-harmonie-en-hiske-oosterwijk/",
-    "host": "groatekerk.nl",
-    "seenAt": "2026-11-11"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'concert'",
-   "confidence": 0.8
-  },
-  "hash": "c5488f5d9afa",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Jacobskerk_Sint-Jacobiparochie.jpg/1280px-Jacobskerk_Sint-Jacobiparochie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Groate Kerk",
-   "credit": "Foto: Gouwenaar · CC0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jacobskerk_Sint-Jacobiparochie.jpg"
   }
  },
  {
@@ -41319,15 +41169,15 @@
   },
   "hash": "faccb240fe66",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Sint_Bonifatiuskerk_Vries.jpg/1280px-Sint_Bonifatiuskerk_Vries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg/1280px-Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "VRIES",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sint_Bonifatiuskerk_Vries.jpg"
+   "credit": "Foto: Alf van Beem · CC0 · Wikimedia Commons",
+   "author": "Alf van Beem",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banketbakkerij_J_Hofstra_chocoladeletter_verpakking,_Schultestraat_4,_Vries,_foto1.jpg"
   }
  },
  {
@@ -41911,15 +41761,15 @@
   },
   "hash": "797062755d5f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg/1280px-Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/20200913_06_Vries_%2850342900237%29.jpg/1280px-20200913_06_Vries_%2850342900237%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Alf van Beem · CC0 · Wikimedia Commons",
-   "author": "Alf van Beem",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banketbakkerij_J_Hofstra_chocoladeletter_verpakking,_Schultestraat_4,_Vries,_foto1.jpg"
+   "credit": "Foto: Sjaak Kempe from Groningen, The Netherlands · CC BY 2.0 · Wikimedia Commons",
+   "author": "Sjaak Kempe from Groningen, The Netherlands",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20200913_06_Vries_(50342900237).jpg"
   }
  },
  {
@@ -63091,15 +62941,15 @@
   },
   "hash": "d6316e10e61d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/20141007_Berk_Veenweg_Vries_Dr_NL.jpg/1280px-20141007_Berk_Veenweg_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/20090711_Landscape_near_Vries_Dr_NL.jpg/1280px-20090711_Landscape_near_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Wutsje / Wikimedia Commons / CC-BY-SA 4.0 · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141007_Berk_Veenweg_Vries_Dr_NL.jpg"
+   "credit": "Foto: Wutsje · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Wutsje",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20090711_Landscape_near_Vries_Dr_NL.jpg"
   }
  },
  {
@@ -66600,15 +66450,15 @@
   },
   "hash": "4b2799e96d1d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Adorp_-_Kleine_Straat.jpg/1280px-Adorp_-_Kleine_Straat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/8134.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg/1280px-8134.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Adorp",
-   "credit": "Foto: Hardscarf · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Hardscarf",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adorp_-_Kleine_Straat.jpg"
+   "credit": "Foto: Andre Hosper · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Andre Hosper",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:8134.KoningsLaagte.Goudplevier.Vangen.Wierum.Adorp.WilsterFlappen.Dorkwerd.Paddenpoel.jpg"
   }
  },
  {
@@ -67454,15 +67304,15 @@
   },
   "hash": "8100fe16365c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/20090711_Landscape_near_Vries_Dr_NL.jpg/1280px-20090711_Landscape_near_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Sint_Bonifatiuskerk_Vries.jpg/1280px-Sint_Bonifatiuskerk_Vries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Wutsje · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Wutsje",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20090711_Landscape_near_Vries_Dr_NL.jpg"
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sint_Bonifatiuskerk_Vries.jpg"
   }
  },
  {
@@ -74714,7 +74564,7 @@
   },
   "hash": "b053d97369eb",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/20141014_Kerkweg_Yde-Vries_Dr_NL.jpg/1280px-20141014_Kerkweg_Yde-Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/20141007_Berk_Veenweg_Vries_Dr_NL.jpg/1280px-20141007_Berk_Veenweg_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
@@ -74722,7 +74572,7 @@
    "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141014_Kerkweg_Yde-Vries_Dr_NL.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141007_Berk_Veenweg_Vries_Dr_NL.jpg"
   }
  },
  {
@@ -85663,7 +85513,7 @@
   },
   "hash": "d1282bc4da33",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/20190515_Zicht_op_Mantgum_met_de_Yde1.jpg/1280px-20190515_Zicht_op_Mantgum_met_de_Yde1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/20190515_De_Yde_in_Mantgum2.jpg/1280px-20190515_De_Yde_in_Mantgum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Mantgum",
@@ -85671,7 +85521,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190515_Zicht_op_Mantgum_met_de_Yde1.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190515_De_Yde_in_Mantgum2.jpg"
   }
  },
  {
@@ -86898,15 +86748,15 @@
   },
   "hash": "7fc941f5cb86",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Zuidzijde_-_Adorp_-_20004652_-_RCE.jpg/1280px-Zuidzijde_-_Adorp_-_20004652_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Adorp_-_Kleine_Straat.jpg/1280px-Adorp_-_Kleine_Straat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Adorp",
-   "credit": "Foto: A. J. van der Wal · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "A. J. van der Wal",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zuidzijde_-_Adorp_-_20004652_-_RCE.jpg"
+   "credit": "Foto: Hardscarf · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Hardscarf",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adorp_-_Kleine_Straat.jpg"
   }
  },
  {
@@ -96191,6 +96041,56 @@
   }
  },
  {
+  "id": "evt_a25f369aff4fe5",
+  "slug": "concert-met-het-noordijper-kamerkoor-st-jacobiparochie-2026-11-29",
+  "title": "CONCERT MET HET NOORDIJPER KAMERKOOR",
+  "occurrences": [
+   {
+    "date": "2026-11-29",
+    "endDate": null,
+    "startTime": null,
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Groate Kerk",
+   "city": "St.-Jacobiparochie",
+   "lat": 53.2729117,
+   "lon": 5.6033826
+  },
+  "price": "Zie organisator",
+  "url": "https://groatekerk.nl/zondag-29-november-concert-met-het-noordijper-kamerkoor/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://groatekerk.nl/zondag-29-november-concert-met-het-noordijper-kamerkoor/",
+    "host": "groatekerk.nl",
+    "seenAt": "2026-11-11"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "trefwoord",
+   "reason": "trefwoord 'concert'",
+   "confidence": 0.8
+  },
+  "hash": "bf6930e814da",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Groate_Kerk_van_Sint_Jacobiparochie_1.jpg/1280px-Groate_Kerk_van_Sint_Jacobiparochie_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Groate Kerk",
+   "credit": "Foto: Uberprutser · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Uberprutser",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groate_Kerk_van_Sint_Jacobiparochie_1.jpg"
+  }
+ },
+ {
   "id": "concert-rouw-van-lierop-tinallinge-2026",
   "slug": "concert-hanneke-rouw-cello-en-leo-van-lierop-accordeon-tango-van-piazzolla-tinal",
   "title": "Concert Hanneke Rouw (cello) en Leo van Lierop (accordeon): tango van Piazzolla",
@@ -97270,56 +97170,6 @@
    "alt": "Foto bij Wen er maar aan",
    "credit": "Foto: Filmclub De Winsinghhof",
    "sourceUrl": "https://theaterroden.nl/voorstelling/10381812"
-  }
- },
- {
-  "id": "evt_a25f369aff4fe5",
-  "slug": "zondag-29-november-concert-met-het-noordijper-kamerkoor-st-jacobiparochie-2026-1",
-  "title": "ZONDAG 29 NOVEMBER CONCERT MET HET NOORDIJPER KAMERKOOR",
-  "occurrences": [
-   {
-    "date": "2026-11-29",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Groate Kerk",
-   "city": "St.-Jacobiparochie",
-   "lat": 53.2729117,
-   "lon": 5.6033826
-  },
-  "price": "Zie organisator",
-  "url": "https://groatekerk.nl/zondag-29-november-concert-met-het-noordijper-kamerkoor/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://groatekerk.nl/zondag-29-november-concert-met-het-noordijper-kamerkoor/",
-    "host": "groatekerk.nl",
-    "seenAt": "2026-11-11"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'concert'",
-   "confidence": 0.8
-  },
-  "hash": "92a33372bcb1",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Groate_Kerk_van_Sint_Jacobiparochie_1.jpg/1280px-Groate_Kerk_van_Sint_Jacobiparochie_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Groate Kerk",
-   "credit": "Foto: Uberprutser · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Uberprutser",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groate_Kerk_van_Sint_Jacobiparochie_1.jpg"
   }
  },
  {
@@ -114570,15 +114420,15 @@
   },
   "hash": "305e74aa12c6",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/20200913_06_Vries_%2850342900237%29.jpg/1280px-20200913_06_Vries_%2850342900237%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/20141014_Kerkweg_Yde-Vries_Dr_NL.jpg/1280px-20141014_Kerkweg_Yde-Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Sjaak Kempe from Groningen, The Netherlands · CC BY 2.0 · Wikimedia Commons",
-   "author": "Sjaak Kempe from Groningen, The Netherlands",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20200913_06_Vries_(50342900237).jpg"
+   "credit": "Foto: Wutsje / Wikimedia Commons / CC-BY-SA 4.0 · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141014_Kerkweg_Yde-Vries_Dr_NL.jpg"
   }
  },
  {
@@ -115007,15 +114857,15 @@
   },
   "hash": "4faa6516c18a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg/1280px-Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/20200913_06_Vries_%2850342900237%29.jpg/1280px-20200913_06_Vries_%2850342900237%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Alf van Beem · CC0 · Wikimedia Commons",
-   "author": "Alf van Beem",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banketbakkerij_J_Hofstra_chocoladeletter_verpakking,_Schultestraat_4,_Vries,_foto1.jpg"
+   "credit": "Foto: Sjaak Kempe from Groningen, The Netherlands · CC BY 2.0 · Wikimedia Commons",
+   "author": "Sjaak Kempe from Groningen, The Netherlands",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20200913_06_Vries_(50342900237).jpg"
   }
  },
  {
@@ -118784,15 +118634,15 @@
   },
   "hash": "f70420c0081e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Sint_Bonifatiuskerk_Vries.jpg/1280px-Sint_Bonifatiuskerk_Vries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg/1280px-Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sint_Bonifatiuskerk_Vries.jpg"
+   "credit": "Foto: Alf van Beem · CC0 · Wikimedia Commons",
+   "author": "Alf van Beem",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banketbakkerij_J_Hofstra_chocoladeletter_verpakking,_Schultestraat_4,_Vries,_foto1.jpg"
   }
  },
  {
@@ -119894,15 +119744,15 @@
   },
   "hash": "5740efb26964",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/20090711_Landscape_near_Vries_Dr_NL.jpg/1280px-20090711_Landscape_near_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Sint_Bonifatiuskerk_Vries.jpg/1280px-Sint_Bonifatiuskerk_Vries.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Wutsje · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Wutsje",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20090711_Landscape_near_Vries_Dr_NL.jpg"
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sint_Bonifatiuskerk_Vries.jpg"
   }
  },
  {
@@ -130470,6 +130320,56 @@
   }
  },
  {
+  "id": "evt_a2b50ac29b36f8",
+  "slug": "concert-chiaroscuro-met-opera-zanger-igor-popov-st-jacobiparochie-2026-12-13",
+  "title": "CONCERT ‘CHIAROSCURO’ MET OPERA ZANGER IGOR POPOV",
+  "occurrences": [
+   {
+    "date": "2026-12-13",
+    "endDate": null,
+    "startTime": "15:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Groate Kerk",
+   "city": "St.-Jacobiparochie",
+   "lat": 53.2729117,
+   "lon": 5.6033826
+  },
+  "price": "Zie organisator",
+  "url": "https://groatekerk.nl/zondag-13-december-concert-chiaroscuro-met-opera-zanger-igor-popov/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://groatekerk.nl/zondag-13-december-concert-chiaroscuro-met-opera-zanger-igor-popov/",
+    "host": "groatekerk.nl",
+    "seenAt": "2026-11-11"
+   }
+  ],
+  "kind": "muziek",
+  "kindLabel": "Muziek",
+  "tags": [],
+  "classification": {
+   "method": "correctie",
+   "reason": "Soortenronde 27 oktober 2026 (ZONDAG 13 DECEMBER CONCERT ‘CHIAROSCURO’ MET OPERA ZANGER IG): bandoptreden/concert, niet toneel",
+   "confidence": 1.0
+  },
+  "hash": "86377b26da4a",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Groate_Kerk_van_Sint_Jacobiparochie_2.jpg/1280px-Groate_Kerk_van_Sint_Jacobiparochie_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Groate Kerk",
+   "credit": "Foto: Uberprutser · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Uberprutser",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groate_Kerk_van_Sint_Jacobiparochie_2.jpg"
+  }
+ },
+ {
   "id": "evt_79b27a04d2c96d",
   "slug": "kerstconcert-excelsior-13-december-schettens-2026-12-13",
   "title": "Kerstconcert Excelsior 13 december!",
@@ -130561,56 +130461,6 @@
    "alt": "Foto bij Kerstconcert Excelsior Schraard",
    "credit": "Foto: Schraard (dorpswebsite)",
    "sourceUrl": "https://schraard.com/evenement/kerstconcert-excelsior-schraard-op-13-december"
-  }
- },
- {
-  "id": "evt_a2b50ac29b36f8",
-  "slug": "zondag-13-december-concert-chiaroscuro-met-opera-zanger-igor-popov-st-jacobiparo",
-  "title": "ZONDAG 13 DECEMBER CONCERT ‘CHIAROSCURO’ MET OPERA ZANGER IGOR POPOV",
-  "occurrences": [
-   {
-    "date": "2026-12-13",
-    "endDate": null,
-    "startTime": "15:30",
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Groate Kerk",
-   "city": "St.-Jacobiparochie",
-   "lat": 53.2729117,
-   "lon": 5.6033826
-  },
-  "price": "Zie organisator",
-  "url": "https://groatekerk.nl/zondag-13-december-concert-chiaroscuro-met-opera-zanger-igor-popov/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://groatekerk.nl/zondag-13-december-concert-chiaroscuro-met-opera-zanger-igor-popov/",
-    "host": "groatekerk.nl",
-    "seenAt": "2026-11-11"
-   }
-  ],
-  "kind": "muziek",
-  "kindLabel": "Muziek",
-  "tags": [],
-  "classification": {
-   "method": "correctie",
-   "reason": "Soortenronde 27 oktober 2026 (ZONDAG 13 DECEMBER CONCERT ‘CHIAROSCURO’ MET OPERA ZANGER IG): bandoptreden/concert, niet toneel",
-   "confidence": 1.0
-  },
-  "hash": "801912a577e5",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Groate_Kerk_van_Sint_Jacobiparochie_2.jpg/1280px-Groate_Kerk_van_Sint_Jacobiparochie_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Groate Kerk",
-   "credit": "Foto: Uberprutser · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Uberprutser",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groate_Kerk_van_Sint_Jacobiparochie_2.jpg"
   }
  },
  {
@@ -134586,15 +134436,15 @@
   },
   "hash": "85ca2907d66d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/20141007_Berk_Veenweg_Vries_Dr_NL.jpg/1280px-20141007_Berk_Veenweg_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/20090711_Landscape_near_Vries_Dr_NL.jpg/1280px-20090711_Landscape_near_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Wutsje / Wikimedia Commons / CC-BY-SA 4.0 · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141007_Berk_Veenweg_Vries_Dr_NL.jpg"
+   "credit": "Foto: Wutsje · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Wutsje",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20090711_Landscape_near_Vries_Dr_NL.jpg"
   }
  },
  {
@@ -137363,7 +137213,7 @@
   },
   "hash": "68a15583976c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/20190515_Zicht_op_Mantgum1.jpg/1280px-20190515_Zicht_op_Mantgum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/20190515_Zicht_op_Mantgum_met_de_Yde1.jpg/1280px-20190515_Zicht_op_Mantgum_met_de_Yde1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Mantgum",
@@ -137371,7 +137221,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190515_Zicht_op_Mantgum1.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190515_Zicht_op_Mantgum_met_de_Yde1.jpg"
   }
  },
  {
@@ -160097,7 +159947,7 @@
   },
   "hash": "044ac14df7eb",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/20190515_paarden_en_de_skyline_van_Leeuwarden_ten_oosten_van_Mantgum.jpg/1280px-20190515_paarden_en_de_skyline_van_Leeuwarden_ten_oosten_van_Mantgum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/20190515_Zicht_op_Mantgum1.jpg/1280px-20190515_Zicht_op_Mantgum1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Mantgum",
@@ -160105,7 +159955,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190515_paarden_en_de_skyline_van_Leeuwarden_ten_oosten_van_Mantgum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190515_Zicht_op_Mantgum1.jpg"
   }
  },
  {
@@ -170895,7 +170745,7 @@
   },
   "hash": "0bb78f5edc52",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/20141014_Kerkweg_Yde-Vries_Dr_NL.jpg/1280px-20141014_Kerkweg_Yde-Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/20141007_Berk_Veenweg_Vries_Dr_NL.jpg/1280px-20141007_Berk_Veenweg_Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
@@ -170903,7 +170753,7 @@
    "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141014_Kerkweg_Yde-Vries_Dr_NL.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141007_Berk_Veenweg_Vries_Dr_NL.jpg"
   }
  },
  {
@@ -174122,6 +173972,56 @@
   }
  },
  {
+  "id": "evt_e8cad7c805fd0c",
+  "slug": "mijn-hemel-blauw-st-jacobiparochie-2027-01-17",
+  "title": "MIJN HEMEL BLAUW",
+  "occurrences": [
+   {
+    "date": "2027-01-17",
+    "endDate": null,
+    "startTime": "15:30",
+    "endTime": null
+   }
+  ],
+  "venue": {
+   "name": "Groate Kerk",
+   "city": "St.-Jacobiparochie",
+   "lat": 53.2729117,
+   "lon": 5.6033826
+  },
+  "price": "Zie organisator",
+  "url": "https://groatekerk.nl/zondag-17-januari-mijn-hemel-blauw/",
+  "status": "bevestigd door de organisator",
+  "sources": [
+   {
+    "type": "organisator",
+    "url": "https://groatekerk.nl/zondag-17-januari-mijn-hemel-blauw/",
+    "host": "groatekerk.nl",
+    "seenAt": "2026-11-11"
+   }
+  ],
+  "kind": "overig",
+  "kindLabel": "Overig",
+  "tags": [],
+  "classification": {
+   "method": "geen",
+   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+   "confidence": 0.2
+  },
+  "hash": "7820fa40c08f",
+  "image": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Interieur_-_Sint_Jacobiparochie_-_20120541_-_RCE.jpg/1280px-Interieur_-_Sint_Jacobiparochie_-_20120541_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "type": "wikimedia",
+   "match": "plek",
+   "alt": "Groate Kerk",
+   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "G.Th. Delemarre",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interieur_-_Sint_Jacobiparochie_-_20120541_-_RCE.jpg"
+  }
+ },
+ {
   "id": "evt_9a16e796e35c0c",
   "slug": "nieuwjaarsconcert-fanfare-cwo-groningen-2027-01-17",
   "title": "Nieuwjaarsconcert Fanfare CWO",
@@ -174267,56 +174167,6 @@
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winkeltjes_aan_de_Luts._Balk.JPG"
-  }
- },
- {
-  "id": "evt_e8cad7c805fd0c",
-  "slug": "zondag-17-januari-mijn-hemel-blauw-st-jacobiparochie-2027-01-17",
-  "title": "ZONDAG 17 JANUARI MIJN HEMEL BLAUW",
-  "occurrences": [
-   {
-    "date": "2027-01-17",
-    "endDate": null,
-    "startTime": "15:30",
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Groate Kerk",
-   "city": "St.-Jacobiparochie",
-   "lat": 53.2729117,
-   "lon": 5.6033826
-  },
-  "price": "Zie organisator",
-  "url": "https://groatekerk.nl/zondag-17-januari-mijn-hemel-blauw/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://groatekerk.nl/zondag-17-januari-mijn-hemel-blauw/",
-    "host": "groatekerk.nl",
-    "seenAt": "2026-11-11"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "71065170579d",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Interieur_-_Sint_Jacobiparochie_-_20120541_-_RCE.jpg/1280px-Interieur_-_Sint_Jacobiparochie_-_20120541_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Groate Kerk",
-   "credit": "Foto: G.Th. Delemarre · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "G.Th. Delemarre",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interieur_-_Sint_Jacobiparochie_-_20120541_-_RCE.jpg"
   }
  },
  {
@@ -188663,8 +188513,8 @@
  },
  {
   "id": "evt_742dcc98421849",
-  "slug": "zondag-31-januari-the-mudbirds-st-jacobiparochie-2027-01-31",
-  "title": "ZONDAG 31 JANUARI THE MUDBIRDS",
+  "slug": "the-mudbirds-st-jacobiparochie-2027-01-31",
+  "title": "THE MUDBIRDS",
   "occurrences": [
    {
     "date": "2027-01-31",
@@ -188698,7 +188548,7 @@
    "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
    "confidence": 0.2
   },
-  "hash": "1ac337f9170f",
+  "hash": "4c44137a2c56",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Interieur_-_Sint_Jacobiparochie_-_20120542_-_RCE.jpg/1280px-Interieur_-_Sint_Jacobiparochie_-_20120542_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -203453,8 +203303,8 @@
  },
  {
   "id": "evt_64bd5c89aedc1c",
-  "slug": "zondag-14-februari-the-northern-sanwich-st-jacobiparochie-2027-02-14",
-  "title": "ZONDAG 14 FEBRUARI THE NORTHERN SANWICH",
+  "slug": "the-northern-sanwich-st-jacobiparochie-2027-02-14",
+  "title": "THE NORTHERN SANWICH",
   "occurrences": [
    {
     "date": "2027-02-14",
@@ -203488,7 +203338,7 @@
    "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
    "confidence": 0.2
   },
-  "hash": "a5d2880efa10",
+  "hash": "68bee6870b4c",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Jacobiparochie-parochie-Jacobskerk.jpg/1280px-Jacobiparochie-parochie-Jacobskerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -223277,8 +223127,8 @@
  },
  {
   "id": "evt_bde11c6a0a9e1a",
-  "slug": "zondag-7-maart-vintage-mini-brass-band-st-jacobiparochie-2027-03-07",
-  "title": "ZONDAG 7 MAART VINTAGE MINI BRASS BAND",
+  "slug": "vintage-mini-brass-band-st-jacobiparochie-2027-03-07",
+  "title": "VINTAGE MINI BRASS BAND",
   "occurrences": [
    {
     "date": "2027-03-07",
@@ -223312,7 +223162,7 @@
    "reason": "trefwoord 'band'",
    "confidence": 0.8
   },
-  "hash": "acb60a5b6188",
+  "hash": "9a958e733d9b",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Jacobskerk_Sint-Jacobiparochie.jpg/1280px-Jacobskerk_Sint-Jacobiparochie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -237134,8 +236984,8 @@
  },
  {
   "id": "evt_97f9422c6d1406",
-  "slug": "zondag-21-maart-mylou-frencken-st-jacobiparochie-2027-03-21",
-  "title": "ZONDAG 21 MAART MYLOU FRENCKEN",
+  "slug": "mylou-frencken-st-jacobiparochie-2027-03-21",
+  "title": "MYLOU FRENCKEN",
   "occurrences": [
    {
     "date": "2027-03-21",
@@ -237169,7 +237019,7 @@
    "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
    "confidence": 0.2
   },
-  "hash": "f39640123b9c",
+  "hash": "dae9f2a79c88",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Groate_Kerk_van_Sint_Jacobiparochie_1.jpg/1280px-Groate_Kerk_van_Sint_Jacobiparochie_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -238229,56 +238079,6 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RodenChurch.jpg"
-  }
- },
- {
-  "id": "evt_8fa4fb65422c05",
-  "slug": "easytoys-it-s-playtime-night-assen-2027-03-25",
-  "title": "EasyToys: It's Playtime Night",
-  "occurrences": [
-   {
-    "date": "2027-03-25",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "De Bonte Wever",
-   "city": "Assen",
-   "lat": 52.9840952,
-   "lon": 6.5428525
-  },
-  "price": "EUR 35.00",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/110671?p_id=541861",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://debontewever.avayo.nl/bestel/tickets/110671?p_id=541861",
-    "host": "debontewever.avayo.nl",
-    "seenAt": "2026-11-11"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "6ff91c3aa88a",
-  "image": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bonte_Wever.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "De Bonte Wever",
-   "credit": "Foto: Ronn · Public domain · Wikimedia Commons",
-   "author": "Ronn",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonte_Wever.jpg"
   }
  },
  {
@@ -280848,15 +280648,15 @@
   },
   "hash": "f97cf302b7c9",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/20200913_06_Vries_%2850342900237%29.jpg/1280px-20200913_06_Vries_%2850342900237%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/20141014_Kerkweg_Yde-Vries_Dr_NL.jpg/1280px-20141014_Kerkweg_Yde-Vries_Dr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Sjaak Kempe from Groningen, The Netherlands · CC BY 2.0 · Wikimedia Commons",
-   "author": "Sjaak Kempe from Groningen, The Netherlands",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20200913_06_Vries_(50342900237).jpg"
+   "credit": "Foto: Wutsje / Wikimedia Commons / CC-BY-SA 4.0 · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Wutsje / Wikimedia Commons / CC-BY-SA 4.0",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20141014_Kerkweg_Yde-Vries_Dr_NL.jpg"
   }
  },
  {
@@ -290368,15 +290168,15 @@
   },
   "hash": "ec1cfe2098ed",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg/1280px-Banketbakkerij_J_Hofstra_chocoladeletter_verpakking%2C_Schultestraat_4%2C_Vries%2C_foto1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/20200913_06_Vries_%2850342900237%29.jpg/1280px-20200913_06_Vries_%2850342900237%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Vries",
-   "credit": "Foto: Alf van Beem · CC0 · Wikimedia Commons",
-   "author": "Alf van Beem",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banketbakkerij_J_Hofstra_chocoladeletter_verpakking,_Schultestraat_4,_Vries,_foto1.jpg"
+   "credit": "Foto: Sjaak Kempe from Groningen, The Netherlands · CC BY 2.0 · Wikimedia Commons",
+   "author": "Sjaak Kempe from Groningen, The Netherlands",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20200913_06_Vries_(50342900237).jpg"
   }
  },
  {
