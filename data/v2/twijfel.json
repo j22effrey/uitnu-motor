@@ -295,16 +295,6 @@
   ]
  },
  {
-  "id": "evt_501afc99301441",
-  "title": "De Zelfmoordenaar",
-  "kind": "theater",
-  "reason": "website jongeharten.podiumnederland.nl",
-  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10384560?stlt=jh&lang=nl",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_a514a7654f2cc4",
   "title": "TALK: Wat als weerstand wijsheid is?",
   "kind": "theater",
@@ -1383,6 +1373,16 @@
   ]
  },
  {
+  "id": "evt_77a971f96064ae",
+  "title": "De Grote Vinylavond: Schoonloo gaat uit z'n plaat!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://schoonloo.com/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_38b0c1a95691a3",
   "title": "Jumbo Flyers Heerenveen – Amsterdam Tigers",
   "kind": "sport",
@@ -1408,16 +1408,6 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/capitals-red-eagles-s-hertogenbosch/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_ed2e41cabc31ac",
-  "title": "Schoonloo gaat uit z'n plaat!",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://schoonloo.com/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2057,6 +2047,16 @@
   ]
  },
  {
+  "id": "evt_339256c78605ce",
+  "title": "Bericht uit Spanje",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://schoonloo.com/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_78086132a5a922",
   "title": "Blijer oerke",
   "kind": "overig",
@@ -2348,16 +2348,6 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_405edf8c705c",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=3",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_c9fa9893c21cef",
   "title": "Maak je (digitale) kerstkaart met de Green Screen",
   "kind": "lezing",
@@ -2368,11 +2358,21 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/2",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=3",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3068,6 +3068,16 @@
   ]
  },
  {
+  "id": "evt_5eabc494e0b7cb",
+  "title": "Schoonloo zamelt weer in voor de Boeldag!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://schoonloo.com/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "skuurverkoop-ballum-2026-12-29",
   "title": "Skuurverkoop Ballum",
   "kind": "markt",
@@ -3085,17 +3095,6 @@
   "url": "https://www.synagogegroningen.nl/agenda",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_a947165a433b6b",
-  "title": "Spring festival",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
@@ -3300,7 +3299,17 @@
   ]
  },
  {
-  "id": "evt_7722ea39322695",
+  "id": "evt_e1d3ae22fa7cb0",
+  "title": "Master Pullz Assen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://masterpullz.com/beurs/mp-assen",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_07145fad32f049",
   "title": "Lycurgus Groningen – Sliedrecht Sport",
   "kind": "sport",
   "reason": "website lycurgus.nl",
@@ -4120,16 +4129,6 @@
   ]
  },
  {
-  "id": "evt_09931d9e9b7ef8",
-  "title": "(openingstijden receptie camping de Deelderij",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://schoonloo.com/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_b9d668c8a9f37d",
   "title": "DE ZILVEREN BAL",
   "kind": "sport",
@@ -4442,16 +4441,6 @@
   ]
  },
  {
-  "id": "evt_c77fd9268c33bd",
-  "title": "Villagers of Ioannina City",
-  "kind": "muziek",
-  "reason": "website neushoorn.nl",
-  "url": "https://www.neushoorn.nl/events/villagers-of-ioannina-city",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_4ea5be135ca9cb",
   "title": "Opening Watersportseizoen",
   "kind": "sport",
@@ -4462,31 +4451,11 @@
   ]
  },
  {
-  "id": "evt_1fbf06c73aeff9",
-  "title": "Spraakmakende Boeken: Audrey Magee: De kolonie",
-  "kind": "lezing",
-  "reason": "website dbieb.op-shop.nl",
-  "url": "https://dbieb.op-shop.nl/10653/spraakmakende-boeken-audrey-magee-de-kolonie/30-03-2027",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_edbde5391855a8",
   "title": "Rondom 10",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.scharnegoutum.nl/agenda/rondom-10-2/2027-03-31/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_ba9cdb8592b3de",
-  "title": "STORMRAM",
-  "kind": "theater",
-  "reason": "website theaterroden.nl",
-  "url": "https://theaterroden.nl/stormram-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4517,16 +4486,6 @@
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
   "url": "https://www.vanberesteyn.nl/programma/antiklimax/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_96bc93d5f6937b",
-  "title": "Bob Koomen",
-  "kind": "theater",
-  "reason": "website theaterhofpoort.nl",
-  "url": "https://www.theaterhofpoort.nl/bob-koomen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5164,16 +5123,6 @@
   ]
  },
  {
-  "id": "evt_4d3d4688086788",
-  "title": "Assen Card Convention",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.assencardconvention.nl/standhouders",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_a2f7bbf8fc0205",
   "title": "Dflat Carpet",
   "kind": "overig",
@@ -5194,11 +5143,31 @@
   ]
  },
  {
+  "id": "evt_7b2307a1538c04",
+  "title": "2e editie Assen Card Convention 29",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.assencardconvention.nl/standhouders",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_07b2d9d3232f49",
   "title": "Simsala Saartje",
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
   "url": "https://www.vanberesteyn.nl/programma/simsala-saartje-3/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_46cfaeff9dd588",
+  "title": "Tech Event NoordNL",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.debontewever.nl/nl/events",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5278,7 +5247,7 @@
  },
  {
   "id": "evt_6675913bbef520",
-  "title": "Kingfishr – Weight Of The Feather Tour 2027",
+  "title": "Kingfishr – Weight Of The Feather Tour",
   "kind": "muziek",
   "reason": "discipline 'muziek'",
   "url": "https://www.spotgroningen.nl/programma/kingfishr-4/",
@@ -5438,91 +5407,11 @@
   ]
  },
  {
-  "id": "evt_37cc6f5931b04d",
-  "title": "Hindeloopen",
-  "kind": "sport",
-  "reason": "website ifks.frl",
-  "url": "https://www.ifks.frl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "ringsteken-ballum-2027-08-07",
   "title": "Ringsteken Ballum",
   "kind": "feest",
   "reason": "oude categorie 'feest'",
   "url": "https://www.ameland.nl/evenementenkalender",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_d1765da996b18a",
-  "title": "Stavoren",
-  "kind": "sport",
-  "reason": "website ifks.frl",
-  "url": "https://www.ifks.frl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_c5eca3ad86bb3b",
-  "title": "Heeg",
-  "kind": "sport",
-  "reason": "website ifks.frl",
-  "url": "https://www.ifks.frl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_81aaeb318b56c3",
-  "title": "Sloten",
-  "kind": "sport",
-  "reason": "website ifks.frl",
-  "url": "https://www.ifks.frl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_59c55425f58433",
-  "title": "Echtenerbrug",
-  "kind": "sport",
-  "reason": "website ifks.frl",
-  "url": "https://www.ifks.frl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_871d3c453461a7",
-  "title": "Echtenerbrug",
-  "kind": "sport",
-  "reason": "website ifks.frl",
-  "url": "https://www.ifks.frl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_c9616bac410384",
-  "title": "Lemmer I",
-  "kind": "sport",
-  "reason": "website ifks.frl",
-  "url": "https://www.ifks.frl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_c7c2e0d94c89b3",
-  "title": "Lemmer Finale",
-  "kind": "sport",
-  "reason": "website ifks.frl",
-  "url": "https://www.ifks.frl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5664,16 +5553,6 @@
   "kind": "kinderen",
   "reason": "oude categorie 'familie'",
   "url": "https://terherne.nl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_de05bb2d596af0",
-  "title": "📅 Datum",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://schoonloo.com/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
