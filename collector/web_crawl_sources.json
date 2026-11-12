@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-10",
+  "updated": "2026-11-12",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16561,6 +16561,184 @@
         "lon": 5.8149717
       },
       "policyReviewedAt": "2026-11-10"
+    },
+    {
+      "id": "pghurdegaryp-nl-web",
+      "name": "Nieuw Perspectief",
+      "rootUrl": "https://www.pghurdegaryp.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pghurdegaryp.nl/"
+      },
+      "activatedFromCandidate": "pghurdegaryp.nl",
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "anjum-protestantsekerk-net-web",
+      "name": "Michaëlkerk",
+      "rootUrl": "https://anjum.protestantsekerk.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://anjum.protestantsekerk.net/"
+      },
+      "activatedFromCandidate": "anjum.protestantsekerk.net",
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "britsum-koarnjum-jelsum-protestantsekerk-net-web",
+      "name": "De Hoekstien",
+      "rootUrl": "https://britsum-koarnjum-jelsum.protestantsekerk.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://britsum-koarnjum-jelsum.protestantsekerk.net/"
+      },
+      "activatedFromCandidate": "britsum-koarnjum-jelsum.protestantsekerk.net",
+      "defaultPlace": {
+        "venue": "De Hoekstien",
+        "city": "Britsum",
+        "lat": 53.2510156,
+        "lon": 5.7829589
+      },
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "debanier-frl-web",
+      "name": "Gereformeerde Kerk",
+      "rootUrl": "https://www.debanier.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.debanier.frl/"
+      },
+      "activatedFromCandidate": "debanier.frl",
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "kurioskerk-nl-web",
+      "name": "Kurioskerk",
+      "rootUrl": "https://www.kurioskerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.kurioskerk.nl/"
+      },
+      "activatedFromCandidate": "kurioskerk.nl",
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "pg-sellingen-protestantsekerk-net-web",
+      "name": "Hervormde kerk",
+      "rootUrl": "https://pg-sellingen.protestantsekerk.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://pg-sellingen.protestantsekerk.net/"
+      },
+      "activatedFromCandidate": "pg-sellingen.protestantsekerk.net",
+      "defaultPlace": {
+        "venue": "Hervormde kerk",
+        "city": "Sellingen",
+        "lat": 52.9453059,
+        "lon": 7.1483599
+      },
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "pgharen-nl-web",
+      "name": "Gorechtkerk",
+      "rootUrl": "https://www.pgharen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pgharen.nl/"
+      },
+      "activatedFromCandidate": "pgharen.nl",
+      "defaultPlace": {
+        "venue": "Gorechtkerk",
+        "city": "Haren Gn",
+        "lat": 53.1733712,
+        "lon": 6.6072222
+      },
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "pgworkum-nl-web",
+      "name": "Sint-Gertrudiskerk",
+      "rootUrl": "https://www.pgworkum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pgworkum.nl/"
+      },
+      "activatedFromCandidate": "pgworkum.nl",
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "pknscherpenzeelmunnekeburen-nl-web",
+      "name": "Protestantse gemeente Scherpenzeel",
+      "rootUrl": "http://pknscherpenzeelmunnekeburen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pknscherpenzeelmunnekeburen.nl/"
+      },
+      "activatedFromCandidate": "pknscherpenzeelmunnekeburen.nl",
+      "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "pknsexbierumpietersbierum-nl-web",
+      "name": "Petruskerk",
+      "rootUrl": "https://www.pknsexbierumpietersbierum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.pknsexbierumpietersbierum.nl/"
+      },
+      "activatedFromCandidate": "pknsexbierumpietersbierum.nl",
+      "policyReviewedAt": "2026-11-12"
     }
   ]
 }
