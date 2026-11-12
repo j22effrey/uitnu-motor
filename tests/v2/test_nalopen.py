@@ -631,3 +631,25 @@ def test_easytoys_avond_is_een_avond_voor_volwassenen():
     """EasyToys is een merk voor erotisch speelgoed: 'It's Playtime Night' is geen uitje voor het grote publiek (regel 4)."""
     assert not_an_outing(_event("EasyToys: It's Playtime Night"))
     assert not not_an_outing(_event("Speelgoedbeurs voor kinderen"))
+
+
+# Dagcontrole 12 november 2026 (101 nieuwe uitjes): plussers, kopjes, mededelingen, "Meer info" achter de naam.
+def test_dagcontrole_12_november_geen_uitje():
+    for title in ("Kerstviering voor 67-plussers", "Loop eens in!", "Wintersluiting vanaf 15 november",
+                  "Hoopheggen - zie artikel hieronder", "Vervanging fietsbrug tussen Winsum en Easterlittens",
+                  "De Badde. Kledingkringloop.", "Eeuwigheidszondag | Meinardskerk"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_12_november_echte_uitjes_blijven_staan():
+    for title in ("Concert voor 67-plussers", "Kledingkringloop Kerstmarkt", "Vervanging van de Sint: poppenspel voor kinderen",
+                  "Wintersluiting feest met live muziek", "Loop eens in! Open dag", "Eeuwigheidszondag concert",
+                  "Vervanging brug: feestelijke opening", "Kerstconcert voor 67-plussers", "Lezing: zie artikel over de Hondsrug"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_meer_info_en_locatie_achter_de_naam_vallen_weg():
+    assert clean_title("Pubquiz Meer info") == "Pubquiz"
+    assert clean_title("Sinterklaas-intocht en feest Meer info") == "Sinterklaas-intocht en feest"
+    assert clean_title("Pubquiz. Locatie: Gasterij Bij de Brug. 20.00 uur") == "Pubquiz"
+    assert clean_title("Meer info over het Dorpsfeest") == "Meer info over het Dorpsfeest"
