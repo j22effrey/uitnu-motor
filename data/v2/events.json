@@ -1521,59 +1521,6 @@
   }
  },
  {
-  "id": "evt_cf6cfebaf54385",
-  "slug": "wintersluiting-vanaf-15-november-meeden-2026-11-11",
-  "title": "Wintersluiting vanaf 15 november",
-  "occurrences": [
-   {
-    "date": "2026-11-11",
-    "endDate": "2026-11-14",
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Tuingoed Foltz",
-   "city": "Meeden",
-   "lat": 53.1386,
-   "lon": 6.9306
-  },
-  "price": "Zie organisator",
-  "url": "https://www.tuingoedfoltz.nl/artikel/wintersluiting-vanaf-15-november/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.tuingoedfoltz.nl/artikel/wintersluiting-vanaf-15-november/",
-    "host": "tuingoedfoltz.nl",
-    "seenAt": "2026-11-12"
-   }
-  ],
-  "kind": "natuur",
-  "kindLabel": "Natuur en buiten",
-  "tags": [
-   "buiten",
-   "meerdaags"
-  ],
-  "classification": {
-   "method": "locatie",
-   "reason": "website tuingoedfoltz.nl",
-   "confidence": 0.6
-  },
-  "hash": "d7578fc6da00",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Exterieur_vanuit_het_zuid-oosten_-_Meeden_-_20152133_-_RCE.jpg/1280px-Exterieur_vanuit_het_zuid-oosten_-_Meeden_-_20152133_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Meeden",
-   "credit": "Foto: Unknown author Unknown author · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Unknown author Unknown author",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_vanuit_het_zuid-oosten_-_Meeden_-_20152133_-_RCE.jpg"
-  }
- },
- {
   "id": "evt_86b60921975394",
   "slug": "all-of-a-sudden-leeuwarden-2026-11-12",
   "title": "All of a Sudden",
@@ -6995,46 +6942,6 @@
   }
  },
  {
-  "id": "evt_d446ace8fc6b0b",
-  "slug": "de-badde-kledingkringloop-nieuw-weerdinge-2026-11-13",
-  "title": "De Badde. Kledingkringloop.",
-  "occurrences": [
-   {
-    "date": "2026-11-13",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Nieuw-Weerdinge",
-   "city": "Nieuw-Weerdinge",
-   "lat": 52.8564,
-   "lon": 6.9881
-  },
-  "price": "Zie organisator",
-  "url": "https://nieuw-weerdinge.com/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://nieuw-weerdinge.com/",
-    "host": "nieuw-weerdinge.com",
-    "seenAt": "2026-11-12"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'loop'",
-   "confidence": 0.8
-  },
-  "hash": "f8aed9c0c1f2",
-  "image": null
- },
- {
   "id": "evt_ad4615cfa5f017",
   "slug": "de-cabaret-club-groningen-2026-11-13",
   "title": "De Cabaret Club",
@@ -8254,8 +8161,8 @@
  },
  {
   "id": "evt_f83697bdc9270a",
-  "slug": "pubquiz-locatie-gasterij-bij-de-brug-20-00-uur-nieuw-weerdinge-2026-11-13",
-  "title": "Pubquiz. Locatie: Gasterij Bij de Brug. 20.00 uur",
+  "slug": "pubquiz-nieuw-weerdinge-2026-11-13",
+  "title": "Pubquiz",
   "occurrences": [
    {
     "date": "2026-11-13",
@@ -8289,7 +8196,7 @@
    "reason": "trefwoord 'quiz'",
    "confidence": 0.8
   },
-  "hash": "53f258273f0d",
+  "hash": "b7ffd742bf3f",
   "image": null
  },
  {
@@ -14053,46 +13960,6 @@
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Grooth_2012-III.JPG"
   }
- },
- {
-  "id": "evt_840c2a764bd05a",
-  "slug": "hoopheggen-zie-artikel-hieronder-nieuw-weerdinge-2026-11-14",
-  "title": "Hoopheggen - zie artikel hieronder",
-  "occurrences": [
-   {
-    "date": "2026-11-14",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Nieuw-Weerdinge",
-   "city": "Nieuw-Weerdinge",
-   "lat": 52.8564,
-   "lon": 6.9881
-  },
-  "price": "Zie organisator",
-  "url": "https://nieuw-weerdinge.com/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://nieuw-weerdinge.com/",
-    "host": "nieuw-weerdinge.com",
-    "seenAt": "2026-11-12"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "27624740b097",
-  "image": null
  },
  {
   "id": "evt_ad0a2dcbd364e8",
@@ -22023,8 +21890,8 @@
  },
  {
   "id": "evt_43b06420927831",
-  "slug": "vernieuwde-friestalige-voorstelling-wat-spilet-troch-pier21-meer-info-hurdegaryp",
-  "title": "Vernieuwde friestalige voorstelling ‘Wat spilet’ troch Pier21 Meer info",
+  "slug": "vernieuwde-friestalige-voorstelling-wat-spilet-troch-pier21-hurdegaryp-2026-11-1",
+  "title": "Vernieuwde friestalige voorstelling ‘Wat spilet’ troch Pier21",
   "occurrences": [
    {
     "date": "2026-11-14",
@@ -22058,12 +21925,12 @@
    "reason": "trefwoord 'voorstelling'",
    "confidence": 0.8
   },
-  "hash": "5dcd30651590",
+  "hash": "cdf66d66f156",
   "image": {
    "url": "https://itmaskelyn.nl/wp-content/uploads/2026/05/PIER21_Wat-spilet_CAMPAGNEBEELD_vierkant-768x768-1.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Vernieuwde friestalige voorstelling ‘Wat spilet’ troch Pier21 Meer info",
+   "alt": "Foto bij Vernieuwde friestalige voorstelling ‘Wat spilet’ troch Pier21",
    "credit": "Foto: It Maskelyn",
    "sourceUrl": "https://itmaskelyn.nl/evenement/wat-spilet-troch-pier21/"
   }
@@ -35170,8 +35037,8 @@
  },
  {
   "id": "evt_5961faf818aad5",
-  "slug": "2-leuke-creatieve-workshops-voor-kinderen-van-9-t-m-13-jaar-meer-info-hurdegaryp",
-  "title": "2 leuke creatieve workshops voor kinderen van 9 t/m 13 jaar Meer info",
+  "slug": "2-leuke-creatieve-workshops-voor-kinderen-van-9-t-m-13-jaar-hurdegaryp-2026-11-1",
+  "title": "2 leuke creatieve workshops voor kinderen van 9 t/m 13 jaar",
   "occurrences": [
    {
     "date": "2026-11-17",
@@ -35207,7 +35074,7 @@
    "reason": "trefwoord 'workshop'",
    "confidence": 0.8
   },
-  "hash": "3bc18e15158c",
+  "hash": "752858f27cf8",
   "image": null
  },
  {
@@ -36464,56 +36331,6 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kon._Wilhelminalaan_49,_Wilhelminaoord.JPG"
-  }
- },
- {
-  "id": "evt_0bafdaa445855f",
-  "slug": "loop-eens-in-schettens-2026-11-17",
-  "title": "Loop eens in!",
-  "occurrences": [
-   {
-    "date": "2026-11-17",
-    "endDate": null,
-    "startTime": "19:30",
-    "endTime": "20:30"
-   }
-  ],
-  "venue": {
-   "name": "Schettens",
-   "city": "Schettens",
-   "lat": 53.0679,
-   "lon": 5.4889
-  },
-  "price": "Zie organisator",
-  "url": "https://schettens-longerhouw.nl/evenement/loop-eens-in",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://schettens-longerhouw.nl/evenement/loop-eens-in",
-    "host": "schettens-longerhouw.nl",
-    "seenAt": "2026-11-12"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'loop'",
-   "confidence": 0.8
-  },
-  "hash": "da9c48ad0b20",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Huizen_aan_het_water_in_Schettens.JPG/1280px-Huizen_aan_het_water_in_Schettens.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Schettens",
-   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Baykedevries",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huizen_aan_het_water_in_Schettens.JPG"
   }
  },
  {
@@ -56986,15 +56803,15 @@
   },
   "hash": "d551d69b2679",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Building_of_the_Protestant_Church_of_Meeden.jpg/1280px-Building_of_the_Protestant_Church_of_Meeden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Exterieur_vanuit_het_zuid-oosten_-_Meeden_-_20152133_-_RCE.jpg/1280px-Exterieur_vanuit_het_zuid-oosten_-_Meeden_-_20152133_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Meeden",
-   "credit": "Foto: Donald Trung · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Donald Trung",
+   "credit": "Foto: Unknown author Unknown author · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Unknown author Unknown author",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Building_of_the_Protestant_Church_of_Meeden.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_vanuit_het_zuid-oosten_-_Meeden_-_20152133_-_RCE.jpg"
   }
  },
  {
@@ -60569,8 +60386,8 @@
  },
  {
   "id": "evt_4529f44506436c",
-  "slug": "sinterklaas-intocht-en-feest-meer-info-hurdegaryp-2026-11-21",
-  "title": "Sinterklaas-intocht en feest Meer info",
+  "slug": "sinterklaas-intocht-en-feest-hurdegaryp-2026-11-21",
+  "title": "Sinterklaas-intocht en feest",
   "occurrences": [
    {
     "date": "2026-11-21",
@@ -60606,12 +60423,12 @@
    "reason": "trefwoord 'feest'",
    "confidence": 0.8
   },
-  "hash": "4487cf79e772",
+  "hash": "7a0f22e0eafe",
   "image": {
    "url": "https://itmaskelyn.nl/wp-content/uploads/2026/08/Sinter-klaas-feest-1.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Sinterklaas-intocht en feest Meer info",
+   "alt": "Foto bij Sinterklaas-intocht en feest",
    "credit": "Foto: It Maskelyn",
    "sourceUrl": "https://itmaskelyn.nl/evenement/intocht-en-feest-sinterklaas/"
   }
@@ -67493,62 +67310,6 @@
   }
  },
  {
-  "id": "evt_45d629e725f093_b36e7e4bc922",
-  "slug": "eeuwigheidszondag-meinardskerk-minnertsga-2026-11-22",
-  "title": "Eeuwigheidszondag | Meinardskerk",
-  "occurrences": [
-   {
-    "date": "2026-11-22",
-    "endDate": null,
-    "startTime": "08:30",
-    "endTime": "10:00"
-   }
-  ],
-  "venue": {
-   "name": "Meinardskerk",
-   "city": "Minnertsga",
-   "lat": 53.2508,
-   "lon": 5.595
-  },
-  "price": "Zie organisator",
-  "url": "https://minnertsga.frl/evenement/eeuwigheidszondag-meinardskerk",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://minnertsga.frl/evenement/eeuwigheidszondag-meinardskerk",
-    "host": "minnertsga.frl",
-    "seenAt": "2026-11-12"
-   },
-   {
-    "type": "organisator",
-    "url": "https://minnertsga.frl/evenement/eeuwigheidszondag-meinardskerk-2",
-    "host": "minnertsga.frl",
-    "seenAt": "2026-11-12"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "da4bf0117687",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Minnertsga%2C_kerk_foto3_2010-04-17_13.50.JPG/1280px-Minnertsga%2C_kerk_foto3_2010-04-17_13.50.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plek",
-   "alt": "Meinardskerk",
-   "credit": "Foto: Michielverbeek · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Michielverbeek",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minnertsga,_kerk_foto3_2010-04-17_13.50.JPG"
-  }
- },
- {
   "id": "evt_04cd63c7d00045",
   "slug": "sinterklaasfeest-roswinkel-2026-11-22",
   "title": "Sinterklaasfeest",
@@ -73408,55 +73169,6 @@
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sneek-waterpoort-1.JPG"
-  }
- },
- {
-  "id": "evt_d6a26be6b34951",
-  "slug": "vervanging-fietsbrug-tussen-winsum-en-easterlittens-winsum-2026-11-24",
-  "title": "Vervanging fietsbrug tussen Winsum en Easterlittens",
-  "occurrences": [
-   {
-    "date": "2026-11-24",
-    "endDate": "2026-11-25",
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Winsum",
-   "city": "Winsum",
-   "lat": 53.1525,
-   "lon": 5.6328
-  },
-  "price": "Zie organisator",
-  "url": "https://winsum.frl/evenement/vervanging-fietsbrug-tussen-winsum-en-easterlittens",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://winsum.frl/evenement/vervanging-fietsbrug-tussen-winsum-en-easterlittens",
-    "host": "winsum.frl",
-    "seenAt": "2026-11-12"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [
-   "meerdaags"
-  ],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "ae703899fdb0",
-  "image": {
-   "url": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/winsum/library/variants/mWHlvOdUt8v2axJGuajBx85SVLBvLrERbcrHf6dx-l.webp",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Vervanging fietsbrug tussen Winsum en Easterlittens",
-   "credit": "Foto: Winsum",
-   "sourceUrl": "https://winsum.frl/evenement/vervanging-fietsbrug-tussen-winsum-en-easterlittens"
   }
  },
  {
@@ -83451,8 +83163,8 @@
  },
  {
   "id": "evt_ce3862bfa921e2",
-  "slug": "noflike-jun-fugelwacht-met-een-presentatie-van-marcel-van-kammen-meer-info-hurde",
-  "title": "Noflike Jûn Fûgelwacht met een presentatie van Marcel van Kammen Meer info",
+  "slug": "noflike-jun-fugelwacht-met-een-presentatie-van-marcel-van-kammen-hurdegaryp-2026",
+  "title": "Noflike Jûn Fûgelwacht met een presentatie van Marcel van Kammen",
   "occurrences": [
    {
     "date": "2026-11-27",
@@ -83486,12 +83198,12 @@
    "reason": "trefwoord 'presentatie'",
    "confidence": 0.8
   },
-  "hash": "a13fed44b1e1",
+  "hash": "13e8abf7c344",
   "image": {
    "url": "https://itmaskelyn.nl/wp-content/uploads/2026/10/DSC1304-scaled.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Noflike Jûn Fûgelwacht met een presentatie van Marcel van Kammen Meer info",
+   "alt": "Foto bij Noflike Jûn Fûgelwacht met een presentatie van Marcel van Kammen",
    "credit": "Foto: It Maskelyn",
    "sourceUrl": "https://itmaskelyn.nl/evenement/noflike-jun-fugelwacht-met-een-presentatie-van-marcel-van-kammen/"
   }
@@ -88707,15 +88419,15 @@
   },
   "hash": "55ce3ae55294",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/20190821_Wytmarsumerfeart_Schettens.jpg/1280px-20190821_Wytmarsumerfeart_Schettens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Huizen_aan_het_water_in_Schettens.JPG/1280px-Huizen_aan_het_water_in_Schettens.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schettens",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190821_Wytmarsumerfeart_Schettens.jpg"
+   "credit": "Foto: Baykedevries · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Baykedevries",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huizen_aan_het_water_in_Schettens.JPG"
   }
  },
  {
@@ -109042,8 +108754,8 @@
  },
  {
   "id": "evt_209de609d7a01f",
-  "slug": "workshop-smeerwortelzalf-maken-meer-info-hurdegaryp-2026-12-08",
-  "title": "Workshop smeerwortelzalf maken Meer info",
+  "slug": "workshop-smeerwortelzalf-maken-hurdegaryp-2026-12-08",
+  "title": "Workshop smeerwortelzalf maken",
   "occurrences": [
    {
     "date": "2026-12-08",
@@ -109077,7 +108789,7 @@
    "reason": "trefwoord 'workshop'",
    "confidence": 0.8
   },
-  "hash": "ac7ac06c03db",
+  "hash": "7b2bdead0a11",
   "image": null
  },
  {
@@ -114103,7 +113815,7 @@
   },
   "hash": "5b6635f3f22c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Cemetery_outside_of_the_Protestant_Church_of_Meeden.jpg/1280px-Cemetery_outside_of_the_Protestant_Church_of_Meeden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Building_of_the_Protestant_Church_of_Meeden.jpg/1280px-Building_of_the_Protestant_Church_of_Meeden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Meeden",
@@ -114111,7 +113823,7 @@
    "author": "Donald Trung",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cemetery_outside_of_the_Protestant_Church_of_Meeden.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Building_of_the_Protestant_Church_of_Meeden.jpg"
   }
  },
  {
@@ -116199,8 +115911,8 @@
  },
  {
   "id": "evt_fe5e9478ffec64",
-  "slug": "pubquiz-meer-info-hurdegaryp-2026-12-11",
-  "title": "Pubquiz Meer info",
+  "slug": "pubquiz-hurdegaryp-2026-12-11",
+  "title": "Pubquiz",
   "occurrences": [
    {
     "date": "2026-12-11",
@@ -116234,12 +115946,12 @@
    "reason": "trefwoord 'quiz'",
    "confidence": 0.8
   },
-  "hash": "dd7fd4675155",
+  "hash": "007202486c88",
   "image": {
    "url": "https://itmaskelyn.nl/wp-content/uploads/2026/08/Screenshot_20261020_144626_WhatsApp.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Pubquiz Meer info",
+   "alt": "Foto bij Pubquiz",
    "credit": "Foto: It Maskelyn",
    "sourceUrl": "https://itmaskelyn.nl/evenement/pubquiz-4/"
   }
@@ -129616,56 +129328,6 @@
    "alt": "Foto bij Dune: Part Three",
    "credit": "Foto: Forum Groningen",
    "sourceUrl": "https://forum.nl/nl/agenda/film/dune-part-three?date=16-12-2026"
-  }
- },
- {
-  "id": "evt_32f9e531902831",
-  "slug": "kerstviering-voor-67-plussers-minnertsga-2026-12-16",
-  "title": "Kerstviering voor 67-plussers",
-  "occurrences": [
-   {
-    "date": "2026-12-16",
-    "endDate": null,
-    "startTime": "15:30",
-    "endTime": "16:30"
-   }
-  ],
-  "venue": {
-   "name": "MFA de Doarpsfinne",
-   "city": "Minnertsga",
-   "lat": 53.2508,
-   "lon": 5.595
-  },
-  "price": "Zie organisator",
-  "url": "https://minnertsga.frl/evenement/kerstviering-voor-67-plussers",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://minnertsga.frl/evenement/kerstviering-voor-67-plussers",
-    "host": "minnertsga.frl",
-    "seenAt": "2026-11-12"
-   }
-  ],
-  "kind": "eten",
-  "kindLabel": "Eten en drinken",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'maaltijd' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "e4ef7f5c0135",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Minnertsga",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
@@ -149114,7 +148776,7 @@
   },
   "hash": "40933d4a292f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -149122,7 +148784,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
@@ -150841,8 +150503,8 @@
  },
  {
   "id": "evt_0f6ce0edae11ef",
-  "slug": "tussen-kryst-en-oaljekoeken-meer-info-hurdegaryp-2026-12-27",
-  "title": "Tussen Kryst en Oaljekoeken Meer info",
+  "slug": "tussen-kryst-en-oaljekoeken-hurdegaryp-2026-12-27",
+  "title": "Tussen Kryst en Oaljekoeken",
   "occurrences": [
    {
     "date": "2026-12-27",
@@ -150876,12 +150538,12 @@
    "reason": "website itmaskelyn.nl",
    "confidence": 0.6
   },
-  "hash": "1cad21ed0d4a",
+  "hash": "12d62fb22b5b",
   "image": {
    "url": "https://itmaskelyn.nl/wp-content/uploads/2026/08/Kryst-en-Oaljekoeken-2026.png",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Tussen Kryst en Oaljekoeken Meer info",
+   "alt": "Foto bij Tussen Kryst en Oaljekoeken",
    "credit": "Foto: It Maskelyn",
    "sourceUrl": "https://itmaskelyn.nl/evenement/tussen-kryst-en-oaljekoeken-festival/"
   }
@@ -164473,8 +164135,8 @@
  },
  {
   "id": "evt_b87ea76b53d03a",
-  "slug": "nieuwjaarsoptreden-die-dorfplatz-musikanten-meer-info-hurdegaryp-2027-01-10",
-  "title": "Nieuwjaarsoptreden Die Dorfplatz Musikanten Meer info",
+  "slug": "nieuwjaarsoptreden-die-dorfplatz-musikanten-hurdegaryp-2027-01-10",
+  "title": "Nieuwjaarsoptreden Die Dorfplatz Musikanten",
   "occurrences": [
    {
     "date": "2027-01-10",
@@ -164508,12 +164170,12 @@
    "reason": "trefwoord 'optreden'",
    "confidence": 0.8
   },
-  "hash": "6b5b1136b4b2",
+  "hash": "7e76ecc8e068",
   "image": {
    "url": "https://itmaskelyn.nl/wp-content/uploads/2026/08/DDM-foto-24-april-2026-groep-scaled.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Nieuwjaarsoptreden Die Dorfplatz Musikanten Meer info",
+   "alt": "Foto bij Nieuwjaarsoptreden Die Dorfplatz Musikanten",
    "credit": "Foto: It Maskelyn",
    "sourceUrl": "https://itmaskelyn.nl/evenement/nieuwjaarsoptreden-die-dorfplatz-musikanten/"
   }
@@ -165319,56 +164981,6 @@
    "alt": "Foto bij Lezing: De Bogomielen, de vergeten Bosnische Katharen",
    "credit": "Foto: Land van Een",
    "sourceUrl": "https://landvaneen.nl/activiteiten/lezing-de-bogomielen-de-vergeten-bosnische-katharen/"
-  }
- },
- {
-  "id": "evt_86270f7cc7e011",
-  "slug": "loop-eens-in-schettens-2027-01-12",
-  "title": "Loop eens in!",
-  "occurrences": [
-   {
-    "date": "2027-01-12",
-    "endDate": null,
-    "startTime": "19:30",
-    "endTime": "20:30"
-   }
-  ],
-  "venue": {
-   "name": "Schettens",
-   "city": "Schettens",
-   "lat": 53.0679,
-   "lon": 5.4889
-  },
-  "price": "Zie organisator",
-  "url": "https://schettens-longerhouw.nl/evenement/loop-eens-in-2",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://schettens-longerhouw.nl/evenement/loop-eens-in-2",
-    "host": "schettens-longerhouw.nl",
-    "seenAt": "2026-11-12"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'loop'",
-   "confidence": 0.8
-  },
-  "hash": "e1caf151d53b",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/20190821_landschap_ten_noorden_van_Schettens.jpg/1280px-20190821_landschap_ten_noorden_van_Schettens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Schettens",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190821_landschap_ten_noorden_van_Schettens.jpg"
   }
  },
  {
@@ -203009,7 +202621,7 @@
   },
   "hash": "3001c1b9340b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -203017,7 +202629,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
   }
  },
  {
@@ -204601,7 +204213,7 @@
   },
   "hash": "6ff8bfec0bb2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -204609,7 +204221,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
   }
  },
  {
@@ -226552,7 +226164,7 @@
   },
   "hash": "fbe0e73d56a5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -226560,7 +226172,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
@@ -232122,15 +231734,15 @@
   },
   "hash": "84eb2d8248dd",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Meeden_OosterLanden_Scheemda_Kolkenweg_20_29_33_246000.jpeg/1280px-Meeden_OosterLanden_Scheemda_Kolkenweg_20_29_33_246000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Cemetery_outside_of_the_Protestant_Church_of_Meeden.jpg/1280px-Cemetery_outside_of_the_Protestant_Church_of_Meeden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Meeden",
-   "credit": "Foto: JakobHosp · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "JakobHosp",
+   "credit": "Foto: Donald Trung · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Donald Trung",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meeden_OosterLanden_Scheemda_Kolkenweg_20_29_33_246000.jpeg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cemetery_outside_of_the_Protestant_Church_of_Meeden.jpg"
   }
  },
  {
@@ -232235,8 +231847,8 @@
  },
  {
   "id": "evt_9239349334952a",
-  "slug": "lentebal-dansavond-met-tres-chic-meer-info-hurdegaryp-2027-03-20",
-  "title": "Lentebal/dansavond met Tres Chic Meer info",
+  "slug": "lentebal-dansavond-met-tres-chic-hurdegaryp-2027-03-20",
+  "title": "Lentebal/dansavond met Tres Chic",
   "occurrences": [
    {
     "date": "2027-03-20",
@@ -232270,12 +231882,12 @@
    "reason": "trefwoord 'dansavond'",
    "confidence": 0.8
   },
-  "hash": "6d1d71c814c6",
+  "hash": "2de6855f7363",
   "image": {
    "url": "https://itmaskelyn.nl/wp-content/uploads/2026/08/Tres-Chic-1.jpg",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Lentebal/dansavond met Tres Chic Meer info",
+   "alt": "Foto bij Lentebal/dansavond met Tres Chic",
    "credit": "Foto: It Maskelyn",
    "sourceUrl": "https://itmaskelyn.nl/evenement/nieuwjaarsbal-dansavond-met-tres-chic/"
   }
@@ -247517,7 +247129,7 @@
   },
   "hash": "535fb32facc0",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -247525,7 +247137,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
   }
  },
  {
@@ -253390,7 +253002,7 @@
   },
   "hash": "744d0965c0c6",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -253398,7 +253010,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
   }
  },
  {
@@ -262356,7 +261968,7 @@
   },
   "hash": "fae9b2e47afb",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -262364,7 +261976,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
@@ -267995,7 +267607,7 @@
   },
   "hash": "3d1b2be4e73e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -268003,7 +267615,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
   }
  },
  {
@@ -281710,7 +281322,7 @@
   },
   "hash": "fbd7801fe35c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2023_Minnertsgea%2C_Meinardswei.jpg/1280px-2023_Minnertsgea%2C_Meinardswei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -281718,7 +281330,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei.jpg"
   }
  },
  {
@@ -284939,7 +284551,7 @@
   },
   "hash": "c2f6f5573b28",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg/1280px-2023_Minnertsgea%2C_Meinardswei_mei_de_PKN-tsjerke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/2023_Minnertsgea%2C_Hege_Buorren.jpg/1280px-2023_Minnertsgea%2C_Hege_Buorren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Minnertsga",
@@ -284947,7 +284559,7 @@
    "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Meinardswei_mei_de_PKN-tsjerke.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Minnertsgea,_Hege_Buorren.jpg"
   }
  },
  {
