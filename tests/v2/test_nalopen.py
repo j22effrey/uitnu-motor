@@ -643,7 +643,8 @@ def test_dagcontrole_12_november_geen_uitje():
 
 def test_dagcontrole_12_november_echte_uitjes_blijven_staan():
     for title in ("Concert voor 67-plussers", "Kledingkringloop Kerstmarkt", "Vervanging van de Sint: poppenspel voor kinderen",
-                  "Wintersluiting feest met live muziek", "Loop eens in! Open dag", "Eeuwigheidszondag concert"):
+                  "Wintersluiting feest met live muziek", "Loop eens in! Open dag", "Eeuwigheidszondag concert",
+                  "Vervanging brug: feestelijke opening", "Kerstconcert voor 67-plussers", "Lezing: zie artikel over de Hondsrug"):
         assert not not_an_outing(_event(title)), title
 
 
