@@ -51,16 +51,6 @@
   ]
  },
  {
-  "id": "evt_f7e62b4f6f6367",
-  "title": "Het leven en belang van de bijen",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774369/Het-leven-en-belang-van-de-bijen-in-je-tuin.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_9d882214d23f58",
   "title": "Liet 2026",
   "kind": "muziek",
@@ -839,6 +829,16 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
+  "id": "evt_aae2c6e3ccd4c9",
+  "title": "Schoef mor aan",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.westerlee.nl/agenda/schoef-mor-aan/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -2348,6 +2348,16 @@
   ]
  },
  {
+  "id": "evt_b0a9e05f4aa023_405edf8c705c",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=3",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_c9fa9893c21cef",
   "title": "Maak je (digitale) kerstkaart met de Green Screen",
   "kind": "lezing",
@@ -2358,21 +2368,11 @@
   ]
  },
  {
-  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/2",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=3",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2938,6 +2938,16 @@
   ]
  },
  {
+  "id": "evt_e4024a5f443254",
+  "title": "Noche Buena – Christmas Edition",
+  "kind": "feest",
+  "reason": "website stadslabgroningen.nl",
+  "url": "https://stadslabgroningen.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_fd650b15dc4c82",
   "title": "EMO58",
   "kind": "muziek",
@@ -3093,6 +3103,27 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.synagogegroningen.nl/agenda",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a947165a433b6b",
+  "title": "Spring festival",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
+  "id": "evt_813fdf55273fac",
+  "title": "Springfestijn 25",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3299,21 +3330,21 @@
   ]
  },
  {
-  "id": "evt_e1d3ae22fa7cb0",
-  "title": "Master Pullz Assen",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://masterpullz.com/beurs/mp-assen",
+  "id": "evt_7722ea39322695",
+  "title": "Lycurgus Groningen – Sliedrecht Sport",
+  "kind": "sport",
+  "reason": "website lycurgus.nl",
+  "url": "https://www.lycurgus.nl/wedstrijden/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_07145fad32f049",
-  "title": "Lycurgus Groningen – Sliedrecht Sport",
-  "kind": "sport",
-  "reason": "website lycurgus.nl",
-  "url": "https://www.lycurgus.nl/wedstrijden/",
+  "id": "evt_e1d3ae22fa7cb0",
+  "title": "Master Pullz Assen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://masterpullz.com/beurs/mp-assen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3644,6 +3675,16 @@
   "kind": "lezing",
   "reason": "website ontdekdebieb.op-shop.nl",
   "url": "https://ontdekdebieb.op-shop.nl/19389/fryske-gedichten-schrijven-met-arjan-hut/04-02-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_576d21fbc80148",
+  "title": "Wat Blijft Er Van Ons Over",
+  "kind": "kunst",
+  "reason": "website podiumzuidhaege.nl",
+  "url": "https://podiumzuidhaege.nl/programma/page/2/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4461,16 +4502,6 @@
   ]
  },
  {
-  "id": "evt_d80b44a1e41bf6",
-  "title": "Mylou Frencken",
-  "kind": "theater",
-  "reason": "website theaterroden.nl",
-  "url": "https://theaterroden.nl/familie-voor-beginners",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_32b4fb0e9cc450",
   "title": "Baas en Adriani",
   "kind": "theater",
@@ -4511,16 +4542,6 @@
   ]
  },
  {
-  "id": "evt_9a114160d2563c",
-  "title": "The Black Atlantic",
-  "kind": "muziek",
-  "reason": "website neushoorn.nl",
-  "url": "https://www.neushoorn.nl/events/the-black-atlantic",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "fantasy-festival-ter-apel-2027-04-03",
   "title": "Fantasy Festival Ter Apel",
   "kind": "overig",
@@ -4529,26 +4550,6 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
-  ]
- },
- {
-  "id": "evt_e2458e645b44ac",
-  "title": "Sem Konijn",
-  "kind": "theater",
-  "reason": "website theaterroden.nl",
-  "url": "https://theaterroden.nl/sem-konijn",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_9b4379ee520c18",
-  "title": "PREACH by Wrapfest x CME!",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.baptistengemeente.info/activiteit/preach-by-wrapfest-x-cme/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -5286,6 +5287,16 @@
   ]
  },
  {
+  "id": "evt_af52f183347a36",
+  "title": "Lucky",
+  "kind": "theater",
+  "reason": "website harmonie.nl",
+  "url": "https://harmonie.nl/agenda/lucky/53150",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_37e812190cf6cb",
   "title": "It Heidenskip festival",
   "kind": "overig",
@@ -5407,11 +5418,91 @@
   ]
  },
  {
+  "id": "evt_37cc6f5931b04d",
+  "title": "Hindeloopen",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "ringsteken-ballum-2027-08-07",
   "title": "Ringsteken Ballum",
   "kind": "feest",
   "reason": "oude categorie 'feest'",
   "url": "https://www.ameland.nl/evenementenkalender",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d1765da996b18a",
+  "title": "Stavoren",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c5eca3ad86bb3b",
+  "title": "Heeg",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_81aaeb318b56c3",
+  "title": "Sloten",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_59c55425f58433",
+  "title": "Echtenerbrug",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_871d3c453461a7",
+  "title": "Echtenerbrug",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c9616bac410384",
+  "title": "Lemmer I",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_c7c2e0d94c89b3",
+  "title": "Lemmer Finale",
+  "kind": "sport",
+  "reason": "website ifks.frl",
+  "url": "https://www.ifks.frl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
