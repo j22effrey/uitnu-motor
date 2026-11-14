@@ -37394,53 +37394,6 @@
   }
  },
  {
-  "id": "evt_aae2c6e3ccd4c9",
-  "slug": "schoef-mor-aan-westerlee-2026-11-20",
-  "title": "Schoef mor aan",
-  "occurrences": [
-   {
-    "date": "2026-11-20",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Westerlee",
-   "city": "Westerlee",
-   "lat": 53.145,
-   "lon": 6.9869
-  },
-  "price": "Zie organisator",
-  "url": "https://www.westerlee.nl/agenda/schoef-mor-aan/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.westerlee.nl/agenda/schoef-mor-aan/",
-    "host": "westerlee.nl",
-    "seenAt": "2026-11-14"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "d22a14a2adc0",
-  "image": {
-   "url": "https://www.westerlee.nl/dynamic/image/4a0d34bbe6fc09519c28cf6a61e39ec1a8d1951b578211a698f88640e03265d8/width=1200/image.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Schoef mor aan",
-   "credit": "Foto: Welkom bij Digitaal Dorpsplein Westerlee, hét digitale platform van Westerlee",
-   "sourceUrl": "https://www.westerlee.nl/agenda/schoef-mor-aan/"
-  }
- },
- {
   "id": "evt_a4551a480d0f3f",
   "slug": "sinterklaassprookje-jubbega-2026-11-20",
   "title": "Sinterklaassprookje",
@@ -38037,8 +37990,8 @@
  },
  {
   "id": "evt_9999da6be5ca32",
-  "slug": "laitsje-meitsje-19-30-22-00-linedance-terherne-2026-11-20",
-  "title": "Laitsje & Meitsje 19:30 – 22:00 Linedance",
+  "slug": "laitsje-meitsje-linedance-terherne-2026-11-20",
+  "title": "Laitsje & Meitsje Linedance",
   "occurrences": [
    {
     "date": "2026-11-20",
@@ -38072,7 +38025,7 @@
    "reason": "trefwoord 'linedance'",
    "confidence": 0.8
   },
-  "hash": "374f6fd1fb0c",
+  "hash": "528351f5f229",
   "image": null
  },
  {
@@ -49851,8 +49804,8 @@
  },
  {
   "id": "evt_da522aed83c8e6",
-  "slug": "armbandjes-maken-van-13-00-tot-15-00-uur-lippenhuizen-2026-11-21",
-  "title": "Armbandjes maken Van 13.00 tot 15.00 uur",
+  "slug": "armbandjes-maken-lippenhuizen-2026-11-21",
+  "title": "Armbandjes maken",
   "occurrences": [
    {
     "date": "2026-11-21",
@@ -49886,12 +49839,12 @@
    "reason": "trefwoord 'koffie' op de pagina van de organisator",
    "confidence": 0.65
   },
-  "hash": "ff8e9e0c0858",
+  "hash": "9e4f95ccfd98",
   "image": {
    "url": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/lippenhuzen/library/variants/rPRumtGpOIwx5B3jDUN1R5mZTEc0paGHCKV8hHoQ-m.webp",
    "type": "organisator",
    "match": "uitje",
-   "alt": "Foto bij Armbandjes maken Van 13.00 tot 15.00 uur",
+   "alt": "Foto bij Armbandjes maken",
    "credit": "Foto: Lippenhuzen",
    "sourceUrl": "https://lippenhuizen.frl/evenement/zaterdag-21-november-armbandjes-maken-van-1300-tot-1500-uur"
   }
@@ -63170,56 +63123,6 @@
   }
  },
  {
-  "id": "evt_0194ae794c58c1",
-  "slug": "mobiele-bibliotheek-berltsum-2026-11-23",
-  "title": "Mobiele Bibliotheek",
-  "occurrences": [
-   {
-    "date": "2026-11-23",
-    "endDate": null,
-    "startTime": "19:30",
-    "endTime": "20:30"
-   }
-  ],
-  "venue": {
-   "name": "Berltsum",
-   "city": "Berltsum",
-   "lat": 53.2431,
-   "lon": 5.6514
-  },
-  "price": "Zie organisator",
-  "url": "https://berlikum.com/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://berlikum.com/",
-    "host": "berlikum.com",
-    "seenAt": "2026-11-14"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "a246445d7be6",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/20191023_Berltsumer_Wiid_in_Berlikum.jpg/1280px-20191023_Berltsumer_Wiid_in_Berlikum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Berltsum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191023_Berltsumer_Wiid_in_Berlikum.jpg"
-  }
- },
- {
   "id": "evt_6e2f456fe5d7c1",
   "slug": "the-beloved-assen-2026-11-23",
   "title": "The Beloved",
@@ -72749,8 +72652,8 @@
  },
  {
   "id": "evt_b58d3dc5535111",
-  "slug": "laitsje-meitsje-19-30-22-00-linedance-terherne-2026-11-27",
-  "title": "Laitsje & Meitsje 19:30 – 22:00 Linedance",
+  "slug": "laitsje-meitsje-linedance-terherne-2026-11-27",
+  "title": "Laitsje & Meitsje Linedance",
   "occurrences": [
    {
     "date": "2026-11-27",
@@ -72784,7 +72687,7 @@
    "reason": "trefwoord 'linedance'",
    "confidence": 0.8
   },
-  "hash": "416fc22beb58",
+  "hash": "3c72fbf84742",
   "image": null
  },
  {
@@ -72976,56 +72879,6 @@
    "alt": "Foto bij Een middag met Groen van Prinsterer",
    "credit": "Foto: Fraeylemaborg",
    "sourceUrl": "https://fraeylemaborg.nl/agenda/een-middag-met-groen-van-prinsterer/"
-  }
- },
- {
-  "id": "evt_182492147c95b3",
-  "slug": "mobiele-bibliotheek-berltsum-2026-11-27",
-  "title": "Mobiele Bibliotheek",
-  "occurrences": [
-   {
-    "date": "2026-11-27",
-    "endDate": null,
-    "startTime": "14:30",
-    "endTime": "16:00"
-   }
-  ],
-  "venue": {
-   "name": "Berltsum",
-   "city": "Berltsum",
-   "lat": 53.2431,
-   "lon": 5.6514
-  },
-  "price": "Zie organisator",
-  "url": "https://berlikum.com/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://berlikum.com/",
-    "host": "berlikum.com",
-    "seenAt": "2026-11-14"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "a0d0e6475b20",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/20191023_Kruising_Berltsumer_Feart_en_Moddergat_met_Berltsumer_Wiid.jpg/1280px-20191023_Kruising_Berltsumer_Feart_en_Moddergat_met_Berltsumer_Wiid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Berltsum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191023_Kruising_Berltsumer_Feart_en_Moddergat_met_Berltsumer_Wiid.jpg"
   }
  },
  {
@@ -74803,7 +74656,7 @@
   },
   "hash": "205bb7e54453",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/20191023_eenden_in_de_Berltsumer_Feart.jpg/1280px-20191023_eenden_in_de_Berltsumer_Feart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/20191023_Berltsumer_Wiid_in_Berlikum.jpg/1280px-20191023_Berltsumer_Wiid_in_Berlikum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Berltsum",
@@ -74811,7 +74664,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191023_eenden_in_de_Berltsumer_Feart.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191023_Berltsumer_Wiid_in_Berlikum.jpg"
   }
  },
  {
@@ -93414,59 +93267,9 @@
   }
  },
  {
-  "id": "evt_339256c78605ce",
-  "slug": "bericht-uit-spanje-schoonloo-2026-12-04",
-  "title": "Bericht uit Spanje",
-  "occurrences": [
-   {
-    "date": "2026-12-04",
-    "endDate": null,
-    "startTime": "08:30",
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Schoonloo",
-   "city": "Schoonloo",
-   "lat": 52.9044,
-   "lon": 6.7003
-  },
-  "price": "Zie organisator",
-  "url": "https://schoonloo.com/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://schoonloo.com/",
-    "host": "schoonloo.com",
-    "seenAt": "2026-11-13"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "efad3acee12c",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/20190820_Iberenplas.jpg/1280px-20190820_Iberenplas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Schoonloo",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190820_Iberenplas.jpg"
-  }
- },
- {
   "id": "evt_5ab969b0b90630",
-  "slug": "laitsje-meitsje-19-30-22-00-linedance-terherne-2026-12-04",
-  "title": "Laitsje & Meitsje 19:30 – 22:00 Linedance",
+  "slug": "laitsje-meitsje-linedance-terherne-2026-12-04",
+  "title": "Laitsje & Meitsje Linedance",
   "occurrences": [
    {
     "date": "2026-12-04",
@@ -93500,7 +93303,7 @@
    "reason": "trefwoord 'linedance'",
    "confidence": 0.8
   },
-  "hash": "45b927f08c9b",
+  "hash": "590eabeb4d33",
   "image": null
  },
  {
@@ -100434,55 +100237,6 @@
   }
  },
  {
-  "id": "evt_9e1d0e2fe4561d",
-  "slug": "b-w-tytsjerksteradiel-op-besite-yn-sumar-sumar-2026-12-08",
-  "title": "B&W Tytsjerksteradiel op besite yn Sumar",
-  "occurrences": [
-   {
-    "date": "2026-12-08",
-    "endDate": null,
-    "startTime": "15:30",
-    "endTime": "17:00"
-   }
-  ],
-  "venue": {
-   "name": "De Kamp",
-   "city": "Sumar",
-   "lat": 53.17157372,
-   "lon": 6.01630452
-  },
-  "price": "Zie organisator",
-  "url": "https://www.sumar.nl/evenement/bw-tytsjerksteradiel-op-besite-yn-sumar/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.sumar.nl/evenement/bw-tytsjerksteradiel-op-besite-yn-sumar/",
-    "host": "sumar.nl",
-    "seenAt": "2026-11-14"
-   }
-  ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
-  "tags": [
-   "kinderen"
-  ],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'kamp' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "1c0c572cec79",
-  "image": {
-   "url": "https://www.sumar.nl/wp-content/uploads/2026/05/Sumar-App-298.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij B&W Tytsjerksteradiel op besite yn Sumar",
-   "credit": "Foto: Sumar",
-   "sourceUrl": "https://www.sumar.nl/evenement/bw-tytsjerksteradiel-op-besite-yn-sumar/"
-  }
- },
- {
   "id": "evt_1d5082d3d552ec",
   "slug": "knutsel-en-tekenclub-voor-kinderen-finsterwolde-2026-12-08",
   "title": "Knutsel- en tekenclub voor kinderen",
@@ -102080,8 +101834,8 @@
  },
  {
   "id": "evt_cf163bc43bc613",
-  "slug": "workshop-annemieke-14-30-16-30-koersbal-terherne-2026-12-09",
-  "title": "Workshop Annemieke 14:30 – 16:30 Koersbal",
+  "slug": "workshop-annemieke-koersbal-terherne-2026-12-09",
+  "title": "Workshop Annemieke Koersbal",
   "occurrences": [
    {
     "date": "2026-12-09",
@@ -102115,7 +101869,7 @@
    "reason": "trefwoord 'koersbal'",
    "confidence": 0.8
   },
-  "hash": "4ba809704840",
+  "hash": "2fddc901f9f9",
   "image": null
  },
  {
@@ -107307,56 +107061,6 @@
    "license": "CC0",
    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banketbakkerij_J_Hofstra_chocoladeletter_verpakking,_Schultestraat_4,_Vries,_foto1.jpg"
-  }
- },
- {
-  "id": "evt_8e7fd2e706ddb7",
-  "slug": "mobiele-bibliotheek-berltsum-2026-12-11",
-  "title": "Mobiele Bibliotheek",
-  "occurrences": [
-   {
-    "date": "2026-12-11",
-    "endDate": null,
-    "startTime": "14:30",
-    "endTime": "16:00"
-   }
-  ],
-  "venue": {
-   "name": "Berltsum",
-   "city": "Berltsum",
-   "lat": 53.2431,
-   "lon": 5.6514
-  },
-  "price": "Zie organisator",
-  "url": "https://berlikum.com/agenda/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://berlikum.com/agenda/",
-    "host": "berlikum.com",
-    "seenAt": "2026-11-14"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "3317a9edcec6",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/2023_Berltsum%2C_Buorren_%281%29.jpg/1280px-2023_Berltsum%2C_Buorren_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Berltsum",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Berltsum,_Buorren_(1).jpg"
   }
  },
  {
@@ -125805,15 +125509,15 @@
   },
   "hash": "8695f654a11b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Berlikum%2C_kerk_foto5_2010-04-17_15.11.JPG/1280px-Berlikum%2C_kerk_foto5_2010-04-17_15.11.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/20191023_Kruising_Berltsumer_Feart_en_Moddergat_met_Berltsumer_Wiid.jpg/1280px-20191023_Kruising_Berltsumer_Feart_en_Moddergat_met_Berltsumer_Wiid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Berltsum",
-   "credit": "Foto: Michielverbeek · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Michielverbeek",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlikum,_kerk_foto5_2010-04-17_15.11.JPG"
+   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gouwenaar",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191023_Kruising_Berltsumer_Feart_en_Moddergat_met_Berltsumer_Wiid.jpg"
   }
  },
  {
@@ -129503,7 +129207,7 @@
   },
   "hash": "1b1cda8d929c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/20191023_Berltsumer_Feart.jpg/1280px-20191023_Berltsumer_Feart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/20191023_eenden_in_de_Berltsumer_Feart.jpg/1280px-20191023_eenden_in_de_Berltsumer_Feart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Berltsum",
@@ -129511,7 +129215,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191023_Berltsumer_Feart.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20191023_eenden_in_de_Berltsumer_Feart.jpg"
   }
  },
  {
@@ -145481,56 +145185,6 @@
   }
  },
  {
-  "id": "evt_5eabc494e0b7cb",
-  "slug": "schoonloo-zamelt-weer-in-voor-de-boeldag-schoonloo-2026-12-28",
-  "title": "Schoonloo zamelt weer in voor de Boeldag!",
-  "occurrences": [
-   {
-    "date": "2026-12-28",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Schoonloo",
-   "city": "Schoonloo",
-   "lat": 52.9044,
-   "lon": 6.7003
-  },
-  "price": "Zie organisator",
-  "url": "https://schoonloo.com/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://schoonloo.com/",
-    "host": "schoonloo.com",
-    "seenAt": "2026-11-13"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "ab4b0329f5f9",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/20190820_langs_de_Zwatte_bij_Schoonloo.jpg/1280px-20190820_langs_de_Zwatte_bij_Schoonloo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Schoonloo",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190820_langs_de_Zwatte_bij_Schoonloo.jpg"
-  }
- },
- {
   "id": "evt_6f828ba7cc2704",
   "slug": "top-2000-pubquiz-open-inschrijving-ruinen-2026-12-28",
   "title": "TOP 2000 Pubquiz open inschrijving",
@@ -149182,56 +148836,6 @@
    "alt": "Foto bij Doedag Angkor (familie)",
    "credit": "Foto: drentsmuseum.nl",
    "sourceUrl": "https://drentsmuseum.nl/activiteiten/doedagen-angkor"
-  }
- },
- {
-  "id": "evt_ce3085d4e52c18",
-  "slug": "tips-ter-apel-2026-12-30",
-  "title": "Tips",
-  "occurrences": [
-   {
-    "date": "2026-12-30",
-    "endDate": null,
-    "startTime": "12:00",
-    "endTime": "16:00"
-   }
-  ],
-  "venue": {
-   "name": "Museum Klooster Ter Apel",
-   "city": "Ter Apel",
-   "lat": 52.8761859,
-   "lon": 7.0751008
-  },
-  "price": "Zie organisator",
-  "url": "https://www.heiligkruisparochie.nl/ter-apel/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.heiligkruisparochie.nl/ter-apel/",
-    "host": "heiligkruisparochie.nl",
-    "seenAt": "2026-11-14"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "zaal Museum Klooster Ter Apel",
-   "confidence": 0.6
-  },
-  "hash": "2b6dbc6325eb",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Ter_Apel%2C_Nederland_Oct_19%2C_2025_11-14-51_AM.jpeg/1280px-Ter_Apel%2C_Nederland_Oct_19%2C_2025_11-14-51_AM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Ter Apel",
-   "credit": "Foto: JakobHosp · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "JakobHosp",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ter_Apel,_Nederland_Oct_19,_2025_11-14-51_AM.jpeg"
   }
  },
  {
@@ -199088,15 +198692,15 @@
   },
   "hash": "eb7bb5135733",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Klooster_Ter_Apel.jpg/1280px-Klooster_Ter_Apel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Ter_Apel%2C_Nederland_Oct_19%2C_2025_11-14-51_AM.jpeg/1280px-Ter_Apel%2C_Nederland_Oct_19%2C_2025_11-14-51_AM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ter Apel",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klooster_Ter_Apel.jpg"
+   "credit": "Foto: JakobHosp · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "JakobHosp",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ter_Apel,_Nederland_Oct_19,_2025_11-14-51_AM.jpeg"
   }
  },
  {
@@ -237121,15 +236725,15 @@
   },
   "hash": "6f8488a15843",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Gezinstaferelen%2C_SFA001005164.jpg/1280px-Gezinstaferelen%2C_SFA001005164.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Klooster_Ter_Apel.jpg/1280px-Klooster_Ter_Apel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ter Apel",
-   "credit": "Foto: Unknown author Unknown author · Public domain · Wikimedia Commons",
-   "author": "Unknown author Unknown author",
+   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
+   "author": "Gouwenaar",
    "license": "Public domain",
    "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gezinstaferelen,_SFA001005164.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klooster_Ter_Apel.jpg"
   }
  },
  {
@@ -283521,15 +283125,15 @@
   },
   "hash": "d14dea2aaa90",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Schotslaan_Ter_Apel_2019.jpg/1280px-Schotslaan_Ter_Apel_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Gezinstaferelen%2C_SFA001005164.jpg/1280px-Gezinstaferelen%2C_SFA001005164.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Ter Apel",
-   "credit": "Foto: Roelfinus · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Roelfinus",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schotslaan_Ter_Apel_2019.jpg"
+   "credit": "Foto: Unknown author Unknown author · Public domain · Wikimedia Commons",
+   "author": "Unknown author Unknown author",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gezinstaferelen,_SFA001005164.jpg"
   }
  },
  {

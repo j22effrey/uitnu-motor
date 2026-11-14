@@ -1,14 +1,14 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-14T00:30:12+00:00",
+ "refreshedAt": "2026-11-14T05:47:39+00:00",
  "today": "2026-11-14",
- "total": 5893,
+ "total": 5885,
  "bewaardVanVorigeKeer": {},
  "nogAanwezigAnderAdres": {},
  "nietBewaardDoorRegel": {},
  "inputRecords": 12229,
  "outsideArea": 6,
- "geenUitje": 4286,
+ "geenUitje": 4294,
  "vasteActiviteit": 1127,
  "vertaling": 7,
  "teVerVooruit": 305,
@@ -34,11 +34,11 @@
   "film": 603,
   "lezing": 461,
   "feest": 371,
-  "kinderen": 302,
+  "kinderen": 301,
   "sport": 278,
   "markt": 244,
-  "kunst": 236,
-  "overig": 226,
+  "kunst": 235,
+  "overig": 220,
   "natuur": 161,
   "eten": 73,
   "festival": 54
@@ -85,8 +85,8 @@
   "Bolsward": 20,
   "Harlingen": 20,
   "Nes": 19,
-  "Ter Apel": 18,
   "Terherne": 18,
+  "Ter Apel": 17,
   "Gorredijk": 17,
   "Lippenhuizen": 17,
   "Kollum": 16,
@@ -139,7 +139,6 @@
   "Lauwersoog": 8,
   "Gaastmeer": 8,
   "Tietjerk": 8,
-  "Berltsum": 8,
   "Bantega": 8,
   "Lauwerzijl": 8,
   "Oudeschans": 7,
@@ -181,7 +180,6 @@
   "Twijzelerheide": 6,
   "Eelde": 5,
   "Drouwen": 5,
-  "Westerlee": 5,
   "Koekangerveld": 5,
   "Feanwâlden": 5,
   "Uithuizen": 5,
@@ -193,8 +191,8 @@
   "Eenrum": 5,
   "Bellingwolde": 5,
   "Wergea": 5,
+  "Berltsum": 5,
   "Harkema": 5,
-  "Sumar": 5,
   "Sleen": 5,
   "Gieterveen": 5,
   "Zuidhorn": 5,
@@ -211,6 +209,7 @@
   "Grou": 5,
   "Bedum": 5,
   "Buren": 5,
+  "Westerlee": 4,
   "Hooghalen": 4,
   "Ommelanderwijk": 4,
   "Exmorra": 4,
@@ -226,6 +225,7 @@
   "Leek": 4,
   "Wijnjewoude": 4,
   "Leens": 4,
+  "Sumar": 4,
   "Onderdendam": 4,
   "Goutum": 4,
   "Ravenswoud": 4,
@@ -250,7 +250,6 @@
   "Usquert": 3,
   "Meeden": 3,
   "Harkstede": 3,
-  "Schoonloo": 3,
   "Elsloo": 3,
   "Schettens": 3,
   "Mantgum": 3,
@@ -332,6 +331,7 @@
   "Haven": 1,
   "Trekweg Ulrum": 1,
   "route door Onderdendam": 1,
+  "Schoonloo": 1,
   "Garnwerd": 1,
   "Leermens": 1,
   "Roswinkel": 1,
@@ -513,7 +513,6 @@
   "despylder.nl": 9,
   "gauw.frl": 9,
   "groatekerk.nl": 9,
-  "sumar.nl": 9,
   "flal.nl": 9,
   "parkzicht.com": 9,
   "dorpsbelangentenboer.com": 9,
@@ -527,7 +526,7 @@
   "koudum.nl": 8,
   "podiamiddendrenthe.nl": 8,
   "buurtcentrumtuinpad.nl": 8,
-  "berlikum.com": 8,
+  "sumar.nl": 8,
   "margarethahardenbergcultuurcentrum.nl": 8,
   "bantega.net": 8,
   "podiumauxesis.nl": 8,
@@ -580,7 +579,6 @@
   "museumbelvedere.nl": 5,
   "np-lauwersmeer.nl": 5,
   "podium34.nl": 5,
-  "westerlee.nl": 5,
   "koekangerveld.com": 5,
   "adorp.com": 5,
   "decolle.nl": 5,
@@ -588,6 +586,7 @@
   "gramsbergen.nl": 5,
   "dorpzurich.nl": 5,
   "bvsport.nl": 5,
+  "berlikum.com": 5,
   "debuorkerij-terherne.nl": 5,
   "stadslabgroningen.nl": 5,
   "plazasportzassen.nl": 5,
@@ -600,6 +599,7 @@
   "sc-heerenveen.nl": 5,
   "schaatsen.nl": 5,
   "simmerdeis.nl": 5,
+  "westerlee.nl": 4,
   "skkw.nl": 4,
   "luxor.nl": 4,
   "oosterwolde.nl": 4,
@@ -664,7 +664,6 @@
   "hoogthij.nl": 3,
   "dorpsbelangenharkstede.nl": 3,
   "dorpshuisechtenerbrug.nl": 3,
-  "schoonloo.com": 3,
   "nationaallandschap.frl": 3,
   "lumia-groningen.nl": 3,
   "schettens-longerhouw.nl": 3,
@@ -782,6 +781,7 @@
   "dorpshuiswarffum.nl": 1,
   "dorpsverenigingsellingen.nl": 1,
   "sloten.nl": 1,
+  "schoonloo.com": 1,
   "kamerkoordualis.nl": 1,
   "roswinkel.com": 1,
   "nieuwekerkgroningen.nl": 1,
@@ -843,7 +843,6 @@
   "wp-events-plugin.com": 1,
   "erfgoedwandeling.nl": 1,
   "shop.paylogic.com": 1,
-  "heiligkruisparochie.nl": 1,
   "dorpsbelangnes.nl": 1,
   "sagittariusemmen.nl": 1,
   "deholm.net": 1,
@@ -887,11 +886,11 @@
   "stichtingnobilis.nl": 1
  },
  "photos": {
-  "organisator": 2675,
-  "wikimedia": 3092,
+  "organisator": 2673,
+  "wikimedia": 3086,
   "zonder": 126
  },
- "twijfel": 550,
+ "twijfel": 543,
  "groot": {
   "aantal": 84,
   "redenen": {
@@ -930,9 +929,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 49,
-  "changed": 41,
-  "removed": 139
+  "new": 0,
+  "changed": 8,
+  "removed": 8
  },
  "gate": {
   "passed": true,
@@ -940,7 +939,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5893 nu, 5868 vorige keer (minimaal 85%)"
+    "detail": "5885 nu, 5893 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -950,7 +949,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "226 van 5893 (4%)"
+    "detail": "220 van 5885 (4%)"
    },
    {
     "name": "velden_compleet",
