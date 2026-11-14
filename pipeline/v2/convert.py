@@ -113,6 +113,7 @@ WEEKDAY_DATE_PREFIX = re.compile(rf"^\s*{_DAYS}\s+\d{{1,2}}\s+{_MONTHS}(?:\s+\d{
 TRAILING_LABEL = re.compile(r"\s+(?:start|datum|aanvang)\s*:?\s*$", re.IGNORECASE)
 # De knop 'Meer info' en een plaats achter de naam ('Pubquiz. Locatie: Gasterij Bij de Brug. 20.00 uur'). (Dagcontrole 12 november 2026.)
 TRAILING_BUTTON = re.compile(r"(?<=\w)(?:\s+meer info|\.\s+locatie:.*)\s*$", re.IGNORECASE)
+TIME_IN_NAME = re.compile(r"(?<=\w)\s+(?:van\s+)?\d{1,2}[:.]\d{2}\s*(?:[–—-]|tot)\s*\d{1,2}[:.]\d{2}(?:\s*uur)?(?=\s|$)", re.IGNORECASE)
 # Een afgebroken naam ("Kerstconcert 'Keep the Faith'-…"). (Dagcontrole 2 november 2026.)
 # Een datum achter de naam ("Wildavond 6 november 2026", "... op 13 december"): de datum staat al bij het uitje.
 _DATE_MONTHS = (r"jan(?:uari)?|feb(?:ruari)?|mrt|maart|apr(?:il)?|mei|jun[ie]?|jul[iy]?|aug(?:ustus)?|sep(?:tember)?|okt(?:ober)?|oct(?:ober)?"
@@ -215,6 +216,10 @@ def clean_title(value: str | None, city: str | None = None, venue: str | None = 
     rest = timed if len(timed) >= 3 else rest
     rest = re.sub(r"^\+\s+(?=\w)", "", rest)   # '+ Annemarijn Maandag': het plusje is de voorprogramma-regel van de zaal
     rest = TRAILING_BUTTON.sub("", rest)
+    # Een tijd midden of achter in de naam ('Laitsje & Meitsje 19:30 – 22:00 Linedance', 'Armbandjes maken Van 13.00 tot 15.00 uur'):
+    # de tijd staat al bij het uitje. Er moeten nog minstens twee woorden overblijven. (Dagcontrole 14 november 2026.)
+    untimed_name = TIME_IN_NAME.sub("", rest)
+    rest = untimed_name if len(untimed_name.split()) >= 2 else rest
     cut = TRAILING_DATE.sub("", TRAILING_CUT.sub("", rest))
     rest = cut if len(cut.split()) >= 2 else rest
     bare = TRAILING_LABEL.sub("", rest)
