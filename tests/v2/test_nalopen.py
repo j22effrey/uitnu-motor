@@ -663,7 +663,7 @@ def test_dagcontrole_14_november_geen_uitje():
 
 
 def test_dagcontrole_14_november_echte_uitjes_blijven_staan():
-    for title in ("Bericht uit Spanje: lezing over de Camino", "Tips voor de tuin: workshop", "Mobiele Bibliotheek Kerstconcert",
+    for title in ("Bericht uit Groningen Kerstmarkt", "B&W Open Dag met rondleiding", "Bericht uit Spanje: lezing over de Camino", "Tips voor de tuin: workshop", "Mobiele Bibliotheek Kerstconcert",
                   "B&W Kerstmarkt", "Gratis workshop Tips & Tricks", "Schoef mor aan: kerstdiner met live muziek"):
         assert not not_an_outing(_event(title)), title
 
