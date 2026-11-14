@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-12",
+  "updated": "2026-11-14",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16739,6 +16739,184 @@
       },
       "activatedFromCandidate": "pknsexbierumpietersbierum.nl",
       "policyReviewedAt": "2026-11-12"
+    },
+    {
+      "id": "dokkum-nl-web",
+      "name": "Dokkum",
+      "rootUrl": "https://dokkum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "dokkum.nl",
+      "defaultPlace": {
+        "venue": "Dokkum",
+        "city": "Dokkum",
+        "lat": 53.3243515,
+        "lon": 5.9992306
+      },
+      "policyReviewedAt": "2026-11-14"
+    },
+    {
+      "id": "bourtange-nl-web",
+      "name": "Bourtange",
+      "rootUrl": "https://www.bourtange.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.bourtange.nl/events/kerstmarkt/"
+      },
+      "activatedFromCandidate": "bourtange.nl",
+      "policyReviewedAt": "2026-11-14",
+      "defaultPlace": {
+        "city": "Bourtange",
+        "lat": 53.0067,
+        "lon": 7.1917
+      }
+    },
+    {
+      "id": "dekemastate-nl-web",
+      "name": "Dekemastate",
+      "rootUrl": "https://www.dekemastate.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://dekemastate.nl/evenementen/?ical=1"
+      },
+      "activatedFromCandidate": "dekemastate.nl",
+      "defaultPlace": {
+        "venue": "Dekemastate",
+        "city": "Jelsum",
+        "lat": 53.2333159,
+        "lon": 5.7835867
+      },
+      "policyReviewedAt": "2026-11-14"
+    },
+    {
+      "id": "moarre-ljussens-frl-web",
+      "name": "Moarre",
+      "rootUrl": "https://moarre-ljussens.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://moarre-ljussens.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "moarre-ljussens.frl",
+      "policyReviewedAt": "2026-11-14"
+    },
+    {
+      "id": "aqualaren-nl-web",
+      "name": "Aqualaren",
+      "rootUrl": "https://aqualaren.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://aqualaren.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "aqualaren.nl",
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-11-14"
+    },
+    {
+      "id": "groningerdorpen-nl-web",
+      "name": "Groninger Dorpen",
+      "rootUrl": "https://www.groningerdorpen.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://groningerdorpen.nl/agenda"
+      },
+      "activatedFromCandidate": "groningerdorpen.nl",
+      "defaultPlace": {
+        "venue": "Groninger Dorpen",
+        "city": "Ten Boer",
+        "lat": 53.2753336,
+        "lon": 6.6922907
+      },
+      "policyReviewedAt": "2026-11-14"
+    },
+    {
+      "id": "bethel-nl-web",
+      "name": "Vrije Baptistengemeente Bethel",
+      "rootUrl": "https://www.bethel.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.bethel.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "bethel.nl",
+      "policyReviewedAt": "2026-11-14"
+    },
+    {
+      "id": "rigpa-nl-web",
+      "name": "Boeddhistisch Rigpa Centrum",
+      "rootUrl": "https://www.rigpa.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.rigpa.nl/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "rigpa.nl",
+      "defaultPlace": {
+        "venue": "Boeddhistisch Rigpa Centrum",
+        "city": "Groningen",
+        "lat": 53.2157071,
+        "lon": 6.5546366
+      },
+      "policyReviewedAt": "2026-11-14"
+    },
+    {
+      "id": "ltcsteenwijk-nl-web",
+      "name": "LTC Steenwijk",
+      "rootUrl": "https://ltcsteenwijk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://ltcsteenwijk.nl/"
+      },
+      "activatedFromCandidate": "ltcsteenwijk.nl",
+      "defaultPlace": {
+        "venue": "LTC Steenwijk",
+        "city": "Tuk",
+        "lat": 52.7954781,
+        "lon": 6.1006599
+      },
+      "policyReviewedAt": "2026-11-14"
     }
   ]
 }
