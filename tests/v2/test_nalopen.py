@@ -653,3 +653,23 @@ def test_meer_info_en_locatie_achter_de_naam_vallen_weg():
     assert clean_title("Sinterklaas-intocht en feest Meer info") == "Sinterklaas-intocht en feest"
     assert clean_title("Pubquiz. Locatie: Gasterij Bij de Brug. 20.00 uur") == "Pubquiz"
     assert clean_title("Meer info over het Dorpsfeest") == "Meer info over het Dorpsfeest"
+
+
+# Dagcontrole 14 november 2026 (202 nieuwe uitjes over twee dagen): berichten, bibliotheekbus, B&W, tijd in de naam.
+def test_dagcontrole_14_november_geen_uitje():
+    for title in ("Bericht uit Spanje", "Tips", "Mobiele Bibliotheek", "B&W Tytsjerksteradiel op besite yn Sumar",
+                  "Schoonloo zamelt weer in voor de Boeldag!", "Schoef mor aan"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_14_november_echte_uitjes_blijven_staan():
+    for title in ("Bericht uit Groningen Kerstmarkt", "B&W Open Dag met rondleiding", "Bericht uit Spanje: lezing over de Camino", "Tips voor de tuin: workshop", "Mobiele Bibliotheek Kerstconcert",
+                  "B&W Kerstmarkt", "Gratis workshop Tips & Tricks", "Schoef mor aan: kerstdiner met live muziek"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_tijd_in_de_naam_valt_weg():
+    assert clean_title("Laitsje & Meitsje 19:30 – 22:00 Linedance") == "Laitsje & Meitsje Linedance"
+    assert clean_title("Armbandjes maken Van 13.00 tot 15.00 uur") == "Armbandjes maken"
+    assert clean_title("Workshop Annemieke 14:30 – 16:30 Koersbal") == "Workshop Annemieke Koersbal"
+    assert clean_title("Nacht van de Kou") == "Nacht van de Kou"
