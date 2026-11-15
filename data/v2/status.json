@@ -1,14 +1,14 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-15T02:44:56+00:00",
+ "refreshedAt": "2026-11-15T05:44:35+00:00",
  "today": "2026-11-15",
- "total": 5723,
+ "total": 5703,
  "bewaardVanVorigeKeer": {},
  "nogAanwezigAnderAdres": {},
  "nietBewaardDoorRegel": {},
  "inputRecords": 12063,
  "outsideArea": 20,
- "geenUitje": 4265,
+ "geenUitje": 4285,
  "vasteActiviteit": 1121,
  "vertaling": 7,
  "teVerVooruit": 304,
@@ -36,9 +36,9 @@
   "feest": 334,
   "kinderen": 297,
   "sport": 269,
-  "overig": 246,
   "markt": 242,
   "kunst": 226,
+  "overig": 226,
   "natuur": 152,
   "eten": 70,
   "festival": 52
@@ -70,7 +70,6 @@
   "Bolsward": 24,
   "Rottevalle": 24,
   "Norg": 23,
-  "Hooghalen": 23,
   "Dwingeloo": 23,
   "Scharnegoutum": 23,
   "Schiermonnikoog": 22,
@@ -226,6 +225,7 @@
   "Suameer": 4,
   "Woudsend": 4,
   "Oude Pekela": 3,
+  "Hooghalen": 3,
   "Oosterhesselen": 3,
   "Vlagtwedde": 3,
   "Suwâld": 3,
@@ -436,7 +436,6 @@
   "overentinghe.nl": 23,
   "scharnegoutum.nl": 23,
   "leeuwarden.nl": 22,
-  "hooghalen.nu": 22,
   "easterein.nl": 22,
   "minnertsga.frl": 21,
   "tumultgroningen.nl": 21,
@@ -664,6 +663,7 @@
   "dmdebuitenplaats.nl": 2,
   "museummartena.nl": 2,
   "noordenveld.nl": 2,
+  "hooghalen.nu": 2,
   "drachtstercompagnie.frl": 2,
   "oldeberkoop.frl": 2,
   "zuidwolde.info": 2,
@@ -873,10 +873,10 @@
  },
  "photos": {
   "organisator": 2689,
-  "wikimedia": 2915,
+  "wikimedia": 2895,
   "zonder": 119
  },
- "twijfel": 550,
+ "twijfel": 530,
  "groot": {
   "aantal": 73,
   "redenen": {
@@ -915,9 +915,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 20,
-  "changed": 93,
-  "removed": 177
+  "new": 0,
+  "changed": 4,
+  "removed": 20
  },
  "gate": {
   "passed": true,
@@ -925,7 +925,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5723 nu, 5717 vorige keer (minimaal 85%)"
+    "detail": "5703 nu, 5723 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -935,7 +935,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "246 van 5723 (4%)"
+    "detail": "226 van 5703 (4%)"
    },
    {
     "name": "velden_compleet",
