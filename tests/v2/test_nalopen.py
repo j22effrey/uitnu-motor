@@ -673,3 +673,14 @@ def test_tijd_in_de_naam_valt_weg():
     assert clean_title("Armbandjes maken Van 13.00 tot 15.00 uur") == "Armbandjes maken"
     assert clean_title("Workshop Annemieke 14:30 – 16:30 Koersbal") == "Workshop Annemieke Koersbal"
     assert clean_title("Nacht van de Kou") == "Nacht van de Kou"
+
+
+# Dagcontrole 15 november 2026: een kalender met maanden is een mededeling (Hooghalen, 21 keer).
+def test_dagcontrole_15_november_kalender_is_mededeling():
+    for title in ("Dorpskracht kalender november/december 2027", "Dorpskalender december", "Activiteitenkalender januari 2027"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_15_november_echte_kalenderuitjes_blijven_staan():
+    for title in ("Fotokalender maken", "Kalender maken workshop december", "Adventskalender concert", "Levende kalender: kerstmarkt"):
+        assert not not_an_outing(_event(title)), title
