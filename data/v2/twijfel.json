@@ -31,16 +31,6 @@
   ]
  },
  {
-  "id": "evt_d5720198a37475",
-  "title": "Meer in Sneek",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.sneek.nl/activiteiten/open-museum-maand/110645",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_eeada8c68fa54c",
   "title": "Ontdek de tuinen en stinzenflora",
   "kind": "overig",
@@ -66,16 +56,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://dotgroningen.nl/agenda/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_82281209d5d3f3",
-  "title": "'t Dörpshuus NijRoon",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://nieuwroden.nu/activiteiten/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -372,6 +352,16 @@
   ]
  },
  {
+  "id": "evt_b5b562dc53607b",
+  "title": "Babyschwimmen im Koppke Greetsiel",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.greetsiel.de/erlebnisse/veranstaltungskalender",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_75b753280dad25",
   "title": "Time Machine",
   "kind": "theater",
@@ -486,16 +476,6 @@
   ]
  },
  {
-  "id": "evt_c01ca2f9482fb9",
-  "title": "Meer in Sneek",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.sneek.nl/activiteiten/kerstmarkt-in-martinikerk-sneek/110935",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_cbbf7dfa93a69c",
   "title": "Sanam Tahmasebi – Light Has Teeth",
   "kind": "festival",
@@ -533,6 +513,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://winsum.frl/evenement/gedachtenis-vrijdag",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b6c308c5181b43",
+  "title": "20 november avond voor verenigingen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://suwald.nl/evenement/20-februari-avond-voor-verenigingen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -736,6 +726,16 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
+  "id": "evt_80911c807f081e",
+  "title": "Jukebox avond",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://workum.nl/agenda/jukebox-avond/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -952,7 +952,7 @@
   "title": "'t Dörpshuus NijRoon",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://nieuwroden.nu/activiteiten/",
+  "url": "https://nieuwroden.nu/events/sinterklaas-intocht/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1633,16 +1633,6 @@
   ]
  },
  {
-  "id": "evt_fd3272a9265891",
-  "title": "Meer in Sneek",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.sneek.nl/activiteiten/decembermarkt-in-de-veemarkthal-sneek/111227",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_af8fb2da25022c",
   "title": "Skoech opsette en sykje",
   "kind": "overig",
@@ -2135,16 +2125,6 @@
   ]
  },
  {
-  "id": "evt_969fe91afcb225",
-  "title": "'t Dörpshuus NijRoon",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://nieuwroden.nu/activiteiten/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_d3927e1f63a5d8",
   "title": "Zwartsluis Bruist: Hanneke Evink & Juul Beerda",
   "kind": "overig",
@@ -2239,7 +2219,7 @@
   "title": "Midwinter in Middelstum",
   "kind": "theater",
   "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=3",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2249,7 +2229,7 @@
   "title": "Midwinter in Middelstum",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.kerkmidwolde.nl/activiteiten?type=sogk&page=3",
+  "url": "https://www.kerkmidwolde.nl/activiteiten?type=sogk&page=1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2259,7 +2239,7 @@
   "title": "Midwinter in Middelstum",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.kerkuithuizen.nl/activiteiten?type=sogk&page=3",
+  "url": "https://www.kerkuithuizen.nl/activiteiten?type=sogk&page=1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3151,6 +3131,16 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/daikin-nk-shorttrack-2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_8148b5d1fe793b",
+  "title": "Rowol op 1",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.dorpsbelangenroderwolde.nl/event-organizer/rowol-op-1/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4520,21 +4510,11 @@
   ]
  },
  {
-  "id": "evt_acc32bfdcdba61",
-  "title": "DNS Brick Event",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_7546169930a87a",
   "title": "DNS Brick Event",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://dnsbricks.nl/",
+  "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4801,16 +4781,6 @@
   ]
  },
  {
-  "id": "evt_ec0b51c64eba28",
-  "title": "Assen Card Convention",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/assen-card-convention-2027",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_4d3d4688086788",
   "title": "Assen Card Convention",
   "kind": "overig",
@@ -4831,11 +4801,11 @@
   ]
  },
  {
-  "id": "evt_60b63470d23020",
-  "title": "Lustrum: Kielzog & De Wereld",
-  "kind": "theater",
-  "reason": "website kielzog.nl",
-  "url": "https://www.kielzog.nl/evenementen/lustrum-culturenfeesten?instance=yesplan-4153289473-1778240637",
+  "id": "evt_5836537a863261",
+  "title": "PKN Gemeentemorgen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.scharnegoutum.nl/agenda/pkn-gemeentemorgen/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
