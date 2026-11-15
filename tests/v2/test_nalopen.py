@@ -682,5 +682,5 @@ def test_dagcontrole_15_november_kalender_is_mededeling():
 
 
 def test_dagcontrole_15_november_echte_kalenderuitjes_blijven_staan():
-    for title in ("Fotokalender maken", "Kalender maken workshop december", "Adventskalender concert", "Levende kalender: kerstmarkt"):
+    for title in ("Fotokalender maken", "Kalender maken workshop december", "Adventskalender concert", "Levende kalender: kerstmarkt", "Levende adventskalender december", "Adventskalender december", "Kerstkalender december"):
         assert not not_an_outing(_event(title)), title
