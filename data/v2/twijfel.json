@@ -72,16 +72,6 @@
   ]
  },
  {
-  "id": "evt_dc39d6ef576d97",
-  "title": "JIJ BENT GEEN VIS",
-  "kind": "theater",
-  "reason": "website jongeharten.podiumnederland.nl",
-  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10389038?stlt=jh&lang=nl",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_dbb3e67ab155b1",
   "title": "Lycurgus Groningen – Numidia VC Limax",
   "kind": "sport",
@@ -97,56 +87,6 @@
   "kind": "muziek",
   "reason": "oude categorie 'muziek'",
   "url": "https://www.vries.nu/agendapunt/ode-aan-het-drentse-landschap/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_4b5e70b531b1c2",
-  "title": "Interval",
-  "kind": "theater",
-  "reason": "website jongeharten.podiumnederland.nl",
-  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10383709?stlt=jh&lang=nl",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_61282bad568e3c",
-  "title": "24 hours performance",
-  "kind": "theater",
-  "reason": "website jongeharten.podiumnederland.nl",
-  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10384568?stlt=jh&lang=nl",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_d7b9457d1e2df7",
-  "title": "Every Brilliant Thing",
-  "kind": "theater",
-  "reason": "website jongeharten.podiumnederland.nl",
-  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10386040?stlt=jh&lang=nl",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_3b87e2fa5286f5",
-  "title": "CONTRA",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.jongeharten.nl/programma/contra/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_123dfe876d45ba",
-  "title": "Enfin, Barbin.",
-  "kind": "theater",
-  "reason": "website jongeharten.podiumnederland.nl",
-  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10381789?stlt=jh&lang=nl",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -347,16 +287,6 @@
   "kind": "theater",
   "reason": "website harmonie.nl",
   "url": "https://harmonie.nl/agenda/tien/53107",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b5b562dc53607b",
-  "title": "Babyschwimmen im Koppke Greetsiel",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.greetsiel.de/erlebnisse/veranstaltungskalender",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -845,16 +775,6 @@
   ]
  },
  {
-  "id": "evt_bd093c26e7df78",
-  "title": "Pier 21 – Wat spilet",
-  "kind": "theater",
-  "reason": "website klameare-workum.nl",
-  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_19fe25beee70ff",
   "title": "Popavond: Groove Departement",
   "kind": "overig",
@@ -1103,6 +1023,16 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/capitals-red-eagles-s-hertogenbosch/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_bd093c26e7df78",
+  "title": "Pier 21 – Wat spilet",
+  "kind": "theater",
+  "reason": "website klameare-workum.nl",
+  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2079,7 +2009,7 @@
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
-  "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13857/-/-/-/-/2",
+  "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13857/-/-/-/-/1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2175,6 +2105,16 @@
   ]
  },
  {
+  "id": "evt_b0a9e05f4aa023_405edf8c705c",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=3",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_dcc46605509b9c",
   "title": "Sanghadag Groningen",
   "kind": "overig",
@@ -2205,21 +2145,11 @@
   ]
  },
  {
-  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/2",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2290,6 +2220,16 @@
   "kind": "muziek",
   "reason": "website neushoorn.nl",
   "url": "https://www.neushoorn.nl/events/lucky-fonz-iii",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_45f8145e9a5993",
+  "title": "Lichtceremonie",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://doopsgezindengroningen.nl/agenda_cat/activiteiten/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2983,16 +2923,6 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
-  ]
- },
- {
-  "id": "evt_813fdf55273fac",
-  "title": "Springfestijn 25",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -4510,11 +4440,21 @@
   ]
  },
  {
-  "id": "evt_7546169930a87a",
+  "id": "evt_acc32bfdcdba61",
   "title": "DNS Brick Event",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_7546169930a87a",
+  "title": "DNS Brick Event",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://dnsbricks.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4765,7 +4705,7 @@
   "title": "Wim Dresselhuis",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.gridgroningen.nl/agenda",
+  "url": "https://www.gridgroningen.nl/agenda/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4836,38 +4776,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.vries.nu/agendapunt/dfg-cup/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_831de2925208cd",
-  "title": "Fries Straatfestival",
-  "kind": "theater",
-  "reason": "website harmonie.nl",
-  "url": "https://harmonie.nl/agenda/fries-straatfestival/53135",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
-  ]
- },
- {
-  "id": "evt_6f9a1720aa92a9",
-  "title": "Fries Straatfestival",
-  "kind": "theater",
-  "reason": "website harmonie.nl",
-  "url": "https://harmonie.nl/agenda/fries-straatfestival/53135",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
-  ]
- },
- {
-  "id": "evt_34e26ccc7e246a",
-  "title": "Spraakmakende Boeken: Annet Schaap: Krekel",
-  "kind": "lezing",
-  "reason": "website dbieb.op-shop.nl",
-  "url": "https://dbieb.op-shop.nl/10655/spraakmakende-boeken-annet-schaap-krekel/09-06-2027",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
