@@ -684,3 +684,14 @@ def test_dagcontrole_15_november_kalender_is_mededeling():
 def test_dagcontrole_15_november_echte_kalenderuitjes_blijven_staan():
     for title in ("Fotokalender maken", "Kalender maken workshop december", "Adventskalender concert", "Levende kalender: kerstmarkt", "Levende adventskalender december", "Adventskalender december", "Kerstkalender december"):
         assert not not_an_outing(_event(title)), title
+
+
+# Dagcontrole 16 november 2026: kopregel van een agenda en een avond voor de verenigingen van het dorp.
+def test_dagcontrole_16_november_geen_uitje():
+    for title in ("event gegevens", "20 november avond voor verenigingen"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_16_november_echte_uitjes_blijven_staan():
+    for title in ("Event gegevens lezing over bijen", "Concert voor verenigingen en vrienden: kerstmarkt", "Avond voor Kerstconcert"):
+        assert not not_an_outing(_event(title)), title
