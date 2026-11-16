@@ -394,7 +394,7 @@ MEMBERS_ONLY = re.compile(r"(?:alleen|enkel|uitsluitend) (?:voor )?(?:leden|bewo
                           r"|cursusbijeenkomst\w*|\bjaargroep\b|\btrajecten\b|\bjota\b|beroepenfeest|career fair")
 # Ook voor de leden, tenzij er iets openbaars bij staat ('Open les 1', 'Winterstop toernooi',
 # 'Mikstoernooi VV Suameer' blijven staan).
-MEMBERS_UNLESS_PUBLIC = re.compile(r"\bles \d+$|^(?:winter|zomer)stop\b|kaartavond|verenigingsavond"
+MEMBERS_UNLESS_PUBLIC = re.compile(r"\bles \d+$|^(?:winter|zomer)stop\b|kaartavond|verenigingsavond|\bavond voor (?:de )?verenigingen\b"
                                    r"|\w*(?:party|feest|resepsje|famyljedei)\b.*\b(?:v\.?v\.?|s\.?v\.?|s\.?c\.?) [a-z]+$")
 # Voor de ouderen van het dorp ('Kerstmiddag voor ouderen', 'Kerstlunch 50+'): niet voor het grote publiek.
 # Een festival, beurs, toernooi of concert voor senioren blijft staan.
@@ -668,7 +668,7 @@ def page_hints(text: str) -> dict:
 
 # Gevonden bij het nalopen van de hele agenda (20 oktober 2026, 3.024 uitjes): menukopjes en knoppen,
 # aanbiedingen, mededelingen, werkgroepen en vrijwilligerswerk, vaste dorps- en clubavonden, computerhulp.
-SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|ontdek alle \w+|nu te zien|leste nijs"
+SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|ontdek alle \w+|nu te zien|leste nijs"
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|(?:\w+ )?(?:dorps?|dorpskracht|activiteiten|evenementen|agenda)\s?kalender (?:\w+/)?(?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?:/\w+)?(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
