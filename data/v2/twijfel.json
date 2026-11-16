@@ -30,16 +30,6 @@
   ]
  },
  {
-  "id": "evt_0005218c5f41f5",
-  "title": "Biobak",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://minnertsga.frl/evenement/biobak-18",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_843236f28bbeb2",
   "title": "THE DOG DAYS ARE OVER 2.0",
   "kind": "overig",
@@ -683,6 +673,16 @@
   ]
  },
  {
+  "id": "evt_bd093c26e7df78",
+  "title": "Pier 21 – Wat spilet",
+  "kind": "theater",
+  "reason": "website klameare-workum.nl",
+  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_19fe25beee70ff",
   "title": "Popavond: Groove Departement",
   "kind": "overig",
@@ -931,16 +931,6 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/capitals-red-eagles-s-hertogenbosch/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_bd093c26e7df78",
-  "title": "Pier 21 – Wat spilet",
-  "kind": "theater",
-  "reason": "website klameare-workum.nl",
-  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2013,16 +2003,6 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_405edf8c705c",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=3",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_dcc46605509b9c",
   "title": "Sanghadag Groningen",
   "kind": "overig",
@@ -2053,11 +2033,21 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/2",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2113,31 +2103,11 @@
   ]
  },
  {
-  "id": "evt_990aef49279534",
-  "title": "Annemarijn Maandag",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_9fc4790ac281ee",
   "title": "Lucky Fonz III",
   "kind": "muziek",
   "reason": "website neushoorn.nl",
   "url": "https://www.neushoorn.nl/events/lucky-fonz-iii",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_45f8145e9a5993",
-  "title": "Lichtceremonie",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://doopsgezindengroningen.nl/agenda_cat/activiteiten/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2834,6 +2804,16 @@
   ]
  },
  {
+  "id": "evt_813fdf55273fac",
+  "title": "Springfestijn 25",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "doedag-angkor-drents-museum-2026-12-30",
   "title": "Doedag Angkor (familie)",
   "kind": "kinderen",
@@ -3050,16 +3030,6 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/bikkelavond-4-2/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_e1d3ae22fa7cb0",
-  "title": "Master Pullz Assen",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://masterpullz.com/beurs/mp-assen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4725,16 +4695,6 @@
   "kind": "muziek",
   "reason": "discipline 'muziek'",
   "url": "https://www.spotgroningen.nl/programma/kingfishr-4/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_d9a8e3a5d02709",
-  "title": "Verkuno",
-  "kind": "kunst",
-  "reason": "website kunstencentrumk38.nl",
-  "url": "https://kunstencentrumk38.nl/agenda-item/verkuno-2/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]

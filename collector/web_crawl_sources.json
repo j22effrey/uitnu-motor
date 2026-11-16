@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-14",
+  "updated": "2026-11-16",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16917,6 +16917,25 @@
         "lon": 6.1006599
       },
       "policyReviewedAt": "2026-11-14"
+    },
+    {
+      "id": "nite-nl-web",
+      "name": "NITE",
+      "rootUrl": "https://nite.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://nite.nl/agenda"
+      },
+      "activatedFromCandidate": "nite.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-11-16"
     }
   ]
 }
