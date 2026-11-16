@@ -693,5 +693,6 @@ def test_dagcontrole_16_november_geen_uitje():
 
 
 def test_dagcontrole_16_november_echte_uitjes_blijven_staan():
-    for title in ("Event gegevens lezing over bijen", "Concert voor verenigingen en vrienden: kerstmarkt", "Avond voor Kerstconcert"):
+    for title in ("Event gegevens lezing over bijen", "Concert voor verenigingen en vrienden: kerstmarkt", "Avond voor Kerstconcert",
+                  "Avond voor verenigingen: Kerstconcert", "Kerstmarkt - avond voor verenigingen", "Nieuwjaarsconcert avond voor verenigingen"):
         assert not not_an_outing(_event(title)), title

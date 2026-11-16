@@ -385,7 +385,7 @@ SERVICE_OR_MEETING = re.compile(
 SERVICE_PUBLIC = re.compile(r"concert|voorstelling|optreden|uitvoering|festival|expositie|tentoonstelling|markt|beurs|\bshow\b|musical"
                             r"|theater|toneel|cabaret|optocht")
 MEMBERS_ONLY = re.compile(r"(?:alleen|enkel|uitsluitend) (?:voor )?(?:leden|bewoners|inwoners|dorpsbewoners|buurtbewoners|donateurs)"
-                          r"|ledengearkomst|^buurtvereniging\b|\bavond voor (?:de )?verenigingen\b"
+                          r"|ledengearkomst|^buurtvereniging\b"
                           r"|voor (?:onze )?(?:leden|dorpsbewoners|buurtbewoners|bewoners van)\b|voor inwoners van|bewoners(?:avond|middag|bijeenkomst)"
                           r"|leden(?:middag|ochtend|dag|uitje|reis)|leden en donateurs"
                           # leden, studenten, cursisten (ronde van 15 oktober); geen uitzondering voor 'feest'
@@ -394,7 +394,7 @@ MEMBERS_ONLY = re.compile(r"(?:alleen|enkel|uitsluitend) (?:voor )?(?:leden|bewo
                           r"|cursusbijeenkomst\w*|\bjaargroep\b|\btrajecten\b|\bjota\b|beroepenfeest|career fair")
 # Ook voor de leden, tenzij er iets openbaars bij staat ('Open les 1', 'Winterstop toernooi',
 # 'Mikstoernooi VV Suameer' blijven staan).
-MEMBERS_UNLESS_PUBLIC = re.compile(r"\bles \d+$|^(?:winter|zomer)stop\b|kaartavond|verenigingsavond"
+MEMBERS_UNLESS_PUBLIC = re.compile(r"\bles \d+$|^(?:winter|zomer)stop\b|kaartavond|verenigingsavond|\bavond voor (?:de )?verenigingen\b"
                                    r"|\w*(?:party|feest|resepsje|famyljedei)\b.*\b(?:v\.?v\.?|s\.?v\.?|s\.?c\.?) [a-z]+$")
 # Voor de ouderen van het dorp ('Kerstmiddag voor ouderen', 'Kerstlunch 50+'): niet voor het grote publiek.
 # Een festival, beurs, toernooi of concert voor senioren blijft staan.
