@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16936,6 +16936,43 @@
         "city": "Groningen"
       },
       "policyReviewedAt": "2026-11-16"
+    },
+    {
+      "id": "hurdegaryp-nl-web",
+      "name": "Hurdegaryp",
+      "rootUrl": "https://hurdegaryp.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://hurdegaryp.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "hurdegaryp.nl",
+      "policyReviewedAt": "2026-11-17"
+    },
+    {
+      "id": "nijbeets-frl-web",
+      "name": "Nij Beets",
+      "rootUrl": "https://nijbeets.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://nijbeets.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "nijbeets.frl",
+      "defaultPlace": {
+        "city": "Nij Beets",
+        "lat": 53.0697,
+        "lon": 6.0028
+      },
+      "policyReviewedAt": "2026-11-17"
     }
   ]
 }
