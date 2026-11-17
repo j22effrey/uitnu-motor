@@ -696,3 +696,21 @@ def test_dagcontrole_16_november_echte_uitjes_blijven_staan():
     for title in ("Event gegevens lezing over bijen", "Concert voor verenigingen en vrienden: kerstmarkt", "Avond voor Kerstconcert",
                   "Avond voor verenigingen: Kerstconcert", "Kerstmarkt - avond voor verenigingen", "Nieuwjaarsconcert avond voor verenigingen"):
         assert not not_an_outing(_event(title)), title
+
+
+# Dagcontrole 17 november 2026: kerkelijke dagen en kringen als titel (Nij Beets, Britsum).
+def test_dagcontrole_17_november_geen_uitje():
+    for title in ("Witte donderdag", "Stille zaterdag", "Pasen 28 maart", "Hemelvaart 6 mei", "Pinksteren 16 mei",
+                  "Gedachteniszondag - 22 november 2026", "Bijbelgesprekskring", "Moderamenbijeenkomst"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_17_november_echte_uitjes_blijven_staan():
+    for title in ("Paasconcert", "Pinksterfeest met live muziek", "Hemelvaartsdag fietstocht", "Goede Vrijdag Passion in de kerk", "Pasen in het museum: eieren zoeken"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_nite_bron_staat_uit_met_reden():
+    import json, pathlib
+    bron = next(x for x in json.loads(pathlib.Path("collector/web_crawl_sources.json").read_text(encoding="utf-8"))["sources"] if x["id"] == "nite-nl-web")
+    assert bron["enabled"] is False and bron["disabledReason"]
