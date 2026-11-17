@@ -180,16 +180,6 @@
   ]
  },
  {
-  "id": "evt_8600c3ac9bfede",
-  "title": "Oefencafé in de Bibliotheek",
-  "kind": "lezing",
-  "reason": "website ticketing.groningsebibliotheken.nl",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774494/Oefencafé-in-de-Bibliotheek.html",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_5ac0b7d94861bf",
   "title": "RUIS",
   "kind": "theater",
@@ -241,6 +231,17 @@
   ]
  },
  {
+  "id": "evt_bd8a350ec245c9",
+  "title": "Brik Tu-Tok",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/brik-tu-tok/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
   "id": "evt_960cfcd1a925eb",
   "title": "HYPERPOËZIE – PROTECT ME FROM WHAT I WANT",
   "kind": "festival",
@@ -281,6 +282,17 @@
   "url": "https://ternaard.nu/agenda/verhalen-avond/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_ec3418dc25d098",
+  "title": "YATTA",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/yatta/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
   ]
  },
  {
@@ -1469,6 +1481,16 @@
   ]
  },
  {
+  "id": "evt_94ea6cac0dac94",
+  "title": "Kerst Pop-up store StudioPiek, opening",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.vries.nu/agendapunt/kerst-pop-up-store-studiopiek-opening/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "paradigm-joris-voorn-2026",
   "title": "Paradigm x Joris Voorn: Trip to Galaxy",
   "kind": "muziek",
@@ -2116,16 +2138,6 @@
   "kind": "sport",
   "reason": "website heerenveenflyers.com",
   "url": "https://heerenveenflyers.com/wedstrijden/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_990aef49279534",
-  "title": "Annemarijn Maandag",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://debontewever.avayo.nl/bestel/tickets/108211?p_id=523879",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3006,6 +3018,16 @@
   "kind": "muziek",
   "reason": "website brouwerijmartinus.nl",
   "url": "https://www.brouwerijmartinus.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_6dfb103997b3f5",
+  "title": "Oudjaar in Dörpshoes Nijland",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://oosternieland.nl/agenda/oudjaar-in-dorpshoes-nijland/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4565,6 +4587,16 @@
   ]
  },
  {
+  "id": "evt_f5eef9ab6f91cc",
+  "title": "Maulkorb + Schurft + Schizm",
+  "kind": "muziek",
+  "reason": "website neushoorn.nl",
+  "url": "https://www.neushoorn.nl/events/maulkorb-schurft-schizm",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_f47a971a117538",
   "title": "Week van het Dorpshuis 2027: Nederland Ontmoet",
   "kind": "overig",
@@ -4806,21 +4838,21 @@
   ]
  },
  {
-  "id": "evt_4d3d4688086788",
-  "title": "Assen Card Convention",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.assencardconvention.nl/standhouders",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_a2f7bbf8fc0205",
   "title": "Dflat Carpet",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.societeitdeharmonie.nl/agenda/dflat-carpet/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_7b2307a1538c04",
+  "title": "2e editie Assen Card Convention 29",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.assencardconvention.nl/standhouders",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
