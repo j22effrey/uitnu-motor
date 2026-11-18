@@ -313,7 +313,7 @@ PUBLIC_EVENT = re.compile(r"concert|uitvoering|optreden|voorstelling|toerno(?:o|
                           r"|feest|viering|proefles|kennismak|presentatie|lezing|actie|benefiet|\bquiz")
 # Teamnummers zijn kort ('1', 'DS1', 'MA1', 'JO13-2'); een jaartal ('Boney M 1976') is geen team.
 # Ook met een plusje voor jeugd- en veteranenteams ('Tzummarum 18+1 - Zeerobben 18+1', dagcontrole 1 november).
-TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'/&-]+ (?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)? ?[-–] ?[\w .'/&-]+ "
+TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'’/&-]+ (?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)? ?[-–] ?[\w .'’/&-]+ "
                         r"(?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)?\b")
 NEWS_PATH = re.compile(r"/(?:nieuws|nieuwsberichten?|berichten|author)/", re.IGNORECASE)
 # De uitslagenpagina van een club ('scfraneker.nl/200/63638/uitslagen/wedstrijd-details/'): een competitiewedstrijd.
@@ -609,6 +609,10 @@ def classify(event: dict, overrides: dict | None = None,
     # Een film in de rubriek '/film/' van de bioscoop blijft een film, ook als de pagina 'komedie' of 'band' zegt.
     if section and section[0] == "film":
         return result("film", "organisator", f"de organisator zet het in de rubriek '{section[1]}'", 0.7)
+    # Een voorstelling in de rubriek '/voorstelling/' blijft theater, ook als de pagina 'verhalen' of 'cursus' zegt
+    # (cabaretiers in Winsum, dagcontrole 18 november 2026).
+    if section and section[0] == "theater" and page.get("soort") == "lezing":
+        return result("theater", "organisator", f"de organisator zet het in de rubriek '{section[1]}' (gaat voor trefwoord '{page.get('woord')}')", 0.65)
     if page.get("soort") in KINDS and page.get("soort") != "festival":
         return result(page["soort"], "organisator", f"trefwoord '{page.get('woord')}' op de pagina van de organisator", 0.65)
     if section:
@@ -690,7 +694,7 @@ SWEEP_NOT_OUTING = re.compile(
     r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b|\bdankdag(?:viering|dienst)?\b(?!.*(?:concert|orgel|muziek|optreden))|^stemmen op\b|^uitzending op\b"
     # Dagcontrole 4 november 2026: een open-deurdienst en Christus Koning (kerk), verkiezingen en de start van de kaartverkoop
     # (mededelingen), een kerstboom plaatsen (vrijwilligerswerk); een testregel van een website staat bij de kopjes.
-    r"|\bopendeurdienst\b|\bmobiele bibliotheek\b|^b ?& ?w\b[\w ]*\bop (?:besite|bezoek)\b|\bzamelt weer in\b|\bzie artikel\b|^vervanging\b.*\w*(?:brug|riolering|verlichting)\b|\bkledingkringloop\b|\beeuwigheidszondag\b|\binloop ?spreek(?:uur|uren)\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
+    r"|\bopendeurdienst\b|\bmobiele bibliotheek\b|^help mee\b(?! met)|^b ?& ?w\b[\w ]*\bop (?:besite|bezoek)\b|\bzamelt weer in\b|\bzie artikel\b|^vervanging\b.*\w*(?:brug|riolering|verlichting)\b|\bkledingkringloop\b|\beeuwigheidszondag\b|\binloop ?spreek(?:uur|uren)\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
     # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.
