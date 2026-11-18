@@ -1812,6 +1812,16 @@
   ]
  },
  {
+  "id": "evt_4060d91cefe3ba",
+  "title": "Schrijven voor mensenrechten",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.sleen.nu/home/agenda",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_cf02962d1c9892",
   "title": "Út & Thús",
   "kind": "overig",
@@ -1983,6 +1993,16 @@
   ]
  },
  {
+  "id": "evt_b0a9e05f4aa023_405edf8c705c",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=3",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_c9fa9893c21cef",
   "title": "Maak je (digitale) kerstkaart met de Green Screen",
   "kind": "lezing",
@@ -2003,21 +2023,11 @@
   ]
  },
  {
-  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/2",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=2",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2088,16 +2098,6 @@
   "kind": "muziek",
   "reason": "website neushoorn.nl",
   "url": "https://www.neushoorn.nl/events/lucky-fonz-iii",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_45f8145e9a5993",
-  "title": "Lichtceremonie",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://doopsgezindengroningen.nl/agenda_cat/activiteiten/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2427,7 +2427,7 @@
   "title": "Back yard challenge",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.sleen.nu/home/agenda",
+  "url": "https://www.sleen.nu/home/agenda/pagina/2",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2873,13 +2873,14 @@
   ]
  },
  {
-  "id": "evt_813fdf55273fac",
-  "title": "Springfestijn 25",
+  "id": "evt_a947165a433b6b",
+  "title": "Spring festival",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
   "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
@@ -3559,6 +3560,16 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/capitals-tilburg-trappers-2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_24c0c1c2ab9eff",
+  "title": "Scrum bij Buorman en Buorman",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.it-geahus.nl/evenement/scrum-bij-buorman-en-buorman/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4417,6 +4428,46 @@
   ]
  },
  {
+  "id": "evt_5b93e4bd902d54",
+  "title": "Dag 1",
+  "kind": "kunst",
+  "reason": "website kloosterterapel.nl",
+  "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a7bf8b35506b3d",
+  "title": "Programma (onder voorbehoud)",
+  "kind": "kunst",
+  "reason": "website kloosterterapel.nl",
+  "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_abafb4b96d95c6",
+  "title": "Dag 2",
+  "kind": "kunst",
+  "reason": "website kloosterterapel.nl",
+  "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_d09b8cf0334fe1",
+  "title": "Dag 3",
+  "kind": "kunst",
+  "reason": "website kloosterterapel.nl",
+  "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_f038b1159df8f0",
   "title": "Motorpsycho",
   "kind": "muziek",
@@ -4432,26 +4483,6 @@
   "kind": "theater",
   "reason": "website lawei.nl",
   "url": "https://www.lawei.nl/agenda/michael-pilarczyk-ttgm",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_acc32bfdcdba61",
-  "title": "DNS Brick Event",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_7546169930a87a",
-  "title": "DNS Brick Event",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://dnsbricks.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4848,16 +4879,6 @@
   ]
  },
  {
-  "id": "evt_46cfaeff9dd588",
-  "title": "Tech Event NoordNL",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_33f0c0be5bf683",
   "title": "DFG Cup",
   "kind": "overig",
@@ -4896,6 +4917,16 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
+  "id": "evt_7f16012e3f1ee6",
+  "title": "Bluegrass Boogiemen",
+  "kind": "muziek",
+  "reason": "website engelstede.nl",
+  "url": "https://engelstede.nl/event/bluegrass-boogiemen/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -4955,6 +4986,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://simmerdeis.nl/programma/oes/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a56b4276fa281c",
+  "title": "Stadstour: Bitter Spoor",
+  "kind": "kunst",
+  "reason": "website princessehof.nl",
+  "url": "https://www.princessehof.nl/te-zien-en-te-doen/activiteiten/bitter-spoor-stadsrondleiding-over-koffie",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5140,16 +5181,6 @@
   ]
  },
  {
-  "id": "evt_502ece892d2aa4",
-  "title": "Tynaarlo Trofee",
-  "kind": "sport",
-  "reason": "oude categorie 'sport'",
-  "url": "https://www.vries.nu/agendapunt/tynaarlo-trofee/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_9845009602f367",
   "title": "De Donkerbroekster Dei",
   "kind": "overig",
@@ -5170,31 +5201,11 @@
   ]
  },
  {
-  "id": "evt_a88e2eaf4003eb",
-  "title": "Verkuno",
-  "kind": "kunst",
-  "reason": "website kunstencentrumk38.nl",
-  "url": "https://kunstencentrumk38.nl/agenda-item/verkuno-3/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "admiraliteitsdagen-dokkum-2027",
   "title": "Admiraliteitsdagen Dokkum",
   "kind": "feest",
   "reason": "oude categorie 'feest'",
   "url": "https://admiraliteitsdagen.nl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_6c6f71325b3984",
-  "title": "Middeleeuws Ter Apel",
-  "kind": "kunst",
-  "reason": "website kloosterterapel.nl",
-  "url": "https://kloosterterapel.nl/activiteiten/middeleeuws-ter-apel-2026/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
