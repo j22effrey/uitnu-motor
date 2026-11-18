@@ -714,3 +714,20 @@ def test_nite_bron_staat_uit_met_reden():
     import json, pathlib
     bron = next(x for x in json.loads(pathlib.Path("collector/web_crawl_sources.json").read_text(encoding="utf-8"))["sources"] if x["id"] == "nite-nl-web")
     assert bron["enabled"] is False and bron["disabledReason"]
+
+
+# Dagcontrole 18 november 2026: cabaretiers in Winsum als 'lezing', een clubwedstrijd met een gebogen apostrof, een oproep voor vrijwilligers.
+def test_dagcontrole_18_november_team_wedstrijd_met_gebogen_apostrof():
+    assert not_an_outing(_event("Gramsbergen 1 – MVV’29 1"))
+
+
+def test_dagcontrole_18_november_oproep_is_geen_uitje():
+    assert not_an_outing(_event("Help mee om ons dorpshuis in kerstsfeer te brengen!"))
+    assert not not_an_outing(_event("Help mee met de kerstmarkt: koop een kaartje"))
+
+
+def test_dagcontrole_18_november_voorstelling_met_verhalen_blijft_theater():
+    event = _event("Rob Kamphues – Eindelijk Volwassen")
+    event["url"] = "https://www.skkw.nl/voorstelling/rob-kamphues-eindelijk-volwassen/"
+    event["pageHints"] = {"soort": "lezing", "woord": "verhalen"}
+    assert classify(event)["kind"] == "theater"
