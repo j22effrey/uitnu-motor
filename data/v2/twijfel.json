@@ -249,9 +249,9 @@
  {
   "id": "evt_8414e913de18c0",
   "title": "SHY",
-  "kind": "theater",
-  "reason": "website jongeharten.podiumnederland.nl",
-  "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10381797?stlt=jh&lang=nl",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.jongeharten.nl/programma/shy/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -508,6 +508,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://onstwedde.info/agenda/artikel/onstwedder-boys-svbo-2",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_bd093c26e7df78",
+  "title": "Pier 21 – Wat spilet",
+  "kind": "theater",
+  "reason": "website klameare-workum.nl",
+  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -771,16 +781,6 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/capitals-red-eagles-s-hertogenbosch/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_bd093c26e7df78",
-  "title": "Pier 21 – Wat spilet",
-  "kind": "theater",
-  "reason": "website klameare-workum.nl",
-  "url": "https://klameare-workum.nl/event/pier-21-wat-spilet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1426,6 +1426,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.haske-joure.nl/agenda/vrienden-van-de-jouster-tour-live-2026/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_75999879426a9a",
+  "title": "Avondvibes",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://jirnsum.com/event/avondvibes-2/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
