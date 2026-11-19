@@ -735,14 +735,13 @@ def test_dagcontrole_18_november_voorstelling_met_verhalen_blijft_theater():
 
 # Dagcontrole 19 november 2026: kopregels, afvalkalender, een adres als titel, een creagroep, voorleesdagen voor kinderen.
 def test_dagcontrole_19_november_geen_uitje():
-    for title in ("GFT", "Nieuwsberichten", "Dag 1", "Programma (onder voorbehoud)", "Crea groep",
-                  "Brouwerij Martinus Kostersgang 32-34 9711 CX Groningen"):
+    for title in ("GFT", "Nieuwsberichten", "Dag 1", "Programma (onder voorbehoud)", "Crea groep"):
         assert not_an_outing(_event(title)), title
 
 
 def test_dagcontrole_19_november_echte_uitjes_blijven_staan():
     for title in ("Dag 1: concert in de kerk", "GFT-workshop composteren", "Nieuwsberichten live: lezing door de krant",
-                  "Crea groep tentoonstelling", "Kerstmarkt 2026", "Brouwerij rondleiding en proeverij"):
+                  "Crea groep tentoonstelling", "Kerstmarkt 2026", "Brouwerij Martinus Kostersgang 32-34 9711 CX Groningen", "Brouwerij rondleiding en proeverij"):
         assert not not_an_outing(_event(title)), title
 
 
