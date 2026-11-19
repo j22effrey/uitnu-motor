@@ -1704,56 +1704,6 @@
   }
  },
  {
-  "id": "evt_c367c9d2b1c59a",
-  "slug": "crea-groep-westerlee-2026-11-19",
-  "title": "Crea groep",
-  "occurrences": [
-   {
-    "date": "2026-11-19",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Westerlee",
-   "city": "Westerlee",
-   "lat": 53.145,
-   "lon": 6.9869
-  },
-  "price": "Zie organisator",
-  "url": "https://www.westerlee.nl/agenda/crea-groep-6/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.westerlee.nl/agenda/crea-groep-6/",
-    "host": "westerlee.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'crea'",
-   "confidence": 0.8
-  },
-  "hash": "a6d0f7ede6e8",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hervormde_kerk_en_toren_in_Westerlee_-_3.jpg/1280px-Hervormde_kerk_en_toren_in_Westerlee_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Westerlee",
-   "credit": "Foto: Hilda Morassi · CC BY-SA 3.0 nl · Wikimedia Commons",
-   "author": "Hilda Morassi",
-   "license": "CC BY-SA 3.0 nl",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hervormde_kerk_en_toren_in_Westerlee_-_3.jpg"
-  }
- },
- {
   "id": "evt_b61fd6f0f3ca41",
   "slug": "damian-wilson-drachten-2026-11-19",
   "title": "Damian Wilson",
@@ -45247,56 +45197,6 @@
   }
  },
  {
-  "id": "evt_c56f5a6d952e50",
-  "slug": "crea-groep-westerlee-2026-11-25",
-  "title": "Crea groep",
-  "occurrences": [
-   {
-    "date": "2026-11-25",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Westerlee",
-   "city": "Westerlee",
-   "lat": 53.145,
-   "lon": 6.9869
-  },
-  "price": "Zie organisator",
-  "url": "https://www.westerlee.nl/agenda/crea-groep-7/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.westerlee.nl/agenda/crea-groep-7/",
-    "host": "westerlee.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'crea'",
-   "confidence": 0.8
-  },
-  "hash": "f959e98f4e42",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Om_%27t_Houkje%2C_Westerlee_%282018%29.jpg/1280px-Om_%27t_Houkje%2C_Westerlee_%282018%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Westerlee",
-   "credit": "Foto: Donald_Trung · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Donald_Trung",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Om_%27t_Houkje,_Westerlee_(2018).jpg"
-  }
- },
- {
   "id": "evt_48a0686e960005",
   "slug": "de-bibliotheek-en-het-dreumesuurtje-onstwedde-2026-11-25",
   "title": "De Bibliotheek en het Dreumesuurtje",
@@ -49991,56 +49891,6 @@
    "alt": "Foto bij CONTROLE (12+)",
    "credit": "Foto: Stadsschouwburg de Harmonie",
    "sourceUrl": "https://harmonie.nl/agenda/controle/52973"
-  }
- },
- {
-  "id": "evt_4cb230e8e61bfd",
-  "slug": "crea-groep-westerlee-2026-11-26",
-  "title": "Crea groep",
-  "occurrences": [
-   {
-    "date": "2026-11-26",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Westerlee",
-   "city": "Westerlee",
-   "lat": 53.145,
-   "lon": 6.9869
-  },
-  "price": "Zie organisator",
-  "url": "https://www.westerlee.nl/agenda/crea-groep-8/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.westerlee.nl/agenda/crea-groep-8/",
-    "host": "westerlee.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'crea'",
-   "confidence": 0.8
-  },
-  "hash": "bb817b813636",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Public_sportspark_in_Westerlee%2C_Groningen_%282017%29_01.jpg/1280px-Public_sportspark_in_Westerlee%2C_Groningen_%282017%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Westerlee",
-   "credit": "Foto: Donald Trung · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Donald Trung",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Public_sportspark_in_Westerlee,_Groningen_(2017)_01.jpg"
   }
  },
  {
@@ -69935,56 +69785,6 @@
    "alt": "Foto bij Digger",
    "credit": "Foto: Theater De Molenberg",
    "sourceUrl": "https://www.demolenberg.nl/voorstellingen/digger/"
-  }
- },
- {
-  "id": "evt_40d53c284a5c70",
-  "slug": "gft-wommels-2026-12-01",
-  "title": "GFT",
-  "occurrences": [
-   {
-    "date": "2026-12-01",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Wommels",
-   "city": "Wommels",
-   "lat": 53.1086,
-   "lon": 5.5878
-  },
-  "price": "Zie organisator",
-  "url": "https://wommels.nl/activiteit/gft-20261201-0000/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://wommels.nl/activiteit/gft-20261201-0000/",
-    "host": "wommels.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "546ee763f369",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/DAP_It_Griene_Hert%2C_Wommels.jpg/1280px-DAP_It_Griene_Hert%2C_Wommels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Wommels",
-   "credit": "Foto: Ieneach fan 'e Esk · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Ieneach fan 'e Esk",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:DAP_It_Griene_Hert,_Wommels.jpg"
   }
  },
  {
@@ -94761,46 +94561,6 @@
   }
  },
  {
-  "id": "evt_486f265dd09c6a",
-  "slug": "nieuwsberichten-haren-gn-2026-12-12",
-  "title": "Nieuwsberichten",
-  "occurrences": [
-   {
-    "date": "2026-12-12",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Gorechtkerk",
-   "city": "Haren Gn",
-   "lat": 53.1733712,
-   "lon": 6.6072222
-  },
-  "price": "Zie organisator",
-  "url": "https://www.pgharen.nl/predikanten_1",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.pgharen.nl/predikanten_1",
-    "host": "pgharen.nl",
-    "seenAt": "2026-11-18"
-   }
-  ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'lezing' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "970e4d5f7a6d",
-  "image": null
- },
- {
   "id": "evt_676af0ea3e2548",
   "slug": "night-of-the-dinolights-wedde-2026-12-12",
   "title": "Night of the DinoLights",
@@ -105196,56 +104956,6 @@
    "alt": "Foto bij Donar Groningen – Kangoeroes Basket Mechelen 2026",
    "credit": "Foto: Martiniplaza",
    "sourceUrl": "https://www.martiniplaza.nl/nl/agenda/donar-groningen-kangoeroes-basket-mechelen-2026"
-  }
- },
- {
-  "id": "evt_f86a5b76868298",
-  "slug": "gft-wommels-2026-12-15",
-  "title": "GFT",
-  "occurrences": [
-   {
-    "date": "2026-12-15",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Wommels",
-   "city": "Wommels",
-   "lat": 53.1086,
-   "lon": 5.5878
-  },
-  "price": "Zie organisator",
-  "url": "https://wommels.nl/activiteit/gft-20261215-0000/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://wommels.nl/activiteit/gft-20261215-0000/",
-    "host": "wommels.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "2f638c752c13",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Wommels_%2820445732391%29.jpg/1280px-Wommels_%2820445732391%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Wommels",
-   "credit": "Foto: Hanno Lans · CC BY 2.0 · Wikimedia Commons",
-   "author": "Hanno Lans",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wommels_(20445732391).jpg"
   }
  },
  {
@@ -134240,56 +133950,6 @@
   }
  },
  {
-  "id": "evt_24cf2dd9dbec58",
-  "slug": "gft-wommels-2026-12-29",
-  "title": "GFT",
-  "occurrences": [
-   {
-    "date": "2026-12-29",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Wommels",
-   "city": "Wommels",
-   "lat": 53.1086,
-   "lon": 5.5878
-  },
-  "price": "Zie organisator",
-  "url": "https://wommels.nl/activiteit/gft-20261229-0000/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://wommels.nl/activiteit/gft-20261229-0000/",
-    "host": "wommels.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "83ce25b2dd2c",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/DAP_It_Griene_Hert%2C_Wommels.jpg/1280px-DAP_It_Griene_Hert%2C_Wommels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Wommels",
-   "credit": "Foto: Ieneach fan 'e Esk · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Ieneach fan 'e Esk",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:DAP_It_Griene_Hert,_Wommels.jpg"
-  }
- },
- {
   "id": "evt_2bbf4b99d6c680",
   "slug": "internationaal-indoor-concours-hippique-groningen-2027-groningen-2026-12-29",
   "title": "Internationaal Indoor Concours Hippique Groningen 2027",
@@ -154732,17 +154392,17 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [
    "kinderen"
   ],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord '(2+)'",
    "confidence": 0.8
   },
-  "hash": "bc16e2c6b451",
+  "hash": "d3448666b394",
   "image": {
    "url": "https://static.forum.nl/cache/nationale-voorleesontbijt-2.29296/nationale-voorleesontbijt-2-s1920x1080.jpg",
    "type": "organisator",
@@ -159508,15 +159168,15 @@
   },
   "hash": "d3b2bd3afee6",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Wommels_%2820445732391%29.jpg/1280px-Wommels_%2820445732391%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/DAP_It_Griene_Hert%2C_Wommels.jpg/1280px-DAP_It_Griene_Hert%2C_Wommels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Wommels",
-   "credit": "Foto: Hanno Lans · CC BY 2.0 · Wikimedia Commons",
-   "author": "Hanno Lans",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wommels_(20445732391).jpg"
+   "credit": "Foto: Ieneach fan 'e Esk · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Ieneach fan 'e Esk",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:DAP_It_Griene_Hert,_Wommels.jpg"
   }
  },
  {
@@ -162338,15 +161998,15 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord 'voorleesdagen'",
    "confidence": 0.8
   },
-  "hash": "ca79709da9c0",
+  "hash": "58c10da918a1",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Van_af_steenfabriek_-_Dokkum_-_20059132_-_RCE.jpg/1280px-Van_af_steenfabriek_-_Dokkum_-_20059132_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -162837,15 +162497,15 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord 'voorleesdagen'",
    "confidence": 0.8
   },
-  "hash": "affe69f9cadc",
+  "hash": "8149a4c6f2f2",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Dokkum%2C_stadhuis.jpg/1280px-Dokkum%2C_stadhuis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -163809,15 +163469,15 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord 'voorleesdagen'",
    "confidence": 0.8
   },
-  "hash": "996578a44665",
+  "hash": "b89fbd9e643f",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/2023_Dokkum%2C_Hurdridersgr%C3%AAft.jpg/1280px-2023_Dokkum%2C_Hurdridersgr%C3%AAft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -164954,15 +164614,15 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord 'voorleesdagen'",
    "confidence": 0.8
   },
-  "hash": "51f9da8aed56",
+  "hash": "2ca2fd1708de",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bord_dokkum.jpg/1280px-Bord_dokkum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -170918,15 +170578,15 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord 'voorleesdagen'",
    "confidence": 0.8
   },
-  "hash": "c41bdb89d2ed",
+  "hash": "0fad28f8951c",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Overzicht_-_Dokkum_-_20059128_-_RCE.jpg/1280px-Overzicht_-_Dokkum_-_20059128_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -171342,15 +171002,15 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord 'voorleesdagen'",
    "confidence": 0.8
   },
-  "hash": "32da3073f102",
+  "hash": "5eabae888cc1",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Van_af_steenfabriek_-_Dokkum_-_20059132_-_RCE.jpg/1280px-Van_af_steenfabriek_-_Dokkum_-_20059132_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -172405,15 +172065,15 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord 'voorleesdagen'",
    "confidence": 0.8
   },
-  "hash": "7f34a774cd9d",
+  "hash": "92a5bdbf4d52",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/2023_Dokkum%2C_Hurdridersgr%C3%AAft.jpg/1280px-2023_Dokkum%2C_Hurdridersgr%C3%AAft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -193112,15 +192772,15 @@
   },
   "hash": "c2aba099001a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/DAP_It_Griene_Hert%2C_Wommels.jpg/1280px-DAP_It_Griene_Hert%2C_Wommels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Wommels_%2820445732391%29.jpg/1280px-Wommels_%2820445732391%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Wommels",
-   "credit": "Foto: Ieneach fan 'e Esk · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Ieneach fan 'e Esk",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:DAP_It_Griene_Hert,_Wommels.jpg"
+   "credit": "Foto: Hanno Lans · CC BY 2.0 · Wikimedia Commons",
+   "author": "Hanno Lans",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wommels_(20445732391).jpg"
   }
  },
  {
@@ -194275,15 +193935,15 @@
     "seenAt": "2026-11-19"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
+   "reason": "trefwoord 'voorleesfeest'",
    "confidence": 0.8
   },
-  "hash": "c1ef7270dc13",
+  "hash": "0634167f3491",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Overzicht_-_Dokkum_-_20059128_-_RCE.jpg/1280px-Overzicht_-_Dokkum_-_20059128_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -233048,56 +232708,6 @@
   }
  },
  {
-  "id": "evt_5b93e4bd902d54",
-  "slug": "dag-1-ter-apel-2027-04-06",
-  "title": "Dag 1",
-  "occurrences": [
-   {
-    "date": "2027-04-06",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Museum Klooster Ter Apel",
-   "city": "Ter Apel",
-   "lat": 52.8761859,
-   "lon": 7.0751008
-  },
-  "price": "Zie organisator",
-  "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
-    "host": "kloosterterapel.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website kloosterterapel.nl",
-   "confidence": 0.6
-  },
-  "hash": "5a7424ebb76b",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Klooster_Ter_Apel.jpg/1280px-Klooster_Ter_Apel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Ter Apel",
-   "credit": "Foto: Gouwenaar · Public domain · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Klooster_Ter_Apel.jpg"
-  }
- },
- {
   "id": "evt_8038247269a868",
   "slug": "vlieg-met-me-mee-simone-kleinsma-brigitte-heitzer-lisa-schol-e-a-drachten-2027-0",
   "title": "Vlieg met me mee – Simone Kleinsma, Brigitte Heitzer, Lisa Schol e.a.",
@@ -233198,56 +232808,6 @@
    "license": "CC BY-SA 3.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Autumn_-_panoramio_-_vladdi.jpg"
-  }
- },
- {
-  "id": "evt_a7bf8b35506b3d",
-  "slug": "programma-onder-voorbehoud-ter-apel-2027-04-06",
-  "title": "Programma (onder voorbehoud)",
-  "occurrences": [
-   {
-    "date": "2027-04-06",
-    "endDate": null,
-    "startTime": "19:00",
-    "endTime": "21:00"
-   }
-  ],
-  "venue": {
-   "name": "Museum Klooster Ter Apel",
-   "city": "Ter Apel",
-   "lat": 52.8761859,
-   "lon": 7.0751008
-  },
-  "price": "Zie organisator",
-  "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
-    "host": "kloosterterapel.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website kloosterterapel.nl",
-   "confidence": 0.6
-  },
-  "hash": "a70d53775bf9",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Gezinstaferelen%2C_SFA001005164.jpg/1280px-Gezinstaferelen%2C_SFA001005164.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Ter Apel",
-   "credit": "Foto: Unknown author Unknown author · Public domain · Wikimedia Commons",
-   "author": "Unknown author Unknown author",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gezinstaferelen,_SFA001005164.jpg"
   }
  },
  {
@@ -233389,56 +232949,6 @@
    "alt": "Foto bij Ronald Brautigam & Christian Poltéra",
    "credit": "Foto: SPOT Groningen (De Oosterpoort en Stadsschouwburg)",
    "sourceUrl": "https://www.spotgroningen.nl/programma/ronald-brautigam-christian-poltera/"
-  }
- },
- {
-  "id": "evt_abafb4b96d95c6",
-  "slug": "dag-2-ter-apel-2027-04-07",
-  "title": "Dag 2",
-  "occurrences": [
-   {
-    "date": "2027-04-07",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Museum Klooster Ter Apel",
-   "city": "Ter Apel",
-   "lat": 52.8761859,
-   "lon": 7.0751008
-  },
-  "price": "Zie organisator",
-  "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
-    "host": "kloosterterapel.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website kloosterterapel.nl",
-   "confidence": 0.6
-  },
-  "hash": "d13e6c2d6981",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Schotslaan_Ter_Apel_2019.jpg/1280px-Schotslaan_Ter_Apel_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Ter Apel",
-   "credit": "Foto: Roelfinus · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Roelfinus",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schotslaan_Ter_Apel_2019.jpg"
   }
  },
  {
@@ -233815,56 +233325,6 @@
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Stijl,_vlaggen_en_De_Lawei_2.JPG"
-  }
- },
- {
-  "id": "evt_d09b8cf0334fe1",
-  "slug": "dag-3-ter-apel-2027-04-08",
-  "title": "Dag 3",
-  "occurrences": [
-   {
-    "date": "2027-04-08",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Museum Klooster Ter Apel",
-   "city": "Ter Apel",
-   "lat": 52.8761859,
-   "lon": 7.0751008
-  },
-  "price": "Zie organisator",
-  "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://kloosterterapel.nl/activiteiten/retraite-2027/",
-    "host": "kloosterterapel.nl",
-    "seenAt": "2026-11-19"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website kloosterterapel.nl",
-   "confidence": 0.6
-  },
-  "hash": "fbc64e2294d1",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Ter_Apel%2C_Nederland_Oct_19%2C_2025_03-35-43_PM.jpeg/1280px-Ter_Apel%2C_Nederland_Oct_19%2C_2025_03-35-43_PM.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Ter Apel",
-   "credit": "Foto: JakobHosp · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "JakobHosp",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ter_Apel,_Nederland_Oct_19,_2025_03-35-43_PM.jpeg"
   }
  },
  {

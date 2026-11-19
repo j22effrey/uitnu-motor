@@ -1,8 +1,8 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-19T01:21:17+00:00",
+ "refreshedAt": "2026-11-19T05:45:38+00:00",
  "today": "2026-11-19",
- "total": 5811,
+ "total": 5800,
  "bewaardVanVorigeKeer": {
   "bind.op-shop.nl": 45,
   "facet-emmen.op-shop.nl": 31
@@ -11,7 +11,7 @@
  "nietBewaardDoorRegel": {},
  "inputRecords": 12223,
  "outsideArea": 19,
- "geenUitje": 4309,
+ "geenUitje": 4320,
  "vasteActiviteit": 1185,
  "vertaling": 6,
  "teVerVooruit": 306,
@@ -35,13 +35,13 @@
   "muziek": 1528,
   "theater": 1282,
   "film": 634,
-  "lezing": 447,
+  "lezing": 434,
   "feest": 346,
-  "kinderen": 291,
+  "kinderen": 300,
   "sport": 274,
   "markt": 262,
-  "overig": 247,
-  "kunst": 220,
+  "overig": 244,
+  "kunst": 216,
   "natuur": 154,
   "eten": 73,
   "festival": 53
@@ -84,20 +84,19 @@
   "Terherne": 21,
   "Schiermonnikoog": 21,
   "Harlingen": 21,
-  "Ter Apel": 20,
   "Minnertsga": 20,
   "Nes": 20,
   "Steenwijk": 19,
   "Uithuizermeeden": 19,
   "Surhuisterveen": 19,
   "Reduzum": 18,
+  "Ter Apel": 16,
   "Vries": 16,
   "Lippenhuizen": 16,
   "Wier": 16,
   "Ten Boer": 16,
   "Gorredijk": 16,
   "Gasselternijveen": 15,
-  "Wommels": 15,
   "Balk": 15,
   "Burgum": 14,
   "Oosterend": 14,
@@ -107,6 +106,7 @@
   "Arum": 13,
   "Musselkanaal": 12,
   "Marrum": 12,
+  "Wommels": 12,
   "Jirnsum": 12,
   "Lemmer": 12,
   "Joure": 12,
@@ -172,7 +172,6 @@
   "Twijzelerheide": 6,
   "Wedde": 6,
   "Eelde": 5,
-  "Westerlee": 5,
   "Wergea": 5,
   "Drouwen": 5,
   "Berltsum": 5,
@@ -276,6 +275,7 @@
   "Solwerd": 2,
   "Suwâld": 2,
   "Smeerling": 2,
+  "Westerlee": 2,
   "Lollum": 2,
   "Garsthuizen": 2,
   "Drachtstercompagnie": 2,
@@ -287,7 +287,6 @@
   "2e Exlöermond": 2,
   "Wijster": 2,
   "Winsum/Maarhuizen": 2,
-  "Haren Gn": 2,
   "Feankleaster": 2,
   "Tjalleberd": 2,
   "Oldeberkoop": 2,
@@ -388,6 +387,7 @@
   "Elim": 1,
   "Valthermond": 1,
   "Nieuwe Pekela": 1,
+  "Haren Gn": 1,
   "Veenklooster": 1,
   "Hornhuizen": 1,
   "De Veenhoop": 1,
@@ -466,12 +466,10 @@
   "opmaarhuizen.nl": 15,
   "staatsbosbeheer.nl": 15,
   "houtstad-ijlst.nl": 15,
-  "kloosterterapel.nl": 14,
   "bolsward.nl": 14,
   "deblauweschuit-winsum.nl": 14,
   "nijbeets.frl": 14,
   "ticketshop.barontheater.nl": 14,
-  "wommels.nl": 14,
   "engelstede.nl": 14,
   "groningerlandschap.nl": 13,
   "jongeharten.podiumnederland.nl": 13,
@@ -491,12 +489,14 @@
   "levendigmusselkanaal.nl": 11,
   "greetsiel.de": 11,
   "offingawier.nl": 11,
+  "wommels.nl": 11,
   "debontewever.avayo.nl": 11,
   "onstwedde.info": 11,
   "dorpsbelangenschildwolde.nl": 11,
   "fcgroningen.nl": 11,
   "fcemmen.nl": 11,
   "luthersbachensemble.nl": 11,
+  "kloosterterapel.nl": 10,
   "klameare-workum.nl": 10,
   "uutgaon.nl": 10,
   "skkw.nl": 10,
@@ -577,7 +577,6 @@
   "dinoparklandgoedtenaxx.nl": 6,
   "doopsgezindengroningen.nl": 6,
   "museumbelvedere.nl": 5,
-  "westerlee.nl": 5,
   "langelille.com": 5,
   "bvsport.nl": 5,
   "berlikum.com": 5,
@@ -706,6 +705,7 @@
   "suwald.nl": 2,
   "terschelling.nl": 2,
   "wtcexpo.nl": 2,
+  "westerlee.nl": 2,
   "museumjoure.nl": 2,
   "dorpshuis-lollum.nl": 2,
   "huizemaas.nl": 2,
@@ -811,7 +811,6 @@
   "winterwelvaart.nl": 1,
   "stadsparknightrun.nl": 1,
   "oldemarkt.info": 1,
-  "pgharen.nl": 1,
   "nicolaikerk-appingedam.nl": 1,
   "kerkfeerwerd.nl": 1,
   "kerksolwerd.nl": 1,
@@ -890,10 +889,10 @@
  },
  "photos": {
   "organisator": 2940,
-  "wikimedia": 2675,
-  "zonder": 120
+  "wikimedia": 2665,
+  "zonder": 119
  },
- "twijfel": 525,
+ "twijfel": 518,
  "groot": {
   "aantal": 74,
   "redenen": {
@@ -932,9 +931,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 96,
-  "changed": 234,
-  "removed": 161
+  "new": 0,
+  "changed": 9,
+  "removed": 11
  },
  "gate": {
   "passed": true,
@@ -942,7 +941,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5811 nu, 5804 vorige keer (minimaal 85%)"
+    "detail": "5800 nu, 5811 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -952,7 +951,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "247 van 5811 (4%)"
+    "detail": "244 van 5800 (4%)"
    },
    {
     "name": "velden_compleet",
