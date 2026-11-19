@@ -126,7 +126,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"podcast", r"in gesprek\b", r"(?<!tarot )reading", r"luistertafel", r"topstukken klassieke", r"boekbespreking",
         r"stof tot nadenken", r"vertelt over", r"vertelcaf", r"ferhaal", r"ferhale", r"boekewike", r"inspiratiesessie",
         r"vraag de pro\b", r"maakplaats", r"^maak je eigen", r"^leren \w+$",
-        r"symposium", r"voorlees(?!dag|feest|ontbijt)", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
+        r"symposium", r"voorlees(?!(?:dag|feest|ontbijt)\w*(?!.*volwassen))", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
         r"repair ?caf", r"bloemschik", r"verkeersregels", r"creatief caf", r"handwerk", r"informatie ?avond",
         r"\bbrei(?:en|werk|cafe|club|middag|avond|ochtend|les)\b", r"\bhaak", r"\bcrea\b", r"digitaal ?huis", r"literatuur", r"leesclub", r"boekenclub", r"verhalen", r"doe-? ?middag", r"thema ?avond", r"webinar",
         r"presentatie", r"werksessie", r"dorpsvisie", r"omgevingsvisie",
@@ -148,7 +148,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         # voorstellingen en feestjes voor jonge kinderen ('Woezel & Pip', 'Sinterklaasshow (3+)', '(6-10 jr)')
         r"\([1-5]\+\)", r"\(\d-\d{1,2} ?(?:jaar|jr)\)", r"woezel", r"buurman (?:&|en) buurman", r"full minties",
         r"sinterklaas ?(?:show|voorstelling|theater|sprookje|kinderconcert)", r"\bsint ?show", r"pieten", r"kinderkerst",
-        r"meet (?:&|and) greet met sinterklaas", r"voorlees(?:dag|feest|ontbijt)\w*",
+        r"meet (?:&|and) greet met sinterklaas", r"voorlees(?:dag|feest|ontbijt)\w*(?!.*volwassen)",
     ]),
 }
 

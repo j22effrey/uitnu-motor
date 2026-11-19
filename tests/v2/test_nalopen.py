@@ -749,3 +749,4 @@ def test_dagcontrole_19_november_voorleesdagen_zijn_voor_kinderen():
     for title in ("Nationale voorleesdagen: Inkipinki poppentheater", "Voorleesfeestje 'De grootste reis ooit'", "Nationale voorleesontbijt (2+)"):
         assert classify(_event(title))["kind"] == "kinderen", title
     assert classify(_event("Voorleesavond voor volwassenen"))["kind"] == "lezing"
+    assert classify(_event("Voorleesdag volwassenen"))["kind"] == "lezing"
