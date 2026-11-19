@@ -126,7 +126,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"podcast", r"in gesprek\b", r"(?<!tarot )reading", r"luistertafel", r"topstukken klassieke", r"boekbespreking",
         r"stof tot nadenken", r"vertelt over", r"vertelcaf", r"ferhaal", r"ferhale", r"boekewike", r"inspiratiesessie",
         r"vraag de pro\b", r"maakplaats", r"^maak je eigen", r"^leren \w+$",
-        r"symposium", r"voorlees", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
+        r"symposium", r"voorlees(?!dag|feest|ontbijt)", r"\bcollege\b", r"leerhuis", r"gespreksgroep", r"meditatie",
         r"repair ?caf", r"bloemschik", r"verkeersregels", r"creatief caf", r"handwerk", r"informatie ?avond",
         r"\bbrei(?:en|werk|cafe|club|middag|avond|ochtend|les)\b", r"\bhaak", r"\bcrea\b", r"digitaal ?huis", r"literatuur", r"leesclub", r"boekenclub", r"verhalen", r"doe-? ?middag", r"thema ?avond", r"webinar",
         r"presentatie", r"werksessie", r"dorpsvisie", r"omgevingsvisie",
@@ -148,7 +148,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         # voorstellingen en feestjes voor jonge kinderen ('Woezel & Pip', 'Sinterklaasshow (3+)', '(6-10 jr)')
         r"\([1-5]\+\)", r"\(\d-\d{1,2} ?(?:jaar|jr)\)", r"woezel", r"buurman (?:&|en) buurman", r"full minties",
         r"sinterklaas ?(?:show|voorstelling|theater|sprookje|kinderconcert)", r"\bsint ?show", r"pieten", r"kinderkerst",
-        r"meet (?:&|and) greet met sinterklaas",
+        r"meet (?:&|and) greet met sinterklaas", r"voorlees(?:dag|feest|ontbijt)\w*",
     ]),
 }
 
@@ -290,7 +290,7 @@ ADULT_ONLY = re.compile(r"\bnaakt\b|\bnaked\b|\bmen only\b|\bt-?girl|\berot|\bse
 CLUB_SESSION = re.compile(
     r"^(?:(?:ying|yin|hatha|stoel|zwangerschaps|senioren) ?)?yoga|^pilates|^zumba|^fitness|^bootcamp|^spinning"
     r"|^aquarobics|^(?:senioren|ouderen|stoel) ?(?:gym|fit|yoga)|^stoelfit|^gym\b|^badminton|^tafeltennis|^volleybal"
-    r"|^basketbal|^kickboks\w*|^boksen|^judo|^karate|^taekwondo|^picklebal\w*|^pickleball|^koersbal|^jeu de boules"
+    r"|^basketbal|^kickboks\w*|^boksen|^judo|^karate|^taekwondo|^picklebal\w*|^pickleball|^koersbal|^crea[- ]?(?:groep|club|middag|ochtend|avond)\b|^jeu de boules"
     r"|^petanque|^biljart(?:en)?\b|^biljart- en kaartsoos|^sjoelen|^dammen|^schaken|^bridge\b(?! over\b)|^bridgeclub"
     r"|^klaverjas(?:sen|kompetitie|competitie|avond)?\b|^kaarten\b|^kaartclub|^rummikub|^spelletjes ?(?:middag|avond)"
     r"|^spellen ?(?:middag|avond)|^koffie ?(?:ochtend|inloop|uurtje|drinken|middag)|^(?:vrijdag ?)?(?:middag|avond) ?caf[eé]"
@@ -672,7 +672,7 @@ def page_hints(text: str) -> dict:
 
 # Gevonden bij het nalopen van de hele agenda (20 oktober 2026, 3.024 uitjes): menukopjes en knoppen,
 # aanbiedingen, mededelingen, werkgroepen en vrijwilligerswerk, vaste dorps- en clubavonden, computerhulp.
-SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|(?:witte donderdag|stille zaterdag|goede vrijdag|eerste paasdag|tweede paasdag|pasen|hemelvaart|pinksteren|gedachteniszondag|bijbelgesprekskring|moderamenbijeenkomst)(?:\W+\d{1,2} (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?: \d{4})?)?|ontdek alle \w+|nu te zien|leste nijs"
+SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|gft|nieuws(?:berichten)?|dag \d{1,2}|programma \(onder voorbehoud\)|[\w .\x27-]+ \d{1,3}(?:-\d{1,3})? \d{4} ?[a-z]{2} [\w ]+|(?:witte donderdag|stille zaterdag|goede vrijdag|eerste paasdag|tweede paasdag|pasen|hemelvaart|pinksteren|gedachteniszondag|bijbelgesprekskring|moderamenbijeenkomst)(?:\W+\d{1,2} (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?: \d{4})?)?|ontdek alle \w+|nu te zien|leste nijs"
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|(?:\w+ )?(?:dorps?|dorpskracht|activiteiten|evenementen|agenda)\s?kalender (?:\w+/)?(?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?:/\w+)?(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"

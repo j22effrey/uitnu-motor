@@ -731,3 +731,22 @@ def test_dagcontrole_18_november_voorstelling_met_verhalen_blijft_theater():
     event["url"] = "https://www.skkw.nl/voorstelling/rob-kamphues-eindelijk-volwassen/"
     event["pageHints"] = {"soort": "lezing", "woord": "verhalen"}
     assert classify(event)["kind"] == "theater"
+
+
+# Dagcontrole 19 november 2026: kopregels, afvalkalender, een adres als titel, een creagroep, voorleesdagen voor kinderen.
+def test_dagcontrole_19_november_geen_uitje():
+    for title in ("GFT", "Nieuwsberichten", "Dag 1", "Programma (onder voorbehoud)", "Crea groep",
+                  "Brouwerij Martinus Kostersgang 32-34 9711 CX Groningen"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_19_november_echte_uitjes_blijven_staan():
+    for title in ("Dag 1: concert in de kerk", "GFT-workshop composteren", "Nieuwsberichten live: lezing door de krant",
+                  "Crea groep tentoonstelling", "Kerstmarkt 2026", "Brouwerij rondleiding en proeverij"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_19_november_voorleesdagen_zijn_voor_kinderen():
+    for title in ("Nationale voorleesdagen: Inkipinki poppentheater", "Voorleesfeestje 'De grootste reis ooit'", "Nationale voorleesontbijt (2+)"):
+        assert classify(_event(title))["kind"] == "kinderen", title
+    assert classify(_event("Voorleesavond voor volwassenen"))["kind"] == "lezing"
