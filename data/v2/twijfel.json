@@ -63,6 +63,16 @@
   ]
  },
  {
+  "id": "evt_1511789a1d8a55",
+  "title": "Laatste dag inleveren Sintkleurplaat",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://onstwedde.info/agenda/artikel/kleurplatenwedstrijd-rond-sinterklaasintocht-1",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_0037541ae75e1e",
   "title": "Lichtkunstfestival ‘Drachten droomt’",
   "kind": "overig",
@@ -632,6 +642,16 @@
   "kind": "theater",
   "reason": "website jongeharten.podiumnederland.nl",
   "url": "https://jongeharten.podiumnederland.nl/mtTicket/performance/10384564?stlt=jh&lang=nl",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b06939b64b8ce8",
+  "title": "Voor wie steek jij een lichtje aan?",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://ijlst.frl/evenement/voor-wie-steek-jij-een-lichtje-aan",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1974,16 +1994,6 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_405edf8c705c",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=1",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_70d382253805af",
   "title": "🍂 De Lippenhúster Heidebitterpartij komt eraan! 🍂",
   "kind": "overig",
@@ -1994,11 +2004,21 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/1",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=2",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2494,6 +2514,16 @@
   ]
  },
  {
+  "id": "evt_9efbffc58d6d8e",
+  "title": "André Rieu",
+  "kind": "theater",
+  "reason": "website theaterroden.nl",
+  "url": "https://theaterroden.nl/andré-rieu",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_ea52c4868b4729",
   "title": "De Wolden krijgt rol kerstvertelling Scrooge Live",
   "kind": "overig",
@@ -2609,26 +2639,6 @@
   "kind": "kunst",
   "reason": "website ateliersmajeur.nl",
   "url": "https://ateliersmajeur.nl/agenda",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_dfff13da34b113",
-  "title": "Holiday Games kerst - gr. 3 t/m 5",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.uutgaon.nl/agenda/156046/2026-12-22/holiday-games-kerst-gr-3-t-m-5",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_366ca71aa40700",
-  "title": "Holiday Games kerst - gr. 6 t/m 8",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.uutgaon.nl/agenda/156021/2026-12-22/holiday-games-kerst-gr-6-t-m-8",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2864,6 +2874,16 @@
   ]
  },
  {
+  "id": "evt_ae7cd6a54ede62",
+  "title": "Sportmiddag: springen, klimmen en spelen!",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://www.opendeonline.nl/agenda/sportmiddag-springen-klimmen-en-spelen",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "skuurverkoop-ballum-2026-12-29",
   "title": "Skuurverkoop Ballum",
   "kind": "markt",
@@ -3092,16 +3112,6 @@
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf",
    "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
-  ]
- },
- {
-  "id": "evt_3158c6582ebff3",
-  "title": "Beats & Pizza",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.uutgaon.nl/agenda/156005/2027-01-08/beats-pizza",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
@@ -3445,16 +3455,6 @@
   ]
  },
  {
-  "id": "evt_baef774cca8bf1",
-  "title": "Sport- en spelmiddag instuif",
-  "kind": "sport",
-  "reason": "oude categorie 'sport'",
-  "url": "https://www.uutgaon.nl/agenda/156014/2027-01-29/sport-en-spelmiddag-instuif",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_d81886a92846a2",
   "title": "FRIESLAND CUP CHALLENGER",
   "kind": "sport",
@@ -3590,16 +3590,6 @@
   "kind": "kunst",
   "reason": "website podiumzuidhaege.nl",
   "url": "https://podiumzuidhaege.nl/programma/page/2/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_ac4c0a027d9614",
-  "title": "Beats & Pizza",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.uutgaon.nl/agenda/156016/2027-02-05/beats-pizza-2",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4120,6 +4110,16 @@
   "kind": "theater",
   "reason": "website vanberesteyn.nl",
   "url": "https://www.vanberesteyn.nl/programma/jodymoon/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_177daa872b8ac5",
+  "title": "Dirk Scheele en Dikkie Dik",
+  "kind": "theater",
+  "reason": "website theaterroden.nl",
+  "url": "https://theaterroden.nl/dirk-scheele-dikkie-dik",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4969,16 +4969,6 @@
   ]
  },
  {
-  "id": "evt_46cfaeff9dd588",
-  "title": "Tech Event NoordNL",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_33f0c0be5bf683",
   "title": "DFG Cup",
   "kind": "overig",
@@ -5332,6 +5322,16 @@
   ]
  },
  {
+  "id": "evt_fbc773038b0b8e",
+  "title": "Nervana",
+  "kind": "muziek",
+  "reason": "website neushoorn.nl",
+  "url": "https://www.neushoorn.nl/events/nervana",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_28b07c56942874",
   "title": "Baander Games",
   "kind": "overig",
@@ -5349,16 +5349,6 @@
   "url": "https://www.uithuizermeeden.nl/agenda/eemsmondweek-2027/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_2c48814830e37d",
-  "title": "New Blues Festival Assen",
-  "kind": "festival",
-  "reason": "festival: de organisator noemt 'line-up'",
-  "url": "https://www.debontewever.nl/nl/events/new-blues-festival-assen",
-  "waarom": [
-   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
   ]
  },
  {
