@@ -1,8 +1,8 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-20T04:26:37+00:00",
+ "refreshedAt": "2026-11-20T05:44:53+00:00",
  "today": "2026-11-20",
- "total": 5813,
+ "total": 5810,
  "bewaardVanVorigeKeer": {
   "facet-emmen.op-shop.nl": 31,
   "bind.op-shop.nl": 44
@@ -11,7 +11,7 @@
  "nietBewaardDoorRegel": {},
  "inputRecords": 12292,
  "outsideArea": 18,
- "geenUitje": 4384,
+ "geenUitje": 4387,
  "vasteActiviteit": 1177,
  "vertaling": 7,
  "teVerVooruit": 308,
@@ -39,11 +39,11 @@
   "feest": 350,
   "sport": 310,
   "kinderen": 303,
-  "overig": 264,
+  "overig": 263,
   "markt": 263,
-  "kunst": 217,
-  "natuur": 158,
-  "eten": 74,
+  "kunst": 213,
+  "natuur": 161,
+  "eten": 73,
   "festival": 54
  },
  "byCity": {
@@ -73,8 +73,8 @@
   "Dwingeloo": 26,
   "Stiens": 25,
   "Jubbega": 24,
-  "IJlst": 24,
   "Norg": 23,
+  "IJlst": 23,
   "Rottevalle": 23,
   "Diever": 23,
   "Holwert": 22,
@@ -84,8 +84,8 @@
   "Terherne": 21,
   "Schiermonnikoog": 21,
   "Harlingen": 21,
-  "Oosterwolde": 20,
   "Nes": 20,
+  "Oosterwolde": 19,
   "Uithuizermeeden": 19,
   "Minnertsga": 19,
   "Surhuisterveen": 19,
@@ -217,7 +217,6 @@
   "Roodeschool": 4,
   "Ravenswoud": 4,
   "Zuidhorn": 4,
-  "Stedum": 4,
   "Eenrum": 4,
   "Middelstum": 4,
   "Zuidbroek": 4,
@@ -243,6 +242,7 @@
   "Buinerveen": 3,
   "Harkstede": 3,
   "Nieuw-Roden": 3,
+  "Stedum": 3,
   "Sellingen": 3,
   "Harich": 3,
   "Glimmen": 3,
@@ -418,7 +418,7 @@
   "demolenberg.nl": 62,
   "theaterroden.nl": 60,
   "vera-groningen.nl": 58,
-  "uutgaon.nl": 56,
+  "uutgaon.nl": 55,
   "sliekerfilm.nl": 54,
   "simplon.nl": 51,
   "schouwburgogterop.nl": 50,
@@ -505,7 +505,6 @@
   "stinze-stiens.nl": 10,
   "drentsmuseum.nl": 9,
   "buurtcentrumtuinpad.nl": 9,
-  "ijlst.frl": 9,
   "sumar.nl": 9,
   "jongeharten.podiumnederland.nl": 9,
   "tytsjerk.nl": 9,
@@ -524,6 +523,7 @@
   "dorpsbelangentenboer.com": 9,
   "friesmuseum.nl": 8,
   "debuorkerij-terherne.nl": 8,
+  "ijlst.frl": 8,
   "koudum.nl": 8,
   "winsum.frl": 8,
   "warten.nl": 8,
@@ -616,7 +616,6 @@
   "np-lauwersmeer.nl": 4,
   "roodeschool.com": 4,
   "ravenswoud.nl": 4,
-  "stedum.com": 4,
   "decolle.nl": 4,
   "centrumheerenveen.nl": 4,
   "inveenhuizen.nl": 4,
@@ -657,6 +656,7 @@
   "buinerveen.info": 3,
   "dorpsbelangenharkstede.nl": 3,
   "nieuwroden.nu": 3,
+  "stedum.com": 3,
   "harich-ruigahuizen.nl": 3,
   "ontdekwec.nl": 3,
   "glimmen.net": 3,
@@ -888,11 +888,11 @@
   "stichtingnobilis.nl": 1
  },
  "photos": {
-  "organisator": 2933,
-  "wikimedia": 2688,
+  "organisator": 2932,
+  "wikimedia": 2686,
   "zonder": 117
  },
- "twijfel": 542,
+ "twijfel": 537,
  "groot": {
   "aantal": 75,
   "redenen": {
@@ -931,9 +931,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 60,
-  "changed": 56,
-  "removed": 67
+  "new": 0,
+  "changed": 8,
+  "removed": 3
  },
  "gate": {
   "passed": true,
@@ -941,7 +941,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5813 nu, 5761 vorige keer (minimaal 85%)"
+    "detail": "5810 nu, 5813 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -951,7 +951,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "264 van 5813 (5%)"
+    "detail": "263 van 5810 (5%)"
    },
    {
     "name": "velden_compleet",

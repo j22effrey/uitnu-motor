@@ -29990,15 +29990,17 @@
     "seenAt": "2026-11-20"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
   "classification": {
-   "method": "locatie",
-   "reason": "website ontdekwec.nl",
-   "confidence": 0.6
+   "method": "correctie",
+   "reason": "Dagcontrole 20 november 2026: zeehonden terug in zee zetten bij Lauwersoog is natuur, geen kunst (de soort van de website gaf kunst).",
+   "confidence": 1.0
   },
-  "hash": "1b868397de19",
+  "hash": "148b156829b5",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Lauwersoog_haven.JPG/1280px-Lauwersoog_haven.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -50872,56 +50874,6 @@
   }
  },
  {
-  "id": "evt_226e6b3d478481",
-  "slug": "dorpsstee-in-het-hervormd-centrum-stedum-2026-11-27",
-  "title": "DorpsStee in het Hervormd Centrum",
-  "occurrences": [
-   {
-    "date": "2026-11-27",
-    "endDate": null,
-    "startTime": "19:30",
-    "endTime": "23:00"
-   }
-  ],
-  "venue": {
-   "name": "Hervormd Centrum",
-   "city": "Stedum",
-   "lat": 53.3225,
-   "lon": 6.6958
-  },
-  "price": "Zie organisator",
-  "url": "https://stedum.com/event/dorpsstee/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://stedum.com/event/dorpsstee/",
-    "host": "stedum.com",
-    "seenAt": "2026-11-20"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "e66b5115d035",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Stedum%2C_straatpanorama_Delleweg_IMG_9053_2019-04-07_12.48.jpg/1280px-Stedum%2C_straatpanorama_Delleweg_IMG_9053_2019-04-07_12.48.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Stedum",
-   "credit": "Foto: Michielverbeek · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Michielverbeek",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stedum,_straatpanorama_Delleweg_IMG_9053_2019-04-07_12.48.jpg"
-  }
- },
- {
   "id": "evt_746949036e3e02",
   "slug": "fries-project-orkest-gen-z-vs-boomers-franeker-2026-11-27",
   "title": "Fries Project Orkest – GEN Z VS. BOOMERS",
@@ -56602,15 +56554,17 @@
     "seenAt": "2026-11-20"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
   "classification": {
-   "method": "locatie",
-   "reason": "website ontdekwec.nl",
-   "confidence": 0.6
+   "method": "correctie",
+   "reason": "Dagcontrole 20 november 2026: zeehonden terug in zee zetten bij Lauwersoog is natuur, geen kunst (de soort van de website gaf kunst).",
+   "confidence": 1.0
   },
-  "hash": "fa4bea9c40d1",
+  "hash": "d3acb48ed4eb",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/00_1286_Lauwersoog_-_NL.jpg/1280px-00_1286_Lauwersoog_-_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -63571,15 +63525,15 @@
   },
   "hash": "8061ce5b98a9",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Gevel_-_Stedum_-_20205021_-_RCE.jpg/1280px-Gevel_-_Stedum_-_20205021_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Stedum%2C_straatpanorama_Delleweg_IMG_9053_2019-04-07_12.48.jpg/1280px-Stedum%2C_straatpanorama_Delleweg_IMG_9053_2019-04-07_12.48.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Stedum",
-   "credit": "Foto: Unknown author Unknown author · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Unknown author Unknown author",
+   "credit": "Foto: Michielverbeek · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Michielverbeek",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gevel_-_Stedum_-_20205021_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stedum,_straatpanorama_Delleweg_IMG_9053_2019-04-07_12.48.jpg"
   }
  },
  {
@@ -80329,15 +80283,17 @@
     "seenAt": "2026-11-20"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
   "classification": {
-   "method": "locatie",
-   "reason": "website ontdekwec.nl",
-   "confidence": 0.6
+   "method": "correctie",
+   "reason": "Dagcontrole 20 november 2026: zeehonden terug in zee zetten bij Lauwersoog is natuur, geen kunst (de soort van de website gaf kunst).",
+   "confidence": 1.0
   },
-  "hash": "2ee4502c2192",
+  "hash": "3f4ae4fd015a",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/00_1287_Port_of_Lauwersoog.jpg/1280px-00_1287_Port_of_Lauwersoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -91831,15 +91787,15 @@
     "seenAt": "2026-11-20"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
+  "kind": "lezing",
+  "kindLabel": "Lezing en workshop",
   "tags": [],
   "classification": {
-   "method": "locatie",
-   "reason": "website natuurmuseumfryslan.nl",
-   "confidence": 0.6
+   "method": "correctie",
+   "reason": "Dagcontrole 20 november 2026: een middag over microscopen in het natuurmuseum, geen kunst (de soort van de website gaf kunst).",
+   "confidence": 1.0
   },
-  "hash": "4ed7833255eb",
+  "hash": "45a754a6f0d5",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Exterieur_BINNENPLAATS_-_Leeuwarden_-_20274410_-_RCE.jpg/1280px-Exterieur_BINNENPLAATS_-_Leeuwarden_-_20274410_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -94420,53 +94376,6 @@
    "alt": "Foto bij Groningse Nieuwe #153: Parel van de Maiden",
    "credit": "Foto: Forum Groningen",
    "sourceUrl": "https://forum.nl/nl/agenda/film/groningse-nieuwe-153-parel-van-de-maiden?date=12-12-2026"
-  }
- },
- {
-  "id": "evt_e80c5c4de08691",
-  "slug": "het-stamppotberaad-praat-mee-over-je-leefomgeving-ijlst-2026-12-12",
-  "title": "Het 'Stamppotberaad': praat mee over je leefomgeving",
-  "occurrences": [
-   {
-    "date": "2026-12-12",
-    "endDate": null,
-    "startTime": "16:00",
-    "endTime": "19:30"
-   }
-  ],
-  "venue": {
-   "name": "IJlst",
-   "city": "IJlst",
-   "lat": 53.0103,
-   "lon": 5.6211
-  },
-  "price": "Zie organisator",
-  "url": "https://ijlst.frl/evenement/kom-naar-het-stamppotberaad-en-praat-mee-over-je-leefomgeving",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://ijlst.frl/evenement/kom-naar-het-stamppotberaad-en-praat-mee-over-je-leefomgeving",
-    "host": "ijlst.frl",
-    "seenAt": "2026-11-20"
-   }
-  ],
-  "kind": "eten",
-  "kindLabel": "Eten en drinken",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'stamppot'",
-   "confidence": 0.8
-  },
-  "hash": "73a74ea0900f",
-  "image": {
-   "url": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/ijlst/library/variants/iDMkb4kI4IGTdelWagf25QPSUVL6JcNKzCZqAx4E-l.webp",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Het 'Stamppotberaad': praat mee over je leefomgeving",
-   "credit": "Foto: IJlst (stadswebsite)",
-   "sourceUrl": "https://ijlst.frl/evenement/kom-naar-het-stamppotberaad-en-praat-mee-over-je-leefomgeving"
   }
  },
  {
@@ -140867,57 +140776,6 @@
   }
  },
  {
-  "id": "evt_b1a28dc17f33b5",
-  "slug": "informatieavond-theaterlessen-oosterwolde-2027-01-07",
-  "title": "Informatieavond Theaterlessen",
-  "occurrences": [
-   {
-    "date": "2027-01-07",
-    "endDate": null,
-    "startTime": "19:00",
-    "endTime": "20:00"
-   }
-  ],
-  "venue": {
-   "name": "Moskampweg 3",
-   "city": "Oosterwolde",
-   "lat": 52.9903,
-   "lon": 6.2914,
-   "pin": "plaats"
-  },
-  "price": "Zie organisator",
-  "url": "https://www.uutgaon.nl/agenda/156004/2027-01-07/informatieavond-theaterlessen",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.uutgaon.nl/agenda/156004/2027-01-07/informatieavond-theaterlessen",
-    "host": "uutgaon.nl",
-    "seenAt": "2026-11-20"
-   }
-  ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'informatieavond'",
-   "confidence": 0.8
-  },
-  "hash": "f2a7ead10f1d",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Netherlands%2C_Oosterwolde%2C_Brinkstraat_%282%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Brinkstraat_%282%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Oosterwolde",
-   "credit": "Foto: Vincent van Zeijst · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Vincent van Zeijst",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Brinkstraat_(2)_en_Opsterlandse_Compagnonsvaart.jpg"
-  }
- },
- {
   "id": "evt_779ad4a1efaea7",
   "slug": "sterrenkundewandeling-vlagtwedde-2027-01-07",
   "title": "Sterrenkundewandeling",
@@ -142020,7 +141878,7 @@
   },
   "hash": "7624c92b086e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Netherlands%2C_Oosterwolde%2C_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Netherlands%2C_Oosterwolde%2C_Brinkstraat_%282%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Brinkstraat_%282%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oosterwolde",
@@ -142028,7 +141886,7 @@
    "author": "Vincent van Zeijst",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Brinkstraat_(2)_en_Opsterlandse_Compagnonsvaart.jpg"
   }
  },
  {
@@ -163966,7 +163824,7 @@
   },
   "hash": "51e91b49fe1a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Netherlands%2C_Oosterwolde%2C_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Netherlands%2C_Oosterwolde%2C_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oosterwolde",
@@ -163974,7 +163832,7 @@
    "author": "Vincent van Zeijst",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Hoofdbrug_over_de_Opsterlandse_Compagnonsvaart.jpg"
   }
  },
  {
@@ -169740,7 +169598,7 @@
   },
   "hash": "11ecdaf74e4f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Netherlands%2C_Oosterwolde%2C_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oosterwolde",
@@ -169748,7 +169606,7 @@
    "author": "Vincent van Zeijst",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Quadoelenweg_(1)_en_Opsterlandse_Compagnonsvaart.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Molenweg_en_Opsterlandse_Compagnonsvaart.jpg"
   }
  },
  {
@@ -172935,15 +172793,15 @@
   },
   "hash": "db61ce8ab624",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Meertje_%283805218900%29.jpg/1280px-Meertje_%283805218900%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Quadoelenweg_%281%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oosterwolde",
-   "credit": "Foto: Sander van der Wel from Netherlands · CC BY-SA 2.0 · Wikimedia Commons",
-   "author": "Sander van der Wel from Netherlands",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meertje_(3805218900).jpg"
+   "credit": "Foto: Vincent van Zeijst · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Vincent van Zeijst",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Quadoelenweg_(1)_en_Opsterlandse_Compagnonsvaart.jpg"
   }
  },
  {
@@ -249228,15 +249086,15 @@
   },
   "hash": "b9f2c4a418b5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Grote_Woel%22%2C_voorzijde_-_Stedum_-_20205091_-_RCE.jpg/1280px-Grote_Woel%22%2C_voorzijde_-_Stedum_-_20205091_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Gevel_-_Stedum_-_20205021_-_RCE.jpg/1280px-Gevel_-_Stedum_-_20205021_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Stedum",
-   "credit": "Foto: A. J. van der Wal · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "A. J. van der Wal",
+   "credit": "Foto: Unknown author Unknown author · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Unknown author Unknown author",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grote_Woel%22,_voorzijde_-_Stedum_-_20205091_-_RCE.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gevel_-_Stedum_-_20205021_-_RCE.jpg"
   }
  },
  {
@@ -255653,15 +255511,15 @@
   },
   "hash": "b07c1b3efb9f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Netherlands%2C_Oosterwolde%2C_Brinkstraat_%281%29_en_Opsterlandse_Compagnonsvaart.jpg/1280px-Netherlands%2C_Oosterwolde%2C_Brinkstraat_%281%29_en_Opsterlandse_Compagnonsvaart.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Meertje_%283805218900%29.jpg/1280px-Meertje_%283805218900%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oosterwolde",
-   "credit": "Foto: Vincent van Zeijst · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Vincent van Zeijst",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Netherlands,_Oosterwolde,_Brinkstraat_(1)_en_Opsterlandse_Compagnonsvaart.jpg"
+   "credit": "Foto: Sander van der Wel from Netherlands · CC BY-SA 2.0 · Wikimedia Commons",
+   "author": "Sander van der Wel from Netherlands",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meertje_(3805218900).jpg"
   }
  },
  {
