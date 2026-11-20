@@ -137,27 +137,6 @@
   ]
  },
  {
-  "id": "evt_aa165e2c285425",
-  "title": "Gedachtenis vrijdag",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://winsum.frl/evenement/gedachtenis-vrijdag",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_147401243e71c0",
-  "title": "De midfestival IDFA check-in",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://forum.nl/nl/agenda/de-midfestival-idfa-check-in?date=20-11-2026",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
-  ]
- },
- {
   "id": "evt_5fab6a21f66839",
   "title": "Grunneger Oavend",
   "kind": "sport",
@@ -1984,11 +1963,31 @@
   ]
  },
  {
+  "id": "evt_777612572ad13d",
+  "title": "Bladruimen op de Begraafplaats – Help mee!",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://noordlaren.eu/activiteit/bladruimen-op-de-begraafplaats/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_b63df697d45671",
   "title": "Open dag De Romein Group",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.veendam.nl/Onderwerpen/Recreatie_sport_en_evenementen/Activiteit_of_evenement_organiseren/Evenementenkalender",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b0a9e05f4aa023_405edf8c705c",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2004,21 +2003,11 @@
   ]
  },
  {
-  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/1",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=2",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2911,6 +2900,17 @@
   "url": "https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=5350&lang=nl_nl&readid=skip-links-content&url=",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a947165a433b6b",
+  "title": "Spring festival",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
@@ -4558,21 +4558,11 @@
   ]
  },
  {
-  "id": "evt_acc32bfdcdba61",
-  "title": "DNS Brick Event",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_7546169930a87a",
   "title": "DNS Brick Event",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://dnsbricks.nl/",
+  "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -5377,16 +5367,6 @@
   "kind": "kinderen",
   "reason": "oude categorie 'familie'",
   "url": "https://terherne.nl/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_27e657001d7658",
-  "title": "BK-K38",
-  "kind": "kunst",
-  "reason": "website kunstencentrumk38.nl",
-  "url": "https://kunstencentrumk38.nl/agenda-item/bk-k38-6/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
