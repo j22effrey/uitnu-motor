@@ -138,6 +138,16 @@
    "reden": "Dagcontrole 3 november 2026: een dag over microscopen, geen muziek; de soort van het podium (kerkalspodium) gaf muziek."
   },
   {
+   "naam": "^microscopiemiddag\\b",
+   "soort": "lezing",
+   "reden": "Dagcontrole 20 november 2026: een middag over microscopen in het natuurmuseum, geen kunst (de soort van de website gaf kunst)."
+  },
+  {
+   "naam": "^zeehonden vrijlaten\\b",
+   "soort": "natuur",
+   "reden": "Dagcontrole 20 november 2026: zeehonden terug in zee zetten bij Lauwersoog is natuur, geen kunst (de soort van de website gaf kunst)."
+  },
+  {
    "naam": "^wildavond\\b|^local wild\\b|spareribs weekend|(?:bij|at) de eetkamer van giethoorn",
    "soort": "eten",
    "reden": "Dagcontrole 4 november 2026: diners bij de restaurants en het hotel van Giethoorn (wildavond, wild uit de Wieden, spareribs, kerstdiner); 'live muziek' op de pagina is bijzaak."

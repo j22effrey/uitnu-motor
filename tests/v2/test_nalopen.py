@@ -750,3 +750,29 @@ def test_dagcontrole_19_november_voorleesdagen_zijn_voor_kinderen():
         assert classify(_event(title))["kind"] == "kinderen", title
     assert classify(_event("Voorleesavond voor volwassenen"))["kind"] == "lezing"
     assert classify(_event("Voorleesdag volwassenen"))["kind"] == "lezing"
+
+
+# Dagcontrole 20 november 2026: dorpsstee met plaats, informatieavond voor lessen, inspraak, 'armband' is geen band, 'inloop' is geen hardlopen.
+def test_dagcontrole_20_november_geen_uitje():
+    for title in ("DorpsStee in het Hervormd Centrum", "Informatieavond Theaterlessen",
+                  "Het 'Stamppotberaad': praat mee over je leefomgeving"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_20_november_echte_uitjes_blijven_staan():
+    for title in ("Informatieavond theater: voorstelling Kerstverhaal", "Praat mee over je dorp: dorpsfeest en markt",
+                  "DorpsStee kerstconcert"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_20_november_soort_zonder_valse_trefwoorden():
+    event = _event("Armbanden vlechten")
+    event["pageHints"] = {"soort": None}
+    assert classify(event)["kind"] != "muziek"
+    from pipeline.v2.classify import PATTERNS
+    assert not any(p.search("armband") for p in PATTERNS["muziek"])
+    assert any(p.search("bluesband") for p in PATTERNS["muziek"])
+    assert not any(p.search("inloop") for p in PATTERNS["sport"])
+    assert any(p.search("avondloop") or p.search("de loop") for p in PATTERNS["sport"])
+    for title, soort in (("Zeehonden vrijlaten", "natuur"), ("Microscopiemiddag rond vuursteen", "lezing")):
+        assert classify(_event(title), OVERRIDES)["kind"] == soort, title
