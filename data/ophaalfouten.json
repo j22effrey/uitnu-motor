@@ -2,91 +2,116 @@
   "abendlokalpyrami-de-web": {
     "fout": "HTTPError: HTTP Error 410: Gone",
     "sinds": "2026-11-10T05:18+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "amdgbeilen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-10-27T01:29+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "blokzijl-nl-web": {
     "fout": "HTTPError: HTTP Error 406: Not Acceptable",
     "sinds": "2026-10-27T16:01+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "brugeskerk-nl-web": {
     "fout": "HTTPError: HTTP Error 401: Unauthorized",
     "sinds": "2026-11-15T17:52+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "cambuur-nl-thuiswedstrijden": {
-    "fout": "HTTPError: HTTP Error 403: Forbidden",
+    "fout": "PermissionError: robots.txt staat https://cambuur.nl/thuiswedstrijden/ niet toe (robots.txt gaf status 403)",
     "sinds": "2026-11-05T01:34+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "detiid-nl-web": {
     "fout": "PermissionError: robots.txt staat https://www.detiid.nl/agenda niet toe (robots.txt niet bereikbaar: URLError: <urlopen error [Errno 101] Network is unreachable>)",
     "sinds": "2026-10-29T19:08+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "dorpshuisboijl-nl-web": {
     "fout": "HTTPError: HTTP Error 526: <none>",
     "sinds": "2026-11-16T17:22+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
+  },
+  "ferwertonline-nl-web": {
+    "fout": "HTTPError: HTTP Error 404: Not Found",
+    "sinds": "2026-11-21T03:55+00:00",
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "gerarddou-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-11-19T21:26+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "groningerarchieven-nl-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-11-20T13:55+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "harich-ruigahuizen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-06T11:02+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "historischcentrumleeuwarden-nl-web": {
     "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
     "sinds": "2026-11-20T13:55+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
+  },
+  "kloosterterapel-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-21T03:55+00:00",
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "lawei-nl-web": {
     "fout": "HTTPError: HTTP Error 403: Forbidden",
     "sinds": "2026-11-11T10:14+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "lemmerbinnen-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-18T17:25+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
+  },
+  "luthersbachensemble-nl-web": {
+    "fout": "TimeoutError: The read operation timed out",
+    "sinds": "2026-11-21T03:55+00:00",
+    "laatst": "2026-11-21T03:55+00:00"
+  },
+  "pgbeilen-nl-web": {
+    "fout": "geen enkele pagina gelezen (robots.txt of website onbereikbaar)",
+    "sinds": "2026-11-21T03:55+00:00",
+    "laatst": "2026-11-21T03:55+00:00"
+  },
+  "sfv-heede-de-web": {
+    "fout": "TimeoutError: The read operation timed out",
+    "sinds": "2026-11-21T03:55+00:00",
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "skarsterbrege-nl-web": {
     "fout": "URLError: <urlopen error timed out>",
     "sinds": "2026-10-27T01:29+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "sumar-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-18T17:25+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "tsjom-nl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-06T11:02+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "ureterp-frl-web": {
     "fout": "HTTPError: HTTP Error 404: Not Found",
     "sinds": "2026-11-16T17:22+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   },
   "wijkbelangwesteinde-nl-web": {
     "fout": "TimeoutError: The read operation timed out",
     "sinds": "2026-11-18T17:25+00:00",
-    "laatst": "2026-11-20T22:29+00:00"
+    "laatst": "2026-11-21T03:55+00:00"
   }
 }
