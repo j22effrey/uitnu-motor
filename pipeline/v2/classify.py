@@ -598,7 +598,8 @@ def classify(event: dict, overrides: dict | None = None,
         return result("film", "organisator", f"de organisator zet het in de rubriek '{section[1]}'", 0.7)
     # Een film in de rubriek '/film/' blijft een film, ook als de titel naar kinderen of feest klinkt
     # ('Club Kid' bij sliekerfilm.nl/film/, dagcontrole 21 november 2026).
-    if section and section[0] == "film" and found and set(found) <= {"kinderen", "feest"}:
+    if (section and section[0] == "film" and found and set(found) <= {"kinderen", "feest"}
+            and not re.search(r"feest|\bfest\b|disco|party|sinterklaas|kerst|halloween|workshop|knutsel", normalize(title))):
         return result("film", "organisator", f"de organisator zet het in de rubriek '{section[1]}'", 0.7)
     # 2c. Wandelingen en excursies zijn natuur, behalve bij een echte wedstrijd
     if "natuur" in found and race:
@@ -698,7 +699,7 @@ SWEEP_NOT_OUTING = re.compile(
     r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b|\bdankdag(?:viering|dienst)?\b(?!.*(?:concert|orgel|muziek|optreden))|^stemmen op\b|^uitzending op\b"
     # Dagcontrole 4 november 2026: een open-deurdienst en Christus Koning (kerk), verkiezingen en de start van de kaartverkoop
     # (mededelingen), een kerstboom plaatsen (vrijwilligerswerk); een testregel van een website staat bij de kopjes.
-    r"|\bopendeurdienst\b|\bmobiele bibliotheek\b|^help mee\b(?! met)|\bbladruimen\b|[–-] help mee!?$|\bpraat mee over (?:je|jouw|uw|onze|de) (?:leefomgeving|dorp|buurt|wijk|toekomst)|^b ?& ?w\b[\w ]*\bop (?:besite|bezoek)\b|\bzamelt weer in\b|\bzie artikel\b|^vervanging\b.*\w*(?:brug|riolering|verlichting)\b|\bkledingkringloop\b|\beeuwigheidszondag\b|\binloop ?spreek(?:uur|uren)\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
+    r"|\bopendeurdienst\b|\bmobiele bibliotheek\b|^help mee\b(?! met)|\bbladruimen\b|\bpraat mee over (?:je|jouw|uw|onze|de) (?:leefomgeving|dorp|buurt|wijk|toekomst)|^b ?& ?w\b[\w ]*\bop (?:besite|bezoek)\b|\bzamelt weer in\b|\bzie artikel\b|^vervanging\b.*\w*(?:brug|riolering|verlichting)\b|\bkledingkringloop\b|\beeuwigheidszondag\b|\binloop ?spreek(?:uur|uren)\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
     # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.

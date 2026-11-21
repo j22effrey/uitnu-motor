@@ -797,3 +797,13 @@ def test_dagcontrole_21_november_film_blijft_film_en_dreumesuurtje_kinderen():
     event["url"] = "https://dorp.example/agenda/x"
     assert classify(event)["kind"] != "film"
     assert classify(_event("Dreumesuurtje: voorlees- en knutselochtend"), OVERRIDES)["kind"] == "kinderen"
+    # Een live-act of feest op een link met /film/ of /bios/ blijft wat het is.
+    for naam, url in (("Kinderfeest", "https://x.nl/film/kinderfeest"), ("Sinterklaasfeest", "https://x.nl/bios/agenda/sint"),
+                      ("Kinderdisco", "https://x.nl/film/kinderdisco"), ("Halloween feest", "https://x.nl/film/h")):
+        event = _event(naam)
+        event["url"] = url
+        assert classify(event)["kind"] != "film", naam
+    event = _event("Carnaval")
+    event["url"] = "https://denieuwekolk.nl/bios/agenda/carnaval"
+    assert classify(event)["kind"] == "film"
+    assert not not_an_outing(_event("Sponsorloop – Help mee!"))
