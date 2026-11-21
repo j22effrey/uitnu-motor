@@ -1,8 +1,8 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-21T04:06:41+00:00",
+ "refreshedAt": "2026-11-21T05:44:39+00:00",
  "today": "2026-11-21",
- "total": 5683,
+ "total": 5681,
  "bewaardVanVorigeKeer": {
   "facet-emmen.op-shop.nl": 29,
   "bind.op-shop.nl": 44
@@ -11,7 +11,7 @@
  "nietBewaardDoorRegel": {},
  "inputRecords": 12106,
  "outsideArea": 17,
- "geenUitje": 4343,
+ "geenUitje": 4345,
  "vasteActiviteit": 1164,
  "vertaling": 8,
  "teVerVooruit": 307,
@@ -34,13 +34,13 @@
  "byKind": {
   "muziek": 1515,
   "theater": 1256,
-  "film": 567,
-  "lezing": 394,
-  "feest": 341,
-  "sport": 308,
-  "kinderen": 299,
+  "film": 580,
+  "lezing": 391,
+  "feest": 336,
+  "sport": 307,
+  "kinderen": 294,
   "markt": 259,
-  "overig": 256,
+  "overig": 255,
   "kunst": 207,
   "natuur": 162,
   "eten": 72,
@@ -174,7 +174,6 @@
   "Witharen": 6,
   "Klazienaveen": 6,
   "Twijzelerheide": 6,
-  "Noordlaren": 6,
   "Wedde": 6,
   "Eelde": 5,
   "Drouwen": 5,
@@ -197,6 +196,7 @@
   "Westerbork": 5,
   "Schoonebeek": 5,
   "Fochteloo": 5,
+  "Noordlaren": 5,
   "Zwartsluis": 5,
   "Oudega": 5,
   "Grou": 5,
@@ -313,7 +313,6 @@
   "Froombosch": 1,
   "Garmerwolde": 1,
   "Damwâld": 1,
-  "Achlum": 1,
   "Noordbergum": 1,
   "Waskemeer": 1,
   "Woltersum": 1,
@@ -575,7 +574,6 @@
   "bourtange.nl": 6,
   "slavernijverledengroningen.nl": 6,
   "twijzelerheide.net": 6,
-  "noordlaren.eu": 6,
   "dinoparklandgoedtenaxx.nl": 6,
   "groningermuseum.nl": 5,
   "museumbelvedere.nl": 5,
@@ -597,6 +595,7 @@
   "grou.nl": 5,
   "sc-heerenveen.nl": 5,
   "schaatsen.nl": 5,
+  "noordlaren.eu": 5,
   "rolde.nl": 5,
   "2gemeenten.nl": 5,
   "doopsgezindengroningen.nl": 5,
@@ -759,7 +758,6 @@
   "froombosch.com": 1,
   "desukerei.nl": 1,
   "grootegast.nl": 1,
-  "achlum.info": 1,
   "noardburgum.nl": 1,
   "waskemeer.com": 1,
   "woltersum.net": 1,
@@ -888,10 +886,10 @@
  },
  "photos": {
   "organisator": 2873,
-  "wikimedia": 2623,
+  "wikimedia": 2621,
   "zonder": 114
  },
- "twijfel": 520,
+ "twijfel": 519,
  "groot": {
   "aantal": 71,
   "redenen": {
@@ -930,9 +928,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 29,
-  "changed": 59,
-  "removed": 137
+  "new": 0,
+  "changed": 20,
+  "removed": 2
  },
  "gate": {
   "passed": true,
@@ -940,7 +938,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5683 nu, 5671 vorige keer (minimaal 85%)"
+    "detail": "5681 nu, 5683 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -950,7 +948,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "256 van 5683 (5%)"
+    "detail": "255 van 5681 (4%)"
    },
    {
     "name": "velden_compleet",

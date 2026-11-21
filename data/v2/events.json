@@ -2153,15 +2153,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'kid'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'film'",
+   "confidence": 0.7
   },
-  "hash": "2d2bf96b3547",
+  "hash": "f26765ce6c82",
   "image": {
    "url": "https://sliekerfilm.nl/app/uploads/2026/10/Club-Kid_ps_1_jpg_sd-low.jpg",
    "type": "organisator",
@@ -8140,56 +8140,6 @@
   }
  },
  {
-  "id": "evt_16571a8910672f",
-  "slug": "thuiswedstrijden-jo10-jo12-en-jo17-achlum-2026-11-21",
-  "title": "Thuiswedstrijden Jo10, Jo12 en Jo17",
-  "occurrences": [
-   {
-    "date": "2026-11-21",
-    "endDate": null,
-    "startTime": "09:00",
-    "endTime": "13:30"
-   }
-  ],
-  "venue": {
-   "name": "Achlum",
-   "city": "Achlum",
-   "lat": 53.1481,
-   "lon": 5.485
-  },
-  "price": "Zie organisator",
-  "url": "https://achlum.info/evenement/thuiswedstrijden-jo10-jo12-en-jo17/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://achlum.info/evenement/thuiswedstrijden-jo10-jo12-en-jo17/",
-    "host": "achlum.info",
-    "seenAt": "2026-11-21"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'wedstrijd'",
-   "confidence": 0.8
-  },
-  "hash": "f45d651ea35c",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Achlum_-_Achlumer_Molen.jpg/1280px-Achlum_-_Achlumer_Molen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Achlum",
-   "credit": "Foto: Quistnix . · CC BY-SA 2.5 · Wikimedia Commons",
-   "author": "Quistnix .",
-   "license": "CC BY-SA 2.5",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Achlum_-_Achlumer_Molen.jpg"
-  }
- },
- {
   "id": "evt_336ee677d3e634",
   "slug": "voedselbank-open-dag-noordbergum-2026-11-21",
   "title": "Voedselbank open dag",
@@ -13528,15 +13478,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'kid'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'film'",
+   "confidence": 0.7
   },
-  "hash": "ae8f333df55c",
+  "hash": "3b7e0548d586",
   "image": {
    "url": "https://static.forum.nl/cache/28123.28123/28123.jpg",
    "type": "organisator",
@@ -16587,15 +16537,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'carnaval'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'bios'",
+   "confidence": 0.7
   },
-  "hash": "d5a6122a0587",
+  "hash": "6b32071b993b",
   "image": {
    "url": "https://media.denieuwekolk.nl/4e86b855-79f2-2d0d-0889-94a0c2b4981d/carnaval-ps-1-jpg-sd-high?crop=2105%2C1263%2C0%2C868&scale=1920&optimizer=image",
    "type": "organisator",
@@ -17355,15 +17305,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'kid'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'film'",
+   "confidence": 0.7
   },
-  "hash": "8e297b3a9044",
+  "hash": "679c8a7dfac3",
   "image": {
    "url": "https://sliekerfilm.nl/app/uploads/2026/10/Club-Kid_ps_1_jpg_sd-low.jpg",
    "type": "organisator",
@@ -23652,15 +23602,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'kid'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'film'",
+   "confidence": 0.7
   },
-  "hash": "24e394f131eb",
+  "hash": "a52f176e7f55",
   "image": {
    "url": "https://static.forum.nl/cache/28123.28123/28123.jpg",
    "type": "organisator",
@@ -24797,15 +24747,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'carnaval'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'bios'",
+   "confidence": 0.7
   },
-  "hash": "ab2c6a27f0fb",
+  "hash": "1717a0a026af",
   "image": {
    "url": "https://media.denieuwekolk.nl/4e86b855-79f2-2d0d-0889-94a0c2b4981d/carnaval-ps-1-jpg-sd-high?crop=2105%2C1263%2C0%2C868&scale=1920&optimizer=image",
    "type": "organisator",
@@ -26807,15 +26757,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'kid'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'film'",
+   "confidence": 0.7
   },
-  "hash": "72658f2752f1",
+  "hash": "80fee222c81f",
   "image": {
    "url": "https://static.forum.nl/cache/28123.28123/28123.jpg",
    "type": "organisator",
@@ -28302,15 +28252,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'carnaval'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'bios'",
+   "confidence": 0.7
   },
-  "hash": "d447ac064c47",
+  "hash": "32961b4b37b1",
   "image": {
    "url": "https://media.denieuwekolk.nl/4e86b855-79f2-2d0d-0889-94a0c2b4981d/carnaval-ps-1-jpg-sd-high?crop=2105%2C1263%2C0%2C868&scale=1920&optimizer=image",
    "type": "organisator",
@@ -28443,15 +28393,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'kid'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'film'",
+   "confidence": 0.7
   },
-  "hash": "09a5df9131f1",
+  "hash": "576b15cc45a0",
   "image": {
    "url": "https://sliekerfilm.nl/app/uploads/2026/10/Club-Kid_ps_1_jpg_sd-low.jpg",
    "type": "organisator",
@@ -31742,15 +31692,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'kid'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'film'",
+   "confidence": 0.7
   },
-  "hash": "380911852b20",
+  "hash": "2f3584c3b423",
   "image": {
    "url": "https://static.forum.nl/cache/28123.28123/28123.jpg",
    "type": "organisator",
@@ -31930,15 +31880,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'carnaval'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'bios'",
+   "confidence": 0.7
   },
-  "hash": "c3294f88f8b7",
+  "hash": "c8d7b6ade42d",
   "image": {
    "url": "https://media.denieuwekolk.nl/4e86b855-79f2-2d0d-0889-94a0c2b4981d/carnaval-ps-1-jpg-sd-high?crop=2105%2C1263%2C0%2C868&scale=1920&optimizer=image",
    "type": "organisator",
@@ -34906,15 +34856,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "kinderen",
-  "kindLabel": "Kinderen en familie",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'kid'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'film'",
+   "confidence": 0.7
   },
-  "hash": "3872880458c0",
+  "hash": "0e75592f3481",
   "image": {
    "url": "https://static.forum.nl/cache/28123.28123/28123.jpg",
    "type": "organisator",
@@ -35195,15 +35145,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "feest",
-  "kindLabel": "Feest en kermis",
+  "kind": "film",
+  "kindLabel": "Film",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'carnaval'",
-   "confidence": 0.8
+   "method": "organisator",
+   "reason": "de organisator zet het in de rubriek 'bios'",
+   "confidence": 0.7
   },
-  "hash": "724ad95e17d4",
+  "hash": "b557b5332484",
   "image": {
    "url": "https://media.denieuwekolk.nl/4e86b855-79f2-2d0d-0889-94a0c2b4981d/carnaval-ps-1-jpg-sd-high?crop=2105%2C1263%2C0%2C868&scale=1920&optimizer=image",
    "type": "organisator",
@@ -84681,56 +84631,6 @@
   }
  },
  {
-  "id": "evt_777612572ad13d",
-  "slug": "bladruimen-op-de-begraafplaats-help-mee-noordlaren-2026-12-12",
-  "title": "Bladruimen op de Begraafplaats – Help mee!",
-  "occurrences": [
-   {
-    "date": "2026-12-12",
-    "endDate": null,
-    "startTime": "09:00",
-    "endTime": "13:00"
-   }
-  ],
-  "venue": {
-   "name": "Begraafplaats Noordlaren",
-   "city": "Noordlaren",
-   "lat": 53.1208,
-   "lon": 6.6669
-  },
-  "price": "Zie organisator",
-  "url": "https://noordlaren.eu/activiteit/bladruimen-op-de-begraafplaats/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://noordlaren.eu/activiteit/bladruimen-op-de-begraafplaats/",
-    "host": "noordlaren.eu",
-    "seenAt": "2026-11-21"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "696b609008d7",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/6432.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg/1280px-6432.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Noordlaren",
-   "credit": "Foto: Andre Hosper · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Andre Hosper",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:6432.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg"
-  }
- },
- {
   "id": "evt_d75d5e65d41e79",
   "slug": "kerstversiering-knutselen-schraard-2026-12-12",
   "title": "Kerstversiering knutselen",
@@ -96364,15 +96264,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'voorlees' op de pagina van de organisator",
-   "confidence": 0.65
+   "method": "correctie",
+   "reason": "Dagcontrole 21 november 2026: het dreumesuurtje van de bibliotheek is voor kinderen van 0 tot 3 jaar, geen lezing (het woord voorlezen gaf lezing).",
+   "confidence": 1.0
   },
-  "hash": "b47caba28d38",
+  "hash": "2198e85eaf35",
   "image": {
    "url": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8410",
    "type": "organisator",
@@ -101728,15 +101628,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'voorlees'",
-   "confidence": 0.8
+   "method": "correctie",
+   "reason": "Dagcontrole 21 november 2026: het dreumesuurtje van de bibliotheek is voor kinderen van 0 tot 3 jaar, geen lezing (het woord voorlezen gaf lezing).",
+   "confidence": 1.0
   },
-  "hash": "74cc1edc59e7",
+  "hash": "5e5012eb57f4",
   "image": {
    "url": "https://mijnbuurtje.imgix.net/2608/25661bc0-a068-11f1-b999-077f2aa5eec3.jpg?h=3335&w=5000&s=71b470442f554e1431ac9c5439936591",
    "type": "organisator",
@@ -117428,15 +117328,15 @@
     "seenAt": "2026-11-21"
    }
   ],
-  "kind": "lezing",
-  "kindLabel": "Lezing en workshop",
+  "kind": "kinderen",
+  "kindLabel": "Kinderen en familie",
   "tags": [],
   "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'voorlees' op de pagina van de organisator",
-   "confidence": 0.65
+   "method": "correctie",
+   "reason": "Dagcontrole 21 november 2026: het dreumesuurtje van de bibliotheek is voor kinderen van 0 tot 3 jaar, geen lezing (het woord voorlezen gaf lezing).",
+   "confidence": 1.0
   },
-  "hash": "c57673642abc",
+  "hash": "e216531a8fd1",
   "image": {
    "url": "https://ticketing.groningsebibliotheken.nl/index.php?cmd=file&action=open&file=8412",
    "type": "organisator",
@@ -225702,7 +225602,7 @@
   },
   "hash": "1061af91e669",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/6433.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg/1280px-6433.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/6432.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg/1280px-6432.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Noordlaren",
@@ -225710,7 +225610,7 @@
    "author": "Andre Hosper",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:6433.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:6432.Zuidlaardermeer.Midlaren.Haven.Noordlaren.jpg"
   }
  },
  {
