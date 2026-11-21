@@ -776,3 +776,24 @@ def test_dagcontrole_20_november_soort_zonder_valse_trefwoorden():
     assert any(p.search("avondloop") or p.search("de loop") for p in PATTERNS["sport"])
     for title, soort in (("Zeehonden vrijlaten", "natuur"), ("Microscopiemiddag rond vuursteen", "lezing")):
         assert classify(_event(title), OVERRIDES)["kind"] == soort, title
+
+
+# Dagcontrole 21 november 2026: jeugdwedstrijden als titel, een oproep om te helpen, een film met 'kid' in de naam, het dreumesuurtje.
+def test_dagcontrole_21_november_geen_uitje():
+    for title in ("Thuiswedstrijden Jo10, Jo12 en Jo17", "Bladruimen op de Begraafplaats – Help mee!"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_21_november_echte_uitjes_blijven_staan():
+    for title in ("Thuiswedstrijden Jumbo Flyers seizoen 26-27", "Bladruimen en gluhwein: herfstmarkt", "Kerstconcert – Help mee!"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_21_november_film_blijft_film_en_dreumesuurtje_kinderen():
+    event = _event("Club Kid")
+    event["url"] = "https://sliekerfilm.nl/film/club-kid/"
+    assert classify(event)["kind"] == "film"
+    event = _event("Kinderfeest met springkussen")
+    event["url"] = "https://dorp.example/agenda/x"
+    assert classify(event)["kind"] != "film"
+    assert classify(_event("Dreumesuurtje: voorlees- en knutselochtend"), OVERRIDES)["kind"] == "kinderen"
