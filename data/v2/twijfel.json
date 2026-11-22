@@ -226,31 +226,11 @@
   ]
  },
  {
-  "id": "evt_a71e12384dcb60",
-  "title": "De Zoete Inval",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://schraard.com/evenement/de-zoete-inval-3",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_d83b7bb39aba69",
   "title": "Laid veur elk en ain",
   "kind": "muziek",
   "reason": "oude categorie 'muziek'",
   "url": "https://www.vries.nu/agendapunt/laid-veur-elk-en-ain/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_2cfac22b0cc57f",
-  "title": "Morgen in It Podium: Friersk",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://ijlst.frl/evenement/morgen-in-it-podium-friersk",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1158,6 +1138,16 @@
   ]
  },
  {
+  "id": "evt_30c6c90dc6ca1c",
+  "title": "Schrijf een brief. Verander een leven",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.uutgaon.nl/agenda/156202/2026-12-10/schrijf-een-brief-verander-een-leven-3",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_cd9312456189fc",
   "title": "Waterstofnetwerk Drenthe Overijssel",
   "kind": "overig",
@@ -1598,6 +1588,26 @@
   ]
  },
  {
+  "id": "evt_1fed38244ca5c3",
+  "title": "Organisator",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://hooghalen.nu/events/kerstconcert-gemengd-koor-advendo-2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_f9f79b5eccf1f6",
+  "title": "Libertas Danza",
+  "kind": "muziek",
+  "reason": "website brouwerijmartinus.nl",
+  "url": "https://www.brouwerijmartinus.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_a1934997cd1db5",
   "title": "Selected by Noorderlicht: Emma Straňáková",
   "kind": "kunst",
@@ -1788,8 +1798,8 @@
   ]
  },
  {
-  "id": "evt_a78c541eb80d17",
-  "title": "Pluk dan + Geestdrift",
+  "id": "evt_86f005e9ba002f",
+  "title": "Pluk dan + Het Voorwoord",
   "kind": "muziek",
   "reason": "website podium34.nl",
   "url": "https://podium34.nl/events/pluk-dan-geestdrift/",
@@ -1983,6 +1993,16 @@
   "kind": "kunst",
   "reason": "website ateliersmajeur.nl",
   "url": "https://ateliersmajeur.nl/agenda",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_bd8842070ec856",
+  "title": "Libertas Danza",
+  "kind": "muziek",
+  "reason": "website brouwerijmartinus.nl",
+  "url": "https://www.brouwerijmartinus.nl/agenda/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2278,6 +2298,16 @@
   ]
  },
  {
+  "id": "evt_813fdf55273fac",
+  "title": "Springfestijn 25",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "doedag-angkor-drents-museum-2026-12-30",
   "title": "Doedag Angkor (familie)",
   "kind": "kinderen",
@@ -2544,6 +2574,16 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/bikkelavond-4-2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_e1d3ae22fa7cb0",
+  "title": "Master Pullz Assen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://masterpullz.com/beurs/mp-assen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3942,11 +3982,21 @@
   ]
  },
  {
-  "id": "evt_7546169930a87a",
+  "id": "evt_acc32bfdcdba61",
   "title": "DNS Brick Event",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_7546169930a87a",
+  "title": "DNS Brick Event",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://dnsbricks.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4303,21 +4353,21 @@
   ]
  },
  {
-  "id": "evt_a2f7bbf8fc0205",
-  "title": "Dflat Carpet",
+  "id": "evt_4d3d4688086788",
+  "title": "Assen Card Convention",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.societeitdeharmonie.nl/agenda/dflat-carpet/",
+  "url": "https://www.assencardconvention.nl/standhouders",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_7b2307a1538c04",
-  "title": "2e editie Assen Card Convention 29",
+  "id": "evt_a2f7bbf8fc0205",
+  "title": "Dflat Carpet",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.assencardconvention.nl/standhouders",
+  "url": "https://www.societeitdeharmonie.nl/agenda/dflat-carpet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4470,6 +4520,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://simmerdeis.nl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_6750d3353a5a55",
+  "title": "de liefde",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.pridegroningen.nl/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
