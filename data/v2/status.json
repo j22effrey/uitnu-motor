@@ -1,8 +1,8 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-22T03:09:41+00:00",
+ "refreshedAt": "2026-11-22T05:43:24+00:00",
  "today": "2026-11-22",
- "total": 5409,
+ "total": 5402,
  "bewaardVanVorigeKeer": {
   "bind.op-shop.nl": 44,
   "facet-emmen.op-shop.nl": 28
@@ -11,7 +11,7 @@
  "nietBewaardDoorRegel": {},
  "inputRecords": 11819,
  "outsideArea": 16,
- "geenUitje": 4335,
+ "geenUitje": 4342,
  "vasteActiviteit": 1160,
  "vertaling": 8,
  "teVerVooruit": 309,
@@ -39,9 +39,9 @@
   "sport": 300,
   "kinderen": 285,
   "markt": 253,
-  "overig": 252,
   "feest": 250,
-  "kunst": 203,
+  "overig": 247,
+  "kunst": 201,
   "natuur": 154,
   "eten": 73,
   "festival": 27
@@ -70,8 +70,8 @@
   "Workum": 33,
   "Emden": 30,
   "Dwingeloo": 29,
-  "Scharnegoutum": 29,
   "Opende": 26,
+  "Scharnegoutum": 25,
   "Norg": 23,
   "Harlingen": 22,
   "Stiens": 22,
@@ -156,7 +156,6 @@
   "Oldeberkoop": 6,
   "Midwolda": 6,
   "Koudum": 6,
-  "Wijnjewoude": 6,
   "Boijl": 6,
   "Paesens-Moddergat": 6,
   "Steendam": 6,
@@ -204,6 +203,7 @@
   "Wergea": 4,
   "Zuidbroek": 4,
   "Den Horn": 4,
+  "Wijnjewoude": 4,
   "Gieterveen": 4,
   "Easterein": 4,
   "Roderwolde": 4,
@@ -236,7 +236,6 @@
   "Rijs": 3,
   "Oosternieland": 3,
   "Exmorra": 3,
-  "Marssum": 3,
   "Smilde": 3,
   "Zuidhorn": 3,
   "Feerwerd": 3,
@@ -281,6 +280,7 @@
   "Tjalleberd": 2,
   "Hallum": 2,
   "Onderdendam": 2,
+  "Marssum": 2,
   "Sappemeer": 2,
   "Ferwerd": 2,
   "Leens": 2,
@@ -421,7 +421,6 @@
   "dbieb.op-shop.nl": 34,
   "filmkerkwolvega.nl": 31,
   "overentinghe.nl": 30,
-  "scharnegoutum.nl": 29,
   "facet-emmen.op-shop.nl": 28,
   "elfstedenhal.frl": 28,
   "explorethenorth.nl": 27,
@@ -431,6 +430,7 @@
   "itfryskegea.nl": 26,
   "kerkalspodium.nl": 25,
   "workum.nl": 25,
+  "scharnegoutum.nl": 25,
   "jubbega-hoornsterzwaag.nl": 21,
   "rottevalle.com": 21,
   "bmf.op-shop.nl": 20,
@@ -537,7 +537,6 @@
   "synagogegroningen.nl": 6,
   "schraard.com": 6,
   "roodehaan.com": 6,
-  "wijnjewoude.net": 6,
   "winsum.frl": 6,
   "detiid.nl": 6,
   "boijl.com": 6,
@@ -596,6 +595,7 @@
   "bvsport.nl": 4,
   "debrinkpub.nl": 4,
   "noardeast-fryslan.nl": 4,
+  "wijnjewoude.net": 4,
   "maskelynbuitenpost.nl": 4,
   "rigpa.nl": 4,
   "filmhuisnoordwolde.nl": 4,
@@ -639,7 +639,6 @@
   "thomastsjerke.nl": 3,
   "exmorra.info": 3,
   "makkum.nl": 3,
-  "marssum.info": 3,
   "aolegemientehoes.nl": 3,
   "podium34.nl": 3,
   "gramsbergen.nl": 3,
@@ -696,6 +695,7 @@
   "haulerwijk.nl": 2,
   "kerkfeerwerd.nl": 2,
   "boerderijkamps.nl": 2,
+  "marssum.info": 2,
   "cultureleraadnorg.nl": 2,
   "luxor.nl": 2,
   "kunstruimtedesmederij.nl": 2,
@@ -860,10 +860,10 @@
  },
  "photos": {
   "organisator": 2707,
-  "wikimedia": 2529,
+  "wikimedia": 2522,
   "zonder": 101
  },
- "twijfel": 482,
+ "twijfel": 477,
  "groot": {
   "aantal": 63,
   "redenen": {
@@ -902,9 +902,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 28,
-  "changed": 73,
-  "removed": 209
+  "new": 0,
+  "changed": 4,
+  "removed": 7
  },
  "gate": {
   "passed": true,
@@ -912,7 +912,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5409 nu, 5391 vorige keer (minimaal 85%)"
+    "detail": "5402 nu, 5409 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -922,7 +922,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "252 van 5409 (5%)"
+    "detail": "247 van 5402 (5%)"
    },
    {
     "name": "velden_compleet",

@@ -22802,56 +22802,6 @@
   }
  },
  {
-  "id": "evt_5df3c9ff6b6fbb",
-  "slug": "open-kerk-wijnjewoude-2026-11-26",
-  "title": "Open kerk",
-  "occurrences": [
-   {
-    "date": "2026-11-26",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Wijnjewoude",
-   "city": "Wijnjewoude",
-   "lat": 53.0561,
-   "lon": 6.2061
-  },
-  "price": "Zie organisator",
-  "url": "https://wijnjewoude.net/agenda/open-kerk-8/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://wijnjewoude.net/agenda/open-kerk-8/",
-    "host": "wijnjewoude.net",
-    "seenAt": "2026-11-22"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'open kerk'",
-   "confidence": 0.8
-  },
-  "hash": "62dbbf361e62",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Kerk_Wijnjewoude..JPG/1280px-Kerk_Wijnjewoude..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Wijnjewoude",
-   "credit": "Foto: Baykedevries · CC BY-SA 3.0 nl · Wikimedia Commons",
-   "author": "Baykedevries",
-   "license": "CC BY-SA 3.0 nl",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerk_Wijnjewoude..JPG"
-  }
- },
- {
   "id": "evt_f2e46f19839ba7",
   "slug": "pop-up-boekenclub-het-diner-bolsward-2026-11-26",
   "title": "Pop-up Boekenclub: Het diner",
@@ -43727,56 +43677,6 @@
   }
  },
  {
-  "id": "evt_9686ff1c27d597",
-  "slug": "waarme-huskeamer-marssum-2026-12-01",
-  "title": "Waarme Húskeamer",
-  "occurrences": [
-   {
-    "date": "2026-12-01",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Marssum",
-   "city": "Marssum",
-   "lat": 53.2119,
-   "lon": 5.728
-  },
-  "price": "Zie organisator",
-  "url": "https://marssum.info/agenda/waarme-huskeamer-16/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://marssum.info/agenda/waarme-huskeamer-16/",
-    "host": "marssum.info",
-    "seenAt": "2026-11-22"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "6fda0ef4795d",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Marssum_in_Friesland..jpg/1280px-Marssum_in_Friesland..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Marssum",
-   "credit": "Foto: Jan dijkstra · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Jan dijkstra",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marssum_in_Friesland..jpg"
-  }
- },
- {
   "id": "evt_0372e9936aa271",
   "slug": "winterevenement-boxingdays-joure-2026-12-01",
   "title": "Winterevenement / Boxingdays",
@@ -47961,56 +47861,6 @@
    "alt": "Foto bij Klozum en Demasqué 2026",
    "credit": "Foto: Dorpsbelang Schiermonnikoog",
    "sourceUrl": "https://www.dorpsbelangschiermonnikoog.nl/events/klozum-2026/"
-  }
- },
- {
-  "id": "evt_6b51b23995dbb4",
-  "slug": "open-kerk-wijnjewoude-2026-12-03",
-  "title": "Open kerk",
-  "occurrences": [
-   {
-    "date": "2026-12-03",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Wijnjewoude",
-   "city": "Wijnjewoude",
-   "lat": 53.0561,
-   "lon": 6.2061
-  },
-  "price": "Zie organisator",
-  "url": "https://wijnjewoude.net/agenda/open-kerk-9/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://wijnjewoude.net/agenda/open-kerk-9/",
-    "host": "wijnjewoude.net",
-    "seenAt": "2026-11-22"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'open kerk'",
-   "confidence": 0.8
-  },
-  "hash": "7d37c52537ad",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/2023_Alddjip_tusken_Oerterp_en_Wynjew%C3%A2ld.jpg/1280px-2023_Alddjip_tusken_Oerterp_en_Wynjew%C3%A2ld.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Wijnjewoude",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Alddjip_tusken_Oerterp_en_Wynjew%C3%A2ld.jpg"
   }
  },
  {
@@ -52873,15 +52723,15 @@
   },
   "hash": "a3ff966b17aa",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Bos_in_Bakkeveen_-_panoramio_%281%29.jpg/1280px-Bos_in_Bakkeveen_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Kerk_Wijnjewoude..JPG/1280px-Kerk_Wijnjewoude..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Wijnjewoude",
-   "credit": "Foto: Steven Hogebrink · CC BY-SA 3.0 · Wikimedia Commons",
-   "author": "Steven Hogebrink",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bos_in_Bakkeveen_-_panoramio_(1).jpg"
+   "credit": "Foto: Baykedevries · CC BY-SA 3.0 nl · Wikimedia Commons",
+   "author": "Baykedevries",
+   "license": "CC BY-SA 3.0 nl",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerk_Wijnjewoude..JPG"
   }
  },
  {
@@ -72613,15 +72463,15 @@
   },
   "hash": "f094b9573e46",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/21A_2906.jpg/1280px-21A_2906.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Marssum_in_Friesland..jpg/1280px-Marssum_in_Friesland..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Marssum",
-   "credit": "Foto: Arnold Bartels · CC0 · Wikimedia Commons",
-   "author": "Arnold Bartels",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:21A_2906.jpg"
+   "credit": "Foto: Jan dijkstra · CC BY-SA 3.0 · Wikimedia Commons",
+   "author": "Jan dijkstra",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marssum_in_Friesland..jpg"
   }
  },
  {
@@ -117759,56 +117609,6 @@
   }
  },
  {
-  "id": "evt_619c758505293f",
-  "slug": "inloopcafe-scharnegoutum-2027-01-02",
-  "title": "Inloopcafé",
-  "occurrences": [
-   {
-    "date": "2027-01-02",
-    "endDate": null,
-    "startTime": "16:00",
-    "endTime": "23:30"
-   }
-  ],
-  "venue": {
-   "name": "Scharnegoutum",
-   "city": "Scharnegoutum",
-   "lat": 53.0603,
-   "lon": 5.6783
-  },
-  "price": "Zie organisator",
-  "url": "https://www.scharnegoutum.nl/agenda/inloopcafe-4/2027-01-02/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.scharnegoutum.nl/agenda/inloopcafe-4/2027-01-02/",
-    "host": "scharnegoutum.nl",
-    "seenAt": "2026-11-22"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "f56c040d0427",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Scharnegoutum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
-  }
- },
- {
   "id": "evt_3da7693f91a0ce",
   "slug": "sneeuwwitje-4-de-romantische-familiemusical-emmen-2027-01-02",
   "title": "Sneeuwwitje | 4+ – De Romantische Familiemusical",
@@ -119982,15 +119782,15 @@
   },
   "hash": "4d8e7fca74b8",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg/1280px-2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
+   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Skearnegoutum,_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
   }
  },
  {
@@ -131499,15 +131299,15 @@
   },
   "hash": "3005fb757d37",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/20190529_Martenskerk1_Skearnegoutum.jpg/1280px-20190529_Martenskerk1_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg/1280px-2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Martenskerk1_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Skearnegoutum,_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg"
   }
  },
  {
@@ -141394,7 +141194,7 @@
   },
   "hash": "f6051b8a533a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1120190529_Skearnegoutum2.jpg/1280px-1120190529_Skearnegoutum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/20190529_Martenskerk1_Skearnegoutum.jpg/1280px-20190529_Martenskerk1_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -141402,7 +141202,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1120190529_Skearnegoutum2.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Martenskerk1_Skearnegoutum.jpg"
   }
  },
  {
@@ -155072,7 +154872,7 @@
   },
   "hash": "239f1100b32c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1120190529_Skearnegoutum2.jpg/1280px-1120190529_Skearnegoutum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -155080,57 +154880,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
-  }
- },
- {
-  "id": "evt_50ae687423dd65",
-  "slug": "inloopcafe-scharnegoutum-2027-02-06",
-  "title": "Inloopcafé",
-  "occurrences": [
-   {
-    "date": "2027-02-06",
-    "endDate": null,
-    "startTime": "16:00",
-    "endTime": "23:30"
-   }
-  ],
-  "venue": {
-   "name": "Scharnegoutum",
-   "city": "Scharnegoutum",
-   "lat": 53.0603,
-   "lon": 5.6783
-  },
-  "price": "Zie organisator",
-  "url": "https://www.scharnegoutum.nl/agenda/inloopcafe-4/2027-02-06/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.scharnegoutum.nl/agenda/inloopcafe-4/2027-02-06/",
-    "host": "scharnegoutum.nl",
-    "seenAt": "2026-11-22"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "7586f38ea28d",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20190529_De_Swette_bij_Skearnegoutum.jpg/1280px-20190529_De_Swette_bij_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Scharnegoutum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_De_Swette_bij_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1120190529_Skearnegoutum2.jpg"
   }
  },
  {
@@ -173665,7 +173415,7 @@
   },
   "hash": "b577c6050d5b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/20190529_Martenskerk1_Skearnegoutum.jpg/1280px-20190529_Martenskerk1_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -173673,7 +173423,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Martenskerk1_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
   }
  },
  {
@@ -173813,15 +173563,15 @@
   },
   "hash": "7b0c28e8486c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg/1280px-2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20190529_De_Swette_bij_Skearnegoutum.jpg/1280px-20190529_De_Swette_bij_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
+   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Skearnegoutum,_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_De_Swette_bij_Skearnegoutum.jpg"
   }
  },
  {
@@ -177962,15 +177712,15 @@
   },
   "hash": "087e4e86f81b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1120190529_Skearnegoutum2.jpg/1280px-1120190529_Skearnegoutum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg/1280px-2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1120190529_Skearnegoutum2.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Skearnegoutum,_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg"
   }
  },
  {
@@ -182455,7 +182205,7 @@
   },
   "hash": "7c38028bcd12",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20190529_De_Swette_bij_Skearnegoutum.jpg/1280px-20190529_De_Swette_bij_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/20190529_Martenskerk1_Skearnegoutum.jpg/1280px-20190529_Martenskerk1_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -182463,7 +182213,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_De_Swette_bij_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Martenskerk1_Skearnegoutum.jpg"
   }
  },
  {
@@ -184791,56 +184541,6 @@
   },
   "hash": "20b980f5aa5f",
   "image": null
- },
- {
-  "id": "evt_67c78f1ad25ad0",
-  "slug": "inloopcafe-scharnegoutum-2027-03-06",
-  "title": "Inloopcafé",
-  "occurrences": [
-   {
-    "date": "2027-03-06",
-    "endDate": null,
-    "startTime": "16:00",
-    "endTime": "23:30"
-   }
-  ],
-  "venue": {
-   "name": "Scharnegoutum",
-   "city": "Scharnegoutum",
-   "lat": 53.0603,
-   "lon": 5.6783
-  },
-  "price": "Zie organisator",
-  "url": "https://www.scharnegoutum.nl/agenda/inloopcafe-4/2027-03-06/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.scharnegoutum.nl/agenda/inloopcafe-4/2027-03-06/",
-    "host": "scharnegoutum.nl",
-    "seenAt": "2026-11-22"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "5ed3696f9ca6",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Scharnegoutum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
-  }
  },
  {
   "id": "evt_cccc2f09a1ac8e",
@@ -207987,15 +207687,15 @@
   },
   "hash": "4098319260bc",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg/1280px-2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1120190529_Skearnegoutum2.jpg/1280px-1120190529_Skearnegoutum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
+   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Skearnegoutum,_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1120190529_Skearnegoutum2.jpg"
   }
  },
  {
@@ -211035,56 +210735,6 @@
    "alt": "Foto bij Noord Nederlands Orkest – Familieconcert: Carmen, een stierlijk muzikaal verhaal (6+)",
    "credit": "Foto: SPOT Groningen (De Oosterpoort en Stadsschouwburg)",
    "sourceUrl": "https://www.spotgroningen.nl/programma/noord-nederlands-orkest-240/"
-  }
- },
- {
-  "id": "evt_bd9637c679eb72",
-  "slug": "inloopcafe-scharnegoutum-2027-04-03",
-  "title": "Inloopcafé",
-  "occurrences": [
-   {
-    "date": "2027-04-03",
-    "endDate": null,
-    "startTime": "16:00",
-    "endTime": "23:30"
-   }
-  ],
-  "venue": {
-   "name": "Scharnegoutum",
-   "city": "Scharnegoutum",
-   "lat": 53.0603,
-   "lon": 5.6783
-  },
-  "price": "Zie organisator",
-  "url": "https://www.scharnegoutum.nl/agenda/inloopcafe-5/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.scharnegoutum.nl/agenda/inloopcafe-5/",
-    "host": "scharnegoutum.nl",
-    "seenAt": "2026-11-22"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "7f91a4ec726a",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/20190529_Martenskerk1_Skearnegoutum.jpg/1280px-20190529_Martenskerk1_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Scharnegoutum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Martenskerk1_Skearnegoutum.jpg"
   }
  },
  {
@@ -217084,7 +216734,7 @@
   },
   "hash": "0bfd3509a792",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1120190529_Skearnegoutum2.jpg/1280px-1120190529_Skearnegoutum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20190529_De_Swette_bij_Skearnegoutum.jpg/1280px-20190529_De_Swette_bij_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -217092,7 +216742,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1120190529_Skearnegoutum2.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_De_Swette_bij_Skearnegoutum.jpg"
   }
  },
  {
@@ -232862,7 +232512,7 @@
   },
   "hash": "9b13078ca86c",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20190529_De_Swette_bij_Skearnegoutum.jpg/1280px-20190529_De_Swette_bij_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -232870,7 +232520,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_De_Swette_bij_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
   }
  },
  {
@@ -243825,15 +243475,15 @@
   },
   "hash": "7c5e0ec396e5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg/1280px-2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Skearnegoutum,_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg"
   }
  },
  {
@@ -245659,15 +245309,15 @@
   },
   "hash": "3b661119b6e3",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg/1280px-2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/20190529_Martenskerk1_Skearnegoutum.jpg/1280px-20190529_Martenskerk1_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
-   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "RomkeHoekstra",
+   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Skearnegoutum,_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Martenskerk1_Skearnegoutum.jpg"
   }
  },
  {
@@ -247015,7 +246665,7 @@
   },
   "hash": "ebb2768b362e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/20190529_Martenskerk1_Skearnegoutum.jpg/1280px-20190529_Martenskerk1_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1120190529_Skearnegoutum2.jpg/1280px-1120190529_Skearnegoutum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -247023,7 +246673,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Martenskerk1_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1120190529_Skearnegoutum2.jpg"
   }
  },
  {
@@ -252862,15 +252512,15 @@
   },
   "hash": "766d5339687f",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Marssum_-_panoramio.jpg/1280px-Marssum_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/21A_2906.jpg/1280px-21A_2906.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Marssum",
-   "credit": "Foto: Dirk Jan van Zoest · CC BY 3.0 · Wikimedia Commons",
-   "author": "Dirk Jan van Zoest",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marssum_-_panoramio.jpg"
+   "credit": "Foto: Arnold Bartels · CC0 · Wikimedia Commons",
+   "author": "Arnold Bartels",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:21A_2906.jpg"
   }
  },
  {
@@ -258237,7 +257887,7 @@
   },
   "hash": "a472fbe1c27d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/1120190529_Skearnegoutum2.jpg/1280px-1120190529_Skearnegoutum2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20190529_De_Swette_bij_Skearnegoutum.jpg/1280px-20190529_De_Swette_bij_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -258245,7 +257895,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1120190529_Skearnegoutum2.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_De_Swette_bij_Skearnegoutum.jpg"
   }
  },
  {
@@ -260447,7 +260097,7 @@
   },
   "hash": "7d0db17fcc7e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20190529_De_Swette_bij_Skearnegoutum.jpg/1280px-20190529_De_Swette_bij_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
@@ -260455,7 +260105,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_De_Swette_bij_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
   }
  },
  {
@@ -262322,15 +261972,15 @@
   },
   "hash": "4bc32e1d830d",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/20190529_Skearnegoutum.jpg/1280px-20190529_Skearnegoutum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg/1280px-2022_Skearnegoutum%2C_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Scharnegoutum",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
+   "credit": "Foto: RomkeHoekstra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "RomkeHoekstra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190529_Skearnegoutum.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Skearnegoutum,_wetter_oan_de_Tsjebbe_Claeszstrjitte.jpg"
   }
  },
  {
