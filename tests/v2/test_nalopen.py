@@ -811,11 +811,14 @@ def test_dagcontrole_21_november_film_blijft_film_en_dreumesuurtje_kinderen():
 
 # Dagcontrole 22 november 2026: een plek als titel, dorpsroutines, een aankondiging van een ander uitje.
 def test_dagcontrole_22_november_geen_uitje():
-    for title in ("Waarme Húskeamer", "Inloopcafé", "Open kerk", "Morgen in It Podium: Friersk"):
+    for title in ("Waarme Húskeamer", "Inloopcafé", "Open kerk"):
         assert not_an_outing(_event(title)), title
 
 
 def test_dagcontrole_22_november_echte_uitjes_blijven_staan():
+    # Een aankondiging 'Vanavond in X: Artiest' is meestal een echt (kort) uitje: blijft staan.
+    for title in ("Vanavond in Paradiso: Kensington", "Morgen in Simplon: Sophie", "Vandaag in de kerk: Orgelconcert"):
+        assert not not_an_outing(_event(title)), title
     # 't Dörpshuus NijRoon is de naam van de plek, maar de pagina is een kerst-pubquiz: blijft staan.
     for title in ("'t Dörpshuus NijRoon", "Dörpshuus kerstconcert", "Open kerk concert", "Inloopcafé met live muziek", "Morgen in It Podium: Friersk, Ierse folk in de Friese taal met band",
                   "Kerstmarkt in de dorpshuus", "Open kerk dag: orgelconcert"):
