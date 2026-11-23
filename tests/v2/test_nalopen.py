@@ -829,4 +829,5 @@ def test_dagcontrole_22_november_echte_uitjes_blijven_staan():
 def test_dagcontrole_23_november_bierum_is_geen_bier():
     assert classify(_event("Jaarmarkt Bierum"))["kind"] == "markt"
     assert classify(_event("Bierproeverij in Bierum"))["kind"] == "eten"
+    assert classify(_event("Bierumer Kerstmarkt"))["kind"] == "markt"
     assert classify(_event("Bier & Whisky Festival"))["kind"] in ("eten", "festival")

@@ -69,7 +69,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
         r"(?:fiets|wandel|avond) ?(?:\d|vier)?-?daagse", r"snoei", r"houtdag", r"snoekfiskje", r"\bvissen\b",
     ]),
     "eten": _compile([
-        r"culinair", r"food", r"proeverij", r"\bproeven\b", r"\bwijn", r"\bbier(?!run|um\b)", r"smaak",
+        r"culinair", r"food", r"proeverij", r"\bproeven\b", r"\bwijn", r"\bbier(?!run|um(?:er)?\b)", r"smaak",
         r"high tea", r"brunch", r"\bdiner\b", r"barbecue", r"\bbbq\b", r"kookworkshop",
         r"whisk(e)?y", r"cocktail", r"\bgin\b", r"(samen|gezamenlijk) eten", r"aan de kook", r"stamppot",
         r"maaltijd", r"\bkoffie(?!concert)", r"\blunch", r"vrijmibo", r"borrel", r"frietavond", r"visje eten",
