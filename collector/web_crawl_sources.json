@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-17",
+  "updated": "2026-11-23",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -16974,6 +16974,48 @@
         "lon": 6.0028
       },
       "policyReviewedAt": "2026-11-17"
+    },
+    {
+      "id": "bierum-net-web",
+      "name": "Bierum heeft het, daar leeft het!",
+      "rootUrl": "https://www.bierum.net/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "wordpress_tribe",
+      "extractorConfig": {
+        "endpointUrl": "https://www.bierum.net/wp-json/tribe/events/v1/events?page=1&per_page=1"
+      },
+      "activatedFromCandidate": "bierum.net",
+      "defaultPlace": {
+        "city": "Bierum",
+        "lat": 53.3814,
+        "lon": 6.8594
+      },
+      "policyReviewedAt": "2026-11-23"
+    },
+    {
+      "id": "blijham-eu-web",
+      "name": "Blijham",
+      "rootUrl": "https://www.blijham.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.blijham.eu/agenda/pietenpret-2026/"
+      },
+      "activatedFromCandidate": "blijham.eu",
+      "defaultPlace": {
+        "city": "Blijham",
+        "lat": 53.1075,
+        "lon": 7.0767
+      },
+      "policyReviewedAt": "2026-11-23"
     }
   ]
 }
