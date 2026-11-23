@@ -17019,6 +17019,29 @@
         "lon": 7.0767
       },
       "policyReviewedAt": "2026-11-23"
+    },
+    {
+      "id": "heerenveen-playpdl-nl-web",
+      "name": "PlayPDL",
+      "rootUrl": "https://heerenveen.playpdl.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://heerenveen.playpdl.nl/events-en-toernooien/agenda"
+      },
+      "activatedFromCandidate": "heerenveen.playpdl.nl",
+      "defaultPlace": {
+        "venue": "PlayPDL",
+        "city": "Heerenveen",
+        "lat": 52.9367764,
+        "lon": 5.9442913
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-11-23"
     }
   ]
 }
