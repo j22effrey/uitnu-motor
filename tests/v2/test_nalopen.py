@@ -848,8 +848,11 @@ def test_onderhoud_23_november_bibliotheek_plaats_in_nieuwe_opmaak():
 
 def test_onderhoud_23_november_dode_bronnen_staan_uit_met_reden():
     bronnen = {x["id"]: x for x in json.loads(Path("collector/web_crawl_sources.json").read_text(encoding="utf-8"))["sources"]}
-    for sid in ("abendlokalpyrami-de-web", "detiid-nl-web", "cambuur-nl-thuiswedstrijden", "brugeskerk-nl-web"):
+    # Pyramide is dood (410); Cambuur (403) en Brugeskerk (401) weigeren de motor sinds weken: uit met reden.
+    # De Tiid blijft aan: de fout is een netwerkstoring van de motor bij het ophalen van robots.txt, geen verbod.
+    for sid in ("abendlokalpyrami-de-web", "cambuur-nl-thuiswedstrijden", "brugeskerk-nl-web"):
         assert bronnen[sid]["enabled"] is False and bronnen[sid]["disabledReason"], sid
+    assert bronnen["detiid-nl-web"]["enabled"] is True
 
 
 def test_onderhoud_23_november_twijfellijst_soorten():

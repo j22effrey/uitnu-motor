@@ -7803,7 +7803,7 @@
       "rootUrl": "https://www.brugeskerk.nl/",
       "role": "venue",
       "enabled": false,
-      "disabledReason": "brugeskerk.nl vraagt om inloggen (401 Unauthorized) voor de agenda; geen openbare agenda. (23 november 2026)",
+      "disabledReason": "brugeskerk.nl geeft de motor sinds 15 november 2026 steeds 401 Unauthorized (gecontroleerd op 23 november: ook nog). De motor krijgt geen toegang; vanaf een andere computer lukt het wel. We laten de site met rust tot de beheerder de motor toelaat.",
       "maxPages": 40,
       "maxDepth": 3,
       "minDelaySeconds": 0.5,
@@ -13878,8 +13878,7 @@
       "name": "De Tiid Bolsward (museum, bibliotheek en archief)",
       "rootUrl": "https://www.detiid.nl/",
       "role": "venue",
-      "enabled": false,
-      "disabledReason": "De robots.txt van detiid.nl staat het ophalen van /agenda niet toe; we respecteren dat. (De Tiid stond sinds 29 oktober 2026 in de ophaalfouten; 23 november 2026)",
+      "enabled": true,
       "extractorHint": "html_cards",
       "extractorConfig": {
         "endpointUrl": "https://www.detiid.nl/agenda",
@@ -14955,7 +14954,7 @@
       "rootUrl": "https://cambuur.nl/",
       "role": "organizer",
       "enabled": false,
-      "disabledReason": "cambuur.nl weigert de motor (403 Forbidden) sinds 5 november 2026; we respecteren dat. De thuiswedstrijden van SC Cambuur kunnen eventueel als los uitje.",
+      "disabledReason": "cambuur.nl geeft de motor sinds 5 november 2026 steeds 403 Forbidden (gecontroleerd op 23 november: ook nog). Een site die de motor weigert laten we met rust; de reden hoeft niet een algemene blokkade te zijn (vanaf een andere computer lukt het wel). De thuiswedstrijden van SC Cambuur kunnen eventueel als los uitje.",
       "extractorHint": "html_cards",
       "extractorConfig": {
         "endpointUrl": "https://cambuur.nl/thuiswedstrijden/",
