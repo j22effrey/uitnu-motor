@@ -133,6 +133,76 @@
    "reden": "Dagcontrole 3 november 2026: Theater Pannenkoek is kindertheater in de bibliotheek, geen eten (het woord pannenkoek zit in de naam van het gezelschap)."
   },
   {
+   "naam": "^lichtkunstfestival .?drachten droomt",
+   "soort": "kunst",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Lichtkunstfestival is lichtkunst in de openbare ruimte (een route langs kunstwerken), geen festival met podia en artiesten."
+  },
+  {
+   "naam": "^prikkelarme openstelling\\b",
+   "soort": "kunst",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Een prikkelarme openstelling van het Groninger Museum: museumbezoek, dus kunst."
+  },
+  {
+   "naam": "^tine tammes\\b",
+   "soort": "lezing",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Een boekpresentatie over Tine Tammes bij het Groninger Archief: lezing, geen kunst."
+  },
+  {
+   "naam": "^zorg: tegen welke prijs",
+   "soort": "lezing",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Een debat- of gespreksavond in Forum Groningen: lezing."
+  },
+  {
+   "naam": "^van ai-revolutie naar ai-apocalyps",
+   "soort": "lezing",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Een lezing of gesprek in Forum Groningen over AI."
+  },
+  {
+   "naam": "^hapjes maken met samar\\b",
+   "soort": "eten",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Een kookworkshop (hapjes maken): eten."
+  },
+  {
+   "naam": "^sintsurprises en -gedichten maken\\b",
+   "soort": "kinderen",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Sinterklaasknutselen voor kinderen."
+  },
+  {
+   "naam": "^de bibliotheek en het dreumesuurtje",
+   "soort": "kinderen",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Het dreumesuurtje van de bibliotheek is voor de allerkleinsten."
+  },
+  {
+   "naam": "^vetbollen maken \\(jeugd\\)",
+   "soort": "kinderen",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Vetbollen maken voor de jeugd (dorpsbelang): kinderactiviteit."
+  },
+  {
+   "naam": "^dot dome live planetarium\\b",
+   "soort": "natuur",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Een live planetariumshow over sterren: natuur en wetenschap."
+  },
+  {
+   "naam": "^een middag met groen van prinsterer\\b",
+   "soort": "lezing",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Een middag over Groen van Prinsterer op de Fraeylemaborg: lezing over geschiedenis."
+  },
+  {
+   "naam": "^woorden op woensdag\\b",
+   "soort": "lezing",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Woorden op Woensdag is een leesavond (voorlezen en praten), geen festival, ook al staat het bij Explore the North."
+  },
+  {
+   "naam": "^vintage island\\b",
+   "soort": "markt",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Vintage Island in de A-kerk is een vintagemarkt."
+  },
+  {
+   "naam": "^kerst pop-up store studiopiek",
+   "soort": "markt",
+   "reden": "Onderhoud 23 november 2026 (twijfellijst): Een kerstwinkeltje (pop-up store): markt."
+  },
+  {
    "naam": "^microscopiedag\\b",
    "soort": "lezing",
    "reden": "Dagcontrole 3 november 2026: een dag over microscopen, geen muziek; de soort van het podium (kerkalspodium) gaf muziek."
