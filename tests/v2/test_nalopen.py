@@ -831,3 +831,29 @@ def test_dagcontrole_23_november_bierum_is_geen_bier():
     assert classify(_event("Bierproeverij in Bierum"))["kind"] == "eten"
     assert classify(_event("Bierumer Kerstmarkt"))["kind"] == "markt"
     assert classify(_event("Bier & Whisky Festival"))["kind"] in ("eten", "festival")
+
+
+# Onderhoud 23 november 2026: Bind en Facet Emmen lezen de nieuwe plaatsopmaak; dode bronnen staan uit met reden; twijfellijst.
+def test_onderhoud_23_november_bibliotheek_plaats_in_nieuwe_opmaak():
+    import re as _re
+    bronnen = {x["id"]: x for x in json.loads(Path("collector/web_crawl_sources.json").read_text(encoding="utf-8"))["sources"]}
+    kaart = ('<li data-icon-before="location_on"> <div> <button type="button" class="reveal" data-reveal="location-detail-9357" '
+             'aria-expanded="false" aria-controls="location-detail-9357">Emmen centrum</button> <div class="reveal-content" '
+             'id="location-detail-9357"> <p> Noorderplein 101<br/> 7811 MG Emmen </p> </div> </div> </li>')
+    for sid in ("bindbibliotheken-web", "facet-emmen-bibliotheek-web"):
+        velden = bronnen[sid]["extractorConfig"]["fields"]
+        assert _re.search(velden["venue"], kaart, _re.S).group(1) == "Emmen centrum", sid
+        assert _re.search(velden["city"], kaart, _re.S).group(1) == "Emmen", sid
+
+
+def test_onderhoud_23_november_dode_bronnen_staan_uit_met_reden():
+    bronnen = {x["id"]: x for x in json.loads(Path("collector/web_crawl_sources.json").read_text(encoding="utf-8"))["sources"]}
+    for sid in ("abendlokalpyrami-de-web", "detiid-nl-web", "cambuur-nl-thuiswedstrijden", "brugeskerk-nl-web"):
+        assert bronnen[sid]["enabled"] is False and bronnen[sid]["disabledReason"], sid
+
+
+def test_onderhoud_23_november_twijfellijst_soorten():
+    for titel, soort in (("Lichtkunstfestival ‘Drachten droomt’", "kunst"), ("Prikkelarme openstelling", "kunst"),
+                         ("Hapjes maken met Samar", "eten"), ("De Bibliotheek en het Dreumesuurtje", "kinderen"),
+                         ("Zorg: tegen welke prijs?", "lezing"), ("Vetbollen maken (jeugd)", "kinderen")):
+        assert classify(_event(titel), OVERRIDES)["kind"] == soort, titel
