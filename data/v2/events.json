@@ -253626,15 +253626,18 @@
     "seenAt": "2026-11-23"
    }
   ],
-  "kind": "eten",
-  "kindLabel": "Eten en drinken",
-  "tags": [],
+  "kind": "markt",
+  "kindLabel": "Markt en beurs",
+  "tags": [
+   "groot"
+  ],
   "classification": {
    "method": "trefwoord",
-   "reason": "trefwoord 'bier'",
+   "reason": "trefwoord 'markt'",
    "confidence": 0.8
   },
-  "hash": "f0fdbe0acc92",
+  "hash": "dcea83f74330",
+  "groot": "publiekstrekker: 'jaarmarkt'",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Uitzicht_over_de_Eems_-_panoramio_%281%29.jpg/1280px-Uitzicht_over_de_Eems_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",

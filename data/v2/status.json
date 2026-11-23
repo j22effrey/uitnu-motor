@@ -1,6 +1,6 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-23T03:54:29+00:00",
+ "refreshedAt": "2026-11-23T05:42:31+00:00",
  "today": "2026-11-23",
  "total": 5323,
  "bewaardVanVorigeKeer": {
@@ -38,12 +38,12 @@
   "lezing": 380,
   "sport": 300,
   "kinderen": 277,
-  "markt": 252,
+  "markt": 253,
   "overig": 246,
   "feest": 246,
   "kunst": 194,
   "natuur": 151,
-  "eten": 76,
+  "eten": 75,
   "festival": 9
  },
  "byCity": {
@@ -860,9 +860,9 @@
  },
  "twijfel": 464,
  "groot": {
-  "aantal": 61,
+  "aantal": 62,
   "redenen": {
-   "publiekstrekker": 26,
+   "publiekstrekker": 27,
    "wedstrijd in Euroborg": 10,
    "groot evenement over de grens (grensregister)": 7,
    "wedstrijd in Abe Lenstra Stadion": 5,
@@ -897,9 +897,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 28,
-  "changed": 44,
-  "removed": 126
+  "new": 0,
+  "changed": 1,
+  "removed": 0
  },
  "gate": {
   "passed": true,
@@ -907,7 +907,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5323 nu, 5312 vorige keer (minimaal 85%)"
+    "detail": "5323 nu, 5323 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
