@@ -823,3 +823,10 @@ def test_dagcontrole_22_november_echte_uitjes_blijven_staan():
     for title in ("'t Dörpshuus NijRoon", "Dörpshuus kerstconcert", "Open kerk concert", "Inloopcafé met live muziek", "Morgen in It Podium: Friersk, Ierse folk in de Friese taal met band",
                   "Kerstmarkt in de dorpshuus", "Open kerk dag: orgelconcert"):
         assert not not_an_outing(_event(title)), title
+
+
+# Dagcontrole 23 november 2026: het dorp Bierum is geen bier.
+def test_dagcontrole_23_november_bierum_is_geen_bier():
+    assert classify(_event("Jaarmarkt Bierum"))["kind"] == "markt"
+    assert classify(_event("Bierproeverij in Bierum"))["kind"] == "eten"
+    assert classify(_event("Bier & Whisky Festival"))["kind"] in ("eten", "festival")
