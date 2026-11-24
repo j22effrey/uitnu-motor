@@ -870,6 +870,10 @@ def test_dagcontrole_24_november_vacature_is_geen_uitje():
     event = _event("Open dag voor nieuwe medewerkers")
     event["url"] = "https://dorp.example/vacatures/open-dag"
     assert not not_an_outing(event)
+    for titel in ("Rondleiding", "Jobfair", "Carrièredag", "Meet & greet", "Kijkavond brandweer"):
+        event = _event(titel)
+        event["url"] = "https://werkgever.example/werken-bij/" + titel.lower().replace(" ", "-")
+        assert not not_an_outing(event), titel
     event = _event("Kerstmarkt")
     event["url"] = "https://dorp.example/agenda/kerstmarkt"
     assert not not_an_outing(event)

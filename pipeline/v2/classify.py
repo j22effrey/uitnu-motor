@@ -765,7 +765,8 @@ def not_an_outing(event: dict) -> str | None:
         return f"competitiewedstrijd van een club (uitslagenpagina): '{event.get('title')}'"
     # Een nieuwsbericht van een dorpssite ('Kledingbieb krijgt vaste plek', 'Levendig Musselkanaal als snelkoppeling'): de link
     # staat onder nieuws, berichten of de schrijver, en de titel noemt niets van een uitje. (Dagcontrole 3 november 2026.)
-    if VACANCY_PATH.search(link.path) and not PUBLIC_EVENT.search(title):
+    if (VACANCY_PATH.search(link.path) and not PUBLIC_EVENT.search(title)
+            and not re.search(r"rondleiding|job ?fair|banenbeurs|carri[eè]re|meet ?(?:&|and|en) ?greet|kijkavond|open dag|kennismaking", normalize(title))):
         return f"vacature, geen uitje (rubriek in de link): '{event.get('title')}'"
     if NEWS_PATH.search(link.path) and not PUBLIC_EVENT.search(title) and not _matches(title):
         return f"nieuwsbericht, geen uitje (rubriek in de link): '{event.get('title')}'"
