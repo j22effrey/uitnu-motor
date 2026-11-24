@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -17042,6 +17042,269 @@
       },
       "kindHint": "sport",
       "policyReviewedAt": "2026-11-23"
+    },
+    {
+      "id": "bindbibliotheken-nl-web",
+      "name": "Bibliotheek Borger",
+      "rootUrl": "https://www.bindbibliotheken.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.bindbibliotheken.nl/"
+      },
+      "activatedFromCandidate": "bindbibliotheken.nl",
+      "kindHint": "lezing",
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "museumpleingrootegast-nl-web",
+      "name": "LEGiO Museum",
+      "rootUrl": "https://www.museumpleingrootegast.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.museumpleingrootegast.nl/"
+      },
+      "activatedFromCandidate": "museumpleingrootegast.nl",
+      "defaultPlace": {
+        "city": "Grootegast",
+        "lat": 53.2134,
+        "lon": 6.2671
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "sintjabik-nl-web",
+      "name": "Welkom op de website van Sint Jabik",
+      "rootUrl": "https://sintjabik.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://sintjabik.nl/agenda.ics"
+      },
+      "activatedFromCandidate": "sintjabik.nl",
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "abbegea-frl-web",
+      "name": "abbegea.frl",
+      "rootUrl": "https://abbegea.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://abbegea.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "abbegea.frl",
+      "defaultPlace": {
+        "city": "Abbega",
+        "lat": 53.0186,
+        "lon": 5.5703
+      },
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "feerwerd-com-web",
+      "name": "Feerwerd",
+      "rootUrl": "https://www.feerwerd.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.feerwerd.com/"
+      },
+      "activatedFromCandidate": "feerwerd.com",
+      "defaultPlace": {
+        "city": "Feerwerd",
+        "lat": 53.3058,
+        "lon": 6.4661
+      },
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "intothegreatwideopen-nl-web",
+      "name": "Into the Great Wide Open",
+      "rootUrl": "https://intothegreatwideopen.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://intothegreatwideopen.nl/"
+      },
+      "activatedFromCandidate": "intothegreatwideopen.nl",
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "vlieland-nl-web",
+      "name": "Gemeentehuis Vlieland",
+      "rootUrl": "https://www.vlieland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.vlieland.nl/warmteprogramma-vlieland"
+      },
+      "activatedFromCandidate": "vlieland.nl",
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "deloods-events-web",
+      "name": "De Loods",
+      "rootUrl": "https://deloods.events/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://deloods.events/events/"
+      },
+      "activatedFromCandidate": "deloods.events",
+      "defaultPlace": {
+        "venue": "De Loods",
+        "city": "Groningen",
+        "lat": 53.2171341,
+        "lon": 6.5370748
+      },
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "deknipe-frl-web",
+      "name": "De Knipe",
+      "rootUrl": "https://deknipe.frl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "ics",
+      "extractorConfig": {
+        "feedUrl": "https://deknipe.frl/agenda.ics"
+      },
+      "activatedFromCandidate": "deknipe.frl",
+      "defaultPlace": {
+        "city": "De Knipe",
+        "lat": 52.9686,
+        "lon": 5.9711
+      },
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "dekruidhof-nl-web",
+      "name": "Botanische Tuin De Kruidhof",
+      "rootUrl": "https://www.dekruidhof.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dekruidhof.nl/"
+      },
+      "activatedFromCandidate": "dekruidhof.nl",
+      "defaultPlace": {
+        "venue": "Botanische Tuin De Kruidhof",
+        "city": "Buitenpost",
+        "lat": 53.2558852,
+        "lon": 6.1390518
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "landbouwmuseumfriesland-nl-web",
+      "name": "Fries Landbouwmuseum",
+      "rootUrl": "https://landbouwmuseumfriesland.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://landbouwmuseumfriesland.nl/activiteiten"
+      },
+      "activatedFromCandidate": "landbouwmuseumfriesland.nl",
+      "defaultPlace": {
+        "venue": "Fries Landbouwmuseum",
+        "city": "Leeuwarden",
+        "lat": 53.1792965,
+        "lon": 5.7895453
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "museumindruk-nl-web",
+      "name": "Museum Indruk",
+      "rootUrl": "https://www.museumindruk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://museumindruk.nl/agenda"
+      },
+      "activatedFromCandidate": "museumindruk.nl",
+      "defaultPlace": {
+        "venue": "Museum Indruk",
+        "city": "Meppel",
+        "lat": 52.6965555,
+        "lon": 6.1889716
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "dorpshuisgnm-nl-web",
+      "name": "Dorpshuis Gasselternijveenschemond",
+      "rootUrl": "https://www.dorpshuisgnm.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.dorpshuisgnm.nl/agenda"
+      },
+      "activatedFromCandidate": "dorpshuisgnm.nl",
+      "defaultPlace": {
+        "venue": "Dorpshuis Gasselternijveenschemond",
+        "city": "Gasselternijveenschemond",
+        "lat": 52.9962311,
+        "lon": 6.9049503
+      },
+      "policyReviewedAt": "2026-11-24"
     }
   ]
 }
