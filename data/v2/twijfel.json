@@ -10,21 +10,41 @@
   ]
  },
  {
-  "id": "evt_55ebd5d7c8a26a",
-  "title": "Hanze Hogeschool",
+  "id": "evt_0582fd5c7836f7",
+  "title": "Bezoek aan de Amazing Church Chapel",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://buurtcentrumtuinpad.nl/Locatie/buurtcentrum-tuinpad/",
+  "url": "https://spannum.frl/bezoek-aan-de-amazing-church-chapel",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_2ef7a6d2f05b84",
-  "title": "Connexa middag",
+  "id": "evt_dd12110f3db5f0",
+  "title": "Eerste paal geslagen: starterswoningen 't Hooge 2 komen er",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://minnertsga.frl/evenement/connexa-middag-6",
+  "url": "https://oldeberkoop.frl/eerste-paal-geslagen-starterswoningen-t-hooge-2-komen-er",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_16baf07b9ec486",
+  "title": "Kerstwensboom",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://appelscha.frl/evenement/kerstwensboom",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_55ebd5d7c8a26a",
+  "title": "Hanze Hogeschool",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://buurtcentrumtuinpad.nl/Locatie/buurtcentrum-tuinpad/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -350,11 +370,11 @@
   ]
  },
  {
-  "id": "evt_f89e2d0f0e29e1",
-  "title": "Bezoek aan de Amazing Grace Chapel Gemeente in Leeuwarden.",
+  "id": "evt_86775fb38776a5",
+  "title": "Moledei Súdwest-Fryslân",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://spannum.frl/bezoek-aan-de-amazing-grace-chapel-gemeente-in-leeuwarden",
+  "url": "https://ijlst.frl/evenement/moledei-sudwest-fryslan",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -555,6 +575,16 @@
   "kind": "muziek",
   "reason": "website neushoorn.nl",
   "url": "https://www.neushoorn.nl/events/friday",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_defbde25b4563d",
+  "title": "Kangoeroe Klup",
+  "kind": "sport",
+  "reason": "website avoassen.nl",
+  "url": "https://avoassen.nl/agenda/kangoeroe-klup-2/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -891,6 +921,16 @@
   ]
  },
  {
+  "id": "evt_bd8257e88965ea",
+  "title": "Kangoeroe Klup",
+  "kind": "sport",
+  "reason": "website avoassen.nl",
+  "url": "https://avoassen.nl/agenda/kangoeroe-klup-3/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_e432095747d747_3e1134282c6a",
   "title": "Krystbeam opsette🎄🎅🏼",
   "kind": "overig",
@@ -941,16 +981,6 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_405edf8c705c",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten?type=sogk&page=2",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_c9fa9893c21cef",
   "title": "Maak je (digitale) kerstkaart met de Green Screen",
   "kind": "lezing",
@@ -971,11 +1001,21 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/0",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1931,6 +1971,16 @@
   ]
  },
  {
+  "id": "evt_bb9e0122b8db8b",
+  "title": "Corazón Fuego",
+  "kind": "feest",
+  "reason": "website stadslabgroningen.nl",
+  "url": "https://stadslabgroningen.nl/agenda/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_95adc0df6dc6fd",
   "title": "Fustje legen",
   "kind": "overig",
@@ -1992,8 +2042,8 @@
   ]
  },
  {
-  "id": "evt_786e08f5988b66",
-  "title": "Springfestijn",
+  "id": "evt_813fdf55273fac",
+  "title": "Springfestijn 25",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
@@ -2097,6 +2147,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://jirnsum.com/event/fustje-legen-2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_29c25d5781b88c",
+  "title": "Oud&Nieuw",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://it-heidenskip.nl/event/oudnieuw/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2573,6 +2633,16 @@
   ]
  },
  {
+  "id": "evt_e974f07bfdef7b",
+  "title": "Poetry Per Tutti",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/poetry-per-tutti?date=29-01-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_d81886a92846a2",
   "title": "FRIESLAND CUP CHALLENGER",
   "kind": "sport",
@@ -2628,6 +2698,16 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/friesland-cup-challenger/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_bdf05d9807bab4",
+  "title": "Lustrum: Kielzog & Surinaams Javaans",
+  "kind": "theater",
+  "reason": "website kielzog.nl",
+  "url": "https://www.kielzog.nl/evenementen/lustrum-kielzog-surinaams-javaans",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3183,6 +3263,16 @@
   ]
  },
  {
+  "id": "evt_4db75f9a69ee22",
+  "title": "Lustrum: Kielzog & Oekraïens",
+  "kind": "theater",
+  "reason": "website kielzog.nl",
+  "url": "https://www.kielzog.nl/evenementen/lustrum-kielzog-oekraïens",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_6bd303e8b27f58",
   "title": "Familie Fundag #3",
   "kind": "sport",
@@ -3666,6 +3756,16 @@
   ]
  },
  {
+  "id": "evt_9f4c6f895e1106",
+  "title": "HOVO: Een verkenning van de Chinese Tuin",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.hortusharen.nl/agenda/hovo-een-verkenning-van-de-chinese-tuin/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_f038b1159df8f0",
   "title": "Motorpsycho",
   "kind": "muziek",
@@ -3891,6 +3991,16 @@
   "kind": "theater",
   "reason": "website lawei.nl",
   "url": "https://www.lawei.nl/agenda/club-wauw-662g",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_8a9bb924ab94e8",
+  "title": "Ooggetuigen van de gaswinning",
+  "kind": "kunst",
+  "reason": "website fraeylemaborg.nl",
+  "url": "https://fraeylemaborg.nl/agenda/ooggetuigen-van-de-gaswinning/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4497,6 +4607,17 @@
   "url": "https://www.reis-events.nl/event/cruise-event-groningen-2027/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_cefe1e8b45a8c0",
+  "title": "Try Out Festival NBK",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://delantearne.nl/evenementen/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {

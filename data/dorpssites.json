@@ -28799,7 +28799,7 @@
    "gemeente": "Stadskanaal",
    "lat": 52.94528,
    "lon": 7.00778,
-   "gekekenOp": "2026-11-10",
+   "gekekenOp": "2026-11-24",
    "sites": [
     {
      "url": "https://horsten.nl/",
@@ -38881,7 +38881,7 @@
    "gemeente": "",
    "lat": 53.2583,
    "lon": 4.9558,
-   "gekekenOp": "2026-11-10",
+   "gekekenOp": "2026-11-24",
    "sites": [
     {
      "url": "https://www.vlieland.nl/",
@@ -38916,8 +38916,7 @@
      "reden": "niet bereikbaar (URLError)"
     },
     {
-     "url": "http://vlieland.nu/",
-     "adres": "https://vlieland.nu/",
+     "url": "https://vlieland.nu/",
      "oordeel": "nee",
      "reden": "robots.txt staat de robot niet toe"
     },
@@ -39341,5 +39340,5 @@
    ]
   }
  },
- "klaarOp": "2026-11-23"
+ "klaarOp": "2026-11-24"
 }
