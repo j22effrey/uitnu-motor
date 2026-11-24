@@ -1,14 +1,14 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-24T04:29:27+00:00",
+ "refreshedAt": "2026-11-24T05:44:48+00:00",
  "today": "2026-11-24",
- "total": 5497,
+ "total": 5496,
  "bewaardVanVorigeKeer": {},
  "nogAanwezigAnderAdres": {},
  "nietBewaardDoorRegel": {},
  "inputRecords": 12081,
  "outsideArea": 16,
- "geenUitje": 4342,
+ "geenUitje": 4343,
  "vasteActiviteit": 1152,
  "vertaling": 8,
  "teVerVooruit": 313,
@@ -38,8 +38,8 @@
   "feest": 257,
   "markt": 255,
   "overig": 234,
-  "kunst": 198,
-  "natuur": 152,
+  "kunst": 196,
+  "natuur": 153,
   "eten": 78,
   "festival": 8
  },
@@ -89,9 +89,9 @@
   "Holwert": 18,
   "Surhuisterveen": 18,
   "Minnertsga": 17,
-  "Ter Apel": 16,
   "Ten Boer": 16,
   "Gorredijk": 16,
+  "Ter Apel": 15,
   "Wier": 15,
   "Musselkanaal": 14,
   "Noordwolde": 14,
@@ -466,7 +466,6 @@
   "giethoorn.com": 12,
   "vries.nu": 12,
   "kunstencentrumk38.nl": 12,
-  "kloosterterapel.nl": 11,
   "a-theater.nl": 11,
   "em2groningen.nl": 11,
   "fcemmen.nl": 11,
@@ -475,6 +474,7 @@
   "heeg.frl": 11,
   "luthersbachensemble.nl": 11,
   "terherne.nl": 11,
+  "kloosterterapel.nl": 10,
   "brouwerijmartinus.nl": 10,
   "wommels.nl": 10,
   "nijbeets.frl": 10,
@@ -857,11 +857,11 @@
   "stichtingnobilis.nl": 1
  },
  "photos": {
-  "organisator": 2799,
+  "organisator": 2798,
   "wikimedia": 2590,
   "zonder": 108
  },
- "twijfel": 453,
+ "twijfel": 451,
  "groot": {
   "aantal": 63,
   "redenen": {
@@ -900,9 +900,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 112,
-  "changed": 22,
-  "removed": 109
+  "new": 0,
+  "changed": 5,
+  "removed": 1
  },
  "gate": {
   "passed": true,
@@ -910,7 +910,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5497 nu, 5435 vorige keer (minimaal 85%)"
+    "detail": "5496 nu, 5497 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -920,7 +920,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "234 van 5497 (4%)"
+    "detail": "234 van 5496 (4%)"
    },
    {
     "name": "velden_compleet",

@@ -54718,15 +54718,17 @@
     "seenAt": "2026-11-24"
    }
   ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
   "classification": {
-   "method": "locatie",
-   "reason": "website ontdekwec.nl",
-   "confidence": 0.6
+   "method": "correctie",
+   "reason": "Dagcontrole 24 november 2026: een kijktocht naar zeehonden is natuur, geen kunst (de soort van de website gaf kunst).",
+   "confidence": 1.0
   },
-  "hash": "71c226440314",
+  "hash": "712dbcdc662e",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/00_1287_Port_of_Lauwersoog.jpg/1280px-00_1287_Port_of_Lauwersoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -120744,53 +120746,6 @@
    "alt": "Foto bij Internationaal Indoor Concours Hippique Groningen 2027",
    "credit": "Foto: Martiniplaza",
    "sourceUrl": "https://www.martiniplaza.nl/nl/agenda/internationaal-indoor-concours-hippique-groningen-2027"
-  }
- },
- {
-  "id": "evt_2766ff7666cd03",
-  "slug": "reageren-ter-apel-2027-01-04",
-  "title": "Reageren",
-  "occurrences": [
-   {
-    "date": "2027-01-04",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Museum Klooster Ter Apel",
-   "city": "Ter Apel",
-   "lat": 52.8761859,
-   "lon": 7.0751008
-  },
-  "price": "Zie organisator",
-  "url": "https://kloosterterapel.nl/vacatures/medewerker-educatie-interactie-en-evenementen/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://kloosterterapel.nl/vacatures/medewerker-educatie-interactie-en-evenementen/",
-    "host": "kloosterterapel.nl",
-    "seenAt": "2026-11-24"
-   }
-  ],
-  "kind": "kunst",
-  "kindLabel": "Kunst en erfgoed",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website kloosterterapel.nl",
-   "confidence": 0.6
-  },
-  "hash": "89e776cda46e",
-  "image": {
-   "url": "https://kloosterterapel.nl/website/wp-content/uploads/2024/06/educatie241.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Reageren",
-   "credit": "Foto: Museum Klooster Ter Apel",
-   "sourceUrl": "https://kloosterterapel.nl/vacatures/medewerker-educatie-interactie-en-evenementen/"
   }
  },
  {
