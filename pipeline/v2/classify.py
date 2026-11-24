@@ -315,6 +315,8 @@ PUBLIC_EVENT = re.compile(r"concert|uitvoering|optreden|voorstelling|toerno(?:o|
 # Ook met een plusje voor jeugd- en veteranenteams ('Tzummarum 18+1 - Zeerobben 18+1', dagcontrole 1 november).
 TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'’/&-]+ (?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)? ?[-–] ?[\w .'’/&-]+ "
                         r"(?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)?\b")
+# Een vacaturepagina is geen uitje ('Reageren' op kloosterterapel.nl/vacatures/..., dagcontrole 24 november 2026).
+VACANCY_PATH = re.compile(r"/(?:vacatures?|werken-bij|solliciteren)(?:/|$)", re.IGNORECASE)
 NEWS_PATH = re.compile(r"/(?:nieuws|nieuwsberichten?|berichten|author)/", re.IGNORECASE)
 # De uitslagenpagina van een club ('scfraneker.nl/200/63638/uitslagen/wedstrijd-details/'): een competitiewedstrijd.
 MATCH_PATH = re.compile(r"/uitslagen/(?:[\w-]+/)*wedstrijd-details", re.IGNORECASE)
@@ -763,6 +765,9 @@ def not_an_outing(event: dict) -> str | None:
         return f"competitiewedstrijd van een club (uitslagenpagina): '{event.get('title')}'"
     # Een nieuwsbericht van een dorpssite ('Kledingbieb krijgt vaste plek', 'Levendig Musselkanaal als snelkoppeling'): de link
     # staat onder nieuws, berichten of de schrijver, en de titel noemt niets van een uitje. (Dagcontrole 3 november 2026.)
+    if (VACANCY_PATH.search(link.path) and not PUBLIC_EVENT.search(title)
+            and not re.search(r"rondleiding|job ?fair|banenbeurs|carri[eè]re|meet ?(?:&|and|en) ?greet|kijkavond|open dag|kennismaking", normalize(title))):
+        return f"vacature, geen uitje (rubriek in de link): '{event.get('title')}'"
     if NEWS_PATH.search(link.path) and not PUBLIC_EVENT.search(title) and not _matches(title):
         return f"nieuwsbericht, geen uitje (rubriek in de link): '{event.get('title')}'"
     if SENIORS_PATH.search(link.path) and not SENIORS_PUBLIC.search(title):

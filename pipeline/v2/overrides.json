@@ -218,6 +218,11 @@
    "reden": "Dagcontrole 21 november 2026: het dreumesuurtje van de bibliotheek is voor kinderen van 0 tot 3 jaar, geen lezing (het woord voorlezen gaf lezing)."
   },
   {
+   "naam": "^zeehondenkijktocht\\b",
+   "soort": "natuur",
+   "reden": "Dagcontrole 24 november 2026: een kijktocht naar zeehonden is natuur, geen kunst (de soort van de website gaf kunst)."
+  },
+  {
    "naam": "^zeehonden vrijlaten\\b",
    "soort": "natuur",
    "reden": "Dagcontrole 20 november 2026: zeehonden terug in zee zetten bij Lauwersoog is natuur, geen kunst (de soort van de website gaf kunst)."

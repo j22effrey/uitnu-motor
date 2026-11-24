@@ -860,3 +860,24 @@ def test_onderhoud_23_november_twijfellijst_soorten():
                          ("Hapjes maken met Samar", "eten"), ("De Bibliotheek en het Dreumesuurtje", "kinderen"),
                          ("Zorg: tegen welke prijs?", "lezing"), ("Vetbollen maken (jeugd)", "kinderen")):
         assert classify(_event(titel), OVERRIDES)["kind"] == soort, titel
+
+
+# Dagcontrole 24 november 2026: een vacaturepagina is geen uitje; een zeehondenkijktocht is natuur.
+def test_dagcontrole_24_november_vacature_is_geen_uitje():
+    event = _event("Reageren")
+    event["url"] = "https://kloosterterapel.nl/vacatures/medewerker-educatie-interactie-en-evenement"
+    assert not_an_outing(event)
+    event = _event("Open dag voor nieuwe medewerkers")
+    event["url"] = "https://dorp.example/vacatures/open-dag"
+    assert not not_an_outing(event)
+    for titel in ("Rondleiding", "Jobfair", "Carrièredag", "Meet & greet", "Kijkavond brandweer"):
+        event = _event(titel)
+        event["url"] = "https://werkgever.example/werken-bij/" + titel.lower().replace(" ", "-")
+        assert not not_an_outing(event), titel
+    event = _event("Kerstmarkt")
+    event["url"] = "https://dorp.example/agenda/kerstmarkt"
+    assert not not_an_outing(event)
+
+
+def test_dagcontrole_24_november_zeehondenkijktocht_is_natuur():
+    assert classify(_event("Zeehondenkijktocht"), OVERRIDES)["kind"] == "natuur"
