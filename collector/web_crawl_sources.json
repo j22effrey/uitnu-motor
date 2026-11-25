@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -17305,6 +17305,198 @@
         "lon": 6.9049503
       },
       "policyReviewedAt": "2026-11-24"
+    },
+    {
+      "id": "wijkdeakkers-nl-web",
+      "name": "Wijkcentrum De Akkers",
+      "rootUrl": "https://www.wijkdeakkers.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.wijkdeakkers.nl/"
+      },
+      "activatedFromCandidate": "wijkdeakkers.nl",
+      "defaultPlace": {
+        "venue": "Wijkcentrum De Akkers",
+        "city": "Heerenveen",
+        "lat": 52.946601,
+        "lon": 5.936883
+      },
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "gomos-nl-web",
+      "name": "Voetbalvereniging Gomos",
+      "rootUrl": "https://www.gomos.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://gomos.nl/"
+      },
+      "activatedFromCandidate": "gomos.nl",
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "snowlimits-nl-web",
+      "name": "Snowlimits",
+      "rootUrl": "https://snowlimits.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "snowlimits.nl",
+      "defaultPlace": {
+        "venue": "Snowlimits",
+        "city": "Groningen",
+        "lat": 53.2400181,
+        "lon": 6.5993483
+      },
+      "kindHint": "sport",
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "centrumkerk-nl-web",
+      "name": "Nederlandse Gereformeerde Kerk",
+      "rootUrl": "https://www.centrumkerk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://www.centrumkerk.nl/"
+      },
+      "activatedFromCandidate": "centrumkerk.nl",
+      "defaultPlace": {
+        "venue": "Nederlandse Gereformeerde Kerk",
+        "city": "Leek",
+        "lat": 53.1633322,
+        "lon": 6.391794
+      },
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "enjoysailing-nl-web",
+      "name": "Enjoy Sailing",
+      "rootUrl": "https://www.enjoysailing.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://enjoysailing.nl/agenda/"
+      },
+      "activatedFromCandidate": "enjoysailing.nl",
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "karmakagyu-nl-web",
+      "name": "Karma Deleg Chö Phel Ling",
+      "rootUrl": "https://www.karmakagyu.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "karmakagyu.nl",
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "kerkinwirdum-com-web",
+      "name": "Sint Martinuskerk",
+      "rootUrl": "https://kerkinwirdum.com/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://kerkinwirdum.com/"
+      },
+      "activatedFromCandidate": "kerkinwirdum.com",
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "scoutingveendam-nl-web",
+      "name": "Scouting Veendam",
+      "rootUrl": "https://www.scoutingveendam.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://scoutingveendam.nl/evenement/boerenkooltocht-2027/"
+      },
+      "activatedFromCandidate": "scoutingveendam.nl",
+      "defaultPlace": {
+        "venue": "Scouting Veendam",
+        "city": "Veendam",
+        "lat": 53.0956329,
+        "lon": 6.8437253
+      },
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "vvkollum-nl-web",
+      "name": "v.v. Kollum",
+      "rootUrl": "https://vvkollum.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://vvkollum.nl/"
+      },
+      "activatedFromCandidate": "vvkollum.nl",
+      "defaultPlace": {
+        "venue": "v.v. Kollum",
+        "city": "Kollum",
+        "lat": 53.2733095,
+        "lon": 6.1477552
+      },
+      "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "musykfabryk-nl-web",
+      "name": "Musykfabryk",
+      "rootUrl": "https://musykfabryk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "musykfabryk.nl",
+      "defaultPlace": {
+        "venue": "Musykfabryk",
+        "city": "Heerenveen",
+        "lat": 52.9324877,
+        "lon": 5.9537124
+      },
+      "policyReviewedAt": "2026-11-25"
     }
   ]
 }
