@@ -881,3 +881,15 @@ def test_dagcontrole_24_november_vacature_is_geen_uitje():
 
 def test_dagcontrole_24_november_zeehondenkijktocht_is_natuur():
     assert classify(_event("Zeehondenkijktocht"), OVERRIDES)["kind"] == "natuur"
+
+
+# Dagcontrole 25 november 2026: een ledenfeestje, een losse schoolnaam als titel, een vaste kinderklup.
+def test_dagcontrole_25_november_geen_uitje():
+    for title in ("Algemien LedeFeestje (ALF)", "Ledenfeest van de ijsclub", "Hanze Hogeschool", "Kangoeroe Klup"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_25_november_echte_uitjes_blijven_staan():
+    for title in ("Hanze Hogeschool open dag", "Kangoeroe Klup kerstconcert", "Feestje voor iedereen",
+                  "Ledenfeest open voor iedereen", "Ledenfeestje met live band", "Ledenfeest met open podium", "Ledenfeest ijsclub: publiek welkom"):
+        assert not not_an_outing(_event(title)), title
