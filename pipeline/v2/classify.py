@@ -387,7 +387,7 @@ SERVICE_OR_MEETING = re.compile(
 SERVICE_PUBLIC = re.compile(r"concert|voorstelling|optreden|uitvoering|festival|expositie|tentoonstelling|markt|beurs|\bshow\b|musical"
                             r"|theater|toneel|cabaret|optocht")
 MEMBERS_ONLY = re.compile(r"(?:alleen|enkel|uitsluitend) (?:voor )?(?:leden|bewoners|inwoners|dorpsbewoners|buurtbewoners|donateurs)"
-                          r"|ledengearkomst|\blede?n?feest\w*|^buurtvereniging\b"
+                          r"|ledengearkomst|\blede?n?feest\w*(?!.*(?:open|iedereen|publiek|live|podium|welkom|ook voor))|^buurtvereniging\b"
                           r"|voor (?:onze )?(?:leden|dorpsbewoners|buurtbewoners|bewoners van)\b|voor inwoners van|bewoners(?:avond|middag|bijeenkomst)"
                           r"|leden(?:middag|ochtend|dag|uitje|reis)|leden en donateurs"
                           # leden, studenten, cursisten (ronde van 15 oktober); geen uitzondering voor 'feest'

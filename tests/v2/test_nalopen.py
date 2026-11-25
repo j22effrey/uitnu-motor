@@ -890,5 +890,6 @@ def test_dagcontrole_25_november_geen_uitje():
 
 
 def test_dagcontrole_25_november_echte_uitjes_blijven_staan():
-    for title in ("Hanze Hogeschool open dag", "Kangoeroe Klup kerstconcert", "Feestje voor iedereen"):
+    for title in ("Hanze Hogeschool open dag", "Kangoeroe Klup kerstconcert", "Feestje voor iedereen",
+                  "Ledenfeest open voor iedereen", "Ledenfeestje met live band", "Ledenfeest met open podium", "Ledenfeest ijsclub: publiek welkom"):
         assert not not_an_outing(_event(title)), title
