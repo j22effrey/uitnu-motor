@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -17497,6 +17497,40 @@
         "lon": 5.9537124
       },
       "policyReviewedAt": "2026-11-25"
+    },
+    {
+      "id": "hunebedcentrum-eu-web",
+      "name": "Hunebedcentrum",
+      "rootUrl": "https://www.hunebedcentrum.eu/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "jsonld_event",
+      "extractorConfig": {},
+      "activatedFromCandidate": "hunebedcentrum.eu",
+      "defaultPlace": {
+        "city": "Borger"
+      },
+      "kindHint": "kunst",
+      "policyReviewedAt": "2026-11-26"
+    },
+    {
+      "id": "beachrockers-nl-web",
+      "name": "Beachrockers Festival",
+      "rootUrl": "http://beachrockers.nl/",
+      "role": "organizer",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://beachrockers.nl/"
+      },
+      "activatedFromCandidate": "beachrockers.nl",
+      "policyReviewedAt": "2026-11-26"
     }
   ]
 }
