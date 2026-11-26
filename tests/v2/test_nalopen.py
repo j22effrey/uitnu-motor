@@ -893,3 +893,20 @@ def test_dagcontrole_25_november_echte_uitjes_blijven_staan():
     for title in ("Hanze Hogeschool open dag", "Kangoeroe Klup kerstconcert", "Feestje voor iedereen",
                   "Ledenfeest open voor iedereen", "Ledenfeestje met live band", "Ledenfeest met open podium", "Ledenfeest ijsclub: publiek welkom"):
         assert not not_an_outing(_event(title)), title
+
+
+# Dagcontrole 26 november 2026: een VVV als bron, jeugdteamcode, klusochtend, damles, aankondiging seizoensstart.
+def test_dagcontrole_26_november_geen_uitje():
+    for title in ("BATO O11-2", "Links", "Klusochtend", "Damles/breintraining", "start winterseizoen 2026/2027"):
+        assert not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_26_november_echte_uitjes_blijven_staan():
+    for title in ("Links of rechts: cabaret", "Klusochtend met gluhwein en live muziek", "Start winterseizoen: concert", "Damles open dag", "BATO O11 kerstconcert",
+                  "Live M10-2", "Disco O11-2", "Show O12-1", "Rock M15-3"):
+        assert not not_an_outing(_event(title)), title
+
+
+def test_dagcontrole_26_november_vvv_schiermonnikoog_is_uitgesloten_bron():
+    from collector.discover_venues import EXCLUDED_HOSTS
+    assert "vvvschiermonnikoog.nl" in EXCLUDED_HOSTS
