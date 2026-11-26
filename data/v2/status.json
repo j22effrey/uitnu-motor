@@ -1,18 +1,18 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-26T05:02:15+00:00",
+ "refreshedAt": "2026-11-26T05:44:20+00:00",
  "today": "2026-11-26",
- "total": 5489,
+ "total": 5480,
  "bewaardVanVorigeKeer": {},
  "nogAanwezigAnderAdres": {},
  "nietBewaardDoorRegel": {},
  "inputRecords": 12042,
  "outsideArea": 16,
- "geenUitje": 4321,
+ "geenUitje": 4329,
  "vasteActiviteit": 1134,
  "vertaling": 8,
  "teVerVooruit": 315,
- "uitgeslotenBron": 3,
+ "uitgeslotenBron": 4,
  "onleesbaar": [],
  "area": {
   "naam": "Noord-Nederland",
@@ -33,13 +33,13 @@
   "theater": 1232,
   "film": 640,
   "lezing": 374,
-  "sport": 307,
+  "sport": 302,
   "kinderen": 267,
   "feest": 266,
   "markt": 260,
-  "overig": 242,
+  "overig": 239,
   "kunst": 193,
-  "natuur": 150,
+  "natuur": 149,
   "eten": 76,
   "festival": 8
  },
@@ -54,8 +54,8 @@
   "Franeker": 116,
   "Veendam": 109,
   "Stadskanaal": 106,
-  "Winschoten": 106,
   "Appelscha": 103,
+  "Winschoten": 103,
   "Roden": 88,
   "Meppel": 58,
   "Delfzijl": 57,
@@ -76,10 +76,10 @@
   "Hollum": 22,
   "Norg": 21,
   "Bolsward": 21,
-  "Schiermonnikoog": 21,
   "Diever": 20,
   "Terherne": 20,
   "Rottevalle": 20,
+  "Schiermonnikoog": 20,
   "Reduzum": 19,
   "Jubbega": 19,
   "Nes": 19,
@@ -136,7 +136,6 @@
   "Lauwerzijl": 8,
   "Sleen": 8,
   "Hindeloopen": 8,
-  "Gaastmeer": 7,
   "Wildervank": 7,
   "Paesens-Moddergat": 7,
   "Lauwersoog": 7,
@@ -151,11 +150,11 @@
   "Bierum": 7,
   "Appingedam": 6,
   "Oranjewoud": 6,
+  "Gaastmeer": 6,
   "Oldeberkoop": 6,
   "Ruinen": 6,
   "Steendam": 6,
   "Witharen": 6,
-  "Exmorra": 6,
   "Tietjerk": 6,
   "Westerbork": 6,
   "Klazienaveen": 6,
@@ -167,7 +166,6 @@
   "Drouwen": 5,
   "Boijl": 5,
   "Buitenpost": 5,
-  "Oostwold": 5,
   "Terwispel": 5,
   "Pieterzijl": 5,
   "Jorwerd": 5,
@@ -212,6 +210,7 @@
   "Suameer": 4,
   "Zurich": 4,
   "West-Terschelling": 4,
+  "Oostwold": 4,
   "Surhuizum": 4,
   "Jelsum": 4,
   "Woudsend": 4,
@@ -227,6 +226,7 @@
   "Rijs": 3,
   "Oosternieland": 3,
   "Ternaard": 3,
+  "Exmorra": 3,
   "2e Exlöermond": 3,
   "Smilde": 3,
   "Zuidbroek": 3,
@@ -413,9 +413,9 @@
   "ontdekdebieb.op-shop.nl": 37,
   "iduna.nl": 36,
   "overentinghe.nl": 33,
-  "ticketing.groningsebibliotheken.nl": 32,
   "dbieb.op-shop.nl": 31,
   "filmkerkwolvega.nl": 31,
+  "ticketing.groningsebibliotheken.nl": 29,
   "elfstedenhal.frl": 29,
   "sneek.nl": 28,
   "facet-emmen.op-shop.nl": 27,
@@ -514,7 +514,6 @@
   "dearsum.nl": 8,
   "ifks.frl": 8,
   "friesmuseum.nl": 7,
-  "degaastmar.nl": 7,
   "winsum.frl": 7,
   "groningerdorpen.nl": 7,
   "veendam.nl": 7,
@@ -530,13 +529,13 @@
   "bantega.net": 7,
   "museumhindeloopen.nl": 7,
   "rolde.nl": 6,
+  "degaastmar.nl": 6,
   "ijlst.frl": 6,
   "cafedelijst.nl": 6,
   "haske-joure.nl": 6,
   "wildro.nl": 6,
   "steendam.info": 6,
   "witharen.nl": 6,
-  "exmorra.info": 6,
   "theaterkerknes.nl": 6,
   "doopsgezindengroningen.nl": 6,
   "podiamiddendrenthe.nl": 6,
@@ -557,7 +556,6 @@
   "lycurgus.nl": 5,
   "boijl.com": 5,
   "podiumverwondering.nl": 5,
-  "vvsoostwold.nl": 5,
   "centrumheerenveen.nl": 5,
   "terwispel.info": 5,
   "pieterzijl.net": 5,
@@ -609,6 +607,7 @@
   "dorpzurich.nl": 4,
   "plazasportzassen.nl": 4,
   "zangformatielink.com": 4,
+  "vvsoostwold.nl": 4,
   "landvaneen.nl": 4,
   "drentsarchief.nl": 4,
   "roodehaan.com": 4,
@@ -626,6 +625,7 @@
   "dorpshuisroderwolde.nl": 3,
   "kunstcentrumdeploeg.nl": 3,
   "thomastsjerke.nl": 3,
+  "exmorra.info": 3,
   "dorpshuis2emond.nl": 3,
   "aolegemientehoes.nl": 3,
   "podium34.nl": 3,
@@ -744,7 +744,6 @@
   "speciaalbierfestivalwolvega.nl": 1,
   "welzijninnoordenveld.nl": 1,
   "oosterwolde.nl": 1,
-  "vvvschiermonnikoog.nl": 1,
   "avoassen.nl": 1,
   "vipassana-groningen.nl": 1,
   "britsum-koarnjum-jelsum.protestantsekerk.net": 1,
@@ -859,11 +858,11 @@
   "stichtingnobilis.nl": 1
  },
  "photos": {
-  "organisator": 2798,
-  "wikimedia": 2583,
+  "organisator": 2797,
+  "wikimedia": 2575,
   "zonder": 108
  },
- "twijfel": 460,
+ "twijfel": 456,
  "groot": {
   "aantal": 64,
   "redenen": {
@@ -902,9 +901,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 32,
-  "changed": 95,
-  "removed": 91
+  "new": 0,
+  "changed": 5,
+  "removed": 9
  },
  "gate": {
   "passed": true,
@@ -912,7 +911,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5489 nu, 5485 vorige keer (minimaal 85%)"
+    "detail": "5480 nu, 5489 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -922,7 +921,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "242 van 5489 (4%)"
+    "detail": "239 van 5480 (4%)"
    },
    {
     "name": "velden_compleet",
@@ -932,8 +931,8 @@
   ]
  },
  "dekking": {
-  "gecontroleerd": 460,
-  "goed": 110,
+  "gecontroleerd": 459,
+  "goed": 109,
   "ontbreektTotaal": 341,
   "ontbreekt": [
    {

@@ -13539,56 +13539,6 @@
   }
  },
  {
-  "id": "evt_80dd264c8652fe",
-  "slug": "bato-o11-2-oostwold-2026-11-28",
-  "title": "BATO O11-2",
-  "occurrences": [
-   {
-    "date": "2026-11-28",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Sportcomplex VVS",
-   "city": "Oostwold",
-   "lat": 53.1994468,
-   "lon": 7.0494038
-  },
-  "price": "Zie organisator",
-  "url": "https://www.vvsoostwold.nl/activiteitenkalender",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.vvsoostwold.nl/activiteitenkalender",
-    "host": "vvsoostwold.nl",
-    "seenAt": "2026-11-25"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "locatie",
-   "reason": "website vvsoostwold.nl",
-   "confidence": 0.6
-  },
-  "hash": "ec1234ab18bc",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Oost-_en_Noordgevel_-_Oostwold_%28Westerkwartier%29_-_20176047_-_RCE.jpg/1280px-Oost-_en_Noordgevel_-_Oostwold_%28Westerkwartier%29_-_20176047_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Oostwold",
-   "credit": "Foto: A. J. van der Wal · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "A. J. van der Wal",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oost-_en_Noordgevel_-_Oostwold_(Westerkwartier)_-_20176047_-_RCE.jpg"
-  }
- },
- {
   "id": "evt_4438ad1ac9e247",
   "slug": "bier-kluif-en-ballen-beer-tasting-on-a-boat-tour-giethoorn-2026-11-28",
   "title": "Bier, kluif en ballen: beer tasting on a boat tour",
@@ -37557,56 +37507,6 @@
   }
  },
  {
-  "id": "evt_4d68e8effd8f14",
-  "slug": "start-winterseizoen-2026-2027-exmorra-2026-12-02",
-  "title": "start winterseizoen 2026/2027",
-  "occurrences": [
-   {
-    "date": "2026-12-02",
-    "endDate": null,
-    "startTime": "13:00",
-    "endTime": "14:00"
-   }
-  ],
-  "venue": {
-   "name": "Exmorra",
-   "city": "Exmorra",
-   "lat": 53.0553,
-   "lon": 5.4636
-  },
-  "price": "Zie organisator",
-  "url": "https://exmorra.info/evenement/start-winterseizoen-20262027-2026-12-02",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://exmorra.info/evenement/start-winterseizoen-20262027-2026-12-02",
-    "host": "exmorra.info",
-    "seenAt": "2026-11-26"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "e3544c4f5bc4",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Kerkje_van_Exmorra.jpg/1280px-Kerkje_van_Exmorra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Exmorra",
-   "credit": "Foto: http://picasaweb.google.com/molenaarserf/ · CC BY 3.0 · Wikimedia Commons",
-   "author": "http://picasaweb.google.com/molenaarserf/",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kerkje_van_Exmorra.jpg"
-  }
- },
- {
   "id": "evt_d716b5b6e566e7",
   "slug": "club-kid-groningen-2026-12-02",
   "title": "Club Kid",
@@ -37748,57 +37648,6 @@
    "alt": "Foto bij Pietengym peuters en kleuters",
    "credit": "Foto: Uutgaon.nl (activiteitenkalender gemeente Ooststellingwerf)",
    "sourceUrl": "https://www.uutgaon.nl/agenda/156027/2026-12-02/pietengym-peuters-en-kleuters-2"
-  }
- },
- {
-  "id": "evt_aab296708b77f1",
-  "slug": "damles-breintraining-winschoten-2026-12-02",
-  "title": "Damles/breintraining",
-  "occurrences": [
-   {
-    "date": "2026-12-02",
-    "endDate": null,
-    "startTime": "14:00",
-    "endTime": "16:00"
-   }
-  ],
-  "venue": {
-   "name": "Bibliotheek Winschoten",
-   "city": "Winschoten",
-   "lat": 53.15,
-   "lon": 7.03333,
-   "pin": "plaats"
-  },
-  "price": "Zie organisator",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774701/Damles-breintraining.html",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774701/Damles-breintraining.html",
-    "host": "ticketing.groningsebibliotheken.nl",
-    "seenAt": "2026-11-26"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'dammen' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "3aa7791bc32f",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/530Winschoten%2C_Kreisverkehr_Wartepflicht.JPG/1280px-530Winschoten%2C_Kreisverkehr_Wartepflicht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Winschoten",
-   "credit": "Foto: Ulamm ( talk ) · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Ulamm ( talk )",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:530Winschoten,_Kreisverkehr_Wartepflicht.JPG"
   }
  },
  {
@@ -40486,58 +40335,6 @@
    "alt": "Foto bij Klozum en Demasqué 2026",
    "credit": "Foto: Dorpsbelang Schiermonnikoog",
    "sourceUrl": "https://www.dorpsbelangschiermonnikoog.nl/events/klozum-2026/"
-  }
- },
- {
-  "id": "evt_b8058105670ea1",
-  "slug": "links-schiermonnikoog-2026-12-03",
-  "title": "Links",
-  "occurrences": [
-   {
-    "date": "2026-12-03",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Schiermonnikoog",
-   "city": "Schiermonnikoog",
-   "lat": 53.49,
-   "lon": 6.225
-  },
-  "price": "Zie organisator",
-  "url": "http://vvvschiermonnikoog.nl",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "http://vvvschiermonnikoog.nl",
-    "host": "vvvschiermonnikoog.nl",
-    "seenAt": "2026-11-26"
-   }
-  ],
-  "kind": "natuur",
-  "kindLabel": "Natuur en buiten",
-  "tags": [
-   "buiten"
-  ],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'wandel' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "1ee4024b4946",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Aerial_image_of_Schiermonnikoog_%28view_from_the_southwest%29.jpg/1280px-Aerial_image_of_Schiermonnikoog_%28view_from_the_southwest%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Schiermonnikoog",
-   "credit": "Foto: Carsten Steger · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Carsten Steger",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Schiermonnikoog_(view_from_the_southwest).jpg"
   }
  },
  {
@@ -53689,56 +53486,6 @@
   }
  },
  {
-  "id": "evt_89ba14a8df905f",
-  "slug": "start-winterseizoen-2026-2027-exmorra-2026-12-09",
-  "title": "start winterseizoen 2026/2027",
-  "occurrences": [
-   {
-    "date": "2026-12-09",
-    "endDate": null,
-    "startTime": "13:00",
-    "endTime": "14:00"
-   }
-  ],
-  "venue": {
-   "name": "Exmorra",
-   "city": "Exmorra",
-   "lat": 53.0553,
-   "lon": 5.4636
-  },
-  "price": "Zie organisator",
-  "url": "https://exmorra.info/evenement/start-winterseizoen-20262027-2026-12-09",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://exmorra.info/evenement/start-winterseizoen-20262027-2026-12-09",
-    "host": "exmorra.info",
-    "seenAt": "2026-11-26"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "34e97328c01a",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/20190821_Exmorra.jpg/1280px-20190821_Exmorra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Exmorra",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190821_Exmorra.jpg"
-  }
- },
- {
   "id": "evt_cf163bc43bc613",
   "slug": "workshop-annemieke-koersbal-terherne-2026-12-09",
   "title": "Workshop Annemieke Koersbal",
@@ -53826,57 +53573,6 @@
    "license": "CC BY-SA 3.0 nl",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dam-H%C3%BBske_Nij_Beets..JPG"
-  }
- },
- {
-  "id": "evt_aadc0c083578da",
-  "slug": "damles-breintraining-winschoten-2026-12-09",
-  "title": "Damles/breintraining",
-  "occurrences": [
-   {
-    "date": "2026-12-09",
-    "endDate": null,
-    "startTime": "14:00",
-    "endTime": "16:00"
-   }
-  ],
-  "venue": {
-   "name": "Bibliotheek Winschoten",
-   "city": "Winschoten",
-   "lat": 53.15,
-   "lon": 7.03333,
-   "pin": "plaats"
-  },
-  "price": "Zie organisator",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774702/Damles-breintraining.html",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774702/Damles-breintraining.html",
-    "host": "ticketing.groningsebibliotheken.nl",
-    "seenAt": "2026-11-26"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'dammen' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "a3a7855163ba",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Artikel_H_022_boete_voor_afval_achterlaten_in_Winschoten.jpg/1280px-Artikel_H_022_boete_voor_afval_achterlaten_in_Winschoten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Winschoten",
-   "credit": "Foto: Gijs Bolmeijer · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gijs Bolmeijer",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Artikel_H_022_boete_voor_afval_achterlaten_in_Winschoten.jpg"
   }
  },
  {
@@ -54074,15 +53770,15 @@
   },
   "hash": "94219a21e7f5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Aude_kolonyhuis-schiermonnikoog.jpg/1280px-Aude_kolonyhuis-schiermonnikoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Aerial_image_of_Schiermonnikoog_%28view_from_the_southwest%29.jpg/1280px-Aerial_image_of_Schiermonnikoog_%28view_from_the_southwest%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
-   "credit": "Foto: Hein56didden · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Hein56didden",
+   "credit": "Foto: Carsten Steger · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Carsten Steger",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aude_kolonyhuis-schiermonnikoog.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Schiermonnikoog_(view_from_the_southwest).jpg"
   }
  },
  {
@@ -65758,15 +65454,15 @@
   },
   "hash": "1f5f25bcb80e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Autumn_weather_in_Winschoten_2016.jpg/1280px-Autumn_weather_in_Winschoten_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/530Winschoten%2C_Kreisverkehr_Wartepflicht.JPG/1280px-530Winschoten%2C_Kreisverkehr_Wartepflicht.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Winschoten",
-   "credit": "Foto: Ommelander1984Uploader · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Ommelander1984Uploader",
+   "credit": "Foto: Ulamm ( talk ) · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Ulamm ( talk )",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Autumn_weather_in_Winschoten_2016.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:530Winschoten,_Kreisverkehr_Wartepflicht.JPG"
   }
  },
  {
@@ -78499,107 +78195,6 @@
   }
  },
  {
-  "id": "evt_e77316cb63b02a",
-  "slug": "start-winterseizoen-2026-2027-exmorra-2026-12-16",
-  "title": "start winterseizoen 2026/2027",
-  "occurrences": [
-   {
-    "date": "2026-12-16",
-    "endDate": null,
-    "startTime": "13:00",
-    "endTime": "14:00"
-   }
-  ],
-  "venue": {
-   "name": "Exmorra",
-   "city": "Exmorra",
-   "lat": 53.0553,
-   "lon": 5.4636
-  },
-  "price": "Zie organisator",
-  "url": "https://exmorra.info/evenement/start-winterseizoen-20262027-2026-12-16",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://exmorra.info/evenement/start-winterseizoen-20262027-2026-12-16",
-    "host": "exmorra.info",
-    "seenAt": "2026-11-26"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "72305ec16e10",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/20190821_slakken_door_Frans_Faber_Exmorra.jpg/1280px-20190821_slakken_door_Frans_Faber_Exmorra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Exmorra",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190821_slakken_door_Frans_Faber_Exmorra.jpg"
-  }
- },
- {
-  "id": "evt_2673a97f91cee1",
-  "slug": "damles-breintraining-winschoten-2026-12-16",
-  "title": "Damles/breintraining",
-  "occurrences": [
-   {
-    "date": "2026-12-16",
-    "endDate": null,
-    "startTime": "14:00",
-    "endTime": "16:00"
-   }
-  ],
-  "venue": {
-   "name": "Bibliotheek Winschoten",
-   "city": "Winschoten",
-   "lat": 53.15,
-   "lon": 7.03333,
-   "pin": "plaats"
-  },
-  "price": "Zie organisator",
-  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774703/Damles-breintraining.html",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/774703/Damles-breintraining.html",
-    "host": "ticketing.groningsebibliotheken.nl",
-    "seenAt": "2026-11-26"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'dammen' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "891566e8982d",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bevolkingsonderzoek_Noord_lorry%2C_Winschoten_%282018%29_01.jpg/1280px-Bevolkingsonderzoek_Noord_lorry%2C_Winschoten_%282018%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Winschoten",
-   "credit": "Foto: Donald Trung · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Donald Trung",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bevolkingsonderzoek_Noord_lorry,_Winschoten_(2018)_01.jpg"
-  }
- },
- {
   "id": "evt_50746263a01249",
   "slug": "kerstcreativiteit-en-gezelligheid-grootegast-2026-12-16",
   "title": "Kerstcreativiteit en gezelligheid",
@@ -83461,15 +83056,15 @@
   },
   "hash": "a3a7995fb0fd",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Bevolkingsonderzoek_Noord_lorry%2C_Winschoten_%282018%29_02.jpg/1280px-Bevolkingsonderzoek_Noord_lorry%2C_Winschoten_%282018%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Artikel_H_022_boete_voor_afval_achterlaten_in_Winschoten.jpg/1280px-Artikel_H_022_boete_voor_afval_achterlaten_in_Winschoten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Winschoten",
-   "credit": "Foto: Donald Trung · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Donald Trung",
+   "credit": "Foto: Gijs Bolmeijer · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Gijs Bolmeijer",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bevolkingsonderzoek_Noord_lorry,_Winschoten_(2018)_02.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Artikel_H_022_boete_voor_afval_achterlaten_in_Winschoten.jpg"
   }
  },
  {
@@ -84193,7 +83788,7 @@
   },
   "hash": "9ad12b6757ca",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Berkenplas-schiermonnikoog.jpg/1280px-Berkenplas-schiermonnikoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Aude_kolonyhuis-schiermonnikoog.jpg/1280px-Aude_kolonyhuis-schiermonnikoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
@@ -84201,7 +83796,7 @@
    "author": "Hein56didden",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berkenplas-schiermonnikoog.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aude_kolonyhuis-schiermonnikoog.jpg"
   }
  },
  {
@@ -103453,15 +103048,15 @@
   },
   "hash": "64cf5f825807",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg/1280px-Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Berkenplas-schiermonnikoog.jpg/1280px-Berkenplas-schiermonnikoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
-   "credit": "Foto: Unknown · Public domain · Wikimedia Commons",
-   "author": "Unknown",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg"
+   "credit": "Foto: Hein56didden · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Hein56didden",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berkenplas-schiermonnikoog.jpg"
   }
  },
  {
@@ -116097,15 +115692,15 @@
   },
   "hash": "da4d1246d9c2",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/De_Gave_ten_oosten_van_Oostwold_%28Westerkwartier%29.jpg/1280px-De_Gave_ten_oosten_van_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Oost-_en_Noordgevel_-_Oostwold_%28Westerkwartier%29_-_20176047_-_RCE.jpg/1280px-Oost-_en_Noordgevel_-_Oostwold_%28Westerkwartier%29_-_20176047_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oostwold",
-   "credit": "Foto: Cauda Rubra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Cauda Rubra",
+   "credit": "Foto: A. J. van der Wal · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "A. J. van der Wal",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Gave_ten_oosten_van_Oostwold_(Westerkwartier).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oost-_en_Noordgevel_-_Oostwold_(Westerkwartier)_-_20176047_-_RCE.jpg"
   }
  },
  {
@@ -145314,7 +144909,7 @@
   },
   "hash": "b2780f90b05e",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Hoofdstraat_Oostwold_%28Westerkwartier%29.jpg/1280px-Hoofdstraat_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/De_Gave_ten_oosten_van_Oostwold_%28Westerkwartier%29.jpg/1280px-De_Gave_ten_oosten_van_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oostwold",
@@ -145322,7 +144917,7 @@
    "author": "Cauda Rubra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoofdstraat_Oostwold_(Westerkwartier).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:De_Gave_ten_oosten_van_Oostwold_(Westerkwartier).jpg"
   }
  },
  {
@@ -158073,15 +157668,15 @@
   },
   "hash": "c132682e9774",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Insel_Schiermonnikoog%2C_Nordsee_2000-04-26_HB02861.jpg/1280px-Insel_Schiermonnikoog%2C_Nordsee_2000-04-26_HB02861.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg/1280px-Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
-   "credit": "Foto: Franzius · CC BY 4.0 · Wikimedia Commons",
-   "author": "Franzius",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Insel_Schiermonnikoog,_Nordsee_2000-04-26_HB02861.jpg"
+   "credit": "Foto: Unknown · Public domain · Wikimedia Commons",
+   "author": "Unknown",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg"
   }
  },
  {
@@ -158273,15 +157868,15 @@
   },
   "hash": "621361aa235a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Landschappen%2C_dorpsgezichten%2C_SFA022829322.jpg/1280px-Landschappen%2C_dorpsgezichten%2C_SFA022829322.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Insel_Schiermonnikoog%2C_Nordsee_2000-04-26_HB02861.jpg/1280px-Insel_Schiermonnikoog%2C_Nordsee_2000-04-26_HB02861.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
-   "credit": "Foto: Unknown author Unknown author · Public domain · Wikimedia Commons",
-   "author": "Unknown author Unknown author",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landschappen,_dorpsgezichten,_SFA022829322.jpg"
+   "credit": "Foto: Franzius · CC BY 4.0 · Wikimedia Commons",
+   "author": "Franzius",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Insel_Schiermonnikoog,_Nordsee_2000-04-26_HB02861.jpg"
   }
  },
  {
@@ -158670,15 +158265,15 @@
   },
   "hash": "87920b8e2963",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Aerial_image_of_Schiermonnikoog_%28view_from_the_southwest%29.jpg/1280px-Aerial_image_of_Schiermonnikoog_%28view_from_the_southwest%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Landschappen%2C_dorpsgezichten%2C_SFA022829322.jpg/1280px-Landschappen%2C_dorpsgezichten%2C_SFA022829322.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
-   "credit": "Foto: Carsten Steger · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Carsten Steger",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Schiermonnikoog_(view_from_the_southwest).jpg"
+   "credit": "Foto: Unknown author Unknown author · Public domain · Wikimedia Commons",
+   "author": "Unknown author Unknown author",
+   "license": "Public domain",
+   "licenseUrl": null,
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landschappen,_dorpsgezichten,_SFA022829322.jpg"
   }
  },
  {
@@ -159338,15 +158933,15 @@
   },
   "hash": "90fb9f3845c5",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Aude_kolonyhuis-schiermonnikoog.jpg/1280px-Aude_kolonyhuis-schiermonnikoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Aerial_image_of_Schiermonnikoog_%28view_from_the_southwest%29.jpg/1280px-Aerial_image_of_Schiermonnikoog_%28view_from_the_southwest%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
-   "credit": "Foto: Hein56didden · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Hein56didden",
+   "credit": "Foto: Carsten Steger · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Carsten Steger",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aude_kolonyhuis-schiermonnikoog.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Schiermonnikoog_(view_from_the_southwest).jpg"
   }
  },
  {
@@ -160397,7 +159992,7 @@
   },
   "hash": "c90f8833904b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Berkenplas-schiermonnikoog.jpg/1280px-Berkenplas-schiermonnikoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Aude_kolonyhuis-schiermonnikoog.jpg/1280px-Aude_kolonyhuis-schiermonnikoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
@@ -160405,7 +160000,7 @@
    "author": "Hein56didden",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berkenplas-schiermonnikoog.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aude_kolonyhuis-schiermonnikoog.jpg"
   }
  },
  {
@@ -161988,15 +161583,15 @@
   },
   "hash": "308f550d3e4a",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg/1280px-Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Berkenplas-schiermonnikoog.jpg/1280px-Berkenplas-schiermonnikoog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schiermonnikoog",
-   "credit": "Foto: Unknown · Public domain · Wikimedia Commons",
-   "author": "Unknown",
-   "license": "Public domain",
-   "licenseUrl": null,
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorpsgezicht-schiermonnikoog-met-vuurtoren-en-kerk.jpg"
+   "credit": "Foto: Hein56didden · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Hein56didden",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berkenplas-schiermonnikoog.jpg"
   }
  },
  {
@@ -224654,53 +224249,6 @@
   }
  },
  {
-  "id": "evt_cbc263244bf21f",
-  "slug": "klusochtend-gaastmeer-2027-04-17",
-  "title": "Klusochtend",
-  "occurrences": [
-   {
-    "date": "2027-04-17",
-    "endDate": null,
-    "startTime": "09:00",
-    "endTime": "13:00"
-   }
-  ],
-  "venue": {
-   "name": "Us Doarpshûs",
-   "city": "Gaastmeer",
-   "lat": 52.96817588,
-   "lon": 5.52666901
-  },
-  "price": "Zie organisator",
-  "url": "https://www.degaastmar.nl/evenement/klusochtend/",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.degaastmar.nl/evenement/klusochtend/",
-    "host": "degaastmar.nl",
-    "seenAt": "2026-11-26"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "organisator",
-   "reason": "trefwoord 'loop' op de pagina van de organisator",
-   "confidence": 0.65
-  },
-  "hash": "5e9b747eb670",
-  "image": {
-   "url": "https://www.degaastmar.nl/wp-content/uploads/2025/01/klussen-in-de-zomervakantie-afvalcontainerbestellen.jpg",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Klusochtend",
-   "credit": "Foto: De Gaastmar",
-   "sourceUrl": "https://www.degaastmar.nl/evenement/klusochtend/"
-  }
- },
- {
   "id": "evt_6e7e09053cd205",
   "slug": "groene-ruilmarkt-voor-planten-stekjes-en-zaden-burgum-2027-04-17",
   "title": "Groene Ruilmarkt voor planten, stekjes en zaden",
@@ -231809,15 +231357,15 @@
   },
   "hash": "05439a46f31b",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Kleine_Oostwolderpolder_-_molenromp.jpg/1280px-Kleine_Oostwolderpolder_-_molenromp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Hoofdstraat_Oostwold_%28Westerkwartier%29.jpg/1280px-Hoofdstraat_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oostwold",
-   "credit": "Foto: Hardscarf · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Hardscarf",
+   "credit": "Foto: Cauda Rubra · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Cauda Rubra",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kleine_Oostwolderpolder_-_molenromp.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoofdstraat_Oostwold_(Westerkwartier).jpg"
   }
  },
  {
@@ -254063,15 +253611,15 @@
   },
   "hash": "006d1be695bf",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/MFC_De_Gaveborg_Oostwold_%28Westerkwartier%29.jpg/1280px-MFC_De_Gaveborg_Oostwold_%28Westerkwartier%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Kleine_Oostwolderpolder_-_molenromp.jpg/1280px-Kleine_Oostwolderpolder_-_molenromp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Oostwold",
-   "credit": "Foto: Cauda Rubra · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Cauda Rubra",
+   "credit": "Foto: Hardscarf · CC BY-SA 4.0 · Wikimedia Commons",
+   "author": "Hardscarf",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:MFC_De_Gaveborg_Oostwold_(Westerkwartier).jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kleine_Oostwolderpolder_-_molenromp.jpg"
   }
  },
  {
