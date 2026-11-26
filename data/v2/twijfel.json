@@ -10,41 +10,11 @@
   ]
  },
  {
-  "id": "evt_2643a61790d997",
-  "title": "Doe mee met de sportinstuif",
-  "kind": "sport",
-  "reason": "oude categorie 'sport'",
-  "url": "https://levendigmusselkanaal.nl/agenda/151828/2026-11-26/doe-mee-met-de-sportinstuif",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_bfc682b0d78e9c",
   "title": "Minotaur",
   "kind": "film",
   "reason": "website sliekerfilm.nl",
   "url": "https://sliekerfilm.nl/programma/default",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_fce8bf4b73db07",
-  "title": "Doe mee aan een weerbaar Lippenhuizen",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://lippenhuizen.frl/evenement/weerbaar",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_9acc1bcaf84b96",
-  "title": "Let’s Orange the World",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://deknipe.frl/evenement/lets-orange-the-world",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -155,16 +125,6 @@
   "kind": "sport",
   "reason": "oude categorie 'sport'",
   "url": "https://wommels.nl/activiteit/slachterin/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_026fdbf2b2f2a8",
-  "title": "Stichting Oudheidskamer",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://drachtstercompagnie.frl/event/stichting-oudheidskamer/?event_date=2026-11-28",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -360,16 +320,6 @@
   ]
  },
  {
-  "id": "evt_6706e5cb50f7ec",
-  "title": "Helianthus Zathe in Wintersfeer!",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://drachtstercompagnie.frl/event/helianthus-zathe-in-wintersfeer-5/?event_date=2026-12-02",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_b0e02cfb1f043f_54e063558c06",
   "title": "Warme Jassendag",
   "kind": "overig",
@@ -400,6 +350,16 @@
   ]
  },
  {
+  "id": "evt_7efc45e8bf8478",
+  "title": "Doe mee met de sportinstuif",
+  "kind": "sport",
+  "reason": "oude categorie 'sport'",
+  "url": "https://levendigmusselkanaal.nl/agenda/151828/2026-12-03/doe-mee-met-de-sportinstuif",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_d8f464dc1dbe5a",
   "title": "Oefencafé in de Bibliotheek",
   "kind": "lezing",
@@ -425,6 +385,26 @@
   "kind": "lezing",
   "reason": "website bind.op-shop.nl",
   "url": "https://bind.op-shop.nl/17684/aan-de-slag-met-ai-vervolgbijeenkomst/03-12-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_2488ec85de08f8",
+  "title": "3D-printen en lasersnijden",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/3d-printenforum-open-inloop?date=03-12-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_7d7722595c714c",
+  "title": "Meet-o-theek: open inloop",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/meet-o-theek-open-inloop?date=03-12-2026",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -781,6 +761,26 @@
   ]
  },
  {
+  "id": "evt_b283578a173021",
+  "title": "3D-printen en lasersnijden",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/3d-printenforum-open-inloop?date=10-12-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_50fb6ba52eb27d",
+  "title": "Meet-o-theek: open inloop",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/meet-o-theek-open-inloop?date=10-12-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_cd9312456189fc",
   "title": "Waterstofnetwerk Drenthe Overijssel",
   "kind": "overig",
@@ -855,7 +855,7 @@
   "title": "Organisator",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://hooghalen.nu/cdn-cgi/l/email-protection#ef8e8c9b8699869b8a869b8a818b809d9f9c879a869c87808088878e838a81af88828e8683c18c8082",
+  "url": "https://hooghalen.nu/cdn-cgi/l/email-protection#563735223f203f22333f22333832392426253e233f253e3939313e373a333816313b373f3a7835393b",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -911,6 +911,17 @@
   ]
  },
  {
+  "id": "evt_1993818e9c881c",
+  "title": "Festival de rijdende popschool",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://dorpshuiszeerijp.nl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
+  ]
+ },
+ {
   "id": "evt_e0000bd5371640",
   "title": "Kerst in Westerlee",
   "kind": "overig",
@@ -961,16 +972,6 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_405edf8c705c",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_c9fa9893c21cef",
   "title": "Maak je (digitale) kerstkaart met de Green Screen",
   "kind": "lezing",
@@ -985,7 +986,7 @@
   "title": "Randprogramma Puin Hoop: Sebastiaan Vos",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.gridgroningen.nl/agenda",
+  "url": "https://www.gridgroningen.nl/agenda/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1001,11 +1002,31 @@
   ]
  },
  {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "id": "evt_8c6e366f77f1dd",
+  "title": "ACADEMIEPLEIN GRONINGEN",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.pridegroningen.nl/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/0",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1086,6 +1107,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://reduzum.com/agenda/?event_id1=61153",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_45f8145e9a5993",
+  "title": "Lichtceremonie",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://doopsgezindengroningen.nl/agenda_cat/activiteiten/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1295,7 +1326,7 @@
   "title": "Organisator",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://hooghalen.nu/cdn-cgi/l/email-protection#5b283e38293e2f3a2932281b3a3f2d3e353f34753537",
+  "url": "https://hooghalen.nu/cdn-cgi/l/email-protection#8efdebedfcebfaeffce7fdceefeaf8ebe0eae1a0e0e2",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1406,6 +1437,26 @@
   "kind": "lezing",
   "reason": "website ontdekdebieb.op-shop.nl",
   "url": "https://ontdekdebieb.op-shop.nl/18265/bookfolding-voor-kinderen-kerst/17-12-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_8f9c070c1f12e2",
+  "title": "3D-printen en lasersnijden",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/3d-printenforum-open-inloop?date=17-12-2026",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_db473d3c577bbc",
+  "title": "Meet-o-theek: open inloop",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://forum.nl/nl/agenda/meet-o-theek-open-inloop?date=17-12-2026",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1606,16 +1657,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://ysbrechtum.com/20-dec-scrooge-on-tour/",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_9efbffc58d6d8e",
-  "title": "André Rieu",
-  "kind": "theater",
-  "reason": "website theaterroden.nl",
-  "url": "https://theaterroden.nl/andré-rieu",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2061,19 +2102,8 @@
   ]
  },
  {
-  "id": "evt_a947165a433b6b",
-  "title": "Spring festival",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf",
-   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
-  ]
- },
- {
-  "id": "evt_786e08f5988b66",
-  "title": "Springfestijn",
+  "id": "evt_813fdf55273fac",
+  "title": "Springfestijn 25",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
@@ -2232,6 +2262,16 @@
   ]
  },
  {
+  "id": "evt_4c0d849687b937",
+  "title": "31 dec/1 jan Kloksmeren in ‘t Marnehoes om middernacht",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://wehe-denhoorn.nl/event/31-dec-1-jan-kloksmeren-in-t-marnehoes-om-middernacht/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_6dfb103997b3f5",
   "title": "Oudjaar in Dörpshoes Nijland",
   "kind": "overig",
@@ -2373,16 +2413,6 @@
   ]
  },
  {
-  "id": "evt_e1d3ae22fa7cb0",
-  "title": "Master Pullz Assen",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://masterpullz.com/beurs/mp-assen",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_07145fad32f049",
   "title": "Lycurgus Groningen – Sliedrecht Sport",
   "kind": "sport",
@@ -2498,6 +2528,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://groatekerk.nl/zondag-17-januari-mijn-hemel-blauw/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a6373135cb1243",
+  "title": "De Kledingdokter in De Bolster",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://onstwedde.info/agenda/artikel/de-kledingdokter-in-de-bolster",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2648,6 +2688,16 @@
   "kind": "theater",
   "reason": "website klameare-workum.nl",
   "url": "https://klameare-workum.nl/event/marcel-smit/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_004d074454c191",
+  "title": "De Kledingdokter in De Bolster",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://onstwedde.info/agenda/artikel/de-kledingdokter-in-de-bolster-1",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2828,6 +2878,16 @@
   "kind": "lezing",
   "reason": "website ontdekdebieb.op-shop.nl",
   "url": "https://ontdekdebieb.op-shop.nl/19389/fryske-gedichten-schrijven-met-arjan-hut/04-02-2027",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_4f523eb0f91078",
+  "title": "Mizzemos",
+  "kind": "lezing",
+  "reason": "website ticketing.groningsebibliotheken.nl",
+  "url": "https://ticketing.groningsebibliotheken.nl/inschrijven/775046/Mizzemos.html",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3038,6 +3098,16 @@
   "kind": "sport",
   "reason": "website elfstedenhal.frl",
   "url": "https://elfstedenhal.frl/agenda/wintertriathlon-2/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_fde98fb9dbee5e",
+  "title": "Valentijn Hemelse liefde",
+  "kind": "kunst",
+  "reason": "website observeum.nl",
+  "url": "https://www.observeum.nl/agenda/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3876,21 +3946,11 @@
   ]
  },
  {
-  "id": "evt_acc32bfdcdba61",
-  "title": "DNS Brick Event",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_7546169930a87a",
   "title": "DNS Brick Event",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://dnsbricks.nl/",
+  "url": "https://www.debontewever.nl/nl/events/dns-brick-event",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4267,21 +4327,21 @@
   ]
  },
  {
-  "id": "evt_4d3d4688086788",
-  "title": "Assen Card Convention",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.assencardconvention.nl/standhouders",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
   "id": "evt_a2f7bbf8fc0205",
   "title": "Dflat Carpet",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://www.societeitdeharmonie.nl/agenda/dflat-carpet/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_7b2307a1538c04",
+  "title": "2e editie Assen Card Convention 29",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://www.assencardconvention.nl/standhouders",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
