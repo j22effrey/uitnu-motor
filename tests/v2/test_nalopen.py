@@ -902,7 +902,8 @@ def test_dagcontrole_26_november_geen_uitje():
 
 
 def test_dagcontrole_26_november_echte_uitjes_blijven_staan():
-    for title in ("Links of rechts: cabaret", "Klusochtend met gluhwein en live muziek", "Start winterseizoen: concert", "Damles open dag", "BATO O11 kerstconcert"):
+    for title in ("Links of rechts: cabaret", "Klusochtend met gluhwein en live muziek", "Start winterseizoen: concert", "Damles open dag", "BATO O11 kerstconcert",
+                  "Live M10-2", "Disco O11-2", "Show O12-1", "Rock M15-3"):
         assert not not_an_outing(_event(title)), title
 
 
