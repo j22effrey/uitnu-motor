@@ -910,3 +910,24 @@ def test_dagcontrole_26_november_echte_uitjes_blijven_staan():
 def test_dagcontrole_26_november_vvv_schiermonnikoog_is_uitgesloten_bron():
     from collector.discover_venues import EXCLUDED_HOSTS
     assert "vvvschiermonnikoog.nl" in EXCLUDED_HOSTS
+
+
+# Dagcontrole 27 november 2026: oefencafé, friet-uurtjes, kledingdokter, losse resten van een dorpssite, nieuws onder 'algemeen-nieuws'.
+def test_dagcontrole_27_november_geen_uitje():
+    for title in ("Oefencafé in de Bibliotheek", "De Kledingdokter in De Bolster", "Gisteren", "Alvast wat ondernemen"):
+        assert not_an_outing(_event(title)), title
+    event = _event("Ha, lekker… zondag 29 november weer inloopfrietuurtjes")
+    event["url"] = "https://adorp.com/category/algemeen-nieuws/"
+    assert not_an_outing(event)
+
+
+def test_dagcontrole_27_november_echte_uitjes_blijven_staan():
+    for title in ("Oefencafé met live muziek", "Kledingdokter kerstmarkt", "Gisteren: concert"):
+        assert not not_an_outing(_event(title)), title
+    event = _event("Kerstmarkt Adorp")
+    event["url"] = "https://adorp.com/category/algemeen-nieuws/kerstmarkt-adorp"
+    assert not not_an_outing(event)
+
+
+def test_dagcontrole_27_november_voorlezen_is_kinderen():
+    assert classify(_event("Voorlezen"), OVERRIDES)["kind"] == "kinderen"
