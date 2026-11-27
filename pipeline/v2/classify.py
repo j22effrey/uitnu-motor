@@ -317,7 +317,7 @@ TEAM_MATCH = re.compile(r"^(?:beker:? )?[\w .'’/&-]+ (?:[a-z]{1,2} ?|jo\d+-|mo
                         r"(?:[a-z]{1,2} ?|jo\d+-|mo\d+-)?\d{1,2}(?:\+\d)?\b")
 # Een vacaturepagina is geen uitje ('Reageren' op kloosterterapel.nl/vacatures/..., dagcontrole 24 november 2026).
 VACANCY_PATH = re.compile(r"/(?:vacatures?|werken-bij|solliciteren)(?:/|$)", re.IGNORECASE)
-NEWS_PATH = re.compile(r"/(?:[\w]+-)?(?:nieuws|nieuwsberichten?|berichten|author)/", re.IGNORECASE)
+NEWS_PATH = re.compile(r"/(?:nieuws|nieuwsberichten?|berichten|author)/", re.IGNORECASE)
 # De uitslagenpagina van een club ('scfraneker.nl/200/63638/uitslagen/wedstrijd-details/'): een competitiewedstrijd.
 MATCH_PATH = re.compile(r"/uitslagen/(?:[\w-]+/)*wedstrijd-details", re.IGNORECASE)
 # Een spel of sport van de club, ook midden in de naam ('Maatbiljarten Krekt Rekke', 'Darten in dorpshuis
@@ -679,7 +679,7 @@ def page_hints(text: str) -> dict:
 
 # Gevonden bij het nalopen van de hele agenda (20 oktober 2026, 3.024 uitjes): menukopjes en knoppen,
 # aanbiedingen, mededelingen, werkgroepen en vrijwilligerswerk, vaste dorps- en clubavonden, computerhulp.
-SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|gisteren|alvast (?:iets|wat) ondernemen|links|klus(?:ochtend|dag|middag)|start (?:winter|zomer)seizoen(?: [\d/]+)?|hanze ?hogeschool|waarme h[uú]skeamer|inloopcaf[eé]|open kerk|gft|nieuws(?:berichten)?|dag \d{1,2}|programma \(onder voorbehoud\)|(?:witte donderdag|stille zaterdag|goede vrijdag|eerste paasdag|tweede paasdag|pasen|hemelvaart|pinksteren|gedachteniszondag|bijbelgesprekskring|moderamenbijeenkomst)(?:\W+\d{1,2} (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?: \d{4})?)?|ontdek alle \w+|nu te zien|leste nijs"
+SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|alvast (?:iets|wat) ondernemen|links|klus(?:ochtend|dag|middag)|start (?:winter|zomer)seizoen(?: [\d/]+)?|hanze ?hogeschool|waarme h[uú]skeamer|inloopcaf[eé]|open kerk|gft|nieuws(?:berichten)?|dag \d{1,2}|programma \(onder voorbehoud\)|(?:witte donderdag|stille zaterdag|goede vrijdag|eerste paasdag|tweede paasdag|pasen|hemelvaart|pinksteren|gedachteniszondag|bijbelgesprekskring|moderamenbijeenkomst)(?:\W+\d{1,2} (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?: \d{4})?)?|ontdek alle \w+|nu te zien|leste nijs"
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|(?:\w+ )?(?:dorps?|dorpskracht|activiteiten|evenementen|agenda)\s?kalender (?:\w+/)?(?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?:/\w+)?(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
