@@ -344,7 +344,7 @@ VILLAGE_ROUTINE = re.compile(
     r"|\b(?:dorps|doarps|buurt|buur)(?:maaltijd|diner|etentje|eten|lunch|tafel|miel|iten)\b|\bopen tafel\b|\bstamtafel\b"
     r"|\bite\b|\w*(?:brunch|buffet)\b|\w*lunch(?:buffet)?\b"
     r"|dorpskamer|doarpskeamer|dorpshuiskamer|buurtkamer|\bhuiskamer\b|\w*handwerk\w*|\bbrei ?cafe|\bhaak ?cafe|\bcreatief cafe|\bcrea ?(?:cafe|doe)"
-    r"|\b(?:vrouwen|mannen|internet|computer|digi|taal|mienskip) ?cafe\b|digi-? ?taalhuis|\btaalhuis\b|\w*soos\b"
+    r"|\b(?:vrouwen|mannen|internet|computer|digi|taal|oefen|mienskip) ?cafe\b|digi-? ?taalhuis|\btaalhuis\b|\w*soos\b"
     r"|\bhobby ?(?:club|lub|middag|avond)\b|\bontmoetings?(?:middag|ochtend|avond)(?:en)?\b|\bbewegen en ontmoeten\b"
     r"|\bcafe ?avond in (?:het )?(?:buurthuis|dorpshuis)|\bverrassingsmiddag\b"
     r"|positieve gezondheid"
@@ -679,7 +679,7 @@ def page_hints(text: str) -> dict:
 
 # Gevonden bij het nalopen van de hele agenda (20 oktober 2026, 3.024 uitjes): menukopjes en knoppen,
 # aanbiedingen, mededelingen, werkgroepen en vrijwilligerswerk, vaste dorps- en clubavonden, computerhulp.
-SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|links|klus(?:ochtend|dag|middag)|start (?:winter|zomer)seizoen(?: [\d/]+)?|hanze ?hogeschool|waarme h[uú]skeamer|inloopcaf[eé]|open kerk|gft|nieuws(?:berichten)?|dag \d{1,2}|programma \(onder voorbehoud\)|(?:witte donderdag|stille zaterdag|goede vrijdag|eerste paasdag|tweede paasdag|pasen|hemelvaart|pinksteren|gedachteniszondag|bijbelgesprekskring|moderamenbijeenkomst)(?:\W+\d{1,2} (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?: \d{4})?)?|ontdek alle \w+|nu te zien|leste nijs"
+SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|alvast (?:iets|wat) ondernemen|links|klus(?:ochtend|dag|middag)|start (?:winter|zomer)seizoen(?: [\d/]+)?|hanze ?hogeschool|waarme h[uú]skeamer|inloopcaf[eé]|open kerk|gft|nieuws(?:berichten)?|dag \d{1,2}|programma \(onder voorbehoud\)|(?:witte donderdag|stille zaterdag|goede vrijdag|eerste paasdag|tweede paasdag|pasen|hemelvaart|pinksteren|gedachteniszondag|bijbelgesprekskring|moderamenbijeenkomst)(?:\W+\d{1,2} (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?: \d{4})?)?|ontdek alle \w+|nu te zien|leste nijs"
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|(?:\w+ )?(?:dorps?|dorpskracht|activiteiten|evenementen|agenda)\s?kalender (?:\w+/)?(?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?:/\w+)?(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
@@ -701,7 +701,7 @@ SWEEP_NOT_OUTING = re.compile(
     r"|volgeboekt|uitverkocht)$|\bgebedsavond\b|^bidden voor\b|\bdankdag(?:viering|dienst)?\b(?!.*(?:concert|orgel|muziek|optreden))|^stemmen op\b|^uitzending op\b"
     # Dagcontrole 4 november 2026: een open-deurdienst en Christus Koning (kerk), verkiezingen en de start van de kaartverkoop
     # (mededelingen), een kerstboom plaatsen (vrijwilligerswerk); een testregel van een website staat bij de kopjes.
-    r"|\bopendeurdienst\b|\bmobiele bibliotheek\b|^help mee\b(?! met)|\bbladruimen\b|\bpraat mee over (?:je|jouw|uw|onze|de) (?:leefomgeving|dorp|buurt|wijk|toekomst)|^b ?& ?w\b[\w ]*\bop (?:besite|bezoek)\b|\bzamelt weer in\b|\bzie artikel\b|^vervanging\b.*\w*(?:brug|riolering|verlichting)\b|\bkledingkringloop\b|\beeuwigheidszondag\b|\binloop ?spreek(?:uur|uren)\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
+    r"|\bopendeurdienst\b|\bmobiele bibliotheek\b|\bkledingdokter\b|^help mee\b(?! met)|\bbladruimen\b|\bpraat mee over (?:je|jouw|uw|onze|de) (?:leefomgeving|dorp|buurt|wijk|toekomst)|^b ?& ?w\b[\w ]*\bop (?:besite|bezoek)\b|\bzamelt weer in\b|\bzie artikel\b|^vervanging\b.*\w*(?:brug|riolering|verlichting)\b|\bkledingkringloop\b|\beeuwigheidszondag\b|\binloop ?spreek(?:uur|uren)\b|^\d+e advent\b|\bdamensauna\b|\bvoor minima\b|^dor\w*huis open$|\bscootmobiel ?(?:training|cursus|keuring|les)\w*|\bgroot huisbezoek\b|\bnl doet\b|\bsw doet\b|\byoga ?les(?:sen)?\b|\byogales(?:sen)?\b|^\d+[- ]?(?:day|daagse|dagen)\b.*\b\w*(?:trip|reis|spectacle|arrangement)\b|^(?:[4-9]|\d{2})[- ]?(?:daags|day)\b.*\b\w*(?:spectacle|spektakel)\b|^christus,? koning\b|^verkiezing\w*\b|\bkaart(?:verkoop|ferkeap)\b|^kerstboom plaatsen\b"
     # Dagcontrole 2 november 2026: een bijeenkomst of uitnodiging zonder meer (kerk of dorp), een klimaatdienst, een
     # parochieavond, een plekberaad, een verkoopactie van de club (droge worst, drop)
     # en het ophalen van iets: geen uitje. Staat er een lezing, workshop of voorstelling bij, dan blijft het staan.
