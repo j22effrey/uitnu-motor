@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "policy": {
     "goal": "Eigen first-party crawl-laag zodat UITNU niet afhankelijk is van een externe zoek- of toerisme-API.",
     "rules": [
@@ -17531,6 +17531,47 @@
       },
       "activatedFromCandidate": "beachrockers.nl",
       "policyReviewedAt": "2026-11-26"
+    },
+    {
+      "id": "buckshotcafe-nl-web",
+      "name": "Buckshot",
+      "rootUrl": "https://www.buckshotcafe.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://buckshotcafe.nl/"
+      },
+      "activatedFromCandidate": "buckshotcafe.nl",
+      "defaultPlace": {
+        "venue": "Buckshot",
+        "city": "Groningen",
+        "lat": 53.2145188,
+        "lon": 6.5670664
+      },
+      "policyReviewedAt": "2026-11-27"
+    },
+    {
+      "id": "zomerfolk-nl-web",
+      "name": "Rapalje Zomerfolk Festival",
+      "rootUrl": "https://zomerfolk.nl/",
+      "role": "venue",
+      "enabled": true,
+      "maxPages": 40,
+      "maxDepth": 3,
+      "minDelaySeconds": 0.5,
+      "extractorHint": "html_agenda_dutch",
+      "extractorConfig": {
+        "agendaUrl": "https://zomerfolk.nl/"
+      },
+      "activatedFromCandidate": "zomerfolk.nl",
+      "defaultPlace": {
+        "city": "Groningen"
+      },
+      "policyReviewedAt": "2026-11-27"
     }
   ]
 }

@@ -815,7 +815,7 @@
   "title": "Organisator",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://hooghalen.nu/cdn-cgi/l/email-protection#563735223f203f22333f22333832392426253e233f253e3939313e373a333816313b373f3a7835393b",
+  "url": "https://hooghalen.nu/cdn-cgi/l/email-protection#3b5a584f524d524f5e524f5e555f54494b48534e52485354545c535a575e557b5c565a525715585456",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -932,6 +932,16 @@
   ]
  },
  {
+  "id": "evt_b0a9e05f4aa023_405edf8c705c",
+  "title": "Midwinter in Middelstum",
+  "kind": "theater",
+  "reason": "website kerkfeerwerd.nl",
+  "url": "https://www.kerkfeerwerd.nl/activiteiten",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_c9fa9893c21cef",
   "title": "Maak je (digitale) kerstkaart met de Green Screen",
   "kind": "lezing",
@@ -972,21 +982,11 @@
   ]
  },
  {
-  "id": "evt_545fbdb78f4473_dbb2bc0bb5f9",
+  "id": "evt_b0a9e05f4aa023_221181e3b33e",
   "title": "Midwinter in Middelstum",
   "kind": "muziek",
   "reason": "website kerkalspodium.nl",
   "url": "https://kerkalspodium.nl/nl/activiteiten/midwinter-in-middelstum/13859/-/-/-/-/0",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_b0a9e05f4aa023_221181e3b33e",
-  "title": "Midwinter in Middelstum",
-  "kind": "theater",
-  "reason": "website kerkfeerwerd.nl",
-  "url": "https://www.kerkfeerwerd.nl/activiteiten",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1067,16 +1067,6 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://reduzum.com/agenda/?event_id1=61153",
-  "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
-  ]
- },
- {
-  "id": "evt_45f8145e9a5993",
-  "title": "Lichtceremonie",
-  "kind": "overig",
-  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://doopsgezindengroningen.nl/agenda_cat/activiteiten/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1286,7 +1276,7 @@
   "title": "Organisator",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://hooghalen.nu/cdn-cgi/l/email-protection#8efdebedfcebfaeffce7fdceefeaf8ebe0eae1a0e0e2",
+  "url": "https://hooghalen.nu/cdn-cgi/l/email-protection#2655434554435247544f55664742504348424908484a",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -1416,7 +1406,7 @@
   "title": "Scrooge",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://berlikum.com/agenda/",
+  "url": "https://berlikum.com/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2052,13 +2042,14 @@
   ]
  },
  {
-  "id": "evt_813fdf55273fac",
-  "title": "Springfestijn 25",
+  "id": "evt_a947165a433b6b",
+  "title": "Spring festival",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://shop.paylogic.com/0126a62645a44262b6ab32a4f25fb23d",
   "waarom": [
-   "soort niet uit de titel en niet van de organisator zelf"
+   "soort niet uit de titel en niet van de organisator zelf",
+   "noemt zich festival, maar zonder bewijs van meerdere podia en artiesten"
   ]
  },
  {
@@ -2146,7 +2137,7 @@
   "title": "Het vat moet leeg",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.terwispel.info/agenda/page/2/",
+  "url": "https://www.terwispel.info/wp-content/uploads/2026/11/Het-vat-moet-leeg-2026.pdf",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2312,6 +2303,16 @@
   ]
  },
  {
+  "id": "evt_89a2266847a64f",
+  "title": "Lycurgus Groningen – Fino Kaposvár",
+  "kind": "sport",
+  "reason": "website lycurgus.nl",
+  "url": "https://www.lycurgus.nl/wedstrijden/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
   "id": "evt_b5304b2085ba16",
   "title": "Kruidkoek & Joost Oomen",
   "kind": "festival",
@@ -2363,11 +2364,11 @@
   ]
  },
  {
-  "id": "evt_07145fad32f049",
-  "title": "Lycurgus Groningen – Sliedrecht Sport",
-  "kind": "sport",
-  "reason": "website lycurgus.nl",
-  "url": "https://www.lycurgus.nl/wedstrijden/",
+  "id": "evt_e1d3ae22fa7cb0",
+  "title": "Master Pullz Assen",
+  "kind": "overig",
+  "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
+  "url": "https://masterpullz.com/beurs/mp-assen",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -2378,6 +2379,16 @@
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
   "url": "https://schoonloo.com/het-dorp/boerhoorn/columns/biodiversiteit-wat-je-niet-hoort",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_07145fad32f049",
+  "title": "Lycurgus Groningen – Sliedrecht Sport",
+  "kind": "sport",
+  "reason": "website lycurgus.nl",
+  "url": "https://www.lycurgus.nl/wedstrijden/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -3675,6 +3686,17 @@
   ]
  },
  {
+  "id": "evt_54b8d33b9c2106",
+  "title": "HYPERPOËZIE – PROTECT ME FROM WHAT I WANT",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/hyperpoezie-protect-me-from-what-i-want-4/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
   "id": "evt_136ffffc53556b",
   "title": "Ainrommer Oavend Eenrum",
   "kind": "overig",
@@ -3846,6 +3868,17 @@
   ]
  },
  {
+  "id": "evt_f4df8930753da9",
+  "title": "HYPERPOËZIE – PROTECT ME FROM WHAT I WANT",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/hyperpoezie-protect-me-from-what-i-want-5/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
   "id": "evt_f038b1159df8f0",
   "title": "Motorpsycho",
   "kind": "muziek",
@@ -3956,6 +3989,17 @@
   ]
  },
  {
+  "id": "evt_8dba4a3869b2b8",
+  "title": "HYPERPOËZIE – PROTECT ME FROM WHAT I WANT",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/hyperpoezie-protect-me-from-what-i-want-6/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
+  ]
+ },
+ {
   "id": "evt_39dcfacb52c9d2",
   "title": "Week van het Dorpshuis 2027: Nederland Ontmoet",
   "kind": "overig",
@@ -4043,6 +4087,17 @@
   "url": "https://nijbeets.frl/evenement/domelas-verlosser",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_22203feb5cb5ea",
+  "title": "HYPERPOËZIE – PROTECT ME FROM WHAT I WANT",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/hyperpoezie-protect-me-from-what-i-want-7/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
   ]
  },
  {
@@ -4257,21 +4312,21 @@
   ]
  },
  {
-  "id": "evt_a2f7bbf8fc0205",
-  "title": "Dflat Carpet",
+  "id": "evt_4d3d4688086788",
+  "title": "Assen Card Convention",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.societeitdeharmonie.nl/agenda/dflat-carpet/",
+  "url": "https://www.assencardconvention.nl/standhouders",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
  },
  {
-  "id": "evt_7b2307a1538c04",
-  "title": "2e editie Assen Card Convention 29",
+  "id": "evt_a2f7bbf8fc0205",
+  "title": "Dflat Carpet",
   "kind": "overig",
   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-  "url": "https://www.assencardconvention.nl/standhouders",
+  "url": "https://www.societeitdeharmonie.nl/agenda/dflat-carpet/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
   ]
@@ -4304,6 +4359,17 @@
   "url": "https://www.vries.nu/agendapunt/dfg-cup/",
   "waarom": [
    "soort niet uit de titel en niet van de organisator zelf"
+  ]
+ },
+ {
+  "id": "evt_a239f7f9cd853a",
+  "title": "HYPERPOËZIE – PROTECT ME FROM WHAT I WANT",
+  "kind": "festival",
+  "reason": "website explorethenorth.nl",
+  "url": "https://explorethenorth.nl/event/hyperpoezie-protect-me-from-what-i-want-8/",
+  "waarom": [
+   "soort niet uit de titel en niet van de organisator zelf",
+   "festival op grond van de tekst: controleren en zo nodig in het festivalregister zetten"
   ]
  },
  {
