@@ -1,14 +1,14 @@
 {
  "version": 2,
- "refreshedAt": "2026-11-28T03:37:59+00:00",
+ "refreshedAt": "2026-11-28T05:45:22+00:00",
  "today": "2026-11-28",
- "total": 5398,
+ "total": 5396,
  "bewaardVanVorigeKeer": {},
  "nogAanwezigAnderAdres": {},
  "nietBewaardDoorRegel": {},
  "inputRecords": 11843,
  "outsideArea": 13,
- "geenUitje": 4275,
+ "geenUitje": 4277,
  "vasteActiviteit": 1088,
  "vertaling": 8,
  "teVerVooruit": 314,
@@ -33,13 +33,13 @@
   "theater": 1212,
   "film": 580,
   "lezing": 362,
-  "sport": 306,
+  "sport": 302,
   "kinderen": 273,
   "feest": 266,
-  "overig": 262,
+  "overig": 259,
   "markt": 245,
-  "kunst": 187,
-  "natuur": 153,
+  "kunst": 190,
+  "natuur": 155,
   "eten": 77,
   "festival": 14
  },
@@ -113,7 +113,6 @@
   "Grou": 10,
   "Heeg": 10,
   "Ballum": 10,
-  "Oldeberkoop": 9,
   "Ommelanderwijk": 9,
   "Wommels": 9,
   "Arum": 9,
@@ -126,6 +125,7 @@
   "Eext": 9,
   "Lutten": 9,
   "Schildwolde": 9,
+  "Oldeberkoop": 8,
   "Veenhuizen": 8,
   "Bontebok": 8,
   "Donkerbroek": 8,
@@ -202,7 +202,6 @@
   "Aduard": 4,
   "Blija": 4,
   "Wezup": 4,
-  "Schoonloo": 4,
   "Gramsbergen": 4,
   "Harkema": 4,
   "Bitgum": 4,
@@ -232,6 +231,7 @@
   "Finsterwolde": 3,
   "2e Exlöermond": 3,
   "Smilde": 3,
+  "Schoonloo": 3,
   "Marssum": 3,
   "Middelstum": 3,
   "Zuidhorn": 3,
@@ -592,7 +592,6 @@
   "victoriaparkwolvega.nl": 4,
   "tuindorp-zuid.nl": 4,
   "wezup.info": 4,
-  "schoonloo.com": 4,
   "wehe-denhoorn.nl": 4,
   "fochteloo.nl": 4,
   "zwartsluisactueel.nl": 4,
@@ -619,7 +618,6 @@
   "ontdekwec.nl": 3,
   "tersoal.nl": 3,
   "dorpshuisroderwolde.nl": 3,
-  "oldeberkoop.frl": 3,
   "kunstcentrumdeploeg.nl": 3,
   "thomastsjerke.nl": 3,
   "exmorra.info": 3,
@@ -628,6 +626,7 @@
   "aolegemientehoes.nl": 3,
   "podium34.nl": 3,
   "dorpsbelangenmidwolda.nl": 3,
+  "schoonloo.com": 3,
   "gramsbergen.nl": 3,
   "marssum.info": 3,
   "woudsendonline.nl": 3,
@@ -677,6 +676,7 @@
   "wijster.info": 2,
   "scheepsjoagers.nl": 2,
   "nieuwroden.nu": 2,
+  "oldeberkoop.frl": 2,
   "gridgroningen.nl": 2,
   "mfa-aengwirden.nl": 2,
   "onderdendam.com": 2,
@@ -863,11 +863,11 @@
   "stichtingnobilis.nl": 1
  },
  "photos": {
-  "organisator": 2716,
-  "wikimedia": 2577,
+  "organisator": 2715,
+  "wikimedia": 2576,
   "zonder": 105
  },
- "twijfel": 500,
+ "twijfel": 494,
  "groot": {
   "aantal": 62,
   "redenen": {
@@ -906,9 +906,9 @@
   "groot": "Groot evenement"
  },
  "changes": {
-  "new": 47,
-  "changed": 14,
-  "removed": 143
+  "new": 0,
+  "changed": 9,
+  "removed": 2
  },
  "gate": {
   "passed": true,
@@ -916,7 +916,7 @@
    {
     "name": "aantal_tegenover_vorige_run",
     "passed": true,
-    "detail": "5398 nu, 5378 vorige keer (minimaal 85%)"
+    "detail": "5396 nu, 5398 vorige keer (minimaal 85%)"
    },
    {
     "name": "geen_bron_ineens_leeg",
@@ -926,7 +926,7 @@
    {
     "name": "overig_maximaal_10_procent",
     "passed": true,
-    "detail": "262 van 5398 (5%)"
+    "detail": "259 van 5396 (5%)"
    },
    {
     "name": "velden_compleet",

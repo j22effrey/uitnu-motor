@@ -6363,15 +6363,15 @@
     "seenAt": "2026-11-28"
    }
   ],
-  "kind": "sport",
-  "kindLabel": "Sport",
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
   "tags": [],
   "classification": {
-   "method": "bronhint",
-   "reason": "oude categorie 'sport'",
-   "confidence": 0.5
+   "method": "trefwoord",
+   "reason": "trefwoord 'dorffuhrung'",
+   "confidence": 0.8
   },
-  "hash": "6fb410dd18a3",
+  "hash": "0f54dbbda6c6",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg/1280px-Stra%C3%9Fe_Richtung_Nordsee_20200911_DSC3504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -6907,15 +6907,17 @@
     "seenAt": "2026-11-28"
    }
   ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
   "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
+   "method": "trefwoord",
+   "reason": "trefwoord 'hafenfahrt'",
+   "confidence": 0.8
   },
-  "hash": "4a6f77d1be15",
+  "hash": "4b8eb7832504",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_%28Zollweg%29_-_panoramio.jpg/1280px-Blick_auf_Leuchtturm_vom_Deich_bei_Krummh%C3%B6rn_%28Zollweg%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -7250,15 +7252,17 @@
     "seenAt": "2026-11-28"
    }
   ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
+  "kind": "natuur",
+  "kindLabel": "Natuur en buiten",
+  "tags": [
+   "buiten"
+  ],
   "classification": {
-   "method": "bronhint",
-   "reason": "oude categorie 'sport'",
-   "confidence": 0.5
+   "method": "trefwoord",
+   "reason": "trefwoord 'hafenfahrt'",
+   "confidence": 0.8
   },
-  "hash": "e8305bdf6c2a",
+  "hash": "9264ce765038",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg/1280px-Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -12137,53 +12141,6 @@
   }
  },
  {
-  "id": "evt_bb69d04f8b4492",
-  "slug": "zaterdag-thuiswedstrijden-kv-lintjo-lintjo-1-tegen-wwc-1-oldeberkoop-2026-11-28",
-  "title": "Zaterdag thuiswedstrijden KV Lintjo: Lintjo 1 tegen WWC 1",
-  "occurrences": [
-   {
-    "date": "2026-11-28",
-    "endDate": null,
-    "startTime": "20:30",
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Oldeberkoop",
-   "city": "Oldeberkoop",
-   "lat": 52.9381,
-   "lon": 6.1339
-  },
-  "price": "Zie organisator",
-  "url": "https://oldeberkoop.frl/evenement/zaterdag-thuiswedstrijden-kv-lintjo-lintjo-1-tegen-wwc-1",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://oldeberkoop.frl/evenement/zaterdag-thuiswedstrijden-kv-lintjo-lintjo-1-tegen-wwc-1",
-    "host": "oldeberkoop.frl",
-    "seenAt": "2026-11-28"
-   }
-  ],
-  "kind": "sport",
-  "kindLabel": "Sport",
-  "tags": [],
-  "classification": {
-   "method": "trefwoord",
-   "reason": "trefwoord 'wedstrijd'",
-   "confidence": 0.8
-  },
-  "hash": "04a58b3f5713",
-  "image": {
-   "url": "https://fls-a27880a3-1ed0-4e98-a4f7-5628e9f5897f.laravel.cloud/villages/oldeberkoop/library/variants/X4Bgn3FGKKN7MEHgzQQG2bLHD8e1DyRCXXl2sfzY-m.webp",
-   "type": "organisator",
-   "match": "uitje",
-   "alt": "Foto bij Zaterdag thuiswedstrijden KV Lintjo: Lintjo 1 tegen WWC 1",
-   "credit": "Foto: Oldeberkoop",
-   "sourceUrl": "https://oldeberkoop.frl/evenement/zaterdag-thuiswedstrijden-kv-lintjo-lintjo-1-tegen-wwc-1"
-  }
- },
- {
   "id": "evt_9f9e24ec536677",
   "slug": "concert-new-wave-generation-the-best-of-depeche-mode-blondie-talking-heads-joy-d",
   "title": "Concert New Wave Generation - The Best of Depeche Mode, Blondie, Talking Heads, Joy Division",
@@ -15362,15 +15319,15 @@
     "seenAt": "2026-11-28"
    }
   ],
-  "kind": "overig",
-  "kindLabel": "Overig",
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
   "tags": [],
   "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
+   "method": "trefwoord",
+   "reason": "trefwoord 'ausstellung'",
+   "confidence": 0.8
   },
-  "hash": "310585146e64",
+  "hash": "a2561e7ac090",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Das_Dorf_Hauen_bei_Greetsiel%2C_Gemeinde_Krummh%C3%B6rn%2C_Hauener_Ring.jpg/1280px-Das_Dorf_Hauen_bei_Greetsiel%2C_Gemeinde_Krummh%C3%B6rn%2C_Hauener_Ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -36239,15 +36196,15 @@
     "seenAt": "2026-11-28"
    }
   ],
-  "kind": "sport",
-  "kindLabel": "Sport",
+  "kind": "kunst",
+  "kindLabel": "Kunst en erfgoed",
   "tags": [],
   "classification": {
-   "method": "bronhint",
-   "reason": "oude categorie 'sport'",
-   "confidence": 0.5
+   "method": "trefwoord",
+   "reason": "trefwoord 'stadtfuhrung'",
+   "confidence": 0.8
   },
-  "hash": "70878bee6b43",
+  "hash": "6950d0c16975",
   "image": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg/1280px-Bienenst%C3%B6cke_%28Magazinbeuten%29_Rapsfeld_Krummh%C3%B6rn_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
@@ -78820,56 +78777,6 @@
   }
  },
  {
-  "id": "evt_0749ebc33a80d3",
-  "slug": "inbreng-boeldag-2026-schoonloo-2026-12-19",
-  "title": "Inbreng Boeldag 2026",
-  "occurrences": [
-   {
-    "date": "2026-12-19",
-    "endDate": null,
-    "startTime": null,
-    "endTime": null
-   }
-  ],
-  "venue": {
-   "name": "Schoonloo",
-   "city": "Schoonloo",
-   "lat": 52.9044,
-   "lon": 6.7003
-  },
-  "price": "Zie organisator",
-  "url": "https://www.schoonloo.com/agenda",
-  "status": "bevestigd door de organisator",
-  "sources": [
-   {
-    "type": "organisator",
-    "url": "https://www.schoonloo.com/agenda",
-    "host": "schoonloo.com",
-    "seenAt": "2026-11-28"
-   }
-  ],
-  "kind": "overig",
-  "kindLabel": "Overig",
-  "tags": [],
-  "classification": {
-   "method": "geen",
-   "reason": "geen trefwoord, organisatorgegevens, locatie of hint",
-   "confidence": 0.2
-  },
-  "hash": "f4bf92d03dd4",
-  "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/20190820_Iberenplas.jpg/1280px-20190820_Iberenplas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "type": "wikimedia",
-   "match": "plaats",
-   "alt": "Schoonloo",
-   "credit": "Foto: Gouwenaar · CC BY-SA 4.0 · Wikimedia Commons",
-   "author": "Gouwenaar",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190820_Iberenplas.jpg"
-  }
- },
- {
   "id": "evt_df9915eebdb5c4",
   "slug": "kerst-op-de-coendersborg-nuis-2026-12-19",
   "title": "Kerst op de Coendersborg",
@@ -94489,7 +94396,7 @@
   },
   "hash": "cbc0b1656f50",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/20190820_langs_de_Zwatte_bij_Schoonloo.jpg/1280px-20190820_langs_de_Zwatte_bij_Schoonloo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/20190820_Iberenplas.jpg/1280px-20190820_Iberenplas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schoonloo",
@@ -94497,7 +94404,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190820_langs_de_Zwatte_bij_Schoonloo.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190820_Iberenplas.jpg"
   }
  },
  {
@@ -98671,7 +98578,7 @@
   },
   "hash": "4d9c509d2310",
   "image": {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/20220412_nabij_Zwatte.jpg/1280px-20220412_nabij_Zwatte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/20190820_langs_de_Zwatte_bij_Schoonloo.jpg/1280px-20190820_langs_de_Zwatte_bij_Schoonloo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "type": "wikimedia",
    "match": "plaats",
    "alt": "Schoonloo",
@@ -98679,7 +98586,7 @@
    "author": "Gouwenaar",
    "license": "CC BY-SA 4.0",
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20220412_nabij_Zwatte.jpg"
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190820_langs_de_Zwatte_bij_Schoonloo.jpg"
   }
  },
  {
