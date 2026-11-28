@@ -929,3 +929,19 @@ def test_dagcontrole_27_november_echte_uitjes_blijven_staan():
 
 def test_dagcontrole_27_november_voorlezen_is_kinderen():
     assert classify(_event("Voorlezen"), OVERRIDES)["kind"] == "kinderen"
+
+
+# Dagcontrole 28 november 2026: Duitse rondleidingen en havenvaarten (Greetsiel) waren sport of overig.
+def test_dagcontrole_28_november_duitse_rondleiding_en_havenvaart():
+    for titel, soort in (("Dorfführung durch das Fischerdorf Greetsiel", "kunst"), ("Öffentliche Stadtführung in Emden", "kunst"),
+                         ("Hafenfahrt mit MB Engelke", "natuur"), ("Ausstellung REBELLINNEN", "kunst")):
+        assert classify(_event(titel))["kind"] == soort, titel
+    assert classify(_event("Grünkohl - Hafenfahrt"))["kind"] in ("natuur", "eten")
+
+
+def test_dagcontrole_28_november_amateurwedstrijd_met_tegen_en_inbreng():
+    for titel in ("Zaterdag thuiswedstrijden KV Lintjo: Lintjo 1 tegen WWC 1", "Inbreng Boeldag 2026"):
+        assert not_an_outing(_event(titel)), titel
+    for titel in ("Kerstconcert 2 tegen 1 koor", "Inbreng van het publiek: debat", "Lintjo tegen WWC: open dag", "Inbreng kerstconcert",
+                  "Ajax 1 tegen Feyenoord 1"):
+        assert not not_an_outing(_event(titel)), titel

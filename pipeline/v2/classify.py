@@ -64,7 +64,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
     "natuur": _compile([
         r"wandel", r"excursie", r"natuur", r"vogel", r"sterren", r"paddenstoel", r"wildpluk",
         r"kwelder", r"wadlo", r"boswachter", r"fietstocht", r"struin", r"nacht van de nacht",
-        r"huifkar", r"landgoed", r"vaartocht", r"zwerftocht", r"rondvaart", r"nationaal park",
+        r"huifkar", r"landgoed", r"vaartocht", r"zwerftocht", r"rondvaart", r"hafenfahrt", r"rundfahrt", r"schifffahrt", r"wattwanderung", r"nationaal park",
         r"kuier", r"pelgrim", r"zwerfvuil", r"opschoon", r"landschapsbeheer", r"bloembollen", r"himmeldei",
         r"(?:fiets|wandel|avond) ?(?:\d|vier)?-?daagse", r"snoei", r"houtdag", r"snoekfiskje", r"\bvissen\b",
     ]),
@@ -118,7 +118,7 @@ PATTERNS: dict[str, list[re.Pattern[str]]] = {
     ]),
     "kunst": _compile([
         r"tentoonstelling", r"expositie", r"\bexpo\b", r"museum", r"galerie", r"\bkunst",
-        r"atelier", r"monument", r"erfgoed", r"open kerk", r"kerkpad", r"rondleiding", r"beelden van",
+        r"atelier", r"monument", r"erfgoed", r"open kerk", r"kerkpad", r"rondleiding", r"\w*f[üu]hrung\b", r"ausstellung", r"beelden van",
         r"beeldhouw", r"historisch", r"archeolog", r"cultuur", r"geschiedenis", r"herdenking", r"schilderij",
     ]),
     "lezing": _compile([
@@ -679,7 +679,7 @@ def page_hints(text: str) -> dict:
 
 # Gevonden bij het nalopen van de hele agenda (20 oktober 2026, 3.024 uitjes): menukopjes en knoppen,
 # aanbiedingen, mededelingen, werkgroepen en vrijwilligerswerk, vaste dorps- en clubavonden, computerhulp.
-SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|alvast (?:iets|wat) ondernemen|links|klus(?:ochtend|dag|middag)|start (?:winter|zomer)seizoen(?: [\d/]+)?|hanze ?hogeschool|waarme h[uú]skeamer|inloopcaf[eé]|open kerk|gft|nieuws(?:berichten)?|dag \d{1,2}|programma \(onder voorbehoud\)|(?:witte donderdag|stille zaterdag|goede vrijdag|eerste paasdag|tweede paasdag|pasen|hemelvaart|pinksteren|gedachteniszondag|bijbelgesprekskring|moderamenbijeenkomst)(?:\W+\d{1,2} (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?: \d{4})?)?|ontdek alle \w+|nu te zien|leste nijs"
+SWEEP_HEADING = re.compile(r"^\W*(?://\s*\w+|\d+ excursies|alle datums|event info|event gegevens|inbreng [a-z]*dag(?: \d{4})?|(?:(?:zater|zon)dag )?(?:thuis|uit)wedstrijden? [\w .'’-]+: [\w .'’-]+ \d{1,2} tegen [\w .'’-]+ \d{1,2}|alvast (?:iets|wat) ondernemen|links|klus(?:ochtend|dag|middag)|start (?:winter|zomer)seizoen(?: [\d/]+)?|hanze ?hogeschool|waarme h[uú]skeamer|inloopcaf[eé]|open kerk|gft|nieuws(?:berichten)?|dag \d{1,2}|programma \(onder voorbehoud\)|(?:witte donderdag|stille zaterdag|goede vrijdag|eerste paasdag|tweede paasdag|pasen|hemelvaart|pinksteren|gedachteniszondag|bijbelgesprekskring|moderamenbijeenkomst)(?:\W+\d{1,2} (?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?: \d{4})?)?|ontdek alle \w+|nu te zien|leste nijs"
                            r"|maandelijkse weergave|tickets en info|uitgevoerde activiteiten|programma ?overzicht(?: \d{4})?"
                            r"|\w+ jaaragenda(?: \d{4})?|(?:\w+ )?(?:dorps?|dorpskracht|activiteiten|evenementen|agenda)\s?kalender (?:\w+/)?(?:januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december)(?:/\w+)?(?: \d{4})?|museum open|save the date|wordt verwacht\W*"
                            r"|in [\w ]+ is altijd wat te doen|agenda \d{1,2} [a-z]+(?: \d{4})?|bestel de serie|doors open .*|\w+ datum|thema: .{1,12}"
