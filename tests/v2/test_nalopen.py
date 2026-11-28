@@ -942,5 +942,6 @@ def test_dagcontrole_28_november_duitse_rondleiding_en_havenvaart():
 def test_dagcontrole_28_november_amateurwedstrijd_met_tegen_en_inbreng():
     for titel in ("Zaterdag thuiswedstrijden KV Lintjo: Lintjo 1 tegen WWC 1", "Inbreng Boeldag 2026"):
         assert not_an_outing(_event(titel)), titel
-    for titel in ("Kerstconcert 2 tegen 1 koor", "Inbreng van het publiek: debat", "Lintjo tegen WWC: open dag"):
+    for titel in ("Kerstconcert 2 tegen 1 koor", "Inbreng van het publiek: debat", "Lintjo tegen WWC: open dag", "Inbreng kerstconcert",
+                  "Ajax 1 tegen Feyenoord 1"):
         assert not not_an_outing(_event(titel)), titel
